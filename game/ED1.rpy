@@ -1,8 +1,8 @@
 ﻿label ED1:
     $ renpy.block_rollback()
     $quick_menu = True
-    scene bg black with dissolve
-    play music "audio/sfx/thunder.mp3" noloop
+    scene black with dissolve
+    # play music "audio/sfx/thunder.mp3" noloop
     "Kamu memutuskan untuk menunda kuliah ditahun ini."
 
     call credits from _call_credits
@@ -16,9 +16,9 @@ label credits:
     # hide the textbox
     window hide
 
-    scene background_ending with fade
+    scene dream with fade
 
-    play music "audio/list_music/ost.mp3" fadeout 1.0
+    # play music "audio/list_music/ost.mp3" fadeout 1.0
 
     # Find "End Credits Scroll" in extras.rpy to change text.
     
