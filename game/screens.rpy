@@ -198,6 +198,9 @@ style input:
     xmaximum gui.dialogue_width
 
 
+
+
+
 ## Layar Pilihan ###############################################################
 ##
 ## Layar ini digunakan untuk menampilkan pilihan dalam game yang disajikan oleh

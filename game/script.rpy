@@ -19,12 +19,12 @@ label intro:
     "Nama kamu siapa?"
 
     label namemc:
-    $ mcname = ""
-    $renpy.call_screen("name_input", "Silahkan masukkan nama kamu", ok_action=Jump("processmcname"), output_var="mcname")
+        $ mcname = ""
+        $renpy.call_screen("name_input", "Silahkan masukkan nama kamu", ok_action=Jump("processmcname"), output_var="mcname")
 
     label processmcname:
-    if not mcname or mcname == "" : 
-        $renpy.call_screen("popup_message","Wajib memasukkan nama!", ok_action=Jump("namemc"))
+        if not mcname or mcname == "" : 
+            $renpy.call_screen("popup_message","Wajib memasukkan nama!", ok_action=Jump("namemc"))
 
     scene bg white with dissolve
 
@@ -32,16 +32,16 @@ label intro:
 
     scene mc dream with dissolve
 
-    pia "ngun.. Bangooon!!!"
-    Tana "bangun kocak, Tidur mulu kayak gue"
-    Kana "cepet ih bangun, sarapan dulu"
+    "pia" "ngun.. Bangooon!!!"
+    "Tana" "bangun kocak, Tidur mulu kayak gue"
+    "Kana" "cepet ih bangun, sarapan dulu"
 
     scene mc kamar with dissolve
     show mama with dissolve
     $ mmama_name = Character("Mamah")
-    mama "bangun nak, udah jam berapa ini.. sarapan dulu ayo jangan bangun kesiangan."
-    mama "hari ini kamu harus daftar ulang kuliah kamu loh ke Jakarta! gimana?!"
-    mama "butuh 3 jam buat ke kampus, nanti kamu ketinggalan kereta! cepet bangun siap-siap!!"
+    "mama" "bangun nak, udah jam berapa ini.. sarapan dulu ayo jangan bangun kesiangan."
+    "mama" "hari ini kamu harus daftar ulang kuliah kamu loh ke Jakarta! gimana?!"
+    "mama" "butuh 3 jam buat ke kampus, nanti kamu ketinggalan kereta! cepet bangun siap-siap!!"
     mcname "iyaah mahh."
     hide mama
 

@@ -1,18 +1,18 @@
 ﻿image splash_animation:
 
-    "gui/renpy-logo.png"
+    "gui/Pictorial.png"
     xalign 0.5 yalign 0.5 alpha 0.0
     ease_quad 7.0 alpha 1.0 zoom 2.0
 
 image marsha_oshi:
-    "gui/logo_mo.png"
+    "gui/Logo_Kombinasi.png"
     xalign 0.5 yalign 0.5 alpha 0.0
     ease_quad 7.0 alpha 1.0
 
 default persistent.firstlaunch = False
 
 image game_logo:
-    "gui/logo_vn.png"
+    "gui/Wordmark.png"
     xalign 0.5 yalign 1.0 alpha 0.0
     ease_quad 4.0 alpha 1.0 zoom 1.3
 
@@ -24,7 +24,7 @@ label splashscreen:
     $ persistent.firstlaunch = True
     
     show splash_animation
-    show text "{color=#FFFFFF}{size=60}Made with Ren'Py [renpy.version_only]{/s}{/c}":
+    show text "Warga Virtual 48 Present":
         xalign 0.5 yalign 0.8 alpha 0.0
         pause 5.0
         linear 1.0 alpha 1.0
@@ -52,11 +52,6 @@ label splashscreen:
 
     $ renpy.pause(2.0)
 
-    show text "{color=#FFFFFF}{size=40}Made by{/s}{/c}":
-        xalign 0.5 yalign 0.6 alpha 0.0
-        pause 1.5
-        linear 1.0 alpha 1.0    
-
     show marsha_oshi:
         xalign 0.5 yalign 0.75 alpha 0.0
         pause 1.5
@@ -67,6 +62,6 @@ label splashscreen:
     scene black
     with fade
 
-    $ renpy.movie_cutscene('images/splash.ogv')
+    $ renpy.movie_cutscene('images/Splash_Screen_But_Moona.webm')
 
     return
