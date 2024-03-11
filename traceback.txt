@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/mainpia.rpy", line 7, in script
-    mama "oke, sekarang mandi, sarapan, abis itu langsung ke stasiun ya buat ke Jeketi University buat daftar ulang."
+  File "game/maintono.rpy", line 7, in script
+    "mama" "oke, sekarang mandi, sarapan, abis itu langsung ke stasiun ya buat ke Jeketi University buat daftar ulang."
 Exception: Sayer 'mama' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/mainpia.rpy", line 7, in script
-    mama "oke, sekarang mandi, sarapan, abis itu langsung ke stasiun ya buat ke Jeketi University buat daftar ulang."
+  File "game/maintono.rpy", line 7, in script
+    "mama" "oke, sekarang mandi, sarapan, abis itu langsung ke stasiun ya buat ke Jeketi University buat daftar ulang."
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 2557, in execute
     Say.execute(self)
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 575, in execute
@@ -21,4 +21,4 @@ Exception: Sayer 'mama' is not defined.
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 KTPVisualNovel 1.0
-Mon Mar 11 16:42:24 2024
+Mon Mar 11 16:50:30 2024
