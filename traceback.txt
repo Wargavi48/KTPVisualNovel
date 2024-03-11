@@ -1,6 +1,6 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images/blck.png') at 0x0000000004f72580>:
+While loading <renpy.display.im.Image object ('images/blck.png') at 0x0000000004f836a0>:
   File "game/script.rpy", line 13, in script
     scene bg blck with dissolve
 OSError: Couldn't find file 'images/blck.png'.
@@ -66,4 +66,4 @@ OSError: Couldn't find file 'images/blck.png'.
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 KTPVisualNovel 1.0
-Sun Mar  3 23:23:36 2024
+Sun Mar  3 23:31:48 2024
