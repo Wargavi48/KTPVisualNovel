@@ -5,7 +5,7 @@
     zoom 0.1
     ease_quad 7.0 alpha 1.0 zoom 0.2
 
-image marsha_oshi:
+image wargavi:
     "gui/Logo_Kombinasi.png"
     xalign 0.5 yalign 0.5 alpha 0.0
     zoom 0.5
@@ -55,7 +55,7 @@ label splashscreen:
 
     $ renpy.pause(2.0)
 
-    show marsha_oshi:
+    show wargavi:
         xalign 0.5 yalign 0.75 alpha 0.0
         pause 1.5
         linear 1.0 alpha 1.0 
