@@ -4,8 +4,6 @@
 # cnth. image eileen happy = "eileen_happy.png"
 image bg blck = "images/blck.png"
 
-# Deklarasikan karakter yang digunakan di game.
-define e = Character('Eileen', color="#c8ffc8")
 
 # Game dimulai disini.
 label start:
@@ -31,19 +29,26 @@ label intro:
     "hei, bangun!"
 
     scene mc dream with dissolve
-
-    "pia" "ngun.. Bangooon!!!"
-    "Tana" "bangun kocak, Tidur mulu kayak gue"
-    "Kana" "cepet ih bangun, sarapan dulu"
+    show pia with dissolve:
+        yalign 2
+    pia "ngun.. Bangooon!!!"
+    hide pia 
+    show tana with dissolve:
+        yalign 2
+    tono "bangun kocak, Tidur mulu kayak gue"
+    hide tana
+    show kana with dissolve:
+        yalign 2
+    kana "cepet ih bangun, sarapan dulu"
+    hide kana
 
     scene mc kamar with dissolve
-    show mama with dissolve
-    $ mmama_name = Character("Mamah")
-    "mama" "bangun nak, udah jam berapa ini.. sarapan dulu ayo jangan bangun kesiangan."
-    "mama" "hari ini kamu harus daftar ulang kuliah kamu loh ke Jakarta! gimana?!"
-    "mama" "butuh 3 jam buat ke kampus, nanti kamu ketinggalan kereta! cepet bangun siap-siap!!"
+    show mamamc with dissolve
+    mamamc "bangun nak, udah jam berapa ini.. sarapan dulu ayo jangan bangun kesiangan."
+    mamamc "hari ini kamu harus daftar ulang kuliah kamu loh ke Jakarta! gimana?!"
+    mamamc "butuh 3 jam buat ke kampus, nanti kamu ketinggalan kereta! cepet bangun siap-siap!!"
     mcname "iyaah mahh."
-    hide mama
+    hide mamamc
 
     "kamu adalah:"
     $quick_menu = False

@@ -1,7 +1,7 @@
 ﻿#Define Character Pia
 
 define pia = Character("[pia_name]", image="Pia", color="#000000")
-default pia_name = "????"
+default pia_name = "pia"
 default pia_cry = Character("Pia", image="pia_cry", color="#000000")
 default pia_happy = Character("Pia", image="pia_happy", color="#000000")
 default pia_angry = Character("Pia", image="pia_angry", color="#000000")
@@ -10,8 +10,8 @@ default pia_blinded = Character("Pia", image="pia_blinded", color="#000000")
 
 # Define Character Tono
 
-define tono = Character("[tono_name]", image="Tono", color="#000000")
-default tono_name = "????"
+define tono = Character("[tono_name]", image="tana", color="#000000")
+default tono_name = "Tana"
 default tono_cry = Character("Tono", image="tono_cry", color="#000000")
 default tono_happy = Character("Tono", image="tono_happy", color="#000000")
 default tono_angry = Character("Tono", image="tono_angry", color="#000000")
@@ -20,8 +20,8 @@ default tono_blinded = Character("Tono", image="tono_blinded", color="#000000")
 
 # Define Character Kana
 
-define kana = Character("[kana_name]", image="Kana", color="#000000")
-default kana_name = "????"
+define kana = Character("[kana_name]", image="kana", color="#000000")
+default kana_name = "Kana"
 default kana_cry = Character("Kana", image="kana_cry", color="#000000")
 default kana_happy = Character("Kana", image="kana_happy", color="#000000")
 default kana_angry = Character("Kana", image="kana_angry", color="#000000")
@@ -110,6 +110,8 @@ define freya2 = Character("Freya", image="freya_side2")
 image side freya_side2 = "Characters/freya_side2.png"
 
 # Define other
+
+define mamamc = Character('Mamah', image="Mamah" , color="#000")
 
 default semua = Character("All", color="#000000")
 
