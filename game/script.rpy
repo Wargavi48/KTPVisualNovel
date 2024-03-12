@@ -1,9 +1,15 @@
 ﻿# Kamu dapat taruh script game mu di file ini.
 
 # Deklarasikan gambar di bawah line ini, menggunakan pernyataan image.
-# cnth. image eileen happy = "eileen_happy.png"
 image bg blck = "images/blck.png"
+image dream = "images/BG/dream.png"
+image mc bedroom = "images/BG/bedroom.png"
 
+
+#Definisikan transformasi dan alignments
+define small_center = Transform(zoom=0.5, xalign=0.5)
+define small_left = Transform(zoom=0.5, xalign=0.0)
+define small_right = Transform(zoom=0.5, xalign=1.0)
 
 # Game dimulai disini.
 label start:
@@ -12,9 +18,7 @@ label start:
 
 label intro:
 
-    scene bg black with dissolve
-
-    "Nama kamu siapa?"
+    scene black with dissolve
 
     label namemc:
         $ mcname = ""
@@ -24,31 +28,30 @@ label intro:
         if not mcname or mcname == "" : 
             $renpy.call_screen("popup_message","Wajib memasukkan nama!", ok_action=Jump("namemc"))
 
-    scene bg white with dissolve
+    scene dream with dissolve
 
-    "hei, bangun!"
+    show kana_sh at small_left with dissolve
+    kana_sh "cepet ih bangun, sarapan dulu"
 
-    scene mc dream with dissolve
-    show pia with dissolve:
-        yalign 2
-    pia "ngun.. Bangooon!!!"
-    hide pia 
-    show tana with dissolve:
-        yalign 2
-    tono "bangun kocak, Tidur mulu kayak gue"
-    hide tana
-    show kana with dissolve:
-        yalign 2
-    kana "cepet ih bangun, sarapan dulu"
-    hide kana
+    show tono_sh at small_center with dissolve
+    tono_sh "bangun kocak, Tidur mulu kayak gue"
 
-    scene mc kamar with dissolve
-    show mamamc with dissolve
-    mamamc "bangun nak, udah jam berapa ini.. sarapan dulu ayo jangan bangun kesiangan."
-    mamamc "hari ini kamu harus daftar ulang kuliah kamu loh ke Jakarta! gimana?!"
-    mamamc "butuh 3 jam buat ke kampus, nanti kamu ketinggalan kereta! cepet bangun siap-siap!!"
+    show pia_sh at small_right with dissolve
+    pia_sh "ngun.. Bangooon!!! (+70db)"
+
+    hide kana_sh
+    hide tono_sh
+    hide pia_sh
+    with dissolve
+
+    scene mc bedroom with dissolve
+    show mama at small_center with dissolve
+    $ mama_name = Character("Mamah")
+    mama "bangun nak, udah jam berapa ini.. sarapan dulu ayo jangan bangun kesiangan."
+    mama "hari ini kamu harus daftar ulang kuliah kamu loh! gimana?!"
+    mama "butuh 3 jam buat ke kampus, nanti kamu ketinggalan kereta! cepet bangun siap-siap!!"
     mcname "iyaah mahh."
-    hide mamamc
+    hide mama with dissolve
 
     "kamu adalah:"
     $quick_menu = False
@@ -59,6 +62,6 @@ label intro:
             jump maintono
         "C. Mahasiswa Desain Komunikasi Visual (DKV)":
             jump mainpia
-        "D. Mualass banget kuliah tahun ini":
+        "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
             jump ED1
     return

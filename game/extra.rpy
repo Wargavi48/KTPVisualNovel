@@ -247,119 +247,101 @@ define credits_string = _p("""
 \n\n
 {size=+15}Game Designer:{/size}
 \n
-Vhyrie
-\n
-Authormagang
+Nue
 \n
 {size=+15}Game Programmer:{/size}
 \n
-Tetsuoga
+Tomato
+\n
+Sunny
+\n
+Exilade
 \n
 {size=+15}Art Director:{/size}
 \n
-Vhyrie
+Nue
 \n
 {size=+15}Background Artist:{/size}
 \n
-Vhyrie
-\n 
-Dilgudil
+Sozaiya
 \n
 {size=+15}Character Artist:{/size}
 \n
-Vhyrie
+LenkuAss
 \n 
-Wisnue
+Vhyrie
 \n
 {size=+15}UI Artist:{/size}
 \n
-Bass
+name_here
 \n 
 {size=+15}Script Writer:{/size}
 \n
-Authormagang
+Nue
 \n
 {size=+15}Sound Engineer:{/size}
 \n
-Tetsuoga
+MV Team
 \n 
-Authormagang
-\n
 {size=+15}Song:{/size}
 \n
-"Kamu, Selamanya"
+"Title here"
 \n
 {size=+15}Vocal Performed by:{/size}
 \n
-Meowkwang
-\n
-Yeorin
+Rizuka Miku
 \n
 {size=+15}Written by:{/size}
 \n
-Dimas Jimbo
-\n
-Wisnue
+Nue
 \n
 {size=+15}Composed by:{/size}
 \n
-MoisslsYours
+HasbiLH
 \n
 {size=+15}Arranged by:{/size}
 \n
-MoisslsYours
-\n
-Dimas Jimbo
+names_here
 \n
 {size=+15}Mixed by:{/size}
 \n
-Dimas Jimbo
-\n
-Meowkwang
-\n
-Yeorin
+names_here
 \n
 {size=+15}Mastered by:{/size}
 \n
-Dimas Jimbo
+names_here
 \n
 {size=+15}Backing Vocals by:{/size}
 \n
-Bronis
-\n
-Uty
-\n
-Kepin
-\n
-Andi
-\n
-Arkan
+names_here
 \n\n
 {size=+15}Special Thanks{/size}
 \n
-Hamba Marsha
+Para Warga Virtual 48
 \n\n
 {size=+15}Very Special Thanks{/size}
 \n
-Marsha Lenathea Lapian
+Kanaia Asa - JKT48 Virtual
+\n
+Tana Nona - JKT48 Virtual
+\n
+Pia Meraleo - JKT48 Virtual
 \n\n\n\n\n\n\n\n
 {size=+12}
 \n
-Terima kasih sebesar-besarnya kami ucapkan pada semua pihak yang terlibat dalam pembuatan Visual Novel MarshaOshi: Highschool in Dasawarha.\n 
-Visual Novel ini kami persembahkan untuk Marsha sebagai hadiah ulang tahunnya yang ke-17 sekaligus untuk semua fans Marsha. Semoga Marsha bahagia dan sehat selalu diumur ke-17 ini.\n
-Panjang umur hal-hal baik!
+"Thanksful messages"
 \n\n\n
-MarshaOshi
+Warga Vitural 48
 \n\n
 {size=+15}Made with Ren'Py{/size} 
 \n
 {size=+15}[renpy.version_only].{/size}\n\n\n\n
 {size=+15}Thanks for Playing!{/size}\n\n\n\n
 {size=+15}Twitter{/size}
-{size=+15}@marshaoshi_{/size}
+{size=+15}@wargavirtual48{/size}
 \n
-{size=+15}Instagram{/size}
-{size=+15}marshaoshi_{/size}
+{size=+15}Tiktok{/size}
+{size=+15}wargavi48{/size}
 {size=+15}{/size}
 """)
 

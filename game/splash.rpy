@@ -2,19 +2,22 @@
 
     "gui/Pictorial.png"
     xalign 0.5 yalign 0.5 alpha 0.0
-    ease_quad 7.0 alpha 1.0 zoom 2.0
+    zoom 0.1
+    ease_quad 7.0 alpha 1.0 zoom 0.2
 
 image marsha_oshi:
     "gui/Logo_Kombinasi.png"
     xalign 0.5 yalign 0.5 alpha 0.0
-    ease_quad 7.0 alpha 1.0
+    zoom 0.5
+    ease_quad 7.0 alpha 1.0 zoom 0.2
 
 default persistent.firstlaunch = False
 
 image game_logo:
     "gui/Wordmark.png"
     xalign 0.5 yalign 1.0 alpha 0.0
-    ease_quad 4.0 alpha 1.0 zoom 1.3
+    zoom 0.1
+    ease_quad 4.0 alpha 1.0 zoom 0.2
 
 
 label splashscreen:
@@ -62,6 +65,9 @@ label splashscreen:
     scene black
     with fade
 
-    $ renpy.movie_cutscene('images/Splash_Screen_But_Moona.webm')
+    $ renpy.movie_cutscene('videos/Splash_screen_hagavi_teaser.webm')
+
+    scene white
+    with fade
 
     return
