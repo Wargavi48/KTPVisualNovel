@@ -9,7 +9,10 @@ define small_right = Transform(zoom=0.5, xalign=1.0)
 label mainpia:
     $ renpy.block_rollback()
     $quick_menu = True
-
+    scene black with dissolve
+    show text "Chapter I\nThe Choosen One" with Pause(1.5)
+    scene black with dissolve
+    scene mc bedroom with dissolve
     show mama at small_center with dissolve
     $ mmama_name = Character("Mamah")
     "mama" "Sekarang mandi, sarapan, abis itu langsung ke stasiun ya buat ke Jeketi University buat daftar ulang."

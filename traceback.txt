@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 41, in script
-    $ mmama_name = Character("Mamah","images/characters/mamah_moona.png")
-  File "game/script.rpy", line 41, in <module>
-    $ mmama_name = Character("Mamah","images/characters/mamah_moona.png")
-TypeError: 'kind' is an invalid keyword argument for str()
+  File "game/mainpia.rpy", line 13, in script
+    show text "Chapter I\nThe Choosen One" with pause(1.5)
+  File "game/mainpia.rpy", line 13, in <module>
+    show text "Chapter I\nThe Choosen One" with pause(1.5)
+NameError: name 'pause' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 41, in script
-    $ mmama_name = Character("Mamah","images/characters/mamah_moona.png")
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 41, in <module>
-    $ mmama_name = Character("Mamah","images/characters/mamah_moona.png")
-  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1718, in Character
-    return type(kind)(name, kind=kind, **properties)
-TypeError: 'kind' is an invalid keyword argument for str()
+  File "game/mainpia.rpy", line 13, in script
+    show text "Chapter I\nThe Choosen One" with pause(1.5)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1359, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/mainpia.rpy", line 13, in <module>
+    show text "Chapter I\nThe Choosen One" with pause(1.5)
+NameError: name 'pause' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 KTPVisualNovel 1.0
-Tue Mar 12 13:00:59 2024
+Tue Mar 12 14:38:06 2024
