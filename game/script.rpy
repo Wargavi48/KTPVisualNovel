@@ -4,6 +4,7 @@
 image bg blck = "images/blck.png"
 image dream = "images/BG/dream.png"
 image mc bedroom = "images/BG/bedroom.png"
+image kampus = "images/BG/kampus.png"
 
 
 #Definisikan transformasi dan alignments

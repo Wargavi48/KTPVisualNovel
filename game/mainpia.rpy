@@ -20,7 +20,28 @@ label mainpia:
     mcname "Siap mah!"
     hide mama with dissolve
 
+    jump chapter1pia
+
+
+label chapter1pia:
+    scene kampus with dissolve
+    show text "Jeketi University\nKampus ternama di indonesia dibawah naungan Melody Corps. Merupakan universitas Negeri unggulan di Jakarta. Banyak orang bilang, kampus ini mencetak banyak sekali orang sukses. Artis, politisi, ilmuan, bahkan menjadi Idol terkenal pun bisa diraih disini. orang yang lulus menyandang gelar lulusan dari JU banyak dicari orang, karena kualitas pelajarnya sangat baik. Namun, untuk masuk ke JU ini pun tidak mudah" with Pause (2)
+    scene black with dissolve
+    scene kampus with dissolve
+    mcname "Wah! besar juga ya kampusnya, dan aku bakal berkuliah disini huhuuu beruntungnya aku"
+    scene black with dissolve
+    show text "BRUKKKK!" with Pause(1)
+    scene kampus with dissolve
+    show pia with dissolve:
+        yalign 2
+    pia "Eh maaf kak ketabrak, gak apa - apa kan?"
+    pia "Lagi buru-buru maaf ya"
+    mcname "Ah gak papa kok."
+    mcname "hehe"
+    mcname "Maaf juga aku ngelamun ditengah jalan"
+    pia "hehe oke maaf bye!"
     jump utamapia
+
 
 label utamapia:
     $ renpy.block_rollback()
