@@ -67,6 +67,18 @@ label chapter1pia:
     mcname "((wah kalo diliat dari dekat gini, manis juga Pia ini))"
     pia "[mcname], kok bengong? makan bareng yuk, pengen liat kantin kampusnya kayak gimana. laper juga sih"
     mcname "lah, lesgooo, pas banget ini laper"
+    "MC dan pia berjalan ke kantin kampus untuk makan"
+    pia "WEEEH GEDE JUGA KANTINNYA YA!"
+    mcname "selain kantin, suara kamu juga gede btw"
+    pia "EH maap, kebiasaan ahahaha"
+    mcname "gapapa kok. seru juga kamu gak abis abis energinya"
+    pia "i-iya kah? ahahaha *blushing*"
+    pia "oh, mau makan dimana ini mejanya full semua"
+    mcname "iya lagi, eh tapi dipojokan itu ada meja isinya cuma sendiri, numpang bareng aja ap--"
+    pia "halooo, sendiri? boleh numpang duduk 1 meja disini gak?"
+    mcname "ah.......Pia......langsung banget"
+    "Fiony" "eh oh mmm iya k-kosong kok. duduk aja"
+    "[mcname], Pia dan Fiony duduk di 1 meja yang sama"
     jump utamapia
 
 
