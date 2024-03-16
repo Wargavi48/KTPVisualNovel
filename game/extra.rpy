@@ -263,7 +263,7 @@ Nue
 \n
 {size=+15}Background Artist:{/size}
 \n
-Sozaiya
+names_here
 \n
 {size=+15}Character Artist:{/size}
 \n
@@ -335,12 +335,19 @@ Warga Vitural 48
 \n\n
 {size=+15}Made with Ren'Py{/size} 
 \n
-{size=+15}[renpy.version_only].{/size}\n\n\n\n
 {size=+15}Thanks for Playing!{/size}\n\n\n\n
 {size=+15}Twitter{/size}
 {size=+15}@wargavirtual48{/size}
 \n
+{size=+15}Discord{/size}
+{size=+15}wargavi48{/size}
+{size=+15}{/size}
+\n
 {size=+15}Tiktok{/size}
+{size=+15}wargavi48{/size}
+{size=+15}{/size}
+\n
+{size=+15}Youtube{/size}
 {size=+15}wargavi48{/size}
 {size=+15}{/size}
 """)
