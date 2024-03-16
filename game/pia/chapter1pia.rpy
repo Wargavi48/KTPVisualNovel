@@ -1,3 +1,4 @@
+
 label chapter1pia:
     scene kampus with dissolve
     "Jeketi University\nKampus ternama di indonesia dibawah naungan Melody Corps. Merupakan universitas Negeri unggulan di Jakarta." 
@@ -7,8 +8,7 @@ label chapter1pia:
     scene black with dissolve
     show text "BRUKKKK!" with Pause(1)
     scene kampus with dissolve
-    show pia with dissolve:
-        yalign 2
+    show pia at char_placement with dissolve
     pia "Eh maaf kak ketabrak, gak apa - apa kan?"
     pia "Lagi buru-buru maaf ya"
     mcname "Ah gak papa kok."

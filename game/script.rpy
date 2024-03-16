@@ -5,6 +5,8 @@
 define small_center = Transform(zoom=0.5, xalign=0.5)
 define small_left = Transform(zoom=0.5, xalign=0.0)
 define small_right = Transform(zoom=0.5, xalign=1.0)
+define char_placement = Transform(zoom=0.5,xalign=1.0,yalign=-2.0)
+
 
 # Game dimulai disini.
 label start:
