@@ -1,10 +1,5 @@
 ﻿# Kamu dapat taruh script game mu di file ini.
 
-# Deklarasikan gambar di bawah line ini, menggunakan pernyataan image.
-image dream = "images/BG/dream.png"
-image mc bedroom = "images/BG/bedroom.png"
-image kampus = "images/BG/kampus.png"
-
 
 #Definisikan transformasi dan alignments
 define small_center = Transform(zoom=0.5, xalign=0.5)
