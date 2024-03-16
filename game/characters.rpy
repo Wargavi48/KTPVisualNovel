@@ -21,7 +21,6 @@ default tono_confused = Character("Tono", image="tono_confused", color="#AD6469"
 default tono_blinded = Character("Tono", image="tono_blinded", color="#AD6469")
 
 # Define Character Kana
-
 define kana = Character("[kana_name]", image="Kana", color="#383961")
 default kana_name = "????"
 default kana_sh = Character("???", image="kana_sh", color="#383961")
@@ -62,12 +61,7 @@ image side kana_side3 = "Characters/kana_side3.png"
 
 # Define other
 
-
 default semua = Character("All", color="#000000")
-
-default zeefre = Character("tono & Freya", color="#000000")
-
-default sheltin = Character("kana & Kathrina", color="#000000")
 
 default mama = Character("Mamah", image="mama", color="#000000")
 
