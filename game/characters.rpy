@@ -9,6 +9,8 @@ default pia_confused = Character("Pia", image="pia_confused", color="#A41807")
 default pia_blinded = Character("Pia", image="pia_blinded", color="#A41807")
 default pia_blushed = Character("Pia", image="pia_blushed", color="#A41807")
 
+# define piasprites = Character("Pia Sprites", image="Pia",color="#000000")
+
 
 # Define Character Tono
 define tono = Character("[tono_name]", image="Tono", color="#AD6469")

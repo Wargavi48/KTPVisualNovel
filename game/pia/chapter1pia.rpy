@@ -1,3 +1,5 @@
+define char_test = Transform(zoom=0.5,xalign=-2.0,yalign=-2.0)
+
 
 label chapter1pia:
     scene kampus with dissolve
@@ -9,6 +11,7 @@ label chapter1pia:
     show text "BRUKKKK!" with Pause(1)
     scene kampus with dissolve
     show pia at char_placement with dissolve
+    # show piasprites at char_test with dissolve
     pia "Eh maaf kak ketabrak, gak apa - apa kan?"
     pia "Lagi buru-buru maaf ya"
     mcname "Ah gak papa kok."
@@ -28,8 +31,7 @@ label chapter1pia:
     pia "HEEEEEEEEEEEE!! KAMUUUUUUU"
     mcname "buset, siapa itu tereak tereak"
     mcname "loh kok kayaknya nyamperin aku"
-    show pia with dissolve:
-        yalign 2
+    show pia at char_placement with dissolve
     pia "HEIIIII!!! INGET AKU GAKKK???"
     mcname "iya aku inget, tapi bisa gak tereak gak? malu diliatin banyak orang ini"
     pia "oh iya, maap. hehe OH! INGET AKU? KITA TABRAKAN DEPAN GERBANG MINGGU LALU! KIRAIN KAMU SENIOR! TERNYATA MABA JUGA KAYAK AKU HAHAHAHA"
@@ -54,4 +56,4 @@ label chapter1pia:
     mcname "ah.......Pia......langsung banget"
     "Fiony" "eh oh mmm iya k-kosong kok. duduk aja"
     "[mcname], Pia dan Fiony duduk di 1 meja yang sama"
-    jump utamapia
+    jump memory_game_start
