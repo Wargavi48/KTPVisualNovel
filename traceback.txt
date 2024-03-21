@@ -1,58 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/mini_game/memory_game.rpy", line 20, in script
-    call screen memory_mini_game
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/common/00action_other.rpy", line 586, in __call__
-    rv = self.callable(*self.args, **self.kwargs)
-  File "game/mini_game/memory_game.rpy", line 61, in hide_matches
-    cards[selected_cards[0][2]] = "hidden"
-TypeError: 'int' object is not subscriptable
+After initialization, but before game start.
+  File "game/mini_game/memory_game.rpy", line 80, in prepare_screen
+    screen memory_mini_game:
+  File "game/mini_game/memory_game.rpy", line 80, in prepare
+    screen memory_mini_game:
+  File "game/mini_game/memory_game.rpy", line 98, in prepare
+    button:
+  File "game/mini_game/memory_game.rpy", line 98, in prepare
+    button:
+SyntaxError: invalid syntax (game/mini_game/memory_game.rpy, line 103)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/mini_game/memory_game.rpy", line 20, in script
-    call screen memory_mini_game
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1968, in execute
-    self.call("execute")
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1950, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\statements.py", line 349, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 3413, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 3197, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 1202, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 1202, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 1202, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 793, in event
-    rv = self.child.event(ev, x, y, st)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 1202, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\behavior.py", line 2657, in event
-    return run(self.function, *self.args, **self.kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\behavior.py", line 395, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00action_other.rpy", line 586, in __call__
-    rv = self.callable(*self.args, **self.kwargs)
-  File "game/mini_game/memory_game.rpy", line 61, in hide_matches
-    cards[selected_cards[0][2]] = "hidden"
-TypeError: 'int' object is not subscriptable
+  File "D:\fanbase_project\KTPVisualNovel\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\main.py", line 635, in main
+    run(restart)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 1026, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/mini_game/memory_game.rpy", line 80, in prepare_screen
+    screen memory_mini_game:
+  File "game/mini_game/memory_game.rpy", line 80, in prepare
+    screen memory_mini_game:
+  File "game/mini_game/memory_game.rpy", line 98, in prepare
+    button:
+  File "game/mini_game/memory_game.rpy", line 98, in prepare
+    button:
+  File "D:\fanbase_project\KTPVisualNovel\renpy\py3analysis.py", line 803, in ast_eval
+    return self.ast_eval_literal(expr)[0]
+  File "D:\fanbase_project\KTPVisualNovel\renpy\py3analysis.py", line 785, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/mini_game/memory_game.rpy, line 103)
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 KTPVisualNovel 1.0
-Tue Mar 19 15:01:49 2024
+Tue Mar 19 15:05:57 2024

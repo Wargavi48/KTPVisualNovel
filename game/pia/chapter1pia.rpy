@@ -44,7 +44,9 @@ label chapter1pia:
     mcname "((wah kalo diliat dari dekat gini, manis juga Pia ini))"
     pia "[mcname], kok bengong? makan bareng yuk, pengen liat kantin kampusnya kayak gimana. laper juga sih"
     mcname "lah, lesgooo, pas banget ini laper"
+    hide pia 
     "MC dan pia berjalan ke kantin kampus untuk makan"
+    show pia at char_placement with dissolve
     pia "WEEEH GEDE JUGA KANTINNYA YA!"
     mcname "selain kantin, suara kamu juga gede btw"
     pia "EH maap, kebiasaan ahahaha"
@@ -54,6 +56,24 @@ label chapter1pia:
     mcname "iya lagi, eh tapi dipojokan itu ada meja isinya cuma sendiri, numpang bareng aja ap--"
     pia "halooo, sendiri? boleh numpang duduk 1 meja disini gak?"
     mcname "ah.......Pia......langsung banget"
-    "Fiony" "eh oh mmm iya k-kosong kok. duduk aja"
-    "[mcname], Pia dan Fiony duduk di 1 meja yang sama"
-    jump memory_game_start
+    "???" "eh oh mmm iya k-kosong kok. duduk aja"
+    hide pia 
+    "[mcname], Pia dan Orang itu duduk di 1 meja yang sama"
+    "Sambil makan"
+    show pia at char_placement with dissolve
+    pia "jweerushan aphah kwamuh?\n(jurusan apa kamu)"
+    "???" "aku? aku DKV"
+    pia "EEEEEEH SWAAAMAAA!! KOK GWAK LIYAT KWAMU PAS PWENGENALAN?"
+    mcname "Telen dulu Pia.........."
+    mcname "(tapi iya deh, aku gak liat mba ini kayaknya pas pengenalan)"
+    "???" "oh kamu MaBa ya? aku udah semester 4. gamungkin ikut kesana tadi"
+    pia "eh kakak senior, maaf kak. kirain MaBa juga"
+    mcname "eh maap kak Pia emang kelakuannya nyablak (yup. pantes gak liat tadi)"
+    "Fiony" "hahaha santai aja, lanjut makan. kok jadi kaku kalian. kenalin aku Fiony"
+    pia "A-AKU PIA MELALEO *panik"
+    mcname "pppfffftt melaleo ahaha, kenalin kak aku [mcname]"
+    pia "aaaaa kan jadi typo ngomongnya. meraleo maksudnyaaaaa"
+    hide pia
+    "Mereka ber 3 pun melanjutkan makan sembari ngobrol "
+    # jump memory_game_start
+    jump utamapia
