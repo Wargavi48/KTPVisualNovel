@@ -211,3 +211,7 @@ init python:
 ## pisahkan dengan garis miring.
 
 # define build.itch_project = "renpytom/test-project"
+
+# Mouse Cursor
+
+define config.mouse = { 'default' : [ ('gui/button/cursor.png', 0, 0)]}
