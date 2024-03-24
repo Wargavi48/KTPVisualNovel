@@ -2,7 +2,7 @@
     $ renpy.block_rollback()
     $quick_menu = True
     scene black with dissolve
-    # play music "audio/sfx/thunder.mp3" noloop
+    play music "audio/main_sound_sample.mp3" noloop
     "Kamu memutuskan untuk menunda kuliah ditahun ini."
 
     call credits from _call_credits

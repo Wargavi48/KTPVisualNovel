@@ -75,5 +75,22 @@ label chapter1pia:
     pia "aaaaa kan jadi typo ngomongnya. meraleo maksudnyaaaaa"
     hide pia
     "Mereka ber 3 pun melanjutkan makan sembari ngobrol "
+    scene black with dissolve
+    show text "KEESOKAN HARINYA" with Pause(1.5)
+    scene black with dissolve
+    scene kampus with dissolve
+    show pia at char_placement with dissolve
+    pia "hueeeeeee [mcname], baru hari pertama. kayaknya udah berat gak sih pelajarannya"
+    mcname "engga sih, seru kok kayaknya. cuma ya ternyata banyak yang harus kita beli nih buat pertemuan selanjutnya"
+    pia "eh! iya weeeh! bingung ini beli kemana, mana kita berdua bukan asli Jakarta, gatau tempat aku. kamu tau tempat belinya?"
+    $quick_menu = False
+    menu:
+        "A. aku tau, kebetulan sempet jalan jalan daerah sini pas lowong kemaren":
+            jump utamapia
+        "B. gak tau, belom sempet muter muter jakarta":
+            jump utamapia
+        "C. gak tau, tapi aku sama anak anak cowok lain mau nyari bareng":
+            play music "audio/main_sound_sample.mp3" noloop
+            jump credits
     # jump memory_game_start
     jump utamapia
