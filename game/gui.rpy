@@ -41,7 +41,7 @@ define gui.hover_color = '#ff7700'
 
 ## Warna yang digunakan untuk text tombol ketika di pijit tapi tidak di fokus.
 ## Tombol di pilih jika terdapat di layar saat ini atau value preferensi.
-define gui.selected_color = '#555555'
+define gui.selected_color = '#ff7700'
 
 ## Warna yang di gunakan untuk tombol text ketika tidak bisa di pilih.
 define gui.insensitive_color = '#7070707f'
@@ -95,7 +95,7 @@ define gui.title_text_size = 75
 
 ## Gambar yang di gunakan untuk Menu utama dan Menu permainan.
 define gui.main_menu_background = "screens/main_menu.png"
-define gui.game_menu_background = "gui/game_menu.png"
+define gui.game_menu_background = "screens/main_menu.png"
 
 
 ## Dialog ######################################################################
