@@ -83,10 +83,11 @@ label chapter1pia:
     pia "hueeeeeee [mcname], baru hari pertama. kayaknya udah berat gak sih pelajarannya"
     mcname "engga sih, seru kok kayaknya. cuma ya ternyata banyak yang harus kita beli nih buat pertemuan selanjutnya"
     pia "eh! iya weeeh! bingung ini beli kemana, mana kita berdua bukan asli Jakarta, gatau tempat aku. kamu tau tempat belinya?"
+    hide pia
     $quick_menu = False
     menu:
         "A. aku tau, kebetulan sempet jalan jalan daerah sini pas lowong kemaren":
-            jump utamapia
+            jump truepia
         "B. gak tau, belom sempet muter muter jakarta":
             jump utamapia
         "C. gak tau, tapi aku sama anak anak cowok lain mau nyari bareng":
