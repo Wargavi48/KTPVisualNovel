@@ -34,7 +34,7 @@ define gui.idle_color = '#606060'
 
 ## Warna kecil yang di gunakan untuk text kecil, yang membutuhkan lebih terang/
 ## lebih gelap untuk mencapai efek yang sama
-define gui.idle_small_color = '#606060'
+define gui.idle_small_color = '#fcb170'
 
 ## Warna yang di gunakan untuk tombol dan bar yang di pilih.
 # define gui.hover_color = '#0099ff'
