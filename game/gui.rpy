@@ -36,7 +36,8 @@ define gui.idle_color = '#707070'
 define gui.idle_small_color = '#606060'
 
 ## Warna yang di gunakan untuk tombol dan bar yang di pilih.
-define gui.hover_color = '#0099ff'
+# define gui.hover_color = '#0099ff'
+define gui.hover_color = '#ff7700'
 
 ## Warna yang digunakan untuk text tombol ketika di pijit tapi tidak di fokus.
 ## Tombol di pilih jika terdapat di layar saat ini atau value preferensi.
@@ -65,7 +66,11 @@ define gui.text_font = "DejaVuSans.ttf"
 define gui.name_text_font = "DejaVuSans.ttf"
 
 ## Font yang digunakan untuk text di luar permainan.
-define gui.interface_text_font = "DejaVuSans.ttf"
+# define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "fonts/AlbraTRIAL-Regular-Italic.otf"
+
+## Custom font
+define gui.custom_font1 = "fonts/AlbraTRIAL-Regular-Italic.otf"
 
 ## Ukuran normal dialog text.
 define gui.text_size = 33
