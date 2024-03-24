@@ -19,6 +19,7 @@ label mainpia:
     mama "Mama udah bilang ke temen mama yang di jakarta kalo kamu akan ngekost di tempat dia"
     mcname "Siap mah!"
     hide mama with dissolve
+    stop music fadeout 1.0
 
     jump chapter1pia
 

@@ -3,6 +3,7 @@ define char_test = Transform(zoom=0.5,xalign=-2.0,yalign=-2.0)
 
 label chapter1pia:
     scene kampus with dissolve
+    play music "audio/bgm_harvestmoon_summer.mp3" loop fadein 1.0
     "Jeketi University\nKampus ternama di indonesia dibawah naungan Melody Corps. Merupakan universitas Negeri unggulan di Jakarta." 
     "Banyak orang bilang, kampus ini mencetak banyak sekali orang sukses. Artis, politisi, ilmuan, bahkan menjadi Idol terkenal pun bisa diraih disini." 
     "Orang yang lulus menyandang gelar lulusan dari JU banyak dicari orang, karena kualitas pelajarnya sangat baik. Namun, untuk masuk ke JU ini pun tidak mudah"
