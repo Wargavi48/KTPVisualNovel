@@ -14,7 +14,7 @@ label start:
         stop music fadeout 1.0
 
 label intro:
-    play music "audio/bgm_harvestmoon_spring.mp3"
+
     scene black with dissolve
 
     label namemc:
@@ -26,6 +26,8 @@ label intro:
             $renpy.call_screen("popup_message","Wajib memasukkan nama!", ok_action=Jump("namemc"))
 
     scene dream with dissolve
+
+    play music "audio/bgm_harvestmoon_spring.mp3" loop fadein 1.0
 
     show kana_sh at small_left with dissolve
     kana_sh "cepet ih bangun, sarapan dulu"
