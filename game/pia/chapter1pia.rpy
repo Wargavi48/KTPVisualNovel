@@ -1,6 +1,7 @@
 define char_test = Transform(zoom=0.5,xalign=-2.0,yalign=-2.0)
 
 
+
 label chapter1pia:
     scene kampus with dissolve
     play music "audio/bgm_harvestmoon_summer.mp3" loop fadein 1.0
