@@ -1197,13 +1197,15 @@ style confirm_frame:
 style confirm_prompt_text:
     textalign 0.5
     layout "subtitle"
+    color "#FFFFFF"
 
 style confirm_button:
     properties gui.button_properties("confirm_button")
 
 style confirm_button_text:
     properties gui.text_properties("confirm_button")
-
+    color "#FFFFFF"
+    hover_color "#ff7700"
 
 ## Lompati indikator layar #####################################################
 ##
