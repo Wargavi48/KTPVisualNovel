@@ -1,3 +1,10 @@
 .vscode
 errors.txt
 saves
+game/saves/persistent
+game/cache/shaders.txt
+game/cache/bytecode-39.rpyb
+traceback.txt
+log.txt
+game/saves/auto-1-LT1.save
+game/saves/auto-2-LT1.save
