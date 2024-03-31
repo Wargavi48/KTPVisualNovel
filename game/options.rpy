@@ -12,19 +12,18 @@
 ##
 ## Tanda _() yang mengelilingi string menandai itu dapat di terjemahkan.
 
-define config.name = _("KTPVisualNovel")
+define config.name = _("WGV Filles La Dreamcatcher")
 
 
 ## Meng determinasikan apakah judul yang di berikan di atas di tampilkan di menu
 ## utama. Set ini ke False untuk menyembunyikan judul.
 
-define gui.show_name = False
+define gui.show_name = True
 
 
 ## Versi Permainan.
 
-define config.version = "1.0"
-
+# define config.version = "1.0"
 
 ## Teks yang ditempatkan pada layar tentang game. Tempatkan teks di antara tanda
 ## kutip tiga, dan biarkan baris kosong di antara paragraf.
@@ -37,7 +36,7 @@ define gui.about = _p("""
 ## bangunan distribusi. Ini harus hanya berisi karakter ASCII-saja, dan tidak
 ## boleh mengandung  spasi, koma, atau kutip.
 
-define build.name = "KTPVisualNovel"
+define build.name = "WGV Filles La Dreamcatcher"
 
 
 ## Suara dan musik #############################################################

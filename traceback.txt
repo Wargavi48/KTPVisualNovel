@@ -7,7 +7,7 @@ While running game code:
     show mama at small_center with dissolve
   File "renpy/common/00mousedisplayable.rpy", line 74, in render
     self.cursor = self.cursors[name][0]._duplicate(None)
-KeyError: 'mouse_kana'
+KeyError: 'mouse_kanaia'
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -45,9 +45,9 @@ Full traceback:
   File "render.pyx", line 260, in renpy.display.render.render
   File "renpy/common/00mousedisplayable.rpy", line 74, in render
     self.cursor = self.cursors[name][0]._duplicate(None)
-KeyError: 'mouse_kana'
+KeyError: 'mouse_kanaia'
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
-KTPVisualNovel 1.0
-Sat Mar 30 16:25:58 2024
+WGV Filles La Dreamcatcher 
+Sun Mar 31 15:11:14 2024
