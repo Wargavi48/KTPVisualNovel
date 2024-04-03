@@ -2,3 +2,6 @@
 image dream = "images/BG/dream.png"
 image mc bedroom = "images/BG/bedroom.png"
 image kampus = "images/BG/kampus.png"
+image awan = "images/BG/transi.png"
+image white = Solid("#FFFFFF")
+

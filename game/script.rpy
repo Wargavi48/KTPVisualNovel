@@ -15,7 +15,9 @@ label start:
 
 label intro:
 
-    scene black with dissolve
+    scene black 
+    with dissolve
+    pause(2.0)
 
     label namemc:
         $ mcname = ""
@@ -24,15 +26,21 @@ label intro:
     label processmcname:
         if not mcname or mcname == "" : 
             $renpy.call_screen("popup_message","Wajib memasukkan nama!", ok_action=Jump("namemc"))
+    
+    scene white
+    with fade
+    pause(2.0)
 
-    scene dream with dissolve
-
-    play music "audio/bgm_harvestmoon_spring.mp3" loop fadein 1.0
-
+    scene dream 
+    with fade
+    pause(2.0)
+    
     show kana_sh at small_left with dissolve
+    pause(2.0)
     kana_sh "cepet ih bangun, sarapan dulu"
 
     show tono_sh at small_center with dissolve
+    pause(2.0)
     tono_sh "bangun kocak, Tidur mulu kayak gue"
 
     show pia_sh at small_right with dissolve
@@ -42,16 +50,23 @@ label intro:
     hide tono_sh
     hide pia_sh
     with dissolve
+    pause(1.0)
 
-    scene mc bedroom with dissolve
-    show mama at small_center with dissolve
+    scene mc bedroom 
+    with dissolve
+    play music "audio/backsound_kamar.mp3" loop fadein 1.0 
+    show mama at small_center
+    show side mama at left
     $ mama_name = Character("Mamah")
-    mama "bangun nak, udah jam berapa ini.. sarapan dulu ayo jangan bangun kesiangan."
-    mama "hari ini kamu harus daftar ulang kuliah kamu loh! gimana?!"
-    mama "butuh 3 jam buat ke kampus, nanti kamu ketinggalan kereta! cepet bangun siap-siap!!"
-    mcname "iyaah mahh."
+    mama "Bangun nak, udah jam berapa ini... Sarapan dulu, ayo, jangan bangun kesiangan."
+    mama "Hari ini kamu harus daftar ulang kuliah kamu, loh! Gimana?"
+    mama "Butuh 3 jam buat ke kampus, nanti kamu ketinggalan kereta! Cepet bangun siap-siap!!"
+    hide side mama with dissolve
     hide mama with dissolve
+    mcname "Iyaah mahh."
 
+    pause(3.0)
+    
     "kamu adalah:"
     $quick_menu = False
     menu:
@@ -63,4 +78,5 @@ label intro:
             jump mainpia
         "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
             jump ED1
+
     return
