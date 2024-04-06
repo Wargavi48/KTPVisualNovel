@@ -10,19 +10,16 @@ define small_right = Transform(zoom=0.5, xalign=1.0)
 define config.mouse_displayable = MouseDisplayable(
     "gui/button/cursor.png", 0, 0).add("pia","cursor pia", 0, 0)
 
-
-init python: 
-    print(config.mouse_displayable)
-
 label mainpia:
     $ renpy.block_rollback()
     $quick_menu = True
-    # $ default_mouse = "pia"
-    scene black with dissolve
+    # default_mouse = "mouse_pia"
+    scene black with dissolve 
     show text "Chapter I\nThe Choosen One" with Pause(1.5)
     scene black with dissolve
     scene mc bedroom with dissolve
     show mama at small_center with dissolve
+    play music "audio/backsound_kamar.mp3" loop fadein 1.0
     $ mmama_name = Character("Mamah")
     mama "Sekarang mandi, sarapan, abis itu langsung ke stasiun ya buat ke Jeketi University buat daftar ulang."
     mama "Mama udah bilang ke temen mama yang di jakarta kalo kamu akan ngekost di tempat dia"

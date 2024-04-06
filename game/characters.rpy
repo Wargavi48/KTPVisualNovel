@@ -66,5 +66,6 @@ image side kana_side3 = "Characters/kana_side3.png"
 default semua = Character("All", color="#000000")
 
 default mama = Character("Mamah", image="mama", color="#000000")
+image side mama = "mama_id"
 
 default mc = Character("[mcname]", color="#000000")
