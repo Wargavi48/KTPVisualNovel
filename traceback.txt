@@ -1,13 +1,13 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/kana/mainkana.rpy", line 17, in script
-    show mama at small_center with dissolve
-  File "game/kana/mainkana.rpy", line 17, in script
-    show mama at small_center with dissolve
+  File "game/pia/mainpia.rpy", line 23, in script
+    show text "Chapter I\nThe Choosen One" with Pause(1.5)
+  File "game/pia/mainpia.rpy", line 23, in script
+    show text "Chapter I\nThe Choosen One" with Pause(1.5)
   File "renpy/common/00mousedisplayable.rpy", line 74, in render
     self.cursor = self.cursors[name][0]._duplicate(None)
-KeyError: 'mouse_kanaia'
+KeyError: 'pia'
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -20,11 +20,11 @@ Full traceback:
     renpy.execution.run_context(True)
   File "D:\fanbase_project\KTPVisualNovel\renpy\execution.py", line 955, in run_context
     context.run()
-  File "game/kana/mainkana.rpy", line 17, in script
-    show mama at small_center with dissolve
+  File "game/pia/mainpia.rpy", line 23, in script
+    show text "Chapter I\nThe Choosen One" with Pause(1.5)
   File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/kana/mainkana.rpy", line 17, in script
-    show mama at small_center with dissolve
+  File "game/pia/mainpia.rpy", line 23, in script
+    show text "Chapter I\nThe Choosen One" with Pause(1.5)
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1363, in execute
     renpy.exports.with_statement(trans, paired=paired)
   File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1781, in with_statement
@@ -45,9 +45,9 @@ Full traceback:
   File "render.pyx", line 260, in renpy.display.render.render
   File "renpy/common/00mousedisplayable.rpy", line 74, in render
     self.cursor = self.cursors[name][0]._duplicate(None)
-KeyError: 'mouse_kanaia'
+KeyError: 'pia'
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV Filles La Dreamcatcher 
-Sun Mar 31 15:11:14 2024
+Wed Apr  3 20:52:56 2024

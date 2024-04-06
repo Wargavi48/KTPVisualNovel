@@ -1,4 +1,10 @@
 ﻿# Kamu dapat taruh script game mu di file ini.
+image cursor asa:
+    "gui/button/cursor_3.png"
+image cursor pia:
+    "gui/button/cursor_1.png"
+image cursor tana:
+    "gui/button/cursor_2.png"
 
 
 #Definisikan transformasi dan alignments
