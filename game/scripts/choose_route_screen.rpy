@@ -8,17 +8,21 @@ screen choose_route:
         spacing 20
 
         imagebutton:
-            auto "images/kana_%s.png"
+            idle "images/logo/logo-hi-idle.png"
+            hover "images/logo/logo-hi-hover.png"
+            # auto "images/kana_%s.png"
             action Jump("mainkana")
-            sensitive persistent.pia == True
+            # sensitive persistent.pia == True
 
         imagebutton:
-            idle "images/pia_idle.png"
-            hover "images/pia_hover.png"
+            idle "images/logo/logo-dkv-idle.png"
+            hover "images/logo/logo-dkv-hover.png"
             action Jump("mainpia")
             
 
         imagebutton:
-            auto "images/tana_%s.png"
+            idle "images/logo/logo-pertanian-idle.png"
+            hover "images/logo/logo-pertanian-hover.png"
+            # auto "images/tana_%s.png"
             action Jump("maintono")
-            sensitive persistent.pia == True
+            # sensitive persistent.pia == True

@@ -75,14 +75,15 @@ label intro:
     
     "kamu adalah:"
     $quick_menu = False
-    menu:
-        "A. Mahasiswa Hubungan Internasional (HI)":
-            jump mainkana
-        "B. Mahasiswa Teknik Pertanian (Agroteknologi)":
-            jump maintono
-        "C. Mahasiswa Desain Komunikasi Visual (DKV)":
-            jump mainpia
-        "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
-            jump ED1
+    call screen choose_route
+    # menu:
+    #     "A. Mahasiswa Hubungan Internasional (HI)":
+    #         jump mainkana
+    #     "B. Mahasiswa Teknik Pertanian (Agroteknologi)":
+    #         jump maintono
+    #     "C. Mahasiswa Desain Komunikasi Visual (DKV)":
+    #         jump mainpia
+    #     "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
+    #         jump ED1
 
     return
