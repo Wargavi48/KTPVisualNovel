@@ -8,14 +8,14 @@ define small_center = Transform(zoom=0.5, xalign=0.5)
 define small_left = Transform(zoom=0.5, xalign=0.0)
 define small_right = Transform(zoom=0.5, xalign=1.0)
 define config.mouse_displayable = MouseDisplayable(
-    "gui/button/cursor.png", 0, 0).add("pia","cursor pia", 0, 0)
+    "gui/button/cursor.png", 0, 0).add("mouse pia","cursor pia", 0, 0)
 
 label mainpia:
     $ renpy.block_rollback()
-    $quick_menu = True
-    # default_mouse = "mouse_pia"
-    scene black with dissolve 
-    show text "Chapter I\nThe Choosen One" with Pause(1.5)
+    $ quick_menu = True
+    $ default_mouse = "mouse pia"
+    scene black with dissolve
+    show text "Chapter I\nThe Choosen One" with Pause(1.5) 
     scene black with dissolve
     scene mc bedroom with dissolve
     show mama at small_center with dissolve

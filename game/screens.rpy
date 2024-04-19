@@ -77,6 +77,44 @@ style frame:
 
 
 
+
+# animation menu
+transform overlay_appear:
+    xoffset -100 alpha 0.0
+    pause 1.5
+    ease 1.0 xoffset 0 alpha 1.0
+
+transform start_menu:
+    yoffset 100 alpha 0.0
+    pause 1.8
+    ease 0.3 yoffset 0 alpha 1.0
+
+transform load_menu:
+    yoffset 100 alpha 0.0
+    pause 2.1
+    ease 0.3 yoffset 0 alpha 1.0
+
+transform setting_menu:
+    yoffset 100 alpha 0.0
+    pause 2.4
+    ease 0.3 yoffset 0 alpha 1.0
+
+transform about_menu:
+    yoffset 100 alpha 0.0
+    pause 2.7
+    ease 0.3 yoffset 0 alpha 1.0
+
+transform help_menu:
+    yoffset 100 alpha 0.0
+    pause 3.0
+    ease 0.3 yoffset 0 alpha 1.0
+
+transform quit_menu:
+    yoffset 100 alpha 0.0
+    pause 3.3
+    ease 0.3 yoffset 0 alpha 1.0
+
+
 ################################################################################
 ## Layar In-game
 ################################################################################
@@ -295,23 +333,30 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
+        # xalign 0.5
         yalign 0.5
 
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            textbutton _("Mulai") action Start()
+            textbutton _("Start") action Start():
+                if renpy.get_screen("main_menu"):
+                    at start_menu
 
         else:
 
-            textbutton _("Riwayat") action ShowMenu("history")
+            textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Simpan") action ShowMenu("save")
+            textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("Muat") action ShowMenu("load")
+        textbutton _("Load") action ShowMenu("load"):
+            if renpy.get_screen("main_menu"):
+                at load_menu
 
-        textbutton _("Setting") action ShowMenu("preferences")
+        textbutton _("Setting") action ShowMenu("preferences"):
+            if renpy.get_screen("main_menu"):
+                at setting_menu
 
         if _in_replay:
 
@@ -319,20 +364,26 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Menu Utama") action MainMenu()
+            textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("Tentang") action ShowMenu("about")
+        textbutton _("About") action ShowMenu("about"):
+            if renpy.get_screen("main_menu"):
+                at about_menu
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Bantuan tidak perlu atau relevan dengan perangkat mobile.
-            textbutton _("Bantuan") action ShowMenu("help")
+            textbutton _("Help") action ShowMenu("help"):
+                if renpy.get_screen("main_menu"):
+                    at help_menu
 
         if renpy.variant("pc"):
 
             ## Tombol keluar dilarang di iOS dan tidak diperlukan di Android dan
             ## Web.
-            textbutton _("Keluar") action Quit(confirm=not main_menu)
+            textbutton _("Quit Game") action Quit(confirm=not main_menu):
+                if renpy.get_screen("main_menu"):
+                    at quit_menu
 
 
 style navigation_button is gui_button
@@ -358,7 +409,7 @@ screen main_menu():
     tag menu
 
     add gui.main_menu_background
-
+    add "gui/overlay/side_bar_menu.png" at overlay_appear
     ## Frame kosong ini menggelap di menu utama.
     frame:
         style "main_menu_frame"
@@ -561,14 +612,11 @@ screen about():
 
         vbox:
 
-            label "[config.name!t]"
-            text _("Versi [config.version!t]\n")
-
             ## gui.about biasanya di set di options.rpy.
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Dibuat Dengan {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("{color=#ff7700}WGV Filles La Dreamcatcher{/color} {color=#fff}adalah sebuah permainan yang dibuat oleh Wargavi. Rasakan pengalaman yang luar biasa dalam perjalanan ini, yang penuh dengan tantangan, kenangan, dan cinta untuk JKT48V. Mari bergembira bersama kami{/color}")
 
 
 style about_label is gui_label
@@ -1557,7 +1605,7 @@ style nvl_window:
 
 style main_menu_frame:
     variant "small"
-    background "gui/phone/overlay/main_menu.png"
+    background "gui/phone/overlay/side_bar_menu.png"
 
 style game_menu_outer_frame:
     variant "small"

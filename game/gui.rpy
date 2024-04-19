@@ -29,7 +29,7 @@ define config.check_conflicting_properties = True
 define gui.accent_color = '#0099ff'
 
 ## Warna yang di gunakan untuk warna tombol text jika di pilih atau di tekan.
-define gui.idle_color = '#FFFFFF'
+define gui.idle_color = '#000'
 
 ## Warna kecil yang di gunakan untuk text kecil, yang membutuhkan lebih terang/
 ## lebih gelap untuk mencapai efek yang sama
@@ -67,7 +67,7 @@ define gui.name_text_font = "DejaVuSans.ttf"
 
 ## Font yang digunakan untuk text di luar permainan.
 # define gui.interface_text_font = "DejaVuSans.ttf"
-define gui.interface_text_font = "fonts/AlbraTRIAL-Regular-Italic.otf"
+define gui.interface_text_font = "fonts/KOMIKAX_.ttf"
 
 ## Custom font
 define gui.custom_font1 = "fonts/AlbraTRIAL-Regular-Italic.otf"

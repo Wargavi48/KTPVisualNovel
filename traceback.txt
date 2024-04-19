@@ -1,26 +1,56 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 56, in script
-    $ ui.opacity(1.0, 2.0)
-  File "game/script.rpy", line 56, in <module>
-    $ ui.opacity(1.0, 2.0)
-AttributeError: module 'renpy.ui' has no attribute 'opacity'
+After initialization, but before game start.
+  File "game/screens.rpy", line 552, in prepare_screen
+    screen about():
+  File "game/screens.rpy", line 552, in prepare
+    screen about():
+  File "game/screens.rpy", line 559, in prepare
+    use game_menu(_("Tentang"), scroll="viewport"):
+  File "game/screens.rpy", line 559, in prepare
+    use game_menu(_("Tentang"), scroll="viewport"):
+  File "game/screens.rpy", line 563, in prepare
+    vbox:
+  File "game/screens.rpy", line 563, in prepare
+    vbox:
+  File "game/screens.rpy", line 569, in prepare
+    text _("WGV Filles La Dreamcatcher, sebuah permainan yang dibuat oleh Wargavi. Rasakan pengalaman yang luar biasa dalam perjalanan ini, yang penuh dengan tantangan, kenangan, dan cinta untuk JKT48V. Mari bergembira bersama kami", "#FFF")
+  File "game/screens.rpy", line 569, in <module>
+    text _("WGV Filles La Dreamcatcher, sebuah permainan yang dibuat oleh Wargavi. Rasakan pengalaman yang luar biasa dalam perjalanan ini, yang penuh dengan tantangan, kenangan, dan cinta untuk JKT48V. Mari bergembira bersama kami", "#FFF")
+TypeError: _() takes 1 positional argument but 2 were given
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 56, in script
-    $ ui.opacity(1.0, 2.0)
-  File "C:\Users\user\Downloads\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\user\Downloads\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 56, in <module>
-    $ ui.opacity(1.0, 2.0)
-AttributeError: module 'renpy.ui' has no attribute 'opacity'
+  File "D:\fanbase_project\KTPVisualNovel\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\main.py", line 635, in main
+    run(restart)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 1026, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 552, in prepare_screen
+    screen about():
+  File "game/screens.rpy", line 552, in prepare
+    screen about():
+  File "game/screens.rpy", line 559, in prepare
+    use game_menu(_("Tentang"), scroll="viewport"):
+  File "game/screens.rpy", line 559, in prepare
+    use game_menu(_("Tentang"), scroll="viewport"):
+  File "game/screens.rpy", line 563, in prepare
+    vbox:
+  File "game/screens.rpy", line 563, in prepare
+    vbox:
+  File "game/screens.rpy", line 569, in prepare
+    text _("WGV Filles La Dreamcatcher, sebuah permainan yang dibuat oleh Wargavi. Rasakan pengalaman yang luar biasa dalam perjalanan ini, yang penuh dengan tantangan, kenangan, dan cinta untuk JKT48V. Mari bergembira bersama kami", "#FFF")
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/screens.rpy", line 569, in <module>
+    text _("WGV Filles La Dreamcatcher, sebuah permainan yang dibuat oleh Wargavi. Rasakan pengalaman yang luar biasa dalam perjalanan ini, yang penuh dengan tantangan, kenangan, dan cinta untuk JKT48V. Mari bergembira bersama kami", "#FFF")
+TypeError: _() takes 1 positional argument but 2 were given
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV Filles La Dreamcatcher 
-Wed Apr  3 20:28:57 2024
+Fri Apr 19 14:46:40 2024
