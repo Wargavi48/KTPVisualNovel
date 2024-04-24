@@ -91,27 +91,32 @@ transform start_menu:
 
 transform load_menu:
     yoffset 100 alpha 0.0
+    pause 2.4
+    ease 0.3 yoffset 0 alpha 1.0
+
+transform achievement_menu:
+    yoffset 100 alpha 0.0
     pause 2.1
     ease 0.3 yoffset 0 alpha 1.0
 
 transform setting_menu:
     yoffset 100 alpha 0.0
-    pause 2.4
+    pause 2.7
     ease 0.3 yoffset 0 alpha 1.0
 
 transform about_menu:
     yoffset 100 alpha 0.0
-    pause 2.7
+    pause 3.0
     ease 0.3 yoffset 0 alpha 1.0
 
 transform help_menu:
     yoffset 100 alpha 0.0
-    pause 3.0
+    pause 3.3
     ease 0.3 yoffset 0 alpha 1.0
 
 transform quit_menu:
     yoffset 100 alpha 0.0
-    pause 3.3
+    pause 3.6
     ease 0.3 yoffset 0 alpha 1.0
 
 
@@ -343,6 +348,14 @@ screen navigation():
             textbutton _("Start") action Start():
                 if renpy.get_screen("main_menu"):
                     at start_menu
+                    text_color "#000000"
+                    text_hover_color "#FF7700"
+
+            textbutton _("Achievements") action ShowMenu("achievement_gallery"):
+                if renpy.get_screen("main_menu"):
+                    at achievement_menu
+                    text_color "#000000" 
+                    text_hover_color "#FF7700"
 
         else:
 
@@ -353,10 +366,14 @@ screen navigation():
         textbutton _("Load") action ShowMenu("load"):
             if renpy.get_screen("main_menu"):
                 at load_menu
+                text_color "#000000"
+                text_hover_color "#FF7700" 
 
         textbutton _("Setting") action ShowMenu("preferences"):
             if renpy.get_screen("main_menu"):
                 at setting_menu
+                text_color "#000000"
+                text_hover_color "#FF7700" 
 
         if _in_replay:
 
@@ -369,6 +386,8 @@ screen navigation():
         textbutton _("About") action ShowMenu("about"):
             if renpy.get_screen("main_menu"):
                 at about_menu
+                text_color "#000000"
+                text_hover_color "#FF7700" 
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -376,6 +395,8 @@ screen navigation():
             textbutton _("Help") action ShowMenu("help"):
                 if renpy.get_screen("main_menu"):
                     at help_menu
+                    text_color "#000000"
+                    text_hover_color "#FF7700" 
 
         if renpy.variant("pc"):
 
@@ -384,6 +405,7 @@ screen navigation():
             textbutton _("Quit Game") action Quit(confirm=not main_menu):
                 if renpy.get_screen("main_menu"):
                     at quit_menu
+                    text_color "#000000"
 
 
 style navigation_button is gui_button
