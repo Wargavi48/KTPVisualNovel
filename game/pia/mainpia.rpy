@@ -1,19 +1,19 @@
 ﻿# Deklarasikan backgrounds
 image mc bedroom = "images/BG/bedroom.png"
-image cursor pia:
-    "gui/button/cursor_1.png"
+# image cursor pia:
+#     "gui/button/cursor_1.png"
 
 #Definisikan transformasi dan alignments
 define small_center = Transform(zoom=0.5, xalign=0.5)
 define small_left = Transform(zoom=0.5, xalign=0.0)
 define small_right = Transform(zoom=0.5, xalign=1.0)
-define config.mouse_displayable = MouseDisplayable(
-    "gui/button/cursor.png", 0, 0).add("mouse pia","cursor pia", 0, 0)
+# define config.mouse_displayable = MouseDisplayable(
+#     "gui/button/cursor.png", 0, 0).add("mouse pia","cursor pia", 0, 0)
 
 label mainpia:
     $ renpy.block_rollback()
     $ quick_menu = True
-    $ default_mouse = "mouse pia"
+    # $ default_mouse = "mouse pia"
     scene black with dissolve
     show text "Chapter I\nThe Choosen One" with Pause(1.5) 
     scene black with dissolve
