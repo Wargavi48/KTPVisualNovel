@@ -406,6 +406,7 @@ screen navigation():
                 if renpy.get_screen("main_menu"):
                     at quit_menu
                     text_color "#000000"
+                    text_hover_color "#FF7700"
 
 
 style navigation_button is gui_button
@@ -1263,6 +1264,13 @@ style confirm_frame:
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
+
+style achievement_frame:
+    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    padding gui.confirm_frame_borders.padding
+    xalign .5
+    yalign .5
+    color "#FFF"
 
 style confirm_prompt_text:
     textalign 0.5

@@ -2,8 +2,8 @@
     $ renpy.block_rollback()
     $quick_menu = True
     scene black with dissolve
-    play music "audio/main_sound_sample.mp3" noloop
-    "Kamu memutuskan untuk menunda kuliah ditahun ini."
+    play music "audio/ost_vocal.mp3" noloop
+    # "Kamu memutuskan untuk menunda kuliah ditahun ini."
 
     call credits from _call_credits
     return
@@ -12,7 +12,7 @@ label credits:
     $ renpy.block_rollback()
     ## for hide quickmenu for the last part, so they don't appear at bottom
     $quick_menu = False
-
+    $config.main_menu_music = "audio/ost_vocal.mp3"
     # hide the textbox
     window hide
 

@@ -84,7 +84,7 @@ init python:
 ################################################################################
 ## Replace this with whatever locked image you want to use as the default
 ## for a locked achievement.
-image locked_achievement = Text("?")
+image locked_achievement = Text("?", color="#FF7700")
 
 ## Example 1 ###################################################################
 ## This is how you declare achievements. You will use `define` and NOT
@@ -242,8 +242,9 @@ screen achievement_popup(a, tag, num):
             ## its dimensions.
             fit "contain" ysize 95 align (0.5, 0.5)
         vbox:
-            text a.name
-            text a.description size 25
+            spacing 10
+            text a.name color "#FFF"
+            text a.description size 25 color "#FFF"
 
     ## Hide the screen after 5 seconds. You can change the time but shouldn't
     ## change the action.
@@ -251,7 +252,7 @@ screen achievement_popup(a, tag, num):
             Show('finish_animating_achievement', num=num, _tag=tag+"1")]
 
 style achieve_popup_frame:
-    is confirm_frame
+    is achievemnet_frame
     align (0.0, 0.0)
 style achieve_popup_hbox:
     spacing 10
@@ -332,18 +333,18 @@ screen achievement_gallery():
                 if a.idle_img:
                     fixed:
                         align (0.5, 0.5)
-                        xysize (155, 155)
-                        add a.idle_img fit "scale-down" ysize 155 align (0.5, 0.5)
+                        xysize (125, 125)
+                        add a.idle_img fit "scale-down" ysize 125 align (0.5, 0.5)
                 else:
                     null width -10
                 vbox:
                     label a.name
-                    text a.description
+                    text a.description color "#FFF"
                     if a.has():
                         ## There are two ways to display the timestamp. The
                         ## first is automatically formatted like
                         ## Unlocked Sep 14, 2023 @ 6:45 PM
-                        text a.timestamp size 22
+                        text a.timestamp size 22 color "#FFF"
                         ## If you want to format it yourself, you can use
                         ## the get_timestamp method:
                         # text __("Achieved at ") + a.get_timestamp(__("%H:%M on %Y/%m/%d"))

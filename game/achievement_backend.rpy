@@ -193,7 +193,6 @@ init -50 python:
                     return self.hide_description
             else:
                 return self._description
-
         @property
         def stat_progress(self):
             """Return this achievement's progress stat."""
