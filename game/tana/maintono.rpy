@@ -11,7 +11,6 @@ define small_right = Transform(zoom=0.5, xalign=1.0)
 #     "gui/button/cursor.png", 0, 0).add("mouse_tana", "cursor tana", 0, 0)
 
 label maintono:
-    $ malas_kuliah.grant()
     $ renpy.block_rollback()
     $quick_menu = True
     # $ default_mouse = "mouse_tana"

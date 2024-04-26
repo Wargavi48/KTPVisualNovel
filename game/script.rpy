@@ -11,7 +11,8 @@ image cursor tana:
 define small_center = Transform(zoom=0.5, xalign=0.5)
 define small_left = Transform(zoom=0.5, xalign=0.0)
 define small_right = Transform(zoom=0.5, xalign=1.0)
-define char_placement = Transform(zoom=0.5,xalign=1.0,yalign=-2.0)
+define char_placement = Transform(zoom=0.5,xalign=0.5,yalign=-2.0)
+define char_center_talk = Transform(zoom=0.7,xalign=0.5,yalign=-0.3)
 
 
 # Game dimulai disini.

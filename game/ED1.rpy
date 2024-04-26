@@ -3,6 +3,7 @@
     $quick_menu = True
     scene black with dissolve
     play music "audio/ost_vocal.mp3" noloop
+    $ malas_kuliah.grant()
     "Kamu memutuskan untuk menunda kuliah ditahun ini."
 
     call credits from _call_credits
