@@ -26,3 +26,9 @@ screen choose_route:
             # auto "images/tana_%s.png"
             action Jump("maintono")
             # sensitive persistent.pia == True
+        
+
+        imagebutton:
+            idle "images/Achievement/malas.jpeg"
+            hover "images/Achievement/malas.jpeg"
+            action Jump("ED1")

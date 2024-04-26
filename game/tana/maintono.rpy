@@ -27,6 +27,6 @@ label maintono:
 label utamatono:
     $ renpy.block_rollback()
     play music "audio/ost_vocal.mp3" noloop
-    jump ED1
+    jump credits
     #This ends the game
     return
