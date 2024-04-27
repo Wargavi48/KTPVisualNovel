@@ -19,17 +19,16 @@ label chapter1pia:
     show text "BRUKKKK!" with Pause(1)
     play music "audio/ketemu_pia.mp3" loop fadein 1.0
     scene kampus with dissolve
-    show pia at char_center_talk with dissolve
+    show pia at char_center with dissolve
     show pia_side at left with dissolve
     # show piasprites at char_test with dissolve
     pia "Eh maaf kak ketabrak, gak apa - apa kan?"
     pia "Lagi buru-buru maaf ya"
-    show pia at char_placement with dissolve
     hide pia_side with dissolve
     mcname "Ah gak papa kok."
     mcname "hehe"
     mcname "Maaf juga aku ngelamun ditengah jalan"
-    show pia at char_center_talk with dissolve
+    show pia at char_center with dissolve
     show pia_side at left with dissolve
     pia "hehe oke maaf bye!"
     hide pia with dissolve
@@ -48,51 +47,43 @@ label chapter1pia:
     hide pia_side with dissolve
     mcname "buset, siapa itu tereak tereak"
     mcname "loh kok kayaknya nyamperin aku"
-    show pia at char_center_talk with dissolve
+    show pia at char_center with dissolve
     show pia_side at left with dissolve
     pia "HEIIIII!!! INGET AKU GAKKK???"
-    show pia at char_placement with dissolve
     hide pia_side with dissolve
     mcname "iya aku inget, tapi bisa gak tereak gak? malu diliatin banyak orang ini"
-    show pia at char_center_talk with dissolve
+    show pia at char_center with dissolve
     show pia_side at left with dissolve
     pia "oh iya, maap. hehe OH! INGET AKU? KITA TABRAKAN DEPAN GERBANG MINGGU LALU! KIRAIN KAMU SENIOR! TERNYATA MABA JUGA KAYAK AKU HAHAHAHA"
-    show pia at char_placement with dissolve
     hide pia_side with dissolve
     mcname "((buset tereak lagi))"
-    show pia at char_center_talk with dissolve
+    show pia at char_center with dissolve
     show pia_side at left with dissolve
     pia "kamu DKV juga ya! gilak ternyata kita sejurusan. apakah jodoh?"
     pia "candaaaaa ahahaha"
-    show pia at char_placement with dissolve
     hide pia_side with dissolve
     mcname "ahaha ahaha iya sejurusan ternyata ya kita. oh iya kita belom kenalan. nama aku [mcname]"
     $ pia_name = "Pia"
-    show pia at char_center_talk with dissolve
+    show pia at char_center with dissolve
     show pia_side at left with dissolve
     pia "LAH IYA BELOM KENALAN. halo, aku Pia Meraleo salam kenal"
-    show pia at char_placement with dissolve
     hide pia_side with dissolve
     mcname "((wah kalo diliat dari dekat gini, manis juga Pia ini))"
-    show pia at char_center_talk with dissolve
+    show pia at char_center with dissolve
     show pia_side at left with dissolve
     pia "[mcname], kok bengong? makan bareng yuk, pengen liat kantin kampusnya kayak gimana. laper juga sih"
-    show pia at char_placement with dissolve
     hide pia_side with dissolve
     mcname "lah, lesgooo, pas banget ini laper"
     hide pia with dissolve
     hide pia_side with dissolve
     "MC dan pia berjalan ke kantin kampus untuk makan"
-    show pia at char_center_talk with dissolve
+    show pia at char_center with dissolve
     show pia_side at left
     pia "WEEEH GEDE JUGA KANTINNYA YA!"
-    show pia at char_placement with dissolve
     hide pia_side with dissolve
     mcname "selain kantin, suara kamu juga gede btw"
-    show pia at char_center_talk with dissolve
     show pia_side at left
     pia "EH maap, kebiasaan ahahaha"
-    show pia at char_placement with dissolve
     hide pia_side with dissolve
     mcname "gapapa kok. seru juga kamu gak abis abis energinya"
     show pia_side at left
@@ -100,35 +91,36 @@ label chapter1pia:
     pia "oh, mau makan dimana ini mejanya full semua"
     hide pia_side with dissolve
     mcname "iya lagi, eh tapi dipojokan itu ada meja isinya cuma sendiri, numpang bareng aja ap--"
-    show pia_side at left
+    show pia at char_placement with dissolve
+    show pia_side at left with dissolve
     pia "halooo, sendiri? boleh numpang duduk 1 meja disini gak?"
+    hide pia with dissolve
     hide pia_side with dissolve
     mcname "ah.......Pia......langsung banget"
     "???" "eh oh mmm iya k-kosong kok. duduk aja"
-    hide pia with dissolve
     "[mcname], Pia dan Orang itu duduk di 1 meja yang sama"
     "Sambil makan"
     show pia at char_placement with dissolve
-    show pia_side at left
+    show pia_side at left with dissolve
     pia "jweerushan aphah kwamuh?\n(jurusan apa kamu)"
     hide pia_side with dissolve
     "???" "aku? aku DKV"
-    show pia_side at left
+    show pia_side at left with dissolve
     pia "EEEEEEH SWAAAMAAA!! KOK GWAK LIYAT KWAMU PAS PWENGENALAN?"
     hide pia_side with dissolve
     mcname "Telen dulu Pia.........."
     mcname "(tapi iya deh, aku gak liat mba ini kayaknya pas pengenalan)"
     "???" "oh kamu MaBa ya? aku udah semester 4. gamungkin ikut kesana tadi"
-    show pia_side at left
+    show pia_side at left with dissolve
     pia "eh kakak senior, maaf kak. kirain MaBa juga"
     hide pia_side with dissolve
     mcname "eh maap kak Pia emang kelakuannya nyablak (yup. pantes gak liat tadi)"
     "Fiony" "hahaha santai aja, lanjut makan. kok jadi kaku kalian. kenalin aku Fiony"
-    show pia_side at left
+    show pia_side at left with dissolve
     pia "A-AKU PIA MELALEO *panik"
     hide pia_side with dissolve
     mcname "pppfffftt melaleo ahaha, kenalin kak aku [mcname]"
-    show pia_side at left
+    show pia_side at left with dissolve
     pia "aaaaa kan jadi typo ngomongnya. meraleo maksudnyaaaaa"
     hide pia with dissolve
     hide pia_side with dissolve
@@ -138,11 +130,11 @@ label chapter1pia:
     scene black with dissolve
     scene kampus with dissolve
     show pia at char_placement with dissolve
-    show pia_side at left
+    show pia_side at left with dissolve
     pia "hueeeeeee [mcname], baru hari pertama. kayaknya udah berat gak sih pelajarannya"
     hide pia_side with dissolve
     mcname "engga sih, seru kok kayaknya. cuma ya ternyata banyak yang harus kita beli nih buat pertemuan selanjutnya"
-    show pia_side at left
+    show pia_side at left with dissolve
     pia "eh! iya weeeh! bingung ini beli kemana, mana kita berdua bukan asli Jakarta, gatau tempat aku. kamu tau tempat belinya?"
     hide pia with dissolve
     hide pia_side with dissolve
@@ -234,3 +226,83 @@ label chapter1pia2:
     mcname "setuju, laper"
     "Fiony" "ayo, aku ada tempat rekomendasi enak deket sini"
     "[mcname], Pia, dan Fiony akhirnya makan ke cafe rekomendasi fiony"
+    "Fiony ketemu sama temen yang biasanya nongkrong di cafe itu juga"
+    "Gita" "lah, Fiony? ngapain lu disini?"
+    "Fiony" "lah Gita, sama ....mmmm"
+    show kana at char_placement_left with dissolve
+    $ kana_name = "Kana" 
+    kana "salam kenal, aku [kana]"
+    "Gita" "gue disitu ya"
+    "Fiony" "okeh"
+    hide kana with dissolve
+    "Gita pergi menuju ke meja di belakang [mcname] dan [pia]"
+    "Fiony" "ges, aku kesana dulu sebentar ya. kalian berduaan aja dulu."
+    "Fiony" "[mcname] jangan macem-macem ya"
+    show pia at char_placement with dissolve
+    show pia_side at left with dissolve
+    pia "CEPIOOOOOOOOOOOOO *blush*"
+    hide pia_side with dissolve
+    "Fiony" "*Kabur*"
+    mcname "AHAHAHHAHAHA"
+    hide pia with dissolve
+    "Fiony pergi meninggalkan MC dan Pia makan berduaan"
+    show pia at char_placement with dissolve
+    show pia_side at left with dissolve
+    pia "j-jadi..abis berapa tadi belanja alat gambar?"
+    hide pia_side with dissolve
+    mcname "300an lah ahahaha, kamu abis berapa?"
+    show pia_side at left
+    pia "kurang lebih sama lah huhuhu"
+    hide pia 
+    hide pia_side 
+    "*hening*"
+    show pia at char_center with dissolve
+    mcname "kalo berdua gini kayak ngedate gak sih kita?"
+    show pia_side at left with dissolve
+    pia "menyemburkan minum *brrrrrrrrr* UHUK UHUK GIMANA"
+    pia "{size=-5}ngedate beneran juga gapapa sih{/size}"
+    hide pia_side with dissolve
+    mcname "Apa Pia?"
+    mcname "Sorry gak kedengeran"
+    show pia_side at left with dissolve
+    pia "GAK KOK, minumannya enak aku aus mau nambah kayaknya"
+    hide pia_side with dissolve
+    mcname "oh okeh, mau aku panggilin pelayannya?"
+    show pia_side at left with dissolve
+    pia "gausah"
+    hide pia_side with dissolve
+    mcname "lah?"
+    hide pia with dissolve
+    "*hening*"
+    show pia at char_center with dissolve
+    show pia_side at left with dissolve
+    pia "tempatnya bagus gak sih buat foto-foto"
+    hide pia_side with dissolve
+    mcname "tadi cepio sih ngomong gitu juga"
+    show pia_side at left with dissolve
+    pia "selfie ah *cekrek* *cekrek*"
+    pia "f-foto bareng sih kita, udah jauh jauh makan kesini masa ga difoto! *blush*"
+    hide pia_side with dissolve
+    mcname "hmm. boleh deh *bergaya"
+    show pia_side at left with dissolve
+    pia "oke, satuu..dua....tigaaaa *cekrek*"
+    hide pia with dissolve
+    hide pia_side with dissolve
+    # Add gallery mc + pia selfie, add achievement (I wanna be your date)
+    "Fiony //ngeliatin dari jauh sambil senyum-senyum"
+    show pia at char_center with dissolve
+    show pia_side at left with dissolve
+    pia "CEPIOOOOOOOOOOO"
+    hide pia_side with dissolve
+    "Fiony" "ahahaha udah makannya? seru tuh foto fotonya *sikut sikut Pia*"
+    show pia_side at left with dissolve
+    pia "ehehehehe"
+    hide pia_side with dissolve
+    "Fiony" "kuy lah balik, takut kemaleman. udah aku bayarin juga tadi makannya ya ini"
+    mcname "eh lah udah dibayar? waduh aku transfer ke cepio ya"
+    "Fiony" "gausah, ngeliat juniorku SENYUM SENYUM sendiri udah cukup puas kok *senyum ke pia*"
+    show pia_side at left with dissolve
+    pia "ih cepio maaaaaaaah ngeledekin muluuuuu *blush*"
+    hide pia with dissolve
+    hide pia_side with dissolve
+

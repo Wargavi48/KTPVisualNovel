@@ -12,7 +12,8 @@ define small_center = Transform(zoom=0.5, xalign=0.5)
 define small_left = Transform(zoom=0.5, xalign=0.0)
 define small_right = Transform(zoom=0.5, xalign=1.0)
 define char_placement = Transform(zoom=0.5,xalign=0.5,yalign=-2.0)
-define char_center_talk = Transform(zoom=0.7,xalign=0.5,yalign=-0.3)
+define char_placement_left = Transform(zoom=1.0,xalign=0.2,yalign=-0.6)
+define char_center = Transform(zoom=0.9,xalign=0.5,yalign=-0.1)
 
 
 # Game dimulai disini.
@@ -76,15 +77,15 @@ label intro:
     
     "kamu adalah:"
     $quick_menu = False
-    call screen choose_route
-    # menu:
-    #     "A. Mahasiswa Hubungan Internasional (HI)":
-    #         jump mainkana
-    #     "B. Mahasiswa Teknik Pertanian (Agroteknologi)":
-    #         jump maintono
-    #     "C. Mahasiswa Desain Komunikasi Visual (DKV)":
-    #         jump mainpia
-    #     "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
-    #         jump ED1
+    # call screen choose_route
+    menu:
+        "A. Mahasiswa Hubungan Internasional (HI)":
+            jump mainkana
+        "B. Mahasiswa Teknik Pertanian (Agroteknologi)":
+            jump maintono
+        "C. Mahasiswa Desain Komunikasi Visual (DKV)":
+            jump mainpia
+        "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
+            jump ED1
 
     return
