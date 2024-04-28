@@ -36,7 +36,7 @@ define gui.about = _p("""
 ## bangunan distribusi. Ini harus hanya berisi karakter ASCII-saja, dan tidak
 ## boleh mengandung  spasi, koma, atau kutip.
 
-define build.name = "WGV Filles La Dreamcatcher"
+define build.name = "WGV Dreamcatcher"
 
 
 ## Suara dan musik #############################################################

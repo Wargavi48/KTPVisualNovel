@@ -639,7 +639,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("{color=#ff7700}WGV Filles La Dreamcatcher{/color} {color=#fff}adalah sebuah permainan yang dibuat oleh Wargavi. Rasakan pengalaman yang luar biasa dalam perjalanan ini, yang penuh dengan tantangan, kenangan, dan cinta untuk JKT48V. Mari bergembira bersama kami{/color}")
+            text _("{color=#ff7700}WGV : Dreamcatcher{/color} {color=#fff}adalah sebuah permainan yang dibuat oleh Wargavi. Rasakan pengalaman yang luar biasa dalam perjalanan ini, yang penuh dengan tantangan, kenangan, dan cinta untuk JKT48V. Mari bergembira bersama kami{/color}")
 
 
 style about_label is gui_label
