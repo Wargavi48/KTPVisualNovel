@@ -345,26 +345,22 @@ label quiz:
         menu:
             "a. [option_a]":
                 $ user_choice = option_a
-                "Kamu menjawab [user_choice]"
                 
             "b. [option_b]":
                 $ user_choice = option_b
-                "Kamu menjawab [user_choice]"
 
                 
             "c. [option_c]":
                 $ user_choice = option_c
-                "Kamu menjawab [user_choice]"
                 
             "d. [option_d]":
                 $ user_choice = option_d
-                "Kamu menjawab [user_choice]"
         
         if user_choice == random_question["answer"]:
             $ user_score += 10      
         $ index += 1
 
-    if user_score == 30:
+    if user_score == 100:
         $ all_correct.grant()
     jump chapter2pia2
                 
