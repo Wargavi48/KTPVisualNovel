@@ -305,4 +305,6 @@ label chapter1pia2:
     pia "ih cepio maaaaaaaah ngeledekin muluuuuu *blush*"
     hide pia with dissolve
     hide pia_side with dissolve
+    "Mereka pun pulang ke kosan masing masing dengan belanjaan mereka yang mahal itu. \n Tapi buat Pia, ini harga yang murah yang harus dia bayarkan untuk mendapatkan memory itu"
+    jump chapter2pia
 

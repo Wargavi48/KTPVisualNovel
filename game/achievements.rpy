@@ -208,6 +208,13 @@ define malas_kuliah = Achievement(
     unlocked_image=Transform("Achievement/malas.jpeg"),
 )
 
+define all_correct = Achievement(
+    name=_("Touch some grass lad, enough internet today"),
+    id="Pengikut KTP",
+    description=_("Ayo keluar dunia menantimu kawan"),
+    unlocked_image=Transform("gui/window_icon.png", matrixcolor=BrightnessMatrix(1.0)),
+)
+
 ################################################################################
 ## SCREENS
 ################################################################################
