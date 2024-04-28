@@ -18,7 +18,7 @@ label mainpia:
     'default' : [ ('gui/button/cursor_1.png', 0, 0)],
     }
     scene black with dissolve
-    show text "Chapter I\nThe Choosen One" with Pause(1.5) 
+    show text "{color=#FFF}Chapter I\nThe Choosen One{/color}" with Pause(1.5) 
     scene black with dissolve
     scene mc bedroom with dissolve
     show mama at small_center with dissolve

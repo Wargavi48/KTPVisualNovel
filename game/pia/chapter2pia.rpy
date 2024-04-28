@@ -1,6 +1,6 @@
 label chapter2pia:
     scene black with dissolve
-    show text "Chapter II\nThe Art Is You" with Pause(1.5) 
+    show text "{color=#FFF}Chapter II\nThe Art Is You{/color}" with Pause(1.5) 
     scene black with dissolve
     play music "audio/kampus.mp3" loop fadein 1.0
     scene kampus with dissolve
@@ -13,7 +13,7 @@ label chapter2pia:
     hide pia with dissolve
     hide pia_side with dissolve
     scene black with dissolve
-    show text "QUIZ TIME" with Pause(1.5) 
+    show text "{color=#FFF}QUIZ TIME{/color}" with Pause(1.5) 
     scene black with dissolve
     jump quiz
 
