@@ -88,46 +88,58 @@ transform initial_menu:
 transform ktp_appear:
     alpha 0.0
     pause 2.0
-    ease 2.0 alpha 1.0
+    ease 1.0 alpha 1.0
 
 transform overlay_appear:
     xoffset -100 alpha 0.0
-    pause 2.5
+    pause 3.0
     ease 1.0 xoffset 0 alpha 1.0
 
+transform overlay_left:
+    xoffset -100 alpha 0.0
+    pause 3.0
+    ease 1.0 xoffset 0 alpha 1.0
+
+transform overlay_right:
+    xoffset 1180 alpha 0.0
+    pause 3.0
+    ease 1.0 xoffset 770 alpha 1.0
+
 transform start_menu:
-    yoffset 100 alpha 0.0
-    pause 2.8
-    ease 0.3 yoffset 0 alpha 1.0
-
-transform load_menu:
-    yoffset 100 alpha 0.0
-    pause 3.1
-    ease 0.3 yoffset 0 alpha 1.0
-
-transform achievement_menu:
-    yoffset 100 alpha 0.0
-    pause 3.4
-    ease 0.3 yoffset 0 alpha 1.0
-
-transform setting_menu:
-    yoffset 100 alpha 0.0
-    pause 3.7
-    ease 0.3 yoffset 0 alpha 1.0
-
-transform about_menu:
-    yoffset 100 alpha 0.0
-    pause 4.0
-    ease 0.3 yoffset 0 alpha 1.0
-
-transform help_menu:
     yoffset 100 alpha 0.0
     pause 4.3
     ease 0.3 yoffset 0 alpha 1.0
 
-transform quit_menu:
+transform achievement_menu:
     yoffset 100 alpha 0.0
     pause 4.6
+    ease 0.3 yoffset 0 alpha 1.0
+
+
+transform load_menu:
+    yoffset 100 alpha 0.0
+    pause 4.9
+    ease 0.3 yoffset 0 alpha 1.0
+
+
+transform setting_menu:
+    yoffset 100 alpha 0.0
+    pause 5.2
+    ease 0.3 yoffset 0 alpha 1.0
+
+transform about_menu:
+    yoffset 100 alpha 0.0
+    pause 5.5
+    ease 0.3 yoffset 0 alpha 1.0
+
+transform help_menu:
+    yoffset 100 alpha 0.0
+    pause 5.8
+    ease 0.3 yoffset 0 alpha 1.0
+
+transform quit_menu:
+    yoffset 100 alpha 0.0
+    pause 6.2
     ease 0.3 yoffset 0 alpha 1.0
 
 
@@ -444,7 +456,9 @@ screen main_menu():
     add "white"
     add gui.main_menu_background at initial_menu
     add "screens/main_menu_ktp.png" at ktp_appear
-    add "gui/overlay/side_bar_menu.png" at overlay_appear
+    add "screens/kabut_kiri.png" at overlay_left
+    add "screens/kabut_kanan.png" at overlay_right
+    # add "gui/overlay/side_bar_menu.png" at overlay_appear
     ## Frame kosong ini menggelap di menu utama.
     frame:
         style "main_menu_frame"
