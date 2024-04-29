@@ -77,7 +77,7 @@ label chapter1pia:
     show pia_side_angry at left with dissolve
     pia "[mcname], kok bengong? makan bareng yuk, pengen liat kantin kampusnya kayak gimana. laper juga sih"
     hide pia_side_angry with dissolve
-    hide pia_
+    hide pia
     mcname "lah, lesgooo, pas banget ini laper"
     hide pia_angry with dissolve
     hide pia_side_angry with dissolve

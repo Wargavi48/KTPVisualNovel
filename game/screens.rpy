@@ -79,44 +79,55 @@ style frame:
 
 
 # animation menu
+transform initial_menu:
+    alpha 0.0
+    pause 1.0
+    ease 1.0 alpha 1.0
+
+
+transform ktp_appear:
+    alpha 0.0
+    pause 2.0
+    ease 2.0 alpha 1.0
+
 transform overlay_appear:
     xoffset -100 alpha 0.0
-    pause 1.5
+    pause 2.5
     ease 1.0 xoffset 0 alpha 1.0
 
 transform start_menu:
     yoffset 100 alpha 0.0
-    pause 1.8
+    pause 2.8
     ease 0.3 yoffset 0 alpha 1.0
 
 transform load_menu:
     yoffset 100 alpha 0.0
-    pause 2.4
+    pause 3.1
     ease 0.3 yoffset 0 alpha 1.0
 
 transform achievement_menu:
     yoffset 100 alpha 0.0
-    pause 2.1
+    pause 3.4
     ease 0.3 yoffset 0 alpha 1.0
 
 transform setting_menu:
     yoffset 100 alpha 0.0
-    pause 2.7
+    pause 3.7
     ease 0.3 yoffset 0 alpha 1.0
 
 transform about_menu:
     yoffset 100 alpha 0.0
-    pause 3.0
+    pause 4.0
     ease 0.3 yoffset 0 alpha 1.0
 
 transform help_menu:
     yoffset 100 alpha 0.0
-    pause 3.3
+    pause 4.3
     ease 0.3 yoffset 0 alpha 1.0
 
 transform quit_menu:
     yoffset 100 alpha 0.0
-    pause 3.6
+    pause 4.6
     ease 0.3 yoffset 0 alpha 1.0
 
 
@@ -430,8 +441,9 @@ screen main_menu():
 
     ## Ini Memastikan Layar Menu Yang Lain Telah Di Timpa
     tag menu
-
-    add gui.main_menu_background
+    add "white"
+    add gui.main_menu_background at initial_menu
+    add "screens/main_menu_ktp.png" at ktp_appear
     add "gui/overlay/side_bar_menu.png" at overlay_appear
     ## Frame kosong ini menggelap di menu utama.
     frame:
@@ -497,7 +509,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
     style_prefix "game_menu"
 
     if main_menu:
-        add gui.main_menu_background
+        add gui.main_menu_background 
     else:
         add gui.game_menu_background
 
