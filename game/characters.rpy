@@ -1,13 +1,12 @@
 ﻿#Define Character Pia
 define pia = Character("[pia_name]", image="Pia", color="#A41807")
+default pia_angry = Character("[pia_name]", image="Pia_angry", color="#A41807")
+default pia_laugh = Character("[pia_name]", image="Pia_laugh", color="#A41807")
+default pia_sad = Character("[pia_name]", image="Pia_sad", color="#A41807")
+default pia_sh = Character("[pia_name]", image="pia_sh", color="#A41807")
+default pia_shy = Character("[pia_name]", image="Pia_shy", color="#A41807")
+default pia_smile = Character("[pia_name]", image="pia_smile", color="#A41807")
 default pia_name = "????"
-default pia_sh = Character("???", image="pia_sh", color="#A41807")
-default pia_cry = Character("Pia", image="pia_cry", color="#A41807")
-default pia_happy = Character("Pia", image="pia_happy", color="#A41807")
-default pia_angry = Character("Pia", image="pia_angry", color="#A41807")
-default pia_confused = Character("Pia", image="pia_confused", color="#A41807")
-default pia_blinded = Character("Pia", image="pia_blinded", color="#A41807")
-default pia_blushed = Character("Pia", image="pia_blushed", color="#A41807")
 
 # define piasprites = Character("Pia Sprites", image="Pia",color="#000000")
 
@@ -36,14 +35,12 @@ default kana_blinded = Character("Kana", image="kana_blinded", color="#383961")
 
 
 # Define side character
-define pia1 = Character("pia", image="pia_side") 
 image side pia_side = "Characters/pia_side.png"
-define pia2 = Character("pia", image="pia_side2") 
-image side pia_side2 = "Characters/pia_side2.png"
-define pia3 = Character("pia", image="pia_side3") 
-image side pia_side3 = "Characters/pia_side3.png"
-define pia4 = Character("pia", image="pia_side4") 
-image side pia_side4 = "Characters/pia_side4.png"
+image side pia_side_angry = "Characters/pia_side_angry.png"
+image side pia_side_laugh = "Characters/pia_side_laugh.png"
+image side pia_side_shy = "Characters/pia_side_shy.png"
+image side pia_side_smile = "Characters/pia_side_smile.png"
+
 
 define tono1 = Character("tono", image="tono_side") 
 image side tono_side = "Characters/tono_side.png"

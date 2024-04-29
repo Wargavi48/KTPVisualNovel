@@ -243,13 +243,13 @@ screen music():
 
 # Content of your credits screen
 define credits_string = _p("""
-{size=+35}Credits{/size}
-\n\n
-{size=+15}Game Designer:{/size}
+{size=+15}Credits{/size}
+\n
+{size=+10}Directed By:{/size}
 \n
 Nue
 \n
-{size=+15}Game Programmer:{/size}
+{size=+10}Programmer:{/size}
 \n
 Tomato
 \n
@@ -257,99 +257,122 @@ Sunny
 \n
 Exilade
 \n
-{size=+15}Art Director:{/size}
+{size=+10}Main Artist:{/size}
 \n
-Nue
+Lengkuas
 \n
-{size=+15}Background Artist:{/size}
-\n
-names_here
-\n
-{size=+15}Character Artist:{/size}
-\n
-LenkuAss
-\n 
 Vhyrie
 \n
-{size=+15}UI Artist:{/size}
+{size=+10}Mini Game Artist:{/size}
 \n
-name_here
-\n 
-{size=+15}Script Writer:{/size}
+Tebtebo
 \n
-Nue
+Pipigoro
 \n
-{size=+15}Sound Engineer:{/size}
+Addo
 \n
-MV Team
-\n 
-{size=+15}Song:{/size}
+{size=+10}Supporting Artist:{/size}
 \n
-"Title here"
+Hann
 \n
-{size=+15}Vocal Performed by:{/size}
+Awilwil
+\n
+Ahsae
+\n
+{size=+10}Sound Seeker:{/size}
+\n
+Koko Jon
+\n
+BlackJckt
+\n
+Kodok
+\n
+{size=+10}Supporting Team:{/size}
+\n
+Fatimah
+\n
+Swift Ch.
+\n
+Copolatos
+\n
+{size=+10}Anak Band:{/size}
+\n
+Hasbi Lh
 \n
 Rizuka Miku
 \n
-{size=+15}Written by:{/size}
+Galaxy
+{size=+10}Story Writer:{/size}
 \n
-Nue
-\n
-{size=+15}Composed by:{/size}
-\n
-HasbiLH
-\n
-{size=+15}Arranged by:{/size}
-\n
-names_here
-\n
-{size=+15}Mixed by:{/size}
-\n
-names_here
-\n
-{size=+15}Mastered by:{/size}
-\n
-names_here
-\n
-{size=+15}Backing Vocals by:{/size}
-\n
-names_here
+Anak Oyaji
 \n\n
-{size=+15}Special Thanks{/size}
+{size=+10}Sponsors{/size}
 \n
+Player 1
+\n
+Player 2
+\n
+Player 3
+\n
+Background 1
+\n
+Background 2
+\n 
+Background 3
+\n
+Background 4
+\n
+Background 5
+\n
+Background 6
+\n
+Background 7
+\n
+Background 8
+\n
+Background 9
+\n
+Background 10
+\n
+Tulis semua donatur disini
+\n
+{size=+10}Special Thanks{/size}
+\n
+All The Dreamcatcher Player
+\n 
 Para Warga Virtual 48
 \n\n
-{size=+15}Very Special Thanks{/size}
+{size=+10}Very Special Thanks{/size}
 \n
 Kanaia Asa - JKT48 Virtual
 \n
 Tana Nona - JKT48 Virtual
 \n
 Pia Meraleo - JKT48 Virtual
-\n\n\n\n\n\n\n\n
-{size=+12}
+\n\n\n
+{size=+10}
 \n
 "Thanksful messages"
 \n\n\n
 Warga Vitural 48
 \n\n
-{size=+15}Made with Ren'Py{/size} 
+{size=+10}Made with Ren'Py{/size} 
 \n
-{size=+15}Thanks for Playing!{/size}\n\n\n\n
-{size=+15}Twitter{/size}
-{size=+15}@wargavirtual48{/size}
+{size=+10}Thanks for Playing!{/size}\n\n\n\n
+{size=+10}Twitter{/size}
+{size=+10}@wargavirtual48{/size}
 \n
-{size=+15}Discord{/size}
-{size=+15}wargavi48{/size}
-{size=+15}{/size}
+{size=+10}Discord{/size}
+{size=+10}wargavi48{/size}
+{size=+10}{/size}
 \n
-{size=+15}Tiktok{/size}
-{size=+15}wargavi48{/size}
-{size=+15}{/size}
+{size=+10}Tiktok{/size}
+{size=+10}wargavi48{/size}
+{size=+10}{/size}
 \n
-{size=+15}Youtube{/size}
-{size=+15}wargavi48{/size}
-{size=+15}{/size}
+{size=+10}Youtube{/size}
+{size=+10}wargavi48{/size}
+{size=+10}{/size}
 """)
 
 

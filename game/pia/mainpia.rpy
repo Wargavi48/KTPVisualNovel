@@ -14,9 +14,9 @@ label mainpia:
     $ renpy.block_rollback()
     $ quick_menu = True
     # $ default_mouse = "mouse pia"
-    $ config.mouse = { 
-    'default' : [ ('gui/button/cursor_1.png', 0, 0)],
-    }
+    # $ config.mouse = { 
+    # 'default' : [ ('gui/button/cursor_1.png', 0, 0)],
+    # }
     scene black with dissolve
     show text "{color=#FFF}Chapter I\nThe Choosen One{/color}" with Pause(1.5) 
     scene black with dissolve
