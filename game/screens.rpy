@@ -203,8 +203,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    # background Image("gui/dialog_default_gray_resize.png", xalign=0.03, yalign=1.0)
-    background Image("gui/dialog_default_black_resize.png", xalign=0.03, yalign=1.0)
+    background Image("gui/dialog_default_black_resize.png", xalign=0.03, yalign=-80.5)
 
 style namebox:
     xpos gui.name_xpos
@@ -218,8 +217,8 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name", accent=True)
-    xpos 125
-    ypos 26
+    xpos 85
+    ypos -57
     size 35
     xalign gui.name_xalign
     yalign 0.5
@@ -229,8 +228,7 @@ style say_dialogue:
 
     xpos 0.23
     xsize gui.dialogue_width
-    ypos gui.dialogue_ypos
-
+    ypos 10
     adjust_spacing False
 
 ## Layar masukkan/input ########################################################
@@ -324,28 +322,28 @@ screen quick_menu():
             yalign 1.0
 
             textbutton _("Kembali") action Rollback():
-                yoffset -17
+                yoffset -100
                 xoffset -115
             textbutton _("Riwayat") action ShowMenu('history'):
-                yoffset -17
+                yoffset -100
                 xoffset -95
             textbutton _("Lompati") action Skip() alternate Skip(fast=True, confirm=True):
-                yoffset -17
+                yoffset -100
                 xoffset -75
             textbutton _("Otomatis") action Preference("auto-forward", "toggle"):
-                yoffset -17
+                yoffset -100
                 xoffset -60
             textbutton _("Simpan") action ShowMenu('save'):
-                yoffset -17
+                yoffset -100
                 xoffset -40
             textbutton _("Simpan.C") action QuickSave():
-                yoffset -17
+                yoffset -100
                 xoffset -15
             textbutton _("Muat.C") action QuickLoad():
-                yoffset -17
+                yoffset -100
                 xoffset 10
             textbutton _("Setting") action ShowMenu('preferences'):
-                yoffset -17
+                yoffset -100
                 xoffset 45
 
 
