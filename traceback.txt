@@ -1,34 +1,29 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('gui/dialog_default_gray_resize') at 0x000000000689ffd0>:
-  File "game/pia/chapter1pia.rpy", line 79, in script
-    hide pia_side_angry with dissolve
-  File "game/pia/chapter1pia.rpy", line 79, in script
-    hide pia_side_angry with dissolve
-OSError: Couldn't find file 'gui/dialog_default_gray_resize'.
+While loading <renpy.display.im.Image object ('images/BG/depan_kampus_resize.png') at 0x000000000507f0d0>:
+  File "game/pia/chapter1pia.rpy", line 11, in script
+    "Jeketi University\nKampus ternama di indonesia dibawah naungan Melody Corps. Merupakan universitas Negeri unggulan di Jakarta."
+OSError: Couldn't find file 'images/BG/depan_kampus_resize.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\fanbase_project\KTPVisualNovel\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\main.py", line 635, in main
-    run(restart)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\main.py", line 145, in run
-    renpy.execution.run_context(True)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\execution.py", line 955, in run_context
-    context.run()
-  File "game/pia/chapter1pia.rpy", line 79, in script
-    hide pia_side_angry with dissolve
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/pia/chapter1pia.rpy", line 79, in script
-    hide pia_side_angry with dissolve
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1363, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1781, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1548, in do_with
-    return self.interact(trans_pause=True,
+  File "game/pia/chapter1pia.rpy", line 11, in script
+    "Jeketi University\nKampus ternama di indonesia dibawah naungan Melody Corps. Merupakan universitas Negeri unggulan di Jakarta."
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1493, in say
+    who(what, *args, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1391, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1042, in do_display
+    display_say(who,
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 738, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
   File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2814, in interact_core
@@ -41,10 +36,6 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\transition.py", line 383, in render
-    bottom = render(self.old_widget, width, height, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
   File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
@@ -53,16 +44,15 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 754, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\transform.py", line 957, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 978, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 413, in renpy.display.accelerator.RenderTransform.render_child
   File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 1396, in render
-    back = render(style.background, bw, bh, st, at)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\image.py", line 513, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\image.py", line 316, in wrap_render
+    rend = render(child, w, h, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 260, in renpy.display.render.render
   File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 626, in render
@@ -75,9 +65,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename, directory="images")
   File "D:\fanbase_project\KTPVisualNovel\renpy\loader.py", line 672, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'gui/dialog_default_gray_resize'.
+OSError: Couldn't find file 'images/BG/depan_kampus_resize.png'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Wed May  1 21:51:24 2024
+Wed May  1 23:08:07 2024

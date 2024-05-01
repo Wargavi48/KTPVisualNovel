@@ -6,7 +6,7 @@ label chapter1pia:
     
     scene awan with fade 
     pause(2.0)
-    scene kampus with dissolve
+    scene depan kampus with dissolve
     play music "audio/kampus.mp3" loop fadein 1.0
     "Jeketi University\nKampus ternama di indonesia dibawah naungan Melody Corps. Merupakan universitas Negeri unggulan di Jakarta." 
     "Banyak orang bilang, kampus ini mencetak banyak sekali orang sukses. Artis, politisi, ilmuan, bahkan menjadi Idol terkenal pun bisa diraih disini." 
@@ -18,7 +18,7 @@ label chapter1pia:
     pause(1.0)
     show text "BRUKKKK!" with Pause(1)
     play music "audio/ketemu_pia.mp3" loop fadein 1.0
-    scene kampus with dissolve
+    scene depan kampus with dissolve
     show pia_shy at char_center with dissolve
     show pia_side_shy at left with dissolve
     # show piasprites at char_test with dissolve
@@ -82,6 +82,7 @@ label chapter1pia:
     hide pia_angry with dissolve
     hide pia_side_angry with dissolve
     "MC dan pia berjalan ke kantin kampus untuk makan"
+    scene kantin with dissolve
     show pia at char_center with dissolve
     show pia_side at left
     pia "WEEEH GEDE JUGA KANTINNYA YA!"
@@ -238,6 +239,7 @@ label chapter1pia2:
     pia "MAKAAAAAN LAPEEEEEER"
     hide pia_side with dissolve
     mcname "setuju, laper"
+    scene cafe with dissolve
     "Fiony" "ayo, aku ada tempat rekomendasi enak deket sini"
     "[mcname], Pia, dan Fiony akhirnya makan ke cafe rekomendasi fiony"
     "Fiony ketemu sama temen yang biasanya nongkrong di cafe itu juga"
