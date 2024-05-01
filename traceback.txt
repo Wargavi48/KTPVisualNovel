@@ -1,32 +1,83 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/mini_game/quiz.rpy", line 1, in script
-    init python:
-  File "game/mini_game/quiz.rpy", line 7, in <module>
-    questions = json.load(renpy.file("./quiz.json"))
-OSError: Couldn't find file './quiz.json'.
+While loading <renpy.display.im.Image object ('gui/dialog_default_gray_resize') at 0x000000000689ffd0>:
+  File "game/pia/chapter1pia.rpy", line 79, in script
+    hide pia_side_angry with dissolve
+  File "game/pia/chapter1pia.rpy", line 79, in script
+    hide pia_side_angry with dissolve
+OSError: Couldn't find file 'gui/dialog_default_gray_resize'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/mini_game/quiz.rpy", line 1, in script
-    init python:
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 823, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/mini_game/quiz.rpy", line 7, in <module>
-    questions = json.load(renpy.file("./quiz.json"))
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 2641, in file
-    return open_file(fn, encoding=encoding)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 2623, in open_file
-    rv = renpy.loader.load(fn, directory=directory)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\main.py", line 635, in main
+    run(restart)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\main.py", line 145, in run
+    renpy.execution.run_context(True)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\execution.py", line 955, in run_context
+    context.run()
+  File "game/pia/chapter1pia.rpy", line 79, in script
+    hide pia_side_angry with dissolve
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "game/pia/chapter1pia.rpy", line 79, in script
+    hide pia_side_angry with dissolve
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1363, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2814, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1352, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\transition.py", line 383, in render
+    bottom = render(self.old_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 754, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 1396, in render
+    back = render(style.background, bw, bh, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 626, in render
+    return cache.get(self, render=True)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 309, in get
+    surf = image.load()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 761, in load
+    raise e
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 711, in load
+    filelike = renpy.loader.load(self.filename, directory="images")
   File "D:\fanbase_project\KTPVisualNovel\renpy\loader.py", line 672, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file './quiz.json'.
+OSError: Couldn't find file 'gui/dialog_default_gray_resize'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
-WGV Filles La Dreamcatcher 
-Wed May  1 18:43:51 2024
+WGV:Dreamcatcher 
+Wed May  1 21:51:24 2024

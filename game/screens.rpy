@@ -203,7 +203,8 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    # background Image("gui/dialog_default_gray_resize.png", xalign=0.03, yalign=1.0)
+    background Image("gui/dialog_default_black_resize.png", xalign=0.03, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos

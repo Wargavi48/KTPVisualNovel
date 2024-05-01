@@ -1,4 +1,5 @@
-﻿#Define Character Pia
+﻿
+#Define Character Pia
 define pia = Character("[pia_name]", image="Pia", color="#FFF",window_background="gui/dialog_box_pia_resize.png")
 default pia_angry = Character("[pia_name]", image="Pia_angry")
 default pia_laugh = Character("[pia_name]", image="Pia_laugh")
