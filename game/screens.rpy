@@ -217,13 +217,16 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name", accent=True)
+    xpos 125
+    ypos 26
+    size 35
     xalign gui.name_xalign
     yalign 0.5
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
 
-    xpos gui.dialogue_xpos
+    xpos 0.23
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
 
@@ -319,14 +322,30 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Kembali") action Rollback()
-            textbutton _("Riwayat") action ShowMenu('history')
-            textbutton _("Lompati") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Otomatis") action Preference("auto-forward", "toggle")
-            textbutton _("Simpan") action ShowMenu('save')
-            textbutton _("Simpan.C") action QuickSave()
-            textbutton _("Muat.C") action QuickLoad()
-            textbutton _("Setting") action ShowMenu('preferences')
+            textbutton _("Kembali") action Rollback():
+                yoffset -17
+                xoffset -115
+            textbutton _("Riwayat") action ShowMenu('history'):
+                yoffset -17
+                xoffset -95
+            textbutton _("Lompati") action Skip() alternate Skip(fast=True, confirm=True):
+                yoffset -17
+                xoffset -75
+            textbutton _("Otomatis") action Preference("auto-forward", "toggle"):
+                yoffset -17
+                xoffset -60
+            textbutton _("Simpan") action ShowMenu('save'):
+                yoffset -17
+                xoffset -40
+            textbutton _("Simpan.C") action QuickSave():
+                yoffset -17
+                xoffset -15
+            textbutton _("Muat.C") action QuickLoad():
+                yoffset -17
+                xoffset 10
+            textbutton _("Setting") action ShowMenu('preferences'):
+                yoffset -17
+                xoffset 45
 
 
 ## Kode ini memastikan layar quick_menu di tampilkan di dalam permainan,

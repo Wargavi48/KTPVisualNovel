@@ -28,10 +28,10 @@ label chapter1pia:
     mcname "Ah gak papa kok."
     mcname "hehe"
     mcname "Maaf juga aku ngelamun ditengah jalan"
-    hide pia_shy
     show pia_laugh at char_center with dissolve
     show pia_side_laugh at left with dissolve
     pia "hehe oke maaf bye!"
+    hide pia_shy with dissolve
     hide pia_laugh with dissolve
     hide pia_side_laugh with dissolve
     mcname "Ah! Aku juga harus buru - buru daftar ulang!"
@@ -121,21 +121,21 @@ label chapter1pia:
     mcname "Telen dulu Pia.........."
     mcname "(tapi iya deh, aku gak liat mba ini kayaknya pas pengenalan)"
     "???" "oh kamu MaBa ya? aku udah semester 4. gamungkin ikut kesana tadi"
-    show pia_side at left with dissolve
+    show pia_shy at char_placement with dissolve
+    show pia_side_shy at left with dissolve
     pia "eh kakak senior, maaf kak. kirain MaBa juga"
-    hide pia_side with dissolve
+    hide pia_side_shy with dissolve
     mcname "eh maap kak Pia emang kelakuannya nyablak (yup. pantes gak liat tadi)"
     "Fiony" "hahaha santai aja, lanjut makan. kok jadi kaku kalian. kenalin aku Fiony"
-    hide pia 
-    show pia_shy at char_placement with dissolve
     show pia_side_shy at left with dissolve
     pia "A-AKU PIA MELALEO"
     hide pia_side_shy with dissolve
     mcname "pppfffftt melaleo ahaha, kenalin kak aku [mcname]"
-    hide pia_shy 
     show pia_angry at char_placement with dissolve
     show pia_side_angry at left with dissolve
     pia "aaaaa kan jadi typo ngomongnya. meraleo maksudnyaaaaa"
+    hide pia
+    hide pia_shy 
     hide pia_angry with dissolve
     hide pia_side_angry with dissolve
     "Mereka ber 3 pun melanjutkan makan sembari ngobrol "

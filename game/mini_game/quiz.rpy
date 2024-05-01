@@ -2,8 +2,6 @@ init python:
     import random
     import json
 
-    
-
     questions = json.load(renpy.file("mini_game/quiz.json"))
 
     def select_random_question ():

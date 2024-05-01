@@ -12,7 +12,7 @@
 ##
 ## Tanda _() yang mengelilingi string menandai itu dapat di terjemahkan.
 
-define config.name = _("WGV Filles La Dreamcatcher")
+define config.name = _("WGV:Dreamcatcher")
 
 
 ## Meng determinasikan apakah judul yang di berikan di atas di tampilkan di menu
@@ -36,7 +36,7 @@ define gui.about = _p("""
 ## bangunan distribusi. Ini harus hanya berisi karakter ASCII-saja, dan tidak
 ## boleh mengandung  spasi, koma, atau kutip.
 
-define build.name = "WGV Dreamcatcher"
+define build.name = "WGV:Dreamcatcher"
 
 
 ## Suara dan musik #############################################################

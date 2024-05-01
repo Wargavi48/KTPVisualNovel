@@ -1,11 +1,11 @@
 ﻿#Define Character Pia
-define pia = Character("[pia_name]", image="Pia", color="#A41807")
-default pia_angry = Character("[pia_name]", image="Pia_angry", color="#A41807")
-default pia_laugh = Character("[pia_name]", image="Pia_laugh", color="#A41807")
-default pia_sad = Character("[pia_name]", image="Pia_sad", color="#A41807")
-default pia_sh = Character("[pia_name]", image="pia_sh", color="#A41807")
-default pia_shy = Character("[pia_name]", image="Pia_shy", color="#A41807")
-default pia_smile = Character("[pia_name]", image="pia_smile", color="#A41807")
+define pia = Character("[pia_name]", image="Pia", color="#FFF",window_background="gui/dialog_box_pia_resize.png")
+default pia_angry = Character("[pia_name]", image="Pia_angry")
+default pia_laugh = Character("[pia_name]", image="Pia_laugh")
+default pia_sad = Character("[pia_name]", image="Pia_sad")
+default pia_sh = Character("[pia_name]", image="pia_sh")
+default pia_shy = Character("[pia_name]", image="Pia_shy")
+default pia_smile = Character("[pia_name]", image="pia_smile")
 default pia_name = "????"
 
 # define piasprites = Character("Pia Sprites", image="Pia",color="#000000")
