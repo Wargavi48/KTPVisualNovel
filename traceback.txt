@@ -1,64 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 447, in execute
-    screen main_menu():
-  File "game/screens.rpy", line 447, in execute
-    screen main_menu():
-  File "game/screens.rpy", line 454, in execute
-    add "gui/overlay/side_bar_menu.png" at overlay_appear
-  File "game/screens.rpy", line 454, in keywords
-    add "gui/overlay/side_bar_menu.png" at overlay_appear
-  File "game/screens.rpy", line 454, in <module>
-    add "gui/overlay/side_bar_menu.png" at overlay_appear
-NameError: name 'overlay_appear' is not defined
+  File "game/mini_game/quiz.rpy", line 1, in script
+    init python:
+  File "game/mini_game/quiz.rpy", line 7, in <module>
+    questions = json.load(renpy.file("./quiz.json"))
+OSError: Couldn't find file './quiz.json'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
+  File "game/mini_game/quiz.rpy", line 1, in script
+    init python:
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 823, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2683, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2683, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 447, in execute
-    screen main_menu():
-  File "game/screens.rpy", line 447, in execute
-    screen main_menu():
-  File "game/screens.rpy", line 454, in execute
-    add "gui/overlay/side_bar_menu.png" at overlay_appear
-  File "game/screens.rpy", line 454, in keywords
-    add "gui/overlay/side_bar_menu.png" at overlay_appear
-  File "game/screens.rpy", line 454, in <module>
-    add "gui/overlay/side_bar_menu.png" at overlay_appear
-NameError: name 'overlay_appear' is not defined
+  File "game/mini_game/quiz.rpy", line 7, in <module>
+    questions = json.load(renpy.file("./quiz.json"))
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 2641, in file
+    return open_file(fn, encoding=encoding)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 2623, in open_file
+    rv = renpy.loader.load(fn, directory=directory)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file './quiz.json'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV Filles La Dreamcatcher 
-Mon Apr 29 21:44:41 2024
+Wed May  1 18:43:51 2024
