@@ -4,7 +4,7 @@ image mc bedroom = "images/BG/bedroom.png"
 image kampus = "images/BG/kampus.png"
 image depan kampus = "images/BG/depan_kampus_resize.jpg"
 image cafe = "images/BG/cafe_resize.jpg"
-image kantin = "images/BG/kantin_resize.png"
+image kantin = "images/BG/kantin_resize.jpg"
 image awan = "images/BG/transi.png"
 image white = Solid("#FFFFFF")
 

@@ -23,7 +23,7 @@ label start:
         stop music fadeout 1.0
 
 label intro:
-
+    $ quick_menu = False 
     scene black 
     with dissolve
     pause(2.0)
@@ -63,7 +63,8 @@ label intro:
 
     scene mc bedroom 
     with dissolve
-    play music "audio/backsound_kamar.mp3" loop fadein 1.0 
+    play music "audio/backsound_kamar.mp3" loop fadein 1.0
+    $ quick_menu = True 
     show mama at small_center
     show side mama at left
     $ mama_name = Character("Mamah")

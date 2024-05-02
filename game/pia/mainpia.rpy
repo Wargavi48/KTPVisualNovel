@@ -12,7 +12,6 @@ define small_right = Transform(zoom=0.5, xalign=1.0)
 
 label mainpia:
     $ renpy.block_rollback()
-    $ quick_menu = True
     # $ default_mouse = "mouse pia"
     # $ config.mouse = { 
     # 'default' : [ ('gui/button/cursor_1.png', 0, 0)],
@@ -23,7 +22,8 @@ label mainpia:
     scene mc bedroom with dissolve
     show mama at small_center with dissolve
     play music "audio/backsound_kamar.mp3" loop fadein 1.0
-    $ mmama_name = Character("Mamah")
+    $ mmama_name = Character("Mamah", color="#FFF")
+    $ quick_menu = True
     mama "Sekarang mandi, sarapan, abis itu langsung ke stasiun ya buat ke Jeketi University buat daftar ulang."
     mama "Mama udah bilang ke temen mama yang di jakarta kalo kamu akan ngekost di tempat dia"
     mcname "Siap mah!"

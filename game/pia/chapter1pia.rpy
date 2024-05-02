@@ -3,22 +3,24 @@ define char_test = Transform(zoom=0.5,xalign=-2.0,yalign=-2.0)
 
 
 label chapter1pia:
-    
+    $ renpy.block_rollback()
+    $ quick_menu = False
     scene awan with fade 
     pause(2.0)
     scene depan kampus with dissolve
     play music "audio/kampus.mp3" loop fadein 1.0
+    $ quick_menu = True
     "Jeketi University\nKampus ternama di indonesia dibawah naungan Melody Corps. Merupakan universitas Negeri unggulan di Jakarta." 
     "Banyak orang bilang, kampus ini mencetak banyak sekali orang sukses. Artis, politisi, ilmuan, bahkan menjadi Idol terkenal pun bisa diraih disini." 
     "Orang yang lulus menyandang gelar lulusan dari JU banyak dicari orang, karena kualitas pelajarnya sangat baik. Namun, untuk masuk ke JU ini pun tidak mudah"
     mcname "Wah! besar juga ya kampusnya, dan aku bakal berkuliah disini huhuuu beruntungnya aku"
-
-
+    $ quick_menu = False
     scene black with dissolve
     pause(1.0)
     show text "BRUKKKK!" with Pause(1)
     play music "audio/ketemu_pia.mp3" loop fadein 1.0
     scene depan kampus with dissolve
+    $ quick_menu = True
     show pia_shy at char_center with dissolve
     show pia_side_shy at left with dissolve
     # show piasprites at char_test with dissolve
@@ -36,10 +38,12 @@ label chapter1pia:
     hide pia_side_laugh with dissolve
     mcname "Ah! Aku juga harus buru - buru daftar ulang!"
     "MC pun selesai registrasi daftar ulang ke jurusan DKV"
+    $ quick_menu = False
     scene black with dissolve
     show text "1 MINGGU KEMUDIAN" with Pause(1.5)
     scene black with dissolve
     scene kampus with dissolve
+    $ quick_menu = True
     "Dekan DKV" "Selamat datang di Jeketi University para Mahasiswa dan Mahasiswi baru! raihlah mimpi kalian disini!! selamat berjuang!"
     "Dekan DKV" "Hadirin, dipersilakan untuk pulang"
     mcname "Hueeeee....capek juga duduk doang dengerin orang ngomong. besok mulai masuk kuliah, gak sabar bakal ketemu orang orang baru"
@@ -81,10 +85,12 @@ label chapter1pia:
     mcname "lah, lesgooo, pas banget ini laper"
     hide pia_angry with dissolve
     hide pia_side_angry with dissolve
+    $ quick_menu = False
     "MC dan pia berjalan ke kantin kampus untuk makan"
     scene kantin with dissolve
     show pia at char_center with dissolve
     show pia_side at left
+    $ quick_menu = True
     pia "WEEEH GEDE JUGA KANTINNYA YA!"
     hide pia_side with dissolve
     mcname "selain kantin, suara kamu juga gede btw"
@@ -170,6 +176,7 @@ label chapter1pia2:
     pause(2.0)
     scene kampus with dissolve
     play music "audio/kampus.mp3" loop fadein 1.0
+    $ quick_menu = True
     mcname "gak tau, belom sempet muter muter jakarta"
     show pia at char_placement with dissolve
     show pia_side at left
@@ -234,7 +241,7 @@ label chapter1pia2:
     pia "weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan. pensil 2, cat air, kuas....tapi pas dijumlah gak kerasa mahal juga"
     hide pia_side with dissolve
     "Fiony" "welcome to DKV"
-    "[mcname] & [pia]" "huhuhuhu"
+    "{size=-5}[mcname] & [pia]{/size}" "huhuhuhu"
     show pia_side at left
     pia "MAKAAAAAN LAPEEEEEER"
     hide pia_side with dissolve

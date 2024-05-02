@@ -1,4 +1,5 @@
 label truepia:
+    $ renpy.block_rollback()
     mcname "aku tau, kebetulan sempet jalan jalan daerah sini pas lowong kemaren"
     show pia at char_placement with dissolve
     show pia_side at left
