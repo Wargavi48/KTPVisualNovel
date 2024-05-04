@@ -30,7 +30,7 @@ label intro:
 
     label namemc:
         $ mcname = ""
-        $renpy.call_screen("name_input", "Silahkan masukkan nama kamu", ok_action=Jump("processmcname"), output_var="mcname")
+        $renpy.call_screen("name_input", "{size=-5}Silahkan masukkan nama kamu{/size}", ok_action=Jump("processmcname"), output_var="mcname")
 
     label processmcname:
         if not mcname or mcname == "" : 
