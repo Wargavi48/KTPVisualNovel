@@ -45,11 +45,9 @@ label intro:
     pause(2.0)
     
     show kana_sh at small_left with dissolve
-    pause(2.0)
     kana_sh "cepet ih bangun, sarapan dulu"
 
     show tono_sh at small_center with dissolve
-    pause(2.0)
     tono_sh "bangun kocak, Tidur mulu kayak gue"
 
     show pia_sh at small_right with dissolve

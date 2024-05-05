@@ -4,7 +4,7 @@ define pia = Character("[pia_name]", image="Pia", color="#FFF",window_background
 default pia_angry = Character("[pia_name]", image="Pia_angry")
 default pia_laugh = Character("[pia_name]", image="Pia_laugh")
 default pia_sad = Character("[pia_name]", image="Pia_sad")
-default pia_sh = Character("[pia_name]", image="pia_sh")
+default pia_sh = Character("[pia_name]", image="pia_sh", window_background="gui/dialog_box_pia_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
 default pia_shy = Character("[pia_name]", image="Pia_shy")
 default pia_smile = Character("[pia_name]", image="pia_smile")
 default pia_name = "????"
@@ -13,24 +13,24 @@ default pia_name = "????"
 
 
 # Define Character Tono
-define tono = Character("[tono_name]", image="Tono", color="#AD6469")
 default tono_name = "????"
-default tono_sh = Character("???", image="tono_sh", color="#AD6469")
-default tono_cry = Character("Tono", image="tono_cry", color="#AD6469")
-default tono_happy = Character("Tono", image="tono_happy", color="#AD6469")
-default tono_angry = Character("Tono", image="tono_angry", color="#AD6469")
-default tono_confused = Character("Tono", image="tono_confused", color="#AD6469")
-default tono_blinded = Character("Tono", image="tono_blinded", color="#AD6469")
+define tono = Character("[tono_name]", image="Tono", color="#FFF",window_background="gui/dialog_box_tana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
+default tono_sh = Character("[tono_name]", image="tono_sh", window_background="gui/dialog_box_tana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
+default tono_cry = Character("[tono_name]", image="tono_cry")
+default tono_happy = Character("[tono_name]", image="tono_happy")
+default tono_angry = Character("[tono_name]", image="tono_angry")
+default tono_confused = Character("[tono_name]", image="tono_confused")
+default tono_blinded = Character("[tono_name]", image="tono_blinded")
 
 # Define Character Kana
-define kana = Character("[kana_name]", image="Kana", color="#383961")
 default kana_name = "????"
-default kana_sh = Character("???", image="kana_sh", color="#383961")
-default kana_cry = Character("Kana", image="kana_cry", color="#383961")
-default kana_happy = Character("Kana", image="kana_happy", color="#383961")
-default kana_angry = Character("Kana", image="kana_angry", color="#383961")
-default kana_confused = Character("Kana", image="kana_confused", color="#383961")
-default kana_blinded = Character("Kana", image="kana_blinded", color="#383961")
+define kana = Character("[kana_name]", image="Kana", color="#FFF", window_background="gui/dialog_box_kana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
+default kana_sh = Character("[kana_name]", image="kana_sh", window_background="gui/dialog_box_kana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
+default kana_cry = Character("[kana_name]", image="kana_cry")
+default kana_happy = Character("[kana_name]", image="kana_happy")
+default kana_angry = Character("[kana_name]", image="kana_angry")
+default kana_confused = Character("[kana_name]", image="kana_confused")
+default kana_blinded = Character("[kana_name]", image="kana_blinded")
 
 
 
