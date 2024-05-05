@@ -391,12 +391,18 @@ screen navigation():
                     at start_menu
                     text_color "#000000"
                     text_hover_color "#FF7700"
+                    ypos -150
+                    background "gui/main_menu_button.png"
+                    text_xpos 120
 
             textbutton _("Achievements") action ShowMenu("achievement_gallery"):
                 if renpy.get_screen("main_menu"):
                     at achievement_menu
                     text_color "#000000" 
                     text_hover_color "#FF7700"
+                    ypos -100
+                    background "gui/main_menu_button.png"
+                    text_xpos 50
 
         else:
 
@@ -408,13 +414,20 @@ screen navigation():
             if renpy.get_screen("main_menu"):
                 at load_menu
                 text_color "#000000"
-                text_hover_color "#FF7700" 
+                text_hover_color "#FF7700"
+                ypos -50
+                background "gui/main_menu_button.png"
+                text_xpos 130
 
         textbutton _("Setting") action ShowMenu("preferences"):
             if renpy.get_screen("main_menu"):
                 at setting_menu
                 text_color "#000000"
-                text_hover_color "#FF7700" 
+                text_hover_color "#FF7700"
+                ypos 0
+                background "gui/main_menu_button.png"
+                text_xpos 110
+
 
         if _in_replay:
 
@@ -429,6 +442,9 @@ screen navigation():
                 at about_menu
                 text_color "#000000"
                 text_hover_color "#FF7700" 
+                ypos 50
+                background "gui/main_menu_button.png"
+                text_xpos 120
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -438,6 +454,9 @@ screen navigation():
                     at help_menu
                     text_color "#000000"
                     text_hover_color "#FF7700" 
+                    ypos 100
+                    background "gui/main_menu_button.png"
+                    text_xpos 130
 
         if renpy.variant("pc"):
 
@@ -448,7 +467,9 @@ screen navigation():
                     at quit_menu
                     text_color "#000000"
                     text_hover_color "#FF7700"
-
+                    ypos 150
+                    background "gui/main_menu_button.png"
+                    text_xpos 80
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
