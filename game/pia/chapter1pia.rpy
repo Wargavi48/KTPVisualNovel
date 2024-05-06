@@ -90,6 +90,7 @@ label chapter1pia:
     scene kantin with dissolve
     show pia at char_center with dissolve
     show pia_side at left
+    play music "audio/bgm_kantin.mp3" loop fadein 1.0
     $ quick_menu = True
     pia "WEEEH GEDE JUGA KANTINNYA YA!"
     hide pia_side with dissolve
@@ -150,6 +151,7 @@ label chapter1pia:
     show text "KEESOKAN HARINYA" with Pause(1.5)
     scene black with dissolve
     scene kampus with dissolve
+    play music "audio/ketemu_pia.mp3" loop fadein 1.0
     show pia at char_placement with dissolve
     show pia_side at left with dissolve
     pia "hueeeeeee [mcname], baru hari pertama. kayaknya udah berat gak sih pelajarannya"
@@ -247,6 +249,7 @@ label chapter1pia2:
     hide pia_side with dissolve
     mcname "setuju, laper"
     scene cafe with dissolve
+    play music "audio/bgm_cafe.mp3" loop fadein 1.0
     "Fiony" "ayo, aku ada tempat rekomendasi enak deket sini"
     "[mcname], Pia, dan Fiony akhirnya makan ke cafe rekomendasi fiony"
     "Fiony ketemu sama temen yang biasanya nongkrong di cafe itu juga"
