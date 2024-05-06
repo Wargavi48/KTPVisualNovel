@@ -1,76 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 37, in script
-    $renpy.call_screen("popup_message","Wajib memasukkan nama!", ok_action=Jump("namemc"))
-  File "game/script.rpy", line 37, in <module>
-    $renpy.call_screen("popup_message","Wajib memasukkan nama!", ok_action=Jump("namemc"))
-  File "game/modal_input_name.rpy", line 53, in execute
-    screen popup_message(message, ok_action):
-  File "game/modal_input_name.rpy", line 53, in execute
-    screen popup_message(message, ok_action):
-  File "game/modal_input_name.rpy", line 64, in execute
-    frame:
-  File "game/modal_input_name.rpy", line 68, in execute
-    vbox:
-  File "game/modal_input_name.rpy", line 79, in execute
-    input default "" value VariableInputValue(output_var) length len allow characters
-  File "game/modal_input_name.rpy", line 79, in keywords
-    input default "" value VariableInputValue(output_var) length len allow characters
-  File "game/modal_input_name.rpy", line 79, in <module>
-    input default "" value VariableInputValue(output_var) length len allow characters
-NameError: name 'output_var' is not defined
+  File "renpy/common/00start.rpy", line 216, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 531, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 531, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 542, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 37, in script
-    $renpy.call_screen("popup_message","Wajib memasukkan nama!", ok_action=Jump("namemc"))
+  File "renpy/common/00start.rpy", line 216, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 531, in script
+    python hide:
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 823, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/script.rpy", line 37, in <module>
-    $renpy.call_screen("popup_message","Wajib memasukkan nama!", ok_action=Jump("namemc"))
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 3413, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2683, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2683, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/modal_input_name.rpy", line 53, in execute
-    screen popup_message(message, ok_action):
-  File "game/modal_input_name.rpy", line 53, in execute
-    screen popup_message(message, ok_action):
-  File "game/modal_input_name.rpy", line 64, in execute
-    frame:
-  File "game/modal_input_name.rpy", line 68, in execute
-    vbox:
-  File "game/modal_input_name.rpy", line 79, in execute
-    input default "" value VariableInputValue(output_var) length len allow characters
-  File "game/modal_input_name.rpy", line 79, in keywords
-    input default "" value VariableInputValue(output_var) length len allow characters
-  File "game/modal_input_name.rpy", line 79, in <module>
-    input default "" value VariableInputValue(output_var) length len allow characters
-NameError: name 'output_var' is not defined
+  File "renpy/common/00keymap.rpy", line 531, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 542, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+  File "D:\fanbase_project\KTPVisualNovel\renpy\loadsave.py", line 829, in load
+    log.unfreeze(roots, label="_after_load")
+  File "D:\fanbase_project\KTPVisualNovel\renpy\rollback.py", line 1130, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\rollback.py", line 925, in rollback
+    self.load_failed()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\rollback.py", line 843, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Fri May  3 00:16:29 2024
+Mon May  6 19:55:14 2024
