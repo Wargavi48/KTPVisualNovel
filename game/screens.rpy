@@ -127,20 +127,30 @@ transform setting_menu:
     pause 5.2
     ease 0.3 yoffset 0 alpha 1.0
 
-transform about_menu:
+# transform about_menu:
+#     yoffset 100 alpha 0.0
+#     pause 5.5
+#     ease 0.3 yoffset 0 alpha 1.0
+
+transform help_menu:
     yoffset 100 alpha 0.0
     pause 5.5
     ease 0.3 yoffset 0 alpha 1.0
 
-transform help_menu:
+# transform help_menu:
+#     yoffset 100 alpha 0.0
+#     pause 5.8
+#     ease 0.3 yoffset 0 alpha 1.0
+
+transform quit_menu:
     yoffset 100 alpha 0.0
     pause 5.8
     ease 0.3 yoffset 0 alpha 1.0
 
-transform quit_menu:
-    yoffset 100 alpha 0.0
-    pause 6.2
-    ease 0.3 yoffset 0 alpha 1.0
+# transform quit_menu:
+#     yoffset 100 alpha 0.0
+#     pause 6.2
+#     ease 0.3 yoffset 0 alpha 1.0
 
 
 ################################################################################
@@ -391,18 +401,18 @@ screen navigation():
                     at start_menu
                     text_color "#000000"
                     text_hover_color "#FF7700"
-                    ypos -150
+                    ypos -250
                     background "gui/main_menu_button.png"
                     text_xpos 120
 
-            textbutton _("Achievements") action ShowMenu("achievement_gallery"):
-                if renpy.get_screen("main_menu"):
-                    at achievement_menu
-                    text_color "#000000" 
-                    text_hover_color "#FF7700"
-                    ypos -100
-                    background "gui/main_menu_button.png"
-                    text_xpos 50
+            # textbutton _("Achievements") action ShowMenu("achievement_gallery"):
+            #     if renpy.get_screen("main_menu"):
+            #         at achievement_menu
+            #         text_color "#000000" 
+            #         text_hover_color "#FF7700"
+            #         ypos -100
+            #         background "gui/main_menu_button.png"
+            #         text_xpos 50
 
         else:
 
@@ -415,7 +425,7 @@ screen navigation():
                 at load_menu
                 text_color "#000000"
                 text_hover_color "#FF7700"
-                ypos -50
+                ypos -150
                 background "gui/main_menu_button.png"
                 text_xpos 130
 
@@ -424,7 +434,7 @@ screen navigation():
                 at setting_menu
                 text_color "#000000"
                 text_hover_color "#FF7700"
-                ypos 0
+                ypos -50
                 background "gui/main_menu_button.png"
                 text_xpos 110
 
@@ -437,26 +447,27 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about"):
-            if renpy.get_screen("main_menu"):
-                at about_menu
-                text_color "#000000"
-                text_hover_color "#FF7700" 
-                ypos 50
-                background "gui/main_menu_button.png"
-                text_xpos 120
+        # textbutton _("About") action ShowMenu("about"):
+        #     if renpy.get_screen("main_menu"):
+        #         at about_menu
+        #         text_color "#000000"
+        #         text_hover_color "#FF7700" 
+        #         ypos 50
+        #         background "gui/main_menu_button.png"
+        #         text_xpos 120
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Bantuan tidak perlu atau relevan dengan perangkat mobile.
-            textbutton _("Help") action ShowMenu("help"):
+            # Harusnya dibawah ini help sementara ganti jadi extras dulu
+            textbutton _("Extras") action ShowMenu("help"):
                 if renpy.get_screen("main_menu"):
                     at help_menu
                     text_color "#000000"
                     text_hover_color "#FF7700" 
-                    ypos 100
+                    ypos 50
                     background "gui/main_menu_button.png"
-                    text_xpos 130
+                    text_xpos 100
 
         if renpy.variant("pc"):
 
