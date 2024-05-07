@@ -87,5 +87,7 @@ label intro:
             jump mainpia
         "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
             jump ED1
+        "E. Tes Mini Game":
+            jump startPiaGame
 
     return
