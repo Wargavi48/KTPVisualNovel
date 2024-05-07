@@ -12,14 +12,20 @@ define small_right = Transform(zoom=0.5, xalign=1.0)
 
 label mainkana:
     $ renpy.block_rollback()
-    $quick_menu = True
+    $quick_menu = False
     # $ default_mouse = "mouse_kanaia"
-    show mama at small_center with dissolve
-    $ mmama_name = Character("Mamah")
-    "mama" "Sekarang mandi, sarapan, abis itu langsung ke stasiun ya buat ke Jeketi University buat daftar ulang."
-    "mama" "Mama udah bilang ke temen mama yang di jakarta kalo kamu akan ngekost di tempat dia"
-    mcname "Siap mah!"
-    hide mama with dissolve
+    scene black with dissolve
+    show text "{color=#FFF}Chapter I{/color}" with Pause(1.5)
+    "Hari baru sudah dimulai"
+    "Lembaran baru di hidupku pun akhirnya terbuka dan akhirnya aku telah memasuki jenjang masuk kuliah"
+    "disini aku memilih jurusan HI dan hari ini hari dimana aku datang di Jakarta"
+
+    scene black with dissolve
+    scene depan kampus with dissolve
+    mcname "Wahhh, jadi ini namanya kota Jakarta"
+    mcname "Buuu, anakmu akhirnya kuliah di sini"
+    mcname "DI KOTA JAKARTA!!!"
+    mcname "Alhamdulillah mah pah"
 
     jump utamakana
 

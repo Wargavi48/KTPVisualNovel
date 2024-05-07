@@ -62,7 +62,7 @@ define config.has_voice = True
 ## dimainkan sampai permainan di mulai, sampai di hentikan atau file lain di
 ## mainkan.
 
-define config.main_menu_music = "audio/main_sound_sample.mp3"
+define config.main_menu_music = "audio/Dreamcatcher_inst.mp3"
 
 
 ## Transisi ####################################################################
