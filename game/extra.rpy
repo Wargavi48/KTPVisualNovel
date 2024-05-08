@@ -243,69 +243,45 @@ screen music():
 
 # Content of your credits screen
 define credits_string = _p("""
-{size=+15}Credits{/size}
+{size=+15}WGV: DreamCatcher Credits{/size}
 \n
-{size=+10}Directed By:{/size}
+
+{size=+10}Production{/size}
 \n
-Nue
+Wargavi48
 \n
-{size=+10}Programmer:{/size}
+{size=+10}Development Team:{/size}
 \n
-Tomato
+Director: Nue
 \n
-Sunny
+Programmer: Tomato, Sunny, Exilade
 \n
-Exilade
+Writer: Nue, Aergia, Rizka MD
 \n
-{size=+10}Main Artist:{/size}
+Co-Writer: Lenkuas, Tomato, Kodok
 \n
-Lengkuas
+Quiz Maker: Kodok
 \n
-Vhyrie
+Characters: Lenkuas, Yukisaki, Nue
 \n
-{size=+10}Mini Game Artist:{/size}
+CG: Lenkuas
 \n
-Tebtebo
+Backgrounds: Neru, Hann, Tebtebo, Pipigoroo, Awil
 \n
-Pipigoro
+UI Design: Heyysatsu
 \n
-Addo
+Logo: Ahsae
 \n
-{size=+10}Supporting Artist:{/size}
+Pia Minigame: Tebtebo
 \n
-Hann
+Kana Minigame: Pipigoroo
 \n
-Awilwil
+Tana Minigame: Addo
 \n
-Ahsae
+OST: HasbiLH, Rizuka Miku, Shiiyato
 \n
-{size=+10}Sound Seeker:{/size}
+Music & Sound: Koko Jon, Kodok, Black Jacket 
 \n
-Koko Jon
-\n
-BlackJckt
-\n
-Kodok
-\n
-{size=+10}Supporting Team:{/size}
-\n
-Fatimah
-\n
-Swift Ch.
-\n
-Copolatos
-\n
-{size=+10}Anak Band:{/size}
-\n
-Hasbi Lh
-\n
-Rizuka Miku
-\n
-Galaxy
-{size=+10}Story Writer:{/size}
-\n
-Anak Oyaji
-\n\n
 {size=+10}Sponsors{/size}
 \n
 Player 1
@@ -338,9 +314,7 @@ Tulis semua donatur disini
 \n
 {size=+10}Special Thanks{/size}
 \n
-All The Dreamcatcher Player
-\n 
-Para Warga Virtual 48
+All The Dreamcatcher Player & Para Warga Virtual 48
 \n\n
 {size=+10}Very Special Thanks{/size}
 \n
