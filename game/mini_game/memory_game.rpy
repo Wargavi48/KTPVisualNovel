@@ -114,7 +114,7 @@ screen memory_mini_game:
     #     action NullAction() # Replace with your own action to go back to the main flow of the visual novel. For example: Jump("you_label_name")
     #     text "Quit" text_align 0.5 color "#000000" size 25
 
-default card_amount = 12 # The amount of cards you want to show.
+default card_amount = 24 # The amount of cards you want to show.
 default card_rows = 3 # How many rows these cards should be placed on.
 default cards = [] # Holds the name of the cards and their properties.
 default selected_cards = [] # Holds the index positions of the cards selected in the cards list.

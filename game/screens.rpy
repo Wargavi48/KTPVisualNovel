@@ -106,26 +106,26 @@ transform overlay_right:
     ease 1.0 xoffset 770 alpha 1.0
 
 transform start_menu:
-    yoffset 100 alpha 0.0
+    xoffset -100 alpha 0.0
     pause 4.3
-    ease 0.3 yoffset 0 alpha 1.0
+    ease 0.3 xoffset 0 alpha 1.0
 
-transform achievement_menu:
-    yoffset 100 alpha 0.0
-    pause 4.6
-    ease 0.3 yoffset 0 alpha 1.0
+# transform achievement_menu:
+#     yoffset 100 alpha 0.0
+#     pause 4.6
+#     ease 0.3 yoffset 0 alpha 1.0
 
 
 transform load_menu:
-    yoffset 100 alpha 0.0
-    pause 4.9
-    ease 0.3 yoffset 0 alpha 1.0
+    xoffset 100 alpha 0.0
+    pause 4.6
+    ease 0.3 xoffset 0 alpha 1.0
 
 
 transform setting_menu:
-    yoffset 100 alpha 0.0
-    pause 5.2
-    ease 0.3 yoffset 0 alpha 1.0
+    xoffset -100 alpha 0.0
+    pause 4.9
+    ease 0.3 xoffset 0 alpha 1.0
 
 # transform about_menu:
 #     yoffset 100 alpha 0.0
@@ -133,9 +133,9 @@ transform setting_menu:
 #     ease 0.3 yoffset 0 alpha 1.0
 
 transform help_menu:
-    yoffset 100 alpha 0.0
-    pause 5.5
-    ease 0.3 yoffset 0 alpha 1.0
+    xoffset 100 alpha 0.0
+    pause 5.2
+    ease 0.3 xoffset 0 alpha 1.0
 
 # transform help_menu:
 #     yoffset 100 alpha 0.0
@@ -143,9 +143,15 @@ transform help_menu:
 #     ease 0.3 yoffset 0 alpha 1.0
 
 transform quit_menu:
-    yoffset 100 alpha 0.0
+    xoffset -100 alpha 0.0
+    pause 5.5
+    ease 0.3 xoffset 0 alpha 1.0
+
+transform logo_game:
+    zoom 2.0 alpha 0.0
     pause 5.8
-    ease 0.3 yoffset 0 alpha 1.0
+    ease 1.0 zoom 1.0 alpha 1.0
+
 
 # transform quit_menu:
 #     yoffset 100 alpha 0.0
@@ -401,7 +407,8 @@ screen navigation():
                     at start_menu
                     text_color "#000000"
                     text_hover_color "#FF7700"
-                    ypos -250
+                    ypos -100
+                    # ypos 0
                     background "gui/main_menu_button.png"
                     text_xpos 120
 
@@ -425,7 +432,8 @@ screen navigation():
                 at load_menu
                 text_color "#000000"
                 text_hover_color "#FF7700"
-                ypos -150
+                ypos -50
+                # ypos 50
                 background "gui/main_menu_button.png"
                 text_xpos 130
 
@@ -434,7 +442,8 @@ screen navigation():
                 at setting_menu
                 text_color "#000000"
                 text_hover_color "#FF7700"
-                ypos -50
+                ypos 0
+                # ypos 100
                 background "gui/main_menu_button.png"
                 text_xpos 110
 
@@ -466,6 +475,7 @@ screen navigation():
                     text_color "#000000"
                     text_hover_color "#FF7700" 
                     ypos 50
+                    # ypos 150
                     background "gui/main_menu_button.png"
                     text_xpos 100
 
@@ -478,7 +488,8 @@ screen navigation():
                     at quit_menu
                     text_color "#000000"
                     text_hover_color "#FF7700"
-                    ypos 150
+                    ypos 100
+                    # ypos 200
                     background "gui/main_menu_button.png"
                     text_xpos 80
 
@@ -508,6 +519,11 @@ screen main_menu():
     add "screens/main_menu_ktp.png" at ktp_appear
     add "screens/kabut_kiri.png" at overlay_left
     add "screens/kabut_kanan.png" at overlay_right
+    add "gui/Wordmark_resize.png":
+        at logo_game
+        ypos 764
+        xpos 1220
+
     # add "gui/overlay/side_bar_menu.png" at overlay_appear
     ## Frame kosong ini menggelap di menu utama.
     frame:
