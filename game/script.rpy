@@ -12,7 +12,7 @@ define small_center = Transform(zoom=0.5, xalign=0.5)
 define small_left = Transform(zoom=0.5, xalign=0.0)
 define small_right = Transform(zoom=0.5, xalign=1.0)
 define char_placement = Transform(zoom=0.5,xalign=0.5,yalign=-2.0)
-define char_placement_left = Transform(zoom=1.0,xalign=0.2,yalign=-0.6)
+define char_placement_left = Transform(zoom=0.5,xalign=0.2,yalign=-2.0)
 define char_placement_right = Transform(zoom=0.5,xalign=1.0,yalign=-0.6)
 define char_center = Transform(zoom=0.9,xalign=0.5,yalign=-0.1)
 
@@ -87,7 +87,7 @@ label intro:
             jump mainpia
         "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
             jump ED1
-        "E. Tes Mini Game":
-            jump startPiaGame
+        # "E. Tes Mini Game":
+        #     jump startPiaGame
 
     return

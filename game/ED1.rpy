@@ -2,12 +2,19 @@
     $ renpy.block_rollback()
     $quick_menu = True
     scene black with dissolve
-    play music "audio/Dreamcatcher.mp3" noloop
+    play music "audio/Dreamcatcher.mp3"
     $ malas_kuliah.grant()
     "Kamu memutuskan untuk menunda kuliah ditahun ini."
 
     call credits from _call_credits
     return
+
+label ending:
+    $ renpy.block_rollback()
+    $ quick_menu = False 
+    play music "audio/Dreamcatcher.mp3"
+    jump credits
+
 
 label credits:
     $ renpy.block_rollback()

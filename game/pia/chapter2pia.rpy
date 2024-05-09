@@ -5,6 +5,7 @@ label chapter2pia:
     play music "audio/kampus.mp3" loop fadein 1.0
     scene kampus with dissolve
     "*1 minggu kemudian"
+    $ quick_menu = True
     show pia at char_center with dissolve
     show pia_side at left with dissolve
     pia "pagiiiiiii [mcname]!!! sendirian aja. aku duduk sebelah kamu ya"
@@ -12,6 +13,7 @@ label chapter2pia:
     # insert mini game quiz
     hide pia with dissolve
     hide pia_side with dissolve
+    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}QUIZ TIME{/color}" with Pause(1.5) 
     scene black with dissolve
@@ -19,5 +21,9 @@ label chapter2pia:
 
 label chapter2pia2:
     "Selesai ujian"
-    play music "audio/ost_vocal.mp3" noloop
-    jump credits
+    $ renpy.block_rollback()
+    $ quick_menu = False 
+    scene black with dissolve
+    show text "{color=#FFF}MINI GAME{/color}" with Pause(1.5) 
+    scene black with dissolve
+    jump startPiaGame

@@ -147,6 +147,7 @@ label chapter1pia:
     hide pia_angry with dissolve
     hide pia_side_angry with dissolve
     "Mereka ber 3 pun melanjutkan makan sembari ngobrol "
+    $ quick_menu = False
     scene black with dissolve
     show text "KEESOKAN HARINYA" with Pause(1.5)
     scene black with dissolve
@@ -154,6 +155,7 @@ label chapter1pia:
     play music "audio/ketemu_pia.mp3" loop fadein 1.0
     show pia at char_placement with dissolve
     show pia_side at left with dissolve
+    $ quick_menu = True
     pia "hueeeeeee [mcname], baru hari pertama. kayaknya udah berat gak sih pelajarannya"
     hide pia_side with dissolve
     mcname "engga sih, seru kok kayaknya. cuma ya ternyata banyak yang harus kita beli nih buat pertemuan selanjutnya"
@@ -191,10 +193,12 @@ label chapter1pia2:
     mcname "cepio?"
     show pia_side at left
     pia "loh aku udah bestie!! aku manggil dia cepio sekarang muahahahaha"
+    $ quick_menu = False
     hide pia with dissolve
     hide pia_side with dissolve
     "Keesokan Harinya"
     # scene depan toko sponsor 1
+    $ quick_menu = True
     mcname "((janjiannya di depan toko #sponsor 1, tapi mana nih Pia sama Kak Fiony belum sampe. udah setengah jam nunggu huhuhu))"
     show pia at char_placement with dissolve
     show pia_side at left
@@ -215,8 +219,10 @@ label chapter1pia2:
     pia "tau gak sih [mcname], ternyata kosan cepio deket sama aku!! jadi kita banyak ngobrol gituuuu ehehehe"
     hide pia with dissolve
     hide pia_side with dissolve
+    $ quick_menu = False
     "masuk ke toko perlengkapan gambar"
     # Scene Toko perlengkapan gambar
+    $ quick_menu = True
     "Fiony" "disini tempatnya. tadaaaaaa"
     show pia at char_placement with dissolve
     show pia_side at left 
@@ -248,14 +254,16 @@ label chapter1pia2:
     pia "MAKAAAAAN LAPEEEEEER"
     hide pia_side with dissolve
     mcname "setuju, laper"
+    $ quick_menu = False
     scene cafe with dissolve
     play music "audio/bgm_cafe.mp3" loop fadein 1.0
+    $ quick_menu = True
     "Fiony" "ayo, aku ada tempat rekomendasi enak deket sini"
     "[mcname], Pia, dan Fiony akhirnya makan ke cafe rekomendasi fiony"
     "Fiony ketemu sama temen yang biasanya nongkrong di cafe itu juga"
     "Gita" "lah, Fiony? ngapain lu disini?"
     "Fiony" "lah Gita, sama ....mmmm"
-    show kana at char_placement_left with dissolve
+    show kana at char_center with dissolve
     $ kana_name = "Kana" 
     kana "salam kenal, aku [kana]"
     "Gita" "gue disitu ya"
@@ -331,6 +339,8 @@ label chapter1pia2:
     pia "ih cepio maaaaaaaah ngeledekin muluuuuu *blush*"
     hide pia with dissolve
     hide pia_side with dissolve
-    "Mereka pun pulang ke kosan masing masing dengan belanjaan mereka yang mahal itu. \n Tapi buat Pia, ini harga yang murah yang harus dia bayarkan untuk mendapatkan memory itu"
+    "Mereka pun pulang ke kosan masing masing dengan belanjaan mereka yang mahal itu."
+    "Tapi buat Pia, ini harga yang murah yang harus dia bayarkan \nuntuk mendapatkan memory itu"
+    $ quick_menu = False
     jump chapter2pia
 
