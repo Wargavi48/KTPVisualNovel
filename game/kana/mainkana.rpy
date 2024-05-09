@@ -25,6 +25,7 @@ label mainkana:
     scene black with dissolve
     scene depan kampus with dissolve
     $ quick_menu = True
+    play music "audio/kampus.mp3" loop fadein 1.0
     mcname "Wahhh, jadi ini namanya kota Jakarta"
     mcname "Buuu, anakmu akhirnya kuliah di sini"
     mcname "DI KOTA JAKARTA!!!"

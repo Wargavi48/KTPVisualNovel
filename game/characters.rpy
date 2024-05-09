@@ -35,12 +35,15 @@ default kana_blinded = Character("[kana_name]", image="kana_blinded")
 
 
 
-# Define side character
+# Define side pia character 
 image side pia_side = "Characters/pia_side.png"
 image side pia_side_angry = "Characters/pia_side_angry.png"
 image side pia_side_laugh = "Characters/pia_side_laugh.png"
 image side pia_side_shy = "Characters/pia_side_shy.png"
 image side pia_side_smile = "Characters/pia_side_smile.png"
+
+# Define side kana character
+image side kana_side = "Characters/kana_side.png"
 
 
 define tono1 = Character("tono", image="tono_side") 
