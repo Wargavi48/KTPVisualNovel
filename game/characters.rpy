@@ -44,12 +44,12 @@ image side pia_side_shy = "Characters/pia_side_shy.png"
 image side pia_side_smile = "Characters/pia_side_smile.png"
 
 # Define side kana character
-image side kana_clumsy = "Characters/Kana_side_clumsy.png"
-image side kana_embarased = "Characters/Kana_side_embarased.png"
-image side kana_scared = "Characters/Kana_side_scared.png"
-image side kana_shy = "Characters/Kana_side_shy.png"
-image side kana_sick = "Characters/Kana_side_sick.png"
-image side kana_smile = "Characters/kana_side_smile.png"
+image side kana_side_clumsy = "Characters/Kana_side_clumsy.png"
+image side kana_side_embarased = "Characters/Kana_side_embarased.png"
+image side kana_side_scared = "Characters/Kana_side_scared.png"
+image side kana_side_shy = "Characters/Kana_side_shy.png"
+image side kana_side_sick = "Characters/Kana_side_sick.png"
+image side kana_side_smile = "Characters/kana_side_smile.png"
 image side kana_side = "Characters/kana_side.png"
 
 
