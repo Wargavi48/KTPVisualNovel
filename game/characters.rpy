@@ -26,11 +26,12 @@ default tono_blinded = Character("[tono_name]", image="tono_blinded")
 default kana_name = "????"
 define kana = Character("[kana_name]", image="Kana", color="#FFF", window_background="gui/dialog_box_kana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
 default kana_sh = Character("[kana_name]", image="kana_sh", window_background="gui/dialog_box_kana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
-default kana_cry = Character("[kana_name]", image="kana_cry")
-default kana_happy = Character("[kana_name]", image="kana_happy")
-default kana_angry = Character("[kana_name]", image="kana_angry")
-default kana_confused = Character("[kana_name]", image="kana_confused")
-default kana_blinded = Character("[kana_name]", image="kana_blinded")
+default kana_shy = Character("[kana_name]", image="Kana_shy", window_background="gui/dialog_box_kana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
+default kana_sick = Character("[kana_name]", image="Kana_sick", window_background="gui/dialog_box_kana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
+default kana_smile = Character("[kana_name]", image="Kana_smile", window_background="gui/dialog_box_kana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
+default kana_clumsy = Character("[kana_name]", image="Kana_clumsy", window_background="gui/dialog_box_kana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
+default kana_embarased = Character("[kana_name]", image="Kana_embarased", window_background="gui/dialog_box_kana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
+default kana_scared = Character("[kana_name]", image="Kana_scared", window_background="gui/dialog_box_kana_resize.png", window_yalign=0.9, who_yalign=1, what_ypos=80)
 
 
 
@@ -43,6 +44,12 @@ image side pia_side_shy = "Characters/pia_side_shy.png"
 image side pia_side_smile = "Characters/pia_side_smile.png"
 
 # Define side kana character
+image side kana_clumsy = "Characters/Kana_side_clumsy.png"
+image side kana_embarased = "Characters/Kana_side_embarased.png"
+image side kana_scared = "Characters/Kana_side_scared.png"
+image side kana_shy = "Characters/Kana_side_shy.png"
+image side kana_sick = "Characters/Kana_side_sick.png"
+image side kana_smile = "Characters/kana_side_smile.png"
 image side kana_side = "Characters/kana_side.png"
 
 
