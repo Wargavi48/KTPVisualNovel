@@ -91,14 +91,39 @@ label chapter1kana2Cafe:
     "Perempuan itu pun mendekati Meja yang dimana [mcname] berada dengan cepat"
     "Seakan tidak sabar dan tidak ingin kehilangan kursi tersebut"
     "panik dan cemas tetapi rasa senang bercampur satu di dalam pikiran [mcname]"
-    show kana at char_center with dissolve
-    show kana_side at left with dissolve
+    show kana_shy at char_center with dissolve
+    show kana_side_shy at left with dissolve
     kana "H-halooo, maaf tapi apa kursinya kosong ?"
-    hide kana_side with dissolve
+    hide kana_side_shy with dissolve
     mcname "Eh iya ini kosong ko kebetulan dari tadi ga ada yang nempatin"
     mcname "Takut kali ya sama aku haha"
-    show kana_side at left with dissolve
+    show kana_side_smile at left with dissolve
+    show kana_smile at char_center with dissolve
     kana "Haha, kalau gtu aku boleh ya duduk di sini"
+    hide kana_side_smile with dissolve
+    "Tanpa menunggu jawaban dari MC pun perempuan itu duduk di sebelah MC"
+    show kana at char_center with dissolve
+    show kana_side at left with dissolve
+    kana "Mas aku mau pesen dong"
+    hide Kana_shy with dissolve
+    hide kana_smile with dissolve
+    "Pikiran [mcname] dibuat bingung siapa dia"
+    "Kenapa dia langsung duduk di sebelahnya"
+    "Lalu kenapa dia mau duduk di situ"
+    "Kenapa harus dia"
+    "Banyak sekali pertanyaan yang muncul di pikiran [mcname]"
+    mcname "Lah ko dia duduk di sini!!???"
+    mcname "Hoooo tenang tenang tarik nafas"
+    mcname "Tapi kalau di pikir pikir ini masuk akal sih karena lagi penuh juga, Jadinya dia duduk di sini"
+    mcname "Tapi ko dia langsung duduk gitu aja ya?"
+    show kana at char_center with dissolve
+    show kana_side at left with dissolve
+    kana "Mas aku pesen stobery shortcake nya 1 ya sama lemon tea nya satu"
+    kana "Es nya jangan terlalu banyak ya, makasih banyak mas"
+    show Kana_embarased at char_center with dissolve
+    show Kana_side_embarased at left with dissolve
+    kana "Eh maaf ya langsung duduk aja aku lagi kepengen cake yang ada disini cuma ada di hari tertentu aja"
+    
     # jump credits
 
 
