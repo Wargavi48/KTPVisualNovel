@@ -17,9 +17,11 @@ label chapter1kana1:
     "{size=-5}Mahasiswa A{/size}" "ituuu, yang ituu tuhh"
     "Pembicaraan mereka yang cukup keras membuat MC pun melirik ke arah orang yang menjadi bahan pembicaraan"
     "{size=-5}Mahasiswa B{/size}" "Owhhh dia!!, eh bukanya dia mahasiswa yang….bla bla bla"
-    "Disaat itupun juga mc terpana  dan mencoba untuk memfokuskan matanya fokus terhadap bahan pembicaraan para mahasiswa itu"
+    "Disaat itupun juga [mcname] terpana  dan mencoba untuk memfokuskan matanya fokus terhadap bahan pembicaraan para mahasiswa itu"
+    scene kana awal with dissolve
     "seorang wanita muda yang memiliki rambut berwarna biru muda yang mengingatkan nya kepada lautan"
     "dan juga matanya yang seindah batu sapphire, serta tas dan sepatunya yang ber brand membuat [mcname] terdiam"
+    scene depan kampus with dissolve
     mcname "Dia siapa"
     mcname "Ko banyak di gosipin sama mahasiswa baru ya"
     mcname "tapi diliat-liat cantik anggun, kalem banget dah sumpah kalau di liat liat mah"
@@ -44,6 +46,7 @@ label chapter1kana1:
     "[mcname] merengangkan badannya yang terasa kaku akibat duduk terlalu lama"
     mcname "Eh masih jam segini mayan cape juga ya hari ini tapi masih ada energi si"
     # insert cg kana
+    scene kana awal with dissolve
     mcname "Aduhhh ko gw ga bisa ilangin senyuman itu dari kepala gw ya ?"
     mcname "Apa jangan jangan gw kena santet lagi nih?"
     mcname "Ah masa sih, lagian kan dia emang cantik jadi pantes dong kalau gw suka hehe"
@@ -64,6 +67,10 @@ label chapter1kana1:
             
     
 label chapter1kana2Cafe:
+    $ renpy.block_rollback()
+    scene cafe with dissolve
+    play music "audio/bgm_cafe_2.mp3" fadein 1.0
+    $ quick_menu = True
     "Ramainya orang orang yang lalu lalang di luar cafe dan memasuki cafe pun terkadang menarik perhatian si MC akan tetapi ada satu orang yang membuat dia semakin fokus"
     "Saat orang itu mendekati pintu cafe MC pun menyadari bahwa orang itu adalah Kana"
     mcname "Anjir ko ada CEWEK ITU di sini, bukannya cewek itu yang katanya anak orang kaya, yang sepupunya rektor itu kan"
@@ -88,11 +95,10 @@ label chapter1kana2Cafe:
     show kana_side at left with dissolve
     kana "H-halooo, maaf tapi apa kursinya kosong ?"
     hide kana_side with dissolve
-    mcname "H-halooo, maaf tapi apa kursinya kosong ?"
     mcname "Eh iya ini kosong ko kebetulan dari tadi ga ada yang nempatin"
     mcname "Takut kali ya sama aku haha"
-    kana "Haha, kalau gtu aku boleh ya duduk di sini "
-    play music "audio/Dreamcatcher.mp3"
+    show kana_side at left with dissolve
+    kana "Haha, kalau gtu aku boleh ya duduk di sini"
     # jump credits
 
 

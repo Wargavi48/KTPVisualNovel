@@ -32,7 +32,7 @@ label mainkana:
     mcname "OWH IYA!!!!!"
     mcname "Kalau gak salah, barang - barang dari rumah harusnya \nmau datang di kosan"
     mcname "Tapi penasaran dengan kota Jakarta deh..."
-
+    $ quick_menu = False
     menu:
         "Langsung ke kosan abis itu rapihin barang":
             mcname "Jadi ini ya kamarku selama 4 tahun ke depan"
