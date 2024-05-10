@@ -152,7 +152,7 @@ define config.save_directory = "KTPVisualNovel-1709482913"
 ##
 ## Ikon yang di tampilkan di taskbar atau dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "gui/game_icon_temp_resize.png"
 
 
 ## Pengaturan Build ############################################################

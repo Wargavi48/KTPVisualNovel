@@ -17,15 +17,13 @@ label mainkana:
     scene black with dissolve
     show text "{color=#FFF}Chapter I{/color}" with Pause(1.5)
     scene black with dissolve
-    $ quick_menu = True
     "Hari baru sudah dimulai"
     "Lembaran baru di hidupku pun akhirnya terbuka dan akhirnya aku telah memasuki jenjang masuk kuliah"
     "disini aku memilih jurusan HI dan hari ini \nhari dimana aku datang di Jakarta"
-
     scene black with dissolve
     scene depan kampus with dissolve
-    $ quick_menu = True
     play music "audio/kampus.mp3" loop fadein 1.0
+    $ quick_menu = True
     mcname "Wahhh, jadi ini namanya kota Jakarta"
     mcname "Buuu, anakmu akhirnya kuliah di sini"
     mcname "DI KOTA JAKARTA!!!"
