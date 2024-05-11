@@ -8,7 +8,7 @@ label chapter1kana1:
     $ quick_menu = False
     scene depan kampus with dissolve
     $ quick_menu = True 
-    "MC memasuki aula"
+    "[mcname] memasuki aula"
     "Saat memasuki ruangan MC mendengar suara aula yang sangat ramai"
     mcname "Seperti yang diharapkan dari kampus ibu kota, orang nya rame banget"
     "Saat memperhartikan sekitar [mcname] mendengar suatu topik yang menarik perhatiannya"
@@ -18,10 +18,14 @@ label chapter1kana1:
     "Pembicaraan mereka yang cukup keras membuat MC pun melirik ke arah orang yang menjadi bahan pembicaraan"
     "{size=-5}Mahasiswa B{/size}" "Owhhh dia!!, eh bukanya dia mahasiswa yang….bla bla bla"
     "Disaat itupun juga [mcname] terpana  dan mencoba untuk memfokuskan matanya fokus terhadap bahan pembicaraan para mahasiswa itu"
+    $ quick_menu = False
     scene kana awal with dissolve
+    $ quick_menu = True
     "seorang wanita muda yang memiliki rambut berwarna biru muda yang mengingatkan nya kepada lautan"
     "dan juga matanya yang seindah batu sapphire, serta tas dan sepatunya yang ber brand membuat [mcname] terdiam"
+    $ quick_menu = False
     scene depan kampus with dissolve
+    $ quick_menu = True
     mcname "Dia siapa"
     mcname "Ko banyak di gosipin sama mahasiswa baru ya"
     mcname "tapi diliat-liat cantik anggun, kalem banget dah sumpah kalau di liat liat mah"
@@ -46,7 +50,9 @@ label chapter1kana1:
     "[mcname] merengangkan badannya yang terasa kaku akibat duduk terlalu lama"
     mcname "Eh masih jam segini mayan cape juga ya hari ini tapi masih ada energi si"
     # insert cg kana
+    $ quick_menu = False
     scene kana awal with dissolve
+    $ quick_menu = True
     mcname "Aduhhh ko gw ga bisa ilangin senyuman itu dari kepala gw ya ?"
     mcname "Apa jangan jangan gw kena santet lagi nih?"
     mcname "Ah masa sih, lagian kan dia emang cantik jadi pantes dong kalau gw suka hehe"
@@ -72,7 +78,7 @@ label chapter1kana2Cafe:
     play music "audio/bgm_cafe_2.mp3" fadein 1.0
     $ quick_menu = True
     "Ramainya orang orang yang lalu lalang di luar cafe dan memasuki cafe pun terkadang menarik perhatian si MC akan tetapi ada satu orang yang membuat dia semakin fokus"
-    "Saat orang itu mendekati pintu cafe MC pun menyadari bahwa orang itu adalah Kana"
+    "Saat orang itu mendekati pintu cafe [mcname] pun menyadari bahwa orang itu adalah mahasiswi yang dibicarakan tadi"
     mcname "Anjir ko ada CEWEK ITU di sini, bukannya cewek itu yang katanya anak orang kaya, yang sepupunya rektor itu kan"
     mcname "ko dia masuk ke cafe ini anjir anjir dia"
     mcname "CANTIK BANGET CUYYYY"
@@ -101,12 +107,13 @@ label chapter1kana2Cafe:
     show kana_smile at char_center with dissolve
     kana "Haha, kalau gtu aku boleh ya duduk di sini"
     hide kana_side_smile with dissolve
-    "Tanpa menunggu jawaban dari MC pun perempuan itu duduk di sebelah MC"
+    "Tanpa menunggu jawaban dari [mcname] pun perempuan itu duduk di sebelah [mcname]"
     show kana at char_center with dissolve
     show kana_side at left with dissolve
     kana "Mas aku mau pesen dong"
-    hide Kana_shy with dissolve
-    hide kana_smile with dissolve
+    hide Kana_side_shy with dissolve
+    hide kana_side_smile with dissolve
+    hide kana_side with dissolve
     "Pikiran [mcname] dibuat bingung siapa dia"
     "Kenapa dia langsung duduk di sebelahnya"
     "Lalu kenapa dia mau duduk di situ"
@@ -120,10 +127,26 @@ label chapter1kana2Cafe:
     show kana_side at left with dissolve
     kana "Mas aku pesen stobery shortcake nya 1 ya sama lemon tea nya satu"
     kana "Es nya jangan terlalu banyak ya, makasih banyak mas"
-    show Kana_embarased at char_center with dissolve
-    show Kana_side_embarased at left with dissolve
+    hide kana_side with dissolve
+    show kana_embarased at char_center with dissolve
+    show kana_side_embarased at left with dissolve
     kana "Eh maaf ya langsung duduk aja aku lagi kepengen cake yang ada disini cuma ada di hari tertentu aja"
-    
+    hide kana_embarased with dissolve
+    hide kana_side_embarased with dissolve
+    show kana at char_center with dissolve
+    show kana_side at left with dissolve
+    kana "Awalnya sempet khawatir gtu kalau ga dapet tempat duduk untung aja ada"
+    hide kana with dissolve
+    hide kana_side with dissolve
+    hide kana_embarased with dissolve
+    show kana_smile at char_center with dissolve
+    show kana_side_smile at left with dissolve
+    kana "Makasih yaa!!"
+    show kana at char_center with dissolve
+    show kana_side at left with dissolve
+    kana "eh kamu anak kuliah di jekti univesity juga kan?"
+    hide kana_side_smile with dissolve
+    mcname "Eh ko kamu tau"
     # jump credits
 
 
