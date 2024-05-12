@@ -62,6 +62,7 @@ label chapter1kana1:
         "Mau Kemana?"
         "A. Ke Kosan":
             "Kamu habisin waktu di kosan dan memilih buat istirahatin diri daripada pergi kesana kemari"
+            jump chapter1kana2Campus
         "B. Ke Warteg":
             "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit"
             scene black with dissolve
@@ -147,7 +148,126 @@ label chapter1kana2Cafe:
     kana "eh kamu anak kuliah di jekti univesity juga kan?"
     hide kana_side_smile with dissolve
     mcname "Eh ko kamu tau"
+    hide kana_smile with dissolve
+    show kana at char_center with dissolve
+    show kana_side at left with dissolve
+    kana "Iya soalnya cuma univ kita doang yang udah selesai di jam segini"
+    kana "Kalau yang lain si baru mau selesai jam 5 sore"
+    kana "Jadinya aku nebak aja sih"
+    kana "Jurusan kamu apa ya kalau boleh tau ?"
+    hide kana_side with dissolve
+    mcname "Ooo gtu ya"
+    mcname "Aku masuk ke jurusan HI si"
+    mcname "Kebetulan lagi pengen jalan jalan aja haha"
+    hide kana with dissolve
+    show kana_shy at char_center with dissolve
+    show kana_side_shy at left with dissolve
+    kana "Loh kita samaan dong"
+    kana "Satu angkatan juga"
+    hide kana_shy with dissolve
+    hide kana_side_shy with dissolve
+    show kana at char_center with dissolve
+    show kana_side at left with dissolve
+    kana "Eh oh iya aku sampe lupa"
+    $ kana_name = "Kanaia Asa"
+    kana "Sebelumnya kenalin namaku Kania Asa"
+    kana "Biasanya di panggil kana"
+    $ kana_name = "Kana"
+    hide kana_side with dissolve
+    mcname "Ahh iya salam kenal juga namaku [mcname]"
+    mcname "Aku dari Ngawi"
+    mcname "Mungkin blum pernah denger itu agak desa soalnya haha"
+    mcname "Kalau kamu dari mana [kana_name]?"
+    show kana_side at left with dissolve
+    kana "Ohhh, tau ko"
+    kana "kalau aku sih asli orang Jakarta meski belum pernah ke daerah Ngawi tapi tau ko"
+    kana "Eh cakenya udah datang bentar yaa aku makan dulu"
+    hide kana_side with dissolve
+    mcname "{i}Duhhh ko dia imut banget sih ya{/i}"
+    mcname "{i}CANTIK BANGET LAGI{/i}"
+    mcname "{i}YA TUHAN APAKAH INI YANG DIMAKSUD DENGAN NGEDATE DI CAFE?{/i}"
+    mcname "{i}Emang boleh se ngedate itu?{/i}"
+    hide kana with dissolve
+    hide kana_side with dissolve
+    "[mcname] dan [kana_name] pun fokus terhadap apa yang ada di depannya"
+    "sesekali [mcname] mencuri pandangan ke arah kana dan ia pun melihat cara makan [kana_name] yang annggun yang membuat [mcname] semakin terpesona"
+    show kana at char_center with dissolve
+    show kana_side at left with dissolve
+    kana "Eh kamu mau juga?"
+    kana "Maaf ya, daritadi aku fokus sendiri"
+    kana "Soalnya aku pengennn banget makan cake ini"
+    hide kana_side with dissolve
+    mcname "Ehh engga ko, gak usah"
+    mcname "Aku tadi udah makan, santai aja"
+    mcname "Aku juga lagi bingung mau kemana"
+    mcname "Kebetulan katanya di sini cafe yang di rekomendasiin sama internet"
+    mcname "Jadinya pengen cobain deh"
+    show kana_side at left with dissolve
+    kana "Ohhh, jadi kamu ke sini karena rekomendasi internet"
+    kana "Jadi kamu udah kemana aja selama ini?"
+    hide kana_side with dissolve
+    mcname "Ummm, belum kemana mana sih"
+    mcname "Lagian aku baru datang beberapa hari yang lalu ko"
+    mcname "Jadinya bingung harus kemana kamu ada rekomendasi kah?"
+    hide kana_side with dissolve
+    "Waktupun tidak terasa sudah malam"
+    "Obrolan [mcname] & [kana_name] pun saling nyambung satu sama lain"
+    "Disitu mereka pun akan saling pulang ke rumah masing masing"
+    show kana_smile at char_center with dissolve
+    show kana_side_smile at left with dissolve
+    kana "Eh makasih ya udah dibolehin duduk di sini"
+    kana "Untung aja aku bisa makan stobery shortcake nya, kalau engga keknya aku bakalan marah deh hahaha"
+    hide kana_side_smile with dissolve
+    show kana_scared at char_center with dissolve
+    show kana_side_scared at left with dissolve
+    kana "Eh udah jam segini aku harus pulang aku duluan yaa"
+    hide kana_scared with dissolve
+    hide kana_smile with dissolve
+    hide kana_side_scared with dissolve
+    show kana at char_center with dissolve
+    show kana_side at left with dissolve
+    kana "Kamu hati hati di jalan"
+    hide kana_side with dissolve
+    mcname "Haha, gpp ko santai aja kebetulan kosong"
+    mcname "Owh iya sama sama"
+    mcname "Kamu juga hati hati di jalan ya"
+    $ quick_menu = False
+    hide kana with dissolve
+    scene black with dissolve
+    play music "audio/bgm_harvestmoon_spring.mp3"
+    scene mc bedroom with dissolve
+    $ quick_menu = True
+    mcname "Anjir gw ga nyangka kalau hari ini bakalan bisa ngobrol sama dia"
+    mcname "Tapi di pikir pikir ternyata dia ramah juga ya"
+    mcname "Kukira bakalan jadi kaya cool dan cuek gitu"
+    mcname "Mana nyambung juga kalau di ajak ngobrol"
+    mcname "Dah ah mending aku tidur"
+    $ quick_menu = False
+    jump chapter1kana2Campus
+
     # jump credits
 
 
-# label chapter1kana2Campus:
+label chapter1kana2Campus:
+    scene black 
+    show text "KEESOKAN HARINYA" with Pause(2.0)
+    scene depan kampus with dissolve
+    # background lift
+    mcname "Ehhhh tungguuuu-"
+    "[mcname] pun terburu buru karena jam sudah menunjukan untuk memasuki kuliah"
+    mcname "Untung keburu buat masuk lift, makasih ya udah mau nahan liftnya"
+    "{size=-5}Mahasiswi A{/size}" "Iya sama sama" 
+    scene black with dissolve
+    scene kelas with dissolve
+    play music "audio/bgm_ngobrol_normal.mp3" fadein 1.0
+    "[mcname] pun memasuki ruangan kelas yang dimana lumayan asing baginya krana ini pertama kalinya ia memasuki ruangan yang luas dan besar seperti itu selain di aula"
+    "di situ dia bertemu dengan muka yang ga asing di ingatannya ada [kana_name] dan mahasiswi yang dia temui waktu di lift"
+    mcname "Eh kamu kan yang tadi di lift ya?"
+    mcname "Ternyata jurusan HI juga, kenalin namaku [mcname], salam kenal ya!!"
+    "???" "Owh iya kita ketemuan tadi"
+    "???" "Ga nyangka ternyata satu jurusan dan satu kelas juga"
+    "Freya" "Namaku Freya salam kenal juga"
+
+    play music "audio/Dreamcatcher.mp3"
+    jump credits
+
