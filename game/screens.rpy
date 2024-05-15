@@ -1338,8 +1338,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Ya") action yes_action
-                textbutton _("Tidak") action no_action
+                textbutton _("Ya") action yes_action xpos -20 ypos 5
+                textbutton _("Tidak") action no_action xpos 15 ypos 5
 
     ## Klik kanan dan jawaban escape "Tidak".
     key "game_menu" action no_action
@@ -1352,7 +1352,7 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame([ "gui/confirm_frame.png", "gui/Custom_Confirm.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
@@ -1365,15 +1365,16 @@ style achievement_frame:
     color "#FFF"
 
 style confirm_prompt_text:
-    textalign 0.5
+    ypos 20
     layout "subtitle"
-    color "#FFFFFF"
+    color "#000"
 
 style confirm_button:
     properties gui.button_properties("confirm_button")
 
 style confirm_button_text:
     properties gui.text_properties("confirm_button")
+    xpos 70
     color "#FFFFFF"
     hover_color "#ff7700"
 
