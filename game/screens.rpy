@@ -469,7 +469,8 @@ screen navigation():
 
             ## Bantuan tidak perlu atau relevan dengan perangkat mobile.
             # Harusnya dibawah ini help sementara ganti jadi extras dulu
-            textbutton _("Extras") action ShowMenu("help"):
+            textbutton _("Extras") action ShowMenu("extras"):
+            # textbutton _("Extras") action ShowMenu("help"):
                 if renpy.get_screen("main_menu"):
                     at help_menu
                     text_color "#000000"
@@ -893,6 +894,32 @@ style slot_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
+
+screen extras():
+    tag menu
+    if main_menu:
+        add gui.main_menu_background 
+    else:
+        add gui.game_menu_background
+        
+    frame:
+        style "game_menu_outer_frame"
+        vbox:
+            style_prefix "navigation"
+
+            xpos gui.navigation_xpos
+            # xalign 0.5
+            ypos 140
+
+            spacing gui.navigation_spacing
+            label "{size=+20}Extras{/size}":
+                ypos -200
+            textbutton _("Achievement") action ShowMenu("achievement_gallery")
+            textbutton _("Gallery") action Start()
+            textbutton _("Kembali") action Return()
+
+                
+
 screen preferences():
 
     tag menu
@@ -905,19 +932,34 @@ screen preferences():
                 box_wrap True
 
                 if renpy.variant("pc") or renpy.variant("web"):
-
-                    vbox:
+                    hbox:
+                        # background Frame("gui/custom_setting_frame.png",0,0,0,0)
+                        # xysize (750,150)
+                        # has hbox
                         style_prefix "radio"
-                        label _("Tampilan")
-                        textbutton _("Jendela") action Preference("display", "window")
-                        textbutton _("Layar Penuh") action Preference("display", "fullscreen")
+                        vbox:
+                            label _("Display")
+                                # text_color "#000"
+                                # ypos -10
+                                # xpos 45
+                            vbox:
+                                textbutton _("Window"):
+                                    action Preference("display", "window")
+                                    # text_color "#000"
+                                    # ypos -20
+                                textbutton _("Full Screen"):
+                                    action Preference("display", "fullscreen")
+                                    xsize 400
+                                    # text_color "#000"
+                                    # xpos 30
+                                    # ypos -20
 
                 vbox:
                     style_prefix "check"
-                    label _("Lompati")
-                    textbutton _("Belum Terlihat") action Preference("skip", "toggle")
-                    textbutton _("Setelah Pilihan") action Preference("after choices", "toggle")
-                    textbutton _("Transisi") action InvertSelected(Preference("transitions", "toggle"))
+                    label _("Skip")
+                    textbutton _("Unseen Text") action Preference("skip", "toggle")
+                    textbutton _("After Choice") action Preference("after choices", "toggle")
+                    # textbutton _("Transisi") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Tipe tambahan vboxes "radio_pref" atau "check_pref" dapat di
                 ## tambahkan disini, untuk menambahkan tambahan preferensi yang
@@ -1013,6 +1055,7 @@ style pref_vbox:
 
 style radio_vbox:
     spacing gui.pref_button_spacing
+
 
 style radio_button:
     properties gui.button_properties("radio_button")

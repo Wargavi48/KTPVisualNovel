@@ -1,11 +1,13 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
+While processing the margin property of style radio_hbox:
   File "renpy/common/00start.rpy", line 83, in _init_language
     renpy.change_language(language)
-  File "game/screens.rpy", line 1368, in <module>
-    xpos ypos
-NameError: name 'ypos' is not defined
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+TypeError: 'int' object is not subscriptable
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -20,21 +22,21 @@ Full traceback:
     renpy.store._init_language() # type: ignore
   File "renpy/common/00start.rpy", line 83, in _init_language
     renpy.change_language(language)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\translation\__init__.py", line 758, in change_language
-    new_change_language(tl, language)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\translation\__init__.py", line 710, in new_change_language
-    i.apply()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 2784, in apply
-    value = renpy.python.py_eval(expr)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/screens.rpy", line 1368, in <module>
-    xpos ypos
-NameError: name 'ypos' is not defined
+  File "D:\fanbase_project\KTPVisualNovel\renpy\translation\__init__.py", line 763, in change_language
+    i()
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+  File "style.pyx", line 803, in renpy.style.rebuild
+  File "style.pyx", line 796, in renpy.style.build_styles
+  File "style.pyx", line 717, in renpy.style.build_style
+  File "style.pyx", line 714, in renpy.style.build_style
+  File "gen3-static/style_functions.pyx", line 1401, in style_functions.margin_property
+  File "include/style_common.pxi", line 30, in style_functions.index_0
+TypeError: 'int' object is not subscriptable
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Wed May 15 18:16:56 2024
+Wed May 15 19:10:55 2024
