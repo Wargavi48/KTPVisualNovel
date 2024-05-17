@@ -19,26 +19,28 @@ label mainkana:
     scene black with dissolve
     "Hari baru sudah dimulai"
     "Lembaran baru di hidupku pun akhirnya terbuka dan akhirnya aku telah memasuki jenjang masuk kuliah"
-    "disini aku memilih jurusan HI dan hari ini \nhari dimana aku datang di Jakarta"
-    scene black with dissolve
+    "Di sini aku memilih jurusan HI"
+    "Dan hari ini adalah hari dimana aku datang di Jakarta!"
+    scene black with Dissolve(2.0)
     scene depan kampus with dissolve
     play music "audio/kampus.mp3" loop fadein 1.0
     $ quick_menu = True
     mcname "Wahhh, jadi ini namanya kota Jakarta"
     mcname "Buuu, anakmu akhirnya kuliah di sini"
     mcname "DI KOTA JAKARTA!!!"
-    mcname "Alhamdulillah mah pah"
-    mcname "Doain anakmu bisa kuliah lancar ya mah, pah"
+    mcname "Alhamdulillah Mah Pah"
+    mcname "Doain anakmu bisa kuliah lancar ya Mah, Pah"
     mcname "OWH IYA!!!!!"
-    mcname "Kalau gak salah, barang - barang dari rumah harusnya \nmau datang di kosan"
+    mcname "Kalau gak salah"
+    mcname "Barang - barang dari rumah harusnya mau datang di kosan"
     mcname "Tapi penasaran dengan kota Jakarta deh..."
     $ quick_menu = False
     menu:
-        "Langsung ke kosan abis itu rapihin barang":
+        "Langsung ke kosan abis itu rapikan barang":
             mcname "Jadi ini ya kamarku selama 4 tahun ke depan"
             mcname "Salam kenal ya kamarku moga moga kamu gak ada penunggunya hahaha...."
             "[mcname] merapihkan barang - barang bawaan yang sudah datang duluan oleh mobil pengantar"
-            "butuh waktu beberapa jam untuk menyelesaikan semuanya dan mengatur tata letak yang ia rasa nyaman."
+            "Butuh waktu beberapa jam untuk menyelesaikan semuanya dan mengatur tata letak yang ia rasa nyaman."
             mcname "Okeee barang - barang sudah selesai"
             mcname "Udah ngabarin orang tua juga sekarang saatnya tidur"
             $ quick_menu = False
@@ -48,9 +50,9 @@ label mainkana:
             "Akhirnya [mcname] malah ikut ke pergi ke pergaulan bebas"
             $ quick_menu = False
             scene black  with dissolve
-            show text "{color=#FFF}LU NGAPAIN IKUTAN PERGAULAN BEBAS INGET TUH ORANG TUA DI DESA{/color}" with Pause(1.0)
+            show text "{color=#FFF}LU NGAPAIN IKUTAN PERGAULAN BEBAS INGET TUH ORANG TUA DI DESA{/color}" with Pause(2.0)
             scene black  with dissolve
-            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(2.0)
             scene black  with dissolve
             play music "audio/Dreamcatcher.mp3"
             jump credits
@@ -63,9 +65,9 @@ label mainkana:
             play music "audio/Dreamcatcher.mp3"
             jump credits
         "Ke warteg buat makan":
-            mcname "Aduhhh perut gw kroncongan, makan dulu kali lah ya abis itu baru ke kos dari berangkat belum makan"
-            "[mcname] pun memilih untuk pergi mencari makan ke warteg warteg yang berada di dekat kosnya"
-            "[mcname] bertemu dengan beberapa pedagang yang ramah dan sopan, membuat [mcname] semakin nyaman berada di lingkungan kos nya tersebut"
+            mcname "Aduhhh perutku kroncongan. Makan dulu kali yah, habis itu baru ke kos. Dari berangkat belum makan soalnya"
+            "[mcname] pun memilih untuk pergi mencari makan ke warteg yang berada di dekat kosnya"
+            "Dia bertemu dengan beberapa pedagang yang ramah dan sopan, membuat [mcname] semakin nyaman berada di lingkungan kos nya tersebut"
             $ quick_menu = False
             jump chapter1kana1
 

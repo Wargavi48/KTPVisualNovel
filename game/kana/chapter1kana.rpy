@@ -1,67 +1,120 @@
 label chapter1kana1:
     $ renpy.block_rollback()
-    scene dream with dissolve
-    $ quick_menu = True
+    scene awan with Dissolve(2.0)
+    "Walaupun ini sudah pertengahan tahun"
+    "Matahari secara terik menerangi kota Jakarta"
+    "Saat melihat ke atas langit, hanya langit biru lah yang terlihat"
+    scene depan kampus with Dissolve(2.0)
     play music "audio/kampus.mp3" loop fadein 1.0
-    mcname "huuuu, ini hari pertama gw orientasi di Jeketi University"
-    mcname "di sini tempat dimana gw bakalan kenal sama orang baru, temen baru, atau bahkan jodoh heheh"
+    $ quick_menu = True
+    mcname "Untung saja masih sempat untuk ikut orientasi"
+    mcname "Gak nyangka di Jakarta ternyata beneran macet parah"
+    mcname "Yah walaupun begitu ini memang pengalaman baru yang aku rasakan"
+    mcname "Berbeda jauh dari tempatku dulu"
+    mcname "Huuuu, ini hari pertamaku orientasi di Jeketi University"
+    mcname "Di sini tempat dimana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh heheh"
     $ quick_menu = False
-    scene depan kampus with dissolve
-    $ quick_menu = True 
-    "[mcname] memasuki aula"
-    "Saat memasuki ruangan MC mendengar suara aula yang sangat ramai"
-    mcname "Seperti yang diharapkan dari kampus ibu kota, orang nya rame banget"
-    "Saat memperhartikan sekitar [mcname] mendengar suatu topik yang menarik perhatiannya"
+    scene black with Dissolve(2.0)
+    $ quick_menu = True
+    show text "SFX PINTU DIBUKA"
+    show text "MEMASUKI AULA" with Pause(2.0)
+    "Saat memasuki ruangan [mcname] mendengar suara di aula yang sangat ramai"
+    mcname "Seperti yang diharapkan dari kampus Ibu Kota"
+    mcname "Orangnya rame banget"
+    "Terlihat di dalam aula sudah diisi dengan mahasiswa baru."
+    mcname "{i}Well, kayaknya aku harus mencari tempat duduk yang kosong sebelum penuh.{/i}"
+    "[mcname] melihat tempat duduk yang berada di pojok atas ruangan."
+    mcname "{i}Ah sepertinya itu tidak ada orang.{/i}"
+    "Saat sampai di sana, tidak terlihat orang di barisan tersebut"
+    mcname "{i}Hmmm... tumben di bagian belakang kosong{/i}"
+    mcname "{i}Padahal biasanya orang pada seneng di belakang{/i}"
+    "[mcname] kemudian duduk di kursi tersebut."
+    mcname "{i}Tapi lumayan juga dapet duduk di sini{/i}"
+    mcname "{i}Jadinya aku bisa ngeliat yang lain dengan jelas.{/i}"
+    "Saat memperhatikan di sekitar"
+    "[mcname] mendengar suatu topik yang menarik perhatiannya."
     "{size=-5}Mahasiswa A{/size}" "Eh eh liat deh itu kan mahasiswi itu"
     "{size=-5}Mahasiswa B{/size}" "Yang mana sih?"
+    mcname "{i}Hmmm? Apa yang sedang mereka bicarakan{/i}"
     "{size=-5}Mahasiswa A{/size}" "ituuu, yang ituu tuhh"
-    "Pembicaraan mereka yang cukup keras membuat MC pun melirik ke arah orang yang menjadi bahan pembicaraan"
-    "{size=-5}Mahasiswa B{/size}" "Owhhh dia!!, eh bukanya dia mahasiswa yang….bla bla bla"
-    "Disaat itupun juga [mcname] terpana  dan mencoba untuk memfokuskan matanya fokus terhadap bahan pembicaraan para mahasiswa itu"
+    "Mahasiswa tersebut memberikan kode kepada temannya ke arah seorang cewek"
+    "Pembicaraan mereka yang cukup keras membuat [mcname] pun melirik ke arah orang yang menjadi bahan pembicaraan"
+
     $ quick_menu = False
-    scene kana awal with dissolve
+    scene kana awal with Dissolve(2.0)
+    # Ganti Backsound
     $ quick_menu = True
-    "seorang wanita muda yang memiliki rambut berwarna biru muda yang mengingatkan nya kepada lautan"
-    "dan juga matanya yang seindah batu sapphire, serta tas dan sepatunya yang ber brand membuat [mcname] terdiam"
+    "{size=-5}Mahasiswa B{/size}" "Ohhh dia!!"
+    "{size=-5}Mahasiswa B{/size}" "Eh bukannya dia mahasiswa yang….bla bla bla"
+    "Terpesona terhadap cewek tersebut"
+    "[mcname] tidak mendengarkan pembicaraan Mahasiswa tadi"
+    "Di sana terlihat seorang cewek cantik yang terlihat seumuran dengan [mcname]"
+    "Rambutnya biru yang mana mengingatkannya dengan lautan yang berada di kampung halamannya"
+    "Matanya pun tidak kalah indah dengan batu sapphire"
+    "(……)"
+    mcname "{i}Aku tidak bisa melepaskan mataku dari dia{/i}"
+    mcname "{i}Oh...{/i}"
+    mcname "{i}Dia siapa?{/i}"
+    "[mcname] bertanya kepada dirinya sendiri"
+    mcname "{i}Tapi memang benar jika dilihat, dia memberikan aura seorang gadis cantik yang anggun dan kalem.{/i}"
+    mcname "{i}Ko ada ya orang secantik dia?{/i}"
+    mcname "{i}Atau… memang semua orang dari kota itu kaya gitu{/i}"
+    "[mcname] pun melihat ke sekelilingnya, berusaha membandingkan dengan cewek yang ada di ruangan"
+    mcname "{i}Hmmm emang sih, hampir semua kelihatan cantik…{/i}"
+    mcname "{i}Tapi kok cuma dia ya, yang jadi perhatian orang-orang.{/i}"
+    mcname "{i}Ya termasuk aku juga sih{/i}"
+    "(……)"
+    "1….2….3…"
+    "8…9…10…"
+    "Menit telah berlalu dan [mcname] masih menatap cewek tersebut"
+    "Mungkin itu adalah rekor terlama [mcname] dalam memperhatikan seseorang"
     $ quick_menu = False
-    scene depan kampus with dissolve
+    scene black with Dissolve(2.0)
+    show text "*DING DING DING DING*\n(screenshake)" with Pause(2.0)
+    scene kelas with dissolve
     $ quick_menu = True
-    mcname "Dia siapa"
-    mcname "Ko banyak di gosipin sama mahasiswa baru ya"
-    mcname "tapi diliat-liat cantik anggun, kalem banget dah sumpah kalau di liat liat mah"
-    mcname "ko ada ya orang se cantik dia, atau emng semua orang dari kota itu kaya gitu"
-    mcname "pasti dia orangnya kalem, sopan, pinter dan hobinya juga baca buku"
-    "[mcname] pun melihat ke arah sekelilingnya"
-    mcname "Hmmm emng si hampir semua keliatan cantik"
-    mcname "tapiii ko cuma dia ya yang jadi perhatian orang-orang..ya termasuk aku juga si"
+    mcname "Ehhh… udah bel, serius??? Lama banget berarti aku liatin dia"
+    mcname "Moga aja dia gak sadar deh kalo aku ngeliatin dia terus"
+    mcname "Kalo misalnya ketahuan maaf banget dah."
+    "Terdengar suara pintu terbuka dan seluruh perhatian tertuju kepada sumber suara tersebut"
     $ quick_menu = False
-    scene black with dissolve
-    scene depan kampus with dissolve
+    scene black with Dissolve(2.0)
+    scene kelas with dissolve
     $ quick_menu = True
-    "Rektor" " selamat datang mahasiswa baru yang memasuki Jekiti university bla bla bla…"
-    "Perkataan sambutan dari rektor dan jajaran dosen membuat MC dan beberapa mahasiswa/i lain merasa bosan"
-    "Seakan mendukung perkatan MC, beberapa mahasiswa pun ada yang bermain hp, mengobrol bahkan bercanda"
-    "{size=-5}Mahasiswa A{/size}" "eh bosenin bet dah, template banget ini ucapan selamat datangnya tuh, bikin ngatuk ya ga ?"
-    "{size=-5}Mahasiswa B{/size}" "Iyaa njirr, bener banget dah mending kita login yuk P MOLE MOLE"
+    "Rektor" "Selamat datang Mahasiswa baru yang memasuki Jekiti University…"
+    "Perkataan sambutan dari Rektor dan jajaran Dosen membuat [mcname] dan beberapa Mahasiswa/i lain merasa bosan"
+    "Seakan mendukung perkataan [mcname], beberapa mahasiswa/i pun ada yang bermain HP, mengobrol, atau bahkan bercanda"
+    "{size=-5}Mahasiswa A{/size}" "Eh bosenin bet dah, template banget ini ucapan selamat datangnya tuh, bikin ngatuk ya ga ?"
+    "{size=-5}Mahasiswa B{/size}" "Iyaa njirr, bener banget dah mending kita login yuk P MABAR MABAR"
     "{size=-5}Mahasiswa C{/size}" "Gas kali ya login"
-    "Obrolan dari mahasiswa tersebut sesekali mengalihkan perhatian [mcname]"
-    "Akan tetapi, pandangannya sekali lagi teralihkan saat kana  tersenyum tipis dan tanganya yang berusaha menutupi senyumannya"
-    mcname "Akhirnya selesai juga sambutan dan kegiatan hari ini"
-    "[mcname] merengangkan badannya yang terasa kaku akibat duduk terlalu lama"
-    mcname "Eh masih jam segini mayan cape juga ya hari ini tapi masih ada energi si"
+    "[mcname] pun tidak sengaja mengalihkan pandangannya kepada perempuan tadi yang juga tertawa kecil karena mendengar obrolan mahasiswa tersebut."
+    mcname "{i}Astaga, aku tidak menyangka ternyata ada perempuan semanis dia{i}"
+    "(……)"
+    "Mata [mcname] dan perempuan itu tidak sengaja bertemu."
+    "[mcname] pun langsung mengalihkan pandangannya karena tersipu malu."
+    mcname "{i}Waduh mata kita gak sengaja bertemu pula{/i}"
+    mcname "{i}Semoga aja aku gak dikira orang aneh sama dia.{/i}"
+    "(……)"
+    $ quick_menu = False 
+    scene black with Dissolve(2.0)
+    scene kelas with dissolve
+    "[mcname] meregangkan badannya yang terasa kaku akibat duduk terlalu lama"
+    mcname "{i}Akhirnya selesai juga sambutan dan kegiatan hari ini{/i}"
+    mcname "{i}Hari ini lumayan cape juga ya.{/i}"
+    mcname "{i}Tapi masih ada energi sih…{/i}"
     # insert cg kana
     $ quick_menu = False
-    scene kana awal with dissolve
+    scene kana awal with Dissolve(2.0)
+    scene kelas with dissolve
     $ quick_menu = True
-    mcname "Aduhhh ko gw ga bisa ilangin senyuman itu dari kepala gw ya ?"
-    mcname "Apa jangan jangan gw kena santet lagi nih?"
-    mcname "Ah masa sih, lagian kan dia emang cantik jadi pantes dong kalau gw suka hehe"
-    mcname "Eh masih jam segini nih enaknya buat habisin waktu mending gw"
+    mcname "{i}Eh masih jam segini nih{/i}"
+    mcname "{i}Enaknya buat habisin waktu, mending aku ke…{/i}"
     $ quick_menu = False
     menu:
         "Mau Kemana?"
         "A. Ke Kosan":
             "Kamu habisin waktu di kosan dan memilih buat istirahatin diri daripada pergi kesana kemari"
+            $ kana_name = "Perempuan itu"
             jump chapter1kana2Campus
         "B. Ke Warteg":
             "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit"
@@ -252,58 +305,134 @@ label chapter1kana2Campus:
     scene black 
     show text "KEESOKAN HARINYA" with Pause(2.0)
     scene depan kampus with dissolve
+    "*STEP STEP STEP STEP*"
+    "Terdengar suara langkah kaki yang terburu-buru"
+    mcname "{i}Sial ternyata aku benar-benar meremehkan Jakarta{/i}"
+    mcname "{i}Siapa sangka macet di sini parah banget{/i}"
+    "Takut terlambat di hari pertama, [mcname] terburu-buru memasuki kelas kuliahnya"
     # background lift
     mcname "Ehhhh tungguuuu-"
-    "[mcname] pun terburu buru karena jam sudah menunjukan untuk memasuki kuliah"
-    mcname "Untung keburu buat masuk lift, makasih ya udah mau nahan liftnya"
-    "{size=-5}Mahasiswi A{/size}" "Iya sama sama" 
-    scene black with dissolve
+    "[mcname] berlari menuju Lift yang mau tertutup"
+    "Di dalam lift terlihat seorang cewek yang sepertinya juga mau menuju ke kelas"
+    "*DING*"
+    mcname "Huft… huft… huft."
+    mcname "Untung keburu buat masuk lift"
+    mcname "Makasih ya udah mau nahan liftnya"
+    "{size=-5}???{/size}" "Haha iya, sama-sama"
+    "Sibuk menarik nafas dari olahraga pagi yang tidak direncanakan tadi"
+    "[mcname] tidak terlalu memperhatikan perempuan yang ada di lift."
+    mcname "Huft... huft...."
+    mcname "Kayaknya aku harus ningkatin lagi nih, stamina ku ini"
+    "Setelah mendapatkan cukup oksigen"
+    "[mcname] mencoba melirik perempuan yang ada di dalam lift."
+    mcname "{i}Memang ya, cewek di Jakarta ini cantik-cantik semua{/i}"
+    "DING"
+    "Pintu lift terbuka"
+    mcname "Ah! Terima kasih lagi yak, sudah menahan lift tadi"
+    "[mcname] kemudian lanjut berlari menuju kelas"
+    scene black with Dissolve(2.0)
     scene kelas with dissolve
     play music "audio/bgm_ngobrol_normal.mp3" fadein 1.0
-    "[mcname] pun memasuki ruangan kelas yang dimana lumayan asing baginya krana ini pertama kalinya ia memasuki ruangan yang luas dan besar seperti itu selain di aula"
-    "di situ dia bertemu dengan muka yang ga asing di ingatannya ada [kana_name] dan mahasiswi yang dia temui waktu di lift"
+    "[mcname] pun memasuki ruangan kelas."
+    "Ini pertama kalinya ia memasuki ruangan yang luas dan besar seperti itu, selain di aula."
+    mcname "{i}Fiuhh. Untung aja kelasnya belum dimulai{/i}"
+    "[mcname] pun melihat ke sekeliling kelas"
+    "akan tetapi"
+    mcname "{i}Loh kok masih sepi kelasnya yah?{/i}"
+    "Dikarenakan masih banyak kursi yang kosong"
+    "[mcname] memilih untuk duduk di bagian belakang terlebih dahulu agar dekat dengan pintu keluar-masuk dan tidak ingin mencolok untuk hari-hari pertama ini."
+    "Saat [mcname] akan duduk"
+    "Terdengar suara perempuan yang membuatnya langsung melihat ke belakang"
+    "???" "Kok buru-buru amat?"
+    "???" "Santai aja napa?"
+    "???" "Lagian masih jam segini"
+    "???" "Atau…"
+    "???" "Kamu ngincer posisi paling depan, nih? Haha"
+    "[mcname] pun sadar bahwa perempuan itu adalah perempuan yang sama yang telah menahan pintu lift untuknya"
+    mcname "Hahh, astagaa"
+    mcname "Aku kira udah mulai loh kelasnya"
+    mcname "Aku sampe lari-lari kan tadi?"
     mcname "Eh kamu kan yang tadi di lift ya?"
-    mcname "Ternyata jurusan HI juga, kenalin namaku [mcname], salam kenal ya!!"
-    "???" "Owh iya kita ketemuan tadi"
-    "???" "Ga nyangka ternyata satu jurusan dan satu kelas juga"
-    "Freya" "Namaku Freya salam kenal juga"
-    mcname "Dia diliat liat imut juga ya"
-    mcname "Apa si kalau kata orang orang di internet sekarang?"
-    mcname "Owh iya"
-    mcname "Senyumannya manis kaya karamel"
-    "Dari kejauhan terdengar beberapa kalimat samar yang terdengar oleh telinga [mcname]"
-    "{size=-5}Mahasiswa A{/size}" "Ehh liat dia modis banget pakeannya"
+    mcname "Aduhh, ya udah deh yang penting datang aja dulu"
+    "???" "Hahaha, makanya tadi aku liat kamu lari-lari lucu banget deh"
+    "???" "Kok bisa sih, ada orang yang langsung lari-lari gitu padahal masih hari pertama"
+    "[mcname] melihat ke arah jam tangannya dan ia pun sadar"
+    mcname "{i}Aduhhh pantes aja aku lari-lari, jam tanganku mati. Ku kira udah telat{/i}"
+    "???" "Haha ada-ada deh kamu. Lain kali pastiin aja dulu deh."
+    "Perempuan itu tersenyum kecil dan manis"
+    mcname "Eh dari tadi kita ngobrol belum kenalan ternyata"
+    mcname "Boleh kali ya, kita kenalan dulu haha."
+    mcname "Kenalin namaku [mcname]"
+    mcname "Aku dari Ngawi"
+    mcname "Salam kenal, ya"
+    "Freya" "Eh, salam kenal juga namaku Freya asalku dari Yogyakarta"
+    mcname "{i}Dia ternyata imut juga ya{/i}"
+    mcname "{i}Apa sih, kalau kata orang-orang di internet sekarang.{/i}"
+    mcname "{i}Owh iya!{/i}"
+    mcname "{i}Senyumannya manis kaya karamel{/i}"
+    if kana_name == "Perempuan itu":
+        "Saat mengobrol, para Mahasiswa/i pun terdengar mulai memasuki ruangan kelas"
+        "Seorang perempuan pun duduk di sebelah Freya dan dilihat oleh [mcname]"
+        "Ternyata perempuan itu adalah perempuan yang menjadi bahan pembicaraan saat pembukaan Mahasiswa/i baru"
+        "Saat itu pun, Freya terlihat akrab dengan perempuan tersebut dan [mcname] memilih untuk tidak mencampuri urusan mereka"
+        "Akan tetapi, dari kejauhan terdengar beberapa kalimat samar yang terdengar oleh telinga [mcname]"
+    else:
+        "Saat mengobrol, para Mahasiswa/i pun terdengar mulai memasuki ruangan kelas"
+        "Seorang perempuan pun duduk di sebelah Freya dan dilihat oleh [mcname]"
+        "Ternyata perempuan itu adalah [kana_name] perempuan yang menjadi bahan pembicaraan saat pembukaan Mahasiswa/i baru"
+        "Saat itu pun, Freya terlihat akrab dengan [kana_name]. Sehingga [mcname] memilih untuk tidak mencampuri urusan mereka"
+        "Akan tetapi, dari kejauhan terdengar beberapa kalimat samar yang terdengar oleh telinga [mcname]"
+    "{size=-5}Mahasiswa A{/size}" "Ehh liat dia modis banget pakaiannya"
     "{size=-5}Mahasiswa B{/size}" "Iyaaa cantik banget yaa"
-    "{size=-5}Mahasiswa B{/size}" "Eh bukanya dia anak orang kaya yang katanya sepupunya rektor itu ya ?"
+    "{size=-5}Mahasiswa B{/size}" "Eh bukanya dia anak orang kaya yang katanya sepupunya rektor itu ya?"
     "{size=-5}Mahasiswa B{/size}" "Eh lo ajak ngobrol sana siapa tau bisa lo deketin"
-    mcname "{i}Apaan sih mereka{/i}"
-    mcname "{i}Mereka ngomongin siapa si{/i}"
-    mcname "{i}Eh…ternyata mereka ngomongin yang di sebelah gw?{/i}"
-    mcname "{i}Iya si pakeannya modis banget{/i}"
-    mcname "{i}Ehh tunggu dia di sebelah gw ?{/i}"
-    mcname "{i}Apakah ini TAKDIR hehehe{/i}"
-    "[kana_name] pun menyadari bahwa di sebelahnya itu adalah [mcname] dia pun mulai tersenyum tipis, saat dia akan menyapa [mcname] suara pintu pun berbunyi"
+    if kana_name == "Perempuan itu":
+        mcname "{i}Mereka ngobrolin perempuan di sebelah Freya, ya?{/i}"
+        mcname "{i}Tapi kalau dilihat-lihat, memang modis sih pakaiannya.{/i}"
+        mcname "{i}Dia juga kenal deket sama Freya, ya?{/i}"
+        "Perempuan itu pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
+        "Tiba-tiba, suara pintu pun berbunyi"
+    else:
+        mcname "{i}Mereka ngobrolin [kana_name], ya?{/i}"
+        mcname "{i}Tapi kalau dilihat lihat, memang modis sih pakaiannya{/i}"
+        mcname "{i}Dia juga kenal deket sama Freya, ya?{/i}"
+        "[kana_name] itu pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
+        "Saat dia akan menyapa [mcname], suara pintu pun berbunyi."
+    "Dosen pun memasuki ruangan kelas"
+    "Kelas pun menjadi tenang dan lebih tertib dari sebelumnya"
     "Dosen memasuki ruangan kelas dan kelas pun menjadi hening dan lebih tertrib dari sebelumnya"
     "Dosen" "Selamat siang mahasiswa dan mahasiswi sekalian"
     "Dosen" "Selamat datang di mata kuliah pertama kalian di jenjang perkuliah ini"
-    "Dosen" "Sebelumnya perkenalkan nama saya Fatimah"
-    "Dosen" "Disini saya mengajar mata kuliah Teori Politik Indonesia, Studi Perang Dan Damai, Strategi Dan Tatakelola Strategis"
-    "Dosen" "Untuk semester pertama kalian akan mempelajri mata kuliah dasar yaitu Teori Politik Indonesia"
-    "Dosen" "Dengan begitu saya akan langsung ke dalam materi"
-    scene black with dissolve
-    "Tidak terasa bahwa waktu telah berlalu selama 40 menit, hal ini menunjukan bahwa matkul sudah akan berakhir dan mata kuliah untuk hari ini sudah tidak ada lagi"
+    "Bu Fatimah" "Sebelumnya perkenalkan nama saya Fatimah"
+    "Bu Fatimah" "Disini saya mengajar mata kuliah Teori Politik Indonesia, Studi Perang Dan Damai, Strategi Dan Tatakelola Strategis"
+    "Bu Fatimah" "Untuk semester pertama kalian akan mempelajari mata kuliah dasar yaitu Teori Politik Indonesia"
+    "Bu Fatimah" "Dengan begitu saya akan langsung ke dalam materi"
+    "Suasana kelas pun terasa hening, fokus untuk memperhatikan apa yang dijelaskan oleh Bu Fatimah"
+
+    scene black with Dissolve(2.0)
     scene kelas with dissolve
-    "Dosen" "Baiklah semuanya karena waktu saya sudah habis"
-    "Dosen" "Maka mata kuliah hari ini sudah selesai"
-    "Dosen" "Tapi sebelum itu saya akan memberikan tugas kelompok yang ber isikan 4 orang saja"
-    "Dosen" "Minggu depan di kumpulkan ya!!"
-    "Dosen" "Untuk kelompoknya akan dibagi berdasarkan jajaran tempat duduk kalian saja agar tidak ribut dan tidak ada circle diantara kalian semua"
-    "Dosen" "Lalu gunakan kesempatan ini untuk berkenalan dengan teman teman sekelas kalian"
-    "Dosen" "Sekian untuk hari ini terimakasih banyak"
+    "Bu Fatimah" "Baiklah semuanya karena waktu saya sudah habis"
+    "Bu Fatimah" "Maka mata kuliah hari ini sudah selesai"
+    "Terdengar suara lega dari para mahasiswa"
+
+    "Bu Fatimah" "Tapi sebelum itu"
+    "Bu Fatimah" "Saya akan memberikan tugas kelompok yang berisikan 4 orang"
+    "Bu Fatimah" "Minggu depan di kumpulkan ya!!"
+    "Mendengar hal tersebut, para mahasiswa mengeluarkan suara kekecewaan"
+
+    "Bu Fatimah" "Jadi kelompoknya akan dibagi berdasarkan jajaran tempat duduk kalian saja agar simple dan tidak ada circle diantara kalian semua"
+    "Bu Fatimah" "Lalu gunakan kesempatan ini untuk berkenalan dengan teman - teman sekelas kalian"
+    "Bu Fatimah" "Sekian untuk hari ini"
+    "Bu Fatimah" "Terimakasih banyak"
     mcname "{i}Aduh, satu jajaran!!??{/i}"
-    mcname "{i}Tunggu bentar, kalau satu jajar??{/i}"
-    mcname "{i}Eh gw sama cewek itu cuyyyy!!!{/i}"
-    mcname "{i}Eh halo [kana_name] satu kelompok juga mohon bantuannya{/i}"
+    mcname "{i}Tunggu bentar, kalau satu jajar…??,{/i}"
+    "*SFX LIRIK KANAN KIRI*"
+    if kana_name == "Perempuan itu":
+        mcname "Eh, aku sama cewek itu!!!"
+    else:
+        mcname "Eh, aku sama [kana_name]!!!"
+    "Eh, halo. Kita satu kelompok, ya. Mohon bantuannya"
+    "Freya" "Eeh, iyaa. Kita satu kelompok, nih. Kebetulan banget, ya. Haha"
     play music "audio/Dreamcatcher.mp3"
     jump credits
 

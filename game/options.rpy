@@ -214,5 +214,5 @@ init python:
 # Mouse Cursor
 
 define config.mouse = { 
-    'default' : [ ('gui/button/cursor.png', 0, 0)],
+    'default' : [ ('gui/button/cursor_1.png', 0, 0)],
     }
