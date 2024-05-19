@@ -441,6 +441,37 @@ label chapter1kana2Campus:
         mcname "Eh, aku sama [kana_name]!!!"
     "Eh, halo. Kita satu kelompok, ya. Mohon bantuannya"
     "Freya" "Eeh, iyaa. Kita satu kelompok, nih. Kebetulan banget, ya. Haha"
+    show kana at char_placement with dissolve
+    show kana_side at left with dissolve
+    kana "Halo [mcname] Kita satu kelompok ya?"
+    $ kana_name = "Kana"
+    kana " Mohon bantuannya, ya. Sebelumnya, kenalkan namaku [kana_name]"
+    kana "Eh, kamu sini dong. Kan kita juga satu kelompok"
+    hide kana_side with dissolve
+    "Mahasiswa C" "Owh iya. Siang semuanya"
+    "Mahasiswa C" " Sebelumnya, kenalin nama gw Donatur"
+    "Mahasiswa C" "Gw dari Pekalongan. Salam kenal"
+    hide kana with dissolve
+    "Freya, [kana_name], [mcname], dan (Donatur) pun saling bertukar sapa dan mengobrol lebih lanjut. Akhirnya, mereka pun membuat grup chat untuk membahas pekerjaan kelompok mereka."
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    scene bedroom with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True 
+    "Setelah [mcname] sampai Kos nya"
+    "[mcname] pun membuang tasnya ke lantai lalu melepaskan sepatu dan menghempaskan tubuhnya ke kasur"
+    "Setelah capek dengan kegiatan hari ini"
+    "datang ke kos membuat [mcname] merasakan ketenangan di balik hiruk pikuk Kota Jakarta"
+    "Memejamkan mata, menghela nafas, dan merenungkan kembali kegiatan yang telah terjadi hari ini"
+    "*pip* (Notif WA)"
+    mcname "(...)"
+    "*pip* (Notif WA)"
+    mcname "Duh. Notif WA nih"
+    mcname "Apa nih? Dari Mamah, kah?"
+    "[mcname] mencoba mengecek HP nya"
+    mcname "{i}Oh, ternyata bukan.{/i}"
+    mcname "{i}Ini notif dari grup chat itu, ternyata{/i}"
+    jump phoneChat
     play music "audio/Dreamcatcher.mp3"
     jump credits
 

@@ -1,15 +1,59 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('gui/dialog/custom_dialog_ana.png') at 0x0000000004bdd820>:
-  File "game/kana/chapter1kana.rpy", line 158, in script
-    kana "H-halooo, maaf tapi apa kursinya kosong ?"
-OSError: Couldn't find file 'gui/dialog/custom_dialog_ana.png'.
+While running game code:
+  File "game/kana/kanaPhone.rpy", line 5, in script
+    freya_nvl "Eh, guys"
+  File "renpy/common/00nvl_mode.rpy", line 381, in do_display
+    renpy.display_say(
+  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
+    return __nvl_show_screen("nvl", items=[ ])
+  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
+    return renpy.get_widget(screen_name, "what", config.nvl_layer)
+  File "game/screens.rpy", line 1526, in execute
+    screen nvl(dialogue, items=None):
+  File "game/screens.rpy", line 1526, in execute
+    screen nvl(dialogue, items=None):
+  File "game/screens.rpy", line 1529, in execute
+    if nvl_mode == "phone":
+  File "game/screens.rpy", line 1530, in execute
+    use PhoneDialogue(dialogue, items)
+  File "game/PhoneTexting.rpy", line 16, in execute
+    screen PhoneDialogue(dialogue, items=None):
+  File "game/PhoneTexting.rpy", line 16, in execute
+    screen PhoneDialogue(dialogue, items=None):
+  File "game/PhoneTexting.rpy", line 20, in execute
+    vbox:
+  File "game/PhoneTexting.rpy", line 23, in execute
+    frame:
+  File "game/PhoneTexting.rpy", line 29, in execute
+    viewport:
+  File "game/PhoneTexting.rpy", line 35, in execute
+    vbox:
+  File "game/PhoneTexting.rpy", line 38, in execute
+    use nvl_phonetext(dialogue,items)
+  File "game/PhoneTexting.rpy", line 72, in execute
+    screen nvl_phonetext(dialogue,items):
+  File "game/PhoneTexting.rpy", line 72, in execute
+    screen nvl_phonetext(dialogue,items):
+  File "game/PhoneTexting.rpy", line 76, in execute
+    for id_d, d in enumerate(dialogue):
+  File "game/PhoneTexting.rpy", line 77, in execute
+    if d.who == None: # If it's the narrator talking
+  File "game/PhoneTexting.rpy", line 97, in execute
+    hbox:
+  File "game/PhoneTexting.rpy", line 117, in execute
+    vbox:
+  File "game/PhoneTexting.rpy", line 119, in execute
+    if d.who != MC_Name and previous_d_who != d.who:
+  File "game/PhoneTexting.rpy", line 119, in <module>
+    if d.who != MC_Name and previous_d_who != d.who:
+NameError: name 'MC_Name' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/kana/chapter1kana.rpy", line 158, in script
-    kana "H-halooo, maaf tapi apa kursinya kosong ?"
+  File "game/kana/kanaPhone.rpy", line 5, in script
+    freya_nvl "Eh, guys"
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 2557, in execute
     Say.execute(self)
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 615, in execute
@@ -18,57 +62,59 @@ Full traceback:
     who(what, *args, **kwargs)
   File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1391, in __call__
     self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1042, in do_display
-    display_say(who,
-  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 738, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2814, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1352, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 754, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 1396, in render
-    back = render(style.background, bw, bh, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 626, in render
-    return cache.get(self, render=True)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 309, in get
-    surf = image.load()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 761, in load
-    raise e
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 711, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "D:\fanbase_project\KTPVisualNovel\renpy\loader.py", line 672, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'gui/dialog/custom_dialog_ana.png'.
+  File "renpy/common/00nvl_mode.rpy", line 381, in do_display
+    renpy.display_say(
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 672, in display_say
+    what_text = show_function(who, what_string, **show_args)
+  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
+    return __nvl_show_screen("nvl", items=[ ])
+  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
+    return renpy.get_widget(screen_name, "what", config.nvl_layer)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 1534, in get_displayable
+    screen.update()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 1526, in execute
+    screen nvl(dialogue, items=None):
+  File "game/screens.rpy", line 1526, in execute
+    screen nvl(dialogue, items=None):
+  File "game/screens.rpy", line 1529, in execute
+    if nvl_mode == "phone":
+  File "game/screens.rpy", line 1530, in execute
+    use PhoneDialogue(dialogue, items)
+  File "game/PhoneTexting.rpy", line 16, in execute
+    screen PhoneDialogue(dialogue, items=None):
+  File "game/PhoneTexting.rpy", line 16, in execute
+    screen PhoneDialogue(dialogue, items=None):
+  File "game/PhoneTexting.rpy", line 20, in execute
+    vbox:
+  File "game/PhoneTexting.rpy", line 23, in execute
+    frame:
+  File "game/PhoneTexting.rpy", line 29, in execute
+    viewport:
+  File "game/PhoneTexting.rpy", line 35, in execute
+    vbox:
+  File "game/PhoneTexting.rpy", line 38, in execute
+    use nvl_phonetext(dialogue,items)
+  File "game/PhoneTexting.rpy", line 72, in execute
+    screen nvl_phonetext(dialogue,items):
+  File "game/PhoneTexting.rpy", line 72, in execute
+    screen nvl_phonetext(dialogue,items):
+  File "game/PhoneTexting.rpy", line 76, in execute
+    for id_d, d in enumerate(dialogue):
+  File "game/PhoneTexting.rpy", line 77, in execute
+    if d.who == None: # If it's the narrator talking
+  File "game/PhoneTexting.rpy", line 97, in execute
+    hbox:
+  File "game/PhoneTexting.rpy", line 117, in execute
+    vbox:
+  File "game/PhoneTexting.rpy", line 119, in execute
+    if d.who != MC_Name and previous_d_who != d.who:
+  File "game/PhoneTexting.rpy", line 119, in <module>
+    if d.who != MC_Name and previous_d_who != d.who:
+NameError: name 'MC_Name' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Sun May 19 13:34:36 2024
+Sun May 19 15:12:09 2024
