@@ -443,7 +443,8 @@ label chapter1kana2Campus:
     "Freya" "Eeh, iyaa. Kita satu kelompok, nih. Kebetulan banget, ya. Haha"
     show kana at char_placement with dissolve
     show kana_side at left with dissolve
-    kana "Halo [mcname] Kita satu kelompok ya?"
+    $ kana_name = "???"
+    kana "Halo Kita satu kelompok ya?"
     $ kana_name = "Kana"
     kana " Mohon bantuannya, ya. Sebelumnya, kenalkan namaku [kana_name]"
     kana "Eh, kamu sini dong. Kan kita juga satu kelompok"
