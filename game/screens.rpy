@@ -182,7 +182,7 @@ screen say(who, what):
     style_prefix "say"
 
     window:
-        id "window"
+        id "window" 
 
         if who is not None:
 
@@ -219,7 +219,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/dialog_default_black_resize.png", xalign=0.03, yalign=-80.5)
+    background Image("gui/dialog/custom_dialog_default.png", xalign=0.65,yalign=1.55)
 
 style namebox:
     xpos gui.name_xpos
@@ -233,8 +233,8 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name", accent=True)
-    xpos 85
-    ypos -57
+    xpos 65
+    ypos -90
     size 35
     xalign gui.name_xalign
     yalign 0.5
@@ -244,7 +244,7 @@ style say_dialogue:
 
     xpos 0.23
     xsize gui.dialogue_width
-    ypos 10
+    ypos -30
     adjust_spacing False
 
 ## Layar masukkan/input ########################################################
@@ -338,29 +338,29 @@ screen quick_menu():
             yalign 1.0
 
             textbutton _("Kembali") action Rollback():
-                yoffset -100
-                xoffset -115
+                yoffset -55
+                xoffset -20
             textbutton _("Riwayat") action ShowMenu('history'):
-                yoffset -100
-                xoffset -95
-            textbutton _("Lompati") action Skip() alternate Skip(fast=True, confirm=True):
-                yoffset -100
-                xoffset -75
-            textbutton _("Otomatis") action Preference("auto-forward", "toggle"):
-                yoffset -100
-                xoffset -60
-            textbutton _("Simpan") action ShowMenu('save'):
-                yoffset -100
-                xoffset -40
-            textbutton _("Simpan.C") action QuickSave():
-                yoffset -100
-                xoffset -15
-            textbutton _("Muat.C") action QuickLoad():
-                yoffset -100
+                yoffset -55
                 xoffset 10
+            textbutton _("Lompati") action Skip() alternate Skip(fast=True, confirm=True):
+                yoffset -55
+                xoffset 40
+            textbutton _("Otomatis") action Preference("auto-forward", "toggle"):
+                yoffset -55
+                xoffset 65
+            textbutton _("Simpan") action ShowMenu('save'):
+                yoffset -55
+                xoffset 100
+            textbutton _("Simpan.C") action QuickSave():
+                yoffset -55
+                xoffset 130
+            textbutton _("Muat.C") action QuickLoad():
+                yoffset -55
+                xoffset 170
             textbutton _("Setting") action ShowMenu('preferences'):
-                yoffset -100
-                xoffset 45
+                yoffset -55
+                xoffset 220
 
 
 ## Kode ini memastikan layar quick_menu di tampilkan di dalam permainan,

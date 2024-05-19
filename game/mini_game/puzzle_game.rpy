@@ -17,7 +17,6 @@
 #
 # Images available for this tutorial can be used in your finished commercial or personal projects if you wish. Background image used of a classroom is made by "mugenjohncel" on the lemmasoft.com forums. Link: https://lemmasoft.renai.us/forums/viewtopic.php?t=17302
 
-define e = Character("Emma", image = "emma")
 
 init python:
     class DevtoolMouseposDisplayable(renpy.Displayable):
@@ -78,7 +77,7 @@ screen reassemble_puzzle:
                 anchor(0.5, 0.5)
                 focus_mask True
                 drag_raise True
-                image "puzzle_mini_game/image_part_%s.jpg" % (i + 1)
+                image "puzzle_mini_game/Image_part_%s.jpg" % (i + 1)
 
         # Snappable spots to drag to.
         for i in range(page_pieces):
@@ -100,10 +99,6 @@ default initial_piece_coordinates = [] # Will be filled with random initial loca
 default finished_pieces = 0 # Keeps track of the amount of pieces that have been placed correctly.
 
 label puzzle_start:
-    scene room
-    e "Oh no, it's been shredded to pieces!"
-    e "I'll have to reassemble it piece by piece."
-    e "Let's do it!"
     $ setup_puzzle()
     call screen reassemble_puzzle
     return
