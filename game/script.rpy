@@ -7,6 +7,10 @@ image cursor tana:
     "gui/button/cursor_2.png"
 
 
+# initial phone
+define config.adv_nvl_transition = None
+define config.nvl_adv_transition = Dissolve(0.3)
+
 #Definisikan transformasi dan alignments
 define small_center = Transform(zoom=0.5, xalign=0.5)
 define small_left = Transform(zoom=0.5, xalign=0.0)

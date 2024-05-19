@@ -23,7 +23,7 @@ default tono_blinded = Character("[tono_name]", image="tono_blinded",window_back
 
 # Define Character Kana
 default kana_name = "????"
-define kana = Character("[kana_name]", image="Kana", window_background="gui/dialog/custom_dialog_ana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define kana = Character("[kana_name]", image="Kana", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default kana_sh = Character("[kana_name]", image="kana_sh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default kana_shy = Character("[kana_name]", image="Kana_shy", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default kana_sick = Character("[kana_name]", image="Kana_sick", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
@@ -52,19 +52,10 @@ image side kana_side_smile = "Characters/kana_side_smile.png"
 image side kana_side = "Characters/kana_side.png"
 
 
-define tono1 = Character("tono", image="tono_side") 
-image side tono_side = "Characters/tono_side.png"
-define tono2 = Character("tono", image="tono_side2") 
-image side tono_side2 = "Characters/tono_side2.png"
-define tono3 = Character("tono", image="tono_side3") 
-image side tono_side3 = "Characters/tono_side3.png"
-
-define kana1 = Character("kana", image="kana_side") 
-image side kana_side = "Characters/kana_side.png"
-define kana2 = Character("kana", image="kana_side2") 
-image side kana_side2 = "Characters/kana_side2.png"
-define kana3 = Character("kana", image="kana_side3") 
-image side kana_side3 = "Characters/kana_side3.png"
+# Define character appear on phone
+define mc_nvl = Character("[mcname]", kind=nvl, image="nighten", callback=Phone_SendSound)
+define kana_nvl = Character("[kana_name]", kind=nvl, callback=Phone_ReceiveSound)
+define freya_nvl = Character("Freya", kind=nvl, callback=Phone_ReceiveSound)
 
 
 

@@ -37,6 +37,9 @@ label mainkana:
     $ quick_menu = False
     menu:
         "Langsung ke kosan abis itu rapikan barang":
+            $ renpy.block_rollback()
+            scene mc bedroom with Dissolve(2.0)
+            $ quick_menu = True
             mcname "Jadi ini ya kamarku selama 4 tahun ke depan"
             mcname "Salam kenal ya kamarku moga moga kamu gak ada penunggunya hahaha...."
             "[mcname] merapihkan barang - barang bawaan yang sudah datang duluan oleh mobil pengantar"
@@ -46,6 +49,8 @@ label mainkana:
             $ quick_menu = False
             jump chapter1kana1
         "Muter - muter Jakarta dan habisin waktu sampai malam":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             "[mcname] malah lupa waktu dan akhirnya lupa kalau harus beresin barang"
             "Akhirnya [mcname] malah ikut ke pergi ke pergaulan bebas"
             $ quick_menu = False
@@ -57,6 +62,8 @@ label mainkana:
             play music "audio/Dreamcatcher.mp3"
             jump credits
         "Nyari cafe biar ga skena ":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             "[mcname] ikut ke dalam cirle orang orang kaya yang haus akan atensi di dunia maya, dan akhirnya malah ngutang sana sini krana kurang atensi"
             $ quick_menu = False
             scene black  with dissolve
@@ -65,6 +72,8 @@ label mainkana:
             play music "audio/Dreamcatcher.mp3"
             jump credits
         "Ke warteg buat makan":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             mcname "Aduhhh perutku kroncongan. Makan dulu kali yah, habis itu baru ke kos. Dari berangkat belum makan soalnya"
             "[mcname] pun memilih untuk pergi mencari makan ke warteg yang berada di dekat kosnya"
             "Dia bertemu dengan beberapa pedagang yang ramah dan sopan, membuat [mcname] semakin nyaman berada di lingkungan kos nya tersebut"

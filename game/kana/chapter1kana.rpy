@@ -15,9 +15,10 @@ label chapter1kana1:
     mcname "Di sini tempat dimana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh heheh"
     $ quick_menu = False
     scene black with Dissolve(2.0)
+    show text "{color=#FFF}SFX PINTU DIBUKA{/color}" with Pause(1.0)
+    show text "{color=#FFF}MEMASUKI AULA{/color}" with Pause(2.0)
+    scene kelas with Dissolve(2.0)
     $ quick_menu = True
-    show text "SFX PINTU DIBUKA"
-    show text "MEMASUKI AULA" with Pause(2.0)
     "Saat memasuki ruangan [mcname] mendengar suara di aula yang sangat ramai"
     mcname "Seperti yang diharapkan dari kampus Ibu Kota"
     mcname "Orangnya rame banget"
@@ -69,8 +70,8 @@ label chapter1kana1:
     "Menit telah berlalu dan [mcname] masih menatap cewek tersebut"
     "Mungkin itu adalah rekor terlama [mcname] dalam memperhatikan seseorang"
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    show text "*DING DING DING DING*\n(screenshake)" with Pause(2.0)
+    scene black with Dissolve(1.0)
+    show text "{color=#FFF}*DING DING DING DING*\n(screenshake){/color}" with Pause(2.0)
     scene kelas with dissolve
     $ quick_menu = True
     mcname "Ehhh… udah bel, serius??? Lama banget berarti aku liatin dia"
@@ -98,6 +99,7 @@ label chapter1kana1:
     $ quick_menu = False 
     scene black with Dissolve(2.0)
     scene kelas with dissolve
+    $ quick_menu = True 
     "[mcname] meregangkan badannya yang terasa kaku akibat duduk terlalu lama"
     mcname "{i}Akhirnya selesai juga sambutan dan kegiatan hari ini{/i}"
     mcname "{i}Hari ini lumayan cape juga ya.{/i}"
@@ -274,8 +276,8 @@ label chapter1kana2Cafe:
     show kana_scared at char_center with dissolve
     show kana_side_scared at left with dissolve
     kana "Eh udah jam segini aku harus pulang aku duluan yaa"
-    hide kana_scared with dissolve
-    hide kana_smile with dissolve
+    hide kana_scared
+    hide kana_smile
     hide kana_side_scared with dissolve
     show kana at char_center with dissolve
     show kana_side at left with dissolve
@@ -302,9 +304,11 @@ label chapter1kana2Cafe:
 
 
 label chapter1kana2Campus:
-    scene black 
+    $ renpy.block_rollback()
+    scene black with dissolve
     show text "KEESOKAN HARINYA" with Pause(2.0)
-    scene depan kampus with dissolve
+    scene depan kampus with Dissolve(2.0)
+    $ quick_menu = True
     "*STEP STEP STEP STEP*"
     "Terdengar suara langkah kaki yang terburu-buru"
     mcname "{i}Sial ternyata aku benar-benar meremehkan Jakarta{/i}"
@@ -330,9 +334,12 @@ label chapter1kana2Campus:
     "Pintu lift terbuka"
     mcname "Ah! Terima kasih lagi yak, sudah menahan lift tadi"
     "[mcname] kemudian lanjut berlari menuju kelas"
+    $ quick_menu = False
     scene black with Dissolve(2.0)
     scene kelas with dissolve
     play music "audio/bgm_ngobrol_normal.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "[mcname] pun memasuki ruangan kelas."
     "Ini pertama kalinya ia memasuki ruangan yang luas dan besar seperti itu, selain di aula."
     mcname "{i}Fiuhh. Untung aja kelasnya belum dimulai{/i}"
@@ -357,7 +364,7 @@ label chapter1kana2Campus:
     "???" "Hahaha, makanya tadi aku liat kamu lari-lari lucu banget deh"
     "???" "Kok bisa sih, ada orang yang langsung lari-lari gitu padahal masih hari pertama"
     "[mcname] melihat ke arah jam tangannya dan ia pun sadar"
-    mcname "{i}Aduhhh pantes aja aku lari-lari, jam tanganku mati. Ku kira udah telat{/i}"
+    mcname "Aduhhh pantes aja aku lari-lari, jam tanganku mati. Ku kira udah telat"
     "???" "Haha ada-ada deh kamu. Lain kali pastiin aja dulu deh."
     "Perempuan itu tersenyum kecil dan manis"
     mcname "Eh dari tadi kita ngobrol belum kenalan ternyata"
@@ -396,7 +403,7 @@ label chapter1kana2Campus:
         mcname "{i}Mereka ngobrolin [kana_name], ya?{/i}"
         mcname "{i}Tapi kalau dilihat lihat, memang modis sih pakaiannya{/i}"
         mcname "{i}Dia juga kenal deket sama Freya, ya?{/i}"
-        "[kana_name] itu pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
+        "[kana_name] pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
         "Saat dia akan menyapa [mcname], suara pintu pun berbunyi."
     "Dosen pun memasuki ruangan kelas"
     "Kelas pun menjadi tenang dan lebih tertib dari sebelumnya"
@@ -404,13 +411,14 @@ label chapter1kana2Campus:
     "Dosen" "Selamat siang mahasiswa dan mahasiswi sekalian"
     "Dosen" "Selamat datang di mata kuliah pertama kalian di jenjang perkuliah ini"
     "Bu Fatimah" "Sebelumnya perkenalkan nama saya Fatimah"
-    "Bu Fatimah" "Disini saya mengajar mata kuliah Teori Politik Indonesia, Studi Perang Dan Damai, Strategi Dan Tatakelola Strategis"
-    "Bu Fatimah" "Untuk semester pertama kalian akan mempelajari mata kuliah dasar yaitu Teori Politik Indonesia"
+    "Bu Fatimah" "Disini saya mengajar mata kuliah Teori Politik Internasional, Studi Perang Dan Damai, Strategi Dan Tatakelola Strategis"
+    "Bu Fatimah" "Untuk semester pertama kalian akan mempelajari mata kuliah dasar yaitu Teori Politik Internasional"
     "Bu Fatimah" "Dengan begitu saya akan langsung ke dalam materi"
     "Suasana kelas pun terasa hening, fokus untuk memperhatikan apa yang dijelaskan oleh Bu Fatimah"
-
+    $ quick_menu = False
     scene black with Dissolve(2.0)
     scene kelas with dissolve
+    $ quick_menu = True
     "Bu Fatimah" "Baiklah semuanya karena waktu saya sudah habis"
     "Bu Fatimah" "Maka mata kuliah hari ini sudah selesai"
     "Terdengar suara lega dari para mahasiswa"
