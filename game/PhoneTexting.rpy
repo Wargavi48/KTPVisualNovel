@@ -1,7 +1,6 @@
 # Here's the code for the phone!
 
 define nvl_mode = "phone"  ##Allow the NVL mode to become a phone conversation
-define MC_Name = "[mcname]" ##The name of the main character, used to place them on the screen
 
 init -1 python:
     phone_position_x = 0.5
@@ -88,19 +87,19 @@ screen nvl_phonetext(dialogue):
                     if d.current:
                         at message_narrator
         else:
-            if d.who == MC_Name:
+            if d.who == mcname:
                 $ message_frame = "phone_send_frame.png"
             else:
                 $ message_frame = "phone_received_frame.png"
 
             hbox:
                 spacing 10
-                if d.who == MC_Name:
+                if d.who == mcname:
                     box_reverse True
                 
                 #If this is the first message of the character, show an icon
                 if previous_d_who != d.who:
-                    if d.who == MC_Name:
+                    if d.who == mcname:
                         $ message_icon = "phone_send_icon.png"
                     else:
                         $ message_icon = "phone_received_icon.png"
@@ -114,7 +113,7 @@ screen nvl_phonetext(dialogue):
 
                 vbox:
                     yalign 1.0
-                    if d.who != MC_Name and previous_d_who != d.who:
+                    if d.who != mcname and previous_d_who != d.who:
                         text d.who
 
                     frame:
@@ -125,7 +124,7 @@ screen nvl_phonetext(dialogue):
                         xsize 350
 
                         if d.current:
-                            if d.who == MC_Name:
+                            if d.who == mcname:
                                 at message_appear(1)
                             else:
                                 at message_appear(-1)
@@ -136,7 +135,7 @@ screen nvl_phonetext(dialogue):
                             slow_cps False
                             
 
-                            if d.who == MC_Name :
+                            if d.who == mcname :
                                 color "#FFF"
                                 text_align 1.0
                                 xpos -580

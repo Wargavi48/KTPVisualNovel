@@ -1,120 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/kana/kanaPhone.rpy", line 5, in script
-    freya_nvl "Eh, guys"
-  File "renpy/common/00nvl_mode.rpy", line 381, in do_display
-    renpy.display_say(
-  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
-    return __nvl_show_screen("nvl", items=[ ])
-  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
-    return renpy.get_widget(screen_name, "what", config.nvl_layer)
-  File "game/screens.rpy", line 1526, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1526, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1529, in execute
-    if nvl_mode == "phone":
-  File "game/screens.rpy", line 1530, in execute
-    use PhoneDialogue(dialogue, items)
-  File "game/PhoneTexting.rpy", line 16, in execute
-    screen PhoneDialogue(dialogue, items=None):
-  File "game/PhoneTexting.rpy", line 16, in execute
-    screen PhoneDialogue(dialogue, items=None):
-  File "game/PhoneTexting.rpy", line 20, in execute
-    vbox:
-  File "game/PhoneTexting.rpy", line 23, in execute
-    frame:
-  File "game/PhoneTexting.rpy", line 29, in execute
-    viewport:
-  File "game/PhoneTexting.rpy", line 35, in execute
-    vbox:
-  File "game/PhoneTexting.rpy", line 38, in execute
-    use nvl_phonetext(dialogue,items)
-  File "game/PhoneTexting.rpy", line 72, in execute
-    screen nvl_phonetext(dialogue,items):
-  File "game/PhoneTexting.rpy", line 72, in execute
-    screen nvl_phonetext(dialogue,items):
-  File "game/PhoneTexting.rpy", line 76, in execute
-    for id_d, d in enumerate(dialogue):
-  File "game/PhoneTexting.rpy", line 77, in execute
-    if d.who == None: # If it's the narrator talking
-  File "game/PhoneTexting.rpy", line 97, in execute
-    hbox:
-  File "game/PhoneTexting.rpy", line 117, in execute
-    vbox:
-  File "game/PhoneTexting.rpy", line 119, in execute
-    if d.who != MC_Name and previous_d_who != d.who:
-  File "game/PhoneTexting.rpy", line 119, in <module>
-    if d.who != MC_Name and previous_d_who != d.who:
-NameError: name 'MC_Name' is not defined
+  File "game/kana/chapter1kana.rpy", line 466, in script
+    "(Notif WA)" play audio "audio/ReceiveText.ogg"
+Exception: Say has image attributes ('play', 'audio'), but there's no image tag associated with the speaking character.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/kana/kanaPhone.rpy", line 5, in script
-    freya_nvl "Eh, guys"
+  File "game/kana/chapter1kana.rpy", line 466, in script
+    "(Notif WA)" play audio "audio/ReceiveText.ogg"
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 2557, in execute
     Say.execute(self)
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 615, in execute
     renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1391, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "renpy/common/00nvl_mode.rpy", line 381, in do_display
-    renpy.display_say(
-  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 672, in display_say
-    what_text = show_function(who, what_string, **show_args)
-  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
-    return __nvl_show_screen("nvl", items=[ ])
-  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
-    return renpy.get_widget(screen_name, "what", config.nvl_layer)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 1534, in get_displayable
-    screen.update()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 1526, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1526, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1529, in execute
-    if nvl_mode == "phone":
-  File "game/screens.rpy", line 1530, in execute
-    use PhoneDialogue(dialogue, items)
-  File "game/PhoneTexting.rpy", line 16, in execute
-    screen PhoneDialogue(dialogue, items=None):
-  File "game/PhoneTexting.rpy", line 16, in execute
-    screen PhoneDialogue(dialogue, items=None):
-  File "game/PhoneTexting.rpy", line 20, in execute
-    vbox:
-  File "game/PhoneTexting.rpy", line 23, in execute
-    frame:
-  File "game/PhoneTexting.rpy", line 29, in execute
-    viewport:
-  File "game/PhoneTexting.rpy", line 35, in execute
-    vbox:
-  File "game/PhoneTexting.rpy", line 38, in execute
-    use nvl_phonetext(dialogue,items)
-  File "game/PhoneTexting.rpy", line 72, in execute
-    screen nvl_phonetext(dialogue,items):
-  File "game/PhoneTexting.rpy", line 72, in execute
-    screen nvl_phonetext(dialogue,items):
-  File "game/PhoneTexting.rpy", line 76, in execute
-    for id_d, d in enumerate(dialogue):
-  File "game/PhoneTexting.rpy", line 77, in execute
-    if d.who == None: # If it's the narrator talking
-  File "game/PhoneTexting.rpy", line 97, in execute
-    hbox:
-  File "game/PhoneTexting.rpy", line 117, in execute
-    vbox:
-  File "game/PhoneTexting.rpy", line 119, in execute
-    if d.who != MC_Name and previous_d_who != d.who:
-  File "game/PhoneTexting.rpy", line 119, in <module>
-    if d.who != MC_Name and previous_d_who != d.who:
-NameError: name 'MC_Name' is not defined
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1491, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\defaultstore.py", line 419, in say
+    who(what, *args, interact=interact, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1329, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1148, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1074, in resolve_say_attributes
+    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
+Exception: Say has image attributes ('play', 'audio'), but there's no image tag associated with the speaking character.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Sun May 19 15:12:09 2024
+Sun May 19 16:05:02 2024

@@ -463,15 +463,24 @@ label chapter1kana2Campus:
     "Setelah capek dengan kegiatan hari ini"
     "datang ke kos membuat [mcname] merasakan ketenangan di balik hiruk pikuk Kota Jakarta"
     "Memejamkan mata, menghela nafas, dan merenungkan kembali kegiatan yang telah terjadi hari ini"
-    "*pip* (Notif WA)"
+    play audio "audio/ReceiveText.ogg"
+    "(Notif WA)"
     mcname "(...)"
-    "*pip* (Notif WA)"
+    play audio "audio/ReceiveText.ogg"
+    "(Notif WA)"
     mcname "Duh. Notif WA nih"
     mcname "Apa nih? Dari Mamah, kah?"
     "[mcname] mencoba mengecek HP nya"
     mcname "{i}Oh, ternyata bukan.{/i}"
     mcname "{i}Ini notif dari grup chat itu, ternyata{/i}"
+    $ quick_menu = False
     jump phoneChat
+    # play music "audio/Dreamcatcher.mp3"
+    # jump credits
+
+label chapter1kana3:
+    scene black with Dissolve(2.0)
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene kantin with Dissolve(2.0)
     play music "audio/Dreamcatcher.mp3"
     jump credits
-

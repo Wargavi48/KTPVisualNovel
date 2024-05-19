@@ -56,6 +56,7 @@ image side kana_side = "Characters/kana_side.png"
 define mc_nvl = Character("[mcname]", kind=nvl, image="nighten", callback=Phone_SendSound)
 define kana_nvl = Character("[kana_name]", kind=nvl, callback=Phone_ReceiveSound)
 define freya_nvl = Character("Freya", kind=nvl, callback=Phone_ReceiveSound)
+define donatur_nvl = Character("Donatur", kind=nvl, callback=Phone_ReceiveSound)
 
 
 
