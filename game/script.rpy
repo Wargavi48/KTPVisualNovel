@@ -19,6 +19,8 @@ define char_placement = Transform(zoom=0.5,xalign=0.5,yalign=-2.0)
 define char_placement_left = Transform(zoom=0.5,xalign=0.2,yalign=-2.0)
 define char_placement_right = Transform(zoom=0.5,xalign=1.0,yalign=-0.6)
 define char_center = Transform(zoom=0.9,xalign=0.5,yalign=-0.1)
+define kana_near = Transform(zoom=1.3,xalign=0.5,yalign=0.02)
+define pia_near = Transform(zoom=1.1,xalign=0.5,yalign=-0.1)
 
 
 # Game dimulai disini.
@@ -92,6 +94,6 @@ label intro:
         "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
             jump ED1
         "E. Tes Mini Game":
-            jump puzzle_start
+            jump startPiaGame
 
     return

@@ -1,32 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/kana/chapter1kana.rpy", line 466, in script
-    "(Notif WA)" play audio "audio/ReceiveText.ogg"
-Exception: Say has image attributes ('play', 'audio'), but there's no image tag associated with the speaking character.
+  File "game/kana/chapter1kana.rpy", line 164, in script
+    hide black with hideBlackTop
+  File "game/kana/chapter1kana.rpy", line 164, in <module>
+    hide black with hideBlackTop
+NameError: name 'hideBlackTop' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/kana/chapter1kana.rpy", line 466, in script
-    "(Notif WA)" play audio "audio/ReceiveText.ogg"
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1491, in say
-    renpy.store.say(who, what, *args, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\defaultstore.py", line 419, in say
-    who(what, *args, interact=interact, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1329, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1148, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1074, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes ('play', 'audio'), but there's no image tag associated with the speaking character.
+  File "game/kana/chapter1kana.rpy", line 164, in script
+    hide black with hideBlackTop
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1359, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/kana/chapter1kana.rpy", line 164, in <module>
+    hide black with hideBlackTop
+NameError: name 'hideBlackTop' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Sun May 19 16:05:02 2024
+Mon May 20 22:13:31 2024

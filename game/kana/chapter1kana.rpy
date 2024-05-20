@@ -153,10 +153,16 @@ label chapter1kana2Cafe:
     "Perempuan itu pun mendekati Meja yang dimana [mcname] berada dengan cepat"
     "Seakan tidak sabar dan tidak ingin kehilangan kursi tersebut"
     "panik dan cemas tetapi rasa senang bercampur satu di dalam pikiran [mcname]"
-    show kana_shy at char_center with dissolve
+    # show screen cinematicTalk
     show kana_side_shy at left with dissolve
+    show black at showBlackTop
+    show black as black2 at showBlackBottom
+    show kana_shy at kana_near with dissolve
     kana "H-halooo, maaf tapi apa kursinya kosong ?"
+    # hide screen cinematicTalk with dissolve
     hide kana_side_shy with dissolve
+    hide black with dissolve
+    hide black2 with dissolve
     mcname "Eh iya ini kosong ko kebetulan dari tadi ga ada yang nempatin"
     mcname "Takut kali ya sama aku haha"
     show kana_side_smile at left with dissolve
@@ -483,5 +489,27 @@ label chapter1kana3:
     scene black with Dissolve(2.0)
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     scene kantin with Dissolve(2.0)
+    "Kantin Jeketi University, dimana tempat para mahasiswa melepaskan lapar dan haus sehabis belajar seharian"
+    "Karena sudah jam makan siang"
+    "Suasana kantin terasa sangat ramai dan tempat duduk pun terlihat hampir penuh diisi oleh para mahasiswa"
+    mcname "{i}Wahhhh, rame juga ya{/i}"
+    mcname "{i}Mungkin karena sudah jam makan siang??{/i}"
+    mcname "{i}Bentar. Kalau gini caranya, gimana dapet tempat duduk?{/i}"
+    mcname "{i}Masa aku harus bungkus makanannya, sih?{/i}"
+    mcname "{i}Perdana makan di kantin, ga enak rasanya kalo dibungkus.{/i}"
+    "Merasa kecewa, [mcname] pun berniat untuk pergi mencari makanan di tempat lain"
+    "Saat [mcname] ingin melangkah pergi, ia melihat seseorang yang melambaikan tangannya dari kejauhan seakan memanggilnya."
+    "Setelah diperhatikan lagi, ternyata itu adalah Freya"
+    "Freya" "[mcname] SINI!!!"
+    "Freya" "Duduk bareng kita!!"
+    "Mendengar hal tersebut akhirnya MC menghampiri ke meja Freya Di sana ternyata ada [kana_name] yang juga duduk di sampingnya."
+    "Freya" "Eh sini."
+    "Freya" "Duduk di sini"
+    "Freya" "Soalnya udah rame juga kan?"
+    "Freya" "Gapapa kan nay?"
+    kana "Iya. Gapapa kok. Lagian di sini kosong."
+    "Mendengar persetujuan mereka, dengan lega [mcname] duduk berhadapan dengan mereka"
+    mcname "Akhirnya dapat juga"
+    mcname "Makasih banget loh. Aku kira aku gak bakalan dapet tempat"
     play music "audio/Dreamcatcher.mp3"
     jump credits
