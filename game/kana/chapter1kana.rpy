@@ -126,6 +126,9 @@ label chapter1kana1:
             "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit"
             scene black with dissolve
             show text "{color=#FFF}MAKANYA JANGAN MAKAN SEMBARANG BROO KAN MASUK RUMAH SAKIT{/color}" with Pause(2.0)
+            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            play music "audio/Dreamcatcher.mp3"
+            jump credits
         "C. Ke Cafe":
             $ quick_menu = False
             scene black with dissolve
@@ -332,7 +335,10 @@ label chapter1kana2Campus:
     mcname "Huft… huft… huft."
     mcname "Untung keburu buat masuk lift"
     mcname "Makasih ya udah mau nahan liftnya"
-    "{size=-5}???{/size}" "Haha iya, sama-sama"
+    show freya at char_center with dissolve
+    show freya_side at left with dissolve
+    freya "Haha iya, sama-sama"
+    hide freya_side with dissolve
     "Sibuk menarik nafas dari olahraga pagi yang tidak direncanakan tadi"
     "[mcname] tidak terlalu memperhatikan perempuan yang ada di lift."
     mcname "Huft... huft...."
@@ -344,6 +350,7 @@ label chapter1kana2Campus:
     "Pintu lift terbuka"
     mcname "Ah! Terima kasih lagi yak, sudah menahan lift tadi"
     "[mcname] kemudian lanjut berlari menuju kelas"
+    hide freya with dissolve
     $ quick_menu = False
     scene black with Dissolve(2.0)
     scene kelas with dissolve
@@ -360,33 +367,47 @@ label chapter1kana2Campus:
     "[mcname] memilih untuk duduk di bagian belakang terlebih dahulu agar dekat dengan pintu keluar-masuk dan tidak ingin mencolok untuk hari-hari pertama ini."
     "Saat [mcname] akan duduk"
     "Terdengar suara perempuan yang membuatnya langsung melihat ke belakang"
-    "???" "Kok buru-buru amat?"
-    "???" "Santai aja napa?"
-    "???" "Lagian masih jam segini"
-    "???" "Atau…"
-    "???" "Kamu ngincer posisi paling depan, nih? Haha"
+    show freya at char_center with dissolve
+    show freya_side at left with dissolve
+    freya "Kok buru-buru amat?"
+    freya "Santai aja napa?"
+    freya "Lagian masih jam segini"
+    freya "Atau…"
+    show freya_smug at char_center with dissolve
+    show freya_side_smug at left with dissolve
+    freya "Kamu ngincer posisi paling depan, nih? Haha"
+    hide freya
+    hide freya_side
+    hide freya_side_smug with dissolve
     "[mcname] pun sadar bahwa perempuan itu adalah perempuan yang sama yang telah menahan pintu lift untuknya"
     mcname "Hahh, astagaa"
     mcname "Aku kira udah mulai loh kelasnya"
     mcname "Aku sampe lari-lari kan tadi?"
     mcname "Eh kamu kan yang tadi di lift ya?"
     mcname "Aduhh, ya udah deh yang penting datang aja dulu"
-    "???" "Hahaha, makanya tadi aku liat kamu lari-lari lucu banget deh"
-    "???" "Kok bisa sih, ada orang yang langsung lari-lari gitu padahal masih hari pertama"
-    "[mcname] melihat ke arah jam tangannya dan ia pun sadar"
-    mcname "Aduhhh pantes aja aku lari-lari, jam tanganku mati. Ku kira udah telat"
-    "???" "Haha ada-ada deh kamu. Lain kali pastiin aja dulu deh."
     "Perempuan itu tersenyum kecil dan manis"
+    show freya_smile at char_center with dissolve
+    show freya_side_smile at left with dissolve
+    freya "Hahaha, makanya tadi aku liat kamu lari-lari lucu banget deh"
+    freya "Kok bisa sih, ada orang yang langsung lari-lari gitu padahal masih hari pertama"
+    "[mcname] melihat ke arah jam tangannya dan ia pun sadar"
+    hide freya_side_smile with dissolve 
+    mcname "Aduhhh pantes aja aku lari-lari, jam tanganku mati. Ku kira udah telat"
+    show freya_side_smile with dissolve
+    freya "Haha ada-ada deh kamu. Lain kali pastiin aja dulu deh."
+    hide freya_side_smile with dissolve
     mcname "Eh dari tadi kita ngobrol belum kenalan ternyata"
     mcname "Boleh kali ya, kita kenalan dulu haha."
     mcname "Kenalin namaku [mcname]"
     mcname "Aku dari Ngawi"
     mcname "Salam kenal, ya"
-    "Freya" "Eh, salam kenal juga namaku Freya asalku dari Yogyakarta"
+    $ freya_name = "Freya"
+    freya "Eh, salam kenal juga namaku Freya asalku dari Yogyakarta"
     mcname "{i}Dia ternyata imut juga ya{/i}"
     mcname "{i}Apa sih, kalau kata orang-orang di internet sekarang.{/i}"
     mcname "{i}Owh iya!{/i}"
     mcname "{i}Senyumannya manis kaya karamel{/i}"
+    hide freya_smile with dissolve
     if kana_name == "Perempuan itu":
         "Saat mengobrol, para Mahasiswa/i pun terdengar mulai memasuki ruangan kelas"
         "Seorang perempuan pun duduk di sebelah Freya dan dilihat oleh [mcname]"
@@ -408,12 +429,14 @@ label chapter1kana2Campus:
         mcname "{i}Tapi kalau dilihat-lihat, memang modis sih pakaiannya.{/i}"
         mcname "{i}Dia juga kenal deket sama Freya, ya?{/i}"
         "Perempuan itu pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
+        play audio "audio/open_door.mp3"
         "Tiba-tiba, suara pintu pun berbunyi"
     else:
         mcname "{i}Mereka ngobrolin [kana_name], ya?{/i}"
         mcname "{i}Tapi kalau dilihat lihat, memang modis sih pakaiannya{/i}"
         mcname "{i}Dia juga kenal deket sama Freya, ya?{/i}"
         "[kana_name] pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
+        play audio "audio/open_door.mp3"
         "Saat dia akan menyapa [mcname], suara pintu pun berbunyi."
     "Dosen pun memasuki ruangan kelas"
     "Kelas pun menjadi tenang dan lebih tertib dari sebelumnya"

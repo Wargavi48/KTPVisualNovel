@@ -54,9 +54,7 @@ init python:
                 renpy.jump("reassemble_complete")
 
 label reassemble_complete:
-    scene room
-    e "I did it!"
-    e "Now let's see what it says ..."
+        scene puzzle complete with Dissolve(2.0)
 
 screen reassemble_puzzle:
     image "background.png"
@@ -99,6 +97,7 @@ default initial_piece_coordinates = [] # Will be filled with random initial loca
 default finished_pieces = 0 # Keeps track of the amount of pieces that have been placed correctly.
 
 label puzzle_start:
+    play music "audio/minigame_kana.mp3"
     $ setup_puzzle()
     call screen reassemble_puzzle
     return

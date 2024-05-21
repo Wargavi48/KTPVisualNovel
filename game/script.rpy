@@ -92,6 +92,7 @@ label intro:
         "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
             jump ED1
         "E. Tes Mini Game":
-            jump startPiaGame
+            # jump startPiaGame
+            jump puzzle_start
 
     return

@@ -1,28 +1,69 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/kana/chapter1kana.rpy", line 164, in script
-    hide black with hideBlackTop
-  File "game/kana/chapter1kana.rpy", line 164, in <module>
-    hide black with hideBlackTop
-NameError: name 'hideBlackTop' is not defined
+While loading <renpy.display.im.Image object ('images/Full Freya Kana Puzzle.jpg') at 0x000000000558c3a0>:
+  File "game/mini_game/puzzle_game.rpy", line 57, in script
+    scene puzzle complete with Dissolve(2.0)
+OSError: Couldn't find file 'images/Full Freya Kana Puzzle.jpg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/kana/chapter1kana.rpy", line 164, in script
-    hide black with hideBlackTop
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1359, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/kana/chapter1kana.rpy", line 164, in <module>
-    hide black with hideBlackTop
-NameError: name 'hideBlackTop' is not defined
+  File "game/mini_game/puzzle_game.rpy", line 57, in script
+    scene puzzle complete with Dissolve(2.0)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1363, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2814, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1352, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\transition.py", line 384, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\transform.py", line 957, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 978, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 413, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\image.py", line 513, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\image.py", line 316, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 626, in render
+    return cache.get(self, render=True)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 309, in get
+    surf = image.load()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 761, in load
+    raise e
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\im.py", line 711, in load
+    filelike = renpy.loader.load(self.filename, directory="images")
+  File "D:\fanbase_project\KTPVisualNovel\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'images/Full Freya Kana Puzzle.jpg'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Mon May 20 22:13:31 2024
+Tue May 21 22:09:24 2024
