@@ -33,6 +33,17 @@ default kana_embarased = Character("[kana_name]", image="Kana_embarased", window
 default kana_scared = Character("[kana_name]", image="Kana_scared", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 
 
+# Define Character Freya
+default freya_name = "???"
+default freya = Character("[freya_name]", image="Freya")
+default freya_angrysmile = Character("[freya_name]", image="Freya_angrysmile")
+default freya_annoy = Character("[freya_name]", image="Freya_annoy")
+default freya_awe = Character("[freya_name]", image="Freya_awe")
+default freya_pouting = Character("[freya_name]", image="Freya_pouting")
+default freya_shock = Character("[freya_name]", image="Freya_shock")
+default freya_smile = Character("[freya_name]", image="Freya_smile")
+default freya_smug = Character("[freya_name]", image="Freya_smug")
+
 
 
 # Define side pia character 
@@ -50,6 +61,18 @@ image side kana_side_shy = "Characters/Kana_side_shy.png"
 image side kana_side_sick = "Characters/Kana_side_sick.png"
 image side kana_side_smile = "Characters/kana_side_smile.png"
 image side kana_side = "Characters/kana_side.png"
+
+# Define side freya character
+image side freya_side = "Characters/Freya_side.png"
+image side freya_side_angrysmile = "Characters/Freya_side_angrysmile.png"
+image side freya_side_annoy = "Characters/Freya_side_annoy.png"
+image side freya_side_awe = "Characters/Freya_side_awe.png"
+image side freya_side_pouting = "Characters/Freya_side_pouting.png"
+image side freya_side_shock = "Characters/Freya_side_shock.png"
+image side freya_side_smile = "Characters/Freya_side_smile.png"
+image side freya_side_smug = "Characters/Freya_side_smug.png"
+
+
 
 
 # Define character appear on phone

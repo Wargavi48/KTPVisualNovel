@@ -62,11 +62,9 @@ label intro:
     hide kana_sh
     hide tono_sh
     hide pia_sh
-    with dissolve
-    pause(1.0)
-
-    scene mc bedroom 
-    with dissolve
+    play sound "audio/Alarm.mp3" fadein 1.0
+    scene black with Dissolve(3.0)
+    scene mc bedroom with Dissolve(3.0)
     play music "audio/backsound_kamar.mp3" loop fadein 1.0
     $ quick_menu = True 
     show mama at small_center

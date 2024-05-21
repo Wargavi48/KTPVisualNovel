@@ -47,6 +47,7 @@ label mainkana:
             mcname "Okeee barang - barang sudah selesai"
             mcname "Udah ngabarin orang tua juga sekarang saatnya tidur"
             $ quick_menu = False
+            stop music fadeout 1.0
             jump chapter1kana1
         "Muter - muter Jakarta dan habisin waktu sampai malam":
             $ renpy.block_rollback()
@@ -78,6 +79,7 @@ label mainkana:
             "[mcname] pun memilih untuk pergi mencari makan ke warteg yang berada di dekat kosnya"
             "Dia bertemu dengan beberapa pedagang yang ramah dan sopan, membuat [mcname] semakin nyaman berada di lingkungan kos nya tersebut"
             $ quick_menu = False
+            stop music fadeout 1.0
             jump chapter1kana1
 
 

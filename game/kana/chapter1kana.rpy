@@ -5,7 +5,7 @@ label chapter1kana1:
     "Matahari secara terik menerangi kota Jakarta"
     "Saat melihat ke atas langit, hanya langit biru lah yang terlihat"
     scene depan kampus with Dissolve(2.0)
-    play music "audio/kampus.mp3" loop fadein 1.0
+    play music "audio/kampus_fun.mp3" loop fadein 1.0
     $ quick_menu = True
     mcname "Untung saja masih sempat untuk ikut orientasi"
     mcname "Gak nyangka di Jakarta ternyata beneran macet parah"
@@ -14,10 +14,13 @@ label chapter1kana1:
     mcname "Huuuu, ini hari pertamaku orientasi di Jeketi University"
     mcname "Di sini tempat dimana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh heheh"
     $ quick_menu = False
+    stop music fadeout 1.0
     scene black with Dissolve(2.0)
-    show text "{color=#FFF}SFX PINTU DIBUKA{/color}" with Pause(1.0)
+    play audio "audio/open_door.mp3" fadeout 1.0
+    # show text "{color=#FFF}SFX PINTU DIBUKA{/color}" with Pause(1.0)
     show text "{color=#FFF}MEMASUKI AULA{/color}" with Pause(2.0)
     scene kelas with Dissolve(2.0)
+    play music "audio/bgm_ngobrol_normal.mp3" fadein 1.0
     $ quick_menu = True
     "Saat memasuki ruangan [mcname] mendengar suara di aula yang sangat ramai"
     mcname "Seperti yang diharapkan dari kampus Ibu Kota"
@@ -71,6 +74,7 @@ label chapter1kana1:
     "Mungkin itu adalah rekor terlama [mcname] dalam memperhatikan seseorang"
     $ quick_menu = False
     scene black with Dissolve(1.0)
+    play audio "audio/handbell.mp3"
     show text "{color=#FFF}*DING DING DING DING*\n(screenshake){/color}" with Pause(2.0)
     scene kelas with dissolve
     $ quick_menu = True
