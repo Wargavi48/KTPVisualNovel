@@ -124,6 +124,7 @@ label chapter1kana1:
         "A. Ke Kosan":
             "Kamu habisin waktu di kosan dan memilih buat istirahatin diri daripada pergi kesana kemari"
             $ kana_name = "Perempuan itu"
+            stop music fadeout 1.0
             jump chapter1kana2Campus
         "B. Ke Warteg":
             "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit"
@@ -134,6 +135,7 @@ label chapter1kana1:
             jump credits
         "C. Ke Cafe":
             $ quick_menu = False
+            stop music fadeout 1.0
             scene black with dissolve
             jump chapter1kana2Cafe
             
@@ -313,6 +315,7 @@ label chapter1kana2Cafe:
     mcname "Kukira bakalan jadi kaya cool dan cuek gitu"
     mcname "Mana nyambung juga kalau di ajak ngobrol"
     mcname "Dah ah mending aku tidur"
+    stop music fadeout 1.0
     $ quick_menu = False
     jump chapter1kana2Campus
 
@@ -323,6 +326,7 @@ label chapter1kana2Campus:
     $ renpy.block_rollback()
     scene black with dissolve
     show text "KEESOKAN HARINYA" with Pause(2.0)
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
     scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
     "*STEP STEP STEP STEP*"

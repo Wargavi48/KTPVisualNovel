@@ -1,5 +1,6 @@
 label phoneChat:
     $ renpy.block_rollback()
+    nvl clear
     scene bedroom with dissolve
 
     freya_nvl "{size=-5}Eh, guys{/size}"
