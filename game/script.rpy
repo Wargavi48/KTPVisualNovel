@@ -70,6 +70,8 @@ label intro:
     show mama at small_center
     show side mama at left
     $ mama_name = Character("Mamah")
+    stop sound fadeout 1.0
+    play music "audio/BGM_Rumah Awal.mp3" fadein 1.0
     mama "Bangun nak, udah jam berapa ini... Sarapan dulu, ayo, jangan bangun kesiangan."
     mama "Hari ini kamu harus daftar ulang kuliah kamu, loh! Gimana?"
     mama "Butuh 3 jam buat ke kampus, nanti kamu ketinggalan kereta! Cepet bangun siap-siap!!"
@@ -77,19 +79,23 @@ label intro:
     hide mama with dissolve
     mcname "Iyaah mahh."
 
-    pause(3.0)
+    pause(2.0)
     
     "kamu adalah:"
     $quick_menu = False
     # call screen choose_route
     menu:
         "A. Mahasiswa Hubungan Internasional (HI)":
+            stop music fadeout 1.0
             jump mainkana
         "B. Mahasiswa Teknik Pertanian (Agroteknologi)":
+            stop music fadeout 1.0
             jump maintono
         "C. Mahasiswa Desain Komunikasi Visual (DKV)":
+            stop music fadeout 1.0
             jump mainpia
         "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
+            stop music fadeout 1.0
             jump ED1
         "E. Tes Mini Game":
             # jump startPiaGame

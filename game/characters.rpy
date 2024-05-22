@@ -76,10 +76,12 @@ image side freya_side_smug = "Characters/Freya_side_smug.png"
 
 
 # Define character appear on phone
-define mc_nvl = Character("[mcname]", kind=nvl, image="nighten", callback=Phone_SendSound)
+define mc_nvl = Character("[mcname]", kind=nvl, callback=Phone_SendSound)
 define kana_nvl = Character("[kana_name]", kind=nvl, callback=Phone_ReceiveSound)
 define freya_nvl = Character("Freya", kind=nvl, callback=Phone_ReceiveSound)
 define donatur_nvl = Character("Donatur", kind=nvl, callback=Phone_ReceiveSound)
+define mamah_nvl = Character("Mama", kind=nvl,  callback=Phone_ReceiveSound)
+define papah_nvl = Character("Papa", kind=nvl, callback=Phone_ReceiveSound)
 
 
 

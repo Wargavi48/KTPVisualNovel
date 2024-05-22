@@ -101,6 +101,10 @@ screen nvl_phonetext(dialogue):
                 if previous_d_who != d.who:
                     if d.who == mcname:
                         $ message_icon = "phone_send_icon.png"
+                    elif d.who == "Mama":
+                        $ message_icon = "mama_pp.png"
+                    elif d.who == "Papa":
+                        $ message_icon = "papa_pp_sketch.png"
                     else:
                         $ message_icon = "phone_received_icon.png"
 
