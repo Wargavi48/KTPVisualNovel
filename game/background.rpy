@@ -9,4 +9,3 @@ image kantin = "images/BG/kantin_resize.jpg"
 image awan = "images/BG/transi.png"
 image kana awal = "images/CG/kana_awal_resize.png"
 image white = Solid("#FFFFFF")
-image puzzle complete = "images/puzzle_mini_game/Full Freya Kana Puzzle.jpg"

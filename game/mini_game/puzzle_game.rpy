@@ -54,7 +54,21 @@ init python:
                 renpy.jump("reassemble_complete")
 
 label reassemble_complete:
-        scene puzzle complete with Dissolve(2.0)
+        show screen puzzle_complete with Pause(2.0)
+        hide screen puzzle_complete with dissolve
+        scene dream with Dissolve(2.0)
+        play music "audio/Dreamcatcher.mp3" fadein 1.0
+        jump credits
+
+screen puzzle_complete:
+        image "background.png"
+        frame:
+            background "images/puzzle_mini_game/Full Freya Kana Puzzle.jpg"
+            xysize full_page_size
+            anchor(0.5, 0.5)
+            pos(800, 735)
+        
+
 
 screen reassemble_puzzle:
     image "background.png"
