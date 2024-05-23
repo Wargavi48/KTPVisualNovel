@@ -36,6 +36,7 @@ label chapter1kana1:
     mcname "{i}Jadinya aku bisa ngeliat yang lain dengan jelas.{/i}"
     "Saat memperhatikan di sekitar"
     "[mcname] mendengar suatu topik yang menarik perhatiannya."
+    stop audio fadeout 1.0
     "{size=-5}Mahasiswa A{/size}" "Eh eh liat deh itu kan mahasiswi itu"
     "{size=-5}Mahasiswa B{/size}" "Yang mana sih?"
     mcname "{i}Hmmm? Apa yang sedang mereka bicarakan{/i}"
@@ -401,7 +402,7 @@ label chapter1kana2Campus:
     "[mcname] melihat ke arah jam tangannya dan ia pun sadar"
     hide freya_side_smile with dissolve 
     mcname "Aduhhh pantes aja aku lari-lari, jam tanganku mati. Ku kira udah telat"
-    show freya_side_smile with dissolve
+    show freya_side_smile at left with dissolve
     freya "Haha ada-ada deh kamu. Lain kali pastiin aja dulu deh."
     hide freya_side_smile with dissolve
     mcname "Eh dari tadi kita ngobrol belum kenalan ternyata"
@@ -410,11 +411,14 @@ label chapter1kana2Campus:
     mcname "Aku dari Ngawi"
     mcname "Salam kenal, ya"
     $ freya_name = "Freya"
+    show freya_side_smile at left with dissolve
     freya "Eh, salam kenal juga namaku Freya asalku dari Yogyakarta"
+    hide freya_side_smile with dissolve
     mcname "{i}Dia ternyata imut juga ya{/i}"
     mcname "{i}Apa sih, kalau kata orang-orang di internet sekarang.{/i}"
     mcname "{i}Owh iya!{/i}"
     mcname "{i}Senyumannya manis kaya karamel{/i}"
+    hide freya_smug
     hide freya_smile with dissolve
     if kana_name == "Perempuan itu":
         "Saat mengobrol, para Mahasiswa/i pun terdengar mulai memasuki ruangan kelas"
@@ -437,6 +441,7 @@ label chapter1kana2Campus:
         mcname "{i}Tapi kalau dilihat-lihat, memang modis sih pakaiannya.{/i}"
         mcname "{i}Dia juga kenal deket sama Freya, ya?{/i}"
         "Perempuan itu pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
+        $ quick_menu = False
         "Tiba-tiba, suara pintu pun berbunyi"
         play audio "audio/open_door.mp3"
         stop music fadeout 1.0
@@ -448,13 +453,15 @@ label chapter1kana2Campus:
         mcname "{i}Dia juga kenal deket sama Freya, ya?{/i}"
         "[kana_name] pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
         "Saat dia akan menyapa [mcname], suara pintu pun berbunyi."
+        $ quick_menu = False
         play audio "audio/open_door.mp3"
         stop music fadeout 1.0
         scene black with dissolve
         scene kelas with Dissolve(2.0)
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Dosen pun memasuki ruangan kelas"
     "Kelas pun menjadi tenang dan lebih tertib dari sebelumnya"
-    "Dosen memasuki ruangan kelas dan kelas pun menjadi hening dan lebih tertrib dari sebelumnya"
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     "Dosen" "Selamat siang mahasiswa dan mahasiswi sekalian"
     "Dosen" "Selamat datang di mata kuliah pertama kalian di jenjang perkuliah ini"
@@ -490,8 +497,11 @@ label chapter1kana2Campus:
     else:
         mcname "Eh, aku sama [kana_name]!!!"
     "Eh, halo. Kita satu kelompok, ya. Mohon bantuannya"
+    show freya at char_left with dissolve
+    show freya_side at left with dissolve
     "Freya" "Eeh, iyaa. Kita satu kelompok, nih. Kebetulan banget, ya. Haha"
-    show kana at char_placement with dissolve
+    hide freya_side with dissolve
+    show kana at char_right with dissolve
     show kana_side at left with dissolve
     $ kana_name = "???"
     kana "Halo Kita satu kelompok ya?"
@@ -502,11 +512,14 @@ label chapter1kana2Campus:
     "Mahasiswa C" "Owh iya. Siang semuanya"
     "Mahasiswa C" " Sebelumnya, kenalin nama gw Donatur"
     "Mahasiswa C" "Gw dari Pekalongan. Salam kenal"
+    hide freya with dissolve
     hide kana with dissolve
     "Freya, [kana_name], [mcname], dan (Donatur) pun saling bertukar sapa dan mengobrol lebih lanjut. Akhirnya, mereka pun membuat grup chat untuk membahas pekerjaan kelompok mereka."
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(2.0)
     scene bedroom with dissolve
+    play music "audio/BGM_Kosan 2.mp3"
     $ renpy.block_rollback()
     $ quick_menu = True 
     "Setelah [mcname] sampai Kos nya"
@@ -525,6 +538,7 @@ label chapter1kana2Campus:
     mcname "{i}Oh, ternyata bukan.{/i}"
     mcname "{i}Ini notif dari grup chat itu, ternyata{/i}"
     $ quick_menu = False
+    stop music fadeout 1.0
     jump phoneChat
     # play music "audio/Dreamcatcher.mp3"
     # jump credits
@@ -532,6 +546,7 @@ label chapter1kana2Campus:
 label chapter1kana3:
     scene black with Dissolve(2.0)
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    play music "audio/bgm_kantin.mp3"
     scene kantin with Dissolve(2.0)
     "Kantin Jeketi University, dimana tempat para mahasiswa melepaskan lapar dan haus sehabis belajar seharian"
     "Karena sudah jam makan siang"

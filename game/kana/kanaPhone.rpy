@@ -1,8 +1,8 @@
 label phoneChat:
     $ renpy.block_rollback()
     nvl clear
+    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
     scene bedroom with dissolve
-
     freya_nvl "{size=-5}Eh, guys{/size}"
     freya_nvl "{size=-5}Buat tema, udah fix kan jadinya?{/size}"
     freya_nvl "{size=-5}Mau yang udah kita tentuin sebelumnya?{/size}"
@@ -39,6 +39,7 @@ label phoneChat:
             "Obrolan mereka tidak terasa sudah lama."
             " Malam pun menjadi semakin larut."
             "[mcname] pun terlelap."
+            stop music fadeout 1.0
             jump chapter1kana3
         "Ga bisa kerja kelompok":
             mc_nvl "{size=-5}Eh sorry. Aku ga bisa ikut kerja kelompok, kayaknya{/size}"
@@ -48,16 +49,16 @@ label phoneChat:
             show text "{color=#FFF}BROOO YNG BENER AJA, BARU PERTAMA KALI KERJA KELOMPOK UDAH GINI !??{/color}" with Pause(2.0)
             show text "{color=#FFF}AKHIRNYA LO PUN DI JAUHIN SAMA TEMEN-TEMEN KELOMPOK{/color}" with Pause (2.0)
             show text "{color=#FF0000}BAD END{/color}" with Pause (2.0)
-            play music "audio/Dreamcatcher.mp3"
+            play music "audio/Dreamcatcher.mp3" fadein 1.0
             jump credits
-        "Ga bisa kerja kelompok":
+        "Ghosting":
             scene black with Dissolve(2.0)
             show text "{color=#FFF}EH LO MASIH MABA, BUKANYA SOSIALISASI, MALAH MENYENDIRI{/color}" with Pause(2.0)
             show text "{color=#FFF}SADAR DIRI, NGACA SANA{/color}" with Pause (2.0)
             show text "{color=#FFF}ATAU LO MAU JADI MAHASISWA KUPU-KUPU{/color}" with Pause (2.0)
             show text "{color=#FFF} ATAU HIKIKOMORI !??{/color}" with Pause (2.0)
             show text "{color=#FF0000}BAD END{/color}" with Pause (2.0)
-            play music "audio/Dreamcatcher.mp3"
+            play music "audio/Dreamcatcher.mp3" fadein 1.0
             jump credits
 
     play music "audio/Dreamcatcher.mp3"
