@@ -14,19 +14,18 @@ label chapter1kana1:
     mcname "Huuuu, ini hari pertamaku orientasi di Jeketi University"
     mcname "Di sini tempat dimana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh heheh"
     $ quick_menu = False
-    stop music fadeout 1.0
     scene black with Dissolve(2.0)
     play audio "audio/open_door.mp3" fadeout 1.0
     # show text "{color=#FFF}SFX PINTU DIBUKA{/color}" with Pause(1.0)
     show text "{color=#FFF}MEMASUKI AULA{/color}" with Pause(2.0)
-    play music "audio/BGM_Kampus.mp3" loop fadein 1.0
     scene kelas with Dissolve(2.0)
     $ quick_menu = True
+    play audio "audio/crowd_noise.mp3" fadein 1.0
     "Saat memasuki ruangan [mcname] mendengar suara di aula yang sangat ramai"
     mcname "Seperti yang diharapkan dari kampus Ibu Kota"
     mcname "Orangnya rame banget"
     "Terlihat di dalam aula sudah diisi dengan mahasiswa baru."
-    mcname "{i}Well, kayaknya aku harus mencari tempat duduk yang kosong sebelum penuh.{/i}"
+    mcname "{i}Hmmm... kayaknya aku harus mencari tempat duduk yang kosong sebelum penuh.{/i}"
     "[mcname] melihat tempat duduk yang berada di pojok atas ruangan."
     mcname "{i}Ah sepertinya itu tidak ada orang.{/i}"
     "Saat sampai di sana, tidak terlihat orang di barisan tersebut"
@@ -114,7 +113,9 @@ label chapter1kana1:
     # insert cg kana
     $ quick_menu = False
     scene kana awal with Dissolve(2.0)
-    scene kelas with dissolve
+    mcname "{i}Aduh! Kok aku ga bisa hilangkan senyuman itu dari kepalaku ya?{/i}"
+    scene black with dissolve
+    scene kelas with Dissolve(2.0)
     $ quick_menu = True
     mcname "{i}Eh masih jam segini nih{/i}"
     mcname "{i}Enaknya buat habisin waktu, mending aku ke…{/i}"
@@ -436,18 +437,25 @@ label chapter1kana2Campus:
         mcname "{i}Tapi kalau dilihat-lihat, memang modis sih pakaiannya.{/i}"
         mcname "{i}Dia juga kenal deket sama Freya, ya?{/i}"
         "Perempuan itu pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
-        play audio "audio/open_door.mp3"
         "Tiba-tiba, suara pintu pun berbunyi"
+        play audio "audio/open_door.mp3"
+        stop music fadeout 1.0
+        scene black with dissolve
+        scene kelas with Dissolve(2.0)
     else:
         mcname "{i}Mereka ngobrolin [kana_name], ya?{/i}"
         mcname "{i}Tapi kalau dilihat lihat, memang modis sih pakaiannya{/i}"
         mcname "{i}Dia juga kenal deket sama Freya, ya?{/i}"
         "[kana_name] pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
-        play audio "audio/open_door.mp3"
         "Saat dia akan menyapa [mcname], suara pintu pun berbunyi."
+        play audio "audio/open_door.mp3"
+        stop music fadeout 1.0
+        scene black with dissolve
+        scene kelas with Dissolve(2.0)
     "Dosen pun memasuki ruangan kelas"
     "Kelas pun menjadi tenang dan lebih tertib dari sebelumnya"
     "Dosen memasuki ruangan kelas dan kelas pun menjadi hening dan lebih tertrib dari sebelumnya"
+    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     "Dosen" "Selamat siang mahasiswa dan mahasiswi sekalian"
     "Dosen" "Selamat datang di mata kuliah pertama kalian di jenjang perkuliah ini"
     "Bu Fatimah" "Sebelumnya perkenalkan nama saya Fatimah"
@@ -456,9 +464,11 @@ label chapter1kana2Campus:
     "Bu Fatimah" "Dengan begitu saya akan langsung ke dalam materi"
     "Suasana kelas pun terasa hening, fokus untuk memperhatikan apa yang dijelaskan oleh Bu Fatimah"
     $ quick_menu = False
+    stop music fadeout 1.0
     scene black with Dissolve(2.0)
     scene kelas with dissolve
     $ quick_menu = True
+    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     "Bu Fatimah" "Baiklah semuanya karena waktu saya sudah habis"
     "Bu Fatimah" "Maka mata kuliah hari ini sudah selesai"
     "Terdengar suara lega dari para mahasiswa"

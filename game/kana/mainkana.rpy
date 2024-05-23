@@ -47,8 +47,6 @@ label mainkana:
             mcname "Hmmm.. Banyak juga ya"
             "Sambil melihat tumpukan barang-barang yang dibawa, [mcname] mengatakan hal tersebut dengan nada rendah."
             "Butuh waktu beberapa jam untuk menyelesaikan semuanya dan mengatur tata letak yang ia rasa nyaman."
-            scene black with dissolve
-            scene mc bedroom with Dissolve(2.0)
             $ quick_menu = False
             stop music fadeout 1.0
             jump awalkosan
@@ -103,6 +101,8 @@ label mainkana:
 
 label awalkosan:
         $ renpy.block_rollback()
+        scene black with dissolve
+        scene mc bedroom with Dissolve(2.0)
         $ quick_menu = True
         play music "audio/BGM_Kosan 1.mp3" fadein 1.0
         "Tak terasa hari pun sudah gelap"
@@ -111,7 +111,6 @@ label awalkosan:
         mcname "Sekarang saatnya tidur."
         mcname "Eh, lupa. Belum ngabarin orang tua"
         $ quick_menu = False
-        stop music fadeout 1.0
         mc_nvl "{size=-5}Mah! Pah! Aku sudah sampai Jakarta. Sudah beres beres barang juga.{/size}"
         papah_nvl "{size=-5}Kamu genki gk disana?{/size}"
         papah_nvl "{size=-5}Otou-san khawatir{/size}"
