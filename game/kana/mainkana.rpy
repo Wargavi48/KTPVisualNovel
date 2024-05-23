@@ -129,6 +129,8 @@ label awalkosan:
         "Malam pun semakin larut"
         "[mcname] pun memejamkan matanya dengan pikiran penuh harapan akan esok hari"
         stop music fadeout 1.0
+        scene black with dissolve
+        show text "{color=#FFF}Keesokan Harinya{/color}" with Pause(2.0)
         jump chapter1kana1
 
 

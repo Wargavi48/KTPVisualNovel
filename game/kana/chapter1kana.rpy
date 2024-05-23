@@ -74,11 +74,12 @@ label chapter1kana1:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play sound "audio/handbell.mp3"
+    play sound "audio/handbell.mp3" fadein 1.0
     show text "{color=#FFF}*DING DING DING DING*\n(screenshake){/color}" with Pause(2.0)
     play music "audio/BGM_Kampus.mp3" loop fadein 1.0
     scene kelas with dissolve
     $ quick_menu = True
+    stop sound fadeout 1.0
     mcname "Ehhh… udah bel, serius??? Lama banget berarti aku liatin dia"
     mcname "Moga aja dia gak sadar deh kalo aku ngeliatin dia terus"
     mcname "Kalo misalnya ketahuan maaf banget dah."
@@ -340,9 +341,11 @@ label chapter1kana2Campus:
     mcname "Ehhhh tungguuuu-"
     "[mcname] berlari menuju Lift yang mau tertutup"
     "Di dalam lift terlihat seorang cewek yang sepertinya juga mau menuju ke kelas"
+    $ quick_menu = False
     play sound "audio/ding.mp3" fadein 1.0
     scene black with dissolve
     scene depan kampus with Dissolve(2.0)
+    $ quick_menu = True
     mcname "Huft… huft… huft."
     mcname "Untung keburu buat masuk lift"
     mcname "Makasih ya udah mau nahan liftnya"
@@ -358,8 +361,11 @@ label chapter1kana2Campus:
     "[mcname] mencoba melirik perempuan yang ada di dalam lift."
     mcname "{i}Memang ya, cewek di Jakarta ini cantik-cantik semua{/i}"
     play sound "audio/ding.mp3" fadein 1.0
-    "DING"
-    "Pintu lift terbuka"
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}Pintu lift terbuka{/color}" with Pause(2.0)
+    scene depan kampus with dissolve
+    $ quick_menu = True
     mcname "Ah! Terima kasih lagi yak, sudah menahan lift tadi"
     "[mcname] kemudian lanjut berlari menuju kelas"
     hide freya with dissolve
