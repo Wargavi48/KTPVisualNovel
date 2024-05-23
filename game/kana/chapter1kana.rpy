@@ -15,12 +15,12 @@ label chapter1kana1:
     mcname "Di sini tempat dimana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh heheh"
     $ quick_menu = False
     scene black with Dissolve(2.0)
-    play audio "audio/open_door.mp3" fadeout 1.0
+    play sound "audio/open_door.mp3" fadeout 1.0
     # show text "{color=#FFF}SFX PINTU DIBUKA{/color}" with Pause(1.0)
     show text "{color=#FFF}MEMASUKI AULA{/color}" with Pause(2.0)
     scene kelas with Dissolve(2.0)
     $ quick_menu = True
-    play audio "audio/crowd_noise.mp3" fadein 1.0
+    play sound "audio/crowd_noise.mp3" fadein 1.0
     "Saat memasuki ruangan [mcname] mendengar suara di aula yang sangat ramai"
     mcname "Seperti yang diharapkan dari kampus Ibu Kota"
     mcname "Orangnya rame banget"
@@ -36,7 +36,7 @@ label chapter1kana1:
     mcname "{i}Jadinya aku bisa ngeliat yang lain dengan jelas.{/i}"
     "Saat memperhatikan di sekitar"
     "[mcname] mendengar suatu topik yang menarik perhatiannya."
-    stop audio fadeout 1.0
+    stop sound fadeout 1.0
     "{size=-5}Mahasiswa A{/size}" "Eh eh liat deh itu kan mahasiswi itu"
     "{size=-5}Mahasiswa B{/size}" "Yang mana sih?"
     mcname "{i}Hmmm? Apa yang sedang mereka bicarakan{/i}"
@@ -74,7 +74,7 @@ label chapter1kana1:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play audio "audio/handbell.mp3"
+    play sound "audio/handbell.mp3"
     show text "{color=#FFF}*DING DING DING DING*\n(screenshake){/color}" with Pause(2.0)
     play music "audio/BGM_Kampus.mp3" loop fadein 1.0
     scene kelas with dissolve
@@ -83,7 +83,7 @@ label chapter1kana1:
     mcname "Moga aja dia gak sadar deh kalo aku ngeliatin dia terus"
     mcname "Kalo misalnya ketahuan maaf banget dah."
     "Terdengar suara pintu terbuka dan seluruh perhatian tertuju kepada sumber suara tersebut"
-    play audio "audio/open_door.mp3" fadeout 1.0
+    play sound "audio/open_door.mp3" fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(2.0)
     scene kelas with dissolve
@@ -340,7 +340,9 @@ label chapter1kana2Campus:
     mcname "Ehhhh tungguuuu-"
     "[mcname] berlari menuju Lift yang mau tertutup"
     "Di dalam lift terlihat seorang cewek yang sepertinya juga mau menuju ke kelas"
-    "*DING*"
+    play sound "audio/ding.mp3" fadein 1.0
+    scene black with dissolve
+    scene depan kampus with Dissolve(2.0)
     mcname "Huft… huft… huft."
     mcname "Untung keburu buat masuk lift"
     mcname "Makasih ya udah mau nahan liftnya"
@@ -355,6 +357,7 @@ label chapter1kana2Campus:
     "Setelah mendapatkan cukup oksigen"
     "[mcname] mencoba melirik perempuan yang ada di dalam lift."
     mcname "{i}Memang ya, cewek di Jakarta ini cantik-cantik semua{/i}"
+    play sound "audio/ding.mp3" fadein 1.0
     "DING"
     "Pintu lift terbuka"
     mcname "Ah! Terima kasih lagi yak, sudah menahan lift tadi"
@@ -443,7 +446,7 @@ label chapter1kana2Campus:
         "Perempuan itu pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
         $ quick_menu = False
         "Tiba-tiba, suara pintu pun berbunyi"
-        play audio "audio/open_door.mp3"
+        play sound "audio/open_door.mp3"
         stop music fadeout 1.0
         scene black with dissolve
         scene kelas with Dissolve(2.0)
@@ -454,7 +457,7 @@ label chapter1kana2Campus:
         "[kana_name] pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
         "Saat dia akan menyapa [mcname], suara pintu pun berbunyi."
         $ quick_menu = False
-        play audio "audio/open_door.mp3"
+        play sound "audio/open_door.mp3"
         stop music fadeout 1.0
         scene black with dissolve
         scene kelas with Dissolve(2.0)
@@ -527,10 +530,10 @@ label chapter1kana2Campus:
     "Setelah capek dengan kegiatan hari ini"
     "datang ke kos membuat [mcname] merasakan ketenangan di balik hiruk pikuk Kota Jakarta"
     "Memejamkan mata, menghela nafas, dan merenungkan kembali kegiatan yang telah terjadi hari ini"
-    play audio "audio/ReceiveText.ogg"
+    play sound "audio/ReceiveText.ogg"
     "(Notif WA)"
     mcname "(...)"
-    play audio "audio/ReceiveText.ogg"
+    play sound "audio/ReceiveText.ogg"
     "(Notif WA)"
     mcname "Duh. Notif WA nih"
     mcname "Apa nih? Dari Mamah, kah?"
