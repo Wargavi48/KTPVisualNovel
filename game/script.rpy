@@ -1,13 +1,4 @@
-﻿# Kamu dapat taruh script game mu di file ini.
-image cursor asa:
-    "gui/button/cursor_3.png"
-image cursor pia:
-    "gui/button/cursor_1.png"
-image cursor tana:
-    "gui/button/cursor_2.png"
-
-
-# initial phone
+﻿# initial phone
 define config.adv_nvl_transition = None
 define config.nvl_adv_transition = Dissolve(0.3)
 
