@@ -42,7 +42,6 @@ label intro:
     scene dream 
     with fade
     pause(2.0)
-    
     show kana_sh at small_left with dissolve
     kana_sh "cepet ih bangun, sarapan dulu"
 

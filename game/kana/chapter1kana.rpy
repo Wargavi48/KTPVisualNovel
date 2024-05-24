@@ -332,7 +332,7 @@ label chapter1kana2Campus:
     play music "audio/BGM_Kampus.mp3" fadein 1.0
     scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
-    "*STEP STEP STEP STEP*"
+    play sound "audio/run.mp3"
     "Terdengar suara langkah kaki yang terburu-buru"
     mcname "{i}Sial ternyata aku benar-benar meremehkan Jakarta{/i}"
     mcname "{i}Siapa sangka macet di sini parah banget{/i}"

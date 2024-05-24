@@ -517,13 +517,16 @@ screen main_menu():
     tag menu
     add "white"
     add gui.main_menu_background at initial_menu
-    add "screens/main_menu_ktp.png" at ktp_appear
+    add "screens/Tono.png" at ktp_appear
+    add "screens/Pia.png" at ktp_appear
+    add "screens/Kana.png" at ktp_appear
     add "screens/kabut_kiri.png" at overlay_left
     add "screens/kabut_kanan.png" at overlay_right
-    add "gui/Wordmark_resize.png":
+    add "gui/Logo_VN_biru.png":
         at logo_game
+        zoom 1.5
         ypos 764
-        xpos 1220
+        xpos 1120
 
     # add "gui/overlay/side_bar_menu.png" at overlay_appear
     ## Frame kosong ini menggelap di menu utama.
