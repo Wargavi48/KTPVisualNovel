@@ -508,7 +508,7 @@ label chapter1kana2Campus:
     "Eh, halo. Kita satu kelompok, ya. Mohon bantuannya"
     show freya at char_left with dissolve
     show freya_side at left with dissolve
-    "Freya" "Eeh, iyaa. Kita satu kelompok, nih. Kebetulan banget, ya. Haha"
+    freya "Eeh, iyaa. Kita satu kelompok, nih. Kebetulan banget, ya. Haha"
     hide freya_side with dissolve
     show kana at char_right with dissolve
     show kana_side at left with dissolve
@@ -560,7 +560,7 @@ label chapter1kana2Campus:
 label chapter1kana3:
     scene black with Dissolve(2.0)
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "audio/bgm_kantin.mp3"
+    play music "audio/bgm_kantin.mp3" loop fadein 1.0
     scene kantin with Dissolve(2.0)
     "Kantin Jeketi University, dimana tempat para mahasiswa melepaskan lapar dan haus sehabis belajar seharian"
     "Karena sudah jam makan siang"
@@ -573,16 +573,283 @@ label chapter1kana3:
     "Merasa kecewa, [mcname] pun berniat untuk pergi mencari makanan di tempat lain"
     "Saat [mcname] ingin melangkah pergi, ia melihat seseorang yang melambaikan tangannya dari kejauhan seakan memanggilnya."
     "Setelah diperhatikan lagi, ternyata itu adalah Freya"
+    show freya at char_center with dissolve
+    show freya_side at left with dissolve
     "Freya" "[mcname] SINI!!!"
     "Freya" "Duduk bareng kita!!"
     "Mendengar hal tersebut akhirnya MC menghampiri ke meja Freya Di sana ternyata ada [kana_name] yang juga duduk di sampingnya."
-    "Freya" "Eh sini."
-    "Freya" "Duduk di sini"
-    "Freya" "Soalnya udah rame juga kan?"
-    "Freya" "Gapapa kan nay?"
+    hide freya 
+    show freya at char_left with dissolve
+    show kana at char_right with dissolve
+    freya "Eh sini."
+    freya "Duduk di sini"
+    freya "Soalnya udah rame juga kan?"
+    freya "Gapapa kan nay?"
+    hide freya_side with dissolve
+    show kana_side at left with dissolve
     kana "Iya. Gapapa kok. Lagian di sini kosong."
+    hide kana_side with dissolve
     "Mendengar persetujuan mereka, dengan lega [mcname] duduk berhadapan dengan mereka"
     mcname "Akhirnya dapat juga"
     mcname "Makasih banget loh. Aku kira aku gak bakalan dapet tempat"
-    play music "audio/Dreamcatcher.mp3"
-    jump credits
+    show freya_side at left with dissolve
+    freya "Santai aja"
+    freya "Iya kan, Nay?"
+    hide freya_side with dissolve
+    show kana_smile at char_center with dissolve
+    show kana_side_smile at left with dissolve
+    kana "Iya, hehe"
+    hide kana_side_smile with dissolve
+    mcname "Nay? itu nama panggilanmu, [kana_name]?"
+    hide kana_smile with dissolve
+    kana "Iya, aku biasanya dipanggil \"Nay\" kalau sama [freya_name]"
+    show freya_side at left with dissolve
+    freya "Haha. Udah kebiasaan manggilnya \"Nay\""
+    freya "Jadinya, kaya gini. Hehe."
+    hide freya_side with dissolve
+    show kana_side at left with dissolve
+    kana "Ingyah, aku udah kenal sama [freya_name] dari lama"
+    hide kana_side with dissolve
+    show freya_side at left with dissolve
+    freya "Oh iya."
+    freya "Besok jadi kerja kelompoknya, kan?"
+    hide freya_side with dissolve
+    mcname "Jadi dong."
+    mcname "Nanti jangan lupa kabarin si [mahasiswa_c_name]"
+    play sound "audio/hungry.mp3"
+    "Saat asik mengobrol tentang kerja kelompok, terdengar suara perut keroncongan"
+    mcname "Suara apaan tuh?"
+    "[mcname] mencoba mencari sumber suara tersebut dan menyadari Kana sedang tertunduk malu sambil menutup mukanya."
+    show kana_shy at char_right with dissolve
+    "[mcname] dan Freya melihat ke arah Kana sambil tertawa kecil."
+    show freya_smile at char_left with dissolve
+    show freya_side_smile at left with dissolve
+    freya "Pfft"
+    hide freya_side_smile with dissolve
+    mcname "Aku juga pesen deh"
+    mcname "Perutku juga sudah mulai lapar nih"
+    show freya_smile at char_left with dissolve
+    show freya_side_smile at left with dissolve
+    freya "Hahahahaha"
+    freya "Ya udah sana."
+    freya "Kalian pesen aja dulu."
+    freya "Nanti, kita ngobrol lagi"
+    hide freya_smile with dissolve
+    "[mcname] mengangkat tangan sambil berteriak memanggil Mbak kantin"
+    "Dengan muka sedikit tersipu malu, Kana mencuri pandang melihat ke arah [mcname]."
+    mcname "Mbaaak. Mau pesen"
+    "[mcname] ngeliat menu yang tersedia di kantin"
+    menu:
+        "Menu Kantin"
+        "Pesen Ayam Smack Down":
+            scene black with Dissolve(2.0)
+            show text "{color=#FFF}LO KEPEDESAN DAN AKHIRNYA MALAH KE WC TERUS TERUSAN DARIPADA NGOBROL SAMA MEREKA{/color}" with Pause(2.0)
+            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            play music "audio/Dreamcatcher.mp3"
+            jump credits
+        "Pesen Mie Ayam":
+            jump chapter1kana3mie
+        "Pesen Lotek":
+            scene black with Dissolve(2.0)
+            show text "{color=#FFF}SAYURAN YANG LO MAKAN TERNYATA BASI{/color}" with Pause(2.0)
+            show text "{color=#FFF}AKHIRNYA LO KERACUNAN MAKANAN.{/color}" with Pause(2.0)
+            show text "{color=#FFF}AKHIRNYA LO KERACUNAN MAKANAN.{/color}" with Pause(2.0)
+            show text "{color=#FFF}MBAK YANG JUALAN PUN AKHIRNYA DIMARAHIN KARENA UDAH BIKIN MAHASISWANYA KERACUNAN MAKANAN{/color}" with Pause(2.0)
+            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            play music "audio/Dreamcatcher.mp3"
+            jump credits
+
+
+label chapter1kana3mie:
+        $ renpy.block_rollback()
+        scene black with dissolve
+        scene kantin with dissolve
+        play music "audio/bgm_kantin.mp3" loop fadein 1.0
+        "[mcname] pun memilih mie ayam sebagai makanan yang ia pesan. Kana yang masih menahan malu, memesan makanan yang sama dengan [mcname]."
+        show freya at char_left with dissolve
+        show kana at char_right with dissolve
+        show freya_side at left with dissolve
+        freya "Hahaha emang belum makan dari kapan, Nay?"
+        hide freya_side with dissolve
+        show kana_clumsy at char_right with dissolve
+        show kana_side_clumsy at left with dissolve
+        kana "Iiih apaan sih. Udahan dong."
+        hide kana_side_clumsy with dissolve
+        mcname "Kalian dekat banget ya."
+        mcname "Dulu satu sekolah, kah?"
+        show freya_side at left with dissolve
+        freya "Iya"
+        freya "Aku dan Kana dari TK sampai sekarang satu kelas mulu."
+        hide freya_side with dissolve
+        show kana at char_right with dissolve
+        show kana_side at left with dissolve
+        kana "Hmpph"
+        hide kana_side with dissolve
+        mcname "Waaah. Enak, ya sudah kenal dari lama."
+        show freya_side at left with dissolve
+        freya "Hehe. Kamu gatau kan?"
+        freya "Kalau Kana dulu tuh-"
+        hide freya_side with dissolve
+        "Sebelum Freya menyelesaikan omongannya"
+        "Kana mencoba menutup mulut freya"
+        show kana at char_right with dissolve
+        show kana_side at left with dissolve
+        kana "Ehem."
+        kana "Kamu tau gak kalau dulu yang pertama kali mengakui kemerdekaan Indonesia adalah Mesir"
+        "Kana mencoba mengalihkan pembicaraan Kana memberikan fun fact random"
+        "{size=-5}[freya_name] & [mcname]{/size}" "(...)"
+        "Melihat fun fact yang dikatakannya tidak berhasil"
+        "Akhirnya Kana mencoba untuk memberikan funfact yang lainnya"
+        "Merasa kelakuan temannya yang mulai aneh"
+        "Freya kemudian meletakkan telapak tangannya ke dahi Kana sambil tertawa jahil."
+        show freya_side at left with dissolve
+        freya "Waduh kambuh"
+        freya "GWS"
+        hide freya_side with dissolve
+        show kana_side with dissolve
+        kana "Hmpph"
+        kana "{size=-10}Kan gara-gara kamu juga{/size}"
+        hide kana_side with dissolve
+        "Seakan menjadi penyelamat"
+        "Mbak kantin pun datang membawakan pesanan mereka"
+        "Mbak Kantin" "Ini ya pesanannya."
+        "Mata Kana bersinar, melihat datangnya Mbak kantin yang membawa makanan."
+        show kana_side at left with dissolve
+        kana "Makanannya sudah datang, nih"
+        kana "Yuk makan dulu"
+        hide kana_side with dissolve
+        "Kana mencoba untuk mengalihkan pembicaraan"
+        mcname "Yaudah. Mari makan."
+        show freya_side at left with dissolve
+        freya "Eh… Eeee. Tadi mesen Mie ayam?"
+        freya "Tumben kamu makan yang begituan, Nay?"
+        hide freya_side with dissolve
+        "Seolah masih ingin membahas masalah tadi, freya menanyakan hal tersebut"
+        mcname "Hmm? Memangnya ada apa?"
+        show kana_side at left with dissolve
+        kana "Freee. Yuk makan"
+        hide kana_side with dissolve
+        "Kana berbicara dengan nada agak kesal"
+        show freya_side at left with dissolve
+        freya "Hehehehe. Iya deh."
+        hide freya_side with dissolve
+        "Tertawa, freya akhirnya berhenti membahas topik tersebut"
+        "Karena sudah lapar, [mcname] mulai memakan makanan yang sudah dihidangkan"
+        "Sesekali, [mcname] melihat Kana dan Freya yang saling berbincang kecil"
+        "lalu [mcname] kembali berfokus ke sepasang sumpit yang digunakan untuk menarik helaian mie ke mulutnya."
+        "Ada kalanya Freya dan Kana menyertakan [mcname] dalam pembicaraan mereka"
+        "Satu percakapan berlanjut ke percakapan lainnya, membuat mereka merasa menjadi lebih dekat."
+        scene black with Dissolve(2.0)
+        scene kantin with dissolve
+        "Setelah selesai makan, mereka pergi dan berpisah ke urusannya masing-masing."
+        "[mcname] pun memikirkan apa yang akan dilakukan selanjutnya."
+        stop music fadeout 1.0
+        menu:
+            "Yang kamu lakukan"
+            "Keliling Kampus dan melihat lihat isi kampus":
+                $ renpy.block_rollback()
+                play music "audio/BGM_Kampus Sore.mp3" fadein 1.0
+                scene black with dissolve
+                scene depan kampus with Dissolve(2.0)
+                mcname "{i}Aku memilih menghabiskan waktu untuk berkeliling di sekitar kampus.{/i}"
+                mcname "{i}Di perjalanan pertama{/i}"
+                mcname "{i}Ada parkiran yang biasa dipakai anak-anak jurusan HI untuk memarkirkan kendaraan mereka{/i}"
+                mcname "{i}Terlihat disana banyak kendaraan yang bisa dibilang lumayan mahal{/i}"
+                mcname "{i}Hmmmm luas juga parkiran buat kampus ini{/i}"
+                mcname "{i}Seperti yang diharapkan dengan kampus ibu kota{/i}"
+                mcname "{i}Terasa sangat berbeda dibandingkan dengan bangunan yang ada di desa{/i}"
+                mcname "{i} Entah kenapa tiba-tiba di pikiranku terbayang sosok Kana di aula waktu itu{/i}"
+                scene black with dissolve
+                scene kana awal with Dissolve(2.0)
+                mcname "{i}Aduhhh sadar woi sadar.{/i}"
+                scene black with dissolve
+                scene depan kampus with Dissolve(2.0)
+                "MC pun menggeleng gelengkan kepala untuk kembali fokus pada perjalanannya mengelilingi kampus."
+                # BG Sawah
+                mcname "{i}Setelah itu aku melihat sawah yang digunakan oleh mahasiswa/i jurusan lain Jeketi University.{/i}"
+                mcname "{i}sawah ya…{/i}"
+                mcname "{i}Gak nyangka bakal ngeliat sesuatu yang familiar di kampus ini{/i}"
+                mcname "{i}Tapi mungkin buat jurusan yang ku ambil gk bakal banyak kesini{/i}"
+                mcname "{i}(...){/i}"
+                # BG Rooftop
+                mcname "{i}Lalu yang terakhir aku pun mencoba menaiki rooftop untuk melihat keseluruhan kampus dari atas.{/i}"
+                mcname "{i}Wah dilihat dari atas ternyata memang keren sih ini kampus{/i}"
+                "Dari sana bisa terlihat seluruh pemandangan di kampus"
+                "Terlihat beberapa orang melaksanakan beberapa aktifitas kampus, bahkan ada juga yang sepertinya sudah siap-siap untuk pulang"
+                # SFX Peregangan
+                mcname "mgghhhh"
+                mcname "{i}Mungkin udah dulu kali ya buat hari ini{/i}"
+                mcname "{i}Abis ini pulang ke kos aja deh{/i}"
+                stop music fadeout 1.0
+                jump chapter1kana3kos
+            "Menyelidiki tempat-tempat yang membuatmu penasaran":
+                $ renpy.block_rollback()
+                mcname "{i}Duhh masih lama lah{/i}"
+                mcname "{i}Tidur lagi enak kali ya{/i}"
+                mcname "{i}Lagian mereka juga pasti datangnya telat kan{/i}"
+                mcname "{i}Di Indonesia gitu si ga ada yang tepat waktu{/i}"
+                "[mcname] pun memilih untuk tidur lebih lama dikarenakan waktu perjanjian masih ada beberapa jam lagi akan tetapi dia lupa melihat batre hp nya"
+                "Akhirnya tertidur lelap hingga melebihi waktu yang dijanjikan dan saat ia menyalakan hp nya ia pun dimarahi oleh Kana dan Freya"
+                scene black with dissolve
+                show text "{color=#FFF}EH KALAU UDAH JANJIAN TUH DITEPATI{/color}" with Pause(2.0)
+                show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
+                show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+                stop music fadeout 1.0
+                play music "audio/Dreamcatcher.mp3" fadein 1.0
+                scene mc bedroom with Dissolve(2.0)
+                jump credits
+            "Langsung berangkat lebih awal supaya ga ketinggalan":
+                $ renpy.block_rollback()
+                "[mcname] memilih untuk berangkat lebih awal dan beberapa jam dari yang telah dijanjikan tapi dia lupa kalau dirinya belum mandi dan makan"
+                "setelah sampai di tempat dijanjikan dia jatuh pingsan karena hawa panas yang terpancarkan "
+                scene black with dissolve
+                show text "{color=#FFF}EH KALAU MAU KEGIATAN TUH MINIMAL MANDI DAN MAKAN{/color}" with Pause(2.0)
+                show text "{color=#FFF}JANGAN LANGSUNG BERANGKAT{/color}" with Pause(2.0)
+                show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
+                show text "{color=#FFF}AKHIRNYA MALAH PINGSAN KAN{/color}" with Pause(2.0)
+                show text "{color=#FFF}HADEEEUHHH DASAR{/color}" with Pause(2.0)
+                show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+                stop music fadeout 1.0
+                
+
+label chapter1kana3kos:
+    $ renpy.block_rollback()
+    scene black with dissolve
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+    mcname "Hmmm, keknya mending aku bangun terus siap-siap deh biar ga telat."
+    mcname "Ga enak juga kalau pertama kali malah telat terus bikin mereka ga enak kan"
+    "[mcname] pun bersiap siap untuk berangkat kerja kelompok"
+    "Ia menghabiskan kebanyakan waktunya di mandi agar merasa lebih segar dan tidak mengantuk"
+    "Setelah itu dia pun berangkat menuju tempat yang pada awalnya sudah ditentukan"
+    "Setelah [mcname] sampai di tempat perjanjian"
+    scene black with dissolve
+    scene depan kampus with Dissolve(2.0)
+    mcname "Tenang - tenang"
+    mcname "Gak usah gugup"
+    mcname "Santai aja"
+    mcname "Kamu gak usah gugup"
+    mcname "Meski ini kerja kelompok pertama kali di kuliah tapi kamu bisa kok"
+    mcname "Yuk semangat"
+    "Tidak menunggu lama Kana dan Freya pun datang dan menghampiri."
+    show freya at char_left with dissolve
+    show kana at char_right with dissolve
+    show kana_side at left with dissolve
+    kana "Eh haloo"
+    kana "Udah lama ya nunggunya?"
+    kana "Maaf ya Jakarta macet sii hehe"
+    hide kana_side with dissolve
+    show freya_side at left with dissolve
+    freya "Eh iya nih tadi aku ke rumah Kana dulu juga"
+    freya "Biasa si princess satu ini terlalu lama dandan nya"
+    freya "Tapi ya macet juga si"
+    hide freya_side with dissolve
+    mcname "{i}Dandan!?{/i}"
+    mcname "{i}Setelah diperhatikan lebih detail memang Kana saat ini terlihat lebih natural dan lebih cantik dari biasanya{/i}"
+    mcname "{i}Makeupnya yang terlihat sedikit berbeda dari saat ia ke kampus membuat ku terdiam sebentar{/i}"
+    "Menyadari [mcname] memperhatikan nya"
+    "Kana jadi terdiam seakan panik mendatang, dan tidak dapat menjawab dari pertanyaan Freya"
+    "Kana hanya bisa melihat ke arah Freya"
+
+
+
