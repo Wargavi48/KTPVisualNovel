@@ -342,7 +342,7 @@ label chapter1kana2Campus:
     "[mcname] berlari menuju Lift yang mau tertutup"
     "Di dalam lift terlihat seorang cewek yang sepertinya juga mau menuju ke kelas"
     $ quick_menu = False
-    play sound "audio/ding.mp3" fadein 1.0
+    play sound "audio/ding.mp3"
     scene black with dissolve
     scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
@@ -360,7 +360,7 @@ label chapter1kana2Campus:
     "Setelah mendapatkan cukup oksigen"
     "[mcname] mencoba melirik perempuan yang ada di dalam lift."
     mcname "{i}Memang ya, cewek di Jakarta ini cantik-cantik semua{/i}"
-    play sound "audio/ding.mp3" fadein 1.0
+    play sound "audio/ding.mp3"
     $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}Pintu lift terbuka{/color}" with Pause(2.0)
@@ -372,7 +372,7 @@ label chapter1kana2Campus:
     $ quick_menu = False
     scene black with Dissolve(2.0)
     scene kelas with dissolve
-    play music "audio/bgm_ngobrol_normal.mp3" fadein 1.0
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname] pun memasuki ruangan kelas."
@@ -518,12 +518,17 @@ label chapter1kana2Campus:
     kana " Mohon bantuannya, ya. Sebelumnya, kenalkan namaku [kana_name]"
     kana "Eh, kamu sini dong. Kan kita juga satu kelompok"
     hide kana_side with dissolve
-    "Mahasiswa C" "Owh iya. Siang semuanya"
-    "Mahasiswa C" " Sebelumnya, kenalin nama gw Donatur"
-    "Mahasiswa C" "Gw dari Pekalongan. Salam kenal"
+    show mahasiswa_c at char_center with dissolve
+    show mahasiswa_c_side at left
+    mahasiswa_c "Owh iya. Siang semuanya"
+    $ mahasiswa_c_name = "Galaxy"
+    mahasiswa_c " Sebelumnya, kenalin nama gw [mahasiswa_c_name]"
+    mahasiswa_c "Gw dari Pekalongan. Salam kenal"
+    hide mahasiswa_c_side with dissolve
     hide freya with dissolve
     hide kana with dissolve
-    "Freya, [kana_name], [mcname], dan (Donatur) pun saling bertukar sapa dan mengobrol lebih lanjut. Akhirnya, mereka pun membuat grup chat untuk membahas pekerjaan kelompok mereka."
+    hide mahasiswa_c with dissolve
+    "Freya, [kana_name], [mcname], dan [mahasiswa_c_name] pun saling bertukar sapa dan mengobrol lebih lanjut. Akhirnya, mereka pun membuat grup chat untuk membahas pekerjaan kelompok mereka."
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(2.0)

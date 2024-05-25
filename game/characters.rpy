@@ -44,6 +44,8 @@ default freya_shock = Character("[freya_name]", image="Freya_shock")
 default freya_smile = Character("[freya_name]", image="Freya_smile")
 default freya_smug = Character("[freya_name]", image="Freya_smug")
 
+default mahasiswa_c_name = "???"
+default mahasiswa_c = Character("[mahasiswa_c_name]", image="mahasiswa_c")
 
 
 # Define side pia character 
@@ -72,14 +74,16 @@ image side freya_side_shock = "Characters/Freya_side_shock.png"
 image side freya_side_smile = "Characters/Freya_side_smile.png"
 image side freya_side_smug = "Characters/Freya_side_smug.png"
 
+image side mahasiswa_c_side = "Characters/mahasiswa_c_side.png"
 
 
 
 # Define character appear on phone
+default mahasiswa_name = "???"
 define mc_nvl = Character("[mcname]", kind=nvl, callback=Phone_SendSound)
 define kana_nvl = Character("[kana_name]", kind=nvl, callback=Phone_ReceiveSound)
 define freya_nvl = Character("Freya", kind=nvl, callback=Phone_ReceiveSound)
-define donatur_nvl = Character("Donatur", kind=nvl, callback=Phone_ReceiveSound)
+define donatur_nvl = Character("[mahasiswa_name]", kind=nvl, callback=Phone_ReceiveSound)
 define mamah_nvl = Character("Mama", kind=nvl,  callback=Phone_ReceiveSound)
 define papah_nvl = Character("Papa", kind=nvl, callback=Phone_ReceiveSound)
 

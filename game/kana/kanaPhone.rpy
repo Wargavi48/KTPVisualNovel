@@ -1,5 +1,6 @@
 label phoneChat:
     $ renpy.block_rollback()
+    $ mahasiswa_name = "Galaxy"
     nvl clear
     play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
     scene bedroom with dissolve
