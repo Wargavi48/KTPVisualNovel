@@ -522,7 +522,7 @@ screen main_menu():
     add "screens/Kana.png" at ktp_appear
     add "screens/kabut_kiri.png" at overlay_left
     add "screens/kabut_kanan.png" at overlay_right
-    add "gui/Logo_VN_biru.png":
+    add "gui/Logo_VN_KTP.png":
         at logo_game
         zoom 1.5
         ypos 764

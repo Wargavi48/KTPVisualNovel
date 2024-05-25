@@ -1,124 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00keymap.rpy", line 487, in script
+  File "renpy/common/00start.rpy", line 216, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 531, in script
     python hide:
-  File "renpy/common/00keymap.rpy", line 487, in <module>
+  File "renpy/common/00keymap.rpy", line 531, in <module>
     python hide:
-  File "renpy/common/00keymap.rpy", line 509, in _execute_python_hide
-    ui.interact(suppress_overlay=True, suppress_underlay=True)
-  File "renpy/common/00library.rpy", line 167, in _default_empty_window
-    nvl_show_core()
-  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
-    return __nvl_show_screen("nvl", items=[ ])
-  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
-    return renpy.get_widget(screen_name, "what", config.nvl_layer)
-  File "game/screens.rpy", line 1526, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1526, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1529, in execute
-    if nvl_mode == "phone":
-  File "game/screens.rpy", line 1530, in execute
-    use PhoneDialogue(dialogue, items)
-  File "game/PhoneTexting.rpy", line 54, in execute
-    screen PhoneDialogue(dialogue, items=None):
-  File "game/PhoneTexting.rpy", line 54, in execute
-    screen PhoneDialogue(dialogue, items=None):
-  File "game/PhoneTexting.rpy", line 57, in execute
-    frame at phone_transform(phone_position_x, phone_position_y):
-  File "game/PhoneTexting.rpy", line 60, in execute
-    viewport:
-  File "game/PhoneTexting.rpy", line 66, in execute
-    vbox:
-  File "game/PhoneTexting.rpy", line 68, in execute
-    use nvl_phonetext(dialogue)
-  File "game/PhoneTexting.rpy", line 72, in execute
-    screen nvl_phonetext(dialogue):
-  File "game/PhoneTexting.rpy", line 72, in execute
-    screen nvl_phonetext(dialogue):
-  File "game/PhoneTexting.rpy", line 76, in execute
-    for id_d, d in enumerate(dialogue):
-  File "game/PhoneTexting.rpy", line 77, in execute
-    if d.who == None: # Narrator
-  File "game/PhoneTexting.rpy", line 95, in execute
-    hbox:
-  File "game/PhoneTexting.rpy", line 101, in execute
-    if previous_d_who != d.who:
-  File "game/PhoneTexting.rpy", line 111, in execute
-    add message_icon:
-  File "game/PhoneTexting.rpy", line 111, in <module>
-    add message_icon:
-NameError: name 'message_icon' is not defined
+  File "renpy/common/00keymap.rpy", line 542, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00keymap.rpy", line 487, in script
+  File "renpy/common/00start.rpy", line 216, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 531, in script
     python hide:
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 823, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 487, in <module>
+  File "renpy/common/00keymap.rpy", line 531, in <module>
     python hide:
-  File "renpy/common/00keymap.rpy", line 509, in _execute_python_hide
-    ui.interact(suppress_overlay=True, suppress_underlay=True)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2140, in interact
-    self.show_window()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1530, in show_window
-    renpy.config.empty_window()
-  File "renpy/common/00library.rpy", line 167, in _default_empty_window
-    nvl_show_core()
-  File "renpy/common/00nvl_mode.rpy", line 207, in nvl_show_core
-    return __nvl_show_screen("nvl", items=[ ])
-  File "renpy/common/00nvl_mode.rpy", line 201, in _m1_00nvl_mode__nvl_show_screen
-    return renpy.get_widget(screen_name, "what", config.nvl_layer)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 1534, in get_displayable
-    screen.update()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 1526, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1526, in execute
-    screen nvl(dialogue, items=None):
-  File "game/screens.rpy", line 1529, in execute
-    if nvl_mode == "phone":
-  File "game/screens.rpy", line 1530, in execute
-    use PhoneDialogue(dialogue, items)
-  File "game/PhoneTexting.rpy", line 54, in execute
-    screen PhoneDialogue(dialogue, items=None):
-  File "game/PhoneTexting.rpy", line 54, in execute
-    screen PhoneDialogue(dialogue, items=None):
-  File "game/PhoneTexting.rpy", line 57, in execute
-    frame at phone_transform(phone_position_x, phone_position_y):
-  File "game/PhoneTexting.rpy", line 60, in execute
-    viewport:
-  File "game/PhoneTexting.rpy", line 66, in execute
-    vbox:
-  File "game/PhoneTexting.rpy", line 68, in execute
-    use nvl_phonetext(dialogue)
-  File "game/PhoneTexting.rpy", line 72, in execute
-    screen nvl_phonetext(dialogue):
-  File "game/PhoneTexting.rpy", line 72, in execute
-    screen nvl_phonetext(dialogue):
-  File "game/PhoneTexting.rpy", line 76, in execute
-    for id_d, d in enumerate(dialogue):
-  File "game/PhoneTexting.rpy", line 77, in execute
-    if d.who == None: # Narrator
-  File "game/PhoneTexting.rpy", line 95, in execute
-    hbox:
-  File "game/PhoneTexting.rpy", line 101, in execute
-    if previous_d_who != d.who:
-  File "game/PhoneTexting.rpy", line 111, in execute
-    add message_icon:
-  File "game/PhoneTexting.rpy", line 111, in <module>
-    add message_icon:
-NameError: name 'message_icon' is not defined
+  File "renpy/common/00keymap.rpy", line 542, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+  File "D:\fanbase_project\KTPVisualNovel\renpy\loadsave.py", line 829, in load
+    log.unfreeze(roots, label="_after_load")
+  File "D:\fanbase_project\KTPVisualNovel\renpy\rollback.py", line 1130, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\rollback.py", line 925, in rollback
+    self.load_failed()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\rollback.py", line 843, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Wed May 22 22:18:21 2024
+Sat May 25 14:33:15 2024
