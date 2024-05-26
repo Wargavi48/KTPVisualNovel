@@ -54,7 +54,8 @@ init python:
                 renpy.jump("reassemble_complete")
 
 label reassemble_complete:
-        show screen puzzle_complete with Pause(2.0)
+        show screen puzzle_complete with dissolve
+        kana "Akhirnya selesai juga"
         hide screen puzzle_complete with dissolve
         scene dream with Dissolve(2.0)
         play music "audio/Dreamcatcher.mp3" fadein 1.0
@@ -113,5 +114,5 @@ default finished_pieces = 0 # Keeps track of the amount of pieces that have been
 label puzzle_start:
     play music "audio/minigame_kana.mp3"
     $ setup_puzzle()
-    call screen reassemble_puzzle
+    call screen reassemble_puzzle with dissolve
     return
