@@ -937,17 +937,351 @@ label chapter1kana3kos:
     kana "Ya udah deh gpp"
     kana "Yang penting sekarang kita kerjain aja dulu lah biar makin cepet istirahat"
     kana "Panas banget soalnya"
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
     # harusnya bg monas
     scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
+    play music "audio/BGM_Monas.mp3" loop fadein 1.0
     "Mereka pun memutuskan untuk meninggalkan [mahasiswa_c_name] dan mulai mengerjakan tugas kelompok yang diberikan"
     "Mereka pun mulai berjalan jalan dan mewawancarai sekitar"
     $ quick_menu = False
     stop music fadeout 1.0
     jump puzzle_start
+
+label chapter1kana3monas:
+    scene black with dissolve
+    # Harusnya BG Monas
+    scene depan kampus with Dissolve(2.0)
+    $ quick_menu = True
+    play music "audio/BGM_Monas.mp3" loop fadein 1.0
+    "Setelah itu, mereka memutuskan untuk berhenti sejenak di sekitar monas dikarenakan panas yang tidak tertahankan"
+    show freya at char_left with dissolve
+    show kana at char_right with dissolve
+    show freya_side at left with dissolve
+    freya "Aduhh panas banget ya Nay, [mcname]"
+    freya "Jujur ini mungkin hari terpanas dalam minggu ini"
+    hide freya_side with dissolve
+    show kana_side at left with dissolve
+    kana "Iya panas banget mana haus lagi"
+    hide kana_side with dissolve
+    mcname "{i}Hmmm iya nih panas{/i}"
+    mcname "{i}Bisa kali ya gw beliin mereka minum sesekali gtu{/i}"
+    mcname "Eh bentar ya gw mau beli minum dulu"
+    menu:
+        "Kamu beliin mereka"
+        "Minuman berenergi":
+            "[mcname] membelikan Minuman berenergi untuk kana dan freya"
+            "Dikarenakan minuman ini lah yang ia minum saat di desa saat merasa kecapean agar berenergi lagi"
+            "akan tetapi kana dan freya melihat [mcname] dengan tatapan aneh saat tau itu ternyata minuman berenergi"
+            stop music fadeout 1.0
+            scene black with dissolve
+            show text "{color=#FFF}BRO YANG BENER AJA{/color}" with Pause(2.0)
+            show text "{color=#FFF}DI KIRA MEREKA ABIS OLAHRAGA ATAU NUKANG KALI YA DI KASIH GINIAN{/color}" with Pause(2.0)
+            show text "{color=#FFF}AKHIRNYA MEREKA GA MAU NGOBROL KAN SAMA LO LAGI{/color}" with Pause(2.0)
+            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            scene dream with dissolve
+            jump credits
+        "Es Teh":
+            stop music fadeout 1.0
+            jump chapter1kana3monasesteh
+        "Jamu":
+            stop music fadeout 1.0
+            scene black with dissolve
+            "[mcname] membelikan jamu untuk Kana dan Freya, karena teringat dengan mama di desa dimana saat mama merasa capek selalu minta untuk di belikan jamu agar lebih segar"
+            "Tetapi Kana dan Freya sangat lah asing dengan jamu dan saat itu juga mereka malah pucat dan muntah"
+            show text "{color=#FFF}EH DIKIRA UDAH TUA KALI YA DI KASIH JAMU{/color}" with Pause(2.0)
+            show text "{color=#FFF}LAGIAN GA SEMUA BISA MINUM JAMU BROO{/color}" with Pause(2.0)
+            show text "{color=#FFF}MIKIR{/color}" with Pause(2.0)
+            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            scene dream with dissolve
+            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            jump credits
+
+
+
+label chapter1kana3monasesteh:
+    $ renpy.block_rollback()
+    $ quick_menu = False
+    scene black with dissolve
+    # harusnya bg monas
+    scene depan kampus with Dissolve(2.0)
+    play music "audio/BGM_Monas.mp3" loop fadein 1.0
+    $ quick_menu = True
+    "[mcname] melihat ada sebuah stand minuman es teh yang cukup ramai"
+    "Ia pun memilih untuk membelikan mereka minuman itu"
+    "Saat ia datang kembali dengan membawa 3 gelas es teh raut muka Kana dan Freya tersenyum dan merasa senang"        
+    show kana at char_right with dissolve
+    show freya at char_left with dissolve
+    show kana_side at left with dissolve
+    kana "Wahhhh cocok banget nih"
+    kana "Makasih banyak ya [mcname]"
+    kana "Ini berapa? nanti aku ganti ya"
+    hide kana_side with dissolve
+    show freya_side at left with dissolve
+    freya "Duhh cocok banget nih siang siang minum es teh seger banget"
+    freya "Makasih yaa"
+    freya "Nanti teh punyaku di bayarin sama Kana ya"
+    hide freya_side with dissolve
+    # Yang bener aja rugi dong
+    kana "..."
+    mcname "Hahah udah udah gpp kok"
+    mcname "Ini dari aku sekalian ucapan terimakasihku udah mau nunjukin sekitar Jakarta"
+    mcname "Soalnya kemarin aku ga sempet muter muter jadi makasih ya"
+    show freya_side at left with dissolve
+    freya "Yang bener?"
+    freya "Aku si gak nolak"
+    freya "hehe"
+    hide freya_side with dissolve
+    show kana_side at left with dissolve
+    kana "Hadeeeh Freya Freya"
+    "Mereka tertawa bersama dan kembali mengobrol satu sama lain hingga waktu pun menunjukkan sudah sore."
+    $ quick_menu = False
+    scene black with dissolve
+    # BG Monas
+    scene depan kampus with dissolve
+    show freya at char_left with dissolve
+    $ quick_menu = True
+    show kana at char_right with dissolve
+    mcname "Eh ini udah kah?"
+    mcname "Atau kira - kira gimana lagi nih?"
+    mcname "Kalau dari aku sih udah cukup ga perlu ada yang di tambah nantinya malah makin ribet"
+    show freya_side at left with dissolve
+    freya "Sebenernya ada yang menurutku harus di tambah sih"
+    freya "Tapi itu nanti sama aku aja"
+    freya "Agak susah jelasinnya juga hehe"
+    hide freya_side with dissolve
+    show kana_side at left with dissolve
+    kana "Aku sih udah oke aja"
+    kana "Maklumin Freya ya [mcname]"
+    hide kana_side with dissolve
+    "Senyuman kecil keluar dari wajah Kana, seakan sudah terbiasa dengan Freya"
+    show kana_smile at char_right with dissolve
+    show kana_side_smile at left with dissolve
+    kana "Freya emang gitu orangnya"
+    kana "Dia susah jelasin beberapa hal yang ada di kepalanya"
+    kana "Tapi dia punya banyak ide yang bagus kok"
+    kana "Santai aja"
+    kana "Nanti kita tinggal kasih tau ke [mahasiswa_c_name] aja berarti ya? bagian yang harus dia kerjain"
+    hide kana_side_smile with dissolve
+    hide kana_smile with dissolve
+    mcname "Ooooo oke deh"
+    mcname "Nanti aku aja yang hubungi [mahasiswa_c_name] sama jelasin bagian mana yang harus dia kerjain"
+    show kana_smile at char_right with dissolve
+    show kana_side_smile at left with dissolve
+    kana "Okee makasih ya"
+    hide kana_smile with dissolve
+    hide kana_side_smile with dissolve
+    show freya_side at left with dissolve
+    freya "Mantappp"
+    freya "Nay ayoo itu supirmu sudah nungguin"
+    freya "Eh kita duluan ya"
+    freya "Dadah"
+    hide freya_side with dissolve
+    "Terlihat orang dengan dengan jas hitam menunggu di depan mobil tidak jauh dari mereka"
+    mcname "Okee makasih ya"
+    hide kana with dissolve
+    hide freya with dissolve
+    "Setelah itu [mcname], Kana dan Freya pun pulang masing masing ke rumahnya"
+    "Di perjalanan [mcname] mengenang kembali harinya yang telah ia habiskan bersama Kana dan Freya"
+    "(...)"
+    mcname "{i}Wahh, hari ini cape juga{/i}"
+    mcname "{i}Tapi beruntung aku ga telat dan ikut kerja kelompok{/i}"
+    mcname "{i}Kana sama Freya friendly juga ternyata{/i}"
+    mcname "{i}Awalnya aku kira bakalan kaya judes gitu hahaha{/i}"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene mc bedroom with Dissolve(2.0)
+    $ quick_menu = True
+    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+    "Meskipun merasa kecapean"
+    "[mcname] tetap bisa mengingat kembali apa yang terjadi pada hari ini"
+    "Sesaat sampai di kosannya, [mcname] hanya bisa rebahan di kasur dan melihat foto yang Freya kirimkan saat kerja kelompoknya"
+    "Ada satu foto yang membuatnya tersenyum kembali, yaitu foto Kana yang tidak sengaja diambil oleh [mcname] saat kerja kelompok"
+    mcname "Apakah ini yang dinamakan..."
+    "[mcname] pun tertidur dan ia memimpikan foto Kana yang tersenyum itu"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene kelas with Dissolve(2.0)
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    $ quick_menu = True
+    "Setelah sampai di kelas [mcname] menghampiri [mahasiswa_c_name] untuk menjelaskan bagian mana yang harus ia kerjakan"
+    show mahasiswa_c at mahasiswa_c_center with dissolve
+    mcname "Eh, [mahasiswa_c_name] kemarin ga datang ya?"
+    show mahasiswa_c_side at left with dissolve
+    mahasiswa_c "Eh iya [mcname], maaf ya soalnya tiba - tiba kakakku sakit terus ke RS, aku disuruh nemenin"
+    hide mahasiswa_c_side with dissolve
+    "Saat mereka berdua mengobrol satu sama lain, datang Freya dan Kana dari arah pintu dan menyapa mereka"
+    show freya at char_left with dissolve
+    show kana at char_right with dissolve
+    mcname "Eh..."
+    mcname "Bukannya kemarin kamu bilang kalau kamu ada panggilan kerja ya?"
+    show kana_side at left with dissolve
+    kana "Halo [mcname], halo [mahasiswa_c_name]"
+    hide kana_side with dissolve
+    show freya_side at left with dissolve
+    freya "Haloo semuanya, ada apa nih"
+    hide freya_side with dissolve
+    show mahasiswa_c_side at left with dissolve
+    mahasiswa_c "Yooo Kalian, ini cuma lagi ada yang mau dibahas sama [mcname]"
+    hide mahasiswa_c_side with dissolve
+    mcname "Nggak, ini tadi baru mau jelasin pekerjaan bagian dia tapi kok, alasannya beda ya?"
+    show mahasiswa_c_side at left with dissolve
+    mahasiswa_c "Huh beda???"
+    mahasiswa_c "Gak kok ,jadi kemarin tuh emang ada panggilan kerja"
+    mahasiswa_c "tapi tiba tiba kakak ku sakit terus ke RS gitu"
+    mahasiswa_c "Hahahaha"
+    hide mahasiswa_c_side with dissolve
+    "Kata [mahasiswa_c_name] sambil tertawa canggung"
+    "Melihat gelagat Mahasiswa C yang agak aneh, Freya memicingkan mata dengan tatapan curiga"
+    show freya_angrysmile at char_left with dissolve
+    show freya_side_angrysmile at left with dissolve
+    freya "Hmmmm, gak tau deh"
+    freya "Gak peduli juga mana yang bener"
+    freya "Yang penting kamu kerjain ya"
+    freya "Awas aja kalau engga"
+    hide freya_side_angrysmile with dissolve
+    hide freya_angrysmile with dissolve
+    "Freya memberikan senyuman yang entah kenapa terasa berbeda dari senyum karamel biasanya"
+    show kana_side at left with dissolve
+    kana "hahaha, makan tuh kena ancam Freya"
+    hide kana_side with dissolve
+    show mahasiswa_c_side at left with dissolve
+    mahasiswa_c "Iya iya"
+    mahasiswa_c "Santai aja kali"
+    mahasiswa_c "Nanti gue kerjain"
+    mahasiswa_c "Ga usah khawatir dah"
+    hide mahasiswa_c_side with dissolve
+    "[mcname] pun menjelaskan apa yang harus dilakukan [mahasiswa_c_name] kedepannya untuk mengerjakan tugas kelompok nya"
+    "[mahasiswa_c_name] pun setuju dan mengerti apa yang harus ia lakukan"
+    show mahasiswa_c_side at left with dissolve
+    mahasiswa_c "Oke dah paham-paham ternyata segini, ku kira bakalan banyak"
+    hide mahasiswa_c_side with dissolve
+    mcname "Sebenernya ada yang lain si tapi coba tanya Freya sana"
+    show mahasiswa_c_side at left with dissolve
+    mahasiswa_c "Ada lagi ga Freya?, aku kira bakalan banyak"
+    hide mahasiswa_c_side with dissolve
+    show freya_angrysmile at char_left with dissolve
+    show freya_side_angrysmile at left with dissolve
+    freya "Gini doang??"
+    "Freya menatap Mahasiswa C dengan kesal"
+    freya "Awas aja kalau ga bener ya!!"
+    freya "Aku coret namamu dari kelompok"
+    hide freya_side_angrysmile with dissolve
+    show mahasiswa_c_side at left with dissolve
+    mahasiswa_c "Lah santai aja napa"
+    mahasiswa_c "Ya udah gw tinggal lagi yak"
+    mahasiswa_c "Soalnya masih ada yang harus gue kerjain nih"
+    hide mahasiswa_c_side with dissolve
+    "[mahasiswa_c_name] kemudian mengambil tas nya kemudian lari pergi meninggalkan mereka"
+    hide mahasiswa_c with dissolve
+    show freya_side_angrysmile at left with dissolve
+    freya "Ya ela, tuh anak malah kabur"
+    freya "Ya udah lah ga tau lagi"
+    hide freya_side_angrysmile with dissolve
+    show kana_side at left with dissolve
+    kana "Udah lah"
+    kana "Oh iya [mcname] bagaimana liburanmu kemarin"
+    hide kana_side with dissolve
+    mcname "Yah, gak ada yang menarik sih"
+    mcname "Palingan cuma rebahan di kamar aja soalnya kemarin ngabisin tenaga banget"
+    show kana_side at left with dissolve
+    kana "Sama dong"
+    kana "Aku juga kemarin cuma di rumah aja buat bersih-bersih kamar"
+    hide kana_side with dissolve
+    mcname "Hahaha, Sama aku juga"
+    hide freya_angrysmile with dissolve
+    show freya_side at left with dissolve
+    freya "Enak banget ya"
+    freya "Aku pulang pulang harus nyari bahan buat project kita sih"
+    hide freya_side with dissolve
+    mcname "Lah, kalau perlu bantuan bilang Freya"
+    mcname "Kita siap membantu tenang aja"
+    show kana_side at left with dissolve
+    kana "Iya nih jangan ngerjaiin sendirian yaa"
+    kana "Awas aja"
+    hide kana_side with dissolve
+    show freya_side at left with dissolve
+    freya "Santai aja, bisa ko"
+    hide freya_side with dissolve
+    mcname "Yang bener?"
+    show freya_angrysmile at char_left with dissolve
+    show freya_side_angrysmile at left with dissolve
+    freya "Bener, kalau mau bahas project mah nanti aja deh bahas yang lain aja napa"
+    hide freya_side_angrysmile with dissolve
+    hide freya_angrysmile with dissolve
+    show kana_side at left with dissolve
+    kana "Haha, oke deh Frey aku percaya kok sama kamu"
+    kana "By the way [mcname] kemarin nyasar ga nih pas pulang sendirian soalnya dulu aku pas pulang sendirian pernah nyasar"
+    kana "Itulah kenapa sekarang pake supir"
+    "[mcname] menjawab dengan semangat"
+    mcname "IYA"
+    mcname "Aku kemarin hampir aja dibuat nyasar sama maps"
+    show freya_side at left with dissolve
+    freya "Hahah bener tuh"
+    freya "Dia sampe mau nangis loh pas telepon aku"
+    hide freya_side with dissolve
+    show kana_side at left with dissolve
+    kana "“Ihh freya gak usah kasih tau juga kalau bagian itu"
+    hide kana_side with dissolve
+    mcname "Iya kah?"
+    mcname "Jadi pengen liat kamu mau nangis itu hahah"
+    "Dosen pun memasuki ruangan dan kelas pun di mulai"
+    "Hari dipenuhi dengan kelas dan [mcname] pun memilih untuk pergi ke kos untuk istirahat."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene kelas with Dissolve(2.0)
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    play music "audio/BGM_Kelas.mp3" loop fadein 1.0
+    "Waktu yang diberikan untuk mengerjakan tugas pun telah berakhir, dan hari dimana presentasi dilakukan pun tiba"
+    "[mcname], Kana, Freya dan [mahasiswa_c_name] pun melakukan presentasinya di depan"
+    "Presentasi dilakukan secara lancar dan saat kelas akan selesai, dosen pun memberitahukan beberapa kelompok yang memiliki nilai tinggi"
+    "Diantara kelompok itu [mcname], Kana, Freya dan [mahasiswa_c_name] mendapatkan salah satu dengan nilai tertinggi"
+    show kana at char_right with dissolve
+    show freya at char_left with dissolve
+    show mahasiswa_c at mahasiswa_c_center with dissolve
+    show kana_side at left with dissolve
+    kana "Wahhhh, kita dapat nilai tertinggi loh!???"
+    hide kana_side with dissolve
+    show freya_side at left with dissolve
+    freya "Hehehe, siapa dulu kan ada aku"
+    hide freya_side with dissolve
+    mcname "Enak aja, gara gara aku tuh"
+    show mahasiswa_c_side at left with dissolve
+    mahasiswa_c "Ya elah gara gara ku ini"
+    mahasiswa_c "Coba aja aku ga ngerjaiin bagian ku kelar kelar dah"
+    hide mahasiswa_c_side with dissolve
+    show freya_angrysmile at char_left with dissolve
+    show freya_side_angrysmile at left with dissolve
+    freya "Eh yang ga datang ke kerja kelompok diem aja"
+    hide freya_side_angrysmile with dissolve
+    show kana_side at left with dissolve
+    kana "Aduhh, fre fre santai free jangan marah"
+    hide kana_side with dissolve
+    show freya_side_angrysmile at left with dissolve
+    freya "Lagian mancing mancing…"
+    hide freya_side_angrysmile with dissolve
+    mcname "Mancing apa tuh?"
+    mcname "Mancing perkoro kah"
+    mcname "Hahahaha"
+    hide freya_angrysmile with dissolve
+    "[mcname], Kana, Freya dan [mahasiswa_c_name] pun senang saling tertawa satu sama lain dan mengucapkan terimakasih kepada satu sama lain"
+    "Di situ [mcname] melihat senyum Kana yang lebar terlihat begitu bahagia dan membuat hatinya pun berdetak kencang"
+    $ quick_menu = False
+    jump chapter2kanastart
+
+
+
+
+
     
+
 
 
 

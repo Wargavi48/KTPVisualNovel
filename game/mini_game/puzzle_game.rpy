@@ -55,11 +55,13 @@ init python:
 
 label reassemble_complete:
         show screen puzzle_complete with dissolve
+        play sound "audio/Sound Effect - Minigame Selesai.mp3" volume 0.3
         kana "Akhirnya selesai juga"
         hide screen puzzle_complete with dissolve
-        scene dream with Dissolve(2.0)
-        play music "audio/Dreamcatcher.mp3" fadein 1.0
-        jump credits
+        jump chapter1kana3monas
+        # scene dream with Dissolve(2.0)
+        # play music "audio/Dreamcatcher.mp3" fadein 1.0
+        # jump credits
 
 screen puzzle_complete:
         image "background.png"
