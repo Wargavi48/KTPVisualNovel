@@ -128,7 +128,8 @@ label chapter1kana1:
             "Kamu habisin waktu di kosan dan memilih buat istirahatin diri daripada pergi kesana kemari"
             $ kana_name = "Perempuan itu"
             stop music fadeout 1.0
-            jump chapter1kana2Campus
+            # jump chapter1kana2Campus
+            jump chapter1kana2kos
         "B. Ke Warteg":
             "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit"
             scene black with dissolve
@@ -142,13 +143,32 @@ label chapter1kana1:
             scene black with dissolve
             jump chapter1kana2Cafe
             
-    
+label chapter1kana2kos:
+    $ renpy.block_rollback()
+    scene black with dissolve
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+    $ quick_menu = True
+    "Kamu habisin waktu di kosan dan memilih untuk beristirahat dibanding pergi kesana kemari"
+    "Pulang dari kampus, [mcname] masih memikirkan kejadian yang dialaminya hari ini"
+    mcname "{i}Lumayan capek ya orientasinya{/i}"
+    mcname "{i}Ternyata panas banget di Jakarta{/i}"
+    show kana at kana_near with dissolve
+    mcname "{i}Aku gak nyangka bisa bertemu sama perempuan sebersinar itu{/i}"
+    mcname "{i}Tapi dilihat - lihat, kayanya dia ramah ya{/i}"
+    mcname "{i}Aku kira, dia bakalan kaya cool dan cuek gitu{/i}"
+    mcname "{i}Udah ah mending aku tidur{/i}"
+    "[mcname] pun tertidur dengan lelap"
+    $ quick_menu = False
+    stop music fadeout 1.0
+    jump chapter1kana2Campus
+
 label chapter1kana2Cafe:
     $ renpy.block_rollback()
     scene cafe with dissolve
-    play music "audio/bgm_cafe_2.mp3" fadein 1.0
+    play music "audio/BGM_Cafe Cerah.mp3" fadein 1.0
     $ quick_menu = True
-    "Ramainya orang orang yang lalu lalang di luar cafe dan memasuki cafe pun terkadang menarik perhatian si MC akan tetapi ada satu orang yang membuat dia semakin fokus"
+    "[mcname] memilih untuk menghabiskan waktu di sebuah cafe. Awalnya cafe itu terasa sepi, tetapi lama - lama cafe tersebut mulai penuh"
     "Saat orang itu mendekati pintu cafe [mcname] pun menyadari bahwa orang itu adalah mahasiswi yang dibicarakan tadi"
     mcname "Anjir ko ada CEWEK ITU di sini, bukannya cewek itu yang katanya anak orang kaya, yang sepupunya rektor itu kan"
     mcname "ko dia masuk ke cafe ini anjir anjir dia"
