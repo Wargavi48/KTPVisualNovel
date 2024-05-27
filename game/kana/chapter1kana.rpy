@@ -667,7 +667,6 @@ label chapter1kana3mie:
         $ renpy.block_rollback()
         scene black with dissolve
         scene kantin with dissolve
-        play music "audio/bgm_kantin.mp3" loop fadein 1.0
         $ quick_menu = True
         "[mcname] pun memilih mie ayam sebagai makanan yang ia pesan. Kana yang masih menahan malu, memesan makanan yang sama dengan [mcname]."
         show freya at char_left with dissolve
@@ -751,7 +750,6 @@ label chapter1kana3mie:
         "Setelah selesai makan, mereka pergi dan berpisah ke urusannya masing-masing."
         "[mcname] pun memikirkan apa yang akan dilakukan selanjutnya."
         $ quick_menu = False
-        stop music fadeout 1.0
         menu:
             "Yang kamu lakukan"
             "Keliling Kampus dan melihat lihat isi kampus":
@@ -846,10 +844,12 @@ label chapter1kana3kos:
     "Ia menghabiskan kebanyakan waktunya di mandi agar merasa lebih segar dan tidak mengantuk"
     "Setelah itu dia pun berangkat menuju tempat yang pada awalnya sudah ditentukan"
     "Setelah [mcname] sampai di tempat perjanjian"
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
     scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
     mcname "Tenang - tenang"
     mcname "Gak usah gugup"
     mcname "Santai aja"
@@ -947,7 +947,7 @@ label chapter1kana3kos:
     "Mereka pun memutuskan untuk meninggalkan [mahasiswa_c_name] dan mulai mengerjakan tugas kelompok yang diberikan"
     "Mereka pun mulai berjalan jalan dan mewawancarai sekitar"
     $ quick_menu = False
-    stop music fadeout 1.0
+    stop music fadeout 2.0
     jump puzzle_start
 
 label chapter1kana3monas:
@@ -985,7 +985,6 @@ label chapter1kana3monas:
             scene dream with dissolve
             jump credits
         "Es Teh":
-            stop music fadeout 1.0
             jump chapter1kana3monasesteh
         "Jamu":
             stop music fadeout 1.0
@@ -1008,7 +1007,6 @@ label chapter1kana3monasesteh:
     scene black with dissolve
     # harusnya bg monas
     scene depan kampus with Dissolve(2.0)
-    play music "audio/BGM_Monas.mp3" loop fadein 1.0
     $ quick_menu = True
     "[mcname] melihat ada sebuah stand minuman es teh yang cukup ramai"
     "Ia pun memilih untuk membelikan mereka minuman itu"
@@ -1043,8 +1041,8 @@ label chapter1kana3monasesteh:
     # BG Monas
     scene depan kampus with dissolve
     show freya at char_left with dissolve
-    $ quick_menu = True
     show kana at char_right with dissolve
+    $ quick_menu = True
     mcname "Eh ini udah kah?"
     mcname "Atau kira - kira gimana lagi nih?"
     mcname "Kalau dari aku sih udah cukup ga perlu ada yang di tambah nantinya malah makin ribet"
@@ -1232,13 +1230,11 @@ label chapter1kana3monasesteh:
     mcname "Jadi pengen liat kamu mau nangis itu hahah"
     "Dosen pun memasuki ruangan dan kelas pun di mulai"
     "Hari dipenuhi dengan kelas dan [mcname] pun memilih untuk pergi ke kos untuk istirahat."
-    stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
     scene kelas with Dissolve(2.0)
     $ renpy.block_rollback()
     $ quick_menu = True
-    play music "audio/BGM_Kelas.mp3" loop fadein 1.0
     "Waktu yang diberikan untuk mengerjakan tugas pun telah berakhir, dan hari dimana presentasi dilakukan pun tiba"
     "[mcname], Kana, Freya dan [mahasiswa_c_name] pun melakukan presentasinya di depan"
     "Presentasi dilakukan secara lancar dan saat kelas akan selesai, dosen pun memberitahukan beberapa kelompok yang memiliki nilai tinggi"

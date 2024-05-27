@@ -8,4 +8,5 @@ image cafe = "images/BG/cafe_resize.jpg"
 image kantin = "images/BG/kantin_resize.jpg"
 image awan = "images/BG/transi.png"
 image kana awal = "images/CG/kana_awal_resize.png"
+image mini game = "images/background.png"
 image white = Solid("#FFFFFF")

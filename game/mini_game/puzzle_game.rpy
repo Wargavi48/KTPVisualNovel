@@ -55,7 +55,7 @@ init python:
 
 label reassemble_complete:
         show screen puzzle_complete with dissolve
-        play sound "audio/Sound Effect - Minigame Selesai.mp3" volume 0.3
+        # play sound "audio/Sound Effect - Minigame Selesai.mp3" volume 0.3
         kana "Akhirnya selesai juga"
         hide screen puzzle_complete with dissolve
         jump chapter1kana3monas
@@ -75,7 +75,7 @@ screen puzzle_complete:
 
 screen reassemble_puzzle:
     image "background.png"
-    add DevtoolMouseposDisplayable()
+    # add DevtoolMouseposDisplayable()
     frame:
         background "puzzle-frame-landscape.png"
         xysize full_page_size
@@ -114,7 +114,13 @@ default initial_piece_coordinates = [] # Will be filled with random initial loca
 default finished_pieces = 0 # Keeps track of the amount of pieces that have been placed correctly.
 
 label puzzle_start:
-    play music "audio/minigame_kana.mp3"
+    play sound "audio/Alarm.mp3" fadein 2.0
+    scene black with dissolve
+    show text "{color=#FFF}MINI GAME TIME{/color}" with Pause(2.0)
+    scene mini game with dissolve
+    stop sound fadeout 1.0
+    "[mcname], Freya, dan Kana mulai mewawancarai pedagang di sekitar. Selesaikan Puzzle untuk menyelesaikan wawancara"
+    play music "audio/minigame_kana.mp3" fadein 2.0
     $ setup_puzzle()
     call screen reassemble_puzzle with dissolve
     return
