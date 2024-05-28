@@ -1,19 +1,6 @@
-﻿# Deklarasikan backgrounds
-image mc bedroom = "images/BG/bedroom.png"
-# image cursor kana:
-#     "gui/button/cursor_3.png"
-
-#Definisikan transformasi dan alignments
-define small_center = Transform(zoom=0.5, xalign=0.5)
-define small_left = Transform(zoom=0.5, xalign=0.0)
-define small_right = Transform(zoom=0.5, xalign=1.0)
-# define config.mouse_displayable = MouseDisplayable(
-#     "gui/button/cursor.png", 0, 0).add("mouse_kanaia", "cursor asa", 0, 0)
-
-label mainkana:
+﻿label mainStoryBegin:
     $ renpy.block_rollback()
     $ quick_menu = False
-    # $ default_mouse = "mouse_kanaia"
     scene black with dissolve
     show text "{color=#FFF}Chapter I{/color}" with Pause(1.5)
     scene black with dissolve
@@ -95,10 +82,6 @@ label mainkana:
             jump awalkosan
 
 
-
-    jump utamakana
-
-
 label awalkosan:
         $ renpy.block_rollback()
         scene black with dissolve
@@ -131,11 +114,9 @@ label awalkosan:
         stop music fadeout 1.0
         scene black with dissolve
         show text "{color=#FFF}Keesokan Harinya{/color}" with Pause(2.0)
-        jump chapter1kana1
-
-
-label utamakana:
-    $ renpy.block_rollback()
-    
-    #This ends the game
-    return
+        if route == "kana":
+            jump chapter1kana1
+        elif route == "tana":
+            jump chapter1tana
+        elif route == "pia":
+            jump chapter1pia
