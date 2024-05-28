@@ -7,7 +7,7 @@
 
     "Hari baru sudah dimulai"
     "Lembaran baru di hidupku pun akhirnya terbuka dan akhirnya aku telah memasuki jenjang masuk kuliah"
-    "Di sini aku memilih jurusan HI"
+    "Di sini aku memilih jurusan [jurusan]"
     "Dan hari ini adalah hari dimana aku datang di Jakarta!"
     scene black with Dissolve(2.0)
     scene depan kampus with dissolve

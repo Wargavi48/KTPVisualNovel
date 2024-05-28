@@ -1,5 +1,6 @@
 ﻿#  initial routes
 default route = ""
+default jurusan = ""
 # initial phone
 define config.adv_nvl_transition = None
 define config.nvl_adv_transition = Dissolve(0.3)
@@ -82,14 +83,17 @@ label intro:
     menu:
         "A. Mahasiswa Hubungan Internasional (HI)":
             $ route = "kana"
+            $ jurusan = "HI"
             stop music fadeout 1.0
             jump mainStoryBegin
         "B. Mahasiswa Teknik Pertanian (Agroteknologi)":
             $ route = "tana"
+            $ jurusan = "Agroteknologi"
             stop music fadeout 1.0
             jump mainStoryBegin
         "C. Mahasiswa Desain Komunikasi Visual (DKV)":
             $ route = "pia"
+            $ jurusan = "DKV"
             stop music fadeout 1.0
             jump mainStoryBegin
         "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
