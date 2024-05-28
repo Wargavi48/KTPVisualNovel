@@ -169,175 +169,176 @@ label chapter1kana2Cafe:
     play music "audio/BGM_Cafe Cerah.mp3" fadein 1.0
     $ quick_menu = True
     "[mcname] memilih untuk menghabiskan waktu di sebuah cafe. Awalnya cafe itu terasa sepi, tetapi lama - lama cafe tersebut mulai penuh"
-    "Saat orang itu mendekati pintu cafe [mcname] pun menyadari bahwa orang itu adalah mahasiswi yang dibicarakan tadi"
-    mcname "Anjir ko ada CEWEK ITU di sini, bukannya cewek itu yang katanya anak orang kaya, yang sepupunya rektor itu kan"
-    mcname "ko dia masuk ke cafe ini anjir anjir dia"
-    mcname "CANTIK BANGET CUYYYY"
-    mcname "Stay cool…stay cool…eh tapi ko dia liat sana sini dah ?"
-    mcname "Kenapa ya?"
-    mcname "Samperin kali ya?"
-    mcname "Ehhh tapi jangan deh stay cool aja"
-    "Secara tidak sadar [mcname] pun melihat ke arah perempuan tersebut saking fokusnya ia melupakan semua pelanggan yang ada di dalam cafe tersebut"
-    "Akan tetapi semakin diperhatikan semakin aneh gerak geriknya"
-    "Pandangannya yang melihat ke sana kemari dan gerak tubuhnya yang menunjukan dirinya gelisah membuat [mcname] pun berpikir"
-    mcname "Hmmm kenapa ya ko dari tadi dia kaya gelisah gtu sih"
-    mcname "Lah iya ya, kan sekarang lagi rame makanya dia kaya gtu nyari yang kosong kali ya"
-    "Perempuan itu dan [mcname] pun secara tidak sengaja bertukar pandangan"
-    "Saat itu juga [mcname] sadar bahwa di sebelahnya itu terdapat kursi kosong untuk satu orang"
-    "Saat itu juga [mcname] pun memalingkan pandangannya"
-    "Perempuan itu pun mendekati Meja yang dimana [mcname] berada dengan cepat"
-    "Seakan tidak sabar dan tidak ingin kehilangan kursi tersebut"
-    "panik dan cemas tetapi rasa senang bercampur satu di dalam pikiran [mcname]"
-    # show screen cinematicTalk
-    show kana_side_shy at left with dissolve
-    show black at showBlackTop
-    show black as black2 at showBlackBottom
-    show kana_shy at kana_near with dissolve
-    kana "H-halooo, maaf tapi apa kursinya kosong ?"
-    # hide screen cinematicTalk with dissolve
-    hide kana_side_shy with dissolve
-    hide black with dissolve
-    hide black2 with dissolve
-    mcname "Eh iya ini kosong ko kebetulan dari tadi ga ada yang nempatin"
-    mcname "Takut kali ya sama aku haha"
+    mcname "Wah makin lama, makin rame ya cafe ini. Memang salah satu cafe terkenal sih, kalau kata internet..."
+    "Banyak sekali orang yang berlalu lalang. Akan tetapi, ada satu orang yang menarik perhatian [mcname]"
+    show kana at char_placement with dissolve
+    "Saat orang itu mendekati pintu cafe, [mcname] pun menyadari bahwa orang itu adalah cewek yang ada di kampus tadi."
+    mcname "{i}Loh, itu kan perempuan yang tadi di kampus?{/i}"
+    mcname "{i}Kita datang di cafe yang sama{/i}"
+    mcname "{i}Kebetulan macam apa ini?{/i}"
+    "Secara tidak sadar [mcname] pun melihat ke arah perempuan tersebut. Mungkin karena dia berdiam diri cukup lama, yang membuat beberapa pelanggan pun melihat ke arah nya"
+    "Tetapi, perempuan itu terlihat sedang kebingungan"
+    "Pandangannya yang melihat ke sana kemari dan gerak tubuhnya yang menunjukan dirinya gelisah, membuat [mcname] pun berpikir."
+    mcname "{i}Hmmm kenapa ya, kok dari tadi dia kaya gelisah gitu??{/i}"
+    "Mereka pun secara tidak sengaja bertukar pandangan"
+    "Reflek, [mcname] pun memalingkan pandangannya"
+    mcname "{i}Duh mata kita gak sengaja ketemu pula{/i}"
+    mcname "{i}Perempuan itu pun mendekati meja tempat MC berada{/i}"
+    # animasi zoom
+    show kana:
+        subpixel True 
+        ypos -2.0 zoom 0.5 
+        linear 1.00 ypos -6.08 zoom 1.3 
+    with Pause(1.10)
+    show kana at kana_near with dissolve
+    show kana_side at left with dissolve
+    kana "H-halooo, maaf tapi apa kursinya kosong?"
+    hide kana_side with dissolve
+    mcname "Eh iya ini kosong kok kebetulan dari tadi ga ada yang nempatin takut kali ya sama aku haha"
+    mcname "{i}Aduh sial ngomong apaan sih aku, garing banget lagi jokes nya{/i}"
+    show kana_smile at kana_near with dissolve
     show kana_side_smile at left with dissolve
-    show kana_smile at char_center with dissolve
-    kana "Haha, kalau gtu aku boleh ya duduk di sini"
+    kana "Haha…"
+    kana "Kalau gitu aku boleh ya duduk di sini "
+    "Cewek itu pun tersenyum manis"
     hide kana_side_smile with dissolve
-    "Tanpa menunggu jawaban dari [mcname] pun perempuan itu duduk di sebelah [mcname]"
-    show kana at char_center with dissolve
+    hide kana_smile with dissolve
+    "Tanpa menunggu jawaban dari [mcname], perempuan itu pun duduk di sebelah [mcname]"
+    "Mengangkat tangan untuk memanggil pelayan. Perempuan itu kemudian memesan pesanannya"
     show kana_side at left with dissolve
     kana "Mas aku mau pesen dong"
-    hide Kana_side_shy with dissolve
-    hide kana_side_smile with dissolve
     hide kana_side with dissolve
-    "Pikiran [mcname] dibuat bingung siapa dia"
-    "Kenapa dia langsung duduk di sebelahnya"
-    "Lalu kenapa dia mau duduk di situ"
-    "Kenapa harus dia"
-    "Banyak sekali pertanyaan yang muncul di pikiran [mcname]"
-    mcname "Lah ko dia duduk di sini!!???"
-    mcname "Hoooo tenang tenang tarik nafas"
-    mcname "Tapi kalau di pikir pikir ini masuk akal sih karena lagi penuh juga, Jadinya dia duduk di sini"
-    mcname "Tapi ko dia langsung duduk gitu aja ya?"
-    show kana at char_center with dissolve
+    "(...)"
+    "Pikiran [mcname] dibuat bingung dengan siapa dia kenapa dia langsung duduk di sebelahnya lalu kenapa dia mau duduk di situ, kenapa harus dia, banyak sekali pertanyaan yang muncul di pikiran [mcname]"
     show kana_side at left with dissolve
-    kana "Mas aku pesen stobery shortcake nya 1 ya sama lemon tea nya satu"
-    kana "Es nya jangan terlalu banyak ya, makasih banyak mas"
+    kana "Mas aku pesan strawberry shortcake nya 1 ya, sama lemon tea nya satu, es nya jangan terlalu banyak ya, makasih banyak mas…"
     hide kana_side with dissolve
-    show kana_embarased at char_center with dissolve
-    show kana_side_embarased at left with dissolve
-    kana "Eh maaf ya langsung duduk aja aku lagi kepengen cake yang ada disini cuma ada di hari tertentu aja"
-    hide kana_embarased with dissolve
-    hide kana_side_embarased with dissolve
-    show kana at char_center with dissolve
+    "Pelayan cafe itu pun pergi untuk memproses pesanan Kana"
+    show kana_clumsy at kana_near with dissolve
+    show kana_side_clumsy at left with dissolve
+    kana "Eh maaf ya langsung duduk aja"
+    kana "Soalnya aku lagi kepengen banget cake yang ada disini karena cuma ada di hari tertentu aja"
+    kana "Hahahaha"
+    hide kana_clumsy with dissolve
+    hide kana_side_clumsy with dissolve
     show kana_side at left with dissolve
-    kana "Awalnya sempet khawatir gtu kalau ga dapet tempat duduk untung aja ada"
-    hide kana with dissolve
-    hide kana_side with dissolve
-    hide kana_embarased with dissolve
-    show kana_smile at char_center with dissolve
+    kana "Aku awalnya sempat khawatir gitu kalau nanti ga dapet tempat duduk gimana"
+    kana "Untung aja ada tempat duduk disebelahmu ini"
+    show kana_smile at kana_near with dissolve
+    hide kana_side
     show kana_side_smile at left with dissolve
-    kana "Makasih yaa!!"
-    show kana at char_center with dissolve
-    show kana_side at left with dissolve
-    kana "eh kamu anak kuliah di jekti univesity juga kan?"
-    hide kana_side_smile with dissolve
-    mcname "Eh ko kamu tau"
+    kana "Makasih ya udah diizinin duduk di sini"
     hide kana_smile with dissolve
-    show kana at char_center with dissolve
+    hide kana_side_smile 
     show kana_side at left with dissolve
-    kana "Iya soalnya cuma univ kita doang yang udah selesai di jam segini"
-    kana "Kalau yang lain si baru mau selesai jam 5 sore"
-    kana "Jadinya aku nebak aja sih"
-    kana "Jurusan kamu apa ya kalau boleh tau ?"
-    hide kana_side with dissolve
-    mcname "Ooo gtu ya"
-    mcname "Aku masuk ke jurusan HI si"
-    mcname "Kebetulan lagi pengen jalan jalan aja haha"
-    hide kana with dissolve
-    show kana_shy at char_center with dissolve
-    show kana_side_shy at left with dissolve
-    kana "Loh kita samaan dong"
-    kana "Satu angkatan juga"
-    hide kana_shy with dissolve
-    hide kana_side_shy with dissolve
-    show kana at char_center with dissolve
-    show kana_side at left with dissolve
-    kana "Eh oh iya aku sampe lupa"
     $ kana_name = "Kanaia Asa"
-    kana "Sebelumnya kenalin namaku Kania Asa"
-    kana "Biasanya di panggil kana"
+    kana "Oh iya kenalin dulu nih namaku [kana_name] biasanya dipanggil Kana"
     $ kana_name = "Kana"
     hide kana_side with dissolve
-    mcname "Ahh iya salam kenal juga namaku [mcname]"
-    mcname "Aku dari Ngawi"
-    mcname "Mungkin blum pernah denger itu agak desa soalnya haha"
-    mcname "Kalau kamu dari mana [kana_name]?"
+    mcname "Aku [mcname] salam kenal ya"
     show kana_side at left with dissolve
-    kana "Ohhh, tau ko"
-    kana "kalau aku sih asli orang Jakarta meski belum pernah ke daerah Ngawi tapi tau ko"
-    kana "Eh cakenya udah datang bentar yaa aku makan dulu"
+    kana "Ohhh [mcname] salam kenal juga ya"
+    kana "Udah lama duduk di cafe ini?"
     hide kana_side with dissolve
-    mcname "{i}Duhhh ko dia imut banget sih ya{/i}"
-    mcname "{i}CANTIK BANGET LAGI{/i}"
-    mcname "{i}YA TUHAN APAKAH INI YANG DIMAKSUD DENGAN NGEDATE DI CAFE?{/i}"
-    mcname "{i}Emang boleh se ngedate itu?{/i}"
-    hide kana with dissolve
-    hide kana_side with dissolve
-    "[mcname] dan [kana_name] pun fokus terhadap apa yang ada di depannya"
-    "sesekali [mcname] mencuri pandangan ke arah kana dan ia pun melihat cara makan [kana_name] yang annggun yang membuat [mcname] semakin terpesona"
-    show kana at char_center with dissolve
+    mcname "Lumayan sih, pas awal dateng soalnya masih agak sepi"
     show kana_side at left with dissolve
-    kana "Eh kamu mau juga?"
-    kana "Maaf ya, daritadi aku fokus sendiri"
-    kana "Soalnya aku pengennn banget makan cake ini"
+    kana "Oh tadi sepi ya, agak telat berarti aku dateng haha"
     hide kana_side with dissolve
-    mcname "Ehh engga ko, gak usah"
-    mcname "Aku tadi udah makan, santai aja"
-    mcname "Aku juga lagi bingung mau kemana"
-    mcname "Kebetulan katanya di sini cafe yang di rekomendasiin sama internet"
-    mcname "Jadinya pengen cobain deh"
+    mcname "Hahahaha"
+    "Tidak lama kemudian datang pelayan cafe yang membawa pesanan yang dipesan [kana_name]"
+    "Pelayan" "Maaf menunggu"
+    "Pelayan" "Ini ya kak pesanan strawberry shortcake sama lemon tea nya"
+    "Pelayan meletakan pesanan ke atas meja"
     show kana_side at left with dissolve
-    kana "Ohhh, jadi kamu ke sini karena rekomendasi internet"
-    kana "Jadi kamu udah kemana aja selama ini?"
+    kana "Eh cakenya sudah datang aku makan dulu ya"
     hide kana_side with dissolve
-    mcname "Ummm, belum kemana mana sih"
-    mcname "Lagian aku baru datang beberapa hari yang lalu ko"
-    mcname "Jadinya bingung harus kemana kamu ada rekomendasi kah?"
-    hide kana_side with dissolve
-    "Waktupun tidak terasa sudah malam"
-    "Obrolan [mcname] & [kana_name] pun saling nyambung satu sama lain"
-    "Disitu mereka pun akan saling pulang ke rumah masing masing"
-    show kana_smile at char_center with dissolve
-    show kana_side_smile at left with dissolve
-    kana "Eh makasih ya udah dibolehin duduk di sini"
-    kana "Untung aja aku bisa makan stobery shortcake nya, kalau engga keknya aku bakalan marah deh hahaha"
-    hide kana_side_smile with dissolve
-    show kana_scared at char_center with dissolve
-    show kana_side_scared at left with dissolve
-    kana "Eh udah jam segini aku harus pulang aku duluan yaa"
-    hide kana_scared
-    hide kana_smile
-    hide kana_side_scared with dissolve
-    show kana at char_center with dissolve
+    "(...)"
+    mcname "{i}Aduh gimana nih, bisa-bisa nya pas aku lagi pengen santai gini malah duduk barengan sama cewek{/i}"
+    "Tidak ingin dikira aneh akhirnya [mcname] pun melanjutkan menikmati pesanannya"
+    "[mcname] dan [kana_name] fokus terhadap apa yang ada di depannya, sesekali [mcname] melirik ke arah [kana_name]"
     show kana_side at left with dissolve
-    kana "Kamu hati hati di jalan"
+    kana "Ummm, kamu mau juga?"
     hide kana_side with dissolve
-    mcname "Haha, gpp ko santai aja kebetulan kosong"
-    mcname "Owh iya sama sama"
-    mcname "Kamu juga hati hati di jalan ya"
+    "Mungkin sadar kalau [mcname] memperhatikannya, Kana menawarkan cake yang sedang ia makan"
+    mcname "Eh engga kok haha"
+    "Mendengar hal tesebut Kana lanjut memakan cake nya"
+    "Karena moment nya cangung, [mcname] melihat sekeliling untuk mencari topik yang dibahas namun hasilnya nihil, tidak ada sesuatu yang menarik untuk dibahas di dalam cafe"
+    "(...)"
+    mcname "Ternyata kamu suka banget strawberry shortcakenya, ya?"
+    "Melihat Kana fokus memakan cake [mcname] mencoba membawa topik strawberry shortcake"
+    show kana_side at left with dissolve
+    kana "I - iyah"
+    hide kana_side with dissolve
+    "(....)"
+    "Kehabisan topik lagi"
+    mcname "Pelayann! Pesan strawberry shortcake 1"
+    "Mencoba untuk menghilangkan canggung, akhirnya [mcname] memesan makanan lagi"
+    "Bingung karena [mcname] memesan lagi, Kana melihat bolak balik antara [mcname] dan pelayan"
+    "Menyadari kana yang kebingungan, [mcname] pun memberikan alasannya"
+    mcname "Ngeliat kamu makan enak banget. Jadinya penasaran mau coba, hehe."
+    show kana_side at left with dissolve
+    kana "Eh…. padahal udah ditawarin, tadi."
+    hide kana_side with dissolve
+    mcname "Hahaha"
+    "Pelayan" "Maaf menunggu"
+    "Pelayan" "Ini ya kak pesanannya strawberry shortcake"
+    "Melihat cake yang diletakkan di atas meja tampak menggiurkan"
+    "[mcname] pun memasukkan potongan strawberry shortcake ke mulutnya"
+    "Tiba tiba [mcname] pun merasakan sensasi yang belum pernah dia rasakan sebelumnya, Rasa manis dan asam stroberi seakan menari di lidahnya, memberikan kenikmatan yang tak tertandingi."
+    "Setiap gigitan membawa [mcname] ke dalam dunia yang penuh dengan kebahagiaan sederhana. [mcname] pun menutup matanya, membiarkan rasa itu menyelimutinya sepenuhnya"
+    mcname "Hmmmmm enak juga ya"
+    show kana_side at left with dissolve
+    kana "Ya kannn? Makanya aku pengen banget makan di sini."
+    hide kana_side with dissolve
+    mcname "Makanya tadi kamu langsung duduk di bangku yang kosong, ya?"
+    show kana_embarased at kana_near with dissolve
+    show kana_side_embarased at left with dissolve
+    kana "Hehehe"
+    hide kana_side_embarased with dissolve
+    mcname "Tapi makasih, loh. Berkat kamu, aku jadi tau enaknya strawberry shortcake ini."
+    hide kana_embarased with dissolve
+    show kana_side at left with dissolve
+    kana "Aku juga mau bilang makasih lagi, ya. Aku jadi bisa makan di sini hari ini"
+    hide kana_side with dissolve
+    "[mcname] dan Kana pun saling melemparkan senyuman sambil menikmati strawberry shortcake di cafe tersebut"
+    mcname "(...)"
+    kana "(...)"
+    stop music fadeout 1.0
     $ quick_menu = False
-    hide kana with dissolve
     scene black with dissolve
-    play music "audio/bgm_harvestmoon_spring.mp3"
+    scene cafe with dissolve
+    play music "audio/BGM_Cafe Sore.mp3" fadein 1.0
+    $ quick_menu = True 
+    "Waktu Pun tidak terasa sudah malam, dan obrolan [mcname] & Kana pun saling nyambung satu sama lain"
+    "Akhirnya, tibalah waktu mereka pulang ke rumah masing masing"
+    show kana at kana_near with dissolve
+    show kana_side at left with dissolve
+    kana "Ummm. Makasih lagi ya udah dibolehin duduk di sini, untung saja aku bisa makan strawberry shortcake nya, kalau enggak kayaknya aku bakalan marah deh hahaha"
+    hide kana_side with dissolve
+    mcname "Haha, gpp ko santai aja"
+    mcname "Kebetulan kursinya kosong di situ"
+    show kana_side at left with dissolve
+    kana "Eh udah jam segini aku harus pulang aku duluan ya, kamu hati hati di jalan"
+    hide kana_side with dissolve
+    mcname "Okee. Kamu juga hati hati di jalan ya"
+    show kana_side at left with dissolve
+    kana "See you~"
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
     scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
     $ quick_menu = True
-    mcname "Anjir gw ga nyangka kalau hari ini bakalan bisa ngobrol sama dia"
-    mcname "Tapi di pikir pikir ternyata dia ramah juga ya"
-    mcname "Kukira bakalan jadi kaya cool dan cuek gitu"
-    mcname "Mana nyambung juga kalau di ajak ngobrol"
-    mcname "Dah ah mending aku tidur"
+    "Pulang dari cafe, [mcname] masih memikirkan kejadian yang dialaminya hari ini"
+    mcname "{i}Banyak juga ya, hal yang terjadi pada hari pertamaku di Jakarta.{/i}"
+    show kana at kana_near with dissolve
+    mcname "{i}Aku gak nyangka kalau hari ini bakalan bisa ngobrol sama dia.{/i}"
+    mcname "{i}Tapi dipikir - pikir, dia ramah juga ya{/i}"
+    mcname "{i}Aku kira, dia bakalan kaya cool dan cuek gitu{/i}"
+    mcname "{i}Ternyata nyambung juga kalau diajak ngobrol.{/i}"
+    mcname "{i}Udah ah mending aku tidur{/i}"
+    hide kana with dissolve
+    "[mcname] pun tertidur dengan lelap"
     stop music fadeout 1.0
     $ quick_menu = False
     jump chapter1kana2Campus
