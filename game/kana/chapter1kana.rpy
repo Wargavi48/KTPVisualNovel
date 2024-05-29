@@ -134,7 +134,7 @@ label chapter1kana1:
             "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit"
             scene black with dissolve
             show text "{color=#FFF}MAKANYA JANGAN MAKAN SEMBARANG BROO KAN MASUK RUMAH SAKIT{/color}" with Pause(2.0)
-            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             play music "audio/Dreamcatcher.mp3"
             jump credits
         "C. Ke Cafe":
@@ -667,7 +667,7 @@ label chapter1kana3:
         "Pesen Ayam Smack Down":
             scene black with Dissolve(2.0)
             show text "{color=#FFF}LO KEPEDESAN DAN AKHIRNYA MALAH KE WC TERUS TERUSAN DARIPADA NGOBROL SAMA MEREKA{/color}" with Pause(2.0)
-            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             play music "audio/Dreamcatcher.mp3"
             jump credits
         "Pesen Mie Ayam":
@@ -679,7 +679,7 @@ label chapter1kana3:
             show text "{color=#FFF}AKHIRNYA LO KERACUNAN MAKANAN.{/color}" with Pause(2.0)
             show text "{color=#FFF}AKHIRNYA LO KERACUNAN MAKANAN.{/color}" with Pause(2.0)
             show text "{color=#FFF}MBAK YANG JUALAN PUN AKHIRNYA DIMARAHIN KARENA UDAH BIKIN MAHASISWANYA KERACUNAN MAKANAN{/color}" with Pause(2.0)
-            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             play music "audio/Dreamcatcher.mp3"
             jump credits
 
@@ -834,7 +834,7 @@ label chapter1kana3mie:
                 scene black with dissolve
                 show text "{color=#FFF}EH KALAU UDAH JANJIAN TUH DITEPATI{/color}" with Pause(2.0)
                 show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
-                show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+                show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
                 stop music fadeout 1.0
                 play music "audio/Dreamcatcher.mp3" fadein 1.0
                 scene mc bedroom with Dissolve(2.0)
@@ -849,7 +849,7 @@ label chapter1kana3mie:
                 show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
                 show text "{color=#FFF}AKHIRNYA MALAH PINGSAN KAN{/color}" with Pause(2.0)
                 show text "{color=#FFF}HADEEEUHHH DASAR{/color}" with Pause(2.0)
-                show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+                show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
                 stop music fadeout 1.0
                 
 
@@ -1001,7 +1001,7 @@ label chapter1kana3monas:
             show text "{color=#FFF}BRO YANG BENER AJA{/color}" with Pause(2.0)
             show text "{color=#FFF}DI KIRA MEREKA ABIS OLAHRAGA ATAU NUKANG KALI YA DI KASIH GINIAN{/color}" with Pause(2.0)
             show text "{color=#FFF}AKHIRNYA MEREKA GA MAU NGOBROL KAN SAMA LO LAGI{/color}" with Pause(2.0)
-            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             play music "audio/Dreamcatcher.mp3" fadein 1.0
             scene dream with dissolve
             jump credits
@@ -1015,7 +1015,7 @@ label chapter1kana3monas:
             show text "{color=#FFF}EH DIKIRA UDAH TUA KALI YA DI KASIH JAMU{/color}" with Pause(2.0)
             show text "{color=#FFF}LAGIAN GA SEMUA BISA MINUM JAMU BROO{/color}" with Pause(2.0)
             show text "{color=#FFF}MIKIR{/color}" with Pause(2.0)
-            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene dream with dissolve
             play music "audio/Dreamcatcher.mp3" fadein 1.0
             jump credits

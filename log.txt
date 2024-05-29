@@ -1,37 +1,37 @@
-2024-05-28 09:58:22 UTC
+2024-05-28 12:03:37 UTC
 Windows-10-10.0.19045
 Ren'Py 8.2.0.24012702
 
-Early init took 0.19s
-Loading error handling took 0.14s
-Loading script took 0.92s
-Loading save slot metadata took 0.13s
+Early init took 0.16s
+Loading error handling took 0.11s
+Loading script took 1.28s
+Loading save slot metadata took 0.26s
 Loading persistent took 0.00s
-Running init code took 0.16s
+Running init code took 0.13s
 Loading analysis data took 0.06s
 Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.08s
+Reloading save slot metadata took 0.33s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.22s
+Dump and make backups took 0.39s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.18s
+Initial gc took 0.11s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
+Creating interface object took 0.05s
 Cleaning stores took 0.00s
-Init translation took 0.19s
+Init translation took 0.12s
 Build styles took 0.02s
 Load screen analysis took 0.00s
-Analyze screens took 0.17s
-Save screen analysis took 0.29s
-Prepare screens took 0.42s
+Analyze screens took 0.14s
+Save screen analysis took 0.10s
+Prepare screens took 0.49s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.20s
-Running _start took 0.05s
-Interface start took 0.57s
+Save bytecode. took 0.10s
+Running _start took 0.00s
+Interface start took 0.32s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -48,14 +48,14 @@ Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.01s
-Load screen analysis took 0.08s
+Load screen analysis took 0.09s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.01s
-Load screen analysis took 0.08s
+Load screen analysis took 0.07s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
