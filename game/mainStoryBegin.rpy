@@ -10,8 +10,13 @@
     "Di sini aku memilih jurusan [jurusan]"
     "Dan hari ini adalah hari dimana aku datang di Jakarta!"
     scene black with Dissolve(2.0)
-    scene depan kampus with dissolve
+    # scene depan kampus with dissolve
+    # nanti diubah jadi scene monas
+    scene monas temporary with dissolve
     play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" loop fadein 1.0
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0
+    play sound "audio/train.mp3" fadeout 1.0
+    play sound "audio/station_chime.mp3" fadeout 1.0
     $ quick_menu = True
     mcname "Wahhh, jadi ini namanya kota Jakarta"
     mcname "Buuu, anakmu akhirnya kuliah di sini"
@@ -50,33 +55,32 @@
             scene black  with dissolve
             play music "audio/Dreamcatcher.mp3" fadein 1.0
             jump credits
-        "Nyari cafe biar ga skena ":
+        "Nyari cafe biar skena ":
             $ renpy.block_rollback()
             $ quick_menu = True
-            "[mcname] ikut ke dalam cirle orang orang kaya yang haus akan atensi di dunia maya, dan akhirnya malah ngutang sana sini krana kurang atensi"
+            "[mcname] ikut ke dalam cirle orang orang kaya yang haus akan atensi di dunia maya, dan akhirnya malah ngutang sana sini karena kurang atensi"
             $ quick_menu = False
             scene black  with dissolve
             show text "{color=#FFF}ORTU LU DAPET KABAR KALAU LU MASUK PENJARA KARENA PENIPUAN UANG{/color}" with Pause(2.0)
-            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-            scene black with dissolve
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            play music "audio/Dreamcatcher.mp3"
             jump credits
         "Ke warteg buat makan":
             $ renpy.block_rollback()
             $ quick_menu = True
-            mcname "Aduhhh perutku kroncongan. Makan dulu kali yah, habis itu baru ke kos. Dari berangkat belum makan soalnya"
-            "[mcname] pun memilih untuk pergi mencari makan ke warteg yang berada di dekat kosnya"
+            mcname "Aduhhh perutku keroncongan. Makan dulu kali yah, habis itu baru ke kos. Dari berangkat belum makan soalnya"
+            "[mcname] pun memilih untuk pergi mencari makan ke rumah makan padang yang berada di dekat kosnya"
             "Dia bertemu dengan beberapa pedagang yang ramah dan sopan, membuat [mcname] semakin nyaman berada di lingkungan kos nya tersebut"
             mcname "Mas mau makan mas"
             "Pedagang" "Mau pesen apa?"
             mcname "Nasi"
             mcname "Rendang"
-            mcname "Sama Telor 1 ya mas"
-            mcname "Sama minta tambah sambal"
+            mcname "Sama Telor Balado 1 ya mas"
+            mcname "Sama minta tambah sambal ijo"
             "Pedagang" "Okee"
             "Pedangang" "Totalnya jadi 25.000 ya"
             mcname "Ini ya mas, makasih"
-            "Setelah [mcname] mengisi perutnya di warteg"
+            "Setelah [mcname] mengisi perutnya di rumah makan padang"
             "[mcname] pun pergi ke kosannya untuk merapikan barang bawaan dan beristirahat."
             $ quick_menu = False
             stop music fadeout 1.0
