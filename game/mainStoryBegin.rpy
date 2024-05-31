@@ -46,9 +46,9 @@
             scene black  with dissolve
             show text "{color=#FFF}LU NGAPAIN IKUTAN PERGAULAN BEBAS INGET TUH ORANG TUA DI DESA{/color}" with Pause(2.0)
             scene black  with dissolve
-            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(2.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene black  with dissolve
-            play music "audio/Dreamcatcher.mp3"
+            play music "audio/Dreamcatcher.mp3" fadein 1.0
             jump credits
         "Nyari cafe biar ga skena ":
             $ renpy.block_rollback()
@@ -56,9 +56,10 @@
             "[mcname] ikut ke dalam cirle orang orang kaya yang haus akan atensi di dunia maya, dan akhirnya malah ngutang sana sini krana kurang atensi"
             $ quick_menu = False
             scene black  with dissolve
-            show text "{color=#FFF}ORTU LU DAPET KABAR KALAU LU MASUK PENJARA KRANA PENIPUAN UANG{/color}" with Pause(2.0)
-            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-            play music "audio/Dreamcatcher.mp3"
+            show text "{color=#FFF}ORTU LU DAPET KABAR KALAU LU MASUK PENJARA KARENA PENIPUAN UANG{/color}" with Pause(2.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            scene black with dissolve
+            play music "audio/Dreamcatcher.mp3" fadein 1.0
             jump credits
         "Ke warteg buat makan":
             $ renpy.block_rollback()
