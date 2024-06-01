@@ -44,6 +44,10 @@ default freya_shock = Character("[freya_name]", image="Freya_shock")
 default freya_smile = Character("[freya_name]", image="Freya_smile")
 default freya_smug = Character("[freya_name]", image="Freya_smug")
 
+# Define Character Fiony
+default fio_name = "???"
+default fio = Character("[fio_name]")
+
 default mahasiswa_c_name = "???"
 default mahasiswa_c = Character("[mahasiswa_c_name]", image="mahasiswa_c")
 

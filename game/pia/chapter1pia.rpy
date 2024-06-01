@@ -142,7 +142,6 @@ label chapter1piajalancepat:
     scene black with dissolve
     show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
     scene awan with dissolve
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
     "Walaupun ini sudah pertengahan tahun, namun Matahari secara terik menerangi Jakarta Dan saat melihat ke atas langit, hanya langit biru lah yang terlihat"
     scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
@@ -152,7 +151,9 @@ label chapter1piajalancepat:
     $ quick_menu = False
     scene black with dissolve
     play sound "audio/open_door.mp3" fadein 1.0
-    show text "{color=#FFF}MEMASUKI AULA{/color}"
+    show text "{color=#FFF}MEMASUKI AULA{/color}" with Pause(2.0)
+    stop music fadeout 1.0
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
     scene kelas with Dissolve(2.0)
     play sound "audio/crowd_noise.mp3" fadein 1.0
     $ renpy.block_rollback()
@@ -168,13 +169,23 @@ label chapter1piajalancepat:
     mcname "Hmmm... tumben di bagian belakang kosong, padahal biasanya orang pada seneng di belakang."
     "[mcname] kemudian duduk di kursi tersebut."
     mcname "Tapi lumayan juga dapat duduk di sini, jadinya bisa ngeliat yang lain dengan jelas."
+    $ quick_menu = False
     stop sound fadeout 1.0
     stop music fadeout 1.0
+    scene black with dissolve
     play sound "audio/open_door.mp3" fadein 1.0
+    scene kelas with dissolve
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Dekan DKV" "Baik, sekian pengenalan singkat kita. Selamat datang di Jeketi University para Mahasiswa dan Mahasiswi baru! Raihlah mimpi kalian disini!! Selamat berjuang! Setelah ini, kalian dipersilahkan untuk pulang."
+    $ quick_menu = False
+    scene black with dissolve
     stop music fadeout 1.0
+    scene kelas with dissolve
     play music "audio/BGM_Kelas.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     mcname "Hueeeee.... capek juga duduk doang dengerin orang ngomong. Besok mulai masuk kuliah, gak sabar bakal ketemu orang-orang baru."
     show pia at char_center with dissolve
     show pia_side at left with dissolve
@@ -215,9 +226,44 @@ label chapter1piajalancepat:
     mcname "Lah, lesgooo. Pas banget ini lagi laper."
     "[mcname] dan Pia berjalan ke kantin kampus untuk makan"
     $ quick_menu = False
+    stop music fadeout 1.0
     scene black with dissolve
     scene kantin with dissolve
+    play music "audio/BGM_kantin.mp3" fadein 1.0
     $ quick_menu = True
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "WEEEH GEDE JUGA KANTINNYA YA!"
+    hide pia_side with dissolve
+    mcname "Selain kantin, suara kamu juga gede btw."
+    show pia_side at left with dissolve
+    pia "EH maap, kebiasaan ahahaha"
+    hide pia_side with dissolve
+    mcname "Gapapa kok. Seru juga kamu, gak abis-abis energinya."
+    show pia_shy at pia_near with dissolve
+    show pia_side_shy at left with dissolve
+    pia "I-iya kah? Ahahaha"
+    hide pia_shy with dissolve
+    hide pia_side_shy with dissolve
+    show pia_side at left with dissolve
+    pia "Oh, mau makan dimana ini? Mejanya full semua."
+    hide pia_side with dissolve
+    hide pia with dissolve
+    show pia at char_center with dissolve
+    mcname "Iya, lagi. Eh tapi di pojokan itu ada meja isinya cuma sendiri. Numpang bareng aja ap--"
+    show pia_side at left with dissolve
+    pia "Halooo, sendiri? Boleh numpang duduk 1 meja disini, gak?"
+    hide pia_side with dissolve
+    mcname "Ah....... Pia...... Langsung banget."
+    fio "Eh oh mmm. Iya k-kosong kok. Duduk aja."
+    "[mcname], Pia, dan Perempuan itu duduk di 1 meja yang sama."
+    "Sambil makan"
+    show pia_side at left with dissolve
+    pia "Jweerushan aphah kwamuh?\n(Jurusan apa kamu?)"
+    hide pia_side with dissolve
+    fio "Aku? Aku DKV."
+    show pia_side at left with dissolve
+    pia "EEEEEEH SWAAAMAAA!! KOK GWAK LIYAT KWAMU PAS PWENGENALAN?"
     scene black with dissolve
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
