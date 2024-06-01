@@ -293,7 +293,23 @@ label chapter1piajalancepat:
     show text "{color=#FFF}Keesokan Harinya{/color}" with Pause(2.0)
     scene kelas with Dissolve(2.0)
     play music "audio/BGM_Kelas.mp3" fadein 1.0
-
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Hueeeeeee MC, baru hari pertama. Kayaknya udah berat gak sih, pelajarannya?"
+    hide pia_side with dissolve
+    mcname "Engga sih, seru kok kayaknya. Cuma ya… ternyata banyak yang harus kita beli nih buat pertemuan selanjutnya"
+    show pia_side at pia_near with dissolve
+    pia "Eh! Iya weeeh! Bingung ini beli kemana… Mana kita berdua bukan asli Jakarta, gatau tempat aku. Kamu tau tempat belinya?"
+    hide pia_side with dissolve
+    $ quick_menu = False
+    menu:
+        "Jawaban Kamu"
+        "Aku tau, kebetulan sempet jalan jalan daerah sini pas lowong kemaren":
+            mcname "Aku tau! Kebetulan sempet jalan-jalan daerah sini pas lowong kemaren."
+        "Gak tau, belom sempet muter muter jakarta. Tanya kak Fiony":
+            "Gak tau, belom sempet muter-muter Jakarta."
+        "Gak tau, tapi aku sama anak anak cowok lain mau nyari bareng":
+            "Gak tau, tapi aku sama anak-anak cowok lain mau nyari bareng."
     scene black with dissolve
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
