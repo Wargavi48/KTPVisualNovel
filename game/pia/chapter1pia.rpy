@@ -99,92 +99,7 @@ label chapter1piacarajalan:
         "Jalan Cepat":
             "[mcname] memilih untuk berjalan cepat dan mengabaikan semua orang yang ada. Katanya sih, jalan cepat juga ada di olimpiade. Jadi harusnya efektif."
             $ quick_menu = False
-            scene black with dissolve
-            scene depan kampus with dissolve
-            $ renpy.block_rollback()
-            "[mcname] pun selesai registrasi daftar ulang ke jurusan DKV."
-            scene black with dissolve
-            show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
-            scene awan with dissolve
-            play music "audio/BGM_Kampus.mp3" fadein 1.0
-            "Walaupun ini sudah pertengahan tahun, namun Matahari secara terik menerangi Jakarta Dan saat melihat ke atas langit, hanya langit biru lah yang terlihat"
-            scene depan kampus with Dissolve(2.0)
-            $ quick_menu = True
-            mcname "{i}Untung saja masih sempat untuk ikut orientasi, gak nyangka di Jakarta ternyata beneran macet parah.{/i}"
-            mcname "{i}Yah walaupun begitu, ini memang pengalaman baru yang aku rasakan, berbeda jauh dari tempatku dulu{/i}"
-            mcname "{i} Huuuu, ini hari pertamaku orientasi di Jeketi University. Di sini tempat dimana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh heheh{/i}"
-            $ quick_menu = False
-            scene black with dissolve
-            play sound "audio/open_door.mp3" fadein 1.0
-            show text "{color=#FFF}MEMASUKI AULA{/color}"
-            scene kelas with Dissolve(2.0)
-            play sound "audio/crowd_noise.mp3" fadein 1.0
-            $ renpy.block_rollback()
-            $ quick_menu = True
-            "Saat memasuki ruangan, [mcname] mendengar suara di aula yang sangat ramai."
-            mcname "{i}Seperti yang diharapkan dari kampus Ibu Kota, orangnya rame banget.{/i}"
-            "Terlihat di dalam aula sudah diisi dengan mahasiswa baru."
-            mcname "{i}Well, kayaknya aku harus mencari tempat duduk yang kosong sebelum penuh.{i}"
-            "[mcname] melihat tempat duduk yang berada di pojok atas ruangan."
-            mcname "{i}Ah sepertinya itu tidak ada orang.{/i}"
-            "[mcname] pun berjalan menuju tempat tersebut."
-            "Saat sampai di sana, tidak terlihat orang di barisan tersebut."
-            mcname "Hmmm... tumben di bagian belakang kosong, padahal biasanya orang pada seneng di belakang."
-            "[mcname] kemudian duduk di kursi tersebut."
-            mcname "Tapi lumayan juga dapat duduk di sini, jadinya bisa ngeliat yang lain dengan jelas."
-            stop sound fadeout 1.0
-            stop music fadeout 1.0
-            play sound "audio/open_door.mp3" fadein 1.0
-            play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-            "Dekan DKV" "Baik, sekian pengenalan singkat kita. Selamat datang di Jeketi University para Mahasiswa dan Mahasiswi baru! Raihlah mimpi kalian disini!! Selamat berjuang! Setelah ini, kalian dipersilahkan untuk pulang."
-            stop music fadeout 1.0
-            play music "audio/BGM_Kelas.mp3" fadein 1.0
-            mcname "Hueeeee.... capek juga duduk doang dengerin orang ngomong. Besok mulai masuk kuliah, gak sabar bakal ketemu orang-orang baru."
-            show pia at char_center with dissolve
-            show pia_side at left with dissolve
-            pia "HEEEEEEEEEEEE!! KAMUUUUUUU"
-            hide pia_side with dissolve
-            mcname "Buset, siapa itu teriak-teriak."
-            hide pia with dissolve
-            show pia at pia_near with dissolve
-            mcname "{i}Loh kok, kayaknya nyamperin aku?{/i}"
-            show pia_side at left with dissolve
-            pia "HEYYYYYYY!!! INGET AKU GAKKK???"
-            hide pia_side with dissolve
-            mcname "Iya aku inget. Tapi bisa gak tereak, gak?"
-            mcname "Malu diliatin banyak orang gini."
-            show pia_side at left with dissolve
-            pia "Oh iya, maap. Hehe..."
-            pia "OH! INGET AKU?"
-            pia "KITA TABRAKAN DEPAN GERBANG MINGGU LALU! KIRAIN KAMU SENIOR!"
-            pia "TERNYATA MABA JUGA KAYAK AKU, HAHAHAHA."
-            hide pia_side with dissolve
-            mcname "{i}Buset teriak lagi ini orang{/i}"
-            show pia_side at left with dissolve
-            pia "Kamu DKV juga, ya! Gilak ternyata kita sejurusan"
-            pia "Apakah jodoh?"
-            pia "Candaaaaa, ahahaha"
-            hide pia_side with dissolve
-            mcname "Ahaha ahaha iya. Sejurusan ternyata ya, kita."
-            mcname "Oh iya, kita belom kenalan. Namaku [mcname]"
-            show pia_side at left with dissolve
-            pia "LAH IYA BELOM KENALAN"
-            $ pia_name = "Pia Meraleo"
-            pia "Halo, aku Pia Meraleo salam kenal."
-            $ pia_name = "Pia"
-            pia "Kamu panggil aja aku Pia"
-            hide pia_side with dissolve
-            mcname "{i}Wah kalo diliat dari dekat gini, imut juga Pia yah{/i}"
-            pia "[mcname], kok bengong? Makan bareng, yuk. Pengen liat kantin kampusnya kayak gimana. Laper juga sih."
-            mcname "Lah, lesgooo. Pas banget ini lagi laper."
-            "[mcname] dan Pia berjalan ke kantin kampus untuk makan"
-            $ quick_menu = False
-            scene black with dissolve
-            scene kantin with dissolve
-            $ quick_menu = True
-            scene black with dissolve
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
-            jump credits
+            jump chapter1piajalancepat
         "Jalan Biasa":
             mcname "Eh jalan biasa aja deh, yang penting sampai."
             mcname "Kita harus santai"
@@ -218,3 +133,91 @@ label chapter1piacarajalan:
                     play music "audio/BGM_Kampus.mp3" fadein 1.0
                     scene depan kampus with dissolve
                     jump chapter1piacarajalan
+
+label chapter1piajalancepat:
+    $ renpy.block_rollback()
+    scene black with dissolve
+    scene depan kampus with dissolve
+    "[mcname] pun selesai registrasi daftar ulang ke jurusan DKV."
+    scene black with dissolve
+    show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
+    scene awan with dissolve
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    "Walaupun ini sudah pertengahan tahun, namun Matahari secara terik menerangi Jakarta Dan saat melihat ke atas langit, hanya langit biru lah yang terlihat"
+    scene depan kampus with Dissolve(2.0)
+    $ quick_menu = True
+    mcname "{i}Untung saja masih sempat untuk ikut orientasi, gak nyangka di Jakarta ternyata beneran macet parah.{/i}"
+    mcname "{i}Yah walaupun begitu, ini memang pengalaman baru yang aku rasakan, berbeda jauh dari tempatku dulu{/i}"
+    mcname "{i} Huuuu, ini hari pertamaku orientasi di Jeketi University. Di sini tempat dimana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh heheh{/i}"
+    $ quick_menu = False
+    scene black with dissolve
+    play sound "audio/open_door.mp3" fadein 1.0
+    show text "{color=#FFF}MEMASUKI AULA{/color}"
+    scene kelas with Dissolve(2.0)
+    play sound "audio/crowd_noise.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Saat memasuki ruangan, [mcname] mendengar suara di aula yang sangat ramai."
+    mcname "{i}Seperti yang diharapkan dari kampus Ibu Kota, orangnya rame banget.{/i}"
+    "Terlihat di dalam aula sudah diisi dengan mahasiswa baru."
+    mcname "{i}Well, kayaknya aku harus mencari tempat duduk yang kosong sebelum penuh.{i}"
+    "[mcname] melihat tempat duduk yang berada di pojok atas ruangan."
+    mcname "{i}Ah sepertinya itu tidak ada orang.{/i}"
+    "[mcname] pun berjalan menuju tempat tersebut."
+    "Saat sampai di sana, tidak terlihat orang di barisan tersebut."
+    mcname "Hmmm... tumben di bagian belakang kosong, padahal biasanya orang pada seneng di belakang."
+    "[mcname] kemudian duduk di kursi tersebut."
+    mcname "Tapi lumayan juga dapat duduk di sini, jadinya bisa ngeliat yang lain dengan jelas."
+    stop sound fadeout 1.0
+    stop music fadeout 1.0
+    play sound "audio/open_door.mp3" fadein 1.0
+    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    "Dekan DKV" "Baik, sekian pengenalan singkat kita. Selamat datang di Jeketi University para Mahasiswa dan Mahasiswi baru! Raihlah mimpi kalian disini!! Selamat berjuang! Setelah ini, kalian dipersilahkan untuk pulang."
+    stop music fadeout 1.0
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    mcname "Hueeeee.... capek juga duduk doang dengerin orang ngomong. Besok mulai masuk kuliah, gak sabar bakal ketemu orang-orang baru."
+    show pia at char_center with dissolve
+    show pia_side at left with dissolve
+    pia "HEEEEEEEEEEEE!! KAMUUUUUUU"
+    hide pia_side with dissolve
+    mcname "Buset, siapa itu teriak-teriak."
+    hide pia with dissolve
+    show pia at pia_near with dissolve
+    mcname "{i}Loh kok, kayaknya nyamperin aku?{/i}"
+    show pia_side at left with dissolve
+    pia "HEYYYYYYY!!! INGET AKU GAKKK???"
+    hide pia_side with dissolve
+    mcname "Iya aku inget. Tapi bisa gak tereak, gak?"
+    mcname "Malu diliatin banyak orang gini."
+    show pia_side at left with dissolve
+    pia "Oh iya, maap. Hehe..."
+    pia "OH! INGET AKU?"
+    pia "KITA TABRAKAN DEPAN GERBANG MINGGU LALU! KIRAIN KAMU SENIOR!"
+    pia "TERNYATA MABA JUGA KAYAK AKU, HAHAHAHA."
+    hide pia_side with dissolve
+    mcname "{i}Buset teriak lagi ini orang{/i}"
+    show pia_side at left with dissolve
+    pia "Kamu DKV juga, ya! Gilak ternyata kita sejurusan"
+    pia "Apakah jodoh?"
+    pia "Candaaaaa, ahahaha"
+    hide pia_side with dissolve
+    mcname "Ahaha ahaha iya. Sejurusan ternyata ya, kita."
+    mcname "Oh iya, kita belom kenalan. Namaku [mcname]"
+    show pia_side at left with dissolve
+    pia "LAH IYA BELOM KENALAN"
+    $ pia_name = "Pia Meraleo"
+    pia "Halo, aku Pia Meraleo salam kenal."
+    $ pia_name = "Pia"
+    pia "Kamu panggil aja aku Pia"
+    hide pia_side with dissolve
+    mcname "{i}Wah kalo diliat dari dekat gini, imut juga Pia yah{/i}"
+    pia "[mcname], kok bengong? Makan bareng, yuk. Pengen liat kantin kampusnya kayak gimana. Laper juga sih."
+    mcname "Lah, lesgooo. Pas banget ini lagi laper."
+    "[mcname] dan Pia berjalan ke kantin kampus untuk makan"
+    $ quick_menu = False
+    scene black with dissolve
+    scene kantin with dissolve
+    $ quick_menu = True
+    scene black with dissolve
+    play music "audio/Dreamcatcher.mp3" fadein 1.0
+    jump credits
