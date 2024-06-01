@@ -264,6 +264,36 @@ label chapter1piajalancepat:
     fio "Aku? Aku DKV."
     show pia_side at left with dissolve
     pia "EEEEEEH SWAAAMAAA!! KOK GWAK LIYAT KWAMU PAS PWENGENALAN?"
+    hide pia_side with dissolve
+    mcname "Telen dulu, Pia..........."
+    mcname "{i}Tapi iya deh, aku gak liat Mbak ini kayaknya pas pengenalan.{/i}"
+    fio "Oh kamu MaBa, ya? Aku udah semester 4. Ga mungkin ikut kesana tadi."
+    show pia_side at left with dissolve
+    pia "Eh kakak senior, maaf Kak. Kirain MaBa juga"
+    show pia_sad at char_center with dissolve 
+    hide pia_side with dissolve
+    show pia_side_sad at left with dissolve
+    pia "Maaf Kaaak"
+    hide pia_side_sad with dissolve
+    mcname "Eh maap, Kak. Pia emang kelakuannya nyablak\n{i}Yup. pantes gak liat tadi{/i}"
+    $ fio_name = "Fiony"
+    fio "Hahaha santai aja, lanjut makan. Kok jadi kaku kalian. Kenalin aku, Fiony."
+    show pia_side_sad at left with dissolve
+    pia "A-AKU PIA MEAMEO"
+    hide pia_side_sad with dissolve
+    mcname "Ppppfffftt Meameo, ahaha. Kenalin kak aku [mcname]"
+    show pia_angry at char_center with dissolve
+    show pia_side_angry at left with dissolve
+    pia "Aaaaa kan jadi typo, ngomongnya. Meraleo maksudnyaaaaa."
+    hide pia_side_angry with dissolve
+    "Mereka bertiga pun melanjutkan makan sembari ngobrol."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}Keesokan Harinya{/color}" with Pause(2.0)
+    scene kelas with Dissolve(2.0)
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+
     scene black with dissolve
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
