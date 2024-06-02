@@ -305,11 +305,66 @@ label chapter1piajalancepat:
     menu:
         "Jawaban Kamu"
         "Aku tau, kebetulan sempet jalan jalan daerah sini pas lowong kemaren":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             mcname "Aku tau! Kebetulan sempet jalan-jalan daerah sini pas lowong kemaren."
+            show pia_side at left with dissolve
+            pia "Ah mantap! Beli di mana? Deket?"
+            hide pia_side with dissolve
+            mcname "Agak jauh sih tapi di sana lengkap. Mau beli bareng?"
+            show pia_shy at pia_near with dissolve
+            show pia_side_shy at left with dissolve
+            pia "M-MAUUUUU!! AYOO"
+            hide pia_side_shy with dissolve
+            "[mcname] mengatur waktu dan pergi berduaan dengan Pia"
+            $ quick_menu = False
+            stop music fadeout 1.0
+            jump chapter1piajalantanpapio
         "Gak tau, belom sempet muter muter jakarta. Tanya kak Fiony":
-            "Gak tau, belom sempet muter-muter Jakarta."
+            mcname "Gak tau, belom sempet muter-muter Jakarta."
+            show pia_side at pia_near with dissolve
+            pia "Waduh, gimana ini ya belinya? Hmmmm."
+            hide pia_side with dissolve
+            mcname "Eh bukannya kamu kemaren minta nomer Kak Fiony?"
+            mcname "Kenapa gak hubungin dia buat nanya?"
+            show pia_side at pia_near with dissolve
+            pia "LAH IYA JUGAAAA! OTW HUBUNGIN CEPIO"
+            hide pia_side with dissolve
+            mcname "Cepio?"
+            show pia_side at left with dissolve
+            pia "Loh aku udah bestie!! Aku manggil dia Cepio sekarang. Muahahahaha."
+            stop music fadeout 1.0
+            $ quick_menu = False
+            jump chapter1piajalansamapiapio
         "Gak tau, tapi aku sama anak anak cowok lain mau nyari bareng":
-            "Gak tau, tapi aku sama anak-anak cowok lain mau nyari bareng."
+            mcname "Gak tau, tapi aku sama anak-anak cowok lain mau nyari bareng."
+            show pia_side at left with dissolve
+            pia "Yah, yaudah deh. Aku nyari sendiri aja kalo gitu"
+            hide pia_side with dissolve
+            mcname "Okeee. Nanti aku kabarin tempatnya dimana, biar kamu tau juga."
+            show pia_side at left with dissolve
+            pia "Oh oke, makasih"
+            stop music fadeout 1.0
+            $ quick_menu = False
+            scene black with dissolve
+            show text "{color=#FFF}[mcname] lupa ngabarin Pia tempatnya{/color}" with Pause(2.0)
+            show text "{color=#FFF}[mcname] jadi lebih seneng nongkrong sama anak-anak cowok dan mulai menjauh dari Pia.{/color}" with Pause(2.0)
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            jump credits
     scene black with dissolve
+    play music "audio/Dreamcatcher.mp3" fadein 1.0
+    jump credits
+
+
+label chapter1piajalantanpapio:
+    screen black with dissolve
+    "Scene Jalan Tanpa Pio"
+    play music "audio/Dreamcatcher.mp3" fadein 1.0
+    jump credits
+
+label chapter1piajalansamapiapio:
+    screen black with dissolve
+    "Scene Jalan Pia & Pio"
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
