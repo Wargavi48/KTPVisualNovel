@@ -10,4 +10,5 @@ image awan = "images/BG/transi.png"
 image kana awal = "images/CG/kana_awal_resize.png"
 image mini game = "images/background.png"
 image monas temporary = "images/BG/monas_temp.jpg"
+image mall temp = "images/BG/mall-temp.jpg"
 image white = Solid("#FFFFFF")

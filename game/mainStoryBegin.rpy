@@ -27,6 +27,7 @@
     mcname "Kalau gak salah"
     mcname "Barang - barang dari rumah harusnya mau datang di kosan"
     mcname "Tapi penasaran dengan kota Jakarta deh..."
+    stop sound fadeout 1.0
     $ quick_menu = False
     menu:
         "Langsung ke kosan abis itu rapikan barang":

@@ -230,9 +230,9 @@ label chapter1piajalancepat:
     scene black with dissolve
     scene kantin with dissolve
     play music "audio/BGM_kantin.mp3" fadein 1.0
-    $ quick_menu = True
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ quick_menu = True
     pia "WEEEH GEDE JUGA KANTINNYA YA!"
     hide pia_side with dissolve
     mcname "Selain kantin, suara kamu juga gede btw."
@@ -298,7 +298,7 @@ label chapter1piajalancepat:
     pia "Hueeeeeee MC, baru hari pertama. Kayaknya udah berat gak sih, pelajarannya?"
     hide pia_side with dissolve
     mcname "Engga sih, seru kok kayaknya. Cuma ya… ternyata banyak yang harus kita beli nih buat pertemuan selanjutnya"
-    show pia_side at pia_near with dissolve
+    show pia_side at left with dissolve
     pia "Eh! Iya weeeh! Bingung ini beli kemana… Mana kita berdua bukan asli Jakarta, gatau tempat aku. Kamu tau tempat belinya?"
     hide pia_side with dissolve
     $ quick_menu = False
@@ -321,13 +321,15 @@ label chapter1piajalancepat:
             stop music fadeout 1.0
             jump chapter1piajalantanpapio
         "Gak tau, belom sempet muter muter jakarta. Tanya kak Fiony":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             mcname "Gak tau, belom sempet muter-muter Jakarta."
-            show pia_side at pia_near with dissolve
+            show pia_side at left with dissolve
             pia "Waduh, gimana ini ya belinya? Hmmmm."
             hide pia_side with dissolve
             mcname "Eh bukannya kamu kemaren minta nomer Kak Fiony?"
             mcname "Kenapa gak hubungin dia buat nanya?"
-            show pia_side at pia_near with dissolve
+            show pia_side at left with dissolve
             pia "LAH IYA JUGAAAA! OTW HUBUNGIN CEPIO"
             hide pia_side with dissolve
             mcname "Cepio?"
@@ -337,6 +339,8 @@ label chapter1piajalancepat:
             $ quick_menu = False
             jump chapter1piajalansamapiapio
         "Gak tau, tapi aku sama anak anak cowok lain mau nyari bareng":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             mcname "Gak tau, tapi aku sama anak-anak cowok lain mau nyari bareng."
             show pia_side at left with dissolve
             pia "Yah, yaudah deh. Aku nyari sendiri aja kalo gitu"
@@ -358,13 +362,50 @@ label chapter1piajalancepat:
 
 
 label chapter1piajalantanpapio:
-    screen black with dissolve
+    scene black with dissolve
     "Scene Jalan Tanpa Pio"
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
 
 label chapter1piajalansamapiapio:
-    screen black with dissolve
-    "Scene Jalan Pia & Pio"
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
+    scene black with dissolve
+    scene mall temp with dissolve
+    play music "audio/BGM_Mall Slow.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "{i}Janjiannya di depan toko #sponsor 1, tapi mana nih Pia sama Kak Fiony belum sampe{/i}"
+    mcname "{i}Udah setengah jam nunggu huhuhu{/i}"
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "[mcname]!!!!!!! HOIIII!!! MAAAP TELAAAAAT"
+    hide pia_side with dissolve
+    fio "Maap ya [mcname], tadi nungguin Pia. Dandan dulu lama banget, mana macet pula di jalan"
+    show pia_side at left with dissolve
+    pia "Dih! Kok Cepio nyalahin aku!!!!"
+    hide pia_side with dissolve
+    fio "Tapi kan emang dandannya lama tadi. Padahal cuma mau belanja cat, buku, dan sebagainya kan? Ngapain harus dandan banget yang banget banget? Apa jangan-jangan kamu s--"
+    show pia_side at left with dissolve
+    pia "Ssssssaaaaah. Dah dah, jadi kemana mana ini. Lesgow! Lead the waaaay, Cepio!!!!"
+    hide pia_side with dissolve
+    mcname "Sejak kapan kalian jadi akrab banget?"
+    show pia_side at left with dissolve
+    pia "Tau gak sih [mcname], ternyata rumah Cepio deket sama aku!!"
+    pia "Jadi kita banyak ngobrol gituuuu, ehehehe"
+    hide pia_side with dissolve
+    "Mereka pun berjalan sambil mengobrol panjang lebar"
+    $ quick_menu = False
+    scene black with dissolve
+    scene mall temp with dissolve
+    show pia at pia_near with dissolve
+    $ quick_menu = True
+    fio "Di sini tempatnya. Tadaaaaaa."
+    show pia_side at left with dissolve
+    pia "WOAAAAA LENGKAP BANGET!!!"
+    hide pia_side with dissolve
+    mcname "Wah mantap, makasih kak Fiony!"
+    $ fio_name = "Cepio"
+    fio "Cepio ajaaa. Panggil aku Cepio, hehe."
+    show pia_angry at pia_near with dissolve
+    mcname "Ah oke, Cepio hehe"
+    
     jump credits
