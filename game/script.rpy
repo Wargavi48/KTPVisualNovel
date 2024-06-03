@@ -17,7 +17,7 @@ define mahasiswa_c_center = Transform(zoom=0.66,xalign=0.5,yalign=-0.1)
 define char_left = Transform(zoom=0.9,xalign=0.0,yalign=-0.1,xanchor=0.08)
 define char_right = Transform(zoom=0.9,xalign=1.0,yalign=-0.1, xanchor=0.94)
 define kana_near = Transform(zoom=1.3,xalign=0.5,yalign=0.02)
-define pia_near = Transform(zoom=1.1,xalign=0.5,yalign=-0.1)
+define pia_near = Transform(zoom=1.3,xalign=0.5,yalign=-0.01)
 
 
 # Game dimulai disini.
