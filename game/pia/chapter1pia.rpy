@@ -193,8 +193,8 @@ label chapter1piajalancepat:
     hide pia_side with dissolve
     mcname "Buset, siapa itu teriak-teriak."
     hide pia with dissolve
-    show pia at pia_near with dissolve
     mcname "{i}Loh kok, kayaknya nyamperin aku?{/i}"
+    show pia at pia_near with dissolve
     show pia_side at left with dissolve
     pia "HEYYYYYYY!!! INGET AKU GAKKK???"
     hide pia_side with dissolve
@@ -255,6 +255,9 @@ label chapter1piajalancepat:
     pia "Halooo, sendiri? Boleh numpang duduk 1 meja disini, gak?"
     hide pia_side with dissolve
     mcname "Ah....... Pia...... Langsung banget."
+    hide pia with dissolve
+    show pia at pia_near_right with dissolve
+    show fio at char_near_left with dissolve
     fio "Eh oh mmm. Iya k-kosong kok. Duduk aja."
     "[mcname], Pia, dan Perempuan itu duduk di 1 meja yang sama."
     "Sambil makan"
