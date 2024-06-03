@@ -78,6 +78,9 @@ image side freya_side_shock = "Characters/Freya_side_shock.png"
 image side freya_side_smile = "Characters/Freya_side_smile.png"
 image side freya_side_smug = "Characters/Freya_side_smug.png"
 
+# define side fio character
+image side fio_side = "Characters/Fio_side.png"
+
 image side mahasiswa_c_side = "Characters/mahasiswa_c_side.png"
 
 

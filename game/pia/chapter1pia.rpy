@@ -258,6 +258,7 @@ label chapter1piajalancepat:
     hide pia with dissolve
     show pia at pia_near_right with dissolve
     show fio at char_near_left with dissolve
+    show fio_side at left with dissolve
     fio "Eh oh mmm. Iya k-kosong kok. Duduk aja."
     "[mcname], Pia, dan Perempuan itu duduk di 1 meja yang sama."
     "Sambil makan"
