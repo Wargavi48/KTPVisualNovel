@@ -93,6 +93,7 @@ define freya_nvl = Character("Freya", kind=nvl, callback=Phone_ReceiveSound)
 define donatur_nvl = Character("[mahasiswa_name]", kind=nvl, callback=Phone_ReceiveSound)
 define mamah_nvl = Character("Mama", kind=nvl,  callback=Phone_ReceiveSound)
 define papah_nvl = Character("Papa", kind=nvl, callback=Phone_ReceiveSound)
+define pia_nvl = Character("Pia", kind=nvl, callback=Phone_ReceiveSound)
 
 
 

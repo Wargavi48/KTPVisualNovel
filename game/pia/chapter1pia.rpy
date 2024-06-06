@@ -372,7 +372,47 @@ label chapter1piajalancepat:
 
 label chapter1piajalantanpapio:
     scene black with dissolve
-    "Scene Jalan Tanpa Pio"
+    scene mc bedroom with dissolve
+    nvl clear
+    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+    mc_nvl "Besok ketemuan di mana?"
+    mc_nvl "Mau berangkat bareng atau janjian ketemuan di sana?"
+    pia_nvl "Hmmm…bareng aja ih. Sekalian jalan bareng, hehe."
+    mc_nvl "Mau jam berapa?"
+    pia_nvl "Iih, terserah kamu aja. Mau jam berapa?"
+    mc_nvl "Jam 10 pagi?"
+    pia_nvl "OKE!!"
+    mc_nvl "Sip, besok aku jemput ya."
+    mc_nvl "Ketemuan di kampus?"
+    pia_nvl "Alamat kosan aku di xxxxxx"
+    pia_nvl "EH, MAU DI KAMPUS JUGA GAPAPA"
+    mc_nvl "Oke aku jemput ke kosan, ya"
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    nvl clear
+    scene depan kosan with dissolve
+    mc_nvl "Udah didepan kosan, yak"
+    pia_nvl "TUNGGU!!!"
+    "Pia pun keluar dari kosan, siap untuk pergi dengan [mcname]"
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    $ quick_menu = True
+    pia "GAK TELAT, KAN? PAS KAN YA AKU SIAP SIAPNYA? JAM 10 UDAH READY."
+    hide pia_side with dissolve
+    mcname "Tetangga kosan kamu gak ada yang komplain ya, tiap hari ada yang teriak kayak kemalingan gini?"
+    show pia_side at left with dissolve
+    pia "HEH, SEMBARANGAN! HAHAHA"
+    "[mcname] dan Pia pun berangkat bersama menuju lokasi tempat membeli peralatan DKV tersebut.di Mall"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene mall temp with dissolve
+    play music "audio/BGM_Mall Slow.mp3" fadein 1.0
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    $ quick_menu = True
+    pia "Wah gede juga ya, mallnya."
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
 
