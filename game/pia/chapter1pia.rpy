@@ -413,6 +413,76 @@ label chapter1piajalantanpapio:
     show pia_side at left with dissolve
     $ quick_menu = True
     pia "Wah gede juga ya, mallnya."
+    hide pia_side with dissolve
+    mcname "Sebelah situ Pia, tempatnya"
+    show pia_side at left with dissolve
+    pia "Let's Gooo!!!"
+    hide pia_side with dissolve
+    mcname "Gausah lari, nanti ilang."
+    show pia_angry at pia_near with dissolve
+    show pia_side_angry at left with dissolve
+    pia "Lu kata gue anak kecil, heh?"
+    hide pia_side_angry with dissolve
+    mcname "Ahahahahaha"
+    play sound "audio/tabrakan.mp3"
+    "*Orang random nabrak Pia*"
+    show pia_sad at pia_near with dissolve
+    hide pia_angry
+    show pia_side_sad at left with dissolve
+    pia "Maaf, Pak"
+    hide pia_side_sad with dissolve
+    "*Orang tersebut dengan tatapan sinis langsung pergi*"
+    "[mcname] menggandeng tangan Pia"
+    mcname "Udah gapapa, orangnya lagi buru-buru kali?"
+    show pia_shy at pia_near with dissolve
+    hide pia_sad
+    show pia_side_shy at left with dissolve
+    pia "Ii-iya, maaci."
+    hide pia_side_shy with dissolve
+    "Kemudian Pia dan [mcname] menuju toko yang menjual peralatan menggambar tersebut sambil bergandengan tangan."
+    scene black with dissolve
+    show text "{color=#FFF}1 Jam Kemudian{/color}" with Pause(2.0)
+    scene mall temp with Dissolve(2.0)
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan. Pensil 2, cat air 1, kuas, dan sebagainya.... Tapi pas dijumlah gak kerasa, tau-tau mahal juga"
+    hide pia_side with dissolve
+    mcname "Hahaha betuuuul"
+    "*Tiba tiba dari belakang MC ada yang berbisik*"
+    "???" "{size=-5}Hayooo lagi ngapain berduaan?{/size}"
+    mcname "HUAAAAA"
+    mcname "KAGET, KAK FIONY?????"
+    hide pia with dissolve
+    show pia at pia_near_right with dissolve
+    show fio at char_near_left with dissolve
+    show fio_side at left with dissolve
+    fio "Haloooo~ Lagi ngapain nih kalian?"
+    hide fio_side with dissolve
+    mcname "Ini abis beli perlengkapan buat tugas nirmana, Kak"
+    show fio_side at left with dissolve
+    fio "*melirik Pia*\nKiw-kiw"
+    hide fio_side with dissolve
+    show pia_shy at pia_near_right with dissolve
+    show pia_side_shy at left with dissolve
+    pia "CEPIOOOOOOOOOOO!!!!"
+    hide pia_side_shy with dissolve
+    show fio_side at left with dissolve
+    fio "Hahahahahaha\n*sambil peluk Pia*"
+    hide fio_side with dissolve
+    mcname "Sejak kapan kalian jadi akrab banget?"
+    hide pia_shy with dissolve
+    show pia_side at left with dissolve
+    pia "Tau gak sih [mcname], ternyata rumah Cepio deket sama aku!! Jadi kita banyak ngobrol gituuuu, ehehehe."
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Sama, lagi beli peralatan juga, udah banyak yang abis. Di sini juga tempat langganan aku."
+    $ fio_name = "Cepio"
+    fio "Btw, panggil Cepio aja"
+    hide fio_side with dissolve
+    mcname "Oke Cepioooo~"
+    show pia_side at left with dissolve
+    pia "Nah mumpung ada Cepio Si Sepuh penunggu mall ini, mending rekomendasiin tempat makan enak disini."
+    hide pia_side with dissolve
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
 
