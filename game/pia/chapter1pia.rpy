@@ -261,6 +261,7 @@ label chapter1piajalancepat:
     show fio_side at left with dissolve
     fio "Eh oh mmm. Iya k-kosong kok. Duduk aja."
     "[mcname], Pia, dan Perempuan itu duduk di 1 meja yang sama."
+    hide fio_side with dissolve
     "Sambil makan"
     show pia_side at left with dissolve
     pia "Jweerushan aphah kwamuh?\n(Jurusan apa kamu?)"
@@ -271,22 +272,26 @@ label chapter1piajalancepat:
     hide pia_side with dissolve
     mcname "Telen dulu, Pia..........."
     mcname "{i}Tapi iya deh, aku gak liat Mbak ini kayaknya pas pengenalan.{/i}"
+    show fio_side at left with dissolve
     fio "Oh kamu MaBa, ya? Aku udah semester 4. Ga mungkin ikut kesana tadi."
+    hide fio_side with dissolve
     show pia_side at left with dissolve
     pia "Eh kakak senior, maaf Kak. Kirain MaBa juga"
-    show pia_sad at char_center with dissolve 
+    show pia_sad at pia_near_right with dissolve 
     hide pia_side with dissolve
     show pia_side_sad at left with dissolve
     pia "Maaf Kaaak"
     hide pia_side_sad with dissolve
     mcname "Eh maap, Kak. Pia emang kelakuannya nyablak\n{i}Yup. pantes gak liat tadi{/i}"
     $ fio_name = "Fiony"
+    show fio_side at left with dissolve
     fio "Hahaha santai aja, lanjut makan. Kok jadi kaku kalian. Kenalin aku, Fiony."
+    hide fio_side with dissolve
     show pia_side_sad at left with dissolve
     pia "A-AKU PIA MEAMEO"
     hide pia_side_sad with dissolve
     mcname "Ppppfffftt Meameo, ahaha. Kenalin kak aku [mcname]"
-    show pia_angry at char_center with dissolve
+    show pia_angry at pia_near_right with dissolve
     show pia_side_angry at left with dissolve
     pia "Aaaaa kan jadi typo, ngomongnya. Meraleo maksudnyaaaaa."
     hide pia_side_angry with dissolve
@@ -379,15 +384,20 @@ label chapter1piajalansamapiapio:
     $ quick_menu = True
     mcname "{i}Janjiannya di depan toko #sponsor 1, tapi mana nih Pia sama Kak Fiony belum sampe{/i}"
     mcname "{i}Udah setengah jam nunggu huhuhu{/i}"
-    show pia at pia_near with dissolve
+    show pia at pia_near_right with dissolve
+    show fio at char_near_left with dissolve
     show pia_side at left with dissolve
     pia "[mcname]!!!!!!! HOIIII!!! MAAAP TELAAAAAT"
+    show fio_side at left with dissolve
     hide pia_side with dissolve
     fio "Maap ya [mcname], tadi nungguin Pia. Dandan dulu lama banget, mana macet pula di jalan"
+    hide fio_side with dissolve
     show pia_side at left with dissolve
     pia "Dih! Kok Cepio nyalahin aku!!!!"
     hide pia_side with dissolve
+    show fio_side at left with dissolve
     fio "Tapi kan emang dandannya lama tadi. Padahal cuma mau belanja cat, buku, dan sebagainya kan? Ngapain harus dandan banget yang banget banget? Apa jangan-jangan kamu s--"
+    hide fio_side with dissolve
     show pia_side at left with dissolve
     pia "Ssssssaaaaah. Dah dah, jadi kemana mana ini. Lesgow! Lead the waaaay, Cepio!!!!"
     hide pia_side with dissolve
@@ -400,16 +410,46 @@ label chapter1piajalansamapiapio:
     $ quick_menu = False
     scene black with dissolve
     scene mall temp with dissolve
-    show pia at pia_near with dissolve
+    show pia at pia_near_right with dissolve
+    show fio at char_near_left with dissolve
+    show fio_side at left with dissolve
     $ quick_menu = True
     fio "Di sini tempatnya. Tadaaaaaa."
+    hide fio_side with dissolve
     show pia_side at left with dissolve
     pia "WOAAAAA LENGKAP BANGET!!!"
     hide pia_side with dissolve
     mcname "Wah mantap, makasih kak Fiony!"
     $ fio_name = "Cepio"
+    show fio_side at left with dissolve
     fio "Cepio ajaaa. Panggil aku Cepio, hehe."
-    show pia_angry at pia_near with dissolve
+    hide fio_side with dissolve
+    show pia_angry at pia_near_right with dissolve
     mcname "Ah oke, Cepio hehe"
-    
+    show pia_side_angry at left with dissolve
+    pia "Hmmmmmm!!!"
+    hide pia_side_angry with dissolve
+    show fio_side at left with dissolve
+    fio "{size=-5}Cieee cemburu, hehehe{/size}"
+    hide fio_side with dissolve
+    show pia_side_angry at left with dissolve
+    pia "CEPIOOOOOOOO!!!!!!"
+    hide pia_side_angry with dissolve
+    mcname "????"
+    "Fiony pun membantu merekomendasikan peralatan yang dibutuhkan [mcname] dan Pia"
+    $ quick_menu = False
+    scene black with dissolve
+    scene mall temp with dissolve
+    show pia at pia_near_right with dissolve
+    show fio at char_near_left with dissolve
+    show pia_side at left with dissolve
+    pia "Weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan. Pensil 2, cat air 1, kuas, dan sebagainya. Tapi pas dijumlah gak kerasa, tau-tau mahal juga"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Welcome to DKV"
+    "{size=-5}[mcname] & Pia{/size}" "Huhuuuu"
+    show pia_side at left with dissolve
+    pia "btw… MAU MAKAAAAAN. LAPEEEEEER"
+    hide pia_side with dissolve
+    mcname "Setuju, laper."
     jump credits
