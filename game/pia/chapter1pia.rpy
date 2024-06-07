@@ -483,8 +483,7 @@ label chapter1piajalantanpapio:
     show pia_side at left with dissolve
     pia "Nah mumpung ada Cepio Si Sepuh penunggu mall ini, mending rekomendasiin tempat makan enak disini."
     hide pia_side with dissolve
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
-    jump credits
+    jump chapter1piamakanmall
 
 label chapter1piajalansamapiapio:
     scene black with dissolve
@@ -562,4 +561,71 @@ label chapter1piajalansamapiapio:
     pia "btw… MAU MAKAAAAAN. LAPEEEEEER"
     hide pia_side with dissolve
     mcname "Setuju, laper."
+    jump chapter1piamakanmall
+
+label chapter1piamakanmall:
+    show fio_side at left with dissolve
+    fio "Ayo, aku ada tempat rekomendasi enak deket sini"
+    hide fio_side with dissolve
+    "{size=-5}[mcname] & Pia{/size}" "Lesgoooooo"
+    "Mereka bertiga pun menuju cafe tempat nongkrong Fiony dan mulai memesan makanan yang direkomendasikan Fiony"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play sound "audio/cafe-entrance.mp3"
+    show text "{color=#FFF}Memasuki Cafe{/color}" with Pause(2.0)
+    scene cafe with dissolve
+    play music "audio/BGM_Cafe Cerah.mp3" fadein 1.0
+    show pia at pia_near_right with dissolve
+    show fio at char_near_left with dissolve
+    show pia_side at left with dissolve
+    $ quick_menu = True
+    pia "Ummmmmmmm!!!!! Enaaaaak!!! Mantap lah, Cepio!\n*Sambil makan*"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Hehehe enak, kan? Tempat langganan aku sama temen-temen aku nih. Enak, terus tempatnya cozy gitu buat foto-foto"
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Betuuuuul!!!"
+    hide pia_side with dissolve
+    "Dari meja yang cukup jauh dari tempat [mcname], Pia, dan Fiony duduk…"
+    hide pia with dissolve
+    hide fio with dissolve
+    $ freya_name = "Freya"
+    show freya at char_left with dissolve
+    show kana at char_right with dissolve
+    show freya_side at left with dissolve
+    freya "Lah, Fiony? Ngapain kamu di sini?"
+    hide freya_side with dissolve
+    show fio_side at left with dissolve
+    fio "Lah Freya? Sama… mmmm."
+    hide fio_side with dissolve
+    $ kana_name = "Kana"
+    show kana_side at left with dissolve
+    kana "Salam kenal, aku Kana"
+    hide kana_side with dissolve
+    show freya_side at left with dissolve
+    freya "Sini"
+    hide freya_side with dissolve
+    show fio_side at left with dissolve
+    fio "Okeh"
+    hide freya with dissolve
+    hide kana with dissolve
+    show fio at char_near_left with dissolve
+    show pia at pia_near_right with dissolve
+    show fio_side at left with dissolve
+    fio "Ges, aku ke sana dulu sebentar ya. Kalian berduaan aja dulu. Jangan macem-macem ya, [mcname]. Hehehe"
+    hide fio_side with dissolve
+    show pia_shy at pia_near_right with dissolve
+    show pia_side_shy at left with dissolve
+    pia "CEPIOOOOOOOOOOOOO"
+    hide pia_side_shy with dissolve
+    hide pia with dissolve
+    hide fio with dissolve
+    hide pia_shy with dissolve
+    show pia_shy at pia_near with dissolve
+    mcname "Ahahahahha"
+    play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
+
+
