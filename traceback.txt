@@ -1,41 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/pia/chapter1pia.rpy", line 579, in script
-    show pia at pia_near_right with dissolve
-OSError: Couldn't find file 'audio/BGM_Cade Cerah.mp3'.
+  File "game/pia/chapter1pia.rpy", line 638, in script
+    show pia_nyembur at pia_center with dissolve
+  File "game/pia/chapter1pia.rpy", line 638, in <module>
+    show pia_nyembur at pia_center with dissolve
+NameError: name 'pia_center' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/pia/chapter1pia.rpy", line 579, in script
-    show pia at pia_near_right with dissolve
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1363, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1781, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1548, in do_with
-    return self.interact(trans_pause=True,
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 3018, in interact_core
-    renpy.audio.audio.periodic()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1205, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1183, in periodic_thread_main
-    periodic_pass()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1125, in periodic_pass
-    c.periodic()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 534, in periodic
-    topf = load(filename)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 72, in load
-    rv = renpy.loader.load(fn, directory="audio")
-  File "D:\fanbase_project\KTPVisualNovel\renpy\loader.py", line 672, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/BGM_Cade Cerah.mp3'.
+  File "game/pia/chapter1pia.rpy", line 638, in script
+    show pia_nyembur at pia_center with dissolve
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1113, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1072, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1072, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/pia/chapter1pia.rpy", line 638, in <module>
+    show pia_nyembur at pia_center with dissolve
+NameError: name 'pia_center' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Fri Jun  7 10:52:34 2024
+Sat Jun  8 09:27:52 2024

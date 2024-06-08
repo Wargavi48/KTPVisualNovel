@@ -625,6 +625,22 @@ label chapter1piamakanmall:
     hide pia_shy with dissolve
     show pia_shy at pia_near with dissolve
     mcname "Ahahahahha"
+    show pia_side_shy at left with dissolve
+    pia "J-jadi… Abis berapa tadi belanja alat gambar?"
+    hide pia_side_shy with dissolve
+    mcname "400an lah, ahahaha. Kamu abis berapa?"
+    show pia_side_shy at left with dissolve
+    pia "Kurang lebih sama lah, huhuhu"
+    hide pia_side_shy with dissolve
+    "*hening*"
+    mcname "Kalo berdua gini kayak ngedate gak sih kita?"
+    hide pia_shy with dissolve
+    show pia_nyembur with dissolve:
+        zoom 0.3
+        xalign 0.8
+    show pia_side_shy at left with dissolve
+    pia "UHUK-UHUK"
+    pia "GIMANA?"
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
 

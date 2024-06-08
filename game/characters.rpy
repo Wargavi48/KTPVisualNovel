@@ -6,6 +6,7 @@ default pia_sad = Character("[pia_name]", image="Pia_sad", window_background="gu
 default pia_sh = Character("[pia_name]", image="pia_sh", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default pia_shy = Character("[pia_name]", image="Pia_shy",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default pia_smile = Character("[pia_name]", image="pia_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_nyembur = Character("[pia_name]", image="pia_nyembur",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default pia_name = "????"
 
 # define piasprites = Character("Pia Sprites", image="Pia",color="#000000")
