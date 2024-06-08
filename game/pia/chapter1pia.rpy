@@ -440,11 +440,13 @@ label chapter1piajalantanpapio:
     pia "Ii-iya, maaci."
     hide pia_side_shy with dissolve
     "Kemudian Pia dan [mcname] menuju toko yang menjual peralatan menggambar tersebut sambil bergandengan tangan."
+    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}1 Jam Kemudian{/color}" with Pause(2.0)
     scene mall temp with Dissolve(2.0)
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ quick_menu = True
     pia "Weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan. Pensil 2, cat air 1, kuas, dan sebagainya.... Tapi pas dijumlah gak kerasa, tau-tau mahal juga"
     hide pia_side with dissolve
     mcname "Hahaha betuuuul"
@@ -552,11 +554,13 @@ label chapter1piajalansamapiapio:
     show pia at pia_near_right with dissolve
     show fio at char_near_left with dissolve
     show pia_side at left with dissolve
+    $ quick_menu = True
     pia "Weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan. Pensil 2, cat air 1, kuas, dan sebagainya. Tapi pas dijumlah gak kerasa, tau-tau mahal juga"
     hide pia_side with dissolve
     show fio_side at left with dissolve
     fio "Welcome to DKV"
     "{size=-5}[mcname] & Pia{/size}" "Huhuuuu"
+    hide fio_side with dissolve
     show pia_side at left with dissolve
     pia "btw… MAU MAKAAAAAN. LAPEEEEEER"
     hide pia_side with dissolve
@@ -641,6 +645,44 @@ label chapter1piamakanmall:
     show pia_side_shy at left with dissolve
     pia "UHUK-UHUK"
     pia "GIMANA?"
+    hide pia_side_shy with dissolve
+    hide pia_nyembur with dissolve
+    show pia_shy at pia_near with dissolve
+    mcname "Ahahaha, engga. Bercanda, kok"
+    show pia_side_shy at left with dissolve
+    pia "{size=-10}ngedate beneran juga gapapa sih{/size}"
+    hide pia_side_shy with dissolve
+    mcname "Apa, Pia? Sorry, gak kedengeran?"
+    show pia_side_shy at left with dissolve
+    pia "GAK KOK, minumannya enak. Aku haus, mau nambah kayaknya"
+    hide pia_side_shy with dissolve
+    mcname "Oh okeh, mau aku panggil pelayannya?"
+    show pia_angry at pia_near with dissolve
+    show pia_side_angry at left with dissolve
+    pia "Gausah"
+    hide pia_side_angry with dissolve
+    mcname "???, lah"
+    "*suasana hening*"
+    show pia at pia_near with dissolve
+    hide pia_angry 
+    show pia_side at left with dissolve
+    pia "Eh, tempatnya bagus gak sih buat foto-foto?"
+    hide pia_side with dissolve
+    mcname "Tadi Cepio sih ngomong gitu juga."
+    show pia_side at left with dissolve
+    pia "Selfie ah!!"
+    play sound "audio/camera.mp3" loop
+    hide pia_side with dissolve
+    show pia_shy at pia_near with dissolve
+    show pia_side_shy at left with dissolve
+    stop sound 
+    pia "F-foto bareng sih kita. Udah jauh-jauh makan ke sini, masa ga difoto!"
+    hide pia_side_shy with dissolve
+    mcname "Hmm. Boleh deh.\n*bergaya*"
+    show pia_side_shy at left with dissolve
+    pia "Oke, satuu..dua....tigaaaa"
+    play sound "audio/camera.mp3"
+    "Fiony //ngeliatin dari jauh sambil senyum-senyum \n*ngeledek senyum nyindir pia*"
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
 
