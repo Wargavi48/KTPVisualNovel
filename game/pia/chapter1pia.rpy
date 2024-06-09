@@ -682,7 +682,107 @@ label chapter1piamakanmall:
     show pia_side_shy at left with dissolve
     pia "Oke, satuu..dua....tigaaaa"
     play sound "audio/camera.mp3"
+    hide pia_side_shy with dissolve
     "Fiony //ngeliatin dari jauh sambil senyum-senyum \n*ngeledek senyum nyindir pia*"
+    show pia_angry at pia_near with dissolve
+    show pia_side_angry at left with dissolve
+    pia "CEPIOOOOOOOO!!"
+    hide pia_side_angry with dissolve
+    hide pia_angry with dissolve
+    show pia at pia_near_right with dissolve
+    show fio at char_near_left with dissolve
+    show fio_side at left with dissolve
+    fio "Ahahaha udah makannya? Seru tuh foto fotonya \n*sikut sikut Pia*"
+    hide fio_side with dissolve
+    show pia_shy at pia_near_right with dissolve
+    show pia_side_shy at left with dissolve
+    pia "Ehehehehe"
+    hide pia_shy with dissolve
+    hide pia_side_shy with dissolve
+    show fio_side at left with dissolve
+    fio "Kuy lah balik, takut kemaleman. Udah aku bayarin juga tadi makanannya ya ini."
+    hide fio_side with dissolve
+    mcname "Eh lah udah dibayar? Waduh aku transfer ke Cepio ya!"
+    show fio_side at left with dissolve
+    fio "Gausah. Ngeliat juniorku SENYUM-SENYUM sendiri udah cukup puas kok\n*senyum ke pia*"
+    hide fio_side with dissolve
+    show pia_shy at pia_near_right with dissolve
+    show pia_side_shy at left with dissolve
+    pia "Ih Cepio maaaaaaaah. Ngeledekin muluuuuu"
+    hide pia_side_shy with dissolve
+    "Fiony pun berpisah dengan Pia dan [mcname]. Kemudian mereka pun pulang ke tempat tinggal masing-masing."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Huaaaaa capeeeeek\n*langsung rebahan di kasur*"
+    mcname "Seru juga hari ini, hehehe."
+    mcname "Yosshaaaa! Saatnya bersih-bersih terus rapihin peralatan yang dibeli tadi, terus tiduuur."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene kelas with dissolve
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    "mata kuliah nirmana dimulai, [mcname] dan Pia pun menggunakan peralatan yang dibelinya kemarin"
+    scene black with dissolve
+    show text "{color=#FFF}3 jam kemudian, setelah selesai mata kuliah{/color}" with Pause(2.0)
+    scene kelas with dissolve
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "[mcname]!!!!!! MUMET GUEH! AYO KELUAR. REFRESHING, KE MANA KEK, MUTERIN KAMPUS. SORE MASIH ADA KELAS LAGI, JADI GA BISA JAUH-JAUH."
+    hide pia_side with dissolve
+    mcname "Lesgo, sama. Pusing weh"
+    scene black with dissolve
+    # Harusnya BG Hall
+    scene depan kampus with dissolve
+    # BGM Hall
+    "Pia dan [mcname] pun berkeliling di kampus tanpa arah dan tujuan"
+    scene black with dissolve
+    # Harusnya BG Sawah
+    scene depan kampus with dissolve
+    # BGM Sawah
+    "Sampai akhirnya mereka masuk ke kawasan fakultas pertanian dan perhutanan"
+    "Saat berjalan berdua"
+    pia "Hmmm..hmmmmm\n*bergumam*"
+    mcname "*berjalan di sebelah Pia sambil sesekali memejamkan mata menikmati suara Pia yang sedang humming*"
+    # Harusnya ada humming migikata
+    show pia at pia_near with dissolve
+    mcname "Lagu apa, Pia?"
+    show pia_side at left with dissolve
+    pia "Oh, ini judulnya Migikata."
+    hide pia_side with dissolve
+    mcname "Hmm, hummingmu bagus Pia. Merdu banget, hehe."
+    show pia_shy at pia_near with dissolve
+    show pia_side_shy at left with dissolve
+    pia "A-apaan sih!"
+    pia "Huft~"
+    hide pia_shy with dissolve
+    hide pia_side_shy with dissolve
+    show pia_side at left with dissolve
+    pia "Eh, ke situ yuk. Duduk bawah pohon"
+    hide pia_side with dissolve
+    mcname "Kuy!!"
+    "[mcname] dan Pia pun duduk di bawah pohon rindang dekat persawahan Pia mengeluarkan HP dan earphone cablenya"
+    show pia_side at left with dissolve
+    pia "Mau denger lagu yang tadi aku nyanyiin nadanya? Nih."
+    hide pia_side with dissolve
+    play music "audio/migikata-off.mp3" fadein 1.0
+    "tiba - tiba"
+    # Harusnya ada acapella pia kalo gak ya bgm aja dah wkwkw
+    pia "*Tiba tiba mulai bernyanyi lagu yang sedang didengarkan.*"
+    mcname "{i}Woaaaa suara Pia bagus juga ternyata{/i}"
+    scene black with dissolve
+    "[mcname] memejamkan mata menikmati alunan suara Pia yang sedang bernyanyi"
+    scene depan kampus with dissolve
+    mcname "*Pia pun tanpa sadar menyenderkan kepalanya di pundak kanan [mcname]*"
+    "Tak terasa, waktu pun sudah beranjak sore. [mcname] dan Pia kembali ke fakultasnya untuk memasuki kelas yang dimulai sore itu."
+    scene black with dissolve
+    show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
+    show text "{color=#FFF}CHAPTER II{/color}"
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
 
