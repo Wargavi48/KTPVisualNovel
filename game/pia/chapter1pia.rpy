@@ -15,19 +15,19 @@ label chapter1pia:
     scene black with dissolve
     play sound "audio/tabrakan.mp3"
     show text "{color=#FFF}BRUKKKKK{/color}" with Pause(2.0)
-    scene depan kampus with dissolve
-    show pia_shy at pia_near with dissolve
-    show pia_side_shy at left with dissolve
+    scene pia tabrakan normal with Dissolve(2.0)
     play music "audio/BGM_Kampus.mp3" fadein 1.0
     $ quick_menu = True
+    scene pia tabrakan ngomong with dissolve
     pia "Eh maap, Kak. Ketabrak."
     pia "Gak apa-apa kan? Lagi buru-buru."
     pia "Maaf, ya."
-    hide pia_side_shy with dissolve
+    scene pia tabrakan normal with dissolve
     $ quick_menu = False
     menu:
         "Sikap Kamu"
         "Marahin":
+            scene depan kampus with dissolve
             mcname "EH LAIN KALI LIAT-LIAT DONG"
             mcname "PAKE MATA!!!!!!"
             mcname "LAGI JALAN SANTAI SANTAI MALAH DITABRAK."
@@ -44,6 +44,8 @@ label chapter1pia:
             play music "audio/Dreamcatcher.mp3" fadein 1.0
             jump credits    
         "Nasehatin":
+            scene depan kampus with dissolve
+            show pia_shy at pia_near with dissolve
             mcname "Iya gapapa, kok"
             mcname "Tapi lain kali ga usah lari-lari, ya."
             mcname "Kalau kata Mamahku tuh-"
@@ -68,10 +70,9 @@ label chapter1pia:
             mcname "Ah gak papa kok"
             mcname "Hehe"
             mcname "Maaf juga, aku ngelamun di tengah jalan."
-            show pia_side_shy at left with dissolve
+            scene pia tabrakan ngomong with dissolve
             pia "Hehe, oke. Maaf, byeeee"
-            hide pia_side_shy with dissolve
-            hide pia_shy with dissolve
+            scene depan kampus with dissolve
             jump chapter1piacarajalan
             stop music fadeout 1.0
             scene black with dissolve
@@ -687,6 +688,8 @@ label chapter1piamakanmall:
     show pia_angry at pia_near with dissolve
     show pia_side_angry at left with dissolve
     pia "CEPIOOOOOOOO!!"
+    hide pia
+    hide pia_shy
     hide pia_side_angry with dissolve
     hide pia_angry with dissolve
     show pia at pia_near_right with dissolve

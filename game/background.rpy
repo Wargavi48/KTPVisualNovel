@@ -13,3 +13,5 @@ image monas temporary = "images/BG/monas_temp.jpg"
 image mall temp = "images/BG/mall-temp.jpg"
 image depan kosan = "images/BG/depan-kosan.jpg"
 image white = Solid("#FFFFFF")
+image pia tabrakan normal = "images/CG/pia_tabrakan_normal.png"
+image pia tabrakan ngomong = "images/CG/pia_tabrakan_ngomong.png"
