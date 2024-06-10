@@ -15,10 +15,23 @@ label chapter1pia:
     scene black with dissolve
     play sound "audio/tabrakan.mp3"
     show text "{color=#FFF}BRUKKKKK{/color}" with Pause(2.0)
-    scene pia tabrakan normal with Dissolve(2.0)
+    scene pia tabrakan normal    
     play music "audio/BGM_Kampus.mp3" fadein 1.0
+    window auto hide
+    camera:
+        subpixel True xpos -1089 zoom 1.96
+        ypos -990 
+    "..."
+    window auto hide
+    camera: 
+        linear 7.00 ypos -270 
+    with Pause(9.10)
+    window auto show
+    camera:
+        subpixel True pos (0, 0) zoom 1.0
+    with Pause(2.10)
+    scene pia tabrakan ngomong with dissolve    
     $ quick_menu = True
-    scene pia tabrakan ngomong with dissolve
     pia "Eh maap, Kak. Ketabrak."
     pia "Gak apa-apa kan? Lagi buru-buru."
     pia "Maaf, ya."

@@ -16,7 +16,6 @@ label chapter1kana1:
     $ quick_menu = False
     scene black with Dissolve(2.0)
     play sound "audio/open_door.mp3" fadeout 1.0
-    # show text "{color=#FFF}SFX PINTU DIBUKA{/color}" with Pause(1.0)
     show text "{color=#FFF}MEMASUKI AULA{/color}" with Pause(2.0)
     scene kelas with Dissolve(2.0)
     $ quick_menu = True
@@ -114,7 +113,7 @@ label chapter1kana1:
     mcname "{i}Tapi masih ada energi sih…{/i}"
     # insert cg kana
     $ quick_menu = False
-    scene kana awal with Dissolve(2.0)
+    scene kana awal senyum with Dissolve(2.0)
     mcname "{i}Aduh! Kok aku ga bisa hilangkan senyuman itu dari kepalaku ya?{/i}"
     scene black with dissolve
     scene kelas with Dissolve(2.0)
@@ -171,7 +170,7 @@ label chapter1kana2Cafe:
     "[mcname] memilih untuk menghabiskan waktu di sebuah cafe. Awalnya cafe itu terasa sepi, tetapi lama - lama cafe tersebut mulai penuh"
     mcname "Wah makin lama, makin rame ya cafe ini. Memang salah satu cafe terkenal sih, kalau kata internet..."
     "Banyak sekali orang yang berlalu lalang. Akan tetapi, ada satu orang yang menarik perhatian [mcname]"
-    show kana at char_placement with dissolve
+    show kana at char_center with dissolve
     "Saat orang itu mendekati pintu cafe, [mcname] pun menyadari bahwa orang itu adalah cewek yang ada di kampus tadi."
     mcname "{i}Loh, itu kan perempuan yang tadi di kampus?{/i}"
     mcname "{i}Kita datang di cafe yang sama{/i}"
@@ -184,12 +183,6 @@ label chapter1kana2Cafe:
     "Reflek, [mcname] pun memalingkan pandangannya"
     mcname "{i}Duh mata kita gak sengaja ketemu pula{/i}"
     mcname "{i}Perempuan itu pun mendekati meja tempat MC berada{/i}"
-    # animasi zoom
-    show kana:
-        subpixel True 
-        ypos -2.0 zoom 0.5 
-        linear 1.00 ypos -6.08 zoom 1.3 
-    with Pause(1.10)
     show kana at kana_near with dissolve
     show kana_side at left with dissolve
     kana "H-halooo, maaf tapi apa kursinya kosong?"
