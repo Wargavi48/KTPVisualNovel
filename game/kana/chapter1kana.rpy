@@ -152,6 +152,25 @@ label chapter1kana2kos:
     "Pulang dari kampus, [mcname] masih memikirkan kejadian yang dialaminya hari ini"
     mcname "{i}Lumayan capek ya orientasinya{/i}"
     mcname "{i}Ternyata panas banget di Jakarta{/i}"
+    show white:
+        default
+        subpixel True 
+        parallel:
+            Null(0.0, 0.0)
+            'white' with dissolve
+        parallel:
+            ypos 0 alpha 1.0 
+            linear 1.30 ypos 252 alpha 0.7 
+    show white as white2:
+        default
+        subpixel True 
+        parallel:
+            Null(0.0, 0.0)
+            'white' with dissolve
+        parallel:
+            ypos 2080 alpha 1.0 
+            linear 1.30 ypos 1908 alpha 0.7 
+    with Pause(1.40)
     show kana at kana_near with dissolve
     mcname "{i}Aku gak nyangka bisa bertemu sama perempuan sebersinar itu{/i}"
     mcname "{i}Tapi dilihat - lihat, kayanya dia ramah ya{/i}"
@@ -486,32 +505,39 @@ label chapter1kana2Campus:
     "Dosen pun memasuki ruangan kelas"
     "Kelas pun menjadi tenang dan lebih tertib dari sebelumnya"
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-    "Dosen" "Selamat siang mahasiswa dan mahasiswi sekalian"
-    "Dosen" "Selamat datang di mata kuliah pertama kalian di jenjang perkuliah ini"
-    "Bu Fatimah" "Sebelumnya perkenalkan nama saya Fatimah"
-    "Bu Fatimah" "Disini saya mengajar mata kuliah Teori Politik Internasional, Studi Perang Dan Damai, Strategi Dan Tatakelola Strategis"
-    "Bu Fatimah" "Untuk semester pertama kalian akan mempelajari mata kuliah dasar yaitu Teori Politik Internasional"
-    "Bu Fatimah" "Dengan begitu saya akan langsung ke dalam materi"
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
+    dosen "Selamat siang mahasiswa dan mahasiswi sekalian"
+    dosen "Selamat datang di mata kuliah pertama kalian di jenjang perkuliah ini"
+    $ dosen_name = "Bu Fatimah"
+    dosen "Sebelumnya perkenalkan nama saya Fatimah"
+    dosen "Disini saya mengajar mata kuliah Teori Politik Internasional, Studi Perang Dan Damai, Strategi Dan Tatakelola Strategis"
+    dosen "Untuk semester pertama kalian akan mempelajari mata kuliah dasar yaitu Teori Politik Internasional"
+    dosen "Dengan begitu saya akan langsung ke dalam materi"
     "Suasana kelas pun terasa hening, fokus untuk memperhatikan apa yang dijelaskan oleh Bu Fatimah"
     $ quick_menu = False
-    stop music fadeout 1.0
     scene black with Dissolve(2.0)
     scene kelas with dissolve
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
     $ quick_menu = True
-    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-    "Bu Fatimah" "Baiklah semuanya karena waktu saya sudah habis"
-    "Bu Fatimah" "Maka mata kuliah hari ini sudah selesai"
+    dosen "Baiklah semuanya karena waktu saya sudah habis"
+    dosen "Maka mata kuliah hari ini sudah selesai"
+    hide dosen_side with dissolve
     "Terdengar suara lega dari para mahasiswa"
-
-    "Bu Fatimah" "Tapi sebelum itu"
-    "Bu Fatimah" "Saya akan memberikan tugas kelompok yang berisikan 4 orang"
-    "Bu Fatimah" "Minggu depan di kumpulkan ya!!"
+    show dosen_side at left with dissolve
+    dosen "Tapi sebelum itu"
+    dosen "Saya akan memberikan tugas kelompok yang berisikan 4 orang"
+    dosen "Minggu depan di kumpulkan ya!!"
+    hide dosen_side with dissolve
     "Mendengar hal tersebut, para mahasiswa mengeluarkan suara kekecewaan"
-
-    "Bu Fatimah" "Jadi kelompoknya akan dibagi berdasarkan jajaran tempat duduk kalian saja agar simple dan tidak ada circle diantara kalian semua"
-    "Bu Fatimah" "Lalu gunakan kesempatan ini untuk berkenalan dengan teman - teman sekelas kalian"
-    "Bu Fatimah" "Sekian untuk hari ini"
-    "Bu Fatimah" "Terimakasih banyak"
+    show dosen_side at left with dissolve
+    dosen "Jadi kelompoknya akan dibagi berdasarkan jajaran tempat duduk kalian saja agar simple dan tidak ada circle diantara kalian semua"
+    dosen "Lalu gunakan kesempatan ini untuk berkenalan dengan teman - teman sekelas kalian"
+    dosen "Sekian untuk hari ini"
+    dosen "Terimakasih banyak"
+    hide dosen with dissolve
+    hide dosen_side with dissolve
     mcname "{i}Aduh, satu jajaran!!??{/i}"
     mcname "{i}Tunggu bentar, kalau satu jajar…??,{/i}"
     "*SFX LIRIK KANAN KIRI*"

@@ -49,6 +49,10 @@ default freya_smug = Character("[freya_name]", image="Freya_smug")
 default fio_name = "???"
 default fio = Character("[fio_name]", image="Fio")
 
+# Define dosen chara
+default dosen_name = "Dosen"
+default dosen = Character("[dosen_name]", image="Dosen")
+
 default mahasiswa_c_name = "???"
 default mahasiswa_c = Character("[mahasiswa_c_name]", image="mahasiswa_c")
 
@@ -81,6 +85,8 @@ image side freya_side_smug = "Characters/Freya_side_smug.png"
 
 # define side fio character
 image side fio_side = "Characters/Fio_side.png"
+
+image side dosen_side = "Characters/Dosen_side.png"
 
 image side mahasiswa_c_side = "Characters/mahasiswa_c_side.png"
 
