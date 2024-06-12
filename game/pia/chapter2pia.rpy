@@ -99,6 +99,86 @@ label chapter2piabegin:
 label chapter2piaaftergame:
     stop music fadeout 1.0
     scene black with dissolve
-    "Mini Game Selesai"
+    scene kelas with dissolve
+    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
+    dosen "Yak! Bisa dikumpulkan ya, tugasnya"
+    dosen "Besok akan Ibu pajang semua gambar kalian di lorong gedung ini. Nanti Ibu minta BEM (Badan Eksekutif Mahasiswa) untuk bantuin display dan announce pameran ini untuk umum dan dapat dilihat oleh semua fakultas."
+    hide dosen_side with dissolve
+    "Mahasiswa 1" "Heeeeeeeee~ Kok jadi pameran gini bu? Malu bu!!"
+    show dosen_side at left with dissolve
+    dosen "Hehe, ini disebut element of surprise. Biar kalian terbiasa. BANGGALAH DENGAN HASIL KARYA KALIAN SENDIRI!!"
+    hide dosen_side with dissolve
+    "Mahasiswa 2" "Siaaaaap buuuuuuuu~"
+    hide dosen with dissolve
+    show pia at pia_near with dissolve
+    mcname "Waaaaa malu weh bakal dilihat banyak orang. Kirain cuma buat DKV doang."
+    show pia_side at left with dissolve
+    pia "Iya weh. Yaudah lah ya"
+    stop music fadeout 1.0
+    scene black with dissolve
+    # Harusnya BG Hall
+    scene depan kampus with dissolve
+    #  Harusnya BGM Hall
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    "Keesokan harinya, semua karya sudah terpajang di sepanjang lorong dan lobby gedung DKV. Banyak sekali Mahasiswa/i dari fakultas lain yang datang untuk sekedar berswafoto atau menikmati hasil karya Maba DKV layaknya mengunjungi pameran seni."
+    "Fiony, Freya, dan Kana sedang berjalan bersama mengunjungi pameran ini."
+    show kana at char_left with dissolve
+    show fio at char_center with dissolve
+    show freya at char_right with dissolve
+    show fio_side at left with dissolve
+    fio "Sini-sini, nih hasil karya junior-juniorku."
+    hide fio_side with dissolve
+    show freya_side at left with dissolve
+    freya "Wah bagus baguuuus! Ayo muter-muter mau liat semua."
+    hide freya_side with dissolve
+    show fio_side at left with dissolve
+    fio "Kamu mau ikut juga gak? \n*nunjuk Kana*"
+    hide fio_side with dissolve
+    show kana_side at left with dissolve
+    kana "Boleh deh, mauuuu."
+    hide kana_side with dissolve
+    show fio_side at left with dissolve
+    fio "Aku harus cari punya [mcname] sama Si Meameo itu. Dipajang sebelah mana punya mereka ya?"
+    hide fio_side with dissolve
+    "{size=-5}Freya & Kana{/size}" "Meameo?"
+    show fio_side at left with dissolve
+    fio "Oh itu temen aku. Kayaknya kalian ketemu deh pas di cafe. Kalian lupa kali."
+    scene black with dissolve
+    # Harusnya BG Hall
+    scene depan kampus with dissolve
+    "Setelah berkeliling"
+    show kana at char_left with dissolve
+    show fio at char_center with dissolve
+    show freya at char_right with dissolve
+    show kana_side at left with dissolve
+    kana "YANG MULIA PIARAAN!!!"
+    hide kana_side with dissolve
+    show freya_side at left with dissolve
+    freya "Kaget, Kana! Apa sih tiba-tiba teriak gitu."
+    hide freya_side with dissolve
+    show kana_side at left with dissolve
+    kana "Ini!! Ini!!! Style gambarnya, gak salah lagi! Ini Yang Mulia Piaraan. Aku suka banget style dia, aku ada beberapa koleksi gambar anime buatan orang ini!"
+    kana "Dia masuk DKV kampus kita? OMG OMG, aku harus kenal!"
+    hide kana_side with dissolve
+    show freya_side at left with dissolve
+    freya "Kana, tenang. Tahan aura wibumu. Ini di tempat umum."
+    hide freya_side with dissolve
+    show kana_side at left with dissolve
+    kana "Uhuk… Ehem… Iya makasih, Fre"
+    hide kana_side with dissolve
+    show fio_side at left with dissolve
+    fio "Ah! Ini dia gambar Si Meameo itu"
+    hide fio_side with dissolve
+    show kana_side at left with dissolve
+    kana "Hah? Kak Fiony, ini temen kakak yang dicari dari tadi?"
+    hide kana_side with dissolve
+    show fio_side at left with dissolve
+    fio "Iya, nih gambarnya sebelahan ternyata. Ini [mcname], ini Pia."
+    hide fio_side with dissolve
+    show kana_side at left with dissolve
+    kana "Kak! Kenalin aku sama yang gambar ini!!"
+    hide kana_side with dissolve
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
