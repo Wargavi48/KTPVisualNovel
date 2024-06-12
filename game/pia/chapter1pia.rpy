@@ -796,10 +796,10 @@ label chapter1piamakanmall:
     scene depan kampus with dissolve
     mcname "*Pia pun tanpa sadar menyenderkan kepalanya di pundak kanan [mcname]*"
     "Tak terasa, waktu pun sudah beranjak sore. [mcname] dan Pia kembali ke fakultasnya untuk memasuki kelas yang dimulai sore itu."
+    $ quick_menu = False
+    stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
-    show text "{color=#FFF}CHAPTER II{/color}"
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
-    jump credits
+    jump chapter2piabegin
 
 
