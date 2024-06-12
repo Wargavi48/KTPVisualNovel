@@ -8,6 +8,7 @@ label chapter2piabegin:
     show dosen at dosen_center with dissolve
     show dosen_side at left with dissolve
     $ dosen_name = "Dosen Seni"
+    $ quick_menu = True
     dosen "Ya, ujiannya adalah menggambar teman kalian."
     hide dosen_side at left with dissolve
     "Mahasiswa/i" "Heeeeeee, waduh bu"
@@ -47,10 +48,12 @@ label chapter2piabegin:
     hide pia_side_sad with dissolve
     "Mahasiswa/i" "Hahahahahahahaha"
     "Semua maba berpindah posisi berhadapan dengan pasangan yang sudah dipilih oleh Bu Dosen."
+    $ quick_menu = False
     scene black with dissolve
     scene kelas with dissolve
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ quick_menu = True
     pia "HAI [mcname]! HUEHEHEHEH"
     hide pia_side with dissolve
     mcname "Apalah Pia Pia ini"
@@ -64,9 +67,11 @@ label chapter2piabegin:
     hide pia_side_angry with dissolve
     hide pia_angry with dissolve
     "Mereka pun bergantian setiap 15 menit untuk saling menggambar pasangannya tersebut."
+    $ quick_menu = False
     scene black with dissolve
     scene kelas with dissolve
     show pia at pia_near with dissolve
+    $ quick_menu = True
     mcname "*Sedang menggoreskan kuas di atas canvasnya sambil memandang Pia.*"
     stop music fadeout 1.0
     play music "audio/BGM_Romance Pia Kamar.mp3" fadein 1.0
@@ -86,15 +91,14 @@ label chapter2piabegin:
     mcname "Lah sabar, baru sketch weh."
     show pia_side_angry at left with dissolve
     pia "*Huft*"
+    $ quick_menu = False
+    stop music fadeout 1.0
+    jump startPiaGame
+
+
+label chapter2piaaftergame:
+    stop music fadeout 1.0
+    scene black with dissolve
+    "Mini Game Selesai"
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
-
-
-# label chapter2pia2:
-#     "Selesai ujian"
-#     $ renpy.block_rollback()
-#     $ quick_menu = False 
-#     scene black with dissolve
-#     show text "{color=#FFF}MINI GAME{/color}" with Pause(1.5) 
-#     scene black with dissolve
-#     jump startPiaGame
