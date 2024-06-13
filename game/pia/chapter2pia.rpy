@@ -180,5 +180,31 @@ label chapter2piaaftergame:
     show kana_side at left with dissolve
     kana "Kak! Kenalin aku sama yang gambar ini!!"
     hide kana_side with dissolve
+    show fio_side at left with dissolve
+    fio "Pia?"
+    fio "Ahaha oke aman. Orangnya lagi gak ada. Kapan-kapan aku kenalin, ya."
+    hide fio_side with dissolve
+    scene black with dissolve
+    # Harusnya BG Hall
+    scene depan kampus with dissolve
+    "Akhirnya mereka bertiga pun pergi setelah berkeliling melihat hasil karya anak-anak DKV"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}DITEMPAT LAIN{/color}" with Pause(2.0)
+    scene kantin with dissolve
+    play music "audio/bgm_kantin.mp3" fadein 1.0 
+    "(Suara notif berkali kali)"
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Weh [mcname]!!! Cepio ngirim foto dia selfie sama gambar kita!!!!"
+    nvl clear
+    fio_nvl "P"
+    fio_nvl "P"
+    fio_nvl "P"
+    fio_nvl "P"
+    fio_nvl "P"
+    fio_nvl "P"
+    fio_nvl "{image=cepio selfie.png}"
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits

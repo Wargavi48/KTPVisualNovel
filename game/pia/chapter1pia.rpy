@@ -35,8 +35,8 @@ label chapter1pia:
     pia "Eh maap, Kak. Ketabrak."
     pia "Gak apa-apa kan? Lagi buru-buru."
     pia "Maaf, ya."
-    scene pia tabrakan normal with dissolve
     $ quick_menu = False
+    scene pia tabrakan normal with dissolve
     menu:
         "Sikap Kamu"
         "Marahin":
@@ -438,11 +438,15 @@ label chapter1piajalantanpapio:
     pia "Lu kata gue anak kecil, heh?"
     hide pia_side_angry with dissolve
     mcname "Ahahahahaha"
+    $ quick_menu = False
+    scene black with dissolve
     play sound "audio/tabrakan.mp3"
     "*Orang random nabrak Pia*"
+    scene mall temp with dissolve
     show pia_sad at pia_near with dissolve
     hide pia_angry
     show pia_side_sad at left with dissolve
+    $ quick_menu = True
     pia "Maaf, Pak"
     hide pia_side_sad with dissolve
     "*Orang tersebut dengan tatapan sinis langsung pergi*"
@@ -761,6 +765,8 @@ label chapter1piamakanmall:
     # Harusnya BG Sawah
     scene depan kampus with dissolve
     # BGM Sawah
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Sampai akhirnya mereka masuk ke kawasan fakultas pertanian dan perhutanan"
     "Saat berjalan berdua"
     pia "Hmmm..hmmmmm\n*bergumam*"
@@ -791,9 +797,13 @@ label chapter1piamakanmall:
     # Harusnya ada acapella pia kalo gak ya bgm aja dah wkwkw
     pia "*Tiba tiba mulai bernyanyi lagu yang sedang didengarkan.*"
     mcname "{i}Woaaaa suara Pia bagus juga ternyata{/i}"
+    $ quick_menu = False
     scene black with dissolve
+    $ quick_menu = True
     "[mcname] memejamkan mata menikmati alunan suara Pia yang sedang bernyanyi"
+    $ quick_menu = False
     scene depan kampus with dissolve
+    $ quick_menu = True
     mcname "*Pia pun tanpa sadar menyenderkan kepalanya di pundak kanan [mcname]*"
     "Tak terasa, waktu pun sudah beranjak sore. [mcname] dan Pia kembali ke fakultasnya untuk memasuki kelas yang dimulai sore itu."
     $ quick_menu = False
