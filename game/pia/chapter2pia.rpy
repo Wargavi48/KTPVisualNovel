@@ -258,6 +258,51 @@ label chapter2piaaftergame:
     "[mcname], Pia, dan Fiony pun berbincang panjang lebar sampai sore hari dan memutuskan untuk mengakhiri hari itu dan pulang."
     scene black with dissolve
     show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
-    show text "{color=#FFF}Chapter 2 Arc 2{/color}" with Pause(2.0)
+    scene kelas with dissolve 
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
+    dosen "--jadi, persiapkan diri kalian. Mulai besok masuk minggu UTS, belajar dan asah skill kalian. Istirahat yang cukup. Semoga hasilnya memuaskan, ya."
+    "Mahasiswa/i" "Baik buuuu"
+    scene black with dissolve
+    scene kelas with dissolve
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Weeeeh besok udah mulai UTS. Tugas menggambar bebas kamu udah selese, [mcname]?"
+    hide pia_side with dissolve
+    mcname "Belom nih. Stuck gak dapet ide mau gambar apa. Kamu udah, Pi?"
+    show pia_side at left with dissolve
+    pia "Udah jadi dikit sih, hehehe."
+    pia "Aku tuh gasuka nunda pekerjaan, mau cepet selese pokoknya."
+    hide pia_side with dissolve
+    mcname "Mana liat gambarnya?"
+    show pia_side at left with dissolve
+    pia "Gaboleeeee weeeeeks."
+    hide pia_side with dissolve
+    mcname "Dih"
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}Keesokan Harinya{/color}"
+    # Harusnya BG Hall
+    scene depan kampus with dissolve
+    # Harusnya BGM Hall
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    show feni at char_center with dissolve
+    show feni_side at left with dissolve
+    feni "Flyernya kakak\n*sambil bagiin flyer*"
+    hide feni_side with dissolve
+    mcname "Oh ah. Makasih, kak"
+    mcname "{i}Flyer apa ini?{/i}"
+    "[mcname] melihat ada 3 flyer yang dibagikan ke orang yang lewat"
+    "Flyer 1, acara jejepangan yang akan berlangsung beberapa bulan lagi\nFlyer 2, recruitment anggota club jejepangan\nFlyer 3, recruitment anggota idol dari club jejepangan"
+    mcname "Simpen dulu deh. Siapa tau temen ada yg butuh."
+    mcname "Saatnya ngerjain tugas gambar. Minggu ini dikumpulin buat UTS. Ayo semangat akuuuuu!!!"
+    mcname "Ke rooftop, ah. Nyari inspirasi gambar."
+    scene black with dissolve
+    mcname "Eh, udah ada orang di rooftop ya…"
+    mcname "Gak jadi ke rooftop deh"
+    "*denger suara lagu (migikata)"
+    # Harusnya BG Rooftop
+    scene depan kampus with dissolve
+    
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
