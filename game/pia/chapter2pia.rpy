@@ -198,6 +198,7 @@ label chapter2piaaftergame:
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
     pia "Weh [mcname]!!! Cepio ngirim foto dia selfie sama gambar kita!!!!"
+    hide pia_side with dissolve
     nvl clear
     fio_nvl "P"
     fio_nvl "P"
@@ -206,5 +207,57 @@ label chapter2piaaftergame:
     fio_nvl "P"
     fio_nvl "P"
     fio_nvl "{image=cepio selfie.png}"
+    mcname "Wah, iya. Aku juga baru liat di grup nih, ahaha."
+    mcname "Mau nyusulin ke sana, gak?"
+    show pia_side at left with dissolve
+    pia "Makanan aku baru sampe weh, baru 1 suap! Lagian gak ah, aku maluuuuu."
+    hide pia_side with dissolve
+    mcname "Dih kok gitu, inget kata Pak Dosen. \"BANGGALAH DENGAN KARYA KALIAN SENDIRI\"\n*niru gaya bicara dan gerakan bu dosen*"
+    show pia_side at left with dissolve
+    pia "Ahahahaha iya iya iya. Nanti aja abis ini"
+    hide pia_side with dissolve
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    # Harusnya BG Hall
+    scene depan kampus with dissolve
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    show pia at pia_near_right with dissolve
+    show fio at char_near_left with dissolve
+    show pia_side at left with dissolve
+    pia "CEPIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Emang ya."
+    fio "Kalo gak tereak bukan Meameo"
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Apalah Cepio ini."
+    hide pia_side with dissolve
+    mcname "Ahahahahaha"
+    show fio_side at left with dissolve
+    fio "Ih tadi ada temenku yang mau kenalan sama kamu pas liat gambar kamu, tau"
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Oh iya, kah? Mana orangnya?"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Telaaat"
+    fio "Udah pulang mereka"
+    hide fio_side with dissolve
+    "{size=-5}[mcname] & Pia{/size}" "Yaaaaaaaaah"
+    show pio_side at left with dissolve
+    pio "Nanti aku kenalin deh, ya"
+    hide pio_side at left with dissolve
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene depan kampus with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname], Pia, dan Fiony pun berbincang panjang lebar sampai sore hari dan memutuskan untuk mengakhiri hari itu dan pulang."
+    scene black with dissolve
+    show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
+    show text "{color=#FFF}Chapter 2 Arc 2{/color}" with Pause(2.0)
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
