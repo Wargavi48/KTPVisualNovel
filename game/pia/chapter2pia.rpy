@@ -301,8 +301,285 @@ label chapter2piaaftergame:
     mcname "Eh, udah ada orang di rooftop ya…"
     mcname "Gak jadi ke rooftop deh"
     "*denger suara lagu (migikata)"
+    mcname "Hmm ngintip dikit kali, ya? Pengen liat siapa."
+    mcname "*buka pintu ke rooftop*"
     # Harusnya BG Rooftop
     scene depan kampus with dissolve
-    
+    mcname "Woaaa...."
+    mcname "P-Pia............."
+    show pia_shy at pia_near with dissolve
+    show pia_side_shy at left with dissolve
+    pia "Kyaaaa...eh!!!! [mcname]!!!!!! NGAPAIN KAMU!?\n*blush*"
+    hide pia_side_shy with dissolve
+    mcname "Err....maaf ganggu. Aku lagi nyari inspirasi gambar aja sih, hehe."
+    show pia_side_shy at left with dissolve
+    pia "Udah lama kamu di situ????? Kamu gak liat kan, aku lagi ngapain disini??"
+    hide pia_side_shy with dissolve
+    mcname "Ummm...."
+    show pia_side_shy at left with dissolve
+    pia "...."
+    hide pia_side_shy with dissolve
+    mcname "G-gak liat, kok"
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Fuih....good! Yaudah sini atuh gambar. Punya aku udah selese, hehehe."
+    hide pia_side with dissolve
+    mcname "Weeeh... Rajin ya"
+    show pia_side at left with dissolve
+    pia "Ya dong!!"
+    pia "Aku gituuu, aku..aku"
+    hide pia_side with dissolve
+    mcname "Kereeeen!\n*Mulai duduk bersila sebelah Pia sambil membuat sketch gambar pemandangan*"
+    stop music fadeout 1.0
+    play music "audio/BGM_Romance Pia Kamar.mp3" fadein 1.0
+    show pia_side at left with dissolve
+    pia "Umm........[mcname]. Aku mau cerita dong…"
+    hide pia_side with dissolve
+    mcname "Ya, cerita apa Pia?\n*sambil lanjut ngerapihin gambarnya*"
+    hide pia_side with dissolve
+    hide pia_shy with dissolve
+    show pia_side_shy at left with dissolve
+    pia "Aku.... Aku punya mimpi lain selain jadi seniman, hehe."
+    hide pia_side_shy with dissolve
+    mcname "Wih mantap, apa tuh?"
+    show pia_side_shy at left with dissolve
+    pia "Aku mau jadi idol! Aku suka nari, ahahaha"
+    pia "Gak cocok, ya?"
+    hide pia_side_shy with dissolve
+    mcname "Wah gilaaa! Keren banget! Semangat Pia! Kamu pasti bisa!!"
+    show pia_side_shy at left with dissolve
+    pia "Ehehe! Huhuhu jadi deg-deg an.\n*sambil ganti lagu fav pia di HPnya*"
+    hide pia_side_shy with dissolve
+    mcname "Percaya diri aja, Pia! Aku yakin kamu pasti bisa! Joget kamu juga bagus kok tadi"
+    show pia_side_shy at left with dissolve
+    pia "Ehehehe...."
+    hide pia_side_shy with dissolve
+    show pia_angry at pia_near with dissolve
+    show pia_side_angry at left with dissolve
+    pia "EEEEH!!! KAMU NGELIAT AKU JOGET TADI??? KATANYA GAK LIAT! AAAAAAAAAA MALUUUUU!!"
+    hide pia_side_angry with dissolve
+    mcname "Ups.."
+    hide pia_angry with dissolve
+    show pia_side_shy at left with dissolve
+    pia "Huuuuuuuh"
+    pia "Dah lah, maluuuuu"
+    hide pia_side_shy with dissolve
+    mcname "Ngapain malu? Aku yakin kamu bisa jadi idol! Tarian kamu bagus. Suara kamu enak didengar. Kamu juga punya kepribadian yang menyenangkan. Kamu cantik, baik hati,--"
+    show pia_angry at pia_near with dissolve
+    show pia_side_angry at left with dissolve
+    pia "STOOOOOP!!!!!! HEH K-KENAPA JADI MUJI AKU BEGINI!! AKU GA BISA DIGINIIN WEEEH!!"
+    hide pia_side_angry with dissolve
+    hide pia_angry with dissolve
+    mcname "Tapi emang bener, kok! Kamu punya kepribadian yang menurutku cocok jadi inspirasi banyak orang lain diluar sana!"
+    show pia_side_shy at left with dissolve
+    pia "Ummm....."
+    hide pia_side_shy with dissolve
+    mcname "*menatap pia lebih dekat*"
+    mcname "Aku percaya kamu bisa! Wujudin ya!"
+    pia "*Pia dalam hati*"
+    pia "{i}KYAAAAAAAAAAA DEKEEEET BAANGET [mcname]! [mcname]! HUH HAH HUH HAH!{/i}"
+    show pia_side_shy at left with dissolve
+    pia "M-makasih [mcname]! Ehehe aku akan berjuang!"
+    pia "Tapi ya ini kan cuma mimpi."
+    pia "Ketika bangun dari mimpi, ya…"
+    pia "Ngegambar begini deh, haha"
+    hide pia_side shy with dissolve
+    mcname "Aku akan jadi fans pertama kamu! Jadi yang akan terus mendukungmu dari belakang untuk mengejar mimpimu itu!"
+    mcname "Karena...."
+    show pia_side_shy at left with dissolve
+    pia "Wooeee stoooop weh. Udah, cuma mimpi. Aku sekarang udah nyaman begini."
+    $ quick_menu = False
+    menu:
+        "Aksi Kamu"
+        "Ah! Tadi aku dapet flyer ini. *kasih semua flyer* mau ikut gak? ada acara jejepangan beberapa bulan lagi nih. terus itu ada 3 flyer, ada yang recruitment jadi idol juga. mau coba gak?":
+            $ pia_ending_route = "Good Ending"
+            mcname "Ah! Tadi aku dapet flyer ini. *kasih semua flyer* mau ikut gak? ada acara jejepangan beberapa bulan lagi nih. terus itu ada 3 flyer, ada yang recruitment jadi idol juga. mau coba gak"
+            show pia at pia_near with dissolve
+            show pia_side at left with dissolve
+            pia "Wih, apaan nih?"
+            pia "Wah matsuri, ya."
+            pia "Terus…"
+            pia "Ini rekruitmen club, skip."
+            pia "Yang ini…."
+            pia "J-jadi idol??"
+            pia "Wow recruitment jadi idol?"
+            hide pia_side with dissolve
+            mcname "Gimana, mau coba?"
+            show pia_side at left with dissolve
+            pia "Umm… G-gak deh. Biarlah mimpi tetap jadi mimpi, hehe."
+            hide pia_side at left with dissolve
+            jump chapter2piaafterrooftop
+        "Ah! tadi aku dapet flyer ini. *kasih cuma flyer event jejepangan*. nonton yuk nanti!":
+            mcname "ah! tadi aku dapet flyer ini. *kasih cuma flyer event jejepangan*. nonton yuk nanti!"
+            show pia at pia_near with dissolve
+            show pia_side at left with dissolve
+            pia "Menarik, tapi pasti…"
+            pia "Banyak wibu bau bawang, ahahahaha."
+            hide pia_side with dissolve
+            mcname "Nerbener yee lu."
+            mcname "Mau gak? Kalo mau, lesgo beli tiketnya. Nih udah open."
+            show pia_side at left with dissolve
+            pia "Berapaan harganya?"
+            hide pia_side with dissolve
+            mcname "100 ribu pre-salenya. Berarti nanti setelah pre-sale bakal lebih mahal."
+            show pia_side at left with dissolve
+            pia "Walah! Lesgo buruan beli. Keburu abis presalenya. Aku transfer ke kamu sekarang. Buruan beli."
+            hide pia_side with dissolve
+            mcname "Otw!!! Sabar"
+            "*Pembayaran berhasil*"
+            mcname "Dah nih, ya"
+            show pia_side at left with dissolve
+            pia "Lesgoooooo, huahahaha"
+            stop music fadeout
+            scene black with dissolve
+            show text "{color=#FFF}*beberapa bulan kemudian, ada gosip beredar bahwa acara jejepangan tersebut gagal dilaksanakan karena promotor acara kabur membawa uang donatur dan sponsor*{/color}" with Pause(2.0)
+            show text "{color=#FF0000}BAD END{/color}"
+            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            jump credits
+        "Apapun pilihan kamu Pia, aku akan tetap support kamu mau apapun itu.":
+            $ pia_ending_route = "True Ending"
+            mcname "Apapun pilihanmu, Pia, aku akan tetap support kamu. Mau apapun itu."
+            show pia_side_shy at left with dissolve
+            pia "Aww [mcname]"
+            show pia at pia_near with dissolve
+            hide pia_side_shy with dissolve
+            show pia_side at left with dissolve
+            pia "Okeh!! Support aku, ya."
+            pia "Menjadi.."
+            pia "Illustrator handal"
+            pia "Siapa tau kan? Jadi komikus handal terus ke Jepang"
+            pia "Atau jadi ilustrator terkenal di duniaaa huahahahaha"
+            hide pia_side with dissolve
+            mcname "Okeee. Siap, Pia"
+            show pia_side at left with dissolve
+            pia "Ahahahahaha"
+            jump chapter2piaafterrooftop
+
+
+label chapter2piaafterrooftop:
+    "Akhirnya [mcname] duduk disebelah Pia sambil melihat pemandangan dari rooftop melihat jauh kedepan. Lalu menuangkan pemandangan indah itu dalam sebuah lukisan. tugas gambar [mcname] untuk UTS, selesai."
+    stop music fadein 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname] pulang, duduk di meja belajarnya sambil mulai mengeluarkan buku-buku dan catatan materi ujian esok hari.[mcname] fokus bersiap belajar begadang karena besok adalah salah satu ujian mata kuliah tertulis yang paling sulit. Tiba tiba terdengar notifikasi dari handphone [mcname]."
+    play sound "audio/ReceiveText.ogg" 
+    mcname "(...)"
+    play sound "audio/ReceiveText.ogg"
+    mcname "(...)"
+    play sound "audio/ReceiveText.ogg"
+    mcname "Apaan sihh"
+    $ quick_menu = False
+    stop music fadeout 1.0
+    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+    nvl clear 
+    pia_nvl "[mcname]!!!! BUKU MATA KULIAH AKU KETINGGALAN DI KAMPUS"
+    pia_nvl "BESOK UJIAN INI PULA. GIMANA INI WEH!"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "AKU BODOH BANGET LUPA DIBAWA."
+    pia_nvl "MAU NANGIS AJA"
+    mc_nvl "Wow, sabar. Kamu di mana?"
+    pia_nvl "Kosan. Tapi mau nyoba ke kampus, nih."
+    mc_nvl "Mana bisa? Jam 6 sore udah tutup kampus, weh."
+    pia_nvl "MAMPUS GUE!"
+    pia_nvl "GIMANA INI"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    mc_nvl "STOP P"
+    mc_nvl "Sabar, sabar. Mau pinjem buku aku?"
+    pia_nvl "KAMU BELAJARNYA GIMANA?"
+    mc_nvl "Bener juga… Gimana kalo belajar bareng?"
+    pia_nvl "INGFOKAN TEMPAT!! NOW!"
+    mc_nvl "Terserah, mau dimana? Cafe x? atau di mana?"
+    pia_nvl "Yaudah OTW!"
+    stop music fadeout 1.0
+    "[mcname] pun bersiap siap untuk pergi ke cafe"
+    scene black with dissolve
+    show text "{color=#FFF}Beberapa menit kemudian di cafe X *DONATUR Tier2*{/color}" with Pause(2.0)
+    scene cafe with dissolve
+    play music "audio/BGM_Cafe Sore.mp3" fadein 1.0
+    show pia at char_center with dissolve
+    show pia_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    pia "[mcname]! sini!!!"
+    hide pia_side with dissolve
+    hide pia with dissolve
+    show pia at pia_near with dissolve
+    mcname "Hadeeeeeh, nih bukunya"
+    show pia_side at left with dissolve
+    pia "MAKASIH BANGET!!! HUHUHU"
+    pia "KALO GAK ADA KAMU, AKU GATAU HARUS GIMANA. AKU GAMAU NGULANG MATKUL INI"
+    hide pia_side with dissolve
+    mcname "Iya Pia, iya"\
+    show pia_smile at pia_near with dissolve
+    show pia_side_smile at left with dissolve
+    pia "Aku berhutang budi sama kamu!!!"
+    hide pia_smile with dissolve
+    hide pia_side_smile with dissolve
+    mcname "Halah lebay"
+    show pia_side at left with dissolve
+    pia "Karena kamu baik, aku kasih kamu 1 golden tiket ini. Muahahaha\n*insert asset tiket*"
+    hide pia_side with dissolve
+    mcname "Apaan ini?"
+    show pia_side at left with dissolve
+    pia "Pake ini buat mengabulkan 1 permintaan. Apapun, akan kulakukan!"
+    hide pia_side with dissolve
+    mcname "Oke, aku pake sekarang. Sekarang kamu ke depan cafe ini, tereak aku belom mandi seminggu dan aku bangga. NOW!"
+    show pia_side at left with dissolve
+    pia "Eh.."
+    hide pia_side with dissolve
+    show pia_angry at pia_near with dissolve
+    show pia_side_angry at left with dissolve
+    pia "Ehh… jangan gitu dong. Aaah [mcname] maaaah. Yang serius, ih."
+    hide pia_side_angry with dissolve
+    mcname "Lah? Ini serius."
+    show pia_side at left with dissolve
+    pia "Gamau! weeeks"
+    hide pia_side with dissolve
+    mcname "Dih, yaudah. Kusimpen ya. Buat kapan-kapan"
+    hide pia_angry with dissolve
+    show pia_side at left with dissolve
+    pia "Okeh! Saatnya belajar! Ayo!!"
+    "[mcname] dan Pia pun belajar bersama di cafe tersebut sampe larut malam, dan [mcname] pun memutuskan meminjamkan buku tersebut ke Pia"
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+    "[mcname] ngomong sendiri di kosan. Deg degan hari ini ujian tertulis mata kuliah paling susah."
+    mcname "Duhhh. Hari ini ujian tertulis paling susah. Deg deg an, huhu."
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}Sesampainya di kelas{/color}" with Pause(2.0)
+    scene kelas with dissolve
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    "Suasana kelas sepi, semua sibuk belajar dan menghapal. ya, hari ini ujian tertulis mata kuliah xxx."
+    show pia at pia_near with dissolve
+    mcname "Pagi Mbak Pia"
+    show pia_side at left with dissolve
+    pia "Sssst, diem. Komposisi dan elemen dalam warna—"
+    hide pia_side with dissolve
+    mcname "Ahahahahah"
+    hide pia with dissolve
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
+    dosen "Pagi, semua buku dan HP simpan di depan ya. Di atas meja hanya boleh ada alat tulis. Ujian kita mulai 10 menit lagi."
+    "Mahasiswa/i" "Baik buuuu~"
+    stop music fadeout 1.0
+    scene black with dissolve
+    play sound "audio/Alarm.mp3" fadein 1.0
+    show text "{color=#FFF}MINI GAME TIME{/color}" with Pause(2.0)
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits

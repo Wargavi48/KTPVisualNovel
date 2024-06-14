@@ -1,5 +1,5 @@
 define char_test = Transform(zoom=0.5,xalign=-2.0,yalign=-2.0)
-
+define pia_ending_route = ""
 
 
 label chapter1pia:
