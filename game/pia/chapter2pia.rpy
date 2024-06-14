@@ -103,6 +103,8 @@ label chapter2piaaftergame:
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     show dosen at dosen_center with dissolve
     show dosen_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     dosen "Yak! Bisa dikumpulkan ya, tugasnya"
     dosen "Besok akan Ibu pajang semua gambar kalian di lorong gedung ini. Nanti Ibu minta BEM (Badan Eksekutif Mahasiswa) untuk bantuin display dan announce pameran ini untuk umum dan dapat dilihat oleh semua fakultas."
     hide dosen_side with dissolve
@@ -122,6 +124,8 @@ label chapter2piaaftergame:
     scene depan kampus with dissolve
     #  Harusnya BGM Hall
     play music "audio/BGM_Kampus.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Keesokan harinya, semua karya sudah terpajang di sepanjang lorong dan lobby gedung DKV. Banyak sekali Mahasiswa/i dari fakultas lain yang datang untuk sekedar berswafoto atau menikmati hasil karya Maba DKV layaknya mengunjungi pameran seni."
     "Fiony, Freya, dan Kana sedang berjalan bersama mengunjungi pameran ini."
     show kana at char_left with dissolve
@@ -197,6 +201,8 @@ label chapter2piaaftergame:
     "(Suara notif berkali kali)"
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     pia "Weh [mcname]!!! Cepio ngirim foto dia selfie sama gambar kita!!!!"
     hide pia_side with dissolve
     nvl clear
@@ -225,7 +231,7 @@ label chapter2piaaftergame:
     show pia at pia_near_right with dissolve
     show fio at char_near_left with dissolve
     show pia_side at left with dissolve
-    pia "CEPIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
+    pia "CEPIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
     hide pia_side with dissolve
     show fio_side at left with dissolve
     fio "Emang ya."
@@ -246,27 +252,28 @@ label chapter2piaaftergame:
     fio "Udah pulang mereka"
     hide fio_side with dissolve
     "{size=-5}[mcname] & Pia{/size}" "Yaaaaaaaaah"
-    show pio_side at left with dissolve
-    pio "Nanti aku kenalin deh, ya"
-    hide pio_side at left with dissolve
+    show fio_side at left with dissolve
+    fio "Nanti aku kenalin deh, ya"
+    hide fio_side at left with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
     scene depan kampus with dissolve
-    $ renpy.block_rollback()
-    $ quick_menu = True
     "[mcname], Pia, dan Fiony pun berbincang panjang lebar sampai sore hari dan memutuskan untuk mengakhiri hari itu dan pulang."
     scene black with dissolve
     show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
     scene kelas with dissolve 
     show dosen at dosen_center with dissolve
     show dosen_side at left with dissolve
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
     dosen "--jadi, persiapkan diri kalian. Mulai besok masuk minggu UTS, belajar dan asah skill kalian. Istirahat yang cukup. Semoga hasilnya memuaskan, ya."
     "Mahasiswa/i" "Baik buuuu"
     scene black with dissolve
     scene kelas with dissolve
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     pia "Weeeeh besok udah mulai UTS. Tugas menggambar bebas kamu udah selese, [mcname]?"
     hide pia_side with dissolve
     mcname "Belom nih. Stuck gak dapet ide mau gambar apa. Kamu udah, Pi?"
@@ -280,6 +287,7 @@ label chapter2piaaftergame:
     hide pia_side with dissolve
     mcname "Dih"
     stop music fadeout 1.0
+    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}Keesokan Harinya{/color}"
     # Harusnya BG Hall
@@ -288,6 +296,8 @@ label chapter2piaaftergame:
     play music "audio/BGM_Kampus.mp3" fadein 1.0
     show feni at char_center with dissolve
     show feni_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     feni "Flyernya kakak\n*sambil bagiin flyer*"
     hide feni_side with dissolve
     mcname "Oh ah. Makasih, kak"
@@ -297,14 +307,18 @@ label chapter2piaaftergame:
     mcname "Simpen dulu deh. Siapa tau temen ada yg butuh."
     mcname "Saatnya ngerjain tugas gambar. Minggu ini dikumpulin buat UTS. Ayo semangat akuuuuu!!!"
     mcname "Ke rooftop, ah. Nyari inspirasi gambar."
+    $ quick_menu = False
     scene black with dissolve
+    $ quick_menu = True
     mcname "Eh, udah ada orang di rooftop ya…"
     mcname "Gak jadi ke rooftop deh"
     "*denger suara lagu (migikata)"
     mcname "Hmm ngintip dikit kali, ya? Pengen liat siapa."
     mcname "*buka pintu ke rooftop*"
+    $ quick_menu = False
     # Harusnya BG Rooftop
     scene depan kampus with dissolve
+    $ quick_menu = True
     mcname "Woaaa...."
     mcname "P-Pia............."
     show pia_shy at pia_near with dissolve
@@ -430,7 +444,7 @@ label chapter2piaaftergame:
             mcname "Dah nih, ya"
             show pia_side at left with dissolve
             pia "Lesgoooooo, huahahaha"
-            stop music fadeout
+            stop music fadeout 1.0
             scene black with dissolve
             show text "{color=#FFF}*beberapa bulan kemudian, ada gosip beredar bahwa acara jejepangan tersebut gagal dilaksanakan karena promotor acara kabur membawa uang donatur dan sponsor*{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
@@ -458,7 +472,7 @@ label chapter2piaaftergame:
 
 label chapter2piaafterrooftop:
     "Akhirnya [mcname] duduk disebelah Pia sambil melihat pemandangan dari rooftop melihat jauh kedepan. Lalu menuangkan pemandangan indah itu dalam sebuah lukisan. tugas gambar [mcname] untuk UTS, selesai."
-    stop music fadein 1.0
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
     scene mc bedroom with dissolve
@@ -521,7 +535,7 @@ label chapter2piaafterrooftop:
     pia "MAKASIH BANGET!!! HUHUHU"
     pia "KALO GAK ADA KAMU, AKU GATAU HARUS GIMANA. AKU GAMAU NGULANG MATKUL INI"
     hide pia_side with dissolve
-    mcname "Iya Pia, iya"\
+    mcname "Iya Pia, iya"
     show pia_smile at pia_near with dissolve
     show pia_side_smile at left with dissolve
     pia "Aku berhutang budi sama kamu!!!"
@@ -581,5 +595,9 @@ label chapter2piaafterrooftop:
     scene black with dissolve
     play sound "audio/Alarm.mp3" fadein 1.0
     show text "{color=#FFF}MINI GAME TIME{/color}" with Pause(2.0)
+    jump quiz
+    
+label chapter2piaafterquiz:
+    "Sudah Quiz rute Pia"
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits

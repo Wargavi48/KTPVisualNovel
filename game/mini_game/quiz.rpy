@@ -11,6 +11,9 @@ label quiz:
     $ random_questions = select_random_question()
     $ user_score = 0
     $ index = 0
+    scene kelas with dissolve
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+
     
     while index < 10:
         $ user_choice = ""
@@ -42,7 +45,12 @@ label quiz:
 
     if user_score == 100:
         $ all_correct.grant()
-    jump chapter2pia2
+    if route == "kana":
+        jump chapter1kana1
+    elif route == "tana":
+        jump chapter1tana
+    elif route == "pia":
+        jump chapter2piaafterquiz
                 
 
         
