@@ -90,7 +90,7 @@ screen memory_mini_game:
         timer 1.0 action Function(deselect_cards) repeat True # Flips the cards back over 1.0 second after no match was found.
     elif hidden_cards == card_amount:
         # All cards have been matched. We reset the game after 0.5 seconds so the player can play again after the game finished.
-        timer 0.5 action Jump("ending") 
+        timer 0.5 action Jump("chapter2piaaftergame") 
 
     # As an alternative to having a timer that resets the game everytime it has finished, you can use a button of some sort to allow the player to choose if they want to play again or not.
     # Example below.
@@ -122,6 +122,11 @@ default hidden_cards = 0 # Amount of cards that have been hidden from matches.
 default match_found = False # If a match has been found.
 
 label startPiaGame:
+    scene black with dissolve
+    play sound "audio/Alarm.mp3" fadein 1.0
+    show text "{color=#FFF}MINI GAME TIME{/color}" with Pause(2.0)
     $randomize_cards() # Create cards.
+    "Selesaikan mini game untuk menyelesaikan gambar Pia"
+    play music "audio/BGM_Mini Game Pia.mp3" fadein 1.0
     call screen memory_mini_game
-    return
+    

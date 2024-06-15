@@ -49,6 +49,14 @@ default freya_smug = Character("[freya_name]", image="Freya_smug")
 default fio_name = "???"
 default fio = Character("[fio_name]", image="Fio")
 
+# Define Character Fiony
+default feni_name = "???"
+default feni = Character("[feni_name]", image="feni")
+
+# Define dosen chara
+default dosen_name = "Dosen"
+default dosen = Character("[dosen_name]", image="Dosen")
+
 default mahasiswa_c_name = "???"
 default mahasiswa_c = Character("[mahasiswa_c_name]", image="mahasiswa_c")
 
@@ -82,6 +90,11 @@ image side freya_side_smug = "Characters/Freya_side_smug.png"
 # define side fio character
 image side fio_side = "Characters/Fio_side.png"
 
+# define side feni character
+image side feni_side = "Characters/feni_side.png"
+
+image side dosen_side = "Characters/Dosen_side.png"
+
 image side mahasiswa_c_side = "Characters/mahasiswa_c_side.png"
 
 
@@ -95,6 +108,7 @@ define donatur_nvl = Character("[mahasiswa_name]", kind=nvl, callback=Phone_Rece
 define mamah_nvl = Character("Mama", kind=nvl,  callback=Phone_ReceiveSound)
 define papah_nvl = Character("Papa", kind=nvl, callback=Phone_ReceiveSound)
 define pia_nvl = Character("Pia", kind=nvl, callback=Phone_ReceiveSound)
+define fio_nvl = Character("[fio_name]", kind=nvl, callback=Phone_ReceiveSound)
 
 
 

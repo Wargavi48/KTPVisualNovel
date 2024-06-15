@@ -16,7 +16,6 @@ label chapter1kana1:
     $ quick_menu = False
     scene black with Dissolve(2.0)
     play sound "audio/open_door.mp3" fadeout 1.0
-    # show text "{color=#FFF}SFX PINTU DIBUKA{/color}" with Pause(1.0)
     show text "{color=#FFF}MEMASUKI AULA{/color}" with Pause(2.0)
     scene kelas with Dissolve(2.0)
     $ quick_menu = True
@@ -114,7 +113,7 @@ label chapter1kana1:
     mcname "{i}Tapi masih ada energi sih…{/i}"
     # insert cg kana
     $ quick_menu = False
-    scene kana awal with Dissolve(2.0)
+    scene kana awal senyum with Dissolve(2.0)
     mcname "{i}Aduh! Kok aku ga bisa hilangkan senyuman itu dari kepalaku ya?{/i}"
     scene black with dissolve
     scene kelas with Dissolve(2.0)
@@ -153,6 +152,25 @@ label chapter1kana2kos:
     "Pulang dari kampus, [mcname] masih memikirkan kejadian yang dialaminya hari ini"
     mcname "{i}Lumayan capek ya orientasinya{/i}"
     mcname "{i}Ternyata panas banget di Jakarta{/i}"
+    show white:
+        default
+        subpixel True 
+        parallel:
+            Null(0.0, 0.0)
+            'white' with dissolve
+        parallel:
+            ypos 0 alpha 1.0 
+            linear 1.30 ypos 252 alpha 0.7 
+    show white as white2:
+        default
+        subpixel True 
+        parallel:
+            Null(0.0, 0.0)
+            'white' with dissolve
+        parallel:
+            ypos 2080 alpha 1.0 
+            linear 1.30 ypos 1908 alpha 0.7 
+    with Pause(1.40)
     show kana at kana_near with dissolve
     mcname "{i}Aku gak nyangka bisa bertemu sama perempuan sebersinar itu{/i}"
     mcname "{i}Tapi dilihat - lihat, kayanya dia ramah ya{/i}"
@@ -171,7 +189,7 @@ label chapter1kana2Cafe:
     "[mcname] memilih untuk menghabiskan waktu di sebuah cafe. Awalnya cafe itu terasa sepi, tetapi lama - lama cafe tersebut mulai penuh"
     mcname "Wah makin lama, makin rame ya cafe ini. Memang salah satu cafe terkenal sih, kalau kata internet..."
     "Banyak sekali orang yang berlalu lalang. Akan tetapi, ada satu orang yang menarik perhatian [mcname]"
-    show kana at char_placement with dissolve
+    show kana at char_center with dissolve
     "Saat orang itu mendekati pintu cafe, [mcname] pun menyadari bahwa orang itu adalah cewek yang ada di kampus tadi."
     mcname "{i}Loh, itu kan perempuan yang tadi di kampus?{/i}"
     mcname "{i}Kita datang di cafe yang sama{/i}"
@@ -184,12 +202,6 @@ label chapter1kana2Cafe:
     "Reflek, [mcname] pun memalingkan pandangannya"
     mcname "{i}Duh mata kita gak sengaja ketemu pula{/i}"
     mcname "{i}Perempuan itu pun mendekati meja tempat MC berada{/i}"
-    # animasi zoom
-    show kana:
-        subpixel True 
-        ypos -2.0 zoom 0.5 
-        linear 1.00 ypos -6.08 zoom 1.3 
-    with Pause(1.10)
     show kana at kana_near with dissolve
     show kana_side at left with dissolve
     kana "H-halooo, maaf tapi apa kursinya kosong?"
@@ -493,32 +505,39 @@ label chapter1kana2Campus:
     "Dosen pun memasuki ruangan kelas"
     "Kelas pun menjadi tenang dan lebih tertib dari sebelumnya"
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-    "Dosen" "Selamat siang mahasiswa dan mahasiswi sekalian"
-    "Dosen" "Selamat datang di mata kuliah pertama kalian di jenjang perkuliah ini"
-    "Bu Fatimah" "Sebelumnya perkenalkan nama saya Fatimah"
-    "Bu Fatimah" "Disini saya mengajar mata kuliah Teori Politik Internasional, Studi Perang Dan Damai, Strategi Dan Tatakelola Strategis"
-    "Bu Fatimah" "Untuk semester pertama kalian akan mempelajari mata kuliah dasar yaitu Teori Politik Internasional"
-    "Bu Fatimah" "Dengan begitu saya akan langsung ke dalam materi"
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
+    dosen "Selamat siang mahasiswa dan mahasiswi sekalian"
+    dosen "Selamat datang di mata kuliah pertama kalian di jenjang perkuliah ini"
+    $ dosen_name = "Bu Fatimah"
+    dosen "Sebelumnya perkenalkan nama saya Fatimah"
+    dosen "Disini saya mengajar mata kuliah Teori Politik Internasional, Studi Perang Dan Damai, Strategi Dan Tatakelola Strategis"
+    dosen "Untuk semester pertama kalian akan mempelajari mata kuliah dasar yaitu Teori Politik Internasional"
+    dosen "Dengan begitu saya akan langsung ke dalam materi"
     "Suasana kelas pun terasa hening, fokus untuk memperhatikan apa yang dijelaskan oleh Bu Fatimah"
     $ quick_menu = False
-    stop music fadeout 1.0
     scene black with Dissolve(2.0)
     scene kelas with dissolve
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
     $ quick_menu = True
-    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-    "Bu Fatimah" "Baiklah semuanya karena waktu saya sudah habis"
-    "Bu Fatimah" "Maka mata kuliah hari ini sudah selesai"
+    dosen "Baiklah semuanya karena waktu saya sudah habis"
+    dosen "Maka mata kuliah hari ini sudah selesai"
+    hide dosen_side with dissolve
     "Terdengar suara lega dari para mahasiswa"
-
-    "Bu Fatimah" "Tapi sebelum itu"
-    "Bu Fatimah" "Saya akan memberikan tugas kelompok yang berisikan 4 orang"
-    "Bu Fatimah" "Minggu depan di kumpulkan ya!!"
+    show dosen_side at left with dissolve
+    dosen "Tapi sebelum itu"
+    dosen "Saya akan memberikan tugas kelompok yang berisikan 4 orang"
+    dosen "Minggu depan di kumpulkan ya!!"
+    hide dosen_side with dissolve
     "Mendengar hal tersebut, para mahasiswa mengeluarkan suara kekecewaan"
-
-    "Bu Fatimah" "Jadi kelompoknya akan dibagi berdasarkan jajaran tempat duduk kalian saja agar simple dan tidak ada circle diantara kalian semua"
-    "Bu Fatimah" "Lalu gunakan kesempatan ini untuk berkenalan dengan teman - teman sekelas kalian"
-    "Bu Fatimah" "Sekian untuk hari ini"
-    "Bu Fatimah" "Terimakasih banyak"
+    show dosen_side at left with dissolve
+    dosen "Jadi kelompoknya akan dibagi berdasarkan jajaran tempat duduk kalian saja agar simple dan tidak ada circle diantara kalian semua"
+    dosen "Lalu gunakan kesempatan ini untuk berkenalan dengan teman - teman sekelas kalian"
+    dosen "Sekian untuk hari ini"
+    dosen "Terimakasih banyak"
+    hide dosen with dissolve
+    hide dosen_side with dissolve
     mcname "{i}Aduh, satu jajaran!!??{/i}"
     mcname "{i}Tunggu bentar, kalau satu jajar…??,{/i}"
     "*SFX LIRIK KANAN KIRI*"

@@ -4,12 +4,12 @@ label phoneChat:
     nvl clear
     play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
     scene bedroom with dissolve
-    freya_nvl "{size=-5}Eh, guys{/size}"
+    freya_nvl "{size=-5}Eh, guys {color=#0000FF}@All{/color}{/size}"
     freya_nvl "{size=-5}Buat tema, udah fix kan jadinya?{/size}"
     freya_nvl "{size=-5}Mau yang udah kita tentuin sebelumnya?{/size}"
     kana_nvl "{size=-5}Kalau dari aku sih, setuju{/size}"
     kana_nvl "{image=setuju.jpg}"
-    mcname "{i}Hm…? Lucu juga emote yang dipake Kana ini{/i}"
+    mcname "{i}Hm…? Lucu juga meme yang dipake Kana ini{/i}"
     freya_nvl "{size=-5}Kita mau kerja kelompok kapan, nih?{/size}"
     freya_nvl "{size=-5}Ini kan buat minggu depan.{/size}"
     freya_nvl "{size=-5}Jadi, kita punya waktu kurang lebih 5 harian.{/size}"

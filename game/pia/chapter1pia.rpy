@@ -1,5 +1,5 @@
 define char_test = Transform(zoom=0.5,xalign=-2.0,yalign=-2.0)
-
+define pia_ending_route = ""
 
 
 label chapter1pia:
@@ -15,19 +15,32 @@ label chapter1pia:
     scene black with dissolve
     play sound "audio/tabrakan.mp3"
     show text "{color=#FFF}BRUKKKKK{/color}" with Pause(2.0)
-    scene depan kampus with dissolve
-    show pia_shy at pia_near with dissolve
-    show pia_side_shy at left with dissolve
+    scene pia tabrakan normal    
     play music "audio/BGM_Kampus.mp3" fadein 1.0
+    window auto hide
+    camera:
+        subpixel True xpos -1089 zoom 1.96
+        ypos -990 
+    "..."
+    window auto hide
+    camera: 
+        linear 7.00 ypos -270 
+    with Pause(9.10)
+    window auto show
+    camera:
+        subpixel True pos (0, 0) zoom 1.0
+    with Pause(2.10)
+    scene pia tabrakan ngomong with dissolve    
     $ quick_menu = True
     pia "Eh maap, Kak. Ketabrak."
     pia "Gak apa-apa kan? Lagi buru-buru."
     pia "Maaf, ya."
-    hide pia_side_shy with dissolve
     $ quick_menu = False
+    scene pia tabrakan normal with dissolve
     menu:
         "Sikap Kamu"
         "Marahin":
+            scene depan kampus with dissolve
             mcname "EH LAIN KALI LIAT-LIAT DONG"
             mcname "PAKE MATA!!!!!!"
             mcname "LAGI JALAN SANTAI SANTAI MALAH DITABRAK."
@@ -44,6 +57,8 @@ label chapter1pia:
             play music "audio/Dreamcatcher.mp3" fadein 1.0
             jump credits    
         "Nasehatin":
+            scene depan kampus with dissolve
+            show pia_shy at pia_near with dissolve
             mcname "Iya gapapa, kok"
             mcname "Tapi lain kali ga usah lari-lari, ya."
             mcname "Kalau kata Mamahku tuh-"
@@ -68,10 +83,9 @@ label chapter1pia:
             mcname "Ah gak papa kok"
             mcname "Hehe"
             mcname "Maaf juga, aku ngelamun di tengah jalan."
-            show pia_side_shy at left with dissolve
+            scene pia tabrakan ngomong with dissolve
             pia "Hehe, oke. Maaf, byeeee"
-            hide pia_side_shy with dissolve
-            hide pia_shy with dissolve
+            scene depan kampus with dissolve
             jump chapter1piacarajalan
             stop music fadeout 1.0
             scene black with dissolve
@@ -424,11 +438,15 @@ label chapter1piajalantanpapio:
     pia "Lu kata gue anak kecil, heh?"
     hide pia_side_angry with dissolve
     mcname "Ahahahahaha"
+    $ quick_menu = False
+    scene black with dissolve
     play sound "audio/tabrakan.mp3"
     "*Orang random nabrak Pia*"
+    scene mall temp with dissolve
     show pia_sad at pia_near with dissolve
     hide pia_angry
     show pia_side_sad at left with dissolve
+    $ quick_menu = True
     pia "Maaf, Pak"
     hide pia_side_sad with dissolve
     "*Orang tersebut dengan tatapan sinis langsung pergi*"
@@ -682,8 +700,116 @@ label chapter1piamakanmall:
     show pia_side_shy at left with dissolve
     pia "Oke, satuu..dua....tigaaaa"
     play sound "audio/camera.mp3"
+    hide pia_side_shy with dissolve
     "Fiony //ngeliatin dari jauh sambil senyum-senyum \n*ngeledek senyum nyindir pia*"
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
-    jump credits
+    show pia_angry at pia_near with dissolve
+    show pia_side_angry at left with dissolve
+    pia "CEPIOOOOOOOO!!"
+    hide pia
+    hide pia_shy
+    hide pia_side_angry with dissolve
+    hide pia_angry with dissolve
+    show pia at pia_near_right with dissolve
+    show fio at char_near_left with dissolve
+    show fio_side at left with dissolve
+    fio "Ahahaha udah makannya? Seru tuh foto fotonya \n*sikut sikut Pia*"
+    hide fio_side with dissolve
+    show pia_shy at pia_near_right with dissolve
+    show pia_side_shy at left with dissolve
+    pia "Ehehehehe"
+    hide pia_shy with dissolve
+    hide pia_side_shy with dissolve
+    show fio_side at left with dissolve
+    fio "Kuy lah balik, takut kemaleman. Udah aku bayarin juga tadi makanannya ya ini."
+    hide fio_side with dissolve
+    mcname "Eh lah udah dibayar? Waduh aku transfer ke Cepio ya!"
+    show fio_side at left with dissolve
+    fio "Gausah. Ngeliat juniorku SENYUM-SENYUM sendiri udah cukup puas kok\n*senyum ke pia*"
+    hide fio_side with dissolve
+    show pia_shy at pia_near_right with dissolve
+    show pia_side_shy at left with dissolve
+    pia "Ih Cepio maaaaaaaah. Ngeledekin muluuuuu"
+    hide pia_side_shy with dissolve
+    "Fiony pun berpisah dengan Pia dan [mcname]. Kemudian mereka pun pulang ke tempat tinggal masing-masing."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Huaaaaa capeeeeek\n*langsung rebahan di kasur*"
+    mcname "Seru juga hari ini, hehehe."
+    mcname "Yosshaaaa! Saatnya bersih-bersih terus rapihin peralatan yang dibeli tadi, terus tiduuur."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene kelas with dissolve
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    "mata kuliah nirmana dimulai, [mcname] dan Pia pun menggunakan peralatan yang dibelinya kemarin"
+    scene black with dissolve
+    show text "{color=#FFF}3 jam kemudian, setelah selesai mata kuliah{/color}" with Pause(2.0)
+    scene kelas with dissolve
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "[mcname]!!!!!! MUMET GUEH! AYO KELUAR. REFRESHING, KE MANA KEK, MUTERIN KAMPUS. SORE MASIH ADA KELAS LAGI, JADI GA BISA JAUH-JAUH."
+    hide pia_side with dissolve
+    mcname "Lesgo, sama. Pusing weh"
+    scene black with dissolve
+    # Harusnya BG Hall
+    scene depan kampus with dissolve
+    # BGM Hall
+    "Pia dan [mcname] pun berkeliling di kampus tanpa arah dan tujuan"
+    scene black with dissolve
+    # Harusnya BG Sawah
+    scene depan kampus with dissolve
+    # BGM Sawah
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Sampai akhirnya mereka masuk ke kawasan fakultas pertanian dan perhutanan"
+    "Saat berjalan berdua"
+    pia "Hmmm..hmmmmm\n*bergumam*"
+    mcname "*berjalan di sebelah Pia sambil sesekali memejamkan mata menikmati suara Pia yang sedang humming*"
+    # Harusnya ada humming migikata
+    show pia at pia_near with dissolve
+    mcname "Lagu apa, Pia?"
+    show pia_side at left with dissolve
+    pia "Oh, ini judulnya Migikata."
+    hide pia_side with dissolve
+    mcname "Hmm, hummingmu bagus Pia. Merdu banget, hehe."
+    show pia_shy at pia_near with dissolve
+    show pia_side_shy at left with dissolve
+    pia "A-apaan sih!"
+    pia "Huft~"
+    hide pia_shy with dissolve
+    hide pia_side_shy with dissolve
+    show pia_side at left with dissolve
+    pia "Eh, ke situ yuk. Duduk bawah pohon"
+    hide pia_side with dissolve
+    mcname "Kuy!!"
+    "[mcname] dan Pia pun duduk di bawah pohon rindang dekat persawahan Pia mengeluarkan HP dan earphone cablenya"
+    show pia_side at left with dissolve
+    pia "Mau denger lagu yang tadi aku nyanyiin nadanya? Nih."
+    hide pia_side with dissolve
+    play music "audio/migikata-off.mp3" fadein 1.0
+    "tiba - tiba"
+    # Harusnya ada acapella pia kalo gak ya bgm aja dah wkwkw
+    pia "*Tiba tiba mulai bernyanyi lagu yang sedang didengarkan.*"
+    mcname "{i}Woaaaa suara Pia bagus juga ternyata{/i}"
+    $ quick_menu = False
+    scene black with dissolve
+    $ quick_menu = True
+    "[mcname] memejamkan mata menikmati alunan suara Pia yang sedang bernyanyi"
+    $ quick_menu = False
+    scene depan kampus with dissolve
+    $ quick_menu = True
+    mcname "*Pia pun tanpa sadar menyenderkan kepalanya di pundak kanan [mcname]*"
+    "Tak terasa, waktu pun sudah beranjak sore. [mcname] dan Pia kembali ke fakultasnya untuk memasuki kelas yang dimulai sore itu."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
+    jump chapter2piabegin
 
 

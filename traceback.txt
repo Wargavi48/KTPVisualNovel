@@ -1,32 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/pia/chapter1pia.rpy", line 638, in script
-    show pia_nyembur at pia_center with dissolve
-  File "game/pia/chapter1pia.rpy", line 638, in <module>
-    show pia_nyembur at pia_center with dissolve
-NameError: name 'pia_center' is not defined
+  File "game/pia/chapter2pia.rpy", line 250, in script
+    show fio_side at left with dissolve
+Exception: Sayer 'pio' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/pia/chapter1pia.rpy", line 638, in script
-    show pia_nyembur at pia_center with dissolve
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1113, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1072, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1072, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/pia/chapter1pia.rpy", line 638, in <module>
-    show pia_nyembur at pia_center with dissolve
-NameError: name 'pia_center' is not defined
+  File "game/pia/chapter2pia.rpy", line 250, in script
+    show fio_side at left with dissolve
+  File "D:\Alief\Project\Fanbase\Games\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\Alief\Project\Fanbase\Games\renpy-8.2.1-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "D:\Alief\Project\Fanbase\Games\renpy-8.2.1-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'pio' is not defined.
 
-Windows-10-10.0.19045 AMD64
-Ren'Py 8.2.0.24012702
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.1.24030407
 WGV:Dreamcatcher 
-Sat Jun  8 09:27:52 2024
+Fri Jun 14 15:04:21 2024
