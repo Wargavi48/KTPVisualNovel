@@ -702,5 +702,73 @@ label chapter2piaafterquiz:
     $ renpy.block_rollback()
     $ quick_menu = True
     "*Pia sedang menari diiringi lagu idol di HPnya yang diputar agak keras*"
+    mcname "*Duduk bersila di belakang Pia*"
+    "Pia menoleh ke belakang"
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Hueeeh kaget!! Udah di sini aja, diem-diem gak ada suara! Bikin jantungan aja"
+    hide pia_side with dissolve
+    mcname "Mana ada? Kamu aja yang terlalu serius sampe gak perhatiin sekitar, haha"
+    show pia_side at left with dissolve
+    pia "Hehehe\n*ikut duduk bersila sebelah [mcname]*"
+    hide pia_side at left with dissolve
+    stop music fadeout 1.0
+    play music "audio/BGM_Funny Slow Cute.mp3" fadein 1.0
+    mcname "Yang Mulia Piaraan"
+    "*Pia menyembur minumannya*"
+    show pia_side at left with dissolve
+    pia "Uhuk uhuk hoooeeek guuuh uhuk"
+    pia "KOK KAMU TAU PEN NAME AKU, TAU DARIMANA?"
+    hide pia_side with dissolve
+    mcname "Jadi itu beneran kamu? Ahahaha."
+    show pia_side at left with dissolve
+    pia "Eh tau darimana????"
+    hide pia_side with dissolve
+    mcname "Tadi di kantin aku ketemu fans kamu nyariin kamu tuh bareng cepio"
+    show pia_side at left with dissolve
+    pia "Heeeeee"
+    hide pia_side with dissolve
+    mcname "Tapi itu nama apa, dah?"
+    show pia_side at left with dissolve
+    pia "Ahahaha itu pen name aku kalo gambar. Aku sering gambar gitu kan, diupload di medsos. Nah nama akun gambar aku tuh, Yang Mulia Piaraan."
+    hide pia_side with dissolve
+    mcname "Owalah gitu toh"
+    show pia_side at left with dissolve
+    pia "Aku gak nyangka aja ada yg kenal nama itu dan tau. Aku gak nyembunyiin, sih. Cuma malu aja, pen name aku kayak gitu. Haha"
+    hide pia_side with dissolve
+    mcname "Lah lagian. Kenapa Yang Mulia Piaraan, dah?"
+    show pia_side at left with dissolve
+    pia "Ya maap sih, dulu masih wibu wibunya asal ngasih nama. Eh taunya udah nyaman, hahaha."
+    pia "Jadi dulu tuh aku suka gambar fanart anime, manga, gitu-gitu lah. Terus ada beberapa yang aku jual juga di online jadi merch. Mungkin orang itu salah satu yang beli"
+    hide pia_side with dissolve
+    mcname "Oooh gitu toh. Tadi sempet nanyain mau join club jepang, gak?"
+    show pia_side at left with dissolve
+    pia "Err… engga deh. Aku mau lonewolf. Udah gak terlalu jejepangan banget"
+    hide pia_side with dissolve
+    mcname "Hmmm.... gitu"
+    show pia_side at left with dissolve
+    pia "Emang kamu ngerti jejepangan?"
+    hide pia_side with dissolve
+    mcname "Beuh, perlu aku jelasin sinopsis 3 episode pertama setiap anime yang airing season ini gak nih?"
+    show pia_side at left with dissolve
+    pia "IH WIBUUUU"
+    hide pia_side with dissolve
+    mcname "Ahahahahah"
+    show pia_side at left with dissolve
+    pia "Tapi bener deh, aku tuh gatau kenapa jadi agak kurang buat bersosialisasi gitu... Tapi di sisi lain, aku mau punya banyak temen dan kenal orang baru. Tapi males aja memulai"
+    hide pia_side with dissolve
+    mcname "Wakaru Pia, wakaru…"
+    show pia_side at left with dissolve
+    pia "Aaaah, jangan wibuuu :((("
+    hide pia_side with dissolve
+    mcname "Ahahaha becandaa~ Tapi bener deh, kamu gamau join? Kalo kamu join, aku juga deh. Gimana?"
+    show pia_side at left with dissolve
+    pia "Yeuuu, itu mah emang kamu aja kan yang mau."
+    hide pia_side with dissolve
+    mcname "Gak gituuuuu"
+    "[mcname] dan Pia pun banyak bercerita sambil menikmati cemilan di rooftop"
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
