@@ -665,7 +665,7 @@ label chapter2piaafterquiz:
     hide kana_side with dissolve
     show freya_side at left with dissolve
     freya "Hadeeeh, Naaaaay."
-    hide freya with dissolve
+    hide freya_side with dissolve
     mcname "???"
     show kana_side at left with dissolve
     kana "Eh, Kak Fiony, bukan ini orangnya?"
@@ -676,6 +676,7 @@ label chapter2piaafterquiz:
     mcname "Whaaat. Cepiooooo"
     show fio_side at left with dissolve
     fio "Ahahaha, gini [mcname]. Ini Kana mau banget ketemu Pia. Dia suka banget gambarnya Pia"
+    hide fio_side with dissolve
     show kana_side at left with dissolve
     kana "Iya! Aku mau ajak dia join club jejepangan. Kira-kira mau gak, ya?"
     hide kana_side with dissolve
@@ -683,6 +684,7 @@ label chapter2piaafterquiz:
     mcname "Pas itu sempet sih, aku kasih liat flyer yang dibagiin. Tapi kayaknya dia gak terlalu tertarik."
     show kana_side at left with dissolve
     kana "Sasuga Yang Mulia Piaraan, butuh usaha lebih buat rekrut dia!"
+    hide kana_side with dissolve
     mcname "Yang Mulia Piaraan?"
     show kana_side at left with dissolve
     kana "Oh ah, enggak enggak. Nanti aku ajak Tono buat rekrut dia. Harus bisa pokoknya"
@@ -690,12 +692,15 @@ label chapter2piaafterquiz:
     "{size=-5}Freya & Fiony{/size}" "Semangat Naay~"
     mcname "Ahahaha nanti aku coba tanyain lagi deh ya, semoga berubah pikiran. Aku pergi dulu ya. Duluan semua~"
     "{size=-8}Freya, Fiony, Kana{/size}" "Iya, byeee~"
+    $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}Di Rooftop{/color}" with Pause(2.0)
     # Harusnya BG Rooftop
     scene depan kampus with dissolve
     play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "*Pia sedang menari diiringi lagu idol di HPnya yang diputar agak keras*"
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
