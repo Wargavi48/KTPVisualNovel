@@ -613,14 +613,15 @@ label chapter1piamakanmall:
     "Dari meja yang cukup jauh dari tempat [mcname], Pia, dan Fiony duduk…"
     hide pia with dissolve
     hide fio with dissolve
-    $ freya_name = "Freya"
-    show freya at char_left with dissolve
-    show kana at char_right with dissolve
+    $ freya_name = "???"
+    show freya at char_near_left with dissolve
+    show kana at kana_near_right with dissolve
     show freya_side at left with dissolve
     freya "Lah, Fiony? Ngapain kamu di sini?"
     hide freya_side with dissolve
     show fio_side at left with dissolve
     fio "Lah Freya? Sama… mmmm."
+    $ freya_name = "Freya"
     hide fio_side with dissolve
     $ kana_name = "Kana"
     show kana_side at left with dissolve

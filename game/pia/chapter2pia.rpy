@@ -12,6 +12,7 @@ label chapter2piabegin:
     dosen "Ya, ujiannya adalah menggambar teman kalian."
     hide dosen_side at left with dissolve
     "Mahasiswa/i" "Heeeeeee, waduh bu"
+    show dosen_side at left with dissolve
     dosen "Ibu udah buat undiannya, ya. Kita undi nama pasangan gambar kalian"
     dosen "Jadi nanti kalian hadap-hadapan dan gambar teman di depan kalian"
     dosen " Semua karya tugas ini akan dipajang di sepanjang lorong gedung DKV ini, ya! Tunjukan bakat kalian kepada yang lain!"
@@ -118,6 +119,7 @@ label chapter2piaaftergame:
     mcname "Waaaaa malu weh bakal dilihat banyak orang. Kirain cuma buat DKV doang."
     show pia_side at left with dissolve
     pia "Iya weh. Yaudah lah ya"
+    $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
     # Harusnya BG Hall
@@ -128,9 +130,9 @@ label chapter2piaaftergame:
     $ quick_menu = True
     "Keesokan harinya, semua karya sudah terpajang di sepanjang lorong dan lobby gedung DKV. Banyak sekali Mahasiswa/i dari fakultas lain yang datang untuk sekedar berswafoto atau menikmati hasil karya Maba DKV layaknya mengunjungi pameran seni."
     "Fiony, Freya, dan Kana sedang berjalan bersama mengunjungi pameran ini."
-    show kana at char_left with dissolve
-    show fio at char_center with dissolve
-    show freya at char_right with dissolve
+    show kana at kana_near_left_2 with dissolve
+    show freya at freya_near_right with dissolve
+    show fio at fio_near with dissolve
     show fio_side at left with dissolve
     fio "Sini-sini, nih hasil karya junior-juniorku."
     hide fio_side with dissolve
@@ -149,13 +151,15 @@ label chapter2piaaftergame:
     "{size=-5}Freya & Kana{/size}" "Meameo?"
     show fio_side at left with dissolve
     fio "Oh itu temen aku. Kayaknya kalian ketemu deh pas di cafe. Kalian lupa kali."
+    $ quick_menu = False
     scene black with dissolve
     # Harusnya BG Hall
     scene depan kampus with dissolve
+    $ quick_menu = True
     "Setelah berkeliling"
-    show kana at char_left with dissolve
-    show fio at char_center with dissolve
-    show freya at char_right with dissolve
+    show kana at kana_near_left_2 with dissolve
+    show freya at freya_near_right with dissolve
+    show fio at fio_near with dissolve
     show kana_side at left with dissolve
     kana "YANG MULIA PIARAAN!!!"
     hide kana_side with dissolve
@@ -188,9 +192,11 @@ label chapter2piaaftergame:
     fio "Pia?"
     fio "Ahaha oke aman. Orangnya lagi gak ada. Kapan-kapan aku kenalin, ya."
     hide fio_side with dissolve
+    $ quick_menu = False
     scene black with dissolve
     # Harusnya BG Hall
     scene depan kampus with dissolve
+    $ quick_menu = True
     "Akhirnya mereka bertiga pun pergi setelah berkeliling melihat hasil karya anak-anak DKV"
     stop music fadeout 1.0
     $ quick_menu = False
@@ -202,7 +208,6 @@ label chapter2piaaftergame:
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
     $ renpy.block_rollback()
-    $ quick_menu = True
     pia "Weh [mcname]!!! Cepio ngirim foto dia selfie sama gambar kita!!!!"
     hide pia_side with dissolve
     nvl clear
@@ -213,6 +218,7 @@ label chapter2piaaftergame:
     fio_nvl "P"
     fio_nvl "P"
     fio_nvl "{image=cepio selfie.png}"
+    $ quick_menu = True
     mcname "Wah, iya. Aku juga baru liat di grup nih, ahaha."
     mcname "Mau nyusulin ke sana, gak?"
     show pia_side at left with dissolve
@@ -231,6 +237,7 @@ label chapter2piaaftergame:
     show pia at pia_near_right with dissolve
     show fio at char_near_left with dissolve
     show pia_side at left with dissolve
+    $ quick_menu = True
     pia "CEPIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
     hide pia_side with dissolve
     show fio_side at left with dissolve
@@ -598,6 +605,97 @@ label chapter2piaafterrooftop:
     jump quiz
     
 label chapter2piaafterquiz:
-    "Sudah Quiz rute Pia"
+    "Selesai ujian, semua mahasiswa/i mengumpulkan lembar jawaban ke pengawas. Ujian hari itu berakhir"
+    mcname "Hueeeee selesai juga ini ujian.\n*liat kiri kanan*"
+    show pia at pia_near with dissolve
+    pia "...."
+    mcname "Hahahaha gimana? Lancar? Bisa kan jawabnya?"
+    show pia_side at left with dissolve
+    pia "Bisa lah! Yang bener aja, cuma kayak ada yang kurang puas aja weh. Harusnya aku tambahin, blablabla"
+    hide pia_side with dissolve
+    mcname "Pia, sepanjang ujian tadi, anak-anak lain cuma selembar doang, terus dikumpulin, loh. Kamu sampe minta nambah lembar jawaban 2x."
+    mcname "DUA KALI"
+    mcname "Lu ngisi apa bikin AU lu?"
+    show pia_side at left with dissolve
+    pia "Dih, aku tuh harus sempurna! Harus nilai 100!"
+    hide pia_side with dissolve
+    mcname "Kasian Bu Dosen yang meriksa jawaban kamu. Kayak baca novel, hahaha"
+    show pia_side at left with dissolve
+    pia "Iiiiih\n*mukul - mukul [mcname]"
+    hide pia_side with dissolve
+    mcname "Ahahaha, eh hari ini mau ke mana? Pusing gak sih? Mau refreshing gak sih? Huhuhu."
+    show pia_side at left with dissolve
+    pia "Rooftop yuk! Aku nunggu di sana, kamu ke kantin beli cemilan yang banyaaaaak! Nanti kita makan di rooftop."
+    hide pia_side with dissolve
+    mcname "Meeeh, gue yang beli nih?"
+    show pia_side at left with dissolve
+    pia "Aku pake uangku lah, nih. Aku tunggu di rooftop yaaa."
+    hide pia_side with dissolve
+    pia "...bukan masalah uangnya. Aku beli sendiri nih? Huhuhu kayak piaraan aja gue disuruh suruh. Bener bener ya, Meameo."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene kantin with dissolve
+    play music "audio/bgm_kantin.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname] pun ke kantin untuk beli beberapa cemilan untuk dibawa ke rooftop untuk makan bareng Pia"
+    mcname "*Sambil bawa plastik berisi beberapa camilan*"
+    mcname "Hmmm... apa lagi ya? Kayanya beli snack itu enak"
+    show fio at char_placement with dissolve
+    show fio_side at left with dissolve
+    fio "[mcname]!!!!"
+    hide fio_side with dissolve
+    mcname "Woaaa kaget, Cepio hai~"
+    show fio_side at left with dissolve
+    fio "Sini!!!\n*sambil menepuk nepuk kursi kosong sebelah Fiony*"
+    hide fio_side with dissolve
+    mcname "Halo Cepio~\n*nyamperin*"
+    hide fio with dissolve
+    show kana at kana_near_left_2 with dissolve
+    show freya at freya_near_right with dissolve
+    show fio at fio_near with dissolve
+    show fio_side at left with dissolve
+    fio "Kenalin, ini Freya, kalo yang sebelahnya Kana."
+    hide fio_side with dissolve
+    mcname "Halo, namaku [mcname]. Salam kenal"
+    show kana_side at left with dissolve
+    kana "*Menyipitkan mata sambil mengisyaratkan sesuatu*"
+    kana "Ehm..Yang Mulia Piaraan?"
+    hide kana_side with dissolve
+    show freya_side at left with dissolve
+    freya "Hadeeeh, Naaaaay."
+    hide freya with dissolve
+    mcname "???"
+    show kana_side at left with dissolve
+    kana "Eh, Kak Fiony, bukan ini orangnya?"
+    hide kana_side with dissolve
+    show fio_side at left with dissolve
+    fio "Meameo? Bukaaaan. Ini mah belahan jiwanya."
+    hide fio_side with dissolve
+    mcname "Whaaat. Cepiooooo"
+    show fio_side at left with dissolve
+    fio "Ahahaha, gini [mcname]. Ini Kana mau banget ketemu Pia. Dia suka banget gambarnya Pia"
+    show kana_side at left with dissolve
+    kana "Iya! Aku mau ajak dia join club jejepangan. Kira-kira mau gak, ya?"
+    hide kana_side with dissolve
+    mcname "Oh, kamu anak club jejepangan?"
+    mcname "Pas itu sempet sih, aku kasih liat flyer yang dibagiin. Tapi kayaknya dia gak terlalu tertarik."
+    show kana_side at left with dissolve
+    kana "Sasuga Yang Mulia Piaraan, butuh usaha lebih buat rekrut dia!"
+    mcname "Yang Mulia Piaraan?"
+    show kana_side at left with dissolve
+    kana "Oh ah, enggak enggak. Nanti aku ajak Tono buat rekrut dia. Harus bisa pokoknya"
+    hide kana_side with dissolve
+    "{size=-5}Freya & Fiony{/size}" "Semangat Naay~"
+    mcname "Ahahaha nanti aku coba tanyain lagi deh ya, semoga berubah pikiran. Aku pergi dulu ya. Duluan semua~"
+    "{size=-8}Freya, Fiony, Kana{/size}" "Iya, byeee~"
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}Di Rooftop{/color}" with Pause(2.0)
+    # Harusnya BG Rooftop
+    scene depan kampus with dissolve
+    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+    "*Pia sedang menari diiringi lagu idol di HPnya yang diputar agak keras*"
     play music "audio/Dreamcatcher.mp3" fadein 1.0
     jump credits
