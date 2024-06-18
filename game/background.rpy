@@ -16,3 +16,5 @@ image depan kosan = "images/BG/depan-kosan.jpg"
 image white = Solid("#FFFFFF")
 image pia tabrakan normal = "images/CG/pia_tabrakan_normal.png"
 image pia tabrakan ngomong = "images/CG/pia_tabrakan_ngomong.png"
+image awal tana = "images/CG/awal_tana.png"
+image awal tana mc = "images/CG/awal_tana_mc.png"
