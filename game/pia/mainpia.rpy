@@ -25,7 +25,7 @@ label mainpia:
     $ mmama_name = Character("Mamah", color="#FFF")
     $ quick_menu = True
     mama "Sekarang mandi, sarapan, abis itu langsung ke stasiun ya buat ke Jeketi University buat daftar ulang."
-    mama "Mama udah bilang ke temen mama yang di jakarta kalo kamu akan ngekost di tempat dia"
+    mama "Mama udah bilang ke temen mama yang di jakarta kalo kamu akan ngekost di tempat dia."
     mcname "Siap mah!"
     hide mama with dissolve
     stop music fadeout 1.0
