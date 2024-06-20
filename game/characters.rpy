@@ -49,9 +49,13 @@ default freya_smug = Character("[freya_name]", image="Freya_smug")
 default fio_name = "???"
 default fio = Character("[fio_name]", image="Fio")
 
-# Define Character Fiony
+# Define Character Feni
 default feni_name = "???"
 default feni = Character("[feni_name]", image="feni")
+
+# Define Character Flora
+default flora_name = "???"
+default flora = Character("[flora_name]",image="Flora")
 
 # Define dosen chara
 default dosen_name = "Dosen"
@@ -92,6 +96,9 @@ image side fio_side = "Characters/Fio_side.png"
 
 # define side feni character
 image side feni_side = "Characters/feni_side.png"
+
+# define side flora character
+image side flora_side = "Characters/flora_side.png"
 
 image side dosen_side = "Characters/Dosen_side.png"
 
