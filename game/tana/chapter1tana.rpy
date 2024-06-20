@@ -120,5 +120,74 @@ label tanamcdaftarulang:
     tono "Selain itu, ya karena gua dari kecil doyan main di sawah hehe"
     hide tono_side with dissolve
     stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play sound "audio/open_door.mp3"
+    show text "{color=#FFF}DOSEN MEMASUKI KELAS{/color}"
+    scene kelas with dissolve
+    play music "audio/BGM_Dosen.mp3" fadein 1.0
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
+    dosen "Selamat datang Mahasiswa baru Jurusan pertanian"
+    dosen "Oke, kegiatan hari ini adalah perkenalan lingkungan kampus. Silahkan berkumpul dengan kelompoknya masing-masing"
+    dosen "Instruksi selanjutnya ada di pembimbing kelompok masing-masing, terima kasih"
+    dosen "HIDUP PERTANIAN INDONESIA."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    scene kelas with dissolve
+    play music "audio/BGM_kelas.mp3" fadein 1.0
+    show flora at char_center with dissolve
+    show flora_side at left with dissolve
+    flora "Halo semuanya, kenalin aku Flora, pembimbing kelompok ini"
+    flora "Sekarang langsung baris aja terus kita keliling kampus ya!"
+    hide flora_side with dissolve
+    "Mahasiswa" "Iya Kak"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    # Harusnya BG Lorong
+    scene depan kampus with dissolve
+    #  Harusnya BGM Lorong
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    "[mcname] dan kelompoknya pun berkeliling kampus untuk melihat fasilitas jurusan pertanian dibimbing oleh Kakak kelasnya yang bernama Flora. Tapi tiba tiba…"
+    mcname "{i}Duh kebelet{/i}"
+    mcname "{i}Ke toilet dulu aman kali ya gak bakal ketinggalan kelompok{/i}"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Dengan sedikit terburu buru, [mcname] bergegas ke toilet."
+    "Setelah selesai, [mcname] pun keluar toilet dan melihat sekeliling."
+    $ quick_menu = False
+    # Harusnya BG Lorong
+    scene depan kampus with dissolve
+    # Harusnya BGM Lorong
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    mcname "{i}Aduh pada kemana ya kok udah sepi aja, mana gak tau jalan lagi{/i}"
+    mcname "Eh itu ada Tana lagi sendirian"
+    "[mcname] melihat Tana yang tampaknya sedang kebingungan"
+    "[mcname] pun menghampiri Tana"
+    show tono at char_center with dissolve
+    show tono_side at left with dissolve
+    tono "Hmmm? Eh, kok lu ada di sini?"
+    hide tono_side with dissolve
+    mcname "Gua ketinggalan rombongan, tadi ke toilet dulu soalnya"
+    show tono_side at left with dissolve
+    tono "Yeuuu kocak"
+    tono "Yaudah ayo ikutin gua, kita nyusul yang lain"
+    hide tono_side with dissolve
+    mcname "Emang lu udah hapal denah kampus ini ya?"
+    show tono_side at left with dissolve
+    tono "Alah gampang itu mah"
+    tono "Kampus paling gitu-gitu aja tata letaknya"
+    hide tono_side with dissolve
+    mcname "Yaudah ngikut deh"
+    "Karena tidak tau arah, [mcname] pun mengikuti Tana menyusuri kampus."
+
+
+
+
 
     
