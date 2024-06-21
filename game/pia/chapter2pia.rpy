@@ -2,7 +2,7 @@ label chapter2piabegin:
     scene black with dissolve
     show text "{color=#FFF}Chapter II{/color}" with Pause(2.0)
     scene black with dissolve
-    "Peralatan menggambar sudah siap, Mahasiswa/i baru DKV pun memulai kelas ujian menggambar pertamanya"
+    "Peralatan menggambar sudah siap, Mahasiswa/i baru DKV pun memulai kelas ujian menggambar pertamanya."
     scene kelas with dissolve
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     show dosen at dosen_center with dissolve
