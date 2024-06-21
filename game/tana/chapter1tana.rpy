@@ -185,6 +185,84 @@ label tanamcdaftarulang:
     hide tono_side with dissolve
     mcname "Yaudah ngikut deh"
     "Karena tidak tau arah, [mcname] pun mengikuti Tana menyusuri kampus."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}1 JAM KEMUDIAN{/color}" with Pause(2.0)
+    scene langit with dissolve
+    scene black with dissolve
+    # Harusnya BG lorong 
+    scene depan kampus with dissolve
+    #  Harusnya BGM Lorong
+    play music "audio/BGM_Lawak Tana.mp3" fadein 1.0
+    show tono at char_center with dissolve
+    mcname "Tan, perasaan dari tadi kita cuma muter-muter doang deh"
+    show tono_side at left with dissolve
+    tono "Santai. Bentar lagi juga ketemu sama kelompok kita"
+    hide tono_side with dissolve
+    mcname "Udah sore gini mereka harusnya udah beres gak sih?"
+    show tono_side at left with dissolve
+    tono "Sabar, kocak, masih siang kok ini"
+    hide tono_side with dissolve
+    mcname "Sebenernya lu tau kita di mana gak sih?"
+    show tono_side at left with dissolve
+    tono "T-tau, kok. Udah, ayo lanjut jalan"
+    hide tono_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}1 JAM KEMUDIAN{/color}"
+    scene kantin with dissolve
+    show tono at char_center with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Tan, ini bukannya kantin, ya?"
+    show tono_side at left with dissolve
+    tono "E-Emang iya?"
+    hide tono_side with dissolve
+    mcname "Iya, kocak"
+    show tono_side at left with dissolve
+    tono "Kok lu jadi ikut-ikutan ngomong kocak?"
+    hide tono_side with dissolve
+    mcname "Ga usah ngalihin pembicaraan."
+    mcname "Sebenernya lu tadi juga nyasar kan?"
+    show tono_side at left with dissolve
+    tono "M-mana ada gua nyasar"
+    hide tono_side with dissolve
+    mcname "Kocak"
+    show tono_side at left with dissolve
+    tono "Lu kocak"
+    hide tono_side with dissolve
+    mcname "Hahahaha."
+    mcname "Ternyata kita sama-sama malu-maluin, ya"
+    show tono_side at left with dissolve
+    tono "Lu doang kali. Gua kagak"
+    hide tono_side with dissolve
+    mcname "Yeuuu, kocak"
+    show tono_side at left with dissolve
+    tono "Gak cocok lu ngomong kocak-kocak begitu"
+    hide tono_side with dissolve
+    mcname "Biarin. Daripada gak mau ngaku nyasar"
+    show tono_side at left with dissolve
+    tono "Alaaaah. Iya iya gua juga nyasar."
+    tono "Puas lu?"
+    hide tono_side with dissolve
+    mcname "AHAHAHAHAHAHAHAHAH"
+    show tono_side at left with dissolve
+    tono "Diem lu"
+    hide tono_side with dissolve
+    mcname "Dih, ngamuk"
+    show tono_side at left with dissolve
+    tono "Berisik"
+    hide tono_side with dissolve
+    mcname "Sekarang mau gimana?"
+    show tono_side at left with dissolve
+    tono "Ya lanjut jalan lah. Masa diem di sini"
+    hide tono_side with dissolve
+    mcname "Yaudah. Balik ke tempat tadi aja"
+
+
+    
+
 
 
 
