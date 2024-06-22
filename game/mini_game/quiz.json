@@ -1,6 +1,6 @@
 [
     {
-        "question" : "Kapan Pia berulang tahun ?",
+        "question" : "Kapan Pia berulang tahun?",
         "a" : "30 Juli",
         "b" : "2 Juni",
         "c" : "28 Juli",
@@ -8,7 +8,7 @@
         "answer" : "30 Juli"
     },
     {
-        "question" : "Kapan Kana berulang tahun ?",
+        "question" : "Kapan Kana berulang tahun?",
         "a" : "2 Maret",
         "b" : "5 Maret",
         "c" : "3 Maret",
@@ -16,7 +16,7 @@
         "answer" : "1 Maret"
     },
     {
-        "question" : "Kapan Tana berulang tahun ?",
+        "question" : "Kapan Tana berulang tahun?",
         "a" : "22 April",
         "b" : "28 April",
         "c" : "27 April",
@@ -24,7 +24,7 @@
         "answer" : "22 April"
     },
     {
-        "question" : "Siapa nama member JKT48 diluar JKT48V yang pernah collab dengan Kana ?",
+        "question" : "Siapa nama member JKT48 di luar JKT48V yang pernah collab dengan Kana?",
         "a" : "Indira",
         "b" : "Amanda",
         "c" : "Fiony",
@@ -32,7 +32,7 @@
         "answer" : "Indira"
     },
     {
-        "question" : "Berapa Tinggi Pia ?",
+        "question" : "Berapa tinggi Pia?",
         "a" : "1570 mm",
         "b" : "1370 mm",
         "c" : "1600 mm",
@@ -40,7 +40,7 @@
         "answer" : "1570 mm"
     },
     {
-        "question" : "Apa nama fanbase dari Kana, Tana, dan Pia ?",
+        "question" : "Apa nama fanbase dari Kana, Tana, dan Pia?",
         "a" : "Wargavi 48",
         "b" : "Wargavi46",
         "c" : "Wargavi48",
@@ -48,7 +48,7 @@
         "answer" : "Wargavi48"
     },
     {
-        "question" : "Siapa nama kucing Pia ?",
+        "question" : "Siapa nama kucing Pia?",
         "a" : "Ganas",
         "b" : "Poci",
         "c" : "Koko",
@@ -56,7 +56,7 @@
         "answer" : "Leo"
     },
     {
-        "question" : "Siapa nama member JKT48 diluar JKT48V yang digambar Pia pertama kali saat stream Piallete?",
+        "question" : "Siapa nama member JKT48 di luar JKT48V yang digambar Pia pertama kali saat stream Piallete?",
         "a" : "Michie",
         "b" : "Gracie",
         "c" : "Indira",
@@ -80,7 +80,7 @@
         "answer" : "Ireng"
     },
     {
-        "question" : "Berapa tinggi Tana",
+        "question" : "Berapa tinggi Tana?",
         "a" : "168 cm",
         "b" : "165 cm",
         "c" : "170 cm",
@@ -88,7 +88,7 @@
         "answer" : "168 cm"
     },
     {
-        "question" : "Siapa nama member JKT48 diluar JKT48V yang pernah collab dengan Tana ?",
+        "question" : "Siapa nama member JKT48 diluar JKT48V yang pernah collab dengan Tana?",
         "a" : "Shani",
         "b" : "Michie",
         "c" : "Amanda",
@@ -104,7 +104,7 @@
         "answer" : "Kaia"
     },
     {
-        "question" : "Apa game pertama yang dimainkan Tana saat mabar dengan viewer ?",
+        "question" : "Apa game pertama yang dimainkan Tana saat mabar dengan viewer?",
         "a" : "Among Us",
         "b" : "Stumble Guys",
         "c" : "Lethal Company",
@@ -112,7 +112,7 @@
         "answer" : "Among Us"
     },
     {
-        "question" : "Berapa tinggi Kana ?",
+        "question" : "Berapa tinggi Kana?",
         "a" : "160 cm",
         "b" : "170 cm",
         "c" : "168 cm",
@@ -120,15 +120,15 @@
         "answer" : "168 cm"
     },
     {
-        "question" : "Siapa nama member JKT48 diluar JKT48V yg pernah collab dengan Kana ?",
+        "question" : "Siapa nama member JKT48 di luar JKT48V yg pernah collab berdua dengan Kana?",
         "a" : "Indira",
         "b" : "Amanda",
         "c" : "Fiony",
-        "d" : "Fiony",
+        "d" : "Flora",
         "answer" : "Indira"
     },
     {
-        "question" : "Berikut ini manakah game yang pernah dimainkan Kana saat stream ?",
+        "question" : "Berikut ini manakah game yang pernah dimainkan Kana saat stream?",
         "a" : "Harvest Moon",
         "b" : "Stumble Guys",
         "c" : "Minesweeper",
@@ -136,7 +136,7 @@
         "answer" : "Stumble Guys"
     },
     {
-        "question" : "Apa nama event off air pertama yang dihadiri JKT48V ?",
+        "question" : "Apa nama event off air pertama yang dihadiri JKT48V?",
         "a" : "Chibicon",
         "b" : "JKT48 12th Anniversary Flowe12ful",
         "c" : "Jak Japan Matsuri 2023",
@@ -144,7 +144,7 @@
         "answer" : "Indonesia Comic Con 2023"
     },
     {
-        "question" : "Siapakah member JKT48V yang paling pendek ?",
+        "question" : "Siapakah member JKT48V yang paling pendek?",
         "a" : "Pia",
         "b" : "Kana",
         "c" : "Tana",
@@ -152,7 +152,7 @@
         "answer" : "Pia"
     },
     {
-        "question" : "Berikut ini manakah game pertama yang dimainkan bersama oleh Kana, Tana, Pia saat stream ?",
+        "question" : "Berikut ini manakah game pertama yang dimainkan bersama oleh Kana, Tana, Pia saat stream?",
         "a" : "Valorant",
         "b" : "Devour",
         "c" : "Minecraft",
@@ -160,7 +160,7 @@
         "answer" : "Minecraft"
     },
     {
-        "question" : "Kapan Project JKT48V diumunkan pertama kali kepada publik ?",
+        "question" : "Kapan Project JKT48V diumunkan pertama kali kepada publik?",
         "a" : "31 Juli 2023",
         "b" : "30 Juli 2023",
         "c" : "29 Juli 2023",
@@ -168,7 +168,7 @@
         "answer" : "30 Juli 2023"
     },
     {
-        "question" : "Kapan Channel Youtube Pia Meraleo mendapatkan 50.000 subcribers ?",
+        "question" : "Kapan Channel Youtube Pia Meraleo mendapatkan 50.000 subcribers?",
         "a" : "08 Januari 2024",
         "b" : "09 Januari 2024",
         "c" : "10 Januari 2024",
@@ -184,7 +184,7 @@
         "answer" : "d"
     },
     {
-        "question" : "Siapakah Vtuber diluar JKT48V yg pertama kali diundang Pia di stream Senin Sekolah ?",
+        "question" : "Siapakah Vtuber di luar JKT48V yg pertama kali diundang Pia di stream Senin Sekolah?",
         "a" : "Caerula Aki",
         "b" : "Alia Adelia",
         "c" : "Rena Anggraeni",
@@ -192,7 +192,7 @@
         "answer" : "Caerula Aki"
     },
     {
-        "question" : "Apakah judul lagu yang ditulis Pia dan pernah dibawakan saat stream Rabu MeRadio ?",
+        "question" : "Apakah judul lagu yang ditulis Pia dan pernah dibawakan saat stream Rabu MeRadio?",
         "a" : "It's December Again",
         "b" : "Perfect Wind",
         "c" : "Dreamcatcher",
@@ -200,7 +200,7 @@
         "answer" : "It's December Again"
     },
     {
-        "question" : "Siapakah nama member JKT48 yang fotonya dijadikan referensi pia untuk mendesain isshou saat stream Piallete ?",
+        "question" : "Siapakah nama member JKT48 yang fotonya dijadikan referensi Pia untuk mendesain isshou saat stream Piallete?",
         "a" : "Feni",
         "b" : "Natalia",
         "c" : "Indira",
@@ -208,7 +208,7 @@
         "answer" : "Shani"
     },
     {
-        "question" : "Siapakah nama dari hamster milik Tana ?",
+        "question" : "Siapakah nama dari hamster milik Tana?",
         "a" : "Tomat",
         "b" : "Muklis",
         "c" : "Ganas",
@@ -216,7 +216,7 @@
         "answer" : "Ganas"
     },
     {
-        "question" : "Sebutkan name game yang pernah dimainkan Tana tapi di unarchive karena alasan tertentu ?",
+        "question" : "Sebutkan nama game yang pernah dimainkan Tana tapi diunarchive karena alasan tertentu?",
         "a" : "Rune Factory 3",
         "b" : "Harvest Moon : Back to Nature",
         "c" : "Monster Hunter World",
@@ -224,7 +224,7 @@
         "answer" : "Harvest Moon : Back to Nature"
     },
     {
-        "question" : "Siapakah member JKT48 yang ulang tahunnya sama dengan Tana ?",
+        "question" : "Siapakah member JKT48 yang ulang tahunnya sama dengan Tana?",
         "a" : "Shania Gracia",
         "b" : "Grace Octaviani",
         "c" : "Indira Seruni",
@@ -232,7 +232,7 @@
         "answer" : "Michelle Alexandra"
     },
     {
-        "question" : "Siapakah member JKT48 yang hadir saat birthday stream pertama Tana ?",
+        "question" : "Siapakah member JKT48 yang hadir saat birthday stream pertama Tana?",
         "a" : "Indira, Fiony, Freya, Kana, Feni, Pia, Michie",
         "b" : "Fiony, Gita, Indira, Freya, Kana, Pia, Gracie",
         "c" : "Amanda, Fiony, Freya, Kana, Pia, Indira, Feni",
@@ -240,7 +240,7 @@
         "answer" : "Amanda, Fiony, Freya, Kana, Pia, Indira, Feni"
     },
     {
-        "question" : "Tanggal berapa Tana pertama kali memakai asset kacamata saat stream ?",
+        "question" : "Tanggal berapa Tana pertama kali memakai asset kacamata saat stream?",
         "a" : "10 September 2023",
         "b" : "7 Desember 2023",
         "c" : "30 November 2023",
@@ -248,7 +248,7 @@
         "answer" : "10 September 2023"
     },
     {
-        "question" : "Siapakah Vtuber diluar JKT48V yang pertama kali collab dengan Kana ?",
+        "question" : "Siapakah Vtuber di luar JKT48V yang pertama kali collab dengan Kana?",
         "a" : "Elaine Celestia",
         "b" : "Frederett",
         "c" : "Airi Cordelia",
@@ -256,7 +256,7 @@
         "answer" : "Elaine Celestia"
     },
     {
-        "question" : "Siapakah \"Papa\" dan \"Mama\" dari Kanai Asa ?",
+        "question" : "Siapakah \"Papa\" dan \"Mama\" dari Kanaia Asa?",
         "a" : "@nonbi_re dan @re_reinly",
         "b" : "@Yashacchi1 dan @idhosukahewan",
         "c" : "@chiiririn dan @idoo99",
@@ -264,7 +264,7 @@
         "answer" : "@Yashacchi1 dan @idhosukahewan"
     },
     {
-        "question" : "Siapakah akun trakteer pertama yang mengirimkan donasi untuk Kana ?",
+        "question" : "Siapakah akun trakteer pertama yang mengirimkan donasi untuk Kana?",
         "a" : "RMDHN",
         "b" : "Raihan Arif",
         "c" : "Alfino Cheese",
@@ -272,7 +272,7 @@
         "answer" : "Koko Jon"
     },
     {
-        "question" : "Berapakah waktu paling lama Kana melakukan stream Per 28 April 2024 ?",
+        "question" : "Berapakah waktu paling lama Kana melakukan stream per 28 April 2024?",
         "a" : "3.54.13",
         "b" : "3.26.24",
         "c" : "4.01.32",
@@ -280,7 +280,7 @@
         "answer" : "3.54.13"
     },
     {
-        "question" : "Kapankah Fanbase JKT48V \"Wargavi48\" melakukan debut ?",
+        "question" : "Kapankah Fanbase JKT48V \"Wargavi48\" melakukan debut?",
         "a" : "4 Januari 2024",
         "b" : "30 Desember 2023",
         "c" : "27 Desember 2023",
@@ -288,7 +288,7 @@
         "answer" : "6 Januari 2024"
     },
     {
-        "question" : "Bagaimana urutan posisi berdiri member JKT48V dari kiri kekanan saat menyapa penonton yang hadir di event off air pertama mereka ?",
+        "question" : "Bagaimana urutan posisi berdiri member JKT48V dari kiri ke kanan saat menyapa penonton yang hadir di event off-air pertama mereka?",
         "a" : "Pia-Kana-Tana",
         "b" : "Kana-Tana-Pia",
         "c" : "Kana-Pia-Tana",
@@ -296,7 +296,7 @@
         "answer" : "Pia-Kana-Tana"
     },
     {
-        "question" : "Sebutkan urutan debut member JKT48V di Youtube ?",
+        "question" : "Sebutkan urutan debut member JKT48V di Youtube!",
         "a" : "Pia-Kana-Tana",
         "b" : "Kana-Tana-Pia",
         "c" : "Tana-Kana-Pia",
@@ -312,7 +312,7 @@
         "answer" : "Nirmala Yumeria"
     },
     {
-        "question" : "Siapakah member JKT48V yang pernah collab dengan Vtuber Astra Aelia",
+        "question" : "Siapakah member JKT48V yang pernah collab dengan Vtuber Astra Aelia?",
         "a" : "Pia Meraleo",
         "b" : "Kanaia Asa",
         "c" : "Tana Nona",
