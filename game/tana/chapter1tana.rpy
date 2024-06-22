@@ -500,3 +500,200 @@ label tanamcdaftarulang:
             jump credits
     show tana_side at left with dissolve
     tana "Gasssss. Kak Feni sama Kak Flora mau ikut makan juga?"
+    hide tana_side with dissolve
+    show feni_side at left with dissolve
+    feni "Aduh, sorry. Aku udah mesen makan buat di kosan."
+    hide feni_side with dissolve
+    show flora_side at left with dissolve
+    flora "Yahhh. Mamahku juga udah masak di rumah. Jadinya gak bisa ikut."
+    hide flora_side with dissolve
+    show tana_side at left with dissolve
+    tana "Aman ajaa."
+    hide tana_side with dissolve
+    "[mcname] melihat HP nya"
+    mcname "Eh, Tana. Gue liat di HP, di mall itu ada cafe #Sponsor 2 yang lagi promo."
+    show tana_side at left with dissolve
+    tana "Wah iya kah? Ayok buruan, keburu sold out."
+    tana "Yauda. kak, kita duluan yaa."
+    hide tana_side with dissolve
+    "{size=-5}Feni & Flora{/size}" "Okeee"
+    "[mcname] & Tana pun pergi ke mall"
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}SESAMPAINYA DI MALL{/color}" with Pause(2.0)
+    play music "audio/BGM_Mall Slow.mp3" fadein 1.0
+    scene mall temp with dissolve
+    show tana at char_center with dissolve
+    show tana_side at left with dissolve
+    $ quick_menu = True
+    tana "MC, Cafe #Sponsor 2 nya di mana?"
+    hide tana_side with dissolve
+    "[mcname] pun membuka HP nya"
+    mcname "Hmmm keknya di sini. Udah ikut aja"
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}20 MENIT KEMUDIAN{/color}" with Pause(2.0)
+    show tana at char_center with dissolve
+    show tana_side at left with dissolve
+    tana "Mana nih, [mcname]. Lu yang bener, kocak."
+    tana "Tau jalan, gak?"
+    hide tana_side with dissolve
+    mcname "Bener kok lewat sini. Percaya aja."
+    show tana_side at left with dissolve
+    tana "Halah halah buta map."
+    hide tana_side with dissolve
+    mcname "Ngaca kocakk."
+    show tana_side at left with dissolve
+    tana "Berisik lu."
+    tana "Mending tanya orang aja. Udah laper."
+    hide tana_side with dissolve
+    mcname "Yauda. Itu ada staff di sana."
+    "Tana dan [mcname] pun menghampiri staff mall"
+    show tana_side at left with dissolve
+    tana "Permisi, Mba. Mau nanya, kalo cafe #Sponsor 2 ini ada di mana ya?"
+    hide tana_side with dissolve
+    "Staff" "Ohh. Tempatnya ada di sana."
+    show tana_side at left with dissolve
+    tana "Wahh, thank you."
+    hide tana_side with dissolve
+    "Tana dan MC berjalan sesuai arahan Staff"
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN{/color}" with Pause(2.0)
+    scene mall temp with dissolve
+    show tana at char_center with dissolve
+    show tana_side at left with dissolve
+    $ quick_menu = True
+    tana "Ohhh jadi ini cafenya."
+    hide tana_side with dissolve
+    mcname "Itu udah pada ngantri buat menu promo. Ayok buruan."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    play sound "audio/cafe-entrance.mp3" fadein 1.0
+    show text "{color=#FFF}MEMASUKI CAFE{/color}"
+    play music "audio/BGM_Cafe Sore" fadein 1.0
+    scene cafe with dissolve
+    show tana at char_center with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Setelah mengantri beberapa saat, akhirnya giliran Tana dan [mcname] pun tiba."
+    "Staff" "Halo Kak. Mau pesan apa?"
+    mcname "Menu promonya 2, Kak"
+    show tana_side at left with dissolve
+    tana "Masih ada kan?"
+    hide tana_side with dissolve
+    "Staff" "Aduh mohon maaf, Kak"
+    "Staff" "Menu promonya baru aja sold out"
+    show tana_side at left with dissolve
+    tana "Hahhhh. Udah sold out?"
+    tana "Lu sihh kelamaan muter muter tadi."
+    hide tana_side with dissolve
+    mcname "Ya maap kocak."
+    "Staff" "......"
+    "Staff" "Apa mau coba menu yang lain, Kak?"
+    show tana_side at left with dissolve
+    tana "Yauda deh. Udah laper banget soalnya."
+    hide tana_side with dissolve
+    mcname "Yaudah deh nasi bakar tuna 1 sama milkshake strawberry 1"
+    show tana_side at left with dissolve
+    tana "Aku samain aja dah."
+    hide tana_side with dissolve
+    mcname "Sama kentang goreng yang besar 1."
+    "Staff" "Oke jadi grilled rice with tuna 2, milkshake strawberry 2, dan large french fries 1."
+    "Staff" "Pesanannya nanti akan diantar, ya. Mohon ditunggu."
+    "Tana dan [mcname] duduk di tempat yang kosong"
+    show tana_side at left with dissolve
+    tana "Kok nama menunya jadi pake Bahasa Inggris, ya?"
+    hide tana_side with dissolve
+    mcname "Lah kan di menunya emang ada 2 bahasa, kocak."
+    show tana_side at left with dissolve
+    tana "Hmmm. Perasaan gue ga enak."
+    hide tana_side with dissolve
+    mcname "Mau makan aja pake mikir."
+    show tana_side at left with dissolve
+    tana "Kagaklah, kocak. Emang elu?"
+    hide tana_side with dissolve
+    mcname "Lu pikir gue mikir, kocak?"
+    show tana_side at left with dissolve
+    tana "Halah halah."
+    hide tana_side with dissolve
+    "Pelayan pun datang mengantarkan pesanan Tana dan [mcname] ke meja mereka."
+    "Staff" "Pesanannya sudah semua, ya Kak."
+    show tana_side at left with dissolve
+    tana "Iya, Kak. Terima kasih."
+    tana "Waaaah. Keliatannya enak banget"
+    hide tana_side with dissolve
+    mcname "Gak usah sampe ngiler juga, kocak."
+    show tana_side at left with dissolve
+    tana "Yeuuu. Siapa juga yang ngiler kocak?"
+    hide tana_side with dissolve
+    mcname "Yauda buruan makan."
+    "Tana dan [mcname] menyantap makanan yang dipesan."
+    show tana_side at left with dissolve
+    tana "UHUK UHUK."
+    hide tana_side with dissolve
+    mcname "Makanya makan pelan-pelan, kocak. Lu gak makan dari tahun kemarin ato gimana?"
+    show tana_side at left with dissolve
+    tana "UHUK UHUK."
+    hide tana_side with dissolve
+    mcname "Ini minum dulu"
+    show tana_side at left with dissolve
+    tana "*Glug Glug*"
+    tana "AHHHHH"
+    hide tana_side with dissolve
+    mcname "Kalo kata gua sih kurang kenceng"
+    show tana_side at left with dissolve
+    tana "Yauda kenapa sih?"
+    hide tana_side with dissolve
+    mcname "Hahahahahaha"
+    $ quick_menu = False
+    scene black with dissolve
+    scene cafe with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname] dan Tana ngobrol di cafe sambil menikmati hidangan yang dipesan. Tak terasa cafe semakin sepi dan para staff terlihat mulai beres-beres."
+    show tana at char_center with dissolve
+    mcname "Eh. Kayaknya udah mau tutup nih."
+    show tana_side at left with dissolve
+    tana "Yaudah. Ayok kita pulang."
+    hide tana_side with dissolve
+    mcname "Bayar dulu kocak."
+    "[mcname] dan Tana menghampiri kasir untuk membayar pesanan mereka."
+    "Staff" "Semuanya jadi 159.420."
+    show tana_side at left with dissolve
+    tana "Lhuk, larange!\n(Wih, mahalnya)"
+    hide tana_side with dissolve
+    mcname "Lah tadi pesen gk liat menu?"
+    show tana_side at left with dissolve
+    tana "Gue kan ngikut pesenan elu. Hadeh, yauda jadi 80 80?"
+    hide tana_side with dissolve
+    mcname "Udahh sama gue aja."
+    show tana_side at left with dissolve
+    tana "Jangan lah. Lu pikir gue ga punya duit?"
+    hide tana_side with dissolve
+    "Tana pun merogoh tasnya untuk mengambil dompet."
+    show tana_side at left with dissolve
+    tana "Hmmmm?"
+    hide tana_side at left with dissolve
+    mcname "Kenapa?"
+    show tana_side at left with dissolve
+    tana "......."
+    tana "Ummmmm. Anu"
+    tana "......"
+    hide tana_side with dissolve
+    mcname "?????"
+    show tana_side at left with dissolve
+    tana "Anuu…"
+    tana "Dompet gue ketinggalan nih, hehe"
+    tana "Boleh pinjem duit lu dulu gak?"
+    hide tana_side with dissolve
+    mcname "Li pikir giwi gi pinyi diit?"
+    show tana_side at left with dissolve
+    tana "Hehehe. Nanti 80 ribu nya pasti gue ganti, serius."
+    hide tana_side with dissolve
+    mcname "Hadeh yauda. Awas gak lu ganti"
+
+
+
