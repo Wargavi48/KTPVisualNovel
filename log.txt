@@ -1,224 +1,794 @@
-2024-06-16 03:22:56 UTC
-macOS-10.16-x86_64-i386-64bit
-Ren'Py 8.2.2.24061201
+2024-06-21 13:06:17 UTC
+Windows-10-10.0.19045
+Ren'Py 8.2.0.24012702
 
-Early init took 0.17s
-Loading error handling took 0.09s
-Loading script took 1.42s
-Loading save slot metadata took 0.15s
+Early init took 0.14s
+Loading error handling took 0.08s
+Loading script took 1.55s
+Loading save slot metadata took 0.12s
 Loading persistent took 0.00s
-Running init code took 0.14s
+Running init code took 0.15s
 Loading analysis data took 0.05s
 Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.06s
 Index archives took 0.00s
-Backing up script files to '/Users/tes/Library/RenPy/backups/KTPVisualNovel':
-Dump and make backups took 0.09s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.14s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.08s
+Initial gc took 0.16s
 DPI scale factor: 1.000000
-Creating interface object took 0.00s
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
+Init translation took 0.18s
+Build styles took 0.02s
 Load screen analysis took 0.00s
-Analyze screens took 0.05s
-Save screen analysis took 0.05s
-Prepare screens took 0.19s
+Analyze screens took 0.15s
+Save screen analysis took 0.09s
+Prepare screens took 0.49s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
+Save bytecode. took 0.12s
 Running _start took 0.00s
-Interface start took 0.64s
+Interface start took 0.26s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'Intel Inc.'"
-Renderer: b'Intel(R) UHD Graphics 617'
-Version: b'2.1 INTEL-22.5.11'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1440, 777) drawable=(2880, 1554)
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1440, 777) drawable=(2880, 1554)
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1440, 777) drawable=(2880, 1800)
+
+Full traceback:
+  File "game/script.rpy", line 64, in script
+    tono_sh "bangun kocak, Tidur mulu kayak gue"
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1493, in say
+    who(what, *args, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1374, in __call__
+    who = self.prefix_suffix("who", self.who_prefix, who, self.who_suffix)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1290, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1270, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\fanbase_project\KTPVisualNovel\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "D:\fanbase_project\KTPVisualNovel\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\fanbase_project\KTPVisualNovel\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+  File "D:\fanbase_project\KTPVisualNovel\renpy\substitutions.py", line 310, in __getitem__
+    raise NameError("Name '{}' is not defined.".format(key))
+NameError: Name 'tono_name' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 64, in script
+    tono_sh "bangun kocak, Tidur mulu kayak gue"
+NameError: Name 'tono_name' is not defined.
+
+Full traceback:
+  File "game/script.rpy", line 64, in script
+    tono_sh "bangun kocak, Tidur mulu kayak gue"
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1493, in say
+    who(what, *args, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1374, in __call__
+    who = self.prefix_suffix("who", self.who_prefix, who, self.who_suffix)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1290, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1270, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\fanbase_project\KTPVisualNovel\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "D:\fanbase_project\KTPVisualNovel\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\fanbase_project\KTPVisualNovel\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+  File "D:\fanbase_project\KTPVisualNovel\renpy\substitutions.py", line 310, in __getitem__
+    raise NameError("Name '{}' is not defined.".format(key))
+NameError: Name 'tono_name' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 64, in script
+    tono_sh "bangun kocak, Tidur mulu kayak gue"
+NameError: Name 'tono_name' is not defined.
+Resetting cache.
+Early init took 45.45s
+Loading error handling took 0.11s
+Loading script took 0.65s
+Loading save slot metadata took 0.12s
+Loading persistent took 0.00s
+Running init code took 0.10s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.08s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.19s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.23s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.15s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.11s
+Save screen analysis took 0.08s
+Prepare screens took 0.45s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.15s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1440, 900) drawable=(2880, 1800)
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1270.00s
-Loading error handling took 0.08s
-Loading script took 0.69s
-Loading save slot metadata took 0.09s
+Early init took 186.69s
+Loading error handling took 0.05s
+Loading script took 0.70s
+Loading save slot metadata took 0.10s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.20s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.15s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.13s
+Save screen analysis took 0.11s
+Prepare screens took 0.45s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.01s
+Interface start took 0.15s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 276.95s
+Loading error handling took 0.09s
+Loading script took 1.41s
+Loading save slot metadata took 0.20s
 Loading persistent took 0.00s
 Running init code took 0.08s
 Loading analysis data took 0.05s
 Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.06s
 Index archives took 0.00s
-Backing up script files to '/Users/tes/Library/RenPy/backups/KTPVisualNovel':
-Dump and make backups took 0.08s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.16s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.11s
+Initial gc took 0.21s
 DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.05s
-Save screen analysis took 0.05s
-Prepare screens took 0.16s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.18s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel Inc.'"
-Renderer: b'Intel(R) UHD Graphics 617'
-Version: b'2.1 INTEL-22.5.11'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1440, 900) drawable=(2880, 1800)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1440, 900) drawable=(2880, 1800)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1307.55s
-Loading error handling took 0.05s
-Loading script took 0.64s
-Loading save slot metadata took 0.08s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.06s
-Index archives took 0.00s
-Backing up script files to '/Users/tes/Library/RenPy/backups/KTPVisualNovel':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.11s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.09s
+Init translation took 0.14s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.05s
-Save screen analysis took 0.06s
-Prepare screens took 0.57s
+Analyze screens took 0.12s
+Save screen analysis took 0.09s
+Prepare screens took 0.47s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.09s
+Running _start took 0.00s
+Interface start took 0.30s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 330.37s
+Loading error handling took 0.06s
+Loading script took 1.37s
+Loading save slot metadata took 0.14s
+Loading persistent took 0.00s
+Running init code took 0.11s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.12s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.17s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.22s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.07s
+Prepare screens took 0.41s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/tana/chapter1tana.rpy", line 129, in script
+    show dosen at dosen_center with dissolve
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1363, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 3018, in interact_core
+    renpy.audio.audio.periodic()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1205, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1183, in periodic_thread_main
+    periodic_pass()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1125, in periodic_pass
+    c.periodic()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "D:\fanbase_project\KTPVisualNovel\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/BGM_Dosen.mp3'.
+
+While running game code:
+  File "game/tana/chapter1tana.rpy", line 129, in script
+    show dosen at dosen_center with dissolve
+OSError: Couldn't find file 'audio/BGM_Dosen.mp3'.
+
+Full traceback:
+  File "game/tana/chapter1tana.rpy", line 129, in script
+    show dosen at dosen_center with dissolve
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1363, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 3018, in interact_core
+    renpy.audio.audio.periodic()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1205, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1183, in periodic_thread_main
+    periodic_pass()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1125, in periodic_pass
+    c.periodic()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "D:\fanbase_project\KTPVisualNovel\renpy\loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/BGM_Dosen.mp3'.
+
+While running game code:
+  File "game/tana/chapter1tana.rpy", line 129, in script
+    show dosen at dosen_center with dissolve
+OSError: Couldn't find file 'audio/BGM_Dosen.mp3'.
+Resetting cache.
+Early init took 411.34s
+Loading error handling took 0.11s
+Loading script took 1.00s
+Loading save slot metadata took 0.11s
+Loading persistent took 0.00s
+Running init code took 0.09s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.23s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.12s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.10s
+Save screen analysis took 0.09s
+Prepare screens took 0.45s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 498.86s
+Loading error handling took 0.10s
+Loading script took 1.42s
+Loading save slot metadata took 0.20s
+Loading persistent took 0.00s
+Running init code took 0.14s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.26s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.22s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.16s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.12s
+Save screen analysis took 0.10s
+Prepare screens took 0.53s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
 Running _start took 0.00s
 Interface start took 0.22s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'Intel Inc.'"
-Renderer: b'Intel(R) UHD Graphics 617'
-Version: b'2.1 INTEL-22.5.11'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1440, 900) drawable=(2880, 1800)
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1440, 900) drawable=(2880, 1800)
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1357.83s
-Loading error handling took 0.09s
-Loading script took 0.89s
-Loading save slot metadata took 0.15s
-Loading persistent took 0.00s
-Running init code took 0.12s
-Loading analysis data took 0.05s
+Early init took 533.44s
+Loading error handling took 0.07s
+Loading script took 0.87s
+Loading save slot metadata took 0.57s
+Loading persistent took 0.01s
+Running init code took 0.27s
+Loading analysis data took 0.07s
 Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.17s
+Reloading save slot metadata took 0.09s
 Index archives took 0.00s
-Backing up script files to '/Users/tes/Library/RenPy/backups/KTPVisualNovel':
-Dump and make backups took 0.14s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.15s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.24s
+Initial gc took 0.30s
 DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.17s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.07s
+Prepare screens took 0.60s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.13s
+Running _start took 0.00s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 582.66s
+Loading error handling took 0.04s
+Loading script took 0.74s
+Loading save slot metadata took 0.11s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.12s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.26s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.15s
+Prepare screens took 0.36s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.15s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 623.35s
+Loading error handling took 0.06s
+Loading script took 1.08s
+Loading save slot metadata took 0.16s
+Loading persistent took 0.00s
+Running init code took 0.12s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.09s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.23s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.13s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.09s
+Prepare screens took 0.35s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 692.79s
+Loading error handling took 0.05s
+Loading script took 0.96s
+Loading save slot metadata took 0.16s
+Loading persistent took 0.00s
+Running init code took 0.11s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.21s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.11s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.07s
+Prepare screens took 0.33s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.14s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 774.71s
+Loading error handling took 0.06s
+Loading script took 0.70s
+Loading save slot metadata took 0.11s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.23s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.12s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.11s
-Save screen analysis took 0.15s
-Prepare screens took 0.59s
+Save screen analysis took 0.11s
+Prepare screens took 0.58s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.07s
 Running _start took 0.00s
 Interface start took 0.17s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'Intel Inc.'"
-Renderer: b'Intel(R) UHD Graphics 617'
-Version: b'2.1 INTEL-22.5.11'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1440, 900) drawable=(2880, 1800)
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1440, 900) drawable=(2880, 1800)
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/tana/chapter1tana.rpy", line 343, in script
+    "{size=-5}[mcname] & Tana" "Maaf, kak{/size}"
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1491, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\defaultstore.py", line 419, in say
+    who(what, *args, interact=interact, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1391, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1042, in do_display
+    display_say(who,
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 738, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2814, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1352, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 754, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 1361, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\text\text.py", line 2276, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\text\text.py", line 640, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\text\text.py", line 1148, in segment
+    raise Exception("%r closes a text tag that isn't open." % text)
+Exception: '/size' closes a text tag that isn't open.
+
+While processing text tag {/size} in 'Maaf, kak{/size}'.:
+  File "game/tana/chapter1tana.rpy", line 343, in script
+    "{size=-5}[mcname] & Tana" "Maaf, kak{/size}"
+Exception: '/size' closes a text tag that isn't open.
 Resetting cache.
-Early init took 1415.56s
-Loading error handling took 0.15s
-Loading script took 0.98s
-Loading save slot metadata took 0.15s
-Loading persistent took 0.00s
-Running init code took 0.11s
-Loading analysis data took 0.06s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.08s
+Early init took 890.35s
+Loading error handling took 0.06s
+Loading script took 0.79s
+Loading save slot metadata took 0.19s
+Loading persistent took 0.01s
+Running init code took 0.14s
+Loading analysis data took 0.12s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.12s
 Index archives took 0.00s
-Backing up script files to '/Users/tes/Library/RenPy/backups/KTPVisualNovel':
-Dump and make backups took 0.10s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.21s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.14s
+Initial gc took 0.42s
 DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.10s
+Init translation took 0.23s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.06s
-Prepare screens took 0.23s
+Analyze screens took 0.18s
+Save screen analysis took 0.12s
+Prepare screens took 0.58s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.06s
 Running _start took 0.00s
-Interface start took 0.18s
+Interface start took 0.21s
 
 Initializing gl2 renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'Intel Inc.'"
-Renderer: b'Intel(R) UHD Graphics 617'
-Version: b'2.1 INTEL-22.5.11'
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1440, 900) drawable=(2880, 1800)
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1440, 900) drawable=(2880, 1800)
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.16s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s

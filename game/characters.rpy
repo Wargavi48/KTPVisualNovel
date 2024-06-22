@@ -14,13 +14,8 @@ default pia_name = "????"
 
 # Define Character Tono
 default tono_name = "????"
-define tono = Character("[tono_name]", image="Tono", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana = Character("[tono_name]", image="Tana", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default tono_sh = Character("[tono_name]", image="tono_sh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default tono_cry = Character("[tono_name]", image="tono_cry",window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default tono_happy = Character("[tono_name]", image="tono_happy",window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default tono_angry = Character("[tono_name]", image="tono_angry",window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default tono_confused = Character("[tono_name]", image="tono_confused",window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default tono_blinded = Character("[tono_name]", image="tono_blinded",window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 
 # Define Character Kana
 default kana_name = "????"
@@ -80,6 +75,9 @@ image side kana_side_shy = "Characters/Kana_side_shy.png"
 image side kana_side_sick = "Characters/Kana_side_sick.png"
 image side kana_side_smile = "Characters/kana_side_smile.png"
 image side kana_side = "Characters/kana_side.png"
+
+# Define side tana character
+image side tana_side = "Characters/Tana_side.png"
 
 # Define side freya character
 image side freya_side = "Characters/Freya_side.png"
