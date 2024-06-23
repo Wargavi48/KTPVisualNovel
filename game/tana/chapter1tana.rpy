@@ -1003,3 +1003,212 @@ label tanamcdaftarulang:
     tana "Ya nanti sekalian aja kocak."
     hide tana_side with dissolve
     mcname "Hahaha yauda, ayok."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene mall temp with dissolve
+    play music "audio/BGM_Mall Slow.mp3" fadein 1.0
+    show tana at char_center with dissolve
+    show tana_side at left with dissolve
+    tana "Mumpung masih siang, mau jalan-jalan dulu ga?"
+    hide tana_side with dissolve
+    mcname "Ngikut aja gue mahh. Yang penting gak tersesat"
+    show tana_side at left with dissolve
+    tana "Halah halah"
+    hide tana_side with dissolve
+    "[mcname] dan Tana berjalan bersama berkeliling di mall. Tiba tiba…"
+    # Insert Sound Nada Dering
+    "*Kring kring"
+    "(Ada yang nelepon HP MC)"
+    "[mcname] membuka HP nya dan melihat bahwa mamahnya menelpon."
+    mcname "Eh Tana, bentar ya. Mamah gue nelepon."
+    mcname "Gue ke sana dulu, ya."
+    show tana_side at left with dissolve
+    tana "Okee~"
+    hide tana_side with dissolve
+    hide tana with dissolve
+    "Insert UI Handphone Nelpon"
+    show side mama at left with dissolve
+    mama "Enak ya, anakku udah tinggal sendiri. Sekarang ga pernah ngabarin Mamah lagi. Huhu"
+    hide side mama with dissolve
+    mcname "Maaf, Maah. Lupa, lagi banyak yang dikerjain."
+    show side mama at left with dissolve
+    mama "Sering-sering dong kabarin"
+    mama "Mamah kan jadi gelisah."
+    hide side mama with dissolve
+    mcname "Iya, Mahh"
+    show side mama at left with dissolve
+    mama "Gimana kuliahnya?"
+    hide side mama with dissolve
+    mcname "Baik kok. Aku juga gabung club jejepangan, hehe"
+    show side mama at left with dissolve
+    mama "Waduh, kayak papahmu dong."
+    hide side mama with dissolve
+    mcname "Hehehe~"
+    show side mama at left with dissolve
+    mama "Yaudaa. Kamu baik-baik di sana. Kalo ada apa-apa, telepon mamah aja"
+    hide side mama with dissolve
+    mcname "Siap Mah. Aku duluan ya, bye-bye"
+    show side mama at left with dissolve
+    mama "Byee~"
+    hide side mama with dissolve
+    "Hide UI Telepon"
+    mcname "Hmmmmm."
+    mcname "Eh, Tana mana?"
+    "Bingung karena Tana menghilang, [mcname] melihat ke arah sekitar."
+    mcname "Oh, di situ ternyata."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    # Harusnya BG Game Center (Cari kayanya)
+    scene mall temp with dissolve
+    play music "audio/BGM_Game Center.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Tana ngapain ke sini ya?"
+    "[mcname] menghampiri Tana yang pergi ke game center."
+    "Insert Asset Dance"
+    "Terlihat seorang gadis cantik menari gemulai di depan mesin dance arcade."
+    "Setiap gerakannya dari lompatan hingga ayunan lembut lengannya mengikuti irama lagu ceria yang dimainkan, membuat [mcname] terpukau."
+    mcname "......"
+    "Di tengah rasa kagum tersebut, [mcname] mengeluarkan HP nya"
+    mcname "Tana, gue masukin story ya?"
+    tana ".........."
+    "Tana yang fokus mengayunkan tangan dan kakinya, tampak tidak menyadari keberadaan [mcname]."
+    mcname "Hmmm dia ga jawab, keknya lagi fokus. Harusnya dibolehin lah ya."
+    $ quick_menu = False
+    scene black with dissolve
+    # Harusnya Game center
+    scene mall temp with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Ketika tarian itu mencapai puncaknya kemudian diakhiri dengan gerakan yang elegan, memutar tubuhnya sekali lagi sebelum berhenti dengan satu gerakan terakhir yang sempurna."
+    show tana_side at left with dissolve
+    tana "Yeyyy perfect score!"
+    hide tana_side with dissolve
+    show tana at char_center with dissolve
+    mcname "*Claps*"
+    show tana_side at left with dissolve
+    tana "E-Eh? [mcname]? Lu dari kapan di sini?"
+    hide tana_side with dissolve
+    mcname "Baru aja kok."
+    show tana_side at left with dissolve
+    tana "Oooooh. Fiuh, gue kira udah dari tadi."
+    hide tana_side at left with dissolve
+    mcname "Keren juga lu perfect score!"
+    show tana_side at left with dissolve
+    tana "Gue gitu lohh. Yauda, yuk ke cafenya sekarang."
+    hide tana_side with dissolve
+    mcname "Gass"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play sound "audio/cafe-entrance.mp3" fadein 1.0
+    scene cafe with dissolve
+    show tana at char_center with dissolve
+    play music "audio/BGM_Cafe Cerah.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Sesampainya di cafe, Tana dan [mcname] langsung mendatangi kasir."
+    "Staff" "Haloo, mau pesan apa?"
+    show tana_side at left with dissolve
+    tana "Mbak! Plis banget, yang ini promonya masih ada kan?"
+    hide tana_side with dissolve
+    "Staff" "Ada kok, kak. Paket promonya 2 spicy noodle, 2 fried wonton, 2 ice tea, dan dimsum."
+    show tana_side at left with dissolve
+    tana "Asikk masih ada!"
+    tana "Kalo gitu, pesen 1 promo, ya."
+    hide tana_side with dissolve
+    mcname "Lu bawa duit, kan?"
+    show tana_side at left with dissolve
+    tana "Sekarang mah bawa kocak."
+    hide tana_side with dissolve
+    mcname "Iye iye, percaya dah."
+    "Staff" "Kalo gitu paket promonya 1, ya."
+    "Staff" "Pesanannya nanti akan kami antar."
+    show tana_side at left with dissolve
+    tana "Terima kasih, kak."
+    hide tana_side with dissolve
+    mcname "Tan, di sana kosong."
+    show tana_side at left with dissolve
+    tana "Oke"
+    hide tana_side with dissolve
+    "Tak lama setelah [mcname] dan Tana duduk, pesanan diantarkan oleh staff."
+    show tana_side at left with dissolve
+    tana "Cepet juga datengnya."
+    hide tana_side with dissolve
+    mcname "Iya nih."
+    "Staff" "Pesanan sudah sesuai, ya."
+    mcname "Sudah, Mbak. Terima kasih."
+    "Tana dan [mcname] berbincang sambil menikmati pesanan yang dipesan."
+    mcname "Pelan pelan, kocak. Kalo keselek Mi Pedes, mati lu."
+    show tana_side at left with dissolve
+    tana "Iye iye"
+    hide tana_side with dissolve
+    mcname "Btw, gue baru tau lu bisa ngedance."
+    show tana_side at left with dissolve
+    tana "Iya, gue dulu perform di event-event jejepangan."
+    hide tana_side with dissolve
+    mcname "Oooooh, emang wibu."
+    show tana_side at left with dissolve
+    tana "Lu juga, kocak."
+    tana "Tapi gua sekarang udah gak pernah ngedance lagi, sih."
+    hide tana_side with dissolve
+    mcname "Lah kenapa?"
+    show tana_side at left with dissolve
+    tana "Kepo lu. Mending makan."
+    hide tana_side with dissolve
+    mcname "Idihh, sok misterius banget lu."
+    show tana_side at left with dissolve
+    tana "AHAHAHAHA-"
+    tana "UHUK UHUK UHUK"
+    hide tana_side with dissolve
+    mcname "Nah, kan. Hadehh"
+    $ quick_menu = False
+    screen black with dissolve
+    screen cafe with dissolve
+    "Setelah selesai makan, Tana dan [mcname] menghampiri kasir untuk membayar pesanan."
+    show tana at char_center with dissolve
+    show tana_side at left with dissolve
+    tana "Kak ini harga menu promonya 48 ribu, ya?"
+    hide tana_side with dissolve
+    "Staff" "Iya, kak."
+    mcname "Lu seriusan bawa duit, kan?"
+    show tana_side at left with dissolve
+    tana "Liat nih gue bayar."
+    hide tana_side with dissolve
+    "Tana memberikan uang kepada kasir"
+    "Staff" "Terima kasih banyak, Kak."
+    show tana_side with dissolve
+    tana "Yauda, ayok pulang."
+    hide tana_side with dissolve
+    mcname "UHUK! UHUK!"
+    show tana_side at left with dissolve
+    tana "Lu kenapa kocak?"
+    tana "Keselek angin?"
+    hide tana_side with dissolve
+    mcname "Uhuk 80 ribu, uhuk."
+    show tana_side at left with dissolve
+    tana "Oia, lupa. Hehe"
+    tana "Ini yahh. Perhitungan banget sih lu ah."
+    hide tana_side with dissolve
+    mcname "Nah, gitu dongg."
+    show tana_side at left with dissolve
+    tana "Yauda gue duluan, ya. Habis ini ada urusan lagi."
+    hide tana_side with dissolve
+    mcname "Yauda gue juga cabut dulu. Thanks ya traktirannya."
+    "Tana dan [mcname] pulang ke rumahnya masing-masing"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+    "Sesampainya di kosan, [mcname] berbaring di kasur sambil menatap langit-langit."
+    mcname "......"
+    show tana at char_center with dissolve
+    "Dipikir pikir, Tana cantik banget ya dance nya."
+    "......"
+    hide tana with dissolve
+    "Ah, kok malah jadi mikirin Tana."
+    "Mending turu."
+    scene black with dissolve
