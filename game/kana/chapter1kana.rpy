@@ -981,7 +981,7 @@ label chapter1kana3kos:
     $ quick_menu = False
     scene black with dissolve
     # harusnya bg monas
-    scene depan kampus with Dissolve(2.0)
+    scene monas temporary with Dissolve(2.0)
     $ quick_menu = True
     play music "audio/BGM_Monas.mp3" loop fadein 1.0
     "Mereka pun memutuskan untuk meninggalkan [mahasiswa_c_name] dan mulai mengerjakan tugas kelompok yang diberikan"
@@ -993,7 +993,7 @@ label chapter1kana3kos:
 label chapter1kana3monas:
     scene black with dissolve
     # Harusnya BG Monas
-    scene depan kampus with Dissolve(2.0)
+    scene monas temporary with Dissolve(2.0)
     $ quick_menu = True
     play music "audio/BGM_Monas.mp3" loop fadein 1.0
     "Setelah itu, mereka memutuskan untuk berhenti sejenak di sekitar monas dikarenakan panas yang tidak tertahankan"
@@ -1046,7 +1046,7 @@ label chapter1kana3monasesteh:
     $ quick_menu = False
     scene black with dissolve
     # harusnya bg monas
-    scene depan kampus with Dissolve(2.0)
+    scene monas temporary with Dissolve(2.0)
     $ quick_menu = True
     "[mcname] melihat ada sebuah stand minuman es teh yang cukup ramai"
     "Ia pun memilih untuk membelikan mereka minuman itu"
@@ -1079,7 +1079,7 @@ label chapter1kana3monasesteh:
     $ quick_menu = False
     scene black with dissolve
     # BG Monas
-    scene depan kampus with dissolve
+    scene monas temporary with dissolve
     show freya at char_left with dissolve
     show kana at char_right with dissolve
     $ quick_menu = True
