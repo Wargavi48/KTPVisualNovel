@@ -581,7 +581,7 @@ label chapter1piajalansamapiapio:
     $ quick_menu = True
     pia "Weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan."
     pia "Pensil 2, cat air 1, kuas, dan sebagainya."
-    Pia "Tapi pas dijumlah gak kerasa, tau-tau mahal juga."
+    pia "Tapi pas dijumlah gak kerasa, tau-tau mahal juga."
     hide pia_side with dissolve
     show fio_side at left with dissolve
     fio "Welcome to DKV."
