@@ -17,6 +17,7 @@ image rooftop = "images/BG/rooftop.jpg"
 image lorong = "images/BG/lorong.png"
 image lorong sore = "images/BG/lorongsore.png"
 image lorong malam = "images/BG/lorong malam.png"
+image sawah = "images/BG/sawah.jpg"
 image white = Solid("#FFFFFF")
 image pia tabrakan normal = "images/CG/pia_tabrakan_normal.png"
 image pia tabrakan ngomong = "images/CG/pia_tabrakan_ngomong.png"
