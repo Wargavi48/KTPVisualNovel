@@ -602,7 +602,7 @@ label chapter1piamakanmall:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    play sound "audio/cafe-entrance.mp3"
+    play sound "audio/cafe-entrance.mp3" fadein 1.0
     show text "{color=#FFF}MEMASUKI CAFE{/color}" with Pause(2.0)
     scene cafe with dissolve
     play music "audio/BGM_Cafe Cerah.mp3" fadein 1.0
@@ -768,15 +768,17 @@ label chapter1piamakanmall:
     pia "SORE MASIH ADA KELAS LAGI, JADI GA BISA JAUH-JAUH."
     hide pia_side with dissolve
     mcname "Lesgo, sama. Pusing weh."
+    stop music fadeout 1.0
     scene black with dissolve
-    # Harusnya BG Hall
-    scene depan kampus with dissolve
-    # BGM Hall
+    scene lorong with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
     "Pia dan [mcname] pun berkeliling di kampus tanpa arah dan tujuan."
+    stop music fadeout 1.0
+    $ quick_menu = False
     scene black with dissolve
-    # Harusnya BG Sawah
-    scene depan kampus with dissolve
-    # BGM Sawah
+    scene sawah with dissolve
+    # harusnya BGM Sawah
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = True
     "Sampai akhirnya mereka masuk ke kawasan fakultas pertanian dan kehutanan."
