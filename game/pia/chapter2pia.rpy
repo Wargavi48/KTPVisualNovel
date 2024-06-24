@@ -122,10 +122,8 @@ label chapter2piaaftergame:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
-    # Harusnya BG Hall
-    scene depan kampus with dissolve
-    #  Harusnya BGM Hall
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    scene lorong with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = True
     "Keesokan harinya, semua karya sudah terpajang di sepanjang lorong dan lobby gedung DKV. Banyak sekali Mahasiswa/i dari fakultas lain yang datang untuk sekedar berswafoto atau menikmati hasil karya Maba DKV layaknya mengunjungi pameran seni."
@@ -153,8 +151,7 @@ label chapter2piaaftergame:
     fio "Oh itu temen aku. Kayaknya kalian ketemu deh pas di cafe. Kalian lupa kali."
     $ quick_menu = False
     scene black with dissolve
-    # Harusnya BG Hall
-    scene depan kampus with dissolve
+    scene lorong with dissolve
     $ quick_menu = True
     "Setelah berkeliling"
     show kana at kana_near_left_2 with dissolve
@@ -195,7 +192,7 @@ label chapter2piaaftergame:
     $ quick_menu = False
     scene black with dissolve
     # Harusnya BG Hall
-    scene depan kampus with dissolve
+    scene lorong with dissolve
     $ quick_menu = True
     "Akhirnya mereka bertiga pun pergi setelah berkeliling melihat hasil karya anak-anak DKV."
     stop music fadeout 1.0
@@ -232,8 +229,8 @@ label chapter2piaaftergame:
     $ quick_menu = False
     scene black with dissolve
     # Harusnya BG Hall
-    scene depan kampus with dissolve
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    scene lorong with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
     show pia at pia_near_right with dissolve
     show fio at char_near_left with dissolve
     show pia_side at left with dissolve
@@ -297,10 +294,8 @@ label chapter2piaaftergame:
     $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}Keesokan Harinya{/color}"
-    # Harusnya BG Hall
-    scene depan kampus with dissolve
-    # Harusnya BGM Hall
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    scene lorong with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
     show feni at char_center with dissolve
     show feni_side at left with dissolve
     $ renpy.block_rollback()
@@ -324,7 +319,7 @@ label chapter2piaaftergame:
     mcname "*Buka pintu ke rooftop*"
     $ quick_menu = False
     # Harusnya BG Rooftop
-    scene depan kampus with dissolve
+    scene rooftop with dissolve
     $ quick_menu = True
     mcname "Woaaa...."
     mcname "P-Pia............."
@@ -700,8 +695,7 @@ label chapter2piaafterquiz:
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}Di Rooftop{/color}" with Pause(2.0)
-    # Harusnya BG Rooftop
-    scene depan kampus with dissolve
+    scene rooftop with dissolve
     play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = True
