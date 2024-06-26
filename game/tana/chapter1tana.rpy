@@ -157,10 +157,8 @@ label tanamcdaftarulang:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    # Harusnya BG Lorong
-    scene depan kampus with dissolve
-    #  Harusnya BGM Lorong
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    scene lorong with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname] dan kelompoknya pun berkeliling kampus untuk melihat fasilitas jurusan pertanian dibimbing oleh Kakak kelasnya yang bernama Flora. Tapi tiba tiba…"
@@ -174,10 +172,8 @@ label tanamcdaftarulang:
     "Dengan sedikit terburu buru, [mcname] bergegas ke toilet."
     "Setelah selesai, [mcname] pun keluar toilet dan melihat sekeliling."
     $ quick_menu = False
-    # Harusnya BG Lorong
-    scene depan kampus with dissolve
-    # Harusnya BGM Lorong
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    scene lorong with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = True
     mcname "{i}Aduh pada kemana ya kok udah sepi aja, mana gak tau jalan lagi{/i}"
@@ -205,9 +201,7 @@ label tanamcdaftarulang:
     scene black with dissolve
     show text "{color=#FFF}1 JAM KEMUDIAN{/color}" with Pause(2.0)
     scene awan with dissolve
-    # Harusnya BG lorong 
-    scene depan kampus with dissolve
-    #  Harusnya BGM Lorong
+    scene lorong with dissolve
     play music "audio/BGM_Lawak Tana.mp3" fadein 1.0
     show tana at tana_near with dissolve
     $ quick_menu = True
@@ -280,9 +274,8 @@ label tanamcdaftarulang:
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}DISAAT BERSAMAAN{/color}" with Pause(2.0)
-    # Harusnya BG Lorong
-    scene depan kampus with dissolve
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    scene lorong with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
     show flora at flora_center with dissolve
     show flora_side at left with dissolve
     $ renpy.block_rollback()
@@ -802,8 +795,7 @@ label tanamcdaftarulang:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
-    # Harusnya BG Sawah
-    scene depan kampus with dissolve
+    scene sawah with dissolve
     #  Harusnya BGM Sawah
     play music "audio/BGM_Kampus.mp3" fadein 1.0
     $ renpy.block_rollback()
@@ -837,8 +829,7 @@ label tanamcdaftarulang:
     mcname "Ayoook"
     $ quick_menu = False
     scene black with dissolve
-    # Harusnya BG Sawah
-    scene depan kampus with dissolve
+    scene sawah with dissolve
     show tana at tana_near with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
@@ -859,7 +850,7 @@ label tanamcdaftarulang:
     scene black with dissolve
     # Insert SFX Byurrr
     # Harusnya BG Sawah
-    scene depan kampus with dissolve
+    scene sawah with dissolve
     $ quick_menu = True
     "[mcname] berniat menolong Tana, tapi malah ikut tercebur."
     mcname "Adududuh"
@@ -898,7 +889,7 @@ label tanamcdaftarulang:
     $ quick_menu = False
     scene black with Pause(2.0)
     # Harusnya BG Sawah
-    scene depan kampus with dissolve
+    scene sawah with dissolve
     show tana at tana_near with dissolve
     $ quick_menu = True
     mcname "Lu gimana pulangnya nanti?"
@@ -928,8 +919,7 @@ label tanamcdaftarulang:
     $ quick_menu = False
     scene black with dissolve
     scene awan with dissolve
-    # Harusnya BG Sawah siang
-    scene depan kampus with dissolve
+    scene sawah with dissolve
     show tana at tana_right with dissolve
     show flora at flora_left with dissolve
     show flora_side at left with dissolve
