@@ -96,14 +96,19 @@ label chapter1pia:
             mcname "Ah gak papa kok,"
             mcname "Hehe"
             mcname "Maaf juga, aku ngelamun di tengah jalan."
+            $ quick_menu = False
             scene pia tabrakan ngomong with dissolve
+            $ quick_menu = True
             pia "Hehe, oke. Maaf, byeeee"
             $ quick_menu = False
             scene depan kampus with dissolve
             jump chapter1piacarajalan
 
 label chapter1piacarajalan:
+    $ renpy.block_rollback()
+    $ quick_menu = True
     mcname "Ah! Aku juga harus buru-buru daftar ulang!!"
+    $ quick_menu = False
     menu:
         "Cara jalanmu kesana"
         "Lari terburu buru":
@@ -807,10 +812,13 @@ label chapter1piamakanmall:
     pia "SORE MASIH ADA KELAS LAGI, JADI GA BISA JAUH-JAUH."
     hide pia_side with dissolve
     mcname "Lesgo, sama. Pusing weh."
+    $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
     scene lorong with dissolve
     play music "audio/BGM_Lorong.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Pia dan [mcname] pun berkeliling di kampus tanpa arah dan tujuan."
     stop music fadeout 1.0
     $ quick_menu = False
@@ -857,7 +865,7 @@ label chapter1piamakanmall:
     $ quick_menu = True
     "[mcname] memejamkan mata menikmati alunan suara Pia yang sedang bernyanyi."
     $ quick_menu = False
-    scene depan kampus with dissolve
+    scene sawah with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
     mcname "*Pia pun tanpa sadar menyenderkan kepalanya di pundak kanan [mcname]*"
