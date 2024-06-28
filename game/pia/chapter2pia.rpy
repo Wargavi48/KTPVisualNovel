@@ -2,12 +2,16 @@ label chapter2piabegin:
     scene black with dissolve
     show text "{color=#FFF}Chapter II{/color}" with Pause(2.0)
     scene black with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Peralatan menggambar sudah siap, Mahasiswa/i baru DKV pun memulai kelas ujian menggambar pertamanya."
+    $ quick_menu = False
     scene kelas with dissolve
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     show dosen at dosen_center with dissolve
     show dosen_side at left with dissolve
     $ dosen_name = "Dosen Seni"
+    $ renpy.block_rollback()
     $ quick_menu = True
     dosen "Ya, ujiannya adalah menggambar teman kalian."
     hide dosen_side at left with dissolve
@@ -54,6 +58,7 @@ label chapter2piabegin:
     scene kelas with dissolve
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     pia "HAI [mcname]! HUEHEHEHEH!"
     hide pia_side with dissolve
@@ -191,8 +196,8 @@ label chapter2piaaftergame:
     hide fio_side with dissolve
     $ quick_menu = False
     scene black with dissolve
-    # Harusnya BG Hall
     scene lorong with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Akhirnya mereka bertiga pun pergi setelah berkeliling melihat hasil karya anak-anak DKV."
     stop music fadeout 1.0
@@ -200,13 +205,15 @@ label chapter2piaaftergame:
     scene black with dissolve
     show text "{color=#FFF}DITEMPAT LAIN{/color}" with Pause(2.0)
     scene kantin with dissolve
-    play music "audio/bgm_kantin.mp3" fadein 1.0 
+    play music "audio/bgm_kantin.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True 
     "(Suara notif berkali kali)"
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
-    $ renpy.block_rollback()
     pia "Weh [mcname]!!! Cepio ngirim foto dia selfie sama gambar kita!!!!"
     hide pia_side with dissolve
+    $ quick_menu = False
     nvl clear
     fio_nvl "P"
     fio_nvl "P"
@@ -215,6 +222,7 @@ label chapter2piaaftergame:
     fio_nvl "P"
     fio_nvl "P"
     fio_nvl "{image=cepio selfie.png}"
+    $ renpy.block_rollback()
     $ quick_menu = True
     mcname "Wah, iya. Aku juga baru liat di grup nih, ahaha."
     mcname "Mau nyusulin ke sana, gak?"
@@ -228,12 +236,12 @@ label chapter2piaaftergame:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    # Harusnya BG Hall
     scene lorong with dissolve
     play music "audio/BGM_Lorong.mp3" fadein 1.0
     show pia at pia_near_right with dissolve
     show fio at char_near_left with dissolve
     show pia_side at left with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     pia "CEPIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO~"
     hide pia_side with dissolve
@@ -263,15 +271,21 @@ label chapter2piaaftergame:
     $ quick_menu = False
     scene black with dissolve
     scene depan kampus with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "[mcname], Pia, dan Fiony pun berbincang panjang lebar sampai sore hari dan memutuskan untuk mengakhiri hari itu dan pulang."
+    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
     scene kelas with dissolve 
     show dosen at dosen_center with dissolve
     show dosen_side at left with dissolve
     play music "audio/BGM_Kelas.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     dosen "--jadi, persiapkan diri kalian. Mulai besok masuk minggu UTS, belajar dan asah skill kalian. Istirahat yang cukup. Semoga hasilnya memuaskan, ya."
     "Mahasiswa/i" "Baik buuuu~"
+    $ quick_menu = False
     scene black with dissolve
     scene kelas with dissolve
     show pia at pia_near with dissolve
@@ -296,7 +310,7 @@ label chapter2piaaftergame:
     show text "{color=#FFF}Keesokan Harinya{/color}"
     scene lorong with dissolve
     play music "audio/BGM_Lorong.mp3" fadein 1.0
-    show feni at char_center with dissolve
+    show feni at feni_center with dissolve
     show feni_side at left with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
@@ -318,8 +332,8 @@ label chapter2piaaftergame:
     mcname "Hmm ngintip dikit kali, ya? Pengen liat siapa..."
     mcname "*Buka pintu ke rooftop*"
     $ quick_menu = False
-    # Harusnya BG Rooftop
     scene rooftop with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     mcname "Woaaa...."
     mcname "P-Pia............."
@@ -407,9 +421,10 @@ label chapter2piaaftergame:
     pia "Wooeee stoooop weh. Udah, cuma mimpi. Aku sekarang udah nyaman begini."
     $ quick_menu = False
     menu:
-        " "
         #Dihilangin textbox
         "Ah! Tadi aku dapet flyer ini. *Kasih semua flyer* mau ikut gak? ada acara jejepangan beberapa bulan lagi nih. terus itu ada 3 flyer, ada yang recruitment jadi idol juga. mau coba gak?":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             $ pia_ending_route = "Good Ending"
             mcname "Ah! Tadi aku dapet flyer ini. \n*Kasih semua flyer*"
             mcname "Mau ikut gak? Ada acara jejepangan beberapa bulan lagi nih. Terus itu ada 3 flyer, ada yang recruitment jadi idol juga. Mau coba gak?"
@@ -429,6 +444,8 @@ label chapter2piaaftergame:
             hide pia_side at left with dissolve
             jump chapter2piaafterrooftop
         "Ah! Tadi aku dapet flyer ini. *Kasih flyer event jejepangan*. Nonton yuk nanti!":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             mcname "Ah! Tadi aku dapet flyer ini. *Kasih flyer event jejepangan*. Nonton yuk nanti!"
             show pia at pia_near with dissolve
             show pia_side at left with dissolve
@@ -449,6 +466,7 @@ label chapter2piaaftergame:
             mcname "Dah nih, ya."
             show pia_side at left with dissolve
             pia "Lesgoooooo, huahahaha!"
+            $ quick_menu = False
             stop music fadeout 1.0
             scene black with dissolve
             show text "{color=#FFF}*Beberapa bulan kemudian, ada gosip beredar bahwa acara jejepangan tersebut gagal dilaksanakan karena promotor acara kabur membawa uang donatur dan sponsor*{/color}" with Pause(2.0)
@@ -457,6 +475,8 @@ label chapter2piaaftergame:
             jump credits
         "Apapun pilihan kamu Pia, aku akan tetap support kamu mau apapun itu.":
             $ pia_ending_route = "True Ending"
+            $ renpy.block_rollback()
+            $ quick_menu = True
             mcname "Apapun pilihanmu, Pia, aku akan tetap support kamu. Mau apapun itu."
             show pia_side_shy at left with dissolve
             pia "Aww [mcname]..."
@@ -523,7 +543,10 @@ label chapter2piaafterrooftop:
     mc_nvl "Terserah, mau dimana? Cafe x? atau di mana?"
     pia_nvl "Yaudah OTW!"
     stop music fadeout 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "[mcname] pun bersiap siap untuk pergi ke cafe"
+    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}Beberapa menit kemudian di cafe X *DONATUR Tier2*{/color}" with Pause(2.0)
     scene cafe with dissolve
@@ -578,13 +601,18 @@ label chapter2piaafterrooftop:
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     scene mc bedroom with dissolve
     play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "[mcname] ngomong sendiri di kosan. Deg degan hari ini ujian tertulis mata kuliah paling susah."
     mcname "Duhhh. Hari ini ujian tertulis paling susah. Deg deg an, huhu."
+    $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}Sesampainya di kelas{/color}" with Pause(2.0)
     scene kelas with dissolve
     play music "audio/BGM_Kelas.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Suasana kelas sepi, semua sibuk belajar dan menghapal. Ya, hari ini ujian tertulis mata kuliah xxx."
     show pia at pia_near with dissolve
     mcname "Pagi Mbak Pia!"
@@ -597,6 +625,7 @@ label chapter2piaafterrooftop:
     show dosen_side at left with dissolve
     dosen "Pagi, semua buku dan HP simpan di depan ya. Di atas meja hanya boleh ada alat tulis. Ujian kita mulai 10 menit lagi."
     "Mahasiswa/i" "Baik buuuu~"
+    $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
     play sound "audio/Alarm.mp3" fadein 1.0
@@ -604,6 +633,8 @@ label chapter2piaafterrooftop:
     jump quiz
     
 label chapter2piaafterquiz:
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Selesai ujian, semua mahasiswa/i mengumpulkan lembar jawaban ke pengawas. Ujian hari itu berakhir."
     mcname "Hueeeee selesai juga ini ujian.\n*Liat kanan kiri*"
     show pia at pia_near with dissolve
@@ -765,6 +796,7 @@ label chapter2piaafterquiz:
     hide pia_side with dissolve
     mcname "Gak gituuuuu..."
     "[mcname] dan Pia pun banyak bercerita sambil menikmati cemilan di rooftop."
+    $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)

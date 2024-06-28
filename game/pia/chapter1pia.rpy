@@ -3,15 +3,16 @@ define pia_ending_route = ""
 
 
 label chapter1pia:
-    $ renpy.block_rollback()
-    $ quick_menu = False
     scene awan with dissolve
     scene depan kampus with Dissolve(2.0)
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Pagi ini kubuka lembaran baru untuk melanjutkan pendidikanku ke jenjang selanjutnya. Aku mengambil jurusan DKV, hari ini merupakan hari dimana aku datang ke kampus."
     mcname "{i}Wah besar juga ya kampusnya,{/i}"
     mcname "{i}Aku bakal kuliah disini nih.{/i}"
     mcname "{i}Bakal ketemu orang-orang kayak gimana ya…{/i}"
     mcname "{i}Huehuehue, udah gak sabar aku–{/i}"
+    $ quick_menu = False
     scene black with dissolve
     play sound "audio/tabrakan.mp3"
     show text "{color=#FFF}BRUKKKKK{/color}" with Pause(2.0)
@@ -20,8 +21,10 @@ label chapter1pia:
     window auto hide
     camera:
         subpixel True xpos -1089 zoom 1.96
-        ypos -990 
+        ypos -990
+    $ quick_menu = True
     "..."
+    $ quick_menu = False
     window auto hide
     camera: 
         linear 7.00 ypos -270 
@@ -30,7 +33,8 @@ label chapter1pia:
     camera:
         subpixel True pos (0, 0) zoom 1.0
     with Pause(2.10)
-    scene pia tabrakan ngomong with dissolve    
+    scene pia tabrakan ngomong with dissolve
+    $ renpy.block_rollback()    
     $ quick_menu = True
     pia "Eh maap, Kak. Ketabrak."
     pia "Gak apa-apa kan? Lagi buru-buru."
@@ -41,6 +45,8 @@ label chapter1pia:
         "Respon kamu..."
         "Marahin":
             scene depan kampus with dissolve
+            $ renpy.block_rollback()
+            $ quick_menu = True
             mcname "EH LAIN KALI LIAT-LIAT DONG!"
             mcname "PAKE MATA!!!!!!"
             mcname "LAGI JALAN SANTAI-SANTAI MALAH DITABRAK."
@@ -50,6 +56,8 @@ label chapter1pia:
             pia "EH, AKU JUGA DAH MINTA MAAF LOH,"
             pia "KOK MALAH NGEGAS?"
             stop music fadeout 1.0
+            $ renpy.block_rollback()
+            $ quick_menu = False
             scene black with dissolve
             show text "{color=#FFF}KALIAN BERDUA MALAH BERANTEM TERUS DI LIATIN \nDAN BAHKAN DIREKAM ORANG-ORANG.{/color}" with Pause(2.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
@@ -59,6 +67,8 @@ label chapter1pia:
         "Nasehatin":
             scene depan kampus with dissolve
             show pia_shy at pia_near with dissolve
+            $ renpy.block_rollback()
+            $ quick_menu = True
             mcname "Iya gapapa, kok."
             mcname "Tapi lain kali ga usah lari-lari, ya."
             mcname "Kalau kata Mamahku tuh-"
@@ -72,6 +82,7 @@ label chapter1pia:
             mcname "Mamahku tuh banyak banget nasehat-nasehat yang baik."
             mcname "Dengerin dulu."
             mcname "Jadi-"
+            $ quick_menu = False
             stop music fadeout 1.0
             scene black with dissolve
             show text "{color=#FFF}[mcname] MALAH NGOMONG NASEHAT DAN MALAH BIKIN PEREMPUAN ITU TERLAMBAT \nDAN LU PUN DILIAT ANEH SAMA ORANG-ORANG.{/color}" with Pause(2.0)
@@ -80,19 +91,18 @@ label chapter1pia:
             play music "audio/Dreamcatcher.mp3" fadein 1.0
             jump credits
         "Maafin":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             mcname "Ah gak papa kok,"
             mcname "Hehe"
             mcname "Maaf juga, aku ngelamun di tengah jalan."
             scene pia tabrakan ngomong with dissolve
             pia "Hehe, oke. Maaf, byeeee"
+            $ quick_menu = False
             scene depan kampus with dissolve
             jump chapter1piacarajalan
-            stop music fadeout 1.0
-            scene black with dissolve
-            jump credits
 
 label chapter1piacarajalan:
-    $ quick_menu = False
     mcname "Ah! Aku juga harus buru-buru daftar ulang!!"
     menu:
         "Cara jalanmu kesana"
@@ -111,18 +121,25 @@ label chapter1piacarajalan:
             play music "audio/Dreamcatcher.mp3" fadein 1.0
             jump credits
         "Jalan Cepat":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             "[mcname] memilih untuk berjalan cepat dan mengabaikan semua orang yang ada. Katanya sih, jalan cepat juga ada di olimpiade. Jadi harusnya efektif."
             $ quick_menu = False
             jump chapter1piajalancepat
         "Jalan Biasa":
+            $ renpy.block_rollback()
+            $ quick_menu = True
             mcname "Eh jalan biasa aja deh, yang penting sampai."
             mcname "Kita harus santai."
             mcname "Kalau kata Mamah,"
             mcname "{i}Alon-alon sing penting kelakon.{/i}"
             "[mcname] pun memilih untuk jalan biasa dan dia melihat orang sedang kesusahan."
+            $ quick_menu = False
             menu:
                 "Respon kamu..."
                 "Bantu":
+                    $ renpy.block_rollback()
+                    $ quick_menu = True
                     mcname "Eh sini aku bantuin."
                     "Orang" "Makasih ya ka, udah mau bantuin."
                     "Orang" "Eh kakak kan, kakak kandung ku yang udah lama ilang ya?"
@@ -131,6 +148,7 @@ label chapter1piacarajalan:
                     "Orang" "Mana adaaaa."
                     "Orang" "Nih liat ini foto kita waktu dulu"
                     "[mcname] pun melihat ke arah pergelangan orang itu dan ia melihat ada gelang yang menunjukan bahwa orang itu merupakan pasien RSJ."
+                    $ quick_menu = False
                     stop music fadeout 1.0
                     scene black with dissolve
                     show text "{color=#FFF}WADUH NIAT BAIK TAPI MALAH ZONK,{/color}" with Pause(2.0)
@@ -139,9 +157,12 @@ label chapter1piacarajalan:
                     scene depan kampus with dissolve
                     jump chapter1piacarajalan
                 "Diemin":
+                    $ renpy.block_rollback()
+                    $ quick_menu = True
                     "Setelah [mcname] melihat orang tersebut, [mcname] memilih untuk mengabaikan orang tersebut dan berjalan kembali."
                     "Akan tetapi, entah kenapa dia diikuti oleh orang tersebut."
                     "Ternyata mereka saling bertatap pandang dan orang itu mengira bahwa [mcname] adalah keluarganya"
+                    $ quick_menu = False
                     scene black with dissolve
                     show text "{color=#FFF}WADUH DI KEJAR GA TUH IIII TAKUTNYEEE.{/color}" with Pause(2.0)
                     play music "audio/BGM_Kampus.mp3" fadein 1.0
@@ -149,17 +170,24 @@ label chapter1piacarajalan:
                     jump chapter1piacarajalan
 
 label chapter1piajalancepat:
-    $ renpy.block_rollback()
+    $ quick_menu = False
     scene black with dissolve
     scene depan kampus with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "[mcname] pun selesai registrasi daftar ulang ke jurusan DKV."
+    $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
     scene awan with dissolve
     play music "audio/BGM_Kampus.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Walaupun ini sudah pertengahan tahun, namun Matahari secara terik menerangi Jakarta dan saat melihat ke atas langit, hanya langit biru lah yang terlihat."
+    $ quick_menu = False
     scene depan kampus with Dissolve(2.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     mcname "{i}Untung aja masih sempat untuk ikut orientasi, gak nyangka di Jakarta ternyata beneran macet parah.{/i}"
     mcname "{i}Yah walaupun begitu, ini memang pengalaman baru yang aku rasakan, berbeda jauh dari tempatku dulu{/i}"
@@ -248,6 +276,7 @@ label chapter1piajalancepat:
     play music "audio/BGM_kantin.mp3" fadein 1.0
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     pia "WEEEH GEDE JUGA KANTINNYA YA!!"
     hide pia_side with dissolve
@@ -321,6 +350,8 @@ label chapter1piajalancepat:
     play music "audio/BGM_Kelas.mp3" fadein 1.0
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     pia "Hueeeeeee [mcname], baru hari pertama tapi kayaknya udah berat gak sih pelajarannya?"
     hide pia_side with dissolve
     mcname "Engga sih, seru kok kayaknya. Cuma ya… ternyata banyak yang harus kita beli buat pertemuan selanjutnya, nih."
@@ -404,17 +435,17 @@ label chapter1piajalantanpapio:
     pia_nvl "Alamat kosan aku di xxxxxx"
     pia_nvl "EH, MAU DI KAMPUS JUGA GAPAPA"
     mc_nvl "Oke aku jemput ke kosan, ya"
-    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     nvl clear
     scene depan kosan with dissolve
     mc_nvl "Udah di depan kosan, yak."
     pia_nvl "TUNGGU!!!"
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Pia pun keluar dari kosan, siap untuk pergi dengan [mcname]."
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
-    $ quick_menu = True
     pia "GAK TELAT, KAN? PAS KAN YA AKU SIAP SIAPNYA? JAM 10 UDAH READY."
     hide pia_side with dissolve
     mcname "Tetangga kosan kamu gak ada yang komplain ya, tiap hari ada yang teriak kayak kemalingan gini?"
@@ -468,6 +499,7 @@ label chapter1piajalantanpapio:
     scene mall temp with Dissolve(2.0)
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     pia "Weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan. Pensil 2, cat air 1, kuas, dan sebagainya.... Tapi pas dijumlah gak kerasa, tau-tau mahal juga."
     hide pia_side with dissolve
@@ -548,6 +580,7 @@ label chapter1piajalansamapiapio:
     show pia at pia_near_right with dissolve
     show fio at char_near_left with dissolve
     show fio_side at left with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     fio "Di sini tempatnya. Tadaaaaaa~"
     hide fio_side with dissolve
@@ -609,6 +642,7 @@ label chapter1piamakanmall:
     show pia at pia_near_right with dissolve
     show fio at char_near_left with dissolve
     show pia_side at left with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     pia "Ummmmmmmm!!!!! Enaaaaak!!! Mantap lah, Cepio!\n*Sambil makan*"
     hide pia_side with dissolve
@@ -758,12 +792,17 @@ label chapter1piamakanmall:
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     scene kelas with dissolve
     play music "audio/BGM_Kelas.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Mata kuliah nirmana dimulai, [mcname] dan Pia pun menggunakan peralatan yang dibelinya kemarin."
+    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}3 JAM KEMUDIAN, SETELAH SELESAI SESI PERKULIAHAN{/color}" with Pause(2.0)
     scene kelas with dissolve
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     pia "[mcname]!!!!!! MUMET GUEH! AYO KELUAR. REFRESHING KE MANA KEK, MUTERIN KAMPUS."
     pia "SORE MASIH ADA KELAS LAGI, JADI GA BISA JAUH-JAUH."
     hide pia_side with dissolve
@@ -814,10 +853,12 @@ label chapter1piamakanmall:
     mcname "{i}Woaaaa suara Pia bagus juga ternyata.{/i}"
     $ quick_menu = False
     scene black with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname] memejamkan mata menikmati alunan suara Pia yang sedang bernyanyi."
     $ quick_menu = False
     scene depan kampus with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     mcname "*Pia pun tanpa sadar menyenderkan kepalanya di pundak kanan [mcname]*"
     "Tak terasa, waktu pun sudah beranjak sore. [mcname] dan Pia kembali ke fakultasnya untuk memasuki kelas yang dimulai sore itu."
