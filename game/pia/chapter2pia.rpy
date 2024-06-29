@@ -490,5 +490,5 @@ label chapter2piaaftergame:
             mcname "Okeee. Siap, Pia!"
             show pia_side at left with dissolve
             pia "Ahahahahaha~"
+            hide pia_side with dissolve
             jump truepia
-#Good Ending True Ending Dibagi di sini
