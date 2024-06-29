@@ -80,4 +80,86 @@ label truepia:
     pia_nvl "P"
     mc_nvl "Ya?"
     pia_nvl "Lagi apa?"
-
+    mc_nvl "Gak ngapa-ngapain, cuma lagi sketch-sketch kecil aja"
+    pia_nvl "Iiih mau liaaaat"
+    mc_nvl "*Ngirim foto sketch Pia*"
+    pia_nvl "!!!!!"
+    pia_nvl "itu aku?"
+    pia_nvl "AKU???"
+    pia_nvl "AWWWWWW CO CWITTT"
+    mc_nvl "Bawel"
+    pia_nvl "Tumben, lagi mikirin aku ya sampe gambar aku gitu"
+    mc_nvl "???"
+    pia_nvl "Candaaa~"
+    pia_nvl "Tapi beneran deh dalam rangka apa nih."
+    mc_nvl "Enggak, cuma pengen aja ngelatih gambarku biar bisa jadi supportnya kamu."
+    pia_nvl "AWWWWWWWWWWWWWWWWWW"
+    mc_nvl "Gue block nih."
+    pia_nvl "Iya iya, engga ngeledekin lagi. Ahahaha"
+    mc_nvl "Alias, tumben ngechat duluan."
+    mc_nvl "Ada yang mau diomongin kah?"
+    pia_nvl "Bosen, mau chatting aja"
+    pia_nvl "Ga mau chatting sama aku? UwU"
+    menu:
+        "Respon Kamu?"
+        "Iye iye mau. Nih gue buka obrolan ya. Lagi ngapain Kak Pia?":
+            mc_nvl "Iye iye mau."
+            mc_nvl "Nih gue buka obrolan ya."
+            mc_nvl "Lagi ngapain Kak Pia?"
+            pia_nvl "Lagi boboan aja ini di kasur, hehe."
+            pia_nvl "[mcname], main game yuk."
+            mc_nvl "Game apa?"
+            pia_nvl "Umm…"
+            pia_nvl "Benar atau bohong."
+            mc_nvl "Menarik"
+            mc_nvl "Gimana jadinya?"
+            pia_nvl "Ya tebak aja, ini beneran apa bohongan."
+            mc_nvl "O-oke…"
+            pia_nvl "Aku sahabat bestie banget sama Cepio"
+            mc_nvl "Benar!"
+            pia_nvl "O"
+            pia_nvl "Cepio jelek."
+            mc_nvl "???"
+            mc_nvl "Ada gilanya."
+            mc_nvl "Bohong"
+            pia_nvl "O"
+            pia_nvl "Strawberry cake cafe xxxx enak banget."
+            mc_nvl "Benar!"
+            pia_nvl "O"
+            pia_nvl "Pas aku makan strawberry cake pas itu, kamu ngeliatin aku terus."
+            mc_nvl "???"
+            mc_nvl "Bohong"
+            pia_nvl "X"
+            pia_nvl "Aku Imut"
+            mc_nvl "Hmm…"
+            pia_nvl "???"
+            pia_nvl "*send foto*"
+            mc_nvl "Waduh."
+            pia_nvl "Jadi?"
+            mc_nvl "Benar..."
+            pia_nvl "Hehehe"
+            mc_nvl "Dah aku mau tidur ah"
+            pia_nvl "Bohong."
+            mc_nvl "O"
+            pia_nvl "Hahaha maaci dah nemenin. Met bobo."
+            mc_nvl "Iya Pia, met bobo juga."
+            "Malam itu terasa panjang sekali, sambil melanjutkan sketsa yang dibuat [mcname] dengan wajah yang memerah."
+            "Hari itu berakhir dengan kekalahan [mcname]."
+            $ quick_menu = False
+            scene black with dissolve
+            show text "KEEESOKAN HARINYA"
+            jump trueendrooftoppia
+        "Udah kemaleman tapi weh, aku mau tidur juga bentar lagi ini":
+            mc_nvl "Udah kemaleman tapi weh"
+            mc_nvl "Aku mau tidur juga bentar lagi ini"
+            pia_nvl "Ah oke yaudah deh"
+            stop music fadeout 1.0
+            show text "{color=#FFF}Udah gitu doang aja{/color}" with Pause(2.0)
+            show text "{color=#FFF}Kenapa?{/color}" with Pause(2.0)
+            show text "{color=#FFF}Soalnya di docs cerita author cuma nulis sampe mau tidur{/color}" with Pause(2.0)
+            show text "{color=#FFF}Cerita pun berhenti karena dev gak ada ide{/color}" with Pause(2.0)
+            show text "{color=#FF0000}BAD END{/color}"
+            play music "audio/Dreamcatcher.mp3" fadein 1.0
+label trueendrooftoppia:
+    scene rooftop with dissolve
+    show pia at pia_near with dissolve
