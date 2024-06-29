@@ -163,3 +163,38 @@ label truepia:
 label trueendrooftoppia:
     scene rooftop with dissolve
     show pia at pia_near with dissolve
+    mcname "Pia, ini aku lupa ngasih ini. Ada flyer acara jejepangan"
+    show pia_side at left with dissolve
+    pia "Hmm... Menarik"
+    pia "Eh."
+    pia "EH!! [mcname]!!!"
+    hide pia_side with dissolve
+    mcname "Apa?"
+    show pia_side at left with dissolve
+    pia "Ini ada bagian kreator."
+    pia "Yuk ikutan jualan!!!"
+    hide pia_side with dissolve
+    mcname "Heeeeee"
+    show pia_side at left with dissolve
+    pia "Katanya mau support aku…"
+    hide pia_side with dissolve
+    mcname "Iya… Tapi aku ga pernah jualan gambar, terus ga tau mau bikin apa."
+    show pia_side at left with dissolve
+    pia "Tenang, kamu bersama sepuh di sini. 1 booth bareng yuk."
+    hide pia_side with dissolve
+    mcname "Ya… Oke aja sih."
+    show pia_side at left with dissolve
+    pia "Hmm acara jejepangannya masih 3 bulan lagi"
+    pia "Bisa lah ini 2 bulan buat banyak merch."
+    hide pia_side with dissolve
+    mcname "Oke"
+    show pia_side at left with dissolve
+    pia "Kamu daftarin gih cepet."
+    hide pia_side with dissolve
+    mcname "Nama boothnya?"
+    show pia_side at left with dissolve
+    pia "Hmmm… Bener juga, apa ya."
+    hide pia_side with dissolve
+    mcname "Gimana kalo \"Yang Mulia dan Piaraan\"."
+    show pia_side at left with dissolve
+    pia "Ahahaha kamu jadi peliharaan?"
