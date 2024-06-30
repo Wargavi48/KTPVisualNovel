@@ -198,3 +198,48 @@ label trueendrooftoppia:
     mcname "Gimana kalo \"Yang Mulia dan Piaraan\"."
     show pia_side at left with dissolve
     pia "Ahahaha kamu jadi peliharaan?"
+    hide pia_side with dissolve
+    mcname "Biar lucu aja sih"
+    show pia_side at left with dissolve
+    pia "Selama aku jadi lebih superior dari kamu, aku setuju. Gas!!!"
+    hide pia_side with dissolve
+    "Akhirnya [mcname] mendaftarkan diri ke event jejepangan tersebut dengan nama circle \nYang Mulia dan Piaraan\n."
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}MALAM HARINYA DI KOS{/color}" with Pause(2.0)
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+    nvl clear
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "[mcname]!!!"
+    mc_nvl "......"
+    mc_nvl "Apa?"
+    pia_nvl "Hehehe"
+    mc_nvl "Apaan?"
+    pia_nvl "Besok ke kosan aku sini"
+    mc_nvl "HAH? GIMANA?"
+    pia_nvl "GAUSAH ANEH ANEH"
+    pia_nvl "BANTUIN GAMBAR BUAT MERCH LOOOH."
+    mc_nvl "OOOOH"
+    pia_nvl "KAMU MIKIR APA??"
+    mc_nvl "ENGGA"
+    mc_nvl "OKE BESOK SIANGAN YA."
+    pia_nvl "OKE, GAK ADA KELAS KAN BESOK."
+    mc_nvl "IYA"
+    mc_nvl "BTW"
+    mc_nvl "KENAPA JADI CAPSLOCK SEMUA"
+    pia_nvl "HAHAHAHAHAHAHA"
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    nvl clear
+    pia_nvl "[mcname]!!!"
+    pia_nvl "*insert maps icon* (masih malas masukin kesini)"
+    mc_nvl "?"
+    pia_nvl "Alamat kosan aku. Buruan sini, bantuin."
+    mc_nvl "Sekarang?"
+    pia_nvl "Iyaaaaa, mumpung lagi semangat gambar."
+    pia_nvl "Bawa laptop, sambil brainstorming kita."
+    
