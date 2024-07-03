@@ -443,5 +443,157 @@ label gambardikosanpia:
     jump quiz
 
 label truepiaafterquiz:
-    "Setelah Quiz True Ending Route"
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Selesai ujian, semua mahasiswa/i mengumpulkan lembar jawaban ke pengawas"
+    "Ujian hari itu berakhir"
+    stop music fadeout 1.0
+    scene black with dissolve
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    scene kelas with dissolve
+    show pia at pia_near with dissolve
+    mcname "Hueeeee selesai juga ini ujian."
+    mcname "*Liat kiri kanan*"
+    show pia_side at left with dissolve
+    pia ".........."
+    hide pia_side with dissolve
+    mcname "Hahahaha gimana? Lancar? Bisa kan jawabnya?"
+    show pia_side at left with dissolve
+    pia "Bisa lah!"
+    pia "Yang bener aja, cuma kayak ada yang kurang puas aja weh."
+    pia "Harusnya aku tambahin, blablabla-"
+    hide pia_side with dissolve
+    mcname "Akh ini dia! Pia Pia si ambis itu"
+    show pia_side at left with dissolve
+    pia "Ya lah! Harus bagus, jangan setengah-setengah."
+    pia "Tapi waktunya kurang hueeee~"
+    $ quick_menu = False
+    menu:
+        "Ke kantin kuy":
+            $ renpy.block_rollback()
+            $ quick_menu = True
+            mcname "Ke kantin kuy"
+            $ quick_menu = False
+            stop music fadeout 1.0
+            scene black with dissolve
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            jump credits
+        "Jalan-jalan yuk, keliling Jakarta gitu atau ke mana":
+            jump trueendpiajalanmonas
+
+label trueendpiajalanmonas:
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    show pia at pia_near with dissolve
+    mcname "Jalan-jalan yuk, keliling Jakarta gitu atau ke mana"
+    mcname "Gimana, mau?"
+    show pia_side at left with dissolve
+    pia "Now banget?"
+    pia "Siapa aja?"
+    pia "Ajak Cepio kah?"
+    hide pia_side with dissolve
+    mcname "Umm… kalo kita berdua aja gimana?"
+    show pia_side at left with dissolve
+    pia "Eeeeh\n*Blush*"
+    pia "A-ayooo"
+    hide pia_side with dissolve
+    "[mcname] dan Pia pun berjalan ke Monas naik kendaraan umum."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}DI MONAS{/color}" with Pause(2.0)
+    play music "audio/BGM_Monas.mp3" fadein 1.0
+    scene monas temporary with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Hueeeee Monas tuh gede ya."
+    pia "Fotooooo!!!!"
+    play sound "audio/camera.mp3"
+    hide pia_side with dissolve
+    mcname "Ih kayak orang baru pertama liat monas aja."
+    show pia_side at left with dissolve
+    pia "EMAAAAANG"
+    pia "Kamu gak mau foto di sini apa?"
+    hide pia_side with dissolve
+    mcname "Iya dah iya, fotoin nih."
+    show pia_side at left with dissolve
+    pia "Sini HP kamu."
+    hide pia_side with dissolve
+    "Pengamen" "*Nyanyi lagu*"
+    show pia_side at left with dissolve
+    pia "Weeeh"
+    hide pia_side with dissolve
+    mcname "Gas Pia dueeet."
+    show pia_side at left with dissolve
+    pia "*ikut nyanyi*"
+    hide pia_side with dissolve
+    mcname "Hahaha mantaaaap, digoyang Piaaaa~"
+    mcname "Bang, aku kasih 10rb. Bawain lagu ini bang, temen aku ngidam banget."
+    show pia_side at left with dissolve
+    pia "WEEEH APAAN!?"
+    hide pia_side with dissolve
+    "Pengamen" "Oke kak"
+    "Pengamen" "*nyanyi*"
+    show pia_side at left with dissolve
+    pia "LESGOOOOOOO~ HAHAHAHA!!!"
+    pia "*nyanyi*"
+    hide pia_side with dissolve
+    "Ternyata duet Pia dan pengamen menarik banyak perhatian orang dan sukses menghibur pengunjung yang datang ke Monas."
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}BEBERAPA SAAT KEMUDIAN{/color}" with Pause(2.0)
+    scene monas temporary with dissolve
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Hueeeehh~ Ahahahaha!! Seru juga, makasih bang!!!!"
+    hide pia_side with dissolve
+    "Pengamen" "Makasih neng!!!"
+    "Pia dan [mcname] pun berpisah dengan pengamen tersebut"
+    mcname "Klop banget, lucuuuu~"
+    show pia_side at left with dissolve
+    pia "HAHAHAHA!! Jadi pengalaman lucu nih."
+    hide pia_side with dissolve
+    mcname "Betuuul."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    scene kelas with dissolve
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    pia "Pagi [mcname]."
+    hide pia_side with dissolve
+    mcname "Pagii!!"
+    $ quick_menu = False
+    scene black with dissolve
+    play sound "audio/open_door.mp3" fadein 1.0
+    scene kelas with dissolve
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    dosen "Selamat pagi semuanya"
+    dosen "Pelajaran hari ini akan dimulai, ya. Hari ini saya berikan tugas untuk menggambar bebas dengan canvas dan cat."
+    dosen "Ngerjainnya bebas mau di mana aja, tapi nanti sebelum pelajaran berakhir harus dikumpulkan di sini ya."
+    dosen "Nanti saya ke kelas lagi di akhir pelajaran, ya."
+    hide dosen_side with dissolve
+    "Mahasiswa/i" "Baik buuu~"
+    "Dosen keluar kelas"
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Weeeeh tugasnya menggambar bebas!"
+    hide pia_side with dissolve
+    mcanme "Gimana? Mau ngegambar bareng?"
+    show pia_side at left with dissolve
+    pia "Gassss! Ke rooftop yuk! Sekalian cari inspirasi."
+    hide pia_side with dissolve
+    mcname "Okeee"
+    "[mcname] dan Pia pun memutuskan melukis bersama di rooftop"
     
+
