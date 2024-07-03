@@ -46,14 +46,14 @@
     "[mcname] pun bersiap siap untuk pergi ke cafe"
     scene black with dissolve
     play sound "audio/cafe-entrance.mp3" fadein 1.0
-    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN DI KAFE{/color}" with Pause(2.0)
+    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN{/color}" with Pause(2.0)
     show text "{color=#FFF}DI KAFE{/color}" with Pause(2.0)
     play music "audio/BGM_Cafe Sore.mp3" fadein 1.0
     scene cafe with dissolve
     $ renpy.block_rollback()
-    $ quick_menu = True
     show pia at char_placement with dissolve
     show pia_side at left with dissolve
+    $ quick_menu = True
     pia "[mcname] Sini!!"
     hide pia_side with dissolve
     hide pia with dissolve
@@ -90,7 +90,7 @@
     show pia_side at left with dissolve
     pia "Okeh! Saatnya belajar! Ayo!!"
     hide pia_side with dissolve
-    "[mcanme] dan Pia pun belajar bersama di cafe tersebut sampe larut malam [mcname] pun memutuskan meminjamkan buku tersebut ke Pia"
+    "[mcname] dan Pia pun belajar bersama di cafe tersebut sampe larut malam [mcname] pun memutuskan meminjamkan buku tersebut ke Pia"
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve

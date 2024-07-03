@@ -67,7 +67,7 @@ label truepia:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
-    show text "{color=#FFF}DI KOSAN{/color}"
+    show text "{color=#FFF}DI KOSAN{/color}" with Pause(2.0)
     scene mc bedroom with dissolve
     play music "audio/BGM_Kosan 2.mp3" fadein 1.0
     $ renpy.block_rollback()
@@ -93,7 +93,7 @@ label truepia:
     pia_nvl "Candaaa~"
     pia_nvl "Tapi beneran deh dalam rangka apa nih."
     mc_nvl "Enggak, cuma pengen aja ngelatih gambarku biar bisa jadi supportnya kamu."
-    pia_nvl "AWWWWWWWWWWWWWWWWWW"
+    pia_nvl "AWWWWWW"
     mc_nvl "Gue block nih."
     pia_nvl "Iya iya, engga ngeledekin lagi. Ahahaha"
     mc_nvl "Alias, tumben ngechat duluan."
@@ -146,8 +146,9 @@ label truepia:
             "Malam itu terasa panjang sekali, sambil melanjutkan sketsa yang dibuat [mcname] dengan wajah yang memerah."
             "Hari itu berakhir dengan kekalahan [mcname]."
             $ quick_menu = False
+            stop music fadeout 1.0
             scene black with dissolve
-            show text "KEEESOKAN HARINYA"
+            show text "KEEESOKAN HARINYA" with Pause(2.0)
             jump trueendrooftoppia
         "Udah kemaleman tapi weh, aku mau tidur juga bentar lagi ini":
             mc_nvl "Udah kemaleman tapi weh"
@@ -163,6 +164,9 @@ label truepia:
 label trueendrooftoppia:
     scene rooftop with dissolve
     show pia at pia_near with dissolve
+    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
     mcname "Pia, ini aku lupa ngasih ini. Ada flyer acara jejepangan"
     show pia_side at left with dissolve
     pia "Hmm... Menarik"
@@ -235,6 +239,8 @@ label trueendrooftoppia:
     $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+    scene mc bedroom with dissolve
     nvl clear
     pia_nvl "[mcname]!!!"
     pia_nvl "{image=location.png}"
@@ -249,6 +255,7 @@ label trueendrooftoppia:
     scene black with dissolve
     show text "{color=#FFF}DI DEPAN KOSAN PIA{/color}" with Pause(2.0)
     scene depan kosan with dissolve
+    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
     nvl clear
     mc_nvl "Oiii, depan."
     pia_nvl "Okeh wait, aku keluar."
@@ -305,12 +312,15 @@ label gambardikosanpia:
     pia "Oke, ini aku konsepin gambar ini ya."
     hide pia_side with dissolve
     "Pia pun mulai membuat sketsa dan memberikan arahan ke MC untuk membantunya"
+    $ quick_menu = False
     scene black with dissolve
-    show text "{color=#FFF}4 JAM KEMUDIAN{color}" with Pause(2.0)
+    show text "{color=#FFF}4 JAM KEMUDIAN{/color}" with Pause(2.0)
     # Harusnya Kosan Pia
     scene mc bedroom with dissolve
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     pia "WEEEEH UDAH GELAP AJA INI DI LUAR! GAK SADAR!"
     hide pia_side with dissolve
     mcname "Lah iya udah malem ya, hahaha gak terasa ya. fokus banget kita."
@@ -339,7 +349,7 @@ label gambardikosanpia:
     "[mcname] pun menyadari betapa mandirinya Pia dalam beberapa situasi, walaupun Pia selalu terlihat sebagai pribadi yang supel, mudah bergaul dengan banyak orang"
     "Namun dibalik itu semua tidak ada yang benar-benar mengenal Pia seutuhnya. Namun dengan adanya [mcname], Pia seperti menemukan cahaya baru untuk memulainya kembali."
     show pia at pia_near with dissolve
-    show pia_side with dissolve
+    show pia_side at left with dissolve
     pia "Kamu gak buka lemari-lemari aku kan??!!"
     hide pia_side with dissolve
     mcname "Pi, yang bener aja……"
@@ -375,12 +385,15 @@ label gambardikosanpia:
     pia "Makasih [mcname]"
     hide pia_side with dissolve
     mcname "Iyaaa. Yauda sana lanjut makannya"
+    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}SESUDAH MAKAN{/color}" with Pause(2.0)
     # Harusnya Kosan Pia
     scene mc bedroom with dissolve
-    mcname "Udah malem nih. Aku pulang dulu ya."
     show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Udah malem nih. Aku pulang dulu ya."
     show pia_side at left with dissolve
     pia "Yahhh…"
     hide pia_side with dissolve
@@ -402,6 +415,7 @@ label gambardikosanpia:
     play sound "audio/ReceiveText.ogg" 
     stop music fadeout 1.0
     mcname "......"
+    $ quick_menu = False
     play music "BGM_Happy dan Handphone.mp3" fadein 1.0
     nvl clear
     pia_nvl "Tidur?"
@@ -418,11 +432,14 @@ label gambardikosanpia:
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     show dosen at dosen_center with dissolve
     show dosen_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     dosen "Pagi!!"
     dosen "Semua buku dan HP simpan di depan ya."
     dosen "Di atas meja hanya boleh ada alat tulis"
     dosen "Ujian kita mulai 10 menit lagi."
     "Mahasiswa/i" "Baik buu~"
+    $ quick_menu = False
     jump quiz
 
 label truepiaafterquiz:

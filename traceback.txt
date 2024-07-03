@@ -1,32 +1,76 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/tana/chapter1tana.rpy", line 942, in script
-    show tana at tana_center with dissolve
-  File "game/tana/chapter1tana.rpy", line 942, in <module>
-    show tana at tana_center with dissolve
-NameError: name 'tana_center' is not defined
+While processing text tag {color} in '{color=#FFF}4 JAM KEMUDIAN{color}'.:
+  File "game/pia/truepia.rpy", line 316, in script
+    show text "{color=#FFF}4 JAM KEMUDIAN{color}" with Pause(2.0)
+Exception: empty value supplied for tag 'color'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/tana/chapter1tana.rpy", line 942, in script
-    show tana at tana_center with dissolve
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1113, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1072, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1072, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/tana/chapter1tana.rpy", line 942, in <module>
-    show tana at tana_center with dissolve
-NameError: name 'tana_center' is not defined
+  File "game/pia/truepia.rpy", line 316, in script
+    show text "{color=#FFF}4 JAM KEMUDIAN{color}" with Pause(2.0)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1363, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2814, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1352, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\transition.py", line 99, in render
+    return null_render(self, width, height, st, at)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\transition.py", line 70, in null_render
+    surf = renpy.display.render.render(d.new_widget,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\transform.py", line 957, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 978, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 413, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\transform.py", line 957, in render
+    return RenderTransform(self).render(width, height, st, at)
+  File "accelerator.pyx", line 978, in renpy.display.accelerator.RenderTransform.render
+  File "accelerator.pyx", line 413, in renpy.display.accelerator.RenderTransform.render_child
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\image.py", line 513, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\image.py", line 316, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "D:\fanbase_project\KTPVisualNovel\renpy\text\text.py", line 2276, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\text\text.py", line 640, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\text\text.py", line 1289, in segment
+    raise Exception("empty value supplied for tag %r" % tag)
+Exception: empty value supplied for tag 'color'
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Mon Jun 24 13:17:07 2024
+Wed Jul  3 21:26:31 2024

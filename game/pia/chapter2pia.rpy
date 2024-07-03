@@ -307,7 +307,7 @@ label chapter2piaaftergame:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    show text "{color=#FFF}Keesokan Harinya{/color}"
+    show text "{color=#FFF}Keesokan Harinya{/color}" with Pause(2.0)
     scene lorong with dissolve
     play music "audio/BGM_Lorong.mp3" fadein 1.0
     show feni at feni_center with dissolve
@@ -323,6 +323,7 @@ label chapter2piaaftergame:
     mcname "Simpen dulu deh. Siapa tau temen ada yg butuh."
     mcname "Saatnya ngerjain tugas gambar. Minggu ini dikumpulin buat UTS. Ayo semangat akuuuuu!!!"
     mcname "Ke rooftop, ah. Nyari inspirasi gambar."
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
     $ quick_menu = True
@@ -332,6 +333,7 @@ label chapter2piaaftergame:
     mcname "Hmm ngintip dikit kali, ya? Pengen liat siapa..."
     mcname "*Buka pintu ke rooftop*"
     $ quick_menu = False
+    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
     scene rooftop with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
