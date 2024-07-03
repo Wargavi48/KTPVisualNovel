@@ -441,6 +441,10 @@ label chapter2piaaftergame:
             show pia_side at left with dissolve
             pia "Umm… G-gak deh. Biarlah mimpi tetap jadi mimpi, hehe."
             hide pia_side at left with dissolve
+            "Akhirnya [mcname] duduk disebelah Pia sambil melihat pemandangan dari rooftop melihat jauh kedepan."
+            "Lalu menuangkan pemandangan indah itu dalam sebuah lukisan."
+            "tugas gambar [mcname] untuk UTS, selesai."
+            $ pia_route = "Good End"
             jump goodpia
         "Ah! Tadi aku dapet flyer ini. *Kasih flyer event jejepangan*. Nonton yuk nanti!":
             $ renpy.block_rollback()
@@ -491,4 +495,5 @@ label chapter2piaaftergame:
             show pia_side at left with dissolve
             pia "Ahahahahaha~"
             hide pia_side with dissolve
+            $ pia_route = "True End"
             jump truepia

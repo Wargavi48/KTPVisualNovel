@@ -232,14 +232,199 @@ label trueendrooftoppia:
     mc_nvl "KENAPA JADI CAPSLOCK SEMUA"
     pia_nvl "HAHAHAHAHAHAHA"
     stop music fadeout 1.0
+    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     nvl clear
     pia_nvl "[mcname]!!!"
-    pia_nvl "*insert maps icon* (masih malas masukin kesini)"
+    pia_nvl "{image=location.png}"
     mc_nvl "?"
     pia_nvl "Alamat kosan aku. Buruan sini, bantuin."
     mc_nvl "Sekarang?"
     pia_nvl "Iyaaaaa, mumpung lagi semangat gambar."
     pia_nvl "Bawa laptop, sambil brainstorming kita."
+    mc_nvl "O-oke"
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}DI DEPAN KOSAN PIA{/color}" with Pause(2.0)
+    scene depan kosan with dissolve
+    nvl clear
+    mc_nvl "Oiii, depan."
+    pia_nvl "Okeh wait, aku keluar."
+    stop music fadeout 1.0
+    play sound "audio/open_door.mp3"
+    scene black with dissolve
+    show text "{color=#FFF}DI DALEM KOSAN PIA{/color}" with Pause(2.0)
+    # Harusnya BG Kosan Pia
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Romance Pia Kamar.mp3" fadein 1.0
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    $ quick_menu = True
+    pia "Ngapain diem aja, duduk bawah? Keluarin laptop."
+    hide pia_side with dissolve
+    mcname "OTW"
+    show pia_side at left with dissolve
+    pia "Jadi gini, aku mau bikin merch gantungan kunci, stiker, poster."
+    pia "Kamu ada ide gak?"
+    hide pia_side with dissolve
+    menu:
+        mcname "Ummm...."
+        "Pin sama postcard?":
+            mcname "Pin sama postcard?"
+            jump gambardikosanpia
+
+        "Gak ada ide, ngikut aja.":
+            mcname "Gak ada ide, ngikut aja."
+
+label gambardikosanpia:
+    show pia_side at left with dissolve
+    pia "Hmm… menarik, oke jadi untuk yang mau aku gambar dari fandom anime AK0047 sama dari Keluarga Mata-Mata, ada ide gak?"
+    hide pia_side with dissolve
+    mcname "Kalo yang lagi rame sih dari anime My Deer Friend Kana-tan, gimana?"
+    show pia_side at left with dissolve
+    pia "Menarik, boleh. Kamu gambar itu ya."
+    hide pia_side with dissolve
+    mcname "Bentar, ini gambarnya gimana? Aku full? Gambarku ga bagus weh."
+    show pia_side at left with dissolve
+    pia "Oh iya, jadi gini. Aku gambar lineart, kamu coloring. nanti finishingnya aku."
+    hide pia_side with dissolve
+    mcname "Deal!!!"
+    show pia_side at left with dissolve
+    pia "Nanti kita dibantu Cepio sama temennya, mereka ikut jualan juga di booth kita."
+    hide pia_side with dissolve
+    mcname "Woaaaaa, baru nih."
+    show pia_side at left with dissolve
+    pia "Iya, soalnya pas diliat liat harga boothnya kalo kita berdua aja agak mahal."
+    pia "Terus nanti terlalu sepi kalo kita doang yang display."
+    pia "Jadi Cepio juga ikutan biar rame meja booth kita."
+    hide pia_side with dissolve
+    mcname "Okeeee, mantaaaaap."
+    show pia_side at left with dissolve
+    pia "Oke, ini aku konsepin gambar ini ya."
+    hide pia_side with dissolve
+    "Pia pun mulai membuat sketsa dan memberikan arahan ke MC untuk membantunya"
+    scene black with dissolve
+    show text "{color=#FFF}4 JAM KEMUDIAN{color}" with Pause(2.0)
+    # Harusnya Kosan Pia
+    scene mc bedroom with dissolve
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "WEEEEH UDAH GELAP AJA INI DI LUAR! GAK SADAR!"
+    hide pia_side with dissolve
+    mcname "Lah iya udah malem ya, hahaha gak terasa ya. fokus banget kita."
+    show pia_side at left with dissolve
+    pia "LAPER. MAKAN."
+    hide pia_side with dissolve
+    mcname "Mau mesen NERUFOOD apa keluar aja kita nyari makan?"
+    show pia_side at left with dissolve
+    pia "Mesen NERUFOOD aja ah, males keluar keluar lagi."
+    hide pia_side with dissolve
+    mcname "Okeh, mesen ini gimana?\n*Ngeliatin menu di aplikasi NERUFOOD*"
+    show pia_side at left with dissolve
+    pia "Hmmm… Enak kayaknya. Oke sung buruaaaan, lapeeer."
+    hide pia_side with dissolve
+    mcname "Iya sabaaaar."
+    show pia_side at left with dissolve
+    pia "Huahahahaha"
+    pia "Eh aku ke toilet dulu"
+    hide pia_side with dissolve
+    mcname "Iya"
+    hide pia with dissolve
+    "[mcname] pun termenung duduk melihat ke sekeliling kamar Pia"
+    "[mcname] menyadari bahwa di kosannya banyak sekali pajangan dan merch fanart buatannya."
+    mcname "{i}Pia ambis juga ya, keliatan dari schedule kuliah yang terpajang rapih di sticky notes meja belajarnya dan banyaknya sketsa bertumpuk di sudut-sudut ruangan.{/i}"
+    mcname "{i}Err… Agak berantakan sih, haha.{/i}"
+    "[mcname] pun menyadari betapa mandirinya Pia dalam beberapa situasi, walaupun Pia selalu terlihat sebagai pribadi yang supel, mudah bergaul dengan banyak orang"
+    "Namun dibalik itu semua tidak ada yang benar-benar mengenal Pia seutuhnya. Namun dengan adanya [mcname], Pia seperti menemukan cahaya baru untuk memulainya kembali."
+    show pia at pia_near with dissolve
+    show pia_side with dissolve
+    pia "Kamu gak buka lemari-lemari aku kan??!!"
+    hide pia_side with dissolve
+    mcname "Pi, yang bener aja……"
+    show pia_side at left with dissolve
+    pia "Siapa tau kan?"
+    hide pia_side with dissolve
+    "???" "NERUFOOD~"
+    mcname "Oh dah sampe tuh, aku ambil ya."
+    show pia_side at left with dissolve
+    pia "Iyaaaaa"
+    hide pia_side with dissolve
+    "Pia dan [mcname] pun melanjutkan makan di kosan"
+    show pia_side at left with dissolve
+    pia "WUOHHH!!! Enak."
+    hide pia_side with dissolve
+    mcname "Ya kan?"
+    show pia_side at left with dissolve
+    pia "MAO COBA YANG KAMU"
+    hide pia_side with dissolve
+    "Pia mendadak langsung mengambil sesendok makanan [mcname]."
+    show pia_side at left with dissolve
+    pia "WUOHHHH ENAKKK JUGAA"
+    hide pia_side with dissolve
+    mcname "Hadeehh. Pelan-pelan, Pia."
+    show pia_side at left with dissolve
+    pia "UHUK!! UHUK!! UHUK!!!"
+    hide pia_side with dissolve
+    mcname "Kaaaaaaaaaaan…"
+    mcname "Nih minum dulu."
+    show pia_side at left with dissolve
+    pia "*Glug Glug*"
+    pia "Ahhhhh!"
+    pia "Makasih [mcname]"
+    hide pia_side with dissolve
+    mcname "Iyaaa. Yauda sana lanjut makannya"
+    scene black with dissolve
+    show text "{color=#FFF}SESUDAH MAKAN{/color}" with Pause(2.0)
+    # Harusnya Kosan Pia
+    scene mc bedroom with dissolve
+    mcname "Udah malem nih. Aku pulang dulu ya."
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Yahhh…"
+    hide pia_side with dissolve
+    mcname "Ga bisa sampe malem banget, soalnya besok UTS."
+    show pia_side at left with dissolve
+    pia "Yaudaah. Hati-hati di jalan~"
+    hide pia_side with dissolve
+    "Setelah itu, [mcname] pun kembali ke kosannya."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}DI KOSAN [mcname]{/color}" with Pause(2.0)
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname] pulang, duduk di meja belajarnya sambil mulai mengeluarkan buku-buku dan catatan materi ujian esok hari."
+    "[mcname] bersiap begadang untuk fokus belajar karena besok adalah salah satu ujian mata kuliah tertulis yang paling sulit."
+    play sound "audio/ReceiveText.ogg" 
+    stop music fadeout 1.0
+    mcname "......"
+    play music "BGM_Happy dan Handphone.mp3" fadein 1.0
+    nvl clear
+    pia_nvl "Tidur?"
+    mc_nvl "Gak lah. Begadang, belajar"
+    pia_nvl "Asik, sama sih ahahaha"
+    pia_nvl "Sambil ngechat dong dikit dikit biar gak sepi :(("
+    mc_nvl "Okeeee, sampe ketiduran ya"
+    pia_nvl "Pasang alarm dulu!"
+    mc_nvl "Siaaap"
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene kelas with dissolve
+    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
+    dosen "Pagi!!"
+    dosen "Semua buku dan HP simpan di depan ya."
+    dosen "Di atas meja hanya boleh ada alat tulis"
+    dosen "Ujian kita mulai 10 menit lagi."
+    "Mahasiswa/i" "Baik buu~"
+    jump quiz
+
+label truepiaafterquiz:
+    "Setelah Quiz True Ending Route"
     

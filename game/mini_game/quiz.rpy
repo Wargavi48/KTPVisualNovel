@@ -50,7 +50,10 @@ label quiz:
     elif route == "tana":
         jump chapter1tana
     elif route == "pia":
-        jump chapter2piaafterquiz
+        if pia_route == "Good End":
+            jump goodpiaafterquiz
+        elif pia_route == "True End":
+            jump truepia
                 
 
         

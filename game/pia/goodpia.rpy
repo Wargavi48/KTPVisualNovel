@@ -1,4 +1,134 @@
 ﻿label goodpia:
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}MALAM HARINYA{/color}" with Pause(2.0)
+    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+    "[mcname] pulang, duduk di meja belajarnya sambil mulai mengeluarkan buku-buku dan catatan materi ujian esok hari."
+    "[mcname] bersiap begadang untuk fokus belajar karena besok adalah salah satu ujian mata kuliah tertulis yang paling sulit."
+    "Tiba tiba terdengar notifikasi dari handphone [mcname]."
+    play sound "audio/ReceiveText.ogg"
+    mcname "...."
+    play sound "audio/ReceiveText.ogg"
+    mcname "...."
+    play sound "audio/ReceiveText.ogg"
+    mcname "{i}Apaan sihh{/i}"
+    stop music fadeout 1.0
+    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+    nvl clear
+    pia_nvl "[mcname]!!!!"
+    pia_nvl "BUKU MATA KULIAH AKU KETINGGALAN DI KAMPUS. BESOK UJIAN INI PULA. GIMANA INI WEH!"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "AKU BODOH BANGET LUPA DIBAWA. MAU NANGIS AJA"
+    mc_nvl "Wow, sabar. Kamu di mana?"
+    pia_nvl "Kosan. Tapi mau nyoba ke kampus, nih."
+    mc_nvl "Mana bisa? Jam 6 sore udah tutup kampus, weh"
+    pia_nvl "MAMPUS GUE!"
+    pia_nvl "GIMANA INI"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    pia_nvl "P"
+    mc_nvl "STOP P"
+    mc_nvl "Sabar, sabar. Mau pinjem buku aku?"
+    pia_nvl "KAMU BELAJARNYA GIMANA?"
+    mc_nvl "Bener juga… Gimana kalo belajar bareng?"
+    pia_nvl "INGFOKAN TEMPAT!! NOW!"
+    mc_nvl "Terserah, mau dimana? Cafe x? atau di mana?"
+    pia_nvl "Yaudah OTW!"
+    stop music fadeout 1.0
+    "[mcname] pun bersiap siap untuk pergi ke cafe"
+    scene black with dissolve
+    play sound "audio/cafe-entrance.mp3" fadein 1.0
+    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN DI KAFE{/color}" with Pause(2.0)
+    show text "{color=#FFF}DI KAFE{/color}" with Pause(2.0)
+    play music "audio/BGM_Cafe Sore.mp3" fadein 1.0
+    scene cafe with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    show pia at char_placement with dissolve
+    show pia_side at left with dissolve
+    pia "[mcname] Sini!!"
+    hide pia_side with dissolve
+    hide pia with dissolve
+    show pia at pia_near with dissolve
+    mcname "Hadeeeeeh, nih bukunya"
+    show pia_side at left with dissolve
+    pia "MAKASIH BANGET!!! HUHUHU"
+    pia "KALO GAK ADA KAMU, AKU GATAU HARUS GIMANA. AKU GAMAU NGULANG MATKUL INI"
+    hide pia_side with dissolve
+    mcname "Iya Pia, Iya"
+    show pia_side at left with dissolve
+    pia "Aku berhutang budi sama kamu!!!"
+    hide pia_side with dissolve
+    mcname "Halah lebay"
+    show pia_side at left with dissolve
+    pia "Karena kamu baik, aku kasih kamu 1 golden tiket ini. Muahahaha"
+    # Insert aset tiket
+    hide pia_side with dissolve
+    mcname "Apaan ini?"
+    show pia_side at left with dissolve
+    pia "Pake ini buat mengabulkan 1 permintaan."
+    pia "Apapun, akan kulakukan!"
+    hide pia_side with dissolve
+    mcname "Oke, aku pake sekarang. Sekarang kamu ke depan cafe ini, tereak \"Aku belom mandi seminggu dan aku bangga\". now!"
+    show pia_side at left with dissolve
+    pia "Ehh… jangan gitu dong."
+    pia "Aaah [mcname] maaaah. Yang serius, ih."
+    hide pia_side with dissolve
+    mcname "Lah? Ini serius."
+    show pia_side at left with dissolve
+    pia "Gamau! weeeks"
+    hide pia_side with dissolve
+    mcname "Dih, yaudah. Kusimpen ya. Buat kapan-kapan"
+    show pia_side at left with dissolve
+    pia "Okeh! Saatnya belajar! Ayo!!"
+    hide pia_side with dissolve
+    "[mcanme] dan Pia pun belajar bersama di cafe tersebut sampe larut malam [mcname] pun memutuskan meminjamkan buku tersebut ke Pia"
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
+    scene mc bedroom with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname] ngomong sendiri di kosan."
+    mcname "Duhhh. Hari ini ujian tertulis paling susah. Deg deg an, huhu."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene kelas with dissolve
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Suasana kelas sepi, semua sibuk belajar dan menghapal. ya, hari ini ujian tertulis mata kuliah xxx."
+    show pia at pia_near with dissolve
+    mcname "Pagi Mbak Pia"
+    show pia_side at left with dissolve
+    pia "Sssst, diem. Komposisi dan elemen dalam warna—\n*berbisik sambil menghapal"
+    hide pia_side with dissolve
+    mcname "Ahahahaha"
+    hide pia with dissolve
+    stop music fadeout 1.0
+    #  Harusnya BG Ujian
+    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
+    dosen "Pagi!!"
+    dosen "Semua buku dan HP simpan di depan ya."
+    dosen "Di atas meja hanya boleh ada alat tulis"
+    dosen "Ujian kita mulai 10 menit lagi."
+    "Mahasiswa/i" "Baik buu~"
+    $ quick_menu = False
+    jump quiz
+
+label goodpiaafterquiz:
     $ renpy.block_rollback()
     $ quick_menu = True
     "Selesai ujian, semua mahasiswa/i mengumpulkan lembar jawaban ke pengawas. Ujian hari itu berakhir."
