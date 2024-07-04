@@ -194,8 +194,8 @@ label chapter1piajalancepat:
     $ renpy.block_rollback()
     $ quick_menu = True
     mcname "{i}Untung aja masih sempat untuk ikut orientasi, gak nyangka di Jakarta ternyata beneran macet parah.{/i}"
-    mcname "{i}Yah walaupun begitu, ini memang pengalaman baru yang aku rasakan, berbeda jauh dari tempatku dulu{/i}"
-    mcname "{i}Huuuu, ini hari pertamaku orientasi di Jeketi University. Di sini tempat di mana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh heheh{/i}"
+    mcname "{i}Yah walaupun begitu, ini memang pengalaman baru yang aku rasakan, berbeda jauh dari tempatku dulu.{/i}"
+    mcname "{i}Huuuu, ini hari pertamaku orientasi di Jeketi University. Di sini tempat di mana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh heheh.{/i}"
     $ quick_menu = False
     scene black with dissolve
     play sound "audio/open_door.mp3" fadein 1.0
@@ -256,7 +256,7 @@ label chapter1piajalancepat:
     hide pia_side with dissolve
     mcname "{i}Buset teriak lagi ini orang.{/i}"
     show pia_side at left with dissolve
-    pia "Kamu DKV juga, ya! Gilak ternyata kita sejurusan"
+    pia "Kamu DKV juga, ya! Gilak ternyata kita sejurusan."
     pia "Apakah jodoh?"
     pia "Candaaaaa, ahahaha."
     hide pia_side with dissolve
