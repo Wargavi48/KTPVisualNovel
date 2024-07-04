@@ -595,5 +595,94 @@ label trueendpiajalanmonas:
     hide pia_side with dissolve
     mcname "Okeee"
     "[mcname] dan Pia pun memutuskan melukis bersama di rooftop"
+    $ quick_menu = False
+    stop music with dissolve
+    scene black with dissolve
+    show text "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
+    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+    scene rooftop with dissolve
+    show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "di tengah saat mereka melukis"
+    mcname "Huaaaaaa selesai~"
+    mcname "*Merenggangkan pinggang*"
+    "[mcname] melirik Pia yang masih serius menggambar"
+    mcname "Hmmm"
+    mcname "Belum selese Pi?"
+    mcname "Mau ke kantin dulu ga nih beli cemilan gitu?"
+    pia "......"
+    mcname "Serius amat Mbak\n*colek pipi Pia pakai kuas yang masih ada catnya*"
+    show pia_side at left with dissolve
+    pia "AAAAAAAAAAAAAA [mcname]!!!!!!"
+    hide pia_side with dissolve
+    mcname "Hahahahaha lagian serius amat, dipanggil ga nengok."
+    show pia_side at left with dissolve
+    pia "HAAAAAA!!!! PIPI AKUUUUUUUUUUUU!!!!"
+    hide pia_side with dissolve
+    mcname "HUAHAHAHAHA!!!!"
+    show pia_side at left with dissolve
+    pia "Ehehehuehue~\n*Pia mulai mencolekan kuasnya pada pallete catnya*"
+    pia "RASAKAN PEMBALASANKU!!!"
+    pia "HIAAAAAAAAAAAAT!!!!!\n*Mencoret balik muka [mcname]*"
+    hide pia_side with dissolve
+    mcname "NOOOOOOOOOOOOOOO~"
+    mcname "KAU PIKIR AKU AKAN MENYERAH?"
+    mcname "TIDAK SEMUDAH ITU! RASAKAN INI HIAAAAAAAAAAAAAT!!"
+    show pia_side at left with dissolve
+    pia "KAU PIKIR AKAN MUDAH MENYERANGKU?"
+    pia "JURUS SERIBU BAYANGAN!!"
+    hide pia_side with dissolve
+    mcname "JURUS LARI ZIG ZAG!!! HIAAAAAAT!!"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}BEBERAPA SAAT KEMUDIAN{/color}" with Pause(2.0)
+    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    scene kelas with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Akhirnya [mcanme] dan Pia kembali ke ruang kelas untuk mengumpulkan tugas dengan muka yang penuh coret."
+    show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
+    dosen "......"
+    dosen "Kalian kenapa?"
+    dosen "Berantem?"
+    hide dosen_side with dissolve
+    "[mcname] & Pia" "Engga Bun\n*Sambil menahan tawa*"
+    show dosen_side at left with dissolve
+    dosen "Oke makasih tugasnya, sana cuci muka terus pulang."
+    dosen "Gak malu diliatin orang tadi pas jalan ke sini?"
+    hide dosen_side with dissolve
+    mcname "Pia mah udah gak punya malu, Bu."
+    show pia_side at left with dissolve
+    pia "HEH! [mcname] BU YANG GAK PUNYA MALU!!"
+    hide pia_side with dissolve
+    show dosen_side at left with dissolve
+    dosen "Heeeeh… iya iya"
+    dosen "Sana pergi"
+    dosen "Kasian kulit muka kalian rusak nanti."
+    hide dosen_side with dissolve
+    "[mcname] & Pia" "Iya buuuuu. Makasih buuuuuu."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
+    scene lorong with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = False
+    show pia at pia_near with dissolve
+    "[mcname] dan Pia saling senggol"
+    show pia_side at left with dissolve
+    pia "HAHAHAHAHAHA!!"
+    hide pia_side with dissolve
+    mcname "HUAHAHAHAHAHAHA!!!"
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
+    play music "audio/Dreamcatcher.mp3" fadein
+    jump credits
+
+
     
 
