@@ -17,5 +17,5 @@ label chapter2kanastart:
     scene mc bedroom with dissolve
     play music "audio/backsound_kamar.mp3" loop fadein 1.0
     
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
+    play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits

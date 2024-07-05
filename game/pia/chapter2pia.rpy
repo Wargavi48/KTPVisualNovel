@@ -477,7 +477,7 @@ label chapter2piaaftergame:
             scene black with dissolve
             show text "{color=#FFF}*Beberapa bulan kemudian, ada gosip beredar bahwa acara jejepangan tersebut gagal dilaksanakan karena promotor acara kabur membawa uang donatur dan sponsor*{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Apapun pilihan kamu Pia, aku akan tetap support kamu mau apapun itu.":
             $ renpy.block_rollback()

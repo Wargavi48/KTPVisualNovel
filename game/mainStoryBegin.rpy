@@ -54,7 +54,7 @@
             scene black  with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene black  with dissolve
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Nyari cafe biar skena.":
             $ renpy.block_rollback()
@@ -64,7 +64,7 @@
             scene black  with dissolve
             show text "{color=#FFF}ORTU LU DAPET KABAR KALAU LU MASUK PENJARA KARENA PENIPUAN UANG.{/color}" with Pause(2.0)
             show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-            play music "audio/Dreamcatcher.mp3"
+            play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "Ke warteg buat makan.":
             $ renpy.block_rollback()

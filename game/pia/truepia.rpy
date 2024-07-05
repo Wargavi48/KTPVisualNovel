@@ -160,7 +160,7 @@ label truepia:
             show text "{color=#FFF}Soalnya di docs cerita author cuma nulis sampe mau tidur{/color}" with Pause(2.0)
             show text "{color=#FFF}Cerita pun berhenti karena dev gak ada ide{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
 label trueendrooftoppia:
     scene rooftop with dissolve
     show pia at pia_near with dissolve
@@ -477,7 +477,7 @@ label truepiaafterquiz:
             stop music fadeout 1.0
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Jalan-jalan yuk, keliling Jakarta gitu atau ke mana":
             jump trueendpiajalanmonas

@@ -269,7 +269,7 @@ label chapter2tana:
             scene black with dissolve
             show text "{color=#FFF}[mcname] MENINGGAL TERPELESET GARA-GARA MENGINJAK KRESEK PLASTIK BEKAS MAKANAN SEMALAM YANG TIDAK IA BERESKAN.{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Telepon Tana":
             mcname "Yaudah lah. Daripada absen gua ngurang, terus ga bisa ikut ulangan."
@@ -538,7 +538,7 @@ label chapter2tana:
             scene black with dissolve
             show text "{color=#FFF}WASPADA TERHADAP SEKITAR{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Pulang aja deh.":
             mcname "Dipikir pikir, ngapain juga ngambil sampel tanah. Besok minta temen aja dah."
@@ -561,7 +561,7 @@ label chapter2tana:
             scene black with dissolve
             show text "{color=#FFF}MAKANYA KULIAH YANG BENER!{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits       
 
 label chapter2tanaTRUE:
@@ -606,7 +606,7 @@ label chapter2tanaTRUE:
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
+    play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits
 label chapter2tanaGOOD:
     tana "Keren? Gua?"
@@ -622,5 +622,5 @@ label chapter2tanaGOOD:
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
+    play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits
