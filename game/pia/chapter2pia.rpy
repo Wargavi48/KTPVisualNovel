@@ -131,7 +131,8 @@ label chapter2piaaftergame:
     play music "audio/BGM_Lorong.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = True
-    "Keesokan harinya, semua karya sudah terpajang di sepanjang lorong dan lobby gedung DKV. Banyak sekali Mahasiswa/i dari fakultas lain yang datang untuk sekedar berswafoto atau menikmati hasil karya Maba DKV layaknya mengunjungi pameran seni."
+    "Keesokan harinya, semua karya sudah terpajang di sepanjang lorong dan lobby gedung DKV."
+    "Banyak sekali Mahasiswa/i dari fakultas lain yang datang untuk sekedar berswafoto atau menikmati hasil karya Maba DKV layaknya mengunjungi pameran seni."
     "Fiony, Freya, dan Kana sedang berjalan bersama mengunjungi pameran ini."
     show kana at kana_near_left_2 with dissolve
     show freya at freya_near_right with dissolve

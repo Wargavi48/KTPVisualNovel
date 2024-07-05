@@ -1097,6 +1097,7 @@ label tanamcdaftarulang:
     mcname "Tana ngapain ke sini ya?"
     "[mcname] menghampiri Tana yang pergi ke game center."
     "Insert Asset Dance"
+    #BGM Ganti jadi yang lebih lembut anggun
     "Terlihat seorang gadis cantik menari gemulai di depan mesin dance arcade."
     "Setiap gerakannya dari lompatan hingga ayunan lembut lengannya mengikuti irama lagu ceria yang dimainkan, membuat [mcname] terpukau."
     mcname "......"
@@ -1116,7 +1117,7 @@ label tanamcdaftarulang:
     tana "Yeyyy perfect score!"
     hide tana_side with dissolve
     show tana at tana_near with dissolve
-    mcname "*Claps*"
+    mcname "*Tepuk tangan*"
     show tana_side at left with dissolve
     tana "E-Eh? [mcname]? Lu dari kapan di sini?"
     hide tana_side with dissolve
@@ -1128,7 +1129,7 @@ label tanamcdaftarulang:
     show tana_side at left with dissolve
     tana "Gue gitu lohh. Yauda, yuk ke cafenya sekarang."
     hide tana_side with dissolve
-    mcname "Gass"
+    mcname "Gass!"
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
@@ -1245,7 +1246,7 @@ label tanamcdaftarulang:
     "Ah, kok malah jadi mikirin Tana."
     "Mending turu."
     $ quick_menu = False
+    stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER II{/color}" with Pause(2.0)
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
-    jump credits
+    jump chapter2tana

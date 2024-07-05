@@ -596,7 +596,7 @@ label trueendpiajalanmonas:
     mcname "Okeee"
     "[mcname] dan Pia pun memutuskan melukis bersama di rooftop"
     $ quick_menu = False
-    stop music with dissolve
+    stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
     play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
