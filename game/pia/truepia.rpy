@@ -677,11 +677,36 @@ label trueendpiajalanmonas:
     pia "HAHAHAHAHAHA!!"
     hide pia_side with dissolve
     mcname "HUAHAHAHAHAHAHA!!!"
+    $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
-    play music "audio/Dreamcatcher.mp3" fadein
-    jump credits
+
+label truendpia:
+    scene black with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Hari demi hari berlalu, minggu demi minggu pun dilewati"
+    "[mcname] dan Pia perlahan menunjukan kekompakan dan perkembangan project jualan mereka untuk event jejepangan ini semakin cepat."
+    play music "audio/bgm_kantin.mp3" fadein 1.0
+    scene kantin with dissolve
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "[mcname]! Yuk anterin aku nyetak produknya"
+    pia "Udah tinggal 2 minggu lagi nih."
+    hide pia_side at left with dissolve
+    mcname "Sekarang banget?"
+    show pia_side at left with dissolve
+    pia "Iya ayooooo~\n*Menarik tangan [mcname]*"
+    hide pia_side with dissolve
+    mcname "I-iyaaa."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene mall temp with dissolve
+    
+    
+    
 
 
     
