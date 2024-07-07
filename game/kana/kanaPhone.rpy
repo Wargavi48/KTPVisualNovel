@@ -53,7 +53,7 @@ label phoneChat:
             show text "{color=#FFF}BROOO YNG BENER AJA, BARU PERTAMA KALI KERJA KELOMPOK UDAH GINI !??{/color}" with Pause(2.0)
             show text "{color=#FFF}AKHIRNYA LO PUN DI JAUHIN SAMA TEMEN-TEMEN KELOMPOK{/color}" with Pause (2.0)
             show text "{color=#FF0000}BAD END{/color}" with Pause (2.0)
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Ghosting":
             scene black with Dissolve(2.0)
@@ -62,8 +62,8 @@ label phoneChat:
             show text "{color=#FFF}ATAU LO MAU JADI MAHASISWA KUPU-KUPU{/color}" with Pause (2.0)
             show text "{color=#FFF} ATAU HIKIKOMORI !??{/color}" with Pause (2.0)
             show text "{color=#FF0000}BAD END{/color}" with Pause (2.0)
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
 
-    play music "audio/Dreamcatcher.mp3"
+    play music "audio/Dreamcatcher_v2.mp3"
     jump credits

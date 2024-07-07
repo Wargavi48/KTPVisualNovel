@@ -269,7 +269,7 @@ label chapter2tana:
             scene black with dissolve
             show text "{color=#FFF}[mcname] MENINGGAL TERPELESET GARA-GARA MENGINJAK KRESEK PLASTIK BEKAS MAKANAN SEMALAM YANG TIDAK IA BERESKAN.{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Telepon Tana":
             mcname "Yaudah lah. Daripada absen gua ngurang, terus ga bisa ikut ulangan."
@@ -406,14 +406,14 @@ label chapter2tana:
     $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "BGM_Kelas.mp3" fadein 1.0
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
     scene kelas with dissolve
     $ quick_menu = True
     "Keesokan harinya, [mcname] di kelas. Jadwal [mcname] hari ini sangat padat sehingga [mcname] kewalahan."
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
-    play music "BGM_Lorong.mp3" fadein 1.0
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
     with Pause(1.0)
     scene lorong sore with dissolve
     $ quick_menu = True
@@ -425,7 +425,7 @@ label chapter2tana:
 
     $ quick_menu = False
     scene black with dissolve
-    play music "bgm_harvestmoon_spring.mp3" fadein 1.0
+    play music "audio/bgm_harvestmoon_spring.mp3" fadein 1.0
     scene sawah with dissolve
     $ quick_menu = True
     mcname "Hmm? Itu kan Si Tana. Dia belum ngambil sample juga kah?"
@@ -538,14 +538,14 @@ label chapter2tana:
             scene black with dissolve
             show text "{color=#FFF}WASPADA TERHADAP SEKITAR{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Pulang aja deh.":
             mcname "Dipikir pikir, ngapain juga ngambil sampel tanah. Besok minta temen aja dah."
             $ quick_menu = False
             scene black with dissolve
             show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-            play music "BGM_Dosen + Rektor.mp3" fadein 1.0
+            play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
             scene kelas with dissolve
             $ quick_menu = True
             dosen "Semuanya baris, ya. Tunjukin sampel tanah kalian, baru kalian boleh masuk ruang praktikum."
@@ -561,66 +561,5 @@ label chapter2tana:
             scene black with dissolve
             show text "{color=#FFF}MAKANYA KULIAH YANG BENER!{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
-            jump credits       
-
-label chapter2tanaTRUE:
-    tana "L-lucu? Lu bilang kalo gua lucu?"
-    mcname "I-iya. Kamu lucu, imut, cantik banget pas itu. Makanya aku rekam."
-    tana "L-lu ngeledekin gua lagi, ya?"
-    mcname "Yaelah. Masa balik ke awal lagi? Kamu tuh emang selucu itu."
-    tana "........."
-    tana "M-makasih."
-    mcname "{i}Aduh, lucu banget nih anak.{/i}"
-    tana "Btw, kamu udah sembuh?"
-    mcname "Hmm? Kenapa nih kok nanya? Kamu aslinya peduli kan sama aku?"
-    tana "A-apa sih? Aku cuma nanya, kocak!"
-    mcname "Hahahaha"
-    mcname "Aku udah sehat, kok. Makasih udah nanya."
-    "[mcname] mengulurkan tangannya ke kepala Tana."
-    tana "????"
-    mcname "*Pat-pat Tana*"
-    tana "....."
-    tana "*Blush*"
-    tana "EEH??? N-NGAPAIN LUU?"
-    mcname "Hahahaha. Kamu kenapa lucu banget sih jadi orang. Mukanya sampe merah kaya cabe gitu."
-    tana "Tangan lu kotor, kocak."
-    mcname "Halah. Udah kotor semua ini. Nanggung."
-    mcname "*Gosok-gosok kepala Tana*"
-    tana "DIH?! AWAS LU YA!!"
-    "Tana menyipratkan lumpur ke arah MC."
-    mcname "LOH?! NGAJAK PERANG?! AYO!"
-    "MC dan Tana saling menyipratkan lumpur layaknya anak kecil yang sedang bermain di sawah."
-    tana "Hahahaha!"
-    mcname "Hahahahah!"
-    mcname "Udah... udah... ampun. Lu yang menang."
-    tana "Tana kok dilawan. Gua paling jaog kalo masalah beginian."
-    mcname "Dasar anak kampung."
-    tana "APA LU BILANG?"
-    "Tana melempar lumpur ke arah MC."
-    mcname "IYA IYA. AMPUN. GUA CUMA BERCANDA."
-    tana "Hmph!"
-    mcname "...."
-    tana "...."
-    "MC dan Tana saling menatap mata satu sama lain sambil tersenyum."
-    stop music fadeout 1.0
-    scene black with dissolve
-    show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
-    jump credits
-label chapter2tanaGOOD:
-    tana "Keren? Gua?"
-    mcname "Iya."
-    tana "Lu bilang gua keren?"
-    mcname "Hooh."
-    tana "HAHAHAHAHA!"
-    tana "Iya gua emang sekeren itu."
-    mcname "Iya dah, iya."
-    tana "Gua udah ngedance dari dulu soalnya."
-    mcname "Dari dulu?"
-    tana "Eh!"
-    stop music fadeout 1.0
-    scene black with dissolve
-    show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
-    jump credits
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+            jump credits

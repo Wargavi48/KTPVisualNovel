@@ -61,7 +61,7 @@ label chapter1pia:
             show text "{color=#FFF}KALIAN BERDUA MALAH BERANTEM TERUS DI LIATIN \nDAN BAHKAN DIREKAM ORANG-ORANG.{/color}" with Pause(2.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene black with dissolve
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits    
         "Nasehatin":
             scene depan kampus with dissolve
@@ -87,7 +87,7 @@ label chapter1pia:
             show text "{color=#FFF}[mcname] MALAH NGOMONG NASEHAT DAN MALAH BIKIN PEREMPUAN ITU TERLAMBAT \nDAN LU PUN DILIAT ANEH SAMA ORANG-ORANG.{/color}" with Pause(2.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene black with dissolve
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Maafin":
             $ renpy.block_rollback()
@@ -122,7 +122,7 @@ label chapter1piacarajalan:
             show text "{color=#FFF}AKHIRNYA GA LIAT LAMPU MERAH TERUS KETABRAK KAN?!!{/color}" with Pause(2.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene black with dissolve
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Jalan Cepat":
             $ renpy.block_rollback()
@@ -415,10 +415,10 @@ label chapter1piajalancepat:
             show text "{color=#FFF}[mcname] lupa ngabarin Pia tempatnya.{/color}" with Pause(2.0)
             show text "{color=#FFF}[mcname] jadi lebih seneng nongkrong sama anak-anak cowok dan mulai menjauh dari Pia.{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
     scene black with dissolve
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
+    play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits
 
 

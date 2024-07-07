@@ -296,5 +296,5 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
-    play music "audio/Dreamcatcher.mp3" fadein 1.0
+    play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits

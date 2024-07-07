@@ -46,7 +46,7 @@ label chapter1tana:
             scene black with dissolve
             show text "{color=#FFF}Kamu ga jadi kuliah karena telat daftar ulang{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Cuek lah gak bakal ketemu lagi sama orang-orang tadi, lanjut daftar ulang":
             $ renpy.block_rollback()
@@ -61,7 +61,7 @@ label chapter1tana:
             scene black with dissolve
             show text "{color=#FFF}Kamu ga jadi kuliah karena telat daftar ulang{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
 
 label tanamcdaftarulang:
@@ -508,7 +508,7 @@ label tanamcdaftarulang:
             show text "{color=#FFF}WOY PENULIS CERITA YANG JELAS DONG MASA GITU DOANG{/color}" with Pause(2.0)
             show text "{color=#FFF}DEVELOPER PUNDUNG KARENA YANG NULIS CERITA GAK JELAS{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
     show tana_side at left with dissolve
     tana "Gasssss. Kak Feni sama Kak Flora mau ikut makan juga?"

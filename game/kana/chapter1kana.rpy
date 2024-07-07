@@ -134,7 +134,7 @@ label chapter1kana1:
             scene black with dissolve
             show text "{color=#FFF}MAKANYA JANGAN MAKAN SEMBARANG BROO KAN MASUK RUMAH SAKIT{/color}" with Pause(2.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-            play music "audio/Dreamcatcher.mp3"
+            play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "C. Ke Cafe":
             $ quick_menu = False
@@ -594,7 +594,7 @@ label chapter1kana2Campus:
     $ quick_menu = False
     stop music fadeout 1.0
     jump phoneChat
-    # play music "audio/Dreamcatcher.mp3"
+    # play music "audio/Dreamcatcher_v2.mp3"
     # jump credits
 
 label chapter1kana3:
@@ -687,7 +687,7 @@ label chapter1kana3:
             scene black with Dissolve(2.0)
             show text "{color=#FFF}LO KEPEDESAN DAN AKHIRNYA MALAH KE WC TERUS TERUSAN DARIPADA NGOBROL SAMA MEREKA{/color}" with Pause(2.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-            play music "audio/Dreamcatcher.mp3"
+            play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "Pesen Mie Ayam":
             $ quick_menu = False
@@ -699,7 +699,7 @@ label chapter1kana3:
             show text "{color=#FFF}AKHIRNYA LO KERACUNAN MAKANAN.{/color}" with Pause(2.0)
             show text "{color=#FFF}MBAK YANG JUALAN PUN AKHIRNYA DIMARAHIN KARENA UDAH BIKIN MAHASISWANYA KERACUNAN MAKANAN{/color}" with Pause(2.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-            play music "audio/Dreamcatcher.mp3"
+            play music "audio/Dreamcatcher_v2.mp3"
             jump credits
 
 
@@ -855,7 +855,7 @@ label chapter1kana3mie:
                 show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
                 show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
                 stop music fadeout 1.0
-                play music "audio/Dreamcatcher.mp3" fadein 1.0
+                play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
                 scene mc bedroom with Dissolve(2.0)
                 jump credits
             "Langsung berangkat lebih awal supaya ga ketinggalan":
@@ -1021,7 +1021,7 @@ label chapter1kana3monas:
             show text "{color=#FFF}DI KIRA MEREKA ABIS OLAHRAGA ATAU NUKANG KALI YA DI KASIH GINIAN{/color}" with Pause(2.0)
             show text "{color=#FFF}AKHIRNYA MEREKA GA MAU NGOBROL KAN SAMA LO LAGI{/color}" with Pause(2.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             scene dream with dissolve
             jump credits
         "Es Teh":
@@ -1036,7 +1036,7 @@ label chapter1kana3monas:
             show text "{color=#FFF}MIKIR{/color}" with Pause(2.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene dream with dissolve
-            play music "audio/Dreamcatcher.mp3" fadein 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
 
 
