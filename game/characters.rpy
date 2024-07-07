@@ -107,6 +107,7 @@ image side mahasiswa_c_side = "Characters/mahasiswa_c_side.png"
 # Define character appear on phone
 default mahasiswa_name = "???"
 define mc_nvl = Character("[mcname]", kind=nvl, callback=Phone_SendSound)
+define pia_pov_nvl = Character("Pia", kind=nvl, callback=Phone_SendSound)
 define kana_nvl = Character("[kana_name]", kind=nvl, callback=Phone_ReceiveSound)
 define freya_nvl = Character("Freya", kind=nvl, callback=Phone_ReceiveSound)
 define donatur_nvl = Character("[mahasiswa_name]", kind=nvl, callback=Phone_ReceiveSound)

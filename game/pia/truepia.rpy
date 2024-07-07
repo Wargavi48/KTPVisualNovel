@@ -703,11 +703,225 @@ label truendpia:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
+    play music "audio/BGM_Mall Slow.mp3" fadein 1.0
     scene mall temp with dissolve
-    
-    
-    
-
-
-    
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Itu, di situ. Nyetak di situ."
+    hide pia_side with dissolve
+    mcname "Oke oke, untung sepi tuh."
+    show pia_side at left with dissolve
+    pia "Yuk ngantri buat cetaknya."
+    hide pia_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}BEBERAPA JAM KEMUDIAN{/color}" with Pause(2.0)
+    scene mall temp with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname] dan Pia pun selesai mencetak merch yang dibutuhkan"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+    fio_nvl "Pi, udah selese nyetaknya?"
+    pia_pov_nvl "Udah Cepio."
+    pia_pov_nvl "Punya Cece udah?"
+    fio_nvl "Aman, udah semua."
+    fio_nvl "Tinggal ke eventnya aja deh ini ahaha."
+    pia_pov_nvl "Mantaaaap"
+    fio_nvl "Lagi di mana kamu?"
+    fio_nvl "Eh ga jadi"
+    fio_nvl "Aku tau"
+    fio_nvl "Pasti lagi berduaan sama [mcname]"
+    fio_nvl "Maaf ganggu"
+    fio_nvl "Thx bye"
+    stop music fadeout 1.0
+    play music "audio/BGM_Mall Slow.mp3" fadein 1.0
+    show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    show pia_side at left with dissolve
+    pia "CEPIOOOOOOOOOOOO~"
+    hide pia_side with dissolve
+    mcname "Cepio?"
+    show pia_side at left with dissolve
+    pia "I-iya"
+    hide pia_side with dissolve
+    mcname "Oh oke oke."
+    mcname "Dah kelar semua ini."
+    mcname "Mau ngapain lagi?"
+    mcname "Eh wait, itu kayaknya ada menu cake baru deh di cafe itu."
+    show pia_side at left with dissolve
+    pia "Lah iya ada 2 rasa baru."
+    pia "Gas ga sih?"
+    hide pia_side with dissolve
+    mcname "Lah buset, lesgooo~"
+    stop music fadeout 1.0
+    scene black with dissolve
+    play sound "audio/cafe-entrance.mp3" fadein 1.0
+    show text "{color=#FFF}DI CAFE{/color}" with Pause(2.0)
+    scene cafe with dissolve
+    show pia at pia_near with dissolve
+    "Staff" "Haloo. Mau pesan apa?"
+    mcname "Hmmm… kamu mesen rasa yang mana, Pi?"
+    mcname "Aku yang mangga deh kayaknya"
+    show pia_side at left with dissolve
+    pia "Yaudah aku yang melon ya."
+    hide pia_side with dissolve
+    "Staff" "Baik, berarti 1 mango cake dan 1 melon cake."
+    "Staff" "Mohon ditunggu, ya."
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}BEBERAPA SAAT KEMUDIAN{/color}" with Pause(2.0)
+    scene cafe with dissolve
+    show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Staff" "Ini pesanannya ya, Kak."
+    "[mcname] & Pia" "Terima kasih kakk."
+    "Pia dan [mcname] mulai menyantap pesanan mereka."
+    mcname "Wueeee enaaaak yang mangga"
+    show pia_side at left with dissolve
+    pia "Iya kah?"
+    hide pia_side with dissolve
+    mcname "*Menyodorkan garpu yang sudah ada potongan kue*"
+    mcname "Aaaaaaaa~"
+    show pia_side at left with dissolve
+    pia "Eeeh… aaaaaa~"
+    hide pia_side with dissolve
+    mcname "Enak kan ya?"
+    show pia_side at left with dissolve
+    pia "{i}Aaaaaaa indirect kiss{/i}\n*blush*"
+    hide pia_side with dissolve
+    mcname "Kenapa? Kurang enak kah?"
+    show pia_side at left with dissolve
+    pia "E-engga kok. Enak, aha ha ha."
+    hide pia_side with dissolve
+    mcname "Ya kan!!! Eh coba minta dong yang punya kamu."
+    show pia_side at left with dissolve
+    pia "Eeeeeeeeee~"
+    pia "Ummm…."
+    pia "*Nyodorin garpu dengan potongan kue*"
+    pia "*Blush*"
+    hide pia_side with dissolve
+    mcname "Aaam…"
+    "*[mcname] melahap kue dari garpu Pia*"
+    mcname "Hmmm…enak juga."
+    show pia_side at left with dissolve
+    pia "Umm…"
+    pia "*Muka memerah*"
+    pia "Uuuuuuu i-iya"
+    hide pia_side with dissolve
+    mcname "Ngapa lu?"
+    show pia_side at left with dissolve
+    pia "Gapapa"
+    hide pia_side with dissolve
+    mcname "?????"
+    hide pia with dissolve
+    "Malam itu berakhir dengan [mcname] yang tidak peka"
+    $ quick_menu = False
+    stop music with dissolve
+    scene black with dissolve
+    show text "{color=#FFF}HARI H MATSURI{/color}" with Pause(2.0)
+    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
+    scene awan with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Pia dan [mcname] sedang merias booth dan merapikan dagangan merch mereka."
+    $ quick_menu = False
+    scene black with dissolve
+    scene kampus with dissolve
+    show fio at fio_near_left with dissolve
+    show pia at pia_near_right with dissolve
+    show fio_side at left with dissolve
+    $ quick_menu = True
+    fio "Pagiiii~"
+    fio "Rajin banget udah sampe nih kalian berdua."
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Cepioooooooooooo~"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Sini aku bantu rapih-rapih."
+    fio "Oh ini, kenalin temen aku yang bantu bantu jaga booth kita nanti."
+    hide fio_side with dissolve
+    # Harusnya show takamina sprite di sini
+    "???" "Halo salam kenal. Aku Takamina."
+    "Pia & [mcname]" "Halo, salam kenaaaaal."
+    "Takamina" "Kalian temannya Fiony, ya?"
+    show pia_side at left with dissolve
+    pia "I-iya Kak."
+    pia "Uuummm… Kakak cantik banget!"
+    hide pia_side with dissolve
+    "Takamina" "Aduhhh bisa aja. Kamu juga imut banget deh."
+    "Takamina" "Yauda aku bantu beresin merch nya juga yaa."
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}1 JAM KEMUDIAN{/color}" with Pause(2.0)
+    scene kampus with dissolve
+    # Urutan Sprite Takamina, Pia, Pio
+    show fio at fio_near_left with dissolve
+    show pia at pia_near_right with dissolve
+    mcname "Huaaaa udah rapih nih, tinggal nunggu acaranya buka."
+    show pia_side at left with dissolve
+    pia "MELINGKAR ALL!!!"
+    pia "KITA YEL-YEL DULU!"
+    hide pia_side with dissolve
+    mcname "…………"
+    "Takamina" "Gemes juga ya, haha."
+    show fio_side at left with dissolve
+    fio "Maapin ya, kadang suka aneh emang anak ini."
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Aaaaaaaa~"
+    hide pia_side with dissolve
+    "[mcname] & Fiony & Takamina" "Hahahaha"
+    "Akhirnya acara matsuri pun dibuka tepat pukul 10 siang."
+    "Pengunjung mulai berdatangan."
+    show pia_side at left with dissolve
+    pia "Weeeeeh rameeeeeeee."
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Semangat guys!"
+    hide fio_side with dissolve
+    "Takamina" "Yoooshaaaaaaaaa!!!"
+    $ quick_menu = False
+    scene black with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Pukul 3 sore, semua jualan booth Pia, [mcname], Fiony dan Takamina pun ludes habis semua."
+    show pia_side at left with dissolve
+    pia "OTSU ALLL, ABIS SEMUA WEEEEH!!!"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Hahahaha gak nyangka bakal selaku ini. Memang ke push karena nama \"Yang Mulia Piaraan\" sih ini mah."
+    fio "Keren banget sih ga ada lawan."
+    hide fio_side with dissolve
+    "[mcname] & Takamina" "Kelaaaaaaas!!!!"
+    show pia_side at left with dissolve
+    pia "HEH!! APA SIH AHAHAHA!!"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Dari tadi kamu sibuk mulu, istirahat dulu"
+    fio "[mcname]! Gak peka, ajak Pia jalan-jalan keliling matsuri sana!"
+    hide fio_side with dissolve
+    mcname "Eeh. Terus gimana rapih-rapihnya…"
+    "Takamina" "Aman, aku sama Fiony yang gantian beres-beres."
+    "Takamina" "Kalian quality time aja, hehehehe."
+    show pia_side at left with dissolve
+    pia "Kakaaaaak~\n*Blush*"
+    hide pia_side with dissolve
+    mcname "Huhuhu oke. Makasih ya Kak Takamina, Cepio."
+    "Fiony & Takamina" "*Mengacungkan jempol*"
+    $ quick_menu = False
+    scene black with dissolve
+    scene kampus with dissolve
+    show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    show pia_side at left with dissolve
+    pia "*Menarik tangan [mcname]*"
+    pia "Mau ke situuuuuu~"
+    hide pia_side with dissolve
+    mcname "Eee… a-ayooo."
 
