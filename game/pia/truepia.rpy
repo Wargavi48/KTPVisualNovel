@@ -820,7 +820,7 @@ label truendpia:
     hide pia with dissolve
     "Malam itu berakhir dengan [mcname] yang tidak peka"
     $ quick_menu = False
-    stop music with dissolve
+    stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}HARI H MATSURI{/color}" with Pause(2.0)
     play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
