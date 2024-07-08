@@ -540,9 +540,233 @@ label chapter2tanaGOOD:
     feni "Ayok masuk sini. Btw kalian bawa apaan itu?"
     tana "Makanan, Kak. Tadi di kantin penuh banget, jadinya kita ke sini."
     feni "Oalah. Yaudah, kalian makan aja. Aku udah makan, kok."
-
-
-
+    tana "Siap, Kak!"
+    "Tana dan [mcname] pun mulai menyantap mie pedas yang mereka pesan dari kantin sambil berbincang tentang UTS yang telah mereka kerjakan tadi."
+    mcname "Jadi tadi lu nomor 10 sama 12 jawab apa?"
+    tana "Dua-duanya D itu jawabannya."
+    mcname "Lah? Jawabannya C, kocak. Lu pasti kegocek sama pertanyaannya, ya?"
+    tana "Mana ada, lu pasti yang salah."
+    mcname "Dih, liat aja ntar pas pengumuman."
+#chapter2tanaNEUTRAL3
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    scene kampus with dissolve
+    $ quick_menu = True
+    "Saat menuju kampus, [mcname] bertemu dengan Tana di depan kampus."
+    mcname "Oi, Tan."
+    tana "Haloo~"
+    mcname "Lu udah liat pengumuman hasil UTS belum?"
+    tana "Belum, nih. Emang liatnya di mana?"
+    mcname "Ditempel di mading lorong deh kalo ga salah."
+    tana "Yaudah, ayok gas ke sana."
+    "Tana dan [mcname] berjalan bersama menuju mading di lorong."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
+    scene lorong with dissolve
+    $ quick_menu = True
+    tana "Hmmmm, madingnya yang itu kan?"
+    mcname "Iyah."
+    tana "Hmmmm..."
+    mcname "AHAHAHAHAHAH! Ada nama lu di kolom remedial!"
+    mcname "HAHAHAHAAHA! Makanya belajar, jangan main game mulu."
+    tana "Gua udah belajar tauuu. Harusnya gak gini... Hmmm?"
+    "Tana pun melihat kembali daftar nama di kolom remedial dengan lebih seksama."
+    tana "HAHAHAHAHA! NAMA LU DI BAWAH GUA, KOCAK!"
+    mcname "LAH?! KOK BISA SIH?!"
+    tana "Terbukti kalau gua itu emang lebih jago daripada elu. Sungkem dulu sini!"
+    mcname "Enak aja, lebih jago mah ga ngaruh kalo endingnya tetep remedial."
+    tana 'Halah halah.'
+    "???" "Sama-sama remedial kok berantem."
+    tana "Eh?! Sapa tuh yang berani ngomong gitu?"
+    $ quick_menu = False
+    scene black with dissolve
+    scene lorong with dissolve
+    $ quick_menu = True
+    flora "Aku, kenapa?"
+    tana "E-eh, Kak Flora. Heheheh."
+    mcname "Kak Flora lagi ngapain, kok di sini juga?"
+    flora "Emang di kampus ini yang UTS cuma kalian berdua?"
+    tana "Iya juga. Kalo Kak Flora hasil UTSnya gimana? Remedial juga, ya?"
+    flora "Enak aja, emangnya kalian berdua? Coba liat aja di madingnya kalo ga percaya."
+    mcname "Oh iya. Ga ada nama Kak Flora, sugoooi~"
+    tana "Dasar wibu."
+    mcname "Kak Flora tuh wibu."
+    flora "Hadeh, kok jadi gua yang kena?"
+    flora "Yaudah, gua cabut duluan ya! Kalian jangan lupa belajar!"
+    tana "Siap Kak Flora!"
+    mcname "Siap!"
+    tana "Hmmmm. Ngomong-ngomong soal belajar, mau belajar bareng lagi ga?"
+    mcname "Gas sih kalo gua, tapi mau belajar di mana?"
+#chapter2tanaGOOD4
+    tana "Kalo di ruang klub lagi gimana?"
+    mcname "Gas lah."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    scene kampus with dissolve
+    $ quick_menu = True
+    tana "......."
+    mcname "......"
+    tana "..........."
+    tana "Akkkkkhh! Kesel banget gua."
+    mcname "Lah? Kenapa nih anak?"
+    tana "Bisa-bisanya gua remedial mata kuliah gampang gini."
+    mcname "Skill issue."
+    tana "Berisik, lu. Nilai lu aja masih dibawah gue."
+    mcname "Dih. Gitu-gitu gua ga denial kaya elu, kocak."
+    tana "Halah halah."
+    mcname "Dari pada lu stres di dalem, mending cari angin dulu. "
+    tana "Masuk akal, tapi ke mana?"
+    mcname "Ke sawah aja gimana? Anginnya kan kenceng tuh di situ."
+    tana "Iya juga. Ayo deh."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/bgm_harvestmoon_spring.mp3" fadein 1.0
+    scene sawah with dissolve
+    $ quick_menu = True
+    mcname "Beuuuh, enak banget angin sepoi-sepoi gini."
+    tana "Bener banget, tapi lebih enak kalo ada cemilan."
+    mcname "Hadeh, makan mulu pikirannya."
+    tana "........"
+    mcname "Eh?"
+    tana "........."
+    mcname "Gue bercanda doang, Tan. Sampe diem gitu, sorry sorry."
+    tana "Nggak, kocak. Gue cuma lagi kepikiran aja."
+    mcname "Kepikiran apa?"
+    tana "Sampe sekarang, belum ada yang mau daftar idol group kita."
+    mcname "........."
+    tana "Kenapa? Kok diem?"
+    mcname "Gua cuma bingung aja mau ngomong apa, soalnya gua juga ga berpengalaman tentang itu."
+    tana "Menurutku idol group ini belum punya konsep yang matang aja sih."
+    mcname "Emangnya lu mau konsep yang kayak gimana?"
+    tana "Karena gue wibu, jadi pasti gak jauh-jauh dair konsep idol jepang sih."
+    mcname "Hooooo..."
+    tana "Sebenarnya sisi menarik dari idol jepang itu banyak banget."
+    tana "Sebagai performer menunjukan sisi riang ceria di atas panggung, dikenal banyak orang,  berbagi kebahagiaan lewat interaksi fans, maupun menciptakan karya musik yang bisa diterima semua orang."
+    tana "Bagi gue semua itu esensi idol yang mesti digapai walau harus memeras keringat lebih banyak lagi."
+    tana "Emang di luar sana banyak orang awam yang hanya lihat sisi negatifnya, namun usaha idol buat menaikan nama grupnya layak dapat apresiasi lebih walau hanya hal kecil seperti bagi-bagi flyer promosi di jalan."
+    tana "Seperti yang waktu itu kita pernah lakuin."
+    mcname "Ah begitu ya. Agak mumet sih, Tan, dengerin lu ngomong terus dari tadi. Macam lagi diceramahi Mamah gue aja."
+    tana "Alah-alah ini orang apaan dah bikin kesel mulu."
+    mcname "Ya sorry dah."
+    tana "Hadeh. Udah, ah. Mending balik aja."
+    mcname "Udahan?"
+    tana "Iyah, ayok balik."
+    "Tana pun berdiri dan berjalan lebih dahulu di depan [mcname]."
+    mcname "?????"
+    tana "♪♪♪"
+    mcname "Tan!"
+    tana "Hmmmm? Apa?"
+    mcname "Lu mau ke mana?"
+    tana "Balik."
+    mcname "Ke?"
+    tana "Kost lah, kocak. Ke mana lagi coba."
+    mcname "Tas lu masih di ruang klub, kocak!"
+    tana "Eh? G-gua tau, kocak! Gua tadi cuma gimmick aja."
+    mcname "Iya deh, iya."
+    "Mereka pergi menuju ruang klub sambil mengejek satu sama lain."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
+    scene lorong with dissolve
+    $ quick_menu = True
+    " Diujung perjalanan ke ruang klub, terlihat cewek berambut biru yang terus mondar-mandir dengan gugup sambil memegang flyer di depan pintu klub."
+    mcname "Eh, Tan."
+    tana "Apa?"
+    mcname "Ada siapa tuh di depan pintu ruang klub?"
+    tana "Oh iya, ada orang."
+    tana "Hmmm... Itu kan cewek yang kabur habis kita kasih flyer."
+    mcname "Oh iya, gua inget. Tapi ngapaind ia ngintip-ngintip gitu?"
+    tana "Heheheehe, gue isengin ah."
+    mcname "Heh, Tan."
+    "Tana yang sudah berjalan duluan pun tidak mendengar perkataan [mcname]."
+    "Dengan perlahan, Tana mulai mendekati cewek tersebut. Dengan maksud iseng, Tana pun berbisik..."
+    tana "Lu mau masuk idol group ya?"
+    "???" "AAAAAAAAAAAAAAAAAAAAAAA!"
+    "Karena tiba-tiba mendengar bisikan Tana, cewek tersebut pun kaget dan teriak."
+    tana "HEH!"
+    "Panik mendengar teriakan cewek tersebut, Tana dengan sergap langsung membungkam mulut si cewek dengan kedua tangannya."
+    tana "Ga usah teriak, kocak! Lu drama banget sih."
+    "???" "Hmmppppp!!"
+    tana "Oh iya."
+    "Tana pun langsung melepaskan kedua tangannya dari mulut cewek tersebut."
+    "???" "Huuft~"
+    tana "Sorry sorry, reflek aja tadi."
+    "???" "I-iya, g-gapapa."
+    tana "Btw, nama lu siapa?"
+    "???" "K-Kanaia..."
+    tana "Oalah, nama lu Kanaia?"
+    kana "I-iya."
+    tana "Lu ke sini mau daftar idol group, kan?"
+    kana "Eh?! A-anooo..."
+    tana "Lah, wibu? Pas banget! Langsung join aja!"
+    kana "Uummm... Gimana ya..."
+    tana "Gass, gausah lama-lama."
+    kana "A-akuu.."
+    tana "Hahahaha!"
+    mcname "Hadeh, anak orang jangan diisengin."
+    tana "Sorry sorry, hahaha."
+    mcname "Kana, kan? Maafin temen gue, ya. Otaknya emang agak lain. Silahkan masuk dulu ke ruang klub."
+    kana "I-iya."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    scene kampus with dissolve
+    $ quick_menu = True
+    "Suasana canggung mulai menyelimuti ruangan klub. Tana, Kana, dan [mcname] tampak saling melirik satu sama lain tanpa ada sepatah kata pun yang keluar."
+    mcname "Hmmm... Jadi, Kana ada keperluan apa nih ke sini?"
+    kana "Anoo... Saya ke sini mau..."
+    tana "MAU MASUK GRUP IDOL KAN? KANNNN????!!"
+    mcname "LU DIEM DULU, KOCAK!"
+    tana "Iya iyaaa. Sorry, hehehe."
+    kana "K-kalau itu... Ummmm...."
+    "Terlihat Kana memejamkan mata sejenak."
+    kana "{i}Yuk, Kana! Bisa yuk, buat ungkapin apa yang lu mau.{/i}"
+    kana "{i}Ini kan yang sebenernya lu pengen dari dulu, Kana.{/i}"
+    kana "{i}Kalo ga sekarang, momennya kapan lagi?{/i}"
+    "Tiba-tiba, matanya terbuka dengan penuh keyakinan."
+    kana "I-IYA! A-AKU MAU JOIN IDOL GROUP!!"
+    "Mendengar ucapan Kana, Tana pun secara reflek memegang kedua pundak Kana lalu menggoyangkannya."
+    tana "SERIUSS?!"
+    kana "I-iya.."
+    tana "Kan?! APA GUA BILANG!"
+    mcname "Iya iyaa. Tapi lepasin dulu itu anak orang, kasian."
+    tana "Eh, sorry sorry."
+    tana "Kamu gapapa, kan?"
+    kana "Daijobu desu.."
+    mcname "{i}Walah wibu beneran..{/i}"
+    tana "Btw, alasan kamu mau gabung di idol group ini apa?"
+    kana "Sebenernya aku suka idol kayak {i}Cheeky Parade{/i} sama {i}iLife{/i},  jadi itu alasan tertarik buat join."
+    tana "Ah, lu tau mereka juga? Jarang banget loh orang tau tentang mereka. Si Kana Kana ini sepuh banget ternyata."
+    kana "Eh? Hehe... Dikit-dikit aja sih yang gue tau."
+    mcname "Keren, lahk!"
+    mcname "Btw, mau infoin aja nih. Karena udah ada 2 orang, kalian udah bisa daftar lomba dan bisa mulai lati-"
+    "SFX DOBRAK PINTU"
+    mcname "?!"
+    tana "?!"
+    kana "?!"
+    "???" "P!! JOIN KAWANKUHHH!!!"
+    "Serentak mereka bertiga kaget dengan apa yang baru mereka alami."
+    tana "Eh, bocil. Emak lu ke mana? Maen masuk ke tempat orang aja."
+    "???" "Bocal bocil, enak aje lu. Kenalin gue Pia Meameo, eh, Meraleo. Gua mau join idol group. Daftarnya di sini, kan?"
+    "Tana dan [mcname] saling menatap."
+    mcname "..."
+    tana "..."
+    tana "Pfffft.."
+    mcname "Pffft.."
+    tana "HAHAHAHAHA!"
+    mcname "HAHAHAHAH!"
+    pia "Malah ketawa... Wibu emang ga ada yang bener."
+    "Suasananya sangat bahagia, namun [mcname] dan Tana sepertinya melupakan sesuatu yang penting..."
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
