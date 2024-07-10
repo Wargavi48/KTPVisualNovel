@@ -848,8 +848,100 @@ label chapter2tanaTRUE_afterUTS:
     tana "Okeee."
     mcname "Aku balik, ya. Semangat Ton! Jangan lupa belajar lagi."
     tana "Siap! Kamu juga semangat, [mcname]! Hati-hati di jalan~"
+    $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
+    jump trueendtana
+
+
+label trueendtana:
+#NeutralRoute4
+    play music "audio/BGM_Lorong.mp3" fadein 1.0   
+    scene lorong with dissolve
+    $ quick_menu = True
+    "Tana dan [mcname] keluar dari ruang kelas."
+    mcname "Haaaah akhirnya~"
+    tana "Capek juga."
+    mcname "Gimana tadi remedialnya?"
+    tana "Amannn, lu gimana?"
+    mcname "Amann, sekarang pasti lulus sih."
+    tana "Iya lah, kan belajarnya sama gue."
+    mcname "Btw, mau ke mana habis ini?"
+#TrueEndingFINALE
+    tana "Ke kantin aja, yuk."
+    mcname "Udah laper?"
+    tana "Iya, laper banget nih. Belum sarapan juga."
+    mcname "Aku juga belum sarapan. Ayo deh."
+    "Tana dan [mcname] pun pergi ke kantin."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/bgm_kantin.mp3" fadein 1.0
+    scene kantin with dissolve
+    $ quick_menu = True
+    mcname "Mau makan apa?"
+    tana "Miee~"
+    mcname "Ga ada mie pedes mie pedes."
+    tana "AHHH. KAMU MAH GITU!"
+    mcname "Kasian itu perut kena 10 cabe mulu. Nanti kamu jadi cabe loh."
+    tana "HMPH!"
+    mcname "Idih ngambek dia."
+    "[mcname] pun mengusap-usap kepala Tana."
+    mcname "Ututututu~"
+    tana "......"
+    mcname "Bahaya kalo kebanyakan pedes-pedes. Nanti kamu sakit loh."
+    tana "Yaaa..."
+    mcname "Hahahaha, yaudah. Nanti ku cari yang kayaknya ga terlalu pedes. Kamu cari tempat duduk dulu gih. Aku yang pesen makan."
+    tana "Oke."
+    mcname "Menunya disamain aja kan?"
+    tana "Iya, samain aja. Awas kalo ga enak!"
+    mcname "Siap, Nona."
+    "Tana pun pergi mencari kursi kosong, sedangkan [mcname] pergi untuk memesan makanan."
+    mcname "Hmmm... Beli apa, ya?"
+    "Mata [mcname] pun melihat ke sekeliling kantin."
+    mcname "Kayanya ada penyetan tuh, tapi masa pedes-pedes lagi? Gapapa deh."
+    "Tiba-tiba..."
+    "???" "[mcname]!"
+    mcname "Hmm? Aku ngerasa deja vu."
+    flora "Deja vu deja vu, kaya ngerti aja artinya."
+    mcname "Nah bener, kan. Sapa lagi yang suaranya sekecil Kak Flora."
+    flora "Kamu bilang apa tadi?"
+    mcname "N-nggak. Aku ga bilang apa-apa, kok. Kak Flora salah denger kali, hehehe~"
+    flora "Dasar. Kamu sendirian aja, [mcname]?"
+    mcname "Nggak, kak. Aku sama Tono."
+    flora "Oalah. Btw, kalian kok jarang mampir ke ruang klub lagi?"
+    mcname "Akhh. Akhir-akhir ini lagi sibuk banget, kak. Ini aja baru selesai remedial."
+    flora "Oalah, aku kira udah bukan wibu. Makanya belajar biar ga remedial."
+    mcname "Kalo belajar mah udah, tapi bingung kok masih remedial."
+    flora "Sama, aku juga."
+    mcname "Juga remedial?"
+    flora "Nggak, aku juga bingung kok ada yang remedial."
+    mcname "Maafkan aku yang bodoh ini, huhuhu."
+    flora "Hahaha. Btw, [mcname] masih wibu, kan?"
+    mcname "Mochiron desu! (Tentu saja!)"
+    flora "Dasar wibu."
+    mcname "{i}Mau ngebales, tapi kakak tingkat...{/i}"
+    mcname "Aku lah wibu itu."
+    flora "Btw lagi, habis ini ada event Hanabi, loh."
+    mcname "Oh? Di mana eventnya, kak?"
+    flora "Acaranya di kampus kita kok."
+    mcname "Wah, nice info."
+    flora "Iya. Ajakain Si Tana sana. Itung-itung biar kalian refreshing habis UTS."
+    mcname "Siap Kak Flora, nanti aku ajak Si Tono."
+    flora "Sip! Yaudah, aku duluan ya. Jangan lupa main-main ke ruang klub kalo sempet!"
+    mcname "Siap!"
+    "Flora pun pergi meninggalkan [mcname]."
+    mcname "Kak Flora.. Kak Flora."
+    mcname "Hmmm? Apaan tuh?"
+    
+
+
+
+
+
+    stop music fadeout 1.0
+    scene black with dissolve
+    show text "{color=#FFF}THE END{/color}" with Pause(2.0)
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits
