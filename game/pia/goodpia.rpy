@@ -296,5 +296,54 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
+    scene ruang ukm with dissolve
+    show kana at kana_near_left_2 with dissolve
+    show tana at tana_right with dissolve
+    show kana_side at left with dissolve
+    kana "Ton! Kita harus rekrut Meameo join club jepang ini! Gambar dia bagus! Cocok jadi ilustrator club kita!"
+    hide kana_side with dissolve
+    show tana_side at left with dissolve
+    tana "Itu siapa lagi, Nay? Nama dia Meameo? Aneh juga…"
+    hide tana_side with dissolve
+    show kana_side at left with dissolve
+    kana "Duh aku lupa nama aslinya, tapi sedenger aku dari Kak Fiony nama dia Meameo"
+    hide kana_side with dissolve
+    show tana_side at left with dissolve
+    tana "Err..oke\n*Siapa pula itu Fiony*"
+    hide tana_side with dissolve
+    show kana_side at left with dissolve
+    kana "Dia anak DKV. Besok di gedung DKV ada pameran karya lagi, kita cari dia!"
+    hide kana_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene ruang ukm with dissolve
+    show tana at tana_right with dissolve
+    show kana at kana_near_left_2 with dissolve
+    show tana_side at left with dissolve
+    tana "Woaaaa bagus-bagus ya, gambarnya."
+    hide tana_side with dissolve
+    show kana_side at kana_near_left_2 with dissolve
+    kana "Ton! Misi kita disini untuk rekrut Meameo"
+    hide kana_side with dissolve
+    show tana_side at left with dissolve
+    tana "Iye bang. Kayak gimana tuh, orangnya?"
+    hide tana_side with dissolve
+    show kana_side at left with dissolve
+    kana "......"
+    kana "......."
+    hide kana_side with dissolve
+    show tana_side at left with dissolve
+    tana "Nay?"
+    hide tana_side with dissolve
+    show kana_side at left with dissolve
+    kana "Aku gak tau kayak gimana orangnya…"
+    hide kana_side with dissolve
+    show tana_side at left with dissolve
+    tana "................"
+    hide tana_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    scene lorong with dissolve
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits
