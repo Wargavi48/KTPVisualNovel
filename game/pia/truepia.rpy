@@ -681,6 +681,7 @@ label trueendpiajalanmonas:
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
+    jump truendpia
 
 label truendpia:
     scene black with dissolve
