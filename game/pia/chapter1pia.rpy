@@ -865,10 +865,44 @@ label chapter1piamakanmall:
     "[mcname] memejamkan mata menikmati alunan suara Pia yang sedang bernyanyi."
     $ quick_menu = False
     scene sawah with dissolve
+    show pia at pia_near with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
-    mcname "*Pia pun tanpa sadar menyenderkan kepalanya di pundak kanan [mcname]*"
-    "Tak terasa, waktu pun sudah beranjak sore. [mcname] dan Pia kembali ke fakultasnya untuk memasuki kelas yang dimulai sore itu."
+    "*Pia pun tanpa sadar menyenderkan kepalanya di pundak kanan [mcname]*"
+    mcname "Kamu suka lagunya ya?"
+    show pia_side at left with dissolve
+    pia "Um.."
+    pia "*Mengangguk*"
+    pia "Suka banget"
+    hide pia_side at left with dissolve
+    mcname "Artinya apa?"
+    show pia_side at left with dissolve
+    pia "Tiap kali lagi sedih, bad mood, atau galau, jadi tenang pas denger lagu ini."
+    hide pia_side with dissolve
+    mcname "Eeeh? Kamu lagi bad mood kah sekarang?"
+    show pia_side at left with dissolve
+    pia "Nggak kok."
+    pia "Tiap kali aku denger lagu ini, aku bisa ngelupain masalah yang aku hadapi."
+    pia "Well… masalah bakal tetep ada sih, tapi untuk sejenak rasanya masalah itu hilang."
+    pia "Aku sebenernya baru sih suka lagu ini."
+    pia "Entah kenapa…"
+    pia "Lagu ini seolah ngingetin aku ke seseorang."
+    pia "*Melirik [mcname]*"
+    pia "Seseorang yang selalu ada untuk aku…"
+    pia "Seseorang yang bisa menerima aku apa adanya..."
+    pia "Seseorang yang sayang aku…"
+    pia "Aku mungkin susah untuk jujur, tapi aku harap orang itu tau bahwa the feeling is mutual."
+    pia "Aku bakal nerima dia dan janji selalu ada untuk dia. Seperti dia yang selalu ada untuk aku…"
+    pia "......"
+    pia "5 tahun lagi menurutmu kita bakal di mana?"
+    hide pia_side with dissolve
+    mcname "......"
+    show pia_side at left with dissolve
+    pia "*Blush*"
+    pia "A-AAAHH! UDAH SORE! AYOK BALIK KE KELAS LAGI!"
+    hide pia_side with dissolve
+    stop music fadeout 1.0
+    "Tak terasa, waktu pun sudah beranjak sore. Pia pun menegakkan kepalanya kembali dari pundak [mcname]. Mereka kembali ke fakultasnya untuk memasuki kelas yang dimulai sore itu."
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
