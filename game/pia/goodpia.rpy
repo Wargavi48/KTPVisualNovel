@@ -345,5 +345,152 @@ label goodpiaafterquiz:
     $ quick_menu = False
     scene black with dissolve
     scene lorong with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Wah rame banget yang liat-liat lukisan bulan ini"
+    "[mcname] melihat ada 2 orang berlari menuju kearahnya"
+    mcname "Waduh, lari ke gue gak sih, apa belakang gue? Belakang gue ga ada orang sih"
+    "*[mcname] berjalan meminggir agar tidak menghalangi 2 orang tersebut*"
+    mcname "Kayaknya fix lari ke gue"
+    show kana at kana_near with dissolve
+    show kana_side at left with dissovle
+    kana "[mcname]! Nama kamu [mcname] kan?"
+    hide kana_side with dissolve
+    mcname "Ooh! Temennya cepio, iya, ada apa nih?"
+    show kana_side at left with dissolve
+    kana "Kamu kenal Meameo kan?"
+    hide kana_side with Dissolve
+    mcname "Pppffftt… Meameo"
+    mcname "Iya kenal kok, tadi orangnya lagi selfie depan lukisannya. Mau ketemu?"
+    show kana_side at left with dissolve
+    $ tono_name = "Tana"
+    kana "Iya! Oh kenalin, ini Tana"
+    hide kana with dissolve
+    show kana at kana_near_left_2 with dissolve
+    show tana at tana_right with dissolve
+    show tana_side at left with dissolve
+    tana "Wazzup bro"
+    hide tana_side with dissolve
+    mcname "Y-yeah, wazzup……"
+    hide kana with dissolve
+    hide tana with dissolve
+    "[mcname] pun membawa Kana Tana ke Pia yang sedang berfoto dengan lukisannya"
+    mcname "Oi MEAMEO, ada yang mau ketemu kamu nih"
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Geeeeh apalah meameo"
+    hide pia_side with dissolve
+    hide pia with dissolve
+    show kana at kana_near_left_2 with dissolve
+    show tana at tana_right with dissolve
+    show pia at pia_near with dissolve
+    show kana_side at left with dissolve
+    kana "Meameo!!!"
+    kana "Join club jepang yuk!"
+    hide kana_side with dissolve
+    show pia_side at left with dissolve
+    pia "Heeeeeeeee…"
+    pia "Tunggu"
+    pia "Pertama, nama aku Meraleo"
+    pia "MERALEO"
+    pia " Bukan Meameo"
+    pia "Kedua, aku gamau masuk club jepang"
+    pia "SIBUK!"
+    pia "Ketiga"
+    pia "Kalian siapa?"
+    hide pia_side with dissolve
+    show tana_side at left with dissolve
+    tana "Naya, Naya…."
+    tana "Minimal perkenalan dulu"
+    tana "Halo Kak Meraleo, aku Tana, dia Kana."
+    tana "Kita dari club jepang"
+    tana "Nah, tujuan kita mau invite kamu ke club jepang nih"
+    tana "Kita suka gambar kamu, siapa tau tertarik kan."
+    hide tana_side with dissolve
+    show pia_side at left with dissolve
+    pia "Oh, panggil aku Pia aja."
+    pia "Makasih undangannya, tapi kayaknya enggak dulu deh. Belum tertarik join club."
+    hide pia_side with dissolve
+    show kana_side at left with dissolve
+    kana "Yaaah, oke deh. Belum tertarik kan. Bukan tidak tertarik!"
+    kana "Oke. Besok aku akan cari kamu lagi buat join"
+    hide kana_side with dissolve
+    "*Kana pergi*"
+    hide kana with dissolve
+    show tana_side at left with dissolve
+    tana "Lah udah nyerah ngomongnya gitu doang…"
+    tana "Pergi dulu ya [mcname], Pia. Maap suka aneh emang Kana Kana itu"
+    hide tana with dissolve
+    "Beberapa kali pun setiap Pia bertemu Tana dan Kana, dia langsung diajak join club."
+    "Namun jawaban Pia tetap sama, Pia menolak join club"
+    $ quick_menu = False
+    scene black with dissolve
+    scene rooftop with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Pia dan [mcname] sedang beristirahat sehabis selesai matkul nirmana"
+    mcname "Mau muntah aku ngerjain nirmana. Susaaaaah"
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Ahahahaha betuuuul"
+    hide pia_side with dissolve
+    mcname "BTW, kayaknya Si Kana Tana makin sering tuh ngajak kamu join haha."
+    show pia_side at left with dissolve
+    pia "Iya sih. Gigih banget ya."
+    hide pia_side with dissolve
+    mcname "Kamu ga mau coba dulu? Iseng aja gitu, mampir ato liat liat dulu ruang clubnya."
+    show pia_side at left with dissolve
+    pia "Jujur nih, sebenernya penasaran juga sih. Cuma ga ah!"
+    hide pia_side with dissolve
+    mcname "Ara ara, penasaran ya?\n*smug face*"
+    show pia_side at left with dissolve
+    pia "Heh apalah!"
+    hide pia_side with dissolve
+    mcname "Kan aku bilang, kamu join aku join. Gimana?"
+    show pia_side at left with dissolve
+    pia "*Menghembuskan nafas*"
+    pia "Haaaaah….. okeh deal"
+    hide pia_side with dissolve
+    mcname "Lesgooooo"
+    $ quick_menu = False
+    scene black with dissolve
+    scene ruang ukm with dissolve
+    show kana_near_left_2 at left with dissolve
+    show feni at feni_right with dissolve
+    show kana_side at left with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    kana "Haaaah, pake strategi apa lagi ya buat ngajak Pia join ke sini?"
+    hide kana_side with dissolve
+    show feni_side at left with dissolve
+    feni "Emang sekeren itu ya desainnya?"
+    hide feni_side with dissolve
+    show kana_side at left with dissolve
+    kana "IYA KAK! SEKEREN ITU"
+    hide kana_side with dissolve
+    show tana_side at left with dissolve
+    tana "Alah, bias aja itu mah Kak"
+    hide tana_side with dissolve
+    show kana_side at left with dissolve
+    kana "Aaah Tono maaah\n*sad face*"
+    hide kana_side with dissolve
+    show feni_side at left with dissolve
+    feni "Eeh udah udah jangan berantem ih."
+    feni "Kalo emang gak mau ya, mau gimana atuh."
+    hide feni_side with dissolve
+    "*suara orang mengetuk pintu*"
+    show feni_side at left with dissolve
+    feni "Nay, bukain atuh pintunya. Kamu yang paling deket pintu"
+    hide feni_side with dissolve
+    show kana_side at left with dissolve
+    kana "Iya kak\n*Nada lemes*"
+    hide kana_side with dissolve
+    play sound "audio/open_door" fadein 1.0
+    mcname "Halo Kana"
+    show kana_side at left with dissolve
+    kana "Hah [mcname]??? Ngapain"
+    hide kana_side with dissolve
+    mcname "J-jadi gini…"
+    "dari belakang [mcname], Pia menunjukan dirinya dengan malu malu"
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits
