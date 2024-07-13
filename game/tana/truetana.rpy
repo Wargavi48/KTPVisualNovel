@@ -662,8 +662,8 @@ label chapter2tanaTRUE_afterUTS:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    play music "audio/backsound_kamar.mp3" fadein 1.0
-    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+    scene kamar tana with dissolve
     $ quick_menu = True
     mcname "Oooooo. Jadi gini toh kamarmu, bagus juga."
     tana "Jelas, aku gitu loh. Pasti kamar kostmu kotor."
@@ -698,15 +698,19 @@ label chapter2tanaTRUE_afterUTS:
     mcname "Oke deh, aku ga ikut-ikut ya kalo ada apa-apa."
     tana "Jahatnya.."
     mcname "Bercanda. Btw, done min. Tinggal nunggu dateng aja."
-    tana "nice, waktunya belajar."
+    tana "Nice, waktunya belajar."
     mcname "Itu dia."
     "Tana dan [mcname] pun mulai belajar bersama sambil menunggu makanan yang mereka pesan."
+    $ quick_menu = False
+    scene black with dissolve
+    scene kamar tana with dissolve
+    $ quick_menu = True
     tana "[mcname], lu paham ga ini maksudnya gimana?"
     mcname "Ah, itu mah tinggal pake rumus ini. Nanti kalo variabelnya udah ketemu, tinggal dimasukin rumus satunya."
     tana "Wakarimasu!"
     $ quick_menu = False
     scene black with dissolve
-    scene mc bedroom with dissolve
+    scene kamar tana with dissolve
     $ quick_menu = True
     mcname "Ton, Ini maksudnya apaan? Kamu sebagai “Tana” kan paham nih tentang temen-temen pertanahan."
     tana "Kamu bilang apa tadi??!!"
@@ -754,8 +758,8 @@ label chapter2tanaTRUE_afterUTS:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    play music "audio/backsound_kamar.mp3" fadein 1.0
-    scene mc bedroom with dissolve
+    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+    scene kamar tana with dissolve
     $ quick_menu = True
     mcname "Nih, Ton."
     tana "Asiiiik, udah dibayar?"
@@ -771,7 +775,7 @@ label chapter2tanaTRUE_afterUTS:
     "Tana dan [mcname] pun duduk bersebelahan dan mulai memakan pesanan mereka masing-masing."
     $ quick_menu = False
     scene black with dissolve
-    scene mc bedroom with dissolve
+    scene kamar tana with dissolve
     $ quick_menu = True
     tana "Itadakimasu!"
     mcname "Itadakimasu!"
@@ -788,15 +792,15 @@ label chapter2tanaTRUE_afterUTS:
     "Tana pun memberikan segelas air mineral kepada MC."
     "SFX Minum"
     mcname "Ahhh~"
-    tana "Gimana? MEndingan?"
-    mcname "Uhuk uhuk. Mendingan lah ini."
+    tana "Gimana? Mendingan?"
+    mcname "Uhuk uhuk. Mendinganlah ini."
     tana "Hati-hati makanya."
-    mcname "Ucap yang yang udah keselek dua kali."
+    mcname "Ucap orang yang udah keselek dua kali."
     tana "Hadeh, minum lagi aja dah."
     "SFX Minum"
     mcname "Ahhh~ Udah udah, aman."
     tana "Sip. Masih bisa lanjut makan ga?"
-    mcname "Bisa, tapi istirahat bentar. Panas banget ini tenggorokan. Kamu makan duluan aja."
+    mcname "Bisa, tapi istirahat bentar. Panas banget ini tenggorokan, kamu makan duluan aja."
     tana "Lah? Masa aku makan sendirian?"
     mcname "Gapapa. Keburu dingin itu punya kamu."
     tana "Hmm.. Gapapa deh. Aku nunggu kamu aja."
@@ -813,12 +817,6 @@ label chapter2tanaTRUE_afterUTS:
     mcname "HAHAHAHAHA! Ini dia Tono yang ku kenal. HAHAHAHA!"
     tana "KAMU AWAS YA!"
     "Tana dan [mcname] pun duel satu sama lain."
-    stop music fadeout 1.0
-    $ quick_menu = False
-    scene black with dissolve
-    play music "audio/backsound_kamar.mp3" fadein 1.0
-    scene mc bedroom with dissolve
-    $ quick_menu = True
     mcname "Hahahaha."
     tana "Hahahaha."
     mcname "Btw, udah paham belum sama yang tadi ditanyain?"
@@ -839,7 +837,7 @@ label chapter2tanaTRUE_afterUTS:
     "Tana dan [mcname] pun menghabiskan sisa mie pedas yang mereka pesan."
     $ quick_menu = False
     scene black with dissolve
-    scene mc bedroom with dissolve
+    scene kamar tana with dissolve
     $ quick_menu = True
     tana "Ahhh! Mie pedes emang ga ada lawannya!"
     mcname "Jangan sering-sering, kocak. Kasian tuh perut."
@@ -934,11 +932,339 @@ label trueendtana:
     "Flora pun pergi meninggalkan [mcname]."
     mcname "Kak Flora.. Kak Flora."
     mcname "Hmmm? Apaan tuh?"
-    
-
-
-
-
+    "[mcname] melihat sesuatu di lantai."
+    mcname "Ohhh kunci, tapi kunci apa?"
+    mcname "Eh? Ada tulisan sawah. Jangan-jangan ini kunci punya Kak Flora."
+    mcname "Simpen di dompet aja deh, biar ga ilang."
+    "Setelah itu, [mcname] pun menghampiri penjual penyetan yang ia lihat sebelumnya."
+    mcname "Pak, jualan penyetan?"
+    "Penjual" "Saya jualan pecel, dek. Ada pecel ayam, pecel lele, pecel tahu tempe juga ada."
+    mcname "Pecel? Mana bumbu kacangnya?"
+    "Penjual" "Pecel kok pake bumbu kacang? Pecel itu pake sambel. Aek bukan orang sini, ya?"
+    mcname "Bukan, hehehe. Ini ada lalapannya, Pak?"
+    "Penjual" "Ada, lalapannya lengkap."
+    mcname "Okeee. Kalo gitu saya pesen pecel lelenya dua, tambah tahu tempe, sama teh tawar hangat dua."
+    "Penjual" "Oke, ada lagi?"
+    mcname "Hmmm.. itu yang bulet-bulet di belakang apa Pak?"
+    "Penjual" "Ondel-ondel itu."
+    mcname "Onde-onde kali Pak. Kalo ondel-ondel mah gede banget."
+    "Penjual" "Iya juga. Kalo kaget, onde mande."
+    mcname "Hahaha, Si Bapak lucu juga. Kalo gitu mau onde-ondenya dua, Pak."
+    "Penjual" "Ada lagi?"
+    mcname "Udah, Pak."
+    "Penjual" "Totalnya 74 ribu, kak."
+    mcname "Oke. Ini, Pak."
+    "[mcname] pun memberikan uang kepada penjual."
+    "Penjual" "Kak."
+    mcname "Iya?"
+    "Penjual" "Kurang 20 ribu."
+    mcname "Eh?! Maaf Pak, ga fokus."
+    "Penjual" "Adek lagi kurang sehat, kah? Berobat deh."
+    mcname "Hehehe, ini 20 ribunya."
+    "Penjual" "Oke, tunggu bentar ya."
+    mcname "Oke."
+    "[mcname] pun menunggu pesanannya selesai dibuat."
+    $ quick_menu = False
+    scene black with dissolve
+    scene kantin with dissolve
+    $ quick_menu = True
+    mcname "Hmmm... Hanabi Festival ya?"
+    mcname "Kira-kira Tono mau ga ya?"
+    "Penjual" "Kak, ini pesanannya."
+    mcname "Baik. Terima kasih banyak."
+    "Setelah menerima pesannya, [mcname] pun mencari tempat di mana Tana duduk."
+    mcname "Tono duduk di mana coba..."
+    mcname "Oh, di situ."
+    "[mcname] pun menghampiri Tana."
+    tana "[mcname]! Sini sini."
+    mcname "Iyaaa."
+    tana "Kamu beli apa jadinya?"
+    mcname "Tadaa~"
+    tana "IHHH. PENYETAN! Eh, tapi tadi katanya ga boleh pedes-pedes."
+    mcname "Gapapa, ini kan ga sepedes mie pedesmu yang cabe 10 itu."
+    tana "Dasar plin plan, tapi gapapa hehe."
+    mcname "Yuk makan."
+    "Tana dan [mcname] pun mulai makan penyetan tersebut."
+    mcname "Btw, Ton."
+    tana "Hmm?"
+    mcname "Habis ini ada Hanabi Festival. Mau ikut, ga?"
+    tana "MAUUU!!"
+    mcname "Semangat banget, hahaha."
+    tana "Soalnya aku belum pernah dateng ke festival kayak gitu."
+    mcname "Oalahh, gas nanti kita ke sana kalo gitu."
+    tana "Asiiik, gas lah."
+    "Tana dan [mcname] pun menghabiskan waktu mereka di kantin untuk makan dan ngobrol bersama."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    scene kelas with dissolve
+    $ quick_menu = True
+    "Keesokan harinya di kampus saat waktu perkuliahan sedang berjalan."
+    tana "Psst, [mcname]!"
+    mcname "Hmmm? Apa Ton?"
+    tana "Hanabi Festival itu isinya apa aja? Kamu tau, ga?"
+    mcname "Aku sebenernya kurang tau juga, tapi kalo dari yang aku baca tuh katanya ada banyak kegiatan sama jajanan."
+    tana "Jajan? Let’s gooo~"
+    mcname "Kalo masalah makanan, semangat banget dia hahaha."
+    tana "Hidup itu untuk menikmati makanan! Terutama mie pedes!"
+    mcname "Mie pedes terusss."
+    tana "Biarin, hidup mie pedes!"
+    mcname "Dasar purist mie pedes, aku panggil cabe juga lama-lama."
+    tana "Halah halah, malah nambah lagi nama panggilanku."
+    mcname "Hahahaha. Btw, Hanabi Festivalnya ternyata besok."
+    tana "Iya, kah? Aku kira masih lama."
+    mcname "Aku sebelumnya juga mikir gitu, tapi ternyata salah hahaha."
+    tana "Kita jadi pergi, kan?"
+    mcname "Enggak."
+    tana "LOH?!"
+    mcname "Sssstt! Jangan berisik!"
+    tana "Sorry sorry, tapi masa beneran ga jadi? Terus aku nanti sama siapa?"
+    mcname "Bercanda, Ton. Ya kali ga jadi."
+    tana "Dasaaar..."
+    mcname "Hahahah~"
+    tana "Hahahah~"
+    stop music fadeout 1.0
+    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    show dosen at dosen_center with dissolve
+    dosen "[mcname]! Tana! Kalian kok ngobrol sendiri?!"
+    mcname "Kalo kali ini serius Si Tana, Bu. Saya udah pernah ditegur Ibu sebelumnya, masa masih berani gak memperhatikan ibu?"
+    tana "HEH!"
+    dosen "Tana! Maju ke depan!"
+    mcname "HAHAHAHAHA! Rasain."
+    tana "[mcname]!!"
+    mcname "Hahahahaha, semangat cabe akuhh~"
+    mcname "Awas lu, Ton..."
+    tana "Aman aja, kan? Xixixi."
+    "[mcname] pun maju untuk mengerjakan soal yang tertulis di papan."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    scene kelas with dissolve
+    $ quick_menu = True
+    "Setelah kelas selesai..."
+    tana "[mcname]! KAMU YAA!!"
+    mcname "Hahahaha! Kita impas sekarang."
+    tana "Impas impas, ampas yang ada."
+    mcname "Ampas mah gaming skillmu."
+    tana "APA?!"
+    mcname "N-nggak, hahahaha. Jadi orang kok marah-marah terus. Kamu nanti cepet tua loh."
+    tana "Kamu tuh tua."
+    mcname "Yang sopan sama orang tua."
+    tana "Maaf puh, ampun puh. Puh sepuh."
+    mcname "Hahahaha~"
+    tana "Hahahaha~"
+    tana "[mcname]..."
+    mcname "Hmm?"
+    tana "I-ini kita beneran jadi ke Hanabi Festival, kan?"
+    mcname "Iya, Ton. Tadi cuma bercanda aja. Jadi kok."
+    tana "Asiiik, yaudah. Kalo gitu, aku balik dulu ya!"
+    mcname "Eh, Ton!"
+    tana "Apa?"
+    mcname "Besok ketemu jam berapa? Ga ada kelas juga besok."
+    tana "Hmm... Jam 7 aja deh."
+    mcname "Jam 7 nih?"
+    tana "Jam 7 lewat 12. Di pintu masuknya, ya. Ga boleh sampai terlambat, ya!"
+    mcname "Oke! Kalo gitu, hati-hati di jalan. Mata nee~"
+    tana "Wibu! Hahahaha, mata ne~"
+    "Tana dan [mcname] pun pulang ke kost mereka masing-masing."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+    scene kamar mc kota with dissolve
+    $ quick_menu = True
+    "Sesampainya [mcname] di kost…"
+    mcname "Capek juga hari ini, tapi gapapa. Besok waktunya have fun!"
+    mcname "Turu dulu dah."
+    "[mcname] pun tidur dengan pulas."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}HANABI FESTIVAL{/color}" with Pause(2.0)
+    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    scene kampus with dissolve
+    $ quick_menu = True
+    tana "[mcname] mana sih? Udah jam segini masih belum kelihatan."
+    tana "Coba ku telepon dah."
+    "Tana pun mencoba menelpon [mcname]."
+    "UI TELEPON"
+    "Kring kring"
+    "Kring kring"
+    "Kring kring"
+    "Kring kring"
+    tana "....."
+    "Nomor yang anda tuju tidak dapat dihubungi."
+    tana "LAH?! NIH ORANG DI MANA?!"
+    "Tana pun mencoba menelpon MC kembali."
+    "Kring kring"
+    "Kring kring"
+    "Kring kring"
+    mcname "Halo?"
+    tana "KAMU DI MANA?! KOK BELUM SAMPE?!"
+    mcname "Buset. Kenceng amat. Aku baru bangun ini, Ton."
+    tana "BARU BANGUN?! AKU UDAH SAMPAI DARI TADI!"
+    mcname "Ya maap."
+    tana "MAAF MAAF! MALES AH!"
+    "UI TELEPON SELESAI"
+    "???" "Teriak-teriak mulu. Kamu diliatin orang-orang, tuh."
+    tana "EH?! SAPA BERANI MEGANG-MEGANG KEPALA GUE?!"
+    "Tana pun menoleh ke belakang untuk melihat siapa yang berani memegang kepalanya."
+    "Orang tersebut ternyata adalah [mcname]."
+    tana "Loh? [mcname]!"
+    mcname "Apa? Hahahaha."
+    tana "Kok kamu di sini? Katanya baru bangun?"
+    mcname "Iya, aku baru bangun. Tadi awalnya duduk di situ."
+    tana "IH! *SFX PUKUL"
+    mcname "Aduh, astaga. Kasar banget."
+    tana "Biarin!"
+    mcname "Hahahaha maaf maaf. Lucu aja ngeliatin kamu celingak celinguk."
+    tana "Malass.."
+    mcname "Iya iya, jangan ngambek."
+    tana "Traktir makanya."
+    mcname "Dih, yauda iya. Nanti aku traktir deh."
+    tana "Asiiik, ayok masuk!"
+    "[mcname] dan Tana pun memasuki area Hanabi Festival."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+#HARUSNYA BGM HANABI FESTIVAL
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
+#HARUSNYA BACKGROUND HANABI
+    scene lorong with dissolve
+    $ quick_menu = True
+    tana "WAAAHHh BAGUS BANGET!"
+    mcname "Iya, aku ga nyangka kalo festivalnya sebagus ini."
+    tana "Aku juga ga nyangka."
+    mcname "Kita mau ke mana dulu?"
+    tana "Cari makan!"
+    mcname "Baru juga masuk, udah nyari makan aja."
+    tana "Mumpung banyak yang jualan makanan. Kapan lagi, cuy."
+    mcname "Liat-liat dulu aja. Kalo makan sekarang, nanti kita ngantuk duluan."
+    tana "Yaudah. Jalan dulu, yuk."
+    "Tana dan [mcname] pun mengelilingi area Hanabi Festival."
+    tana "[mcname]! [mcname]!"
+    mcname "Apa, Ton?"
+    tana "Ada game tembak-tembakan!"
+    mcname "Oh ya? Mana?"
+    tana "Oh, di situ."
+    mcname "Kamu mau main?"
+    tana "Mau! Dulu aku pernah main di console."
+    mcname "Ooooh, zaman masih pixel-pixel gitu ya?"
+    tana "Bener! Asik banget!"
+    mcname "Emang bisa nge-aim?"
+    tana "Wah, ngeremehin."
+    "MINIGAME TEMBAK TEMBAKAN"
+    tana "Gimana? Aku jago kan?"
+    mcname "Hoki itu."
+    tana "Semaunya aja tuh mulut. Tana itu A-nya Aim jago."
+    mcname "Bisa gitu ya, hahaha."
+    tana "Jelas! Tapi capek juga berdiri lama-lama."
+    mcname "Kamu duduk dulu aja. Aku nyari yang seger-seger dulu."
+    tana "Oke, tolong ya."
+    mcname "Aman aja~"
+    "[mcname] pun pergi mencari makanan dan minuman yang menyegarkan."
+    mcname "Beli apa, ya? Apa beli es aja biar seger?"
+    "Penjual" "Es krim~ Es krim~ Promo es krim! Buy one, get one!"
+    mcname "Nah, pas banget tuh ada promo. Gas lah."
+    $ quick_menu = False
+    scene black with dissolve
+    scene lorong with dissolve
+    $ quick_menu = True
+    mcname "Mas, promo es krimnya berapaan?"
+    "Penjual" "30 ribu dapet 2, Kak. Tapi rasanya random."
+    mcname "Emang ada sara apa aja, mas?"
+    "Penjual" "Ada chocolate, strawberry, vanilla, sama matcha."
+    mcname "Kalo gitu beli paket promonya satu."
+    "Penjual" "Baik, totalnya 30 ribu."
+    mcname "Ini uangnya."
+    "[mcname] pun memberikan uang pas kepada penjual es krim tersebut."
+    "Penjual" "Uangnya pas, ya. Terima kasih."
+    mcname "Terima kasih kembali."
+    $ quick_menu = False
+    scene black with dissolve
+    scene lorong with dissolve
+    $ quick_menu = True
+    mcname "Hmmm dapet rasa apa, ya?"
+    "[mcname] pun mengecek es krim yang dibeli."
+    mcname "Oooooo. Dapet chocolate sama strawberry."
+    mcname "Eh? Kok yang chocolate bocor sih."
+    mcname "Aku makan sambil jalan aja dah."
+    "[mcname] pun dengan cepat langsung membuka kemasan es krim chocolate tersebut dan ia kembali menuju ke tempat Tana berada sambil memakan es krim chocolate."
+    tana "[mcname]!"
+    mcname "Iyaa?"
+    tana "IHH, CURANG! KAMU KOK BELI ES KRIM?! PUNYAKU MANA?!"
+    mcname "Ini, kocak. Yang sabar dong."
+    "[mcname] pun memberikan sebungkus es krim rasa strawberry kepada Tana."
+    tana "Asiik, rasa strawberry. Tau aja kalo aku suka yang ini."
+    mcname "Kebetulan doang."
+    tana "Bisa aja, hahaha. Makasih, [mcname]!"
+    "Tana pun membuka bungkus kemasan es krim tersebut dan mulai memakannya."
+    tana "Hmmm! Enak banget!"
+    mcname "Suka banget tuh kayaknya."
+    tana "Iya, enak soalnya. Coba aja."
+    "Tana pun menyodorkan es krimnya kepada [mcname]."
+    mcname "kecutnya!"
+    tana "Enak tau!"
+    mcname "Boleh lah, rasanya emang seger banget sih."
+    tana "Darou?!"
+    mcname "Hai desu."
+    "Tana dan [mcname] pun saling menikmati es krim mereka masing-masing. Tiba-tiba..."
+    "Announcer" "Pengumuman. Acara utama dari Hanabi Festival ini akan dimulai dalam 30 menit."
+    tana "[mcname]! Hanabinya mau dimulai!"
+    mcname "Iya, Ton. Tapi bagian depan udah penuh banget, desak-desakan."
+    tana "Iya juga sih. Capek juga kalo lihatnya sambil berdiri terus. Gimana, ya?"
+    mcname "Hmmmm..."
+    "Tana dan [mcname] pun berpikir bagaimana caranya mereka bisa melihat hanabi dengan posisi yang nyaman."
+    tana "Hmm, lesehan di sawah enak sih. Dari sana juga pasti kelihatan hanabinya, tapi pasti udah dikunci sama Kak Flora."
+    mcname "AH!"
+    tana "Hmmm? Kenapa [mcname]?"
+    mcname "Liat nih!"
+    tana "Apaan tuh?"
+    "MUNCUL ASSET KUNCI SAWAH"
+    tana "Loh? Itukan kunci sawah. Kok kamu punya kunci sawah?"
+    mcname "Punya dong. Keren, kan?"
+    tana "Kamu nyuri, ya?"
+    mcname "ENAK AJA ITU MULUT KALO NGOMONG!"
+    "[mcname] mengacak-acak rambut Tana karena kesal."
+    tana "IHHH! BERCANDA DOAAANG~"
+    tana "Tapi seriusan, kamu dapet kuncinya dari mana?"
+    mcname "kemaren kunci sawahnya ada di lantai kantin. Kayaknya jatuh dari kantongnya Kak Flora."
+    tana "Oalah, aku kira kamu maling."
+    mcname "Aku orang baik, woi. Mau dibalikin ke Kak Flora tapi belum ketemu lagi."
+    tana "Hahahaha."
+    mcname "Yaudah, mau ke sawah Ton?"
+    tana "Ayok!"
+    "Tana dan [mcname] pun pergi meninggalkan venue Hanabi Festival dan pergi menuju sawah di kampus."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+#HARUSNYA BGM SAWAH MALEM BARENG TANA
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
+#HARUSNYA BACKGROUND SAWAH MALAM
+    scene sawah with dissolve
+    $ quick_menu = True
+    "Sesampainya di gerbang sawah..."
+    tana "[mcname]! Buruan cepet buka gerbangnya. Kan kamu yang megang kuncinya."
+    mcname "Iya iya, sabar kocak."
+    "[mcname] pun membuka gerbang sawah menggunakan kunci milik Flora."
+    mcname "Udah, Ton. Ayo masuk."
+    tana "Asiiik, ayok!"
+    mcname "Eh, ga usah ke tengah-tengah. Dari pinggir aja, Ton. Dari pada kamu nyemplung part 3, mana gelap lagi."
+    tana "Oke deh. Kalo gitu, di sini aja. Arahnya juga udah pas ngarah ke festival."
+    tana "Ayok duduk, [mcname]!"
+    mcname "Oke, kotor dikit ga ngaruh."
+    "Tana dan [mcname] pun duduk lesehan di pinggir sawah sambil menunggu Hanabi dimulai."
+    tana "[mcname].."
+    mcname "Apa, Ton?"
+    tana "...."
+    mcname "???"
+    mcname "Kamu gapapa, Ton?"
+    tana "Gapapa. Aku cuma keingetan beberapa hal doang, hahaha."
+    mcname "Apaan tuh?"
+    tana "FLASHBACK ETC ETC ETC"
 
     stop music fadeout 1.0
     scene black with dissolve

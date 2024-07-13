@@ -1560,7 +1560,7 @@ label chapter2kanastart:
     "Tidak lama, Kana pun datang melalui pintu"
     #*SFX PINTU TERBUKA ( PINTU YANG ADA LONCENGNYA ) 
      
-    "Kana mendatangi [mcname], dia terlihat berbeda dari biasanya"
+    "Kana mendatangi [mcname], dia terlihat berbeda dari biasanya."
     
     kana "Eh maaf ya, nunggu lama."
     
@@ -1568,9 +1568,9 @@ label chapter2kanastart:
     
     kana "K-kenapa, ada yang aneh ya sama aku"
     
-    mcname "Ah aku kaget aja ngeliat kamu make baju itu, kerasa beda dari biasanya"
+    mcname "Ah aku kaget aja ngeliat kamu make baju itu, kerasa beda dari biasanya."
     
-    kana "E-eh, Beneran keliatan ya? Ahahah"
+    kana "E-eh, Beneran keliatan ya? Ahahah,"
     
     mcname "Iya, kamu keliatan effort banget."
     
@@ -1581,13 +1581,13 @@ label chapter2kanastart:
     "Mungkin rambut nya terlihat sama seperti biasanya, namun entah kenapa [mcname] merasa kalau ada yang berbeda, mungkin itu hanya insting nya saja"
     
     kana "I-iya deh, yuk sekarang kita fokus belajar bareng aja."
-    "Dengan wajah yang sedikit memerah Kana pun langsung duduk di dekat [mcname]"
+    "Dengan wajah yang sedikit memerah Kana pun langsung duduk di dekat [mcname]."
     
     "Mereka berdua pun memulai untuk belajar."
     
     #*Transisi Putih*
     
-    "4 jam berlalu"
+    "4 jam berlalu~"
     "[mcname] dan Kana mulai merasa bosan dan kurang fokus dengan materi yang ada." 
     "Ingin mengganti suasana, [mcname] menawarkan untuk..."
     
@@ -1602,7 +1602,9 @@ label chapter2kanastart:
             "[mcname] milih untuk rebahan dan tiduran untuk sejenak di pangkuan Kana dan minta tolong ke Kana buat bangunin dia, tapi ternyata saat Kana mencoba membangunkan kamu, kamu malah keenakan tidur di pangkuan Kana, namun karena kamu merasa nyaman akhirnya tidak bangun lagi."
             #*EH CUY LO NI LAGI DI CAFE BUKAN DI KOS, LAGIAN KAN INI LAGI KERJA KELOMPOK DAH KENAPA MALAH TIDUR MIKIR BRO MIKIR“
         "Ajak Kana main game":
+            jump AjakKanaMainGame
     #*CHOSE B*
+label AjakKanaMainGame:
     "Sebagai refreshing kamu milih main game yang ada di dalam cafe dan mengajak Kana untuk memainkan game tersebut. Kana yang awalnya ragu pun mulai tertarik saat kamu mulai menjelaskan tentang game yang akan dimainkan tersebut. Mungkin terbawa suasana dan karena mumet saat belajar tadi, Kana dan [mcname] enjoy memainkan game yang ada lebih dari yang mereka duga."
     
     "Kana pun terlihat menjadi lebih terbuka kepada MC"
@@ -2000,7 +2002,8 @@ label chapter2kanastart:
             "[mcname] memilih kabur dari tempat itu saking malunya karena membayangkan berduaan dengan Kana. Setelah itu pun kamu tidak tau Kana pulang atau tidak, tetapi kamu hanya mendapatkan kabar dari Kana melalui HP dengan kata-kata “kamu jahat“."
             #“BROOO KO KABUR SI, APA SIH YANG BIKIN LU MALU TUH GAJELAS BANGET DAH “
         "Terima tawaran Kana":
-
+            jump TerimaTawaranKana
+label TerimaTawaranKana:
     #*CHOSE A*
     "[mcname] pun menerima tawaran Kana. Meskipun malu, tapi rasa ingin menjaga Kana lebih besar."
     
@@ -2048,7 +2051,7 @@ label chapter2kanastart:
     
     kana "Kenapa tuh?"
     
-    mcname "Iya nih tadi udah bikin drama kaya di TV yang bilang “Kami sudah berusaha semaksimal mungkin". 
+    mcname "Iya nih tadi udah bikin drama kaya di TV yang bilang “Kami sudah berusaha semaksimal mungkin." 
     mcname "Eh tapi sekarang obatnya {i}aergiamint-hachu{/i}, nama obatnya aneh banget ya."
     
     kana "Oooo, itu obat yang biasa aku minum kok. Namanya emang aneh kan, tapi itu manjur kok. Kayaknya…"

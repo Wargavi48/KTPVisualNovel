@@ -178,8 +178,8 @@ label chapter2tanaGOOD:
     mcname "Makanya tuh otak dipake buat belajar biar ga pikun."
     tana "Malas."
     stop music fadeout 1.0
-    "MUNCUL ASSET DOSEN"
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    show dosen at dosen_center with dissolve
     dosen "Tana! [mcname]! Kalian kok ngobrol sendiri!"
     tana "Loh itu [mcname] lagi main HP, Bu. Saya mah dari tadi memperhatikan Ibu."
     mcname "????!!!!!????!!!!!"

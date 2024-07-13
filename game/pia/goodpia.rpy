@@ -533,7 +533,7 @@ label goodpiaafterquiz:
     hide kana_side with dissolve
     $ quick_menu = False
     scene black with dissolve
-    show "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
+    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
     scene ruang ukm with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True 
@@ -586,7 +586,7 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    show "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
+    show text "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
     play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
     scene rooftop with dissolve
     show pia at pia_near with dissolve
