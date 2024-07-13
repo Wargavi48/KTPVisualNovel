@@ -492,5 +492,193 @@ label goodpiaafterquiz:
     hide kana_side with dissolve
     mcname "J-jadi gini…"
     "dari belakang [mcname], Pia menunjukan dirinya dengan malu malu"
+    show pia_side at left with dissolve
+    pia "Aloo~\n*malu malu*"
+    hide pia_side with dissolve
+    show kana_side at left with dissolve
+    kana "YANG MULIA PIARAAN?????\n*Syok*"
+    hide kana_side with dissolve
+    show pia_side at left with dissolve
+    pia "Woi -_-"
+    hide pia_side with dissolve
+    mcname "Jadi gini, kita mutusin untuk ikut join club jepang, masih buka kah?"
+    show kana_side at left with dissolve
+    kana "Masih!!! Masuuuuk"
+    "Mereka semua pun masuk dan duduk bersama anggota lain"
+    "Sambil berbincang dan perkenalan ke anggota lain"
+    show feni_side at left with dissolve
+    feni "Welcome, kita gak ada interview interview. Selamat join club jepang yaaa"
+    hide feni_side with dissolve
+    show kana_side at left with dissolve
+    kana "HOREEEEEEE!!!"
+    hide kana_side with dissolve
+    show feni_side at left with dissolve
+    feni "Aku ada kelas abis ini. Maaf ya ga bisa nemenin dan bantu jelasin. Kana nanti yang bantu, tolong ya Nay."
+    hide feni_side with dissolve
+    hide feni with dissolve
+    show kana_side at left with dissolve
+    kana "Siap Kak Feni!!"
+    kana "Ehm, jadi gini. Di club ini ada banyak divisinya. Pia kita butuhin buat desain. Mau ya? Mau yaaa?"
+    show pia_side at left with dissolve
+    pia "Iya iya, aku coba ya."
+    hide pia_side with dissolve
+    show kana_side at left with dissolve
+    kana "Terus selain itu kita ada divisi dance / idoling, budaya tradisional jepang, game, dan anime manga tokusatsu"
+    hide kana_side with dissolve
+    show pia_side at left with dissolve
+    pia "Ehhh begitu, ya."
+    hide pia_side with dissolve
+    show kana_side at left with dissolve
+    kana "Iyaaaa."
+    hide kana_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    show "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
+    scene ruang ukm with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True 
+    "Pia mendapatkan tugas untuk membuat desain yang diperlukan untuk acara matsuri yang akan diselenggarakan club jejepangannya tersebut"
+    "Di tengah pengerjaannya, samar-samar terdengar suara candaan anggota club di ruang sebelah"
+    show feni_side at left with dissolve
+    feni "Gerak ke kiri, Kana….hahahahaha"
+    hide feni_side with dissolve
+    show tana_side at left with dissolve
+    tana "Hahahaha. Jangan kakuuuuu"
+    hide tana_side with dissolve
+    "Pia yang penasaran pun mengintip dibalik pintu yang sedikit terbuka itu"
+    show pia_side at left with dissolve
+    pia "{i}lagi pada ngapain sih?{/i}"
+    hide pia_side with dissolve
+    "Terlihat Kana dan Tana sedang berlatih dance"
+    show pia_side at left with dissolve
+    pia "{size=-10}Woaaaa… Ternyata Kana sama Tana boleh juga ya ngedancenya{/size}"
+    hide pia_side with dissolve
+    "Pia pun menatap mereka dengan perasaan iri, namun penasaran sehingga tetap melihat dari balik pintu itu."
+    "Beberapa hari kemudian, Pia terus menerus melihat Tana & Kana latihan."
+    "Pia melihat dengan tatapan mau tapi malu."
+    "[mcname] pun menyadari bahwa di dalam hati kecil Pia, masih ada cita-cita yang sudah lama dikubur."
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene ruang ukm with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Kana, Tana. Mau tanya dong. Kira-kira kalian masih butuh anggota, gak?"
+    show tana_side at left with dissolve
+    tana "Jujurly masih bro, kenapa?"
+    tana "Kamu mau jadi idol?"
+    tana "Coba joget dong."
+    hide tana_side with dissolve
+    mcname "Bukan akuuuuuuu, tapi Pia."
+    show kana_side at left with dissolve
+    kana "HAH? Serius? Dia mau?"
+    hide kana_side with dissolve
+    "[mcname] pun menceritakan tentang cita-cita yang sebelumnya pernah diceritakan Pia"
+    "......."
+    show kana_side at left with dissolve
+    kana "Wow, aku mau nangis. Kenapa Pia hentiin cita citanya itu, ih?"
+    kana "Aku mau ngajak dia! Akan aku bujuk!"
+    hide kana_side with dissolve
+    mcname "Sabar, biar aku. Kalian tunggu aja ya. Jangan bilang-bilang Pia dulu."
+    show tana_side at left with dissolve
+    tana "Aman~"
+    hide tana_side with dissolve
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
+    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+    scene rooftop with dissolve
+    show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Pia, aku mau ngomong dong"
+    show pia_side at left with dissolve
+    pia "Yak, apa nih? Tumben"
+    hide pia_side with dissolve
+    mcname "Kamu percaya sama aku kan, Pia?"
+    show pia_side with dissolve
+    pia "Err…i-iya..kenapa nih?"
+    hide pia_side with dissolve
+    mcname "Aku masih punya 1 tiket permintaan kan? Aku mau pake tiket itu”"
+    show pia_side at left with dissolve
+    pia "Wow, oke. Apa nih?"
+    hide pia_side with dissolve
+    mcname "JADI IDOL!!!"
+    show pia_side at left with dissolve
+    pia "[mcname]… Kan aku udah bilang gamau"
+    hide pia_side with dissolve
+    mcname "Hmm.. Padahal katanya mau request apa aja bisa… Hmm"
+    show pia_side at left with dissolve
+    pia "Tapi ga gitu"
+    hide pia_side with dissolve
+    mcname "Yaudah aku ganti, kamu nyoba dan ngeliat langsung dari deket"
+    mcname "Gimana? Gampang kan?"
+    show pia_side at left with dissolve
+    pia "Heeeeeh. Aaaa nyesel sok ngide ngasi gituan ih."
+    hide pia_side with dissolve
+    mcname "Hehe gimana? Gampang loh"
+    show pia_side at left with dissolve
+    pia "Iya deh. Iya iya."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}SORE HARINYA{/color}" with Pause(2.0)
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
+    scene lorong with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Pia sampai di depan ruang club, ditemani [mcname] di belakangnya sambil tersenyum"
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "Hufff. Tenangkan diri"
+    hide pia_side with dissolve
+    mcname "Cemangat Piyak~"
+    pia "*Membuka Pintu*"
+    scene black with dissolve
+    play sound "audio/open_door.mp3" fadein 1.0
+    scene ruang ukm with dissolve
+    show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    show pia_side at left with dissolve
+    pia "AKU MAU JADI IDOL! AJAK AKU BAAANG~"
+    hide pia_side with dissolve
+    "Kana yang sedang makan kue pun sampai menjatuhkan kuenya ke meja"
+    hide pia with dissolve
+    show kana at kana_near_left_2 with dissolve
+    show tana at tana_right with dissolve
+    "Kana & Tana" "*Saling tatap tatapan*"
+    "Kana & Tana" "LESGOOOOO!! YAAAAY!"
+    "Kana dan Tana pun berlari memeluk Pia"
+    mcname "Huhu senengnya. Semangat ya, Pia"
+    show kana_side at left with dissolve
+    kana "T-tapi kerjaan Pia siapa yang handle dong ini huhuhu."
+    hide kana_side with dissolve
+    "Tiba tiba terdengar suara seorang gadis cantik dengan rambut ponytail."
+    "Wajahnya tegas namun tetap memancarkan kebaikan, memberikan perpaduan unik antara kekuatan dan kehangatan."
+    "Pandangannya tajam dengan senyuman yang lembut, memberikan kesan kehangatan yang melindungi."
+    "???" "Selow. Biar aku yang handle, tapi ajarin dulu ya, mesti gimana ini ngerjainnya."
+    show pia_side at left with dissolve
+    pia "A-aman. T-tapi…"
+    hide pia_side with dissolve
+    "Takamina" "Salam kenal, kayaknya kita baru pertama ketemu ya. Namaku Takamina."
+    show tana_side at left with dissolve
+    tana "Ah iya. Kenalin, ini Kak Takamina. Anggota klub ini juga."
+    hide tana_side with dissolve
+    show pia_side at left with dissolve
+    pia "Aaah. Salam kenal Kak Takaminaa."
+    hide pia_side with dissolve
+    "Takamina" "Alooo, salam kenal."
+    "Takamina" "Jadi gimana? Kamu lanjut pindah ke divisi bagian idol kah?"
+    show pia_side at left with dissolve
+    pia "Umm… Apa boleh buat"
+    hide pia_side with dissolve
+    show feni_side at left with dissolve
+    feni "Mantap, karena jadi rame. Kayaknya susah euy kalo latihan di dalem gini, sempit ga sih?"
+    hide feni_side with dissolve
+    "Tana & Kana" "Iya juga."
+    menu:
+        
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits
