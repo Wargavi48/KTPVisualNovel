@@ -678,7 +678,90 @@ label goodpiaafterquiz:
     feni "Mantap, karena jadi rame. Kayaknya susah euy kalo latihan di dalem gini, sempit ga sih?"
     hide feni_side with dissolve
     "Tana & Kana" "Iya juga."
+    $ quick_menu = False
     menu:
-        
+        "Gapapa, mau gimana lagi. cuma ada disini kan tempatnya":
+            $ renpy.block_rollback()
+            $ quick_menu = True
+            mcname "Gapapa, mau gimana lagi. Cuma ada disini kan tempatnya"
+            "Akhirnya mereka pun latihan di ruang club yang sempit itu."
+            "*Brukk*"
+            show tana_side at left with dissolve
+            tana "Eh maap Pia kesikut kepalanya. Gapapa kan? Sempit huhuhu"
+            hide tana_side with dissolve
+            show pia_side at left with dissolve
+            pia "Err…gapapa Ton. Aman\n*Sambil mengusap keningnya*"
+            hide pia_side with dissolve
+            "Tak lama kemudian"
+            "PRAAAAAANK"
+            show pia_side at left with dissolve
+            pia "Awwww"
+            hide pia_side with dissolve
+            "Pia pun menyenggol lemari kaca di ruang club tersebut sampai pecah dan mengenai dirinya"
+            "Semua Orang" "PIAAAAAAAA"
+            "Terlihat Pia penuh luka dan darah, kemudan dibawa ke rumah sakit untuk dilakukan penanganan lebih lanjut."
+            $ quick_menu = False
+            scene black with dissolve
+            show text "{color=#FFF}BEBERAPA MINGGU KEMUDIAN{/color}" with Pause(2.0)
+            scene ruang ukm with dissolve
+            $ renpy.block_rollback()
+            $ quick_menu = True
+            "Pia memutuskan untuk tidak lagi ikut club jepang dan beraktivitas menjadi idol"
+            stop music fadeout 1.0
+            $ quick_menu = False
+            scene black with dissolve
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+            jump credits
+        "Ke rooftop ga sih? Luas":
+            mcname "Ke rooftop ga sih? Luas"
+            jump goodendpiarooftop
+
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits
+
+label goodendpiarooftop:
+    show pia_side at left with dissolve
+    pia "AH BENER JUGA, AYO KE ROOFTOP AJA."
+    hide pia_side with dissolve
+    "Semua Orang" "Let's Gooooo"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
+    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+    scene rooftop with dissolve
+    show kana at kana_near_left_2 with dissolve
+    show pia at pia_near_right with dissolve
+    show kana_side at left with dissolve
+    kana "Waaah sepi ya, luas juga."
+    hide kana_side with dissolve
+    show pia_side at left with dissolve
+    pia "Hehehe, ini markas aku sama [mcname] nih"
+    hide pia_side with dissolve
+    show kana_side at left with dissolve
+    kana "Hmmm… berdua?"
+    kana "Kalian ngapain aja berduaan di sini? Hayooo"
+    hide kana_side with dissolve
+    show pia_side at left with dissolve
+    pia "APAAN IH, CUMA NGOBROL SAMA GAMBAR KOK!!!"
+    hide pia_side with dissolve
+    mcname "Betul"
+    show pia_side at left with dissolve
+    pia "BANTUIN WEH, BETUL BETUL AJA LU"
+    hide pia_side with dissolve
+    mcname "Ya apa lagi? Emang, kan? Ahahahaha"
+    "Hari itu berakhir dengan mereka saling bercanda di rooftop sore itu"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA DI RUANG CLUB{/color}" with Pause(2.0)
+    scene ruang ukm with dissolve
+    # Harusnya BGM Ruang UKM 
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname] dan Takamina masuk ke ruangan klub dan melihat Kana Tana Pia sedang termenung lesu"
+    mcname "Loh kok pada lesu gitu"
+    
+
