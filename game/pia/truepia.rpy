@@ -681,6 +681,7 @@ label trueendpiajalanmonas:
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
+    jump truendpia
 
 label truendpia:
     scene black with dissolve
@@ -925,35 +926,32 @@ label truendpia:
     hide pia_side with dissolve
     mcname "Eee… a-ayooo."
     "[mcname] dan Pia pun berkeliling sembari membeli banyak jajanan seperti takoyaki, okonomiyaki, dan lain-lain."
-    $ quick_menu = True
-    scene black with dissolve
-    scene kampus with dissolve
-    show pia at pia_near with dissolve
     mcname "Abis itu dimakan kamu semua?"
     show pia_side at left with dissolve
-    "Amaaan. Perut aku ada ruangan tersendiri buat cemilan, huahahaha."
+    pia "Amaaan. Perut aku ada ruangan tersendiri buat cemilan, huahahaha."
     hide pia_side with dissolve
+    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN{/color}" with Pause(2.0)
+    scene kampus with dissolve
     show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     show pia_side at left with dissolve
-    pia "………"
-    pia "[mcname]...."
-    pia "[mcname]...."
+    pia "......"
+    pia "[mcname]....."
+    pia "[mcname]......"
     hide pia_side with dissolve
     mcname "Apaan?"
     show pia_side at left with dissolve
-    pia "Kenyang…"
-    pia "*Sambil memegang tusuk takoyaki yang tinggal 1 buah*"
+    pia "Kenyang…\n*Sambil memegang tusuk takoyaki yang tinggal 1 buah*"
     hide pia_side with dissolve
     mcname "Aaaaaaammm~"
-    mcname "*[mcname] langsung memakan takoyaki yang sedang dipegang Pia*"
+    "*[mcname] langsung memakan takoyaki yang sedang dipegang Pia*"
     show pia_side at left with dissolve
-    pia "!!!"
-    pia "*Blush*"
+    pia "!!!! *blush*"
     hide pia_side with dissolve
-    mcname "Kaaan, pasti ga abis."
-    mcname "*Sambil ngunyah*"
+    mcname "Kaaan, pasti ga abis.\n*Sambil ngunyah*"
     show pia_side at left with dissolve
     pia "Hehehe"
     hide pia_side with dissolve
@@ -965,13 +963,188 @@ label truendpia:
     $ quick_menu = False
     scene black with dissolve
     scene kampus with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     "Pukul 6 sore, [mcname] dan Pia kembali ke booth mereka."
     show pia at pia_near with dissolve
-    show pia_side with dissolve
-    pia "Weeeh udah rapih nih, siap pulang."
+    show pia_side at left with dissolve
+    pia "Weeeh udah rapih nih, siap pulang"
     hide pia_side with dissolve
     hide pia with dissolve
     show fio at fio_near_left with dissolve
     show pia at pia_near_right with dissolve
+    show fio_side at left with dissolve
+    fio "Pulang, enak aja! Mau jalan-jalan dulu."
+    hide fio_side with dissolve
+    "Takamina" "Gimana kelilingnya?"
     show pia_side at left with dissolve
-    
+    pia "Ehehehe..."
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Dari sini mau ke mana lagi deh?"
+    hide fio_side with dissolve
+    mcname "Gatau, tinggal nunggu acara kembang api aja sih ini."
+    show fio_side at left with dissolve
+    fio "Pia, sini deh."
+    fio "[mcname] kamu jauh-jauh dulu, aku mau ngobrol sama Pia sebentar"
+    hide fio_side with dissolve
+    mcname "Eeh… okee."
+    show fio_side at left with dissolve
+    fio "Nih\n*Kasih kunci ke Pia*"
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Hah? Ini kunci apa?"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Kunci pintu gedung DKV sama pintu rooftop, hehe."
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "HEEEEEEEEE"
+    pia "Kok Cepio bisa punya ini????"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Takamina anak BEM, dia ada kunci cadangan."
+    fio "Ini aku pinjem dari Takamina, katanya gapapa."
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Teruus?"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Nonton kembang api kayaknya bagus deh dari rooftop, uhuk uhuk!"
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Hahhhh??"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Sana ajak [mcname], pemandangannya dari atas lebih bagus loh."
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Terus kalian gimana?"
+    hide pia_side with dissolve
+    show fio_side at left with dissolve
+    fio "Udaaaah, bawel Pia. Sana pergi."
+    fio "[mcname]!!"
+    fio "[mcname]!!"
+    fio "Temenin Pia dong."
+    hide fio_side with dissolve
+    mcname "Ke mana?"
+    show fio_side at left with dissolve
+    fio "Gatau tuh, ikutin Pia aja.\n*Mendorong Pia*"
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Heeeeeeeeeee~"
+    hide pia_side with dissolve
+    mcname "Mau ke mana?"
+    show pia_side at left with dissolve
+    pia "Umm… Ikut aku aja…"
+    hide pia_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    scene kampus with dissolve
+    show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Pia dan [mcname] pun berjalan masuk ke gedung DKV"
+    mcname "Mau ngapain Pi? Kan udah dikunci kalo malem."
+    show pia_side at left with dissolve
+    pia "Aku ada kuncinya."
+    hide pia_side with dissolve
+    mcname "Heeeeeee dapet dari mana?"
+    show pia_side at left with dissolve
+    pia "Dipinjemin Takamina sama Cepio, hehe."
+    hide pia_side with dissolve
+    mcname "Terus mau ke mana?"
+    show pia_side at left with dissolve
+    pia "Markas~"
+    hide pia_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    scene lorong malam with dissolve
+    show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    show pia_side at left with dissolve
+    pia "Eeeh gelap ya, kalo malem."
+    hide pia_side with dissolve
+    mcname "Ya kalo terang siang sih Pi."
+    show pia_side at left with dissolve
+    pia "Bukan gituuuuu. Ini sereeeeem kalo malem weeeeh!\n*Memegang erat tangan [mcname]*"
+    hide pia_side with dissolve
+    mcname "Lah k-kamu yang ngajak ke sini, kok kamu yg takut?\n*blush*"
+    mcname "Ahahaha."
+    show pia_side at left with dissolve
+    pia "Bawel, buruan ke rooftop ih!"
+    hide pia_side with dissolve
+    mcname "Kalo aku lari gimana?"
+    show pia_side at left with dissolve
+    pia "Kalo aku nangis gimana?"
+    hide pia_side with dissolve
+    mcname "Iya engga…. Ehehe."
+    $ quick_menu = False
+    scene black with dissolve
+    scene rooftop with dissolve
+    show pia at pia_near with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    show pia_side at left with dissolve
+    pia "HEEEEEEEEEE~"
+    pia "KALO MALEM BAGUS JUGA YA PEMANDANGANNYA DARI ROOFTOP!"
+    hide pia_side with dissolve
+    mcname "Iya, ditambah lagi ada event begini jadi banyak cahaya gitu dari kejauhan."
+    show pia_side at left with dissolve
+    pia "Awwww… iya cantik bangeeeeet."
+    pia "Pia dan [mcname] pun mulai duduk bersila di pinggir pagar sambil melihat acara dari jauh."
+    pia "Iiih lagi bon odori tuh di bawah."
+    hide pia_side with dissolve
+    mcname "Iya…"
+    mcname "Nyesel gak tuh ga ikut bon odori?"
+    show pia_side at left with dissolve
+    pia "Gak lah, enak di sini\n*blush*"
+    hide pia_side with dissolve
+    # Insert Chibi Pia nyender ke MC
+    "Pia bersender ke [mcname]"
+    mcname "*Blush*"
+    show pia_side at left with dissolve
+    pia "[mcname], makasih ya. Berkat kamu, aku jadi banyak ngerasain hal menyenangkan selama kuliah di sini."
+    hide pia_side at left with dissolve
+    mcname "Ahaha gak gitu, aku yang makasih."
+    show pia_side at left with dissolve
+    pia "Tapi kamu selalu nurut, ngikutin kemauan anehku, support aku terus…"
+    hide pia_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    # Harusnya CG Pia Berdiri
+    scene rooftop with dissolve
+    show pia_side at left with dissolve
+    pia "[mcname]! Makasih ya udah mau nemenin aku terus."
+    hide pia_side with dissolve
+    mcname "*Berdiri*"
+    mcname "Sama-sama Pia, makasih udah mau selalu ada buat aku juga."
+    show pia_side at left with dissolve
+    pia "Iiih harusnya itu kata-kata aku!!!"
+    hide pia_side with dissolve
+    mcname "Akulah si support system kamu itu~"
+    mcname "Hahaha"
+    show pia_side at left with dissolve
+    pia "[mcname]..."
+    hide pia_side with dissolve
+    mcname "Apaan??"
+    show pia_side at left with dissolve
+    pia "Umm…"
+    pia "[mcname], aku suka–"
+    $ quick_menu = False
+    scene black with dissolve
+    # Harusnya ada CG Hanabi
+    scene rooftop with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "Suara kembang api pun mulai terdengar dan langit pun dipenuhi dengan cahaya indah."
+    mcname "*Memandangi Pia sambil tersenyum*"
+    "Suara mereka pun kalah dengan bisingnya suara kembang api malam itu."
+    "[mcname] dan Pia tertawa bahagia sambil memandangi langit malam saat itu."
+    "Malam itu…"
+    "Menjadi malam yang tidak akan terlupakan untuk Pia dan [mcname]."
+    scene black with dissolve
+    show text "{color=#FFF}THE END{/color}" with Pause(2.0)
+    play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+    jump credits
