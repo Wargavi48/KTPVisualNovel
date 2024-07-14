@@ -924,4 +924,54 @@ label truendpia:
     pia "Mau ke situuuuuu~"
     hide pia_side with dissolve
     mcname "Eee… a-ayooo."
-
+    "[mcname] dan Pia pun berkeliling sembari membeli banyak jajanan seperti takoyaki, okonomiyaki, dan lain-lain."
+    $ quick_menu = True
+    scene black with dissolve
+    scene kampus with dissolve
+    show pia at pia_near with dissolve
+    mcname "Abis itu dimakan kamu semua?"
+    show pia_side at left with dissolve
+    "Amaaan. Perut aku ada ruangan tersendiri buat cemilan, huahahaha."
+    hide pia_side with dissolve
+    scene black with dissolve
+    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN{/color}" with Pause(2.0)
+    show pia at pia_near with dissolve
+    show pia_side at left with dissolve
+    pia "………"
+    pia "[mcname]...."
+    pia "[mcname]...."
+    hide pia_side with dissolve
+    mcname "Apaan?"
+    show pia_side at left with dissolve
+    pia "Kenyang…"
+    pia "*Sambil memegang tusuk takoyaki yang tinggal 1 buah*"
+    hide pia_side with dissolve
+    mcname "Aaaaaaammm~"
+    mcname "*[mcname] langsung memakan takoyaki yang sedang dipegang Pia*"
+    show pia_side at left with dissolve
+    pia "!!!"
+    pia "*Blush*"
+    hide pia_side with dissolve
+    mcname "Kaaan, pasti ga abis."
+    mcname "*Sambil ngunyah*"
+    show pia_side at left with dissolve
+    pia "Hehehe"
+    hide pia_side with dissolve
+    mcname "Mau ke mana lagi?"
+    show pia_side at left with dissolve
+    pia "Balik ke booth aja bantuin Cepio sama Takamina yuk."
+    hide pia_side with dissolve
+    mcname "Oke"
+    $ quick_menu = False
+    scene black with dissolve
+    scene kampus with dissolve
+    "Pukul 6 sore, [mcname] dan Pia kembali ke booth mereka."
+    show pia at pia_near with dissolve
+    show pia_side with dissolve
+    pia "Weeeh udah rapih nih, siap pulang."
+    hide pia_side with dissolve
+    hide pia with dissolve
+    show fio at fio_near_left with dissolve
+    show pia at pia_near_right with dissolve
+    show pia_side at left with dissolve
+    
