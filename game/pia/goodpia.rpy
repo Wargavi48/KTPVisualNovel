@@ -533,7 +533,7 @@ label goodpiaafterquiz:
     hide kana_side with dissolve
     $ quick_menu = False
     scene black with dissolve
-    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
+    show "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
     scene ruang ukm with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True 
@@ -586,7 +586,7 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    show text "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
+    show "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
     play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
     scene rooftop with dissolve
     show pia at pia_near with dissolve
@@ -763,5 +763,10 @@ label goodendpiarooftop:
     $ quick_menu = True
     "[mcname] dan Takamina masuk ke ruangan klub dan melihat Kana Tana Pia sedang termenung lesu"
     mcname "Loh kok pada lesu gitu"
-    
-
+    "Kana, Tana, Pia" "Huuuh"
+    "Kana, Tana, Pia" "Hmmmmmmmmmmmmmm"
+    "Takamina" "Ada apa nih, minna?"
+    show pia_side at left with dissolve
+    pia "Kita baru ngeh, gedung kampus kalo jam 6 sore dah dikunci"
+    hide pia_side with dissolve
+    "Takamina" "Terus? Terus?"
