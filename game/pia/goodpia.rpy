@@ -770,3 +770,180 @@ label goodendpiarooftop:
     pia "Kita baru ngeh, gedung kampus kalo jam 6 sore dah dikunci"
     hide pia_side with dissolve
     "Takamina" "Terus? Terus?"
+    show pia_side at left with dissolve
+    pia "Ya gimana latihannya bwaaang, telat dikit kekunci di rooftop weh"
+    hide pia_side with dissolve
+    "Takamina" "Ooooh gitu. Bentar ya"
+    "Takamina" "..............."
+    "Takamina terlihat sedang merogoh tasnya."
+    "Takamina mengeluarkan kunci"
+    "Takamina" "Taraaaaaaa"
+    show pia_side at left with dissolve
+    pia "Apa itu? Kunci kosan kah?"
+    hide pia_side with dissolve
+    "Takamina" "Kunci pintu rooftop sama kunci pintu utama gedung DKV"
+    "Semua Orang" "HEEEEEEEEEEEEEEEEEEE"
+    show pia_side at left with dissolve
+    pia "Kok bisa punya itu??????"
+    pia "Nyolong dari mana???"
+    hide pia_side with dissolve
+    "Takamina" "Sembarangan, aku kan anggota BEM juga."
+    "Takamina" "Biasanya kalo rapat atau drop barang ke dalem gedung, bisa sampe malem. Jadi, beberapa anggota BEM dikasih pegang duplikatnya hehe."
+    show pia_side at left with dissolve
+    pia "AHHH INI DIAAAAAAAA"
+    hide pia_side with dissolve
+    "Takamina" "Tapi aku ga bisa kasih ya, enak aja. Nanti takut disalahgunain."
+    "Takamina" "Paling kalo mau sampe malem, kabarin aja. Nanti aku ikut juga, biar enak izinnya sama sekuriti."
+    show kana_side at left with dissolve
+    kana "Amaaaan. Ah mantap lah kalo begini"
+    hide tana_side with dissolve
+    "Takamina" "Hehehehe"
+    "Hari itu berakhir di ruang club, di mana Pia mengajari desain ke Takamina agar tugasnya dapat di handover selama Pia masih berlatih menjadi idol."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA DI ROOFTOP{/color}" with Pause(2.0)
+    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3"
+    scene rooftop with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname], Takamina, KTp sedang berkumpul di rooftop"
+    "Takamina" "Ayooo~ Ayoo~ Kurang luwes Kana, ahaha"
+    mcname "Tapi udah mulai sinkron ya, gerakannya mereka."
+    "Takamina" "Betuuul. Udah mulai kerasa kompaknya."
+    "Takamina" "Cuma feelnya kayak ada yg kurang gitu ga sih."
+    mcname "Apalah feel, gimana tuh maksudnya"
+    "Takamina" "Kayak kurang terbuka aja gitu"
+    "Takamina" "Kayak mereka masih ngedance sendiri-sendiri, bukan sebagai grup gitu deh"
+    mcname "Pakar banget nih, berasa kayak ngobrol sama GM idol grup terkenal gitu."
+    "Takamina" "Apalah [mcname] ini, ahahaha"
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}2 JAM KEMUDIAN{/color}" with Pause(2.0)
+    scene rooftop with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    show pia_side at left with dissolve
+    pia "Istirahat dulu, capeeek"
+    pia "[mcname], air dong"
+    hide pia_side with dissolve
+    mcname "Nih, tangkep\nMelempar air ke Pia"
+    show pia_side at left with dissolve
+    pia "Weits\nMenangkap air yang dilempar oleh [mcname]"
+    pia "*Glek glek glek*"
+    pia "Huaaaaa… Capek juga ya"
+    hide pia_side with dissolve
+    show tana_side at left with dissolve
+    tana "Tapi seru, kan?"
+    hide tana_side with dissolve
+    show pia_side at left with dissolve
+    pia "Bangeeet. Btw makasih ya, Kana."
+    pia "Udah semangat ngajakin aku."
+    hide pia_side with dissolve
+    show kana_side at left with dissolve
+    kana "*Teler*"
+    kana "Wweeeeeeeeeeeeeeh……"
+    kana "Kok kalian masih ada tenaga ya."
+    kana "Aku dah lemes banget, mau pulang aja. Showeran terus bobo"
+    hide kana_side with dissolve
+    show pia_side at left with dissolve
+    pia "Enak aja, banguuuun!"
+    pia "Ayo latian lagi"
+    hide pia_side with dissolve
+    show kana_side at left with dissolve
+    kana "AAAAA.. Tar dulu, baru berapa menit weh istirahatnya. Jahat kalian"
+    hide kana_side with dissolve
+    "Semua Orang" "Hahahahahahahaha"
+    show pia_side at left with dissolve
+    pia "Btw, aku mau cerita…"
+    pia "Baru [mcname] yang denger sih"
+    hide pia_side with dissolve
+    mcname "Hah? Apa nih bawa bawa gue?"
+    show pia_side at left with dissolve
+    pia "Diem!!"
+    hide pia_side with dissolve
+    mcname "Syappp"
+    show pia_side at left with dissolve
+    pia "Aku mau cerita kenapa aku mau banget jadi idol"
+    hide pia_side with dissolve
+    "Takamina" "Akh ini dia"
+    show pia_side at left with dissolve
+    pia "Hehe"
+    pia "Yah… makasih loh, kayak aku selangkah lagi tampil di depan banyak orang"
+    pia "itu mimpi aku dari kecil. Aku suka ngedance, suka nyanyi, dan aku suka dilihat banyak orang"
+    pia "Aku selalu nutupin ini karena gak percaya diri, takut gak cocok"
+    pia "Tapi kalian dukung aku buat maju terus gitu."
+    pia "Kan aku jadi terharu"
+    pia "Kayak dream come true banget weh, hehehe"
+    hide pia_side with dissolve
+    "Kana, Tana, Takamina" "Awwwwwwww\n*Nyamperin pia sambil meluk*"
+    show pia_side at left with dissolve
+    pia "Ga usah! Lu ga usah\n*sambil blush nunjuk ke [mcname]"
+    hide pia_side with dissolve
+    mcname "Loh? Gue ga ngapa-ngapain padahal. Cih haha"
+    "Hari itu bonding +1"
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}H-1 EVENT{/color}" with Pause(2.0)
+    show text "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
+    scene rooftop with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "KTp sedang berlatih lebih giat"
+    "Terlihat [mcname] dan Takamina duduk sambil menyemangati dan Feni yang membantu koreografinya"
+    show feni_side at left with dissolve
+    feni "Nice! Nice! Pia, agak digoyang dikit pinggulnya"
+    hide feni_side with dissolve
+    show pia_side at left with dissolve
+    pia "Iya teh"
+    hide pia_side with dissolve
+    show feni_side at left with dissolve
+    feni "Good good!!"
+    hide feni_side with dissolve
+    "Kemudian...."
+    # Insert Chibi pia jatoh
+    "Pia Jatuh"
+    mcname "*Reflek langsung bangun dari duduknya dan menghampiri Pia*"
+    mcname "Pia kamu gapapa?"
+    show pia_side at left with dissolve
+    pia "Aman, gapapa kok"
+    hide pia_side with dissolve
+    show feni_side at left with dissolve
+    feni "Gapapa kan?"
+    hide feni_side with dissolve
+    show tana_side at left with dissolve
+    tana "Sakit gak kakinya?"
+    hide tana_side with dissolve
+    show kana_side at left with dissolve
+    kana "Nooo Pia"
+    hide kana_side with dissolve
+    show pia_side at left with dissolve
+    pia "A-aman kok\n *Muka meringis kesakitan*"
+    hide pia_side with dissolve
+    show feni_side at left with dissolve
+    feni "Oke istirahat dulu ya. jangan diforsir."
+    feni "Latihan stop sampe sini dulu, jangan lupa besok perform jam 7 ya."
+    feni "Jaga kesehatan, pulang all!!!"
+    hide feni_side with dissolve
+    "KTp" "Oke Tehh!!"
+    "[mcname] tiba tiba menghilang dari area rooftop"
+    show pia_side at left with dissolve
+    pia "Loh [mcname] mana?"
+    hide pia_side with dissolve
+    "Takamina" "Tadi lari ke bawah, ga tau ngapain."
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN{/color}" with Pause(2.0)
+    scene rooftop with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "*Datang dengan nafas terengah engah*"
+    mcname "P-piaaa….huft huft"
+    show pia_side at left with dissolve
+    pia "[mcname]? Ke mana aja kamu?"
+    hide pia_side with dissolve
+    mcname "Ke bawah bentar\nSambil menunjukan plastik berisi perban dan alat kompres memar"
+    mcname "Aku tau ini sakit kan? Jangan bohong\n*Memencet kaki Pia*"
+    show pia_side at left with dissolve
+    pia "WOEEEEEEEEEEEEEEE SAKEEEEEEEEEEEEEEEEEEEEEEEEET"
+    hide pia_side with dissolve
