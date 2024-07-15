@@ -766,6 +766,7 @@ label chapter2tanaGOOD:
     show kana_side_embarased at left with dissolve
     kana "Eh?!"
     hide kana_side_embarased at left with dissolve
+    hide kana_embarased at kana_near with dissolve
     show tana at tana_near with dissolve
     show tana_side at left with dissolve
     tana "Gue sering banget liat lu di event jejepangan."
@@ -775,16 +776,17 @@ label chapter2tanaGOOD:
     "ASSET RECRUIT IDOL GROUP."
     show tana at tana_right with dissolve
     show kana_embarased at kana_near_left_2 with dissolve
-    show tana_side_embarased at left with dissolve
+    show tana_side at left with dissolve
     tana "Lu mau ikutan join idol group, ga?"
     hide tana_side at left with dissolve
-    show kana_embarased at left with dissolve
+    show kana_embarased at kana_near_left_2 with dissolve
     show kana_side_embarased at left with dissolve
     kana "A-anooooo... Uummmmmm... Watashi..."
     hide kana_side_embarased at left with dissolve
     "OFF ASSET RECRUIT IDOL GROUP."
     "SFX NGAMBIL FLYER"
     "Seketika cewe itu mengambil flyer dan berlari dengan muka merah malunya."
+    hide kana_embarased at kana_near_left_2 with dissolve
     show tana at tana_near with dissolve
     mcname "Lah? Tuh anak kenapa?"
     show tana_side at left with dissolve
@@ -919,6 +921,7 @@ label chapter2tanaGOOD:
 
 
 label goodtanaafterquiz:
+    $ quick_menu=True
     mcname "Akhirnya beres juga."
     show tana at tana_near with dissolve
     show tana_side at left with dissolve
@@ -1382,7 +1385,7 @@ label goodtanaafterquiz:
     $ quick_menu = False
     scene black with dissolve
     play music "audio/BGM_Kampus.mp3" fadein 1.0
-    scene kampus with dissolve
+    scene kelas with dissolve
     $ quick_menu = True
     "Suasana canggung mulai menyelimuti ruangan klub. Tana, Kana, dan [mcname] tampak saling melirik satu sama lain tanpa ada sepatah kata pun yang keluar."
     show kana at kana_near_left_2 with dissolve
