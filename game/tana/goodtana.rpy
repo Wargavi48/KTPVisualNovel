@@ -764,7 +764,7 @@ label chapter2tanaGOOD:
     hide tana at tana_near with dissolve
     show kana_embarased at kana_near with dissolve
     show kana_side_embarased at left with dissolve
-    "???" "Eh?!"
+    kana "Eh?!"
     hide kana_side_embarased at left with dissolve
     show tana at tana_near with dissolve
     show tana_side at left with dissolve
@@ -780,7 +780,7 @@ label chapter2tanaGOOD:
     hide tana_side at left with dissolve
     show kana_embarased at left with dissolve
     show kana_side_embarased at left with dissolve
-    "???" "A-anooooo... Uummmmmm... Watashi..."
+    kana "A-anooooo... Uummmmmm... Watashi..."
     hide kana_side_embarased at left with dissolve
     "OFF ASSET RECRUIT IDOL GROUP."
     "SFX NGAMBIL FLYER"
@@ -1307,7 +1307,7 @@ label goodtanaafterquiz:
     hide tana at tana_near with dissolve
     show kana_scared at kana_near with dissolve
     show kana_side_scared at left with dissolve
-    "???" "AAAAAAAAAAAAAAAAAAAAAAA!"
+    kana "AAAAAAAAAAAAAAAAAAAAAAA!"
     hide kana_side_scared at left with dissolve
     hide kana_scared at kana_near with dissolve
     "Karena tiba-tiba mendengar bisikan Tana, cewek tersebut pun kaget dan teriak."
@@ -1321,30 +1321,31 @@ label goodtanaafterquiz:
     tana "Ga usah teriak, kocak! Lu drama banget sih."
     hide tana_side at left with dissolve
     show kana_side_scared at left with dissolve
-    "???" "Hmmppppp!!"
+    kana "Hmmppppp!!"
     hide kana_side_scared at left with dissolve
     show tana_side at left with dissolve
     tana "Oh iya."
     hide tana_side at left with dissolve
     "Tana pun langsung melepaskan kedua tangannya dari mulut cewek tersebut."
     show kana_side_scared at left with dissolve
-    "???" "Huuft~"
+    kana "Huuft~"
     hide kana_side_scared at left with dissolve
     show tana_side at left with dissolve
     tana "Sorry sorry, reflek aja tadi."
     hide tana_side at left with dissolve
     show kana_side_scared at left with dissolve
-    "???" "I-iya, g-gapapa."
+    kana "I-iya, g-gapapa."
     hide kana_side_scared at left with dissolve
     show tana_side at left with dissolve
     tana "Btw, nama lu siapa?"
     hide tana_side at left with dissolve
     show kana_side_scared at left with dissolve
-    "???" "K-Kanaia..."
+    kana "K-Kanaia..."
     hide kana_side_scared at left with dissolve
     show tana_side at left with dissolve
     tana "Oalah, nama lu Kanaia?"
     hide tana_side at left with dissolve
+    $ kana_name = "Kana"
     show kana_side_scared at left with dissolve
     kana "I-iya."
     hide kana_side_scared at left with dissolve
@@ -1455,7 +1456,7 @@ label goodtanaafterquiz:
     hide tana at tana_right with dissolve
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
-    "???" "P!! JOIN KAWANKUHHH!!!"
+    pia "P!! JOIN KAWANKUHHH!!!"
     hide pia_side at left with dissolve
     hide pia at pia_near with dissolve
     "Serentak mereka bertiga kaget dengan apa yang baru mereka alami."
@@ -1463,7 +1464,7 @@ label goodtanaafterquiz:
     show tana_side at left with dissolve
     tana "Eh, bocil. Emak lu ke mana? Maen masuk ke tempat orang aja."
     hide tana_side at left with dissolve
-    "???" "Bocal bocil, enak aje lu. Kenalin gue Pia Meameo, eh, Meraleo. Gua mau join idol group. Daftarnya di sini, kan?"
+    pia "Bocal bocil, enak aje lu. Kenalin gue Pia Meameo, eh, Meraleo. Gua mau join idol group. Daftarnya di sini, kan?"
     "Tana dan [mcname] saling menatap."
     mcname "..."
     show tana_side at left with dissolve
