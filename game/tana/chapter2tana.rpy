@@ -1,4 +1,5 @@
 label chapter2tana:
+    $ renpy.block_rollback()
     $ quick_menu=True
     play music "audio/bgm_harvestmoon_spring.mp3" fadein 1.0
     scene awan with dissolve
@@ -21,6 +22,7 @@ label chapter2tana:
     "Bang Rama" "onoT, kamu centil banget sih!"
     "Bang Rama" "Hahahaha!"
     "Tana pun kebingungan dan mencoba memahami kejadian yang sedang terjadi di depan matanya ini."
+    # tana bingung
     show tana_side at left with dissolve
     tana "Hah?! Centil?! Centil apaan kocak! Gausah ngadi-ngadi lu pada!"
     hide tana_side at left with dissolve
@@ -39,29 +41,42 @@ label chapter2tana:
     show tana_side at left with dissolve
     tana "I-ini kan aku, t-tapi kok bisa? Siapa yang ngerekam?"
     hide tana_side at left with dissolve
-    "Mata Tana pun tertuju pada bagian pojok kiri atas layar handphone yang menunjukkan username (MC+random number). Di saat yang bersamaan, terdengar bunyi pintu kelas terbuka."
+    "Mata Tana pun tertuju pada bagian pojok kiri atas layar handphone yang menunjukkan username ([mcname]+random number). Di saat yang bersamaan, terdengar bunyi pintu kelas terbuka."
     mcname "Pagi, gais."
     "Melihat [mcname] memasuki kelas, mata Tana langsung menatap [mcname] dengan tajam dan dengan rasa marah, ia menghampiri [mcname] dan berteriak."
+    # tana marah
     show tana_side at left with dissolve
     tana "MAKSUD LO APA?!"
     hide tana_side at left with dissolve
     mcname "!!??"
-    "MC pun kaget sekaligus bingung."
+    "[mcname] pun kaget sekaligus bingung."
     mcname "Lah, gua salah apa? Gua baru masuk, kenapa udah lu marahin aja?"
+    show tana_side at left with dissolve
     tana "LO NGAPAIN NGEREKAM GUA NGE-DANCE KEMARIN?! NGAPAIN JUGA LU NYEBARIN VIDEONYA?"
+    hide tana_side at left with dissolve
     mcname "Lah? Kan gua udah minta izin ke elu."
+    show tana_side at left with dissolve
     tana "MANA ADA LU MINTA IZIN KE GUA?! GA USAH BOONG DEH, LU! MAKSUD LU APAAN?!"
+    hide tana_side at left with dissolve
     mcname "Gua serius ga ada maksud apa-apa, Tan."
+    show tana_side at left with dissolve
     tana "LAH TERUS KENAPA SEMUANYA PADA TAU? PASTI LU YANG NYEBARIN KAN?"
+    hide tana_side at left with dissolve
     mcname "Hah mana ada? Gua cuma bikin Instastory." 
     mcname "Gua juga ga nyangka kalo anak-anak tau Instagram gua dan videonya jadi viral."
-    tana "GA USAH BOHONG LU, MC!"
+    show tana_side at left with dissolve
+    tana "GA USAH BOHONG LU, [mcname]!"
+    hide tana_side at left with dissolve
     mcname "DIBILANGIN GUA GA ADA MAKSUD APA-APA! GUA CUMA NGEREKAM, SOALNYA LU KELIATAN LUCU. UDAH GITU DOANG!"
-    "Mendengar Tana yang terus menerus marah, emosi MC pun akhirnya juga ikut tersulut."
+    "Mendengar Tana yang terus menerus marah, emosi [mcname] pun akhirnya juga ikut tersulut."
+    show tana_side at left with dissolve
     tana "Eh?"
+    hide tana_side at left with dissolve
     "Mendengar hal tersebut, Tana pun kaget dan sedikit tersipu malu."
     "Suasana di dalam ruang kelas sudah terlanjur hening. Seluruh mata tertuju pada Tana dan [mcname], tidak ada yang berani ikut campur."
+    show tana_side at left with dissolve
     tana "HALAH, {i}KAKEHAN ALASAN!{/i} (BANYAK ALASAN!)"
+    hide tana_side at left with dissolve
     #SFX Slam door
     hide tana with dissolve
     "Tana yang sudah terlanjur marah dan merasa malu pun akhirnya memilih untuk keluar dan bolos kelas."
@@ -85,7 +100,7 @@ label chapter2tana:
     $ quick_menu=False
     scene awan with dissolve
     play music "audio/bgm_harvestmoon_spring.mp3" fadein 0.5
-    show text "{size=+10} KEESOKAN HARINYA {/size}" with Pause(2.0)
+    show text "{size=+10}{color=#fff} KEESOKAN HARINYA {/color}{/size}" with Pause(2.0)
     scene kelas with Dissolve(2.0)
     $ quick_menu=True
     play music "audio/BGM_Kelas.mp3" fadein 1.0
@@ -96,12 +111,17 @@ label chapter2tana:
     "Tetapi, [mcname] tidak melihat adanya Tana di kelas."
     mcname "Kelas udah mau mulai, tapi Tana kok belum datang ya? Nih anak mau bolos lagi, apa?"
     "Tak lama kemudian, terdengar suara orang berlari di lorong yang disusul dengan suara terbukanya pintu kelas."
+    # tana capek
     show tana at tana_near with dissolve
+    show tana_side at left with dissolve
     tana "*Terengah-engah*"
     tana "Huft, hampir aja gua telat. Dasar jam alarm kocak. Bisa-bisanya bunyinya pelan banget."
     tana "Masih ada bangku kosong ga, ya?"
+    hide tana_side at left with dissolve
     "Tana pun melihat ke seluruh bagian kelas untuk mencari apakah ada bangku yang masih kosong."
+    show tana_side at left with dissolve
     tana "Ah, untung ada bangku kosong."
+    hide tana_side at left with dissolve
     "Tanpa berpikir panjang, Tana pun langsung berjalan menuju kursi tersebut."
     $ quick_menu=False
     scene black with dissolve
@@ -111,11 +131,17 @@ label chapter2tana:
     "Sesampainya di bangku tersebut, Tana baru menyadari bahwa ternyata di sebelah bangku itu ada [mcname] yang sudah duduk terlebih dahulu."
     "[mcname] terdiam, menatap Tana yang hendak duduk di bangku kosong tersebut."
     mcname "{i}Nih anak mau duduk sebelah gua?{/i}"
+    show tana_side at left with dissolve
     tana "{i}Haduh, gua baru inget kalo dia biasa duduk di situ.{/i}"
+    hide tana_side at left with dissolve
     mcname "..."
+    show tana_side at left with dissolve
     tana "..."
+    hide tana_side at left with dissolve
     mcname "................"
+    show tana_side at left with dissolve
     tana "................"
+    hide tana_side at left with dissolve
     menu:
         "Responmu:"
         "Duduk Tana":
@@ -123,7 +149,7 @@ label chapter2tana:
         ".................":
             mcnamne "................."
     "Sambil mengalihkan pandangan, Tana menemukan bangku kosong lain yang berada tidak jauh dari tempatnya sekarang."
-    "Tanpa berkata apapun, Tana pergi meninggalkan MC dan langsung duduk di bangku tersebut."
+    "Tanpa berkata apapun, Tana pergi meninggalkan [mcname] dan langsung duduk di bangku tersebut."
     mcname "Dih yaudah. Duduk tempat lain aja sono."
     $ quick_menu=False
     scene black with dissolve
@@ -132,36 +158,58 @@ label chapter2tana:
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     "Tak lama kemudian, Bu Dosen pun memasuki kelas."
     show dosen at dosen_center with dissolve
+    show dosen_side at left with dissolve
     dosen "Selamat pagi, semuanya!"
+    hide dosen_side at left with dissolve
     "Mahasiswa/i" "Selamat pagi, Bu!"
+    show dosen_side at left with dissolve
     dosen "Udah pada sarapan belum?"
+    hide dosen_side at left with dissolve
     "RG Hasan" "Belum nih, Bu. Laper, huhu."
     "Bang Rama" "Udah tadi ngemil {i}Pramog{/i}, Bu."
+    show dosen_side at left with dissolve
     dosen "Ada-ada aja kalian ini, hahaha."
     dosen "Yaudah. Kalau ada yang bawa bekal, dimakan aja gapapa."
     dosen "Saya cuma mau menyampaikan beberapa hal terkait materi praktikum yang pertama."
+    hide dosen_side at left with dissolve
     "Mahasiswa/i" "Baik, Bu."
     "Sebagian Mahasiswa/i yang membawa bekal pun akhirnya mengeluarkan bekal untuk dimakan sembari mendengarkan penjelasan dari Bu Dosen."
+    show dosen_side at left with dissolve
     dosen "Baik, untuk praktikum minggu depan, masing-masing Mahasiswa dan Mahasiswi harus menyiapkan sampel tanah."
+    hide dosen_side at left with dissolve
     mcname "Tanah? Untuk apa kita mengumpulkan tanah, Bu?"
+    show dosen_side at left with dissolve
     dosen "Iya, tanah."
     dosen "Nanti sampel tanah yang telah kalian dapatkan, akan diuji untuk mengetahui index kesuburan dan apa saja kandungan di tanah tersebut."
     dosen "Jadi, kalian nanti akan belajar bagaimana cara menganalisis tanah."
+    hide dosen_side at left with dissolve
     mcname "Nanti kita ngambil sampel tanahnya di mana, Bu? Apakah tempatnya bebas?"
+    show dosen_side at left with dissolve
     dosen "Sampel tanah bisa diambil dari sawah di kampus, ya. Kalian sudah ke sana, kan?"
+    hide dosen_side at left with dissolve
     "Mahasiswa/i" "Sudah, Bu!"
+    show dosen_side at left with dissolve
     dosen "Nah, kalian ambil dari sana aja."
     dosen "Nanti data yang kalian peroleh bisa dibandingkan dengan data-data milik kakak tingkat kalian untuk mengetahui apakah ada perbedaan antara data yang kalian peroleh dengan data sebelumnya."
+    hide dosen_side at left with dissolve
     "Mahasiswa/i" "Baik, Bu!"
     mcname "Bu, akses ke sawah apakah bebas?"
+    show dosen_side at left with dissolve
     dosen "Bebas. Seinget saya, akses pagar sawah diatur oleh kakak tingkatmu yang saya lupa namanya."
+    hide dosen_side at left with dissolve
     "Sebelum [mcname] sempat menjawab kembali, tiba-tiba Tana yang masih kesal dengan kejadian kemarin pun nyeletuk."
+    hide dosen at dosen_center with dissolve
+    show dosen at dosen_left with dissolve
     show tana at tana_right with dissolve
-    #Kurang Kanan. Mau di sebelah kanan dosen.
+    show tana_side at left with dissolve
+    # Kurang Kanan. Mau di sebelah kanan dosen.
+    hide tana_side at left with dissolve
     tana "Nanya mulu lu, [mcname]. Kayak wartawan."
     "Mendengar hal tersebut, [mcname] pun jadi ikut kesal."
     mcname "Bu, mau tanya lagi. kalau tanahnya warna merah, boleh ga?"
+    show dosen_side at left with dissolve
     dosen "Tanah merah? Memangnya di sawah kampus ada tanah yang warnanya seperti itu?"
+    hide dosen_side at left with dissolve
     mcname "Ada, Bu. Kemarin ada pas tour ke sawah."
     mcname "Tanahnya merah dan putih, terus ada coklat-coklatnya gitu."
     "RG Hasan" "[mcname], emang kapan ada tanah yang warnanya kayak gitu?"
@@ -172,11 +220,17 @@ label chapter2tana:
     "Mahasiswa/i" "HAHAHAHAHAHAHA!"
     "RG Hasan" "HAHAHAHAHHA!"
     "Bang Rama" "HAHAHAHAH!"
+    show tana_side at left with dissolve
     tana "Apa sih, kocak! Berisik deh!"
+    hide tana_side at left with dissolve
+    show dosen_side at left with dissolve
     dosen "Hahahaha. Ada-ada saja. Oke, kalau begitu, kalian jangan lupa untuk mengambil sampel, ya."
     dosen "Kalian bebas mau ambil sampelnya kapan, yang penting disimpan di wadah tertutup dan dibawa pada saat praktikum."
+    hide dosen_side at left with dissolve
     "Mahasiswa/i" "Baik, Bu!"
+    show dosen_side at left with dissolve
     dosen "Ya udah, itu saja dari saya. Kelas sudah selesai. Terima kasih. Saya duluan, ya."
+    hide dosen_side at left with dissolve
     "Mahasiswa/i" "Terima kasih, Bu!"
     "Setelah Bu Dosen meninggalkan kelas, seluruh Mahasiswa/i satu per satu pergi meninggalkan kelas karena sudah tidak ada mata kuliah lagi hari ini."
 
@@ -212,23 +266,27 @@ label chapter2tana:
     mcname "Gapapa, Pak. Asal lucu 🙏🏻"
     "Penjual" "Hahahaha. Siap. Mohon ditunggu sebentar, ya."
     mcname "Baik, Pak."
-    "MC pun menunggu hingga pesanan selesai dibuat."
+    "[mcname] pun menunggu hingga pesanan selesai dibuat."
     $ quick_menu=False
     scene black with dissolve
     scene kantin with dissolve
     $ quick_menu=True
     "Tak lama kemudian, Tana datang berjalan menuju tempat penjual yang sama seperti [mcname] dan mata mereka saling bertemu."
     show tana at tana_near with dissolve
+    show tana_side at left with dissolve
     tana "......"
+    hide tana_side at left with dissolve
     mcname "......"
+    show tana_side at left with dissolve
     tana "..................."
+    hide tana_side at left with dissolve
     mcname "..................."
     hide tana with dissolve
     "Tana pun langsung berjalan melewati [mcname] dan pergi ke luar kantin."
     mcname "Idih, ngambekan."
     "Penjual" "Kak, ini pesenan sama kembaliannya."
     mcname "Oke. Terima kasih, Pak!"
-    mcname "Wwaktunya balik ke meja tadi terus makan, deh."
+    mcname "Waktunya balik ke meja tadi terus makan, deh."
     $ quick_menu=False
     scene black with dissolve
     scene kantin with dissolve
@@ -241,14 +299,15 @@ label chapter2tana:
     $ quick_menu=False
     scene black with dissolve
     scene awan with dissolve
-    show text "{size=+10}KEESOKAN HARINYA{/size}" with Pause(2.0)
+    show text "{size=+10}{color=#fff}KEESOKAN HARINYA{/color}{/size}" with Pause(2.0)
     play music "audio/bgm_harvestmoon_spring.mp3" fadein 0.5
     scene mc bedroom with dissolve
     play music "audio/backsound_kamar.mp3" fadein 0.5
+    $ renpy.block_rollback()
     $ quick_menu=True
     mcname "Aduh. Mules banget nih perut. Kesalahan nih kebanyakan makan pedes-pedes kemarin."
     mcname "Haduuh. Udah pasti telat nih buat mata kuliah pertama. Gua telpon titip izin dosen ke anak-anak dah."
-    "MC pun membuka daftar kontak di handphone-nya."
+    "[mcname] pun membuka daftar kontak di handphone-nya."
     mcname "LAH?! KOK CUMA ADA SI TANA?!"
     mcname "Oh iya, gua lupa minta nomor ke anak-anak. Gua cuma punya Discord mereka. Mana internetnya jelek banget lagi di Kos."
     mcname "Bodoh banget sih gua. Masa gua harus minta tolong ke Tana? Males banget."
@@ -274,7 +333,7 @@ label chapter2tana:
         "Telepon Tana":
             mcname "Yaudah lah. Daripada absen gua ngurang, terus ga bisa ikut ulangan."
             "#Show UI Telepon"
-            "MC pun mencoba menelpon Tana."
+            "[mcname] pun mencoba menelpon Tana."
             #SFX Kring Kring (Telepon)
             "Memanggil di UI Telepon HP"
             mcname "Angkat lah woy."
@@ -283,28 +342,46 @@ label chapter2tana:
             #SFX Kring Kring
             "Memanggil di UI Telepon HP"
             "Lagi telepon di UI Telepon HP"
-            show tana_side at left
+            show tana_side at left with dissolve
             tana "Ha?"
+            hide tana_side at left with dissolve
             mcname "{i}Damn, cuek banget.{/i}"
+            show tana_side at left with dissolve
             tana "......"
+            hide tana_side at left with dissolve
             mcname "{i}Fix masih marah, tapi untung diangkat.{/i}"
+            show tana_side at left with dissolve
             tana "................."
+            hide tana_side at left with dissolve
             mcname "{i} Masa gua harus minta maaf dulu? Gua ga salah apa-apa juga.{/i}"
+            show tana_side at left with dissolve
             tana ".................................."
+            hide tana_side at left with dissolve
             "#Tit... tit... \nUI Telepon diputus"
-            "MC pun menelepon Tana lagi untuk yang ketiga kalinya."
+            "[mcname] pun menelepon Tana lagi untuk yang ketiga kalinya."
             #SFX Kring Kring
             "Memanggil di UI Telepon HP"
             "Lagi telepon di UI Telepon HP"
+            # tana marah
+            show tana_side at left with dissolve
             tana "LU NGAPAIN SIH?! LU NGEPRANK GUA YA?! GUA MATIIN DAH!"
+            hide tana_side at left with dissolve
             mcname "JANGAN! JANGAN! SORI, GUA TADI NGELAMUN."
+            show tana_side at left with dissolve
             tana "Terus mau lu apa?"
+            hide tana_side at left with dissolve
             mcname "Gua mau minta tolong buat nanti izinin ke dosen kalo gua bakal telat atau bahkan ga ikut kelas. Soalnya gua lagi sakit."
+            show tana_side at left with dissolve
             tana "Males banget. Kenapa harus gua coba yang ngaish tau dosen?"
+            hide tana_side at left with dissolve
             mcname "Gua cuma nyimpen nomor lu, Tan. Asli gua ga nyimpen nomor anak-anak. Jadinya gua cuma bisa minta tolong ke lu."
+            show tana_side at left with dissolve
             tana "........."
+            hide tana_side at left with dissolve
             mcname "Tan?"
+            show tana_side at left with dissolve
             tana "Ya."
+            hide tana_side at left with dissolve
             mcname "Makasih banyak Tan, lu udah mau ngeban-"
             "#Tit... tit... \nUI Telepon diputus"
             mcname "Belom juga kelar ngomong. Udah dimatiin aja."
@@ -316,15 +393,16 @@ label chapter2tana:
     $ quick_menu=False
     scene black with dissolve
     scene awan with dissolve
-    show text "{size=+10}KEESOKAN HARINYA{/size}" with Pause(2.0)
+    show text "{size=+10}{color=#fff}KEESOKAN HARINYA{/color}{/size}" with Pause(2.0)
     play music "audio/bgm_harvestmoon_spring.mp3" fadein 0.5
     scene mc bedroom with dissolve
     play music "audio/backsound_kamar.mp3" fadein 0.5
+    $ renpy.block_rollback()
     $ quick_menu=True
     mcname "Akhh, akhirnya. Perut adem gini kan enak."
     mcname "Btw, ini kenapa kamar gua kotor banget dah?"
     mcname "Hmmm, mumpung kelas hari ini agak siang, gua bersih-bersih kamar dulu dah."
-    "MC pun membersihkan kamarnya hingga rapi."
+    "[mcname] pun membersihkan kamarnya hingga rapi."
     mcname "Kelar juga nih bersih-bersih kamar, tapi gua belum nyuci baju. Gua rendem dulu aja deh. Jemurnya ntar habis balik dari kampus."
     mcname "Sekarang waktunya mandi, terus gas ke kampus!"
 
@@ -334,11 +412,12 @@ label chapter2tana:
     scene kelas with dissolve
     with Pause(1.0)
     $ quick_menu=True
-    "MC memasuki kelas."
+    "[mcname] memasuki kelas."
     $ quick_menu=False
     scene black with dissolve
     show text "{color=#FFF}SETELAH KELAS SELESAI{/color}" with Pause(2.0)
     scene kelas with dissolve
+    $ renpy.block_rollback()
     $ quick_menu=True
     play music "audio/BGM_Kelas.mp3" fadein 1.0
     mcname "Akh, akhirnya kelar juga nih kelas. Asli ngantuk banget dengerinnya."
@@ -367,44 +446,73 @@ label chapter2tana:
     scene lorong with Dissolve(2.0)
     $ quick_menu=True
     mcname "Saatnya pulang terus jemur baju."
-    "???" "MC!"
+    "???" "[mcname]!"
     mcname "Hmm? Siapa yang manggil gua?"
     "???" "Wooiii!"
     $ quick_menu=False
     scene black with dissolve
     scene lorong with dissolve
+    show feni at feni_right with dissolve
+    show flora at flora_left with dissolve
+    show feni_side at left with dissolve
     $ quick_menu=True
     feni "Dipanggil malah celingak celinguk."
+    hide feni_side at left with dissolve
+    show flora_side at left with dissolve
     flora "Parahh."
+    hide flora_side at left with dissolve
     mcname "Ah. Kak Feni sama Kak Flora? Ada apa, kak?"
+    show feni_side at left with dissolve
     feni "Si Tana mana?"
+    hide feni_side at left with dissolve
     mcname "Tana?"
     mcname "{i}Oh iya. Gua belum bilang makasih ke Tana udah izinin ke dosen.{/i}"
+    show flora_side at left with dissolve
     flora "Nih anak diajak ngomong malah ngelamun."
+    hide flora_side at left with dissolve
     mcname "Maaf maaf. Aku ga liat Si Tana, Kak. Dia ngambil mata kuliah umum di kelas lain."
+    show feni_side at left with dissolve
     feni "Yahh. Padahal kita mau ngasih sesuatu ke dia."
+    hide feni_side at left with dissolve
     mcname "Ngasih apaan tuh?"
+    show flora_side at left with dissolve
     flora "Ini."
+    hide flora_side at left with dissolve
     "Flora memberikan selembar flyer ke [mcname]."
     mcname "Hmm? Lomba dance?"
+    show flora_side at left with dissolve
     flora "Iya! Kita liat video Tana yang dance itu."
+    hide flora_side at left with dissolve
+    show feni_side at left with dissolve
     feni "Terus aku sama Flo mikir kalo Tana bisa nih ikut lomba dance. Ya ga, Flo?"
+    hide feni_side at left with dissolve
+    show flora_side at left with dissolve
     flora "Betul banget. Kamu juga setuju kan, [mcname]?"
+    hide flora_side at left with dissolve
     mcname "{i}Walawe. Ternyata videonya udah kesebar sampe angkatan atas.{/i}"
     mcname "Setuju aja sih, tapi Si Tana kayaknya ga mau ikut deh."
+    show feni_side at left with dissolve
     feni "Lah? Emangnya kenapa?"
+    hide feni_side at left with dissolve
     mcname "Dia aja marah-marah pas videonya kesebar..."
+    show flora_side at left with dissolve
     flora "Yah. Gimana dong, Kak mpen? Sayang banget kalo Tana ga ikut."
+    hide flora_side at left with dissolve
+    show feni_side at left with dissolve
     feni "Hmmm yaudah. Kamu bawa aja deh flyernya. Nanti tolong kasih ke Tana, ya!"
+    hide feni_side at left with dissolve
     mcname "Ehh??!"
+    show flora_side at left with dissolve
     flora "Hahahah. Tolong ya, Mc. Arigatou! Mata ne~"
-    "Feni dan Flora pergi meninggalkan MC di lorong."
+    hide flora_side at left with dissolve
+    "Feni dan Flora pergi meninggalkan [mcname] di lorong."
     mcname "Lah? Kok jadi gua yang disuruh? Hadeehh."
     mcname "Dah lah. Gua harus cepet-cepet balik. Keburu mendung."
     stop music fadeout 1.0
 
     $ quick_menu = False
     scene black with dissolve
+    scene awan with dissolve
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     play music "audio/BGM_Kelas.mp3" fadein 1.0
     scene kelas with dissolve
@@ -416,17 +524,19 @@ label chapter2tana:
     play music "audio/BGM_Lorong.mp3" fadein 1.0
     with Pause(1.0)
     scene lorong sore with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Tak terasa hari sudah sore."
     mcname "Kelar juga kelas hari ini. Padet banget jadwalnya dari pagi sampe sore."
     mcname "Mana gua belum ngambil sampel tanah lagi. Harusnya jam segini masih dibuka lah ya."
-    "MC pun bergegas pergi ke sawah."
+    "[mcname] pun bergegas pergi ke sawah."
     stop music fadeout 1.0
 
     $ quick_menu = False
     scene black with dissolve
     play music "audio/bgm_harvestmoon_spring.mp3" fadein 1.0
     scene sawah with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     mcname "Hmm? Itu kan Si Tana. Dia belum ngambil sample juga kah?"
     mcname "Kenapa dia ngambil di spot itu sih. Gua kan rencananya mau ngambil sampel di situ juga. Kalo gini, kan awkward banget jadinya."
@@ -435,97 +545,7 @@ label chapter2tana:
     menu:
         "Apa yang kamu lakukan?"
         "Samperin Tana.":
-            "MC pun menghampiri Tana."
-            mcname "T-Tan?"
-            tana "{i}Lah? Ngapain [mcname] ada di sini?{/i}"
-            mcname "........"
-            tana "Apa? Mau ngeledekin gua lagi?"
-            mcname "Enggak..."
-            tana "Terus lu mau apa?"
-            mcname "Mau ngambil sampel tanah aja."
-            tana "Oh yauda."
-            mcname "......"
-            tana "......"
-            mcname ".............."
-            tana "................"
-            mcname "Tan..."
-            tana "Apa."
-            mcname "Sebenarnya gua mau minta maaf..."
-            tana "......."
-            mcname "Gua mau minta maaf perkara video kemarin. Gua asli ga ada maksud buat nyebarin."
-            tana "Banyak alasan, lu. Bilang aja lu mau ngeledekin gua, kan?"
-            mcname "Nggak, Tan. Serius. Gua cuma ngerasa kalau lu lucu banget pas itu. Jadinya gua rekam."
-            tana "Eh?"
-            tana "EEH????"
-            mcname "???"
-            tana "KAN?! LU NGELEDEKIN GUA LAGI!"
-            mcname "{i}Astaga, nih orang ngamuk mulu dah perasaan.{/i}"
-            tana "LU KE SINI CUMA BUAT NGELEDEKIN GUA DOANG KAN?!"
-            mcname "NGGAK, KOCAK. GUA JUJUR KOK INI. GUA SALAH MULU DAH PERASAAN."
-            tana "HALAH. SKEM. LU SKEM!"
-            tana "UDAH LAH. GA USAH SOK-SOK AN MINTA MAAF!"
-            mcname "Eh, Tana! Tunggu, jangan pergi dulu. Gua belum selesia ngo-"
-            tana "Eh?"
-            #SFX Kepeleset
-            tana "AAAAAAA!!"
-            #Chibi Nue Tono Kepeleset
-            "*Sret"
-            "*Bruk"
-            tana "........."
-            mcname "........."
-            tana "....................."
-            mcname "Pfffft."
-            tana "...................................."
-            mcname "Sini gua bantu."
-            "[mcname] mengulurkan tangannya untuk membantu Tana berdiri."
-            "Tapi tiba-tiba..."
-            mcname "Eh?"
-            #Chibi Nue Tono narik MC
-            mcname "AAAAAAAAA!!!"
-            "*Brukk*"
-            mcname "......."
-            tana "HAHAHAHAH!!!"
-            mcname "SI KOCAK MALAH KETAWA!"
-            mcname "LU KALO NYEMPLUNG SENDIRIAN AJA GA USAH NGAJAK-NGAJAK!"
-            tana "HAHAHAHAHHAHAHAAHHAHAH!"
-            mcname "Yah... Udah kena nih otaknya. Lu ga kenapa-kenapa, Tana?"
-            tana "Hahahahah. Gua aman, lu gimana?"
-            mcname "Gua gapapa, tapi baju gua yang apa-apa!"
-            tana "Sori dah, sori."
-            mcname "....."
-            tana "....."
-            mcname "Nggak, Tan. Gua yang minta maaf. Gua serius ga ada maksud apa-apa ngerekam lu dance."
-            tana "Hadehh... Iya iya. Gua percaya deh."
-            mcname "Serius?"
-            tana "Serius. Masa lu ga percaya sama gua?"
-            mcname "Terakhir lu bilang gitu, kita nyasar sampe sore."
-            tana "NGGAK, KOCAK. ITU GUA CUMA MAU JALAN-JALAN AJA."
-            mcname "Hahahah! Iya dah, iya"
-            mcname "Tapi seriusan nih. Lu maafin gua apa nggak?"
-            tana "Iya, kocak. Apa gua ngamuk lagi aja?"
-            mcname "Ampun ampun."
-            tana "Gitu dong."
-            mcname "Btw makasih juga ya udah ngizinin gua ke dosen."
-            tana "Ha? Ngizinin apaan?"
-            mcname "Lah? Kan kemari gua minta tolong lu buat sampein izin sakit ke dosen."
-            tana "Kaga. Gua kagak nyampain apa-apa."
-            mcname "LAHK?! KOK ABSENSI GUA MASIH FULL?"
-            tana "Kemarin kaga ada kelas, kocak. Dosennya ada urusan dadakan."
-            mcname "......"
-            mcname "Hadeh, yauda lah ya. Terima aja ucapan terima kasih gua."
-            tana "Iya dehh, iyaa. Gua juga mionta maaf soalnya udah berlebihan marah sama lu."
-            mcname "......."
-            tana "........."
-            mcname ".................."
-            tana "K-kenapa lu diem aja?"
-            mcname "T-tan..."
-            tana "A-apa?"
-            menu:
-                "Kamu ngomong:"
-                "Kamu lucu banget di video itu.":
-                    jump chapter2tanaTRUE
-                "Dance lu keren banget di video itu.":
-                    jump chapter2tanaGOOD
+            jump chapter2tanasawah
         "Ambil sampel di spot lainnya.":
             mcname "Bodo amat lah. Gua ga salah apa-apa kok."
             "[mcname] pun mengambil sampel tanah di spot lain."
@@ -534,6 +554,7 @@ label chapter2tana:
             mcname "Eh?"
             #SFX Bruk (Jatuh)
             "[mcname] terpeleset akibat menginjak tanah yang licin."
+            $ quick_menu=False
             stop music fadeout 1.0
             scene black with dissolve
             show text "{color=#FFF}WASPADA TERHADAP SEKITAR{/color}" with Pause(2.0)
@@ -547,19 +568,191 @@ label chapter2tana:
             show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
             play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
             scene kelas with dissolve
+            show dosen at dosen_center with dissolve
+            show dosen_side at left with dissolve
+            $ renpy.block_rollback()
             $ quick_menu = True
             dosen "Semuanya baris, ya. Tunjukin sampel tanah kalian, baru kalian boleh masuk ruang praktikum."
+            hide dosen_side at left with dissolve
             mcname "{i}Waduh, gua ga bawa nih. Mana temen-temen pada beda sesi lagi.{/i}"
+            show dosen_side at left with dissolve
             dosen "[mcname], mana sampel kamu?"
+            hide dosen_side at left with dissolve
             mcname "I-itu, Bu. Ketinggalan di kos temen."
+            show dosen_side at left with dissolve
             dosen "Oalah, yaudah. Masuk dulu aja."
+            hide dosen_side at left with dissolve
             mcname "Eh? Saya boleh masuk, Bu?"
+            show dosen_side at left with dissolve
             dosen "Masuk? Boleh dong."
             dosen "Masuk daftar mahasiswa yang nilai praktikumnya 0."
+            hide dosen_side at left with dissolve
             mcname "NOOOOOOOOOOOOOOOOOOO~"
+            $ quick_menu=False
             stop music fadeout 1.0
             scene black with dissolve
             show text "{color=#FFF}MAKANYA KULIAH YANG BENER!{/color}" with Pause(2.0)
             show text "{color=#FF0000}BAD END{/color}"
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
+
+label chapter2tanasawah:
+    "[mcname] pun menghampiri Tana."
+    show tana at tana_near with dissolve
+    mcname "T-Tan?"
+    show tana_side at left with dissolve
+    tana "{i}Lah? Ngapain [mcname] ada di sini?{/i}"
+    hide tana_side at left with dissolve
+    mcname "........"
+    show tana_side at left with dissolve
+    tana "Apa? Mau ngeledekin gua lagi?"
+    hide tana_side at left with dissolve
+    mcname "Enggak..."
+    show tana_side at left with dissolve
+    tana "Terus lu mau apa?"
+    hide tana_side at left with dissolve
+    mcname "Mau ngambil sampel tanah aja."
+    show tana_side at left with dissolve
+    tana "Oh yauda."
+    hide tana_side at left with dissolve
+    mcname "......"
+    show tana_side at left with dissolve
+    tana "......"
+    hide tana_side at left with dissolve
+    mcname ".............."
+    show tana_side at left with dissolve
+    tana "................"
+    hide tana_side at left with dissolve
+    mcname "Tan..."
+    show tana_side at left with dissolve
+    tana "Apa."
+    hide tana_side at left with dissolve
+    mcname "Sebenarnya gua mau minta maaf..."
+    show tana_side at left with dissolve
+    tana "......."
+    hide tana_side at left with dissolve
+    mcname "Gua mau minta maaf perkara video kemarin. Gua asli ga ada maksud buat nyebarin."
+    show tana_side at left with dissolve
+    tana "Banyak alasan, lu. Bilang aja lu mau ngeledekin gua, kan?"
+    hide tana_side at left with dissolve
+    mcname "Nggak, Tan. Serius. Gua cuma ngerasa kalau lu lucu banget pas itu. Jadinya gua rekam."
+    show tana_side at left with dissolve
+    tana "Eh?"
+    tana "EEH????"
+    hide tana_side at left with dissolve
+    mcname "???"
+    # tana marah
+    show tana_side at left with dissolve
+    tana "KAN?! LU NGELEDEKIN GUA LAGI!"
+    hide tana_side at left with dissolve
+    mcname "{i}Astaga, nih orang ngamuk mulu dah perasaan.{/i}"
+    show tana_side at left with dissolve
+    tana "LU KE SINI CUMA BUAT NGELEDEKIN GUA DOANG KAN?!"
+    hide tana_side at left with dissolve
+    mcname "NGGAK, KOCAK. GUA JUJUR KOK INI. GUA SALAH MULU DAH PERASAAN."
+    show tana_side at left with dissolve
+    tana "HALAH. SKEM. LU SKEM!"
+    tana "UDAH LAH. GA USAH SOK-SOK AN MINTA MAAF!"
+    hide tana_side at left with dissolve
+    mcname "Eh, Tana! Tunggu, jangan pergi dulu. Gua belum selesia ngo-"
+    show tana_side at left with dissolve
+    tana "Eh?"
+    #SFX Kepeleset
+    tana "AAAAAAA!!"
+    #Chibi Nue Tono Kepeleset
+    "*Sret"
+    "*Bruk"
+    tana "........."
+    hide tana_side at left with dissolve
+    mcname "........."
+    show tana_side at left with dissolve
+    tana "....................."
+    hide tana_side at left with dissolve
+    mcname "Pfffft."
+    show tana_side at left with dissolve
+    tana "...................................."
+    hide tana_side at left with dissolve
+    mcname "Sini gua bantu."
+    "[mcname] mengulurkan tangannya untuk membantu Tana berdiri."
+    "Tapi tiba-tiba..."
+    mcname "Eh?"
+    #Chibi Nue Tono narik [mcname]
+    mcname "AAAAAAAAA!!!"
+    "*Brukk*"
+    mcname "......."
+    show tana_side at left with dissolve
+    tana "HAHAHAHAH!!!"
+    hide tana_side at left with dissolve
+    mcname "SI KOCAK MALAH KETAWA!"
+    mcname "LU KALO NYEMPLUNG SENDIRIAN AJA GA USAH NGAJAK-NGAJAK!"
+    show tana_side at left with dissolve
+    tana "HAHAHAHAHHAHAHAAHHAHAH!"
+    hide tana_side at left with dissolve
+    mcname "Yah... Udah kena nih otaknya. Lu ga kenapa-kenapa, Tana?"
+    show tana_side at left with dissolve
+    tana "Hahahahah. Gua aman, lu gimana?"
+    hide tana_side at left with dissolve
+    mcname "Gua gapapa, tapi baju gua yang apa-apa!"
+    show tana_side at left with dissolve
+    tana "Sori dah, sori."
+    hide tana_side at left with dissolve
+    mcname "....."
+    show tana_side at left with dissolve
+    tana "....."
+    hide tana_side at left with dissolve
+    mcname "Nggak, Tan. Gua yang minta maaf. Gua serius ga ada maksud apa-apa ngerekam lu dance."
+    show tana_side at left with dissolve
+    tana "Hadehh... Iya iya. Gua percaya deh."
+    hide tana_side at left with dissolve
+    mcname "Serius?"
+    show tana_side at left with dissolve
+    tana "Serius. Masa lu ga percaya sama gua?"
+    hide tana_side at left with dissolve
+    mcname "Terakhir lu bilang gitu, kita nyasar sampe sore."
+    show tana_side at left with dissolve
+    tana "NGGAK, KOCAK. ITU GUA CUMA MAU JALAN-JALAN AJA."
+    hide tana_side at left with dissolve
+    mcname "Hahahah! Iya dah, iya"
+    mcname "Tapi seriusan nih. Lu maafin gua apa nggak?"
+    show tana_side at left with dissolve
+    tana "Iya, kocak. Apa gua ngamuk lagi aja?"
+    hide tana_side at left with dissolve
+    mcname "Ampun ampun."
+    show tana_side at left with dissolve
+    tana "Gitu dong."
+    hide tana_side at left with dissolve
+    mcname "Btw makasih juga ya udah ngizinin gua ke dosen."
+    show tana_side at left with dissolve
+    tana "Ha? Ngizinin apaan?"
+    hide tana_side at left with dissolve
+    mcname "Lah? Kan kemari gua minta tolong lu buat sampein izin sakit ke dosen."
+    show tana_side at left with dissolve
+    tana "Kaga. Gua kagak nyampain apa-apa."
+    hide tana_side at left with dissolve
+    mcname "LAHK?! KOK ABSENSI GUA MASIH FULL?"
+    show tana_side at left with dissolve
+    tana "Kemarin kaga ada kelas, kocak. Dosennya ada urusan dadakan."
+    hide tana_side at left with dissolve
+    mcname "......"
+    mcname "Hadeh, yauda lah ya. Terima aja ucapan terima kasih gua."
+    show tana_side at left with dissolve
+    tana "Iya dehh, iyaa. Gua juga mionta maaf soalnya udah berlebihan marah sama lu."
+    hide tana_side at left with dissolve
+    mcname "......."
+    show tana_side at left with dissolve
+    tana "........."
+    hide tana_side at left with dissolve
+    mcname ".................."
+    show tana_side at left with dissolve
+    tana "K-kenapa lu diem aja?"
+    hide tana_side at left with dissolve
+    mcname "T-tan..."
+    show tana_side at left with dissolve
+    tana "A-apa?"
+    hide tana_side at left with dissolve
+    menu:
+        "Kamu ngomong:"
+        "Kamu lucu banget di video itu.":
+            jump chapter2tanaTRUE
+        "Dance lu keren banget di video itu.":
+            jump chapter2tanaGOOD
