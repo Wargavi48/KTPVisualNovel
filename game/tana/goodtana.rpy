@@ -469,11 +469,13 @@ label chapter2tanaGOOD:
     tana "DIH. Semaunya aja tuh mulut kalo ngomong. Lu kali?"
     mcname "Hahaha. Yaudah, masuk kelas,yuk. UTSnya udah mau mulai."
     tana "Gas!"
+    jump goodtanaafterquiz
 
     "MINIGAME UTS"
     #MINIGAME UTS
     "MINIGAME UTS"
 
+label goodtanaafterquiz:
     mcname "Akhirnya beres juga."
     tana "Beres? Kaya bakal lulus aja."
     mcname "Dih. Gua mah pasti lulus. Btw, lu udah ditungguin, tuh."
