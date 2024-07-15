@@ -947,3 +947,109 @@ label goodendpiarooftop:
     show pia_side at left with dissolve
     pia "WOEEEEEEEEEEEEEEE SAKEEEEEEEEEEEEEEEEEEEEEEEEET"
     hide pia_side with dissolve
+    "Kana & Tana" "*Muka cemas*"
+    "Kana & Tana" "Pi…. kamu gapapa nih? Besok perform."
+    show pia_side at left with dissolve
+    pia "Tenang aja, aman laaaah."
+    hide pia_side with dissolve
+    "Takamina" "Kalo ada apa2 kasih tau loh"
+    mcname "Dah, sini gue anterin balik\n*merangkul Pia*"
+    show pia_side at left with dissolve
+    pia "Oke, maap ya"
+    hide pia_side with dissolve
+    mcname "Aman aja, mau digendong apa gimana?"
+    show pia_side at left with dissolve
+    pia "Apaan sih lebay"
+    hide pia_side with dissolve
+    mcname "Yaudah sini deh gue rangkul aja, takut makin parah kalo jalan sendiri"
+    show pia_side at left with dissolve
+    pia "O-oke……"
+    hide pia_side with dissolve
+    scene black with dissolve
+    show text "{color=#FFF}DI DEPAN KAMPUS{/color}" with Pause(2.0)
+    play music "audio/BGM_Kampus Sore.mp3" fadein 1.0
+    $ renpy.block_rollback()
+    $ quick_menu = False
+    mcname "Mana ya? Katanya udah deket"
+    show pia_side at left with dissolve
+    pia "Siapa?"
+    hide pia_side with dissolve
+    mcname "Cepio, tadi aku hubungi Cepio ngabarin kondisi kamu"
+    "Fiony yang sudah di depan gerbang dengan mobilnya sejak tadi, membuka jendela dan berteriak dari dalam mobil"
+    show fio_side at left with dissolve
+    fio "CIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "CEPIOOOOOO"
+    hide pia_side with dissolve
+    mcname "Cepio, bantuin weh kasian ini"
+    show fio_side at left with dissolve
+    fio "Ahahaha. Oke oke wait, aku turun dulu"
+    $ quick_menu = False
+    menu:
+        "Ikut nemenin pia ke kosan":
+            jump goodendpiakosan
+        "[mcname] pun menyerahkan semuanya ke Cepio":
+            $ renpy.block_rollback()
+            $ quick_menu = True
+            mcname "Cepio, aku tinggal Pia ke Cepio ya. aku ga bisa ikut"
+            show fio_side at left with dissolve
+            fio "Loh kamu gak ikut nemenin Pia dulu?"
+            hide fio_side with dissolve
+            mcname "Umm… kayaknya ga bisa Cepio, ada yang mau aku urus dulu."
+            show fio_side at left with dissolve
+            fio "Oh Oke"
+            hide fio_side with dissolve
+            show pia_side at left with dissolve
+            pia "Oh gitu, ada yang lebih penting dari aku ya hump…."
+            pia "Yaudah Cepio gas jalan, [mcname] gak mau ikut, sibuk"
+            hide pia_side with dissolve
+            "Fiony dan Pia pun pergi tanpa [mcname] saat itu."
+            "[mcname] memutuskan untuk kembali ke rooftop dan mengecek apakah ada yang tertinggal di atas."
+            "Dalam perjalanan ke rooftop, [mcname] yang kelelahan karena sebelumnya harus naik turun tangga menuju rooftop pun mulai kehilangan keseimbangan."
+            "[mcname] terjatuh di tangga saat menuju ke rooftop tanpa ada seorangpun yang melihatnya saat itu."
+            "[mcname] pun terjatuh dan mengalami pendarahan di kepala"
+            "Dikarenakan tidak ada yang membantu menolongnya saat itu, [mcname] pun meninggal karena kehabisan darah"
+            stop music fadeout 1.0
+            $ quick_menu = False
+            scene black with dissolve
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+            jump credits
+
+label goodendpiakosan:
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname] yang ditemani Fiony pun akhirnya mengantar Pia kembali ke kosan."
+    "[mcname] mengantar Pia sampai ke depan pintu kamarnya. Selanjutnya Pia ditemani Cepio."
+    mcname "Yaudah aku pulang dulu ya, jaga diri. Sehat2. Banyak istirahat"
+    show fio_side at left with dissolve
+    fio "Aman, aku nginep di sini, aku jagain dia. Besok langsung ketemuan di venue aja apa gimana?"
+    hide fio_side with dissolve
+    mcname "Di ruang club dulu aja kali ya Ce?"
+    show fio_side at left with dissolve
+    fio "Oke aman, besok aku bareng Pia ke sana."
+    hide fio_side with dissolve
+    show pia_side at left with dissolve
+    pia "Makasih ya [mcname], udah bantuin. See you besooook."
+    hide pia_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}DI KOSAN{/color}" with Pause(2.0)
+    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+    nvl clear
+    mc_nvl "Dah Turu?"
+    pia_nvl "Beloooom"
+    mc_nvl "Weh ngapain aja? Kok belom? Tar kecapean weh."
+    pia_nvl "Lah, kamu ngapain ngechat aku?"
+    mc_nvl "...."
+    mc_nvl "Ngecek aja"
+    pia_nvl "awwww"
+    nvl clear
+    fio_nvl "Cieee"
+    mc_nvl "????"
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    show text "{color=#FFF}HARI H MATSURI{/color}" with Pause(2.0)
+    scene ruang ukm with dissolve
+    
