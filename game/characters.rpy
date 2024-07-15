@@ -108,6 +108,7 @@ image side mahasiswa_c_side = "Characters/mahasiswa_c_side.png"
 default mahasiswa_name = "???"
 define mc_nvl = Character("[mcname]", kind=nvl, callback=Phone_SendSound)
 define pia_pov_nvl = Character("Pia", kind=nvl, callback=Phone_SendSound)
+define mc_pov_nvl = Character("Pia", kind=nvl, callback=Phone_ReceiveSound)
 define kana_nvl = Character("[kana_name]", kind=nvl, callback=Phone_ReceiveSound)
 define tana_nvl = Character("[tono_name]", kind=nvl, callback=Phone_ReceiveSound)
 define freya_nvl = Character("Freya", kind=nvl, callback=Phone_ReceiveSound)

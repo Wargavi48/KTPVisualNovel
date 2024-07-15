@@ -1267,4 +1267,66 @@ label goodendpiamatsuri:
             $ renpy.block_rollback()
             $ quick_menu = True
             "[mcname] terlalu fokus wotagei dan tidak memperdulikan lagi Pia yang saat itu sedang menahan kesakitan"
-            
+            "Pada pertunjukan lagu terakhir, Pia pun terjatuh di stage di depan banyak orang. Tidak sedikit yang menyoraki dan menertawakan moment tersebut"
+            "Namun [mcname] tidak melihat hal tersebut karena sedang asik wotagei"
+            "Fiony ingin memberitahu [mcname] yang saat itu ada di sebelahnya namun terpukul lightstick yang sedang diayunkan [mcname]."
+            "Ketika [mcname] sudah tersadar dan kembali ke realita, semua sudah terlambat."
+            "[mcname] melihat Fiony yang sedang duduk sambil mengusap kepalanya yang berdarah akibat benturan lightstick [mcname]."
+            "Saat [mcname] melihat ke depan, terlihat Pia yang sambil menangis tersungkur jatuh di stage. Lagu pun dihentikan."
+            "Pertunjukan hari itu pun selesai"
+            "Beberapa hari kemudian, Pia lebih memilih mengurung diri dan tidak banyak interaksi dengan [mcname]."
+            stop music fadeout 1.0
+            $ quick_menu = False
+            scene black with dissolve
+            show text "{color=#FFF}DI KOSAN PIA{/color}" with Pause(2.0)
+            play music "audio/BGM_Romance Pia Kamar.mp3" fadein 1.0
+            scene kamar pia with dissolve
+            $ renpy.block_rollback()
+            $ quick_menu = True
+            show pia_side at left with dissolve
+            pia "Udah cukup, aku malu. Menjadi idol emang pilihan yang salah. Aku gak mau lagi."
+            hide pia_side with dissolve
+            $ quick_menu = False
+            mc_pov_nvl "Piaaaa"
+            mc_pov_nvl "P"
+            mc_pov_nvl "P"
+            mc_pov_nvl "P"
+            mc_pov_nvl "P"
+            mc_pov_nvl "Di mana? Gak mau latihan lagi?"
+            $ renpy.block_rollback()
+            $ quick_menu = True
+            "Pia memutuskan untuk block [mcname] yang tidak peka itu dan mulai menjauhinya"
+            "Setelah itu, Pia memutuskan keluar dari club jepang dan tidak beraktivitas menjadi idol lagi"
+            stop music fadeout 1.0
+            scene black with dissolve
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+            jump credits
+        "Teriak Menyemangati":
+            jump goodendpia
+
+label goodendpia:
+    $ renpy.block_rollback()
+    stop music fadeout 1.0
+    $ quick_menu = True
+    mcname "PIAAAAAAAAAAAAAAAAAAAAAAA KAMULAH OSHIKU SATU SATUNYAAAAAAAA"
+    "Semua penonton pun menoleh ke arah [mcname] yang dengan lantang mengucapkan kalimat tersebut dengan raut wajah yang terlihat serius sambil menunjukan jari telunjuknya ke arah Pia dengan penuh semangat."
+    show fio_side at left with dissolve
+    fio "Yeeeeeeeee\n*Ikut menyoraki dengan suara kecilnya*"
+    hide fio_side with dissolve
+    "Penonton" "UWOOOOOOGGGHH!!!!!!!!! PIAAAAAAAAAAAA"
+    "Tidak disangka, teriakan [mcname] menyulut semangat penonton lain untuk ikut menyoraki dan menunjukan dukungannya lebih keras"
+    "Teriakan tersebut lah yang membuat pengunjung lain yang sedang berkeliling di acara tersebut jadi penasaran dan ikut menonton pertunjukan di stage tersebut."
+    show pia_side at left with dissolve
+    pia "*Blushing*"
+    pia "A-ah iyaaa makasih"
+    pia "Dengarkanlah lagu kami yang terakhir, xxxx"
+    hide pia_side with dissolve
+    mcname "PIAAAAAAAAAAAAA SEMANGAAAAAAAAAAT"
+    play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene konser end with dissolve
+    show text "{color=#FFF}THE END{/color}" with Pause(2.0)
+    with Pause(20.0)
+    jump credits
