@@ -109,12 +109,14 @@ default mahasiswa_name = "???"
 define mc_nvl = Character("[mcname]", kind=nvl, callback=Phone_SendSound)
 define pia_pov_nvl = Character("Pia", kind=nvl, callback=Phone_SendSound)
 define kana_nvl = Character("[kana_name]", kind=nvl, callback=Phone_ReceiveSound)
+define tana_nvl = Character("[tono_name]", kind=nvl, callback=Phone_ReceiveSound)
 define freya_nvl = Character("Freya", kind=nvl, callback=Phone_ReceiveSound)
 define donatur_nvl = Character("[mahasiswa_name]", kind=nvl, callback=Phone_ReceiveSound)
 define mamah_nvl = Character("Mama", kind=nvl,  callback=Phone_ReceiveSound)
 define papah_nvl = Character("Papa", kind=nvl, callback=Phone_ReceiveSound)
 define pia_nvl = Character("Pia", kind=nvl, callback=Phone_ReceiveSound)
 define fio_nvl = Character("[fio_name]", kind=nvl, callback=Phone_ReceiveSound)
+define feni_nvl = Character("[feni_name]", kind=nvl, callback=Phone_ReceiveSound)
 
 
 

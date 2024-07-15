@@ -1051,5 +1051,219 @@ label goodendpiakosan:
     scene black with dissolve
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     show text "{color=#FFF}HARI H MATSURI{/color}" with Pause(2.0)
+    #  Harusnya BGM Ruang UKM 
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
     scene ruang ukm with dissolve
-    
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Duh Pia sama Cepio mana ini? Belum dateng."
+    show kana at kana_near_left_2 with dissolve
+    show tana at tana_right with dissolve
+    "Kana & Tana" "Gimana [mcname]? Aman?"
+    mcname "Belom bales. Lagi di jalan kali?"
+    show pia_side at left with dissolve
+    pia "HOIIIIIIIII\n*Memanggil dari kejauhan*"
+    hide pia_side with dissolve
+    "Semua Orang" "*Lari menghampiri Pia dan Cepio*"
+    show feni_side at left with dissolve
+    feni "Kaki gimana?"
+    hide feni_side with dissolve
+    show pia_side at left with dissolve
+    pia "Aman Teh Mpen! Hehehe"
+    hide pia_side with dissolve
+    show feni_side at left with dissolve
+    feni "Fiuh. Syukurlah. Yaudah sok atuh masuk dulu, ke acaranya bareng aja nanti."
+    feni "Jam berapa sekarang?"
+    hide feni_side with dissolve
+    show kana_side at left with dissolve
+    kana "Jam 8 teh"
+    hide kana_side with dissolve
+    show feni_side at left with dissolve
+    feni "Aman lah, eventnya baru buka jam 10."
+    feni "Free time ya sampe jam 3an. Jangan grogi. Dibawa santai aja. Nikmatin dulu eventnya ya."
+    feni "Kalian perform jaaaam……."
+    $ quick_menu = False
+    menu:
+        "Jam 7 malem teh":
+            jump goodendpiamatsuri
+        "Jam 8 malem teh":
+            $ renpy.block_rollback()
+            $ quick_menu = True
+            mcname "Jam 8 malem teh"
+            stop music fadeout 1.0
+            scene black with dissolve
+            show text "{color=#FFF}TERNYATA [mcname] SALAH MELIHAT JADWAL{/color}" with Pause(2.0)
+            show text "{color=#FFF}KALIAN KEASIKAN JALAN DAN MELEWATI JADWAL TAMPIL{/color}" with Pause(2.0)
+            show text "{color=#FFF}JKT48V PUN DIANGGAP TIDAK TAMPIL DALAM PERTUNJUKAN{/color}" with Pause(2.0)
+            show text "{color=#FFF}SETELAH PROSES PANJANG INI KALIAN KELEWAT TAMPIL?????{/color}" with Pause(2.0)
+            show text "{color=#FFF}YANG BENER AJA BRO BRO{/color}" with Pause(2.0)
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+            jump credits
+
+label goodendpiamatsuri:
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Jam 7 malem teh"
+    show feni_side at left with dissolve
+    feni "Oh iya, oke sana masuk ruangan dulu. Istirahat, jangan terlalu capek."
+    hide feni_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}JAM 10 PAGI{/color}" with Pause(2.0)
+    show text "{color=#FFF}OPEN GATE MATSURI{/color}" with Pause(2.0)
+    scene lorong with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Let’s go, otw kita"
+    "Semua Orang" "Ikuzoooo~"
+    "Mereka pun pergi bersama ke event jejepangan tersebut"
+    show pia_side at left with dissolve
+    pia "Weeeh dah rame, yaaaa"
+    hide pia_side with dissolve
+    mcname "*Sambil melirik ke kaki pia*"
+    show pia_side at left with dissolve
+    pia "Kenapa?"
+    hide pia_side with dissolve
+    mcname "Yakin udah baikan?"
+    mcname "Kok jalannya kayak agak diseret gitu?"
+    show pia_side at left with dissolve
+    pia "Engga kok gapapa nih\n*Menghentak hentakan kaki*"
+    pia "Hiiiingghh…\n*Pia syok menahan sakit*"
+    hide pia_side with dissolve
+    mcname "Kaaaaaaaaaan"
+    show pia_side at left with dissolve
+    pia "Sssstt…. Jangan bilang yang lain plis plisssss"
+    pia "Aku masih bisa kok"
+    pia "Aku ga mau performnya gagal karena aku"
+    pia "Plisss, ya ya ya"
+    hide pia_side with dissolve
+    mcname "........."
+    show pia_side at left with dissolve
+    pia "Gak begitu sakit kok, aku ga mau bikin yang lain kepikiran."
+    pia "Plis, aku mau hari ini sukses. Ya?"
+    hide pia_side with dissolve
+    mcname "Oke, tapi please next jujur ya Pi. Aku khawatir loh, aku tau kamu gimana."
+    mcname "Aku tau kalo kamu lagi bohong."
+    show pia_side at left with dissolve
+    pia "Hehehe maaf"
+    hide pia_side with dissolve
+    show tana_side at left with dissolve
+    tana "Brooooo!! Itu tako(sponsor) yang terkenal itu bro. Let’s go antri itu."
+    tana "Di mall ngantrinya panjang kalo mau beli itu, loh."
+    hide tana_side with dissolve
+    show kana_side at left with dissolve
+    kana "Oh tako(sponsor), aku pernah coba. Iya sih enak, ayok"
+    hide kana_side with dissolve
+    "Takamina" "Aku kayaknya mau ke yakisoba(sponsor) sama Teh Mpen, deh."
+    show feni_side at left with dissolve
+    feni "Aku udah ngidam yakisoba (sponsor) dari semalem."
+    feni "Yang mau aku beli pertama pas ke sini, tuh! Let’s go lah yuk."
+    hide feni_side with dissolve
+    mcname "Okeh, kita misah deh ya"
+    show fio_side at left with dissolve
+    fio "Aku juga misah deh ya, mau ke section kreator."
+    fio "Temen aku jualan di sana."
+    hide fio_side with dissolve
+    mcname "Oke Cepio."
+    show fio_side at left with dissolve
+    fio "{size=-5}Ga mau gangguin [mcname] ngedate{/size}\n*Bisikin [mcname]"
+    hide fio_side with dissolve
+    mcname "WEEEEEEEEEH"
+    show pia_side at left with dissolve
+    pia "?"
+    hide pia_side with dissolve
+    mcname "Ayo Pi, muter-muter. Liat-liat booth"
+    show pia_side at left with dissolve
+    pia "Ayooooo"
+    hide pia_side with dissolve
+    "[mcname] pun mengajak Pia berkeliling di acara jejepangan tersebut sambil mengecek booth dan guest star lain di panggung"
+    $ quick_menu = False
+    feni_nvl "Guys, kumpul di club jam 3 ya"
+    kana_nvl "Oke teteh"
+    tana_nvl "Sippp"
+    pia_nvl "Oke teh"
+    mc_nvl "Oke"
+    scene black with dissolve
+    show text "{color=#FFF}DI RUANG UKM{/color}" with Pause(2.0)
+    scene ruang ukm with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "Grogi ya?"
+    mcname "Semangat semua"
+    "KTp" "Huhuhu\n*Muka cemas*"
+    show pia_side at left with dissolve
+    pia "Udah mulai kerasa deg-deg an, weh."
+    hide pia_side with dissolve
+    mcname "Bisa bisa!!! Hehe"
+    show pia_side at left with dissolve
+    pia "Maaci"
+    hide pia_side with dissolve
+    "Mereka pun mulai persiapan antri ke backstage"
+    scene black with dissolve
+    scene kampus with dissolve
+    "[mcname] menunggu di depan stage bersama Feni, Freya, Fiony, dan Takamina"
+    mcname "Huhuhu, jadi aku yang deg-degan juga"
+    show fio_side at left with dissolve
+    fio "Ahaha iya, aku juga."
+    fio "Pokoknya semangatin, ya"
+    hide fio_side with dissolve
+    mcname "Oh jelaaaas"
+    "MC" "Ooooy, minna-saaaan! Gimana, seruuuuu?????"
+    "Penonton" "SERUUUUUUUUUUU!!!!!!"
+    "MC" "Selanjutnya, ada siapa yaaaa?"
+    "MC" "Ada yang bisa tebaaak??"
+    "MC" "Kita sambut, idol yang mengawali debutnya hari ini"
+    "MC" "JKT48V!!!!!!"
+    "Penonton" "UWOOOOOOOOOGGGGH"
+    "KTp masuk ke stage"
+    "Membawakan lagu pertama"
+    mcname "*melihat raut wajah Pia*"
+    mcname "Masih sakit yaaa.."
+    show fio_side at left with dissolve
+    fio "Kasian Pia, kayaknya masih sakit ya kakinya."
+    hide fio_side with dissolve
+    mcname "Iya Ce, cuma liat deh. Pia semangat banget dan berusaha ga nunjukkin sakitnya."
+    mcname "Aku terharu banget liatnya."
+    "Fiony, Freya, Takamina" "*Bombastic side eye*"
+    mcname "Eh? A-apa?"
+    show fio_side at left with dissolve
+    fio "Gapapa"
+    hide fio_side with dissolve
+    $ quick_menu = False
+    scene black with dissolve
+    scene kampus with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
+    show tana_side at left with dissolve
+    tana "Gimana semua, seru gak?"
+    hide tana_side with dissolve
+    "Penonton" "SERUUUUUUUUUUUUU!!!!"
+    show kana_side at left with dissolve
+    kana "Tadi kami membawakan lagu xxxx"
+    kana "Sebelum lanjut ke lagu yang selanjutnya, udah pada kenal kita belom nih?"
+    hide kana_side with dissolve
+    "Penonton" "Beluuuuuuuum"
+    show pia_side at left with dissolve
+    pia "Wah, kayaknya belom pada kenal nih. Kita kenalan dulu aja ga sih?"
+    pia "Bisa dimulai dari yang paling kiri"
+    hide pia_side with dissolve
+    show tana_side at left with dissolve
+    tana "Wassup ma bross!! I'm fresh like a breeze JKT48 Virtual Tana Nona Cool enough to make you freeEeEzZEeE Halo semuanya aku Tana Nona dari JKT48 Virtual"
+    hide tana_side with dissolve
+    show kana_side at left with dissolve
+    kana "Mari bernyanyi, sambil bermain air. Aku dari laut tapi tidak salty!"
+    kana "Halo! Aku Kanaia yang akan membuat harimu indah bagai pelangi"
+    hide kana_side with dissolve
+    show pia_side at left with dissolve
+    pia "WE ARE ON FIRE"
+    pia "SEMANGATKU MEMBARA, SIAP MENGHANGATKAN HARI-HARI MU!!"
+    pia "HALO AKU PIA MERALEO DARI JKT48V"
+    pia "SALAM KENAL SEMUAAAAAAAAAA!!!"
+    hide pia_side with dissolve
+    $ quick_menu = False
+    menu:
+        "Fokus Menyimak":
+            $ renpy.block_rollback()
+            $ quick_menu = True
+            "MC terlalu fokus wotagei dan tidak memperdulikan lagi Pia yang saat itu sedang menahan kesakitan"
