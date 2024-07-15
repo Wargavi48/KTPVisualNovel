@@ -1266,4 +1266,5 @@ label goodendpiamatsuri:
         "Fokus Menyimak":
             $ renpy.block_rollback()
             $ quick_menu = True
-            "MC terlalu fokus wotagei dan tidak memperdulikan lagi Pia yang saat itu sedang menahan kesakitan"
+            "[mcname] terlalu fokus wotagei dan tidak memperdulikan lagi Pia yang saat itu sedang menahan kesakitan"
+            
