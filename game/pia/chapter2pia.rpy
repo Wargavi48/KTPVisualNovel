@@ -315,7 +315,7 @@ label chapter2piaaftergame:
     show feni_side at left with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
-    feni "Flyernya kakak~\n*sambil bagiin flyer*"
+    feni "Flyernya kakak~\n*Sambil bagiin flyer*"
     hide feni_side with dissolve
     mcname "Oh ah. Makasih, kak."
     mcname "{i}Flyer apa ini?{/i}"
@@ -425,7 +425,7 @@ label chapter2piaaftergame:
     $ quick_menu = False
     menu:
         #Dihilangin textbox
-        "Ah! Tadi aku dapet flyer ini. *Kasih semua flyer* mau ikut gak? ada acara jejepangan beberapa bulan lagi nih. terus itu ada 3 flyer, ada yang recruitment jadi idol juga. mau coba gak?":
+        "Ah! Tadi aku dapet flyer ini. *Kasih semua flyer* mau ikut gak? ada acara jejepangan beberapa bulan lagi nih. terus itu ada 3 flyer, ada yang recruitment jadi idol juga. Mau coba gak?":
             $ renpy.block_rollback()
             $ quick_menu = True
             mcname "Ah! Tadi aku dapet flyer ini. \n*Kasih semua flyer*"

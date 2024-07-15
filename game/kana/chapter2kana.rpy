@@ -29,15 +29,15 @@ label chapter2kanastart:
     mcname "Pah, itu apa yang dipakai Mamah?"
     papah "Ohhh, itu namanya cosplay."
     mcname "Memangnya cosplay itu apa?"
-    mamah "Cosplay itu costume play. Biasanya dipake sama orang yang suka anime, buat di event atau lomba gitu."
+    mama "Cosplay itu costume play. Biasanya dipake sama orang yang suka anime, buat di event atau lomba gitu."
     papah "Kalo Papah sama Mamah biasanya buat malam-malam, hehe"
-    mamah "Huss jangan ajarin yang aneh-aneh. [mcname] masih kecil"
+    mama "Huss jangan ajarin yang aneh-aneh. [mcname] masih kecil"
     papah "Ahahaha. Gapapa, like father like son."
-    mamah "Udah ihhh."
+    mama "Udah ihhh."
     papah "Jadi pengen nanti malam, hehe"
-    mamah "*Blush*"
+    mama "*Blush*"
     "{i}Saat itu aku gk begitu paham dengan apa yang mereka bicarakan{/i}"
-
+    $ quick_menu = True
     #*balik dari flashback”
     #BGM Rumah STOP
     #BG Kamar [mcname] STOP
@@ -1086,7 +1086,7 @@ label chapter2kanastart:
     
     mcname "Eh maaf tante, saya kira kakaknya Kana soalnya keliatan masih muda"
     
-    #Mamah nya Kana "Fufufu bisa aja kamu"
+    #Mamahnya Kana "Fufufu bisa aja kamu"
     
     #*SKIP SCENE*
     #BG LANGIT ATAU DEPAN PINTU KAMAR KANA
