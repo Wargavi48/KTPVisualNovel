@@ -469,11 +469,9 @@ label chapter2tanaGOOD:
     tana "DIH. Semaunya aja tuh mulut kalo ngomong. Lu kali?"
     mcname "Hahaha. Yaudah, masuk kelas,yuk. UTSnya udah mau mulai."
     tana "Gas!"
-    jump goodtanaafterquiz
+    $ tana_route = "Good End"
+    jump quiz
 
-    "MINIGAME UTS"
-    #MINIGAME UTS
-    "MINIGAME UTS"
 
 label goodtanaafterquiz:
     mcname "Akhirnya beres juga."

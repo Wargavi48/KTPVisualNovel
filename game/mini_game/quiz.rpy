@@ -48,7 +48,10 @@ label quiz:
     if route == "kana":
         jump chapter1kana1
     elif route == "tana":
-        jump chapter1tana
+        if tana_route == "Good End":
+            jump goodtanaafterquiz
+        elif tana_route == "True End":
+            jump truetanaafterquiz
     elif route == "pia":
         if pia_route == "Good End":
             jump goodpiaafterquiz

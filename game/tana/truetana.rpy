@@ -383,7 +383,7 @@ label chapter2tanaTRUE:
     tana "DIH. Semaunya aja tuh mulut kalo ngomong. Lu kali?"
     mcname "Hahaha. Yaudah, masuk kelas,yuk. UTSnya udah mau mulai."
     tana "Gas!"
-    jump truetanaafterquiz
+    jump quiz
 
 
 

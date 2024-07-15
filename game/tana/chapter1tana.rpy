@@ -1,3 +1,6 @@
+define tana_route = ""
+
+
 label chapter1tana:
     scene awan with dissolve
     "Walaupun ini sudah pertengahan tahun, namun Matahari secara terik menerangi Jakarta.Dan saat melihat ke atas langit, hanya langit biru lah yang terlihat. [mcname] mendatangi gedung kampus untuk melakukan daftar ulang."
