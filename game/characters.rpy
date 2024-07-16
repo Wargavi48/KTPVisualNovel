@@ -127,5 +127,7 @@ default semua = Character("All", color="#000000")
 
 default mama = Character("Mamah", image="mama", color="#FFF")
 image side mama = "mama_id"
+default papah = Character("Papah", image="mama", color="#FFF")
+image side mama = "mama_id"
 
 default mc = Character("[mcname]", color="#000000")

@@ -323,7 +323,7 @@ label goodpiaafterquiz:
     show tana_side at left with dissolve
     tana "Woaaaa bagus-bagus ya, gambarnya."
     hide tana_side with dissolve
-    show kana_side at kana_near_left_2 with dissolve
+    show kana at kana_near_left_2 with dissolve
     kana "Ton! Misi kita disini untuk rekrut Meameo"
     hide kana_side with dissolve
     show tana_side at left with dissolve
@@ -345,7 +345,6 @@ label goodpiaafterquiz:
     $ quick_menu = False
     scene black with dissolve
     scene lorong with dissolve
-    $ renpy.block_rollback()
     $ quick_menu = True
     mcname "Wah rame banget yang liat-liat lukisan bulan ini"
     "[mcname] melihat ada 2 orang berlari menuju kearahnya"
@@ -353,13 +352,13 @@ label goodpiaafterquiz:
     "*[mcname] berjalan meminggir agar tidak menghalangi 2 orang tersebut*"
     mcname "Kayaknya fix lari ke gue"
     show kana at kana_near with dissolve
-    show kana_side at left with dissovle
+    show kana_side at left with dissolve
     kana "[mcname]! Nama kamu [mcname] kan?"
     hide kana_side with dissolve
     mcname "Ooh! Temennya cepio, iya, ada apa nih?"
     show kana_side at left with dissolve
     kana "Kamu kenal Meameo kan?"
-    hide kana_side with Dissolve
+    hide kana_side with dissolve
     mcname "Pppffftt… Meameo"
     mcname "Iya kenal kok, tadi orangnya lagi selfie depan lukisannya. Mau ketemu?"
     show kana_side at left with dissolve
@@ -455,10 +454,9 @@ label goodpiaafterquiz:
     $ quick_menu = False
     scene black with dissolve
     scene ruang ukm with dissolve
-    show kana_near_left_2 at left with dissolve
+    show kana at kana_near_left_2 with dissolve
     show feni at feni_right with dissolve
     show kana_side at left with dissolve
-    $ renpy.block_rollback()
     $ quick_menu = True
     kana "Haaaah, pake strategi apa lagi ya buat ngajak Pia join ke sini?"
     hide kana_side with dissolve
@@ -485,8 +483,8 @@ label goodpiaafterquiz:
     show kana_side at left with dissolve
     kana "Iya kak\n*Nada lemes*"
     hide kana_side with dissolve
-    play sound "audio/open_door" fadein 1.0
-    mcname "Halo Kana"
+    play sound "audio/open_door.mp3" fadein 1.0
+    mcname "Halo Kana~"
     show kana_side at left with dissolve
     kana "Hah [mcname]??? Ngapain"
     hide kana_side with dissolve
@@ -533,7 +531,7 @@ label goodpiaafterquiz:
     hide kana_side with dissolve
     $ quick_menu = False
     scene black with dissolve
-    show "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
+    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
     scene ruang ukm with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True 
@@ -586,7 +584,7 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    show "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
+    show text "{color=#FFF}DI ROOFTOP{/color}" with Pause(2.0)
     play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
     scene rooftop with dissolve
     show pia at pia_near with dissolve

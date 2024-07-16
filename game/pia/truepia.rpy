@@ -585,11 +585,12 @@ label trueendpiajalanmonas:
     hide dosen_side with dissolve
     "Mahasiswa/i" "Baik buuu~"
     "Dosen keluar kelas"
+    hide dosen with dissolve
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
     pia "Weeeeh tugasnya menggambar bebas!"
     hide pia_side with dissolve
-    mcanme "Gimana? Mau ngegambar bareng?"
+    mcname "Gimana? Mau ngegambar bareng?"
     show pia_side at left with dissolve
     pia "Gassss! Ke rooftop yuk! Sekalian cari inspirasi."
     hide pia_side with dissolve
@@ -642,7 +643,7 @@ label trueendpiajalanmonas:
     scene kelas with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
-    "Akhirnya [mcanme] dan Pia kembali ke ruang kelas untuk mengumpulkan tugas dengan muka yang penuh coret."
+    "Akhirnya [mcname] dan Pia kembali ke ruang kelas untuk mengumpulkan tugas dengan muka yang penuh coret."
     show dosen at dosen_center with dissolve
     show dosen_side at left with dissolve
     dosen "......"
@@ -963,6 +964,7 @@ label truendpia:
     $ quick_menu = False
     scene black with dissolve
     scene kampus with dissolve
+#BGM SORE (GANTI SUASANA WAKTU)
     $ renpy.block_rollback()
     $ quick_menu = True
     "Pukul 6 sore, [mcname] dan Pia kembali ke booth mereka."

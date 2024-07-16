@@ -1,279 +1,260 @@
 #---CHAPTER 2—---
 #ARC 1
 label chapter2kanastart:
-    $ renpy.block_rollback()
     #*SCENE*
     #*BG LANGIT*
+    $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}Chapter II{/color}" with Pause(2.0)
+    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
     scene awan with dissolve
-    "Karena hari ini hari libur, jadi [mcname] memutuskan untuk menghabiskan waktunya berkeliling di Mall yang dekat dengan kosan nya"
+    $ quick_menu = True
+    "Karena hari ini hari libur, jadi [mcname] memutuskan untuk menghabiskan waktunya berkeliling di mall yang dekat dengan kostnya."
+    stop music fadeout 1.0
+    $ quick_menu = False
     #*BG MALL*
     #*SFX Kerumunan*
-    scene mall temp with dissolve
+    scene black with dissolve
     play music "audio/BGM_Mall Slow.mp3" fadein 1.0
+    scene mall temp with dissolve
     play sound "audio/crowd_noise.mp3" fadein 1.0
-    mcname "Rame juga ya ternyata mall di Jakarta ini"
-    "Di sekeliling memang banyak orang terlihat, dari keluarga kecil, pasangan muda yang sedang kencan, bahkan seseorang yang terlihat sendirian menikmati waktunya"
-    "Namun dari banyaknya orang disekitar, ada beberapa kumpulan orang yang menarik perhatian [mcname]"
-    mcname "Lumayan nyentrik pakaian orang-orang itu, mungkin itu normal di Jakarta?"
-    mcname "Ahhhh.. Mungkin itu mereka sedang cosplay yang sering mamah lakuin"
+    mcname "Rame juga ya ternyata mall di Jakarta ini."
+    "Di sekeliling banyak orang terlihat, dari keluarga kecil, pasangan muda yang sedang kencan, bahkan seseorang yang terlihat sendirian menikmati waktunya."
+    "Namun dari banyaknya orang di sekitar, ada beberapa kumpulan orang yang menarik perhatian [mcname]."
+    mcname "Lumayan nyentrik pakaian orang-orang itu yah, mungkin itu normal di Jakarta?"
+    mcname "Ahhhh! Kayaknya lagi cosplay, yang sering mamah lakuin..."
+    stop music fadeout 1.0
     #*Transisi Screen Putih 2s*
     #Flashback (ATas bawah putih)
     #BGM Rumah
     #BG Kamar MC
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}DAHULU KALA...{/color}" with Pause(2.0)
     scene white with Dissolve(2.0)
     # Harusnya ada frame putih atas bawah
-    scene mc bedroom with dissolve
     play music "audio/backsound_kamar.mp3" loop fadein 1.0
+    scene mc bedroom with dissolve
+    $ quick_menu = True
     mcname "Pah, itu apa yang dipakai Mamah?"
     papah "Ohhh, itu namanya cosplay."
     mcname "Memangnya cosplay itu apa?"
-    mamah "Cosplay itu costume play. Biasanya dipake sama orang yang suka anime, buat di event atau lomba gitu."
-    papah "Kalo Papah sama Mamah biasanya buat malam-malam, hehe"
-    mamah "Huss jangan ajarin yang aneh-aneh. [mcname] masih kecil"
+    mama "Cosplay itu costume play. Biasanya dipake sama orang yang suka anime, buat di event atau lomba gitu."
+    papah "Kalo Papah sama Mamah biasanya buat malam-malam, hehe."
+    mama "Huss jangan ajarin yang aneh-aneh. [mcname] masih kecil."
     papah "Ahahaha. Gapapa, like father like son."
-    mamah "Udah ihhh."
-    papah "Jadi pengen nanti malam, hehe"
-    mamah "*Blush*"
-    "{i}Saat itu aku gk begitu paham dengan apa yang mereka bicarakan{/i}"
-
+    mama "Udah ihhh."
+    papah "Jadi pengen nanti malam, hehe."
+    mama "*Blush*"
+    "{i}Saat itu aku gak begitu paham dengan apa yang mereka bicarakan...{/i}"
+    stop music with fadeout 1.0
     #*balik dari flashback”
     #BGM Rumah STOP
     #BG Kamar [mcname] STOP
     #*Transisi Screen Putih 2s*
     #BG Mall Start
     #BGM Mall Start
-
-    mcname "Kalau ada orang yang cosplay berarti ada event yang sedang berlangsung di mall ini"
-    mcname "Gk ada salahnya nanti aku mampir sebentar ke sana"
-    "[mcname] kemudian berkeliling mall untuk melihat-lihat apa saja isi mall nya, sampai akhirnya ia sampai ke event jejepangan di mall tersebut"
-    mcname "Waaah banyak juga ternyata orang-orang disini"
-    mcname "Kalau papah disini mungkin bakal kesenengan tuh hahaha"
-    "[mcname] pun mencoba berkeliling melihat-lihat apa saja yang ada di event tersebut"
-    "Di dalam event banyak terlihat booth-booth yang dibuka, mulai seperti mencoba kuliner yang ada disana, melihat merch-merch event, bahkan [mcname] juga fotbar sama cosplayer yang sedang cosplay"
+    $ quick_menu = False
+    scene white with Dissolve(2.0)
+    # Harusnya ada frame putih atas bawah
+    scene mall temp with dissolve
+    play music "audio/BGM)Mall Slow.mp3" loop fadein 1.0
+    $ quick_menu = True
+    mcname "{i}Kalo ada orang yang cosplay, berarti ada event yang sedang berlangsung di mall ini.{/i}"
+    mcname "{i}Gak ada salahnya nanti aku mampir sebentar ke sana.{/i}"
+    "[mcname] kemudian berkeliling mall untuk melihat-lihat di mall, sampai akhirnya ia sampai ke event jejepangan di mall tersebut."
+    mcname "Waaah banyak juga ternyata orang-orang di sini."
+    mcname "Kalau papah di sini mungkin bakal kesenengan tuh, hahaha."
+    "[mcname] pun mencoba berkeliling melihat-lihat apa saja yang ada di event tersebut."
+    "Di dalam event terlihat banyak booth-booth yang dibuka, mulai seperti mencoba kuliner yang ada di sana, melihat merch-merch event, bahkan [mcname] juga foto bersama cosplayer."
+    "Tiba-tiba..."
     #*BRUKKK*
-    "Sepertinya [mcname] tidak sengaja menabrak seseorang saat berjalan"
-
-
-    mcname "Waduh maaf kamu gk papa"
-    "[mcname] mencoba mengulurkan tangannya"
-
-    #Orang yang ditabrak “Ah iya gk apa - apa”
-
-    "Seakan terkejut melihat [mcname], orang tersebut langsung berdiri tergesa-gesa"
-    #Orang yang ditabrak “Maafkan aku”
-    "Setelah mengatakan hal tersebut orang tadi langsung mencoba pergi"
-
-    #(.......)
-
-    mcname "Buru - buru banget itu orang"
-    mcname "Mungkin ada merch yang dia pengen, jadi kek gitu"
-    mcname "Jadi ngingetin kek papah dulu haha"
-
-    #(......)
-
+    play audio "audio/tabrakan.mp3"
+    "Sepertinya [mcname] tidak sengaja menabrak seseorang saat berjalan."
+    mcname "Waduh maaf kamu gapapa?"
+    "[mcname] mencoba mengulurkan tangannya."
+    "???" "Ah iya, aku gapapa."
+    "Seakan terkejut melihat [mcname], orang tersebut langsung berdiri tergesa-gesa."
+    "???" "Ah, m-maaf!"
+    "Setelah mengatakan hal tersebut, orang tadi langsung berlari pergi."
+    mcname "......."
+    mcname "Buru-buru banget itu orang."
+    mcname "{i}Hmmm... Mungkin ada merch yang dia pengen, jadi kayak gitu.{/i}"
+    mcname "Jadi ngingetin kayak papah dulu, haha."
     mcname "Hmm..?"
-    "[mcname] menyadari ada sesuatu yang jatuh"
-    mcname "Sepertinya ini barang orang tadi"
-    "[mcname] pun mengambil barang tersebut untuk memastikan nya"
-    "Terlihat sebuah merch dari salah satu utaite yang bisa dibilang cukup terkenal"
-    mcname "Jangan-jangan ini barang limited, soalnya pernah liat nih di internet"
-    "[mcname] kemudian mencoba melihat ke orang yang baru saja menabraknya"
-    "jarak antara [mcname] dan orang tersebut sudah bisa dibilang lumayan jauh"
-    mcname "HEYYY BARANG MU JATUH!!!"
-    "Namun karena ramai nya orang yang ada di dalam event, suara [mcname] tidak terdengar oleh orang tersebut"
-
-    mcname "{i}Hmmm … sepertinya dia tidak mendengar nya{/i}"
-
-    mcname "Mungkin sebaiknya kutitipkan ke penitipan barang sama panitia event..."
-    mcname "...atau aku kejar ya orang yang tadi?"
-
-    #*CHOSE*
+    "[mcname] menyadari ada sesuatu yang jatuh."
+    "SHOW ASSET GANTUNGAN KUNCI."
+    mcname "{i}Kayaknya ini barang orang tadi.{/i}"
+    "[mcname] pun mengambil barang tersebut untuk memastikannya."
+    "Terlihat sebuah merch dari salah satu utaite yang bisa dibilang cukup terkenal."
+    mcname "Jangan-jangan ini barang limited, soalnya pernah liat nih di internet."
+    "[mcname] kemudian mencoba melihat ke orang yang baru saja menabraknya."
+    "Jarak antara [mcname] dan orang tersebut sudah bisa dibilang lumayan jauh."
+    mcname "HEYYY!!! HEYYY!! BARANG MU JATUH!!!"
+    "Namun karena begitu ramainya orang yang ada di dalam event, suara [mcname] tidak terdengar oleh orang tersebut."
+    mcname "{i}Hmmm... Sepertinya tidak terdengar.{/i}"
+    mcname "Kutitipkan ke penitipan barang sama panitia event atau..."
+    mcname "... atau aku kejar ya orang yang tadi?"
     menu:
         "Kejar orang yang tadi":
-            #*CHOSE B*
-            #MC
-            mcname "Aku harus kejar orang yang tadi, tadi udah mau ke kejar oke saatnya aku keluarkan lari ninja ku cyaattt"
-            #BUKANNYA KETEMU SAMA ORANG YANG JATUHIN MERCH KAMU MALAH DISANGKA LAGI COSPLAY DAN DI SURUH TAMPIL DI PANGGUNG DAN MENANG, DAN AKHIRNYA LU LUPA SAMA ORANG YANG TADI
-            #“YAHAHA NIAT NGEJAR MALAH JUARA, BAGUS SI TAPI KAN SEKARANG LU MALAH LUPA BUAT NGEMBALIIN BARANG TADI”
+            mcname "Aku harus kejar orang yang tadi! Oke saatnya aku keluarkan jurus lari ninja ku, cyaattt!"
+            $ quick_menu = False
+            stop music fadeout 1.0
+            scene black with dissolve
+            show text "{color=#FFF}*BUKANNYA KETEMU SAMA ORANG YANG JATUHIN MERCH KAMU MALAH DISANGKA LAGI COSPLAY DAN DI SURUH TAMPIL DI PANGGUNG DAN MENANG, DAN AKHIRNYA LU LUPA SAMA ORANG YANG TADI*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*YAHAHA, NIAT NGEJAR MALAH JUARA! BAGUS SIH, TAPI KAN SEKARANG LU MALAH LUPA BUAT NGEMBALIIN BARANG TADI.*{/color}" with Pause(2.0)
+            show text "{color=#FF0000}BAD END{/color}"
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+            jump credits
+        
         "Titipkan barang ke panitia event":
-            #*CHOSE A*
-            "[mcname] pun memilih untuk menitipkan barang tersebut ke pada panitia yang bertugas, dan akhirnya panitia pun membuat pengumuman adanya kehilangan barang.."
-
-    #(......)
-
+            "[mcname] pun memilih untuk menitipkan barang tersebut ke pada panitia yang bertugas"
+            "Ahirnya panitia pun membuat pengumuman adanya barang hilang."
     #*SKIP TO SCENE*
     #*BG KELAS PAGI*
-
-    "Paginya di kelas Jeketi University"
-    "Banyak terlihat para mahasiswa melakukan aktivitasnya"
-
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    scene kelas with dissolve
+    $ quick_menu = True
+    "Di kelas Jeketi University, terlihat banyak mahasiswa melakukan aktivitasnya."
     mcname "Haduuhh, barangnya gimana ya..."
-
-    kana "Barang ?, barang apaan, memangnya ada kamu pesen online [mcname]?"
-
-    mcname "Ah engga, jadi kemarin ada event jejepangan di mall pas aku lagi jalan-jalan."
-    mcname "Di sana gak sengaja tuh aku ketabrak sama orang"
-
-    freya "Ehhh kamunya gk papa tuh"
-
-    kana "Ah iya kamunya gk papa?"
-
-    mcname "Gk papa kok"
-    mcname "Nah, orang itu gak sengaja jatuhin barang yang dia bawa. Merch limited dari Utaite yang terkenal itu, loh"
-
-    freya "Ehhh Merch nya Utaite yang terkenal itu…."
-    "Kata Freya sambil melihat kana"
-
-    mcname "Aku ga paham sama orang-orang yang suka begituan"
-    mcname "Kayak Papah ku itu, agak aneh emang."
-
-    kana "Ahahah (ketawa karir)"
-    kana "Emang aneh ya, haha"
-
-    "Terdengar suara pintu terbuka dan Dosen pun masuk"
-    dosen "Teman teman, mari kita mulai perkuliahan hari ini."
-
-    #Skip Scene *hitam*
-
+    kana "Barang? Barang apaan? Memangnya kamu pesen online [mcname]?"
+    mcname "Ah enggak, jadi kemarin ada event jejepangan di mall pas aku lagi jalan-jalan."
+    mcname "Di sana gak sengaja tuh aku ketabrak sama orang."
+    freya "Ehhh kamunya gapapa tuh?"
+    kana "Ah iya, kamunya gapapa?"
+    mcname "Gapapa kok."
+    mcname "Nah, orang itu gak sengaja jatuhin barang yang dia bawa. Merch limited dari Utaite yang terkenal itu, loh."
+    freya "Ehhh, merchnya Utaite yang terkenal itu..."
+    "Freya berkata sambil melirik Kana."
+    mcname "Aku ga paham sama orang-orang yang suka begituan."
+    mcname "Kayak Papahku itu, agak aneh emang."
+    kana "Ahahah\n*Tertawa karir*"
+    kana "Emang aneh ya, haha."
+    stop music fadeout 1.0
+    $ quick_menu=False
+    scene black with dissolve
+    scene kelas with dissolve
+    $ quick_menu=True
+    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    "Tidak lama kemudian, dosen pun masuk ke dalam kelas dan waktu mata kuliah pun dimulai."
+    show dosen at dosen_center with dissolve
+    dosen "Teman-teman, mari kita mulai perkuliahan hari ini."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    scene kelas with dissolve
+    $ quick_menu = True
     mcname "Wahh akhirnya selesai juga."
-    
-    kana "Kalo gini enaknya ke kantin sih"
-    
-    mcname "Aduh tapi jam segini kantin pasti penuh."
-    
-    freya "Hmmm. Gimana kalo bawa makanan dari kantin ke rooftop? Denger denger tempatnya enak."
-    
+    kana "Kalo gini enaknya ke kantin sih."
+    mcname "Aduh, tapi jam segini kantin pasti penuh."
+    freya "Hmmm. Gimana kalo bawa makanan dari kantin ke rooftop? Denger-denger tempatnya enak."
     kana "Ehhh, boleh tuh. Tapi jangan makanan berat, nanti ribet bawanya."
-    
-    mcname "Yaudah, aku ke kantin. Nanti aku beliin makanan buat kalian ya."
-    #
+    mcname "Yaudah aku ke kantin ya. Sekalian aku beliin makanan buat kalian."
     kana "Okee. Aku sama Freya nunggu di rooftop, ya."
-    #
     #*Transisi Hitam*
     #BG Hallway
     #BGM Hallway
-    #
-    #Narator
-    "Setelah [mcname] membeli makanan di kantin, dia menaiki tangga ke rooftop."
-    #
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
+    scene lorong with dissolve
+    $ quick_menu = True
+    "Setelah [mcname] membeli makanan di kantin, [mcname] berjalan menuju tangga ke rooftop."
     #BG Rooftop
     #BGM Rooftop
-    #
-    #Narator
-    "Sesampainya di rooftop, [mcname] hanya melihat Kana sendirian memandang langit."
-    
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+    scene rooftop with dissolve
+    $ quick_menu = True
+    "Sesampainya di rooftop, [mcname] hanya melihat Kana yang memandang langit sendirian."
     mcname "Loh, sendirian Kana? Freya mana?"
-    
     kana "Freya tadi mendadak ada urusan. Jadinya dia pulang duluan."
-    
     mcname "Heeee"
-    
     kana "Aku udah chat, tapi keknya gak kebaca sama kamu ya."
-    
-    "[mcname] kemudian membuka HP nya"
-    "Disana terlihat banyak notif chat dari Kana dan Freya"
-    #.
-    mcname "Ah iya, sorry banget. tadi di kantin rame banget jadi gk kebaca."
-    #.
+    "[mcname] kemudian membuka HPnya."
+    "Di sana terlihat banyak notif chat dari Kana dan Freya."
+    mcname "Ah iya, sorry banget. Tadi di kantin rame banget, jadi gak kebaca."
     kana "Yaudah. Yuk kita duduk makan dulu."
-    #.
+    mcname "Oke."
+    scene black with dissolve
+    scene rooftop with dissolve
     mcname "Kamu mau yang cokelat, strawberry, atau keju?"
-    #.
-    kana "Kayaknya aku yang strawberry aja deh"
-    #.
-    "Setelah memberikan kana roti yang dia pilih,akhirnya [mcname] dan Kana duduk di bangku yang ada di rooftop"
-    #..
-    #Narator
+    kana "Kayaknya aku yang strawberry aja deh."
+    "Setelah memberikan Kana roti yang dia pilih, akhirnya [mcname] dan Kana duduk di bangku yang ada di rooftop."
     "Di sana, Kana dan [mcname] menikmati roti sambil memandangi langit biru. Mereka tidak mengeluarkan sepatah kata pun. Suasana hening menjadi terasa sedikit canggung."
-    #
     mcname "{i}Duh bingung mau ngomong apaan. Biasanya Freya yang mulai obrolan.{/i}"
-    #.
-    "Ingin memecahkan suasana, akhirnya [mcname] mencoba memulai percakapan"
+    "Ingin mencairkan suasana, [mcname] mencoba memulai percakapan."
     mcname "A-"
-    #
     kana "Kamu kabarnya gimana?"
-    #
-    #Sebelum [mcname] sempat berbicara, kata tiba-tiba memberikan pertanyaan
-    mcname "Hah?"
-    #
+    "Sebelum [mcname] sempat berbicara, Kana tiba-tiba memberikan pertanyaan."
+    mcname "E-eeh?"
     kana "Kamu udah makan, belum?"
-    #
     mcname "?????"
-    #“Kan kita lagi makan, Kana…”
-    #
+    mcname "Kan kita lagi makan, Kana..."
     kana "Ah i-iya yah. Hahaha ngomong apa sih aku."
-    #.
-    #Setelah kana mengatakan hal tersebut, suasanya menjadi hening lagi
-    #.
-    #“biasanya ada Freya ya yang ngomong mulu.”
-    #
+    "Setelah Kana mengatakan hal tersebut, suasananya kembali menjadi hening."
+    kana "Biasanya ada Freya ya, yang ngomong mulu."
     mcname "Haha, iya yah."
-    #
-    #
-    kana "Haha"
-    #
-    mcname "Haha"
-    #
-    kana "Fufu"
-    #
+    kana "Haha."
+    mcname "Haha."
+    kana "Fufu."
     mcname "Dilihat-lihat kamu emang deket banget ya sama Freya."
-    #
     kana "Iya. Dari kecil, emang Freya selalu bareng aku."
-    #
     mcname "....."
-    #.
-    #*BG Langit*
-    #
-    #
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+    #HARUSNYA LAGU SAD KANA
+    scene awan with dissolve
+    $ quick_menu = True
     kana "Dulu…"
-    #
-    #Narrator
-    "Kana menatap keatas langit seakan mengingat masa lalu."
-    
-    #*CG Chibi Kana Freya*
-    
-    #Kana
-    #Kana “Dulu badanku lemah dan sering sakit, jadinya jarang keluar rumah.”
-    #Kana “Waktu yang lain pada main di luar, aku cuma bisa liat mereka dari jendela kamarku.”
-    #Kana “Untungnya waktu itu Freya ada dan mau main bareng aku.”
-    #Kana “Padahal bisa aja dia main sama anak-anak yang lain, tapi dia malah nemenin aku.”
-    #Kana “Jadinya sampe sekarang bareng terus deh aku sama Freya, haha.“
-    #
-    #Narator
-    "Saat mengatakan hal tersebut, Kanaia tersenyum mengingat teman berharganya"
-    
+    "Kana menatap ke atas langit seakan mengingat masa lalu."
+    "CG Chibi Kana Freya"
+    kana "Dulu badanku lemah dan sering sakit, jadinya jarang keluar rumah."
+    kana "Waktu yang lain pada main di luar, aku cuma bisa liat mereka dari jendela kamarku."
+    kana "Untungnya waktu itu Freya ada dan mau main bareng aku."
+    kana "Padahal bisa aja dia main sama anak-anak yang lain, tapi dia malah nemenin aku."
+    kana "Jadinya sampe sekarang bareng terus deh aku sama Freya, haha."
+    "Saat mengatakan hal tersebut, Kanaia tersenyum mengingat teman berharganya."
     mcname "Heee gitu ya ternyata…"
-    
-    "Mendengar hal tersebut, [mcname] merasa sedikit iri kepada Freya yang bisa mendapatkan senyuman tersebut walaupun tidak secara langsung"
-    
-    "Dari arah berlawanan terdengar suara pintu terbuka. Kana dan [mcname] pun melihat ke arah pintu tersebut"
-    
+    "Mendengar hal tersebut, [mcname] merasa sedikit iri kepada Freya yang bisa membuat Kana tersenyum seperti itu."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    play audio "audio/open_door.mp3"
+    scene black with dissolve
+    $ quick_menu = True
+    "Tiba-tiba dari arah berlawanan terdengar suara pintu terbuka."
+    $ quick_menu = False
+    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+    scene rooftop with dissolve
+    $ quick_menu = True
     freya "Halooooo, sorry. Lama nungguin, ya?"
-    
-    "Mereka pun menghabiskan waktu dengan berbincang dan memakan makan siangnya…"
-    
-    #*Loading Screen*
-    
-    #Narator
-    "Besok paginya"
-    
-    #BG Kelas
-    #BGM Kelas
-    
+    kana "Ah! Freyaa."
+    mcname "Nggak kok."
+    kana "Ayok sini makan."
+    freya "Okeee~"
+    "Mereka pun menghabiskan waktu dengan berbincang dan makan bersama..."
+    $ quick_menu = False
+    scene black with dissolve
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    scene kelas with dissolve
+    $ quick_menu = True
     kana "[mcname]! Freya! Eh liat ini! Lucu banget gak sih? Kemarin aku liat di internet."
-    #
     mcname "Hooo aku pernah liat ada toko yang jual boneka ini nih, waktu ke mall kemarin."
-    #
     kana "Heee serius? Habis ini kalian free, kan? Yuk ke sana bareng!"
-    #
     freya "Ayoook. Aku juga free, sih."
-    #
-    kana "[mcname] nanti ikut yak, soalnya kamu kan yang tau tempatnya"
-    #
-    mcname "Bolehh"
-    #
+    kana "[mcname] nanti ikut yak, soalnya kamu kan yang tau tempatnya."
+    mcname "Bolehh."
     #Narator
     "Dosen pun datang memasuki ruangan kelas."
     
@@ -1086,7 +1067,7 @@ label chapter2kanastart:
     
     mcname "Eh maaf tante, saya kira kakaknya Kana soalnya keliatan masih muda"
     
-    #Mamah nya Kana "Fufufu bisa aja kamu"
+    #Mamahnya Kana "Fufufu bisa aja kamu"
     
     #*SKIP SCENE*
     #BG LANGIT ATAU DEPAN PINTU KAMAR KANA
