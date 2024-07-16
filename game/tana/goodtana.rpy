@@ -1343,12 +1343,12 @@ label goodtanaafterquiz:
     tana "Btw, nama lu siapa?"
     hide tana_side at left with dissolve
     show kana_side_scared at left with dissolve
+    $ kana_name = "Kana"
     kana "K-Kanaia..."
     hide kana_side_scared at left with dissolve
     show tana_side at left with dissolve
     tana "Oalah, nama lu Kanaia?"
     hide tana_side at left with dissolve
-    $ kana_name = "Kana"
     show kana_side_scared at left with dissolve
     kana "I-iya."
     hide kana_side_scared at left with dissolve
@@ -1467,7 +1467,14 @@ label goodtanaafterquiz:
     show tana_side at left with dissolve
     tana "Eh, bocil. Emak lu ke mana? Maen masuk ke tempat orang aja."
     hide tana_side at left with dissolve
+    hide tana at tana_near with dissolve
+    show pia at pia_near with dissolve
+    $ pia_name = "Pia"
+    show pia_side at left with dissolve
     pia "Bocal bocil, enak aje lu. Kenalin gue Pia Meameo, eh, Meraleo. Gua mau join idol group. Daftarnya di sini, kan?"
+    hide pia_side at left with dissolve
+    hide pia at pia_near with dissolve
+    show tana at tana_near with dissolve
     "Tana dan [mcname] saling menatap."
     mcname "..."
     show tana_side at left with dissolve
