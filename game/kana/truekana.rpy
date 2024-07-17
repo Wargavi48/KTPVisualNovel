@@ -117,7 +117,7 @@ label truekanachat:
   #*SKIP TO SCENE*
   #*BG DEPAN KAMPUS (INTERIOR JEJEPANGAN)
 
-  kana " MC…ha…ha..haloo…maaf yaa… nunggu lama.."
+  kana " [mcname]…ha…ha..haloo…maaf yaa… nunggu lama.."
   "Suara Kana terpotong-potong yang menandakan bahwa Kana sudah lari…"
 
   mcname "Hahah santai aja Nay, tarik nafas dulu bentar gitu. Keliatan banget kalau kamu baru lari tuh."
@@ -130,7 +130,7 @@ label truekanachat:
   #*SKIP TO CG*
   #*KANA AMBIL MINUM/KANA MINUM DARI BOTOL*
 
-  kana "Makasih ya MC. Sekarang udah aman kok, jadi kamu siap gak?"
+  kana "Makasih ya [mcname]. Sekarang udah aman kok, jadi kamu siap gak?"
 
   #*BACK TO BG EVENT*
 
@@ -178,47 +178,49 @@ label truekanachat:
   #*BG PANGGUNG MINI*
   #*SPRITE TONO/PIA NYANYI FOR A SEC, AFTER THAT BACK TO BG EVENT*
 
-  #[mcname] pun melihat panggung dan mengerti kenapa Kana terdiam. Di situ, terlihat seorang perempuan yang sedang menyanyi dengan suara yang indah. Kurang lebih 3 menit [mcname] dan Kana terdiam mendengarkan perempuan itu bernyanyi. Saat selesai, Kana dan [mcname] pun bertepuk tangan dengan keras.
+  "[mcname] pun melihat panggung dan mengerti kenapa Kana terdiam. Di situ, terlihat seorang perempuan yang sedang menyanyi dengan suara yang indah. Kurang lebih 3 menit [mcname] dan Kana terdiam mendengarkan perempuan itu bernyanyi. Saat selesai, Kana dan [mcname] pun bertepuk tangan dengan keras."
   #SFX Applause
 
-  mcname " Gilaaaa, kereen bangeett sumpah! Iya ga, Kana?"
+  mcname "Gilaaaa, kereen bangeett sumpah! Iya ga, Kana?"
 
   kana "Iyaaa aku sampe terdiem loh, kamu juga dengerin tadi?"
 
-  mcname "Iya lah, kamu tiba-tiba diem aja. Gimana aku ga ikutan dengerin? Keren banget, kapan ya aku bisa nyanyi kaya gitu… Btw kamu bisa nyanyi?"
+  mcname "Iya lah, kamu tiba-tiba diem aja. Gimana aku ga ikutan dengerin? Keren banget, kapan ya aku bisa nyanyi kaya gitu… Btw, kamu bisa nyanyi?"
 
-  kana "Eee-enggak kok, aku gak bisa nyanyi… Ehhh liat deh, di situ ada cosplay yang bagus mending kita ke sana." 
+  kana "Eee-enggak kok, aku gak bisa nyanyi… Ehhh liat deh, di situ ada cosplay yang bagus mending kita ke sana."
 
-  #Kana tiba-tiba menghindari dari jawaban [mcname] dan berlari ke arah seorang cosplayer.
+  "Kana tiba-tiba menghindari dari jawaban [mcname] dan berlari ke arah seorang cosplayer."
 
   kana "Eh Kaa, permisi~"
 
   "Cosplayer" "Iya Ka kenapa?"
 
-  mcname "Kenapa Kana… Ehh kamu cosplay jadi Kamen Driver Den-A  ya?"
+  mcname "Kenapa Kana… Ehh kamu cosplay jadi Kamen Driver Den-A ya?"
 
   "Orang" "Wahhh iya ka, kebetulan aku juga suka."
 
-  kana "MC, kamu suka?"
+  kana "[mcname], kamu suka?"
 
   mcname "SUKA!!??? Wahhhh aku ngikutin banget semua series kamen driver loh Kana."
 
-  "Orang" "Wahh, kukira ga terlalu banyak yang kenal cosplay ku. Ternyata ada juga ya yang kenal, makasih ya Kak. Eh Kak, mau ngobrol lagi ga? Keknya seru kita ngobrol bareng."
+  "Orang" "Wahh, kukira ga terlalu banyak yang kenal cosplayku. Ternyata ada juga ya yang kenal, makasih ya Kak. Eh Kak, mau ngobrol lagi ga? Keknya seru kita ngobrol bareng."
 
   #*CHOSE*
-  #Menghabiskan waktu sama orang
-  #Menolak dan melanjutkan kegiatan dengan kana
+  menu:
+    "Menghabiskan waktu sama orang itu.":
+      #*CHOSE A*
+      "[mcname] tetap mengobrol dengan cosplayer tersebut, dan mengabaikan keberadaan Kana untuk beberapa saat, hingga saat [mcname] sadar… Kana sudah menghilang dan HPnya tidak dapat dihubungi lagi…"
+      #BRO BRO LAGI JALAN BARENG BERDUAAN KO MALAH DITINGGAL NGOBROL SAMA ORANG LAIN SI ADUHHH
+    "Menolak dan melanjutkan kegiatan dengan Kana.":
+      #*CHOSE B*
+      jump truekanajapanfest
+  
+label truekanajapanfest:
+  mcname "Eh maaf ya nanti lagi, aku lagi sama temen soalnya. Kalau boleh minta social medianya kak, biar kita bisa ngobrol."
 
-  #*CHOSE A*
-  #[mcname] tetap mengobrol dengan cosplayer tersebut, dan mengabaikan keberadaan kana untuk beberapa saat, hingga saat [mcname] sadar… Kana sudah menghilang dan HP nya tidak dapat dihubungi lagi…
-  #BRO BRO LAGI JALAN BARENG BERDUAAN KO MALAH DITINGGAL NGOBROL SAMA ORANG LAIN SI ADUHHH
+  "Orang" "Ooh iya kak, ini ka bisa di add @namadonatur_angka random, makasih banyak yaa~"
 
-  #*CHOSE B*
-  mcname "Eh maaf ya nanti lagi, aku lagi sama temen soalnya. Kalau boleh minta social media nya kak, biar kita bisa ngobrol."
-
-  "Orang" "Ooh iya kak, ini ka bisa di add @namadonatur_angka random, makasih banyak yaa"
-
-  mcname "Sama sama ka…"
+  mcname "Sama-sama ka…"
   mcname "Eh Kana maaf lama ya. Tadi hampir aja keasikan, untung aku inget ada kamu yang lagi nungguin aku haha."
 
   kana "E-enggak kok, ga lama… Seru ya..."
@@ -227,11 +229,11 @@ label truekanachat:
 
   kana "E-enggak.."
 
-  mcname "Ya udah sebagai permintaan maaf aku ajak main di stand di sana deh gmn?"
+  mcname "Ya udah sebagai permintaan maaf aku ajak main di stand di sana deh gimana?"
 
   kana " BEENER!?? Eh maksud nya… beneran nih?"
 
-  mcname "Iya, bener Kok. Ya udah, ayo."
+  mcname "Iya, bener kok. Ya udah, ayo."
 
   #*SKIP TO SCENE*
   #*BG MINI GAMES*
@@ -244,45 +246,44 @@ label truekanachat:
 
   mcname "Ini aku lagi fokus, Kana."
 
-
-  #[mcname] pun mendapatkan skor tinggi dan mendapatkan hadiah. 
+  "[mcname] pun mendapatkan skor tinggi dan mendapatkan hadiah." 
 
   mcname "Liat, kan? Aku bisaaa, siapa dulu?"
-  #[mcname] mendekatkan tangannya ke telinganya dan seolah olah menunggu Kana menjawab.
+  "[mcname] mendekatkan tangannya ke telinganya dan seolah olah menunggu Kana menjawab."
 
-  #“Siapa dulu….hmmmm?”
+  mcname "Siapa dulu….hmmmm?"
 
   kana "Iya iya, kamu jago deh."
 
-  mcname "Nahh gtu dong, hahah."
+  mcname "Nahh gitu dong, hahah."
 
-  #Setelah mendapatkan hadiah dari menyelesaikan mini game di dalam booth, [mcname] sedikit bercanda dengan Kana karena telah memainkan mini game tersebut
+  "Setelah mendapatkan hadiah dari menyelesaikan mini game di dalam booth, [mcname] sedikit bercanda dengan Kana karena telah memainkan mini game tersebut."
 
   mcname "Jadi Yang Muliaaa, kita mau ke mana lagi? Hambamu siap untuk menemanimu kemana pun dan sampai kapan pun, ahaha."
 
   kana " Apaan sihh yang mulia yang mulia, mending mulai sekarang kamu panggil aku “Nay” deh."
 
-  mcname " Okee dehh, Nay."
-  #“Eh Nay, kamu mau pesen apa? Aku traktir deh, kan udah diguide sana sini.“
+  mcname "Okee dehh, Nay."
+  mcname "Eh Nay, kamu mau pesen apa? Aku traktir deh, kan udah diguide sana-sini."
 
   kana "Hmmmm, apa ya? Kayaknya takoyaki enak deh."
 
   mcname "Bolehhh, tunggu bentar yaa."
 
-  kana "Okeeee hati hati, ya."
+  kana "Okeeee hati-hati, ya."
 
-  #[mcname] pun pergi meninggalkan Kana sejenak untuk membeli takoyaki. Setelah beberapa saat, [mcname] kembali dengan membawa takoyaki.
+  "[mcname] pun pergi meninggalkan Kana sejenak untuk membeli takoyaki. Setelah beberapa saat, [mcname] kembali dengan membawa takoyaki."
 
   mcname "Eh Nay, maaf ini cuma sisa satu porsi lagi. Ini buat kamu aja deh, aku gapapa."
 
   kana "Lah kok gitu sih, kamu juga pasti laper kan."
 
   mcname "Enggak koook."
-  #Tanpa sadar terdengar suara perut [mcname] yang berbunyi cukup keras sehingga Kana dapat mendengarnya.
+  "Tanpa sadar terdengar suara perut [mcname] yang berbunyi cukup keras sehingga Kana dapat mendengarnya."
 
   kana "Hahaha ga bisa bohong tuh perut kalau masalah makanan mah."
 
-  #Muka [mcname] pun memerah, merasa malu dengan perutnya. 
+  "Muka [mcname] pun memerah, merasa malu dengan perutnya." 
 
   mcname "Aduuhhhhh…"
 
@@ -294,38 +295,38 @@ label truekanachat:
 
   mcname "O-oke deh kalau emang gitu. Eh tapi ini cuma ada satu doang garpu nya, bentar ya aku coba minta lagi ke penjualnya."
 
-  "Sesaat [mcname] akan pergi, Kana tiba-tiba menangkap tangan MC. Dengan malu-malu Kana berkata."
-  kana "MC, udah ga usah."
-  #“Keburu takoyaki nya dingin, nanti ga enak. Kita makan bareng aja.”
-  #“Sini, kita gantian aja.“
+  "Sesaat [mcname] akan pergi, Kana tiba-tiba menangkap tangan [mcname]. Dengan malu-malu Kana berkata."
+  kana "[mcname], udah ga usah."
+  kana "Keburu takoyaki nya dingin, nanti ga enak. Kita makan bareng aja."
+  kana "Sini, kita gantian aja."
   mcname "Nay? Bukannya itu malah…"
 
   kana "Udah cepetan."
 
   mcname "I-iya iya. Oke deh."
 
-  #Kana pun memakan takoyakinya, lalu Kana pun menjulurkan tangannya yang memegang garpu serta takoyaki ke arah MC.
+  "Kana pun memakan takoyakinya, lalu Kana pun menjulurkan tangannya yang memegang garpu serta takoyaki ke arah [mcname]."
 
   kana "Nih."
 
-  #Seakan tidak ingin sadar akan peristiwa yang sedang terjadi, [mcname] tetap memakan takoyaki yang diberikan Kana. Takoyakinya terasa sedikit manis,  padahal takoyaki yang ia pesan harusnya pedas asin.
+  "Seakan tidak ingin sadar akan peristiwa yang sedang terjadi, [mcname] tetap memakan takoyaki yang diberikan Kana. Takoyakinya terasa sedikit manis,  padahal takoyaki yang ia pesan harusnya pedas asin."
   mcname "Eh udah abis lagi aja, ga kerasa ya…"
-  #“Eh Nay, kamu kenapa?”
+  mcname "Eh Nay, kamu kenapa?"
 
-  #Muka Kana tiba-tiba memerah, mungkin Kana baru sadar akan apa yang terjadi saat itu. Tapi nasi telah menjadi bubur, hal ini tidak dapat ubah dan telah terjadi.
+  "Muka Kana tiba-tiba memerah, mungkin Kana baru sadar akan apa yang terjadi saat itu. Tapi nasi telah menjadi bubur, hal ini tidak dapat ubah dan telah terjadi."
 
   kana "E-eh iya udah abis aja."
-  mcname "Okeeee, selesai jadi kita ke mana, Nay?"
-  #Sesaat [mcname] akan pergi, Kana tiba-tiba mengambil tisu, mengulurkan tangannya, dan mengelap saus yang ada di pipi MC.
-  #Terkejut dengan tindakan Kana, [mcname] hanya bisa terdiam saja, dan beberapa saat kemudian Kana pun sadar akan tindakannya 
+  mcname "Okeeee selesai, jadi kita ke mana, Nay?"
+  "Sesaat [mcname] akan pergi, Kana tiba-tiba mengambil tisu, mengulurkan tangannya, dan mengelap saus yang ada di pipi [mcname]."
+  "Terkejut dengan tindakan Kana, [mcname] hanya bisa terdiam saja, dan beberapa saat kemudian Kana pun sadar akan tindakannya." 
 
-  kana "Eh ini, a-aku kebiasaan ngurus sepupuku yang masih kecil. Eh ah, ini kita udah kan makannya? Yu kita ke sana aja."
-  #Kana pun langsung pergi dari bangku tersebut, meninggalkan [mcname] yang masih merasa malu di situ.
+  kana "Eh ini, a-aku kebiasaan ngurus sepupuku yang masih kecil. Eh ah, ini kita udah kan makannya? Yuk kita ke sana aja."
+  "Kana pun langsung pergi dari bangku tersebut, meninggalkan [mcname] yang masih merasa malu di situ."
 
   mcname "Ehhh?? Tungguin Nay."
-  #Kana dan [mcname] pun pergi kembali untuk melihat lihat booth yang ada di event tersebut, sampai pada akhirnya event utama pada hari itu pun dimulai.
+  "Kana dan [mcname] pun pergi kembali untuk melihat-lihat booth yang ada di event tersebut, sampai pada akhirnya event utama pada hari itu pun dimulai."
 
-  mcname "Eh nay, ayoo ini event utama nya udah mau dimulai."
+  mcname "Eh Nay, ayoo ini event utamanya udah mau dimulai."
 
   kana "Iya bentarr ini lagi bayar dulu."
 
@@ -361,7 +362,7 @@ label truekanachat:
 
   kana "Iya makasih ya buat hari ini, kamu juga hati-hati."
 
-  #[mcname] dan Kana pun pergi, [mcname] masih merasa senang dan bahagia karena telah menghabiskan waktu bersama Kana. Apakah ini date? Mungkin iya, atau mungkin hanya [mcname] yang merasa demikian. Meskipun begitu, rasa bahagia dan senang tidak dapat dihilangkan dari hati MC.
+  #[mcname] dan Kana pun pergi, [mcname] masih merasa senang dan bahagia karena telah menghabiskan waktu bersama Kana. Apakah ini date? Mungkin iya, atau mungkin hanya [mcname] yang merasa demikian. Meskipun begitu, rasa bahagia dan senang tidak dapat dihilangkan dari hati [mcname].
 
   #*SKIP TO SCENE*
   #*BG KOS MALAM*
@@ -452,7 +453,7 @@ label truekanachat:
 
   mcname "Aduuhhh aku ngasih apa ya buat Kana? Kalau diinget-inget lagi, Kana tuh suka sama jejepangan. Tapi masa aku ngasih Naya merch anime? Aku ga pernah liat dia pake pakaian anime-anime gitu sihh. Kalau official CD anime atau band? Tapi aku ga tau dia suka band apaan, aaaa bingung banget mau ngasih apa."
 
-  #Seakan sedang terjadi perang di dalam pikiran MC, tanpa terasa waktu berubah menjadi malam. [mcname] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok agar Kana bisa terus mengingat dirinya. Tiba-tiba HP [mcname] berbunyi yang menunjukkan bahwa baterai HPnya sudah sedikit dan perlu di-charge, akan tetapi ternyata ada notif lain dari Kana dan Freya yang mencoba menghubunginya beberapa kali.
+  #Seakan sedang terjadi perang di dalam pikiran [mcname], tanpa terasa waktu berubah menjadi malam. [mcname] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok agar Kana bisa terus mengingat dirinya. Tiba-tiba HP [mcname] berbunyi yang menunjukkan bahwa baterai HPnya sudah sedikit dan perlu di-charge, akan tetapi ternyata ada notif lain dari Kana dan Freya yang mencoba menghubunginya beberapa kali.
 
   #*SKIP TO SCENE*
   #*BG KOS MALAM*
@@ -460,7 +461,7 @@ label truekanachat:
 
   mcname "Eh maaf, tadi aku ketiduran hehe."
 
-  #Beberapa saat kemudian Kana dan Freya  pun menelepon MC.
+  #Beberapa saat kemudian Kana dan Freya  pun menelepon [mcname].
   #*BG HP LAGI TELEPON*
 
   freya "Nahhh kan kalau gini enak, ga usah ngehubungin satu-satu."
@@ -518,7 +519,7 @@ label truekanachat:
   #“Eh?”
   #“FREYAAA!! Kamu ke mana??“
   #“HA!?? Aduhhh… ya udah deh.“
-  #“Umm MC, ini Freya katanya ada urusan di kampus, jadinya kita berdua. Kita berduaan nih hehe, kaya waktu itu”
+  #“Umm [mcname], ini Freya katanya ada urusan di kampus, jadinya kita berdua. Kita berduaan nih hehe, kaya waktu itu”
 
   mcname "Ahahaha, iya nih inget aja kamu. Ya udah yuk jalan."
 
@@ -532,7 +533,7 @@ label truekanachat:
 
   mcname "Ohhh gitu ya, kamu lagi suka apa belakangan ini?"
 
-  kana "Heee? Kamu kenapa MC, kok tiba-tiba tanya kayak giniian?"
+  kana "Heee? Kamu kenapa [mcname], kok tiba-tiba tanya kayak giniian?"
 
   mcname "Gak apa apa, daripada -1 topik hahaha."
 
@@ -595,7 +596,7 @@ label truekanachat:
   #*SKIP TO SCENE*
   #*BG RUMAH KANA*
 
-  #[mcname] pun datang ke rumah Kana pada waktu yang telah ditentukan sebelumnya dengan Freya. Tetapi saat [mcname] menghubungi Freya, ia tidak dapat dihubungi. Rasa cemas,gelisah, serta was-was tidak dapat dihapus dari pikiran MC. Mungkin ini pertama kalinya [mcname] berinisiatif merayakan ulang tahun temannya seperti ini, sehingga ingin memberikan momen bahagia yang selalu dapat diingat oleh Kana.
+  #[mcname] pun datang ke rumah Kana pada waktu yang telah ditentukan sebelumnya dengan Freya. Tetapi saat [mcname] menghubungi Freya, ia tidak dapat dihubungi. Rasa cemas,gelisah, serta was-was tidak dapat dihapus dari pikiran [mcname]. Mungkin ini pertama kalinya [mcname] berinisiatif merayakan ulang tahun temannya seperti ini, sehingga ingin memberikan momen bahagia yang selalu dapat diingat oleh Kana.
 
   mcname "Aduhhh masuk ga ya, tapi belum ada Si Freya. Aduhhh tapi kalau di luar terus, nanti takut dicurigai orang-orang. Mending gimana ya…"
 
@@ -647,7 +648,7 @@ label truekanachat:
 
   freya "Halo Naya, udah siap kan?"
 
-  #Kana & MC
+  #Kana & [mcname]
   #“Hah, siap?”
 
   freya "Lahh ini nih, padahal aku dah semangat gini. Dah bawa banyak game-game buat temenin kita sampe malem nih."
@@ -753,9 +754,9 @@ label truekanachat:
   kana "Eh i-iya makasih banyak ya. Tapi kok kamu tau ukuran sepatu aku, padahal aku ga pernah bilang ke kamu maupun Freya. Kamu tau dari mana?"
 
   mcname "....."
-  kana "MC…?"
+  kana "[mcname]…?"
 
-  #Kana pun merasa aneh dengan MC, semua kedekatan mereka langsung sirna di hati Kana. Kana langsung kabur sambil memanggil Freya untuk meminta tolong.
+  #Kana pun merasa aneh dengan [mcname], semua kedekatan mereka langsung sirna di hati Kana. Kana langsung kabur sambil memanggil Freya untuk meminta tolong.
 
   #“ADUHHH BROOO, KOK LU TAU UKURAN SEPATU KANA SIH?? NGERI KALI BROO, LU STALKER YA?”
 
@@ -802,7 +803,7 @@ label truekanachat:
 
   mcname "I-iya sih tapi…"
 
-  #Kana pun meminta maaf dan menolak hadiah dari MC. Dia terlalu takut bahkan untuk menyimpan CD Blu-ray itu.
+  #Kana pun meminta maaf dan menolak hadiah dari [mcname]. Dia terlalu takut bahkan untuk menyimpan CD Blu-ray itu.
   #“ADUH BROOO LAIN KALI KALO MAU NGASIH HADIAH TUH HARUS MIKIRIN JUGA APA YANG DIA SUKA, JANGAN LU DOANG YANG SUKA.“
 
   #*CHOSE A*
@@ -856,7 +857,7 @@ label truekanachat:
   mcname "........."
   kana "........"
   #*Blush*
-  #“MC… Sebenarnya aku suk-”
+  #“[mcname]… Sebenarnya aku suk-”
   #*SFX Pintu Didobrak*
 
   #Narator
@@ -872,10 +873,10 @@ label truekanachat:
   #*Blush*
   mcname "Hahahahaha!"
 
-  kana "K-kamu jangan ketawa MC!!!"
+  kana "K-kamu jangan ketawa [mcname]!!!"
   #*Blush*
 
-  #[mcname] tertawa dan Kana tersipu malu sambil memandang ke arah MC.
+  #[mcname] tertawa dan Kana tersipu malu sambil memandang ke arah [mcname].
   #Malam itu…
   #Menjadi malam yang tidak akan terlupakan bagi [mcname] dan Kana.
   #*Credits*
