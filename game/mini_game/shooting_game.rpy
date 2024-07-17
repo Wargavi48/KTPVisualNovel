@@ -11,7 +11,6 @@ init python:
 
         t.xpos = cork_gun_pos[0]
         cork_gun_pos = (cork_gun_pos[0], cork_gun_opos[1] + int((mousepos[1] - config.screen_height / 2) / 7))
-
         t.ypos = cork_gun_pos[1]
 
         return 0
@@ -22,8 +21,8 @@ init python:
         target_row_2_y = 500
         target_row_3_y = 775
         target_spacing = 100
-        target_down_time = (0.0, 2.0)
-        target_up_time = 2.0
+        target_down_time = (0.0, 3.0)
+        target_up_time = 3.0
 
         current_column = 0
         for i in range(12):
@@ -377,7 +376,7 @@ default target_sprites = []
 
 # Other variables
 default score = 0
-default inital_countdown_time = 20.0
+default inital_countdown_time = 40.0
 default countdown_time = inital_countdown_time
 
 label shooting_game_start:

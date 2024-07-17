@@ -297,6 +297,7 @@ label goodpiaafterquiz:
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
     scene ruang ukm with dissolve
+    $ quick_menu = True
     show kana at kana_near_left_2 with dissolve
     show tana at tana_right with dissolve
     show kana_side at left with dissolve

@@ -333,9 +333,9 @@ label chapter2tanaGOOD:
     scene black with dissolve
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     scene kelas with dissolve
+    $ quick_menu = True
     show dosen at dosen_center with dissolve
     show dosen_side at left with dissolve
-    $ quick_menu = True
     dosen "Baik, sekian untuk hari ini. Terima kasih."
     dosen "[mcname]! Jangan lupa belajar!"
     hide dosen_side at left with dissolve
