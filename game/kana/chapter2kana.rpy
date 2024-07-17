@@ -1220,9 +1220,9 @@ label chapter2kanaA:
     #(......)
     "Tidak ada respon dari Kana."
     mc_nvl "{image=mengsedih.png}"
+    $ quick_menu=True
     mcname "Hmmm gak dibales."
     #*Balik BG Kamar*
-    $ quick_menu=True
     mcname "Semoga besok pagi Kana masuk ke kampus deh."
     "Setelah itu [mcname] menutup matanya dan langsung tidur"
     stop music fadeout 1.0
@@ -1552,7 +1552,9 @@ label chapter2kanaB:
     mcname "Kana, akhir-akhir ini aku ngerasa kamu menutup diri."
     mcname "Aku ga tau kalo aku ada salah apa atau gimana, tapi..."
     mcname "Maaf, ya Kana. Apa pun itu, aku gak bermaksud."
-    show kana_side at left with dissolve
+    hide kana at char_center with dissolve
+    show kana_scared at char_center with dissolve
+    show kana_side_scared at left with dissolve
     kana "Eh nggak kok. B-bukan salahmu."
     kana ".........."
     kana "J-jangan benci aku ya."
@@ -1560,10 +1562,12 @@ label chapter2kanaB:
     kana "S-sebenarnya aku takut..."
     kana "Aku takut kalau kamu bakal ngejauhin aku, gara-gara aku wibu."
     kana "Pasti kamu ngerasa aneh kan, dengan sifat ku ini?"
-    hide kana_side at left with dissolve
+    hide kana_side_scared at left with dissolve
     "Kana mengatakan hal tersebut sambil gemetar, matanya terlihat berkaca-kaca menahan air mata."
     "[mcname] yang melihat hal tersebut hanya bisa terdiam."
     mcname "Aku tidak merasa seperti itu kok, Kana."
+    hide kana_scared at char_center with dissolve
+    show kana at char_center with dissolve
     show kana_side at left with dissolve
     kana "Eh??"
     hide kana_side at left with dissolve
@@ -1847,18 +1851,21 @@ label chapter2kanaB:
     $ quick_menu=True
     dosen "Selamat pagi anak-anak, mata kuliah hari ini akan dimulai dengan--"
     hide dosen_side at left with dissolve
+    hide dosen at dosen_center with dissolve
     "Mata kuliah telah dimulai dan kondisi kelas pun tiba-tiba menjadi hening. Di dalam keheningan tersebut ada yang tertidur pulas, ada yang bermain HP, dan ada yang mencatat."
     "[mcname] pun dengan serius mengikuti apa yang disampaikan oleh Dosen"
     "Saat [mcname] memperhatikan pelajaran, di ujung matanya terlihat Kana yang berkali kali menatapnya, seperti ingin mengatakan sesuatu."
     "Penasaran akan apa yang dilakukan gadis tersebut, akhirnya [mcname] menanyakannya secara langsung."
-    hide dosen at dosen_center with dissolve
     show kana at char_center with dissolve
     mcname "Ada apa, Kana?"
     show kana_side at left with dissolve
     kana "G-gapapa kok."
     hide kana_side at left with dissolve
     mcname "......."
+    hide kana at char_center with dissolve
+    show kana_shy at char_center with dissolve
     "Wajah Kana sedikit memerah sambil mengalihkan pandangan ke Dosen. [mcname] bingung melihat kelakuan Kana, namun akhirnya kembali fokus ke pelajaran."
+    hide kana_shy at char_center with dissolve
     $ quick_menu=False
     scene black with dissolve
     scene kelas with dissolve
@@ -2180,6 +2187,7 @@ label AjakKanaMainGame:
     kana "Mamahh, aku pulaaang~"
     kana "Ada [mcname] juga nih."
     hide kana_side at left with dissolve
+    hide kana at char_center with dissolve
     "Terdengar suara pintu terbuka, di sana terlihat Mamahnya Kana."
     "Mamah Kana" "Selamat datang Kana. Terima kasih udah mau datang, [mcname]."
     "Mamah Kana" "Ayo masuk."
@@ -2231,6 +2239,7 @@ label AjakKanaMainGame:
     show kana_side at left with dissolve
     kana "MAAHHH!!! Bisa bantu sebentar di sini gak??"
     hide kana_side at left with dissolve
+    hide kana at char_center with dissolve
     "Di dapur terdengar suara Kana memanggil."
     "Mamah Kana" "Iyaaa bentarrr."
     "Mamah Kana" "Duh kayaknya Kana manggil nih, maklum Kana jarang ke dapur."
@@ -2477,9 +2486,11 @@ label TerimaTawaranKana:
     "[mcname] pun menerima tawaran Kana. Meskipun malu, tapi rasa ingin menjaga Kana lebih besar daripada rasa malunya."
     show kana at char_center with dissolve
     mcname "K-kalau kamu gak keberatan sih boleh, Kana. Nanti aku temenin, tapi aku minta ijin dulu ke perawat ya. Soalnya harus isi surat-surat keterangan dulu, haha."
-    show kana_side at left with dissolve
+    hide kana at char_center with dissolve
+    show kana_shy at char_center with dissolve
+    show kana_side_shy at left with dissolve
     kana "I-iya, makasih banyak ya sekali lagi.\n*Blush*"
-    hide kana_side at left with dissolve
+    hide kana_side_shy at left with dissolve
     #*SKIP TO SCENE*
     #*BG RUMAH KANA*
     stop sound fadeout 1.0
@@ -2580,9 +2591,9 @@ label TerimaTawaranKana:
     play music "audio/BGM_Lawak Tana.mp3" fadein 1.0
     #HARUSNYA YANG NGAKAK SATUNYA
     window auto show
-    show freya_shock at char_center with dissolve
     $ quick_menu = True
     "Saat itu pun suara pintu terbuka keras membuat Kana dan [mcname] kaget terdiam."
+    show freya_shock at char_center with dissolve
     show freya_side_shock at left with dissolve
     freya "KANAAA!!! KAMU GAPAPA KA-"
     hide freya_side_shock at left with dissolve
