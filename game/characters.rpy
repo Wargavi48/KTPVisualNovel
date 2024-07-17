@@ -15,6 +15,15 @@ default pia_name = "????"
 # Define Character Tono
 default tono_name = "????"
 define tana = Character("[tono_name]", image="Tana", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_angry = Character("[tono_name]", image="Tana_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_angry_2 = Character("[tono_name]", image="Tana_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_confused = Character("[tono_name]", image="Tana_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_laugh = Character("[tono_name]", image="Tana_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_nantang = Character("[tono_name]", image="Tana_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_sad = Character("[tono_name]", image="Tana_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_shock = Character("[tono_name]", image="Tana_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_shy = Character("[tono_name]", image="Tana_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_talk = Character("[tono_name]", image="Tana_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default tono_sh = Character("[tono_name]", image="tono_sh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 
 # Define Character Kana

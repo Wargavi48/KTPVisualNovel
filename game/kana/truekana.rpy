@@ -591,7 +591,7 @@ label truekanabuypresent:
 
   mcname "Emangnya boleh ya?"
 
-  freya "Ga ada yang ngelarang kok. Manti ga perlu dekorasi apa-apa, soalnya Si Naya ga suka kalo dirayain gede-gede pake aksesoris gitu. Dulu pernah gitu ,dia malah bete seharian. Lagian dia juga ga pernah inget hari ultahnya."
+  freya "Ga ada yang ngelarang kok. Nanti ga perlu dekorasi apa-apa, soalnya Si Naya ga suka kalo dirayain gede-gede pake aksesoris gitu. Dulu pernah gitu, dia malah bete seharian. Lagian dia juga ga pernah inget hari ultahnya."
 
   mcname "Oke deh kalau emang gitu, nanti aku tinggal dateng aja ke rumah Kana?"
 
@@ -601,30 +601,42 @@ label truekanabuypresent:
 
   freya "Iya sama-sama."
 
-  #Setelah semua itu, akhirnya [mcname] dan Freya setuju untuk hanya melakukan perayaan yang sederhana saja. Setelah itu [mcname] memutuskan untuk tidur.
+  "Setelah semua itu, akhirnya [mcname] dan Freya setuju untuk hanya melakukan perayaan yang sederhana saja. Setelah itu [mcname] memutuskan untuk tidur."
 
   #*SKIP TO SCENE*
   #*KOS SORE*
 
-  mcname "Oke. Hari ini hari yang penting, pokoknya semua harus siap. Bentar cek dulu semuanya, pakaian? Oke. Hadiah? Oke, ada udah di bungkus juga. Wangy? Oke, tadi udah mandi sama pake parfum juga. Tinggal berangkat aja nih harusnya. Duh deg degan banget hari ini, mudah mudahan lancar deh."
+  mcname "{i}Oke. Hari ini hari yang penting, pokoknya semua harus siap.{/i}"
+  mcname "{i}Bentar cek dulu semuanya, pakaian? Oke.{/i}"
+  mcname "{i}Hadiah? Oke, ada udah di bungkus juga.{/i}"
+  mcname "{i}Wangy? Oke, tadi udah mandi sama pake parfum juga.{/i}"
+  mcname "{i}Tinggal berangkat aja nih harusnya. Duh deg degan banget hari ini, mudah-mudahan lancar deh.{/i}"
 
   #*SKIP TO SCENE*
   #*BG RUMAH KANA*
 
-  #[mcname] pun datang ke rumah Kana pada waktu yang telah ditentukan sebelumnya dengan Freya. Tetapi saat [mcname] menghubungi Freya, ia tidak dapat dihubungi. Rasa cemas,gelisah, serta was-was tidak dapat dihapus dari pikiran [mcname]. Mungkin ini pertama kalinya [mcname] berinisiatif merayakan ulang tahun temannya seperti ini, sehingga ingin memberikan momen bahagia yang selalu dapat diingat oleh Kana.
+  "[mcname] pun datang ke rumah Kana pada waktu yang telah ditentukan sebelumnya dengan Freya. Tetapi saat [mcname] menghubungi Freya, ia tidak dapat dihubungi."
+  "Rasa cemas, gelisah, serta was-was tidak dapat dihapus dari pikiran [mcname]."
+  "Mungkin ini pertama kalinya [mcname] berinisiatif merayakan ulang tahun temannya seperti ini, sehingga ingin memberikan momen bahagia yang selalu dapat diingat oleh Kana."
 
-  mcname "Aduhhh masuk ga ya, tapi belum ada Si Freya. Aduhhh tapi kalau di luar terus, nanti takut dicurigai orang-orang. Mending gimana ya…"
+  mcname "{i}Aduhhh masuk ga ya, tapi belum ada Si Freya.{/i}"
+  mcname "{i}Aduhhh tapi kalau di luar terus, nanti takut dicurigai orang-orang. Mending gimana ya…{/i}"
 
   #*CHOSE*
-  #PERGI KE DALAM RUMAH
-  #TUNGGUIIN FREYA
-  #*CHOSE B*
-  #[mcname] memilih untuk menunggu Freya. Tak lama kemudian, Freya pun datang dan mereka masuk ke rumah Kana bersama sama.
-  #LANJUT KE [NEUTRAL ROUTE 1]
+  menu:
+    "PERGI KE DALAM RUMAH":
+      #BG Ruang Tamu.
+      jump truekanabeforeneutralroute
+    "TUNGGUIN FREYA":
+      #*CHOSE B*
+      "[mcname] memilih untuk menunggu Freya. Tak lama kemudian, Freya pun datang dan mereka masuk ke rumah Kana bersama-sama."
+      #BG Ruang Tamu.
+      #LANJUT KE [NEUTRAL ROUTE 1]
+      jump truekananeutralroute1
 
-  #BG Ruang Tamu.
+label truekanabeforeneutralroute:
   #*CHOSE A*
-  #[mcname] pun memutuskan untuk mengetuk pintunya tanpa menunggu Freya dan masuk ke dalam rumah Kana.
+  "[mcname] pun memutuskan untuk mengetuk pintunya tanpa menunggu Freya dan masuk ke dalam rumah Kana."
 
   mcname "Siang Nay, maaf telat ya?"
 
@@ -640,43 +652,45 @@ label truekanabuypresent:
 
   mcname "E-eh maksudnya gak gitu. Cuma entah kenapa hari ini aku lebih gugup aja dari biasanya.."
 
-  kana " Gugup kenapa?"
+  kana "Gugup kenapa?"
 
   mcname "E-ehh itu…"
-  #“Aduhh kok aku gugup ya? Apa gara-gara mau ngasih hadiah ke Naya, terus takut dia gak suka ya?”
+  mcname "{i}Aduhh kok aku gugup ya? Apa gara-gara mau ngasih hadiah ke Naya, terus takut dia gak suka ya?{/i}"
 
   mcname "Ya gitu deh, haha. Ini Si Freya ke mana ya, tumben lama."
 
   kana "Hmmm… Sebenernya kalian mau ngapain deh? Soalnya Si Freya Freya itu gak ngasih tau mau kumpul buat apaan?"
 
   mcname " Eh-"
-  #“Mampus , harus alesan apa ya biar bisa bohongin Kana?”
-  #“Eh itu… Sebenarnya, kita mau…“
-  #Sebelum [mcname] sempat menyelesaikan kata katanya, suara Freya terdengar dari arah pintu masuk.
+  mcname "{i}Mampus, harus alesan apa ya biar bisa bohongin Kana?{/i}"
+  mcname "Eh itu… Sebenarnya, kita mau…"
+  "Sebelum [mcname] sempat menyelesaikan kata katanya, suara Freya terdengar dari arah pintu masuk."
 
   freya "HALOOOO SEMUANYAAA!!!"
 
   kana "Eh Frey, kaget…"
 
   mcname "Waduh… Freya bikin kaget aja."
-  #[Neutral Route 1]
+  jump truekananeutralroute1
+
+#[Neutral Route 1]
+label truekananeutralroute1:
 
   freya "Halo Naya, udah siap kan?"
 
-  #Kana & [mcname]
-  #“Hah, siap?”
+  "Kana & [mcname]" "Hah, siap?"
 
   freya "Lahh ini nih, padahal aku dah semangat gini. Dah bawa banyak game-game buat temenin kita sampe malem nih."
 
   kana "Ha?? Main game?"
 
-  #Freya melihat ke arahku, seakan memberi kode secara tidak langsung. [mcname] mengangguk ke arah Freya.
+  "Freya melihat ke arahku, seakan memberi kode secara tidak langsung. [mcname] mengangguk ke arah Freya."
 
   mcname "Lah iya Nayy, kamu ga tau? Kita kan bakalan main game lohhh."
 
   kana "Hmmm… Ya udah, deh aku ngikut aja."
 
-  #Mereka pun memainkan semua permainan yang dibawa oleh Freya. Tak terasa malam pun tiba, Freya meminta untuk pindah ke kamar Kana, karena tidak mau Mamah Kana merasa terganggu dengan suara mereka.
+  "Mereka pun memainkan semua permainan yang dibawa oleh Freya. Tak terasa malam pun tiba, Freya meminta untuk pindah ke kamar Kana, karena tidak mau Mamah Kana merasa terganggu dengan suara mereka."
 
   freya "Eh kita pindah ke kamarmu aja yuk Nay. Ini udah malem, takut ganggu Mamahmu sama tetangga."
 
