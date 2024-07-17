@@ -45,25 +45,27 @@ label truekanakos:
       "[mcname] memilih untuk menghubungi Kana dengan awalan “P”, dibandingkan hal lainnya. Kana pun tidak membalas chat tersebut dan meng-ghosting pesan dari [mcname] sampai event di mulai…"
       # BadEnding
     "Malam nay sibuk ga?":
-      "[mcname] memilih untuk langsung menelepon Kana dan ternyata Kana sedang bersama keluarga dan tanpa sengaja Kana memblokir nomor [mcname] karena [mcname] menelepon terus menerus."
-      # BadEnding
-    "Langsung telepon aja":
       "[mcname] menghubungi Kana lewat HPnya, di situ [mcname] bertanya tentang kabarnya terlebih dahulu dan basa basi seperti orang yang kehabisan topik."
       # scene call hp
-  
+      jump truekanachat
+    "Langsung telepon aja":
+      "[mcname] memilih untuk langsung menelepon Kana dan ternyata Kana sedang bersama keluarga dan tanpa sengaja Kana memblokir nomor [mcname] karena [mcname] menelepon terus menerus."
+      # BadEnding
+
+label truekanachat:
   #*SKIP TO SCENE*
   #*BG HP*
 
   mcname "Malam Kana, sibuk nggak ya? Hehe"
 
-  kana "Umm engga kok knp ya?(｡･∀･)ﾉﾞ” "
+  kana "Umm engga kok knp ya?(｡･∀･)ﾉﾞ "
 
-  mcname "Aku mau nanya soal, event jejepangan itu, jadi kan?"
+  mcname "Aku mau nanya soal event jejepangan itu, jadi kan?"
 
-  kana "Maksudnya jadi?”"
+  kana "Maksudnya jadi?"
   mcname "Yaa jadi kan? Ummm kita berangkat bareng."
 
-  kana "Jadi kok. Mau ketemuan jam berapa?┏ (゜ω゜)=👉”"
+  kana "Jadi kok. Mau ketemuan jam berapa?┏ (゜ω゜)=👉"
   mcname "Jam 7 lewat 12 gimana?"
 
   kana "Jam 7 lewat 12? Kaya pernah denger di mana deh (⊙_⊙)？"
@@ -73,42 +75,50 @@ label truekanakos:
   kana "Hmmm, oke deh jam segitu aja."
   mcname "Btw nanti kita disana mau ngapain aja ya? Jujur ini event pertamaku, jadi tadi gimana tips n triknya buat di event, Yang Mulia Kanaia Asa?"
 
-  kana "IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-”"
+  kana "IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-"
 
-  #Tanpa sengaja Kana menekan tombol voice call dan [mcname] pun tanpa pikir panjang menekan tombol jawab 
+  "Tanpa sengaja Kana menekan tombol voice call dan [mcname] pun tanpa pikir panjang menekan tombol jawab."
 
   #*SKIP TO SCENE*
   #*BG HP*
-  #“Ehh maaf kepencet… aduh malu banget, aku matiin aja ya.”
 
-  mcname " JANGAN !!!”"
+  "Ehh maaf kepencet… aduh malu banget, aku matiin aja ya."
 
-  #Kana terdiam kaget karena dengar suara [mcname] yang tiba-tiba teriak.
-  #“Maksudku… ga usah dimatiin kalau boleh, biar lebih seru ngobrolnya.”
+  mcname "JANGAN!!!"
 
-  kana "Uuu mmm… o-oke deh.”"
+  "Kana terdiam kaget karena mendengar suara [mcname] yang tiba-tiba teriak."
+  mcname "Maksudku, ga usah dimatiin kalau boleh, biar lebih seru ngobrolnya."
+
+  kana "Uuu mmm… o-oke deh."
 
   mcname "Jadi gimana tadi pengalaman kamu? Aku nungguin loh, kasih tau dong biasanya gimana aja di event jejepangan tuh."
 
-  kana "Oh iya lupa, jadi kalau aku dulu ikut event jejepangan tuh biasanya-”"
+  kana "Oh iya lupa, jadi kalau aku dulu ikut event jejepangan tuh biasanya-"
 
-  #Tanpa sadar Kana dan [mcname] pun mengobrol lama, bahkan sampai melewati tengah malam. Beberapa kali [mcname] mendengar Kana menguap dan menyarankan untuk mengakhiri voice call, tetapi ia tetap melanjutkan ceritanya seakan meluapkan semua cerita yang telah ia simpan sendirian selama ini… Beberapa saat kemudian pun Kana tertidur dengan voice call masih menyala.
+  "Tanpa sadar Kana dan [mcname] pun mengobrol lama, bahkan sampai melewati tengah malam."
+  "Beberapa kali [mcname] mendengar Kana menguap dan menyarankan untuk mengakhiri voice call, tetapi ia tetap melanjutkan ceritanya seakan meluapkan semua cerita yang telah ia simpan sendirian selama ini"
+  "Beberapa saat kemudian pun Kana tertidur dengan voice call masih menyala."
 
   mcname "Kana? Kana…"
-  #*SFX Amimir*
-  #Beberapa kali [mcname] menyebutkan nama Kana akan tetapi Kana tetap tidak menjawab. Beberapa saat kemudian, [mcname] menyadari bahwa Kana telah tertidur. Suara nafas Kana sempat beberapa kali terdengar, setelah beberapa saat [mcname] pun memilih untuk mengakhiri voice call itu dan tidur agar besok tidak telat.
 
+  #*SFX Amimir*
+
+  "Beberapa kali [mcname] menyebutkan nama Kana akan tetapi Kana tetap tidak menjawab. Beberapa saat kemudian, [mcname] menyadari bahwa Kana telah tertidur."
+  "Suara nafas Kana sempat beberapa kali terdengar, setelah beberapa saat [mcname] pun memilih untuk mengakhiri voice call itu dan tidur agar besok tidak telat."
 
   #*SKIP TO SCENE*
   #*BG KOS (PAGI)*
 
-  #[mcname] bangun beberapa lebih awal daripada waktu yang telah dijanjikan, ia tidak sabar untuk pergi ke event tersebut dan menghabiskan waktu dengan Kana. [mcname] dan Kana berjanji untuk bertemu di depan kampus. [mcname] pun tidak lupa untuk makan, mandi, serta memakai parfum yang menurutnya lebih mahal daripada makannya selama 1 minggu. [mcname] datang 10 menit lebih awal dari pada jam yang telah ditentukan sebelumnya.
+  "[mcname] bangun beberapa lebih awal daripada waktu yang telah dijanjikan, ia tidak sabar untuk pergi ke event tersebut dan menghabiskan waktu dengan Kana."
+  "[mcname] dan Kana berjanji untuk bertemu di depan kampus."
+  "[mcname] pun tidak lupa untuk makan, mandi, serta memakai parfum yang menurutnya lebih mahal daripada makannya selama 1 minggu."
+  "[mcname] datang 10 menit lebih awal dari pada jam yang telah ditentukan sebelumnya."
 
   #*SKIP TO SCENE*
   #*BG DEPAN KAMPUS (INTERIOR JEJEPANGAN)
 
-  kana " MC…ha…ha..haloo…maaf yaa… nunggu lama..”"
-  #Suara Kana terpotong-potong yang menandakan bahwa Kana sudah lari…
+  kana " [mcname]…ha…ha..haloo…maaf yaa… nunggu lama.."
+  "Suara Kana terpotong-potong yang menandakan bahwa Kana sudah lari…"
 
   mcname "Hahah santai aja Nay, tarik nafas dulu bentar gitu. Keliatan banget kalau kamu baru lari tuh."
 
@@ -120,112 +130,115 @@ label truekanakos:
   #*SKIP TO CG*
   #*KANA AMBIL MINUM/KANA MINUM DARI BOTOL*
 
-  kana "Makasih ya MC. Sekarang udah aman kok, jadi kamu siap gak?”"
+  kana "Makasih ya [mcname]. Sekarang udah aman kok, jadi kamu siap gak?"
 
   #*BACK TO BG EVENT*
+
   mcname "Siap dong, ya kali ga siap. Nggak kaya siapa gitu, yang ketiduran di tengah-tengah call."
 
-  kana "IHHHH kamu masih bangun???? Kukira udah dimatiin callnya"
+  kana "IHHHH kamu masih bangun???? Kukira udah dimatiin callnya."
 
   mcname "Hahaha. Soalnya kamu asik banget, cerita ini itu, eh tiba-tiba diem. Pas dipanggil-panggil, kamu malah tidur. Mana sempet ngigo dikit juga."
 
   kana "KAMU DENGER!??? AAAAAA!!!"
-  #“Lupaiin gak? Kalau engga, aku marah besar nih!“
+  kana "Lupaiin gak? Kalau engga, aku marah besar nih!"
 
   mcname "Marah karir, maksudnya?"
 
-  kana "LUPAINNN!!!”"
+  kana "LUPAINNN!!!"
 
   mcname "Iya iya. Mending sekarang kita masuk yuk, keburu malem banget nanti pada tutup."
 
-  kana "Awas aja kalau nggak, aku bakal buat kamu lupa dengan paksa!  Ya udah deh, ayo masuk. Aku dah ga sabar."
+  kana "Awas aja kalau nggak, aku bakal buat kamu lupa dengan paksa! Ya udah deh, ayo masuk. Aku dah ga sabar."
 
-  #[mcname] dan Kana pun pergi ke event tersebut. Di sana banyak kegiatan, mulai dari event utama sampai event sampingan, diantaranya ada cosplay event, song cover competition, dan mini game yang terinspirasi dari permainan tradisional jepang lainnya.
+  "[mcname] dan Kana pun pergi ke event tersebut. Di sana banyak kegiatan, mulai dari event utama sampai event sampingan, diantaranya ada cosplay event, song cover competition, dan mini game yang terinspirasi dari permainan tradisional Jepang lainnya."
 
   mcname "Ehhh Kana bentar…."
-  #*huft*-*huft*-*huft*-*huft*
-  #Sabar… Kana… kamu semangat banget sih… B-bentar aku tarik nafas dulu ya”
+  mcname "*huft*-*huft*-*huft*-*huft*"
+  mcname "Sabar… Kana… kamu semangat banget sih… B-bentar aku tarik nafas dulu ya."
 
-  kana "Ahhh ayooo~ Kamu masa kalah sih sama aku?”"
+  kana "Ahhh ayooo~ Kamu masa kalah sih sama aku?"
 
   mcname "Soalnya kamu cepet banget ke sana ke sini nya. Belum ada 10 menit, kita dah pindah tempat mulu. Kamu ga mau liat-liat dulu booth merch yang ada di situ?"
 
-  kana "Ihhh kamu semalam ga research dulu tentang booth yang bakalan ada? Aku udah liat-liat listnya dan ada beberapa tempat yang pengen aku samperin. Jadi aku cuma bentar doang di tempat yang nggak aku pengen banget.”"
+  kana "Ihhh kamu semalam ga research dulu tentang booth yang bakalan ada? Aku udah liat-liat listnya dan ada beberapa tempat yang pengen aku samperin. Jadi aku cuma bentar doang di tempat yang nggak aku pengen banget."
 
-  mcname "Oooo gitu ya ternyata… Maaf deh ini kan event pertama ku, jadi aku ga tau harus research list kaya gitu."
+  mcname "Oooo gitu ya ternyata. Maaf deh ini kan event pertama ku, jadi aku ga tau harus research list kaya gitu."
 
-  kana "Ya udah ayo ikutinn aku aja.”"
+  kana "Ya udah ayo ikutin aku aja."
 
-  #Kana pun langsung menarik tangan [mcname] yang hanya bisa mengikuti kemanapun Kana pergi, hingga Kana berhenti di suatu tempat,
+  "Kana pun langsung menarik tangan [mcname] yang hanya bisa mengikuti kemanapun Kana pergi, hingga Kana berhenti di suatu tempat."
 
   mcname "Ummm Kana? Ada apa?"
 
-  "Kana terdiam, di situ ada sebuah event yang sedang berlangsung. [mcname] pun melihat event tersebut ada yang sedang menunjukan seseorang yang sedang melakukan sing cover competition."
+  "Kana terdiam, di situ ada sebuah event yang sedang berlangsung. [mcname] pun melihat event tersebut, ada seseorang yang sedang melakukan sing cover competition."
 
   #*IF CAN*
   #*SKIP TO SCENE*
   #*BG PANGGUNG MINI*
   #*SPRITE TONO/PIA NYANYI FOR A SEC, AFTER THAT BACK TO BG EVENT*
 
-  #[mcname] pun melihat panggung dan mengerti kenapa Kana terdiam. Di situ, terlihat seorang perempuan yang sedang menyanyi dengan suara yang indah. Kurang lebih 3 menit [mcname] dan Kana terdiam mendengarkan perempuan itu bernyanyi. Saat selesai, Kana dan [mcname] pun bertepuk tangan dengan keras.
+  "[mcname] pun melihat panggung dan mengerti kenapa Kana terdiam. Di situ, terlihat seorang perempuan yang sedang menyanyi dengan suara yang indah. Kurang lebih 3 menit [mcname] dan Kana terdiam mendengarkan perempuan itu bernyanyi. Saat selesai, Kana dan [mcname] pun bertepuk tangan dengan keras."
   #SFX Applause
 
-  mcname " Gilaaaa, kereen bangeett sumpah! Iya ga, Kana?"
+  mcname "Gilaaaa, kereen bangeett sumpah! Iya ga, Kana?"
 
   kana "Iyaaa aku sampe terdiem loh, kamu juga dengerin tadi?"
 
-  mcname "Iya lah, kamu tiba-tiba diem aja. Gimana aku ga ikutan dengerin? Keren banget, kapan ya aku bisa nyanyi kaya gitu… Btw kamu bisa nyanyi?"
+  mcname "Iya lah, kamu tiba-tiba diem aja. Gimana aku ga ikutan dengerin? Keren banget, kapan ya aku bisa nyanyi kaya gitu… Btw, kamu bisa nyanyi?"
 
-  kana "Eee-enggak kok, aku gak bisa nyanyi… Ehhh liat deh, di situ ada cosplay yang bagus mending kita ke sana." 
+  kana "Eee-enggak kok, aku gak bisa nyanyi… Ehhh liat deh, di situ ada cosplay yang bagus mending kita ke sana."
 
-  #Kana tiba-tiba menghindari dari jawaban [mcname] dan berlari ke arah seorang cosplayer.
+  "Kana tiba-tiba menghindari dari jawaban [mcname] dan berlari ke arah seorang cosplayer."
 
-  kana "Eh Kaa, permisi~”"
+  kana "Eh Kaa, permisi~"
 
   "Cosplayer" "Iya Ka kenapa?"
 
-  mcname "Kenapa Kana… Ehh kamu cosplay jadi Kamen Driver Den-A  ya?"
+  mcname "Kenapa Kana… Ehh kamu cosplay jadi Kamen Driver Den-A ya?"
 
   "Orang" "Wahhh iya ka, kebetulan aku juga suka."
 
-  kana "MC, kamu suka?"
+  kana "[mcname], kamu suka?"
 
   mcname "SUKA!!??? Wahhhh aku ngikutin banget semua series kamen driver loh Kana."
 
-  "Orang" "Wahh, kukira ga terlalu banyak yang kenal cosplay ku. Ternyata ada juga ya yang kenal, makasih ya Kak. Eh Kak, mau ngobrol lagi ga? Keknya seru kita ngobrol bareng."
+  "Orang" "Wahh, kukira ga terlalu banyak yang kenal cosplayku. Ternyata ada juga ya yang kenal, makasih ya Kak. Eh Kak, mau ngobrol lagi ga? Keknya seru kita ngobrol bareng."
 
   #*CHOSE*
-  #Menghabiskan waktu sama orang
-  #Menolak dan melanjutkan kegiatan dengan kana
+  menu:
+    "Menghabiskan waktu sama orang itu.":
+      #*CHOSE A*
+      "[mcname] tetap mengobrol dengan cosplayer tersebut, dan mengabaikan keberadaan Kana untuk beberapa saat, hingga saat [mcname] sadar… Kana sudah menghilang dan HPnya tidak dapat dihubungi lagi…"
+      #BRO BRO LAGI JALAN BARENG BERDUAAN KO MALAH DITINGGAL NGOBROL SAMA ORANG LAIN SI ADUHHH
+    "Menolak dan melanjutkan kegiatan dengan Kana.":
+      #*CHOSE B*
+      jump truekanajapanfest
+  
+label truekanajapanfest:
+  mcname "Eh maaf ya nanti lagi, aku lagi sama temen soalnya. Kalau boleh minta social medianya kak, biar kita bisa ngobrol."
 
-  #*CHOSE A*
-  #[mcname] tetap mengobrol dengan cosplayer tersebut, dan mengabaikan keberadaan kana untuk beberapa saat, hingga saat [mcname] sadar… Kana sudah menghilang dan HP nya tidak dapat dihubungi lagi…
-  #BRO BRO LAGI JALAN BARENG BERDUAAN KO MALAH DITINGGAL NGOBROL SAMA ORANG LAIN SI ADUHHH
+  "Orang" "Ooh iya kak, ini ka bisa di add @namadonatur_angka random, makasih banyak yaa~"
 
-  #*CHOSE B*
-  mcname "Eh maaf ya nanti lagi, aku lagi sama temen soalnya. Kalau boleh minta social media nya kak, biar kita bisa ngobrol."
-
-  "Orang" "Ooh iya kak, ini ka bisa di add @namadonatur_angka random, makasih banyak yaa"
-
-  mcname "Sama sama ka…"
+  mcname "Sama-sama ka…"
   mcname "Eh Kana maaf lama ya. Tadi hampir aja keasikan, untung aku inget ada kamu yang lagi nungguin aku haha."
 
-  kana "E-enggak kok, ga lama… Seru ya...”"
+  kana "E-enggak kok, ga lama… Seru ya..."
 
   mcname "Eh kamu kenapa Kana, marah ya? Tadi kelamaan ya?"
 
-  kana "E-enggak..”"
+  kana "E-enggak.."
 
-  mcname "Ya udah sebagai permintaan maaf aku ajak main di stand di sana deh gmn?"
+  mcname "Ya udah sebagai permintaan maaf aku ajak main di stand di sana deh gimana?"
 
-  kana " BEENER!?? Eh maksud nya… beneran nih?”"
+  kana " BEENER!?? Eh maksud nya… beneran nih?"
 
-  mcname "Iya, bener Kok. Ya udah, ayo."
+  mcname "Iya, bener kok. Ya udah, ayo."
 
   #*SKIP TO SCENE*
   #*BG MINI GAMES*
 
-  kana "Kamu beneran bisa ga?”"
+  kana "Kamu beneran bisa ga?"
 
   mcname " Bener Kana, tenang aja. Kok kamu ga percaya ke aku gitu sih."
 
@@ -233,49 +246,48 @@ label truekanakos:
 
   mcname "Ini aku lagi fokus, Kana."
 
-
-  #[mcname] pun mendapatkan skor tinggi dan mendapatkan hadiah. 
+  "[mcname] pun mendapatkan skor tinggi dan mendapatkan hadiah." 
 
   mcname "Liat, kan? Aku bisaaa, siapa dulu?"
-  #[mcname] mendekatkan tangannya ke telinganya dan seolah olah menunggu Kana menjawab.
+  "[mcname] mendekatkan tangannya ke telinganya dan seolah olah menunggu Kana menjawab."
 
-  #“Siapa dulu….hmmmm?”
+  mcname "Siapa dulu….hmmmm?"
 
-  kana "Iya iya, kamu jago deh.”"
+  kana "Iya iya, kamu jago deh."
 
-  mcname "Nahh gtu dong, hahah."
+  mcname "Nahh gitu dong, hahah."
 
-  #Setelah mendapatkan hadiah dari menyelesaikan mini game di dalam booth, [mcname] sedikit bercanda dengan Kana karena telah memainkan mini game tersebut
+  "Setelah mendapatkan hadiah dari menyelesaikan mini game di dalam booth, [mcname] sedikit bercanda dengan Kana karena telah memainkan mini game tersebut."
 
   mcname "Jadi Yang Muliaaa, kita mau ke mana lagi? Hambamu siap untuk menemanimu kemana pun dan sampai kapan pun, ahaha."
 
-  kana " Apaan sihh yang mulia yang mulia, mending mulai sekarang kamu panggil aku “Nay” deh.”"
+  kana " Apaan sihh yang mulia yang mulia, mending mulai sekarang kamu panggil aku “Nay” deh."
 
-  mcname " Okee dehh, Nay."
-  #“Eh Nay, kamu mau pesen apa? Aku traktir deh, kan udah diguide sana sini.“
+  mcname "Okee dehh, Nay."
+  mcname "Eh Nay, kamu mau pesen apa? Aku traktir deh, kan udah diguide sana-sini."
 
   kana "Hmmmm, apa ya? Kayaknya takoyaki enak deh."
 
   mcname "Bolehhh, tunggu bentar yaa."
 
-  kana "Okeeee hati hati, ya."
+  kana "Okeeee hati-hati, ya."
 
-  #[mcname] pun pergi meninggalkan Kana sejenak untuk membeli takoyaki. Setelah beberapa saat, [mcname] kembali dengan membawa takoyaki.
+  "[mcname] pun pergi meninggalkan Kana sejenak untuk membeli takoyaki. Setelah beberapa saat, [mcname] kembali dengan membawa takoyaki."
 
   mcname "Eh Nay, maaf ini cuma sisa satu porsi lagi. Ini buat kamu aja deh, aku gapapa."
 
-  kana "Lah kok gitu sih, kamu juga pasti laper kan.”"
+  kana "Lah kok gitu sih, kamu juga pasti laper kan."
 
   mcname "Enggak koook."
-  #Tanpa sadar terdengar suara perut [mcname] yang berbunyi cukup keras sehingga Kana dapat mendengarnya.
+  "Tanpa sadar terdengar suara perut [mcname] yang berbunyi cukup keras sehingga Kana dapat mendengarnya."
 
-  kana "Hahaha ga bisa bohong tuh perut kalau masalah makanan mah.”"
+  kana "Hahaha ga bisa bohong tuh perut kalau masalah makanan mah."
 
-  #Muka [mcname] pun memerah, merasa malu dengan perutnya. 
+  "Muka [mcname] pun memerah, merasa malu dengan perutnya." 
 
   mcname "Aduuhhhhh…"
 
-  kana "Sini kita makan bareng aja. Ini kan ada 6, kita bagi aja. Masing-masing 3 gimana?”"
+  kana "Sini kita makan bareng aja. Ini kan ada 6, kita bagi aja. Masing-masing 3 gimana?"
 
   mcname "Tapi kan kamu pengen takoyaki."
 
@@ -283,44 +295,44 @@ label truekanakos:
 
   mcname "O-oke deh kalau emang gitu. Eh tapi ini cuma ada satu doang garpu nya, bentar ya aku coba minta lagi ke penjualnya."
 
-  "Sesaat [mcname] akan pergi, Kana tiba-tiba menangkap tangan MC. Dengan malu-malu Kana berkata."
-  kana "MC, udah ga usah.”"
-  #“Keburu takoyaki nya dingin, nanti ga enak. Kita makan bareng aja.”
-  #“Sini, kita gantian aja.“
+  "Sesaat [mcname] akan pergi, Kana tiba-tiba menangkap tangan [mcname]. Dengan malu-malu Kana berkata."
+  kana "[mcname], udah ga usah."
+  kana "Keburu takoyaki nya dingin, nanti ga enak. Kita makan bareng aja."
+  kana "Sini, kita gantian aja."
   mcname "Nay? Bukannya itu malah…"
 
   kana "Udah cepetan."
 
   mcname "I-iya iya. Oke deh."
 
-  #Kana pun memakan takoyakinya, lalu Kana pun menjulurkan tangannya yang memegang garpu serta takoyaki ke arah MC.
+  "Kana pun memakan takoyakinya, lalu Kana pun menjulurkan tangannya yang memegang garpu serta takoyaki ke arah [mcname]."
 
-  kana "Nih.”"
+  kana "Nih."
 
-  #Seakan tidak ingin sadar akan peristiwa yang sedang terjadi, [mcname] tetap memakan takoyaki yang diberikan Kana. Takoyakinya terasa sedikit manis,  padahal takoyaki yang ia pesan harusnya pedas asin.
+  "Seakan tidak ingin sadar akan peristiwa yang sedang terjadi, [mcname] tetap memakan takoyaki yang diberikan Kana. Takoyakinya terasa sedikit manis,  padahal takoyaki yang ia pesan harusnya pedas asin."
   mcname "Eh udah abis lagi aja, ga kerasa ya…"
-  #“Eh Nay, kamu kenapa?”
+  mcname "Eh Nay, kamu kenapa?"
 
-  #Muka Kana tiba-tiba memerah, mungkin Kana baru sadar akan apa yang terjadi saat itu. Tapi nasi telah menjadi bubur, hal ini tidak dapat ubah dan telah terjadi.
+  "Muka Kana tiba-tiba memerah, mungkin Kana baru sadar akan apa yang terjadi saat itu. Tapi nasi telah menjadi bubur, hal ini tidak dapat ubah dan telah terjadi."
 
   kana "E-eh iya udah abis aja."
-  mcname "Okeeee, selesai jadi kita ke mana, Nay?"
-  #Sesaat [mcname] akan pergi, Kana tiba-tiba mengambil tisu, mengulurkan tangannya, dan mengelap saus yang ada di pipi MC.
-  #Terkejut dengan tindakan Kana, [mcname] hanya bisa terdiam saja, dan beberapa saat kemudian Kana pun sadar akan tindakannya 
+  mcname "Okeeee selesai, jadi kita ke mana, Nay?"
+  "Sesaat [mcname] akan pergi, Kana tiba-tiba mengambil tisu, mengulurkan tangannya, dan mengelap saus yang ada di pipi [mcname]."
+  "Terkejut dengan tindakan Kana, [mcname] hanya bisa terdiam saja, dan beberapa saat kemudian Kana pun sadar akan tindakannya." 
 
-  kana "Eh ini, a-aku kebiasaan ngurus sepupuku yang masih kecil. Eh ah, ini kita udah kan makannya? Yu kita ke sana aja."
-  #Kana pun langsung pergi dari bangku tersebut, meninggalkan [mcname] yang masih merasa malu di situ.
+  kana "Eh ini, a-aku kebiasaan ngurus sepupuku yang masih kecil. Eh ah, ini kita udah kan makannya? Yuk kita ke sana aja."
+  "Kana pun langsung pergi dari bangku tersebut, meninggalkan [mcname] yang masih merasa malu di situ."
 
   mcname "Ehhh?? Tungguin Nay."
-  #Kana dan [mcname] pun pergi kembali untuk melihat lihat booth yang ada di event tersebut, sampai pada akhirnya event utama pada hari itu pun dimulai.
+  "Kana dan [mcname] pun pergi kembali untuk melihat-lihat booth yang ada di event tersebut, sampai pada akhirnya event utama pada hari itu pun dimulai."
 
-  mcname "Eh nay, ayoo ini event utama nya udah mau dimulai."
+  mcname "Eh Nay, ayoo ini event utamanya udah mau dimulai."
 
   kana "Iya bentarr ini lagi bayar dulu."
 
   #Kana dan [mcname] pun pergi ke tempat di mana event utama diadakan. Event tersebut adalah pertunjukan kembang api kecil kecilan yang akan diadakan oleh panitia acara.
 
-  kana "TAMAAYAAAAAA~!”"
+  kana "TAMAAYAAAAAA~!"
 
   mcname "TAMAYAAAAAA~!"
 
@@ -340,17 +352,17 @@ label truekanakos:
 
   mcname "Eh ah, kamu pulang naik apa Nay?"
 
-  kana "Aku biasanya dijemput sih, soalnya udah malem. Emangnya kenapa?”"
+  kana "Aku biasanya dijemput sih, soalnya udah malem. Emangnya kenapa?"
 
   mcname "Ooo enggak. Tadinya mau ngajak bareng, tapi aku juga baru sadar ternyata ini udah malem banget. Jadi mending naik mobil aja biar ga masuk angin."
 
-  kana "Hmmm, nanti deh next time gimana? Soalnya mamah ga ijinin aku naik motor kalau udah malem.”"
+  kana "Hmmm, nanti deh next time gimana? Soalnya mamah ga ijinin aku naik motor kalau udah malem."
 
   mcname "Iya aku ngerti kok Nay. Ya udah ya, kamu hati-hati Nay."
 
-  kana "Iya makasih ya buat hari ini, kamu juga hati-hati.”"
+  kana "Iya makasih ya buat hari ini, kamu juga hati-hati."
 
-  #[mcname] dan Kana pun pergi, [mcname] masih merasa senang dan bahagia karena telah menghabiskan waktu bersama Kana. Apakah ini date? Mungkin iya, atau mungkin hanya [mcname] yang merasa demikian. Meskipun begitu, rasa bahagia dan senang tidak dapat dihilangkan dari hati MC.
+  #[mcname] dan Kana pun pergi, [mcname] masih merasa senang dan bahagia karena telah menghabiskan waktu bersama Kana. Apakah ini date? Mungkin iya, atau mungkin hanya [mcname] yang merasa demikian. Meskipun begitu, rasa bahagia dan senang tidak dapat dihilangkan dari hati [mcname].
 
   #*SKIP TO SCENE*
   #*BG KOS MALAM*
@@ -361,25 +373,25 @@ label truekanakos:
 
   #*BG HP (CHATTING APP)
 
-  kana "H-halooo…(｡･∀･)ﾉﾞ”"
+  kana "H-halooo…(｡･∀･)ﾉﾞ"
 
   mcname "Halo juga Nayyy… Kenapa nih?"
 
-  kana "Ee-engga kok, cuma mastiin kamu udah pulang aja… Takut nyasar ○( ＾皿＾)っ Hehehe…”"
+  kana "Ee-engga kok, cuma mastiin kamu udah pulang aja… Takut nyasar ○( ＾皿＾)っ Hehehe…"
 
   mcname "Hahaha, ini baru aja selesai beres-beres. Kamu nungguin ya?"
 
-  kana "K-kata siapa? Aku ga nungguin kamu kok (￣ε(#￣)”"
+  kana "K-kata siapa? Aku ga nungguin kamu kok (￣ε(#￣)"
 
   mcname "Hahaha, Nay… Kamu emang suka pake emot kayak gitu ya? Sorry kalo tiba-tiba nanya, soalnya aku penasaran. Dari dulu kalo chat kadang pake, kadang engga."
 
-  kana "Ehhh… Sorry ya kebiasaan... Hehe”"
+  kana "Ehhh… Sorry ya kebiasaan... Hehe"
 
   #“A-aneh ya?”
 
   mcname "Engga lah, ga aneh kok. Malah keliatannya lucu aja. Kalau emang kamu lebih suka pake emot kaya gitu, pake aja lucu juga liatnya."
 
-  kana "Yeeee (≧∇≦)ﾉ”"
+  kana "Yeeee (≧∇≦)ﾉ"
 
   mcname "Hahaha, lucu emang"
 
@@ -394,15 +406,15 @@ label truekanakos:
 
   mcname "Psstt, Fre… Naya ke mana dah?"
 
-  freya "Lah baru aja mau nanyain ke kamu, emang dia ngabarin?”"
+  freya "Lah baru aja mau nanyain ke kamu, emang dia ngabarin?"
 
   mcname "Nggak. Terakhir chat tuh waktu malem, abis itu aku ketiduran deh. Ini aja kan hampir telat, emang ke kamu ga ada kabar gitu?"
 
-  freya "Ga ada sama sekali, kalian emang sampe jam berapa?”"
+  freya "Ga ada sama sekali, kalian emang sampe jam berapa?"
 
   mcname "Ga tau aku lupa, seingetku pas jam 1 an masih sadar kayaknya."
 
-  freya "Wahhh udah jelas ini mah, dia kesiangan. Haduhhh.”"
+  freya "Wahhh udah jelas ini mah, dia kesiangan. Haduhhh."
 
   #Dosen
   #“Teman-teman, mohon untuk beberapa menit kedepan perhatikan pelajaran dulu ya. Ini sangatlah penting, untuk kedepannya bapak tidak ingin kalian ketahuan mengobrol. Terima kasih banyak, jadi untuk memahami bahwa…”
@@ -441,7 +453,7 @@ label truekanakos:
 
   mcname "Aduuhhh aku ngasih apa ya buat Kana? Kalau diinget-inget lagi, Kana tuh suka sama jejepangan. Tapi masa aku ngasih Naya merch anime? Aku ga pernah liat dia pake pakaian anime-anime gitu sihh. Kalau official CD anime atau band? Tapi aku ga tau dia suka band apaan, aaaa bingung banget mau ngasih apa."
 
-  #Seakan sedang terjadi perang di dalam pikiran MC, tanpa terasa waktu berubah menjadi malam. [mcname] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok agar Kana bisa terus mengingat dirinya. Tiba-tiba HP [mcname] berbunyi yang menunjukkan bahwa baterai HPnya sudah sedikit dan perlu di-charge, akan tetapi ternyata ada notif lain dari Kana dan Freya yang mencoba menghubunginya beberapa kali.
+  #Seakan sedang terjadi perang di dalam pikiran [mcname], tanpa terasa waktu berubah menjadi malam. [mcname] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok agar Kana bisa terus mengingat dirinya. Tiba-tiba HP [mcname] berbunyi yang menunjukkan bahwa baterai HPnya sudah sedikit dan perlu di-charge, akan tetapi ternyata ada notif lain dari Kana dan Freya yang mencoba menghubunginya beberapa kali.
 
   #*SKIP TO SCENE*
   #*BG KOS MALAM*
@@ -449,10 +461,10 @@ label truekanakos:
 
   mcname "Eh maaf, tadi aku ketiduran hehe."
 
-  #Beberapa saat kemudian Kana dan Freya  pun menelepon MC.
+  #Beberapa saat kemudian Kana dan Freya  pun menelepon [mcname].
   #*BG HP LAGI TELEPON*
 
-  freya "Nahhh kan kalau gini enak, ga usah ngehubungin satu-satu.”"
+  freya "Nahhh kan kalau gini enak, ga usah ngehubungin satu-satu."
 
   mcname "Ah Naya, maaf ya tadi aku ketiduran."
 
@@ -462,11 +474,11 @@ label truekanakos:
 
   freya "Jadi tadi kenapa Nay?"
 
-  kana "Harus aku yang ngejelasin?”"
+  kana "Harus aku yang ngejelasin?"
 
   mcname "Ya udah, sini deh aku yang jelasin."
 
-  freya "Lah, emang tau ada apa?”"
+  freya "Lah, emang tau ada apa?"
 
   mcname "Ya nggak lah, makanya cepet jelasin."
 
@@ -478,17 +490,17 @@ label truekanakos:
   #“Aku jamin itu bakalan enak banget. Kalau ga enak, nanti aku traktir makan di all you can eat deh.“
   #“Nahhhh tapi yang jadi masalahnya tuh, di event itu satu orang cuma bisa beli satu buah cake aja. Jadi nanti aku pengen ajak Freya sama kamu buat antri dan beli juga. Nanti uangnya dari aku kok, santai aja. Tapi nanti ikut antri biar bisa beli juga.“
 
-  freya "Kayaknya itu kepanjangan deh buat TLDR, Nay.”"
+  freya "Kayaknya itu kepanjangan deh buat TLDR, Nay."
 
   mcname "Keknya TLDR mu itu “To Long Di Read”, makanya kamu telepon ya."
 
-  kana "Hehehe, maaf terlalu semangat.”"
+  kana "Hehehe, maaf terlalu semangat."
   mcname "Tapi oke, intinya lusa kan?"
   kana "Iya lusa."
 
   mcname "Oke aku bisa kok."
-  freya "Yaudah nanti kabarin lagi yaa. Aku mau tidur dulu.”"
-  kana "Okeee, good night minna~”"
+  freya "Yaudah nanti kabarin lagi yaa. Aku mau tidur dulu."
+  kana "Okeee, good night minna~"
   mcname "Oke, good night."
   #*BG HP LAGI TELEPON SELESAI*
   mcname "Oke nanti aku harus liat-liat sekalian milih hadiah apa yang kayaknya cocok buat Naya di mall."
@@ -498,16 +510,16 @@ label truekanakos:
   #*BG MALL*
   #Lusa Kana, Freya, serta [mcname] pergi ke mall untuk membeli limited cake. Tanpa kana dan freya sadari, mc memiliki niat terselubung dimulai dari masuk mall mc sesekali melihat gerak gerik kana mulai dari apa yang dia katakan dan toko apa yang ia lihat pun menurutnya petunjuk apa yang ia inginya untuk pada hari ulang tahunnya, sempat kana melihat ke toko perhiasan, berbicara tentang sepatunya yang mulai agak sempit, dan sampai bercerita tentang keponakannya yang sering main masak masakan, setelah mendapatkan apa yang kana mau, mc beralasan untuk pergi duluan padahal dia akan membelikan hadiah untuk kana
 
-  kana "Aduhh ini Freya ke mana sih? Jangan bilang dia lupa?”"
+  kana "Aduhh ini Freya ke mana sih? Jangan bilang dia lupa?"
   #,
   mcname "Waduh aku ga tau tuh Nay, coba kamu telepon."
 
-  kana "Oke bentar yaa-”"
+  kana "Oke bentar yaa-"
   #*sfx dering telepon*
   #“Eh?”
   #“FREYAAA!! Kamu ke mana??“
   #“HA!?? Aduhhh… ya udah deh.“
-  #“Umm MC, ini Freya katanya ada urusan di kampus, jadinya kita berdua. Kita berduaan nih hehe, kaya waktu itu”
+  #“Umm [mcname], ini Freya katanya ada urusan di kampus, jadinya kita berdua. Kita berduaan nih hehe, kaya waktu itu”
 
   mcname "Ahahaha, iya nih inget aja kamu. Ya udah yuk jalan."
 
@@ -517,20 +529,20 @@ label truekanakos:
 
   mcname "Eh Nay, tumben kamu ganti sepatu."
 
-  kana "Iya nih. Kemarin pas aku coba udah agak sempit gitu sih, jadi ini pake sepatu yang lain haha.”"
+  kana "Iya nih. Kemarin pas aku coba udah agak sempit gitu sih, jadi ini pake sepatu yang lain haha."
 
   mcname "Ohhh gitu ya, kamu lagi suka apa belakangan ini?"
 
-  kana "Heee? Kamu kenapa MC, kok tiba-tiba tanya kayak giniian?”"
+  kana "Heee? Kamu kenapa [mcname], kok tiba-tiba tanya kayak giniian?"
 
   mcname "Gak apa apa, daripada -1 topik hahaha."
 
-  kana "Hahaha, iya juga sih. Aku akhir-akhir ini sama sepupuku biasanya main masak-masak gitu sih.”"
+  kana "Hahaha, iya juga sih. Aku akhir-akhir ini sama sepupuku biasanya main masak-masak gitu sih."
 
   mcname "Ohhh gitu ya, eh itu kan cafenya kah?"
   #“Mantep aku dapet beberapa ide kado buat Kana, hehehe.”
 
-  kana "Iya, udah ya kita pura-pura ga kenal dulu biar ga dicurigai haha.”"
+  kana "Iya, udah ya kita pura-pura ga kenal dulu biar ga dicurigai haha."
 
   mcname "Oke dehh."
 
@@ -556,7 +568,7 @@ label truekanakos:
 
   mcname "Freya."
 
-  freya "Kenapa?”"
+  freya "Kenapa?"
 
   mcname "Ini, mau nanya buat ultah Kana nanti. Kita bakalan gimana nih ngasih suprisenya? Terus mau di mana?"
 
@@ -564,11 +576,11 @@ label truekanakos:
 
   mcname "Emangnya boleh ya?"
 
-  freya "Ga ada yang ngelarang kok. Manti ga perlu dekorasi apa-apa, soalnya Si Naya ga suka kalo dirayain gede-gede pake aksesoris gitu. Dulu pernah gitu ,dia malah bete seharian. Lagian dia juga ga pernah inget hari ultahnya.”"
+  freya "Ga ada yang ngelarang kok. Manti ga perlu dekorasi apa-apa, soalnya Si Naya ga suka kalo dirayain gede-gede pake aksesoris gitu. Dulu pernah gitu ,dia malah bete seharian. Lagian dia juga ga pernah inget hari ultahnya."
 
   mcname "Oke deh kalau emang gitu, nanti aku tinggal dateng aja ke rumah Kana?"
 
-  freya "Iya nanti dateng aja.”"
+  freya "Iya nanti dateng aja."
 
   mcname "Oke. Thanks, Freya."
 
@@ -584,7 +596,7 @@ label truekanakos:
   #*SKIP TO SCENE*
   #*BG RUMAH KANA*
 
-  #[mcname] pun datang ke rumah Kana pada waktu yang telah ditentukan sebelumnya dengan Freya. Tetapi saat [mcname] menghubungi Freya, ia tidak dapat dihubungi. Rasa cemas,gelisah, serta was-was tidak dapat dihapus dari pikiran MC. Mungkin ini pertama kalinya [mcname] berinisiatif merayakan ulang tahun temannya seperti ini, sehingga ingin memberikan momen bahagia yang selalu dapat diingat oleh Kana.
+  #[mcname] pun datang ke rumah Kana pada waktu yang telah ditentukan sebelumnya dengan Freya. Tetapi saat [mcname] menghubungi Freya, ia tidak dapat dihubungi. Rasa cemas,gelisah, serta was-was tidak dapat dihapus dari pikiran [mcname]. Mungkin ini pertama kalinya [mcname] berinisiatif merayakan ulang tahun temannya seperti ini, sehingga ingin memberikan momen bahagia yang selalu dapat diingat oleh Kana.
 
   mcname "Aduhhh masuk ga ya, tapi belum ada Si Freya. Aduhhh tapi kalau di luar terus, nanti takut dicurigai orang-orang. Mending gimana ya…"
 
@@ -601,7 +613,7 @@ label truekanakos:
 
   mcname "Siang Nay, maaf telat ya?"
 
-  kana "Engga kok sini masuk aja. Freya belum datang, nanti biasanya dia suka telat dikit.”"
+  kana "Engga kok sini masuk aja. Freya belum datang, nanti biasanya dia suka telat dikit."
 
   mcname "Eh, i-iya Nay, Makasih ya.."
 
@@ -609,39 +621,39 @@ label truekanakos:
 
   mcname "E-engga kok, cuma ini kan pertama kali kita berduaan… J-jadi agak gugup dikit."
 
-  kana "Lah? Bukannya kemarin pas aku sakit, kamu temenin aku ya? Terus kita kan pernah ke cafe bareng, game center bareng, event jejepangan bareng, ke mall kemarin juga kita berduaan. Kamu ga anggep itu kah? Sedih sih, huhuhu.”"
+  kana "Lah? Bukannya kemarin pas aku sakit, kamu temenin aku ya? Terus kita kan pernah ke cafe bareng, game center bareng, event jejepangan bareng, ke mall kemarin juga kita berduaan. Kamu ga anggep itu kah? Sedih sih, huhuhu."
 
   mcname "E-eh maksudnya gak gitu. Cuma entah kenapa hari ini aku lebih gugup aja dari biasanya.."
 
-  kana " Gugup kenapa?”"
+  kana " Gugup kenapa?"
 
   mcname "E-ehh itu…"
   #“Aduhh kok aku gugup ya? Apa gara-gara mau ngasih hadiah ke Naya, terus takut dia gak suka ya?”
 
   mcname "Ya gitu deh, haha. Ini Si Freya ke mana ya, tumben lama."
 
-  kana "Hmmm… Sebenernya kalian mau ngapain deh? Soalnya Si Freya Freya itu gak ngasih tau mau kumpul buat apaan?”"
+  kana "Hmmm… Sebenernya kalian mau ngapain deh? Soalnya Si Freya Freya itu gak ngasih tau mau kumpul buat apaan?"
 
   mcname " Eh-"
   #“Mampus , harus alesan apa ya biar bisa bohongin Kana?”
   #“Eh itu… Sebenarnya, kita mau…“
   #Sebelum [mcname] sempat menyelesaikan kata katanya, suara Freya terdengar dari arah pintu masuk.
 
-  freya "HALOOOO SEMUANYAAA!!!”"
+  freya "HALOOOO SEMUANYAAA!!!"
 
-  kana "Eh Frey, kaget…”"
+  kana "Eh Frey, kaget…"
 
   mcname "Waduh… Freya bikin kaget aja."
   #[Neutral Route 1]
 
-  freya "Halo Naya, udah siap kan?”"
+  freya "Halo Naya, udah siap kan?"
 
-  #Kana & MC
+  #Kana & [mcname]
   #“Hah, siap?”
 
-  freya "Lahh ini nih, padahal aku dah semangat gini. Dah bawa banyak game-game buat temenin kita sampe malem nih.”"
+  freya "Lahh ini nih, padahal aku dah semangat gini. Dah bawa banyak game-game buat temenin kita sampe malem nih."
 
-  kana "Ha?? Main game?”"
+  kana "Ha?? Main game?"
 
   #Freya melihat ke arahku, seakan memberi kode secara tidak langsung. [mcname] mengangguk ke arah Freya.
 
@@ -660,7 +672,7 @@ label truekanakos:
 
   mcname "Eh Freya, emang ruangan Naya kedap suara kah? Kok kita pindah ke sini?"
 
-  freya "Iya mamahnya Naya masangin peredam suara, biar kalau dia berisik main game gak ganggu tetangga.”"
+  freya "Iya mamahnya Naya masangin peredam suara, biar kalau dia berisik main game gak ganggu tetangga."
 
   kana "Perasaan ini kamarku, tapi kok kamu yang lebih tahu daripada aku."
 
@@ -673,7 +685,7 @@ label truekanakos:
 
   mcname "Eh kalau ini dari anime itu kan? Boleh diliat dari deket ga?"
 
-  kana "Boleh kok, liat aja. Asal jangan sampai rusak, hahaha.”"
+  kana "Boleh kok, liat aja. Asal jangan sampai rusak, hahaha."
 
 
   freya "Seneng banget tuh diliat-liat."
@@ -685,37 +697,37 @@ label truekanakos:
   #Setelah mengatakan itu, Freya memberikan kode kepada [mcname] yang langsung mengerti apa yang dimaksud Freya.
 
   mcname "Eh, Nay. Kalau ini kamu beli dari luar negeri? Setauku di Indo belum ada."
-  kana "Ehhh kalo itu sih beli di…”"
+  kana "Ehhh kalo itu sih beli di…"
 
   #[mcname] pun terus mengobrol dengan Kana, berusaha untuk mengalihkan perhatian Kana. Tak lama kemudian, jam menunjukan 12 malam yang menandakan bahwa hari telah berganti dan hari ulang tahun Kana pun tiba.
 
   mcname "Nay…"
 
-  kana "Iya [mcname]?”"
+  kana "Iya [mcname]?"
 
   mcname "Kamu lagi apa?"
 
-  kana "Lagi duduk di kasur doang…”"
+  kana "Lagi duduk di kasur doang…"
   #“Kamu kenapa sih dari tadi kaya ada yang aneh gitu?“
 
   mcname "Eh iya maaf, hehe."
   #“Gugup aja sih.“
 
-  kana "Gugup kenapa?”"
+  kana "Gugup kenapa?"
 
   mcname "Jadi…sebenernya… Aku ada hadiah buat kamu."
   #Narator
   #[mcname] mendekati Kana yang sedang duduk di kasurnya.
 
-  kana "Hadiah?”"
+  kana "Hadiah?"
 
   mcname "Iya, tapi kamu harus tutup mata dulu."
 
-  kana "Hah? Tutup mata?”"
+  kana "Hah? Tutup mata?"
 
   mcname "Iyaa, udah tutup mata dulu sana."
 
-  kana "O-oke.”"
+  kana "O-oke."
   #Kana pun menutup matanya.
   #Kalau di mall pilih:
   #Kalung
@@ -724,7 +736,7 @@ label truekanakos:
   #CD FILM HORROR
   #*IF [mcname] CHOOSE B DI MALL*
   #*SFX Suara Kresek*
-  kana "Udah boleh buka mata belum?”"
+  kana "Udah boleh buka mata belum?"
   mcname "Bentar lagi."
   #*SFX Suara Kresek*
   mcname "Udah boleh buka matanya Nay."
@@ -739,18 +751,18 @@ label truekanakos:
 
   mcname "Nay?"
 
-  kana "Eh i-iya makasih banyak ya. Tapi kok kamu tau ukuran sepatu aku, padahal aku ga pernah bilang ke kamu maupun Freya. Kamu tau dari mana?”"
+  kana "Eh i-iya makasih banyak ya. Tapi kok kamu tau ukuran sepatu aku, padahal aku ga pernah bilang ke kamu maupun Freya. Kamu tau dari mana?"
 
   mcname "....."
-  kana "MC…?”"
+  kana "[mcname]…?"
 
-  #Kana pun merasa aneh dengan MC, semua kedekatan mereka langsung sirna di hati Kana. Kana langsung kabur sambil memanggil Freya untuk meminta tolong.
+  #Kana pun merasa aneh dengan [mcname], semua kedekatan mereka langsung sirna di hati Kana. Kana langsung kabur sambil memanggil Freya untuk meminta tolong.
 
   #“ADUHHH BROOO, KOK LU TAU UKURAN SEPATU KANA SIH?? NGERI KALI BROO, LU STALKER YA?”
 
   #*CHOSE C*
   #*SFX Suara Kresek*
-  kana "Udah boleh buka mata belum?”"
+  kana "Udah boleh buka mata belum?"
   mcname "Bentar lagi."
   #*SFX Suara Kresek*
   mcname "Udah boleh buka matanya Nay."
@@ -765,16 +777,16 @@ label truekanakos:
 
   mcname "Ini kan alat masak Kana, soalnya kamu pernah bilang sepupumu sering datang masak-masakan. Nah aku kasih hadiah buat kamu, siapa tau aku juga bisa cobain masakan kamu hehe."
 
-  kana "Ummm, tapi sepupuku masih TK, jadi dia pake mainan alat masak-masak...”"
+  kana "Ummm, tapi sepupuku masih TK, jadi dia pake mainan alat masak-masak..."
 
   mcname "...."
-  kana "....”"
+  kana "...."
   #“Kana terdiam tanpa kata-kata, hingga Freya datang dan kaget dengan hadiah yang [mcname] berikan. Pandangan Kana dan Freya terhadap [mcname] pun menjadi aneh.
 
   #“IH BROO, YA KALI AJA NGASIH HADIAH ALAT MASAK KE CEWE YANG TINGGAL SAMA ORTUNYA TERUS MASIH KULIAH, DIKIRA HADIAH ORANG NIKAHAN KALI YA.“
   #*CHOSE D*
   #*SFX Suara Kresek*
-  kana "Udah boleh buka mata belum?”"
+  kana "Udah boleh buka mata belum?"
   mcname "Bentar lagi."
   #*SFX Suara Kresek*
   mcname "Udah boleh buka matanya Nay."
@@ -787,19 +799,19 @@ label truekanakos:
 
   mcname "Ini film baru loh, katanya viral dan terinspirasi dari kisah nyata. Bisa kali ya kita nonton bareng-bareng nanti, jadi kita nobar gitu konsepnya hahah."
 
-  kana "Tapi… Aku ga suka horror. Ini cuma kesukaan kamu aja, kan?”"
+  kana "Tapi… Aku ga suka horror. Ini cuma kesukaan kamu aja, kan?"
 
   mcname "I-iya sih tapi…"
 
-  #Kana pun meminta maaf dan menolak hadiah dari MC. Dia terlalu takut bahkan untuk menyimpan CD Blu-ray itu.
+  #Kana pun meminta maaf dan menolak hadiah dari [mcname]. Dia terlalu takut bahkan untuk menyimpan CD Blu-ray itu.
   #“ADUH BROOO LAIN KALI KALO MAU NGASIH HADIAH TUH HARUS MIKIRIN JUGA APA YANG DIA SUKA, JANGAN LU DOANG YANG SUKA.“
 
   #*CHOSE A*
   #*SFX Suara Kresek*
   #[mcname] mengambil kalung dan mulai memakaikannya ke leher Kana. Kana pun merasakan ada sensasi dingin di lehernya, curiga akan sesuatu Kana pun bertanya.
-  kana "E-eh ini apa?”"
+  kana "E-eh ini apa?"
   mcname "Sabar-sabar. Aman kok, bukan yang aneh-aneh."
-  kana "E-eeeeeh.”"
+  kana "E-eeeeeh."
   mcname "Udah boleh buka matanya Nay."
 
   kana " O-okee."
@@ -809,11 +821,11 @@ label truekanakos:
   #*SKIP TO SCENE*
   #*CG KANA KALUNG*
 
-  kana "EH INI KANN!!??”"
+  kana "EH INI KANN!!??"
 
   mcname "Selamat ulang tahun~!"
 
-  kana "EHH!!!?? K-kamu tau hari ulang tahun ku?”"
+  kana "EHH!!!?? K-kamu tau hari ulang tahun ku?"
 
   mcname "Tau doong. Sekali lagi, selamat ulang tahun Kanaia Asa~"
   #“Bagiku, kamu orang yang spesial. Jadi, aku pengen ngasih hadiah yang spesial juga.”
@@ -840,31 +852,31 @@ label truekanakos:
   mcname "Eeeehh."
   #*Blush*
   #“Ke-kenapa?”
-  kana "Soalnya…”"
+  kana "Soalnya…"
   #“.........”
   mcname "........."
-  kana "........”"
+  kana "........"
   #*Blush*
-  #“MC… Sebenarnya aku suk-”
+  #“[mcname]… Sebenarnya aku suk-”
   #*SFX Pintu Didobrak*
 
   #Narator
   #Tanpa ada angin dan hujan, tiba-tiba Freya datang membuka pintu kamar Kana.
 
-  freya "HAPPY BIRTHDAYYY NAYAAAA~!!!!”"
+  freya "HAPPY BIRTHDAYYY NAYAAAA~!!!!"
 
   #Melihat ke arah Kana dan [mcname] yang sedang berduaan dan suasana yang terasa berbeda dari biasanya, membuat Freya pun tersadar.
-  freya "Eh? Sorry kayaknya ganggu, hehe.”"
+  freya "Eh? Sorry kayaknya ganggu, hehe."
   #“Kalian lanjutin aja dulu berdua, hehe.”
   #“Hehe, aku pergi dulu baaay~”
-  kana "F-FREEEEYYAAAAAAA~!”"
+  kana "F-FREEEEYYAAAAAAA~!"
   #*Blush*
   mcname "Hahahahaha!"
 
-  kana "K-kamu jangan ketawa MC!!!”"
+  kana "K-kamu jangan ketawa [mcname]!!!"
   #*Blush*
 
-  #[mcname] tertawa dan Kana tersipu malu sambil memandang ke arah MC.
+  #[mcname] tertawa dan Kana tersipu malu sambil memandang ke arah [mcname].
   #Malam itu…
   #Menjadi malam yang tidak akan terlupakan bagi [mcname] dan Kana.
   #*Credits*
