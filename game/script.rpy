@@ -120,6 +120,6 @@ label intro:
             jump ED1
         "E. Tes Mini Game":
             # jump startPiaGame
-            jump puzzle_start
+            jump shooting_game_start
 
     return

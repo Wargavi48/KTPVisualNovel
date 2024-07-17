@@ -47,7 +47,7 @@ label chapter2kanastart:
     papah "Jadi pengen nanti malam, hehe."
     mama "*Blush*"
     "{i}Saat itu aku gak begitu paham dengan apa yang mereka bicarakan...{/i}"
-    stop music with fadeout 1.0
+    stop music fadeout 1.0
     #*balik dari flashback”
     #BGM Rumah STOP
     #BG Kamar [mcname] STOP
