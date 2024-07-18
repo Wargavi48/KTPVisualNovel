@@ -562,12 +562,16 @@ label truekanajapanfest:
   menu:
     #*CHOSE ANYTHING*
     "Kalung":
+      $ kana_present = "Kalung"
       jump truekanabuypresent
     "Sepatu":
+      $ kana_present = "Sepatu"
       jump truekanabuypresent
     "Alat Masak":
+      $ kana_present = "Alat Masak"
       jump truekanabuypresent
-    "CD FILM HORROR":
+    "CD Film Horror":
+      $ kana_present = "CD Film Horror"
       jump truekanabuypresent
 
 label truekanabuypresent:
@@ -706,7 +710,8 @@ label truekananeutralroute1:
   kana "Perasaan ini kamarku, tapi kok kamu yang lebih tahu daripada aku."
 
   mcname "Hahaha."
-  #Ini mungkin kali ke tiga [mcname] ke kamar Kana, akan tetapi kali ini ia bisa melihat ruangan kamar Kana dengan lebih seksama. [mcname] melihat ternyata di pojok ruangan kamarnya Kana tersembunyi satu tempat khusus yang dipenuhi kumpulan-kumpulan figur dan merch anime.
+  "Ini mungkin kali ke tiga [mcname] ke kamar Kana, akan tetapi kali ini ia bisa melihat ruangan kamar Kana dengan lebih seksama."
+  "[mcname] melihat ternyata di pojok ruangan kamarnya Kana tersembunyi satu tempat khusus yang dipenuhi kumpulan-kumpulan figur dan merch anime."
 
   mcname "Wahhhh… Kana ini kan dari anime itu, keren banget kamu punya? Bukannya ini limited-edition ya?"
 
@@ -716,19 +721,19 @@ label truekananeutralroute1:
 
   kana "Boleh kok, liat aja. Asal jangan sampai rusak, hahaha."
 
-
   freya "Seneng banget tuh diliat-liat."
 
   mcname "Hehe sorry, soalnya ini kesukaanku juga."
 
   freya "Ya udah kalian have fun dulu ya, aku mau ke toilet dulu bentar."
 
-  #Setelah mengatakan itu, Freya memberikan kode kepada [mcname] yang langsung mengerti apa yang dimaksud Freya.
+  "Setelah mengatakan itu, Freya memberikan kode kepada [mcname] yang langsung mengerti apa yang dimaksud Freya."
 
   mcname "Eh, Nay. Kalau ini kamu beli dari luar negeri? Setauku di Indo belum ada."
   kana "Ehhh kalo itu sih beli di…"
 
-  #[mcname] pun terus mengobrol dengan Kana, berusaha untuk mengalihkan perhatian Kana. Tak lama kemudian, jam menunjukan 12 malam yang menandakan bahwa hari telah berganti dan hari ulang tahun Kana pun tiba.
+  "[mcname] pun terus mengobrol dengan Kana, berusaha untuk mengalihkan perhatian Kana."
+  "Tak lama kemudian, jam menunjukan 12 malam yang menandakan bahwa hari telah berganti dan hari ulang tahun Kana pun tiba."
 
   mcname "Nay…"
 
@@ -737,16 +742,16 @@ label truekananeutralroute1:
   mcname "Kamu lagi apa?"
 
   kana "Lagi duduk di kasur doang…"
-  #“Kamu kenapa sih dari tadi kaya ada yang aneh gitu?“
+  kana "Kamu kenapa sih dari tadi kaya ada yang aneh gitu?"
 
   mcname "Eh iya maaf, hehe."
-  #“Gugup aja sih.“
+  mcname "Gugup aja sih."
 
   kana "Gugup kenapa?"
 
   mcname "Jadi…sebenernya… Aku ada hadiah buat kamu."
   #Narator
-  #[mcname] mendekati Kana yang sedang duduk di kasurnya.
+  "[mcname] mendekati Kana yang sedang duduk di kasurnya."
 
   kana "Hadiah?"
 
@@ -757,117 +762,94 @@ label truekananeutralroute1:
   mcname "Iyaa, udah tutup mata dulu sana."
 
   kana "O-oke."
-  #Kana pun menutup matanya.
+  "Kana pun menutup matanya."
   #Kalau di mall pilih:
-  #Kalung
-  #Sepatu
-  #Alat Masak
-  #CD FILM HORROR
-  #*IF [mcname] CHOOSE B DI MALL*
-  #*SFX Suara Kresek*
-  kana "Udah boleh buka mata belum?"
-  mcname "Bentar lagi."
-  #*SFX Suara Kresek*
-  mcname "Udah boleh buka matanya Nay."
+  if kana_present = "Kalung": #Kalung
+    jump truekanarightpresent
+  elif kana_present = "Sepatu": #Sepatu
+    #*IF [mcname] CHOOSE B DI MALL*
+    #*SFX Suara Kresek*
+    kana "Udah boleh buka mata belum?"
+    mcname "Bentar lagi."
+    #*SFX Suara Kresek*
+    mcname "Udah boleh buka matanya Nay."
+    kana " O-okee."
+    #Narrator
+    "Perlahan Kana membuka matanya."
+    #Asset Sepatu Hadiah ultah Kana
+    "Kana terdiam sejenak…"
+    "Lagi-lagi Kana terdiam…"
+    "Kana masih terdiam…"
+    mcname "Nay?"
+    kana "Eh i-iya makasih banyak ya. Tapi kok kamu tau ukuran sepatu aku, padahal aku ga pernah bilang ke kamu maupun Freya. Kamu tau dari mana?"
+    mcname "....."
+    kana "[mcname]…?"
+    "Kana pun merasa aneh dengan [mcname], semua kedekatan mereka langsung sirna di hati Kana."
+    "Kana langsung kabur sambil memanggil Freya untuk meminta tolong."
+    #“ADUHHH BROOO, KOK LU TAU UKURAN SEPATU KANA SIH?? NGERI KALI BROO, LU STALKER YA?”
+  elif kana_present = "Alat Masak": #Alat Masak
+    #*CHOSE C*
+    #*SFX Suara Kresek*
+    kana "Udah boleh buka mata belum?"
+    mcname "Bentar lagi."
+    #*SFX Suara Kresek*
+    mcname "Udah boleh buka matanya Nay."
+    kana " O-okee."
+    #Narrator
+    "Perlahan Kana membuka matanya."
+    #Asset Alat masak Set
+    "Raut wajah Kana bingung dan terheran-heran, kenapa [mcname] memberikan dia alat masak set lengkap."
+    kana "Ummm ini apa?"
+    mcname "Ini kan alat masak Kana, soalnya kamu pernah bilang sepupumu sering datang masak-masakan. Nah aku kasih hadiah buat kamu, siapa tau aku juga bisa cobain masakan kamu hehe."
+    kana "Ummm, tapi sepupuku masih TK, jadi dia pake mainan alat masak-masak..."
+    mcname "...."
+    kana "...."
+    "Kana terdiam tanpa kata-kata, hingga Freya datang dan kaget dengan hadiah yang [mcname] berikan."
+    "Pandangan Kana dan Freya terhadap [mcname] pun menjadi aneh."
+    #“IH BROO, YA KALI AJA NGASIH HADIAH ALAT MASAK KE CEWE YANG TINGGAL SAMA ORTUNYA TERUS MASIH KULIAH, DIKIRA HADIAH ORANG NIKAHAN KALI YA.“
+  elif kana_present = "CD Film Horror": #CD Film Horror
+    #*CHOSE D*
+    #*SFX Suara Kresek*
+    kana "Udah boleh buka mata belum?"
+    mcname "Bentar lagi."
+    #*SFX Suara Kresek*
+    mcname "Udah boleh buka matanya Nay."
+    kana "O-okee."
+    #Narrator
+    "Perlahan Kana membuka matanya."
+    #Asset CD Blu-ray
+    "Kana membuka dan melihat bahwa ada CD Blu-ray yang berjudul “The Conjurang” dengan cover yang gelap, mengerikan, dan ada hantunya."
+    mcname "Ini film baru loh, katanya viral dan terinspirasi dari kisah nyata. Bisa kali ya kita nonton bareng-bareng nanti, jadi kita nobar gitu konsepnya hahah."
+    kana "Tapi… Aku ga suka horror. Ini cuma kesukaan kamu aja, kan?"
+    mcname "I-iya sih tapi…"
+    "Kana pun meminta maaf dan menolak hadiah dari [mcname]. Bahkan dia terlalu takut untuk menyimpan CD Blu-ray itu."
+    #“ADUH BROOO LAIN KALI KALO MAU NGASIH HADIAH TUH HARUS MIKIRIN JUGA APA YANG DIA SUKA, JANGAN LU DOANG YANG SUKA.“
 
-  kana " O-okee."
-  #Narrator
-  #Perlahan Kana membuka matanya.
-  #Asset Sepatu Hadiah ultah Kana
-  #Kana terdiam sejenak…
-  #Lagi-lagi Kana terdiam…
-  #Kana masih terdiam…
-
-  mcname "Nay?"
-
-  kana "Eh i-iya makasih banyak ya. Tapi kok kamu tau ukuran sepatu aku, padahal aku ga pernah bilang ke kamu maupun Freya. Kamu tau dari mana?"
-
-  mcname "....."
-  kana "[mcname]…?"
-
-  #Kana pun merasa aneh dengan [mcname], semua kedekatan mereka langsung sirna di hati Kana. Kana langsung kabur sambil memanggil Freya untuk meminta tolong.
-
-  #“ADUHHH BROOO, KOK LU TAU UKURAN SEPATU KANA SIH?? NGERI KALI BROO, LU STALKER YA?”
-
-  #*CHOSE C*
-  #*SFX Suara Kresek*
-  kana "Udah boleh buka mata belum?"
-  mcname "Bentar lagi."
-  #*SFX Suara Kresek*
-  mcname "Udah boleh buka matanya Nay."
-
-  kana " O-okee."
-  #Narrator
-  #Perlahan Kana membuka matanya.
-  #Asset Alat masak Set
-  #Raut wajah Kana bingung dan terheran heran, kenapa [mcname] memberikan dia alat masak set lengkap.
-
-  kana "Ummm ini apa?"
-
-  mcname "Ini kan alat masak Kana, soalnya kamu pernah bilang sepupumu sering datang masak-masakan. Nah aku kasih hadiah buat kamu, siapa tau aku juga bisa cobain masakan kamu hehe."
-
-  kana "Ummm, tapi sepupuku masih TK, jadi dia pake mainan alat masak-masak..."
-
-  mcname "...."
-  kana "...."
-  #“Kana terdiam tanpa kata-kata, hingga Freya datang dan kaget dengan hadiah yang [mcname] berikan. Pandangan Kana dan Freya terhadap [mcname] pun menjadi aneh.
-
-  #“IH BROO, YA KALI AJA NGASIH HADIAH ALAT MASAK KE CEWE YANG TINGGAL SAMA ORTUNYA TERUS MASIH KULIAH, DIKIRA HADIAH ORANG NIKAHAN KALI YA.“
-  #*CHOSE D*
-  #*SFX Suara Kresek*
-  kana "Udah boleh buka mata belum?"
-  mcname "Bentar lagi."
-  #*SFX Suara Kresek*
-  mcname "Udah boleh buka matanya Nay."
-
-  kana "O-okee."
-  #Narrator
-  #Perlahan Kana membuka matanya.
-  #Asset CD Blu-ray
-  #Kana membuka dan melihat bahwa ada CD Blu-ray yang berjudul “The Conjurang” dengan cover yang gelap, mengerikan, dan ada hantunya.
-
-  mcname "Ini film baru loh, katanya viral dan terinspirasi dari kisah nyata. Bisa kali ya kita nonton bareng-bareng nanti, jadi kita nobar gitu konsepnya hahah."
-
-  kana "Tapi… Aku ga suka horror. Ini cuma kesukaan kamu aja, kan?"
-
-  mcname "I-iya sih tapi…"
-
-  #Kana pun meminta maaf dan menolak hadiah dari [mcname]. Dia terlalu takut bahkan untuk menyimpan CD Blu-ray itu.
-  #“ADUH BROOO LAIN KALI KALO MAU NGASIH HADIAH TUH HARUS MIKIRIN JUGA APA YANG DIA SUKA, JANGAN LU DOANG YANG SUKA.“
-
+label truekanarightpresent:
   #*CHOSE A*
   #*SFX Suara Kresek*
-  #[mcname] mengambil kalung dan mulai memakaikannya ke leher Kana. Kana pun merasakan ada sensasi dingin di lehernya, curiga akan sesuatu Kana pun bertanya.
+  "[mcname] mengambil kalung dan mulai memakaikannya ke leher Kana. Kana pun merasakan ada sensasi dingin di lehernya, curiga akan sesuatu Kana pun bertanya."
   kana "E-eh ini apa?"
   mcname "Sabar-sabar. Aman kok, bukan yang aneh-aneh."
   kana "E-eeeeeh."
   mcname "Udah boleh buka matanya Nay."
-
   kana " O-okee."
   #Narrator
-  #Perlahan Kana membuka matanya.
-  #Saat Kana membuka matanya, dia terlihat kaget dan terkejut karena di lehernya terdapat sebuah kalung cantik bersinar yang berwarna biru. Ternyata sensasi dingin tersebut merupakan kalung.
+  "Perlahan Kana membuka matanya."
+  "Saat Kana membuka matanya, dia terlihat kaget dan terkejut karena di lehernya terdapat sebuah kalung cantik bersinar yang berwarna biru. Ternyata sensasi dingin tersebut merupakan kalung."
   #*SKIP TO SCENE*
   #*CG KANA KALUNG*
-
   kana "EH INI KANN!!??"
-
   mcname "Selamat ulang tahun~!"
-
   kana "EHH!!!?? K-kamu tau hari ulang tahun ku?"
-
   mcname "Tau doong. Sekali lagi, selamat ulang tahun Kanaia Asa~"
-  #“Bagiku, kamu orang yang spesial. Jadi, aku pengen ngasih hadiah yang spesial juga.”
-
-  #Kana
-  #*BLUSH*
-  #“M-makasih banyak ya.”
-
+  mcname "Bagiku, kamu orang yang spesial. Jadi, aku pengen ngasih hadiah yang spesial juga."
+  #Kana *BLUSH*
+  kana "M-makasih banyak ya."
   mcname "Hehe, gimana Nay kamu suka?"
-
   kana "BANGETTTT, aku suka pake banget. Kok kamu tau aku lagi pengen kalung sih?"
-
-  mcname "Kita kan kemarin abis ke mall, terus aku liat kamu merhatiin toko perhiasan gitu. Jadinya aku beli kalung ini sambil bayangin kamu dan aku rasa kalung ini cocok buat kamu."
+  mcname "Kita kan kemarin abis ke mall, terus aku liat kamu merhatiin toko perhiasan gitu."
+  mcname "Jadinya aku beli kalung ini sambil bayangin kamu dan aku rasa kalung ini cocok buat kamu."
 
   kana "Iiiiii makasih banyak yaa, [mcname]"
 
