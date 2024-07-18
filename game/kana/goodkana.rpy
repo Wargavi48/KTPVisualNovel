@@ -8,39 +8,30 @@ label goodkana:
   #—---------------------------------------------------IF CHOSE A—----------------------------------------------
   #—-------------------------------------------------GOOD ENDING—-------------------------------------------
   
-  mcname "Hmmm, kayaknya kalau ajak Kana dia mau deh. Ya udah deh, aku ambil aja dulu."
-  
-  
+  mcname "Hmmm, kayaknya kalau ajak Kana dia mau deh. Ya udah deh, aku ambil aja dulu." 
   #*SKIP TO SCENE*
   #*BG KANTIN*
-  
   mcname "Eh maaf lama ya, tadi abis dari toilet hehe."
-  
   freya "Cuci tangan ga?"
-  
   mcname "Ya cuci lah, masa enggak? Jorok banget ih."
-  
   kana "Hahaha, gapapa kita juga baru datang tadi kok."
-  
   mcname "Eh kalian udah pesen makan? Aku mau pesen bentar ya."
-  
   kana "Udah tadi, tapi lama nunggu soalnya ngantri."
-  
   freya "Iya, aku sama Naya udah pesen."
-  
   mcname "Oke aku pesen dulu ya."
-  
   #*CHOSE*
-  #Nasi Cumi Pak (donatur)
-  #Karedok pak/bu (donatur)
-  #Ayam geprek pak (donatur)
-  
-  #*CHOSE C*
-  mcname "Hmmm kayaknya makan ayam geprek enak deh, pengen yang pedes sesekali."
-  
-  #Ternyata ayam yang kamu pesen terlalu pedes dan bikin kamu sakit perut sampe dilarikan ke rumah sakit.
-  #“ADUHHH KASIAN BANGET MASIH MUDA UDAH KE RS GARA GARA SENENG MAKAN PEDES, LAIN KALI JANGAN TERLALU PEDES YA! “
-  
+  menu:
+    "Nasi Cumi Pak (donatur)":
+    "Karedok pak/bu (donatur)":
+    "Ayam geprek pak (donatur)":
+      #*CHOSE C*
+      mcname "{i}Hmmm kayaknya makan ayam geprek enak deh, pengen yang pedes sesekali.{/i}"
+      "Ternyata ayam yang kamu pesen terlalu pedes dan bikin kamu sakit perut sampe dilarikan ke rumah sakit."
+      scene black with Dissolve(2.0)
+      show text "{color=#FFF}ADUHHH KASIAN BANGET MASIH MUDA UDAH KE RS GARA GARA SENENG MAKAN PEDES, LAIN KALI JANGAN TERLALU PEDES YA!{/color}" with Pause(2.0)
+      show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+      play music "audio/Dreamcatcher_v2.mp3"
+      jump credits
   #*CHOSE B*
   mcname "Karedok kali ya, udah lama ga makan sayuran aku."
   
