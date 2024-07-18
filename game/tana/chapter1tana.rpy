@@ -1051,15 +1051,17 @@ label tanamcdaftarulang:
     "[mcname] dan Tana berjalan bersama berkeliling di mall. Tiba tiba…"
     # Insert Sound Nada Dering
     "*Kring kring"
+    hide tana at tana_near with dissolve
     "(Ada yang nelepon HP MC)"
     "[mcname] membuka HP nya dan melihat bahwa mamahnya menelpon."
+    #Insert UI Handphone Nelpon"
     mcname "Eh Tana, bentar ya. Mamah gue nelepon."
     mcname "Gue ke sana dulu, ya."
     show tana_side at left with dissolve
     tana "Okee~"
     hide tana_side with dissolve
     hide tana with dissolve
-    "Insert UI Handphone Nelpon"
+    #Insert UI Handphone Nelpon"
     show side mama at left with dissolve
     mama "Enak ya, anakku udah tinggal sendiri. Sekarang ga pernah ngabarin Mamah lagi. Huhu"
     hide side mama with dissolve
