@@ -86,16 +86,16 @@ image side kana_side_smile = "Characters/kana_side_smile.png"
 image side kana_side = "Characters/kana_side.png"
 
 # Define side tana character
-image side tana_side_mad = "Characters/Tana_side_mad.png"
-image side tana_side_mad2 = "Characters/Tana_side_mad2.png"
+image side tana_side_angry = "Characters/Tana_side_angry.png"
+image side tana_side_angry_2 = "Characters/Tana_side_angry_2.png"
 image side tana_side_shy = "Characters/Tana_side_shy.png"
 image side tana_side_shock = "Characters/Tana_side_shock.png"
 image side tana_side_sad = "Characters/Tana_side_sad.png"
 image side tana_side_smug = "Characters/Tana_side_smug.png"
 image side tana_side_talk = "Characters/Tana_side_talk.png"
 image side tana_side_idle = "Characters/Tana_side_idle.png"
-image side tana_side_laugh = "Characters/Tana_side_acumalaka.png"
-image side tana_side_fascinated = "Characters/Tana_side_fascinated.png"
+image side tana_side_laugh = "Characters/Tana_side_laugh.png"
+image side tana_side_confused = "Characters/Tana_side_confused.png"
 image side tana_side = "Characters/Tana_side.png"
 
 # Define side freya character
