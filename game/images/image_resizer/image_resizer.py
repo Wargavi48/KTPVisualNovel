@@ -1,3 +1,6 @@
+# must install pillow first on your pc
+# pip install pillow
+
 from PIL import Image
 import os
 
