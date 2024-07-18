@@ -1,9 +1,9 @@
 label truekana:
-  $ renpy.block_rollback()
-  scene kantin with Dissolve(2.0)
+  stop music fadeout 1.0
+  scene black with dissolve
+  play music "audio/BGM_Kantin.mp3" fadein 1.0
+  scene kantin with dissolve
   $ quick_menu = True
-  mcname "Ehhh tapi udah kelamaan ini, ga enak sama Kana nunggu lama."
-  "[mcname] pun memilih untuk mengabaikan flayer tersebut, lalu lari agar bisa datang tepat waktu."
   mcname "Huft Huft. Ehh maaf, aku telat dikit gapapa kan?"
   show kana at kana_near with dissolve
   show kana_side at left with dissolve
@@ -15,56 +15,67 @@ label truekana:
   hide kana_side at left with dissolve
   mcname "Heeee, okee makasih yaa udah mesenin sekalian amanin tempat duduk juga."
   "[mcname] duduk di tempat duduk dan mulai melanjutkan obrolan."
+  $ quick_menu = False
+  scene black with dissolve
+  scene kantin with dissolve
+  $ quick_menu = True
   mcname "Ehh Kana, kamu tau ga siiih?"
   show kana_side at left with dissolve
   kana "Iya [mcname]? Kenapa?"
   hide kana_side at left with dissolve
-  mcname "Aku denger-denger ada event jejepangan yang bakalan diadain sama pihak kampus gitu loh."
+  mcname "Aku denger-denger ada event jejepangan yang bakal diadain sama pihak kampus gitu loh."
   show kana_side at left with dissolve
   kana "YANG BENER!!??"
   hide kana_side at left with dissolve
-  mcname "Aku denger-denger ada event jejepangan yang bakalan diadain sama pihak kampus gitu loh."
-  "Kana pun menjawab dengan penuh semangat, saking semangatnya ia sampai berdiri dari tempat duduknya dan membuatnya diliatin oleh orang-orang sekitar. "
+  "Kana pun menjawab dengan penuh semangat, saking semangatnya ia sampai berdiri dari tempat duduknya dan membuatnya diliatin oleh orang-orang sekitar."
   mcname "Semangat banget kamu Kana, ahahah. Sampe diliatin orang-orang loh."
   show kana_side at left with dissolve
-  kana "EH!??? I-iyya maaf maaf, terlalu excited dengernya. Denger-denger sih event jejepangan kampus ini tuh selalu rame gitu, makanya aku excited. Apalagi bareng temen, hehe."
+  kana "EH!??? I-iya maaf-maaf, terlalu excited soalnya. Denger-denger sih event jejepangan kampus ini tuh selalu rame gitu, makanya aku excited. Apalagi bareng temen, hehe."
   hide kana_side at left with dissolve
-  mcname "Eh…i-iya kana, kalau gitu kamu mau ke eventnya bareng aku, gak? Sekalian ajarin aku, soalnya ini kan event pertamaku hehe."
+  mcname "Eh iya Kana, kalau gitu kamu mau ke eventnya bareng aku, gak? Sekalian ajarin aku, soalnya ini kan event pertamaku hehe."
   show kana_side at left with dissolve
-  kana "B-boleh….nanti kita kabar kabaran aja deh."
+  kana "Ah! Serius? Nanti kita kabar-kabaran ya."
   hide kana_side at left with dissolve
-  "Setelah itu mereka pun menghabiskan makanannya, lalu Kana dan [mcname] pun berpisah karena sudah ada kegiatan masing-masing yang harus dilakukan. Tak terasa waktu pun telah berlalu dan malam hari telah tiba."
+  mcname "Okeee~"
+  "Setelah itu mereka pun menghabiskan makanannya, lalu Kana dan [mcname] berpisah karena sudah ada kegiatan masing-masing yang harus dilakukan. Tak terasa waktu pun telah berlalu dan malam hari telah tiba."
   jump truekanakos
 
 label truekanakos:
-  scene mc bedroom
-  mcname "{i}Aduuuh, mulai chat nya gimana ya? Bingung…{i}"
-  $ quick_menu=False
+  $ quick_menu = False
+  stop music fadeout 1.0
+  scene black with dissolve
+  play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+  scene kamar mc kota with dissolve
+  $ quick_menu = True
+  mcname "{i}Aduuuh, mulai chatnya gimana ya? Bingung...{i}"
   menu:
+    "Yang kamu lakukan..."
     "P":
-      "[mcname] memilih untuk menghubungi Kana dengan awalan “P”, dibandingkan hal lainnya. Kana pun tidak membalas chat tersebut dan meng-ghosting pesan dari [mcname] sampai event di mulai…"
-      # BadEnding
-      #scene black with Dissolve(2.0)
-      #show text "{color=#FFF}LO KEPEDESAN DAN AKHIRNYA MALAH KE WC TERUS TERUSAN DARIPADA NGOBROL SAMA MEREKA{/color}" with Pause(2.0)
-      #show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-      #play music "audio/Dreamcatcher_v2.mp3"
-      #jump credits
-    "Malam nay sibuk ga?":
-      "[mcname] menghubungi Kana lewat HPnya, di situ [mcname] bertanya tentang kabarnya terlebih dahulu dan basa basi seperti orang yang kehabisan topik."
+      "[mcname] memilih untuk menghubungi Kana dengan awalan “P”, dibandingkan hal lainnya. Kana pun tidak membalas chat tersebut dan meng-ghosting pesan dari [mcname] sampai event dimulai."
+      $ quick_menu = False
+      stop music fadeout 1.0
+      scene black with dissolve
+      show text "{color=#FFF}*HAHAHAHA DI GHOSTING TUH, MAKANYA JANGAN ASAL P, P, P GA SOPAN TAU*{/color}" with Pause(2.0)
+      show text "{color=#FF0000}BAD END{/color}"
+      play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+      jump credits
+    "Malam Kana, sibuk ga?":
+      "[mcname] menghubungi Kana lewat HPnya, di situ [mcname] bertanya tentang kabarnya terlebih dahulu dan basa-basi seperti orang yang kehabisan topik."
       # scene call hp
       jump truekanachat
     "Langsung telepon aja":
-      "[mcname] memilih untuk langsung menelepon Kana dan ternyata Kana sedang bersama keluarga dan tanpa sengaja Kana memblokir nomor [mcname] karena [mcname] menelepon terus menerus."
-      # BadEnding
-      #scene black with Dissolve(2.0)
-      #show text "{color=#FFF}LO KEPEDESAN DAN AKHIRNYA MALAH KE WC TERUS TERUSAN DARIPADA NGOBROL SAMA MEREKA{/color}" with Pause(2.0)
-      #show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-      #play music "audio/Dreamcatcher_v2.mp3"
-      #jump credits
+      "[mcname] memilih untuk langsung menelepon Kana dan ternyata Kana sedang bersama keluarga. Tanpa sengaja, Kana memblokir nomor [mcname] karena [mcname] menelepon terus menerus."
+      $ quick_menu = False
+      stop music fadeout 1.0
+      scene black with dissolve
+      show text "{color=#FFF}*YAHAHAHA, DIBLOCK KAN? MAKANYA JANGAN LANGSUNG TELPON ORANG AJA, KAN DIBLOCK*{/color}" with Pause(2.0)
+      show text "{color=#FF0000}BAD END{/color}"
+      play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+      jump credits
 
 label truekanachat:
   #*SKIP TO SCENE*
-  #*BG HP*
+  #*BG HP CHATTING*
   mcname "Malam Kana, sibuk nggak ya? Hehe"
   kana "Umm engga kok knp ya?(｡･∀･)ﾉﾞ "
   mcname "Aku mau nanya soal event jejepangan itu, jadi kan?"
@@ -73,71 +84,96 @@ label truekanachat:
   kana "Jadi kok. Mau ketemuan jam berapa?┏ (゜ω゜)=👉"
   mcname "Jam 7 lewat 12 gimana?"
   kana "Jam 7 lewat 12? Kaya pernah denger di mana deh (⊙_⊙)？"
-  mcname "Ahh perasaan kamu aja kali, gimana ga kemaleman kah?"
+  mcname "Ahh perasaan kamu aja kali. Gimana? Ga kemaleman kah?"
   kana "Hmmm, oke deh jam segitu aja."
-  mcname "Btw nanti kita disana mau ngapain aja ya? Jujur ini event pertamaku, jadi tadi gimana tips n triknya buat di event, Yang Mulia Kanaia Asa?"
+  mcname "Btw nanti kita di sana mau ngapain aja ya? Jujur ini event pertamaku, jadi tadi gimana tips and tricknya buat di event, Yang Mulia Kanaia Asa?"
   kana "IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-"
   "Tanpa sengaja Kana menekan tombol voice call dan [mcname] pun tanpa pikir panjang menekan tombol jawab."
   #*SKIP TO SCENE*
-  #*BG HP*
-  "Ehh maaf kepencet… aduh malu banget, aku matiin aja ya."
+  #*BG HP VOICE CALL*
+  kana "Ehh maaf kepencet!!! Aduh malu banget, aku matiin aja ya."
   mcname "JANGAN!!!"
   "Kana terdiam kaget karena mendengar suara [mcname] yang tiba-tiba teriak."
-  mcname "Maksudku, ga usah dimatiin kalau boleh, biar lebih seru ngobrolnya."
-  kana "Uuu mmm… o-oke deh."
+  mcname "Maksudnya ga usah dimatiin kalau boleh, biar lebih seru ngobrolnya."
+  kana "Uuummm.. o-oke deh."
   mcname "Jadi gimana tadi pengalaman kamu? Aku nungguin loh, kasih tau dong biasanya gimana aja di event jejepangan tuh."
   kana "Oh iya lupa, jadi kalau aku dulu ikut event jejepangan tuh biasanya-"
   "Tanpa sadar Kana dan [mcname] pun mengobrol lama, bahkan sampai melewati tengah malam."
   "Beberapa kali [mcname] mendengar Kana menguap dan menyarankan untuk mengakhiri voice call, tetapi ia tetap melanjutkan ceritanya seakan meluapkan semua cerita yang telah ia simpan sendirian selama ini"
   "Beberapa saat kemudian pun Kana tertidur dengan voice call masih menyala."
-  mcname "Kana? Kana…"
+  mcname "Kana...? Kana...?"
   #*SFX Amimir*
-  #play sound "audio/open_door.mp3" fadeout 1.0
-  "Beberapa kali [mcname] menyebutkan nama Kana akan tetapi Kana tetap tidak menjawab. Beberapa saat kemudian, [mcname] menyadari bahwa Kana telah tertidur."
-  "Suara nafas Kana sempat beberapa kali terdengar, setelah beberapa saat [mcname] pun memilih untuk mengakhiri voice call itu dan tidur agar besok tidak telat."
-  #*SKIP TO SCENE*
-  #*BG KOS (PAGI)*
+  "Beberapa kali [mcname] menyebutkan nama Kana akan tetapi Kana tetap tidak menjawab."
+  mcname "{i}Heeee... Kana ketiduran ya?{/i}"
+  "Suara nafas Kana sempat beberapa kali terdengar."
+  "Setelah beberapa saat, [mcname] pun memilih untuk mengakhiri voice call itu dan tidur agar tidak telat besok."
+  $ quick_menu = False
+  stop music fadeout 1.0
+  scene black with dissolve
+  play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
+  scene kamar mc kota with dissolve
+  $ quick_menu = True
   "[mcname] bangun beberapa lebih awal daripada waktu yang telah dijanjikan, ia tidak sabar untuk pergi ke event tersebut dan menghabiskan waktu dengan Kana."
-  "[mcname] dan Kana berjanji untuk bertemu di depan kampus."
   "[mcname] pun tidak lupa untuk makan, mandi, serta memakai parfum yang menurutnya lebih mahal daripada makannya selama 1 minggu."
-  "[mcname] datang 10 menit lebih awal dari pada jam yang telah ditentukan sebelumnya."
-  #*SKIP TO SCENE*
-  #*BG DEPAN KAMPUS (INTERIOR JEJEPANGAN)
-  kana " [mcname]…ha…ha..haloo…maaf yaa… nunggu lama.."
-  "Suara Kana terpotong-potong yang menandakan bahwa Kana sudah lari…"
-  mcname "Hahah santai aja Nay, tarik nafas dulu bentar gitu. Keliatan banget kalau kamu baru lari tuh."
-  kana "Maaf ya, tadi lumayan macet di jalan, makanya aku lari. Kukira udah telat, terus aku juga liat kamu udah ada di depan gerbang. Jadi tadi aku lari deh…"
-  mcname "Santai aja Nay. Ya udah, nih kamu minum dulu."
-  #IF CAN 
-  #*SKIP TO CG*
-  #*KANA AMBIL MINUM/KANA MINUM DARI BOTOL*
+  mcname "Oke, sudah siap! Let's go~"
+  $ quick_menu = False
+  stop music fadeout 1.0
+  scene black with dissolve
+  play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+  #Harusnya BGM Jejepangan Malam
+  scene depan kampus with dissolve
+  #Harusnya BG Jejepangan malam
+  $ quick_menu = True
+  kana "[mcname]... ha.. ha.."
+  kana "Haloo, maaf ya nunggu lama.."
+  "Suara Kana terpotong-potong yang menandakan bahwa Kana baru saja berlari."
+  mcname "Hahaha santai aja Kana, tarik nafas dulu bentar gitu. Keliatan banget kalau kamu baru lari tuh."
+  kana "Maaf ya tadi lumayan macet di jalan, makanya aku lari. Kukira udah telat, terus aku juga liat kamu udah ada di depan gerbang. Jadi tadi aku lari deh..."
+  mcname "Santai aja Kana. Ya udah, nih kamu minum dulu."
+#HARUSNYA SFX GLUG GLUG MINUM
   kana "Makasih ya [mcname]. Sekarang udah aman kok, jadi kamu siap gak?"
-  #*BACK TO BG EVENT*
-  mcname "Siap dong, ya kali ga siap. Nggak kaya siapa gitu, yang ketiduran di tengah-tengah call."
+  mcname "Siap dong, ya kali ga siap. Nggak kaya siapa gitu... Yang ketiduran di tengah-tengah call."
   kana "IHHHH kamu masih bangun???? Kukira udah dimatiin callnya."
   mcname "Hahaha. Soalnya kamu asik banget, cerita ini itu, eh tiba-tiba diem. Pas dipanggil-panggil, kamu malah tidur. Mana sempet ngigo dikit juga."
   kana "KAMU DENGER!??? AAAAAA!!!"
-  kana "Lupaiin gak? Kalau engga, aku marah besar nih!"
+  kana "Lupaiin gak? Kalau enggak, aku marah besar nih!"
   mcname "Marah karir, maksudnya?"
   kana "LUPAINNN!!!"
   mcname "Iya iya. Mending sekarang kita masuk yuk, keburu malem banget nanti pada tutup."
-  kana "Awas aja kalau nggak, aku bakal buat kamu lupa dengan paksa! Ya udah deh, ayo masuk. Aku dah ga sabar."
-  "[mcname] dan Kana pun pergi ke event tersebut. Di sana banyak kegiatan, mulai dari event utama sampai event sampingan, diantaranya ada cosplay event, song cover competition, dan mini game yang terinspirasi dari permainan tradisional Jepang lainnya."
-  mcname "Ehhh Kana bentar…."
-  mcname "*huft*-*huft*-*huft*-*huft*"
-  mcname "Sabar… Kana… kamu semangat banget sih… B-bentar aku tarik nafas dulu ya."
+  kana "Awas aja kalo nggak, aku bakal buat kamu lupa dengan paksa! Ya udah deh, ayo masuk. Aku dah ga sabar."
+  "[mcname] dan Kana pun pergi ke event tersebut."
+  $ quick_menu = False
+  stop music fadeout 1.0
+  scene black with dissolve
+  play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
+  scene kamar mc kota with dissolve
+  $ quick_menu = True
+  "Di sana banyak kegiatan, mulai dari event utama sampai event sampingan."
+  "Di antaranya ada cosplay event, song cover competition, dan mini game yang terinspirasi dari permainan tradisional Jepang lainnya."
+  mcname "Ehhh Kana bentar...\n*Huft huft*"
+  mcname "Sabar... Kana... Kamu semangat banget sih... B-bentar aku tarik nafas dulu."
   kana "Ahhh ayooo~ Kamu masa kalah sih sama aku?"
-  mcname "Soalnya kamu cepet banget ke sana ke sini nya. Belum ada 10 menit, kita dah pindah tempat mulu. Kamu ga mau liat-liat dulu booth merch yang ada di situ?"
-  kana "Ihhh kamu semalam ga research dulu tentang booth yang bakalan ada? Aku udah liat-liat listnya dan ada beberapa tempat yang pengen aku samperin. Jadi aku cuma bentar doang di tempat yang nggak aku pengen banget."
+  mcname "Soalnya kamu cepet banget ke sana ke sininya."
+  mcname "Belum ada 10 menit, kita udah pindah tempat mulu. Kamu ga mau liat-liat dulu booth merch yang ada di situ?"
+  kana "Ihhh kamu semalem ga research dulu tentang booth yang bakalan ada? Aku udah liat-liat listnya."
+  kana "Ada beberapa tempat yang pengen aku samperin, jadi aku cuma bentar doang di tempat lainnya gitu..."
   mcname "Oooo gitu ya ternyata. Maaf deh ini kan event pertama ku, jadi aku ga tau harus research list kaya gitu."
   kana "Ya udah ayo ikutin aku aja."
-  "Kana pun langsung menarik tangan [mcname] yang hanya bisa mengikuti kemanapun Kana pergi, hingga Kana berhenti di suatu tempat."
+  "Kana pun langsung menarik tangan [mcname] yang hanya bisa mengikuti kemana pun Kana pergi, hingga Kana berhenti di suatu tempat."
   mcname "Ummm Kana? Ada apa?"
-  "Kana terdiam, di situ ada sebuah event yang sedang berlangsung. [mcname] pun melihat event tersebut, ada seseorang yang sedang melakukan sing cover competition."
-  #*IF CAN*
-  #*SKIP TO SCENE*
-  #*BG PANGGUNG MINI*
+  "Kana terdiam, di situ ada sebuah event yang sedang berlangsung."
+  "[mcname] pun melihat event tersebut, di sana ada seseorang yang sedang melakukan sing cover competition."
+  $ quick_menu = False
+  stop music fadeout 1.0
+  scene black with dissolve
+  play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
+#Harusnya BGM Mini Stage
+  scene kamar mc kota with dissolve
+#Harusnya BG Mini Stage
+  $ quick_menu = True
   #*SPRITE TONO/PIA NYANYI FOR A SEC, AFTER THAT BACK TO BG EVENT*
+  tana "Ku sandarkann~ Kepadamu~"
+  pia "Kepalaku pada pundak kananmu itu~"
   "[mcname] pun melihat panggung dan mengerti kenapa Kana terdiam. Di situ, terlihat seorang perempuan yang sedang menyanyi dengan suara yang indah. Kurang lebih 3 menit [mcname] dan Kana terdiam mendengarkan perempuan itu bernyanyi. Saat selesai, Kana dan [mcname] pun bertepuk tangan dengan keras."
   #SFX Applause
   #play sound "audio/open_door.mp3" fadeout 1.0
