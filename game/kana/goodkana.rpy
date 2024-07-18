@@ -21,28 +21,32 @@ label goodkana:
   mcname "Oke aku pesen dulu ya."
   #*CHOSE*
   menu:
-    "Nasi Cumi Pak (donatur)":
-    "Karedok pak/bu (donatur)":
-    "Ayam geprek pak (donatur)":
-      #*CHOSE C*
-      mcname "{i}Hmmm kayaknya makan ayam geprek enak deh, pengen yang pedes sesekali.{/i}"
-      "Ternyata ayam yang kamu pesen terlalu pedes dan bikin kamu sakit perut sampe dilarikan ke rumah sakit."
-      scene black with Dissolve(2.0)
-      show text "{color=#FFF}ADUHHH KASIAN BANGET MASIH MUDA UDAH KE RS GARA GARA SENENG MAKAN PEDES, LAIN KALI JANGAN TERLALU PEDES YA!{/color}" with Pause(2.0)
-      show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-      play music "audio/Dreamcatcher_v2.mp3"
-      jump credits
-  #*CHOSE B*
-  mcname "Karedok kali ya, udah lama ga makan sayuran aku."
+        "Kamu memesan..."
+        "Nasi Cumi Pak (donatur)":
+            #*CHOSE A*
+            mcname "Eh nyoba nasi cumi Pak... kali ya? Katanya terkenal gitu sampe masuk ke subtitle gtu di beberapa film, nyobain ah."
+            "MC pun memesan makanan dan kembali ke meja di mana Kana dan Freya berada."
+
+        "Karedok pak/bu (donatur)":
+            #*CHOSE B*
+            mcname "Karedok kali ya, udah lama ga makan sayuran aku."
+            "Ternyata sayuran yang dipake sama tukang dagangnya kebanyakan busuk semua dan hampir setengah mahasiswa/i keracunan dan dilarikan ke rumah sakit."
+            scene black with Dissolve(2.0)
+            show text "{color=#FFF}ADUH KALO MAU BELI SAYURAN, TANYA TANYA DULU DEH! TAKUTNYA BUSUK, MALAH KAYA GINI SEKARANG{/color}" with Pause(2.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            play music "audio/Dreamcatcher_v2.mp3"
+            jump credits
   
-  #Ternyata sayuran yang dipake sama tukang dagangnya kebanyakan busuk semua dan hampir setengah mahasiswa/i keracunan dan dilarikan ke rumah sakit. 
-  #“ADUH KALO MAU BELI SAYURAN, TANYA TANYA DULU DEH! TAKUTNYA BUSUK, MALAH KAYA GINI SEKARANG.“
-  
-  #*CHOSE A*
-  mcname "Eh nyoba nasi cumi Pak... kali ya? Katanya terkenal gitu sampe masuk ke subtitle gtu di beberapa film, nyobain ah."
-  
-  #MC pun memesan makanan dan kembali ke meja di mana Kana dan Freya berada.
-  
+        "Ayam geprek pak (donatur)":
+            #*CHOSE C*
+            mcname "{i}Hmmm kayaknya makan ayam geprek enak deh, pengen yang pedes sesekali.{/i}"
+            "Ternyata ayam yang kamu pesen terlalu pedes dan bikin kamu sakit perut sampe dilarikan ke rumah sakit."
+            scene black with Dissolve(2.0)
+            show text "{color=#FFF}ADUHHH KASIAN BANGET MASIH MUDA UDAH KE RS GARA GARA SENENG MAKAN PEDES, LAIN KALI JANGAN TERLALU PEDES YA!{/color}" with Pause(2.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            play music "audio/Dreamcatcher_v2.mp3"
+            jump credits
+
   mcname "Eh maaf lama, tadi aku jadinya pesan nasi cumi pak.. Itu."
   
   kana "Ooo yang katanya pernah masuk ke film-film itu ya?"
