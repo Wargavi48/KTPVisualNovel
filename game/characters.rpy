@@ -1,13 +1,31 @@
 ﻿#Define Character Pia
-define pia = Character("[pia_name]", image="Pia",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_angry = Character("[pia_name]", image="Pia_angry", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_laugh = Character("[pia_name]", image="Pia_laugh", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_sad = Character("[pia_name]", image="Pia_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_sh = Character("[pia_name]", image="pia_sh", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_shy = Character("[pia_name]", image="Pia_shy",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_smile = Character("[pia_name]", image="pia_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_nyembur = Character("[pia_name]", image="pia_nyembur",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default pia_name = "????"
+define pia = Character("[pia_name]", image="Pia",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_sad = Character("[pia_name]", image="Pia_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_shock = Character("[pia_name]", image="Pia_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_silent = Character("[pia_name]", image="Pia_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_smile = Character("[pia_name]", image="pia_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_talk = Character("[pia_name]", image="Pia_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_date = Character("[pia_name]", image="Pia_date",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_sad = Character("[pia_name]", image="Pia_date_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_shock = Character("[pia_name]", image="Pia_date_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_silent = Character("[pia_name]", image="Pia_date_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_smile = Character("[pia_name]", image="pia_date_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_date_talk = Character("[pia_name]", image="Pia_date_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_home = Character("[pia_name]", image="Pia_home",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_sad = Character("[pia_name]", image="Pia_home_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_shock = Character("[pia_name]", image="Pia_home_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_silent = Character("[pia_name]", image="Pia_home_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_smile = Character("[pia_name]", image="pia_home_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_home_talk = Character("[pia_name]", image="Pia_home_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_idol = Character("[pia_name]", image="Pia_idol",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_sad = Character("[pia_name]", image="Pia_idol_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_shock = Character("[pia_name]", image="Pia_idol_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_silent = Character("[pia_name]", image="Pia_idol_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_smile = Character("[pia_name]", image="pia_idol_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_idol_talk = Character("[pia_name]", image="Pia_idol_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_nyembur = Character("[pia_name]", image="pia_nyembur",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_sh = Character("[pia_name]", image="pia_sh", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 
 # define piasprites = Character("Pia Sprites", image="Pia",color="#000000")
 
@@ -70,11 +88,12 @@ default mahasiswa_c = Character("[mahasiswa_c_name]", image="mahasiswa_c")
 
 
 # Define side pia character 
-image side pia_side = "Characters/pia_side.png"
-image side pia_side_angry = "Characters/pia_side_angry.png"
-image side pia_side_laugh = "Characters/pia_side_laugh.png"
-image side pia_side_shy = "Characters/pia_side_shy.png"
-image side pia_side_smile = "Characters/pia_side_smile.png"
+image side pia_side = "Characters/Pia_side.png"
+image side pia_side_sad = "Characters/Pia_side_sad.png"
+image side pia_side_shock = "Characters/Pia_side_shock.png"
+image side pia_side_silent = "Characters/Pia_side_silent.png"
+image side pia_side_smile = "Characters/Pia_side_smile.png"
+image side pia_side_talk = "Characters/Pia_side_talk.png"
 
 # Define side kana character
 image side kana_side_clumsy = "Characters/Kana_side_clumsy.png"
