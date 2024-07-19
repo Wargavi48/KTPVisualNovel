@@ -10,6 +10,12 @@ label goodkana:
   mcname "Hmmm, kayaknya kalau ajak Kana dia mau deh. Ya udah deh, aku ambil aja dulu." 
   #*SKIP TO SCENE*
   #*BG KANTIN*
+  $ quick_menu = False
+  scene black with Dissolve(2.0)
+  show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+  play music "audio/bgm_kantin.mp3" loop fadein 1.0
+  scene kantin with Dissolve(2.0)
+  $ quick_menu = True
   mcname "Eh maaf lama ya, tadi abis dari toilet hehe."
   show freya_side at left with dissolve
   freya "Cuci tangan ga?"
@@ -107,88 +113,73 @@ label goodkanaafterorder:
   kana "Ehhh…"
   hide kana_side with dissolve
   "MC pun pergi pulang ke kosan meninggalkan Kana yang sedikit kebingungan.."
+  stop music fadeout 1.0
   
   #*SKIP TO SCENE*
   #*KOS (MALAM)*
+  $ quick_menu = False
+  scene black with Dissolve(2.0)
+  play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
+  scene kamar mc kota with dissolve
+  $ quick_menu = True
   
   #*RING RING RING*
+  #play audio "audio/BGM_Kosan 1.mp3" fadein 1.0
   "MC melihat ke arah HPnya yang berbunyi, saat membuka HPnya ia mendapatkan notifikasi chat dari Kana."
-  
-  show kana_side at left with dissolve
-  kana "Eh… B-besok kita reschedule aja gimana ＞﹏＜ "
-  hide kana_side with dissolve
-  
-  mcname "G"
-  
-  show kana_side at left with dissolve
-  kana "Iiiii kok gitu siih ayolah pleaseeeeeee..(✿◕‿◕✿)"
-  hide kana_side with dissolve
-  
-  mcname "Ya udah. Boleh "
-  
-  show kana_side at left with dissolve
-  kana "Yeeee akhirnya jadinya kapan ?"
-  hide kana_side with dissolve
-  
-  mcname "Minggu depan tapi kamu sendirian ya Nay, soalnya aku mau besok."
-  
-  show kana_side at left with dissolve
-  kana "Iiiiihh, tapi kan."
-  hide kana_side with dissolve
-  
-  mcname "Kalo ga mau ikut gapapa kok, ga mau maksa. Kalo mau ikut, aku tunggu sampai jam 3 sore ya… Jangan telat, good night."
-  
-  show kana_side at left with dissolve
-  kana "Ehhh…"
-  hide kana_side with dissolve
+  kana_nvl "Eh… B-besok kita reschedule aja gimana ＞﹏＜"
+  mcname_nvl "G"
+  kana_nvl "Iiiii kok gitu siih ayolah pleaseeeeeee..(✿◕‿◕✿)"
+  mcname_nvl "Ya udah. Boleh"
+  kana_nvl "Yeeee akhirnya, jadinya kapan?"
+  mcname_nvl "Minggu depan tapi kamu sendirian ya Nay, soalnya aku mau besok."
+  kana_nvl "Iiiiihh, tapi kan."
+  mcname_nvl "Kalo ga mau ikut gapapa kok, ga mau maksa. Kalo mau ikut, aku tunggu sampai jam 3 sore ya… Jangan telat, good night."
+  kana_nvl "Ehhh…"
   "HP [mcname] terus-terusan bersuara, suara notif tidak berhenti terdengar, hingga akhirnya [mcname] pun memilih untuk memasuki mode getar. "
-  
-  mcname "Hahaha biarin aja lah sesekali biar Kana juga mau. Kata Freya harus digituin dulu biar dia mau."
-  
-  "Mc pun memilih untuk mengabaikan HPnya dan pergi tidur."
-  
+  mcname "{i}Hahaha biarin aja lah sesekali biar Kana juga mau. Kata Freya harus digituin dulu biar dia mau.{/i}"
+  "[mcname] pun memilih untuk mengabaikan HPnya dan pergi tidur."
+  nvl clear
+  stop music fadeout 1.0
+
   #*SKIP TO SCENE*
   #*BG KAMPUS SIANG MENUJU SORE*
-  
+  $ quick_menu = False
+  scene black with Dissolve(2.0)
+  show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+  play music "audio/BGM_Kampus Sore.mp3" loop fadein 1.0
+  scene lorong sore with Dissolve(2.0)
+  $ quick_menu = True
   mcname "Hmmmm bentar lagi jam 3, aku tinggal aja kali ya?"
-  
   "Saat [mcname] akan pergi, dari kejauhan terdengar suara Kana berteriak."
-  
   show kana_side at left with dissolve
   kana "Ehhh tungguuuuuu!!!! [mcname] TUNGGUUUU!!!"
   hide kana_side with dissolve
-  
   mcname "Nahhh datang juga."
-  
   show kana_side at left with dissolve
   kana "Ihh kamu kenapa sih ga bales chat aku? Sengaja ya bikin aku marah?"
   hide kana_side with dissolve
-  
-  mcname "Hahah, soalnya kata Freya kamu harus digituin sih biar mau, makanya aku diemin kamu dulu "
-  
+  mcname "Hahah, soalnya kata Freya kamu harus digituin sih biar mau, makanya aku diemin kamu dulu."
   show kana_side at left with dissolve
   kana "Iiii, kamu mah…"
   hide kana_side with dissolve
-  
-  
-  #MC dan Kana pun pergi ke arah dimana klub jejepangan berada..
+  "[mcname] dan Kana pun pergi ke arah dimana klub jejepangan berada.."
   mcname "Kamu siap kan, Nay?"
-  
   show kana_side at left with dissolve
   kana "Bentar bentar, aku mau narik nafas dulu…"
   hide kana_side with dissolve
-  #MC melihat ke arah Kana yang sedang mempersiapkan dirinya untuk melanjutkan masuk ke arah ruangan jejepangan, ia pun melihat tangannya yang sedang membuat kata kanji orang di telapak tangannya.
+  "[mcname] melihat ke arah Kana yang sedang mempersiapkan dirinya untuk melanjutkan masuk ke arah ruangan jejepangan, ia pun melihat tangannya yang sedang membuat kata kanji orang di telapak tangannya."
+  mcname "{i}Haaaaa… Segugup apa deh dia…{/i}"
+  mcname "Ahhh lama Nay ayooooo."
   
-  mcname "Haaaaa… Segugup apa deh dia… "
-  #“Ahhh lama Nay ayooooo.”
-  
-  #Tak sabar dengan Kana, [mcname] pun memaksa Kana untuk segera masuk ke ruangan klub jejepangan. Saat mendekati ruangan, terdengar suara yang cukup ramai.
-  
+  "Tak sabar dengan Kana, [mcname] pun memaksa Kana untuk segera masuk ke ruangan klub jejepangan. Saat mendekati ruangan, terdengar suara yang cukup ramai."
+  #show kana_side at left with dissolve
   #???( TONO )
-  #“ Woyyy lu mau kemana kocakkkk! “
-  
+  "???" "Woyyy lu mau kemana kocakkkk!"
+  #hide kana_side with dissolve
+  #show kana_side at left with dissolve
   #???( PIA )
-  #“ Ahahaha! ”
+  "???" "Ahahaha!"
+  #hide kana_side with dissolve
   
   show kana_side at left with dissolve
   kana "K-kelihatannya rame banget ya MC, kita pulang aja yuk? Lain kali aja "
