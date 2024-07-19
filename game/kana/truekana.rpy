@@ -143,10 +143,9 @@ label truekanachat:
   kana "Awas aja kalo nggak, aku bakal buat kamu lupa dengan paksa! Ya udah deh, ayo masuk. Aku dah ga sabar."
   "[mcname] dan Kana pun pergi ke event tersebut."
   $ quick_menu = False
-  stop music fadeout 1.0
   scene black with dissolve
-  play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
-  scene kamar mc kota with dissolve
+  scene depan kampus with dissolve
+  #Harusnya BG Jejepangan malam
   $ quick_menu = True
   "Di sana banyak kegiatan, mulai dari event utama sampai event sampingan."
   "Di antaranya ada cosplay event, song cover competition, dan mini game yang terinspirasi dari permainan tradisional Jepang lainnya."
@@ -168,85 +167,123 @@ label truekanachat:
   scene black with dissolve
   play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
 #Harusnya BGM Mini Stage
-  scene kamar mc kota with dissolve
+  scene depan kampus with dissolve
 #Harusnya BG Mini Stage
   $ quick_menu = True
   #*SPRITE TONO/PIA NYANYI FOR A SEC, AFTER THAT BACK TO BG EVENT*
   tana "Ku sandarkann~ Kepadamu~"
   pia "Kepalaku pada pundak kananmu itu~"
-  "[mcname] pun melihat panggung dan mengerti kenapa Kana terdiam. Di situ, terlihat seorang perempuan yang sedang menyanyi dengan suara yang indah. Kurang lebih 3 menit [mcname] dan Kana terdiam mendengarkan perempuan itu bernyanyi. Saat selesai, Kana dan [mcname] pun bertepuk tangan dengan keras."
-  #SFX Applause
-  #play sound "audio/open_door.mp3" fadeout 1.0
+  "[mcname] pun melihat panggung dan mengerti kenapa Kana terdiam. Di situ, terlihat dua orang yang sedang menyanyi dengan suara yang indah."
+  "Kurang lebih 3 menit [mcname] dan Kana terdiam mendengarkan mereka bernyanyi. Saat selesai, Kana dan [mcname] pun bertepuk tangan dengan keras."
+  $ quick_menu = False
+  stop music fadeout 1.0
+  scene black with dissolve
+  play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+  #Harusnya BGM Jejepangan Malam
+  scene kamar mc kota with dissolve
+  #Harusnya BG Jejepangan Malam
+  $ quick_menu = True
+  play sound "audio/crowd_noise.mp3" fadein 1.0
+  #HARUSNYA SFX Applause
   mcname "Gilaaaa, kereen bangeett sumpah! Iya ga, Kana?"
   kana "Iyaaa aku sampe terdiem loh, kamu juga dengerin tadi?"
-  mcname "Iya lah, kamu tiba-tiba diem aja. Gimana aku ga ikutan dengerin? Keren banget, kapan ya aku bisa nyanyi kaya gitu… Btw, kamu bisa nyanyi?"
-  kana "Eee-enggak kok, aku gak bisa nyanyi… Ehhh liat deh, di situ ada cosplay yang bagus mending kita ke sana."
+  mcname "Iya lah, kamu tiba-tiba diem aja. Gimana aku ga ikutan dengerin? Keren banget, kapan ya aku bisa nyanyi kaya gitu..."
+  mcname "Btw, kamu suka nyanyi juga?"
+  kana "Eee-enggak kok, a-aku..."
+  kana "E-ehhh liat deh, di situ ada cosplay yang bagus mending kita ke sana."
   "Kana tiba-tiba menghindari dari jawaban [mcname] dan berlari ke arah seorang cosplayer."
+  $ quick_menu = False
+  scene black with dissolve
+  scene kamar mc kota with dissolve
+  $ quick_menu = True
   kana "Eh Kaa, permisi~"
   "Cosplayer" "Iya Ka kenapa?"
-  mcname "Kenapa Kana… Ehh kamu cosplay jadi Kamen Driver Den-A ya?"
-  "Orang" "Wahhh iya ka, kebetulan aku juga suka."
-  kana "[mcname], kamu suka?"
-  mcname "SUKA!!??? Wahhhh aku ngikutin banget semua series kamen driver loh Kana."
-  "Orang" "Wahh, kukira ga terlalu banyak yang kenal cosplayku. Ternyata ada juga ya yang kenal, makasih ya Kak. Eh Kak, mau ngobrol lagi ga? Keknya seru kita ngobrol bareng."
+  mcname "Kenapa Kana tiba-tiba... Ehh kamu cosplay jadi Kamen Driver Den-A ya?"
+  "Cosplayer" "Wahhh iya ka, kebetulan aku suka Kamen Driver."
+  kana "[mcname], kamu juga suka?"
+  mcname "SUKA!!??? Wahhhh aku ngikutin banget semua series Kamen Driver loh Kana."
+  "Cosplayer" "Wahh, kukira ga terlalu banyak yang kenal cosplayku. Ternyata ada juga ya yang kenal, makasih ya Kak."
+  "Cosplayer" "Eh Kak, mau ngobrol lagi ga? Keknya seru kita ngobrol bareng."
   #*CHOSE*
   menu:
-    "Menghabiskan waktu sama orang itu.":
+    "Yang [mcname] lakukan..."
+    "Menghabiskan waktu sama cosplayer.":
       #*CHOSE A*
-      "[mcname] tetap mengobrol dengan cosplayer tersebut, dan mengabaikan keberadaan Kana untuk beberapa saat, hingga saat [mcname] sadar… Kana sudah menghilang dan HPnya tidak dapat dihubungi lagi…"
+      "[mcname] tetap mengobrol dengan cosplayer tersebut dan mengabaikan keberadaan Kana untuk beberapa saat."
+      "Tak lama saat [mcname] tersadar, Kana sudah menghilang dan HPnya tidak dapat dihubungi lagi."
       scene black with Dissolve(2.0)
       show text "{color=#FFF}BRO BRO LAGI JALAN BARENG BERDUAAN KO MALAH DITINGGAL NGOBROL SAMA ORANG LAIN SI ADUHHH{/color}" with Pause(2.0)
       show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
       play music "audio/Dreamcatcher_v2.mp3"
       jump credits
-    "Menolak dan melanjutkan kegiatan dengan Kana.":
+    "Menolak ajakan cosplayer tersebut.":
       #*CHOSE B*
       jump truekanajapanfest
   
 label truekanajapanfest:
-  mcname "Eh maaf ya nanti lagi, aku lagi sama temen soalnya. Kalau boleh minta social medianya kak, biar kita bisa ngobrol."
-  "Orang" "Ooh iya kak, ini ka bisa di add @namadonatur_angka random, makasih banyak yaa~"
-  mcname "Sama-sama ka…"
+  mcname "Eh maaf ya nanti lagi, aku lagi sama temen soalnya. Kalp boleh minta social medianya aja kak, biar bisa ngobrol."
+  "Orang" "Ooh iya kak, ini bisa di add \"@namadonatur_angka random\". Makasih banyak yaa~"
+  mcname "Sama-sama kak"
   mcname "Eh Kana maaf lama ya. Tadi hampir aja keasikan, untung aku inget ada kamu yang lagi nungguin aku haha."
-  kana "E-enggak kok, ga lama… Seru ya..."
-  mcname "Eh kamu kenapa Kana, marah ya? Tadi kelamaan ya?"
-  kana "E-enggak.."
-  mcname "Ya udah sebagai permintaan maaf aku ajak main di stand di sana deh gimana?"
-  kana " BEENER!?? Eh maksud nya… beneran nih?"
+  kana "Enggak kok, ga lama. Seru ya."
+  mcname "Eh kamu kenapa Kana, marah ya? Tadi kelamaan ya? Sorry..."
+  kana "G."
+  mcname "Waduh. Ya udah sebagai permintaan maaf aku ajak main di stand sana deh gimana?"
+  kana " BEENER!?? Eh maksudnya... beneran nih?"
   mcname "Iya, bener kok. Ya udah, ayo."
-  #*SKIP TO SCENE*
-  #*BG MINI GAMES*
+  kana "Yayyy~"
+  $ quick_menu = False
+  stop music fadeout 1.0
+  scene black with dissolve
+  play music "audio/BGM_Minigame Tana.mp3" fadein 1.0
+  scene lorong sore with dissolve
+  #Harusnya BG MINIGAME TANA (Tanpa mainin)
+  $ quick_menu = True
   kana "Kamu beneran bisa ga?"
   mcname " Bener Kana, tenang aja. Kok kamu ga percaya ke aku gitu sih."
   kana "Soalnya kamu keliatan ga yakin."
   mcname "Ini aku lagi fokus, Kana."
-  "[mcname] pun mendapatkan skor tinggi dan mendapatkan hadiah." 
+  play sound "audio/SFX - Finish Game.mp3"
+  "[mcname] pun mendapatkan skor tinggi." with Pause (2.0)
   mcname "Liat, kan? Aku bisaaa, siapa dulu?"
   "[mcname] mendekatkan tangannya ke telinganya dan seolah olah menunggu Kana menjawab."
-  mcname "Siapa dulu….hmmmm?"
+  mcname "Siapa dulu, hmmmm?"
   kana "Iya iya, kamu jago deh."
   mcname "Nahh gitu dong, hahah."
-  "Setelah mendapatkan hadiah dari menyelesaikan mini game di dalam booth, [mcname] sedikit bercanda dengan Kana karena telah memainkan mini game tersebut."
-  mcname "Jadi Yang Muliaaa, kita mau ke mana lagi? Hambamu siap untuk menemanimu kemana pun dan sampai kapan pun, ahaha."
-  kana " Apaan sihh yang mulia yang mulia, mending mulai sekarang kamu panggil aku “Nay” deh."
+  "Setelah mendapatkan hadiah dari mini game di dalam booth, [mcname] memberikan hadiahnya kepada Kana."
+  kana "Eeeh?"
+  mcname "Ini, buat kamu."
+  kana "Gapapa nih?"
+  mcname "Iyaa, sekarang kamu gak marah lagi kan?"
+  kana "M-masih, hmph!"
+  mcname "Jadi Yang Muliaaa, kita mau ke mana lagi? Hambamu siap untuk menemanimu ke mana pun dan sampai kapan pun, ahaha."
+  kana "Apaan sihh Yang Mulia Yang Mulia, mending mulai sekarang kamu panggil aku “Nay” deh."
   mcname "Okee dehh, Nay."
-  mcname "Eh Nay, kamu mau pesen apa? Aku traktir deh, kan udah diguide sana-sini."
+  mcname "Kalo gitu, kamu mau makan apa? Aku traktir deh, soalnya kamu udah guide sana-sini."
   kana "Hmmmm, apa ya? Kayaknya takoyaki enak deh."
   mcname "Bolehhh, tunggu bentar yaa."
   kana "Okeeee hati-hati, ya."
-  "[mcname] pun pergi meninggalkan Kana sejenak untuk membeli takoyaki. Setelah beberapa saat, [mcname] kembali dengan membawa takoyaki."
-  mcname "Eh Nay, maaf ini cuma sisa satu porsi lagi. Ini buat kamu aja deh, aku gapapa."
-  kana "Lah kok gitu sih, kamu juga pasti laper kan."
+  "[mcname] pun pergi meninggalkan Kana sejenak untuk membeli takoyaki."
+  $ quick_menu = False
+  scene black with dissolve
+  scene lorong sore with dissolve
+  #Harusnya BG MINIGAME TANA (Tanpa mainin)
+  $ quick_menu = True
+  "Setelah beberapa saat, [mcname] kembali sambil membawa takoyaki."
+  mcname "Yahhh Nay, maaf ini cuma sisa satu porsi lagi. Ini buat kamu aja deh, aku gapapa."
+  kana "Lah kok gitu sih, kamu juga pasti laper kan?"
   mcname "Enggak koook."
-  "Tanpa sadar terdengar suara perut [mcname] yang berbunyi cukup keras sehingga Kana dapat mendengarnya."
+  play sound "audio/hungry.mp3"
+  "Tiba-tiba, terdengar suara perut [mcname] yang berbunyi cukup keras sehingga Kana dapat mendengarnya."
+  stop sound
   kana "Hahaha ga bisa bohong tuh perut kalau masalah makanan mah."
   "Muka [mcname] pun memerah, merasa malu dengan perutnya." 
-  mcname "Aduuhhhhh…"
+  mcname "Aduuhhhhh…\n*Blush*"
   kana "Sini kita makan bareng aja. Ini kan ada 6, kita bagi aja. Masing-masing 3 gimana?"
   mcname "Tapi kan kamu pengen takoyaki."
   kana "Gak apa-apa kok, lagian aku juga makannya sedikit."
-  mcname "O-oke deh kalau emang gitu. Eh tapi ini cuma ada satu doang garpu nya, bentar ya aku coba minta lagi ke penjualnya."
-  "Sesaat [mcname] akan pergi, Kana tiba-tiba menangkap tangan [mcname]. Dengan malu-malu Kana berkata."
+  mcname "O-oke deh kalau gitu. Eh tapi ini cuma ada satu doang garpu nya, bentar ya aku coba minta lagi ke penjualnya."
+  "Sesaat [mcname] akan pergi, Kana tiba-tiba menangkap tangan [mcname]."
   kana "[mcname], udah ga usah."
   kana "Keburu takoyaki nya dingin, nanti ga enak. Kita makan bareng aja."
   kana "Sini, kita gantian aja."
@@ -255,28 +292,57 @@ label truekanajapanfest:
   mcname "I-iya iya. Oke deh."
   "Kana pun memakan takoyakinya, lalu Kana pun menjulurkan tangannya yang memegang garpu serta takoyaki ke arah [mcname]."
   kana "Nih."
-  "Seakan tidak ingin sadar akan peristiwa yang sedang terjadi, [mcname] tetap memakan takoyaki yang diberikan Kana. Takoyakinya terasa sedikit manis,  padahal takoyaki yang ia pesan harusnya pedas asin."
-  mcname "Eh udah abis lagi aja, ga kerasa ya…"
+  "Seakan tidak ingin sadar akan peristiwa yang sedang terjadi, [mcname] tetap memakan takoyaki yang diberikan Kana. Takoyakinya terasa sedikit manis, padahal takoyaki yang dipesan harusnya pedas asin."
+  $ quick_menu = False
+  scene black with dissolve
+  scene lorong sore with dissolve
+  #Harusnya BG MINIGAME TANA (Tanpa mainin)
+  $ quick_menu = True
+  mcname "Ah udah abis lagi aja, ga kerasa ya."
   mcname "Eh Nay, kamu kenapa?"
-  "Muka Kana tiba-tiba memerah, mungkin Kana baru sadar akan apa yang terjadi saat itu. Tapi nasi telah menjadi bubur, hal ini tidak dapat ubah dan telah terjadi."
-  kana "E-eh iya udah abis aja."
+  "Terlihat muka Kana memerah, mungkin karena baru sadar akan apa yang baru saja terjadi."
+  kana "E-eh iya udah abis aja.\n*Blush*"
   mcname "Okeeee selesai, jadi kita ke mana, Nay?"
   "Sesaat [mcname] akan pergi, Kana tiba-tiba mengambil tisu, mengulurkan tangannya, dan mengelap saus yang ada di pipi [mcname]."
-  "Terkejut dengan tindakan Kana, [mcname] hanya bisa terdiam saja, dan beberapa saat kemudian Kana pun sadar akan tindakannya." 
-  kana "Eh ini, a-aku kebiasaan ngurus sepupuku yang masih kecil. Eh ah, ini kita udah kan makannya? Yuk kita ke sana aja."
-  "Kana pun langsung pergi dari bangku tersebut, meninggalkan [mcname] yang masih merasa malu di situ."
+  "Terkejut dengan tindakan Kana, [mcname] hanya bisa diam sambil tersenyum." 
+  kana "Eh i-ini, a-aku kebiasaan ngurus sepupuku yang masih kecil. Eh ah, ini kita udah kan makannya? Yuk kita ke sana aja."
+  "Kana yang malu pun berlari kabur, meninggalkan [mcname] yang masih berdiri di situ."
   mcname "Ehhh?? Tungguin Nay."
+  $ quick_menu = False
+  scene black with dissolve
+  scene lorong sore with dissolve
+  #Harusnya BG MINIGAME TANA (Tanpa mainin)
+  $ quick_menu = True
   "Kana dan [mcname] pun pergi kembali untuk melihat-lihat booth yang ada di event tersebut, sampai pada akhirnya event utama pada hari itu pun dimulai."
   mcname "Eh Nay, ayoo ini event utamanya udah mau dimulai."
-  kana "Iya bentarr ini lagi bayar dulu."
+  kana "Eeeeh, okaay."
   "Kana dan [mcname] pun pergi ke tempat di mana event utama diadakan. Event tersebut adalah pertunjukan kembang api kecil kecilan yang akan diadakan oleh panitia acara."
+  "Terlihat banyak pengunjung yang menantikan pertunjukan kembang api di event tersebut."
+  play audio "audio/crowd_noise.mp3" fadein 1.0
+  mcname "Bentar lagi nihhh."
+  kana "Aaaaa, udah gak sabaar!"
+  stop audio fadeout 1.0
+  play sound "audio/SFX - Whack.mp3" loop
+  #Harusnya SFX Kembang Api
+  $ quick_menu = False
+  window auto hide
+  with Pause(2.0)
+  window auto show
+  $ quick_menu = True
   kana "TAMAAYAAAAAA~!"
   mcname "TAMAYAAAAAA~!"
   "Kana dan [mcname] pun menikmati pemandangan kembang api di event tersebut. Meski hanya beberapa menit saja, tapi kenangannya akan tersimpan selamanya."
+  stop sound
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+  scene lorong sore with dissolve
+  #Harusnya BG MALAM
+  $ quick_menu = True
   "Kana dan [mcname] merasa hangat, senang, dan bahagia. Tanpa sadar event untuk hari ini sudah selesai."
   mcname "Seru banget hari ini Nay! Makasih banyak yaa."
   kana "Hahah, seru banget emang. Makasih juga udah mau nemenin aku, akhirnya aku ada temen yang suka hal-hal gini."
-  #Narrator
   "[mcname] tersenyum mendengar perkataan Kana."
   mcname "Aku juga seneng banget, soalnya bareng kamu."
   kana "*Blush*"
@@ -287,12 +353,19 @@ label truekanajapanfest:
   mcname "Iya aku ngerti kok Nay. Ya udah ya, kamu hati-hati Nay."
   kana "Iya makasih ya buat hari ini, kamu juga hati-hati."
   "[mcname] dan Kana pun pergi. [mcname] masih merasa senang dan bahagia karena telah menghabiskan waktu bersama Kana."
-  "Apakah ini date? Mungkin iya, atau mungkin hanya [mcname] yang merasa demikian."
-  "Meskipun begitu, rasa bahagia dan senang tidak dapat dihilangkan dari hati [mcname]."
   #*SKIP TO SCENE*
   #*BG KOS MALAM*
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  show text "{color=#FFF}Apakah ini date? Mungkin iya, atau mungkin hanya [mcname] yang merasa demikian. Meskipun begitu, rasa bahagia dan senang tidak dapat dihilangkan dari hati [mcname].{/color}" with Pause (4.0)
+  play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+  scene kamar mc kota with dissolve
+  $ quick_menu = True
+  "Setelah beberapa menit, [mcname] datang ke kostnya."
+  play sound "audio/cafe-entrance.mp3"
   #*DING* (NOTIF HP)
-  "Setelah beberapa menit, [mcname] datang ke kosnya. HP [mcname] pun berbunyi dan ia melihat adanya notif chat dari Kanaia." 
+  "HP [mcname] pun berbunyi dan ia melihat adanya notif chat dari Kana." 
   #*BG HP (CHATTING APP)
   kana "H-halooo…(｡･∀･)ﾉﾞ"
   mcname "Halo juga Nayyy… Kenapa nih?"
@@ -306,10 +379,20 @@ label truekanajapanfest:
   kana "Yeeee (≧∇≦)ﾉ"
   mcname "Hahaha, lucu emang"
   "[mcname] dan Kana pun menghabiskan waktu mereka berdua dengan membahas kembali apa yang terjadi hari ini, mulai dari bertemu cosplayer, bermain di booth minigame, bahkan membeli merch-merch yang di jual di booth lainnya."
-  "Sampai pada akhirnya mereka tertidur dengan tetap memegang HP masing-masing.."
-  #*SKIP DAY*
-  #*SKIP TO SCENE*
-  #*BG KELAS*
+  "Sampai pada akhirnya mereka tertidur dengan tetap memegang HP masing-masing."
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause (2.0)
+  play music "audio/BGM_Kelas.mp3" fadein 1.0
+  scene kamar mc kota with dissolve
+  $ quick_menu = True
+
+
+
+
+
+  
   "Hari dimulai seperti biasanya, [mcname] memasuki kelas dengan keadaan hampir terlambat. Saat mencari tempat kosong, Freya menyuruh [mcname] untuk duduk di sampingnya."
   "Karena waktu menunjukan bahwa kelas akan dimulai, tanpa pikir panjang [mcname] pun duduk di sebelah Freya."
   mcname "Psstt, Fre… Naya ke mana dah?"
