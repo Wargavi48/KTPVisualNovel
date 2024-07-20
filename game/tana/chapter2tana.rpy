@@ -202,6 +202,7 @@ label chapter2tana:
     "Sambil mengalihkan pandangan, Tana menemukan bangku kosong lain yang berada tidak jauh dari tempatnya sekarang."
     "Tanpa berkata apapun, Tana pergi meninggalkan [mcname!c] dan langsung duduk di bangku tersebut."
     mcname "Dih yaudah. Duduk tempat lain aja sono."
+    stop music fadeout 1.0
     $ quick_menu=False
     scene black with dissolve
     scene kelas with dissolve

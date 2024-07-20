@@ -2201,6 +2201,7 @@ label AjakKanaMainGame:
     #HARUSNYA RUANG TAMU KANA
     $ quick_menu=True
     "Mamah Kana" "Anggap rumah sendiri ya."
+    mcname "Ah, makasih tante."
     "Mamahnya Kana kemudian pergi ke dapur."
     "Kana dan [mcname] duduk di sofa bersama-sama."
     "Mereka berbincang-bincang sambil mulai belajar kembali tentang kuliah mereka."
