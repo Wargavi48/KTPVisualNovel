@@ -157,19 +157,33 @@ default freya_smug = Character("[freya_name]", image="Freya_smug")
 # Define Character Fiony
 default fio_name = "???"
 default fio = Character("[fio_name]", image="Fio")
+default fio_smile = Character("[fio_name]", image="Fio_smile")
+default fio_smile_talk = Character("[fio_name]", image="Fio_smile_talk")
+default fio_talk = Character("[fio_name]", image="Fio_talk")
 
 # Define Character Feni
 default feni_name = "???"
 default feni = Character("[feni_name]", image="feni")
+default feni_angry = Character("[feni_name]", image="Feni_angry")
+default feni_awe = Character("[feni_name]", image="Feni_awe")
+default feni_serious = Character("[feni_name]", image="Feni_serious")
+default feni_shock = Character("[feni_name]", image="Feni_shock")
+default feni_talk = Character("[feni_name]", image="Feni_talk")
 
 # Define Character Flora
 default flora_name = "???"
 default flora = Character("[flora_name]",image="Flora")
+default flora_canggung = Character("[flora_name]",image="Flora")
+default flora_shock = Character("[flora_name]",image="Flora")
+default flora_smile_talk = Character("[flora_name]",image="Flora")
+default flora_smile = Character("[flora_name]",image="Flora")
+default flora_talk = Character("[flora_name]",image="Flora")
 
 # Define dosen chara
 default dosen_name = "Dosen"
 default dosen = Character("[dosen_name]", image="Dosen")
 default dosen_talk = Character("[dosen_name]", image="Dosen_talk")
+
 
 default mahasiswa_c_name = "???"
 default mahasiswa_c = Character("[mahasiswa_c_name]", image="mahasiswa_c")
