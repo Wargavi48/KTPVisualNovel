@@ -805,11 +805,11 @@ label chapter1piamakanmall:
     hide pia_nyembur with dissolve
     show pia_date_shock at pia_near with dissolve
     mcname "Ahahaha, engga. Bercanda kok."
-    show pia_side_shock at left with dissolve
+    show pia_side_sad at left with dissolve
     show pia_date_sad at pia_near with dissolve
     pia "{size=-10}Ngedate beneran juga gapapa sih..{/size}"
     hide pia_date_sad with dissolve
-    hide pia_side_shock with dissolve
+    hide pia_side_sad with dissolve
     mcname "Apa, Pia? Sorry, gak kedengeran?"
     show pia_side_shock at left with dissolve
     pia "GAK KOK, minumannya enak. Aku haus, mau nambah kayaknya."
@@ -902,19 +902,20 @@ label chapter1piamakanmall:
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     scene kelas with dissolve
     play music "audio/BGM_Kelas.mp3" fadein 1.0
-    $ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     "Mata kuliah nirmana dimulai, [mcname] dan Pia pun menggunakan peralatan yang dibelinya kemarin."
     $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}3 JAM KEMUDIAN, SETELAH SELESAI SESI PERKULIAHAN{/color}" with Pause(2.0)
     scene kelas with dissolve
-    show pia at pia_near with dissolve
+    show pia_talk at pia_near with dissolve
     show pia_side_talk at left with dissolve
-    $ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     pia "[mcname]!!!!!! MUMET GUEH! AYO KELUAR. REFRESHING KE MANA KEK, MUTERIN KAMPUS."
     pia "SORE MASIH ADA KELAS LAGI, JADI GA BISA JAUH-JAUH."
+    show pia at pia_near with dissolve
     hide pia_side_talk with dissolve
     mcname "Lesgo, sama. Pusing weh."
     $ quick_menu = False
@@ -941,23 +942,29 @@ label chapter1piamakanmall:
     # Harusnya ada humming migikata
     show pia at pia_near with dissolve
     mcname "Lagu apa Pia?"
+    show pia_talk at pia_near with dissolve
     show pia_side_talk at left with dissolve
     pia "Oh, ini judulnya Migikata."
+    hide pia_talk with dissolve
     hide pia_side_talk with dissolve
     mcname "Hmm, hummingmu bagus Pia. Merdu banget, hehe."
-    show pia_shy at pia_near with dissolve
-    show pia_side_shy at left with dissolve
+    show pia_shock at pia_near with dissolve
+    show pia_side_shock at left with dissolve
     pia "A-apaan sih!"
     pia "Huft~"
-    hide pia_shy with dissolve
-    hide pia_side_shy with dissolve
-    show pia_side_talk at left with dissolve
+    hide pia_shock with dissolve
+    hide pia_side_shock with dissolve
+    show pia_talk at pia_near with dissolve
+    # show pia_side_talk at left with dissolve
     pia "Eh, ke situ yuk. Duduk bawah pohon."
+    hide pia_talk with dissolve 
     hide pia_side_talk with dissolve
     mcname "Kuy!!"
     "[mcname] dan Pia pun duduk di bawah pohon rindang dekat pesawahan. Pia mengeluarkan HP dan earphone cablenya."
+    show pia_talk at pia_near with dissolve
     show pia_side_talk at left with dissolve
     pia "Mau denger lagu yang tadi aku nyanyiin nadanya? Nih."
+    hide pia_talk with dissolve
     hide pia_side_talk with dissolve
     play music "audio/migikata-off.mp3" fadein 1.0
     "Tiba-tiba..."
@@ -976,13 +983,16 @@ label chapter1piamakanmall:
     $ quick_menu = True
     "*Pia pun tanpa sadar menyenderkan kepalanya di pundak kanan [mcname]*"
     mcname "Kamu suka lagunya ya?"
+    show pia_talk at pia_near with dissolve
     show pia_side_talk at left with dissolve
     pia "Um.."
     pia "*Mengangguk*"
     pia "Suka banget"
     hide pia_side_talk at left with dissolve
+    hide pia_talk with dissolve
     mcname "Artinya apa?"
     show pia_side_talk at left with dissolve
+    show pia_talk at pia_near with dissolve
     pia "Tiap kali lagi sedih, bad mood, atau galau, jadi tenang pas denger lagu ini."
     hide pia_side_talk with dissolve
     mcname "Eeeh? Kamu lagi bad mood kah sekarang?"
