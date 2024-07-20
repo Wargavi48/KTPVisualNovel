@@ -558,16 +558,16 @@ label chapter1kana2Campus:
     kana " Mohon bantuannya, ya. Sebelumnya, kenalkan namaku [kana_name]"
     kana "Eh, kamu sini dong. Kan kita juga satu kelompok"
     hide kana_side with dissolve
-    show mahasiswa_c at char_center with dissolve
-    show mahasiswa_c_side at left
-    mahasiswa_c "Owh iya. Siang semuanya"
+    show galaxy at char_center with dissolve
+    show galaxy_side at left
+    galaxy "Owh iya. Siang semuanya"
     $ mahasiswa_c_name = "Galaxy"
-    mahasiswa_c " Sebelumnya, kenalin nama gw [mahasiswa_c_name]"
-    mahasiswa_c "Gw dari Pekalongan. Salam kenal"
-    hide mahasiswa_c_side with dissolve
+    galaxy " Sebelumnya, kenalin nama gw [mahasiswa_c_name]"
+    galaxy "Gw dari Pekalongan. Salam kenal"
+    hide galaxy_side with dissolve
     hide freya with dissolve
     hide kana with dissolve
-    hide mahasiswa_c with dissolve
+    hide galaxy with dissolve
     "Freya, [kana_name], [mcname], dan [mahasiswa_c_name] pun saling bertukar sapa dan mengobrol lebih lanjut. Akhirnya, mereka pun membuat grup chat untuk membahas pekerjaan kelompok mereka."
     stop music fadeout 1.0
     $ quick_menu = False
@@ -1148,11 +1148,11 @@ label chapter1kana3monasesteh:
     play music "audio/BGM_Kelas.mp3" fadein 1.0
     $ quick_menu = True
     "Setelah sampai di kelas [mcname] menghampiri [mahasiswa_c_name] untuk menjelaskan bagian mana yang harus ia kerjakan"
-    show mahasiswa_c at mahasiswa_c_center with dissolve
+    show galaxy at galaxy_center with dissolve
     mcname "Eh, [mahasiswa_c_name] kemarin ga datang ya?"
-    show mahasiswa_c_side at left with dissolve
-    mahasiswa_c "Eh iya [mcname], maaf ya soalnya tiba - tiba kakakku sakit terus ke RS, aku disuruh nemenin"
-    hide mahasiswa_c_side with dissolve
+    show galaxy_side at left with dissolve
+    galaxy "Eh iya [mcname], maaf ya soalnya tiba - tiba kakakku sakit terus ke RS, aku disuruh nemenin"
+    hide galaxy_side with dissolve
     "Saat mereka berdua mengobrol satu sama lain, datang Freya dan Kana dari arah pintu dan menyapa mereka"
     show freya at char_left with dissolve
     show kana at char_right with dissolve
@@ -1164,16 +1164,16 @@ label chapter1kana3monasesteh:
     show freya_side at left with dissolve
     freya "Haloo semuanya, ada apa nih"
     hide freya_side with dissolve
-    show mahasiswa_c_side at left with dissolve
-    mahasiswa_c "Yooo Kalian, ini cuma lagi ada yang mau dibahas sama [mcname]"
-    hide mahasiswa_c_side with dissolve
+    show galaxy_side at left with dissolve
+    galaxy "Yooo Kalian, ini cuma lagi ada yang mau dibahas sama [mcname]"
+    hide galaxy_side with dissolve
     mcname "Nggak, ini tadi baru mau jelasin pekerjaan bagian dia tapi kok, alasannya beda ya?"
-    show mahasiswa_c_side at left with dissolve
-    mahasiswa_c "Huh beda???"
-    mahasiswa_c "Gak kok ,jadi kemarin tuh emang ada panggilan kerja"
-    mahasiswa_c "tapi tiba tiba kakak ku sakit terus ke RS gitu"
-    mahasiswa_c "Hahahaha"
-    hide mahasiswa_c_side with dissolve
+    show galaxy_side at left with dissolve
+    galaxy "Huh beda???"
+    galaxy "Gak kok ,jadi kemarin tuh emang ada panggilan kerja"
+    galaxy "tapi tiba tiba kakak ku sakit terus ke RS gitu"
+    galaxy "Hahahaha"
+    hide galaxy_side with dissolve
     "Kata [mahasiswa_c_name] sambil tertawa canggung"
     "Melihat gelagat Mahasiswa C yang agak aneh, Freya memicingkan mata dengan tatapan curiga"
     show freya_angrysmile at char_left with dissolve
@@ -1189,20 +1189,20 @@ label chapter1kana3monasesteh:
     kana "hahaha, makan tuh kena ancam Freya"
     hide kana_side with dissolve
     show mahasiswa_c_side at left with dissolve
-    mahasiswa_c "Iya iya"
-    mahasiswa_c "Santai aja kali"
-    mahasiswa_c "Nanti gue kerjain"
-    mahasiswa_c "Ga usah khawatir dah"
-    hide mahasiswa_c_side with dissolve
+    galaxy "Iya iya"
+    galaxy "Santai aja kali"
+    galaxy "Nanti gue kerjain"
+    galaxy "Ga usah khawatir dah"
+    hide galaxy_side with dissolve
     "[mcname] pun menjelaskan apa yang harus dilakukan [mahasiswa_c_name] kedepannya untuk mengerjakan tugas kelompok nya"
     "[mahasiswa_c_name] pun setuju dan mengerti apa yang harus ia lakukan"
-    show mahasiswa_c_side at left with dissolve
-    mahasiswa_c "Oke dah paham-paham ternyata segini, ku kira bakalan banyak"
-    hide mahasiswa_c_side with dissolve
+    show galaxy_side at left with dissolve
+    galaxy "Oke dah paham-paham ternyata segini, ku kira bakalan banyak"
+    hide galaxy_side with dissolve
     mcname "Sebenernya ada yang lain si tapi coba tanya Freya sana"
-    show mahasiswa_c_side at left with dissolve
-    mahasiswa_c "Ada lagi ga Freya?, aku kira bakalan banyak"
-    hide mahasiswa_c_side with dissolve
+    show galaxy_side at left with dissolve
+    galaxy "Ada lagi ga Freya?, aku kira bakalan banyak"
+    hide galaxy_side with dissolve
     show freya_angrysmile at char_left with dissolve
     show freya_side_angrysmile at left with dissolve
     freya "Gini doang??"
@@ -1210,13 +1210,13 @@ label chapter1kana3monasesteh:
     freya "Awas aja kalau ga bener ya!!"
     freya "Aku coret namamu dari kelompok"
     hide freya_side_angrysmile with dissolve
-    show mahasiswa_c_side at left with dissolve
-    mahasiswa_c "Lah santai aja napa"
-    mahasiswa_c "Ya udah gw tinggal lagi yak"
-    mahasiswa_c "Soalnya masih ada yang harus gue kerjain nih"
-    hide mahasiswa_c_side with dissolve
+    show galaxy_side at left with dissolve
+    galaxy "Lah santai aja napa"
+    galaxy "Ya udah gw tinggal lagi yak"
+    galaxy "Soalnya masih ada yang harus gue kerjain nih"
+    hide galaxy_side with dissolve
     "[mahasiswa_c_name] kemudian mengambil tas nya kemudian lari pergi meninggalkan mereka"
-    hide mahasiswa_c with dissolve
+    hide galaxy with dissolve
     show freya_side_angrysmile at left with dissolve
     freya "Ya ela, tuh anak malah kabur"
     freya "Ya udah lah ga tau lagi"
@@ -1281,7 +1281,7 @@ label chapter1kana3monasesteh:
     "Diantara kelompok itu [mcname], Kana, Freya dan [mahasiswa_c_name] mendapatkan salah satu dengan nilai tertinggi"
     show kana at char_right with dissolve
     show freya at char_left with dissolve
-    show mahasiswa_c at mahasiswa_c_center with dissolve
+    show galaxy at galaxy_center with dissolve
     show kana_side at left with dissolve
     kana "Wahhhh, kita dapat nilai tertinggi loh!???"
     hide kana_side with dissolve
@@ -1289,10 +1289,10 @@ label chapter1kana3monasesteh:
     freya "Hehehe, siapa dulu kan ada aku"
     hide freya_side with dissolve
     mcname "Enak aja, gara gara aku tuh"
-    show mahasiswa_c_side at left with dissolve
-    mahasiswa_c "Ya elah gara gara ku ini"
-    mahasiswa_c "Coba aja aku ga ngerjaiin bagian ku kelar kelar dah"
-    hide mahasiswa_c_side with dissolve
+    show galaxy_side at left with dissolve
+    galaxy "Ya elah gara gara ku ini"
+    galaxy "Coba aja aku ga ngerjaiin bagian ku kelar kelar dah"
+    hide galaxy_side with dissolve
     show freya_angrysmile at char_left with dissolve
     show freya_side_angrysmile at left with dissolve
     freya "Eh yang ga datang ke kerja kelompok diem aja"

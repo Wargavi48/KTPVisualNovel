@@ -256,7 +256,7 @@ image side flora_side = "Characters/flora_side.png"
 
 image side dosen_side = "Characters/Dosen_side.png"
 
-image side mahasiswa_c_side = "Characters/mahasiswa_c_side.png"
+image side galaxy_side = "Characters/mahasiswa_c_side.png"
 
 
 
