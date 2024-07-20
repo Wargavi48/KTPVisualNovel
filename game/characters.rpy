@@ -214,12 +214,13 @@ image side pia_side_smile = "Characters/Pia_side_smile.png"
 image side pia_side_talk = "Characters/Pia_side_talk.png"
 
 # Define side kana character
-image side kana_side_clumsy = "Characters/Kana_side_clumsy.png"
-image side kana_side_embarased = "Characters/Kana_side_embarased.png"
-image side kana_side_scared = "Characters/Kana_side_scared.png"
+image side kana_side_confused = "Characters/Kana_side_confused.png"
+image side kana_side_cry = "Characters/Kana_side_cry.png"
+image side kana_side_drylaugh = "Characters/Kana_side_drylaugh.png"
 image side kana_side_shy = "Characters/Kana_side_shy.png"
-image side kana_side_sick = "Characters/Kana_side_sick.png"
-image side kana_side_smile = "Characters/kana_side_smile.png"
+image side kana_side_shy_smile = "Characters/Kana_side_shy_smile.png"
+image side kana_side_smile = "Characters/Kana_side_smile.png"
+image side kana_side_talk = "Characters/kana_side_talk.png"
 image side kana_side = "Characters/kana_side.png"
 
 # Define side tana character

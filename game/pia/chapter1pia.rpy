@@ -994,8 +994,10 @@ label chapter1piamakanmall:
     show pia_side_talk at left with dissolve
     show pia_talk at pia_near with dissolve
     pia "Tiap kali lagi sedih, bad mood, atau galau, jadi tenang pas denger lagu ini."
+    hide pia_talk with dissolve
     hide pia_side_talk with dissolve
     mcname "Eeeh? Kamu lagi bad mood kah sekarang?"
+    show pia_talk at pia_near with dissolve
     show pia_side_talk at left with dissolve
     pia "Nggak kok."
     pia "Tiap kali aku denger lagu ini, aku bisa ngelupain masalah yang aku hadapi."
@@ -1011,12 +1013,16 @@ label chapter1piamakanmall:
     pia "Aku bakal nerima dia dan janji selalu ada untuk dia. Seperti dia yang selalu ada untuk aku…"
     pia "......"
     pia "5 tahun lagi menurutmu kita bakal di mana?"
+    hide pia_talk with dissolve
     hide pia_side_talk with dissolve
     mcname "......"
-    show pia_side_talk at left with dissolve
+    show pia_shock at pia_near with dissolve
+    show pia_side_shock at left with dissolve
     pia "*Blush*"
     pia "A-AAAHH! UDAH SORE! AYOK BALIK KE KELAS LAGI!"
-    hide pia_side_talk with dissolve
+    hide pia
+    hide pia_shock with dissolve
+    hide pia_side_shock with dissolve
     stop music fadeout 1.0
     "Tak terasa, waktu pun sudah beranjak sore. Pia pun menegakkan kepalanya kembali dari pundak [mcname]. Mereka kembali ke fakultasnya untuk memasuki kelas yang dimulai sore itu."
     $ quick_menu = False
