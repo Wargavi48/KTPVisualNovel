@@ -573,20 +573,21 @@ label truekanajapanfest:
   $ quick_menu = True
   "Tetapi, [mcname] tidak pulang. Dia menghabiskan harinya di Mall dan memikirkan hadiah apa yang cocok untuk Kana."
   mcname "{i}Hmmm dari obrolan dan kode-kode yang Kana kasih, mending aku beliin apa ya?{/i}"
+  define kana_present = ""
   #*CHOSE*
   menu:
     "Yang kamu beli..."
     "Kalung":
-      define kana_present = "Kalung"
+      $ kana_present = "Kalung"
       jump truekanabuypresent
     "Sepatu":
-      define kana_present = "Sepatu"
+      $ kana_present = "Sepatu"
       jump truekanabuypresent
     "Alat Masak":
-      define kana_present = "Alat Masak"
+      $ kana_present = "Alat Masak"
       jump truekanabuypresent
     "CD Film Horror":
-      define kana_present = "CD Film Horror"
+      $ kana_present = "CD Film Horror"
       jump truekanabuypresent
 
 label truekanabuypresent:
