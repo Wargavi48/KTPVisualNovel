@@ -82,6 +82,7 @@ default flora = Character("[flora_name]",image="Flora")
 # Define dosen chara
 default dosen_name = "Dosen"
 default dosen = Character("[dosen_name]", image="Dosen")
+default dosen_talk = Character("[dosen_name]", image="Dosen_talk")
 
 default mahasiswa_c_name = "???"
 default mahasiswa_c = Character("[mahasiswa_c_name]", image="mahasiswa_c")
