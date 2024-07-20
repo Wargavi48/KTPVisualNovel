@@ -680,29 +680,39 @@ label chapter1piajalansamapiapio:
     $ quick_menu = False
     scene black with dissolve
     scene mall temp with dissolve
-    show pia at pia_near_right with dissolve
+    show pia_date_talk at pia_near_right with dissolve
     show fio at char_near_left with dissolve
     show pia_side_talk at left with dissolve
     $ quick_menu = True
     pia "Weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan."
     pia "Pensil 2, cat air 1, kuas, dan sebagainya."
     pia "Tapi pas dijumlah gak kerasa, tau-tau mahal juga."
+    show pia_date at pia_near_right with dissolve
     hide pia_side_talk with dissolve
+    show fio_talk at char_near_left with dissolve
     show fio_side at left with dissolve
     fio "Welcome to DKV."
-    "{size=-5}[mcname] & Pia{/size}" "Huhuuuu."
+    hide fio_talk with dissolve
     hide fio_side with dissolve
+    hide pia_date with dissolve
+    "{size=-5}[mcname] & Pia{/size}" "Huhuuuu."
     show pia_side_talk at left with dissolve
     pia "BTW… MAU MAKAAAAAN!! Lapeerrr."
+    show pia_date at pia_near_right with dissolve
     hide pia_side_talk with dissolve
     mcname "Setuju, laper."
     jump chapter1piamakanmall
 
 label chapter1piamakanmall:
+    show fio_talk at char_near_left with dissolve
     show fio_side at left with dissolve
     fio "Ayo, aku ada tempat rekomendasi enak deket sini."
+    hide fio_talk with dissolve
     hide fio_side with dissolve
+    hide pia_date with dissolve
     "{size=-5}[mcname] & Pia{/size}" "Lesgoooooo~"
+    hide pia_date_talk with dissolve
+    hide fio with dissolve
     "Mereka bertiga pun menuju cafe tempat nongkrong Fiony dan mulai memesan makanan yang direkomendasikan Fiony."
     stop music fadeout 1.0
     $ quick_menu = False
@@ -711,149 +721,177 @@ label chapter1piamakanmall:
     show text "{color=#FFF}MEMASUKI CAFE{/color}" with Pause(2.0)
     scene cafe with dissolve
     play music "audio/BGM_Cafe Cerah.mp3" fadein 1.0
-    show pia at pia_near_right with dissolve
+    show pia_date_talk at pia_near_right with dissolve
     show fio at char_near_left with dissolve
     show pia_side_talk at left with dissolve
-    $ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     pia "Ummmmmmmm!!!!! Enaaaaak!!! Mantap lah, Cepio!\n*Sambil makan*"
+    show pia_date at pia_near_right with dissolve
     hide pia_side_talk with dissolve
+    show fio_talk at char_near_left with dissolve
     show fio_side at left with dissolve
     fio "Hehehe enak, kan? Tempat langganan aku sama temen-temen aku nih. Enak, terus tempatnya cozy gitu buat foto-foto."
+    hide fio_talk with dissolve
     hide fio_side with dissolve
+    hide pia_date with dissolve
     show pia_side_talk at left with dissolve
     pia "Betuuuuul!!!"
+    hide pia_date_talk with dissolve
     hide pia_side_talk with dissolve
-    "Dari meja yang cukup jauh dari tempat [mcname], Pia, dan Fiony duduk…"
-    hide pia with dissolve
     hide fio with dissolve
+    "Dari meja yang cukup jauh dari tempat [mcname], Pia, dan Fiony duduk…"
     $ freya_name = "???"
-    show freya at char_near_left with dissolve
-    show kana at kana_near_right with dissolve
+    show freya at fio_near with dissolve
     show freya_side at left with dissolve
     freya "Lah, Fiony? Ngapain kamu di sini?"
+    hide freya with dissolve
     hide freya_side with dissolve
+    show fio_talk at fio_near with dissolve
     show fio_side at left with dissolve
     fio "Lah Freya? Sama… mmmm..."
+    hide fio_talk with dissolve
     $ freya_name = "Freya"
     hide fio_side with dissolve
     $ kana_name = "Kana"
+    show freya at char_near_left with dissolve
+    show kana_date_talk at kana_near_right with dissolve
     show kana_side at left with dissolve
     kana "Salam kenal, aku Kana."
+    show kana_date at kana_near_right with dissolve
     hide kana_side with dissolve
     show freya_side at left with dissolve
     freya "Sini."
+    hide kana_date_talk
     hide freya_side with dissolve
+    hide freya with dissolve
+    hide kana_date with dissolve
+    show fio_talk at fio_near with dissolve
     show fio_side at left with dissolve
     fio "Okeh."
-    hide freya with dissolve
-    hide kana with dissolve
-    show fio at char_near_left with dissolve
-    show pia at pia_near_right with dissolve
+    hide fio_talk with dissolve
+    hide fio_side with dissolve
+    show fio_talk at char_near_left with dissolve
+    show pia_date at pia_near_right with dissolve
     show fio_side at left with dissolve
     fio "Ges, aku ke sana dulu sebentar ya. Kalian berduaan aja dulu. Jangan macem-macem ya [mcname]. Hehehe."
+    hide fio_talk with dissolve
     hide fio_side with dissolve
-    show pia_shy at pia_near_right with dissolve
-    show pia_side_shy at left with dissolve
+    hide pia_date with dissolve
+    show pia_date_shock at pia_near with dissolve
+    show pia_side_shock at left with dissolve
     pia "CEPIOOOOOOOOOOOOO~"
-    hide pia_side_shy with dissolve
-    hide pia with dissolve
-    hide fio with dissolve
-    hide pia_shy with dissolve
-    show pia_shy at pia_near with dissolve
+    hide pia_side_shock with dissolve
     mcname "Ahahahahha."
-    show pia_side_shy at left with dissolve
+    show pia_side_shock at left with dissolve
     pia "J-jadi… Abis berapa tadi belanja alat gambar?"
-    hide pia_side_shy with dissolve
+    hide pia_side_shock with dissolve
     mcname "400an lah, ahahaha. Kamu abis berapa?"
-    show pia_side_shy at left with dissolve
+    show pia_date_sad at pia_near with dissolve
+    show pia_side_sad at left with dissolve
     pia "Kurang lebih sama lah, huhuhu"
-    hide pia_side_shy with dissolve
+    hide pia_date_sad with dissolve
+    hide pia_side_sad with dissolve
     "*hening*"
     mcname "Kalo berdua gini kayak ngedate gak sih kita?"
-    hide pia_shy with dissolve
+    hide pia_date_shock with dissolve
     show pia_nyembur with dissolve:
         zoom 0.3
         xalign 0.8
-    show pia_side_shy at left with dissolve
+    show pia_side_shock at left with dissolve
     pia "UHUK-UHUK!!"
     pia "GIMANA??!!!"
-    hide pia_side_shy with dissolve
+    hide pia_side_shock with dissolve
     hide pia_nyembur with dissolve
-    show pia_shy at pia_near with dissolve
+    show pia_date_shock at pia_near with dissolve
     mcname "Ahahaha, engga. Bercanda kok."
-    show pia_side_shy at left with dissolve
+    show pia_side_shock at left with dissolve
+    show pia_date_sad at pia_near with dissolve
     pia "{size=-10}Ngedate beneran juga gapapa sih..{/size}"
-    hide pia_side_shy with dissolve
+    hide pia_date_sad with dissolve
+    hide pia_side_shock with dissolve
     mcname "Apa, Pia? Sorry, gak kedengeran?"
-    show pia_side_shy at left with dissolve
+    show pia_side_shock at left with dissolve
     pia "GAK KOK, minumannya enak. Aku haus, mau nambah kayaknya."
-    hide pia_side_shy with dissolve
+    hide pia_side_shock with dissolve
     mcname "Oh okeh, mau aku panggil pelayannya?"
-    show pia_angry at pia_near with dissolve
-    show pia_side_angry at left with dissolve
+    show pia_date_silent at pia_near with dissolve
+    show pia_side_silent at left with dissolve
     pia "Gausah."
-    hide pia_side_angry with dissolve
+    hide pia_side_silent with dissolve
     mcname "Lah???"
     "*suasana hening*"
-    show pia at pia_near with dissolve
-    hide pia_angry 
+    show pia_date_talk at pia_near with dissolve
+    hide pia_date_silent
+    hide pia_date_shock
     show pia_side_talk at left with dissolve
     pia "Eh, tempatnya bagus gak sih buat foto-foto?"
+    show pia_date at pia_near with dissolve
     hide pia_side_talk with dissolve
     mcname "Tadi Cepio sih ngomong gitu juga."
+    hide pia_date with dissolve
     show pia_side_talk at left with dissolve
     pia "Selfie ah!!"
     # window auto hide
     play sound "audio/camera.mp3" loop
     hide pia_side_talk with dissolve
-    show pia_shy at pia_near with dissolve
-    show pia_side_shy at left with dissolve
     stop sound 
+    with Pause(1.0)
+    show pia_date_shock at pia_near with dissolve
+    show pia_side_shock at left with dissolve
     # window auto show
     pia "F-foto bareng sih kita. Udah jauh-jauh makan ke sini, masa ga difoto!"
-    hide pia_side_shy with dissolve
+    hide pia_side_shock with dissolve
     mcname "Hmm. Boleh deh.\n*bergaya*"
-    show pia_side_shy at left with dissolve
+    show pia_side_shock at left with dissolve
     pia "Oke, satuu..dua....tigaaaa~"
+    show pia_date_smile at pia_near with dissolve
     play sound "audio/camera.mp3"
-    hide pia_side_shy with dissolve
+    hide pia_side_shock with dissolve
     "Fiony ngeliatin dari jauh sambil senyum-senyum ngeledek nyindir Pia."
-    show pia_angry at pia_near with dissolve
-    show pia_side_angry at left with dissolve
+    hide pia_date_smile with dissolve
+    show pia_side_shock at left with dissolve
     pia "CEPIOOOOOOOO!!"
-    hide pia
-    hide pia_shy
-    hide pia_side_angry with dissolve
-    hide pia_angry with dissolve
-    show pia at pia_near_right with dissolve
-    show fio at char_near_left with dissolve
+    hide pia_date_talk
+    hide pia_date_silent
+    hide pia_side_shock with dissolve
+    hide pia_date_shock with dissolve
+    show pia_date_shock at pia_near_right with dissolve
+    show fio_talk at char_near_left with dissolve
     show fio_side at left with dissolve
     fio "Ahahaha udah makannya? Seru tuh foto fotonya. \n*sikut-sikut Pia*"
+    show fio at char_near_left with dissolve
     hide fio_side with dissolve
-    show pia_shy at pia_near_right with dissolve
-    show pia_side_shy at left with dissolve
+    show pia_side_shock at left with dissolve
     pia "Ehehehehe~"
-    hide pia_shy with dissolve
-    hide pia_side_shy with dissolve
+    hide pia_shock with dissolve
+    hide pia_side_shock with dissolve
     show fio_side at left with dissolve
+    hide fio with dissolve
     fio "Kuy lah balik, takut kemaleman. Udah aku bayarin juga tadi makanannya ya."
+    show fio at char_near_left with dissolve
     hide fio_side with dissolve
     mcname "Eh lah udah dibayar? Waduh aku transfer ke Cepio ya!"
+    hide fio with dissolve
     show fio_side at left with dissolve
     fio "Gausah. Ngeliat juniorku SENYUM-SENYUM sendiri udah cukup puas kok.\n*senyum ke Pia*"
+    show fio at char_near_left with dissolve
     hide fio_side with dissolve
-    show pia_shy at pia_near_right with dissolve
-    show pia_side_shy at left with dissolve
+    show pia_date_silent at pia_near_right with dissolve
+    show pia_side_silent at left with dissolve
     pia "Ih Cepio maaaaaaaah. Ngeledekin muluuuuu~"
-    hide pia_side_shy with dissolve
+    hide pia_date_shock
+    hide pia_date_silent with dissolve
+    hide pia_side_silent with dissolve
+    hide fio_talk with dissolve
+    hide fio with dissolve
     "Fiony berpisah dengan Pia dan [mcname]. Kemudian mereka pun pulang ke tempat tinggal masing-masing."
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
     scene mc bedroom with dissolve
     play music "audio/BGM_Kosan 2.mp3" fadein 1.0
-    $ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     mcname "Huaaaaa capeeeeek~\n*langsung rebahan di kasur*"
     mcname "Seru juga hari ini, hehehe."

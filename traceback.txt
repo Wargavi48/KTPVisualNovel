@@ -1,17 +1,17 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/pia/chapter1pia.rpy", line 363, in script
-    show fio at char_near_right with dissolve
-  File "game/pia/chapter1pia.rpy", line 363, in <module>
-    show fio at char_near_right with dissolve
-NameError: name 'char_near_right' is not defined
+  File "game/pia/chapter1pia.rpy", line 878, in script
+    show fio at char_ner_left with dissolve
+  File "game/pia/chapter1pia.rpy", line 878, in <module>
+    show fio at char_ner_left with dissolve
+NameError: name 'char_ner_left' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/pia/chapter1pia.rpy", line 363, in script
-    show fio at char_near_right with dissolve
+  File "game/pia/chapter1pia.rpy", line 878, in script
+    show fio at char_ner_left with dissolve
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1113, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1072, in show_imspec
@@ -22,11 +22,11 @@ Full traceback:
     return py_eval_bytecode(code, globals, locals)
   File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/pia/chapter1pia.rpy", line 363, in <module>
-    show fio at char_near_right with dissolve
-NameError: name 'char_near_right' is not defined
+  File "game/pia/chapter1pia.rpy", line 878, in <module>
+    show fio at char_ner_left with dissolve
+NameError: name 'char_ner_left' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Sat Jul 20 11:13:55 2024
+Sat Jul 20 17:35:51 2024
