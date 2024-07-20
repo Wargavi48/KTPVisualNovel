@@ -184,9 +184,25 @@ default dosen_name = "Dosen"
 default dosen = Character("[dosen_name]", image="Dosen")
 default dosen_talk = Character("[dosen_name]", image="Dosen_talk")
 
+# Define Bang Rama Chara
+default rama_name = "???"
+default rama = Character("[rama_name]", image="Bang_rama")
+default rama_talk = Character("[rama_name]", image="Bang_rama_talk")
 
+# Define RG Hasan Chara
+default hasan_name = "???"
+default hasan = Character("[rama_name]", image="RG_Hasan")
+default hasan_talk = Character("[rama_name]", image="RG_Hasan_talk")
+
+# Define Takamina Chara
+default takamina_name = "???"
+default takamina = Character("[takamina_name]", image="Takamina")
+default takamina_talk = Character("[rama_name]", image="Takamina_talk")
+
+# Define galaxy chara
 default mahasiswa_c_name = "???"
-default mahasiswa_c = Character("[mahasiswa_c_name]", image="mahasiswa_c")
+default galaxy = Character("[mahasiswa_c_name]", image="galaxy")
+default galaxy_talk = Character("[mahasiswa_c_name]", image="mahasiswa_c")
 
 
 # Define side pia character 
