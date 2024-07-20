@@ -577,16 +577,16 @@ label truekanajapanfest:
   menu:
     "Yang kamu beli..."
     "Kalung":
-      $ kana_present = "Kalung"
+      define kana_present = "Kalung"
       jump truekanabuypresent
     "Sepatu":
-      $ kana_present = "Sepatu"
+      define kana_present = "Sepatu"
       jump truekanabuypresent
     "Alat Masak":
-      $ kana_present = "Alat Masak"
+      define kana_present = "Alat Masak"
       jump truekanabuypresent
     "CD Film Horror":
-      $ kana_present = "CD Film Horror"
+      define kana_present = "CD Film Horror"
       jump truekanabuypresent
 
 label truekanabuypresent:
@@ -799,10 +799,10 @@ label truekananeutralroute1:
   scene black with dissolve
   $ quick_menu = True
   #Kalau di mall pilih:
-  if kana_present = "Kalung":
+  if kana_present == "Kalung":
     jump truekanarightpresent
 
-  elif kana_present = "Sepatu": #Sepatu
+  elif kana_present == "Sepatu": #Sepatu
     $ quick_menu = False
     window auto hide
     with Pause(2.0)
@@ -844,7 +844,7 @@ label truekananeutralroute1:
     play music "audio/Dreamcatcher_v2.mp3"
     jump credits
 
-  elif kana_present = "Alat Masak": #Alat Masak
+  elif kana_present == "Alat Masak": #Alat Masak
     $ quick_menu = False
     window auto hide
     with Pause(2.0)
@@ -885,7 +885,7 @@ label truekananeutralroute1:
     play music "audio/Dreamcatcher_v2.mp3"
     jump credits
 
-  elif kana_present = "CD Film Horror": #CD Film Horror
+  elif kana_present == "CD Film Horror": #CD Film Horror
     $ quick_menu = False
     window auto hide
     with Pause(2.0)
