@@ -237,14 +237,29 @@ label truekanajapanfest:
   scene black with dissolve
   play music "audio/BGM_Minigame Tana.mp3" fadein 1.0
   scene lorong sore with dissolve
-  #Harusnya BG MINIGAME TANA (Tanpa mainin)
+#Harusnya BG MINIGAME TANA (Tanpa mainin)
   $ quick_menu = True
   kana "Kamu beneran bisa ga?"
   mcname " Bener Kana, tenang aja. Kok kamu ga percaya ke aku gitu sih."
   kana "Soalnya kamu keliatan ga yakin."
   mcname "Ini aku lagi fokus, Kana."
+  "Tak lama kemudian..."
+  $ quick_menu = False
+  stop music fadeout 1.0
+  scene black with dissolve
+  scene lorong sore with dissolve
+#Harusnya BG MINIGAME TANA (Tanpa mainin)
+  $ quick_menu = True
   play sound "audio/SFX - Finish Game.mp3"
-  "[mcname] pun mendapatkan skor tinggi." with Pause (2.0)
+  "[mcname] pun mendapatkan skor tinggi."
+  stop sound fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+#Harusnya BGM Jejepangan Malam
+  scene kamar mc kota with dissolve
+#Harusnya BG Jejepangan Malam
+  $ quick_menu = True
   mcname "Liat, kan? Aku bisaaa, siapa dulu?"
   "[mcname] mendekatkan tangannya ke telinganya dan seolah olah menunggu Kana menjawab."
   mcname "Siapa dulu, hmmmm?"
@@ -296,7 +311,7 @@ label truekanajapanfest:
   $ quick_menu = False
   scene black with dissolve
   scene lorong sore with dissolve
-  #Harusnya BG MINIGAME TANA (Tanpa mainin)
+  #Harusnya BG JEJEPANGAN MALAM
   $ quick_menu = True
   mcname "Ah udah abis lagi aja, ga kerasa ya."
   mcname "Eh Nay, kamu kenapa?"
@@ -311,17 +326,22 @@ label truekanajapanfest:
   $ quick_menu = False
   scene black with dissolve
   scene lorong sore with dissolve
-  #Harusnya BG MINIGAME TANA (Tanpa mainin)
+  #Harusnya BG JEJEPANGAN MALAM
   $ quick_menu = True
   "Kana dan [mcname] pun pergi kembali untuk melihat-lihat booth yang ada di event tersebut, sampai pada akhirnya event utama pada hari itu pun dimulai."
   mcname "Eh Nay, ayoo ini event utamanya udah mau dimulai."
   kana "Eeeeh, okaay."
+  $ quick_menu = False
+  scene black with dissolve
+  scene lorong sore with dissolve
+  #Harusnya BG JEJEPANGAN MALAM
+  $ quick_menu = True
+  play sound "audio/crowd_noise.mp3" fadein 1.0
   "Kana dan [mcname] pun pergi ke tempat di mana event utama diadakan. Event tersebut adalah pertunjukan kembang api kecil kecilan yang akan diadakan oleh panitia acara."
   "Terlihat banyak pengunjung yang menantikan pertunjukan kembang api di event tersebut."
-  play audio "audio/crowd_noise.mp3" fadein 1.0
   mcname "Bentar lagi nihhh."
   kana "Aaaaa, udah gak sabaar!"
-  stop audio fadeout 1.0
+  stop sound fadeout 1.0
   play sound "audio/SFX - Whack.mp3" loop
   #Harusnya SFX Kembang Api
   $ quick_menu = False
@@ -385,57 +405,86 @@ label truekanajapanfest:
   scene black with dissolve
   show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause (2.0)
   play music "audio/BGM_Kelas.mp3" fadein 1.0
-  scene kamar mc kota with dissolve
+  scene kelas with dissolve
   $ quick_menu = True
-
-
-
-
-
-  
-  "Hari dimulai seperti biasanya, [mcname] memasuki kelas dengan keadaan hampir terlambat. Saat mencari tempat kosong, Freya menyuruh [mcname] untuk duduk di sampingnya."
-  "Karena waktu menunjukan bahwa kelas akan dimulai, tanpa pikir panjang [mcname] pun duduk di sebelah Freya."
-  mcname "Psstt, Fre… Naya ke mana dah?"
-  freya "Lah baru aja mau nanyain ke kamu, emang dia ngabarin?"
+  "Hari dimulai seperti biasanya, [mcname] memasuki kelas dengan keadaan hampir terlambat. Saat mencari tempat kosong, [mcname] mendengar seseorang memanggilnya."
+  freya "[mcname]! [mcname]! Sini!"
+  "Karena waktu menunjukan bahwa kelas akan segera dimulai, tanpa pikir panjang [mcname] pun duduk di sebelah Freya."
+  mcname "Psstt, Fre. Naya ke mana dah?"
+  freya "Lah baru aja mau nanyain ke kamu, emang dia ga ngabarin?"
   mcname "Nggak. Terakhir chat tuh waktu malem, abis itu aku ketiduran deh. Ini aja kan hampir telat, emang ke kamu ga ada kabar gitu?"
   freya "Ga ada sama sekali, kalian emang sampe jam berapa?"
   mcname "Ga tau aku lupa, seingetku pas jam 1-an masih sadar kayaknya."
-  freya "Wahhh udah jelas ini mah, dia kesiangan. Haduhhh."
-  "Dosen" "Teman-teman, mohon untuk beberapa menit kedepan perhatikan pelajaran dulu ya. Ini sangatlah penting, untuk kedepannya bapak tidak ingin kalian ketahuan mengobrol. Terima kasih banyak, jadi untuk memahami bahwa…"
-  #*Time Skip*
-  "Dosen" "Baik. Pelajaran hari ini sudah selesai. Sampai bertemu di pertemuan selanjutnya."
-  "Setelah dosen meninggalkan ruangan, kelas pun berakhir. Tiba-tiba HP Freya berbunyi cukup keras sehingga membuat hampir seluruh kelas melihat ke arahnya."
-  #*KRINGG*
-  #*BG KELAS*
+  freya "Wahhh udah jelas ini mah dia kesiangan, haduhhh."
+  stop music fadeout 1.0
+  $ quick_menu=False
+  scene black with dissolve
+  scene kelas with dissolve
+  $ quick_menu=True
+  play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+  dosen "Selamat pagi semuanya."
+  dosen "Mohon untuk beberapa menit ke depan perhatikan pelajaran dulu ya. Jadi untuk memahami bahwa-"
+  $ quick_menu=False
+  scene black with dissolve
+  scene kelas with dissolve
+  $ quick_menu=True
+  dosen "Baik. Pelajaran hari ini sudah selesai. Sampai bertemu di pertemuan selanjutnya."
+  "Setelah dosen meninggalkan ruangan, kelas pun berakhir."
+  stop music fadeout 1.0
+  $ quick_menu=False
+  scene black with dissolve
+  play music "audio/BGM_Kelas.mp3" fadein 1.0
+  scene kelas with dissolve
+  $ quick_menu=True
+  play sound "audio/ding.mp3"
+  #HARUSNYA KRIIIIINNNGGGG
+  "Tiba-tiba HP Freya berbunyi cukup keras sehingga membuat hampir seluruh kelas melihat ke arahnya."
   freya "Aduhh maaf ya semuanya. Lupa ga disilent tadi, hehe."
-  #Transisi BlackScreen bentar
-  #SFX Angkat Telepon
-  #play sound "audio/open_door.mp3" fadeout 1.0
+  stop music fadeout 1.0
+  play sound "audio/ding.mp3"
+  #HARUSNYA SUARA ANGKAT TELEPON
+  $ quick_menu=False
+  scene black with dissolve
+  play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+  scene kelas with dissolve
+  $ quick_menu=True
   freya "Apaan?"
-  freya "Oo ini udah selesai. Kamu telat shi, ya udah gimana lagi. Ga ada yang mintain izin ke dosen, orang ga ada kabar…"
+  freya "Oo ini udah selesai. Kamu telat sih, ya udah gimana lagi."
+  freya "Ga ada yang mintain izin ke dosen, orang ga ada kabar..."
   freya "Ya udah, dadah."
+  play sound "audio/ding.mp3"
+  #HARUSNYA SUARA TUTUP TELEPON
+  stop music fadeout 1.0
+  $ quick_menu=False
+  scene black with dissolve
+  play music "audio/BGM_Kelas.mp3" fadein 1.0
+  scene kelas with dissolve
+  $ quick_menu=True
   mcname "Itu tadi Naya?"
-  freya "Iya katanya dia ketiduran, hadeuhh. Ya udah lah gimana lagi. Btw kamu udah siapin kado belum buat Naya? Kan dia 4 hari lagi ultah."
-  mcname "HAAAA!???"
-  "[mcname] menjawab dengan suara yang cukup keras, hingga terdengar hingga ke ujung kelas dan membuat mahasiswa/i yang masih ada di dalam kelas terkejut."
-  freya "Biasa aja napa sih, ya udah deh kamu siapin hadiahnya yang bener ya. Awas aja kalau ga ngasih hadiah! Oke, aku duluan ya. Ada janji sama yang lain, dahhh."
-  "Karena hari ini hanya ada satu kelas, [mcname] memilih untuk menghabiskan waktunya di kosan dan memikirkan apa yang cocok sebagai kado ulang tahun untuk Kana."
-  #*SKIP TO SCENE*
-  #*BG KOS SIANG*
+  freya "Iya katanya dia ketiduran, hadeuhh. Ya udah lah gimana lagi."
+  mcname "Hadeeeh..."
+  freya "Btw kamu udah siapin kado belum buat Naya? Kan dia 4 hari lagi ultah."
+  mcname "EEHHHH!???"
+  "[mcname] menjawab dengan suara yang cukup keras, hingga terdengar hingga ke ujung kelas dan membuat Mahasiswa/i yang masih ada di dalam kelas terkejut."
+  freya "Biasa aja napa sih? Ya udah deh kamu siapin hadiahnya yang bener ya. Awas aja kalau ga ngasih hadiah!"
+  freya "Oke, aku duluan ya. Ada janji sama yang lain, dahhh."
+  mcname "Heeeee..."
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+  scene kamar mc kota with dissolve
+  $ quick_menu = True
+  "Karena hari ini hanya ada satu kelas, [mcname] memilih untuk menghabiskan waktunya di kosan sambil memikirkan apa yang cocok sebagai kado ulang tahun untuk Kana."
   mcname "{i}Aduuhhh aku ngasih apa ya buat Kana? Kalau diinget-inget lagi, Kana tuh suka sama jejepangan.{/i}"
   mcname "{i}Tapi masa aku ngasih Naya merch anime? Aku ga pernah liat dia pake pakaian anime-anime gitu sihh.{/i}"
   mcname "{i}Kalau official CD anime atau band? Tapi aku ga tau dia suka band apaan, aaaa bingung banget mau ngasih apa.{/i}"
   "Seakan sedang terjadi perang di dalam pikiran [mcname], tanpa terasa waktu berubah menjadi malam."
-  "[mcname] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok agar Kana bisa terus mengingat dirinya."
-  "Tiba-tiba HP [mcname] berbunyi yang menunjukkan bahwa baterai HPnya sudah sedikit dan perlu di-charge, akan tetapi ternyata ada notif lain dari Kana dan Freya yang mencoba menghubunginya beberapa kali."
-  #*SKIP TO SCENE*
-  #*BG KOS MALAM*
-  #*CHATTING APP*
-  mcname "Eh maaf, tadi aku ketiduran hehe."
-  "Beberapa saat kemudian Kana dan Freya  pun menelepon [mcname]."
-  #*BG HP LAGI TELEPON*
+  "[mcname] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok."
+  "Tiba-tiba terdengar bunyi dari HP yang menunjukkan bahwa HP perlu dicharge, akan tetapi ternyata ada notifikasi lain dari Kana dan Freya yang mencoba menghubungi [mcname] berkali-kali."
+#*BG HP LAGI TELEPON*
   freya "Nahhh kan kalau gini enak, ga usah ngehubungin satu-satu."
-  mcname "Ah Naya, maaf ya tadi aku ketiduran."
+  mcname "Ah Naya, Freya, maaf ya tadi aku ketiduran."
   kana "Iya gapapa. Tadi juga aku terlalu spam, maaf ya."
   mcname "Enggak apa-apa, aku ga sempet liat semua chatnyaa. Sorry."
   freya "Jadi tadi kenapa Nay?"
@@ -443,7 +492,8 @@ label truekanajapanfest:
   mcname "Ya udah, sini deh aku yang jelasin."
   freya "Lah, emang tau ada apa?"
   mcname "Ya nggak lah, makanya cepet jelasin."
-  "Kana & Freya" "Hahahaha."
+  kana "Hahahaha."
+  freya "Hadeeeh/"
   kana "Oke, jadi TLDR aja nih ya. Lusa tuh bakalan ada event di cafe mall yang udah aku tungguin banget dari beberapa bulan yang lalu."
   kana "Nah di eventnya tuh, bakalan ada cake yang dijual. Sumpah itu enak banget cakenya."
   kana "Terus, yang bikin aku pengen banget tuh cakenya limited edition gitu, jadi aku bisa jamin kalau cakenya itu bakalan ENAKKKKK BANGETTT."
@@ -452,7 +502,7 @@ label truekanajapanfest:
   kana "Jadi nanti aku pengen ajak Freya sama kamu buat antri dan beli juga."
   kana "Nanti uangnya dari aku kok, santai aja. Tapi nanti ikut antri biar bisa beli juga."
   freya "Kayaknya itu kepanjangan deh buat TLDR, Nay."
-  mcname "Keknya TLDR-mu itu “Too Long Di Read”, makanya kamu telepon ya."
+  mcname "Keknya TLDR-mu itu \"To Long Di Read\", Nay."
   kana "Hehehe, maaf terlalu semangat."
   mcname "Tapi oke, intinya lusa kan?"
   kana "Iya lusa."
@@ -460,28 +510,45 @@ label truekanajapanfest:
   freya "Yaudah nanti kabarin lagi yaa. Aku mau tidur dulu."
   kana "Okeee, good night minna~"
   mcname "Oke, good night."
-  #*BG HP LAGI TELEPON SELESAI*
+#*BG HP LAGI TELEPON SELESAI*
+  mcname "Hmmmmmm."
   mcname "{i}Oke nanti aku harus liat-liat sekalian milih hadiah apa yang kayaknya cocok buat Naya di mall.{/i}"
-  #Transisi Ganti Hari
-  #*SKIP TO SCENE*
-  #*BG MALL*
-  "Lusa Kana, Freya, serta [mcname] pergi ke mall untuk membeli limited cake."
-  "Tanpa Kana dan Freya sadari, [mcname] memiliki niat terselubung, dimulai dari masuk mall [mcname] sesekali melihat gerak-gerik Kana."
-  "Mulai dari apa yang dia katakan dan toko apa yang ia lihat pun menurutnya petunjuk apa yang ia ingikan untuk pada hari ulang tahunnya."
-  "Sempat Kana melihat ke toko perhiasan, berbicara tentang sepatunya yang mulai agak sempit, dan sampai bercerita tentang keponakannya yang sering main masak masakan."
-  "setelah mendapatkan apa yang Kana mau, [mcname] beralasan untuk pergi duluan padahal dia akan membelikan hadiah untuk Kana."
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause (2.0)
+  play music "audio/BGM_Mall Slow.mp3" fadein 1.0
+  scene mall temp with dissolve
+  $ quick_menu = True
+  "Hari itu [mcname] pergi ke mall untuk menemani Kana membeli limited cake."
+  "Di sana [mcname] berencana untuk melihat gerak-gerik Kana sebagai petunjuk tentang hadiah apa yang cocok untuknya."
+  kana "Ah, halo [mcname]. Sorry, lama nunggu ya?"
+  mcname "Enggak, kok. Haha."
+  kana "Freya belum dateng ya? Hmmmm..."
+  mcname "Tunggu bentar lagi deh haha."
+  kana "Yaudaah."
+  $ quick_menu = False
+  scene black with dissolve
+  scene mall temp with dissolve
+  $ quick_menu = True
   kana "Aduhh ini Freya ke mana sih? Jangan bilang dia lupa?"
-  mcname "Waduh aku ga tau tuh Nay, coba kamu telepon."
+  mcname "Waduh aku juga ga tau tuh Nay, coba kamu telepon."
   kana "Oke bentar yaa-"
-  #*sfx dering telepon*
-  #play sound "audio/open_door.mp3" fadeout 1.0
-  freya "Eh?"
+#SFX KRINGGG Telepon*
+#BG Telepon ON
+  kana "Eh?"
   kana "FREYAAA!! Kamu ke mana??"
-  freya "HA!?? Aduhhh… ya udah deh."
-  kana "Umm [mcname], ini Freya katanya ada urusan di kampus, jadinya kita berdua. Kita berduaan nih hehe, kaya waktu itu"
-  mcname "Ahahaha, iya nih inget aja kamu. Ya udah yuk jalan."
+  kana "HA!?? Aduhhh… ya udah deh."
+#BG Telepon OFF
+  kana "Umm [mcname], ini Freya katanya ada urusan di kampus. Jadinya kita berdua aja nih hehe, kaya waktu itu."
+  mcname "Ahahaha, iya nih. Masih inget aja kamu. Ya udah yuk jalan."
   kana "Hahaha, okee deh."
-  "Saat datang ke dalam mall dan berjalan ke arah cafe, Kana sempat beberapa kali curi-curi pandang ke arah beberapa toko yang ada di dalam mall, seperti toko perhiasan. Lalu Kana pun sempat bercerita tentang beberapa hal."
+  $ quick_menu = False
+  scene black with dissolve
+  scene mall temp with dissolve
+  $ quick_menu = True
+  "Saat masuk ke dalam mall dan berjalan ke arah cafe, Kana sempat beberapa kali curi-curi pandang ke arah toko perhiasan yang ada di dalam mall."
+  "Lalu [mcname] pun sempat menanyakan beberapa hal."
   mcname "Eh Nay, tumben kamu ganti sepatu."
   kana "Iya nih. Kemarin pas aku coba udah agak sempit gitu sih, jadi ini pake sepatu yang lain haha."
   mcname "Ohhh gitu ya, kamu lagi suka apa belakangan ini?"
@@ -492,11 +559,24 @@ label truekanajapanfest:
   mcname "{i}Mantep aku dapet beberapa ide kado buat Kana, hehehe.{/i}"
   kana "Iya, udah ya kita pura-pura ga kenal dulu biar ga dicurigai haha."
   mcname "Oke dehh."
-  "Setelah membeli cake tersebut, [mcname] dan Kana pun berpisah dan pulang ke tempat tinggal masing-masing. Akan tetapi [mcname] tidak pulang, dia menghabiskan harinya di Mall dan memikirkan harus membeli kado apa untuk Kana."
+  "Setelah membeli cake tersebut, [mcname] dan Kana pun bertemu."
+  mcname "Ini cakenya Nayy."
+  kana "Ehhh? Gapapa nih?"
+  mcname "Gapapa, soalnya keliatannya kamu suka banget cake ini."
+  kana "Wihhh thank you [mcname]!"
+  kana "Kalo gitu aku pulang dulu ya, mau menikmati cakenya ehehehe."
+  mcname "Okeee, hati-hati di jalan."
+  "Kana pun pulang ke rumahnya, tidak sabar untuk menikmati limited cake yang baru saja dibelinya."
+  $ quick_menu = False
+  scene black with dissolve
+  scene mall temp with dissolve
+  $ quick_menu = True
+  "Tetapi, [mcname] tidak pulang. Dia menghabiskan harinya di Mall dan memikirkan hadiah apa yang cocok untuk Kana."
   mcname "{i}Hmmm dari obrolan dan kode-kode yang Kana kasih, mending aku beliin apa ya?{/i}"
+  define kana_present = ""
   #*CHOSE*
   menu:
-    #*CHOSE ANYTHING*
+    "Yang kamu beli..."
     "Kalung":
       $ kana_present = "Kalung"
       jump truekanabuypresent
@@ -512,91 +592,172 @@ label truekanajapanfest:
 
 label truekanabuypresent:
   mcname "Oke kayaknya ini cocok deh buat Kana, sekarang waktunya pulang dan siap-siap buat besok pas ulang tahun Kana."
-  #*SKIP TO SCENE*
-  #*BG KOS MALAM*
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+  scene kamar mc kota with dissolve
+  $ quick_menu = True
   "Setelah [mcname] sampai di kosan, dia menghubungi Freya untuk membahas rencana ulang tahun Kana."
-  #*CHANGE/ADD BG HP*
-  #*CHATTING APP*
+#*CHANGE/ADD BG HP*
+#*CHATTING APP*
   mcname "Freya."
   freya "Kenapa?"
   mcname "Ini, mau nanya buat ultah Kana nanti. Kita bakalan gimana nih ngasih suprisenya? Terus mau di mana?"
   freya "Kalau tempat mah udah aman aja. Biasanya aku di rumah Kana sih, nanti kamu dateng aja."
   mcname "Emangnya boleh ya?"
-  freya "Ga ada yang ngelarang kok. Nanti ga perlu dekorasi apa-apa, soalnya Si Naya ga suka kalo dirayain gede-gede pake aksesoris gitu. Dulu pernah gitu, dia malah bete seharian. Lagian dia juga ga pernah inget hari ultahnya."
+  freya "Ga ada yang ngelarang kok. Nanti ga perlu dekorasi apa-apa, soalnya Si Naya ga suka kalo dirayain gede-gede pake aksesoris gitu."
+  freya "Dulu pernah gitu, dia malah bete seharian. Lagian dia juga ga pernah inget hari ultahnya."
   mcname "Oke deh kalau emang gitu, nanti aku tinggal dateng aja ke rumah Kana?"
-  freya "Iya nanti dateng aja."
-  mcname "Oke. Thanks, Freya."
+  freya "Iya nanti dateng aja, biar aku yang urus hehe."
+  mcname "Okee. Thanks, Freya."
   freya "Iya sama-sama."
-  "Setelah semua itu, akhirnya [mcname] dan Freya setuju untuk hanya melakukan perayaan yang sederhana saja. Setelah itu [mcname] memutuskan untuk tidur."
-  #*SKIP TO SCENE*
-  #*KOS SORE*
-  mcname "{i}Oke. Hari ini hari yang penting, pokoknya semua harus siap.{/i}"
+#CHATTING APP OFF
+  "Setelah semua itu, akhirnya [mcname] dan Freya setuju untuk melakukan perayaan ulang tahun sederhana di rumah Kana. Setelah itu [mcname] memutuskan untuk tidur."
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  show text "{color=#FFF}HARI ULANG TAHUN KANA{/color}" with Pause (2.0)
+  play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+  scene kamar mc kota with dissolve
+  $ quick_menu = True
+  mcname "{i}Oke. Hari ini hari yang penting, pokoknya semua harus siap!{/i}"
   mcname "{i}Bentar cek dulu semuanya, pakaian? Oke.{/i}"
   mcname "{i}Hadiah? Oke, ada udah di bungkus juga.{/i}"
   mcname "{i}Wangy? Oke, tadi udah mandi sama pake parfum juga.{/i}"
   mcname "{i}Tinggal berangkat aja nih harusnya. Duh deg degan banget hari ini, mudah-mudahan lancar deh.{/i}"
-  #*SKIP TO SCENE*
-  #*BG RUMAH KANA*
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
+  scene awan with dissolve
+  $ quick_menu = True
   "[mcname] pun datang ke rumah Kana pada waktu yang telah ditentukan sebelumnya dengan Freya. Tetapi saat [mcname] menghubungi Freya, ia tidak dapat dihubungi."
   "Rasa cemas, gelisah, serta was-was tidak dapat dihapus dari pikiran [mcname]."
   "Mungkin ini pertama kalinya [mcname] berinisiatif merayakan ulang tahun temannya seperti ini, sehingga ingin memberikan momen bahagia yang selalu dapat diingat oleh Kana."
+#ASSET PINTU RUMAH KANA
   mcname "{i}Aduhhh masuk ga ya, tapi belum ada Si Freya.{/i}"
-  mcname "{i}Aduhhh tapi kalau di luar terus, nanti takut dicurigai orang-orang. Mending gimana ya…{/i}"
-  #*CHOSE*
+  mcname "{i}Tapi kalau di luar terus, nanti takut dicurigain orang-orang. Mending gimana ya...{/i}"
   menu:
-    "PERGI KE DALAM RUMAH":
+    "Yang [mcname] lakukan..."
+    "PERGI KE DALAM RUMAH.":
       #BG Ruang Tamu.
       jump truekanabeforeneutralroute
-    "TUNGGUIN FREYA":
+    "TUNGGUIN FREYA.":
       #*CHOSE B*
-      "[mcname] memilih untuk menunggu Freya. Tak lama kemudian, Freya pun datang dan mereka masuk ke rumah Kana bersama-sama."
-      #BG Ruang Tamu.
-      #LANJUT KE [NEUTRAL ROUTE 1]
-      jump truekananeutralroute1
+      "[mcname] memilih untuk menunggu Freya. Tak lama kemudian, Freya pun datang."
+      mcname "Haloo."
+      freya "Halo [mcname]."
+      mcname "Yuk?"
+      freya "Gasss!"
+      play sound "audio/ding.mp3"
+      "Freya memencet bel rumah Kana."
+      play sound "audio/open_door.mp3"
+      jump truekanaNungguFreya
 
 label truekanabeforeneutralroute:
   #*CHOSE A*
-  "[mcname] pun memutuskan untuk mengetuk pintunya tanpa menunggu Freya dan masuk ke dalam rumah Kana."
+  "[mcname] pun memutuskan untuk mengetuk pintu tanpa menunggu Freya."
+  play sound "audio/ding.mp3"
+  with Pause (2.0)
+  play sound "audio/open_door.mp3"
+  "Mamah Kana" "Ah [mcname]. Ada apa?"
+  mcname "Halo Tante, Kana ada di rumah?"
+  "Mamah Kana" "Ada kok, kenapa?"
+  mcname "Jadi sebenarnya saya sama Freya mau ngadain kejutan untuk ulang tahun Kana."
+  "Mamah Kana" "Eeeeh, makasih banyak ya [mcname]. Kana pasti bakal seneng banget!"
+  mcname "Hehe, btw tante masih inget waktu itu pernah bilang mau ngabulin satu permintaan?"
+  "Mamah Kana" "Iya, kenapa nih tiba-tiba."
+  mcname "Kalo bisa, mau minta tolong kejutannya dirahasiakan dari Kanaa."
+  "Mamah Kana" "Eeehh, oke oke. Tante gak bakal ganggu, hehe."
+  mcname "Terima kasih banyak, tante."
+  "Mamah Kana" "Ya sudah, ayok sini masuk dulu."
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio/BGM_Lorong.mp3" fadein 1.0
+  scene lorong with dissolve
+  #RUANG TAMU RUMAH KANA
+  $ quick_menu = True
   mcname "Siang Nay, maaf telat ya?"
   kana "Engga kok sini masuk aja. Freya belum datang, nanti biasanya dia suka telat dikit."
-  mcname "Eh, i-iya Nay, Makasih ya.."
+  mcname "Eh, i-iya Nay."
   kana "Mau minum apa [mcname]? Sekalian nunggu Freya nih. Btw kok gugup sih, emang ada apa?"
   mcname "E-engga kok, cuma ini kan pertama kali kita berduaan… J-jadi agak gugup dikit."
   kana "Lah? Bukannya kemarin pas aku sakit, kamu temenin aku ya? Terus kita kan pernah ke cafe bareng, game center bareng, event jejepangan bareng, ke mall kemarin juga kita berduaan. Kamu ga anggep itu kah? Sedih sih, huhuhu."
   mcname "E-eh maksudnya gak gitu. Cuma entah kenapa hari ini aku lebih gugup aja dari biasanya.."
   kana "Gugup kenapa?"
-  mcname "E-ehh itu…"
+  mcname "E-ehh itu..."
   mcname "{i}Aduhh kok aku gugup ya? Apa gara-gara mau ngasih hadiah ke Naya, terus takut dia gak suka ya?{/i}"
   mcname "Ya gitu deh, haha. Ini Si Freya ke mana ya, tumben lama."
-  kana "Hmmm… Sebenernya kalian mau ngapain deh? Soalnya Si Freya Freya itu gak ngasih tau mau kumpul buat apaan?"
+  kana "Hmmm... Sebenernya kalian mau ngapain deh? Soalnya Si Freya Freya itu gak ngasih tau mau kumpul buat apaan?"
   mcname " Eh-"
   mcname "{i}Mampus, harus alesan apa ya biar bisa bohongin Kana?{/i}"
-  mcname "Eh itu… Sebenarnya, kita mau…"
+  mcname "Eh itu... Sebenarnya kita mau-"
+  play sound "audio/open_door.mp3"
+#HARUSNYA SUARA BRAK!
   "Sebelum [mcname] sempat menyelesaikan kata katanya, suara Freya terdengar dari arah pintu masuk."
   freya "HALOOOO SEMUANYAAA!!!"
-  kana "Eh Frey, kaget…"
-  mcname "Waduh… Freya bikin kaget aja."
+  kana "Ah Frey, kaget."
+  mcname "Waduh, Freya bikin kaget aja."
   jump truekananeutralroute1
 
 #[Neutral Route 1]
+label truekanaNungguFreya:
+  "Mamah Kana" "Ah [mcname], Freya. Ada apa?"
+  freya "Halo Tante, Kana ada di rumah?"
+  "Mamah Kana" "Ada kok, kenapa?"
+  freya "Jadi sebenarnya kita mau ngadain kejutan untuk ulang tahun Kana."
+  "Mamah Kana" "Eeeeh, makasih banyak ya kalian. Kana pasti bakal seneng banget!"
+  mcname "Btw tante masih inget waktu itu pernah bilang mau ngabulin satu permintaan?"
+  "Mamah Kana" "Iya, kenapa nih tiba-tiba."
+  mcname "Kalo bisa, mau minta tolong kejutannya dirahasiakan dari Kanaa."
+  "Mamah Kana" "Eeehh, oke oke. Tante gak bakal ganggu, hehe."
+  freya "Terima kasih banyak, tante."
+  "Mamah Kana" "Ya sudah, ayok sini masuk dulu."
+  mcname "Baik."
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio/BGM_Lorong.mp3" fadein 1.0
+  scene lorong with dissolve
+  #RUANG TAMU RUMAH KANA
+  $ quick_menu = True
+
 label truekananeutralroute1:
-  freya "Halo Naya, udah siap kan?"
-  "Kana & [mcname]" "Hah, siap?"
+  freya "Hehe halo Naya, udah siap kan?"
+  kana "Hah, siap?"
+  mcname "Waduh Freya."
   freya "Lahh ini nih, padahal aku dah semangat gini. Dah bawa banyak game-game buat temenin kita sampe malem nih."
   kana "Ha?? Main game?"
   "Freya melihat ke arahku, seakan memberi kode secara tidak langsung. [mcname] mengangguk ke arah Freya."
   mcname "Lah iya Nayy, kamu ga tau? Kita kan bakalan main game lohhh."
-  kana "Hmmm… Ya udah, deh aku ngikut aja."
-  "Mereka pun memainkan semua permainan yang dibawa oleh Freya. Tak terasa malam pun tiba, Freya meminta untuk pindah ke kamar Kana, karena tidak mau Mamah Kana merasa terganggu dengan suara mereka."
-  freya "Eh kita pindah ke kamarmu aja yuk Nay. Ini udah malem, takut ganggu Mamahmu sama tetangga."
+  kana "Hmmm... Ya udah deh, aku ngikut aja."
+  freya "Let's gooo!"
+  "Mereka pun memainkan semua permainan yang dibawa oleh Freya."
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio/BGM_Lorong.mp3" fadein 1.0
+#HARUSNYA BGM RUANG TAMU RUMAH KANA
+  scene lorong malam with dissolve
+#HARUSNYA RUANG TAMU RUMAH KANA
+  $ quick_menu = True
+  "Tak terasa malam pun tiba."
+  freya "Eh kita pindah ke kamarmu aja yuk Nay. Udah malem, takut ganggu Mamahmu sama tetangga."
   kana "Iya sih, ya udah deh ayo."
-  #*SKIP TO SCENE*
-  #*BG KAMAR KANA MALAM*
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+#HARUSNYA BGM KAMAR KANA
+  scene kamar kana with dissolve
+  $ quick_menu = True
   mcname "Eh Freya, emang ruangan Naya kedap suara kah? Kok kita pindah ke sini?"
   freya "Iya mamahnya Naya masangin peredam suara, biar kalau dia berisik main game gak ganggu tetangga."
   kana "Perasaan ini kamarku, tapi kok kamu yang lebih tahu daripada aku."
   mcname "Hahaha."
-  "Ini mungkin kali ke tiga [mcname] ke kamar Kana, akan tetapi kali ini ia bisa melihat ruangan kamar Kana dengan lebih seksama."
+  "Ini mungkin ketiga kalinya [mcname] ke kamar Kana, akan tetapi kali ini ia bisa melihat ruangan kamar Kana dengan lebih seksama."
   "[mcname] melihat ternyata di pojok ruangan kamarnya Kana tersembunyi satu tempat khusus yang dipenuhi kumpulan-kumpulan figur dan merch anime."
   mcname "Wahhhh… Kana ini kan dari anime itu, keren banget kamu punya? Bukannya ini limited-edition ya?"
   kana "Iya, hahaha. Ini aku nabung dari lama, untung dapet."
@@ -607,10 +768,18 @@ label truekananeutralroute1:
   freya "Ya udah kalian have fun dulu ya, aku mau ke toilet dulu bentar."
   "Setelah mengatakan itu, Freya memberikan kode kepada [mcname] yang langsung mengerti apa yang dimaksud Freya."
   mcname "Eh, Nay. Kalau ini kamu beli dari luar negeri? Setauku di Indo belum ada."
-  kana "Ehhh kalo itu sih beli di…"
+  kana "Ehhh kalo itu sih beli di..."
   "[mcname] pun terus mengobrol dengan Kana, berusaha untuk mengalihkan perhatian Kana."
-  "Tak lama kemudian, jam menunjukan 12 malam yang menandakan bahwa hari telah berganti dan hari ulang tahun Kana pun tiba."
-  mcname "Nay…"
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+#HARUSNYA BGM KAMAR KANA
+  scene kamar kana with dissolve
+#HARUSNYA BG KAMAR KANA MALAM
+  $ quick_menu = True
+  "Tak terasa, jam menunjukan 12 malam yang menandakan bahwa hari telah berganti dan hari ulang tahun Kana pun tiba."
+  mcname "Nay..."
   kana "Iya [mcname]?"
   mcname "Kamu lagi apa?"
   kana "Lagi duduk di kasur doang…"
@@ -618,8 +787,7 @@ label truekananeutralroute1:
   mcname "Eh iya maaf, hehe."
   mcname "Gugup aja sih."
   kana "Gugup kenapa?"
-  mcname "Jadi…sebenernya… Aku ada hadiah buat kamu."
-  #Narator
+  mcname "Jadi sebenernya... Aku ada hadiah buat kamu."
   "[mcname] mendekati Kana yang sedang duduk di kasurnya."
   kana "Hadiah?"
   mcname "Iya, tapi kamu harus tutup mata dulu."
@@ -627,29 +795,48 @@ label truekananeutralroute1:
   mcname "Iyaa, udah tutup mata dulu sana."
   kana "O-oke."
   "Kana pun menutup matanya."
+  stop music fadeout 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  $ quick_menu = True
   #Kalau di mall pilih:
-  if kana_present = "Kalung": #Kalung
+  if kana_present == "Kalung":
     jump truekanarightpresent
-  elif kana_present = "Sepatu": #Sepatu
-    #*IF [mcname] CHOOSE B DI MALL*
-    #*SFX Suara Kresek*
-    #play sound "audio/open_door.mp3" fadeout 1.0
+
+  elif kana_present == "Sepatu": #Sepatu
+    $ quick_menu = False
+    window auto hide
+    with Pause(2.0)
+    play sound "audio/run.mp3"
+  #HARUSNYA *SFX Suara Kresek*
+    window auto show
+    $ quick_menu = True
     kana "Udah boleh buka mata belum?"
     mcname "Bentar lagi."
-    #*SFX Suara Kresek*
-    #play sound "audio/open_door.mp3" fadeout 1.0
+    $ quick_menu = False
+    window auto hide
+    with Pause(2.0)
+    play sound "audio/run.mp3"
+  #HARUSNYA *SFX Suara Kresek*
+    window auto show
+    $ quick_menu = True
+    kana "[mcname]?"
     mcname "Udah boleh buka matanya Nay."
-    kana " O-okee."
-    #Narrator
+    kana "O-okee."
     "Perlahan Kana membuka matanya."
-    #Asset Sepatu Hadiah ultah Kana
-    "Kana terdiam sejenak…"
-    "Lagi-lagi Kana terdiam…"
-    "Kana masih terdiam…"
+    $ quick_menu = False
+    scene black with dissolve
+    scene kamar kana with dissolve
+  #HARUSNYA BG KAMAR KANA MALAM
+    $ quick_menu = True
+  #MUNCUL Asset Sepatu Hadiah ultah Kana
+    "Kana terdiam sejenak."
+    "Lagi-lagi Kana terdiam."
+    "Kana masih terdiam..."
     mcname "Nay?"
     kana "Eh i-iya makasih banyak ya. Tapi kok kamu tau ukuran sepatu aku, padahal aku ga pernah bilang ke kamu maupun Freya. Kamu tau dari mana?"
     mcname "....."
-    kana "[mcname]…?"
+    kana "[mcname]...?"
     "Kana pun merasa aneh dengan [mcname], semua kedekatan mereka langsung sirna di hati Kana."
     "Kana langsung kabur sambil memanggil Freya untuk meminta tolong."
     scene black with Dissolve(2.0)
@@ -657,22 +844,37 @@ label truekananeutralroute1:
     show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
     play music "audio/Dreamcatcher_v2.mp3"
     jump credits
-  elif kana_present = "Alat Masak": #Alat Masak
-    #*CHOSE C*
-    #*SFX Suara Kresek*
-    #play sound "audio/open_door.mp3" fadeout 1.0
+
+  elif kana_present == "Alat Masak": #Alat Masak
+    $ quick_menu = False
+    window auto hide
+    with Pause(2.0)
+    play sound "audio/run.mp3"
+  #HARUSNYA *SFX Suara Kresek*
+    window auto show
+    $ quick_menu = True
     kana "Udah boleh buka mata belum?"
     mcname "Bentar lagi."
-    #*SFX Suara Kresek*
-    #play sound "audio/open_door.mp3" fadeout 1.0
+    $ quick_menu = False
+    window auto hide
+    with Pause(2.0)
+    play sound "audio/run.mp3"
+  #HARUSNYA *SFX Suara Kresek*
+    window auto show
+    $ quick_menu = True
+    kana "[mcname]?"
     mcname "Udah boleh buka matanya Nay."
     kana " O-okee."
-    #Narrator
     "Perlahan Kana membuka matanya."
-    #Asset Alat masak Set
+    $ quick_menu = False
+    scene black with dissolve
+    scene kamar kana with dissolve
+  #HARUSNYA BG KAMAR KANA MALAM
+    $ quick_menu = True
+  #MUNCUL Asset CD Blu-ray
     "Raut wajah Kana bingung dan terheran-heran, kenapa [mcname] memberikan dia alat masak set lengkap."
     kana "Ummm ini apa?"
-    mcname "Ini kan alat masak Kana, soalnya kamu pernah bilang sepupumu sering datang masak-masakan. Nah aku kasih hadiah buat kamu, siapa tau aku juga bisa cobain masakan kamu hehe."
+    mcname "Ini alat masak, Nay. Soalnya kamu pernah bilang sepupumu sering datang masak-masakan. Nah aku kasih hadiah buat kamu, siapa tau aku juga bisa cobain masakan kamu hehe."
     kana "Ummm, tapi sepupuku masih TK, jadi dia pake mainan alat masak-masak..."
     mcname "...."
     kana "...."
@@ -683,19 +885,34 @@ label truekananeutralroute1:
     show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
     play music "audio/Dreamcatcher_v2.mp3"
     jump credits
-  elif kana_present = "CD Film Horror": #CD Film Horror
-    #*CHOSE D*
-    #*SFX Suara Kresek*
-    #play sound "audio/open_door.mp3" fadeout 1.0
+
+  elif kana_present == "CD Film Horror": #CD Film Horror
+    $ quick_menu = False
+    window auto hide
+    with Pause(2.0)
+    play sound "audio/run.mp3"
+  #HARUSNYA *SFX Suara Kresek*
+    window auto show
+    $ quick_menu = True
     kana "Udah boleh buka mata belum?"
     mcname "Bentar lagi."
-    #*SFX Suara Kresek*
-    #play sound "audio/open_door.mp3" fadeout 1.0
+    $ quick_menu = False
+    window auto hide
+    with Pause(2.0)
+    play sound "audio/run.mp3"
+  #HARUSNYA *SFX Suara Kresek*
+    window auto show
+    $ quick_menu = True
+    kana "[mcname]?"
     mcname "Udah boleh buka matanya Nay."
     kana "O-okee."
-    #Narrator
     "Perlahan Kana membuka matanya."
-    #Asset CD Blu-ray
+    $ quick_menu = False
+    scene black with dissolve
+    scene kamar kana with dissolve
+  #HARUSNYA BG KAMAR KANA MALAM
+    $ quick_menu = True
+  #MUNCUL Asset CD Blu-ray
     "Kana membuka dan melihat bahwa ada CD Blu-ray yang berjudul “The Conjurang” dengan cover yang gelap, mengerikan, dan ada hantunya."
     mcname "Ini film baru loh, katanya viral dan terinspirasi dari kisah nyata. Bisa kali ya kita nonton bareng-bareng nanti, jadi kita nobar gitu konsepnya hahah."
     kana "Tapi… Aku ga suka horror. Ini cuma kesukaan kamu aja, kan?"
@@ -719,9 +936,14 @@ label truekanarightpresent:
   kana " O-okee."
   #Narrator
   "Perlahan Kana membuka matanya."
-  "Saat Kana membuka matanya, dia terlihat kaget dan terkejut karena di lehernya terdapat sebuah kalung cantik bersinar yang berwarna biru. Ternyata sensasi dingin tersebut merupakan kalung."
-  #*SKIP TO SCENE*
-  #*CG KANA KALUNG*
+  $ quick_menu = False
+  scene black with dissolve
+  play music "audio//BGM_Rooftop Romance Pia.mp3" fadein 1.0
+  scene kana awal with dissolve
+#HARUSNYA CG KANA END
+  $ quick_menu = True
+  "Saat Kana membuka matanya, dia terlihat kaget dan terkejut karena di lehernya terdapat sebuah kalung cantik bersinar yang berwarna biru."
+  "Ternyata sensasi dingin yang sebelumnya terasa, adalah kalung."
   kana "EH INI KANN!!??"
   mcname "Selamat ulang tahun~!"
   kana "EHH!!!?? K-kamu tau hari ulang tahun ku?"
@@ -741,17 +963,23 @@ label truekanarightpresent:
   mcname "Eeeehh."
   mcname "*Blush*"
   mcname "Ke-kenapa?"
-  kana "Soalnya…"
-  kana "........."
+  kana "Soalnya..."
   mcname "........."
-  kana "........"
   kana "*Blush*"
-  kana "[mcname]… Sebenarnya aku suk-"
-  #*SFX Pintu Didobrak*
-  #play sound "audio/open_door.mp3" fadeout 1.0
-  #Narator
-  "Tanpa ada angin dan hujan, tiba-tiba Freya datang membuka pintu kamar Kana."
+  kana "[mcname]... Sebenarnya aku suk-"
+  stop music
+  $ quick_menu = False
+  window auto hide
+  play sound "audio/open_door.mp3"
+#HARUSNYA *SFX Pintu Didobrak*
+  scene black
+  with Pause(2.0)
+  window auto show
+  play music "audio/BGM_Lawak Tana.mp3" fadein 1.0
+  scene kamar kana with dissolve
+  $ quick_menu = True
   freya "HAPPY BIRTHDAYYY NAYAAAA~!!!!"
+  "Tanpa angin tanpa hujan, tiba-tiba Freya datang membuka pintu kamar Kana."
   "Melihat ke arah Kana dan [mcname] yang sedang berduaan dan suasana yang terasa berbeda dari biasanya, membuat Freya pun tersadar."
   freya "Eh? Sorry kayaknya ganggu, hehe."
   freya "Kalian lanjutin aja dulu berdua, hehe."
@@ -762,6 +990,9 @@ label truekanarightpresent:
   kana "K-kamu jangan ketawa [mcname]!!!"
   kana "*Blush*"
   "[mcname] tertawa dan Kana tersipu malu sambil memandang ke arah [mcname]."
-  "Malam itu…"
+  "Malam itu..."
   "Menjadi malam yang tidak akan terlupakan bagi [mcname] dan Kana."
-  #*Credits*
+  scene black with dissolve
+  show text "{color=#FFF}THE END{/color}" with Pause(2.0)
+  play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+  jump credits
