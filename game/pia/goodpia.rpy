@@ -51,45 +51,62 @@
     play music "audio/BGM_Cafe Sore.mp3" fadein 1.0
     scene cafe with dissolve
     $ renpy.block_rollback()
-    show pia at char_placement with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     $ quick_menu = True
     pia "[mcname] Sini!!"
-    hide pia_side with dissolve
-    hide pia with dissolve
-    show pia at pia_near with dissolve
+    hide pia_side_talk with dissolve
+    show pia_home at pia_near with dissolve
     mcname "Hadeeeeeh, nih bukunya"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
+    show pia_home_talk at pia_near with dissolve
     pia "MAKASIH BANGET!!! HUHUHU"
     pia "KALO GAK ADA KAMU, AKU GATAU HARUS GIMANA. AKU GAMAU NGULANG MATKUL INI"
-    hide pia_side with dissolve
+    hide pia_home_talk with dissolve
+    hide pia_side_talk with dissolve
     mcname "Iya Pia, Iya"
-    show pia_side at left with dissolve
+    show pia_home_talk at pia_near with dissolve
+    show pia_side_talk at left with dissolve
     pia "Aku berhutang budi sama kamu!!!"
-    hide pia_side with dissolve
+    hide pia_home_talk with dissolve
+    hide pia_side_talk with dissolve
     mcname "Halah lebay"
-    show pia_side at left with dissolve
+    show pia_home_talk at pia_near with dissolve
+    show pia_side_talk at left with dissolve
     pia "Karena kamu baik, aku kasih kamu 1 golden tiket ini. Muahahaha"
     # Insert aset tiket
-    hide pia_side with dissolve
+    hide pia_home_talk with dissolve
+    hide pia_side_talk with dissolve
     mcname "Apaan ini?"
-    show pia_side at left with dissolve
+    show pia_home_talk at pia_near with dissolve
+    show pia_side_talk at left with dissolve
     pia "Pake ini buat mengabulkan 1 permintaan."
     pia "Apapun, akan kulakukan!"
-    hide pia_side with dissolve
+    hide pia_home_talk with dissolve
+    hide pia_side_talk with dissolve
     mcname "Oke, aku pake sekarang. Sekarang kamu ke depan cafe ini, tereak \"Aku belom mandi seminggu dan aku bangga\". now!"
-    show pia_side at left with dissolve
+    show pia_home_talk at pia_near with dissolve
+    show pia_side_talk at left with dissolve
     pia "Ehh… jangan gitu dong."
+    show pia_home_silent at pia_near with dissolve
+    hide pia_home_talk
+    show pia_side_silent at left with dissolve
+    hide pia_side_talk
     pia "Aaah [mcname] maaaah. Yang serius, ih."
-    hide pia_side with dissolve
+    hide pia_home_silent with dissolve
+    hide pia_side_silent with dissolve
     mcname "Lah? Ini serius."
-    show pia_side at left with dissolve
+    show pia_home_smile at pia_near with dissolve
+    show pia_side_smile at left with dissolve
     pia "Gamau! weeeks"
-    hide pia_side with dissolve
+    hide pia_home_smile with dissolve
+    hide pia_side_smile with dissolve
     mcname "Dih, yaudah. Kusimpen ya. Buat kapan-kapan"
-    show pia_side at left with dissolve
+    show pia_home_talk at pia_near with dissolve
+    show pia_side_talk at left with dissolve
     pia "Okeh! Saatnya belajar! Ayo!!"
-    hide pia_side with dissolve
+    hide pia_home
+    hide pia_home_talk with dissolve
+    hide pia_side_talk with dissolve
     "[mcname] dan Pia pun belajar bersama di cafe tersebut sampe larut malam [mcname] pun memutuskan meminjamkan buku tersebut ke Pia"
     $ quick_menu = False
     stop music fadeout 1.0
@@ -105,20 +122,22 @@
     stop music fadeout 1.0
     scene kelas with dissolve
     play music "audio/BGM_Kelas.mp3" fadein 1.0
-    $ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     "Suasana kelas sepi, semua sibuk belajar dan menghapal. ya, hari ini ujian tertulis mata kuliah xxx."
     show pia at pia_near with dissolve
     mcname "Pagi Mbak Pia"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near with dissolve
+    show pia_side_talk at left with dissolve
     pia "Sssst, diem. Komposisi dan elemen dalam warna—\n*berbisik sambil menghapal"
-    hide pia_side with dissolve
+    hide pia_talk with dissolve
+    hide pia_side_talk with dissolve
     mcname "Ahahahaha"
     hide pia with dissolve
     stop music fadeout 1.0
     #  Harusnya BG Ujian
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-    show dosen at dosen_center with dissolve
+    show dosen_talk at dosen_center with dissolve
     show dosen_side at left with dissolve
     dosen "Pagi!!"
     dosen "Semua buku dan HP simpan di depan ya."
@@ -136,27 +155,38 @@ label goodpiaafterquiz:
     show pia at pia_near with dissolve
     pia "...."
     mcname "Hahahaha gimana? Lancar? Bisa kan jawabnya?"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near with dissolve
+    show pia_side_talk at left with dissolve
     pia "Bisa lah, yang bener aja! Cuma kayak ada yang kurang puas aja weh. Harusnya aku tambahin blablabla-"
-    hide pia_side with dissolve
+    hide pia_talk with dissolve
+    hide pia_side_talk with dissolve
     mcname "Pia, sepanjang ujian tadi anak-anak lain cuma selembar doang terus dikumpulin, loh. Kamu sampe minta nambah lembar jawaban dua kali."
     mcname "DUA KALI!!"
     mcname "Lu ngisi apa bikin AU?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
+    show pia_talk at pia_near with dissolve
     pia "Dih, aku tuh harus sempurna! Harus nilai 100!"
-    hide pia_side with dissolve
+    hide pia_talk with dissolve
+    hide pia_side_talk with dissolve
     mcname "Kasian Bu Dosen yang meriksa jawaban kamu. Kayak baca novel, hahaha."
-    show pia_side at left with dissolve
+    show pia_shock at pia_near with dissolve
+    show pia_side_shock at left with dissolve
     pia "Iiiiih!!\n*Mukul - mukul [mcname]"
-    hide pia_side with dissolve
+    hide pia_shock with dissolve
+    hide pia_side_shock with dissolve
     mcname "Ahahaha, eh hari ini mau ke mana? Pusing gak sih? Mau refreshing gak sih? Huhuhu~"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near with dissolve
+    show pia_side_talk at left with dissolve
     pia "Rooftop yuk! Aku nunggu di sana, kamu ke kantin beli cemilan yang banyaaaaak! Nanti kita makan di rooftop."
-    hide pia_side with dissolve
+    hide pia_talk with dissolve
+    hide pia_side_talk with dissolve
     mcname "Meeeh, gue yang beli nih?"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near with dissolve
+    show pia_side_talk at left with dissolve
     pia "Yang buat aku pake uangku lah, nih. Aku tunggu di rooftop yaaa."
-    hide pia_side with dissolve
+    hide pia
+    hide pia_talk with dissolve
+    hide pia_side_talk with dissolve
     mcname "Bukan masalah uangnya... Tapi aku beli sendiri nih? Huhuhu kayak piaraan aja gue disuruh suruh. Bener-bener ya, Meameo."
     stop music fadeout 1.0
     $ quick_menu = False
@@ -230,66 +260,66 @@ label goodpiaafterquiz:
     mcname "*Duduk bersila di belakang Pia*"
     "Pia menoleh ke belakang."
     show pia at pia_near with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Hueeeh kaget!! Udah di sini aja, diem-diem gak ada suara! Bikin jantungan aja."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Mana ada? Kamu aja yang terlalu serius sampe gak perhatiin sekitar, haha."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Hehehe~\n*Ikut duduk bersila sebelah [mcname]*"
-    hide pia_side at left with dissolve
+    hide pia_side_talk at left with dissolve
     stop music fadeout 1.0
     play music "audio/BGM_Funny Slow Cute.mp3" fadein 1.0
     mcname "Yang Mulia Piaraan."
     "*Pia menyembur minumannya*"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Uhuk uhuk!!! Hoooeeek guuuh!! Uhuk!!!"
     pia "KOK KAMU TAU PEN NAME AKU, TAU DARI MANA?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Jadi itu beneran kamu? Ahahaha."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Eh tau dari mana????"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Tadi di kantin aku ketemu fans kamu. Dia nyariin kamu bareng Cepio tuh."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Heeeeee~"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Tapi itu nama apa, dah?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Ahahaha itu pen name aku kalo gambar. Aku sering gambar gitu kan, terus diupload di medsos. Nah nama akun gambar aku tuh, Yang Mulia Piaraan."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Owalah gitu toh."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Aku gak nyangka aja ada yg kenal nama itu dan tau. Aku gak nyembunyiin, sih. Cuma malu aja pen name aku kayak gitu, haha."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Lah lagian. Kenapa Yang Mulia Piaraan, dah?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Ya maap sih, dulu masih wibu wibunya asal ngasih nama. Eh taunya udah nyaman, hahaha."
     pia "Jadi dulu tuh aku suka gambar fanart anime, manga, gitu-gitu. Terus ada beberapa yang aku jual juga di online jadi merch. Mungkin orang itu salah satu yang beli."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Oooh gitu toh. Tadi sempet nanyain mau join club jepang, gak?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Err… Engga deh. Aku mau lonewolf. Udah gak terlalu jejepangan banget."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Hmmm.... gitu."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Emang kamu ngerti jejepangan?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Beuh, perlu aku jelasin sinopsis 3 episode pertama setiap anime yang airing season ini gak nih?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "IH WIBUUUU!!"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Ahahahahah."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Tapi bener deh, aku tuh gatau kenapa jadi agak kurang buat bersosialisasi gitu... Tapi di sisi lain, aku mau punya banyak temen dan kenal orang baru. Tapi males aja memulai."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Wakaru Pia, wakaru…"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Aaaah, jangan wibuuu :((("
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Ahahaha becandaa~ Tapi bener deh, kamu gamau join? Kalo kamu join, aku juga deh. Gimana?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Yeuuu, itu mah emang kamu aja kan yang mau."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Gak gituuuuu..."
     "[mcname] dan Pia pun banyak bercerita sambil menikmati cemilan di rooftop."
     $ quick_menu = False
@@ -377,9 +407,9 @@ label goodpiaafterquiz:
     "[mcname] pun membawa Kana Tana ke Pia yang sedang berfoto dengan lukisannya"
     mcname "Oi MEAMEO, ada yang mau ketemu kamu nih"
     show pia at pia_near with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Geeeeh apalah meameo"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     hide pia with dissolve
     show kana at kana_near_left_2 with dissolve
     show tana at tana_right with dissolve
@@ -388,7 +418,7 @@ label goodpiaafterquiz:
     kana "Meameo!!!"
     kana "Join club jepang yuk!"
     hide kana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Heeeeeeeee…"
     pia "Tunggu"
     pia "Pertama, nama aku Meraleo"
@@ -398,7 +428,7 @@ label goodpiaafterquiz:
     pia "SIBUK!"
     pia "Ketiga"
     pia "Kalian siapa?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show tana_side at left with dissolve
     tana "Naya, Naya…."
     tana "Minimal perkenalan dulu"
@@ -407,10 +437,10 @@ label goodpiaafterquiz:
     tana "Nah, tujuan kita mau invite kamu ke club jepang nih"
     tana "Kita suka gambar kamu, siapa tau tertarik kan."
     hide tana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Oh, panggil aku Pia aja."
     pia "Makasih undangannya, tapi kayaknya enggak dulu deh. Belum tertarik join club."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show kana_side at left with dissolve
     kana "Yaaah, oke deh. Belum tertarik kan. Bukan tidak tertarik!"
     kana "Oke. Besok aku akan cari kamu lagi buat join"
@@ -431,26 +461,26 @@ label goodpiaafterquiz:
     "Pia dan [mcname] sedang beristirahat sehabis selesai matkul nirmana"
     mcname "Mau muntah aku ngerjain nirmana. Susaaaaah"
     show pia at pia_near with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Ahahahaha betuuuul"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "BTW, kayaknya Si Kana Tana makin sering tuh ngajak kamu join haha."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Iya sih. Gigih banget ya."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Kamu ga mau coba dulu? Iseng aja gitu, mampir ato liat liat dulu ruang clubnya."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Jujur nih, sebenernya penasaran juga sih. Cuma ga ah!"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Ara ara, penasaran ya?\n*smug face*"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Heh apalah!"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Kan aku bilang, kamu join aku join. Gimana?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "*Menghembuskan nafas*"
     pia "Haaaaah….. okeh deal"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Lesgooooo"
     $ quick_menu = False
     scene black with dissolve
@@ -491,15 +521,15 @@ label goodpiaafterquiz:
     hide kana_side with dissolve
     mcname "J-jadi gini…"
     "dari belakang [mcname], Pia menunjukan dirinya dengan malu malu"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Aloo~\n*malu malu*"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show kana_side at left with dissolve
     kana "YANG MULIA PIARAAN?????\n*Syok*"
     hide kana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Woi -_-"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Jadi gini, kita mutusin untuk ikut join club jepang, masih buka kah?"
     show kana_side at left with dissolve
     kana "Masih!!! Masuuuuk"
@@ -518,15 +548,15 @@ label goodpiaafterquiz:
     show kana_side at left with dissolve
     kana "Siap Kak Feni!!"
     kana "Ehm, jadi gini. Di club ini ada banyak divisinya. Pia kita butuhin buat desain. Mau ya? Mau yaaa?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Iya iya, aku coba ya."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show kana_side at left with dissolve
     kana "Terus selain itu kita ada divisi dance / idoling, budaya tradisional jepang, game, dan anime manga tokusatsu"
     hide kana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Ehhh begitu, ya."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show kana_side at left with dissolve
     kana "Iyaaaa."
     hide kana_side with dissolve
@@ -545,13 +575,13 @@ label goodpiaafterquiz:
     tana "Hahahaha. Jangan kakuuuuu"
     hide tana_side with dissolve
     "Pia yang penasaran pun mengintip dibalik pintu yang sedikit terbuka itu"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "{i}lagi pada ngapain sih?{/i}"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Terlihat Kana dan Tana sedang berlatih dance"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "{size=-10}Woaaaa… Ternyata Kana sama Tana boleh juga ya ngedancenya{/size}"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Pia pun menatap mereka dengan perasaan iri, namun penasaran sehingga tetap melihat dari balik pintu itu."
     "Beberapa hari kemudian, Pia terus menerus melihat Tana & Kana latihan."
     "Pia melihat dengan tatapan mau tapi malu."
@@ -592,32 +622,32 @@ label goodpiaafterquiz:
     $ renpy.block_rollback()
     $ quick_menu = True
     mcname "Pia, aku mau ngomong dong"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Yak, apa nih? Tumben"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Kamu percaya sama aku kan, Pia?"
-    show pia_side with dissolve
+    show pia_side_talk with dissolve
     pia "Err…i-iya..kenapa nih?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Aku masih punya 1 tiket permintaan kan? Aku mau pake tiket itu”"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Wow, oke. Apa nih?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "JADI IDOL!!!"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "[mcname]… Kan aku udah bilang gamau"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Hmm.. Padahal katanya mau request apa aja bisa… Hmm"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Tapi ga gitu"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Yaudah aku ganti, kamu nyoba dan ngeliat langsung dari deket"
     mcname "Gimana? Gampang kan?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Heeeeeh. Aaaa nyesel sok ngide ngasi gituan ih."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Hehe gimana? Gampang loh"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Iya deh. Iya iya."
     stop music fadeout 1.0
     $ quick_menu = False
@@ -629,9 +659,9 @@ label goodpiaafterquiz:
     $ quick_menu = True
     "Pia sampai di depan ruang club, ditemani [mcname] di belakangnya sambil tersenyum"
     show pia at pia_near with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Hufff. Tenangkan diri"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Cemangat Piyak~"
     pia "*Membuka Pintu*"
     scene black with dissolve
@@ -640,9 +670,9 @@ label goodpiaafterquiz:
     show pia at pia_near with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "AKU MAU JADI IDOL! AJAK AKU BAAANG~"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Kana yang sedang makan kue pun sampai menjatuhkan kuenya ke meja"
     hide pia with dissolve
     show kana at kana_near_left_2 with dissolve
@@ -658,21 +688,21 @@ label goodpiaafterquiz:
     "Wajahnya tegas namun tetap memancarkan kebaikan, memberikan perpaduan unik antara kekuatan dan kehangatan."
     "Pandangannya tajam dengan senyuman yang lembut, memberikan kesan kehangatan yang melindungi."
     "???" "Selow. Biar aku yang handle, tapi ajarin dulu ya, mesti gimana ini ngerjainnya."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "A-aman. T-tapi…"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Takamina" "Salam kenal, kayaknya kita baru pertama ketemu ya. Namaku Takamina."
     show tana_side at left with dissolve
     tana "Ah iya. Kenalin, ini Kak Takamina. Anggota klub ini juga."
     hide tana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Aaah. Salam kenal Kak Takaminaa."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Takamina" "Alooo, salam kenal."
     "Takamina" "Jadi gimana? Kamu lanjut pindah ke divisi bagian idol kah?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Umm… Apa boleh buat"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show feni_side at left with dissolve
     feni "Mantap, karena jadi rame. Kayaknya susah euy kalo latihan di dalem gini, sempit ga sih?"
     hide feni_side with dissolve
@@ -688,14 +718,14 @@ label goodpiaafterquiz:
             show tana_side at left with dissolve
             tana "Eh maap Pia kesikut kepalanya. Gapapa kan? Sempit huhuhu"
             hide tana_side with dissolve
-            show pia_side at left with dissolve
+            show pia_side_talk at left with dissolve
             pia "Err…gapapa Ton. Aman\n*Sambil mengusap keningnya*"
-            hide pia_side with dissolve
+            hide pia_side_talk with dissolve
             "Tak lama kemudian"
             "PRAAAAAANK"
-            show pia_side at left with dissolve
+            show pia_side_talk at left with dissolve
             pia "Awwww"
-            hide pia_side with dissolve
+            hide pia_side_talk with dissolve
             "Pia pun menyenggol lemari kaca di ruang club tersebut sampai pecah dan mengenai dirinya"
             "Semua Orang" "PIAAAAAAAA"
             "Terlihat Pia penuh luka dan darah, kemudan dibawa ke rumah sakit untuk dilakukan penanganan lebih lanjut."
@@ -720,9 +750,9 @@ label goodpiaafterquiz:
     jump credits
 
 label goodendpiarooftop:
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "AH BENER JUGA, AYO KE ROOFTOP AJA."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Semua Orang" "Let's Gooooo"
     stop music fadeout 1.0
     $ quick_menu = False
@@ -735,20 +765,20 @@ label goodendpiarooftop:
     show kana_side at left with dissolve
     kana "Waaah sepi ya, luas juga."
     hide kana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Hehehe, ini markas aku sama [mcname] nih"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show kana_side at left with dissolve
     kana "Hmmm… berdua?"
     kana "Kalian ngapain aja berduaan di sini? Hayooo"
     hide kana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "APAAN IH, CUMA NGOBROL SAMA GAMBAR KOK!!!"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Betul"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "BANTUIN WEH, BETUL BETUL AJA LU"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Ya apa lagi? Emang, kan? Ahahahaha"
     "Hari itu berakhir dengan mereka saling bercanda di rooftop sore itu"
     stop music fadeout 1.0
@@ -765,32 +795,32 @@ label goodendpiarooftop:
     "Kana, Tana, Pia" "Huuuh"
     "Kana, Tana, Pia" "Hmmmmmmmmmmmmmm"
     "Takamina" "Ada apa nih, minna?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Kita baru ngeh, gedung kampus kalo jam 6 sore dah dikunci"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Takamina" "Terus? Terus?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Ya gimana latihannya bwaaang, telat dikit kekunci di rooftop weh"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Takamina" "Ooooh gitu. Bentar ya"
     "Takamina" "..............."
     "Takamina terlihat sedang merogoh tasnya."
     "Takamina mengeluarkan kunci"
     "Takamina" "Taraaaaaaa"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Apa itu? Kunci kosan kah?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Takamina" "Kunci pintu rooftop sama kunci pintu utama gedung DKV"
     "Semua Orang" "HEEEEEEEEEEEEEEEEEEE"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Kok bisa punya itu??????"
     pia "Nyolong dari mana???"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Takamina" "Sembarangan, aku kan anggota BEM juga."
     "Takamina" "Biasanya kalo rapat atau drop barang ke dalem gedung, bisa sampe malem. Jadi, beberapa anggota BEM dikasih pegang duplikatnya hehe."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "AHHH INI DIAAAAAAAA"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Takamina" "Tapi aku ga bisa kasih ya, enak aja. Nanti takut disalahgunain."
     "Takamina" "Paling kalo mau sampe malem, kabarin aja. Nanti aku ikut juga, biar enak izinnya sama sekuriti."
     show kana_side at left with dissolve
@@ -822,51 +852,51 @@ label goodendpiarooftop:
     scene rooftop with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Istirahat dulu, capeeek"
     pia "[mcname], air dong"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Nih, tangkep\nMelempar air ke Pia"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Weits\nMenangkap air yang dilempar oleh [mcname]"
     pia "*Glek glek glek*"
     pia "Huaaaaa… Capek juga ya"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show tana_side at left with dissolve
     tana "Tapi seru, kan?"
     hide tana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Bangeeet. Btw makasih ya, Kana."
     pia "Udah semangat ngajakin aku."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show kana_side at left with dissolve
     kana "*Teler*"
     kana "Wweeeeeeeeeeeeeeh……"
     kana "Kok kalian masih ada tenaga ya."
     kana "Aku dah lemes banget, mau pulang aja. Showeran terus bobo"
     hide kana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Enak aja, banguuuun!"
     pia "Ayo latian lagi"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show kana_side at left with dissolve
     kana "AAAAA.. Tar dulu, baru berapa menit weh istirahatnya. Jahat kalian"
     hide kana_side with dissolve
     "Semua Orang" "Hahahahahahahaha"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Btw, aku mau cerita…"
     pia "Baru [mcname] yang denger sih"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Hah? Apa nih bawa bawa gue?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Diem!!"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Syappp"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Aku mau cerita kenapa aku mau banget jadi idol"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Takamina" "Akh ini dia"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Hehe"
     pia "Yah… makasih loh, kayak aku selangkah lagi tampil di depan banyak orang"
     pia "itu mimpi aku dari kecil. Aku suka ngedance, suka nyanyi, dan aku suka dilihat banyak orang"
@@ -874,11 +904,11 @@ label goodendpiarooftop:
     pia "Tapi kalian dukung aku buat maju terus gitu."
     pia "Kan aku jadi terharu"
     pia "Kayak dream come true banget weh, hehehe"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Kana, Tana, Takamina" "Awwwwwwww\n*Nyamperin pia sambil meluk*"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Ga usah! Lu ga usah\n*sambil blush nunjuk ke [mcname]"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Loh? Gue ga ngapa-ngapain padahal. Cih haha"
     "Hari itu bonding +1"
     $ quick_menu = False
@@ -893,9 +923,9 @@ label goodendpiarooftop:
     show feni_side at left with dissolve
     feni "Nice! Nice! Pia, agak digoyang dikit pinggulnya"
     hide feni_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Iya teh"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show feni_side at left with dissolve
     feni "Good good!!"
     hide feni_side with dissolve
@@ -904,9 +934,9 @@ label goodendpiarooftop:
     "Pia Jatuh"
     mcname "*Reflek langsung bangun dari duduknya dan menghampiri Pia*"
     mcname "Pia kamu gapapa?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Aman, gapapa kok"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show feni_side at left with dissolve
     feni "Gapapa kan?"
     hide feni_side with dissolve
@@ -916,9 +946,9 @@ label goodendpiarooftop:
     show kana_side at left with dissolve
     kana "Nooo Pia"
     hide kana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "A-aman kok\n *Muka meringis kesakitan*"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show feni_side at left with dissolve
     feni "Oke istirahat dulu ya. jangan diforsir."
     feni "Latihan stop sampe sini dulu, jangan lupa besok perform jam 7 ya."
@@ -926,9 +956,9 @@ label goodendpiarooftop:
     hide feni_side with dissolve
     "KTp" "Oke Tehh!!"
     "[mcname] tiba tiba menghilang dari area rooftop"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Loh [mcname] mana?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Takamina" "Tadi lari ke bawah, ga tau ngapain."
     $ quick_menu = False
     scene black with dissolve
@@ -938,49 +968,49 @@ label goodendpiarooftop:
     $ quick_menu = True
     mcname "*Datang dengan nafas terengah engah*"
     mcname "P-piaaa….huft huft"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "[mcname]? Ke mana aja kamu?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Ke bawah bentar\nSambil menunjukan plastik berisi perban dan alat kompres memar"
     mcname "Aku tau ini sakit kan? Jangan bohong\n*Memencet kaki Pia*"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "WOEEEEEEEEEEEEEEE SAKEEEEEEEEEEEEEEEEEEEEEEEEET"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Kana & Tana" "*Muka cemas*"
     "Kana & Tana" "Pi…. kamu gapapa nih? Besok perform."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Tenang aja, aman laaaah."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Takamina" "Kalo ada apa2 kasih tau loh"
     mcname "Dah, sini gue anterin balik\n*merangkul Pia*"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Oke, maap ya"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Aman aja, mau digendong apa gimana?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Apaan sih lebay"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Yaudah sini deh gue rangkul aja, takut makin parah kalo jalan sendiri"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "O-oke……"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     scene black with dissolve
     show text "{color=#FFF}DI DEPAN KAMPUS{/color}" with Pause(2.0)
     play music "audio/BGM_Kampus Sore.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = False
     mcname "Mana ya? Katanya udah deket"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Siapa?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Cepio, tadi aku hubungi Cepio ngabarin kondisi kamu"
     "Fiony yang sudah di depan gerbang dengan mobilnya sejak tadi, membuka jendela dan berteriak dari dalam mobil"
     show fio_side at left with dissolve
     fio "CIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
     hide fio_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "CEPIOOOOOO"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Cepio, bantuin weh kasian ini"
     show fio_side at left with dissolve
     fio "Ahahaha. Oke oke wait, aku turun dulu"
@@ -999,10 +1029,10 @@ label goodendpiarooftop:
             show fio_side at left with dissolve
             fio "Oh Oke"
             hide fio_side with dissolve
-            show pia_side at left with dissolve
+            show pia_side_talk at left with dissolve
             pia "Oh gitu, ada yang lebih penting dari aku ya hump…."
             pia "Yaudah Cepio gas jalan, [mcname] gak mau ikut, sibuk"
-            hide pia_side with dissolve
+            hide pia_side_talk with dissolve
             "Fiony dan Pia pun pergi tanpa [mcname] saat itu."
             "[mcname] memutuskan untuk kembali ke rooftop dan mengecek apakah ada yang tertinggal di atas."
             "Dalam perjalanan ke rooftop, [mcname] yang kelelahan karena sebelumnya harus naik turun tangga menuju rooftop pun mulai kehilangan keseimbangan."
@@ -1029,9 +1059,9 @@ label goodendpiakosan:
     show fio_side at left with dissolve
     fio "Oke aman, besok aku bareng Pia ke sana."
     hide fio_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Makasih ya [mcname], udah bantuin. See you besooook."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}DI KOSAN{/color}" with Pause(2.0)
@@ -1060,16 +1090,16 @@ label goodendpiakosan:
     show tana at tana_right with dissolve
     "Kana & Tana" "Gimana [mcname]? Aman?"
     mcname "Belom bales. Lagi di jalan kali?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "HOIIIIIIIII\n*Memanggil dari kejauhan*"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Semua Orang" "*Lari menghampiri Pia dan Cepio*"
     show feni_side at left with dissolve
     feni "Kaki gimana?"
     hide feni_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Aman Teh Mpen! Hehehe"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show feni_side at left with dissolve
     feni "Fiuh. Syukurlah. Yaudah sok atuh masuk dulu, ke acaranya bareng aja nanti."
     feni "Jam berapa sekarang?"
@@ -1117,36 +1147,36 @@ label goodendpiamatsuri:
     mcname "Let’s go, otw kita"
     "Semua Orang" "Ikuzoooo~"
     "Mereka pun pergi bersama ke event jejepangan tersebut"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Weeeh dah rame, yaaaa"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "*Sambil melirik ke kaki pia*"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Kenapa?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Yakin udah baikan?"
     mcname "Kok jalannya kayak agak diseret gitu?"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Engga kok gapapa nih\n*Menghentak hentakan kaki*"
     pia "Hiiiingghh…\n*Pia syok menahan sakit*"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Kaaaaaaaaaan"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Sssstt…. Jangan bilang yang lain plis plisssss"
     pia "Aku masih bisa kok"
     pia "Aku ga mau performnya gagal karena aku"
     pia "Plisss, ya ya ya"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "........."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Gak begitu sakit kok, aku ga mau bikin yang lain kepikiran."
     pia "Plis, aku mau hari ini sukses. Ya?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Oke, tapi please next jujur ya Pi. Aku khawatir loh, aku tau kamu gimana."
     mcname "Aku tau kalo kamu lagi bohong."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Hehehe maaf"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show tana_side at left with dissolve
     tana "Brooooo!! Itu tako(sponsor) yang terkenal itu bro. Let’s go antri itu."
     tana "Di mall ngantrinya panjang kalo mau beli itu, loh."
@@ -1169,13 +1199,13 @@ label goodendpiamatsuri:
     fio "{size=-5}Ga mau gangguin [mcname] ngedate{/size}\n*Bisikin [mcname]"
     hide fio_side with dissolve
     mcname "WEEEEEEEEEH"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "?"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Ayo Pi, muter-muter. Liat-liat booth"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Ayooooo"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "[mcname] pun mengajak Pia berkeliling di acara jejepangan tersebut sambil mengecek booth dan guest star lain di panggung"
     $ quick_menu = False
     feni_nvl "Guys, kumpul di club jam 3 ya"
@@ -1191,13 +1221,13 @@ label goodendpiamatsuri:
     mcname "Grogi ya?"
     mcname "Semangat semua"
     "KTp" "Huhuhu\n*Muka cemas*"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Udah mulai kerasa deg-deg an, weh."
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "Bisa bisa!!! Hehe"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Maaci"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     "Mereka pun mulai persiapan antri ke backstage"
     scene black with dissolve
     scene kampus with dissolve
@@ -1243,10 +1273,10 @@ label goodendpiamatsuri:
     kana "Sebelum lanjut ke lagu yang selanjutnya, udah pada kenal kita belom nih?"
     hide kana_side with dissolve
     "Penonton" "Beluuuuuuuum"
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "Wah, kayaknya belom pada kenal nih. Kita kenalan dulu aja ga sih?"
     pia "Bisa dimulai dari yang paling kiri"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     show tana_side at left with dissolve
     tana "Wassup ma bross!! I'm fresh like a breeze JKT48 Virtual Tana Nona Cool enough to make you freeEeEzZEeE Halo semuanya aku Tana Nona dari JKT48 Virtual"
     hide tana_side with dissolve
@@ -1254,12 +1284,12 @@ label goodendpiamatsuri:
     kana "Mari bernyanyi, sambil bermain air. Aku dari laut tapi tidak salty!"
     kana "Halo! Aku Kanaia yang akan membuat harimu indah bagai pelangi"
     hide kana_side with dissolve
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "WE ARE ON FIRE"
     pia "SEMANGATKU MEMBARA, SIAP MENGHANGATKAN HARI-HARI MU!!"
     pia "HALO AKU PIA MERALEO DARI JKT48V"
     pia "SALAM KENAL SEMUAAAAAAAAAA!!!"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     $ quick_menu = False
     menu:
         "Fokus Menyimak":
@@ -1282,9 +1312,9 @@ label goodendpiamatsuri:
             scene kamar pia with dissolve
             $ renpy.block_rollback()
             $ quick_menu = True
-            show pia_side at left with dissolve
+            show pia_side_talk at left with dissolve
             pia "Udah cukup, aku malu. Menjadi idol emang pilihan yang salah. Aku gak mau lagi."
-            hide pia_side with dissolve
+            hide pia_side_talk with dissolve
             $ quick_menu = False
             mc_pov_nvl "Piaaaa"
             mc_pov_nvl "P"
@@ -1316,11 +1346,11 @@ label goodendpia:
     "Penonton" "UWOOOOOOGGGHH!!!!!!!!! PIAAAAAAAAAAAA"
     "Tidak disangka, teriakan [mcname] menyulut semangat penonton lain untuk ikut menyoraki dan menunjukan dukungannya lebih keras"
     "Teriakan tersebut lah yang membuat pengunjung lain yang sedang berkeliling di acara tersebut jadi penasaran dan ikut menonton pertunjukan di stage tersebut."
-    show pia_side at left with dissolve
+    show pia_side_talk at left with dissolve
     pia "*Blushing*"
     pia "A-ah iyaaa makasih"
     pia "Dengarkanlah lagu kami yang terakhir, xxxx"
-    hide pia_side with dissolve
+    hide pia_side_talk with dissolve
     mcname "PIAAAAAAAAAAAAA SEMANGAAAAAAAAAAT"
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     $ quick_menu = False

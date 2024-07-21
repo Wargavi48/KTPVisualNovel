@@ -539,13 +539,15 @@ label chapter2piaaftergame:
     hide pia_side_shock with dissolve
     $ quick_menu = False
     menu:
-        #Dihilangin textbox
         "Ah! Tadi aku dapet flyer ini. *Kasih semua flyer* mau ikut gak? ada acara jejepangan beberapa bulan lagi nih. terus itu ada 3 flyer, ada yang recruitment jadi idol juga. Mau coba gak?":
             $ renpy.block_rollback()
             $ quick_menu = True
             mcname "Ah! Tadi aku dapet flyer ini. \n*Kasih semua flyer*"
             mcname "Mau ikut gak? Ada acara jejepangan beberapa bulan lagi nih. Terus itu ada 3 flyer, ada yang recruitment jadi idol juga. Mau coba gak?"
-            show pia at pia_near with dissolve
+            hide pia_smile
+            hide pia_shock with dissolve
+            hide pia with dissolve
+            show pia_talk at pia_near with dissolve
             show pia_side_talk at left with dissolve
             pia "Wih, apaan nih?"
             pia "Wah matsuri, ya."
@@ -554,11 +556,14 @@ label chapter2piaaftergame:
             pia "Yang ini…."
             pia "J-jadi idol??"
             pia "Wow recruitment jadi idol?"
+            show pia at pia_near with dissolve
             hide pia_side_talk with dissolve
             mcname "Gimana, mau coba?"
+            hide pia with dissolve
             show pia_side_talk at left with dissolve
             pia "Umm… G-gak deh. Biarlah mimpi tetap jadi mimpi, hehe."
             hide pia_side_talk at left with dissolve
+            hide pia_talk with dissolve
             "Akhirnya [mcname] duduk disebelah Pia sambil melihat pemandangan dari rooftop melihat jauh kedepan."
             "Lalu menuangkan pemandangan indah itu dalam sebuah lukisan."
             "tugas gambar [mcname] untuk UTS, selesai."
