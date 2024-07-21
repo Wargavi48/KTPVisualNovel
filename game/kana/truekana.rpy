@@ -1,4 +1,5 @@
 label truekana:
+  $ quick_menu = False
   stop music fadeout 1.0
   scene black with dissolve
   play music "audio/BGM_Kantin.mp3" fadein 1.0
@@ -15,10 +16,6 @@ label truekana:
   hide kana_side at left with dissolve
   mcname "Heeee, okee makasih yaa udah mesenin sekalian amanin tempat duduk juga."
   "[mcname] duduk di tempat duduk dan mulai melanjutkan obrolan."
-  $ quick_menu = False
-  scene black with dissolve
-  scene kantin with dissolve
-  $ quick_menu = True
   mcname "Ehh Kana, kamu tau ga siiih?"
   show kana_side at left with dissolve
   kana "Iya [mcname]? Kenapa?"
@@ -74,20 +71,20 @@ label truekanakos:
       jump credits
 
 label truekanachat:
-  #*SKIP TO SCENE*
-  #*BG HP CHATTING*
-  mcname "Malam Kana, sibuk nggak ya? Hehe"
-  kana "Umm engga kok knp ya?(｡･∀･)ﾉﾞ "
-  mcname "Aku mau nanya soal event jejepangan itu, jadi kan?"
-  kana "Maksudnya jadi?"
-  mcname "Yaa jadi kan? Ummm kita berangkat bareng."
-  kana "Jadi kok. Mau ketemuan jam berapa?┏ (゜ω゜)=👉"
-  mcname "Jam 7 lewat 12 gimana?"
-  kana "Jam 7 lewat 12? Kaya pernah denger di mana deh (⊙_⊙)？"
-  mcname "Ahh perasaan kamu aja kali. Gimana? Ga kemaleman kah?"
-  kana "Hmmm, oke deh jam segitu aja."
-  mcname "Btw nanti kita di sana mau ngapain aja ya? Jujur ini event pertamaku, jadi tadi gimana tips and tricknya buat di event, Yang Mulia Kanaia Asa?"
-  kana "IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-"
+  $ quick_menu = False
+  mc_nvl "{size=-5}Malam Kana, sibuk nggak ya? Hehe.{/size}"
+  kana_nvl "{size=-5}Umm engga kok knp ya?(｡･∀･)ﾉﾞ {/size}"
+  mc_nvl "{size=-5}Aku mau nanya soal event jejepangan itu, jadi kan?{/size}"
+  kana_nvl "{size=-5}Maksudnya jadi?{/size}"
+  mc_nvl "{size=-5}Yaa jadi kan? Ummm kita berangkat bareng.{/size}"
+  kana_nvl "{size=-5}Jadi kok. Mau ketemuan jam berapa?┏ (゜ω゜)=👉{/size}"
+  mc_nvl "{size=-5}Jam 7 lewat 12 gimana?{/size}"
+  kana_nvl "{size=-5}Jam 7 lewat 12? Kaya pernah denger di mana deh (⊙_⊙)？{/size}"
+  mc_nvl "{size=-5}Ahh perasaan kamu aja kali. Gimana? Ga kemaleman kah?{/size}"
+  kana_nvl "{size=-5}Hmmm, oke deh jam segitu aja.{/size}"
+  mc_nvl "{size=-5}Btw nanti kita di sana mau ngapain aja ya? Jujur ini event pertamaku.{/size}"
+  mc_nvl "{size=-5}Jadi tadi gimana tips and tricknya buat di event, Yang Mulia Kanaia Asa?{/size}"
+  kana_nvl "{size=-5}IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-{/size}"
   "Tanpa sengaja Kana menekan tombol voice call dan [mcname] pun tanpa pikir panjang menekan tombol jawab."
   #*SKIP TO SCENE*
   #*BG HP VOICE CALL*
@@ -119,8 +116,7 @@ label truekanachat:
   $ quick_menu = False
   stop music fadeout 1.0
   scene black with dissolve
-  play music "audio/BGM_Kosan 2.mp3" fadein 1.0
-  #Harusnya BGM Jejepangan Malam
+  play music "audio/BGM_Matsuri Malam.mp3" fadein 1.0
   scene depan kampus with dissolve
   #Harusnya BG Jejepangan malam
   $ quick_menu = True
@@ -178,7 +174,7 @@ label truekanachat:
   $ quick_menu = False
   stop music fadeout 1.0
   scene black with dissolve
-  play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+  play music "audio/BGM_Matsuri Malam.mp3" fadein 1.0
   #Harusnya BGM Jejepangan Malam
   scene kamar mc kota with dissolve
   #Harusnya BG Jejepangan Malam
@@ -257,7 +253,7 @@ label truekanajapanfest:
   stop sound fadeout 1.0
   $ quick_menu = False
   scene black with dissolve
-  play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+  play music "audio/BGM_Matsuri Malam.mp3" fadein 1.0
 #Harusnya BGM Jejepangan Malam
   scene kamar mc kota with dissolve
 #Harusnya BG Jejepangan Malam
