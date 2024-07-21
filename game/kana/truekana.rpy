@@ -211,6 +211,8 @@ label truekanachat:
       #*CHOSE A*
       "[mcname] tetap mengobrol dengan cosplayer tersebut dan mengabaikan keberadaan Kana untuk beberapa saat."
       "Tak lama saat [mcname] tersadar, Kana sudah menghilang dan HPnya tidak dapat dihubungi lagi."
+      $ quick_menu = False
+      stop music fadeout 1.0
       scene black with Dissolve(2.0)
       show text "{color=#FFF}BRO BRO LAGI JALAN BARENG BERDUAAN KO MALAH DITINGGAL NGOBROL SAMA ORANG LAIN SI ADUHHH{/color}" with Pause(2.0)
       show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
@@ -839,6 +841,8 @@ label truekananeutralroute1:
     kana "[mcname]...?"
     "Kana pun merasa aneh dengan [mcname], semua kedekatan mereka langsung sirna di hati Kana."
     "Kana langsung kabur sambil memanggil Freya untuk meminta tolong."
+    $ quick_menu = False
+    stop music fadeout 1.0
     scene black with Dissolve(2.0)
     show text "{color=#FFF}ADUHHH BROOO, KOK LU TAU UKURAN SEPATU KANA SIH?? NGERI KALI BROO, LU STALKER YA?{/color}" with Pause(2.0)
     show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
@@ -880,6 +884,8 @@ label truekananeutralroute1:
     kana "...."
     "Kana terdiam tanpa kata-kata, hingga Freya datang dan kaget dengan hadiah yang [mcname] berikan."
     "Pandangan Kana dan Freya terhadap [mcname] pun menjadi aneh."
+    $ quick_menu = False
+    stop music fadeout 1.0
     scene black with Dissolve(2.0)
     show text "{color=#FFF}IH BROO, YA KALI AJA NGASIH HADIAH ALAT MASAK KE CEWE YANG TINGGAL SAMA ORTUNYA TERUS MASIH KULIAH, DIKIRA HADIAH ORANG NIKAHAN KALI YA.{/color}" with Pause(2.0)
     show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
@@ -918,6 +924,8 @@ label truekananeutralroute1:
     kana "Tapi… Aku ga suka horror. Ini cuma kesukaan kamu aja, kan?"
     mcname "I-iya sih tapi…"
     "Kana pun meminta maaf dan menolak hadiah dari [mcname]. Bahkan dia terlalu takut untuk menyimpan CD Blu-ray itu."
+    $ quick_menu = False
+    stop music fadeout 1.0
     scene black with Dissolve(2.0)
     show text "{color=#FFF}ADUH BROOO LAIN KALI KALO MAU NGASIH HADIAH TUH HARUS MIKIRIN JUGA APA YANG DIA SUKA, JANGAN LU DOANG YANG SUKA.{/color}" with Pause(2.0)
     show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
@@ -925,12 +933,26 @@ label truekananeutralroute1:
     jump credits
 
 label truekanarightpresent:
-  #*CHOSE A*
-  #*SFX Suara Kresek*
-  #play sound "audio/open_door.mp3" fadeout 1.0
-  "[mcname] mengambil kalung dan mulai memakaikannya ke leher Kana. Kana pun merasakan ada sensasi dingin di lehernya, curiga akan sesuatu Kana pun bertanya."
+  $ quick_menu = False
+  window auto hide
+  play sound "audio/run.mp3"
+#HARUSNYA *SFX Suara Kresek*
+  with Pause(2.0)
+  window auto show
+  $ quick_menu = True
+  "[mcname] mengambil kalung dan mulai memakaikannya ke leher Kana."
+  "Kana yang merasakan sensasi dingin di lehernya, bertanya."
   kana "E-eh ini apa?"
   mcname "Sabar-sabar. Aman kok, bukan yang aneh-aneh."
+  kana "Udah boleh buka mata belum?"
+  mcname "Bentar lagi."
+  $ quick_menu = False
+  window auto hide
+  play sound "audio/run.mp3"
+#HARUSNYA *SFX Suara Kresek*
+  with Pause(2.0)
+  window auto show
+  $ quick_menu = True
   kana "E-eeeeeh."
   mcname "Udah boleh buka matanya Nay."
   kana " O-okee."
@@ -974,9 +996,9 @@ label truekanarightpresent:
 #HARUSNYA *SFX Pintu Didobrak*
   scene black
   with Pause(2.0)
-  window auto show
   play music "audio/BGM_Lawak Tana.mp3" fadein 1.0
   scene kamar kana with dissolve
+  window auto show
   $ quick_menu = True
   freya "HAPPY BIRTHDAYYY NAYAAAA~!!!!"
   "Tanpa angin tanpa hujan, tiba-tiba Freya datang membuka pintu kamar Kana."
