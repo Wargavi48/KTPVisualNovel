@@ -1497,12 +1497,31 @@ label goodtanaafterquiz:
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
-    play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
-    jump credits
+    jump goodtanafinale
 
 label goodtanafinale:
     #[GOOD ENDING FINALE]
     #144-169 (Good Ending) Tana: Ke UKM aja yuk ( ngobrol idol, tanya feni dan flora, latihan tana pia salah salahan, kana bingung, mc sama 2f nengahin, datang ke klub pada marahan, ketemuan lagi krana udah di latih sama 2f, malu malu buat minta maaf, minta maaf, latihan, tampil (AERGIA)
+#NeutralRoute4
+    play music "audio/BGM_Lorong.mp3" fadein 1.0   
+    scene lorong with dissolve
+    $ quick_menu = True
+    "Tana dan [mcname] keluar dari ruang kelas."
+    mcname "Haaaah akhirnya~"
+    show tana at tana_near with dissolve
+    show tana_side at left with dissolve
+    tana "Capek juga."
+    hide tana_side at left with dissolve
+    mcname "Gimana tadi remedialnya?"
+    show tana_side at left with dissolve
+    tana "Amannn, lu gimana?"
+    hide tana_side at left with dissolve
+    mcname "Amann, sekarang pasti lulus sih."
+    show tana_side at left with dissolve
+    tana "Iya lah, kan belajarnya sama gue."
+    hide tana_side at left with dissolve
+    mcname "Btw, mau ke mana habis ini?"
+#TrueEndingFINALE
     show tana_side at left with dissolve
     tana "Ke ruang club aja, yuk. Sapa tau ada si Kana sama si bocil."
     hide tana_side with dissolve
@@ -1514,14 +1533,16 @@ label goodtanafinale:
     show tana_side at left with dissolve
     tana "Latihan, kocak. Masa udah ada anggota, tapi ga latihan."
     hide tana_side with dissolve
-    mcname "Masuk akal. Gas deh"
-    #Narator
-    "[mcname] dan Tana pun pergi ke ruang club"
-    
+    mcname "Masuk akal. Gas deh."
+    "Tana dan [mcname] pun pergi ke ruang club."
     #SKIP TO SCENE
     #BG UKM
-    
-    #Narator
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_UKM.ogg" fadein 1.0
+    scene ruang ukm with dissolve
+    $ quick_menu = True
     "Sesampainya di ruang club.."
     show kana_side at left with dissolve
     kana "Konnichiwa, Tana, [mcname]."
@@ -1578,21 +1599,22 @@ label goodtanafinale:
     hide kana_side with dissolve
     mcname "Walah."
     show tana_side at left with dissolve
-    tana "….."
+    tana "...."
     tana "Yaudah. Bentar, gua siap-siap dulu."
     hide tana_side with dissolve
     mcname "Oke."
     mcname "Btw, Kana, Pia, alasan kalian apa kok mau join idol group ini?"
     show kana_side at left with dissolve
-    kana "Kalau aku si karena dari dulu aku suka jejepangan dan kebetulan juga aku kadang suka nyanyi gitu, sama ikut event event offline. Jadinya yaa pengen nyoba aja. hehe"
+    kana "Kalau aku sih karena dari dulu aku suka jejepangan dan kebetulan juga aku kadang suka nyanyi sama ikut event event offline gitu."
+    kana "Jadinya yaa pengen nyoba aja, hehe."
     hide kana_side with dissolve
     show pia_side at left with dissolve
-    pia "Kalau gua sih kebetulan gua suka nyanyi gitu, tapi malu aja kalau ikut lomba nyanyi. Terus gw liat deh poster idol ini. Yaudah, gw coba aja sekalian"
+    pia "Kalau gua sih suka nyanyi, tapi malu aja kalau ikut lomba nyanyi. Terus kebetulan liat deh poster idol ini, yaudah gue coba aja sekalian."
     hide pia_side with dissolve
     mcname "Oalah. Nice nice."
     show tana_side at left with dissolve
     # tana "Ayam bebek." ??????
-    tana "Udah siap?"
+    tana "Okeh. Gimana, udah siap?"
     hide tana_side with dissolve
     show kana_side at left with dissolve
     kana "U-udah."
@@ -1600,19 +1622,28 @@ label goodtanafinale:
     show pia_side at left with dissolve
     pia "Gua udah siap dari lahir."
     hide pia_side with dissolve
-    "Setelah itu, mereka memulai latihan pertama mereka. Pia dan Kanaia dapat mengikuti beberapa gerakan yang telah Tana berikan sebelumnya, tapi ada beberapa bagian yang membuat Pia dan Kana merasa kesulitan."
+    show tana_side at left with dissolve
+    # tana "Ayam bebek." ??????
+    tana "Okeh!!"
+    hide tana_side with dissolve
+    "Setelah itu, mereka memulai latihan pertama mereka."
+    $ quick_menu = False
+    scene black with dissolve
+    scene ruang ukm with dissolve
+    $ quick_menu = True
+    "Terlihat Pia dan Kana dapat mengikuti beberapa gerakan yang telah Tana berikan sebelumnya, tapi ada beberapa bagian yang membuat Pia dan Kana merasa kesulitan."
     show pia_side at left with dissolve
-    pia "Eh, Tan, kalau ngajarin pelan-pelan napa. Bagian ini gimana sih? Coba lu praktekin, tapi pelan-pelan."
+    pia "Eh Tan, kalau ngajarin pelan-pelan napa. Bagian ini gimana sih? Coba lu praktekin, tapi pelan-pelan."
     hide pia_side with dissolve
     show kana_side at left with dissolve
-    kana "Iya, Tan, bisa lebih pelan, ga? Soalnya ini juga pertama kalinya aku ngedance."
+    kana "Iya Tan, bisa lebih pelan lagi kah? Soalnya ini juga pertama kalinya aku ngedance."
     hide kana_side with dissolve
     show tana_side at left with dissolve
-    tana "Eh, iya, sorry sorry. Gua ulangin, ya."
+    tana "Eh iya, sorry sorry. Gua ulangin ya."
     hide tana_side with dissolve
     "Tana pun memberikan contoh kembali, tapi Pia masih belum terbiasa dengan gerakan tersebut."
     show pia_side at left with dissolve
-    pia "Haduh, Tan, lu tau pelan-pelan ga? Sabar napa. Lu niat ngajarin ga si? Sumpah dah."
+    pia "Haduh Tan, lu tau pelan-pelan ga? Sabar napa, lu niat ngajarin ga si? Sumpah dah."
     hide pia_side with dissolve
     show tana_side at left with dissolve
     tana "LAH?! Kok lu ngamuk, sih?! Gua kan udah nunjukin pelan-pelan. Si Kana aja masih sanggup buat ngikutin."
@@ -1624,7 +1655,7 @@ label goodtanafinale:
     kana "Ehh, udah udah. Aku juga-"
     hide kana_side with dissolve
     show pia_side at left with dissolve
-    pia "Eh, diem, lu. Lu sebenarnya bisa, kan? Tadi gw liat juga lu kadang sengaja salah gitu. Lu pasti bisa soalnya kan lu sering ikut event dan lihat video idol gitu, tapi ga usah sengaja-sengaja gitu. Gw ga suka."
+    pia "Eh, diem, lu. Lu sebenarnya bisa, kan? Tadi gue liat juga lu kadang sengaja salah gitu. Lu pasti bisa soalnya lu kan sering ikut event dan liat video idol gitu. Ga usah sengaja-sengaja disalahin gitu, gue ga suka."
     hide pia_side with dissolve
     show tana_side at left with dissolve
     tana "Apa sih? Ini lu ga suka, itu ga suka. Terus lu maunya apa, kocak?"
@@ -1662,7 +1693,7 @@ label goodtanafinale:
     "[mcname] pun menjelaskan kenapa Tana dan Pia bisa bertengkar, dan apa yang menyebabkan mereka bertengkar."
     "Tiba-tiba…"
     show pia_side at left with dissolve
-    pia "Dah lah. Gua mau pergi. bye."
+    pia "Dah lah. Gua mau pergi, bye."
     hide pia_side with dissolve
     show kana_side at left with dissolve
     kana "E-eh, Pia tunggu!"
@@ -1678,7 +1709,7 @@ label goodtanafinale:
     feni "Jadi, kalian berantem gara-gara itu?"
     hide feni_side with dissolve
     show tana_side at left with dissolve
-    tana "I-iya, Ka Feni."
+    tana "I-iya, Kak Feni..."
     hide tana_side with dissolve
     show feni_side at left with dissolve
     feni "Hadeh. Ada-ada aja."
@@ -1687,7 +1718,7 @@ label goodtanafinale:
     flora "Udah gede kok masih berantem kaya anak kecil."
     hide flora_side with dissolve
     show tana_side at left with dissolve
-    tana "Habisnya si bo-"
+    tana "Habisnya si boc-"
     hide tana_side with dissolve
     show feni_side at left with dissolve
     feni "Malah lanjut. Udah. Kamu pulang dulu aja, Tan. Istirahat."
@@ -1700,12 +1731,19 @@ label goodtanafinale:
     hide tana_side with dissolve
     mcname "….."
     #Narator.
-    "[mcname] dan Tana pun pergi dari ruangan club untuk pulang ke kost mereka masing-masing. Selama perjalanan, [mcname] dan Tana hanya saling diam tanpa mengucapkan satu kata pun."
+    "[mcname] dan Tana pun pergi dari ruangan club untuk pulang ke kost mereka masing-masing."
+    "Selama perjalanan, [mcname] dan Tana hanya saling diam tanpa mengucapkan satu kata pun."
     #Keesokan harinya..
     
     #SKIP TO SCENE
     #BG RUANG KLUB
-    
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    play music "audio/BGM_UKM.ogg" loop fadein 1.0
+    scene ruang ukm with Dissolve(2.0)
+    $ quick_menu = True
     "[mcname] dan Tana datang bersamaan ke ruang club."
     "Di dalam ruang club, sudah ada Pia, Kana, Flora, dan Feni."
     mcname "Halo, semuanya."
@@ -1722,7 +1760,7 @@ label goodtanafinale:
     pia "...."
     hide pia_side with dissolve
     show feni_side at left with dissolve
-    feni "Hadeh…"
+    feni "Hadeh..."
     hide feni_side with dissolve
     show flora_side at left with dissolve
     flora "Karena udah lengkap, ayo sekarang dimulai aja latihannya."
@@ -1731,15 +1769,19 @@ label goodtanafinale:
     show tana_side at left with dissolve
     tana "Oke."
     hide tana_side with dissolve
+    show pia_side at left with dissolve
+    pia "Yaudah deh."
+    hide pia_side with dissolve
     "Mereka pun mulai melakukan latihan mereka seperti biasanya. Akan tetapi, atmosfer antara Pia dan Tana masih terasa."
-
-    #Transisi waktu
-    
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    scene ruang ukm with Dissolve(2.0)
+    $ quick_menu = True
     show tana_side at left with dissolve
-    tana "Cukup. Istirahat bentar."
+    tana "Cukup, istirahat bentar."
     hide tana_side with dissolve
     show kana_side at left with dissolve
-    kana "Oke. Aku juga udah lumayan cape."
+    kana "Oke, aku juga udah lumayan cape."
     hide kana_side with dissolve
     mcname "Otsukare~ Ini aku tadi beliin minum buat kalian."
     show pia_side at left with dissolve
@@ -1774,7 +1816,7 @@ label goodtanafinale:
     tana "Maksud lu apa bawa bawa temen gua? Dia udah bantu kita. Respect dikit napa."
     hide tana_side with dissolve
     #Narator
-    "Tiba-tiba."
+    "Tiba-tiba...."
     show feni_side at left with dissolve
     feni "Heh."
     hide feni_side with dissolve
@@ -1785,18 +1827,18 @@ label goodtanafinale:
     show flora_side at left with dissolve
     flora "Hadeh."
     hide flora_side with dissolve
-    "[mcname], Tana, Pia, Kana" "….."
+    "[mcname], Tana, Pia, Kana" "...."
     show feni_side at left with dissolve
     feni "Mulai sekarang, Tana sama Pia latihan terpisah. Pia, kamu latihan dance sama aku di ruang club dance."
     hide feni_side with dissolve
     show pia_side at left with dissolve
-    pia "…."
+    pia "..."
     hide pia_side with dissolve
     show feni_side at left with dissolve
     feni "Tana, kamu latihan vocal sama Flora."
     hide feni_side with dissolve
     show tana_side at left with dissolve
-    tana "Iya…"
+    tana "Iya..."
     hide tana_side with dissolve
     show feni_side at left with dissolve
     feni "Aman kan, Flo?"
@@ -1805,20 +1847,20 @@ label goodtanafinale:
     flora "Aman aja."
     hide flora_side with dissolve
     show kana_side at left with dissolve
-    kana "Ano… Kalau aku?"
+    kana "A-ano... Kalau aku?"
     hide kana_side with dissolve
     show feni_side at left with dissolve
     feni "Kamu fleksibel aja. Nanti menyesuaikan."
     hide feni_side with dissolve
     show kana_side at left with dissolve
-    kana "Baik…"
+    kana "Baik..."
     hide kana_side with dissolve
     mcname "Kak Feni, Kak Flora, makasih ya…"
     show feni_side at left with dissolve
     feni "Sama-sama. Sekarang kamu ikut aku, Pia."
     hide feni_side with dissolve
     show pia_side at left with dissolve
-    pia "Ya…"
+    pia "Iya..."
     hide pia_side with dissolve
     show kana_side at left with dissolve
     kana "Pia, ikut!"
@@ -1829,9 +1871,16 @@ label goodtanafinale:
     show tana_side at left with dissolve
     tana "Aku aku aku!"
     hide tana_side with dissolve
-    mcname "Semoga ini yang terbaik."
+    mcname "Huft..."
+    mcname "{i}Semoga ini jalan yang terbaik.{/i}"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
     "Dibantu dengan Feni dan Flora, Tana dan Pia melakukan latihan mereka secara terpisah. Feni mengajarkan Pia cara nge-dance, sedangkan Flora mengajarkan Tana cara bernyanyi."
     "Karena tempat latihan Tana dan Pia terpisah, [mcname] pun bergantian datang ke tempat latihan Tana dan Pia. Di situ ia tahu bahwa masing-masing dari mereka sangatlah berusaha dalam berlatih."
+    play music "audio/BGM_UKM.ogg" loop fadein 1.0
+    scene ruang ukm with Dissolve(2.0)
+    $ quick_menu = True
     "Beberapa hari telah berlalu. Feni serta Flora pun memutuskan untuk melakukan latihan bersama kembali di ruang klub."
     show feni_side at left with dissolve
     feni "Tana, Pia, beberapa hari terakhir, kalian udah dilatih langsung sama aku dan Flora. Sekarang, tunjukin hasil latihan kalian."
@@ -1913,19 +1962,22 @@ label goodtanafinale:
     hide flora_side with dissolve
     mcname "Tana, Pia, Kana, kalian semangat, ya!"
     "Tana, Pia, Kana" "Siap!"
-    mcname "(Akhirnya semua aman...)"
+    mcname "{i}Akhirnya semua aman...{/i}"
     "Setelah itu, Tana, Pia, dan Kana terus melanjutkan latihan mereka hingga hari di mana mereka tampil."
-
-    #BG Event Jejepangan
-    #sfx suasana keramaian event
-    
-    #Narator
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    play music "audio/BGM_Matsuri Malam.ogg" loop fadein 1.0
+    scene lorong with Dissolve(2.0)
+#HARUSNYA BG Event Jejepangan
+    play sound "crowd_noise.mp3" loop fadein 1.0
+    $ quick_menu = True
     "Di parkiran kampus..."
     show tana_side at left with dissolve
     tana "Wah.... Rame banget...."
     hide tana_side with dissolve
     mcname "Asli..."
-    #Narator
     "Halaman kampus mulai ramai dipadati orang-orang yang mendatangi Hanabi Festival."
     show feni_side at left with dissolve
     feni "Jelas. Hanabi Festival itu agenda tahunan kampus kita yang terkenal meriah."
@@ -1963,10 +2015,14 @@ label goodtanafinale:
     show tana_side at left with dissolve
     tana "Oke Kak Flora. Kalau gitu kita duluan, ya."
     hide tana_side with dissolve
-    #Narator
     "[mcname] dan Tana pun meninggalkan Flora dan pergi menuju ruang klub sambil membawa box container plastik berisi kostum idol."
-    #SKIP To Hall
-    #BG Lorong
+    stop sound fadeout 1.0
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    play music "audio/BGM_Lorong.mp3" loop fadein 1.0
+    scene lorong with Dissolve(2.0)
+    $ quick_menu = True
     mcname "Jadi, gimana persiapan buat tampil nanti, Tan?"
     show tana_side at left with dissolve
     tana "Hmm...."
@@ -1984,14 +2040,12 @@ label goodtanafinale:
     show tana_side at left with dissolve
     tana "...."
     hide tana_side with dissolve
-
-    #Sfx tendang
-
-    mcname "Aduh. Curang pake kaki."
+#Sfx tendang
+    mcname "Aduh! Curang pake kaki!"
     show tana_side at left with dissolve
-    tana "Sama aja. Sama-sama ada jarinya."
+    tana "Sama aja, sama-sama ada jarinya."
     hide tana_side with dissolve
-    mcname "Hahahaha"
+    mcname "Hahahaha."
     show tana_side at left with dissolve
     tana "Malah ketawa. Lu ga normal, ya? Atau emang doyan?"
     hide tana_side with dissolve
@@ -2000,21 +2054,24 @@ label goodtanafinale:
     tana "...."
     hide tana_side with dissolve
     mcname "...."
-    mcname "Hahahaha"
+    mcname "Hahahaha!"
     show tana_side at left with dissolve
-    tana "Hahahaha"
+    tana "Hahahaha!"
     hide tana_side with dissolve
     mcname "Gimana? Mendingan?"
     show tana_side at left with dissolve
     tana "Iya. Makasih, [mcname]."
     hide tana_side with dissolve
-    mcname "Sama-sama."
-    #Narator
+    mcname "Sama-sama~"
     "Tak lama kemudian mereka sampai di depan pintu ruangan klub."
-
     #SKIP TO Ruang Klub
     #BG Ruang Klub
-
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    play music "audio/BGM_UKM.ogg" loop fadein 1.0
+    scene ruang ukm with Dissolve(2.0)
+    $ quick_menu = True
     show feni_side at left with dissolve
     feni "Ah, ini dia. Akhirnya sampai juga mereka."
     hide feni_side with dissolve
@@ -2030,7 +2087,7 @@ label goodtanafinale:
     mcname "Hahahaha. Sorry, ya, semuanya. Tadi jalanan macet sama kita susah cari parkiran tadi soalnya rame banget yang dateng."
     show feni_side at left with dissolve
     feni "Gapapa."
-    "Tana, Pia, Kana, mending kalian bertiga fitting kostum dulu di ruangan sebelah. Biar tau apa yang kurang nanti. Ini kuncinya."
+    feni "Tana, Pia, Kana, mending kalian bertiga fitting kostum dulu di ruangan sebelah. Biar tau apa yang kurang nanti. Ini kuncinya."
     hide feni_side with dissolve
     show pia_side at left with dissolve
     pia "Oke, kak. Ayo ganti, Nai."
@@ -2048,6 +2105,10 @@ label goodtanafinale:
     mcname "Hahahaha"
     #Narator
     "Tana, Pia, Kana pun segera pergi untuk berganti ke kostum mereka."
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    scene ruang ukm with Dissolve(2.0)
+    $ quick_menu = True
     show feni_side at left with dissolve
     feni "Btw, [mcname], Flo kemana? bukannya tadi sama kalian?"
     hide feni_side with dissolve
@@ -2057,6 +2118,10 @@ label goodtanafinale:
     hide feni_side with dissolve
     #Narator
     "Selang beberapa waktu, Pia dan Kana kembali ke ruang club dengan kostum idol mereka."
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    scene ruang ukm with Dissolve(2.0)
+    $ quick_menu = True
     show pia_side at left with dissolve
     pia "Kak Feni, coba lihat deh kostumnya. Cocok banget kan aku pakai."
     hide pia_side with dissolve
@@ -2077,11 +2142,17 @@ label goodtanafinale:
     mcname "Hmm? Tana mana?"
     #Narator
     "[mcname] bingung dengan Tana yang tidak kunjung keluar. Ia pun pergi menghampiri fitting room."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    play music "audio/BGM_Lorong.mp3" loop fadein 1.0
+    scene lorong with Dissolve(2.0)
+    $ quick_menu = True
     mcname "Tan?"
     show tana_side at left with dissolve
     tana "I-iya?"
     hide tana_side with dissolve
-    mcname "Kamu ga papa?"
+    mcname "Kamu gapapa?"
     show tana_side at left with dissolve
     tana "G-gapapa kok…"
     hide tana_side with dissolve
@@ -2093,27 +2164,27 @@ label goodtanafinale:
     "Tana pun keluar dari ruang ganti."
     mcname "....."
     show tana_side at left with dissolve
-    tana "K-kenapa? K-kok diem"
+    tana "K-kenapa? K-kok diem."
     hide tana_side with dissolve
     #Narator
-    "Tana nampak gelisah. Terlihat dari butiran keringat di wajah dan gelagat dia yang selalu merapikan pakaian nya."
-    mcname "Gapapa. Minum dulu, Ton. Aku tadi bawa dari ruang club."
+    "Tana nampak gelisah. Terlihat dari butiran keringat di wajah dan gelagat dia yang selalu merapikan pakaiannya."
+    mcname "Gapapa. Minum dulu, Ton. Gue tadi bawa dari ruang club."
     show tana_side at left with dissolve
-    tana "Makasih…."
+    tana "Makasih..."
     hide tana_side with dissolve
     #Narator
     "Tana pun meminum air yang diberikan oleh [mcname]."
     mcname "Lu sebenernya kenapa, Tan?"
     show tana_side at left with dissolve
     tana "....."
-    tana "Gimana jelasinnya, ya? Intinya, gue ga pede dengan pakaian feminim kaya gini."
+    tana "Gimana jelasinnya, ya? Intinya, gue ga pede dengan pakaian feminin kayak gini."
     tana "Apalagi nanti tampil di depan banyak orang."
     hide tana_side with dissolve
     mcname "Hadeh. Keulang lagi. Lu cakep, kocak. Kok ribet banget, sih."
     show tana_side at left with dissolve
     tana "APA SIH!"
     hide tana_side with dissolve
-    mcname "Weits"
+    mcname "Weits~"
     #Narator
     "Saat Tana hendak memukul [mcname], [mcname] sudah mengantisipasinya dan menghindar ke belakang."
     show tana_side at left with dissolve
@@ -2121,14 +2192,14 @@ label goodtanafinale:
     hide tana_side with dissolve
     mcname "Ultra Instinct, cuy."
     show tana_side at left with dissolve
-    tana "Dasar wibu. Lu kira lu kakarat."
+    tana "Dasar wibu. Lu kira lu kakarat?"
     hide tana_side with dissolve
     mcname "Hahaha"
     mcname "Btw, tadi sebelum berangkat, udah makan belum?"
     show tana_side at left with dissolve
     tana "Belum. Kenapa?"
     hide tana_side with dissolve
-    mcname "Ada booth makanan namanya Sakusoba. Katanya enak banget. Mau ke sana, ga? Siapa tau mood lu bisa berubah agak baikan kan."
+    mcname "Ada booth makanan namanya Sakusoba. Katanya enak banget. Mau ke sana, ga? Siapa tau mood lu bisa berubah agak baikan."
     show tana_side at left with dissolve
     tana "Hmm... Bentar lagi kan mau tampil, takut ga diijinin Kak Feni keluar juga."
     hide tana_side with dissolve
@@ -2137,47 +2208,58 @@ label goodtanafinale:
             #CHOOSE A (BAD ENDING)
             mcname "Bener juga. Gausah deh.."
             #Narator
-            "Karena takut untuk izin keluar jalan-jalan, rasa gugup Tana semakin memuncak yang berakhir dengan dia kabur dari ruangan klub dan idol group Tana, Pia, dan Kana gagal tampil di main stage."
-            #
-            #Lu sih cemen masa gitu doang ga berani
-            #
-            #Melihat itu [mcname] merasa bersalah dan memutuskan menebus dosa dengan melakukan perjalanan ke arah barat 
-            #
-            #TAMAT (BAD ENDING)
+            "Karena takut untuk izin keluar jalan-jalan, rasa gugup Tana semakin memuncak yang berakhir dengan dia kabur dari ruangan klub. Idol group Tana, Pia, dan Kana gagal tampil di main stage."
+            "Melihat itu [mcname] merasa bersalah dan memutuskan menebus dosa dengan melakukan perjalanan ke arah barat."
+            $ quick_menu = False
+            stop music fadeout 1.0
+            scene black with dissolve
+            show text "{color=#FFF}*LU SIH CEMEN, MASA GITU DOANG GA BERANI*{/color}" with Pause(2.0)
+            show text "{color=#FF0000}BAD END{/color}"
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+            jump credits
+
         "Tetap ajak Tana keluar":
+            mcname "Santai aja. Nanti gue yang izinin ke Kak Feni."
             jump goodtanagotofestival
 
 label goodtanagotofestival:
     #CHOOSE B (GOOD ENDING)
-    mcname "Santai aja. Nanti gue yang izinin ke Kak Feni."
-    mcname "Waktunya juga masih lama. Masih 2 jam."
-    mcname "Lagian masih 2 Jam lagi kan kalian tampil."
+    mcname "Lagian waktunya juga masih lama."
+    mcname "Masih 2 Jam lagi kan kalian tampil?"
     show tana_side at left with dissolve
-    tana "Oke deh."
+    tana "Oke deh..."
     hide tana_side with dissolve
     #Narator
     "Tana dan [mcname] pun kembali ke ruang club."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    play music "audio/BGM_UKM.ogg" loop fadein 1.0
+    scene ruang ukm with Dissolve(2.0)
+    $ quick_menu = True
     mcname "Tadaima~"
     show feni_side at left with dissolve
     feni "Okaeri~"
-    feni "[mcname], Tana, kalian lama banget."
-    feni "Hmm?"
+    feni "Tana, [mcname], kalian lama banget."
+    tana "Haha maaf Kak."
     feni "[mcname], sini."
     hide feni_side with dissolve
-    mcname "Kenapa, kak?"
+    mcname "K-kenapa, kak?"
+    "[mcname] pun mendekat ke arah Feni."
     show feni_side at left with dissolve
-    feni "Tana kenapa?"
+    feni "Psst, Tana kenapa?"
     hide feni_side with dissolve
     mcname "Oh. Aku juga mau bilang perkara itu."
     show feni_side at left with dissolve
     feni "Kenapa tuh?"
     hide feni_side with dissolve
-    #Narator
-    "[mcname] pun mendekat dan berbisik kepada Feni."
-    mcname "Kak Feni, kayanya Tana masih malu pakai kostum idolnya dia."
+    mcname "Jadi..."
+    mcname "Kayanya Tana masih malu pakai kostum idolnya dia."
     show feni_side at left with dissolve
     feni "Lho? Kenapa?"
-    feni "Ooooooo"
+    mcname "....."
+    feni "....."
+    feni "Ooooooo~"
     hide feni_side with dissolve
     mcname "Hooh."
     show feni_side at left with dissolve
@@ -2188,22 +2270,27 @@ label goodtanagotofestival:
     feni "Hadeh. Kok bisa si Tana belum makan. Ntar kalo pingsan, gimana coba."
     hide feni_side with dissolve
     mcname "Berotak Tana moment."
+#Sprite Feni Mundur
     show feni_side at left with dissolve
-    feni "Hahahaha. Yaudah. Kamu sama Tana jalan-jalan dulu aja, tapi jangan lama-lama soalnya nanti kan tampil."
+    feni "Hahahaha, yaudah. Kalian jalan-jalan dulu aja, tapi jangan lama-lama soalnya nanti kan tampil."
     hide feni_side with dissolve
-    mcname "Wakarimashita, Feni-senpai"
+    mcname "Wakarimashita, Feni-senpai."
     mcname "Ikuyo, Tana!"
+    "[mcname] menarik tangan Tana."
     show tana_side at left with dissolve
-    tana "H-hai"
+    tana "H-hai!"
     hide tana_side with dissolve
     #Narator
     "[mcname] dan Tana pun pergi untuk mengelilingi area Hanabi Festival."
-
-    #SKIP TO EVENT
-    #BG Event jejepangan
-
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    play music "audio/BGM_Matsuri Malam.ogg" loop fadein 1.0
+    scene lorong malam with Dissolve(2.0)
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0
+    $ quick_menu = True
     #Narator
-    "Sesampainya di area Hanabi Festival."
+    mcname "Waaaahhh."
     show tana_side at left with dissolve
     tana "Gua tau tadi gua udah bilang ini, tapi ini seriusan rame banget."
     hide tana_side with dissolve
@@ -2238,7 +2325,11 @@ label goodtanagotofestival:
     tana "Oh. Lagi sepi, tuh. Ayo deh."
     hide tana_side with dissolve
     #Narator
-    "[mcname] dan Tana pun menghampiri booth Sakusoba"
+    "[mcname] dan Tana pun menghampiri booth Sakusoba."
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    scene lorong malam with Dissolve(2.0)
+    $ quick_menu = True
     mcname "Kak, pesen 2 porsi. Makan di sini, ya."
     show tana_side at left with dissolve
     tana "Yang 1 pedes, kak."
@@ -2269,26 +2360,27 @@ label goodtanagotofestival:
     hide tana_side with dissolve
     #Narator
     "[mcname] dan Tana pun menyantap makanan yang mereka pesan."
-    "Setelah selesai, [mcname] pun langsung membayar ke kasir dan lanjut mengelilingi Hanabi Festival."
-    "Penjual" "Terima kasih, kak."
-    mcname "Terima kasih kembali"
-    mcname "Btw, gimana, Tan? Enak, kan?"
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    scene lorong malam with Dissolve(2.0)
+    $ quick_menu = True
+    mcname "Btw, gimana Tan? Enak kan?"
     show tana_side at left with dissolve
-    tana "Asli. Ini soba paling enak yang pernah gue makan. Sakusoba emang the best."
+    tana "Asli, ini soba paling enak yang pernah gue makan. Sakusoba emang the best."
     hide tana_side with dissolve
-    mcname "Setuju. Terus, mau lanjut kemana nih?"
+    mcname "Setuju! Terus mau lanjut ke mana nih?"
     show tana_side at left with dissolve
     tana "Cobain ke situ, yuk. Tadi aku liat ada booth tembak-tembakan. Kayanya seru deh."
     hide tana_side with dissolve
     mcname "Halah-halah. Emangnya lu bisa? Nge-aim aja skill issue."
     show tana_side at left with dissolve
-    tana "Dih. Ngeremehin gua."
+    tana "Dih, ngeremehin gua."
     tana "Gua tunjukin nih aim dewa gua."
     hide tana_side with dissolve
 
-    #[PLAY GAME TEMBAK]
-    #SKIP
-    #Kalau Aimnya jelek? gimana?
+#[PLAY GAME TEMBAK]
+#SKIP
+#Kalau Aimnya jelek? gimana?
 
     show tana_side at left with dissolve
     tana "Gimana? Kurang jago apa gua."
@@ -2304,8 +2396,7 @@ label goodtanagotofestival:
     hide tana_side with dissolve
     mcname "Yoi."
     mcname "Btw, kita mending ba-"
-    #Sfx vibrate
-    #Drrrt.. Drrtt
+#Sfx vibrate
     #Narator
     "Tiba-tiba suara HP [mcname] bergetar."
     mcname "Eh, kak Feni telepon."
@@ -2344,10 +2435,12 @@ label goodtanagotofestival:
     tana "...."
     tana "HAI!"
     hide tana_side with dissolve
-
-    #SKIP TO MAIN STAGE EVENT
-    #BG Stage event
-
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(2.0)
+    play music "audio/BGM_Matsuri Malam.ogg" loop fadein 1.0
+    scene konser end with Dissolve(2.0)
+    $ quick_menu = True
     "Master of Ceremony" "Gimana, semuanya? Penampilan sebelumnya seru ngga?"
     "Penonton" "SERUUU!!!"
     "Master of Ceremony" "Kalau gitu, ada yang ga kalah seru nih."
@@ -2363,14 +2456,13 @@ label goodtanagotofestival:
     "Mendengar kegugupan dari Tana, para penonton yang semula ramai menjadi hening seketika."
     show tana_side at left with dissolve
     tana "....."
-    
     tana "{i}Aduh. Kok jadi gini sih?{/i}"
     tana "{i}Gua kira gua udah aman sama keramaian gini.{/i}"
     tana "{i}Plis, gua ga kuat.{/i}"
     tana "..."
     tana "..."
     hide tana_side with dissolve
-    "???" "TANA!"
+    "???" "TANAAA!"
     "Di tengah-tengah keheningan itu, tiba-tiba ada teriakan yang suaranya sangat familiar yang datang dari kerumunan penonton."
     show tana_side at left with dissolve
     tana "Eh?"
@@ -2398,7 +2490,7 @@ label goodtanagotofestival:
     tana "*Nod*"
     hide tana_side with dissolve
     show tana_side at left with dissolve
-    tana "What’s up my bros! I’m fresh like a breeze, JKT48 Virtual’s Tana Nona, cool enough to make you freeze~"
+    tana "What's up my bros! I'm fresh like a breeze, JKT48 Virtual's Tana Nona, cool enough to make you freeze~"
     tana "Halo semuanya aku Tana Nona dari JKT48 Virtual. Salam kenal!!!"
     tana "Saksikanlah penampilan dari kami..."
     tana "JKT48V!"

@@ -636,8 +636,6 @@ label goodkanaafterorder:
   mcname "{i}Nay… Kamu berjuang banget yaa, mulai terbuka sama orang lain lalu sekarang kamu mau ngedance dan nyanyi… Entah kenapa aku bangga sama kamu.{/i}"
   stop music fadeout 1.0
   $ quick_menu = False
-  #*SKIP TO SCENE*
-  #*BG RUANG KLUB*
   scene black with Dissolve(2.0)
   show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
   play music "audio/BGM_UKM.ogg" loop fadein 1.0
