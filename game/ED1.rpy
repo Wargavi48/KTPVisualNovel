@@ -24,7 +24,7 @@ label credits:
     # hide the textbox
     window hide
 
-    scene dream with fade
+    scene background with fade
 
     # play music "audio/list_music/ost.mp3" fadeout 1.0
 

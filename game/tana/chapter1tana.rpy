@@ -439,11 +439,9 @@ label tanamcdaftarulang:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    # Harusnya BG UKM Jepang
-    scene kelas with dissolve
-    # Harusnya BGM UKM Jepang
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
-    show tana at tana_near with dissolve
+    play music "audio/BGM_UKM.ogg" fadein 1.0
+    scene ruang ukm with dissolve
+    show tana_silent at tana_near with dissolve
     show feni at feni_right with dissolve
     show flora at flora_left with dissolve
     show feni_side at left with dissolve
@@ -658,9 +656,7 @@ label tanamcdaftarulang:
     "Sore itu, ruang club pun dipenuhi gelak tawa dan canda ria.[mcname] dan Tana pun akhirnya bergabung dalam klub jejepangan bersama Feni dan Flora. Mereka berempat pun lanjut membersihkan ruang klub sampai malam."
     $ quick_menu = False
     scene black with dissolve
-    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN{/color}" with Pause(2.0)
-    # Harusnya BG UKM Jejepangan
-    scene kelas with dissolve
+    scene ruang ukm with dissolve
     show tana_talk at tana_near with dissolve
     show flora at flora_left with dissolve
     show feni at feni_right with dissolve

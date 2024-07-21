@@ -296,6 +296,7 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
+    play music "audio/BGM_UKM.ogg" fadein 1.0
     scene ruang ukm with dissolve
     $ quick_menu = True
     show kana at kana_near_left_2 with dissolve
@@ -318,6 +319,7 @@ label goodpiaafterquiz:
     $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    play music "audio/BGM_UKM.ogg" fadein 1.0
     scene ruang ukm with dissolve
     show tana at tana_right with dissolve
     show kana at kana_near_left_2 with dissolve
@@ -343,8 +345,10 @@ label goodpiaafterquiz:
     show tana_side at left with dissolve
     tana "................"
     hide tana_side with dissolve
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
+    play music "audio/BGM_Lorong.mp3" fadein 1.0
     scene lorong with dissolve
     $ quick_menu = True
     mcname "Wah rame banget yang liat-liat lukisan bulan ini"

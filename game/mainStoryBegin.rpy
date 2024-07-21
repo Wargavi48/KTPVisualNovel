@@ -1,14 +1,94 @@
 ﻿label mainStoryBegin:
+    $ quick_menu = True
+    mcname "Iya Pah, aku udah yakin kalo nanti bakal masuk jurusan [jurusan]."
+    show papah at small_center with dissolve
+    show side papah at left with dissolve
+    papah "Oke Papah percaya sama jurusan yang kamu pilih."
+    papah "Papah gak bakal ikut campur sama pilihan kamu, biar kamu bisa ngejar passion yang kamu pengen."
+    hide side papah with dissolve
+    hide papah with dissolve
+    show papah at char_placement_right with dissolve
+    show mama at char_left with dissolve
+    show side mama at left with dissolve
+    mama "Iya, Mamah juga percaya kok sama pilihan yang adek pilih."
+    hide side mama with dissolve
+    "Kedua orang tua [mcname] telihat tersenyum kepada [mcname]."
+    mcname "Makasih Pah, Makasih Mah."
+    "[mcname] tentu saja merasa senang karena ia bisa mengejar apa yang dia inginkan."
+    show side papah at left with dissolve
+    papah "Lagian, mungkin aja adek bawa pulang menantu pas balik dari jakarta nanti, hahaha."
+    hide side papah with dissolve
+    show side mama at left with dissolve
+    mama "Fufufu iya sih, jadinya Mamah bakal cepat punya cucu."
+    hide side mama with dissolve
+    mcname "A-apaan sih, aku kan ke sana buat nyari ilmu."
+    "[mcname] terdengar malu saat Papah dan Mamah membawakan topik pasangan."
+    show side papah at left with dissolve   
+    papah "Siapa tau kan, hahaha."
+    hide side papah with dissolve
+    show side mama at left with dissolve
+    mama "Ya udh kalo gitu kamu istirahat dulu ya, soalnya besok nanti bakal berangkat."
+    mama "Takutnya nanti malah telat."
+    hide side mama with dissolve
+    show side papah at left with dissolve 
+    papah "Oh iya sudah jam segini."
+    hide side papah with dissolve
+    "Jam terlihat menunjukan bahwa waktu sudah larut malam."
+    show side papah at left with dissolve     
+    papah "Kalo begitu istirahat ya Adek, jangan begadang soalnya besok kamu berangkat."
+    hide side papah with dissolve
+    mcname "Siap, Pah."
+    hide papah with dissolve
+    hide mama with dissolve
+    "Setelah mengucapkan selamat tidur, Papah dan Mamah pun pergi keluar dari kamar [mcname], meninggalkan [mcname] sendiran."
+    mcname "Huffttt, akhirnya mereka pergi."
+    mcname "{i}Mungkin aku bakal ngecek barang yang dibawa sekali lagi sebelum tidur, takutnya ada yang kelupaan.{/i}"
+    $ quick_menu = False
+    scene white with dissolve
+    scene mc bedroom with dissolve
+    $ quick_menu = True
+    mcname "{i}Oke, barang-barang sudah lengkap semua.{/i}"
+    mcname "Akhirnya udah bisa tidur nih."
+    "[mcname] pun kemudian merebahkan dirinya di kasur."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+    scene awan malam with dissolve
+    $ quick_menu = True
+    mcname "{i}Besok bakal jadi hari terakhirku di sini ya... {/i}"
+    mcname "{i}Nanti bakal jauh dari keluarga dan juga teman-temanku di sini...{/i}"
+    mcname "{i}Apalagi sama PC dan beberapa koleksi figureku...{/i}"
+    "[mcname] mulai memikirkan pilihannya kembali."
+    mcname "{i}Ah! Overthinking juga gak baik, mending langsung tidur aja dah.{/i}"
+    "[mcname] pun memejamkan matanya dan secara mengejutkan langsung tertidur pulas."
+    $ quick_menu = False
+    scene black with dissolve
+    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
+    scene awan with dissolve
+    $ quick_menu = True
+    "Pagi ini [mcname] sudah bersiap di stasiun untuk pergi di Jakarta."
+    mcname "Oke mah, oke pah aku pergi dulu yak."
+    show side mama at left with dissolve
+    mama "Adeeek hati-hati di jalan ya!"
+    hide side mama with dissolve
+    mcname "Iya, Mah."
+    show side papah at left with dissolve    
+    papah "Inget, kalo ada apa-apa kabarin Papah Mamah aja."
+    hide side papah with dissolve
+    mcname "Siaaap."
+    stop music fadeout 1.0
     $ renpy.block_rollback()
     $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}Chapter I{/color}" with Pause(1.5)
     scene black with dissolve
-
+    $ quick_menu = True
     "Hari baru sudah dimulai."
     "Lembaran baru di hidupku pun akhirnya terbuka dan akhirnya aku telah memasuki jenjang masuk kuliah."
     "Di sini aku memilih jurusan [jurusan]."
     "Dan hari ini adalah hari di mana aku datang ke Jakarta!"
+    $ quick_menu = False
     scene black with Dissolve(2.0)
     # scene depan kampus with dissolve
     # nanti diubah jadi scene monas

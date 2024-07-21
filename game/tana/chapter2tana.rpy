@@ -1,10 +1,11 @@
 label chapter2tana:
     # $ renpy.block_rollback()
-    $ quick_menu=True
     play music "audio/bgm_harvestmoon_spring.mp3" fadein 1.0
     scene awan with dissolve
+    $ quick_menu=True
     "Keesokan paginya, Tana berangkat menuju kampus seperti biasanya."
     $ quick_menu=False
+    scene black with dissolve
     scene kelas with dissolve
     $ quick_menu=True
     play music "audio/BGM_Kelas.mp3" fadein 1.0
@@ -173,9 +174,10 @@ label chapter2tana:
     scene awan with dissolve
     play music "audio/bgm_harvestmoon_spring.mp3" fadein 0.5
     show text "{size=+10}{color=#fff} KEESOKAN HARINYA {/color}{/size}" with Pause(2.0)
+    stop music fadeout 0.5
+    play music "audio/BGM_Kelas.mp3" fadein 1.0
     scene kelas with Dissolve(2.0)
     $ quick_menu=True
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
     "Jadwal kuliah hari ini hanya ada satu kelas praktikum jam 8 pagi, tapi seluruh mahasiswa disuruh untuk berkumpul di kelas karena akan ada arahan dari Bu Dosen."
     "[mcname!c] pun datang lebih pagi dan memilih untuk belajar di dalam kelas sembari menunggu kelas dimulai."
     mcname "Hadeh, susah banget deh mata kuliah ini. Kok bisa ada kating yang dapet nilai A. Ini gua yang bodoh atau gimana dah."
@@ -233,6 +235,7 @@ label chapter2tana:
     "Sambil mengalihkan pandangan, Tana menemukan bangku kosong lain yang berada tidak jauh dari tempatnya sekarang."
     "Tanpa berkata apapun, Tana pergi meninggalkan [mcname!c] dan langsung duduk di bangku tersebut."
     mcname "Dih yaudah. Duduk tempat lain aja sono."
+    stop music fadeout 1.0
     $ quick_menu=False
     scene black with dissolve
     scene kelas with dissolve

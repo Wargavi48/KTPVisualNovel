@@ -214,12 +214,13 @@ image side pia_side_smile = "Characters/Pia_side_smile.png"
 image side pia_side_talk = "Characters/Pia_side_talk.png"
 
 # Define side kana character
-image side kana_side_clumsy = "Characters/Kana_side_clumsy.png"
-image side kana_side_embarased = "Characters/Kana_side_embarased.png"
-image side kana_side_scared = "Characters/Kana_side_scared.png"
+image side kana_side_confused = "Characters/Kana_side_confused.png"
+image side kana_side_cry = "Characters/Kana_side_cry.png"
+image side kana_side_drylaugh = "Characters/Kana_side_drylaugh.png"
 image side kana_side_shy = "Characters/Kana_side_shy.png"
-image side kana_side_sick = "Characters/Kana_side_sick.png"
-image side kana_side_smile = "Characters/kana_side_smile.png"
+image side kana_side_shy_smile = "Characters/Kana_side_shy_smile.png"
+image side kana_side_smile = "Characters/Kana_side_smile.png"
+image side kana_side_talk = "Characters/kana_side_talk.png"
 image side kana_side = "Characters/kana_side.png"
 
 # Define side tana character
@@ -247,6 +248,7 @@ image side freya_side_smug = "Characters/Freya_side_smug.png"
 
 # define side fio character
 image side fio_side = "Characters/Fio_side.png"
+image side fio_side_smile = "Characters/fio_side_smile.png"
 
 # define side feni character
 image side feni_side = "Characters/feni_side.png"
@@ -284,6 +286,6 @@ default semua = Character("All", color="#000000")
 default mama = Character("Mamah", image="mama", color="#FFF")
 image side mama = "mama_id"
 default papah = Character("Papah", image="mama", color="#FFF")
-image side mama = "mama_id"
+image side papa = "papah_id"
 
 default mc = Character("[mcname]", color="#000000")
