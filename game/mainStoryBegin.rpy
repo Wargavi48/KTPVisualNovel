@@ -2,12 +2,16 @@
     $ quick_menu = True
     mcname "Iya Pah, aku udah yakin kalo nanti bakal masuk jurusan [jurusan]."
     show papah at small_center with dissolve
+    show papah:
+        ypos -126 yzoom 1.0 zoom 1.0 
     show side papah at left with dissolve
     papah "Oke Papah percaya sama jurusan yang kamu pilih."
     papah "Papah gak bakal ikut campur sama pilihan kamu, biar kamu bisa ngejar passion yang kamu pengen."
     hide side papah with dissolve
     hide papah with dissolve
     show papah at char_placement_right with dissolve
+    show papah:
+        pos (1.04, -1.11) zoom 0.79 
     show mama at char_left with dissolve
     show side mama at left with dissolve
     mama "Iya, Mamah juga percaya kok sama pilihan yang adek pilih."
@@ -112,7 +116,7 @@
     menu:
         "Langsung ke kosan abis itu rapikan barang.":
             $ renpy.block_rollback()
-            scene mc bedroom with Dissolve(2.0)
+            scene kamar mc kota with Dissolve(2.0)
             $ quick_menu = True
             mcname "Jadi ini ya kamarku selama 4 tahun ke depan."
             mcname "Salam kenal ya kamarku moga-moga kamu gak ada penunggunya hahaha..."
@@ -171,7 +175,7 @@
 label awalkosan:
         $ renpy.block_rollback()
         scene black with dissolve
-        scene mc bedroom with Dissolve(2.0)
+        scene kamar mc kota with Dissolve(2.0)
         $ quick_menu = True
         play music "audio/BGM_Kosan 1.mp3" fadein 1.0
         "Tak terasa hari pun sudah gelap."

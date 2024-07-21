@@ -467,7 +467,7 @@ label chapter1piajalancepat:
 
 label chapter1piajalantanpapio:
     scene black with dissolve
-    scene mc bedroom with dissolve
+    scene kamar mc kota with dissolve
     nvl clear
     play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
     mc_nvl "Besok ketemuan di mana?"
@@ -912,7 +912,7 @@ label chapter1piamakanmall:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    scene mc bedroom with dissolve
+    scene kamar mc kota with dissolve
     play music "audio/BGM_Kosan 2.mp3" fadein 1.0
     # $ renpy.block_rollback()
     $ quick_menu = True
