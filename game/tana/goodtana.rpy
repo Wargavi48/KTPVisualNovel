@@ -1582,1157 +1582,827 @@ label goodtanafinale:
     tana "Yaudah. Bentar, gua siap-siap dulu."
     hide tana_side with dissolve
     mcname "Oke."
-    #Btw, Kana, Pia, alasan kalian apa kok mau join idol group ini?
+    mcname "Btw, Kana, Pia, alasan kalian apa kok mau join idol group ini?"
     show kana_side at left with dissolve
-    kana " kalau aku si karena dari dulu aku suka jejepangan dan kebetulan juga aku kadang suka nyanyi gitu, sama ikut event event offline. Jadinya yaa pengen nyoba aja. hehe”"
+    kana "Kalau aku si karena dari dulu aku suka jejepangan dan kebetulan juga aku kadang suka nyanyi gitu, sama ikut event event offline. Jadinya yaa pengen nyoba aja. hehe"
     hide kana_side with dissolve
-    #.
     show pia_side at left with dissolve
-    pia " kalau gua sih kebetulan gua suka nyanyi gitu, tapi malu aja kalau ikut lomba nyanyi. Terus gw liat deh poster idol ini. Yaudah, gw coba aja sekalian"
+    pia "Kalau gua sih kebetulan gua suka nyanyi gitu, tapi malu aja kalau ikut lomba nyanyi. Terus gw liat deh poster idol ini. Yaudah, gw coba aja sekalian"
     hide pia_side with dissolve
-    #.
-    mcname "Oalah. Nice nice"
-    #
+    mcname "Oalah. Nice nice."
     show tana_side at left with dissolve
-    tana "Ayam bebek."
+    # tana "Ayam bebek." ??????
+    tana "Udah siap?"
     hide tana_side with dissolve
-    #Udah siap?
-    #
     show kana_side at left with dissolve
-    kana "U-udah"
+    kana "U-udah."
     hide kana_side with dissolve
-    #
     show pia_side at left with dissolve
-    pia "Gua udah siap dari lahir"
+    pia "Gua udah siap dari lahir."
     hide pia_side with dissolve
-    #
-    #Setelah itu, mereka memulai latihan pertama mereka. Pia dan Kanaia dapat mengikuti beberapa gerakan yang telah Tana berikan sebelumnya, tapi ada beberapa bagian yang membuat pia dan kana merasa kesulitan
-    #
+    "Setelah itu, mereka memulai latihan pertama mereka. Pia dan Kanaia dapat mengikuti beberapa gerakan yang telah Tana berikan sebelumnya, tapi ada beberapa bagian yang membuat Pia dan Kana merasa kesulitan."
     show pia_side at left with dissolve
-    pia "Eh, Tan, kalau ngajarin pelan pelan napa. Bagian ini gimana sih? Coba lu praktekin, tapi pelan pelan”"
+    pia "Eh, Tan, kalau ngajarin pelan-pelan napa. Bagian ini gimana sih? Coba lu praktekin, tapi pelan-pelan."
     hide pia_side with dissolve
-    #.
     show kana_side at left with dissolve
-    kana " Iya, Tan, bisa lebih pelan, ga? Soalnya ini juga pertama kalinya aku ngedance”"
+    kana "Iya, Tan, bisa lebih pelan, ga? Soalnya ini juga pertama kalinya aku ngedance."
     hide kana_side with dissolve
-    #.
     show tana_side at left with dissolve
-    tana "Eh, iya, sorry sorry. Gua ulangin, ya"
+    tana "Eh, iya, sorry sorry. Gua ulangin, ya."
     hide tana_side with dissolve
-    #Tana pun memberikan contoh kembali, tapi pia masih belum terbiasa dengan gerakan tersebut
-    #.
+    "Tana pun memberikan contoh kembali, tapi Pia masih belum terbiasa dengan gerakan tersebut."
     show pia_side at left with dissolve
-    pia " Haduh, Tan, lu tau pelan-pelan ga? Sabar napa. Lu niat ngajarin ga si? Sumpah dah "
+    pia "Haduh, Tan, lu tau pelan-pelan ga? Sabar napa. Lu niat ngajarin ga si? Sumpah dah."
     hide pia_side with dissolve
-    #.
     show tana_side at left with dissolve
-    tana "‘ LAH?! Kok lu ngamuk, sih?! Gua kan udah nunjukin pelan pelan. Si kana aja masih sanggup buat ngikutin "
+    tana "LAH?! Kok lu ngamuk, sih?! Gua kan udah nunjukin pelan-pelan. Si Kana aja masih sanggup buat ngikutin."
     hide tana_side with dissolve
-    #.
     show pia_side at left with dissolve
-    pia " Tiap orang beda-beda! Ga usah banding-bandingin gua sama orang lain. Gua paling ga suka kalau dibanding bandingin gitu "
+    pia "Tiap orang beda-beda! Ga usah banding-bandingin gua sama orang lain. Gua paling ga suka kalau dibanding-bandingin gitu."
     hide pia_side with dissolve
-    #.
     show kana_side at left with dissolve
-    kana " ehh, udah udah. Aku juga-”"
+    kana "Ehh, udah udah. Aku juga-"
     hide kana_side with dissolve
-    #.
     show pia_side at left with dissolve
-    pia " Eh, diem, lu. Lu sebenarnya bisa, kan ? Tadi gw liat juga lu kadang sengaja salah gitu. Lu pasti bisa soalnya kan lu sering ikut event dan lihat video idol gitu, tapi ga usah sengaja sengaja gitu. Gw ga suka "
+    pia "Eh, diem, lu. Lu sebenarnya bisa, kan? Tadi gw liat juga lu kadang sengaja salah gitu. Lu pasti bisa soalnya kan lu sering ikut event dan lihat video idol gitu, tapi ga usah sengaja-sengaja gitu. Gw ga suka."
     hide pia_side with dissolve
-    #.
     show tana_side at left with dissolve
     tana "Apa sih? Ini lu ga suka, itu ga suka. Terus lu maunya apa, kocak?"
     hide tana_side with dissolve
-    #,
     show pia_side at left with dissolve
-    pia "Santai, dong! Gua maunya lu ngajarin kita pelan pelan dan ikhlas! Ga usah ngamuk! "
+    pia "Santai, dong! Gua maunya lu ngajarin kita pelan-pelan dan ikhlas! Ga usah ngamuk!"
     hide pia_side with dissolve
-    #.
     show tana_side at left with dissolve
-    tana "Kurang pelan sama ikhlas apa gua?! Lu nya aja yang yang skill issue terus tiba tiba emosi gitu!"
+    tana "Kurang pelan sama ikhlas apa gua?! Lu nya aja yang yang skill issue terus tiba-tiba emosi gitu!"
     hide tana_side with dissolve
-    #,
-    mcname "Eh, udah. Jangan beran-”"
-    #
+    mcname "Eh, udah. Jangan beran-"
     show feni_side at left with dissolve
-    feni "WOI!!”"
+    feni "WOI!!"
     hide feni_side with dissolve
-    #
     #Narator
-    #Tiba-tiba, entah dari mana, Feni datang dan berteriak
-    #
+    "Tiba-tiba, entah dari mana, Feni datang dan berteriak."
     show tana_side at left with dissolve
     tana "K-kak Feni?"
     hide tana_side with dissolve
-    #
-    #
-    #Suara pertengkaran Pia dan Tana terdengar sampai ke luar ruangan, disaat itu feni dan flora pun memasuki ruangan dan mencoba menghentikan mereka
-    #.
-    #
-    #Kalian teriak-teriak ngapain?! Kalian sadar ga kalau suara kalian tu kedengeran sampai ke luar?!”
-    #.
-    show flora_side at left with dissolve
-    flora " Iya! Aku sampai kaget dengernya."
-    hide flora_side with dissolve
-    #.
-    show tana_side at left with dissolve
-    tana " ini nih, si-”"
-    hide tana_side with dissolve
-    #.
+    "Suara pertengkaran Pia dan Tana terdengar sampai ke luar ruangan, disaat itu Feni dan Flora pun memasuki ruangan dan mencoba menghentikan mereka."
     show feni_side at left with dissolve
-    feni " CUKUP!!!”"
+    feni "Kalian teriak-teriak ngapain?! Kalian sadar ga kalau suara kalian tu kedengeran sampai ke luar?!"
     hide feni_side with dissolve
-    # [mcname], coba jelasin sebenarnya ini ada apa
-    #.
+    show flora_side at left with dissolve
+    flora "Iya! Aku sampai kaget dengernya."
+    hide flora_side with dissolve
+    show tana_side at left with dissolve
+    tana "Ini nih, si-”"
+    hide tana_side with dissolve
+    show feni_side at left with dissolve
+    feni "CUKUP!!!"
+    feni "[mcname], coba jelasin sebenarnya ini ada apa."
+    hide feni_side with dissolve
     mcname "Oke, Kak Feni. Jadi gini"
-    #Mc pun menjelaskan kenapa Tana dan Pia bisa bertengkar, dan apa yang menyebabkan mereka bertengkar.
-    #Tiba-tiba…
-    #.
+    "[mcname] pun menjelaskan kenapa Tana dan Pia bisa bertengkar, dan apa yang menyebabkan mereka bertengkar."
+    "Tiba-tiba…"
     show pia_side at left with dissolve
-    pia " Dah lah. Gua mau pergi. bye.”"
+    pia "Dah lah. Gua mau pergi. bye."
     hide pia_side with dissolve
-    #.
     show kana_side at left with dissolve
     kana "E-eh, Pia tunggu!"
     hide kana_side with dissolve
-    #
-    #Pia pun pergi meninggalkan ruangan yang kemudian disusul oleh Kana
-    #.
+    "Pia pun pergi meninggalkan ruangan yang kemudian disusul oleh Kana."
     show feni_side at left with dissolve
-    feni "Tana"
+    feni "Tana."
     hide feni_side with dissolve
-    #
     show tana_side at left with dissolve
     tana "I-iya, kak?"
     hide tana_side with dissolve
-    #
     show feni_side at left with dissolve
-    feni " Jadi, kalian berantem gara-gara itu ?”"
+    feni "Jadi, kalian berantem gara-gara itu?"
     hide feni_side with dissolve
-    #.
     show tana_side at left with dissolve
-    tana " i-iya, ka feni”"
+    tana "I-iya, Ka Feni."
     hide tana_side with dissolve
-    #.
     show feni_side at left with dissolve
-    feni "“ Hadeh. Ada ada aja“"
+    feni "Hadeh. Ada-ada aja."
     hide feni_side with dissolve
-    #.
     show flora_side at left with dissolve
-    flora "“ Udah gede kok masih berantem kaya anak kecil”"
+    flora "Udah gede kok masih berantem kaya anak kecil."
     hide flora_side with dissolve
-    #
     show tana_side at left with dissolve
     tana "Habisnya si bo-"
     hide tana_side with dissolve
-    #.
     show feni_side at left with dissolve
     feni "Malah lanjut. Udah. Kamu pulang dulu aja, Tan. Istirahat."
     hide feni_side with dissolve
-    #
-    #Flora
-    #
-    #Betul. Dinginin kepala dulu aja
-    #.
+    show flora_side at left with dissolve
+    flora "Betul. Dinginin kepala dulu aja."
+    hide flora_side with dissolv
     show tana_side at left with dissolve
-    tana "Oke"
+    tana "Oke."
     hide tana_side with dissolve
-    #
     mcname "….."
-    #
     #Narator.
-    #[mcname] dan Tana pun pergi dari ruangan club untuk pulang ke kost merka masing-masing. Selama perjalanan, [mcname] dan Tana hanya saling diam tanpa mengucapkan satu kata pun.
+    "[mcname] dan Tana pun pergi dari ruangan club untuk pulang ke kost mereka masing-masing. Selama perjalanan, [mcname] dan Tana hanya saling diam tanpa mengucapkan satu kata pun."
     #Keesokan harinya..
-    #
+    
     #SKIP TO SCENE
     #BG RUANG KLUB
-    #.
-    #[mcname] dan Tana datang bersamaan ke ruang club.
-    #Di dalam ruang club, sudah ada Pia, Kana, Flora, dan Feni.
-    #
+    
+    "[mcname] dan Tana datang bersamaan ke ruang club."
+    "Di dalam ruang club, sudah ada Pia, Kana, Flora, dan Feni."
     mcname "Halo, semuanya."
-    #
     show kana_side at left with dissolve
     kana "Hai, [mcname]."
     hide kana_side with dissolve
-    #
     show feni_side at left with dissolve
-    feni "Masuk"
+    feni "Masuk."
     hide feni_side with dissolve
-    #
     show tana_side at left with dissolve
-    tana "“...”"
+    tana "..."
     hide tana_side with dissolve
-    #.
     show pia_side at left with dissolve
-    pia "“....”"
+    pia "...."
     hide pia_side with dissolve
-    #.
     show feni_side at left with dissolve
-    feni "“ Hadeh…“"
+    feni "Hadeh…"
     hide feni_side with dissolve
-    #.
     show flora_side at left with dissolve
-    flora "“ Karena udah lengkap, ayo sekarang dimulai aja latihannya“"
+    flora "Karena udah lengkap, ayo sekarang dimulai aja latihannya."
     hide flora_side with dissolve
-    #.
-    mcname "“ Nah, bener. Mumpung ada Kak Feni sama Kak Flora yang bantuin kita “"
-    #
+    mcname "Nah, bener. Mumpung ada Kak Feni sama Kak Flora yang bantuin kita."
     show tana_side at left with dissolve
-    tana "Oke"
+    tana "Oke."
     hide tana_side with dissolve
-    #
-    #Mereka pun mulai melakukan latihan mereka seperti biasanya. Akan tetapi, atmosphere antara pia dan Tana masih terasa
-    #
+    "Mereka pun mulai melakukan latihan mereka seperti biasanya. Akan tetapi, atmosfer antara Pia dan Tana masih terasa."
+
     #Transisi waktu
-    #,
+    
     show tana_side at left with dissolve
-    tana "“Cukup. Istirahat bentar “"
+    tana "Cukup. Istirahat bentar."
     hide tana_side with dissolve
-    #.
     show kana_side at left with dissolve
-    kana "“ Oke. Aku juga udah lumayan cape”"
+    kana "Oke. Aku juga udah lumayan cape."
     hide kana_side with dissolve
-    #
-    mcname "“Otsukare~ Ini aku tadi beliin minum buat kalian“"
-    #.
+    mcname "Otsukare~ Ini aku tadi beliin minum buat kalian."
     show pia_side at left with dissolve
-    pia "‘ Makasih“"
+    pia "Makasih."
     hide pia_side with dissolve
-    #.
     show tana_side at left with dissolve
-    tana "‘ Kana, gerakan kamu udah bagus. Kamu improve banget!“"
+    tana "Kana, gerakan kamu udah bagus. Kamu improve banget!"
     hide tana_side with dissolve
-    #.
     show kana_side at left with dissolve
-    kana "“ Hehehe. Makasih, Tan”"
+    kana "Hehehe. Makasih, Tan."
     hide kana_side with dissolve
-    #.
     show pia_side at left with dissolve
-    pia "“ kalau buat gw? ga improve? ga ada perkembangan?“"
+    pia "Kalau buat gw? Ga improve? Ga ada perkembangan?"
     hide pia_side with dissolve
-    #.
     show tana_side at left with dissolve
-    tana "“ Lah? Gua belum bilang apa apa, lu udah nyimpulin sendiri aja “"
+    tana "Lah? Gua belum bilang apa-apa, lu udah nyimpulin sendiri aja."
     hide tana_side with dissolve
-    #.
     show pia_side at left with dissolve
-    pia "“ Lagian itu kan yang mau lu omongin? Lu cuma bisa dance, lu ga bisa nyanyi”"
+    pia "Lagian itu kan yang mau lu omongin? Lu cuma bisa dance, lu ga bisa nyanyi."
     hide pia_side with dissolve
-    #
     show tana_side at left with dissolve
-    tana "Kok lu kaya gitu, sih? Kan kita latihan dance dulu"
+    tana "Kok lu kaya gitu, sih? Kan kita latihan dance dulu."
     hide tana_side with dissolve
-    #
     show pia_side at left with dissolve
     pia "Lu pikir jadi idol modal dance doang?"
     hide pia_side with dissolve
-    #.
-    mcname "“ udah udah “"
-    #.
+    mcname "Udah, udah."
     show pia_side at left with dissolve
-    pia "“ Lu ga ikut latihan. Ga usah banyak omong “"
+    pia "Lu ga ikut latihan. Ga usah banyak omong."
     hide pia_side with dissolve
-    #.
     show tana_side at left with dissolve
-    tana "“ Maksud lu apa bawa bawa temen gua? dia udah bantu kita. respect dikit napa “"
+    tana "Maksud lu apa bawa bawa temen gua? Dia udah bantu kita. Respect dikit napa."
     hide tana_side with dissolve
-    #
-    #
-    #
     #Narator
-    #Tiba-tiba
-    #
-    #
+    "Tiba-tiba."
     show feni_side at left with dissolve
-    feni "Heh"
+    feni "Heh."
     hide feni_side with dissolve
-    #
-    #[mcname], Tana, Pia, Kana
-    #???
-    #
+    "[mcname], Tana, Pia, Kana" "???"
     show feni_side at left with dissolve
-    feni "“ Kalian lupa ada aku sama flora di sini? Kalian ga ngehargain kita atau gimana?”"
+    feni "Kalian lupa ada aku sama Flora di sini? Kalian ga ngehargain kita atau gimana?"
     hide feni_side with dissolve
-    #
     show flora_side at left with dissolve
-    flora "Hadeh"
+    flora "Hadeh."
     hide flora_side with dissolve
-    #
-    #
-    #
-    #[mcname], Tana, Pia, Kana
-    #…..
-    #
+    "[mcname], Tana, Pia, Kana" "….."
     show feni_side at left with dissolve
-    feni "“ Mulai sekarang, Tana sama pia latihan terpisah. Pia, kamu latihan dance sama aku di ruang club dance“"
+    feni "Mulai sekarang, Tana sama Pia latihan terpisah. Pia, kamu latihan dance sama aku di ruang club dance."
     hide feni_side with dissolve
-    #
     show pia_side at left with dissolve
     pia "…."
     hide pia_side with dissolve
-    #
     show feni_side at left with dissolve
     feni "Tana, kamu latihan vocal sama Flora."
     hide feni_side with dissolve
-    #
     show tana_side at left with dissolve
     tana "Iya…"
     hide tana_side with dissolve
-    #
     show feni_side at left with dissolve
     feni "Aman kan, Flo?"
     hide feni_side with dissolve
-    #
     show flora_side at left with dissolve
-    flora "Aman aja"
+    flora "Aman aja."
     hide flora_side with dissolve
-    #
     show kana_side at left with dissolve
-    kana "“ Ano… Kalau aku ?’"
+    kana "Ano… Kalau aku?"
     hide kana_side with dissolve
-    #.
     show feni_side at left with dissolve
-    feni "“ Kamu fleksibel aja. Nanti menyesuaikan “"
+    feni "Kamu fleksibel aja. Nanti menyesuaikan."
     hide feni_side with dissolve
-    #
     show kana_side at left with dissolve
     kana "Baik…"
     hide kana_side with dissolve
-    #.
-    mcname "“ Kak Feni, Kak Flora, makasih, ya… “"
-    #.
+    mcname "Kak Feni, Kak Flora, makasih ya…"
     show feni_side at left with dissolve
-    feni "‘ Sama-sama. Sekarang kamu ikut aku, Pia “"
+    feni "Sama-sama. Sekarang kamu ikut aku, Pia."
     hide feni_side with dissolve
-    #
     show pia_side at left with dissolve
     pia "Ya…"
     hide pia_side with dissolve
-    #
     show kana_side at left with dissolve
     kana "Pia, ikut!"
     hide kana_side with dissolve
-    #
     show flora_side at left with dissolve
     flora "Siapa yang mau ikut aku?!"
     hide flora_side with dissolve
-    #
     show tana_side at left with dissolve
     tana "Aku aku aku!"
     hide tana_side with dissolve
-    #
-    mcname "Semoga ini yang terbaik"
-    #
-    #
-    #Dibantu dengan feni dan flora, tana dan pia melakukan latihan mereka secara terpisah. Feni mengajarkan pia cara nge-dance, sedangkan Flora mengajarkan Tana cara bernyanyi. Karena tempat latihan Tana dan Pia terpisah, [mcname] pun bergantian datang ke tempat latihan tana dan pia. Di situ ia tahu bahwa masing masing dari mereka sanagtlah bersuaha dalam berlatih. beberapa hari telah berlalu. feni serta flora pun memutuskan untuk melakukan latihan bersama kembali di ruang klub
-    #.
+    mcname "Semoga ini yang terbaik."
+    "Dibantu dengan Feni dan Flora, Tana dan Pia melakukan latihan mereka secara terpisah. Feni mengajarkan Pia cara nge-dance, sedangkan Flora mengajarkan Tana cara bernyanyi."
+    "Karena tempat latihan Tana dan Pia terpisah, [mcname] pun bergantian datang ke tempat latihan Tana dan Pia. Di situ ia tahu bahwa masing-masing dari mereka sangatlah berusaha dalam berlatih."
+    "Beberapa hari telah berlalu. Feni serta Flora pun memutuskan untuk melakukan latihan bersama kembali di ruang klub."
     show feni_side at left with dissolve
-    feni "“Tana, Pia, beberapa hari terakhir, kalian udah dilatih langsung sama aku dan Flora. Sekarang, tunjukin hasil latihan kalian.“"
+    feni "Tana, Pia, beberapa hari terakhir, kalian udah dilatih langsung sama aku dan Flora. Sekarang, tunjukin hasil latihan kalian."
     hide feni_side with dissolve
     show flora_side at left with dissolve
-    flora "Betul. Jangan cuma adu mulut aja. Adu skill kalian"
+    flora "Betul. Jangan cuma adu mulut aja. Adu skill kalian."
     hide flora_side with dissolve
-    #.
     show tana_side at left with dissolve
-    tana "“ Gampang itu mah."
+    tana "Gampang itu mah."
+    tana "Heh, Bocil, gua tunjukin nih skill nyanyi gua."
     hide tana_side with dissolve
-    #Heh, Bocil, gua tunjukin nih skill nyanyi gua“
-    #
     show pia_side at left with dissolve
-    pia "“Dih, ga Cuma lu yang improve. Liat aja nanti”"
+    pia "Dih, ga Cuma lu yang improve. Liat aja nanti."
     hide pia_side with dissolve
-    #.
-    #Latihan pun dimulai kembali. Tana, Pia, dan Kana menunjukkan hasil dari latihan mereka. Mereka hampir melakukan seluruhnya dengan sempurna.
-    #
+    "Latihan pun dimulai kembali. Tana, Pia, dan Kana menunjukkan hasil dari latihan mereka. Mereka hampir melakukan seluruhnya dengan sempurna."
     show tana_side at left with dissolve
     tana "...."
     hide tana_side with dissolve
     show pia_side at left with dissolve
     pia "...."
     hide pia_side with dissolve
-    #.
     show kana_side at left with dissolve
-    kana "“ EHHHH SUMPAHHH!!??, KITA KEREN BANGETT”"
+    kana "EHHHH SUMPAHHH!!??, KITA KEREN BANGETT"
     hide kana_side with dissolve
-    #.
     show tana_side at left with dissolve
-    tana "“ SERIUS LAH, BROKKKK. GILA KITA JAGO BANGE. LU JUgA ,PI, Cakep TUh GERAKAN”"
+    tana "SERIUS LAH, BROKKKK. GILA KITA JAGO BANGET. LU JUGA PI, CAKEP TUH GERAKAN."
     hide tana_side with dissolve
-    #.
     show pia_side at left with dissolve
-    pia "“ Jelas. Pia gitu loh. Ini hasil latihan gua sama kak feni. Nyanyi lu juga udah improve, tan“"
+    pia "Jelas. Pia gitu loh. Ini hasil latihan gua sama Kak Feni. Nyanyi lu juga udah improve, Tan."
     hide pia_side with dissolve
-    #
     show tana_side at left with dissolve
-    tana "Ya kali lu doang yang improve. Gua juga improve habis latihan dama FLora senpai"
+    tana "Ya kali lu doang yang improve. Gua juga improve habis latihan sama Flora-senpai."
     hide tana_side with dissolve
-    #.
     show feni_side at left with dissolve
-    feni "“ cieee, udah ga marahan lagiii”"
+    feni "Cieee, udah ga marahan lagiii~"
     hide feni_side with dissolve
-    #.
     show flora_side at left with dissolve
-    flora "“ Ihii. Mana nih yang kemarin berantrm?”"
+    flora "Ihii. Mana nih yang kemarin berantem?"
     hide flora_side with dissolve
-    #.
-    mcname "“ Ada tuh yang sampai teriak-teriak “"
-    #
+    mcname "Ada tuh yang sampai teriak-teriak."
     #Sfx slap
-    #
     show tana_side at left with dissolve
-    tana "Lu ga usah ikut-ikut, kocak"
+    tana "Lu ga usah ikut-ikut, kocak."
     hide tana_side with dissolve
-    #
     mcname "Aduh"
-    #
     show kana_side at left with dissolve
-    kana "“ Eh, jangan ungkit-ungkit yang lama, dong, tapi aku juga penasaran. Siapa, ya?”"
+    kana "Eh, jangan ungkit-ungkit yang lama, dong, tapi aku juga penasaran. Siapa, ya?"
     hide kana_side with dissolve
-    #
     show tana_side at left with dissolve
-    tana "Lu jadi orang bisa yang bener ga, nai?"
+    tana "Lu jadi orang bisa yang bener ga, Nai?"
     hide tana_side with dissolve
-    #.
     #Narator
-    #[mcname], Tana, Pia, Kana, Feni, dan Flora pun tertawa bersama di dalam ruang club
-    #.
+    "[mcname], Tana, Pia, Kana, Feni, dan Flora pun tertawa bersama di dalam ruang club."
     show feni_side at left with dissolve
-    feni "“ Hahahaha. Lucu banget sihh kalian. Sana maafan dulu “"
+    feni "Hahahaha. Lucu banget sihh kalian. Sana maafan dulu."
     hide feni_side with dissolve
-    #.
     show tana_side at left with dissolve
-    tana "“ Cil, sorry, ya. Sorry kalo gua kesannya ga sabaran banget kalo ngelatih “"
+    tana "Cil, sorry ya. Sorry kalo gua kesannya ga sabaran banget kalo ngelatih."
     hide tana_side with dissolve
-    #.
     show pia_side at left with dissolve
-    pia "“ Sorry juga, tan, karena gua emosi mulu”"
+    pia "Sorry juga, Tan, karena gua emosi mulu."
     hide pia_side with dissolve
-    #.
     show kana_side at left with dissolve
-    kana "Aku juga minta maaf deh"
+    kana "Aku juga minta maaf deh."
     hide kana_side with dissolve
-    #
     show tana_side at left with dissolve
-    tana "Lu tuh g diajak"
+    tana "Lu tuh ga diajak."
     hide tana_side with dissolve
-    #
     show kana_side at left with dissolve
-    kana "Huhuhu“"
+    kana "Huhuhu"
     hide kana_side with dissolve
-    #.
     #Narator
-    #[mcname], Tana, Pia, Kana, Feni, dan Flora pun tertawa terbahak-bahak satu sama lain
-    #
+    "[mcname], Tana, Pia, Kana, Feni, dan Flora pun tertawa terbahak-bahak satu sama lain."
     show feni_side at left with dissolve
-    feni "Nah. Semua udah aman, sekarang kalian harus latihan terus sampai waktunya tampil"
+    feni "Nah. Semua udah aman, sekarang kalian harus latihan terus sampai waktunya tampil."
     hide feni_side with dissolve
-    #
     show flora_side at left with dissolve
     flora "Betul. Jangan kasih kendor!"
     hide flora_side with dissolve
-    #
     mcname "Tana, Pia, Kana, kalian semangat, ya!"
-    #
-    #Tana, Pia, Kana
-    #Siap!
-    #
+    "Tana, Pia, Kana" "Siap!"
     mcname "(Akhirnya semua aman...)"
-    #
-    #
-    #Setelah itu, Tana, Pia, dan Kana terus melanjutkan latihan mereka hingga hari di mana mereka tampil
-    #
+    "Setelah itu, Tana, Pia, dan Kana terus melanjutkan latihan mereka hingga hari di mana mereka tampil."
+
     #BG Event Jejepangan
     #sfx suasana keramaian event
-    #
+    
     #Narator
-    #Di parkiran kampus.
-    #
+    "Di parkiran kampus..."
     show tana_side at left with dissolve
     tana "Wah.... Rame banget...."
     hide tana_side with dissolve
-    #
     mcname "Asli..."
-    #.
     #Narator
-    #Halaman kampus mulai ramai dipadati orang-orang yang mendatang Hanabi Festival.
-    #
+    "Halaman kampus mulai ramai dipadati orang-orang yang mendatangi Hanabi Festival."
     show feni_side at left with dissolve
     feni "Jelas. Hanabi Festival itu agenda tahunan kampus kita yang terkenal meriah."
     hide feni_side with dissolve
-    #
     show flora_side at left with dissolve
     flora "Bener. Selain ada banyak jajanan, ada juga beberapa wahana mainan serta penampilan menarik dari para partisipan."
     hide flora_side with dissolve
-    #
     show tana_side at left with dissolve
     tana "Kayanya keren. Mau liat!"
     hide tana_side with dissolve
-    #
     mcname "Kan lu tampil, kocak!"
-    #
     show feni_side at left with dissolve
-    feni "Kalian liatnya nanti kalau ada waktu luang aja. Kalau nggak, nanti kalian nonton Hanabi-nya (kembang api) aja. Hanabi-nya nanti jadi penutup acara, jadinya kalian bisa nonton setelah tampil"
+    feni "Kalian liatnya nanti kalau ada waktu luang aja. Kalau nggak, nanti kalian nonton Hanabi-nya (kembang api) aja. Hanabi-nya nanti jadi penutup acara, jadinya kalian bisa nonton setelah tampil."
     hide feni_side with dissolve
-    #
     show tana_side at left with dissolve
     tana "Oke deh."
     hide tana_side with dissolve
-    #
     show flora_side at left with dissolve
     flora "Btw, kostum yang ada di mobil udah dikeluarin semuanya, kan?"
     hide flora_side with dissolve
-    #
     mcname "Udah semua kok, kak."
-    #
     show flora_side at left with dissolve
     flora "Barang-barang kalian ga ada yang ketinggalan?"
     hide flora_side with dissolve
-    #
     show tana_side at left with dissolve
-    tana "Aman, Flora senpai."
+    tana "Aman, Flora-senpai."
     hide tana_side with dissolve
-    #
     show flora_side at left with dissolve
     flora "Oke. Kalau gitu, kalian berdua langsung ke ruang klub sambil bawa barangnya, ya. Ditunggu Kak Feni, Pia, sama Kana di sana."
     hide flora_side with dissolve
-    #
     mcname "Loh? Kak Flora ga ikutan?"
-    #
     show flora_side at left with dissolve
     flora "Gua langsung ke main stage soalnya ada yang perlu dikordinasiin sama panitia di sana."
     hide flora_side with dissolve
-    #
     show tana_side at left with dissolve
     tana "Oke Kak Flora. Kalau gitu kita duluan, ya."
     hide tana_side with dissolve
-    #.
     #Narator
-    #[mcname] dan Tana pun meninggalkan flora dan pergi menuju ruang klub sambil membawa box container plastik berisi kostum idol
-    #.
+    "[mcname] dan Tana pun meninggalkan Flora dan pergi menuju ruang klub sambil membawa box container plastik berisi kostum idol."
     #SKIP To Hall
     #BG Lorong
-    #.
-    mcname "Jadi, gimana persiapan buat tampil nanti, tan?"
-    #
+    mcname "Jadi, gimana persiapan buat tampil nanti, Tan?"
     show tana_side at left with dissolve
     tana "Hmm...."
+    tana "Ga tau nih. Makin deket waktunya tampil, jadi makin gugup."
     hide tana_side with dissolve
-    #Ga tau nih. Makin deket waktunya tampil, jadi makin gugup.
-    #
     mcname "Dih. Lu bisa gugup juga?"
-    #
     show tana_side at left with dissolve
     tana "Bisa, kocak! Lu kira gua sekuat itu?"
     hide tana_side with dissolve
-    mcname "Gatau, tapi kalau tangan lu, emang sekuat itu sih"
-    #
+    mcname "Gatau, tapi kalau tangan lu, emang sekuat itu sih."
     show tana_side at left with dissolve
     tana "HIH"
     hide tana_side with dissolve
-    #
     mcname "Hayo. Lu mau apa? Mukul gua? Tangan lu penuh bawa barang. Hahahaha"
-    #
     show tana_side at left with dissolve
     tana "...."
     hide tana_side with dissolve
-    #
+
     #Sfx tendang
-    #
-    mcname "Aduh. Curang pake kaki"
-    #
+
+    mcname "Aduh. Curang pake kaki."
     show tana_side at left with dissolve
-    tana "Sama aja. Sama-sama ada jarinya"
+    tana "Sama aja. Sama-sama ada jarinya."
     hide tana_side with dissolve
-    #
     mcname "Hahahaha"
-    #
     show tana_side at left with dissolve
     tana "Malah ketawa. Lu ga normal, ya? Atau emang doyan?"
     hide tana_side with dissolve
-    #
-    mcname "Enak aja"
-    #
+    mcname "Enak aja."
     show tana_side at left with dissolve
     tana "...."
     hide tana_side with dissolve
-    #
     mcname "...."
-    #
     mcname "Hahahaha"
-    #
     show tana_side at left with dissolve
     tana "Hahahaha"
     hide tana_side with dissolve
-    #
     mcname "Gimana? Mendingan?"
-    #
     show tana_side at left with dissolve
-    tana "Iya. Makasih, [mcname]"
+    tana "Iya. Makasih, [mcname]."
     hide tana_side with dissolve
-    #
-    mcname "Sama-sama.  "
-    #
-    #
+    mcname "Sama-sama."
     #Narator
-    #Tak lama kemudian mereka sampai di depan pintu ruangan klub.
-    #.
+    "Tak lama kemudian mereka sampai di depan pintu ruangan klub."
+
     #SKIP TO Ruang Klub
     #BG Ruang Klub
-    #.
+
     show feni_side at left with dissolve
-    feni "Ah, ini dia. Akhirnya sampai juga mereka"
+    feni "Ah, ini dia. Akhirnya sampai juga mereka."
     hide feni_side with dissolve
-    #
     show pia_side at left with dissolve
-    pia "Tau nih. Lama amat. Ditunggun dari tadi juga"
+    pia "Tau nih. Lama amat. Ditungguin dari tadi juga."
     hide pia_side with dissolve
-    #
     show kana_side at left with dissolve
     kana "PACARAN DULU YA KALIAN BERDUA!!!"
     hide kana_side with dissolve
-    #
     show tana_side at left with dissolve
-    tana "Nai, punya otak tolong dipake"
+    tana "Nai, punya otak tolong dipake."
     hide tana_side with dissolve
-    #
     mcname "Hahahaha. Sorry, ya, semuanya. Tadi jalanan macet sama kita susah cari parkiran tadi soalnya rame banget yang dateng."
-    #
     show feni_side at left with dissolve
-    feni "Gapapa"
+    feni "Gapapa."
+    "Tana, Pia, Kana, mending kalian bertiga fitting kostum dulu di ruangan sebelah. Biar tau apa yang kurang nanti. Ini kuncinya."
     hide feni_side with dissolve
-    #Tana, Pia, Kana, mending kalian bertiga fitting kostum dulu di ruangan sebelah. Biar tau apa yang kurang nanti. Ini kuncinya
-    #
     show pia_side at left with dissolve
     pia "Oke, kak. Ayo ganti, Nai."
     hide pia_side with dissolve
-    #
     show kana_side at left with dissolve
     kana "Iyaaa, Pi."
     hide kana_side with dissolve
-    #
     show tana_side at left with dissolve
     tana "Yaudah, [mcname], gue duluan kalau gitu."
     hide tana_side with dissolve
-    #
     mcname "Iya, Tan, semangat, ya!"
-    #
     show tana_side at left with dissolve
-    tana "Ini Cuma ganti baju doang, kocak. Belum tampil"
+    tana "Ini cuma ganti baju doang, kocak. Belum tampil."
     hide tana_side with dissolve
-    #
     mcname "Hahahaha"
-    #
     #Narator
-    #Tana, Pia, Kana pun segera pergi untuk berganti ke kostum mereka.
-    #
+    "Tana, Pia, Kana pun segera pergi untuk berganti ke kostum mereka."
     show feni_side at left with dissolve
     feni "Btw, [mcname], Flo kemana? bukannya tadi sama kalian?"
     hide feni_side with dissolve
-    #
     mcname "Oh. Kak Flora katanya ada urusan di main stage, kak."
-    #
     show feni_side at left with dissolve
     feni "Oalah. Pantes kok ga ke sini bareng kalian."
     hide feni_side with dissolve
-    #.
     #Narator
-    #Selang beberapa waktu, Pia dan Kana kembali ke ruang club dengan kostum idol mereka
-    #.
+    "Selang beberapa waktu, Pia dan Kana kembali ke ruang club dengan kostum idol mereka."
     show pia_side at left with dissolve
     pia "Kak Feni, coba lihat deh kostumnya. Cocok banget kan aku pakai."
     hide pia_side with dissolve
-    #
     show feni_side at left with dissolve
     feni "Ah. Cantik banget, Pi. Jepit rambutnya juga cocok."
     hide feni_side with dissolve
-    #
     show kana_side at left with dissolve
-    kana "Kalau aku, gimana, kak?"
+    kana "Kalau aku, gimana, Kak?"
     hide kana_side with dissolve
-    #
-    #Kamu topinya kurang miring dikit.
-    #Nah. Gini udah pas (membenarkan posisi topi kana)
-    #
+    show feni_side at left with dissolve
+    feni "Kamu topinya kurang miring dikit."
+    feni "*Membenarkan posisi topi Kana*"
+    feni "Nah. Gini udah pas."
+    hide feni_side with dissolve
     show kana_side at left with dissolve
-    kana "Arigatou, Feni senpai"
+    kana "Arigatou, Feni-senpai."
     hide kana_side with dissolve
-    #
     mcname "Hmm? Tana mana?"
-    #.
     #Narator
-    #[mcname] bingung dengan Tana yang tidak kunjung keluar. Ia pun pergi menghampiri fitting room.
-    #
+    "[mcname] bingung dengan Tana yang tidak kunjung keluar. Ia pun pergi menghampiri fitting room."
     mcname "Tan?"
-    #.
     show tana_side at left with dissolve
     tana "I-iya?"
     hide tana_side with dissolve
-    #
     mcname "Kamu ga papa?"
-    #
     show tana_side at left with dissolve
     tana "G-gapapa kok…"
     hide tana_side with dissolve
-    #
-    mcname "Kok lama banget"
-    #
+    mcname "Kok lama banget."
     show tana_side at left with dissolve
-    tana "S-sabar, kocak! I-ini gua keluar"
+    tana "S-sabar, kocak! I-ini gua keluar."
     hide tana_side with dissolve
-    #
     #Narator
-    #Tana pun keluar dari ruang ganti.
-    #
+    "Tana pun keluar dari ruang ganti."
     mcname "....."
-    #
     show tana_side at left with dissolve
     tana "K-kenapa? K-kok diem"
     hide tana_side with dissolve
-    #
     #Narator
-    #Tana nampak gelisah. Terlihat dari butiran keringat di wajah dan gelagat dia yang selalu merapikan pakaian nya.
-    #
-    mcname "Gapapa. Minum dulu, ton. Aku tadi bawa dari ruang club."
-    #
+    "Tana nampak gelisah. Terlihat dari butiran keringat di wajah dan gelagat dia yang selalu merapikan pakaian nya."
+    mcname "Gapapa. Minum dulu, Ton. Aku tadi bawa dari ruang club."
     show tana_side at left with dissolve
     tana "Makasih…."
     hide tana_side with dissolve
-    #
     #Narator
-    #Tana pun meminum air yang diberikan oleh [mcname]
-    #
+    "Tana pun meminum air yang diberikan oleh [mcname]."
     mcname "Lu sebenernya kenapa, Tan?"
-    #
-    #
     show tana_side at left with dissolve
     tana "....."
+    tana "Gimana jelasinnya, ya? Intinya, gue ga pede dengan pakaian feminim kaya gini."
+    tana "Apalagi nanti tampil di depan banyak orang."
     hide tana_side with dissolve
-    #Gimana jelasinnya, ya? Intinya, gue ga pede dengan pakaian feminim kaya gini.
-    #Apalagi nanti tampil di depan banyak orang.
-    #
-    mcname "Hadeh. Keulang lagi. Lu cakep, kocak. Kok ribet banget, sih"
-    #
+    mcname "Hadeh. Keulang lagi. Lu cakep, kocak. Kok ribet banget, sih."
     show tana_side at left with dissolve
     tana "APA SIH!"
     hide tana_side with dissolve
-    #
     mcname "Weits"
-    #
     #Narator
-    #Saat Tana hendak memukul [mcname], [mcname] sudah mengantisipasinya dan menghindar ke belakang.
-    #
+    "Saat Tana hendak memukul [mcname], [mcname] sudah mengantisipasinya dan menghindar ke belakang."
     show tana_side at left with dissolve
     tana "Lah?"
     hide tana_side with dissolve
-    #
-    mcname "Ultra Instinct, cuy"
-    #
+    mcname "Ultra Instinct, cuy."
     show tana_side at left with dissolve
-    tana "Dasar wibu. Lu kira lu kakarat"
+    tana "Dasar wibu. Lu kira lu kakarat."
     hide tana_side with dissolve
-    #.
-    #
     mcname "Hahaha"
-    #Btw, tadi sebelum berangkan, udah makan belum?
-    #
+    mcname "Btw, tadi sebelum berangkat, udah makan belum?"
     show tana_side at left with dissolve
     tana "Belum. Kenapa?"
     hide tana_side with dissolve
-    #
     mcname "Ada booth makanan namanya Sakusoba. Katanya enak banget. Mau ke sana, ga? Siapa tau mood lu bisa berubah agak baikan kan."
-    #
     show tana_side at left with dissolve
     tana "Hmm... Bentar lagi kan mau tampil, takut ga diijinin Kak Feni keluar juga."
     hide tana_side with dissolve
-    #
-    #CHOOSE A (BAD ENDING)
-    #
-    #“Bener juga. Gausah deh..”
-    #
-    #Narator
-    #Karena takut untuk izin keluar jalan-jalan, rasa gugup Tana semakin memuncak yang berakhir dengan dia kabur dari ruangan klub dan idol group Tana, Pia, dan Kana gagal tampil di main stage.
-    #
-    #Lu sih cemen masa gitu doang ga berani
-    #
-    #Melihat itu [mcname] merasa bersalah dan memutuskan menebus dosa dengan melakukan perjalanan ke arah barat 
-    #
-    #TAMAT (BAD ENDING)
-    #
+    menu:
+        "Batal ajak Tana keluar":
+            #CHOOSE A (BAD ENDING)
+            mcname "Bener juga. Gausah deh.."
+            #Narator
+            "Karena takut untuk izin keluar jalan-jalan, rasa gugup Tana semakin memuncak yang berakhir dengan dia kabur dari ruangan klub dan idol group Tana, Pia, dan Kana gagal tampil di main stage."
+            #
+            #Lu sih cemen masa gitu doang ga berani
+            #
+            #Melihat itu [mcname] merasa bersalah dan memutuskan menebus dosa dengan melakukan perjalanan ke arah barat 
+            #
+            #TAMAT (BAD ENDING)
+        "Tetap ajak Tana keluar":
+            jump goodtanagotofestival
+
+label goodtanagotofestival:
     #CHOOSE B (GOOD ENDING)
-    #
-    mcname "“Santai aja. Nanti gue yang izinin ke Kak Feni.”"
-    #
+    mcname "Santai aja. Nanti gue yang izinin ke Kak Feni."
     mcname "Waktunya juga masih lama. Masih 2 jam."
-    #Lagian masih 2 Jam lagi kan kalian tampil
-    #
+    mcname "Lagian masih 2 Jam lagi kan kalian tampil."
     show tana_side at left with dissolve
     tana "Oke deh."
     hide tana_side with dissolve
-    #
     #Narator
-    #Tana dan [mcname] pun kembali ke ruang club
-    #
-    mcname "Tadaima"
-    #
+    "Tana dan [mcname] pun kembali ke ruang club."
+    mcname "Tadaima~"
     show feni_side at left with dissolve
-    feni "Okaeri"
+    feni "Okaeri~"
+    feni "[mcname], Tana, kalian lama banget."
+    feni "Hmm?"
+    feni "[mcname], sini."
     hide feni_side with dissolve
-    #[mcname], Tana, kalian lama banget
-    #Hmm?
-    #[mcname], sini
-    #
     mcname "Kenapa, kak?"
-    #
     show feni_side at left with dissolve
     feni "Tana kenapa?"
     hide feni_side with dissolve
-    #
-    mcname "Oh. Aku juga mau bilang perkara itu"
-    #
+    mcname "Oh. Aku juga mau bilang perkara itu."
     show feni_side at left with dissolve
     feni "Kenapa tuh?"
     hide feni_side with dissolve
-    #
     #Narator
-    #[mcname] pun mendekat dan berbisik kepada Feni
-    #
-    mcname "Kak Feni, kayanya Tana masih malu pakai kostum idolnya dia"
-    #
+    "[mcname] pun mendekat dan berbisik kepada Feni."
+    mcname "Kak Feni, kayanya Tana masih malu pakai kostum idolnya dia."
     show feni_side at left with dissolve
     feni "Lho? Kenapa?"
+    feni "Ooooooo"
     hide feni_side with dissolve
-    #Ooooooo
-    #
     mcname "Hooh."
-    #
     show feni_side at left with dissolve
     feni "Terus gimana?"
     hide feni_side with dissolve
-    #
-    mcname "Ini rencananya aku mau ngajak dia jalan-jalan dulu biar dia terbiasa. Sekalian cari makan soalnya katanya dia juga belum makan"
-    #
+    mcname "Ini rencananya aku mau ngajak dia jalan-jalan dulu biar dia terbiasa. Sekalian cari makan soalnya katanya dia juga belum makan."
     show feni_side at left with dissolve
     feni "Hadeh. Kok bisa si Tana belum makan. Ntar kalo pingsan, gimana coba."
     hide feni_side with dissolve
-    #
-    mcname "Berotak Tana moment"
-    #
+    mcname "Berotak Tana moment."
     show feni_side at left with dissolve
     feni "Hahahaha. Yaudah. Kamu sama Tana jalan-jalan dulu aja, tapi jangan lama-lama soalnya nanti kan tampil."
     hide feni_side with dissolve
-    #
-    mcname "Wakarimashita, Feni Senpai"
-    #Ikuyo, Tana!
-    #
+    mcname "Wakarimashita, Feni-senpai"
+    mcname "Ikuyo, Tana!"
     show tana_side at left with dissolve
     tana "H-hai"
     hide tana_side with dissolve
-    #
     #Narator
-    #[mcname] dan Tana pun pergi untuk mengelilingi area Hanabi Festival
+    "[mcname] dan Tana pun pergi untuk mengelilingi area Hanabi Festival."
+
     #SKIP TO EVENT
     #BG Event jejepangan
-    #
+
     #Narator
-    #Sesampainya di area Hanabi Festival
-    #
+    "Sesampainya di area Hanabi Festival."
     show tana_side at left with dissolve
-    tana "Gua tau tadi gua udah bilang ini, tapi ini seriusan rame banget"
+    tana "Gua tau tadi gua udah bilang ini, tapi ini seriusan rame banget."
     hide tana_side with dissolve
-    #.
-    mcname "Hooh. Makanya, jangan sampai ilang. Ntar sapa yang tampil? Masa gua"
-    #
+    mcname "Hooh. Makanya, jangan sampai ilang. Ntar sapa yang tampil? Masa gua."
     show tana_side at left with dissolve
     tana "Dih. Lu kira gua gampang tersesat gitu?"
     hide tana_side with dissolve
-    #
     mcname "....."
-    #
     show tana_side at left with dissolve
     tana "....."
+    tana "Gausah gitu. Lu juga sama aja, kocak."
     hide tana_side with dissolve
-    #Gausah gitu. Lu juga sama aja, kocak.
-    #
-    mcname "Gua ga bilang apa-apa, kocak"
-    #
+    mcname "Gua ga bilang apa-apa, kocak."
     show tana_side at left with dissolve
     tana "Hilih. Gua udah tau cara kerja pikiran elu."
     hide tana_side with dissolve
-    #
-    mcname "Kamu lah yang paling memahami aku"
-    #
+    mcname "Kamu lah yang paling memahami aku."
     show tana_side at left with dissolve
     tana "Sampai lu ngomong kaya gitu lagi, gua pukul lu. Asli."
     hide tana_side with dissolve
-    #
-    mcname "Kasar bet. Mending lu jadi petinju"
-    #
+    mcname "Kasar bet. Mending lu jadi petinju."
     show tana_side at left with dissolve
     tana "Boleh, tapi lu nanti jadi lawan pertama gua, ya."
     hide tana_side with dissolve
-    #
-    mcname "Ga dulu. Makasih"
-    #Mending kita makan
-    #
+    mcname "Ga dulu. Makasih."
+    mcname "Mending kita makan."
     show tana_side at left with dissolve
     tana "Masuk akal. Tempatnya di mana?"
     hide tana_side with dissolve
-    #
-    mcname "Tuh di situ"
-    #
+    mcname "Tuh di situ."
     show tana_side at left with dissolve
     tana "Oh. Lagi sepi, tuh. Ayo deh."
     hide tana_side with dissolve
-    #
     #Narator
-    #[mcname] dan Tana pun menghampiri booth Sakusoba
-    #
-    mcname "Kak, pesen 2 porsi. Makan di sini, ya"
-    #
+    "[mcname] dan Tana pun menghampiri booth Sakusoba"
+    mcname "Kak, pesen 2 porsi. Makan di sini, ya."
     show tana_side at left with dissolve
-    tana "Yang 1 pedes, kak"
+    tana "Yang 1 pedes, kak."
     hide tana_side with dissolve
-    #
     mcname "Gada pedes-pedes."
-    #
     show tana_side at left with dissolve
     tana "Dih"
     hide tana_side with dissolve
-    #
-    mcname "Lu mau sakit perut pas tampil"
-    #
+    mcname "Lu mau sakit perut pas tampil?"
     show tana_side at left with dissolve
     tana "...."
     hide tana_side with dissolve
-    #
-    mcname "Dua-duanya yang biasa aja, kak. Sama ocha-nya dua"
-    #
-    #Penjual
-    #Baik, kak. Tunggu sebentar
-    #
-    mcname "Ntar makannya yang cepet, ya. Biar bisa keliling lagi"
-    #
+    mcname "Dua-duanya yang biasa aja, kak. Sama ocha-nya dua."
+    "Penjual" "Baik, kak. Tunggu sebentar."
+    mcname "Ntar makannya yang cepet, ya. Biar bisa keliling lagi."
     show tana_side at left with dissolve
     tana "Aman aja. Emang mau ke mana lagi?"
     hide tana_side with dissolve
-    #
     mcname "Gatau juga. Sapa tau ada yang menarik."
-    #
-    #Penjual
-    #Permisi, kak, ini pesanannya
-    #
-    mcname "Ini dia"
-    #
+    "Penjual" "Permisi, kak, ini pesanannya."
+    mcname "Ini dia."
     show tana_side at left with dissolve
-    tana "Enak banget nih kayanya"
+    tana "Enak banget nih kayanya."
     hide tana_side with dissolve
-    #
-    mcname "Cepetan makan, tapi jangan keselek"
-    #
+    mcname "Cepetan makan, tapi jangan keselek."
     show tana_side at left with dissolve
-    tana "Iya iya"
+    tana "Iya iya."
     hide tana_side with dissolve
-    #
     #Narator
-    #[mcname] dan Tana pun menyantap makanan yang mereka pesan
-    #Setelah selesai, [mcname] pun langsung membayar ke kasir dan lanjut mengelilingi Hanabi Festival
-    #
-    #Penjual
-    #Terima kasih, kak
-    #
+    "[mcname] dan Tana pun menyantap makanan yang mereka pesan."
+    "Setelah selesai, [mcname] pun langsung membayar ke kasir dan lanjut mengelilingi Hanabi Festival."
+    "Penjual" "Terima kasih, kak."
     mcname "Terima kasih kembali"
-    #Btw, gimana, Tan? Enak, kan?
-    #
+    mcname "Btw, gimana, Tan? Enak, kan?"
     show tana_side at left with dissolve
     tana "Asli. Ini soba paling enak yang pernah gue makan. Sakusoba emang the best."
     hide tana_side with dissolve
-    #
     mcname "Setuju. Terus, mau lanjut kemana nih?"
-    #
     show tana_side at left with dissolve
     tana "Cobain ke situ, yuk. Tadi aku liat ada booth tembak-tembakan. Kayanya seru deh."
     hide tana_side with dissolve
-    #
-    mcname "Halah halah. Emangnya lu bisa? Nge-aim aja skill issue."
-    #
+    mcname "Halah-halah. Emangnya lu bisa? Nge-aim aja skill issue."
     show tana_side at left with dissolve
     tana "Dih. Ngeremehin gua."
+    tana "Gua tunjukin nih aim dewa gua."
     hide tana_side with dissolve
-    #Gua tunjukin nih aim dewa gua
-    #
-    #
-    #.
+
     #[PLAY GAME TEMBAK]
-    #.
     #SKIP
-    #.
+    #Kalau Aimnya jelek? gimana?
+
     show tana_side at left with dissolve
     tana "Gimana? Kurang jago apa gua."
     hide tana_side with dissolve
-    #
-    mcname "Keren lah. Paling jago satu semesta"
-    #
+    mcname "Keren lah. Paling jago satu semesta."
     show tana_side at left with dissolve
     tana "Jelas. Siapa dulu… TANA NONA..."
     hide tana_side with dissolve
-    #
-    mcname "Iya iya"
-    #Btw, udah mendingan, Tan? Atau masih ga pede?
-    #
+    mcname "Iya iya."
+    mcname "Btw, udah mendingan, Tan? Atau masih ga pede?"
     show tana_side at left with dissolve
     tana "Udah aman, kok. Makasih, [mcname]!"
     hide tana_side with dissolve
-    #
-    mcname "Yoi"
-    #Btw, kita mending ba-
-    #
+    mcname "Yoi."
+    mcname "Btw, kita mending ba-"
     #Sfx vibrate
     #Drrrt.. Drrtt
-    #
     #Narator
-    #Tiba-tiba suara Hp [mcname] bergetar
-    #
-    mcname "Eh, kak Feni telepon"
-    #
+    "Tiba-tiba suara HP [mcname] bergetar."
+    mcname "Eh, kak Feni telepon."
     show tana_side at left with dissolve
-    tana "Cepetan angkat"
+    tana "Cepetan angkat."
     hide tana_side with dissolve
-    #
     #Asset
     #Telefon masuk
     #Feni Call
-    #
     show feni_side at left with dissolve
     feni "[mcname], Tana, kalian di mana? Habis ini udah waktunya tampil."
     hide feni_side with dissolve
-    #
-    mcname "Siap, Kak Feni. Tana langsung otw ke sana"
-    #.
+    mcname "Siap, Kak Feni. Tana langsung otw ke sana."
     #Tutup telefon
-    #.
-    mcname "Tan, lu dicariin Kak Feni tuh. Habis ini waktunya tampil"
-    #
-    #
+    mcname "Tan, lu dicariin Kak Feni tuh. Habis ini waktunya tampil."
     show tana_side at left with dissolve
-    tana "Walah. Kita keasikan keliling-keliling"
+    tana "Walah. Kita keasikan keliling-keliling."
     hide tana_side with dissolve
-    #
-    mcname "Iya. Hahahaha"
-    #
+    mcname "Iya. Hahahaha."
     show tana_side at left with dissolve
     tana "Yaudah. Aku ke ruang club dulu, ya!"
+    tana "Makasih udah ngajak keliling-keliling."
     hide tana_side with dissolve
-    #Makasih udah ngajak keliling-keliling
-    #
-    mcname "Yoi"
-    #
+    mcname "Yoi."
     #Narator
-    #Tana pun bergegas pergi menuju ke ruang club untuk berkumpul dengan Pia, Kana, dan Feni.
-    #Tiba-tiba...
-    #
+    "Tana pun bergegas pergi menuju ke ruang club untuk berkumpul dengan Pia, Kana, dan Feni."
+    "Tiba-tiba..."
     mcname "TAN!"
-    #
     show tana_side at left with dissolve
     tana "???"
     hide tana_side with dissolve
-    #
     #Narator
-    #Mendengar teriakan [mcname], Tana pun berhenti dan menoleh menghadap [mcname]
-    #
+    "Mendengar teriakan [mcname], Tana pun berhenti dan menoleh menghadap [mcname]."
     mcname "GANBATTE NE!"
-    #
     show tana_side at left with dissolve
     tana "...."
+    tana "HAI!"
     hide tana_side with dissolve
-    #HAI!
-    #
-    #.
-    #.
-    #.
+
     #SKIP TO MAIN STAGE EVENT
     #BG Stage event
-    #.
-    #Master of Ceremony
-    #Gimana, semuanya? Penampilan sebelumnya seru ngga?
-    #
-    #Crowd
-    #SERUUU!!!
-    #
-    #MoC
-    #Kalau gitu, ada yang ga kalah seru nih.
-    #Selanjutnya kita kedatangan perwakilan grup idol dari klub jepang kampus kita
-    #Mari kita sambut
-    #JKT48V!!!!!!!!
-    #
-    #Crowd
-    #WUOOHHHHH!!!!! Clap prok prok prok
-    #
+
+    "Master of Ceremony" "Gimana, semuanya? Penampilan sebelumnya seru ngga?"
+    "Penonton" "SERUUU!!!"
+    "Master of Ceremony" "Kalau gitu, ada yang ga kalah seru nih."
+    "Master of Ceremony" "Selanjutnya kita kedatangan perwakilan grup idol dari klub jepang kampus kita."
+    "Master of Ceremony" "Mari kita sambut..."
+    "Master of Ceremony" "JKT48V!!!!!!!!"
+    play sound "audio/crowd_noise.mp3"
+    "Penonton" "WUOOOH!!!!"
     show tana_side at left with dissolve
     tana "H-halo semuanya…"
     hide tana_side with dissolve
-    #
     #Narator
-    #Mendengar kegugupan dari Tana, para penonton yang semula ramai menjadi hening seketika.
-    #
+    "Mendengar kegugupan dari Tana, para penonton yang semula ramai menjadi hening seketika."
     show tana_side at left with dissolve
     tana "....."
+    
+    tana "{i}Aduh. Kok jadi gini sih?{/i}"
+    tana "{i}Gua kira gua udah aman sama keramaian gini.{/i}"
+    tana "{i}Plis, gua ga kuat.{/i}"
+    tana "..."
+    tana "..."
     hide tana_side with dissolve
-    #(Aduh. Kok jadi gini sih?)
-    #(Gua kira gua udah aman sama keramaian gini)
-    #(Plis, gua ga kuat)
-    #....
-    #....
-    #
-    #???
-    #TANA!
-    #
-    #Di tengah-tengah keheningan itu, tiba tiba ada teriakan yang suaranya sangat familiar yang datang dari kerumunan penonton
-    #
+    "???" "TANA!"
+    "Di tengah-tengah keheningan itu, tiba-tiba ada teriakan yang suaranya sangat familiar yang datang dari kerumunan penonton."
     show tana_side at left with dissolve
     tana "Eh?"
     hide tana_side with dissolve
-    #
-    #
-    #
     mcname "TANA MANISKU, CINTAKU. KOWE AYU TENAN!"
-    #
     show tana_side at left with dissolve
-    tana "M-[mcname]? (First letter dari nickname ditambah dash (-) nama [mcname])"
+    #Tana M-MC? (First letter dari nickname ditambah dash (-) nama MC)
+    tana "{i}[mcname]?{/i}"
     hide tana_side with dissolve
-    #
     mcname "SEMANGAT, TAN! KOWE PASTI ISO!!!"
-    #
     show tana_side at left with dissolve
     tana "...."
+    tana "{i}Dasar.....{/i}"
     hide tana_side with dissolve
-    #(Dasar.....)
-    #
     #Narator
-    #Mendengar teriakan [mcname], Tana pun mukai tersenyum dan nampak lebih percaya diri.
-    #Tana mengepalkan telapak tangannya dan mengarahkannya ke arah [mcname] yang berada di kerumunan
-    #Melihat hal tersebut, [mcname] pun juga ikut mengepalkan telapak tangannya dan mengarahkannya ke arah Tana yang berada di panggung
-    #
+    "Mendengar teriakan [mcname], Tana pun mukai tersenyum dan nampak lebih percaya diri."
+    "Tana mengepalkan telapak tangannya dan mengarahkannya ke arah [mcname] yang berada di kerumunan."
+    "Melihat hal tersebut, [mcname] pun juga ikut mengepalkan telapak tangannya dan mengarahkannya ke arah Tana yang berada di panggung."
     show tana_side at left with dissolve
-    tana "(Makasih banyak, [mcname].)"
+    tana "{i}Makasih banyak, [mcname].{/i}"
+    tana "{i}Gua ga bakal ngecewain lu.{/i}"
     hide tana_side with dissolve
-    #(Gua ga bakal ngecewain lu)
-    #
-    mcname "Nod"
-    #
+    mcname "*Nod*"
     show tana_side at left with dissolve
-    tana "Nod"
+    tana "*Nod*"
     hide tana_side with dissolve
-    #
     show tana_side at left with dissolve
     tana "What’s up my bros! I’m fresh like a breeze, JKT48 Virtual’s Tana Nona, cool enough to make you freeze~"
+    tana "Halo semuanya aku Tana Nona dari JKT48 Virtual. Salam kenal!!!"
+    tana "Saksikanlah penampilan dari kami..."
+    tana "JKT48V!"
     hide tana_side with dissolve
-    #Halo semuanya aku Tana Nona dari JKT48 Virtual. Salam kenal!!!
-    #
-    #Saksikanlah penampilan dari kami
-    #JKT48V
-    #.
     #CG Scene akhir.
     #Lagu Dreamcatcher
     #Credit
