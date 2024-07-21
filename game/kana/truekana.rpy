@@ -960,7 +960,7 @@ label truekanarightpresent:
   "Perlahan Kana membuka matanya."
   $ quick_menu = False
   scene black with dissolve
-  play music "audio//BGM_Rooftop Romance Pia.mp3" fadein 1.0
+  play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
   scene kana awal with dissolve
 #HARUSNYA CG KANA END
   $ quick_menu = True
