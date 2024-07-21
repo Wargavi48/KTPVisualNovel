@@ -37,8 +37,7 @@ label goodkana:
     "Kamu memesan..."
     "Nasi Cumi Pak (donatur)":
       jump goodkanaafterorder
-
-    "Karedok pak/bu (donatur)":
+    "Karedok Pak (donatur)":
       #*CHOSE B*
       mcname "Karedok kali ya, udah lama ga makan sayuran aku."
       "Ternyata sayuran yang dipake sama tukang dagangnya kebanyakan busuk semua dan hampir setengah mahasiswa/i keracunan dan dilarikan ke rumah sakit."
@@ -65,7 +64,7 @@ label goodkana:
 label goodkanaafterorder:
   #*CHOSE A*
   mcname "{i}Eh nyoba nasi cumi Pak (donatur) kali ya? Katanya terkenal sampe masuk di subtitle gitu di beberapa film, nyobain ah.{/i}"
-  "MC pun memesan makanan dan kembali ke meja di mana Kana dan Freya berada."
+  "[mcname] pun memesan makanan dan kembali ke meja di mana Kana dan Freya berada."
   mcname "Eh maaf lama, tadi aku jadinya pesan nasi cumi Pak (donatur) itu."
   show kana_side at left with dissolve
   kana "Ooo yang katanya pernah masuk ke film-film itu ya?"
@@ -126,20 +125,23 @@ label goodkanaafterorder:
   play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
   scene kamar mc kota with dissolve
   $ quick_menu = True
-  
-  #*RING RING RING*
-  #play audio "audio/BGM_Kosan 1.mp3" fadein 1.0
-  "MC melihat ke arah HPnya yang berbunyi, saat membuka HPnya ia mendapatkan notifikasi chat dari Kana."
-  kana_nvl "Eh… B-besok kita reschedule aja gimana ＞﹏＜"
+  play sound "audio/ReceiveText.ogg" loop
+  "[mcname] melihat ke arah HPnya yang berbunyi."
+  stop sound
+  "Saat membuka HPnya ia mendapatkan notifikasi chat dari Kana."
+  kana_nvl "Eh. B-besok kita reschedule aja gimana ＞﹏＜"
   mcname_nvl "G"
   kana_nvl "Iiiii kok gitu siih ayolah pleaseeeeeee..(✿◕‿◕✿)"
-  mcname_nvl "Ya udah. Boleh"
+  mcname_nvl "Ya udah, boleh"
   kana_nvl "Yeeee akhirnya, jadinya kapan?"
   mcname_nvl "Minggu depan tapi kamu sendirian ya Nay, soalnya aku mau besok."
   kana_nvl "Iiiiihh, tapi kan."
   mcname_nvl "Kalo ga mau ikut gapapa kok, ga mau maksa. Kalo mau ikut, aku tunggu sampai jam 3 sore ya… Jangan telat, good night."
-  kana_nvl "Ehhh…"
-  "HP [mcname] terus-terusan bersuara, suara notif tidak berhenti terdengar, hingga akhirnya [mcname] pun memilih untuk memasuki mode getar. "
+  kana_nvl "Ehhh..."
+  play sound "audio/ReceiveText.ogg" loop
+  "HP [mcname] terus-terusan bersuara, suara notif tidak berhenti terdengar."
+  stop sound
+  "Hingga akhirnya [mcname] pun memilih untuk memasuki mode getar."
   mcname "{i}Hahaha biarin aja lah sesekali biar Kana juga mau. Kata Freya harus digituin dulu biar dia mau.{/i}"
   "[mcname] pun memilih untuk mengabaikan HPnya dan pergi tidur."
   nvl clear
@@ -175,55 +177,55 @@ label goodkanaafterorder:
   mcname "{i}Haaaaa… Segugup apa deh dia…{/i}"
   mcname "Ahhh lama Nay ayooooo."
   "Tak sabar dengan Kana, [mcname] pun memaksa Kana untuk segera masuk ke ruangan klub jejepangan. Saat mendekati ruangan, terdengar suara yang cukup ramai."
-  #show tana_side at left with dissolve
+  show tana_side at left with dissolve
   #???( TONO )
   "???" "Woyyy lu mau kemana kocakkkk!"
-  #hide tana_side with dissolve
-  #show pia_side at left with dissolve
+  hide tana_side with dissolve
+  show pia_side at left with dissolve
   #???( PIA )
   "???" "Ahahaha!"
-  #hide pia_side with dissolve
-  
+  hide pia_side with dissolve
   show kana_side at left with dissolve
   kana "K-kelihatannya rame banget ya [mcname], kita pulang aja yuk? Lain kali aja."
   hide kana_side with dissolve
-  mcname "Udah lah namanya juga klub, yuk masuk… Permisiii~"
-
+  mcname "Udah lah namanya juga klub, yuk masuk. Permisiii~"
   "[mcname] pun masuk ke arah ruangan klub. Kana panik dan mencoba untuk menghentikan [mcname], akan tetapi [mcname] telah memasuki ruangan terlebih dahulu."
   scene black with dissolve
   scene ruang ukm with Dissolve(2.0)
   "Suasa ruangan tiba-tiba hening, akan tetapi terlihat wajah yang agak familiar di sana."
-  #show tana_side at left with dissolve
+  show tana_side at left with dissolve
   #??(TONO)
   "???" "Eeehhh elo!??"
-  #hide tana_side with dissolve
+  hide tana_side with dissolve
   mcname "Eeeh?"
-  
-  "Tono langsung pergi ke arah belakang MC, di mana Kana bersembunyi."
-  #show tana_side at left with dissolve
+  "Tono langsung pergi ke arah belakang [mcname], di mana Kana bersembunyi."
+  show tana_side at left with dissolve
   #???(TONO)
   "???" "Elu kan yang waktu itu menghindar ya? Akhirnya dateng juga, udah gue tungguin loh."
-  #hide tana_side with dissolve
+  hide tana_side with dissolve
   show kana_side at left with dissolve
-  kana "Eeehh… I-iya hehe. "
+  kana "Eeehh, I-iya hehe."
   hide kana_side with dissolve
-  mcname "Nay, santai aja napa…"
-  #show pia_side at left with dissolve
+  mcname "Nay, santai aja napa."
+  show pia_side at left with dissolve
   #???(PIA)
   "???" "Ton, dia siapa?"
-  #hide pia_side with dissolve
+  hide pia_side with dissolve
   show tana_side at left with dissolve
-  tana "Ooohhh Pii. Ini loh yang waktu itu aku ceritain yang suka ngechant sama wotagei itu loh, ini orangnya."
+  #???(TONO)  
+  "???" "Ooohhh Pii. Ini loh yang waktu itu aku ceritain yang suka ngechant sama wotagei itu loh, ini orangnya."
   hide tana_side with dissolve
   show pia_side at left with dissolve
-  pia "Oohhh ini toh."
+  #???(PIA)
+  "???" "Oohhh ini toh."
   hide pia_side with dissolve  
   mcname "Eeehh ummm sorry, ini klub jejepangan kan?"
-  tana "Iya kok kalian ga salah masuk, lo kan yang waktu itu di depan kampus ya?"
+  #???(TANA)
+  "???" "Iya kok kalian ga salah masuk, lo kan yang waktu itu di depan kampus ya?"
   mcname "Iya namaku [mcname], salam kenal ya. "
   "[mcname] melihat ke arah Pia. Sosoknya yang enerjik, kecil serta lucu membuatnya teringat dengan kucing di rumahnya…"
   show pia_side at left with dissolve
-  pia "Btw kenalin namaku Pia Meraleo."
+  pia "Btw kenalin namaku Pia Meraleo. Panggil Pia aja."
   hide pia_side with dissolve
   tana "Owh iya sampe lupa haha, kenalin juga gue Tana Nona. Salam kenal ya guys."
   show pia_side at left with dissolve
@@ -351,17 +353,18 @@ label goodkanaafterorder:
   #*SKIP SCENE*
   #*BG KAMAR KOS MALAM*
   $ quick_menu = False
-  scene black with Dissolve(2.0)
+  scene awan malam with Dissolve(2.0)
+  scene black with dissolve
   play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
   scene kamar mc kota with dissolve
   $ quick_menu = True
-
+  "Malam itu..."
+  play sound "audio/ReceiveText.ogg" loop
   "HP [mcname] pun berdering dengan terus menerus membuatnya terganggu karena sedang bermain game online."
+  stop sound
   "Saat melihat HPnya tersebut, ternyata itu adalah notif dari Kana. [mcname] pun akhirnya membalas chatnya, akan tetapi Kana langsung menelpon [mcname]."
-  
   #*CUT TO SCENE*
   #*HP FACE KANA DI HP*
-  
   mcname "Kenapa Nay?"
   show kana_side at left with dissolve
   kana "Nahhh akhirnya diangkat juga, lagi sibuk kah?"
@@ -404,7 +407,7 @@ label goodkanaafterorder:
   #*BG RUANG KLUB*
   scene black with Dissolve(2.0)
   show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-  play music "audio/BGM_Kampus Sore.mp3" loop fadein 1.0
+  play music "audio/BGM_UKM.ogg" loop fadein 1.0
   scene ruang ukm with Dissolve(2.0)
   $ quick_menu = True
   "Beberapa hari kemudian Kana dan [mcname] pun lolos dalam seleksi kepanitian dan mereka datang ke ruangan klub untuk rapat."
@@ -507,7 +510,10 @@ label goodkanaafterorder:
   play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
   scene kamar mc kota with dissolve
   $ quick_menu = True
+  play sound "audio/ReceiveText.ogg" loop
+  "[mcname] melihat ke arah HPnya yang berbunyi."
   "Di saat [mcname] sedang beristirahat, terdengar suara HPnya yang tidak pernah berhenti bergetar sejak ia selesai mandi."
+  stop sound
   mcname "Aduhhh ini siapa sih, dari tadi notif jebol gini."
   #*CHANGE SCENE*
   #*HP*
@@ -543,10 +549,9 @@ label goodkanaafterorder:
   #*BG RUANG KLUB*
   scene black with Dissolve(2.0)
   show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-  play music "audio/BGM_Kampus Sore.mp3" loop fadein 1.0
+  play music "audio/BGM_UKM.ogg" loop fadein 1.0
   scene ruang ukm with Dissolve(2.0)
   $ quick_menu = True
-  
   "Sore hari di ruangan klub, semua anggota sudah pulang dan sibuk dengan urusannya masing-masing. Kana, Tana, serta Pia mulai melakukan latihannya ditemani oleh [mcname]."
   show tana_side at left with dissolve
   tana "Oookeee siap yaa."
@@ -631,11 +636,9 @@ label goodkanaafterorder:
   mcname "{i}Nay… Kamu berjuang banget yaa, mulai terbuka sama orang lain lalu sekarang kamu mau ngedance dan nyanyi… Entah kenapa aku bangga sama kamu.{/i}"
   stop music fadeout 1.0
   $ quick_menu = False
-  #*SKIP TO SCENE*
-  #*BG RUANG KLUB*
   scene black with Dissolve(2.0)
   show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-  play music "audio/BGM_Kampus Sore.mp3" loop fadein 1.0
+  play music "audio/BGM_UKM.ogg" loop fadein 1.0
   scene ruang ukm with Dissolve(2.0)
   $ quick_menu = True
   show tana_side at left with dissolve
@@ -700,12 +703,14 @@ label goodkanaafterorder:
   mcname "Iya kok Nay. Meski aku ga terlalu tau soal vocal, tapi suara kamu enak didenger kok."
   show kana_side at left with dissolve
   kana "Makasih ya, haha."
-  kana "………."
+  kana "...."
   kana "Eh maaf ini aku ditelpon sama orang rumah, aku izin angkat dulu ya."
   hide kana_side with dissolve
   #*Black Screen
+  $ quick_menu = False
   scene black with Dissolve(2.0)
-  #scene kamar mc kota with dissolve
+  scene ruang ukm with dissolve
+  $ quick_menu = True
   mcname "Eh… Piii"
   show pia_side at left with dissolve
   pia "Hmmm kenapa?"
@@ -764,7 +769,7 @@ label goodkanaafterorder:
       #*IF CHOSE*
       #A
       mc_nvl "Gimana kalau di cafe Nay? Cafe yang sering kita kunjungi itu loh."
-      kana_nvl "Uummm aku takut ada orang lain yang denger, aku malu…"
+      kana_nvl "Uummm aku takut ada orang lain yang denger, aku malu..."
       $ quick_menu = False
       nvl clear
       stop music fadeout 1.0
@@ -777,7 +782,7 @@ label goodkanaafterorder:
       #*IF CHOSE*
       #B
       mc_nvl "Warteg gimana Nay??? Sekalian makan siang gitu, hehe."
-      kana_nvl "Yang bener aja…. Aku kan ngajaknya ngobrol, bukan makan. Bodo ah"
+      kana_nvl "Yang bener aja…. Aku kan ngajaknya ngobrol, bukan makan. Bodo ah."
       $ quick_menu = False
       nvl clear
       stop music fadeout 1.0
@@ -889,7 +894,7 @@ label goodkanameetinhome:
   #*BG RUANG KLUB*
   scene black with Dissolve(2.0)
   show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-  play music "audio/BGM_Kampus Sore.mp3" loop fadein 1.0
+  play music "audio/BGM_UKM.ogg" loop fadein 1.0
   scene ruang ukm with Dissolve(2.0)
   $ quick_menu = True
   "Hari baru dimulai, para anggota dan panitia pun cukup sibuk dengan persiapan yang dibutuhkan."
@@ -984,7 +989,7 @@ label goodkanadancepractice:
   #*SKIP TO SCENE*
   #*BG ROOFTOP*
   scene black with Dissolve(2.0)
-  play music "audio/BGM_Kampus.mp3" loop fadein 1.0
+  play music "audio/BGM_Rooftop Siang.ogg" loop fadein 1.0
   scene rooftop with dissolve
   $ quick_menu = True
   mcname "Gimana, bagus kan?"
@@ -1111,7 +1116,7 @@ label goodkanadancepractice:
   #*SKIP TO SCENE*
   #*BG ROOFTOP*
   scene black with Dissolve(2.0)
-  play music "audio/BGM_Kampus.mp3" loop fadein 1.0
+  play music "audio/BGM_Sad Piano.ogg" loop fadein 1.0
   scene rooftop with dissolve
   $ quick_menu = True
   scene black with Dissolve(2.0)
@@ -1172,7 +1177,7 @@ label goodkanadancepractice:
   scene black with Dissolve(2.0)
   show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
   show text "{color=#FFF}H-1 acara{/color}" with Pause(2.0)
-  play music "audio/BGM_Kampus.mp3" loop fadein 1.0
+  play music "audio/BGM_Rooftop Siang.mp3" loop fadein 1.0
   scene rooftop with dissolve
   $ quick_menu = True
   show tana_side at left with dissolve
@@ -1342,7 +1347,7 @@ label goodkanadancepractice:
   scene black with Dissolve(2.0)
   show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
   show text "{color=#FFF}ACARA JEJEPANGAN{/color}" with Pause(2.0)
-  play music "audio/BGM_Kampus.mp3" loop fadein 1.0
+  play music "audio/BGM_UKM.ogg" loop fadein 1.0
   scene ruang ukm with Dissolve(2.0)
   $ quick_menu = True
   "Hari yang dinanti-nantikan telah tiba, acara event jejepangan pun di buka. Banyak Mahasiswa/i pun bersorak sampai terdengar ke ruangan klub jejepangan."

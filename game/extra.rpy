@@ -254,19 +254,19 @@ Wargavi48
 \n
 Director: Nue
 \n
-Programmer: Tomato, Sunny, Exilade
+Programmer: Exilade, Koko Jon, Lima, Shota, Sunny, Tomato
 \n
-Writer: Nue, Aergia, Rizka MD
+Writer: Aergia, Addo, Lenkuass, Nue, Rizka MD
 \n
-Co-Writer: Lenkuas, Tomato, Kodok
+Co-Writer: Kodok, Koko Jon, Tomato, Tebtebo
 \n
 Quiz Maker: Kodok
 \n
-Characters: Lenkuas, Yukisaki, Nue
+Characters: Lenkuass, Nue, Yukisaki
 \n
-CG: Lenkuas
+CG: Lenkuass
 \n
-Backgrounds: Neru, Hann, Tebtebo, Pipigoroo, Awil
+Backgrounds: Awil, BlueSky, Hann, Neru, Pipigoroo, Tebtebo
 \n
 UI Design: Heyysatsu
 \n
@@ -280,37 +280,143 @@ Tana Minigame: Addo
 \n
 OST: HasbiLH, Rizuka Miku, Shiiyato
 \n
-Music & Sound: Koko Jon, Kodok, Black Jacket 
+MV: Galaxy
+\n
+Music & Sound: BlackJckt, Copolatos, Kodok, Koko Jon, Lenkuas, Pipigoroo, Tomato
 \n
 {size=+10}Sponsors{/size}
 \n
-Player 1
+Bangun Rama
 \n
-Player 2
+Galaxy
 \n
-Player 3
+Koko Jon
 \n
-Background 1
+RG Hasan
 \n
-Background 2
-\n 
-Background 3
+Takamina
 \n
-Background 4
+SAKU
 \n
-Background 5
+Risqi Vodoo
 \n
-Background 6
+Sadao Maou
 \n
-Background 7
+RedAnt
 \n
-Background 8
+Kodoknya Cepio
 \n
-Background 9
+Kautsar AS
 \n
-Background 10
+Addo
 \n
-Tulis semua donatur disini
+Sunny
+\n
+Vin
+\n
+Rizuka Miku
+\n
+Hanzfamz
+\n
+Ta Ma
+\n
+Farrel
+\n
+Nakohayou
+\n
+RidDhh
+\n
+Panapajadah
+\n
+AhSae
+\n
+FZetaaa
+\n
+Hmmmm
+\n
+Rin
+\n
+
+
+{size=+10}Background Music{/size}
+\n
+Ad-lib by ZUKISUZUKI
+\n
+A Day Spent at a Cafe by NekoKimagure
+\n
+Answer by ZUKISUZUKI
+\n
+Conjurer by Peritune
+\n
+Cut The Wind by Shuki Yomrua
+\n
+Daybreak by Peritune
+\n
+Gentle Theme 2 by PeriTune
+\n
+Happy End by Kyatto
+\n
+Holiday 2 by peritune
+\n
+I Loved You by Yuuri
+\n
+Koiwazurai by Sari
+\n
+Laid Back 3 by Peritune
+\n
+Let's Party 3 by Peritune
+\n
+Nostalgic by Peritune
+\n
+No Way by Peritune
+\n
+On The Gentle Wind by Shimtone
+\n
+Parade by Sharo
+\n
+Positive 2 by Peritune
+\n
+Positive 4 by Peritune
+\n
+Radiant Sunshine by Peritune
+\n
+Recall by Sharo
+\n
+Resort 4 by Peritune
+\n
+Resort 5 by Peritune
+\n
+RetroRoman Koharu by Peritune
+\n
+Robot by Peritune
+\n
+Scéal Réalta by Peritune
+\n
+School Life by Maniira
+\n
+Sky Blue Canvas by Yoshinori Tanaka
+\n
+Shopping Mall by Imataku
+\n
+Silver Bells at Dawn by Imataku
+\n
+Smoked Quail Egg by Tanaka Tamago
+\n
+Soft Day 2 by Peritune
+\n
+Sugomori no Ritchi by MAKOOTO
+\n
+Toys Factory by Peritune
+\n
+Train by Matsu
+\n
+Violet by Sari
+\n
+White Clover by Yuuki Wataru
+\n
+Wind Feelings by Shimtone
+\n
+Wish 2 by Peritune
 \n
 {size=+10}Special Thanks{/size}
 \n
@@ -348,8 +454,6 @@ Warga Vitural 48
 {size=+10}wargavi48{/size}
 {size=+10}{/size}
 """)
-
-
 
 # This controls the position and speed of your end credits
 transform credits_scroll(t):

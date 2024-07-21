@@ -2811,8 +2811,6 @@ label TerimaTawaranKana:
         "Ambil flyer event jejepangan.":
             mcname "{i}Ehhh tapi udah kelamaan ini, ga enak sama Kana nunggu lama.{/i}"
             "[mcname] pun memilih untuk mengabaikan flyer tersebut, lalu lari agar bisa datang tepat waktu."
-            $ quick_menu = False
             jump truekana
         "Ambil flyer \"Dicari Anggota Klub Jepang\".":
-            $ quick_menu = False
             jump goodkana
