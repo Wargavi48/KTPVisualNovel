@@ -248,6 +248,7 @@ image side freya_side_smug = "Characters/Freya_side_smug.png"
 
 # define side fio character
 image side fio_side = "Characters/Fio_side.png"
+image side fio_side_smile = "Characters/fio_side_smile.png"
 
 # define side feni character
 image side feni_side = "Characters/feni_side.png"
