@@ -2377,11 +2377,12 @@ label goodtanagotofestival:
     tana "Dih, ngeremehin gua."
     tana "Gua tunjukin nih aim dewa gua."
     hide tana_side with dissolve
+    jump goodtanaaftergame
 
 #[PLAY GAME TEMBAK]
 #SKIP
 #Kalau Aimnya jelek? gimana?
-
+label goodtanaaftergame:
     show tana_side at left with dissolve
     tana "Gimana? Kurang jago apa gua."
     hide tana_side with dissolve
@@ -2495,6 +2496,11 @@ label goodtanagotofestival:
     tana "Saksikanlah penampilan dari kami..."
     tana "JKT48V!"
     hide tana_side with dissolve
-    #CG Scene akhir.
-    #Lagu Dreamcatcher
-    #Credit
+    mcname "TANAAAAA SEMANGATTTT!!!"
+    play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+    $ quick_menu = False
+    scene black with dissolve
+    scene konser end with dissolve
+    show text "{color=#FFF}THE END{/color}" with Pause(2.0)
+    with Pause(20.0)
+    jump credits

@@ -165,7 +165,7 @@ label intro:
     hide side mama at left with dissolve
     mcname "I-iya deh."
     "[mcname] kemudian memeluk tubuh Mamah kembali."
-    "Merasakan hal tersebut, Mamah pun memeluk MC dengan lebih erat."
+    "Merasakan hal tersebut, Mamah pun memeluk [mcname] dengan lebih erat."
     "Terasa kehangatan dari tubuh mamah mengalir kepada [mcname]."
     "Hal itu membuat [mcname] ingat kalau dia nanti akan pergi jauh dari keluarganya."
     "Ada sedikit rasa sedih di hati [mcname] ketika memikirkan hal tersebut, namun dia sudah kuat dengan pendiriannya."

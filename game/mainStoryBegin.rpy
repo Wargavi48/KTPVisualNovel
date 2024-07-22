@@ -16,7 +16,7 @@
     show side mama at left with dissolve
     mama "Iya, Mamah juga percaya kok sama pilihan yang adek pilih."
     hide side mama with dissolve
-    "Kedua orang tua [mcname] telihat tersenyum kepada [mcname]."
+    "Mamah dan Papah telihat tersenyum kepada [mcname]."
     mcname "Makasih Pah, Makasih Mah."
     "[mcname] tentu saja merasa senang karena ia bisa mengejar apa yang dia inginkan."
     show side papah at left with dissolve
@@ -37,7 +37,7 @@
     show side papah at left with dissolve 
     papah "Oh iya sudah jam segini."
     hide side papah with dissolve
-    "Jam terlihat menunjukan bahwa waktu sudah larut malam."
+    "Jam terlihat menunjukkan bahwa waktu sudah larut malam."
     show side papah at left with dissolve     
     papah "Kalo begitu istirahat ya Adek, jangan begadang soalnya besok kamu berangkat."
     hide side papah with dissolve
@@ -48,8 +48,8 @@
     mcname "Huffttt, akhirnya mereka pergi."
     mcname "{i}Mungkin aku bakal ngecek barang yang dibawa sekali lagi sebelum tidur, takutnya ada yang kelupaan.{/i}"
     $ quick_menu = False
-    scene white with dissolve
-    scene mc bedroom with dissolve
+    scene white with Dissolve(1.0)
+    scene mc bedroom with Dissolve(1.0)
     $ quick_menu = True
     mcname "{i}Oke, barang-barang sudah lengkap semua.{/i}"
     mcname "Akhirnya udah bisa tidur nih."
@@ -71,7 +71,7 @@
     play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
     scene awan with dissolve
     $ quick_menu = True
-    "Pagi ini [mcname] sudah bersiap di stasiun untuk pergi di Jakarta."
+    "Pagi ini [mcname] sudah bersiap di stasiun untuk pergi ke Jakarta."
     mcname "Oke mah, oke pah aku pergi dulu yak."
     show side mama at left with dissolve
     mama "Adeeek hati-hati di jalan ya!"
@@ -199,9 +199,12 @@ label awalkosan:
         mamah_nvl "{size=-5}Kalau ada masalah, bisa cerita ke mamah dan otou-san.{/size}"
         papah_nvl "{image=sip emoji.png}"
         mc_nvl "{size=-5}Iya Mah, Pah.{/size}"
+        scene kamar mc kota with dissolve
+        $ quick_menu = True
         "Malam pun semakin larut."
         "[mcname] pun memejamkan matanya dengan pikiran penuh harapan akan esok hari."
         stop music fadeout 1.0
+        $ quick_menu = False
         scene black with dissolve
         show text "{color=#FFF}Keesokan Harinya{/color}" with Pause(2.0)
         if route == "kana":

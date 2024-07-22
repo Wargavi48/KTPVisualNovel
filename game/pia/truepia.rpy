@@ -262,9 +262,9 @@ label trueendrooftoppia:
     stop music fadeout 1.0
     play sound "audio/open_door.mp3"
     scene black with dissolve
-    show text "{color=#FFF}DI DALEM KOSAN PIA{/color}" with Pause(2.0)
+    show text "{color=#FFF}DI DALAM KOSAN PIA{/color}" with Pause(2.0)
     # Harusnya BG Kosan Pia
-    scene mc bedroom with dissolve
+    scene kamar pia with dissolve
     play music "audio/BGM_Romance Pia Kamar.mp3" fadein 1.0
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
@@ -315,8 +315,7 @@ label gambardikosanpia:
     $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}4 JAM KEMUDIAN{/color}" with Pause(2.0)
-    # Harusnya Kosan Pia
-    scene mc bedroom with dissolve
+    scene kamar pia with dissolve
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
     $ renpy.block_rollback()
@@ -384,16 +383,15 @@ label gambardikosanpia:
     pia "Ahhhhh!"
     pia "Makasih [mcname]"
     hide pia_side with dissolve
-    mcname "Iyaaa. Yauda sana lanjut makannya"
+    mcname "Iyaaa. Yauda sana lanjut makannya."
     $ quick_menu = False
     scene black with dissolve
-    show text "{color=#FFF}SESUDAH MAKAN{/color}" with Pause(2.0)
-    # Harusnya Kosan Pia
-    scene mc bedroom with dissolve
+    scene kamar pia with dissolve
     show pia at pia_near with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
-    mcname "Udah malem nih. Aku pulang dulu ya."
+    mcname "Uaaaah, kenyang banget."
+    mcname "Ah, udah malem nih. Aku pulang dulu ya."
     show pia_side at left with dissolve
     pia "Yahhh…"
     hide pia_side with dissolve
@@ -406,7 +404,7 @@ label gambardikosanpia:
     $ quick_menu = False
     scene black with dissolve
     show text "{color=#FFF}DI KOSAN [mcname]{/color}" with Pause(2.0)
-    scene mc bedroom with dissolve
+    scene kamar mc kota with dissolve
     play music "audio/BGM_Kosan 2.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = True

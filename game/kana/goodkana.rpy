@@ -1459,7 +1459,11 @@ label goodkanadancepractice:
   tana "Udah sesi perkenalannya, sekarang kita akan tampil."
   tana "Jadi, jangan lepaskan pandangan kalian dan dengarkanlah lagu dari kami!"
   hide tana_side with dissolve
-  play sound "audio/crowd_noise.mp3"
-  "Penonton" "WUOOOH!!!!"
-  #*SKIP TO CG PERFORM*
-  #*CREDIT*
+  mcname "SEMANGAT KANAAA!!!"
+  play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+  $ quick_menu = False
+  scene black with dissolve
+  scene konser end with dissolve
+  show text "{color=#FFF}THE END{/color}" with Pause(2.0)
+  with Pause(20.0)
+  jump credits
