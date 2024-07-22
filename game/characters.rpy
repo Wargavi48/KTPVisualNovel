@@ -146,6 +146,7 @@ default kana_sh = Character("[kana_name]", image="kana_sh", window_background="g
 # Define Character Freya
 default freya_name = "???"
 default freya = Character("[freya_name]", image="Freya")
+default freya_talk = Character("[freya_name]", image="Freya_talk")
 default freya_angrysmile = Character("[freya_name]", image="Freya_angrysmile")
 default freya_annoy = Character("[freya_name]", image="Freya_annoy")
 default freya_awe = Character("[freya_name]", image="Freya_awe")
@@ -238,6 +239,7 @@ image side tana_side = "Characters/Tana_side.png"
 
 # Define side freya character
 image side freya_side = "Characters/Freya_side.png"
+image side freya_side_talk = "Characters/Freya_side_talk.png"
 image side freya_side_angrysmile = "Characters/Freya_side_angrysmile.png"
 image side freya_side_annoy = "Characters/Freya_side_annoy.png"
 image side freya_side_awe = "Characters/Freya_side_awe.png"
