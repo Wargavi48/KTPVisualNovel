@@ -106,6 +106,8 @@ label intro:
 #Show Sprite Papah
     hide mama with dissolve
     show papah at char_placement_right with dissolve
+    show papah:
+        pos (1.04, -1.11) zoom 0.79 
     show mama at char_left with dissolve
     show side mama at left with dissolve
     mama "Ah, Papah."
@@ -129,6 +131,8 @@ label intro:
     "Mereka kemudian saling menggoda satu sama lain, melupakan kehadiran [mcname]."
     mcname "{i}Hadeh, apa yang dilakukan pasangan yang dimabuk cinta ini di kamar anaknya sendiri...{/i}"
     show papah at small_center with dissolve
+    show papah:
+        ypos -126 yzoom 1.0 zoom 1.0 
     show side papah at left with dissolve
     papah "Ehem-"
     papah "Seperti yang sudah kita setujui, adek jadinya bakal kuliah di *Nama kampusnya nanti*"
@@ -136,6 +140,8 @@ label intro:
     hide side papah with dissolve
     hide papah with dissolve
     show papah at char_placement_right with dissolve
+    show papah:
+        pos (1.04, -1.11) zoom 0.79 
     show mama at char_left with dissolve
     show side mama at left with dissolve
     mama "Iya sih, Mamah juga sudah ngabarin temennya Mamah buat di Jakarta nanti."
@@ -171,6 +177,8 @@ label intro:
     scene white with dissolve
     scene mc bedroom with dissolve
     show papah at small_center with dissolve
+    show papah:
+        ypos -126 yzoom 1.0 zoom 1.0 
     show side papah at left with dissolve
     $ quick_menu = True
     papah "Jadi adek, untuk persiapan kuliah nanti sudah siap kan?"
