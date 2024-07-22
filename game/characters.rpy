@@ -254,6 +254,11 @@ image side fio_side_smile = "Characters/fio_side_smile.png"
 
 # define side feni character
 image side feni_side = "Characters/feni_side.png"
+image side feni_side_angry = "Characters/feni_side_angry.png"
+image side feni_side_awe = "Characters/feni_side_awe.png"
+image side feni_side_serious = "Characters/feni_side_serious.png"
+image side feni_side_shock = "Characters/feni_side_shock.png"
+image side feni_side_talk = "Characters/feni_side_talk.png"
 
 # define side flora character
 image side flora_side = "Characters/flora_side.png"
