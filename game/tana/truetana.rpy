@@ -3155,7 +3155,9 @@ label trueendtana:
     tana "Wah, ngeremehin."
     hide tana_side_talk at left with dissolve
     hide tana_talk at tana_near with dissolve
+    jump truetanaaftergame
     #MINIGAME TEMBAK TEMBAKAN"
+label truetanaaftergame:
     show tana_talk at tana_near with dissolve
     show tana_side_talk at left with dissolve
     tana "Gimana? Aku jago kan?"
@@ -3415,11 +3417,51 @@ label trueendtana:
     tana "Gapapa. Aku cuma keingetan beberapa hal doang, hahaha."
     hide tana_side_talk at left with dissolve
     mcname "Apaan tuh?"
-    # show tana_side_talk at left with dissolve
-    # tana "FLASHBACK ETC ETC ETC"
-    # hide tana_side_talk at left with dissolve
+    tana "Di sini banyak banget kejadian. Hahaha. Di awal masuk kuliah, aku kepleset di sini dan kamu coba nyelamatin aku, tapi malah ikut nyemplung. Gimana sih. Hahahaha."
+    mcname "Kamu yang gimana, Ton. Kebanyakan tingkah sih. Nyemplung kok dua kali."
+    tana "Halah. Kamu juga dua kali."
+    mcname "HEH! ITU KAMU YANG NARIK, YA! BISA-BISANYA NYEMPLUNG NGAJAK ORANG LAIN!"
+    tana "HAHAHAHAHA. Sori dah, sori."
+    mcname "Hadeh. Gapapa. Gara-gara itu, jadinya kita baikan lagi."
+    tana "Iya juga. Sebelumnya, kita berantem ya?"
+    mcname "Iya, kocak. Kamu marah-marah terus. Tantrum sana sini."
+    tana "Enak aja. Emang aku anak bayi kok tantrum."
+    mcname "Kelakuannya mirip sih."
+    tana "HIH!"
+    mcname "Aduh! Ga jadi, mana ada bayi kalu nyubit sesakit ini. Kalau BPJS gua nyala, gimana?"
+    tana "Alay bener. Cuma dicubit doang, bukan dipukul babak belur."
+    mcname "Masuk akal, tapi kamu emang lucu kek bayi."
+    tana "A-apa sih!"
+    mcname "Merah dah itu muka. Terima aja kenapa sih?"
+    tana "Yaudah..."
+    mcname "Hahaha. Udah cewek banget ini. Ini mah bukan Tono, tapi Nona."
+    tana "Ini kan gara-gara kamu juga. Aku jadi berani buat nunjukin sisi ga tomboy aku. Kamu ga nge-judge aku pas aku jadi diriku sendiri."
+    mcname "Jelas. Aku kan nerima kamu apa adanya."
+    tana "*Blush*"
+    mcname "Yah. Malah makin merah itu muka, hahaha."
+    "[mcname] pun menjulurkan tangannya dan mulai mengusap-usap kepala Tana."
+    tana "..."
+    mcname "Gapapa nih?"
+    tana "G-gapapa. Asal jangan dijambak aja...."
+    mcname "Oke deh."
+    "[mcname] pun terus mengelus kepala Tana."
+    tana "[mcname]..."
+    mcname "Hmm?"
+    tana "Temenin aku sampai lulus, ya?"
+    "[mcname] seketika berhenti mengelus kepala Tana dan menarik tangannya kembali lalu ia menatap mata Tana."
+    mcname "Ton..."
+    mcname "Aman aja. Aku bakal selalu di sampingmu, Ton..."
+    "Sambil melihat ke arah langit, Tana berkata.."
+    tana "[mcname]..."
+    tana "Sebenarnya aku su-"
+    #SFX Kembang Api
+    "Suara kembang api pun mulai terdengar dan langit pun dipenuhi dengan cahaya indah."
+    mcname "*Memandangi Tana sambil tersenyum*"
+    "Suara mereka pun kalah dengan bisingnya suara kembang api malam itu."
+    "[mcname] dan Tana tertawa bahagia sambil memandangi langit malam saat itu."
+    "Malam itu…"
+    "Menjadi malam yang tidak akan terlupakan untuk Tana dan [mcname]."
     hide tana at tana_near with dissolve
-
     stop music fadeout 1.0
     scene black with dissolve
     show text "{color=#FFF}THE END{/color}" with Pause(2.0)

@@ -336,8 +336,14 @@ Hmmmm
 \n
 Rin
 \n
-
-
+{size=+10}Asset Background{/size}
+\n
+FREEPIK
+\n
+{size=+10}Sound Effect{/size}
+\n
+PIXABAY
+\n
 {size=+10}Background Music{/size}
 \n
 Ad-lib by ZUKISUZUKI

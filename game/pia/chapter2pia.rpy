@@ -60,8 +60,10 @@ label chapter2piabegin:
     "Mahasiswa/i" "Hahahahahahahaha."
     hide pia_sad with dissolve
     "Semua maba berpindah posisi berhadapan dengan pasangan yang sudah dipilih oleh Bu Dosen."
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
+    play music "BGM_Kelas.mp3" fadein 1.0
     scene kelas with dissolve
     show pia_talk at pia_near with dissolve
     show pia_side_talk at left with dissolve
@@ -91,13 +93,13 @@ label chapter2piabegin:
     hide pia_smile with dissolve
     "Mereka pun bergantian setiap 15 menit untuk saling menggambar pasangannya tersebut."
     $ quick_menu = False
+    stop music fadeout 1.0
     scene black with dissolve
+    play music "audio/BGM_Romance Pia Kamar.mp3" fadein 1.0
     scene kelas with dissolve
     show pia at pia_near with dissolve
     $ quick_menu = True
     mcname "*Sedang menggoreskan kuas di atas canvasnya sambil memandang Pia.*"
-    stop music fadeout 1.0
-    play music "audio/BGM_Romance Pia Kamar.mp3" fadein 1.0
     mcname "*Dalam hati*"
     mcname "{i}Waduh. Makin diliat, makin imut dan manis ya Pia Pia ini.{/i}"
     mcname "*Sambil melirik dan melihat wajah samping Pia*"
@@ -192,14 +194,16 @@ label chapter2piaaftergame:
     scene black with dissolve
     scene lorong with dissolve
     $ quick_menu = True
-    "Setelah berkeliling"
+    "Setelah berkeliling..."
     show kana_talk at kana_near_left_2 with dissolve
     show freya at freya_near_right with dissolve
     show fio at fio_near with dissolve
+    show kana at kana_near_left_2 with dissolve
     show kana_side at left with dissolve
     kana "YANG MULIA PIARAAN!!!"
-    show kana at kana_near_left_2 with dissolve
     hide kana_side with dissolve
+    hide freya
+    show freya at freya_near_right
     show freya_side at left with dissolve
     freya "Kaget, Kana! Apa sih tiba-tiba teriak gitu."
     hide freya_side with dissolve
@@ -255,14 +259,15 @@ label chapter2piaaftergame:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    show text "{color=#FFF}DITEMPAT LAIN{/color}" with Pause(2.0)
+    show text "{color=#FFF}DI TEMPAT LAIN{/color}" with Pause(2.0)
     scene kantin with dissolve
     play music "audio/bgm_kantin.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = True 
-    "(Suara notif berkali kali)"
+    play sound "ReceiveText.ogg" loop
     show pia_talk at pia_near with dissolve
     show pia_side_talk at left with dissolve
+    stop sound
     pia "Weh [mcname]!!! Cepio ngirim foto dia selfie sama gambar kita!!!!"
     show pia at pia_near with dissolve
     hide pia_side_talk with dissolve
@@ -352,13 +357,15 @@ label chapter2piaaftergame:
     scene kelas with dissolve 
     show dosen_talk at dosen_center with dissolve
     show dosen_side at left with dissolve
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     $ renpy.block_rollback()
     $ quick_menu = True
     dosen "--jadi, persiapkan diri kalian. Mulai besok masuk minggu UTS, belajar dan asah skill kalian. Istirahat yang cukup. Semoga hasilnya memuaskan, ya."
     "Mahasiswa/i" "Baik buuuu~"
     $ quick_menu = False
+    stop music fadeout 1.0
     scene black with dissolve
+    play music "BGM_Kelas.mp3" fadein 1.0
     scene kelas with dissolve
     show pia_talk at pia_near with dissolve
     show pia_side_talk at left with dissolve
@@ -603,10 +610,10 @@ label chapter2piaaftergame:
             $ renpy.block_rollback()
             $ quick_menu = True
             mcname "Apapun pilihanmu, Pia, aku akan tetap support kamu. Mau apapun itu."
-            show pia_side_shy at left with dissolve
+            show pia_side_shock at left with dissolve
             pia "Aww [mcname]..."
             show pia at pia_near with dissolve
-            hide pia_side_shy with dissolve
+            hide pia_side_shock with dissolve
             show pia_side_talk at left with dissolve
             pia "Okeh!! Support aku, ya."
             pia "Menjadi..."
