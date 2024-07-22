@@ -37,6 +37,8 @@ define freya_near = Transform(zoom=1.3,xalign=-0.5,yalign=0.08)
 define freya_near_right = Transform(zoom=1.3,xalign=-1.0,yalign=0.08)
 define dosen_center = Transform(zoom=0.9,xalign=0.5,yalign=0.1)
 define dosen_left = Transform(zoom=0.9,xalign=-0.5,yalign=0.1)
+define rg_hasan_left = Transform(zoom=0.5,xalign=0.0,yalign=-0.9,xanchor=0.08)
+define bang_rama_right = Transform(zoom=0.5,xalign=1.0,yalign=-0.9, xanchor=0.94)
 
 
 
