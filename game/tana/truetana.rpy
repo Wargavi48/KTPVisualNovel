@@ -3400,7 +3400,7 @@ label trueendtana:
     hide tana_talk at tana_near
     show tana at tana_near
     mcname "Oke, kotor dikit ga ngaruh."
-    hide tana at tana_near
+    hide tana at tana_near with dissolve
     "Tana dan [mcname] pun duduk lesehan di pinggir sawah sambil menunggu Hanabi dimulai."
     show tana_side_talk at left with dissolve
     tana "[mcname].."
