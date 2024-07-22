@@ -162,13 +162,13 @@ label chapter2tana:
     $ quick_menu=True
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     "Tidak lama kemudian, dosen pun masuk ke dalam kelas dan waktu mata kuliah pun dimulai."
-    show dosen at dosen_center with dissolve
+    show dosen_talk at dosen_center with dissolve
     show dosen_side at left with dissolve
     dosen "Selamat pagi, semuanya!"
     dosen "Kelas akan saya mulaim ya."
     dosen "Hari ini kita akan membahas tentang..."
     hide dosen_side at left with dissolve
-    hide dosen at dosen_center with dissolve
+    hide dosen_talk at dosen_center with dissolve
 
     $ quick_menu=False
     scene awan with dissolve
@@ -242,7 +242,7 @@ label chapter2tana:
     $ quick_menu=True
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
     "Tak lama kemudian, Bu Dosen pun memasuki kelas."
-    show dosen at dosen_center with dissolve
+    show dosen_talk at dosen_center with dissolve
     show dosen_side at left with dissolve
     dosen "Selamat pagi, semuanya!"
     hide dosen_side at left with dissolve
@@ -250,44 +250,66 @@ label chapter2tana:
     show dosen_side at left with dissolve
     dosen "Udah pada sarapan belum?"
     hide dosen_side at left with dissolve
-    hide dosen at dosen_center with dissolve
+    hide dosen_talk at dosen_center with dissolve
     show rg_hasan_talk at char_center with dissolve
     "RG Hasan" "Belum nih, Bu. Laper, huhu."
     hide rg_hasan_talk at char_center with dissolve
     show bang_rama_talk at char_center with dissolve
     "Bang Rama" "Udah tadi ngemil {i}Pramog{/i}, Bu."
     hide bang_rama_talk at char_center with dissolve
-    show dosen at dosen_center with dissolve
+    show dosen_talk at dosen_center with dissolve
     show dosen_side at left with dissolve
     dosen "Ada-ada aja kalian ini, hahaha."
     dosen "Yaudah. Kalau ada yang bawa bekal, dimakan aja gapapa."
     dosen "Saya cuma mau menyampaikan beberapa hal terkait materi praktikum yang pertama."
     hide dosen_side at left with dissolve
+    hide dosen_talk at dosen_center
+    show dosen at dosen_center
     "Mahasiswa/i" "Baik, Bu."
     "Sebagian Mahasiswa/i yang membawa bekal pun akhirnya mengeluarkan bekal untuk dimakan sembari mendengarkan penjelasan dari Bu Dosen."
+    hide dosen at dosen_center
+    show dosen_talk at dosen_center
     show dosen_side at left with dissolve
     dosen "Baik, untuk praktikum minggu depan, masing-masing Mahasiswa dan Mahasiswi harus menyiapkan sampel tanah."
     hide dosen_side at left with dissolve
+    hide dosen_talk at dosen_center
+    show dosen at dosen_center
     mcname "Tanah? Untuk apa kita mengumpulkan tanah, Bu?"
+    hide dosen at dosen_center
+    show dosen_talk at dosen_center
     show dosen_side at left with dissolve
     dosen "Iya, tanah."
     dosen "Nanti sampel tanah yang telah kalian dapatkan, akan diuji untuk mengetahui index kesuburan dan apa saja kandungan di tanah tersebut."
     dosen "Jadi, kalian nanti akan belajar bagaimana cara menganalisis tanah."
     hide dosen_side at left with dissolve
+    hide dosen_talk at dosen_center
+    show dosen at dosen_center
     mcname "Nanti kita ngambil sampel tanahnya di mana, Bu? Apakah tempatnya bebas?"
+    hide dosen at dosen_center
+    show dosen_talk at dosen_center
     show dosen_side at left with dissolve
     dosen "Sampel tanah bisa diambil dari sawah di kampus, ya. Kalian sudah ke sana, kan?"
     hide dosen_side at left with dissolve
+    hide dosen_talk at dosen_center
+    show dosen at dosen_center
     "Mahasiswa/i" "Sudah, Bu!"
+    hide dosen at dosen_center
+    show dosen_talk at dosen_center
     show dosen_side at left with dissolve
     dosen "Nah, kalian ambil dari sana aja."
     dosen "Nanti data yang kalian peroleh bisa dibandingkan dengan data-data milik kakak tingkat kalian untuk mengetahui apakah ada perbedaan antara data yang kalian peroleh dengan data sebelumnya."
     hide dosen_side at left with dissolve
+    hide dosen_talk at dosen_center
+    show dosen at dosen_center
     "Mahasiswa/i" "Baik, Bu!"
     mcname "Bu, akses ke sawah apakah bebas?"
+    hide dosen at dosen_center
+    show dosen_talk at dosen_center
     show dosen_side at left with dissolve
     dosen "Bebas. Seinget saya, akses pagar sawah diatur oleh kakak tingkatmu yang saya lupa namanya."
     hide dosen_side at left with dissolve
+    hide dosen_talk at dosen_center
+    show dosen at dosen_center
     "Sebelum [mcname!c] sempat menjawab kembali, tiba-tiba Tana yang masih kesal dengan kejadian kemarin pun nyeletuk."
     hide dosen at dosen_center with dissolve
     show dosen at dosen_left with dissolve
@@ -300,9 +322,13 @@ label chapter2tana:
     show tana_angry at tana_right
     "Mendengar hal tersebut, [mcname!c] pun jadi ikut kesal."
     mcname "Bu, mau tanya lagi. kalau tanahnya warna merah, boleh ga?"
+    hide dosen at dosen_left
+    show dosen_talk at dosen_left
     show dosen_side at left with dissolve
     dosen "Tanah merah? Memangnya di sawah kampus ada tanah yang warnanya seperti itu?"
     hide dosen_side at left with dissolve
+    hide dosen_talk at dosen_left
+    show dosen at dosen_left
     mcname "Ada, Bu. Kemarin ada pas tour ke sawah."
     mcname "Tanahnya merah dan putih, terus ada coklat-coklatnya gitu."
     hide dosen at dosen_left with dissolve
@@ -331,16 +357,25 @@ label chapter2tana:
     tana "Apa sih, kocak! Berisik deh!"
     hide tana_side_angry_2 at left with dissolve
     hide tana_angry_2 at tana_right
+    hide dosen at dosen_left
+    show dosen_talk at dosen_left
     show tana_angry at tana_right
     show dosen_side at left with dissolve
     dosen "Hahahaha. Ada-ada saja. Oke, kalau begitu, kalian jangan lupa untuk mengambil sampel, ya."
     dosen "Kalian bebas mau ambil sampelnya kapan, yang penting disimpan di wadah tertutup dan dibawa pada saat praktikum."
     hide dosen_side at left with dissolve
+    hide dosen_talk at dosen_left
+    show dosen at dosen_left
     "Mahasiswa/i" "Baik, Bu!"
+    hide dosen at dosen_left
+    show dosen_talk at dosen_left
     show dosen_side at left with dissolve
     dosen "Ya udah, itu saja dari saya. Kelas sudah selesai. Terima kasih. Saya duluan, ya."
     hide dosen_side at left with dissolve
+    hide dosen_talk at dosen_left
+    show dosen at dosen_left
     "Mahasiswa/i" "Terima kasih, Bu!"
+    hide dosen at dosen_left with dissolve
     hide tana_angry at tana_right with dissolve
     hide dosen at dosen_left with dissolve
     "Setelah Bu Dosen meninggalkan kelas, seluruh Mahasiswa/i satu per satu pergi meninggalkan kelas karena sudah tidak ada mata kuliah lagi hari ini."
@@ -633,59 +668,110 @@ label chapter2tana:
     $ quick_menu=False
     scene black with dissolve
     scene lorong with dissolve
-    show feni at feni_right with dissolve
+    show feni_talk at feni_right with dissolve
     show flora at flora_left with dissolve
     show feni_side at left with dissolve
     $ quick_menu=True
     feni "Dipanggil malah celingak celinguk."
     hide feni_side at left with dissolve
+    hide feni_talk at feni_right
+    hide flora at flora_left
+    show feni at feni_right
+    show flora_talk at flora_left
     show flora_side at left with dissolve
     flora "Parahh."
     hide flora_side at left with dissolve
+    hide flora_talk at flora_left
+    show flora at flora_left
     mcname "Ah. Kak Feni sama Kak Flora? Ada apa, kak?"
+    hide feni at feni_right
+    show feni_talk at feni_right
     show feni_side at left with dissolve
     feni "Si Tana mana?"
     hide feni_side at left with dissolve
+    hide feni_talk at feni_right
+    show feni at feni_right
     mcname "Tana?"
     mcname "{i}Oh iya. Gua belum bilang makasih ke Tana udah izinin ke dosen.{/i}"
+    hide flora at flora_left
+    show flora_talk at flora_left
     show flora_side at left with dissolve
     flora "Nih anak diajak ngomong malah ngelamun."
     hide flora_side at left with dissolve
+    hide flora_talk at flora_left
+    show flora at flora_left
     mcname "Maaf maaf. Aku ga liat Si Tana, Kak. Dia ngambil mata kuliah umum di kelas lain."
+    hide feni at feni_right
+    show feni_talk at feni_right
     show feni_side at left with dissolve
     feni "Yahh. Padahal kita mau ngasih sesuatu ke dia."
     hide feni_side at left with dissolve
+    hide feni_talk at feni_right
+    show feni at feni_right
     mcname "Ngasih apaan tuh?"
+    hide flora at flora_left
+    show flora_talk at flora_left
     show flora_side at left with dissolve
     flora "Ini."
     hide flora_side at left with dissolve
+    hide flora_talk at flora_left
+    show flora at flora_left
     "Flora memberikan selembar flyer ke [mcname!c]."
     mcname "Hmm? Lomba dance?"
+    hide flora at flora_left
+    show flora_talk at flora_left
     show flora_side at left with dissolve
     flora "Iya! Kita liat video Tana yang dance itu."
     hide flora_side at left with dissolve
+    hide flora_talk at flora_left
+    hide feni_talk at feni_right
+    hide feni at feni_right
+    show flora at flora_left
+    show feni_talk at feni_right
     show feni_side at left with dissolve
     feni "Terus aku sama Flo mikir kalo Tana bisa nih ikut lomba dance. Ya ga, Flo?"
     hide feni_side at left with dissolve
+    hide flora at flora_left
+    hide feni_talk at feni_right
+    show feni at feni_right
+    show flora_talk at flora_left
     show flora_side at left with dissolve
     flora "Betul banget. Kamu juga setuju kan, [mcname!c]?"
     hide flora_side at left with dissolve
+    hide flora_talk at flora_left
+    show flora at flora_left
     mcname "{i}Walawe. Ternyata videonya udah kesebar sampe angkatan atas.{/i}"
     mcname "Setuju aja sih, tapi Si Tana kayaknya ga mau ikut deh."
+    hide feni at feni_right
+    show feni_talk at feni_right
     show feni_side at left with dissolve
     feni "Lah? Emangnya kenapa?"
     hide feni_side at left with dissolve
+    hide feni_talk at feni_right
+    show feni at feni_right
     mcname "Dia aja marah-marah pas videonya kesebar..."
+    hide flora at flora_left
+    show flora_talk at flora_left
     show flora_side at left with dissolve
     flora "Yah. Gimana dong, Kak mpen? Sayang banget kalo Tana ga ikut."
     hide flora_side at left with dissolve
+    hide flora_talk at flora_left
+    hide feni at feni_right
+    show flora at flora_left
+    show feni_talk at feni_right
     show feni_side at left with dissolve
     feni "Hmmm yaudah. Kamu bawa aja deh flyernya. Nanti tolong kasih ke Tana, ya!"
     hide feni_side at left with dissolve
+    hide feni_talk at feni_right
+    show feni at feni_right
     mcname "Ehh??!"
+    hide flora at flora_left
+    show flora_talk at flora_left 
     show flora_side at left with dissolve
     flora "Hahahah. Tolong ya, [mcname!c]. Arigatou! Mata ne~"
     hide flora_side at left with dissolve
+    hide flora_talk at flora_left with dissolve
+    hide feni at feni_right with dissolve
     "Feni dan Flora pergi meninggalkan [mcname!c] di lorong."
     mcname "Lah? Kok jadi gua yang disuruh? Hadeehh."
     mcname "Dah lah. Gua harus cepet-cepet balik. Keburu mendung."

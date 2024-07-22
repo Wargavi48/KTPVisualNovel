@@ -1,32 +1,74 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/pia/chapter1pia.rpy", line 878, in script
-    show fio at char_ner_left with dissolve
-  File "game/pia/chapter1pia.rpy", line 878, in <module>
-    show fio at char_ner_left with dissolve
-NameError: name 'char_ner_left' is not defined
+  File "renpy/common/00action_file.rpy", line 498, in __call__
+    renpy.load(fn)
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/pia/chapter1pia.rpy", line 878, in script
-    show fio at char_ner_left with dissolve
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1113, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1072, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1072, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/pia/chapter1pia.rpy", line 878, in <module>
-    show fio at char_ner_left with dissolve
-NameError: name 'char_ner_left' is not defined
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\core.py", line 3208, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\transition.py", line 53, in event
+    return self.new_widget.event(ev, x, y, st) # E1101
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\screen.py", line 793, in event
+    rv = self.child.event(ev, x, y, st)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 1430, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 288, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 1430, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 288, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 1202, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\layout.py", line 288, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\behavior.py", line 1174, in event
+    return handle_click(self.clicked)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\behavior.py", line 1095, in handle_click
+    rv = run(action)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\display\behavior.py", line 395, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 498, in __call__
+    renpy.load(fn)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\loadsave.py", line 829, in load
+    log.unfreeze(roots, label="_after_load")
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\rollback.py", line 1130, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\rollback.py", line 925, in rollback
+    self.load_failed()
+  File "D:\Programs\renpy-8.2.3-sdk\renpy\rollback.py", line 843, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
-Windows-10-10.0.19045 AMD64
-Ren'Py 8.2.0.24012702
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.3.24061702
 WGV:Dreamcatcher 
-Sat Jul 20 17:35:51 2024
+Mon Jul 22 09:28:44 2024
