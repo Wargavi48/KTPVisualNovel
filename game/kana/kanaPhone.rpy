@@ -1,6 +1,7 @@
 label phoneChat:
     $ renpy.block_rollback()
     $ mahasiswa_name = "Galaxy"
+    $ kana_name = "Kana"
     nvl clear
     play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
     scene bedroom with dissolve
@@ -9,7 +10,7 @@ label phoneChat:
     freya_nvl "{size=-5}Mau yang udah kita tentuin sebelumnya?{/size}"
     kana_nvl "{size=-5}Kalau dari aku sih, setuju{/size}"
     kana_nvl "{image=setuju.jpg}"
-    mcname "{i}Hm…? Lucu juga meme yang dipake Kana ini{/i}"
+    mcname "{i}Hm…? Lucu juga meme yang dipake Kana ini...{/i}"
     freya_nvl "{size=-5}Kita mau kerja kelompok kapan, nih?{/size}"
     freya_nvl "{size=-5}Ini kan buat minggu depan.{/size}"
     freya_nvl "{size=-5}Jadi, kita punya waktu kurang lebih 5 harian.{/size}"
@@ -41,8 +42,8 @@ label phoneChat:
             donatur_nvl "{size=-5}Boleh, gw sih ngikut aja.{/size}"
             scene bedroom with Dissolve(2.0)
             "Obrolan mereka tidak terasa sudah lama."
-            " Malam pun menjadi semakin larut."
-            "[mcname] pun terlelap."
+            "Malam pun menjadi semakin larut."
+            "[mcname] pun terlelap..."
             stop music fadeout 1.0
             jump chapter1kana3
         "Ga bisa kerja kelompok":

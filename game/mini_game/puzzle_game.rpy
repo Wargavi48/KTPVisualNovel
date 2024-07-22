@@ -119,7 +119,7 @@ label puzzle_start:
     show text "{color=#FFF}MINI GAME TIME{/color}" with Pause(2.0)
     scene mini game with dissolve
     stop sound fadeout 1.0
-    "[mcname], Freya, dan Kana mulai mewawancarai pedagang di sekitar. Selesaikan Puzzle untuk menyelesaikan wawancara"
+    "[mcname], Freya, dan Kana mulai mewawancarai pedagang di sekitar. Selesaikan Puzzle untuk menyelesaikan wawancara."
     play music "audio/minigame_kana.mp3" fadein 2.0
     $ setup_puzzle()
     call screen reassemble_puzzle with dissolve
