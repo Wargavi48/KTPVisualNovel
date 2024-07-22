@@ -262,6 +262,11 @@ image side feni_side_talk = "Characters/feni_side_talk.png"
 
 # define side flora character
 image side flora_side = "Characters/flora_side.png"
+image side flora_side_canggung = "Characters/Flora_side_canggung.png"
+image side flora_side_shock = "Characters/Flora_side_shock.png"
+image side flora_side_smile_talk = "Characters/Flora_side_smile_talk.png"
+image side flora_side_smile = "Characters/Flora_side_smile.png"
+image side flora_side_talk = "Characters/Flora_side_talk.png"
 
 image side dosen_side = "Characters/Dosen_side.png"
 
