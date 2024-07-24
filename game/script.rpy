@@ -43,8 +43,11 @@ define dosen_left = Transform(zoom=0.9,xalign=-0.5,yalign=0.1)
 define rg_hasan_left = Transform(zoom=0.5,xalign=0.0,yalign=-0.9,xanchor=0.08)
 define bang_rama_right = Transform(zoom=0.5,xalign=1.0,yalign=-0.9, xanchor=0.94)
 define FeniKanaTana_Feni = Transform(zoom=1.3,xalign=2.3,yalign=0.08)
-define FeniKanaTana_Kana = Transform(zoom=1.3,xalign=0.8,yalign=0.08)
-define FeniKanaTana_Tana = Transform(zoom=1.3,xalign=-1.8,yalign=0.08)
+define FeniKanaTana_Kana = Transform(zoom=1.3,xalign=0.8,yalign=0.0)
+define FeniKanaTana_Tana = Transform(zoom=1.3,xalign=-1.8,yalign=0.0)
+define KTP_Kana = Transform(zoom=1.3,xalign=2.5,yalign=0.0)
+define KTP_Pia = Transform(zoom=1.3,xalign=0.8,yalign=-0.01)
+define KTP_Tana = Transform(zoom=1.3,xalign=-1.8,yalign=0.0)
 
 
 

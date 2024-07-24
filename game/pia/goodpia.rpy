@@ -535,21 +535,21 @@ label goodpiaafterquiz:
     pia "Geeeeh apalah meameo."
     hide pia_side_talk with dissolve
     hide pia_talk with dissolve
-    show tana at tana_right with dissolve
-    show pia at pia_near with dissolve
-    show kana_talk at kana_near_left_2 with dissolve
+    show tana at KTP_Tana with dissolve
+    show pia at KTP_Pia with dissolve
+    show kana_talk at KTP_Kana with dissolve
     show kana_side_talk at left with dissolve
     kana "Meameo!!!"
     kana "Join club jepang yuk!"
-    show kana at kana_near_left_2 
+    show kana at KTP_Kana 
     hide kana_talk
     hide kana_side_talk
-    show pia_talk at pia_near
+    show pia_talk at KTP_Pia
     show pia_side_talk at left
     with dissolve
     pia "Heeeeeeeee…"
     pia "Tunggu..."
-    show pia_silent at pia_near
+    show pia_silent at KTP_Pia
     hide pia_talk
     show pia_side_silent at left
     hide pia_side_talk
@@ -561,9 +561,8 @@ label goodpiaafterquiz:
     pia "SIBUK!"
     pia "Ketiga."
     pia "Kalian siapa?"
-    hide pia_silent 
     hide pia_side_silent
-    show tana_talk at tana_right
+    show tana_talk at KTP_Tana
     show tana_side_talk at left
     with dissolve
     tana "Naya, Naya…."
@@ -574,39 +573,57 @@ label goodpiaafterquiz:
     tana "Kita suka gambar kamu, siapa tau tertarik kan."
     hide tana_talk
     hide tana_side_talk
-    show pia_talk at pia_near
+    show pia_talk at KTP_Pia
+    hide pia_silent
     show pia_side_talk at left
     with dissolve
     pia "Oh, panggil aku Pia aja."
     pia "Makasih undangannya, tapi kayaknya enggak dulu deh. Belum tertarik join club."
     hide pia_talk
     hide pia_side_talk
-    show kana_talk at kana_near_left_2 
+    show kana_talk at KTP_Kana 
     show kana_side_talk at left
     with dissolve
     kana "Yaaah, oke deh. Belum tertarik kan. Bukan tidak tertarik!"
     kana "Oke. Besok aku akan cari kamu lagi buat join"
+    show tana:
+        subpixel True xpos -1.87 
     hide kana_side_talk
     hide kana_talk
     hide kana
     with dissolve
     show pia:
-        subpixel True pos (0.21, -0.06) 
+        subpixel True xpos 0.64 
+    show tana_talk:
+        subpixel True xpos -1.87 
+    hide kana_side_talk
+    hide kana_talk
+    hide kana
+    with dissolve
     show tana_side_talk at left
-    show tana_talk at tana_right
+    show tana_talk at KTP_Tana
+    show tana_talk:
+        subpixel True xpos -1.87 
     with dissolve
     tana "Lah udah nyerah ngomongnya gitu doang…"
     tana "Pergi dulu ya [mcname], Pia. Maap suka aneh emang Kana Kana itu"
     hide tana_talk 
     hide tana
-    hide tana_side_talk 
-    show pia:
-        subpixel True xpos 0.47
+    hide tana_side_talk
+    hide pia
+    with dissolve
+    show pia_silent at pia_near
+    show pia_side_silent at left
+    with dissolve
+    pia "Hadeeh..."
+    show pia_talk at pia_near
+    hide pia_silent
+    show pia_side_talk at left
+    hide pia_side_silent
     with dissolve
     show pia_talk at pia_near
     show pia_side_talk at left
     with dissolve
-    pia "Hadeeh..."
     pia "Yaudah, aku juga pulang dulu [mcname]. Babayy~"
     hide pia_side_talk
     hide pia_talk
@@ -717,38 +734,35 @@ label goodpiaafterquiz:
     $ quick_menu = True
     kana "Haaaah, pake strategi apa lagi ya buat ngajak Pia join ke sini?"
     hide kana_side_confused with dissolve
-    show feni_awe at feni_right
+    show feni_awe at FeniKanaTana_Feni
     show feni_side_awe at left
     with dissolve
     feni "Emang sekeren itu ya desainnya?"
+    show feni at FeniKanaTana_Feni
+    show kana_talk at FeniKanaTana_Kana
+    show kana_side_talk at left
     hide feni_awe
     hide feni_side_awe
-    show kana_talk at kana_near_left_2
-    hide kana_confused
-    show kana_side_talk at left
     with dissolve
     kana "IYA KAK! SEKEREN ITU"
-    hide kana
-    hide kana_talk
+    show tana at FeniKanaTana_Tana with dissolve
+    show feni at FeniKanaTana_Feni with dissolve
+    show kana at FeniKanaTana_Kana with dissolve
     hide kana_side_talk
-    hide feni
-    show tana at tana_right_2 with dissolve
-    show feni at feni_left with dissolve
-    show kana at kana_near with dissolve
-    show tana_talk at tana_right_2
+    show tana_talk at FeniKanaTana_Tana
     show tana_side_talk at left
     with dissolve
     tana "Alah, bias aja itu mah Kak"
     hide tana_talk
     hide tana_side_talk
     with dissolve
-    show kana_cry at kana_near
+    show kana_cry at FeniKanaTana_Kana
     show kana_side_cry at left
     with dissolve
     kana "Aaah Tono maaah"
     hide kana_side_cry
     with dissolve
-    show feni_talk at feni_left
+    show feni_talk at FeniKanaTana_Feni
     show feni_side_talk at left
     with dissolve
     feni "Eeh udah udah jangan berantem ih."
@@ -758,7 +772,7 @@ label goodpiaafterquiz:
     hide kana_cry
     with dissolve
     "*suara orang mengetuk pintu*"
-    show feni_talk at feni_left 
+    show feni_talk at FeniKanaTana_Feni 
     show feni_side_talk at left
     with dissolve
     feni "Nay, bukain atuh pintunya. Kamu yang paling deket pintu"
