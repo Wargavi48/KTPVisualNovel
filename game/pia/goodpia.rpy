@@ -126,6 +126,7 @@
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
+    scene kelas with Dissolve(1.0)
     # # $ renpy.block_rollback()
     $ quick_menu = True
     "Suasana kelas sepi, semua sibuk belajar dan menghapal. Ya, hari ini ada ujian tertulis mata kuliah xxx."
@@ -708,8 +709,9 @@ label goodpiaafterquiz:
     scene black with dissolve
     play music "BGM_UKM.ogg" fadein 1.0
     scene ruang ukm with Dissolve(1.0)
-    show kana_confused at kana_near_left_2
-    show feni at feni_right
+    show kana_confused at FeniKanaTana_Kana
+    show tana at FeniKanaTana_Tana
+    show feni at FeniKanaTana_Feni
     show kana_side_confused at left
     with dissolve
     $ quick_menu = True
@@ -753,6 +755,7 @@ label goodpiaafterquiz:
     feni "Kalo emang gak mau ya, mau gimana atuh."
     hide feni_talk
     hide feni_side_talk
+    hide kana_cry
     with dissolve
     "*suara orang mengetuk pintu*"
     show feni_talk at feni_left 
@@ -768,12 +771,13 @@ label goodpiaafterquiz:
     $ quick_menu=False
     scene black with Dissolve(1.0)
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
+    scene ruang ukm with Dissolve(1.0)
     show kana_shy at kana_near
     hide kana_cry
     show kana_side_shy at left
     with dissolve
     $ quick_menu = True
-    kana "Hah [mcname]??? Ngapain"
+    kana "Hah [mcname]??? Ngapain."
     hide kana_side_shy with dissolve
     mcname "Halo."
     mcname "J-jadi gini…"
@@ -1022,7 +1026,8 @@ label goodpiaafterquiz:
     scene awan sore with Dissolve(1.0)
     $ quick_menu=True
     "Sore itu..."
-    scene rooftop with dissolve
+    $ quick_menu = False
+    scene rooftop sore with Dissolve(2.0)
     show pia at pia_near with dissolve
     # $ renpy.block_rollback()
     $ quick_menu = True
@@ -1108,7 +1113,7 @@ label goodpiaafterquiz:
     hide pia_side_talk
     with dissolve
     mcname "Nanti aku temenin kok, santai aja."
-    show pia_talk at pia-near
+    show pia_talk at pia_near
     show pia_side_talk at left
     with dissolve
     pia "Makasih ya, [mcname]..."
