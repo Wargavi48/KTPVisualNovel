@@ -283,9 +283,15 @@ label chapter2tana:
     show dosen_side_talk at left 
     with dissolve
     dosen "Selamat pagi, semuanya!"
-    hide dosen_side_talk at left with dissolve
+    hide dosen_side_talk at left
+    hide dosen_talk at dosen_center
+    show dosen at dosen_center
+    with dissolve
     "Mahasiswa/i" "Selamat pagi, Bu!"
-    show dosen_side_talk at left with dissolve
+    hide dosen at dosen_center
+    show dosen_talk at dosen_center
+    show dosen_side_talk at left 
+    with dissolve
     dosen "Udah pada sarapan belum?"
     hide dosen_side_talk at left
     hide dosen_talk at dosen_center
@@ -547,7 +553,7 @@ label chapter2tana:
     scene awan with dissolve
     show text "{size=+10}{color=#fff}KEESOKAN HARINYA{/color}{/size}" with Pause(2.0)
     play music "audio/bgm_harvestmoon_spring.mp3" fadein 0.5
-    scene mc bedroom with dissolve
+    scene kamar mc kota with dissolve
     play music "audio/backsound_kamar.mp3" fadein 0.5
     # $ renpy.block_rollback()
     $ quick_menu=True

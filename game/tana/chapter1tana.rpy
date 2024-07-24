@@ -440,10 +440,10 @@ label tanamcdaftarulang:
     with dissolve
     mcname "Lah? Lu kan malah udah kepisah duluan dari kelompok sebelum kita ketemu"
     hide tana_angry at tana_right
-    show tana at tana_right
-    hide flora at flora_left
+    hide flora at tana_right
+    show tana_confused at tana_right
     show flora_talk at flora_left
-    show flora_side_talk at left with dissolve
+    show flora_side_talk at left
     with dissolve
     flora "Dieeeem!"
     flora "Kalian tuh udah ngerusak jadwal aku sore ini tau gak?"
@@ -453,7 +453,7 @@ label tanamcdaftarulang:
     show flora at flora_left
     with dissolve
     mcname "Maaf, kak, tadi kita niatnya mau nyusul kelompok, tapi malah nyasar. Gara-gara Tana, nih"
-    hide tana at tana_right
+    hide tana_confused at tana_right
     show tana_angry_2 at tana_right
     show tana_side_angry_2 at left
     with dissolve
@@ -467,28 +467,28 @@ label tanamcdaftarulang:
     show tana at tana_right
     hide flora at flora_left
     show flora_talk at flora_left
-    show flora_side_talk at left with dissolve
+    show flora_side_talk at left
     with dissolve
     flora "Malah saling nyalahin"
     flora "Aduh, harusnya sore ini itu aku beres-beres ruangan klub, tapi gak jadi gara-gara harus nyariin kalian"
     flora "Kasian banget Kak Feni tadi aku tinggal sendirian"
-    hide flora_side_talk at left with dissolve
+    hide flora_side_talk at left
     hide tana at tana_right
     hide flora_talk at flora_left
     show flora at flora_left
     show tana_confused at tana_right
-    show tana_side_confused at left with dissolve
+    show tana_side_confused at left
     with dissolve
     tana "Maaf ya, kak…"
-    hide tana_side_confused at left with dissolve
+    hide tana_side_confused at left
     hide tana_confused at tana_right
     show tana at tana_right
     hide flora at flora_left
     show flora_talk at flora_left
-    show flora_side_talk at left with dissolve
+    show flora_side_talk at left
     with dissolve
     flora "Maaf doang nih?"
-    hide flora_side_talk at left with dissolve
+    hide flora_side_talk at left
     hide flora_talk at flora_left
     show flora at flora_left
     with dissolve
@@ -498,17 +498,17 @@ label tanamcdaftarulang:
     show tana_side_talk at left
     with dissolve
     tana "Iyaa kak, kita bantuin deh…"
-    hide tana_side_talk at left with dissolve
+    hide tana_side_talk at left
     hide tana_talk at tana_right
     hide flora at flora_left
     show tana at tana_right
     show flora_talk at flora_left
-    show flora_side_talk at left with dissolve
+    show flora_side_talk at left
     with dissolve
     flora "Nah, gitu dong. Yaudah ayo ikut sini."
-    hide flora_side_talk at left with dissolve
-    hide flora_talk at flora_left with dissolve
-    hide tana at tana_right with dissolve
+    hide flora_side_talk at left
+    hide flora_talk at flora_left
+    hide tana at tana_right
     with dissolve
     "[mcname], Tana, dan Flora pun pergi menuju ruang klub yang dimaksud oleh Flora"
     stop music fadeout 1.0
@@ -539,9 +539,9 @@ label tanamcdaftarulang:
     hide tana at tana_near
     hide flora_talk at flora_left
     hide feni at feni_right
-    show tana_confused at tana_near
     show feni at feni_right
     show flora at flora_left
+    show tana_confused at tana_near
     show tana_side_confused at left
     with dissolve
     "{size=-5}[mcname] & Tana{/size}" "Maaf, kak"
@@ -567,9 +567,9 @@ label tanamcdaftarulang:
     hide tana at tana_near
     hide flora_talk at flora_left
     hide feni at feni_right
-    show tana_talk at tana_near
     show flora at flora_left
     show feni at feni_right
+    show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
     "{size=-5}[mcname] & Tana{/size}" "Iya kak"
@@ -577,8 +577,8 @@ label tanamcdaftarulang:
     hide tana_talk at tana_near
     hide flora at flora_left
     hide feni at feni_right
-    show tana at tana_near
     show flora at flora_left
+    show tana at tana_near
     show feni_talk at feni_right
     show feni_side_talk at left
     with dissolve
@@ -590,9 +590,9 @@ label tanamcdaftarulang:
     hide tana at tana_near
     hide flora at flora_left
     hide feni_talk at feni_right
-    show tana_talk at tana_near
     show flora at flora_left
     show feni at feni_right
+    show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
     "[mcname] & Tana" "Iya, kak, izin bantu beresin ruangan klubnya, ya"
@@ -644,22 +644,14 @@ label tanamcdaftarulang:
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-    tana "Aku aku aku!"
     mcname "Ngapain gua ikut beginian?"
     hide tana at tana_near
     show tana_angry_2 at tana_near
     show tana_side_angry_2 at left
     with dissolve
-    tana "Aku aku aku!"
     tana "Yaudah ikut aja kenapa sih? Temenin gua napa"
     hide tana_side_angry_2 at left
     hide tana_angry_2 at tana_near
-    show tana_talk at tana_near
-    show tana_side_talk at left
-    with dissolve
-    tana "Aku aku aku!"
-    hide tana_talk at tana_near
-    hide tana_side_talk at left
     show tana at tana_near
     with dissolve
     mcname "Iya iya"
@@ -667,7 +659,6 @@ label tanamcdaftarulang:
     show feni_talk at feni_right
     show feni_side_talk at left
     with dissolve
-    tana "Aku aku aku!"
     feni "[mcname], kamu jangan iya iya aja. Kamu beneran mau ikut atau nggak?"
     feni "Emang kamu tau soal jejepangan?"
     hide feni_side_talk at left
@@ -717,7 +708,7 @@ label tanamcdaftarulang:
             show flora at flora_left
             with dissolve
             mcname "Iya dong. Bagus, kan?"
-            hide flora at flora_left with dissolve
+            hide flora at flora_left
         "-Bola Naga X\n-Seni Pedang Offline\n-Siapa namamu?\n-Akademi Pahlawan\n-Keluarga Mata-Mata":
             show tana at tana_near
             show flora at flora_left
@@ -1103,6 +1094,7 @@ label tanamcdaftarulang:
     hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
+    with dissolve
     mcname "Itu udah pada ngantri buat menu promo. Ayok buruan."
     hide tana at tana_near with dissolve
     $ quick_menu = False
@@ -1566,6 +1558,7 @@ label tanamcdaftarulang:
     hide tana_side_talk at left
     hide tana_talk at tana_right
     show tana at tana_right
+    with dissolve
     mcname "Ayoook"
     hide flora at flora_left
     hide tana at tana_right
@@ -2039,7 +2032,9 @@ label tanamcdaftarulang:
     show tana_side at left
     with dissolve
     tana ".........."
-    hide tana at tana_near with dissolve
+    hide tana_side at left
+    hide tana at tana_near 
+    with dissolve
     "Tana yang fokus mengayunkan tangan dan kakinya, tampak tidak menyadari keberadaan [mcname]."
     mcname "Hmmm dia ga jawab, keknya lagi fokus. Harusnya dibolehin lah ya."
     $ quick_menu = False
@@ -2306,7 +2301,7 @@ label tanamcdaftarulang:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    scene mc bedroom with dissolve
+    scene kamar mc kota with dissolve
     play music "audio/BGM_Kosan 1.mp3" fadein 1.0
     # $ renpy.block_rollback()
     $ quick_menu = True
