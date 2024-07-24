@@ -94,7 +94,7 @@ label chapter1kana1:
     "Perkataan sambutan dari Rektor dan jajaran Dosen membuat [mcname] dan beberapa Mahasiswa/i lain merasa bosan."
     "Seakan mendukung perkataan [mcname], beberapa mahasiswa/i pun ada yang bermain HP, mengobrol, atau bahkan bercanda."
     "{size=-5}Mahasiswa A{/size}" "Eh bosenin bet dah, template banget ini ucapan selamat datangnya tuh, bikin ngatuk ya ga?"
-    "{size=-5}Mahasiswa B{/size}" "Iyaa njirr, bener banget dah mending kita login yuk P MABAR MABAR..."
+    "{size=-5}Mahasiswa B{/size}" "Iyaa, bener banget dah mending kita login yuk P MABAR MABAR..."
     "{size=-5}Mahasiswa C{/size}" "Gas kali ya login."
     "[mcname] pun tidak sengaja mengalihkan pandangannya kepada perempuan tadi yang juga tertawa kecil karena mendengar obrolan mahasiswa tersebut."
     mcname "{i}Astaga, aku tidak menyangka ternyata ada perempuan semanis dia.{i}"
