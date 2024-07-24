@@ -1066,7 +1066,7 @@ label chapter2kanaA:
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     play music "audio/BGM_Kampus.mp3" fadein 1.0
     scene depan kampus with dissolve
-    $ renpy.block_rollback()
+    #$ renpy.block_rollback()
     $ quick_menu = True
     play sound "audio/crowd_noise.mp3" fadein 1.0
     "Suasana jalan di kampus lebih terasa lebih ramai daripada biasanya."

@@ -67,15 +67,15 @@ label intro:
     $ mama_name = Character("Mamah")
     $ papah_name = Character("Papah")
 
-    play music "audio/BGM_Rumah Awal.mp3" fadein 1.0
-    scene awan malam with Dissolve(3.0)
+    play music "BGM_Rumah Awal.ogg" fadein 1.0
+    scene awan malam with Dissolve(2.0)
     $ quick_menu = True
     "Bintang terlihat bersinar terang di langit pada malam ini."
     "Membuat malam hari terasa lebih terang dari biasanya."
     "Sudah lama berlalu semenjak hari kelulusan, sekarang ini [mcname] sedang mempersiapkan diri untuk memasuki jenjang perkuliahan."
     $ quick_menu = False
     scene black with dissolve
-    scene mc bedroom with dissolve
+    scene kamar mc kota with Dissolve(1.0)
     $ quick_menu = True
     mcname "Huft."
     mcname "{i}Sepertinya persiapan untuk di sana nanti sudah lengkap semua.{/i}"
@@ -85,7 +85,7 @@ label intro:
     "Terdengar suara Mamah memanggil dari luar kamar."
     mcname "Iyaa Mahh, ini baru selesai."
     mama "Mamah masuk ya."
-    play sound "audio/open_door.mp3"
+    play sound "audio/open_door.mp3" volume 3.0
     show mama at small_center with dissolve
     show side mama at left with dissolve
     mama "Sudah siap semua kan barangnya? Gak ada yang kelupaan?"
@@ -176,9 +176,6 @@ label intro:
     show mama at small_center with dissolve
     "Akhirnya setelah beberapa menit, Mamah pun melepaskan pelukannya sambil tersenyum."
     hide mama with dissolve
-    $ quick_menu = False
-    scene white with dissolve
-    scene mc bedroom with dissolve
     show papah at small_center with dissolve
     show papah:
         ypos -126 yzoom 1.0 zoom 1.0 

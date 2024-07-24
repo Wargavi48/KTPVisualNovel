@@ -48,31 +48,36 @@
     mcname "Huffttt, akhirnya mereka pergi."
     mcname "{i}Mungkin aku bakal ngecek barang yang dibawa sekali lagi sebelum tidur, takutnya ada yang kelupaan.{/i}"
     $ quick_menu = False
-    scene white with Dissolve(1.0)
-    scene mc bedroom with Dissolve(1.0)
+    scene black with Dissolve(1.0)
+    pause (1.0)
+    scene kamar mc kota with Dissolve(1.0)
     $ quick_menu = True
     mcname "{i}Oke, barang-barang sudah lengkap semua.{/i}"
     mcname "Akhirnya udah bisa tidur nih."
     "[mcname] pun kemudian merebahkan dirinya di kasur."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
-    scene awan malam with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     mcname "{i}Besok bakal jadi hari terakhirku di sini ya... {/i}"
     mcname "{i}Nanti bakal jauh dari keluarga dan juga teman-temanku di sini...{/i}"
     mcname "{i}Apalagi sama PC dan beberapa koleksi figureku...{/i}"
     "[mcname] mulai memikirkan pilihannya kembali."
     mcname "{i}Ah! Overthinking juga gak baik, mending langsung tidur aja dah.{/i}"
-    "[mcname] pun memejamkan matanya dan secara mengejutkan langsung tertidur pulas."
+    "[mcname] pun memejamkan matanya dan langsung tertidur pulas."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
-    scene awan with dissolve
+    scene black with Dissolve(1.0)
+    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    play music "BGM_Pagi Siang.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
+    ##$ renpy.block_rollback()
     $ quick_menu = True
     "Pagi ini [mcname] sudah bersiap di stasiun untuk pergi ke Jakarta."
-    mcname "Oke mah, oke pah aku pergi dulu yak."
+    mcname "Oke Mah, Pah, aku pergi dulu yak."
     show side mama at left with dissolve
     mama "Adeeek hati-hati di jalan ya!"
     hide side mama with dissolve
@@ -82,10 +87,11 @@
     hide side papah with dissolve
     mcname "Siaaap."
     stop music fadeout 1.0
-    $ renpy.block_rollback()
+    stop sound fadeout 1.0
+    ##$ renpy.block_rollback()
     $ quick_menu = False
     scene black with dissolve
-    show text "{color=#FFF}Chapter I{/color}" with Pause(1.5)
+    show text "{color=#FFF}CHAPTER I{/color}" with Pause(1.5)
     scene black with dissolve
     $ quick_menu = True
     "Hari baru sudah dimulai."
@@ -93,14 +99,11 @@
     "Di sini aku memilih jurusan [jurusan]."
     "Dan hari ini adalah hari di mana aku datang ke Jakarta!"
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    # scene depan kampus with dissolve
-    # nanti diubah jadi scene monas
-    scene monas temporary with dissolve
-    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" loop fadein 1.0
-    play sound "audio/crowd_noise.mp3" loop fadein 1.0
-    play sound "audio/train.mp3" fadeout 1.0
-    play sound "audio/station_chime.mp3" fadeout 1.0
+    scene black with dissolve
+    play music "audio/BGM_Pagi Siang.ogg" loop fadein 1.0
+    scene monas temporary with Dissolve(1.0)
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
+    play audio "audio/station_chime.mp3" fadeout 1.0 volume (2.0)
     $ quick_menu = True
     mcname "Wahhh, jadi ini namanya kota Jakarta."
     mcname "Buuu, anakmu akhirnya kuliah di sini."
@@ -112,11 +115,13 @@
     mcname "Barang-barang dari rumah harusnya mau datang di kosan!"
     mcname "Tapi masih penasaran sama kota Jakarta deh..."
     stop sound fadeout 1.0
-    $ quick_menu = False
     menu:
+        "Yang [mcname] lakukan..."
         "Langsung ke kosan abis itu rapikan barang.":
-            $ renpy.block_rollback()
-            scene kamar mc kota with Dissolve(2.0)
+            ##$ renpy.block_rollback()
+            $ quick_menu = False
+            scene black with Dissolve(1.0)
+            scene kamar mc kota with Dissolve(1.0)
             $ quick_menu = True
             mcname "Jadi ini ya kamarku selama 4 tahun ke depan."
             mcname "Salam kenal ya kamarku moga-moga kamu gak ada penunggunya hahaha..."
@@ -124,15 +129,15 @@
             mcname "Hmmm... Banyak juga ya."
             "Sambil melihat tumpukan barang-barang yang dibawa, [mcname] mengatakan hal tersebut dengan nada rendah."
             "Butuh waktu beberapa jam untuk menyelesaikan semuanya dan mengatur tata letak yang ia rasa nyaman."
-            $ quick_menu = False
-            stop music fadeout 1.0
             jump awalkosan
         "Muter-muter Jakarta dan habisin waktu sampai malam.":
-            $ renpy.block_rollback()
+            ##$ renpy.block_rollback()
             $ quick_menu = True
-            "[mcname] malah lupa waktu dan akhirnya lupa kalau harus beresin barang."
+            "[mcname] memilih untuk mengelilingi Jakarta dan menghabiskan waktu sampai malam."
+            "Jadinya malah lupa waktu dan akhirnya lupa kalau harus beresin barang."
             "Akhirnya [mcname] malah ikut ke pergi ke pergaulan bebas."
             $ quick_menu = False
+            stop music fadeout 1.0
             scene black  with dissolve
             show text "{color=#FFF}LU NGAPAIN IKUTAN PERGAULAN BEBAS INGET TUH ORANG TUA DI DESA!!{/color}" with Pause(2.0)
             scene black  with dissolve
@@ -141,20 +146,28 @@
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Nyari cafe biar skena.":
-            $ renpy.block_rollback()
+            ##$ renpy.block_rollback()
             $ quick_menu = True
             "[mcname] ikut ke dalam cirle orang orang kaya yang haus akan atensi di dunia maya, dan akhirnya malah ngutang sana sini karena kurang atensi."
             $ quick_menu = False
+            stop music fadeout 1.0
             scene black  with dissolve
             show text "{color=#FFF}ORTU LU DAPET KABAR KALAU LU MASUK PENJARA KARENA PENIPUAN UANG.{/color}" with Pause(2.0)
-            show text "{color=#FFF}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            scene black  with dissolve
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            scene black  with dissolve
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "Ke warteg buat makan.":
-            $ renpy.block_rollback()
+            #$ renpy.block_rollback()
             $ quick_menu = True
             mcname "Aduhhh perutku keroncongan. Makan dulu kali yah, habis itu baru ke kos. Dari berangkat belum makan soalnya."
             "[mcname] pun memilih untuk pergi mencari makan ke rumah makan padang yang berada di dekat kosnya."
+            $ quick_menu = False
+            scene black with Dissolve(1.0)
+            pause (1.0)
+            scene monas temporary with Dissolve(1.0)
+            $ quick_menu = True
             "Dia bertemu dengan beberapa pedagang yang ramah dan sopan, membuat [mcname] semakin nyaman berada di lingkungan kosnya tersebut."
             mcname "Mas mau makan mas."
             "Pedagang" "Mau pesen apa?"
@@ -173,15 +186,21 @@
 
 
 label awalkosan:
-        $ renpy.block_rollback()
-        scene black with dissolve
-        scene kamar mc kota with Dissolve(2.0)
+        #$ renpy.block_rollback()
+        stop music fadeout 1.0
+        $ quick_menu = False
+        scene black with Dissolve(1.0)
+        play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+        scene awan malam with Dissolve(1.0)
         $ quick_menu = True
-        play music "audio/BGM_Kosan 1.mp3" fadein 1.0
         "Tak terasa hari pun sudah gelap."
-        "Setelah merapikan barang, [mcname] ingin beristirahat tapi ingat akan sesuatu."
+        $ quick_menu = False
+        scene black with Dissolve (1.0)
+        scene kamar mc kota with Dissolve(1.0)
+        $ quick_menu = True
         mcname "Okeee barang-barang sudah selesai."
         mcname "Sekarang saatnya tidur."
+        "Setelah merapikan barang, [mcname] ingin beristirahat tapi ingat akan sesuatu."
         mcname "Eh, lupa. Belum ngabarin orang tua."
         $ quick_menu = False
         mc_nvl "{size=-5}Mah! Pah! Aku sudah sampai Jakarta. Sudah beres-beres barang juga.{/size}"
@@ -206,7 +225,7 @@ label awalkosan:
         stop music fadeout 1.0
         $ quick_menu = False
         scene black with dissolve
-        show text "{color=#FFF}Keesokan Harinya{/color}" with Pause(2.0)
+        show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
         if route == "kana":
             jump chapter1kana1
         elif route == "tana":
