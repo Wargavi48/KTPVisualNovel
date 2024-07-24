@@ -98,7 +98,7 @@ label chapter2piabegin:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Romance Pia Kamar.mp3" fadein 1.0
+    play music "audio/BGM_Kamar Pia.ogg" fadein 1.0
     scene kelas with Dissolve(1.0)
     show pia at pia_near with dissolve
     $ quick_menu = True
@@ -319,7 +319,7 @@ label chapter2piaaftergame:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play music "audio/BGM_Lorong.ogg" fadein 1.0
-    scene lorong with Dissolve(1.5)
+    scene lorong with Dissolve(1.0)
     show pia_talk at pia_near_right
     show fio at char_near_left
     show pia_side_talk at left
@@ -438,7 +438,7 @@ label chapter2piaaftergame:
     mcname "{i}Hmmm... Ke dulu rooftop, ah. Nyari inspirasi gambar.{/i}"
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with Dissolve
+    scene black with Dissolve(1.0)
     $ quick_menu = True
     mcname "Eh, udah ada orang di rooftop ya…"
     mcname "Gak jadi ke rooftop deh."
@@ -446,7 +446,7 @@ label chapter2piaaftergame:
     $ quick_menu = False
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
+    play music "audio/BGM_Rooftop Romance Pia.ogg" fadein 1.0
     scene rooftop with Dissolve(1.0)
     #$ renpy.block_rollback()
     $ quick_menu = True

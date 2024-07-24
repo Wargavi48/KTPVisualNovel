@@ -212,10 +212,10 @@ label chapter1piajalancepat:
     mcname "{i}Oke, saatnya masuk aula.{/i}"
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
-    scene kelas with Dissolve(1.5)
+    scene kelas with Dissolve(1.0)
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     ##$ renpy.block_rollback()
     $ quick_menu = True
@@ -227,8 +227,8 @@ label chapter1piajalancepat:
     mcname "{i}Ah sepertinya itu tidak ada orang.{/i}"
     "[mcname] pun berjalan menuju tempat tersebut."
     $ quick_menu = False
-    scene black with Dissolve(0.5)
-    scene kelas with Dissolve(1.5)
+    scene black with Dissolve(1.0)
+    scene kelas with Dissolve(1.0)
     $ quick_menu = True
     "Sesampainya di sana, tidak terlihat orang di barisan tersebut."
     mcname "Hmmm... tumben di bagian belakang kosong, padahal biasanya orang pada seneng di belakang."
@@ -239,9 +239,9 @@ label chapter1piajalancepat:
     stop music fadeout 1.0
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     $ quick_menu = False
-    scene black with dissolve
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Dosen.ogg" fadein 1.0
-    scene kelas with Dissolve(1.5)
+    scene kelas with Dissolve(1.0)
     $ quick_menu = True
     "Dekan DKV" "Selamat datang Mahasiswa baru yang memasuki Jekiti University…"
     $ quick_menu = False
@@ -547,7 +547,7 @@ label chapter1piajalancepat:
 
 label chapter1piajalantanpapio:
     scene black with Dissolve (1.0)
-    play music "BGM_Kosan 1.ogg" fadein 1.0
+    play music "BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True   
     "Malamnya, [mcname] mengatur waktu untuk pergi berdua dengan Pia."
@@ -624,7 +624,7 @@ label chapter1piajalantanpapio:
     scene black with Dissolve(0.3)
     play sound "audio/tabrakan.mp3" volume (4.0)
     show text "{color=#FFF}BRUKKKKK{/color}" with Pause(1.5)
-    scene mall temp
+    scene mall temp with Dissolve(1.0)
     show pia_date_sad at pia_near with dissolve
     hide pia_angry
     show pia_side_sad at left with dissolve
@@ -1025,28 +1025,27 @@ label chapter1piamakanmall:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume(1.5)
     scene kelas with Dissolve(1.0)
     # #$ renpy.block_rollback()
     $ quick_menu = True
     "Mata kuliah nirmana dimulai, [mcname] dan Pia pun menggunakan peralatan yang dibelinya kemarin."
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}3 JAM KEMUDIAN, SETELAH SELESAI SESI PERKULIAHAN{/color}" with Pause(2.0)
-    scene kelas with dissolve
+    scene black with Dissolve(1.0)
+    scene kelas with Dissolve(1.0)
     show pia_talk at pia_near with dissolve
     show pia_side_talk at left with dissolve
     # #$ renpy.block_rollback()
     $ quick_menu = True
     pia "[mcname!u]!!!!!! MUMET GUEH! AYO KELUAR. REFRESHING KE MANA KEK, MUTERIN KAMPUS."
-    pia "SORE MASIH ADA KELAS LAGI, JADI GA BISA JAUH-JAUH."
+    pia "NANTI MASIH ADA KELAS LAGI, JADI GA BISA JAUH-JAUH."
     show pia at pia_near with dissolve
     hide pia_side_talk with dissolve
     mcname "Lesgo, sama. Pusing weh."
-    $ quick_menu = False
     stop music fadeout 1.0
+    $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Lorong.ogg" fadein 1.0
+    play music "BGM_Lorong.ogg" fadein 1.0
     scene lorong with Dissolve(1.0)
     #$ renpy.block_rollback()
     $ quick_menu = True
@@ -1054,14 +1053,14 @@ label chapter1piamakanmall:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Sawah Siang.ogg" fadein 1.0
+    play music "BGM_Sawah.ogg" fadein 1.0
     scene sawah with Dissolve(1.0)
     #$ renpy.block_rollback()
     $ quick_menu = True
     "Sampai akhirnya mereka masuk ke kawasan fakultas pertanian dan kehutanan."
     "Saat berjalan berdua..."
     # BGM STOP
-    pia "Hmmm... Hmmmmm..\n*bergumam*"
+    pia "Hmmm... Hmmmmm..\n*Bergumam*"
     mcname "*Berjalan di sebelah Pia sambil sesekali memejamkan mata menikmati suara Pia yang sedang humming*"
     # Harusnya ada humming migikata
     show pia at pia_near with dissolve
@@ -1097,12 +1096,12 @@ label chapter1piamakanmall:
     pia "*Mulai bernyanyi lagu yang sedang didengarkan.*"
     mcname "{i}Woaaaa suara Pia bagus juga ternyata.{/i}"
     $ quick_menu = False
-    scene black with dissolve
+    scene black with Dissolve(1.0)
     #$ renpy.block_rollback()
     $ quick_menu = True
     "[mcname] memejamkan mata menikmati alunan suara Pia yang sedang bernyanyi."
     $ quick_menu = False
-    scene sawah with dissolve
+    scene sawah with Dissolve(1.0)
     show pia at pia_near with dissolve
     #$ renpy.block_rollback()
     $ quick_menu = True
@@ -1146,6 +1145,7 @@ label chapter1piamakanmall:
     pia "*Blush*"
     $ quick_menu = False
     scene black with Dissolve(1.0)
+    pause (1.0)
     scene sawah sore with Dissolve(1.0)
     $ quick_menu = True
     "Tak terasa, waktu pun sudah beranjak sore."
