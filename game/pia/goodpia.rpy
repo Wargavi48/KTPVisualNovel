@@ -588,6 +588,10 @@ label goodpiaafterquiz:
     kana "Oke. Besok aku akan cari kamu lagi buat join"
     show tana:
         subpixel True xpos -1.87 
+    hide kana_side_talk
+    hide kana_talk
+    hide kana
+    with dissolve
     show pia:
         subpixel True xpos 0.64 
     show tana_talk:
@@ -1208,7 +1212,7 @@ label goodpiaafterquiz:
     menu:
         mcname "Hmmmm..."
         "Gapapa, mau gimana lagi. cuma ada di sini kan tempatnya":
-            ###$ renpy.block_rollback()
+            #$ renpy.block_rollback()
             $ quick_menu = True
             mcname "Gapapa, mau gimana lagi. Cuma ada disini kan tempatnya."
             show tana_side_talk at left with dissolve
@@ -1242,7 +1246,7 @@ label goodpiaafterquiz:
             scene black with dissolve
             show text "{color=#FFF}BEBERAPA MINGGU KEMUDIAN{/color}" with Pause(2.0)
             scene ruang ukm with dissolve
-            ###$ renpy.block_rollback()
+            # $ renpy.block_rollback()
             $ quick_menu = True
             "Pia memutuskan untuk tidak ikut club jepang dan tidak beraktivitas menjadi idol lagi."
             $ quick_menu = False
@@ -1393,7 +1397,7 @@ label goodendpiarooftop:
     show text "{color=#FFF}KEESOKAN HARINYA DI ROOFTOP{/color}" with Pause(2.0)
     play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0
     scene rooftop with Dissolve(1.0)
-    ###$ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname], Takamina, dan KTp sedang berkumpul di rooftop."
     "Takamina" "Ayooo~ Ayoo~ Kurang luwes Kana, ahaha."
@@ -1561,7 +1565,7 @@ label goodendpiarooftop:
     scene black with Dissolve(1.0)
     pause (1.0)
     scene rooftop sore with Dissolve(1.0)
-    ###$ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     mcname "*Datang dengan nafas terengah-engah*"
     mcname "P-piaaa….huft huft..."
@@ -1618,7 +1622,7 @@ label goodendpiarooftop:
         "Ikut nemenin Pia ke kosan":
             jump goodendpiakosan
         "[mcname] pun menyerahkan semuanya ke Cepio":
-            ###$ renpy.block_rollback()
+            # $ renpy.block_rollback()
             $ quick_menu = True
             mcname "Cepio, aku tinggal Pia ke Cepio ya. aku ga bisa ikut"
             show fio_side at left with dissolve
@@ -1652,7 +1656,7 @@ label goodendpiarooftop:
             jump credits
 
 label goodendpiakosan:
-    ###$ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname] yang ditemani Fiony pun akhirnya mengantar Pia kembali ke kosan."
     $ quick_menu = False
@@ -1710,7 +1714,7 @@ label goodendpiakosan:
     show text "{color=#FFF}HARI H MATSURI{/color}" with Pause(2.0)
     play music "audio/BGM_UKM.ogg" fadein 1.0
     scene ruang ukm with dissolve
-    ###$ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     mcname "Duh Pia sama Cepio mana ini? Belum dateng."
     show kana at kana_near_left_2 with dissolve
@@ -1766,7 +1770,7 @@ label goodendpiakosan:
             jump credits
 
 label goodendpiamatsuri:
-    ###$ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     mcname "Jam 7 malem teh"
     show feni_side at left with dissolve
@@ -2000,7 +2004,7 @@ label goodendpiamatsuri:
             jump goodendpia
 
 label goodendpia:
-    ###$ renpy.block_rollback()
+    # $ renpy.block_rollback()
     stop music fadeout 1.0
     $ quick_menu = True
     stop sound fadeout 3.0
