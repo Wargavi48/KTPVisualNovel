@@ -1583,9 +1583,7 @@ label goodendpiarooftop:
     hide pia_side_talk with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kampus Sore.ogg" fadein 1.0
-    scene depan kampus with Dissolve(1.0)
-#HARUSNYA KAMPUS SORE
+    scene kampus sore with Dissolve(1.0)
     ###$ renpy.block_rollback()
     $ quick_menu = True
     mcname "Mana ya? Katanya udah deket."
@@ -1609,8 +1607,7 @@ label goodendpiarooftop:
             jump goodendpiakosan
         "[mcname] pun menyerahkan semuanya ke Cepio":
             # $ renpy.block_rollback()
-            $ quick_menu = True
-            mcname "Cepio, aku tinggal Pia ke Cepio ya. aku ga bisa ikut"
+            mcname "Cepio, aku tinggal Pia ke Cepio ya. Aku ga bisa ikut."
             show fio_side at left with dissolve
             fio "Loh kamu gak ikut nemenin Pia dulu?"
             hide fio_side with dissolve
@@ -1875,7 +1872,7 @@ label goodendpiamatsuri:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play music "BGM_Matsuri Malam.ogg" fadein (1.0)
-    scene konser end with Dissolve(1.0)
+    scene stage with Dissolve(1.0)
     $ quick_menu = True
     "[mcname] menunggu di depan stage bersama Feni, Freya, Fiony, dan Takamina."
     mcname "Huhuhu, jadi aku yang deg-degan juga."
@@ -1894,7 +1891,7 @@ label goodendpiamatsuri:
     "MC" "JKT48V!!!!!!"
     play sound "SFX - Cheering.ogg" fadein 0.5
     "Penonton" "UWOOOOOOOOOGGGGH!"
-    "KTp masuk ke stage"
+#SPRITE KTP MUNCUL
     stop sound fadeout 1.5
     "Membawakan lagu pertama"
     mcname "*Melihat raut wajah Pia*"
@@ -1912,8 +1909,8 @@ label goodendpiamatsuri:
     hide fio_side with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    scene konser end with Dissolve(1.0)
     play sound "SFX - Cheering.ogg" fadein 0.5
+    scene stage with Dissolve(1.0)
     ###$ renpy.block_rollback()
     show tana_side_talk at left with dissolve
     $ quick_menu = True
@@ -2010,6 +2007,7 @@ label goodendpia:
     pia "Dengarkanlah lagu terakhir dari kami, xxxx."
     hide pia_side_talk with dissolve
     mcname "PIAAAAAAAAAAAAA!!!! SEMANGAAAAAAAAAAT!"
+    scene konser end with Dissolve(1.0)
     stop sound fadeout 1.5
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     $ quick_menu = False
