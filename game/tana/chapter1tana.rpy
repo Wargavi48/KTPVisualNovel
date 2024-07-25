@@ -2,13 +2,13 @@ define tana_route = ""
 
 
 label chapter1tana:
-    scene awan with dissolve
+    scene awan with Dissolve(1.0)
     "Walaupun ini sudah pertengahan tahun, namun Matahari secara terik menerangi Jakarta.Dan saat melihat ke atas langit, hanya langit biru lah yang terlihat. [mcname] mendatangi gedung kampus untuk melakukan daftar ulang."
-    scene depan kampus with dissolve
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
-    # $ renpy.block_rollback()
+    play music "audio/BGM_Kampus.ogg" fadein 1.0
+    scene depan kampus with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
-    mcname "Akhirnya sampe juga di kampus, gede banget ya, gedungnya juga tinggi - tinggi"
+    mcname "Akhirnya sampe juga di kampus, gede banget ya, gedungnya juga tinggi-tinggi"
     "Pada saat ke kampus, [mcname] melihat seorang gadis sedang dikerumunin 2 cowok. Terlihat agak gelisah."
     $ quick_menu = False
     scene awal tana with dissolve
@@ -26,8 +26,8 @@ label chapter1tana:
     "Cowok 1" "Yeuuu party pooper lu!"
     "Cowok 2" "Dah bubar bubar"
     $ quick_menu = False
-    scene black with dissolve
-    scene depan kampus with dissolve
+    scene black with Dissolve(1.0)
+    scene depan kampus with Dissolve(1.0)
     $ quick_menu = True
     "2 cowok itu pun pergi"
     mcname "{i}Noooo baru ketemu orang di sini malah malu-maluin aaaaa{/i}"
@@ -49,77 +49,90 @@ label chapter1tana:
     mcname "Iya.. Maaf ya"
     hide tana at tana_near with dissolve
     mcname "{i}Malu banget huhu pengen pulang{/i}"
-    $ quick_menu = False
     menu:
         "Respon kamu..."
         "Aaaa malu banget pulang ke kosan aja deh":
-            mcname "Aaaa malu banget pulang ke kosan aja deh"
+            mcname "Aaaa malu banget pulang ke kosan aja deh."
+            $ quick_menu = False
             stop music fadeout 1.0
             scene black with dissolve
             show text "{color=#FFF}Kamu ga jadi kuliah karena telat daftar ulang{/color}" with Pause(2.0)
-            show text "{color=#FF0000}BAD END{/color}"
+            scene black with dissolve
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Cuek lah gak bakal ketemu lagi sama orang-orang tadi, lanjut daftar ulang":
-            # $ renpy.block_rollback()
+            # #$ renpy.block_rollback()
             $ quick_menu = True
             mcname "Cuek lah gak bakal ketemu lagi sama orang-orang tadi, lanjut daftar ulang"
             mcname "Ok lanjut daftar ulang abis itu ke kelas perkenalan, semoga gak ada kejadian memalukan lagi. Wish me luck..."
+            "Setelah melakukan daftar ulang, [mcname] pun pulang ke kosannya untuk beristirahat."
             $ quick_menu = False
             jump tanamcdaftarulang
         "Ke kantin dulu deh cari es teh":
             mcname "Ke kantin dulu deh cari es teh"
+            $ quick_menu = False
             stop music fadeout 1.0
             scene black with dissolve
             show text "{color=#FFF}Kamu ga jadi kuliah karena telat daftar ulang{/color}" with Pause(2.0)
-            show text "{color=#FF0000}BAD END{/color}"
+            scene black with dissolve
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
 
 label tanamcdaftarulang:
-    scene black with dissolve
-    show text "{color=#FFF}[mcname!u] PULANG KE KOSAN{/color}" with Pause(2.0)
-    scene kamar mc kota with dissolve
-    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
-    # $ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    "Setelah melakukan daftar ulang, [mcname] pun pulang ke kosannya untuk beristirahat."
+    "Malamnya di kost..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    $ quick_menu = True
+    # #$ renpy.block_rollback()
     mcname "Hadeeeh. Baru juga dateng… Malu banget."
     "[mcname] pun mengingat kembali kejadian di depan kampus pada siang hari itu."
     show tana at tana_near with dissolve
     mcname "Aduh kok aku jadi kepikiran terus sama cewek itu, ya? Apakah karena malu?"
     mcname "Dah ah. Tidur dulu, besok hari pertama orientasi"
     hide tana at tana_near with dissolve
-    "[mcname] pun tertidur"
+    "[mcname] pun tertidur."
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    show depan kampus with dissolve
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
-    # $ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kampus.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True    
+    "Keesokann harinya..."
+    $ quick_menu = False
+    show depan kampus with Dissolve(2.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
-    "[mcname] datang ke kampus untuk memulai orientasinya"
+    "[mcname] datang ke kampus untuk memulai orientasinya."
     "[mcname] pun berjalan ke kelas"
     mcname "Aduh deg deg an."
     mcname "Hari ini awalan perkuliahan di Jakarta."
     mcname "Semoga yang kayak kemarin gak terulang lagi."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play sound "audio/open_door.mp3"
-    show text "{color=#FFF}MEMASUKI RUANG KELAS{/color}" with Pause(2.0)
-    scene kelas with dissolve
-    # $ renpy.block_rollback()
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
+    scene black with Dissolve(1.0)
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
+    scene kelas with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
-    "Ternyata pas duduk di kelas, Cewek yang [mcname] temui kemarin pun duduk juga di sebelah [mcname]."
+    "Ternyata pas duduk di kelas, cewek yang [mcname] temui kemarin pun duduk juga di sebelah [mcname]."
     show tana_talk at tana_near with dissolve
     show tana_side_talk at left with dissolve
     tana "Lah sekelas?"
     hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
-    mcname "Ah eh umm. Iya, hehe"
+    mcname "Ah eh umm. Iya, hehe."
     mcname "{i}LAH sekelas sama cewek yang kemarin aduh tambah malu dah ini mah{/i}"
     hide tana at tana_near
     show tana_talk at tana_near
@@ -154,31 +167,31 @@ label tanamcdaftarulang:
     tana "Selain itu, ya karena gua dari kecil doyan main di sawah hehe"
     hide tana_side_talk at left with dissolve
     hide tana_talk at tana_near with dissolve
+    "Tiba-tiba..."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play sound "audio/open_door.mp3"
-    show text "{color=#FFF}DOSEN MEMASUKI KELAS{/color}" with Pause(2.0)
-    scene kelas with dissolve
-    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
+    scene black with Dissolve(1.0)
+    play music "BGM_Dosen.ogg" fadein 1.0
+    scene kelas with Dissolve(1.0)
     show dosen_talk at dosen_center with dissolve
     show dosen_side at left with dissolve
-    # $ renpy.block_rollback()
+    # #$ renpy.block_rollback()
     $ quick_menu = True
-    dosen "Selamat datang Mahasiswa baru Jurusan pertanian"
+    dosen "Selamat datang Mahasiswa baru Jurusan pertanian."
     dosen "Oke, kegiatan hari ini adalah perkenalan lingkungan kampus. Silahkan berkumpul dengan kelompoknya masing-masing"
     dosen "Instruksi selanjutnya ada di pembimbing kelompok masing-masing, terima kasih"
-    dosen "HIDUP PERTANIAN INDONESIA."
+    dosen "HIDUP PERTANIAN INDONESIA!"
     hide dosen_side at left with dissolve
     hide dosen_talk at dosen_center with dissolve
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    scene kelas with dissolve
-    play music "audio/BGM_kelas.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
+    scene kelas with Dissolve(1.0)
     show flora_talk at flora_center with dissolve
     show flora_side at left with dissolve
-    # $ renpy.block_rollback()
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     $ flora_name = "Flora"
     flora "Halo semuanya, kenalin aku Flora, pembimbing kelompok ini"
@@ -190,26 +203,24 @@ label tanamcdaftarulang:
     hide flora at flora_center with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene lorong with dissolve
-    play music "audio/BGM_Lorong.mp3" fadein 1.0
-    # $ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "BGM_Lorong.ogg" fadein 1.0
+    scene lorong with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     "[mcname] dan kelompoknya pun berkeliling kampus untuk melihat fasilitas jurusan pertanian dibimbing oleh Kakak kelasnya yang bernama Flora. Tapi tiba tiba…"
     mcname "{i}Duh kebelet{/i}"
     mcname "{i}Ke toilet dulu aman kali ya gak bakal ketinggalan kelompok{/i}"
+    "Dengan sedikit terburu buru, [mcname] bergegas ke toilet."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    # $ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    pause(1.0)
+    play music "BGM_Lorong.ogg" fadein 1.0
+    scene lorong with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
-    "Dengan sedikit terburu buru, [mcname] bergegas ke toilet."
     "Setelah selesai, [mcname] pun keluar toilet dan melihat sekeliling."
-    $ quick_menu = False
-    scene lorong with dissolve
-    play music "audio/BGM_Lorong.mp3" fadein 1.0
-    # $ renpy.block_rollback()
-    $ quick_menu = True
     mcname "{i}Aduh pada kemana ya kok udah sepi aja, mana gak tau jalan lagi{/i}"
     mcname "Eh itu ada Tana lagi sendirian"
     "[mcname] melihat Tana yang tampaknya sedang kebingungan"
@@ -241,16 +252,18 @@ label tanamcdaftarulang:
     mcname "Yaudah ngikut deh"
     hide tana at tana_near with dissolve
     "Karena tidak tau arah, [mcname] pun mengikuti Tana menyusuri kampus."
-    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}1 JAM KEMUDIAN{/color}" with Pause(2.0)
-    scene awan with dissolve
-    scene lorong with dissolve
-    play music "audio/BGM_Lawak Tana.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "1 jam kemudian..."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    play music "audio/BGM_Funny 2.ogg" fadein 1.0
+    scene lorong with Dissolve(2.0)
     show tana at tana_near with dissolve
     $ quick_menu = True
-    mcname "Tan, perasaan dari tadi kita cuma muter-muter doang deh"
+    mcname "Tan, perasaan dari tadi kita cuma muter-muter doang deh."
     hide tana at tana_near
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -274,11 +287,16 @@ label tanamcdaftarulang:
     hide tana_side_confused at left with dissolve
     hide tana_confused at tana_near with dissolve
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}1 JAM KEMUDIAN{/color}" with Pause(2.0)
-    scene kantin with dissolve
+    scene black with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "1 jam kemudian..."
+    $ quick_menu = False
+    scene kantin with Dissolve(2.0)
+    show tana at tana_near with dissolve
+    $ quick_menu = True
     show tana_confused at tana_near with dissolve
-    # $ renpy.block_rollback()
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     mcname "Tan, ini bukannya kantin, ya?"
     show tana_side_confused at left
@@ -358,15 +376,18 @@ label tanamcdaftarulang:
     "[mcname] dan Tana pun kembali menyusuri kampus"
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    show text "{color=#FFF}DISAAT BERSAMAAN{/color}" with Pause(2.0)
-    scene lorong with dissolve
-    play music "audio/BGM_Lorong.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "BGM_Sore.ogg" fadein 1.0
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa jam kemudian..."
+    $ quick_menu = False
+    scene lorong sore with Dissolve(2.0)
     show flora_talk at flora_center with dissolve
     show flora_side at left with dissolve
-    # $ renpy.block_rollback()
+    # #$ renpy.block_rollback()
     $ quick_menu = True
-    flora "Duh. Ini dari tadi 2 orang ilang pada kemana ya?"
+    flora "Duh. Ini dari tadi 2 orang ilang pada ke mana ya?"
     flora "Kelompoknya udah beres keliling kampus, mereka masih gak ketemu."
     flora "Udah sore lagi..."
     flora "Harusnya jam segini aku beresin ruangan klub, ini malah harus nyari 2 bocah."
@@ -451,17 +472,15 @@ label tanamcdaftarulang:
     hide flora_side at left with dissolve
     hide flora_talk at flora_left with dissolve
     hide tana at tana_right with dissolve
-    "[mcname], Tana, dan Flora pun pergi menuju ruang klub yang dimaksud oleh Flora"
-    stop music fadeout 1.0
+    "[mcname], Tana, dan Flora pun pergi menuju ruang klub yang dimaksud oleh Flora."
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_UKM.ogg" fadein 1.0
-    scene ruang ukm with dissolve
+    scene black with Dissolve(1.0)
+    scene ruang ukm sore with Dissolve(1.0)
     show tana at tana_near with dissolve
     show feni_talk at feni_right with dissolve
     show flora at flora_left with dissolve
     show feni_side at left with dissolve
-    # # $ renpy.block_rollback()
+    # # #$ renpy.block_rollback()
     $ quick_menu = True
     feni "Flo-chaaaaan dari mana aja kamu?"
     feni "Aku dari tadi beberes sendirian tauuu"
@@ -601,7 +620,7 @@ label tanamcdaftarulang:
             show tana at tana_near with dissolve
             show flora at flora_left with dissolve
             show feni at feni_right with dissolve
-            # $ renpy.block_rollback()
+            # #$ renpy.block_rollback()
             $ quick_menu = True
             mcname "-Samurai Y\n-Pemburu x Pemburu\n-Mengubah sampah menjadi pohon\n-Pelaut bulan\n-Inisial F"
             show feni_side at left with dissolve
@@ -612,7 +631,7 @@ label tanamcdaftarulang:
             show tana at tana_near with dissolve
             show flora at flora_left with dissolve
             show feni at feni_right with dissolve
-            # $ renpy.block_rollback()
+            # #$ renpy.block_rollback()
             $ quick_menu = True
             mcname "-Cinta Palsu\n-Ekor Peri\n-Yo-Gi-Ah 3Ds\n-Adu Gasing\n-April Skem"
             hide flora at flora_left
@@ -628,7 +647,7 @@ label tanamcdaftarulang:
             show tana at tana_near with dissolve
             show flora at flora_left with dissolve
             show feni at feni_right with dissolve
-            # $ renpy.block_rollback()
+            # #$ renpy.block_rollback()
             $ quick_menu = True
             mcname "-Bola Naga X\n-Seni Pedang Offline\n-Siapa namamu?\n-Akademi Pahlawan\n-Keluarga Mata-Mata"
             show flora_side at left with dissolve
@@ -698,17 +717,16 @@ label tanamcdaftarulang:
     hide feni at feni_right with dissolve
     "Sore itu, ruang club pun dipenuhi gelak tawa dan canda ria.[mcname] dan Tana pun akhirnya bergabung dalam klub jejepangan bersama Feni dan Flora. Mereka berempat pun lanjut membersihkan ruang klub sampai malam."
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN{/color}" with Pause(2.0)
-    # Harusnya BG UKM Jejepangan
-    scene ruang ukm with dissolve
+    scene black with Dissolve(1.0)
+    pause(1.0)
+    scene ruang ukm sore with Dissolve(1.0)
     show tana_talk at tana_near with dissolve
     show flora at flora_left with dissolve
     show feni at feni_right with dissolve
     show tana_side_talk at left with dissolve
     $ quick_menu = True
-    tana "Akkh. Akhirnya kelar juga"
-    tana "Asli capek banget"
+    tana "Akkh, akhirnya kelar juga."
+    tana "Asli capek banget!"
     hide tana_side_talk at left
     hide tana_talk at tana_near
     hide flora at flora_left
@@ -804,26 +822,35 @@ label tanamcdaftarulang:
     hide tana_talk at tana_near with dissolve
     hide flora at flora_left with dissolve
     hide feni at feni_right with dissolve
-    $ quick_menu = False
     menu: 
-        "Respon Kamu"
+        "Respon kamu..."
         "Boleh. Gua juga laper nih":
             show tana at tana_near with dissolve
             show flora at flora_left with dissolve
             show feni at feni_right with dissolve
-            # $ renpy.block_rollback()
+            # #$ renpy.block_rollback()
             $ quick_menu = True
             mcname "Boleh. Gua juga laper nih"
+            jump chapter1tanamakan
+
         "Skip, MUALAS.":
+            $ quick_menu = False
             mcname "Skip, MUALAS."
             stop music fadeout 1.0
             scene black with dissolve
             show text "{color=#FFF}INSTRUKSI CERITANYA GINI DOANG?{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}WOY PENULIS CERITA YANG JELAS DONG MASA GITU DOANG{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}DEVELOPER PUNDUNG KARENA YANG NULIS CERITA GAK JELAS{/color}" with Pause(2.0)
-            show text "{color=#FF0000}BAD END{/color}"
+            scene black with dissolve
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
+
+label chapter1tanamakan:
     hide tana at tana_near
     hide flora at flora_left
     hide feni at feni_right
@@ -884,20 +911,19 @@ label tanamcdaftarulang:
     show tana at tana_near
     show flora_talk at flora_left
     show feni_talk at feni_right
-    "{size=-5}Feni & Flora{/size}" "Okeee"
+    "{size=-5}Feni & Flora{/size}" "Okeee~"
     hide tana at tana_near with dissolve
     hide flora_talk at flora_left with dissolve
     hide feni_talk at feni_right with dissolve
-    "[mcname] & Tana pun pergi ke mall"
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    show text "{color=#FFF}SESAMPAINYA DI MALL{/color}" with Pause(2.0)
-    play music "audio/BGM_Mall Slow.mp3" fadein 1.0
-    scene mall temp with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Mall.ogg" fadein 1.0
+    scene mall temp with Dissolve(1.0)
+    $ quick_menu = True
+    "Sesampainya di mall.."
     show tana_talk at tana_near with dissolve
     show tana_side_talk at left with dissolve
-    $ quick_menu = True
     tana "[mcname], Cafe #Sponsor 2 nya di mana?"
     hide tana_side_talk at left
     hide tana_talk at tana_near
@@ -905,13 +931,14 @@ label tanamcdaftarulang:
     "[mcname] pun membuka HP nya"
     mcname "Hmmm keknya di sini. Udah ikut aja"
     hide tana at tana_near with dissolve
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}20 MENIT KEMUDIAN{/color}" with Pause(2.0)
-    scene mall temp with dissolve
+    scene black with Dissolve(1.0)
+    play music "BGM_Funny 2.ogg" fadein 1.0
+    scene mall temp with Dissolve(1.0)
     show tana_angry_2 at tana_near with dissolve
     show tana_side_angry_2 at left with dissolve
-    # $ renpy.block_rollback()
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     tana "Mana nih, [mcname]. Lu yang bener, kocak."
     tana "Tau jalan, gak?"
@@ -951,11 +978,12 @@ label tanamcdaftarulang:
     tana "Wahh, thank you."
     hide tana_side_talk at left with dissolve
     hide tana_talk at tana_near with dissolve
-    "Tana dan [mcname] berjalan sesuai arahan Staff"
+    "Tana dan [mcname] pun berjalan sesuai arahan dari staff."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN{/color}" with Pause(2.0)
-    scene mall temp with dissolve
+    scene black with Dissolve(1.0)
+    play music "BGM_Mall.ogg" fadein 1.0
+    scene mall with Dissolve(1.0)
     show tana_talk at tana_near with dissolve
     show tana_side_talk at left with dissolve
     $ quick_menu = True
@@ -965,14 +993,13 @@ label tanamcdaftarulang:
     show tana at tana_near
     mcname "Itu udah pada ngantri buat menu promo. Ayok buruan."
     hide tana at tana_near with dissolve
-    $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    show text "{color=#FFF}MEMASUKI CAFE{/color}" with Pause(2.0)
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
     play sound "audio/cafe-entrance.mp3" fadein 1.0
-    play music "audio/BGM_Cafe Sore.mp3" fadein 1.0
-    scene cafe with dissolve
-    # $ renpy.block_rollback()
+    play music "audio/BGM_Cafe Sore.ogg" fadein 1.0
+    scene cafe sore with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     "Setelah mengantri beberapa saat, akhirnya giliran Tana dan [mcname] pun tiba."
     show tana at tana_near with dissolve
@@ -1023,7 +1050,12 @@ label tanamcdaftarulang:
     "Staff" "Oke jadi grilled rice with tuna 2, milkshake strawberry 2, dan large french fries 1."
     "Staff" "Pesanannya nanti akan diantar, ya. Mohon ditunggu."
     hide tana at tana_near with dissolve
-    "Tana dan [mcname] duduk di tempat yang kosong"
+    "Tana dan [mcname] pun duduk di tempat yang kosong"
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene cafe sore with Dissolve(1.0)
+    # #$ renpy.block_rollback()
+    $ quick_menu = True
     show tana_confused at tana_near with dissolve
     show tana_side_confused at left with dissolve
     tana "Kok nama menunya jadi pake Bahasa Inggris, ya?"
@@ -1074,8 +1106,12 @@ label tanamcdaftarulang:
     show tana_angry at tana_near
     mcname "Yauda buruan makan."
     hide tana_angry at tana_near with dissolve
-    "Tana dan [mcname] menyantap makanan yang dipesan."
-    # tana batuk
+    tana "Hmmm enak ya!"
+    mcname "Pelan-pelan, Tan."
+    tana "Santai ajaa"
+    mcname "Hadehh..."
+    "Beberapa saat kemudian..."
+# tana batuk
     show tana at tana_near with dissolve
     show tana_side at left with dissolve
     tana "UHUK UHUK."
@@ -1085,8 +1121,8 @@ label tanamcdaftarulang:
     tana "UHUK UHUK."
     hide tana_side at left
     mcname "Ini minum dulu"
-    # tana batuk hide
-    # tana minum
+# tana batuk hide
+# tana minum
     show tana_side at left
     tana "*Glug Glug*"
     tana "AHHHHH"
@@ -1103,12 +1139,16 @@ label tanamcdaftarulang:
     show tana_angry at tana_near
     mcname "Hahahahahaha"
     hide tana_angry at tana_near with dissolve
+    "[mcname] dan Tana ngobrol di cafe sambil menikmati hidangan yang dipesan."
     $ quick_menu = False
-    scene black with dissolve
-    scene cafe with dissolve
-    # $ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    "[mcname] dan Tana ngobrol di cafe sambil menikmati hidangan yang dipesan. Tak terasa cafe semakin sepi dan para staff terlihat mulai beres-beres."
+    "Tak terasa cafe semakin sepi dan para staff terlihat mulai\nberes-beres."
+    $ quick_menu = False
+    scene cafe malam with Dissolve(2.0)
+    # #$ renpy.block_rollback()
+    $ quick_menu = True
     show tana at tana_near with dissolve
     mcname "Eh. Kayaknya udah mau tutup nih."
     hide tana at tana_near
@@ -1174,11 +1214,11 @@ label tanamcdaftarulang:
     show tana at tana_near
     mcname "Hadeh yauda. Awas gak lu ganti"
     hide tana at tana_near with dissolve
-    $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    scene mall temp with dissolve
-    play music "audio/BGM_Mall Slow.mp3" fadein 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "BGM_Mall.ogg" fadein 1.0
+    scene mall with Dissolve(1.0)
     $ quick_menu = True
     "Setelah membayar, [mcname] dan Tana keluar dari cafe lalu bersiap siap untuk pulang."
     show tana_talk at tana_near with dissolve
@@ -1215,20 +1255,22 @@ label tanamcdaftarulang:
     hide tana at tana_near with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
+    scene black with Dissolve(1.0)
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    scene depan kampus with dissolve
-    # $ renpy.block_rollback()
+    play music "BGM_Kampus.ogg" fadein 1.0
+    scene depan kampus with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     "Pagi itu [mcname] terbangun dan bersiap siap untuk pergi ke kampus."
+    stop music fadeout 1.0
     $ quick_menu = False
-    play sound "audio/open_door.mp3"
-    scene black with dissolve
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
-    scene kelas with dissolve
-    # $ renpy.block_rollback()
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
+    scene black with Dissolve(1.0)
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
+    scene kelas with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
-    "Sesampainya di kelas, tiba tiba ada yang menepuk pundak [mcname]."
+    "Sesampainya di kelas, tiba-tiba ada yang menepuk pundak [mcname]."
     show tana_talk at tana_near with dissolve
     show tana_side_talk at left with dissolve
     tana "Oi. Sombong amat dipanggil kaga noleh."
@@ -1262,17 +1304,17 @@ label tanamcdaftarulang:
     hide tana_shock at tana_near
     show tana at tana_near
     mcname "Kata gue GUAS sih."
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     "???" "Selamat pagi, semuanya!"
     hide tana at tana_near with dissolve
     $ quick_menu = False
-    scene black with dissolve
-    scene kelas with dissolve
-    # $ renpy.block_rollback()
-    $ quick_menu = True
-    "Kakak pembimbing sampai di kelas"
+    scene black with Dissolve(1.0)
+    scene kelas with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     show tana at tana_right with dissolve
     show flora_talk at flora_left with dissolve
     show flora_side at left with dissolve
+    $ quick_menu = True
     flora "Kalian bawa baju ganti, kan?"
     hide flora_side at left with dissolve
     hide tana at tana_right
@@ -1303,11 +1345,11 @@ label tanamcdaftarulang:
     "Tana, [mcname], dan teman-teman sekelas pergi mengikuti arahan dari Kak Flora."
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    scene sawah with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kampus.ogg" fadein 1.0
+    scene sawah with Dissolve(1.0)
     #  Harusnya BGM Sawah
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
-    # $ renpy.block_rollback()
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     "Flora, Tana, [mcname], dan mahasiswa lainnya sampai di gerbang sawah."
     show tana at tana_right with dissolve
@@ -1345,7 +1387,7 @@ label tanamcdaftarulang:
     show flora_talk at flora_left
     show tana at tana_right
     show flora_side at left with dissolve
-    flora "Di sini ada banyak petak sawah. Kalian bebas mau ke mana, tapi hati-hati ya. Soalnya licin."
+    flora "Di sini ada banyak petak sawah. Kalian bebas mau ke mana, tapi hati-hati ya. Soalnya licin, sawahnya basah."
     flora "1 jam lagi kumpul di sini, ya."
     hide flora_side at left with dissolve
     hide tana at tana_right
@@ -1361,9 +1403,9 @@ label tanamcdaftarulang:
     hide flora at flora_left with dissolve
     hide tana at tana_right with dissolve
     $ quick_menu = False
-    scene black with dissolve
-    scene sawah with dissolve
-    # $ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    scene sawah with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     "Tana dan [mcname] menyusuri sawah bersama."
     show tana at tana_near with dissolve
@@ -1384,10 +1426,11 @@ label tanamcdaftarulang:
     hide tana_confused at tana_near with dissolve
     # Hide tana kecebur sawah
     $ quick_menu = False
-    scene black with dissolve
-    # Insert SFX Byurrr
-    # Harusnya BG Sawah
-    scene sawah with dissolve
+    scene black with Dissolve(1.0)
+# Insert SFX Byurrr
+    play sound "SFX - Fall Water.WAV" volume (4.0)
+# Harusnya BG Sawah
+    scene sawah with Dissolve(1.0)
     $ quick_menu = True
     "[mcname] berniat menolong Tana, tapi malah ikut tercebur."
     mcname "Adududuh"
@@ -1448,13 +1491,12 @@ label tanamcdaftarulang:
     hide tana_talk at tana_near with dissolve
     hide flora at flora_left with dissolve
     $ quick_menu = False
-    scene black with Pause(2.0)
-    # Harusnya BG Sawah
-    scene sawah with dissolve
+    scene black with Dissolve(1.0)
+    scene sawah with Dissolve(1.0)
     show tana at tana_near with dissolve
     $ quick_menu = True
     mcname "Lu gimana pulangnya nanti?"
-    mcname "Lu kan gak bawa baju ganti"
+    mcname "Kan gak bawa baju ganti."
     hide tana at tana_near
     show tana_confused at tana_near
     show tana_side_confused at left
@@ -1500,9 +1542,12 @@ label tanamcdaftarulang:
     hide tana at tana_right with dissolve
     hide flora at flora_left with dissolve
     $ quick_menu = False
-    scene black with dissolve
-    scene awan with dissolve
-    scene sawah with dissolve
+    scene black with Dissolve(1.0)
+    $ quick_menu = True
+    scene awan sore with Dissolve(1.0)
+    "Tak terasa waktu menjadi sore..."
+    $ quick_menu = False
+    scene sawah sore with Dissolve(2.0)
     show tana at tana_right with dissolve
     show flora_talk at flora_left with dissolve
     show flora_side at left with dissolve
@@ -1551,13 +1596,14 @@ label tanamcdaftarulang:
     hide flora_talk at flora_left with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}KEESOKAN HARINYA\nDI KELAS{/color}" with Pause(2.0)
-    scene kelas with dissolve
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
+    scene awan with Dissolve(1.0)
+    "Keesokan harinya.."
+    scene kelas with Dissolve(2.0)
     show tana_talk at tana_near with dissolve
     show tana_side_talk at left with dissolve
-    # $ renpy.block_rollback()
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     tana "Ohayou, [mcname]"
     hide tana_side_talk at left
@@ -1595,12 +1641,11 @@ label tanamcdaftarulang:
     "Terdengar suara pintu terbuka."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play sound "audio/open_door.mp3"
-    show text "{color=#FFF}DOSEN PUN MEMASUKI RUANG KELAS{/color}" with Pause(2.0)
-    scene kelas with dissolve
-    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-    # $ renpy.block_rollback()
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
+    scene black with Dissolve(1.0)
+    play music "BGM_Dosen.ogg" fadein 1.0
+    scene kelas with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     show dosen_talk at dosen_center with dissolve
     show dosen_side at left with dissolve
     $ quick_menu = True
@@ -1608,8 +1653,12 @@ label tanamcdaftarulang:
     hide dosen_side at left with dissolve
     hide dosen_talk at dosen_center with dissolve
     $ quick_menu = False
-    scene black with dissolve
-    scene kelas with dissolve
+    scene black with Dissolve(1.0)
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Berjam jam kemudian..."
+    $ quick_menu = False
+    scene kelas sore with Dissolve(2.0)
     show dosen_talk at dosen_center with dissolve
     show dosen_side at left with dissolve
     $ quick_menu = True
@@ -1617,11 +1666,12 @@ label tanamcdaftarulang:
     dosen "Kalian dipersilahkan untuk pulang."
     hide dosen_side at left with dissolve
     hide dosen_talk at dosen_center with dissolve
+    "Mahasiswa/i" "Baik, Buu."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene kelas with dissolve
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
+    scene kelas sore with Dissolve(1.0)
     show tana at tana_near with dissolve
     $ quick_menu = True
     mcname "Fiuuuh. Akhirnya pelajaran selesai juga."
@@ -1682,9 +1732,9 @@ label tanamcdaftarulang:
     hide tana at tana_near with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene mall temp with dissolve
-    play music "audio/BGM_Mall Slow.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Mall.ogg" fadein 1.0
+    scene mall temp with Dissolve(1.0)
     show tana_talk at tana_near with dissolve
     show tana_side_talk at left with dissolve
     $ quick_menu = True
@@ -1740,26 +1790,32 @@ label tanamcdaftarulang:
     mama "Byee~"
     hide side mama at left with dissolve
     "Hide UI Telepon"
+    scene mall temp with Dissolve(1.0)
     mcname "Hmmmmm."
     mcname "Eh, Tana mana?"
     "Bingung karena Tana menghilang, [mcname] melihat ke arah sekitar."
     mcname "Oh, di situ ternyata."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    # Harusnya BG Game Center (Cari kayanya)
-    scene mall temp with dissolve
-    play music "audio/BGM_Game Center.mp3" fadein 1.0
-    # $ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Game Center.ogg" fadein 1.0
+    scene game center with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     mcname "Tana ngapain ke sini ya?"
     "[mcname] menghampiri Tana yang pergi ke game center."
-    "Insert Asset Dance"
-    #BGM Ganti jadi yang lebih lembut anggun
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Rooftop Pia Malam.ogg" fadein 1.0
+    scene game center with Dissolve(1.0)
+#MUNCUL ASSET DANCE ARCADE GAME
+    # #$ renpy.block_rollback()
+    $ quick_menu = True
     "Terlihat seorang gadis cantik menari gemulai di depan mesin dance arcade."
     "Setiap gerakannya dari lompatan hingga ayunan lembut lengannya mengikuti irama lagu ceria yang dimainkan, membuat [mcname] terpukau."
     mcname "......"
-    "Di tengah rasa kagum tersebut, [mcname] mengeluarkan HP nya"
+    "Di tengah rasa kagum tersebut, [mcname] mengeluarkan HP nya."
     mcname "Tana, gue masukin story ya?"
     show tana at tana_near with dissolve
     tana ".........."
@@ -1767,22 +1823,25 @@ label tanamcdaftarulang:
     "Tana yang fokus mengayunkan tangan dan kakinya, tampak tidak menyadari keberadaan [mcname]."
     mcname "Hmmm dia ga jawab, keknya lagi fokus. Harusnya dibolehin lah ya."
     $ quick_menu = False
-    scene black with dissolve
-    # Harusnya Game center
-    scene mall temp with dissolve
-    # $ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    scene game center with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     "Ketika tarian itu mencapai puncaknya kemudian diakhiri dengan gerakan yang elegan, memutar tubuhnya sekali lagi sebelum berhenti dengan satu gerakan terakhir yang sempurna."
     show tana_talk at tana_near with dissolve
     show tana_side_talk at left with dissolve
+    play sound "SFX - Large Cheering.mp3" fadein 1.0
     tana "Yeyyy perfect score!"
     hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
+    stop music fadeout 1.0
     mcname "*Tepuk tangan*"
     hide tana at tana_near
     show tana_confused at tana_near
     show tana_side_confused at left
+    stop sound fadeout 1.0
+    play music "BGM_Game Center.ogg" fadein 1.0
     tana "E-Eh? [mcname]? Lu dari kapan di sini?"
     hide tana_side_confused at left
     hide tana_confused at tana_near
@@ -1807,11 +1866,11 @@ label tanamcdaftarulang:
     hide tana at tana_near with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
     play sound "audio/cafe-entrance.mp3" fadein 1.0
-    scene cafe with dissolve
-    play music "audio/BGM_Cafe Cerah.mp3" fadein 1.0
-    # $ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Cafe sore.ogg" fadein 1.0
+    scene cafe sore with Dissolve(1.0)
+    # #$ renpy.block_rollback()
     $ quick_menu = True
     "Sesampainya di cafe, Tana dan [mcname] langsung mendatangi kasir."
     show tana at tana_near with dissolve
@@ -1922,8 +1981,8 @@ label tanamcdaftarulang:
     mcname "Nah, kan. Hadehh"
     hide tana at tana_near with dissolve
     $ quick_menu = False
-    scene black with dissolve
-    scene cafe with dissolve
+    scene black with Dissolve(1.0)
+    scene cafe sore with Dissolve(1.0)
     $ quick_menu = True
     "Setelah selesai makan, Tana dan [mcname] menghampiri kasir untuk membayar pesanan."
     show tana_talk at tana_near with dissolve
@@ -1985,12 +2044,16 @@ label tanamcdaftarulang:
     "Tana dan [mcname] pulang ke rumahnya masing-masing"
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene mc bedroom with dissolve
-    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
-    # $ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "BGM_Kosan 1.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    "Sesampainya di kosan, [mcname] berbaring di kasur sambil menatap langit-langit."
+    "Sesampainya di kost..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    # #$ renpy.block_rollback()
+    $ quick_menu = True
+    "[mcname] berbaring di kasur sambil menatap langit-langit."
     mcname "......"
     show tana at tana_near with dissolve
     "Dipikir pikir, Tana cantik banget ya dance nya."
@@ -2000,6 +2063,6 @@ label tanamcdaftarulang:
     "Mending turu."
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
+    scene black with Dissolve(1.0)
     show text "{color=#FFF}CHAPTER II{/color}" with Pause(2.0)
     jump chapter2tana

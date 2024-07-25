@@ -631,7 +631,7 @@ label chapter2piaaftergame:
             scene black with dissolve
             show text "{color=#FFF}*Beberapa bulan kemudian, ada gosip beredar bahwa acara jejepangan tersebut gagal dilaksanakan karena promotor acara kabur membawa uang donatur dan sponsor*{/color}" with Pause(2.0)
             scene black with dissolve
-            show text "{color=#FF0000}BAD END{/color}"
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
