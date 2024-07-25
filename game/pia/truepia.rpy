@@ -900,7 +900,7 @@ label truendpia:
     "Staff" "Mohon ditunggu, ya."
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    Pause(1.0)
+    # Pause(1.0) ini error
     scene cafe with Dissolve(1.0)
     show pia at pia_near with dissolve
     #$ renpy.block_rollback()
