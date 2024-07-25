@@ -527,7 +527,7 @@ label tanamcdaftarulang:
     show flora_side_talk at left
     with dissolve
     flora "Nah, gitu dong. Yaudah ayo ikut sini."
-    hide flora_side at left with
+    hide flora_side at left
     hide flora_talk at flora_left
     hide tana at tana_right
     with dissolve

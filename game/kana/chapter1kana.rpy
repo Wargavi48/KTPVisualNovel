@@ -18,8 +18,8 @@ label chapter1kana1:
     play sound "audio/open_door.mp3" fadeout 1.0
     show text "{color=#FFF}MEMASUKI AULA{/color}" with Pause(2.0)
     scene kelas with Dissolve(2.0)
-    $ quick_menu = True
     play sound "audio/crowd_noise.mp3" fadein 1.0
+    $ quick_menu = True
     "Saat memasuki ruangan [mcname] mendengar suara di aula yang sangat ramai."
     mcname "Seperti yang diharapkan dari kampus Ibu Kota."
     mcname "Orangnya rame banget."
@@ -53,7 +53,7 @@ label chapter1kana1:
     "Di sana terlihat seorang cewek cantik yang terlihat seumuran dengan [mcname]."
     "Rambutnya biru yang mana mengingatkannya dengan lautan yang berada di kampung halamannya."
     "Matanya pun tidak kalah indah dengan batu sapphire."
-    "(……)"
+    "……"
     mcname "{i}Aku tidak bisa melepaskan mataku dari dia...{/i}"
     mcname "{i}Oh...{/i}"
     mcname "{i}Dia siapa?{/i}"
@@ -65,7 +65,7 @@ label chapter1kana1:
     mcname "{i}Hmmm emang sih, hampir semua kelihatan cantik…{/i}"
     mcname "{i}Tapi kok cuma dia ya, yang jadi perhatian orang-orang.{/i}"
     mcname "{i}Ya termasuk aku juga sih...{/i}"
-    "(……)"
+    "……"
     "1….2….3…"
     "8…9…10…"
     "Menit telah berlalu dan [mcname] masih menatap cewek tersebut."
@@ -78,8 +78,8 @@ label chapter1kana1:
     show text "{color=#FFF}*DING DING DING DING*\n(screenshake){/color}" with Pause(2.0)
     play music "audio/BGM_Kampus.mp3" loop fadein 1.0
     scene kelas with dissolve
-    $ quick_menu = True
     stop sound fadeout 1.0
+    $ quick_menu = True
     mcname "Ehhh… udah bel, serius??? Lama banget berarti aku liatin dia."
     mcname "Moga aja dia gak sadar deh kalo aku ngeliatin dia terus."
     mcname "Kalo misalnya ketahuan maaf banget dah."
@@ -88,22 +88,27 @@ label chapter1kana1:
     $ quick_menu = False
     scene black with Dissolve(2.0)
     scene kelas with dissolve
-    $ quick_menu = True
     play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    $ quick_menu = True
     "Rektor" "Selamat datang Mahasiswa baru yang memasuki Jekiti University…"
     "Perkataan sambutan dari Rektor dan jajaran Dosen membuat [mcname] dan beberapa Mahasiswa/i lain merasa bosan."
     "Seakan mendukung perkataan [mcname], beberapa mahasiswa/i pun ada yang bermain HP, mengobrol, atau bahkan bercanda."
     "{size=-5}Mahasiswa A{/size}" "Eh bosenin bet dah, template banget ini ucapan selamat datangnya tuh, bikin ngatuk ya ga?"
     "{size=-5}Mahasiswa B{/size}" "Iyaa, bener banget dah mending kita login yuk P MABAR MABAR..."
     "{size=-5}Mahasiswa C{/size}" "Gas kali ya login."
+    show kana_smile at char_center with dissolve
     "[mcname] pun tidak sengaja mengalihkan pandangannya kepada perempuan tadi yang juga tertawa kecil karena mendengar obrolan mahasiswa tersebut."
     mcname "{i}Astaga, aku tidak menyangka ternyata ada perempuan semanis dia.{i}"
-    "(……)"
+    "……"
+    hide kana_smile
+    show kana at char_center
+    with dissolve
     "Mata [mcname] dan perempuan itu tidak sengaja bertemu."
     "[mcname] pun langsung mengalihkan pandangannya karena tersipu malu."
+    hide kana with dissolve
     mcname "{i}Waduh mata kita gak sengaja bertemu pula.{/i}"
     mcname "{i}Semoga aja aku gak dikira orang aneh sama dia.{/i}"
-    "(……)"
+    "……"
     $ quick_menu = False 
     scene black with Dissolve(2.0)
     scene kelas with dissolve
@@ -112,10 +117,12 @@ label chapter1kana1:
     mcname "{i}Akhirnya selesai juga sambutan dan kegiatan hari ini.{/i}"
     mcname "{i}Hari ini lumayan cape juga ya.{/i}"
     mcname "{i}Tapi masih ada energi sih…{/i}"
-    # insert cg kana
     $ quick_menu = False
+    # insert cg kana
     scene kana awal senyum with Dissolve(2.0)
+    $ quick_menu = True 
     mcname "{i}Aduh! Kok aku ga bisa hilangkan senyuman itu dari kepalaku ya?{/i}"
+    $ quick_menu = False
     scene black with dissolve
     scene kelas with Dissolve(2.0)
     $ quick_menu = True
@@ -133,21 +140,20 @@ label chapter1kana1:
             # jump chapter1kana2Campus
             jump chapter1kana2kos
         "B. Ke Warteg":
-            "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit"
+            "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit..."
             scene black with dissolve
             show text "{color=#FFF}MAKANYA JANGAN MAKAN SEMBARANG BROO KAN MASUK RUMAH SAKIT{/color}" with Pause(2.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "C. Ke Cafe":
-            $ quick_menu = False
             $ mc_from = "cafe"
             stop music fadeout 1.0
             scene black with dissolve
             jump chapter1kana2Cafe
             
 label chapter1kana2kos:
-    $ renpy.block_rollback()
+    #$ renpy.block_rollback()
     scene black with dissolve
     #scene mc bedroom with dissolve
     scene kamar mc kota with dissolve
@@ -194,14 +200,15 @@ label chapter1kana2Cafe:
     "[mcname] memilih untuk menghabiskan waktu di sebuah cafe. Awalnya cafe itu terasa sepi, tetapi lama-lama cafe tersebut mulai penuh."
     mcname "Wah makin lama, makin rame ya cafe ini. Memang salah satu cafe terkenal sih, kalau kata internet..."
     "Banyak sekali orang yang berlalu lalang. Akan tetapi, ada satu orang yang menarik perhatian [mcname]."
-    show kana at char_center with dissolve
+    show kana at small_center with dissolve
     "Saat orang itu mendekati pintu cafe, [mcname] pun menyadari bahwa orang itu adalah cewek yang ada di kampus tadi."
     mcname "{i}Loh, itu kan perempuan yang tadi di kampus?{/i}"
     mcname "{i}Kita datang di cafe yang sama...{/i}"
     mcname "{i}Kebetulan macam apa ini?{/i}"
     "Secara tidak sadar [mcname] pun melihat ke arah perempuan tersebut. Mungkin karena dia berdiam diri cukup lama, yang membuat beberapa pelanggan pun melihat ke arahnya..."
-    show kana_confused at char_center with dissolve
-    hide kana with dissolve
+    hide kana 
+    show kana_confused at char_center
+    with dissolve
     "Tetapi, perempuan itu terlihat sedang kebingungan."
     "Pandangannya yang melihat ke sana kemari dan gerak tubuhnya yang menunjukan dirinya gelisah, membuat [mcname] pun berpikir."
     mcname "{i}Hmmm kenapa ya, kok dari tadi dia kaya gelisah gitu??{/i}"
@@ -209,62 +216,89 @@ label chapter1kana2Cafe:
     "Reflek, [mcname] pun memalingkan pandangannya."
     mcname "{i}Duh mata kita gak sengaja ketemu pula.{/i}"
     "Perempuan itu pun mendekati meja tempat [mcname] berada..."
-    hide kana_confused with dissolve
-    show kana_confused at kana_near with dissolve
-    show kana_side_talk at left with dissolve
+    hide kana_confused
+    show kana_talk at kana_near
+    show kana_side_talk at left
+    with dissolve
     kana "H-halooo, maaf tapi apa kursinya kosong?"
-    hide kana_side_talk with dissolve
+    hide kana_side_talk
+    with dissolve
     mcname "Eh iya ini kosong kok kebetulan dari tadi ga ada yang nempatin takut kali ya sama aku. haha"
     mcname "{i}Aduh sial ngomong apaan sih aku, garing banget lagi jokes nya.{/i}"
-    show kana_drylaugh at kana_near with dissolve
-    hide kana_confused with dissolve
-    show kana_side_drylaugh at left with dissolve
+    hide kana_talk
+    show kana_drylaugh at kana_near
+    show kana_side_drylaugh at left
+    with dissolve
     kana "Haha…"
-    hide kana_side_drylaugh with dissolve
-    show kana_talk at kana_near with dissolve
-    hide kana_drylaugh with dissolve
-    show kana_side_talk at left with dissolve
+    hide kana_side_drylaugh
+    hide kana_drylaugh
+    show kana_talk at kana_near
+    show kana_side_talk at left
+    with dissolve
     kana "Kalau gitu aku boleh ya duduk di sini?"
-    hide kana_side_talk with dissolve
-    show kana_smile at kana_near with dissolve
-    hide kana_talk with dissolve
+    hide kana_side_talk
+    hide kana_talk
+    show kana_smile at kana_near
+    with dissolve
     "Cewek itu pun tersenyum manis."
     "Tanpa menunggu jawaban dari [mcname], perempuan itu pun duduk di sebelah [mcname]."
     "Mengangkat tangan untuk memanggil pelayan. Perempuan itu kemudian memesan pesanannya."
-    show kana_talk at kana_near with dissolve
-    hide kana_smile with dissolve
-    show kana_side_talk at left with dissolve
+    hide kana_smile
+    show kana_talk at kana_near
+    show kana_side_talk at left
+    with dissolve
     kana "Mas! aku mau pesen dong."
-    hide kana_side_talk with dissolve
+    hide kana_side_talk 
+    show kana at kana_near
+    with dissolve
     mcname "..."
     "Pikiran [mcname] dibuat bingung dengan siapa dia kenapa dia langsung duduk di sebelahnya lalu kenapa dia mau duduk di situ, kenapa harus dia, banyak sekali pertanyaan yang muncul di pikiran [mcname]."
-    show kana_side_talk at left with dissolve
+    hide kana
+    show kana_talk at kana_near
+    show kana_side_talk at left
+    with dissolve
     kana "Mas aku pesan strawberry shortcake nya 1 ya, sama lemon tea nya satu, es nya jangan terlalu banyak ya, makasih banyak mas…"
-    hide kana_side_talk with dissolve
+    hide kana_side_talk 
+    hide kana_talk
+    show kana at kana_near
+    with dissolve
     "Pelayan cafe itu pun pergi untuk memproses pesanan Kana."
-    show kana_confused at kana_near with dissolve
-    hide kana_talk with dissolve
-    show kana_side_confused at left with dissolve
+    hide kana
+    show kana_confused at kana_near
+    show kana_side_confused at left
+    with dissolve
     kana "Eh maaf ya langsung duduk aja..."
     kana "Soalnya aku lagi kepengen banget cake yang ada disini karena cuma ada di hari tertentu aja."
-    hide kana_side_confused with dissolve
-    show kana_drylaugh at kana_near with dissolve
-    hide kana_confused with dissolve
+    hide kana_side_confused
+    hide kana_confused
+    show kana_drylaugh at kana_near
     show kana_side_drylaugh at left
+    with dissolve
     kana "Hahahaha..."
-    hide kana_side_drylaugh with dissolve
-    show kana_talk at kana_near with dissolve
-    hide kana_drylaugh with dissolve
-    show kana_side_talk at left with dissolve
+    hide kana_side_drylaugh
+    hide kana_drylaugh
+    show kana_talk at kana_near
+    show kana_side_talk at left
+    with dissolve
     kana "Aku awalnya sempat khawatir gitu kalau nanti ga dapet tempat duduk gimana."
     kana "Untung aja ada tempat duduk disebelahmu ini."
-    show kana_smile at kana_near with dissolve
-    hide kana_talk with dissolve
     hide kana_side_talk
-    show kana_side_talk at left with dissolve
+    hide kana_talk
+    show kana_smile at kana_near
+    with dissolve
+    hide kana_smile
+    show kana_talk at kana_near
+    show kana_side_talk at left
+    with dissolve
     kana "Makasih ya udah diizinin duduk di sini"
-    hide kana_side_talk 
-    show kana_side_talk at left with dissolve
+    hide kana_side_talk
+    hide kana_talk
+    show kana
+    with dissolve
+    hide kana
+    show kana_talk at kana_near
+    show kana_side_talk at left
+    with dissolve
     #$ kana_name = "Kanaia Asa"
     kana "Oh iya kenalan dulu, namaku \"Kanaia Asa\", biasanya dipanggil Kana."
     $ kana_name = "Kana"
