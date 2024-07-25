@@ -12,9 +12,10 @@
     "Di kost, [mcname] duduk di meja belajarnya sambil mulai mengeluarkan buku-buku dan catatan materi ujian esok hari."
     "[mcname] bersiap begadang untuk fokus belajar karena besok adalah salah satu ujian mata kuliah tertulis yang paling sulit."
     play sound "audio/ReceiveText.ogg" loop volume(2.0)
-    "Tiba tiba terdengar notifikasi dari handphone [mcname]."
-    mcname "...."
+    "Tiba-tiba terdengar notifikasi dari handphone [mcname]."
+    mcname "......"
     mcname "................."
+    stop volume
     mcname "{i}Apaan sihh!{/i}"
     $ quick_menu = False
     nvl clear
@@ -49,9 +50,8 @@
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play sound "audio/cafe-entrance.mp3" fadein 1.0
-    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN{/color}" with Pause(2.0)
     show text "{color=#FFF}DI KAFE{/color}" with Pause(2.0)
+    play sound "audio/cafe-entrance.mp3" fadein 1.0
     play music "audio/BGM_Cafe Sore.ogg" fadein 1.0
     scene cafe malam with Dissolve(1.0)
     # $ renpy.block_rollback()
@@ -526,8 +526,8 @@ label goodpiaafterquiz:
     "[mcname] pun membawa Kana Tana ke Pia yang sedang berfoto dengan lukisannya."
     stop sound fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene lorong with dissolve
+    scene black with Dissolve(1.0)
+    scene lorong with Dissolve(1.0)
     $ quick_menu = True
     mcname "Oi MEAMEO, ada yang mau ketemu kamu nih."
     show pia_talk at pia_near with dissolve
@@ -723,7 +723,7 @@ label goodpiaafterquiz:
     hide pia with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
+    scene black with Dissolve(1.0)
     play music "BGM_UKM.ogg" fadein 1.0
     scene ruang ukm with Dissolve(1.0)
     show kana_confused at FeniKanaTana_Kana
@@ -1045,7 +1045,7 @@ label goodpiaafterquiz:
     show pia at pia_near with dissolve
     # $ renpy.block_rollback()
     $ quick_menu = True
-    mcname "Pia, aku mau ngomong dong"
+    mcname "Pia, aku mau ngomong dong."
     show pia_talk at pia_near
     show pia_side_talk at left
     with dissolve
@@ -1077,15 +1077,15 @@ label goodpiaafterquiz:
     hide pia_talk 
     hide pia_side_talk
     with dissolve
-    mcname "Hmm.. Padahal katanya mau request apa aja bisa… Hmm"
+    mcname "Hmm.. Padahal katanya mau request apa aja bisa… Hmmm."
     show pia_talk at pia_near
     show pia_side_talk at left
     with dissolve
-    pia "Tapi ga gitu"
+    pia "Tapi ga gitu..."
     hide pia_talk
     hide pia_side_talk
     with dissolve
-    mcname "Yaudah aku ganti, kamu nyoba dan ngeliat langsung dari deket"
+    mcname "Yaudah aku ganti, kamu nyoba dan ngeliat langsung dari deket."
     mcname "Gimana? Gampang kan?"
     show pia_talk at pia_near
     show pia_side_talk at left
@@ -1137,9 +1137,9 @@ label goodpiaafterquiz:
     mcname "Anytime Pia..."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Sore.ogg" fadein 1.0
-    scene lorong sore with dissolve
+    scene lorong sore with Dissolve(1.0)
     ###$ renpy.block_rollback()
     $ quick_menu = True
     "Pia sampai di depan ruang club, ditemani [mcname] di belakangnya sambil tersenyum."
@@ -1255,9 +1255,9 @@ label goodpiaafterquiz:
             "Semua Orang" "PIAAAAAAAA!!"
             "Terlihat Pia penuh luka dan darah, kemudan dibawa ke rumah sakit untuk dilakukan penanganan lebih lanjut."
             $ quick_menu = False
-            scene black with dissolve
+            scene black with Dissolve(1.0)
             show text "{color=#FFF}BEBERAPA MINGGU KEMUDIAN{/color}" with Pause(2.0)
-            scene ruang ukm with dissolve
+            scene ruang ukm with Dissolve(1.0)
             # $ renpy.block_rollback()
             $ quick_menu = True
             "Pia memutuskan untuk tidak ikut club jepang dan tidak beraktivitas menjadi idol lagi."
@@ -1363,7 +1363,6 @@ label goodendpiarooftop:
     scene ruang ukm sore with Dissolve(1.0)
     $ quick_menu = True
     ###$ renpy.block_rollback()
-    $ quick_menu = True
     "Saat [mcname] dan Takamina masuk ke ruangan klub, mereka melihat Kana, Tana, dan Pia yang sedang termenung lesu."
     mcname "Loh kok pada lesu gitu?"
     kana "Huuuh..."
@@ -1609,9 +1608,7 @@ label goodendpiarooftop:
     hide pia_side_talk with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kampus Sore.ogg" fadein 1.0
-    scene depan kampus with Dissolve(1.0)
-#HARUSNYA KAMPUS SORE
+    scene kampus sore with Dissolve(1.0)
     ###$ renpy.block_rollback()
     $ quick_menu = True
     mcname "Mana ya? Katanya udah deket."
@@ -1635,8 +1632,7 @@ label goodendpiarooftop:
             jump goodendpiakosan
         "[mcname] pun menyerahkan semuanya ke Cepio":
             # $ renpy.block_rollback()
-            $ quick_menu = True
-            mcname "Cepio, aku tinggal Pia ke Cepio ya. aku ga bisa ikut"
+            mcname "Cepio, aku tinggal Pia ke Cepio ya. Aku ga bisa ikut."
             show fio_side at left with dissolve
             fio "Loh kamu gak ikut nemenin Pia dulu?"
             hide fio_side with dissolve
@@ -1722,7 +1718,6 @@ label goodendpiakosan:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     show text "{color=#FFF}HARI H MATSURI{/color}" with Pause(2.0)
     play music "audio/BGM_UKM.ogg" fadein 1.0
     scene ruang ukm with dissolve
@@ -1858,8 +1853,8 @@ label goodendpiamatsuri:
     pia "?"
     hide pia_side_talk with dissolve
     $ quick_menu = False
-    scene black with Dissolve(0.5)
-    scene awan with Dissolve(1.5)
+    scene black with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
     $ quick_menu = True
     mcname "A-ayo Pi, muter-muter. Liat-liat booth."
     show pia_side_talk at left with dissolve
@@ -1867,8 +1862,8 @@ label goodendpiamatsuri:
     hide pia_side_talk with dissolve
     "[mcname] pun mengajak Pia berkeliling di acara jejepangan tersebut sambil mengecek booth dan guest star lain di panggung."
     $ quick_menu = False
-    scene black with Dissolve(0.5)
-    scene awan with Dissolve(1.5)
+    scene black with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
     $ quick_menu = True
     stop music fadeout 1.0
     "Tak terasa berjam jam telah berlalu."
@@ -1901,7 +1896,7 @@ label goodendpiamatsuri:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play music "BGM_Matsuri Malam.ogg" fadein (1.0)
-    scene konser end with Dissolve(1.0)
+    scene stage with Dissolve(1.0)
     $ quick_menu = True
     "[mcname] menunggu di depan stage bersama Feni, Freya, Fiony, dan Takamina."
     mcname "Huhuhu, jadi aku yang deg-degan juga."
@@ -1920,7 +1915,7 @@ label goodendpiamatsuri:
     "MC" "JKT48V!!!!!!"
     play sound "SFX - Cheering.ogg" fadein 0.5
     "Penonton" "UWOOOOOOOOOGGGGH!"
-    "KTp masuk ke stage"
+#SPRITE KTP MUNCUL
     stop sound fadeout 1.5
     "Membawakan lagu pertama"
     mcname "*Melihat raut wajah Pia*"
@@ -1938,8 +1933,8 @@ label goodendpiamatsuri:
     hide fio_side with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    scene konser end with Dissolve(1.0)
     play sound "SFX - Cheering.ogg" fadein 0.5
+    scene stage with Dissolve(1.0)
     ###$ renpy.block_rollback()
     show tana_side_talk at left with dissolve
     $ quick_menu = True
@@ -2036,6 +2031,7 @@ label goodendpia:
     pia "Dengarkanlah lagu terakhir dari kami, xxxx."
     hide pia_side_talk with dissolve
     mcname "PIAAAAAAAAAAAAA!!!! SEMANGAAAAAAAAAAT!"
+    scene konser end with Dissolve(1.0)
     stop sound fadeout 1.5
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     $ quick_menu = False
