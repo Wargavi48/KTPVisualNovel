@@ -830,7 +830,7 @@ label truendpia:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Mall Slow.mp3" fadein 1.0
+    play music "audio/BGM_Mall.ogg" fadein 1.0
     scene mall with Dissolve(1.0)
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
