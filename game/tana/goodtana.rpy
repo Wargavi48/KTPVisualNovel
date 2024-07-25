@@ -3094,10 +3094,10 @@ label goodtanafinale:
     show tana_silent at tana_near
     with dissolve
     mcname "Walah."
-    show tana_side_talk at left
+    show tana_side_idle at left
     with dissolve
     tana "...."
-    hide tana_side_talk
+    hide tana_side_idle
     hide tana_silent
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -3525,12 +3525,13 @@ label goodtanafinale:
     hide pia_side_silent 
     with dissolve
     mcname "Udah, udah."
-    show pia_side_silent at left 
+    show pia_side_silent at left  with dissolve
     pia "Lu ga ikut latihan. Ga usah banyak omong."
     hide pia_side_silent 
     hide tana_angry
     show tana_angry_2 at tana_near
     show tana_side_angry_2 at left 
+    with dissolve
     tana "Maksud lu apa bawa bawa temen gua? Dia udah bantu kita. Respect dikit napa."
     hide tana_side_angry_2 
     hide pia_silent
@@ -4103,12 +4104,12 @@ label goodtanafinale:
     kana "PACARAN DULU YA KALIAN BERDUA!!!"
     hide kana_side_talk 
     hide kana_talk
-    show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_confused at tana_near
+    show tana_side_confused at left 
     with dissolve
     tana "Nai, punya otak tolong dipake."
-    hide tana_side_talk 
-    hide tana_talk
+    hide tana_side_confused 
+    hide tana_confused
     show pia at pia_near_right
     show kana at kana_near_left_2
     show feni at feni_center
@@ -4156,10 +4157,10 @@ label goodtanafinale:
     tana "Ini cuma ganti baju doang, kocak. Belum tampil."
     hide tana_side_talk 
     hide tana_talk
-    show tana_idol at tana_near
+    show tana at tana_near
     with dissolve
     mcname "Hahahaha"
-    hide tana_idol with dissolve
+    hide tana with dissolve
     #Narator
     "Tana, Pia, Kana pun segera pergi untuk berganti ke kostum mereka."
     $ quick_menu = False
@@ -4221,9 +4222,9 @@ label goodtanafinale:
     kana "Arigatou, Feni-senpai."
     hide kana_side_talk 
     hide kana_idol_talk
-    show pia_idol at pia_near
+    show pia_idol at pia_near_right
     show kana_idol at kana_near_left_2
-    show feni at feni_right
+    show feni at feni_center
     with dissolve
     mcname "Hmm? Tana mana?"
     hide kana_idol
