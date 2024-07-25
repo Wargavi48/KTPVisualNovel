@@ -48,6 +48,8 @@ define FeniKanaTana_Tana = Transform(zoom=1.3,xalign=-1.8,yalign=0.0)
 define KTP_Kana = Transform(zoom=1.3,xalign=2.5,yalign=0.0)
 define KTP_Pia = Transform(zoom=1.3,xalign=0.8,yalign=-0.01)
 define KTP_Tana = Transform(zoom=1.3,xalign=-1.8,yalign=0.0)
+define takamina_center = Transform(zoom=0.7,xalign=0.5,yalign=-0.1)
+define takamina_left = Transform(zoom=0.7,xalign=0.0,yalign=-0.1)
 
 
 

@@ -1188,10 +1188,22 @@ label goodpiaafterquiz:
     "Tiba tiba terdengar suara seorang gadis cantik dengan rambut ponytail."
     "Wajahnya tegas namun tetap memancarkan kebaikan, memberikan perpaduan unik antara kekuatan dan kehangatan."
     "Pandangannya tajam dengan senyuman yang lembut, memberikan kesan kehangatan yang melindungi."
-    "???" "Selow. Biar aku yang handle, tapi ajarin dulu ya, mesti gimana ini ngerjainnya."
-    show pia_side_talk at left with dissolve
+    show takamina at takamina_center with dissolve
+    show takamina_talk at takamina_center
+    # Harusnya takamina side
+    with dissolve
+    takamina "Selow. Biar aku yang handle, tapi ajarin dulu ya, mesti gimana ini ngerjainnya."
+    hide takamina
+    hide takamina_talk with dissolve
+    show takamina at takamina_left with dissolve
+    show pia_talk at pia_near_right
+    show pia_side_talk at left
+    with dissolve
     pia "A-aman. T-tapi…"
-    hide pia_side_talk with dissolve
+    show pia at pia_near_right
+    hide pia_side_talk
+    with dissolve
+    hide pia_talk
     "Takamina" "Salam kenal, kayaknya kita baru pertama ketemu ya. Namaku Takamina."
     show tana_side_talk at left with dissolve
     tana "Ah iya. Kenalin, ini Kak Takamina. Anggota klub ini juga."
