@@ -1730,6 +1730,7 @@ label chapter2tanaGOOD:
     hide flora
     with dissolve
 #chapter2tanaNEUTRAL2
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kampus.ogg" fadein 1.0

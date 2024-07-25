@@ -270,8 +270,8 @@ label chapter2tanaTRUE:
     with dissolve
     "Tana dan [mcname!c] pun masing-masing mengambil sampel tanah sesuai dengan arahan Flora."
     $ quick_menu = False
-    scene black with dissolve
-    scene sawah with dissolve
+    scene black with Dissolve(1.0)
+    scene sawah sore with Dissolve(1.0)
     show flora_talk at flora_left
     show tana at tana_right
     show flora_side_talk at left 
@@ -346,25 +346,27 @@ label chapter2tanaTRUE:
     with dissolve
 #chapter2tanaNEUTRAL1
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-    scene awan with dissolve
-    scene kelas with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Dosen.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
     $ quick_menu = True
-    "Setelah menyelesaikan praktikum, Bu Dosen memberikan pengumuman."
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene kelas with Dissolve(2.0)
+    # $ renpy.block_rollback()
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
+    show dosen_side at left
     with dissolve 
-    dosen "Baik, anak-anak, sebentar lagi kalian akan memasuki pekan UTS ya."
-    hide dosen_side_talk at left
+    $ quick_menu = True
+    dosen "Baik semuanya, praktikum kali ini sudah selesai. Tapi ingat, sebentar lagi kalian akan memasuki pekan UTS ya."
+    hide dosen_side at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
-    with dissolve
+    with dissolve 
     mcname "NOOOOOO~"
     hide dosen at dosen_center
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Lu berisik banget dah."
     hide tana_side_talk at left
@@ -374,45 +376,49 @@ label chapter2tanaTRUE:
     mcname "Iye maap."
     hide tana at tana_near
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
+    show dosen_side at left
     with dissolve 
     dosen "Jangan lupa belajar yang rajin, ya!"
-    hide dosen_side_talk at left
-    hide dosen_talk at dosen_center 
-    with dissolve
+    hide dosen_side at left
+    hide dosen_talk at dosen_center
+    show dosen at dosen_center
+    with dissolve 
     "Mahasiswa/i" "Baik, Bu!"
+    hide dosen at dosen_center with dissolve
     "Para Mahasiswa/i pun mulai pergi meninggalkan ruang praktikum."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_lorong.mp3" fadein 1.0
-    scene lorong with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Lorong.ogg" fadein 1.0
+    scene lorong with Dissolve(1.0)
     $ quick_menu = True
     mcname "Hadeh. Belajar lagi.. belajar lagi.."
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Makanya jadi orang pinter biar ga usah belajar."
     hide tana_side_talk at left
-    hide tana_talk at tana_near
     show tana at tana_near
+    show tana_talk at tana_near
     with dissolve
     mcname "Ngomong sama cermin noh."
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Yeuu, enak aje."
-    hide tana_side_talk at left
-    hide tana_talk at tana_near 
+    hide tana_side_talk at left 
+    hide tana_talk at tana_near
     with dissolve
-    "[mcname!c] dan Tana pun lanjut saling mengejek satu sama lain."
-    show rg_hasan_talk at char_center with dissolve
-    "RG Hasan" "Oy, [mcname!c]!"
-    hide rg_hasan_talk at char_center
+    "[mcname] dan Tana pun lanjut saling mengejek satu sama lain."
+    show rg_hasan_talk at char_center
+    with dissolve
+    "RG Hasan" "Oy, [mcname]!"
+    hide rg_hasan_talk at char_center 
     show rg_hasan at char_left
-    show bang_rama at char_right 
+    show bang_rama at char_right
     with dissolve
-    "Teman-teman [mcname!c] mulai datang menghampiri."
+    "Teman-teman [mcname] mulai datang menghampiri."
     mcname "Oit!"
     hide bang_rama at char_right
     show bang_rama_talk at char_right
@@ -421,16 +427,17 @@ label chapter2tanaTRUE:
     hide bang_rama_talk at char_right
     hide rg_hasan at char_left
     show tana_angry_2 at tana_near
-    show tana_side_angry_2 at left 
+    show tana_side_angry_2 at left
     with dissolve
     tana "Mau apa lu berdua?"
-    hide tana_side_angry_2 at left
+    hide tana_side_angry_2 at left 
     hide tana_angry_2 at tana_near
     show bang_rama at char_right
-    show rg_hasan_talk at char_left 
+    show rg_hasan_talk at char_left
     with dissolve
     "RG Hasan" "Serem banget dah nih anak."
-    hide rg_hasan_talk at char_left
+    hide rg_hasan_talk at char_left 
+    hide bang_rama at char_right
     show rg_hasan at char_left
     show bang_rama_talk at char_right
     with dissolve
@@ -445,7 +452,7 @@ label chapter2tanaTRUE:
     show tana_side_angry_2 at left
     with dissolve
     tana "Lu napa ikut-ikutan, kocak!"
-    hide tana_side_angry_2 at left
+    hide tana_side_angry_2 at left 
     hide tana_angry_2 at tana_near
     show tana_angry at tana_near
     with dissolve
@@ -455,7 +462,7 @@ label chapter2tanaTRUE:
     show rg_hasan_talk at char_left
     with dissolve
     "RG Hasan" "Tan, sorry ya. Gua pas itu ngeledekin lu."
-    hide rg_hasan_talk at char_left
+    hide rg_hasan_talk at char_left 
     hide bang_rama at char_right
     show rg_hasan at char_left
     show bang_rama_talk at char_right
@@ -464,16 +471,16 @@ label chapter2tanaTRUE:
     hide bang_rama_talk at char_right
     hide rg_hasan at char_left
     show tana_angry_2 at tana_near
-    show tana_side_angry_2 at left 
+    show tana_side_angry_2 at left
     with dissolve
     tana "Hilih! Enak bener dateng-dateng langsung minta maaf."
-    hide tana_side_angry_2 at tana_near
+    hide tana_side_angry_2 at left 
     hide tana_angry_2 at tana_near
     show bang_rama at char_right
-    show rg_hasan_talk at char_left 
+    show rg_hasan_talk at char_left
     with dissolve
     "RG Hasan" "Wuaduh."
-    hide rg_hasan_talk at char_left
+    hide rg_hasan_talk at char_left 
     hide bang_rama at char_right
     show rg_hasan at char_left
     show bang_rama_talk at char_right
@@ -481,17 +488,17 @@ label chapter2tanaTRUE:
     "Bang Rama" "Walawe."
     hide bang_rama_talk at char_right
     hide rg_hasan at char_left
-    show tana at tana_near 
+    show tana at tana_near
     with dissolve
-    "Tiba-tiba, Tana yang posisinya di seberang [mcname!c] pun menatap mata [mcname!c]."
+    "Tiba-tiba, Tana yang posisinya di seberang [mcname] pun menatap mata [mcname]."
     mcname "Hmmm?"
-    "Tana dengan jarinya menunjukkan gesture uang kepada [mcname!c]. Melihat hal tersebut, [mcname!c] merespon dengan memberikan gesture oke."
-    hide tana at tana_near
+    "Tana dengan jarinya menunjukkan gesture uang kepada [mcname]. Melihat hal tersebut, [mcname] merespon dengan memberikan gesture oke."
+    hide tana at tana_near 
     show rg_hasan at char_left
-    show bang_rama at char_right 
+    show bang_rama at char_right
     with dissolve
     mcname "Oit. Sini bentar."
-    "[mcname!c] berbisik kepada teman-temannya."
+    "[mcname] berbisik kepada teman-temannya."
     mcname "Sogok dah, sogok."
     hide rg_hasan at char_left
     show rg_hasan_talk at char_left
@@ -513,18 +520,16 @@ label chapter2tanaTRUE:
     "Bang Rama" "Gapapa dah. Entar patungan sama gua."
     hide bang_rama_talk at char_right
     hide rg_hasan at char_left
-    show bang_rama at char_right
     show rg_hasan_talk at char_left
+    show bang_rama at char_right
     with dissolve
     "RG Hasan" "Yaudah, awas lu sampe ga bayar."
     hide rg_hasan_talk at char_left
     hide bang_rama at char_right
+    with dissolve
+    "[mcname] dan teman-temannya kembali berbicara dengan Tana."
     show tana_angry at char_center
     show rg_hasan at rg_hasan_left
-    show bang_rama at bang_rama_right 
-    with dissolve
-    "[mcname!c] dan teman-temannya kembali berbicara dengan Tana."
-    hide bang_rama at bang_rama_right
     show bang_rama_talk at bang_rama_right
     with dissolve
     "Bang Rama" "Uhuk Uhuk! Jadi, sebagai permintaan maaf, kita traktir lu makan di kantin deh."
@@ -532,38 +537,36 @@ label chapter2tanaTRUE:
     hide tana_angry at char_center
     show bang_rama at bang_rama_right
     show tana_angry_2 at char_center
-    show tana_side_angry_2 at left 
+    show tana_side_talk at left
     with dissolve
     tana "Dih, mau nyogok. Lu kira gua siapa bisa disogok sogok?"
-    hide tana_side_angry_2 at left
+    hide tana_side_talk at left
     hide tana_angry_2 at char_center
-    hide rg_hasan at rg_hasan_left
+    hide rg_hasan at rg_hasan_left 
     show tana_angry at char_center
     show rg_hasan_talk at rg_hasan_left
     with dissolve
     "RG Hasan" "Enggak, bukan sogokan ini. Mana ada kita nyogok."
     hide rg_hasan_talk at rg_hasan_left
     hide tana_angry at char_center
-    show tana_confused at char_center
     show rg_hasan at rg_hasan_left
-    show tana_side_talk at left 
+    show tana_confused at char_center
+    show tana_side_confused at left
     with dissolve
     tana "Yang bener?"
-    hide tana_side_talk at left
-    hide tana_confused at char_center
-    show tana at char_center
+    hide tana_side_confused at left
     hide bang_rama at bang_rama_right
     show bang_rama_talk at bang_rama_right
     with dissolve
     "Bang Rama" "Iyaaa."
-    hide bang_rama_talk at bang_rama_right
-    hide tana at char_center
+    hide bang_tama_talk at bang_rama_right
+    hide tana_confused at char_center
     show bang_rama at bang_rama_right
     show tana_talk at char_center
     show tana_side_talk at left 
     with dissolve
     tana "Asikkkk!"
-    hide tana_side_talk at left
+    hide tana_side_talk at left 
     hide tana_talk at char_center
     show tana at char_center
     with dissolve
@@ -574,8 +577,8 @@ label chapter2tanaTRUE:
     "RG Hasan" "Lah, gua kemarin sakit perut. Jadinya gua ke kamar mandi. Pas gua balik, lu semua udah ga ada."
     hide rg_hasan_talk at rg_hasan_left
     hide bang_rama at bang_rama_right
-    show rg_hasan at rg_hasan_left
     show bang_rama_talk at bang_rama_right
+    show rg_hasan at rg_hasan_left
     with dissolve
     "Bang Rama" "Gua kemarin ada urusan dadakan. Jadi harus cabut duluan."
     hide bang_rama_talk at bang_rama_right
@@ -597,14 +600,7 @@ label chapter2tanaTRUE:
     show rg_hasan at rg_hasan_left
     with dissolve
     mcname "Asiiiikkk!"
-    hide rg_hasan at rg_hasan_left
-    hide bang_rama at bang_rama_right
-    hide tana at char_center
-    show tana_laugh at char_center
-    show rg_hasan at rg_hasan_left
-    show bang_rama at bang_rama_right
-    with dissolve
-    "[mcname!c] pun menatap ke arah Tana sambil menunjukkan pose sip. Tana pun juga menunjukkan menunjukkan pose sip kepada [mcname!c] sambil tertawa terbahak-bahak."
+    "[mcname] pun menatap ke arah Tana sambil menunjukkan pose sip. Tana pun juga menunjukkan menunjukkan pose sip kepada [mcname] sambil tertawa terbahak-bahak."
     "Bang Rama" "........"
     "RG Hasan" "......."
     hide bang_rama at bang_rama_right
@@ -618,45 +614,48 @@ label chapter2tanaTRUE:
     with dissolve
     "RG Hasan" "Yaudah lah ya."
     hide rg_hasan_talk at rg_hasan_left
-    hide tana_laugh at char_center
+    hide tana at char_center
     show rg_hasan at rg_hasan_left
     show tana_talk at char_center
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Let's goo ke kantin!"
-    hide tana_side_talk at left
+    hide rg_hasan at rg_hasan_left
     hide tana_talk at char_center
     hide bang_rama at bang_rama_right
-    hide rg_hasan at rg_hasan_left 
+    hide tana_side_talk at left
     with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/bgm_kantin.mp3" fadein 1.0
-    scene kantin with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kantin.ogg" fadein 1.0
+    scene kantin with Dissolve(1.0)
     $ quick_menu = True
-    "Mereka pun makan bersama di kantin, ditraktir oleh RG Hasan dan Bang Rama."
-    show tana at tana_near with dissolve
-    mcname "Makasih traktirannya~"
-    hide tana at tana_near
+    mcname "Hehe, makasih traktirannya~"
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Matur thank you, Bro!"
-    hide tana_side_talk at left
-    hide tana_talk at tana_near 
+    hide tana_side_talk at left with dissolve
+    "Bang Rama" "Haha iya iyaa."
+    "RG Hasan" "Yaudah, ayok makan dulu."
+#Ada tambahan dialog dikit, tolong tambahin Sprite
+    hide tana_talk at tana_near
     with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
-    scene awan with dissolve
-    scene kelas with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene kelas with Dissolve(2.0)
+    # $ renpy.block_rollback()
     $ quick_menu = True
     "Di tengah-tengah berjalannya mata kuliah..."
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Hoaam, ngantuk."
     hide tana_side_talk at left
@@ -666,7 +665,7 @@ label chapter2tanaTRUE:
     mcname "Makanya jangan kebanyakan main game. Kaya jago aja."
     hide tana at tana_near
     show tana_angry_2 at tana_near
-    show tana_side_angry_2 at left 
+    show tana_side_angry_2 at left
     with dissolve
     tana "Ngeremehin gua banget, lu. Entar gua kirimin screenshot gua menang."
     hide tana_side_angry_2 at left
@@ -676,14 +675,15 @@ label chapter2tanaTRUE:
     mcname "Halah halah. Kalah sekali, menang sekali. Alias ga berubah aja banyak gaya."
     hide tana_angry at tana_near
     show tana_confused at tana_near
-    show tana_side_confused at left 
+    show tana_side_confused at left
     with dissolve
     tana "K-kok lu tau?"
-    hide tana_side_confused at left with dissolve
+    hide tana_side_confused at left
+    with dissolve
     mcname "KAN LU DUO SAMA GUA, KOCAK!"
     hide tana_confused at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Iya juga, ya. Lupa gua, hehehe."
     hide tana_side_talk at left
@@ -693,66 +693,69 @@ label chapter2tanaTRUE:
     mcname "Makanya tuh otak dipake buat belajar biar ga pikun."
     hide tana at tana_near
     show tana_angry_2 at tana_near
-    show tana_side_angry_2 at left 
+    show tana_side_angry_2 at left
     with dissolve
     tana "Malas."
-    hide tana_side_angry_2 at left
-    hide tana_angry_2 at tana_near 
-    with dissolve
     stop music fadeout 1.0
-    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-    show dosen_talk at dosen_center
-    show dosen_side_talk at left 
-    with dissolve 
-    dosen "Tana! [mcname!c]! Kalian kok ngobrol sendiri!"
-    hide dosen_side_talk at left
-    hide dosen_talk at dosen_center
-    show tana_talk at tana_near
-    show tana_side_talk at left 
+    hide tana_side_angry_2 at left
+    hide tana_angry_2 at tana_near
     with dissolve
-    tana "Loh itu [mcname!c] lagi main HP, Bu. Saya mah dari tadi memperhatikan Ibu."
-    hide tana_side_talk at left with dissolve
-    mcname "????!!!!!????!!!!!"
-    hide tana_talk at tana_near
+    play music "audio/BGM_Dosen.ogg" fadein 1.0
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
-    with dissolve 
-    dosen "[mcname!c]! Maju sini coba kerjain soal yang ada di papan!"
-    hide dosen_side_talk at left
+    show dosen_side at left
+    with dissolve
+    dosen "Tana! [mcname]! Kalian kok ngobrol sendiri!"
     hide dosen_talk at dosen_center
-    show tana at tana_near 
+    hide dosen_side at left
+    show tana_talk at tana_near
+    show tana_side_talk at left
+    with dissolve
+    tana "Loh itu [mcname] lagi main HP, Bu. Saya mah dari tadi memperhatikan Ibu."
+    hide tana_side_talk at left
+    hide tana_talk at tana_near
+    show tana at tana_near
+    with dissolve
+    mcname "????!!!!!????!!!!!"
+    hide tana at tana_near
+    hide dosen at dosen_center
+    show dosen_talk at dosen_center
+    show dosen_side at left
+    with dissolve
+    dosen "[mcname]! Maju sini coba kerjain soal yang ada di papan!"
+    hide dosen_talk at dosen_center
+    hide dosen_side at left
+    show tana at tana_near
     with dissolve
     mcname "Awas lu, Ton..."
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Aman aja, kan? Xixixi."
     hide tana_side_talk at left
-    hide tana_talk at tana_near 
+    hide tana_talk at tana_near
     with dissolve
-    "[mcname!c] pun maju untuk mengerjakan soal yang tertulis di papan."
-    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-    scene kelas with dissolve
+    scene black with Dissolve(1.0)
+    scene kelas with Dissolve(1.0)
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
-    with dissolve 
-    $ quick_menu = True    
+    show dosen_side at left
+    with dissolve
+    $ quick_menu = True
     dosen "Baik, sekian untuk hari ini. Terima kasih."
-    dosen "[mcname!c]! Jangan lupa belajar!"
-    hide dosen_side_talk at left
+    dosen "[mcname]! Jangan lupa belajar!"
+    hide dosen_side at left
     hide dosen_talk at dosen_center
-    show dosen at dosen_center 
+    show dosen at dosen_center
     with dissolve
     mcname "Siap, Bu. Hehehe."
-    hide dosen at dosen_center
+    stop music fadeout 1.0
+    hide dosen at dosen_center with dissolve
+    play music "BGM_Kelas.ogg" fadein 1.0
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
-    tana "[mcname!c]... [mcname!c]...\n*Menggelengkan kepala*"
+    tana "[mcname]... [mcname]...\n*Menggelengkan kepala*"
     hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
@@ -760,7 +763,7 @@ label chapter2tanaTRUE:
     mcname "Berisik lu! Wibu."
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Ngaca! Wibu."
     hide tana_side_talk at left
@@ -770,24 +773,23 @@ label chapter2tanaTRUE:
     mcname "Hadeh. Dah sana beres-beres dulu."
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Iye iye."
     hide tana_side_talk at left
-    hide tana_talk at tana_near 
+    hide tana_talk at tana_near
     with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_Lorong.mp3" fadein 1.0
-    scene lorong with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Lorong.ogg" fadein 1.0
+    scene lorong with Dissolve(1.0)
     $ quick_menu = True
-    "Di luar kelas..."
     show tana at tana_near with dissolve
     mcname "Btw habis ini kita UTS, kocak. Mending kita belajar bareng biar minimal ga ngulang mata kuliah."
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Iya, ya. Ayo dah belajar bareng. Mau belajar di mana emang?"
     hide tana_side_talk at left
@@ -894,11 +896,10 @@ label chapter2tanaTRUE:
     "Tana dan [mcname!c] pun berangkat menuju Cafe."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene awan with Dissolve(1.5)
-    with Pause(1.0)
-    scene cafe with Dissolve(1.5)
+    scene black with Dissolve(1.0)
     play sound "audio/cafe-entrance.mp3" fadein 1.0
-    play music "audio/BGM_Cafe Cerah.mp3" fadein 1.0
+    play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0
+    scene cafe sore with Dissolve(1.0)
     $ quick_menu = True
     "Staff" "Selamat datang, mau pesan apa?"
     mcname "Mbak! Pesan large french fries 2, dimsum 2, onion ring 2, sama mineral waternya 2."
@@ -926,7 +927,10 @@ label chapter2tanaTRUE:
     "Staff" "Baik. Saya ulangi kembali pesanannya. Large french fries 2, dimsum 2, onion ring 2, dan mineral waternya 2."
     mcname "Betul."
     "Staff" "Baik. Pesanannya nanti akan diantar, ya. Mohon ditunggu."
-    "Tana dan [mcname!c] pun duduk di meja yang kosong."
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene cafe sore with Dissolve(1.0)
+    $ quick_menu = True
     mcname "Tan, lu mata kuliah apa yang ngerasa masih kurang?"
     hide tana at tana_near
     show tana_talk at tana_near
@@ -985,10 +989,11 @@ label chapter2tanaTRUE:
     tana "........"
     hide tana_side_idle at left with dissolve
     mcname "..........."
-    "TUTING SFX NOTIF"
+    play sound "ReceiveText.ogg" loop volume (2.0)
     hide tana_silent at tana_near
     show tana at tana_near
     with dissolve
+    stop sound
     mcname "Dah tuh."
     hide tana at tana_near
     show tana_talk at tana_near
@@ -1000,11 +1005,13 @@ label chapter2tanaTRUE:
     show tana at tana_near
     with dissolve
     mcname "Nanti belajar dari situ aja."
+    hide tana with dissolve
     "Staff" "Permisi, kak. Ini pesanannya."
     "Pesanan yang dipesan oleh [mcname!c] dan Tana pun tiba."
     "Staff" "Pesanannya sudah sesuai, ya?"
     mcname "Sudah, Mbak. Terima kasih."
-    hide tana at tana_near
+    show tana at tana_near with dissolve
+    pause(0.1)
     show tana_talk at tana_near
     show tana_side_talk at left 
     with dissolve
@@ -1118,10 +1125,13 @@ label chapter2tanaTRUE:
     hide tana at tana_near with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}BEBERAPA JAM KEMUDIAN{/color}" with Pause(2.0)
-    play music "audio/BGM_Cafe Sore.mp3" fadein 1.0
-    scene cafe with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Cafe Sore.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa jam kemudian..."
+    $ quick_menu = False
+    scene cafe with Dissolve(2.0)
     $ quick_menu = True
     "Tak terasa ternyata waktu sudah malam dan para staff sudah mulai beres-beres."
     show tana at tana_near with dissolve
@@ -1187,13 +1197,16 @@ label chapter2tanaTRUE:
     hide tana_shy at tana_near
     show tana at tana_near
     with dissolve
-    "[mcname!c] pun menemani Tana pulang ke kostnya."
     hide tana at tana_near with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
-    scene depan kosan with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Sesampainya di kost Tana..."
+    $ quick_menu = False
+    scene kamar tana with Dissolve(1.0)
     show tana_talk at tana_near
     show tana_side_talk at left 
     with dissolve
@@ -1259,194 +1272,194 @@ label chapter2tanaTRUE:
     show tana_side_talk at left 
     with dissolve
     tana "Siap. Kamu juga, ya."
+    stop music fadeout 1.0
     hide tana_side_talk at left
     hide tana_talk at tana_near 
     with dissolve
 #chapter2tanaNEUTRAL2
-    $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}HARI UTS{/color}" with Pause(2.0)
-    play music "audio/backsound_kamar.mp3" fadein 1.0
-    scene kamar mc kota with dissolve
-    $ quick_menu = True
-    "Sekarang adalah minggu UTS. [mcname!c] pun segera berangkat ke kampus."
-    $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    play music "audio/Kampus.mp3" fadein 1.0
-    show depan kampus with dissolve
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kampus.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    # $ renpy.block_rollback()
     $ quick_menu = True
-    "Sesampainya di kampus."
-    mcname "Hmmm.. Sudah mulai UTS nih."
+    "Tak terasa minggu UTS tiba."
+    $ quick_menu = False
+    scene kampus with Dissolve(2.0)
+    # $ renpy.block_rollback()
+    $ quick_menu = True
+    mcname "{i}Hmmmm.. Sekarang udah mulai UTS nih.{/i}"
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "DOR!!!"
     hide tana_side_talk at left
     hide tana_talk at tana_near
-    show tana_confused at tana_near
+    show tana_silent at tana_near
     with dissolve
     mcname "...."
-    show tana_side_confused at left with dissolve
+    show tana_side_idle at left
+    with dissolve
     tana "...."
-    hide tana_side_confused at left with dissolve
+    hide tana_side_idle at left
+    with dissolve
     mcname "Wuoh, kaget."
-    hide tana_confused at tana_near
+    hide tana_silent at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Telat, kocak."
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Hahaha."
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Hadeh, btw udah siap UTS?"
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Siap, lah. Emmangnya lu."
     hide tana at tana_near
-    show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_angry_2 at tana_near
+    show tana_side_angry_2 at left
     with dissolve
     tana "Enak aja. UTS mah gampang."
-    hide tana_side_talk at left 
-    hide tana_talk at tana_near
-    show tana at tana_near
-    with dissolve
-    mcname "Yang ngeremehin gini biasanya remedial sih."
-    hide tana at tana_near
-    show tana_angry_2 at tana_near
-    show tana_side_angry_2 at left 
-    with dissolve
-    tana "DIH. Semaunya aja tuh mulut kalo ngomong. Lu kali?"
-    hide tana_side_angry_2 at left 
+    hide tana_side_angry_2 at left
     hide tana_angry_2 at tana_near
     show tana_angry at tana_near
     with dissolve
-    mcname "Hahaha. Yaudah, masuk kelas,yuk. UTSnya udah mau mulai."
+    mcname "Yang ngeremehin gini biasanya remedial sih."
     hide tana_angry at tana_near
+    show tana_angry_2 at tana_near
+    show tana_side_angry_2 at left
+    with dissolve
+    tana "DIH. Semaunya aja tuh mulut kalo ngomong. Lu kali?"
+    hide tana_side_angry_2 at left
+    hide tana_angry_2 at tana_near
+    show tana at tana_near
+    with dissolve
+    mcname "Hahaha. Yaudah, masuk kelas,yuk. UTSnya udah mau mulai."
+    hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Gas!"
     hide tana_side_talk at left
-    hide tana_talk at tana_near 
+    hide tana_talk at tana_near
     with dissolve
-    # jump quiz
+    $ tana_route = "Good End"
+    $ quick_menu=False
     jump truetanaafterquiz
 
 label truetanaafterquiz:
-    stop music fadeout 1.0
-    $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}DUA JAM KEMUDIAN{/color}" with Pause(2.0)
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
-    scene kelas with dissolve
-    $ quick_menu = True
-    mcname "Akhirnya beres juga."
+    $ quick_menu=True
+    mcname "Fuaaaah! Akhirnya beres juga."
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Beres? Kaya bakal lulus aja."
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-    mcname "Dih. Gua mah pasti lulus. Btw, lu udah ditungguin, tuh."
+    mcname "Dih, gua mah pasti lulus. Btw, lu udah ditungguin tuh."
     hide tana at tana_near
-    show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_confused at tana_near
+    show tana_side_confused at left
     with dissolve
     tana "Ditungguin sapa?"
-    hide tana_side_talk at left 
-    hide tana_talk at tana_near
-    show tana at tana_near
+    hide tana_side_confused at left
     with dissolve
     mcname "Ditungguin remedial."
-    hide tana at tana_near
-    show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_confused at left
     with dissolve
-    tana "Gua udah belajar, cuy. Pasti aman lah. Emangnya lu, [mcname!c]."
-    hide tana_side_talk at left 
-    hide tana_talk at tana_near
+    tana "Gua udah belajar, cuy. Pasti aman lah. Emangnya lu, [mcname]."
+    hide tana_side_confused at left
+    hide tana_confused at tana_near
     show tana at tana_near
     with dissolve
     mcname "Tapi kan lu belajarnya sama gue."
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Iya juga. Yaudah lah, yang penting udah kelar."
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Ril min. Btw, nih perut jadi laper gara-gara kebanyakan mikir."
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Ayo ke kantin."
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Gas!"
     hide tana at tana_near with dissolve
-    "Tana dan [mcname!c] pun pergi ke kantin untuk membeli makan."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/bgm_kantin.mp3" fadein 1.0
-    scene kantin with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kantin.ogg" fadein 1.0
+    scene kantin with Dissolve(1.0)
+    show tana at tana_near with dissolve
+    # $ renpy.block_rollback()
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     $ quick_menu = True
     mcname "Weh, kantinnya rame banget. Mejanya penuh semua."
+    hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Gimana kalo kita beli, terus makannya di tempat lain?"
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Boleh, lu mau makan apa?"
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
-    tana "Lagi mau yang pedes-pedes nih."
-    hide tana_side_talk at left 
+    tana "Lagu mau yang pedes-pedes nih."
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Contohnya?"
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Mie pedes, hehehe."
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Yaudah."
-    "Tana dan [mcname!c] pun menghampiri penjual mie pedes."
+    hide tana at tana_near with dissolve
+    "Tana dan [mcname] pun menghampiri penjual mie pedes."
+    $ renpy.sound.set_volume(0.5,delay=2.0)
+    scene black with Dissolve(1.0)
+    scene kantin with Dissolve(1.0)
     mcname "Pak, beli mie pedesnya dua."
     "Penjual" "Siap, mau cabe berapa?"
+    show tana at tana_near with dissolve
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Sembilan!"
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
@@ -1454,20 +1467,20 @@ label truetanaafterquiz:
     "Penjual" "Serius mau cabe 9?"
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Bercanda Pak, hahaha."
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     "Penjual" "Hahaha, saya kira beneran. Jadinya mau cabe berapa?"
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Sepuluh aja, hehehe~"
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
@@ -1477,33 +1490,34 @@ label truetanaafterquiz:
     mcname "Lu beneran bisa makan cabe 10?"
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Bisa dong, gua kebal sama yang namanya pedes."
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Keren lahk."
     hide tana at tana_near with dissolve
     $ quick_menu = False
-    scene white with dissolve
-    scene kantin with dissolve
-    $ quick_menu = True
+    scene black with Dissolve(1.0)
+    pause(1.0)
+    scene kantin with Dissolve(1.0)
     show tana at tana_near with dissolve
+    $ quick_menu = True
     "Penjual" "Ini pesenannya. Cabe 2 sama cabe 10."
     mcname "Totalnya berapa, Pak?"
     "Penjual" "Totalnya 32 ribu."
     mcname "Oke, Pak. Ini uangnya, ya. Uang pas."
     "Penjual" "Oke, terima kasih."
     mcname "terima kasih kembali, Pak."
-    mcname "Yuk, Tan."    
+    mcname "Yuk, Tan."
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Oke. Btw, mau makan di mana?"
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
@@ -1530,12 +1544,11 @@ label truetanaafterquiz:
     with dissolve
     mcname "Tau, ikut aja."
     hide tana at tana_near with dissolve
-    "Tana dan [mcname!c] pun pergi menuju rooftop."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_Lorong.mp3" fadein 1.0
-    scene lorong with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Sore.ogg" fadein 1.0
+    scene lorong sore with Dissolve(1.0)
     $ quick_menu = True
     mcname "Nah, habis naik kita buka pintunya."
     show tana_talk at tana_near
@@ -1547,7 +1560,17 @@ label truetanaafterquiz:
     show tana at tana_near
     with dissolve
     mcname "Gass~"
+    $ quick_menu = True
+    scene black with Dissolve(1.0)
+    play sound "SFX - Locked Door.wav"
+    window auto hide
+    pause (4.0)
+    window auto hide
+    $ quick_menu = False
     "Ternyata pintu ke rooftop dikunci."
+    $ quick_menu = False
+    scene lorong with Dissolve(1.0)
+    $ quick_menu = True
     mcname "Aduh."
     hide tana at tana_near
     show tana_talk at tana_near
@@ -1577,12 +1600,9 @@ label truetanaafterquiz:
     hide tana_side_talk at left
     hide tana_talk at tana_near 
     with dissolve
-    "Tana dan [mcname!c] turun ke lantai bawah untuk mencari CS."
-    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_Lorong.mp3" fadein 1.0
-    scene depan kampus with dissolve
+    scene black with Dissolve(1.0)
+    scene kampus sore with Dissolve(1.0)
     $ quick_menu = True
     mcname "Pak!"
     "Cleaning Service" "Iya, ada apa?"
@@ -1598,6 +1618,7 @@ label truetanaafterquiz:
     with dissolve
     "Cleaning Service" "Ooooh, silahkan." 
     #ASSET KUNCI"
+    play sound "SFX - Key.mp3"
     "Cleaning Service" "Itu ya, kuncinya. Nanti kalo udah selesai, jangan lupa dibalikin ke saya."
     hide tana at tana_near
     show tana_talk at tana_near
@@ -1620,8 +1641,8 @@ label truetanaafterquiz:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    play music "audio/BGM_Rooftop Romance Pia.mp3" fadein 1.0
-    scene rooftop with dissolve
+    play music "audio/BGM_Rooftop Sore.mp3" fadein 1.0
+    scene rooftop sore with dissolve
     $ quick_menu = True
     show tana_talk at tana_near
     show tana_side_talk at left 
@@ -1707,164 +1728,171 @@ label truetanaafterquiz:
 #chapter2tanaNEUTRAL3
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
-    scene depan kampus with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kampus.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
     $ quick_menu = True
-    "Saat menuju kampus, [mcname!c] bertemu dengan Tana di depan kampus."
+    "Beberapa hari kemudian..."
+    $ quick_menu = False
+    scene kampus with Dissolve(2.0)
+    # $ renpy.block_rollback()
+    $ quick_menu = True
+    "Saat menuju kampus, [mcname] bertemu dengan Tana di depan kampus."
+    show tana at tana_near with dissolve
     mcname "Oi, Tan."
+    hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Haloo~"
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Lu udah liat pengumuman hasil UTS belum?"
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Belum, nih. Emang liatnya di mana?"
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Ditempel di mading lorong deh kalo ga salah."
     hide tana at tana_near
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Yaudah, ayok gas ke sana."
     hide tana_side_talk at left
-    hide tana_talk at tana_near 
+    hide tana_talk at tana_near
     with dissolve
-    "Tana dan [mcname!c] berjalan bersama menuju mading di lorong."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_Lorong.mp3" fadein 1.0
-    scene lorong with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Lorong.ogg" fadein 1.0
+    scene lorong with Dissolve(1.0)
+    # $ renpy.block_rollback()
     show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     $ quick_menu = True
     tana "Hmmmm, madingnya yang itu kan?"
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Iyah."
     hide tana at tana_near
-    show tana_confused at tana_near
-    show tana_side_confused at left
+    show tana_silent at tana_near
+    show tana_side_idle at left
     with dissolve
+    stop music fadeout 1.0
     tana "Hmmmm..."
-    hide tana_side_confused at left with dissolve
+    play music "BGM_Funny 3.ogg" fadein 1.0
+    hide tana_side_idle at left
+    hide tana_silent at tana_near
+    show tana_confused at tana_near
+    with dissolve
     mcname "AHAHAHAHAHAH! Ada nama lu di kolom remedial!"
     mcname "HAHAHAHAAHA! Makanya belajar, jangan main game mulu."
-    show tana_side_confused at left with dissolve
+    show tana_side_idle at left
+    with dissolve
     tana "Gua udah belajar tauuu. Harusnya gak gini... Hmmm?"
-    hide tana_side_confused at left with dissolve
+    hide tana_side_idle at left
+    with dissolve
     "Tana pun melihat kembali daftar nama di kolom remedial dengan lebih seksama."
     hide tana_confused at tana_near
     show tana_laugh at tana_near
-    show tana_side_laugh at left 
+    show tana_side_laugh at left
     with dissolve
     tana "HAHAHAHAHA! NAMA LU DI BAWAH GUA, KOCAK!"
-    hide tana_side_laugh at left 
-    hide tana_laugh at tana_near
-    show tana at tana_near
+    hide tana_side_laugh at left
     with dissolve
     mcname "LAH?! KOK BISA SIH?!"
-    hide tana at tana_near
+    hide tana_laugh at tana_near
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
     tana "Terbukti kalau gua itu emang lebih jago daripada elu. Sungkem dulu sini!"
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
     mcname "Enak aja, lebih jago mah ga ngaruh kalo endingnya tetep remedial."
     hide tana at tana_near
     show tana_angry_2 at tana_near
-    show tana_side_angry_2 at left 
+    show tana_side_angry_2 at left
     with dissolve
-    tana 'Halah halah.'
-    hide tana_side_angry_2 at left 
+    tana "Halah halah."
+    hide tana_side_angry_2 at left
     hide tana_angry_2 at tana_near
     show tana_confused at tana_near
     with dissolve
     "???" "Sama-sama remedial kok berantem."
-    hide tana_confused at tana_near
-    show tana_angry_2 at tana_near
-    show tana_side_angry_2 at left 
+    show tana_side_confused at left
     with dissolve
     tana "Eh?! Sapa tuh yang berani ngomong gitu?"
-    hide tana_side_angry_2 at left
-    hide tana_angry_2 at tana_near
+    hide tana_side_confused at left
+    hide tana_confused at tana_near
+    show tana at tana_right
+    show flora_talk at flora_left
+    show flora_side_talk at left
     with dissolve
-    $ quick_menu = False
-    scene black with dissolve
-    scene lorong with dissolve
-    show flora_talk at flora_center
-    show flora_side_talk at left 
-    with dissolve
-    $ quick_menu = True
     flora "Aku, kenapa?"
     hide flora_side_talk at left
-    hide flora_talk at flora_center
+    hide flora_talk at flora_left
+    hide tana at tana_right
     show flora at flora_left
     show tana_talk at tana_right
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "E-eh, Kak Flora. Heheheh."
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_right
     show tana at tana_right
     with dissolve
     mcname "Kak Flora lagi ngapain, kok di sini juga?"
     hide flora at flora_left
     show flora_talk at flora_left
-    show flora_side_talk at left 
+    show flora_side_talk at left
     with dissolve
     flora "Emang di kampus ini yang UTS cuma kalian berdua?"
     hide flora_side_talk at left
     hide flora_talk at flora_left
-    show flora at flora_left
     hide tana at tana_right
+    show flora at flora_left
     show tana_talk at tana_right
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Iya juga. Kalo Kak Flora hasil UTSnya gimana? Remedial juga, ya?"
     hide tana_side_talk at left
+    hide tana_talk at tana_right
     hide flora at flora_left
     show tana at tana_right
     show flora_talk at flora_left
-    show flora_side_talk at left 
+    show flora_side_talk at left
     with dissolve
     flora "Enak aja, emangnya kalian berdua? Coba liat aja di madingnya kalo ga percaya."
-    hide flora_side_talk at left 
+    hide flora_side_talk at left
     hide flora_talk at flora_left
     show flora at flora_left
     with dissolve
     mcname "Oh iya. Ga ada nama Kak Flora, sugoooi~"
     hide tana at tana_right
     show tana_talk at tana_right
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Dasar wibu."
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_right
     show tana at tana_right
     with dissolve
     mcname "Kak Flora tuh wibu."
     hide flora at flora_left
     show flora_talk at flora_left
-    show flora_side_talk at left 
+    show flora_side_talk at left
     with dissolve
     flora "Hadeh, kok jadi gua yang kena?"
     flora "Yaudah, gua cabut duluan ya! Kalian jangan lupa belajar!"
@@ -1873,21 +1901,28 @@ label truetanaafterquiz:
     hide tana at tana_right
     show flora at flora_left
     show tana_talk at tana_right
-    show tana_side_talk at left 
+    show tana_side_talk at left
     with dissolve
     tana "Siap Kak Flora!"
     hide tana_side_talk at left
     hide tana_talk at tana_right
-    show tana at tana_right 
+    show tana at tana_right
     with dissolve
     mcname "Siap!"
+    hide tana at tana_right
     hide flora at flora_left
-    hide tana at tana_right 
-    show tana_talk at tana_near
-    show tana_side_talk at left 
     with dissolve
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "BGM_Lorong.ogg" fadein 1.0
+    scene lorong with Dissolve(1.0)
+    show tana_talk at tana_near
+    show tana_side_talk at left
+    with dissolve
+    $ quick_menu = True
     tana "Hmmmm. Ngomong-ngomong soal belajar, mau belajar bareng lagi ga?"
-    hide tana_side_talk at left 
+    hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
@@ -2135,11 +2170,14 @@ label truetanaafterquiz:
     with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
-    scene awan with Dissolve(1.5)
-    scene kelas with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kampus.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene kampus with Dissolve(2.0)
+    # $ renpy.block_rollback()
     $ quick_menu = True
     mcname " Akhirnya selesai juga jadwal hari ini."
     show tana_talk at tana_near
@@ -2164,10 +2202,10 @@ label truetanaafterquiz:
     hide tana at tana_near with dissolve
     "Tana dan [mcname!c] pergi menuju kost Tana."
     stop music fadeout 1.0
-    $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
-    scene depan kosan with dissolve
+    $ quick_menu = False 
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
+    scene depan kosan with Dissolve(1.0)
     $ quick_menu = True
     mcname "Sampe juga."    
     show tana_confused at tana_near
@@ -2210,7 +2248,7 @@ label truetanaafterquiz:
     with dissolve
     tana "..........\n*Stare*"
     hide tana_side_idle at left with dissolve
-    mcname "..........."
+    mcname "...........?"
     mcname "Oooooooo..."
     mcname "Ya maaf.."
     show tana_side_idle at left with dissolve
@@ -2238,12 +2276,11 @@ label truetanaafterquiz:
     with dissolve
     mcname "Oke deh. Nyuwun sewu... (Permisi...)"
     hide tana at tana_near with dissolve
-    "Tana dan [mcname!c] pun masuk ke dalam kamar kost Tana."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
-    scene kamar tana with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kamar Tana.ogg" fadein 1.0
+    scene kamar tana with Dissolve(1.0)
     show tana at tana_near with dissolve
     $ quick_menu = True
     mcname "Oooooo. Jadi gini toh kamarmu, bagus juga."
@@ -2398,8 +2435,9 @@ label truetanaafterquiz:
     hide tana at tana_near with dissolve
     "Tana dan [mcname!c] pun mulai belajar bersama sambil menunggu makanan yang mereka pesan."
     $ quick_menu = False
-    scene black with dissolve
-    scene kamar tana with dissolve
+    scene black with Dissolve(1.0)
+    pause (1.0)
+    scene kamar tana with Dissolve(1.0)
     show tana_talk at tana_near
     show tana_side_talk at left 
     with dissolve
@@ -2419,8 +2457,9 @@ label truetanaafterquiz:
     hide tana_talk at tana_near 
     with dissolve
     $ quick_menu = False
-    scene black with dissolve
-    scene kamar tana with dissolve
+    scene black with Dissolve(1.0)
+    pause (1.0)
+    scene kamar tana with Dissolve(1.0)
     show tana at tana_near with dissolve
     $ quick_menu = True
     mcname "Ton, Ini maksudnya apaan? Kamu sebagai \"Tana\" kan paham nih tentang temen-temen pertanahan."
@@ -2507,9 +2546,9 @@ label truetanaafterquiz:
     "[mcname!c] pun keluar untuk mengecek apakah pesanannya sudah datang."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
-    scene depan kosan with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
+    scene depan kosan with Dissolve(1.0)
     $ quick_menu = True
     "Ojol" "Permisi, Kak. Atas nama [mcname!c]?"
     mcname "Iya, betul."
@@ -2523,12 +2562,12 @@ label truetanaafterquiz:
     mcname "Sudah ya Pak."
     "Ojol" "Baik kak, terima kasih."
     mcname "Terima kasih kembali."
-    "Pak Ojol pun pergi dan [mcname!c] kembali masuk ke dalam kamar Tana."
+    "Pak Ojol pun pergi dan [mcname!c] kembali masuk ke kamar Tana."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
-    scene kamar tana with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kamar Tana.ogg" fadein 1.0
+    scene kamar tana with Dissolve(1.0)
     $ quick_menu = True
     mcname "Nih, Ton."
     show tana_talk at tana_near
@@ -2581,8 +2620,8 @@ label truetanaafterquiz:
     hide tana at tana_near with dissolve
     "Tana dan [mcname!c] pun duduk bersebelahan dan mulai memakan pesanan mereka masing-masing."
     $ quick_menu = False
-    scene black with dissolve
-    scene kamar tana with dissolve
+    scene black with Dissolve(1.0)
+    scene kamar tana with Dissolve(1.0)
     show tana_talk at tana_near
     show tana_side_talk at left 
     with dissolve
@@ -2623,6 +2662,7 @@ label truetanaafterquiz:
     show tana at tana_near
     with dissolve
     mcname "Gila! Pedes banget ini! Kok ada orang betah makan pedes kayak gi-"
+    stop music fadeout 1.0
     hide tana at tana_near
     show tana_shock at tana_near
     with dissolve
@@ -2638,9 +2678,14 @@ label truetanaafterquiz:
     show tana at tana_near
     with dissolve
     "Tana pun memberikan segelas air mineral kepada [mcname!c]."
-    "SFX Minum"
+
+    "BARU DIREVIEW SAMPE SINI SAMA JON"
+    $ quick_menu = False    
+    scene black with Dissolve(1.0)
+    play music "BGM_Kamar Tana.ogg" fadein 1.0
+    scene kamar tana with Dissolve(1.0)
+    $ quick_menu = True
     mcname "Ahhh~"
-    hide tana at tana_near
     show tana_talk at tana_near
     show tana_side_talk at left 
     with dissolve
@@ -2669,7 +2714,6 @@ label truetanaafterquiz:
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-    "SFX Minum"
     mcname "Ahhh~ Udah udah, aman."
     hide tana at tana_near
     show tana_talk at tana_near
@@ -2850,7 +2894,7 @@ label truetanaafterquiz:
 
 label trueendtana:
 #NeutralRoute4
-    play music "audio/BGM_Lorong.mp3" fadein 1.0   
+    play music "audio/BGM_Lorong.ogg" fadein 1.0   
     scene lorong with dissolve
     $ quick_menu = True
     "Tana dan [mcname!c] keluar dari ruang kelas."
@@ -3671,7 +3715,7 @@ label trueendtana:
     $ quick_menu = False
     scene black with dissolve
 #HARUSNYA BGM HANABI FESTIVAL
-    play music "audio/BGM_Lorong.mp3" fadein 1.0
+    play music "audio/BGM_Lorong.ogg" fadein 1.0
 #HARUSNYA BACKGROUND HANABI
     scene lorong with dissolve
     show tana_talk at tana_near
@@ -4037,7 +4081,7 @@ label truetanaaftergame:
     $ quick_menu = False
     scene black with dissolve
 #HARUSNYA BGM SAWAH MALEM BARENG TANA
-    play music "audio/BGM_Lorong.mp3" fadein 1.0
+    play music "audio/BGM_Lorong.ogg" fadein 1.0
 #HARUSNYA BACKGROUND SAWAH MALAM
     scene sawah_malam with dissolve  
     $ quick_menu = True
