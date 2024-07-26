@@ -2,33 +2,36 @@ define tana_route = ""
 
 
 label chapter1tana:
-    scene awan with Dissolve(1.0)
     "Walaupun ini sudah pertengahan tahun, namun Matahari secara terik menerangi Jakarta.Dan saat melihat ke atas langit, hanya langit biru lah yang terlihat. [mcname] mendatangi gedung kampus untuk melakukan daftar ulang."
-    play music "audio/BGM_Kampus.ogg" fadein 1.0
-    scene depan kampus with Dissolve(1.0)
+    $ quick_menu = False
+    scene depan kampus with Dissolve(2.0)
     # #$ renpy.block_rollback()
     $ quick_menu = True
     mcname "Akhirnya sampe juga di kampus, gede banget ya, gedungnya juga tinggi-tinggi"
     "Pada saat ke kampus, [mcname] melihat seorang gadis sedang dikerumunin 2 cowok. Terlihat agak gelisah."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene awal tana with dissolve
+    play music "BGM_Bad End.ogg" fadein 1.0
+    scene awal tana with Dissolve(1.0)
     $ quick_menu = True
     mcname "Eh ada apaan tuh ribut-ribut?"
     $ quick_menu = False
-    scene awal tana mc with dissolve
+    scene awal tana mc with Dissolve(1.0)
     $ quick_menu = True
-    "[mcname] pun mendatangi perempuan tersebut"
-    mcname "Woy ngapain kalian?! Beraninya sama cewek, keroyokan pula, tch"
+    "[mcname] pun mendatangi perempuan tersebut."
+    mcname "Woy ngapain kalian?! Beraninya sama cewek, keroyokan pula, tch."
+    stop music fadeout 1.0
     show tana_side_talk at left with dissolve
-    tana "Lah lu ngapa kocaaak, orang kita lagi bercanda"
+    play music "BGM_Funny 3.ogg" fadein 1.0
+    tana "Lah lu ngapa kocaaak, orang kita lagi bercanda."
     hide tana_side_talk at left with dissolve
     "Cowok 1" "Yeuuu party pooper lu!"
-    "Cowok 2" "Dah bubar bubar"
+    "Cowok 2" "Dah bubar bubar."
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene depan kampus with Dissolve(1.0)
     $ quick_menu = True
-    "2 cowok itu pun pergi"
+    "2 cowok itu pun pergi."
     mcname "{i}Noooo baru ketemu orang di sini malah malu-maluin aaaaa{/i}"
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -68,7 +71,9 @@ label chapter1tana:
             jump credits
         "Cuek lah gak bakal ketemu lagi sama orang-orang tadi, lanjut daftar ulang":
             # #$ renpy.block_rollback()
+            stop music fadeout 1.0
             $ quick_menu = True
+            play music "BGM_Kampus.ogg" fadein 1.0
             mcname "Cuek lah gak bakal ketemu lagi sama orang-orang tadi, lanjut daftar ulang"
             mcname "Ok lanjut daftar ulang abis itu ke kelas perkenalan, semoga gak ada kejadian memalukan lagi. Wish me luck..."
             "Setelah melakukan daftar ulang, [mcname] pun pulang ke kosannya untuk beristirahat."
@@ -99,7 +104,6 @@ label tanamcdaftarulang:
     # #$ renpy.block_rollback()
     mcname "Hadeeeh. Baru juga dateng… Malu banget."
     "[mcname] pun mengingat kembali kejadian di depan kampus pada siang hari itu."
-    show tana at tana_near with dissolve
     mcname "Aduh kok aku jadi kepikiran terus sama cewek itu, ya? Apakah karena malu?"
     mcname "Dah ah. Tidur dulu, besok hari pertama orientasi"
     hide tana at tana_near with dissolve
@@ -110,7 +114,7 @@ label tanamcdaftarulang:
     play music "audio/BGM_Kampus.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
     $ quick_menu = True    
-    "Keesokann harinya..."
+    "Keesokan harinya..."
     $ quick_menu = False
     show depan kampus with Dissolve(2.0)
     # #$ renpy.block_rollback()
@@ -229,11 +233,9 @@ label tanamcdaftarulang:
     mcname "{i}Duh kebelet{/i}"
     mcname "{i}Ke toilet dulu aman kali ya gak bakal ketinggalan kelompok{/i}"
     "Dengan sedikit terburu buru, [mcname] bergegas ke toilet."
-    stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
     pause(1.0)
-    play music "BGM_Lorong.ogg" fadein 1.0
     scene lorong with Dissolve(1.0)
     # #$ renpy.block_rollback()
     $ quick_menu = True
@@ -275,13 +277,13 @@ label tanamcdaftarulang:
     mcname "Yaudah ngikut deh"
     hide tana at tana_near with dissolve
     "Karena tidak tau arah, [mcname] pun mengikuti Tana menyusuri kampus."
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "1 jam kemudian..."
     $ quick_menu = False
-    stop music fadeout 1.0
     play music "audio/BGM_Funny 2.ogg" fadein 1.0
     scene lorong with Dissolve(2.0)
     show tana at tana_near with dissolve
@@ -319,7 +321,7 @@ label tanamcdaftarulang:
     scene black with Dissolve(1.0)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
-    "1 jam kemudian..."
+    "Beberapa saat kemudian..."
     $ quick_menu = False
     scene kantin with Dissolve(2.0)
     show tana_confused at tana_near with dissolve
@@ -422,7 +424,7 @@ label tanamcdaftarulang:
     play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
     $ quick_menu = True
-    "Beberapa jam kemudian..."
+    "Tak terasa langit menjadi sore..."
     $ quick_menu = False
     scene lorong sore with Dissolve(2.0)
     show flora_talk at flora_center
@@ -692,7 +694,6 @@ label tanamcdaftarulang:
     hide flora_talk at flora_left
     hide feni at feni_right
     with dissolve
-    $ quick_menu = False
     menu:
         "Anime Pilihan Kamu:"
         "-Samurai Y\n-Pemburu x Pemburu\n-Mengubah sampah menjadi pohon\n-Pelaut bulan\n-Inisial F":
@@ -809,11 +810,11 @@ label tanamcdaftarulang:
     hide flora at flora_left
     hide feni at feni_right
     with dissolve
-    "Sore itu, ruang club pun dipenuhi gelak tawa dan canda ria.[mcname] dan Tana pun akhirnya bergabung dalam klub jejepangan bersama Feni dan Flora. Mereka berempat pun lanjut membersihkan ruang klub sampai malam."
+    "Sore itu, ruang club pun dipenuhi gelak tawa dan canda ria.[mcname] dan Tana pun akhirnya bergabung dalam klub jejepangan bersama Feni dan Flora."
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    pause(1.0)
-    scene ruang ukm sore with Dissolve(1.0)
+    pause (1.0)
+    scene ruang ukm sore with Dissolve(2.0)
     show tana_talk at tana_near
     show flora at flora_left
     show feni at feni_right
@@ -1277,10 +1278,13 @@ label chapter1tanamakan:
     with dissolve
     mcname "Hadehh..."
     hide tana with dissolve
+    stop music fadeout 1.0
     "Beberapa saat kemudian..."
+    play music "BGM_Funny 3.ogg" fadein 1.0
 # tana batuk
-    show tana at tana_near with dissolve
-    show tana_side at left with dissolve
+    show tana at tana_near
+    show tana_side at left
+    with dissolve
     tana "UHUK UHUK."
     hide tana_side at left with dissolve
     mcname "Makanya makan pelan-pelan, kocak. Lu gak makan dari tahun kemarin ato gimana?"
@@ -1310,16 +1314,18 @@ label chapter1tanamakan:
     mcname "Hahahahahaha"
     hide tana_angry at tana_near with dissolve
     "[mcname] dan Tana ngobrol di cafe sambil menikmati hidangan yang dipesan."
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
+    play music "BGM_Kosan 1.ogg" fadein 1.0
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Tak terasa cafe semakin sepi dan para staff terlihat mulai\nberes-beres."
     $ quick_menu = False
     scene cafe malam with Dissolve(2.0)
     # #$ renpy.block_rollback()
-    $ quick_menu = True
     show tana at tana_near with dissolve
+    $ quick_menu = True
     mcname "Eh. Kayaknya udah mau tutup nih."
     hide tana at tana_near
     show tana_talk at tana_near
@@ -1452,9 +1458,12 @@ label chapter1tanamakan:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     play music "BGM_Kampus.ogg" fadein 1.0
-    scene depan kampus with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene depan kampus with Dissolve(2.0)
     # #$ renpy.block_rollback()
     $ quick_menu = True
     "Pagi itu [mcname] terbangun dan bersiap siap untuk pergi ke kampus."
@@ -1507,7 +1516,7 @@ label chapter1tanamakan:
     hide tana_shock at tana_near
     show tana at tana_near
     with dissolve
-    mcname "Kata gue GAS sih."
+    mcname "Hadeh..."
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     "???" "Selamat pagi, semuanya!"
     hide tana at tana_near with dissolve
@@ -1785,8 +1794,10 @@ label chapter1tanamakan:
     hide tana at tana_right
     hide flora at flora_left 
     with dissolve
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
+    play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
     $ quick_menu = True
     "Tak terasa waktu menjadi sore..."
@@ -1852,7 +1863,9 @@ label chapter1tanamakan:
     scene black with Dissolve(1.0)
     play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
+    $ quick_menu = True
     "Keesokan harinya.."
+    $ quick_menu = False
     scene kelas with Dissolve(2.0)
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -1915,8 +1928,10 @@ label chapter1tanamakan:
     hide dosen_side at left
     hide dosen_talk at dosen_center 
     with dissolve
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
+    play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
     $ quick_menu = True
     "Berjam jam kemudian..."
@@ -1932,10 +1947,8 @@ label chapter1tanamakan:
     hide dosen_talk at dosen_center
     with dissolve
     "Mahasiswa/i" "Baik, Buu."
-    stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene kelas sore with Dissolve(1.0)
     show tana at tana_near with dissolve
     $ quick_menu = True
@@ -2017,7 +2030,7 @@ label chapter1tanamakan:
     show tana_side_talk at left
     with dissolve
     $ quick_menu = True
-    tana "Mumpung masih siang, mau jalan-jalan dulu ga?"
+    tana "Mumpung baru dateng, mau jalan-jalan dulu ga?"
     hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana at tana_near

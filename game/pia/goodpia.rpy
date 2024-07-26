@@ -2193,7 +2193,7 @@ label goodendpiamatsuri:
     "Beberapa saat kemudian, acara Matsuri pun resmi dimulai"
     $ quick_menu = False
     scene lorong with Dissolve(2.0)
-#HARUSNYA BG + BGM MATSURI SIANG
+#HARUSNYA BG MATSURI SIANG
     ###$ renpy.block_rollback()
     $ quick_menu = True
     mcname "Let’s go, otw kita!"
