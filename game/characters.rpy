@@ -224,6 +224,21 @@ image side kana_side_smile = "Characters/Kana_side_smile.png"
 image side kana_side_talk = "Characters/kana_side_talk.png"
 image side kana_side = "Characters/kana_side.png"
 
+# Define side kana home character
+image side kana_home_side = "Characters/Kana_home_side.png"
+image side kana_home_side_confused = "Characters/Kana_home_side_confused.png"
+image side kana_home_side_cry = "Characters/Kana_home_side_cry.png"
+image side kana_home_side_drylaugh = "Characters/Kana_home_side_drylaugh.png"
+image side kana_home_side_talk = "Characters/Kana_home_side_talk.png"
+image side kana_home_side_mad = "Characters/Kana_home_side_mad.png"
+image side kana_home_side_blank = "Characters/Kana_home_side_blank.png"
+image side kana_home_side_dizzy = "Characters/Kana_home_side_dizzy.png"
+image side Kana_home_side_dizzy_eh = "Characters/Kana_home_side_dizzy_eh.png"
+image side kana_home_side_shy_ahn = "Characters/Kana_home_side_shy_ahn.png"
+image side kana_home_side_shy_eh = "Characters/Kana_home_side_shy_eh.png"
+image side kana_home_side_shy_hmph = "Characters/Kana_home_side_shy_hmph.png"
+image side kana_home_side_smile_cry = "Characters/Kana_home_side_smile_cry.png"
+
 # Define side tana character
 image side tana_side_angry = "Characters/Tana_side_angry.png"
 image side tana_side_angry_2 = "Characters/Tana_side_angry_2.png"
