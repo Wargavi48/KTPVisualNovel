@@ -1089,61 +1089,79 @@ label chapter1kana3mie:
     hide freya_side_shock with dissolve
     hide kana_talk
     show kana_angry at char_right
-    # Kalau bisa, ada kana_side_angry
-    show kana_side_talk at left with dissolve
+    show kana_side_cry at left
+    with dissolve
     kana "Hmpph"
     kana "{size=-10}Kan gara-gara kamu juga...{/size}"
-    hide kana_side_talk with dissolve
+    hide kana_side_cry with dissolve
     "Seakan menjadi penyelamat, Mbak kantin pun datang membawakan pesanan mereka..."
     "Mbak Kantin" "Ini ya pesanannya."
-    show kana at char_right with dissolve
+    hide freya_shock
     hide kana_angry
+    show freya at char_left
+    show kana at char_right
+    with dissolve
     "Mata Kana bersinar, melihat datangnya Mbak kantin yang membawa makanan."
-    show kana_talk at char_right with dissolve
     hide kana
-    show kana_side_talk at left with dissolve
+    show kana_talk at char_right
+    show kana_side_talk at left
+    with dissolve
     kana "Makanannya sudah datang, nih~"
     kana "Yuk makan dulu~"
-    hide kana_side_talk with dissolve
-    show kana at char_right with dissolve
+    hide kana_side_talk
     hide kana_talk
+    show kana at char_right
+    with dissolve
     "Kana mencoba untuk mengalihkan pembicaraan..."
     mcname "Yaudah. Mari makan."
-    show freya_side_talk at left with dissolve
+    hide freya
+    show freya_shock at char_left
+    show freya_side_shock at left
+    with dissolve
     freya "Eh… Eeee. Tadi mesen Mie ayam?"
     freya "Tumben kamu makan yang begituan, Nay?"
-    hide freya_side_talk with dissolve
-    show kana_angry at char_right with dissolve
+    hide freya_side_shock
     hide kana
+    show kana_angry at char_right
+    with dissolve
     "Seolah masih ingin membahas masalah tadi, Freya menanyakan hal tersebut."
     mcname "Hmm? Memangnya ada apa?"
-    show kana_side_confused at left with dissolve
+    hide kana_angry
+    show kana_confused at char_right
+    show kana_side_confused at left
+    with dissolve
     kana "Freee. Yuk makan..."
     hide kana_side_confused with dissolve
     "Kana berbicara dengan nada agak kesal."
-    show freya_talk at char_left with dissolve
-    hide freya_smug
-    show freya_side_talk at left with dissolve
+    hide freya_shock
+    show freya_talk at char_left
+    show freya_side_talk at left
+    with dissolve
     freya "Hehehehe. Iya deh."
-    hide freya_side_talk with dissolve
+    hide freya_side_talk
+    hide freya_talk
+    show freya at char_left
+    with dissolve
     "Tertawa, Freya akhirnya berhenti membahas topik tersebut."
     "Karena sudah lapar, [mcname] mulai memakan makanan yang sudah dihidangkan."
-    show kana_talk at char_right with dissolve
-    hide kana_angry
-    show freya_shock at char_left with dissolve
-    hide freya_smug
+    hide kana_confused
+    hide freya
+    show kana_talk at char_right
+    show freya_shock at char_left
+    with dissolve
     "Sesekali, [mcname] melihat Kana dan Freya yang saling berbincang kecil."
     "Lalu [mcname] kembali berfokus ke sepasang sumpit yang digunakan untuk menarik helaian mie ke mulutnya."
-    show kana_smile at char_right with dissolve
-    hide kana_talk
-    show freya_smile at char_left with dissolve
     hide freya_shock
+    hide kana_talk
+    show kana_smile at char_right
+    show freya_smile at char_left
+    with dissolve
     "Ada kalanya Freya dan Kana menyertakan [mcname] dalam pembicaraan mereka."
     "Satu percakapan berlanjut ke percakapan lainnya, membuat mereka merasa menjadi lebih dekat."
     $ quick_menu = False
     scene black with Dissolve(2.0)
     scene kantin with dissolve
-    $ renpy.block_rollback()
+    #$ renpy.block_rollback()
     $ quick_menu = True
     "Setelah selesai makan, mereka pergi dan berpisah ke urusannya masing-masing."
     "[mcname] pun memikirkan apa yang akan dilakukan selanjutnya."
@@ -1152,7 +1170,7 @@ label chapter1kana3mie:
     menu:
         "Yang kamu lakukan...."
         "Keliling Kampus dan melihat lihat isi kampus":
-            $ renpy.block_rollback()
+            #$ renpy.block_rollback()
             play music "audio/BGM_Kampus Sore.mp3" fadein 1.0
             scene black with dissolve
             scene depan kampus with Dissolve(2.0)
@@ -1202,7 +1220,7 @@ label chapter1kana3mie:
             jump chapter1kana3kos
         # Opsi ini beda sama di skrip + toba2 langsung besok
         "Menyelidiki tempat-tempat yang membuatmu penasaran":
-            $ renpy.block_rollback()
+            #$ renpy.block_rollback()
             mcname "{i}Duhh masih lama lah.{/i}"
             mcname "{i}Tidur lagi enak kali ya.{/i}"
             mcname "{i}Lagian mereka juga pasti datangnya telat kan.{/i}"
@@ -1219,7 +1237,7 @@ label chapter1kana3mie:
             jump credits
         # Opsi ini beda sama di skrip, seharusnya ke kos
         "Langsung berangkat lebih awal supaya ga ketinggalan":
-            $ renpy.block_rollback()
+            #$ renpy.block_rollback()
             "[mcname] memilih untuk berangkat lebih awal dan beberapa jam dari yang telah dijanjikan tapi dia lupa kalau dirinya belum mandi dan makan."
             "setelah sampai di tempat dijanjikan dia jatuh pingsan karena hawa panas yang terpancarkan."
             scene black with dissolve
@@ -1252,135 +1270,156 @@ label chapter1kana3kos:
     $ quick_menu = False
     scene black with dissolve
     scene depan kampus with Dissolve(2.0)
-    $ quick_menu = True
     play music "audio/BGM_Kampus.mp3" fadein 1.0
-    mcname "Tenang-tenang..."
-    mcname "Gak usah gugup."
-    mcname "Santai aja."
+    $ quick_menu = True
+    mcname "{i}Tenang-tenang...{/i}"
+    mcname "{i}Gak usah gugup.{/i}"
+    mcname "{i}Santai aja.{/i}"
     mcname "{i}Kamu gak usah gugup.{/i}"
     mcname "{i}Meski ini kerja kelompok pertama kali di kuliah tapi kamu bisa kok.{/i}"
     mcname "Yuk semangat..."
     "Tidak menunggu lama Kana dan Freya pun datang dan menghampiri."
-    show kana at char_right with dissolve
-    show freya at char_left with dissolve
-    show kana_talk at char_right with dissolve
+    show kana at char_right
+    show freya at char_left
+    with dissolve
     hide kana
-    show kana_side_talk at left with dissolve
+    show kana_talk at char_right
+    show kana_side_talk at left
+    with dissolve
     kana "Eh haloo~"
     kana "Udah lama ya nunggunya?"
     kana "Maaf ya Jakarta macet sii hehe..."
-    hide kana_side_talk with dissolve
-    show kana at char_right with dissolve
+    hide kana_side_talk
     hide kana_talk
-    show freya_talk at char_left with dissolve
+    show kana at char_right
+    with dissolve
     hide freya
-    show freya_side_talk at left with dissolve
+    show freya_talk at char_left
+    show freya_side_talk at left
+    with dissolve
     freya "Eh iya nih tadi aku ke rumah Kana dulu juga."
     freya "Biasa si princess satu ini terlalu lama dandannya~"
     freya "Tapi ya macet juga si..."
-    hide freya_side_talk with dissolve
+    hide freya_side_talk
+    hide freya_talk
+    show freya at char_left
+    with dissolve
     mcname "{i}Dandan!?{/i}"
-    hide freya_talk with dissolve
-    hide kana with dissolve
-    show kana_smile at kana_near with dissolve
+    hide freya
+    hide kana
+    show kana_smile at kana_near
+    with dissolve
     mcname "{i}Setelah diperhatikan lebih detail memang Kana saat ini terlihat lebih natural dan lebih cantik dari biasanya...{/i}"
     "Makeup Kana yang terlihat sedikit berbeda dari saat ia ke kampus membuat [mcname] terdiam sebentar."
-    hide kana_smile with dissolve
-    show freya_smug at char_left with dissolve
-    show kana_confused_blush_sideeye at char_right with dissolve
+    hide kana_smile
+    show freya_smug at char_left
+    show kana_confused_blush_sideeye at char_right
+    with dissolve
     "Menyadari [mcname] memperhatikannya, Kana jadi terdiam seakan panik mendatang, dan tidak dapat menjawab pertanyaan Freya."
     "Kana hanya bisa melihat ke arah Freya."
-    show kana_angry at char_right with dissolve
-    hide kana_confused_sideeye
-    show kana_side_shy_smile at left with dissolve
+    hide kana_confused_blush_sideeye
+    show kana_angry at char_right
+    show kana_side_shy_smile at left
+    with dissolve
     kana "Apaan sih Free..."
     kana "Aku kan gak dandan lama."
     kana "Itu kan karena macet ihhh."
     kana "Lagian aku juga kaya biasanya di kampus ko dandannya, iya kan?"
-    hide kana_side_shy_smile with dissolve
+    hide kana_side_shy_smile
+    hide kana_angry
+    show kana_shy at char_right
+    with dissolve
     "Tak lama Kana pun melihat [mcname] seakan meminta bantuan darinya."
     "[mcname] hanya bisa tertawa canggung..."
     mcname "Eh..uuuu, hmmm"
     mcname "Hehe"
     mcname "I-iya mungkin iya tapi kamu yang sekarang kayaknya lebih cantik deh dari biasanya natural aja gitu heh."
-    show kana_shy at char_right with dissolve
-    hide kana_angry
+    hide kana_shy
+    show kana_shy_closeeye at char_right
+    with dissolve
     "Wajah kana pun memerah dengan cepat menandakan bahwa ia malu mendengar kata itu dari [mcname]."
     "Saat itu juga Freya pun tertawa dan membuat suasana lebih hidup."
-    show freya_side_talk at left with dissolve
+    hide freya_smug
+    show freya_shock at char_left
+    show freya_side_talk at left
+    with dissolve
     freya "hahaha~"
     freya "Cieee disebut cantik tuh Nay~"
     freya "Cieeee~"
     freya "Kiw kiw cukurukuk"
     hide freya_side_talk with dissolve
-    show kana_confused_blush_sideeye at char_right with dissolve
-    hide kana_shy
-    show kana_side_shy_smile at left with dissolve
+    hide kana_shy_closeeye
+    show kana_shy_closeeye_talk at char_right
+    show kana_side_cry at left
+    with dissolve
     kana "Apaan sih!"
     kana "Udah ah Fre~"
     kana "Itu kan cuma basic compliment doang."
     kana "Biar ga canggung doang..."
-    hide kana_side_shy_smile with dissolve
-    show kana_talk at char_right with dissolve
-    hide kana_confused_blush_sideeye
-    show kana_side_talk at left with dissolve
+    hide kana_side_cry with dissolve
+    hide kana_shy_closeeye_talk
+    show kana_talk at char_right
+    show kana_side_talk at left
+    with dissolve
     kana "By the way ini si [mahasiswa_c_name] kemana ya?"
     kana "Kok belum datang si udah jam segini nih."
-    hide kana_side_talk with dissolve
-    show kana at char_right with dissolve
+    hide kana_side_talk
     hide kana_talk
-    show freya at char_left with dissolve
-    hide freya_smug
+    show kana at char_right
+    with dissolve
+    hide freya_shock
+    show freya at char_left
+    with dissolve
     mcname "Tunggu bentar lagi aja dulu ya mungkin kejebak macet."
     mcname "Mending kita tanya di grup aja kali ya?"
-    show freya_talk at char_left with dissolve
     hide freya
-    show freya_side_talk at left with dissolve
+    show freya_talk at char_left
+    show freya_side_talk at left
+    with dissolve
     freya "Ide bagus!"
     freya "Yaudah, kita tunggu beberapa menit aja dulu lah ya~"
-    hide freya_side_talk with dissolve
-    show freya at char_left with dissolve
+    hide freya_side_talk
     hide freya_talk
+    show freya at char_left
+    with dissolve
     "Mereka pun menunggu [mahasiswa_c_name]."
     "..."
     "Sudah 10 menit namun tidak ada kabar."
     "Akhirnya mereka menyerah menunggu."
-    show kana_talk at char_right with dissolve
     hide kana
-    show kana_side_talk at left with dissolve
+    show kana_confused at char_right
+    show kana_side_confused at left
+    with dissolve
     kana "Eh udah lama ini, mana panas banget lagi"
     kana "Kita duluan aja kali ya."
     kana "[mahasiswa_c_name] gak bales ini."
     kana "Ditelpon juga ga di angkat kan?"
-    hide kana_side_talk with dissolve
-    show kana at char_right with dissolve
-    hide kana_talk
-    show freya_talk at char_left with dissolve
+    hide kana_side_confused with dissolve
     hide freya
-    show freya_side_talk at left with dissolve
+    show freya_shock at char_left
+    show freya_side_shock at left
+    with dissolve
     freya "Iya juga sih"
     freya "Ya udah lah ya mungkin ketiduran atau gimana."
     freya "Nanti kita suruh aja buat ngerjain bagian yang lain."
-    hide freya_side_talk with dissolve
-    show freya at char_left with dissolve
-    hide freya_talk
+    hide freya_side_shock with dissolve
     mcname "Eh bentar ada chat nih dari [mahasiswa_c_name]."
     "[mcname] kemudian membuka HP nya"
     mcname "Yahh ternyata dia tiba-tiba ada panggilan kerjaan tuh."
     mcname "Dia minta maaf ga bisa datang dan ngerjain bagian lain aja tuh katanya gimana?"
-    show kana_talk at char_right with dissolve
-    hide kana
-    show kana_side_talk at left with dissolve
+    hide kana_confused
+    show kana_talk at char_right
+    show kana_side_talk at left
+    with dissolve
     kana "Ya udah deh gak papa."
     kana "Yang penting sekarang kita kerjain aja dulu lah biar makin cepet istirahat."
     kana "Panas banget soalnya."
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    # harusnya bg monas
     scene monas temporary with Dissolve(2.0)
-    $ quick_menu = True
     play music "audio/BGM_Monas.mp3" loop fadein 1.0
+    $ quick_menu = True
     "Mereka pun memutuskan untuk meninggalkan [mahasiswa_c_name] dan mulai mengerjakan tugas kelompok yang diberikan."
     "Mereka pun mulai berjalan-jalan dan mewawancarai sekitar."
     $ quick_menu = False
@@ -1389,32 +1428,38 @@ label chapter1kana3kos:
 
 label chapter1kana3monas:
     scene black with dissolve
-    # Harusnya BG Monas
     scene monas temporary with Dissolve(2.0)
-    $ quick_menu = True
     play music "audio/BGM_Monas.mp3" loop fadein 1.0
+    $ quick_menu = True
+    show freya_shock at char_left
+    show kana_confused at char_right
+    with dissolve
     "Setelah itu, mereka memutuskan untuk berhenti sejenak di sekitar monas dikarenakan panas yang tidak tertahankan."
-    show freya_shock at char_left with dissolve
-    show kana_confused at char_right with dissolve
     show freya_side_shock at left with dissolve
     freya "Aduhh panas banget ya Nay, [mcname]."
     freya "Jujur ini mungkin hari terpanas dalam minggu ini."
     hide freya_side_shock with dissolve
-    show kana_talk at char_right with dissolve
-    hide kana_confused
-    show kana_side_talk at left with dissolve
+    show kana_side_confused at left with dissolve
     kana "Iya panas banget, mana haus lagi."
-    hide kana_side_talk with dissolve
-    show kana_confused at char_right with dissolve
-    hide kana_talk
+    hide kana_side_confused with dissolve
     mcname "{i}Hmmm iya nih panas.{/i}"
     mcname "{i}Bisa kali ya gw beliin mereka minum sesekali gitu.{/i}"
     mcname "Eh bentar ya gw mau beli minum dulu."
+    hide freya_shock
+    hide kana_confused
+    show freya at char_left
+    show kana at char_right
+    with dissolve
     menu:
-        "Kamu beliin mereka"
+        "Kamu beliin mereka..."
         "Minuman berenergi":
             "[mcname] membelikan Minuman berenergi untuk Kana dan Freya."
             "Karena minuman ini lah yang ia minum saat di desa saat merasa kecapean agar berenergi lagi."
+            hide freya
+            hide kana
+            show freya_shock at char_left
+            show kana_confused at char_right
+            with dissolve
             "Akan tetapi Kana dan Freya melihat [mcname] dengan tatapan aneh saat tau itu ternyata minuman berenergi."
             stop music fadeout 1.0
             scene black with dissolve
@@ -1429,6 +1474,11 @@ label chapter1kana3monas:
             jump chapter1kana3monasesteh
         "Jamu":
             "[mcname] membelikan jamu untuk Kana dan Freya, karena teringat dengan mama di desa dimana saat mama merasa capek selalu minta untuk di belikan jamu agar lebih segar."
+            hide freya
+            hide kana
+            show freya_shock at char_left
+            show kana_confused at char_right
+            with dissolve
             "Tetapi Kana dan Freya sangat lah asing dengan jamu dan saat itu juga mereka malah pucat dan muntah."
             show text "{color=#FFF}EH DIKIRA UDAH TUA KALI YA DI KASIH JAMU{/color}" with Pause(2.0)
             show text "{color=#FFF}LAGIAN GA SEMUA BISA MINUM JAMU BROO{/color}" with Pause(2.0)
@@ -1446,46 +1496,68 @@ label chapter1kana3monasesteh:
     $ quick_menu = True
     "[mcname] melihat ada sebuah stand minuman es teh yang cukup ramai."
     "Ia pun memilih untuk membelikan mereka minuman itu."
+    hide freya
+    hide kana
+    show freya_smile at char_left
+    show kana_smile at char_right
+    with dissolve
     "Saat ia datang kembali dengan membawa 3 gelas es teh raut muka Kana dan Freya tersenyum dan merasa senang."        
-    show kana_smile at char_right with dissolve
-    show freya_smile at char_left with dissolve
-    show kana_side_talk at left with dissolve
+    hide kana_smile
+    show kana_talk at char_right
+    show kana_side_talk at left
+    with dissolve
     kana "Wahhhh cocok banget nih."
     kana "Makasih banyak ya [mcname]!"
     kana "Ini berapa? nanti aku ganti ya."
     hide kana_side_talk with dissolve
-    show freya_side_talk at left with dissolve
+    hide freya_smile
+    show freya_talk at char_left
+    show freya_side_talk at left
+    with dissolve
     freya "Duhh cocok banget nih siang-siang minum es teh seger banget."
     freya "Makasih yaa~"
     freya "Nanti teh punyaku di bayarin sama Kana ya."
-    hide freya_side_talk with dissolve
-    show kana_deadeye at char_right with dissolve
-    hide kana_smile
+    hide freya_side_talk
+    hide freya_talk
+    show freya_smile at char_left
+    hide kana_talk
+    show kana_deadeye at char_right
+    with dissolve
     #SFX Yang bener aja rugi dong
-    show kana_side_confused at left with dissolve
+    hide kana_deadeye
+    show kana_angry at char_right
+    show kana_side_confused at left
+    with dissolve
     kana "..."
     hide kana_side_confused with dissolve
-    show kana at char_right with dissolve
-    hide kana_deadeye
     mcname "Hahah udah udah, gapapa kok~"
     mcname "Ini dari aku sekalian ucapan terima kasihku karena udah mau nunjukin sekitar Jakarta."
     mcname "Soalnya kemarin aku ga sempet muter-muter jadi makasih ya."
-    show freya_talk at char_left with dissolve
     hide freya_smile
-    show freya_side_talk at left with dissolve
+    show freya_talk at char_left
+    show freya_side_talk at left
+    with dissolve
     freya "Yang bener?"
     freya "Aku si gak nolak."
     freya "hehe~"
-    hide freya_side_talk with dissolve
-    show kana_confused at char_right with dissolve
-    hide kana
-    show kana_side_confused at left with dissolve
+    hide freya_side_talk
+    hide freya_talk
+    show freya at char_left
+    with dissolve
+    hide kana_angry
+    show kana_talk at char_right
+    show kana_side_talk at left
+    with dissolve
     kana "Hadeeeh Freya Freya~"
-    hide kana_side_confused with dissolve
-    show kana_talk at char_right with dissolve
-    hide kana_confused
-    show freya_shock at char_left with dissolve
-    hide freya_smile
+    hide kana_side_talk
+    hide kana_talk
+    show kana at char_right
+    with dissolve
+    hide freya
+    hide kana
+    show kana_talk at char_right
+    show freya_shock at char_left
+    with dissolve
     "Mereka tertawa bersama dan kembali mengobrol satu sama lain hingga waktu pun menunjukkan sudah sore."
     $ quick_menu = False
     scene black with dissolve
@@ -1497,23 +1569,27 @@ label chapter1kana3monasesteh:
     mcname "Eh ini udah kah?"
     mcname "Atau kira-kira gimana lagi nih?"
     mcname "Kalau dari aku sih udah cukup ga perlu ada yang ditambah nantinya malah makin ribet."
-    show freya_talk at char_left with dissolve
     hide freya
-    show freya_side_talk at left with dissolve
+    show freya_talk at char_left
+    show freya_side_talk at left
+    with dissolve
     freya "Sebenernya ada yang menurutku harus ditambah sih."
     freya "Tapi itu nanti sama aku aja."
     freya "Agak susah jelasinnya juga hehe."
-    hide freya_side_talk with dissolve
-    show freya at char_left with dissolve
+    hide freya_side_talk
     hide freya_talk
-    show kana_talk at char_right with dissolve
+    show freya at char_left
+    with dissolve
     hide kana
-    show kana_side_talk at left with dissolve
+    show kana_talk at char_right
+    show kana_side_talk at left
+    with dissolve
     kana "Aku sih udah oke aja."
     kana "Maklumin Freya ya, [mcname]."
-    hide kana_side_talk with dissolve
-    show kana at char_right with dissolve
+    hide kana_side_talk
     hide kana_talk
+    show kana at char_right
+    with dissolve
     show freya_angrysmile at char_left with dissolve
     hide freya
     "Senyuman kecil keluar dari wajah Kana, seakan sudah terbiasa dengan Freya."
