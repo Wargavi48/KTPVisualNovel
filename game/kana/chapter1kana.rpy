@@ -1149,90 +1149,90 @@ label chapter1kana3mie:
     "[mcname] pun memikirkan apa yang akan dilakukan selanjutnya."
     $ quick_menu = False
     # Menunya agak aneh, tiba2 langsung besok
-        menu:
-            "Yang kamu lakukan...."
-            "Keliling Kampus dan melihat lihat isi kampus":
-                $ renpy.block_rollback()
-                play music "audio/BGM_Kampus Sore.mp3" fadein 1.0
-                scene black with dissolve
-                scene depan kampus with Dissolve(2.0)
-                $ quick_menu = True
-                mcname "{i}Aku memilih menghabiskan waktu untuk berkeliling di sekitar kampus.{/i}"
-                "Di perjalanan pertama, [mcname] melihat ada parkiran yang biasa dipakai anak-anak jurusan HI untuk memarkirkan kendaraan mereka..."
-                "Terlihat disana banyak kendaraan yang bisa dibilang lumayan mahal."
-                mcname "{i}Hmmmm luas juga parkiran buat kampus ini{/i}"
-                mcname "{i}Seperti yang diharapkan dengan kampus ibu kota.{/i}"
-                mcname "{i}Terasa sangat berbeda dibandingkan dengan bangunan yang ada di desa.{/i}"
-                "Entah kenapa [mcname] tiba-tiba terbayang sosok Kana di aula waktu itu."
-                $ quick_menu = False
-                scene black with dissolve
-                scene kana awal with Dissolve(2.0)
-                $ quick_menu = True
-                mcname "{i}Aduhhh sadar woi sadar.{/i}"
-                $ quick_menu = False
-                scene black with dissolve
-                scene depan kampus with Dissolve(2.0)
-                $ quick_menu = True
-                "MC pun menggeleng gelengkan kepala untuk kembali fokus pada perjalanannya mengelilingi kampus."
-                $ quick_menu = False
-                scene black with dissolve
-                # Harusnya BG Sawah
-                scene sawah with Dissolve(2.0)
-                $ quick_menu = True
-                mcname "{i}Setelah itu aku melihat sawah yang digunakan oleh mahasiswa/i jurusan lain Jeketi University.{/i}"
-                mcname "{i}Sawah ya…{/i}"
-                mcname "{i}Gak nyangka bakal ngeliat sesuatu yang familiar di kampus ini...{/i}"
-                mcname "{i}Tapi mungkin buat jurusan yang ku ambil gak bakal banyak kesini.{/i}"
-                mcname "{i}...{/i}"
-                $ quick_menu = False
-                scene black with dissolve
-                # Harusnya BG Rooftop
-                scene rooftop with Dissolve(2.0)
-                $ quick_menu = True
-                mcname "{i}Lalu yang terakhir aku pun mencoba menaiki rooftop untuk melihat keseluruhan kampus dari atas.{/i}"
-                mcname "{i}Wah dilihat dari atas ternyata memang keren sih ini kampus.{/i}"
-                "Dari sana bisa terlihat seluruh pemandangan di kampus."
-                "Terlihat beberapa orang melaksanakan beberapa aktifitas kampus, bahkan ada juga yang sepertinya sudah siap-siap untuk pulang"
-                # SFX Peregangan
-                mcname "mgghhhh"
-                mcname "{i}Mungkin udah dulu kali ya buat hari ini...{/i}"
-                mcname "{i}Abis ini pulang ke kos aja deh.{/i}"
-                $ quick_menu = False
-                stop music fadeout 1.0
-                jump chapter1kana3kos
-            # Opsi ini beda sama di skrip + toba2 langsung besok
-            "Menyelidiki tempat-tempat yang membuatmu penasaran":
-                $ renpy.block_rollback()
-                mcname "{i}Duhh masih lama lah.{/i}"
-                mcname "{i}Tidur lagi enak kali ya.{/i}"
-                mcname "{i}Lagian mereka juga pasti datangnya telat kan.{/i}"
-                mcname "{i}Di Indonesia gitu si ga ada yang tepat waktu~{/i}"
-                "[mcname] pun memilih untuk tidur lebih lama dikarenakan waktu perjanjian masih ada beberapa jam lagi akan tetapi dia lupa melihat batre hp nya."
-                "Akhirnya tertidur lelap hingga melebihi waktu yang dijanjikan dan saat ia menyalakan hp nya ia pun dimarahi oleh Kana dan Freya..."
-                scene black with dissolve
-                show text "{color=#FFF}EH KALAU UDAH JANJIAN TUH DITEPATI{/color}" with Pause(2.0)
-                show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
-                show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-                stop music fadeout 1.0
-                play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
-                scene mc bedroom with Dissolve(2.0)
-                jump credits
-            # Opsi ini beda sama di skrip, seharusnya ke kos
-            "Langsung berangkat lebih awal supaya ga ketinggalan":
-                $ renpy.block_rollback()
-                "[mcname] memilih untuk berangkat lebih awal dan beberapa jam dari yang telah dijanjikan tapi dia lupa kalau dirinya belum mandi dan makan."
-                "setelah sampai di tempat dijanjikan dia jatuh pingsan karena hawa panas yang terpancarkan."
-                scene black with dissolve
-                show text "{color=#FFF}EH KALAU MAU KEGIATAN TUH MINIMAL MANDI DAN MAKAN{/color}" with Pause(2.0)
-                show text "{color=#FFF}JANGAN LANGSUNG BERANGKAT{/color}" with Pause(2.0)
-                show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
-                show text "{color=#FFF}AKHIRNYA MALAH PINGSAN KAN{/color}" with Pause(2.0)
-                show text "{color=#FFF}HADEEEUHHH DASAR{/color}" with Pause(2.0)
-                show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-                stop music fadeout 1.0
-                #play music "audio/Dreamcatcher_v2.mp3" #fadein 1.0
-                #scene mc bedroom with Dissolve(2.0)
-                #jump credits
+    menu:
+        "Yang kamu lakukan...."
+        "Keliling Kampus dan melihat lihat isi kampus":
+            $ renpy.block_rollback()
+            play music "audio/BGM_Kampus Sore.mp3" fadein 1.0
+            scene black with dissolve
+            scene depan kampus with Dissolve(2.0)
+            $ quick_menu = True
+            mcname "{i}Aku memilih menghabiskan waktu untuk berkeliling di sekitar kampus.{/i}"
+            "Di perjalanan pertama, [mcname] melihat ada parkiran yang biasa dipakai anak-anak jurusan HI untuk memarkirkan kendaraan mereka..."
+            "Terlihat disana banyak kendaraan yang bisa dibilang lumayan mahal."
+            mcname "{i}Hmmmm luas juga parkiran buat kampus ini{/i}"
+            mcname "{i}Seperti yang diharapkan dengan kampus ibu kota.{/i}"
+            mcname "{i}Terasa sangat berbeda dibandingkan dengan bangunan yang ada di desa.{/i}"
+            "Entah kenapa [mcname] tiba-tiba terbayang sosok Kana di aula waktu itu."
+            $ quick_menu = False
+            scene black with dissolve
+            scene kana awal with Dissolve(2.0)
+            $ quick_menu = True
+            mcname "{i}Aduhhh sadar woi sadar.{/i}"
+            $ quick_menu = False
+            scene black with dissolve
+            scene depan kampus with Dissolve(2.0)
+            $ quick_menu = True
+            "MC pun menggeleng gelengkan kepala untuk kembali fokus pada perjalanannya mengelilingi kampus."
+            $ quick_menu = False
+            scene black with dissolve
+            # Harusnya BG Sawah
+            scene sawah with Dissolve(2.0)
+            $ quick_menu = True
+            mcname "{i}Setelah itu aku melihat sawah yang digunakan oleh mahasiswa/i jurusan lain Jeketi University.{/i}"
+            mcname "{i}Sawah ya…{/i}"
+            mcname "{i}Gak nyangka bakal ngeliat sesuatu yang familiar di kampus ini...{/i}"
+            mcname "{i}Tapi mungkin buat jurusan yang ku ambil gak bakal banyak kesini.{/i}"
+            mcname "{i}...{/i}"
+            $ quick_menu = False
+            scene black with dissolve
+            # Harusnya BG Rooftop
+            scene rooftop with Dissolve(2.0)
+            $ quick_menu = True
+            mcname "{i}Lalu yang terakhir aku pun mencoba menaiki rooftop untuk melihat keseluruhan kampus dari atas.{/i}"
+            mcname "{i}Wah dilihat dari atas ternyata memang keren sih ini kampus.{/i}"
+            "Dari sana bisa terlihat seluruh pemandangan di kampus."
+            "Terlihat beberapa orang melaksanakan beberapa aktifitas kampus, bahkan ada juga yang sepertinya sudah siap-siap untuk pulang"
+            # SFX Peregangan
+            mcname "mgghhhh"
+            mcname "{i}Mungkin udah dulu kali ya buat hari ini...{/i}"
+            mcname "{i}Abis ini pulang ke kos aja deh.{/i}"
+            $ quick_menu = False
+            stop music fadeout 1.0
+            jump chapter1kana3kos
+        # Opsi ini beda sama di skrip + toba2 langsung besok
+        "Menyelidiki tempat-tempat yang membuatmu penasaran":
+            $ renpy.block_rollback()
+            mcname "{i}Duhh masih lama lah.{/i}"
+            mcname "{i}Tidur lagi enak kali ya.{/i}"
+            mcname "{i}Lagian mereka juga pasti datangnya telat kan.{/i}"
+            mcname "{i}Di Indonesia gitu si ga ada yang tepat waktu~{/i}"
+            "[mcname] pun memilih untuk tidur lebih lama dikarenakan waktu perjanjian masih ada beberapa jam lagi akan tetapi dia lupa melihat batre hp nya."
+            "Akhirnya tertidur lelap hingga melebihi waktu yang dijanjikan dan saat ia menyalakan hp nya ia pun dimarahi oleh Kana dan Freya..."
+            scene black with dissolve
+            show text "{color=#FFF}EH KALAU UDAH JANJIAN TUH DITEPATI{/color}" with Pause(2.0)
+            show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            stop music fadeout 1.0
+            play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
+            scene mc bedroom with Dissolve(2.0)
+            jump credits
+        # Opsi ini beda sama di skrip, seharusnya ke kos
+        "Langsung berangkat lebih awal supaya ga ketinggalan":
+            $ renpy.block_rollback()
+            "[mcname] memilih untuk berangkat lebih awal dan beberapa jam dari yang telah dijanjikan tapi dia lupa kalau dirinya belum mandi dan makan."
+            "setelah sampai di tempat dijanjikan dia jatuh pingsan karena hawa panas yang terpancarkan."
+            scene black with dissolve
+            show text "{color=#FFF}EH KALAU MAU KEGIATAN TUH MINIMAL MANDI DAN MAKAN{/color}" with Pause(2.0)
+            show text "{color=#FFF}JANGAN LANGSUNG BERANGKAT{/color}" with Pause(2.0)
+            show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
+            show text "{color=#FFF}AKHIRNYA MALAH PINGSAN KAN{/color}" with Pause(2.0)
+            show text "{color=#FFF}HADEEEUHHH DASAR{/color}" with Pause(2.0)
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            stop music fadeout 1.0
+            #play music "audio/Dreamcatcher_v2.mp3" #fadein 1.0
+            #scene mc bedroom with Dissolve(2.0)
+            #jump credits
                 
 label chapter1kana3kos:
     #$ renpy.block_rollback()
