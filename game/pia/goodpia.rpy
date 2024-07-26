@@ -2322,7 +2322,7 @@ label goodendpiamatsuri:
     "Penonton" "Beluuuuuuuum~"
     show pia_side_talk at left with dissolve
     pia "Wah, kayaknya belom pada kenal nih. Kita kenalan dulu aja ga sih?"
-    pia "Bisa dimulai dari yang paling kiri~"
+    pia "Bisa dimulai dari yang sebelah kiri~"
     hide pia_side_talk with dissolve
     show tana_side_talk at left with dissolve
     tana "Wassup ma bross!! I'm fresh like a breeze JKT48 Virtual Tana Nona Cool enough to make you freeEeEzZEeE Halo semuanya aku Tana Nona dari JKT48 Virtual!"
@@ -2395,7 +2395,7 @@ label goodendpia:
     hide fio_side with dissolve
     play sound "SFX - Large Cheering.mp3" loop fadein 0.5
     "Penonton" "UWOOOOOOGGGHH!!!!!!!!! PIAAAAAAAAAAAA!!!"
-    "Tidak disangka, teriakan [mcname] menyulut semangat penonton lain untuk ikut menyoraki dan menunjukan dukungannya lebih keras."
+    "Tidak disangka, teriakan [mcname] menyulut semangat penonton lain untuk ikut menyoraki dan menunjukan dukungannya lebih keras lagi."
     "Teriakan tersebutlah yang membuat pengunjung lain yang sedang berkeliling di acara tersebut jadi penasaran dan ikut menonton pertunjukan di stage tersebut."
     $ renpy.sound.set_volume(0.5,delay=1.5)
     show pia_side_talk at left with dissolve 
@@ -2405,6 +2405,7 @@ label goodendpia:
     hide pia_side_talk with dissolve
     mcname "PIAAAAAAAAAAAAA!!!! SEMANGAAAAAAAAAAT!"
     stop sound fadeout 1.5
+    scene konser end with Dissolve(1.0)
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     $ quick_menu = False
     scene black with dissolve
