@@ -302,20 +302,20 @@ label chapter2tana:
     $ quick_menu=True
     "Tak lama kemudian, Bu Dosen pun memasuki kelas."
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Selamat pagi, semuanya!"
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
     "Mahasiswa/i" "Selamat pagi, Bu!"
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Udah pada sarapan belum?"
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_center
     show rg_hasan_talk at char_center 
     with dissolve
@@ -326,12 +326,12 @@ label chapter2tana:
     "Bang Rama" "Udah tadi ngemil {i}Pramog{/i}, Bu."
     hide bang_rama_talk at char_center
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Ada-ada aja kalian ini, hahaha."
     dosen "Yaudah. Kalau ada yang bawa bekal, dimakan aja gapapa."
     dosen "Saya cuma mau menyampaikan beberapa hal terkait materi praktikum yang pertama."
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
@@ -339,43 +339,43 @@ label chapter2tana:
     "Sebagian Mahasiswa/i yang membawa bekal pun akhirnya mengeluarkan bekal untuk dimakan sembari mendengarkan penjelasan dari Bu Dosen."
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Baik, untuk praktikum minggu depan, masing-masing Mahasiswa dan Mahasiswi harus menyiapkan sampel tanah."
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
     mcname "Tanah? Untuk apa kita mengumpulkan tanah, Bu?"
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Iya, tanah."
     dosen "Nanti sampel tanah yang telah kalian dapatkan, akan diuji untuk mengetahui index kesuburan dan apa saja kandungan di tanah tersebut."
     dosen "Jadi, kalian nanti akan belajar bagaimana cara menganalisis tanah."
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
     mcname "Nanti kita ngambil sampel tanahnya di mana, Bu? Apakah tempatnya bebas?"
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Sampel tanah bisa diambil dari sawah di kampus, ya. Kalian sudah ke sana, kan?"
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
     "Mahasiswa/i" "Sudah, Bu!"
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Nah, kalian ambil dari sana aja."
     dosen "Nanti data yang kalian peroleh bisa dibandingkan dengan data-data milik kakak tingkat kalian untuk mengetahui apakah ada perbedaan antara data yang kalian peroleh dengan data sebelumnya."
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
@@ -383,10 +383,10 @@ label chapter2tana:
     mcname "Bu, akses ke sawah apakah bebas?"
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Bebas. Seinget saya, akses pagar sawah diatur oleh kakak tingkatmu yang saya lupa namanya."
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
@@ -406,10 +406,10 @@ label chapter2tana:
     mcname "Bu, mau tanya lagi. kalau tanahnya warna merah, boleh ga?"
     hide dosen at dosen_left
     show dosen_talk at dosen_left
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Tanah merah? Memangnya di sawah kampus ada tanah yang warnanya seperti itu?"
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_left
     show dosen at dosen_left
     with dissolve
@@ -448,21 +448,21 @@ label chapter2tana:
     hide dosen at dosen_left
     show dosen_talk at dosen_left
     show tana_angry at tana_right
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Hahahaha. Ada-ada saja. Oke, kalau begitu, kalian jangan lupa untuk mengambil sampel, ya."
     dosen "Kalian bebas mau ambil sampelnya kapan, yang penting disimpan di wadah tertutup dan dibawa pada saat praktikum."
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_left
     show dosen at dosen_left
     with dissolve
     "Mahasiswa/i" "Baik, Bu!"
     hide dosen at dosen_left
     show dosen_talk at dosen_left
-    show dosen_side_talk at left 
+    show dosen_side at left 
     with dissolve
     dosen "Ya udah, itu saja dari saya. Kelas sudah selesai. Terima kasih. Saya duluan, ya."
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_left
     show dosen at dosen_left
     with dissolve
@@ -803,7 +803,7 @@ label chapter2tana:
     "???" "Wooiii!"
     show feni_talk at feni_right
     show flora at flora_left
-    show feni_side at left
+    show feni_side_talk at left
     with dissolve
     feni "Dipanggil malah celingak celinguk."
     hide feni_side_talk at left
@@ -1000,20 +1000,20 @@ label chapter2tana:
             with dissolve
             # #$ renpy.block_rollback()
             dosen "Semuanya baris, ya. Tunjukin sampel tanah kalian, baru kalian boleh masuk ruang praktikum."
-            hide dosen_side_talk at left with dissolve
+            hide dosen_side at left with dissolve
             mcname "{i}Waduh, gua ga bawa nih. Mana temen-temen pada beda sesi lagi.{/i}"
-            show dosen_side_talk at left with dissolve
+            show dosen_side at left with dissolve
             dosen "[mcname!c], mana sampel kamu?"
-            hide dosen_side_talk at left with dissolve
+            hide dosen_side at left with dissolve
             mcname "I-itu, Bu. Ketinggalan di kos temen."
-            show dosen_side_talk at left with dissolve
+            show dosen_side at left with dissolve
             dosen "Oalah, yaudah. Masuk dulu aja."
-            hide dosen_side_talk at left with dissolve
+            hide dosen_side at left with dissolve
             mcname "Eh? Saya boleh masuk, Bu?"
-            show dosen_side_talk at left with dissolve
+            show dosen_side at left with dissolve
             dosen "Masuk? Boleh dong."
             dosen "Masuk daftar mahasiswa yang nilai praktikumnya 0."
-            hide dosen_side_talk at left with dissolve
+            hide dosen_side at left with dissolve
             mcname "NOOOOOOOOOOOOOOOOOOO~"
             scene black with dissolve
             show text "{color=#FFF}MAKANYA KULIAH YANG BENER!{/color}" with Pause(2.0)
@@ -1274,12 +1274,12 @@ label chapter2tanasawah:
     with dissolve
     mcname "Lah? Kan kemari gua minta tolong lu buat sampein izin sakit ke dosen."
     hide tana at tana_near
-    show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_confused at tana_near
+    show tana_side_confused at left 
     with dissolve
     tana "Kaga. Gua kagak nyampain apa-apa."
-    hide tana_side_talk at left
-    hide tana_talk at tana_near
+    hide tana_side_confused at left
+    hide tana_confused at tana_near
     show tana at tana_near
     with dissolve
     mcname "LAHK?! KOK ABSENSI GUA MASIH FULL?"
@@ -1298,7 +1298,7 @@ label chapter2tanasawah:
     show tana_talk at tana_near
     show tana_side_talk at left 
     with dissolve
-    tana "Iya dehh, iyaa. Gua juga mionta maaf soalnya udah berlebihan marah sama lu."
+    tana "Iya dehh, iyaa. Gua juga minta maaf soalnya udah berlebihan marah sama lu."
     hide tana_side_talk at left
     hide tana_talk at tana_near
     show tana_silent at tana_near

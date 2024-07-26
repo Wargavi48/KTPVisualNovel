@@ -129,7 +129,7 @@ label tanamcdaftarulang:
     # #$ renpy.block_rollback()
     $ quick_menu = True
     "Ternyata pas duduk di kelas, cewek yang [mcname] temui kemarin pun duduk juga di sebelah [mcname]."
-    show tana_talk at tana_nea
+    show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
     tana "Lah sekelas?"
@@ -205,7 +205,7 @@ label tanamcdaftarulang:
     play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene kelas with Dissolve(1.0)
     show flora_talk at flora_center
-    show flora_side at left
+    show flora_side_talk at left
     with dissolve
     # #$ renpy.block_rollback()
     $ quick_menu = True
@@ -322,8 +322,6 @@ label tanamcdaftarulang:
     "1 jam kemudian..."
     $ quick_menu = False
     scene kantin with Dissolve(2.0)
-    show tana at tana_near with dissolve
-    $ quick_menu = True
     show tana_confused at tana_near with dissolve
     # #$ renpy.block_rollback()
     $ quick_menu = True
@@ -428,7 +426,7 @@ label tanamcdaftarulang:
     $ quick_menu = False
     scene lorong sore with Dissolve(2.0)
     show flora_talk at flora_center
-    show flora_side at left
+    show flora_side_talk at left
     with dissolve
     # #$ renpy.block_rollback()
     $ quick_menu = True
@@ -527,7 +525,7 @@ label tanamcdaftarulang:
     show flora_side_talk at left
     with dissolve
     flora "Nah, gitu dong. Yaudah ayo ikut sini."
-    hide flora_side at left
+    hide flora_side_talk at left
     hide flora_talk at flora_left
     hide tana at tana_right
     with dissolve
@@ -538,7 +536,7 @@ label tanamcdaftarulang:
     show tana at tana_near
     show feni_talk at feni_right
     show flora at flora_left 
-    show feni_side at left
+    show feni_side_talk at left
     with dissolve
     # # #$ renpy.block_rollback()
     $ quick_menu = True
@@ -1258,11 +1256,27 @@ label chapter1tanamakan:
     show tana_angry at tana_near
     with dissolve
     mcname "Yauda buruan makan."
-    hide tana_angry at tana_near with dissolve
+    hide tana_angry at tana_near 
+    show tana_talk at tana_near
+    show tana_side_talk at left
+    with dissolve
     tana "Hmmm enak ya!"
+    hide tana_side_talk at left
+    hide tana_talk at tana_near
+    show tana at tana_near
+    with dissolve
     mcname "Pelan-pelan, Tan."
+    hide tana
+    show tana_talk at tana_near
+    show tana_side_talk at left
+    with dissolve
     tana "Santai ajaa"
+    hide tana_side_talk at left
+    hide tana_talk at tana_near
+    show tana at tana_near
+    with dissolve
     mcname "Hadehh..."
+    hide tana with dissolve
     "Beberapa saat kemudian..."
 # tana batuk
     show tana at tana_near with dissolve
@@ -1354,13 +1368,18 @@ label chapter1tanamakan:
     show tana_side_confused at left 
     with dissolve
     tana "Hmmmm?"
+    hide tana_side_confused at left with dissolve
     mcname "Kenapa?"
+    show tana_side_confused at left with dissolve
     tana "......."
     tana "Ummmmm. Anu"
     tana "......"
+    hide tana_side_confused at left with dissolve
     mcname "?????"
+    show tana_side_confused at left  with dissolve
     tana "Anuu…"
-    hide tana_side_confused at left
+    hide tana_side_confused at left with dissolve
+    mcname "?????"
     hide tana_confused at tana_near
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -1498,7 +1517,7 @@ label chapter1tanamakan:
     # #$ renpy.block_rollback()
     show tana at tana_right
     show flora_talk at flora_left
-    show flora_side at left
+    show flora_side_talk at left
     with dissolve
     $ quick_menu = True
     flora "Kalian bawa baju ganti, kan?"
@@ -1637,12 +1656,12 @@ label chapter1tanamakan:
     scene sawah with Dissolve(1.0)
     $ quick_menu = True
     "[mcname] berniat menolong Tana, tapi malah ikut tercebur."
+    # Insert Tono Jatuh Tutup Mulut
     mcname "Adududuh"
     "Sambil mencoba berdiri, [mcname] melihat Tana yang tercebur dalam lumpur"
-    # Insert Tono Jatuh Tutup Mulut
-    mcname "Udah gede ga usah nangis kocak."
     # Tono Jatuh ilang
-    show tana_confused at tana_near
+    show tana_confused at tana_near with dissolve
+    mcname "Udah gede ga usah nangis kocak."
     show tana_side_confused at left
     with dissolve
     tana "S-siapa yang mau nangis?"
@@ -1775,7 +1794,7 @@ label chapter1tanamakan:
     scene sawah sore with Dissolve(2.0)
     show tana at tana_right
     show flora_talk at flora_left
-    show flora_side at left
+    show flora_side_talk at left
     with dissolve
     $ quick_menu = True
     flora "Ya. Kegiatannya sudah selesai, ya."
@@ -1889,11 +1908,11 @@ label chapter1tanamakan:
     scene kelas with Dissolve(1.0)
     # #$ renpy.block_rollback()
     show dosen_talk at dosen_center
-    show dosen_side_talk at left
+    show dosen_side at left
     with dissolve
     $ quick_menu = True
     dosen "Ya teman-teman, saatnya memulai pembelajaran."
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_center 
     with dissolve
     $ quick_menu = False
@@ -1904,12 +1923,12 @@ label chapter1tanamakan:
     $ quick_menu = False
     scene kelas sore with Dissolve(2.0)
     show dosen_talk at dosen_center
-    show dosen_side_talk at left
+    show dosen_side at left
     with dissolve
     $ quick_menu = True
     dosen "Pelajaran hari ini sampai sini saja."
     dosen "Kalian dipersilahkan untuk pulang."
-    hide dosen_side_talk at left
+    hide dosen_side at left
     hide dosen_talk at dosen_center
     with dissolve
     "Mahasiswa/i" "Baik, Buu."
