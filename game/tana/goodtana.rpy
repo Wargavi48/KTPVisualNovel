@@ -641,7 +641,7 @@ label chapter2tanaGOOD:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Keesokan harinya..."
@@ -747,7 +747,7 @@ label chapter2tanaGOOD:
     mcname "Siap, Bu. Hehehe."
     stop music fadeout 1.0
     hide dosen at dosen_center with dissolve
-    play music "BGM_Kelas.ogg" fadein 1.0
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve

@@ -6,7 +6,7 @@ label chapter2tana:
     "Keesokan paginya, Tana berangkat menuju kampus seperti biasanya."
     $ quick_menu=False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene kelas with Dissolve(1.0)
     $ quick_menu=True
     "Sesampainya di depan pintu ruang kelas, Tana mendengar keramaian dari dalam kelas."
@@ -224,7 +224,7 @@ label chapter2tana:
     $ quick_menu=False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
     $ quick_menu=True
     "Keesokan harinya..."
@@ -930,10 +930,9 @@ label chapter2tana:
     mcname "Lah? Kok jadi gua yang disuruh? Hadeehh."
     mcname "Dah lah. Gua harus cepet-cepet balik. Keburu mendung."
     stop music fadeout 1.0
-
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Keesokan harinya..."
