@@ -1053,7 +1053,7 @@ label chapter1piamakanmall:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Sawah.ogg" fadein 1.0
+    # play music "BGM_Sawah.ogg" fadein 1.0
     scene sawah with Dissolve(1.0)
     #$ renpy.block_rollback()
     $ quick_menu = True
