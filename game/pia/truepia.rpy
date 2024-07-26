@@ -322,9 +322,12 @@ label trueendrooftoppia:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     play music "BGM_Pagi Siang.ogg" fadein 1.0
-    scene kamar mc kota with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
     nvl clear
     pia_nvl "[mcname]!!!"
     pia_nvl "{image=location.png}"
@@ -536,11 +539,14 @@ label gambardikosanpia:
     pia_nvl "Pasang alarm dulu!"
     mc_nvl "Siaaap"
     stop music fadeout 1.0
-    scene kamar mc kota with dissolve
+    $ quick_menu = False
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    scene kelas with Dissolve(1.0)
     play music "audio/BGM_Dosen.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Tak terasa sekarang sudah sampai hari ujian."
+    $ quick_menu = False
+    scene kelas with Dissolve(2.0)
     show dosen at dosen_center with dissolve
     show dosen_side at left with dissolve
     #$ renpy.block_rollback()
@@ -619,9 +625,12 @@ label trueendpiajalanmonas:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}DI MONAS{/color}" with Pause(2.0)
     play music "audio/BGM_Monas.ogg" fadein 1.0
-    scene monas temporary with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Di monas..."
+    $ quick_menu = False
+    scene monas temporary with Dissolve(2.0)
     #$ renpy.block_rollback()
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
@@ -660,9 +669,12 @@ label trueendpiajalanmonas:
     hide pia_side with dissolve
     "Ternyata duet Pia dan pengamen menarik banyak perhatian orang dan sukses menghibur pengunjung yang datang ke Monas."
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}BEBERAPA SAAT KEMUDIAN{/color}" with Pause(2.0)
-    scene monas temporary with Dissolve(1.5)
+    scene black with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa saat kemudian..."
+    $ quick_menu = False
+    scene monas temporary with Dissolve(1.0)
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
     $ quick_menu = True
@@ -678,9 +690,12 @@ label trueendpiajalanmonas:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
     play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
-    scene kelas with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa hari kemudian..."
+    $ quick_menu = False
+    scene kelas with Dissolve(2.0)
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
     #$ renpy.block_rollback()
@@ -951,14 +966,15 @@ label truendpia:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}HARI H MATSURI{/color}" with Pause(2.0)
     play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Hari Matsuri pun tiba."
+    $ quick_menu = False
     #$ renpy.block_rollback()
+    scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
     "Pia dan [mcname] sedang merias booth dan merapikan dagangan merch mereka."
-    $ quick_menu = False
-    scene depan kampus with Dissolve(2.0)
     show fio at fio_near_left with dissolve
     show pia at pia_near_right with dissolve
     show fio_side at left with dissolve
@@ -1144,7 +1160,8 @@ label truendpia:
     hide fio_side with dissolve
     mcname "Eeh… okee."
     show fio_side at left with dissolve
-    fio "Nih\n*Kasih kunci ke Pia*"
+    play sound "SFX - Key.mp3"
+    fio "Nih\n*Kasih kunci ke Pia* (SAMBIL MUNCUL ASSET KUNCI NNUE)"
     hide fio_side with dissolve
     show pia_side at left with dissolve
     pia "Hah? Ini kunci apa?"

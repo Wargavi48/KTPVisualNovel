@@ -511,29 +511,29 @@ label chapter2tanaGOOD:
     hide bang_rama at char_right
     with dissolve
     "[mcname] dan teman-temannya kembali berbicara dengan Tana."
-    show tana_angry at char_center
+    show tana_angry at tana_near
     show rg_hasan at rg_hasan_left
     show bang_rama_talk at bang_rama_right
     with dissolve
     "Bang Rama" "Uhuk Uhuk! Jadi, sebagai permintaan maaf, kita traktir lu makan di kantin deh."
     hide bang_rama_talk at bang_rama_right
-    hide tana_angry at char_center
+    hide tana_angry at tana_near
     show bang_rama at bang_rama_right
-    show tana_angry_2 at char_center
+    show tana_angry_2 at tana_near
     show tana_side_talk at left
     with dissolve
     tana "Dih, mau nyogok. Lu kira gua siapa bisa disogok sogok?"
     hide tana_side_talk at left
-    hide tana_angry_2 at char_center
+    hide tana_angry_2 at tana_near
     hide rg_hasan at rg_hasan_left 
-    show tana_angry at char_center
+    show tana_angry at tana_near
     show rg_hasan_talk at rg_hasan_left
     with dissolve
     "RG Hasan" "Enggak, bukan sogokan ini. Mana ada kita nyogok."
     hide rg_hasan_talk at rg_hasan_left
-    hide tana_angry at char_center
+    hide tana_angry at tana_near
     show rg_hasan at rg_hasan_left
-    show tana_confused at char_center
+    show tana_confused at tana_near
     show tana_side_confused at left
     with dissolve
     tana "Yang bener?"
@@ -543,7 +543,7 @@ label chapter2tanaGOOD:
     with dissolve
     "Bang Rama" "Iyaaa."
     hide bang_tama_talk at bang_rama_right
-    hide tana_confused at char_center
+    hide tana_confused at tana_near
     show bang_rama at bang_rama_right
     show tana_talk at tana_near
     show tana_side_talk at left 
@@ -641,7 +641,7 @@ label chapter2tanaGOOD:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Keesokan harinya..."
@@ -747,7 +747,7 @@ label chapter2tanaGOOD:
     mcname "Siap, Bu. Hehehe."
     stop music fadeout 1.0
     hide dosen at dosen_center with dissolve
-    play music "BGM_Kelas.ogg" fadein 1.0
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve

@@ -49,11 +49,13 @@
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play sound "audio/cafe-entrance.mp3" fadein 1.0
-    show text "{color=#FFF}BEBERAPA MENIT KEMUDIAN{/color}" with Pause(2.0)
-    show text "{color=#FFF}DI KAFE{/color}" with Pause(2.0)
     play music "audio/BGM_Cafe Sore.ogg" fadein 1.0
-    scene cafe malam with Dissolve(1.0)
+    play sound "audio/cafe-entrance.mp3" fadein 1.0
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Di Cafe..."
+    $ quick_menu = False
+    scene cafe malam with Dissolve(2.0)
     # $ renpy.block_rollback()
     show pia_side_talk at left
     show pia_home at pia_near
@@ -116,9 +118,12 @@
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
-    scene kamar mc kota with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
     # $ renpy.block_rollback()
     $ quick_menu = True
     mcname "{i}Duhhh. Hari ini ujian tertulis paling susah. Deg deg an, huhu.{/i}"
@@ -285,9 +290,12 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}Di Rooftop{/color}" with Pause(2.0)
     play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0
-    scene rooftop with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Di rooftop..."
+    $ quick_menu = False
+    scene rooftop with Dissolve(2.0)
     # $ renpy.block_rollback()
     $ quick_menu = True
     "Pia sedang menari diiringi lagu idol di HPnya yang diputar agak keras."
@@ -432,9 +440,12 @@ label goodpiaafterquiz:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     play music "audio/BGM_Lorong.ogg" fadein 1.0
-    scene lorong with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya.."
+    $ quick_menu = False
+    scene lorong with Dissolve(2.0)
     show tana_talk at tana_right with dissolve
     show kana at kana_near_left_2 with dissolve
     show tana_side_talk at left with dissolve
@@ -905,9 +916,12 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
     play music "BGM_Kampus.ogg" fadein 1.0
-    scene depan kampus with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa hari kemudian..."
+    $ quick_menu = False
+    scene depan kampus with Dissolve(2.0)
     # $ renpy.block_rollback()
     $ quick_menu = True 
     "Pia mendapatkan tugas untuk membuat desain yang diperlukan untuk acara matsuri yang akan diselenggarakan club jejepangannya tersebut"
@@ -979,9 +993,12 @@ label goodpiaafterquiz:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
     play music "BGM_UKM.ogg" fadein 1.0
-    scene ruang ukm with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene ruang ukm with Dissolve(2.0)
     ###$ renpy.block_rollback()
     $ quick_menu = True
     mcname "Kana, Tana. Mau tanya dong. Kira-kira kalian masih butuh anggota, gak?"
@@ -1406,17 +1423,15 @@ label goodendpiarooftop:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "BGM_Pagi Siang.ogg" fadein 1.0
+    play music "BGM_Kampus.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya.."
+    $ quick_menu = False
+    scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
     mcname "{i}Hmmm... Besok pertama kalinya mereka latihan bareng.{/i}"
     mcname "{i}Semoga Pia bisa membangkitkan semangat impiannya dulu.{/i}"
-    stop music fadeout 1.0
-    $ quick_menu = False
-    scene black with Dissolve(1.0)
-    play music "BGM_Kampus.ogg" fadein 1.0
-    scene depan kampus with Dissolve(1.0)
     show tana at tana_near with dissolve
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -1668,9 +1683,12 @@ label goodendpiarooftop:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}KEESOKAN HARINYA DI ROOFTOP{/color}" with Pause(2.0)
     play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0
-    scene rooftop with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene rooftop with Dissolve(2.0)
     # $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname], Takamina, dan KTp sedang berkumpul di rooftop."
@@ -1854,13 +1872,16 @@ label goodendpiarooftop:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}H-1 EVENT{/color}" with Pause(2.0)
     play music "BGM_Kampus.ogg" fadein 1.0
-    scene depan kampus with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Tak terasa sudah H-1 event..."
+    $ quick_menu = False
+    scene depan kampus with Dissolve(2.0)
     ###$ renpy.block_rollback()
+    show pia at pia_near with dissolve
     $ quick_menu = True
     mcname "Halo Piaa."
-    show pia at pia_near with dissolve
     show pia_shock at pia_near
     show pia_side_shock at left
     with dissolve
@@ -2217,8 +2238,11 @@ label goodendpiakosan:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}DI KOSAN{/color}" with Pause(2.0)
     play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Di kost..."
+    $ quick_menu = False
     scene kamar mc kota with Dissolve(1.0)
     $ quick_menu = True
     mcname "{i}Hmmm Pia gimana ya...{/i}"
@@ -2245,11 +2269,14 @@ label goodendpiakosan:
     mcname "Dah lah, tidur aja."
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    show text "{color=#FFF}HARI H MATSURI{/color}" with Pause(2.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_UKM.ogg" fadein 1.0
-    scene ruang ukm with dissolve
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Hari Matsuri pun tiba."
+    $ quick_menu = False
+    #$ renpy.block_rollback()
+    scene ruang ukm with Dissolve(2.0)
     # $ renpy.block_rollback()
     $ quick_menu = True
     mcname "Duh Pia sama Cepio mana ini? Belum dateng."
@@ -2365,12 +2392,14 @@ label goodendpiamatsuri:
     hide feni with dissolve
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    show text "{color=#FFF}JAM 10 PAGI{/color}" with Pause(2.0)
-    show text "{color=#FFF}OPEN GATE MATSURI{/color}" with Pause(2.0)
+    scene black with Dissolve(1.0)
     play music "BGM_Monas.ogg" fadein 1.0
-    scene awan with dissolve
-#HARUSNYA BG + BGM MATSURI SIANG
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa saat kemudian, acara Matsuri pun resmi dimulai"
+    $ quick_menu = False
+    scene lorong with Dissolve(2.0)
+#HARUSNYA BG MATSURI SIANG
     ###$ renpy.block_rollback()
     $ quick_menu = True
     mcname "Let’s go, otw kita!"
@@ -2531,9 +2560,12 @@ label goodendpiamatsuri:
     mc_nvl "Oke"
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}DI RUANG UKM{/color}" with Pause(2.0)
     play music "BGM_UKM.ogg" fadein 1.0
-    scene ruang ukm with Dissolve(1.0)
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Di ruang UKM..."
+    $ quick_menu = False
+    scene ruang ukm sore with Dissolve(2.0)
     ###$ renpy.block_rollback()
     $ quick_menu = True
     mcname "Grogi ya?"
