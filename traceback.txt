@@ -1,28 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/pia/goodpia.rpy", line 1233, in script
-    hide pia with dissovle
-  File "game/pia/goodpia.rpy", line 1233, in <module>
-    hide pia with dissovle
-NameError: name 'dissovle' is not defined
+  File "game/pia/goodpia.rpy", line 2105, in script
+    scene depan kampus sore with Dissolve(1.0)
+Exception: Image 'depan kampus' does not accept attributes 'sore'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/pia/goodpia.rpy", line 1233, in script
-    hide pia with dissovle
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1359, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/pia/goodpia.rpy", line 1233, in <module>
-    hide pia with dissovle
-NameError: name 'dissovle' is not defined
+  File "game/pia/goodpia.rpy", line 2105, in script
+    scene depan kampus sore with Dissolve(1.0)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1247, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1076, in show_imspec
+    renpy.config.show(name,
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 739, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\displayable.py", line 246, in _duplicate
+    args.extraneous()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'depan kampus' does not accept attributes 'sore'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Fri Jul 26 08:45:43 2024
+Fri Jul 26 21:14:01 2024
