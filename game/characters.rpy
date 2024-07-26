@@ -250,7 +250,9 @@ image side freya_side_smug = "Characters/Freya_side_smug.png"
 
 # define side fio character
 image side fio_side = "Characters/Fio_side.png"
-image side fio_side_smile = "Characters/fio_side_smile.png"
+image side fio_side_talk = "Characters/fio_side_talk.png"
+image side fio_side_smile = "Characters/fio_side_grin.png"
+image side fio_side_senyum = "Characters/fio_side_smile.png"
 
 # define side feni character
 image side feni_side = "Characters/feni_side.png"
@@ -268,11 +270,25 @@ image side flora_side_smile_talk = "Characters/Flora_side_smile_talk.png"
 image side flora_side_smile = "Characters/Flora_side_smile.png"
 image side flora_side_talk = "Characters/Flora_side_talk.png"
 
+# define side dosen character
 image side dosen_side = "Characters/Dosen_side.png"
+image side dosen_side_talk = "Characters/Dosen_side_talk.png"
 
+# define side galaxy character
 image side galaxy_side = "Characters/mahasiswa_c_side.png"
+image side galaxy_side_closed = "Characters/mahasiswa_c_side_closed.png"
 
+# define side Bang rama character
+image side rama_side = "Character/Bang_rama_side.png"
+image side rama_side_talk = "Character/Bang_rama_side_talk.png"
 
+# define side RG.hasan character
+image side hasan_side = "Character/hasan_side.png"
+image side hasan_side_talk = "Character/hasan_side_talk.png"
+
+# define side Takamina character
+image side takamina_side = "Character/takamina_side.png"
+image side takamina_side_talk = "Character/takamina_side_talk.png"
 
 # Define character appear on phone
 default mahasiswa_name = "???"
