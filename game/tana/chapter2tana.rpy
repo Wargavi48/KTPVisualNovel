@@ -20,7 +20,7 @@ label chapter2tana:
     "Penasaran dengan keramaian tersebut, Tana pun membuka pintu kelas."
     "Setelah pintu kelas terbuka dan para Mahasiswa/i melihat Tana di depan pintu, ada beberapa mahasiswa yang berteriak."
     #Sprite RG Hasan
-    show tana_confused at char_center
+    show tana_confused at tana_near
     show rg_hasan_talk at rg_hasan_left
     show bang_rama at bang_rama_right 
     with dissolve
@@ -39,15 +39,15 @@ label chapter2tana:
     with dissolve
     "Tana pun kebingungan dan mencoba memahami kejadian yang sedang terjadi di depan matanya ini."
     # tana bingung
-    hide tana_confused at char_center
-    show tana_angry_2 at char_center
+    hide tana_confused at tana_near
+    show tana_angry_2 at tana_near
     show tana_side_angry_2 at left
     with dissolve
     tana "Hah?! Centil?! Centil apaan kocak! Gausah ngadi-ngadi lu pada!"
     hide tana_side_angry_2 at left
-    hide tana_angry_2 at char_center 
+    hide tana_angry_2 at tana_near 
     hide rg_hasan at rg_hasan_left
-    show tana_angry at char_center 
+    show tana_angry at tana_near 
     show rg_hasan_talk at rg_hasan_left
     with dissolve
     "RG Hasan" "Alah alahh... Sa ae lu, Tana. Kita udah liat videonya."
@@ -56,16 +56,16 @@ label chapter2tana:
     show rg_hasan at rg_hasan_left
     with dissolve
     "Tana pun semakin bingung dengan video apa yang dimaksud oleh teman-temannya. Dengan wajah bingung dan panik, Tana pun bertanya pada temannya."
-    hide tana_angry at char_center 
-    show tana_confused at char_center 
+    hide tana_angry at tana_near 
+    show tana_confused at tana_near 
     show tana_side_confused at left 
     with dissolve
     tana "V-video apa?"
     hide tana_side_confused at left
-    hide tana_confused at char_center 
+    hide tana_confused at tana_near 
     hide bang_rama at bang_rama_right
     show bang_rama_talk at bang_rama_right
-    show tana_confused at char_center 
+    show tana_confused at tana_near 
     with dissolve
     "Bang Rama" "Hadeh. Video ini loh."
     hide bang_rama_talk at bang_rama_right
@@ -76,14 +76,14 @@ label chapter2tana:
     "Dalam video tersebut, tampak gadis remaja berambut merah, semerah cabe, sedang menari dengan indah gemulai."
     "Tana merasa bahwa ia pernah melihat gadis tersebut. Kemudian ia pun tersadar bahwa gadis yang ada dalam video tersebut adalah dirinya saat bermain di mall kemarin."
     "Dengan nada pelan dan suara gemetar, Tana pun berkata..."
-    hide tana_confused at char_center
-    show tana_confused at char_center
+    hide tana_confused at tana_near
+    show tana_confused at tana_near
     show tana_side_confused at left 
     with dissolve
     tana "I-ini kan aku, t-tapi kok bisa? Siapa yang ngerekam?"
     hide tana_side_confused at left with dissolve
-    hide tana_confused at char_center
-    show tana_angry at char_center
+    hide tana_confused at tana_near
+    show tana_angry at tana_near
     with dissolve
     "Mata Tana pun tertuju pada bagian pojok kiri atas layar handphone yang menunjukkan username ([mcname!c]+random number). Di saat yang bersamaan, terdengar bunyi pintu kelas terbuka."
     stop music fadeout 1.0
@@ -91,73 +91,73 @@ label chapter2tana:
     mcname "Pagi, gais."
     "Melihat [mcname!c] memasuki kelas, mata Tana langsung menatap [mcname!c] dengan tajam dan dengan rasa marah, ia menghampiri [mcname!c] dan berteriak."
 #HILANGKAN SPRITE RG HASAN + BANG RAMA
-    hide tana_angry at char_center
-    show tana_angry_2 at char_center
+    hide tana_angry at tana_near
+    show tana_angry_2 at tana_near
     show tana_side_angry_2 at left 
     with dissolve
     tana "MAKSUD LO APA?!"
     hide tana_side_angry_2 at left
-    hide tana_angry_2 at char_center
-    show tana_angry at char_center
+    hide tana_angry_2 at tana_near
+    show tana_angry at tana_near
     with dissolve
     mcname "!!??"
     "[mcname!c] pun kaget sekaligus bingung."
     mcname "Lah, gua salah apa? Gua baru masuk, kenapa udah lu marahin aja?"
-    hide tana_angry at char_center
-    show tana_angry_2 at char_center
+    hide tana_angry at tana_near
+    show tana_angry_2 at tana_near
     show tana_side_angry_2 at left 
     with dissolve
     tana "LO NGAPAIN NGEREKAM GUA NGE-DANCE KEMARIN?! NGAPAIN JUGA LU NYEBARIN VIDEONYA?"
     hide tana_side_angry_2 at left
-    hide tana_angry_2 at char_center
-    show tana_angry at char_center
+    hide tana_angry_2 at tana_near
+    show tana_angry at tana_near
     with dissolve
     mcname "Lah? Kan gua udah minta izin ke elu."
-    hide tana_angry at char_center
-    show tana_angry_2 at char_center
+    hide tana_angry at tana_near
+    show tana_angry_2 at tana_near
     show tana_side_angry_2 at left 
     with dissolve
     tana "MANA ADA LU MINTA IZIN KE GUA?! GA USAH BOONG DEH, LU! MAKSUD LU APAAN?!"
     hide tana_side_angry_2 at left
-    hide tana_angry_2 at char_center
-    show tana_angry at char_center
+    hide tana_angry_2 at tana_near
+    show tana_angry at tana_near
     with dissolve
     mcname "Gua serius ga ada maksud apa-apa, Tan."
-    hide tana_angry at char_center
-    show tana_angry_2 at char_center
+    hide tana_angry at tana_near
+    show tana_angry_2 at tana_near
     show tana_side_angry_2 at left 
     with dissolve
     tana "LAH TERUS KENAPA SEMUANYA PADA TAU? PASTI LU YANG NYEBARIN KAN?"
     hide tana_side_angry_2 at left
-    hide tana_angry_2 at char_center
-    show tana_angry at char_center
+    hide tana_angry_2 at tana_near
+    show tana_angry at tana_near
     with dissolve
     mcname "Hah mana ada? Gua cuma bikin Instastory." 
     mcname "Gua juga ga nyangka kalo anak-anak tau Instagram gua dan videonya jadi viral."
-    hide tana_angry at char_center
-    show tana_angry_2 at char_center
+    hide tana_angry at tana_near
+    show tana_angry_2 at tana_near
     show tana_side_angry_2 at left 
     with dissolve
     tana "GA USAH BOHONG LU, [mcname!u]!"
     hide tana_side_angry_2 at left
-    hide tana_angry_2 at char_center
-    show tana_angry at char_center
+    hide tana_angry_2 at tana_near
+    show tana_angry at tana_near
     with dissolve
     "Mendengar Tana yang terus menerus marah, emosi [mcname!c] pun akhirnya juga ikut tersulut."
     mcname "DIBILANGIN GUA GA ADA MAKSUD APA-APA! GUA CUMA NGEREKAM, SOALNYA LU KELIATAN LUCU. UDAH GITU DOANG!"
-    hide tana_angry at char_center
-    show tana_confused at char_center
+    hide tana_angry at tana_near
+    show tana_confused at tana_near
     show tana_side_confused at left 
     with dissolve
     tana "Eh?"
     hide tana_side_confused at left
-    hide tana_confused at char_center
-    show tana_shy at char_center
+    hide tana_confused at tana_near
+    show tana_shy at tana_near
     with dissolve
     "Mendengar hal tersebut, Tana pun kaget dan sedikit tersipu malu."
     "Suasana di dalam ruang kelas sudah terlanjur hening. Seluruh mata tertuju pada Tana dan [mcname!c], tidak ada yang berani ikut campur."
-    hide tana_shy at char_center
-    show tana_angry_2 at char_center
+    hide tana_shy at tana_near
+    show tana_angry_2 at tana_near
     show tana_side_angry_2 at left 
     with dissolve
     tana "HALAH, {i}KAKEHAN ALASAN!{/i} (BANYAK ALASAN!)"
