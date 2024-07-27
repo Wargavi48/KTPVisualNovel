@@ -225,6 +225,22 @@ image side kana_side_smile = "Characters/Kana_side_smile.png"
 image side kana_side_talk = "Characters/Kana_side_talk.png"
 image side kana_side = "Characters/Kana_side.png"
 
+# Define side kana date character
+image side kana_date_side = "Characters/kana_date_side.png"
+image side kana_date_side_confused = "Characters/kana_date_side_confused.png"
+# image side kana_date_side_cry = "Characters/kana_date_side_cry.png"
+image side kana_date_side_drylaugh = "Characters/kana_date_side_drylaugh.png"
+image side kana_date_side_talk = "Characters/kana_date_side_talk.png"
+# image side kana_date_side_deadeye = "Characters/kana_date_side_deadeye.png"
+# image side kana_date_side_deadeye_smile = "Characters/kana_date_side_deadeye_smile.png"
+# image side kana_date_side_confused_blush = "Characters/kana_date_side_confused_blush.png"
+# image side kana_date_side_blush_sideeye = "Characters/kana_date_side_blush_sideeye.png"
+image side kana_date_side_shy_confused = "Characters/kana_date_side_shy_confused.png"
+image side kana_date_side_shy_smile = "Characters/kana_date_side_shy_smile.png"
+image side kana_date_side_shy = "Characters/kana_date_side_shy.png"
+image side kana_date_side_closeeye = "Characters/kana_date_side_closeeye.png"
+
+
 # Define side kana home character
 image side kana_home_side = "Characters/Kana_home_side.png"
 image side kana_home_side_confused = "Characters/Kana_home_side_confused.png"
