@@ -222,8 +222,8 @@ image side kana_side_drylaugh = "Characters/Kana_side_drylaugh.png"
 image side kana_side_shy = "Characters/Kana_side_shy.png"
 image side kana_side_shy_smile = "Characters/Kana_side_shy_smile.png"
 image side kana_side_smile = "Characters/Kana_side_smile.png"
-image side kana_side_talk = "Characters/kana_side_talk.png"
-image side kana_side = "Characters/kana_side.png"
+image side kana_side_talk = "Characters/Kana_side_talk.png"
+image side kana_side = "Characters/Kana_side.png"
 
 # Define side kana home character
 image side kana_home_side = "Characters/Kana_home_side.png"
