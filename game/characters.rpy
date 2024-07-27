@@ -1,82 +1,4 @@
-﻿#Define Character Pia
-default pia_name = "????"
-define pia = Character("[pia_name]", image="Pia",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_sad = Character("[pia_name]", image="Pia_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_shock = Character("[pia_name]", image="Pia_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_silent = Character("[pia_name]", image="Pia_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_smile = Character("[pia_name]", image="pia_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_talk = Character("[pia_name]", image="Pia_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_date = Character("[pia_name]", image="Pia_date",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_date_sad = Character("[pia_name]", image="Pia_date_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_date_shock = Character("[pia_name]", image="Pia_date_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_date_silent = Character("[pia_name]", image="Pia_date_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_date_smile = Character("[pia_name]", image="pia_date_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_date_talk = Character("[pia_name]", image="Pia_date_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_home = Character("[pia_name]", image="Pia_home",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_home_sad = Character("[pia_name]", image="Pia_home_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_home_shock = Character("[pia_name]", image="Pia_home_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_home_silent = Character("[pia_name]", image="Pia_home_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_home_smile = Character("[pia_name]", image="pia_home_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_home_talk = Character("[pia_name]", image="Pia_home_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_idol = Character("[pia_name]", image="Pia_idol",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_idol_sad = Character("[pia_name]", image="Pia_idol_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_idol_shock = Character("[pia_name]", image="Pia_idol_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_idol_silent = Character("[pia_name]", image="Pia_idol_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_idol_smile = Character("[pia_name]", image="pia_idol_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_idol_talk = Character("[pia_name]", image="Pia_idol_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_nyembur = Character("[pia_name]", image="pia_nyembur",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_sh = Character("[pia_name]", image="pia_sh", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-
-# define piasprites = Character("Pia Sprites", image="Pia",color="#000000")
-
-
-# Define Character Tono
-default tono_name = "????"
-define tana = Character("[tono_name]", image="Tana", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_angry = Character("[tono_name]", image="Tana_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_angry_2 = Character("[tono_name]", image="Tana_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_confused = Character("[tono_name]", image="Tana_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_laugh = Character("[tono_name]", image="Tana_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_nantang = Character("[tono_name]", image="Tana_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_sad = Character("[tono_name]", image="Tana_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_shock = Character("[tono_name]", image="Tana_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_shy = Character("[tono_name]", image="Tana_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_silent = Character("[tono_name]", image="Tana_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_talk = Character("[tono_name]", image="Tana_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol = Character("[tono_name]", image="Tana_idol", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol_angry = Character("[tono_name]", image="Tana_idol_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol_angry_2 = Character("[tono_name]", image="Tana_idol_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol_confused = Character("[tono_name]", image="Tana_idol_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol_laugh = Character("[tono_name]", image="Tana_idol_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol_nantang = Character("[tono_name]", image="Tana_idol_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol_sad = Character("[tono_name]", image="Tana_idol_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol_shock = Character("[tono_name]", image="Tana_idol_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol_shy = Character("[tono_name]", image="Tana_idol_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol_silent = Character("[tono_name]", image="Tana_idol_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_idol_talk = Character("[tono_name]", image="Tana_idol_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date = Character("[tono_name]", image="Tana_date", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date_angry = Character("[tono_name]", image="Tana_date_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date_angry_2 = Character("[tono_name]", image="Tana_date_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date_confused = Character("[tono_name]", image="Tana_date_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date_laugh = Character("[tono_name]", image="Tana_date_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date_nantang = Character("[tono_name]", image="Tana_date_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date_sad = Character("[tono_name]", image="Tana_date_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date_shock = Character("[tono_name]", image="Tana_date_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date_shy = Character("[tono_name]", image="Tana_date_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date_silent = Character("[tono_name]", image="Tana_date_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_date_talk = Character("[tono_name]", image="Tana_date_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah = Character("[tono_name]", image="Tana_rumah", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_angry = Character("[tono_name]", image="Tana_rumah_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_angry_2 = Character("[tono_name]", image="Tana_rumah_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_confused = Character("[tono_name]", image="Tana_rumah_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_laugh = Character("[tono_name]", image="Tana_rumah_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_nantang = Character("[tono_name]", image="Tana_rumah_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_sad = Character("[tono_name]", image="Tana_rumah_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_shock = Character("[tono_name]", image="Tana_rumah_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_shy = Character("[tono_name]", image="Tana_rumah_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_silent = Character("[tono_name]", image="Tana_rumah_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_talk = Character("[tono_name]", image="Tana_rumah_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default tono_sh = Character("[tono_name]", image="tono_sh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+﻿# Main Characters Sprites
 
 # Define Character Kana
 default kana_name = "????"
@@ -143,6 +65,86 @@ default kana_idol_smile = Character("[kana_name]", image="Kana_idol_smile", wind
 default kana_idol_talk = Character("[kana_name]", image="Kana_idol_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default kana_sh = Character("[kana_name]", image="kana_sh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 
+# Define Character Tono
+default tono_name = "????"
+define tana = Character("[tono_name]", image="Tana", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_angry = Character("[tono_name]", image="Tana_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_angry_2 = Character("[tono_name]", image="Tana_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_confused = Character("[tono_name]", image="Tana_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_laugh = Character("[tono_name]", image="Tana_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_nantang = Character("[tono_name]", image="Tana_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_sad = Character("[tono_name]", image="Tana_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_shock = Character("[tono_name]", image="Tana_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_shy = Character("[tono_name]", image="Tana_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_silent = Character("[tono_name]", image="Tana_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_talk = Character("[tono_name]", image="Tana_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol = Character("[tono_name]", image="Tana_idol", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol_angry = Character("[tono_name]", image="Tana_idol_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol_angry_2 = Character("[tono_name]", image="Tana_idol_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol_confused = Character("[tono_name]", image="Tana_idol_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol_laugh = Character("[tono_name]", image="Tana_idol_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol_nantang = Character("[tono_name]", image="Tana_idol_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol_sad = Character("[tono_name]", image="Tana_idol_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol_shock = Character("[tono_name]", image="Tana_idol_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol_shy = Character("[tono_name]", image="Tana_idol_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol_silent = Character("[tono_name]", image="Tana_idol_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_idol_talk = Character("[tono_name]", image="Tana_idol_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date = Character("[tono_name]", image="Tana_date", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date_angry = Character("[tono_name]", image="Tana_date_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date_angry_2 = Character("[tono_name]", image="Tana_date_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date_confused = Character("[tono_name]", image="Tana_date_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date_laugh = Character("[tono_name]", image="Tana_date_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date_nantang = Character("[tono_name]", image="Tana_date_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date_sad = Character("[tono_name]", image="Tana_date_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date_shock = Character("[tono_name]", image="Tana_date_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date_shy = Character("[tono_name]", image="Tana_date_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date_silent = Character("[tono_name]", image="Tana_date_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_date_talk = Character("[tono_name]", image="Tana_date_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah = Character("[tono_name]", image="Tana_rumah", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah_angry = Character("[tono_name]", image="Tana_rumah_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah_angry_2 = Character("[tono_name]", image="Tana_rumah_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah_confused = Character("[tono_name]", image="Tana_rumah_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah_laugh = Character("[tono_name]", image="Tana_rumah_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah_nantang = Character("[tono_name]", image="Tana_rumah_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah_sad = Character("[tono_name]", image="Tana_rumah_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah_shock = Character("[tono_name]", image="Tana_rumah_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah_shy = Character("[tono_name]", image="Tana_rumah_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah_silent = Character("[tono_name]", image="Tana_rumah_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_rumah_talk = Character("[tono_name]", image="Tana_rumah_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default tono_sh = Character("[tono_name]", image="tono_sh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+
+#Define Character Pia
+default pia_name = "????"
+define pia = Character("[pia_name]", image="Pia",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_sad = Character("[pia_name]", image="Pia_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_shock = Character("[pia_name]", image="Pia_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_silent = Character("[pia_name]", image="Pia_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_smile = Character("[pia_name]", image="pia_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_talk = Character("[pia_name]", image="Pia_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_date = Character("[pia_name]", image="Pia_date",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_sad = Character("[pia_name]", image="Pia_date_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_shock = Character("[pia_name]", image="Pia_date_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_silent = Character("[pia_name]", image="Pia_date_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_smile = Character("[pia_name]", image="pia_date_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_date_talk = Character("[pia_name]", image="Pia_date_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_home = Character("[pia_name]", image="Pia_home",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_sad = Character("[pia_name]", image="Pia_home_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_shock = Character("[pia_name]", image="Pia_home_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_silent = Character("[pia_name]", image="Pia_home_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_smile = Character("[pia_name]", image="pia_home_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_home_talk = Character("[pia_name]", image="Pia_home_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_idol = Character("[pia_name]", image="Pia_idol",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_sad = Character("[pia_name]", image="Pia_idol_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_shock = Character("[pia_name]", image="Pia_idol_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_silent = Character("[pia_name]", image="Pia_idol_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_smile = Character("[pia_name]", image="pia_idol_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_idol_talk = Character("[pia_name]", image="Pia_idol_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_nyembur = Character("[pia_name]", image="pia_nyembur",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_sh = Character("[pia_name]", image="pia_sh", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+# define piasprites = Character("Pia Sprites", image="Pia",color="#000000")
+
+
+# JKT48 member
 
 # Define Character Freya
 default freya_name = "???"
@@ -181,6 +183,9 @@ default flora_smile_talk = Character("[flora_name]",image="Flora")
 default flora_smile = Character("[flora_name]",image="Flora")
 default flora_talk = Character("[flora_name]",image="Flora")
 
+
+# Donors
+
 # Define dosen chara
 default dosen_name = "Dosen"
 default dosen = Character("[dosen_name]", image="Dosen")
@@ -207,13 +212,9 @@ default galaxy = Character("[mahasiswa_c_name]", image="galaxy")
 default galaxy_talk = Character("[mahasiswa_c_name]", image="mahasiswa_c")
 
 
-# Define side pia character 
-image side pia_side = "Characters/Pia_side.png"
-image side pia_side_sad = "Characters/Pia_side_sad.png"
-image side pia_side_shock = "Characters/Pia_side_shock.png"
-image side pia_side_silent = "Characters/Pia_side_silent.png"
-image side pia_side_smile = "Characters/Pia_side_smile.png"
-image side pia_side_talk = "Characters/Pia_side_talk.png"
+# Side Characters Sprites
+
+# Kana
 
 # Define side kana character
 image side kana_side_confused = "Characters/Kana_side_confused.png"
@@ -239,7 +240,6 @@ image side kana_date_side_shy_confused = "Characters/kana_date_side_shy_confused
 image side kana_date_side_shy_smile = "Characters/kana_date_side_shy_smile.png"
 image side kana_date_side_shy = "Characters/kana_date_side_shy.png"
 image side kana_date_side_closeeye = "Characters/kana_date_side_closeeye.png"
-
 
 # Define side kana home character
 image side kana_home_side = "Characters/Kana_home_side.png"
@@ -275,6 +275,8 @@ image side kana_idol_side_shy_closeeye = "Characters/kana_idol_side_shy_closeeye
 image side kana_idol_side_shy_closeeye_talk = "Characters/kana_idol_side_shy_closeeye_talk.png"
 image side kana_idol_side_cry_closeeye = "Characters/kana_idol_side_cry_closeeye.png"
 
+# Tana
+
 # Define side tana character
 image side tana_side_angry = "Characters/Tana_side_angry.png"
 image side tana_side_angry_2 = "Characters/Tana_side_angry_2.png"
@@ -287,6 +289,42 @@ image side tana_side_idle = "Characters/Tana_side_idle.png"
 image side tana_side_laugh = "Characters/Tana_side_laugh.png"
 image side tana_side_confused = "Characters/Tana_side_confused.png"
 image side tana_side = "Characters/Tana_side.png"
+
+# Pia
+
+# Define side pia character 
+image side pia_side = "Characters/Pia_side.png"
+image side pia_side_sad = "Characters/Pia_side_sad.png"
+image side pia_side_shock = "Characters/Pia_side_shock.png"
+image side pia_side_silent = "Characters/Pia_side_silent.png"
+image side pia_side_smile = "Characters/Pia_side_smile.png"
+image side pia_side_talk = "Characters/Pia_side_talk.png"
+
+# Define side pia date character 
+image side pia_date_side = "Characters/pia_date_side.png"
+image side pia_date_side_sad = "Characters/pia_date_side_sad.png"
+image side pia_date_side_shock = "Characters/pia_date_side_shock.png"
+image side pia_date_side_silent = "Characters/pia_date_side_silent.png"
+image side pia_date_side_smile = "Characters/pia_date_side_smile.png"
+image side pia_date_side_talk = "Characters/pia_date_side_talk.png"
+
+# Define side pia home character 
+image side pia_home_side = "Characters/pia_home_side.png"
+image side pia_home_side_sad = "Characters/pia_home_side_sad.png"
+image side pia_home_side_shock = "Characters/pia_home_side_shock.png"
+image side pia_home_side_silent = "Characters/pia_home_side_silent.png"
+image side pia_home_side_smile = "Characters/pia_home_side_smile.png"
+image side pia_home_side_talk = "Characters/pia_home_side_talk.png"
+
+# Define side pia idol character 
+image side pia_idol_side = "Characters/pia_idol_side.png"
+image side pia_idol_side_sad = "Characters/pia_idol_side_sad.png"
+image side pia_idol_side_shock = "Characters/pia_idol_side_shock.png"
+image side pia_idol_side_silent = "Characters/pia_idol_side_silent.png"
+image side pia_idol_side_smile = "Characters/pia_idol_side_smile.png"
+image side pia_idol_side_talk = "Characters/pia_idol_side_talk.png"
+
+# JKT48 Member
 
 # Define side freya character
 image side freya_side = "Characters/Freya_side.png"
@@ -320,6 +358,8 @@ image side flora_side_shock = "Characters/Flora_side_shock.png"
 image side flora_side_smile_talk = "Characters/Flora_side_smile_talk.png"
 image side flora_side_smile = "Characters/Flora_side_smile.png"
 image side flora_side_talk = "Characters/Flora_side_talk.png"
+
+# Donors
 
 # define side dosen character
 image side dosen_side = "Characters/Dosen_side.png"
@@ -355,8 +395,6 @@ define papah_nvl = Character("Papa", kind=nvl, callback=Phone_ReceiveSound)
 define pia_nvl = Character("Pia", kind=nvl, callback=Phone_ReceiveSound)
 define fio_nvl = Character("[fio_name]", kind=nvl, callback=Phone_ReceiveSound)
 define feni_nvl = Character("[feni_name]", kind=nvl, callback=Phone_ReceiveSound)
-
-
 
 # Define other
 
