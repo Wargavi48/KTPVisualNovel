@@ -290,6 +290,45 @@ image side tana_side_laugh = "Characters/Tana_side_laugh.png"
 image side tana_side_confused = "Characters/Tana_side_confused.png"
 image side tana_side = "Characters/Tana_side.png"
 
+# Define side tana date character
+image side tana_date_side_angry = "Characters/tana_date_side_angry.png"
+image side tana_date_side_angry_2 = "Characters/tana_date_side_angry_2.png"
+image side tana_date_side_shy = "Characters/tana_date_side_shy.png"
+image side tana_date_side_shock = "Characters/tana_date_side_shock.png"
+image side tana_date_side_sad = "Characters/tana_date_side_sad.png"
+image side tana_date_side_smug = "Characters/tana_date_side_smug.png"
+image side tana_date_side_talk = "Characters/tana_date_side_talk.png"
+image side tana_date_side_idle = "Characters/tana_date_side_idle.png"
+image side tana_date_side_laugh = "Characters/tana_date_side_laugh.png"
+image side tana_date_side_confused = "Characters/tana_date_side_confused.png"
+image side tana_date_side = "Characters/tana_date_side.png"
+
+# Define side tana home character
+image side tana_home_side_angry = "Characters/tana_home_side_angry.png"
+image side tana_home_side_angry_2 = "Characters/tana_home_side_angry_2.png"
+image side tana_home_side_shy = "Characters/tana_home_side_shy.png"
+image side tana_home_side_shock = "Characters/tana_home_side_shock.png"
+image side tana_home_side_sad = "Characters/tana_home_side_sad.png"
+image side tana_home_side_smug = "Characters/tana_home_side_smug.png"
+image side tana_home_side_talk = "Characters/tana_home_side_talk.png"
+image side tana_home_side_idle = "Characters/tana_home_side_idle.png"
+image side tana_home_side_laugh = "Characters/tana_home_side_laugh.png"
+image side tana_home_side_confused = "Characters/tana_home_side_confused.png"
+image side tana_home_side = "Characters/tana_home_side.png"
+
+# Define side tana idol character
+image side tana_idol_side_angry = "Characters/tana_idol_side_angry.png"
+image side tana_idol_side_angry_2 = "Characters/tana_idol_side_angry_2.png"
+image side tana_idol_side_shy = "Characters/tana_idol_side_shy.png"
+image side tana_idol_side_shock = "Characters/tana_idol_side_shock.png"
+image side tana_idol_side_sad = "Characters/tana_idol_side_sad.png"
+image side tana_idol_side_smug = "Characters/tana_idol_side_smug.png"
+image side tana_idol_side_talk = "Characters/tana_idol_side_talk.png"
+image side tana_idol_side_idle = "Characters/tana_idol_side_idle.png"
+image side tana_idol_side_laugh = "Characters/tana_idol_side_laugh.png"
+image side tana_idol_side_confused = "Characters/tana_idol_side_confused.png"
+image side tana_idol_side = "Characters/tana_idol_side.png"
+
 # Pia
 
 # Define side pia character 
