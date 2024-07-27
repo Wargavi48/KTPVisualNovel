@@ -23,17 +23,21 @@ label chapter2tana:
     show tana_confused at tana_near
     show rg_hasan_talk at rg_hasan_left
     show bang_rama at bang_rama_right 
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Guys, ini dia dancer andalan kita!"
     "RG Hasan" "Hahahaha!"
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at rg_hasan_left
     hide bang_rama at bang_rama_right
     #Sprite Bang Rama
     show rg_hasan at rg_hasan_left
     show bang_rama_talk at bang_rama_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "onoT, kamu centil banget sih!"
     "Bang Rama" "Hahahaha!"
+    hide bang_rama_side_talk
     hide bang_rama_talk at bang_rama_right
     show bang_rama at bang_rama_right
     with dissolve
@@ -49,9 +53,11 @@ label chapter2tana:
     hide rg_hasan at rg_hasan_left
     show tana_angry at tana_near 
     show rg_hasan_talk at rg_hasan_left
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Alah alahh... Sa ae lu, Tana. Kita udah liat videonya."
     "RG Hasan" "Hahahaha!"
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at rg_hasan_left
     show rg_hasan at rg_hasan_left
     with dissolve
@@ -66,8 +72,10 @@ label chapter2tana:
     hide bang_rama at bang_rama_right
     show bang_rama_talk at bang_rama_right
     show tana_confused at tana_near 
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Hadeh. Video ini loh."
+    hide bang_rama_side_talk
     hide bang_rama_talk at bang_rama_right
     show bang_rama at bang_rama_right
     with dissolve
@@ -178,14 +186,18 @@ label chapter2tana:
     "Suasana kelas menjadi hening. Mahasiswa/i merasa canggung karena keributan yang terjadi."
     hide rg_hasan at char_left
     show rg_hasan_talk at char_left
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Parah, gara-gara lu sih."
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_left
-    show rg_hasan at char_left
     hide bang_rama at char_right
+    show rg_hasan at char_left
     show bang_rama_talk at char_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Apaan, elu juga padahal."
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_right
     show bang_rama at char_right
     with dissolve
@@ -200,13 +212,13 @@ label chapter2tana:
     play music "audio/BGM_Dosen.ogg" fadein 1.0
     scene kelas with Dissolve(1.0)
     show dosen_talk at dosen_center
-    show dosen_side at left
+    show dosen_side_talk at left
     with dissolve
     $ quick_menu = True
     dosen "Selamat pagi, semuanya!"
     dosen "Kelas akan saya mulai ya."
     dosen "Hari ini kita akan membahas tentang..."
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
     with dissolve
     stop music fadeout 1.0
@@ -254,6 +266,7 @@ label chapter2tana:
     hide tana_side_talk at left with dissolve
     hide tana_talk at tana_near
     show tana at tana_near
+    with dissolve
     "Tana pun melihat ke seluruh bagian kelas untuk mencari apakah ada bangku yang masih kosong."
     hide tana at tana_near
     show tana_talk at tana_near
@@ -302,36 +315,40 @@ label chapter2tana:
     $ quick_menu=True
     "Tak lama kemudian, Bu Dosen pun memasuki kelas."
     show dosen_talk at dosen_center
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Selamat pagi, semuanya!"
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
     "Mahasiswa/i" "Selamat pagi, Bu!"
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Udah pada sarapan belum?"
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
     show rg_hasan_talk at char_center 
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Belum nih, Bu. Laper, huhu."
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_center
     show bang_rama_talk at char_center 
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Udah tadi ngemil {i}Pramog{/i}, Bu."
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_center
     show dosen_talk at dosen_center
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Ada-ada aja kalian ini, hahaha."
     dosen "Yaudah. Kalau ada yang bawa bekal, dimakan aja gapapa."
     dosen "Saya cuma mau menyampaikan beberapa hal terkait materi praktikum yang pertama."
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
@@ -339,43 +356,43 @@ label chapter2tana:
     "Sebagian Mahasiswa/i yang membawa bekal pun akhirnya mengeluarkan bekal untuk dimakan sembari mendengarkan penjelasan dari Bu Dosen."
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Baik, untuk praktikum minggu depan, masing-masing Mahasiswa dan Mahasiswi harus menyiapkan sampel tanah."
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
     mcname "Tanah? Untuk apa kita mengumpulkan tanah, Bu?"
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Iya, tanah."
     dosen "Nanti sampel tanah yang telah kalian dapatkan, akan diuji untuk mengetahui index kesuburan dan apa saja kandungan di tanah tersebut."
     dosen "Jadi, kalian nanti akan belajar bagaimana cara menganalisis tanah."
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
     mcname "Nanti kita ngambil sampel tanahnya di mana, Bu? Apakah tempatnya bebas?"
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Sampel tanah bisa diambil dari sawah di kampus, ya. Kalian sudah ke sana, kan?"
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
     "Mahasiswa/i" "Sudah, Bu!"
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Nah, kalian ambil dari sana aja."
     dosen "Nanti data yang kalian peroleh bisa dibandingkan dengan data-data milik kakak tingkat kalian untuk mengetahui apakah ada perbedaan antara data yang kalian peroleh dengan data sebelumnya."
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
@@ -383,10 +400,10 @@ label chapter2tana:
     mcname "Bu, akses ke sawah apakah bebas?"
     hide dosen at dosen_center
     show dosen_talk at dosen_center
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Bebas. Seinget saya, akses pagar sawah diatur oleh kakak tingkatmu yang saya lupa namanya."
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
     show dosen at dosen_center
     with dissolve
@@ -406,10 +423,10 @@ label chapter2tana:
     mcname "Bu, mau tanya lagi. kalau tanahnya warna merah, boleh ga?"
     hide dosen at dosen_left
     show dosen_talk at dosen_left
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Tanah merah? Memangnya di sawah kampus ada tanah yang warnanya seperti itu?"
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_left
     show dosen at dosen_left
     with dissolve
@@ -417,18 +434,22 @@ label chapter2tana:
     mcname "Tanahnya merah dan putih, terus ada coklat-coklatnya gitu."
     hide dosen at dosen_left
     hide tana_angry at dosen_left
-    show rg_hasan_talk at char_left
     show bang_rama at char_right 
+    show rg_hasan_talk at char_left
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "[mcname!c], emang kapan ada tanah yang warnanya kayak gitu?"
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_left
     show rg_hasan at char_left
     with dissolve
     mcname "Lah, ada tau. Kan pas itu kalian juga liat."
     hide bang_rama at char_right
     show bang_rama_talk at char_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Emang tanah apaan? Perasaan ga ada deh."
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_right
     show bang_rama at char_right
     with dissolve
@@ -448,21 +469,21 @@ label chapter2tana:
     hide dosen at dosen_left
     show dosen_talk at dosen_left
     show tana_angry at tana_right
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Hahahaha. Ada-ada saja. Oke, kalau begitu, kalian jangan lupa untuk mengambil sampel, ya."
     dosen "Kalian bebas mau ambil sampelnya kapan, yang penting disimpan di wadah tertutup dan dibawa pada saat praktikum."
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_left
     show dosen at dosen_left
     with dissolve
     "Mahasiswa/i" "Baik, Bu!"
     hide dosen at dosen_left
     show dosen_talk at dosen_left
-    show dosen_side at left 
+    show dosen_side_talk at left 
     with dissolve
     dosen "Ya udah, itu saja dari saya. Kelas sudah selesai. Terima kasih. Saya duluan, ya."
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_left
     show dosen at dosen_left
     with dissolve
@@ -479,18 +500,22 @@ label chapter2tana:
     scene lorong with Dissolve(1.0)
     $ quick_menu=True
     "RG Hasan, Bang Rama, dan [mcname!c] berjalan bersama di lorong."
-    show rg_hasan_talk at char_left
     show bang_rama at char_right 
+    show rg_hasan_talk at char_left
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Oi, [mcname!c]. Lu ga laper, apa?"
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_left
     show rg_hasan at char_left
     with dissolve
     mcname "Laper sih sebenarnya. Gua belum sarapan soalnya."
     hide bang_rama at char_right
     show bang_rama_talk at char_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Yaudah, ayok ke kantin dah. Gua juga laper nih."
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_right
     show bang_rama at char_right
     with dissolve
@@ -511,16 +536,20 @@ label chapter2tana:
     mcname "Tuh ada yang kosong. Di situ aja."
     hide rg_hasan at char_left
     show rg_hasan_talk at char_left
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Yaudah gua aja yang jaga tempatnya, lu cari makan dulu."
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_left
     show rg_hasan at char_left
     with dissolve
     mcname "Bang Rama, lu ga nyari sekalian?"
     hide bang_rama at char_right
     show bang_rama_talk at char_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Entar deh. Gua lagi ada panggilan, nih."
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_right
     show bang_rama at char_right
     with dissolve
@@ -707,88 +736,112 @@ label chapter2tana:
     mcname "Akh, akhirnya kelar juga nih kelas. Asli ngantuk banget dengerinnya."
     show bang_rama at char_right
     show rg_hasan_talk at char_left 
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Mending tadi lu tidur aja."
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_left
     show rg_hasan at char_left
     with dissolve
     mcname "Yeuu. Ntar gua jadi bodoh kayak elu dong."
     hide bang_rama at char_right
     show bang_rama_talk at char_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Hahahahaha!"
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_right
     hide rg_hasan at char_left
     show bang_rama at char_right
     show rg_hasan_talk at char_left
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Enak bener tuh mulut kalo ngomong."
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_left
     hide bang_rama at char_right
     show rg_hasan at char_left
     show bang_rama_talk at char_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Btw kalian udah pada ambil sampel tanah belum?"
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_right
     show bang_rama at char_right
     with dissolve
     mcname "Ha? Sampel tanah apaan?"
     hide rg_hasan at char_left
     show rg_hasan_talk at char_left
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Itu tuh, bukti nyata kalo lu yang bodoh."
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_left
     show rg_hasan at char_left
     with dissolve
     mcname "Hah sumpah, yang mana sih?"
     hide bang_rama at char_right
     show bang_rama_talk at char_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Itu, sampel tanah buat praktikum besok lusa."
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_right
     show bang_rama at char_right
     with dissolve
     mcname "OH IYA! GUA LUPA!"
     hide rg_hasan at char_left
     show rg_hasan_talk at char_left
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Parahh..."
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_left
     hide bang_rama at char_right
     show rg_hasan at char_left
     show bang_rama_talk at char_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Kurang baik apa coba gua ini, udah ngingetin."
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_right
     show bang_rama at char_right
     with dissolve
     mcname "Hilih."
     hide rg_hasan at char_left
     show rg_hasan_talk at char_left
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Yaudah, lu mau ikut ngambil sampel bareng kita gak? Soalnya besok terakhir."
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_left
     show rg_hasan at char_left
     with dissolve
     mcname "Walah, gua ga bisa kalo sekarang. Gua ambil sampelnya besok aja deh. Soalnya gua harus ngejemur cucian gua."
     hide bang_rama at char_right
     show bang_rama_talk at char_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Semangat deh anak kos-kosan."
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_right
     show bang_rama at char_right
     with dissolve
     mcname "Yaudah, gua duluan ya."
     hide rg_hasan at char_left
     show rg_hasan_talk at char_left
+    show rg_hasan_side_talk at left
     with dissolve
     "RG Hasan" "Oke dah."
+    hide rg_hasan_side_talk
     hide rg_hasan_talk at char_left
     hide bang_rama at char_right
     show rg_hasan at char_left
     show bang_rama_talk at char_right
+    show bang_rama_side_talk at left
     with dissolve
     "Bang Rama" "Tiati."
+    hide bang_rama_side_talk
     hide bang_rama_talk at char_right
     hide rg_hasan at char_left 
     with dissolve
@@ -994,26 +1047,48 @@ label chapter2tana:
             scene black with Dissolve(1.0)
             show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
             scene kelas with Dissolve(1.0)
-            show dosen at dosen_center
-            show dosen_side at left
+            show dosen_talk at dosen_center
+            show dosen_side_talk at left
             with dissolve
             # #$ renpy.block_rollback()
             dosen "Semuanya baris, ya. Tunjukin sampel tanah kalian, baru kalian boleh masuk ruang praktikum."
-            hide dosen_side at left with dissolve
+            hide dosen_side_talk at left 
+            hide dosen_talk
+            show dosen
+            with dissolve
             mcname "{i}Waduh, gua ga bawa nih. Mana temen-temen pada beda sesi lagi.{/i}"
-            show dosen_side at left with dissolve
+            hide dosen
+            show dosen_talk at dosen_center
+            show dosen_side_talk at left 
+            with dissolve
             dosen "[mcname!c], mana sampel kamu?"
-            hide dosen_side at left with dissolve
+            hide dosen_side_talk at left 
+            hide dosen_talk
+            show dosen at dosen_center
+            with dissolve
             mcname "I-itu, Bu. Ketinggalan di kos temen."
-            show dosen_side at left with dissolve
+            hide dosen
+            show dosen_talk at dosen_center
+            show dosen_side_talk at left 
+            with dissolve
             dosen "Oalah, yaudah. Masuk dulu aja."
-            hide dosen_side at left with dissolve
+            hide dosen_side_talk at left 
+            hide dosen_talk
+            show dosen at dosen_center
+            with dissolve
             mcname "Eh? Saya boleh masuk, Bu?"
-            show dosen_side at left with dissolve
+            hide dosen
+            show dosen_talk at dosen_center
+            show dosen_side_talk at left 
+            with dissolve
             dosen "Masuk? Boleh dong."
             dosen "Masuk daftar mahasiswa yang nilai praktikumnya 0."
-            hide dosen_side at left with dissolve
+            hide dosen_side_talk at left 
+            hide dosen_talk
+            show dosen at dosen_center
+            with dissolve
             mcname "NOOOOOOOOOOOOOOOOOOO~"
+            hide dosen with dissolve
             scene black with dissolve
             show text "{color=#FFF}MAKANYA KULIAH YANG BENER!{/color}" with Pause(2.0)
             scene black with dissolve
@@ -1143,12 +1218,16 @@ label chapter2tanasawah:
     show tana_side_confused at left 
     with dissolve
     tana "Eh?"
-    #Chibi Nue Tono Kepeleset
-    #SFX Kepeleset
-    play sound "SFX - Fall Water.WAV" volume (4.0)
-    tana "AAAAAAA!!"
     hide tana_side_confused at left
     hide tana_confused at tana_near
+    #Chibi Nue Tono Kepeleset
+    #SFX Kepeleset
+    show tana_kepeleset at tana_near
+    play sound "SFX - Fall Water.WAV" volume (4.0)
+    show tana_side_kepeleset at left with dissolve
+    tana "AAAAAAA!!"
+    hide tana_side_kepeleset
+    hide tana_kepeleset
     show tana_silent at tana_near
     show tana_side_idle at left
     with dissolve
@@ -1166,11 +1245,14 @@ label chapter2tanasawah:
     hide tana_silent at tana_near with dissolve
     "[mcname!c] mengulurkan tangannya untuk membantu Tana berdiri."
     "Tapi tiba-tiba..."
-    #Chibi Nue Tono narik [mcname!c]
+    #Chibi Nue Tono narik MC
+    show tana_narik_mc at tana_near with dissolve
     mcname "Eh?"
     play sound "SFX - Fall Water.WAV" volume (4.0)
     mcname "AAAAAAAAA!!!"
-    show tana_laugh at tana_near with dissolve
+    hide tana_narik_mc
+    show tana_laugh at tana_near 
+    with dissolve
     mcname "......."
     show tana_side_laugh at left with dissolve
     tana "HAHAHAHAH!!!"

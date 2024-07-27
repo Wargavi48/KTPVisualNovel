@@ -117,7 +117,7 @@ label tanamcdaftarulang:
     "Keesokan harinya..."
     $ quick_menu = False
     show depan kampus with Dissolve(2.0)
-    # #$ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname] datang ke kampus untuk memulai orientasinya."
     "[mcname] pun berjalan ke kelas"
@@ -130,7 +130,7 @@ label tanamcdaftarulang:
     scene black with Dissolve(1.0)
     play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene kelas with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     "Ternyata pas duduk di kelas, cewek yang [mcname] temui kemarin pun duduk juga di sebelah [mcname]."
     show tana_talk at tana_near
@@ -192,15 +192,15 @@ label tanamcdaftarulang:
     play music "BGM_Dosen.ogg" fadein 1.0
     scene kelas with Dissolve(1.0)
     show dosen_talk at dosen_center
-    show dosen_side at left
+    show dosen_side_talk at left
     with dissolve
-    # #$ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     dosen "Selamat datang Mahasiswa baru Jurusan pertanian."
     dosen "Oke, kegiatan hari ini adalah perkenalan lingkungan kampus. Silahkan berkumpul dengan kelompoknya masing-masing"
     dosen "Instruksi selanjutnya ada di pembimbing kelompok masing-masing, terima kasih"
     dosen "HIDUP PERTANIAN INDONESIA!"
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
     with dissolve
     $ quick_menu = False
@@ -227,7 +227,7 @@ label tanamcdaftarulang:
     scene black with Dissolve(1.0)
     play music "BGM_Lorong.ogg" fadein 1.0
     scene lorong with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    # $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname] dan kelompoknya pun berkeliling kampus untuk melihat fasilitas jurusan pertanian dibimbing oleh Kakak kelasnya yang bernama Flora. Tapi tiba tiba…"
     mcname "{i}Duh kebelet{/i}"
@@ -1282,23 +1282,26 @@ label chapter1tanamakan:
     "Beberapa saat kemudian..."
     play music "BGM_Funny 3.ogg" fadein 1.0
 # tana batuk
-    show tana at tana_near
-    show tana_side at left
+    show tana_batuk at tana_near
+    show tana_side_batuk at left
     with dissolve
     tana "UHUK UHUK."
-    hide tana_side at left with dissolve
+    hide tana_side_batuk at left with dissolve
     mcname "Makanya makan pelan-pelan, kocak. Lu gak makan dari tahun kemarin ato gimana?"
-    show tana_side at left with dissolve
+    show tana_side_batuk at left with dissolve
     tana "UHUK UHUK."
-    hide tana_side at left with dissolve
+    hide tana_side_batuk at left with dissolve
     mcname "Ini minum dulu"
 # tana batuk hide
 # tana minum
-    show tana_side at left with dissolve
+    hide tana_batuk
+    show tana_minum at tana_near
+    show tana_side_minum at left 
+    with dissolve
     tana "*Glug Glug*"
     tana "AHHHHH"
-    hide tana_side at left
-    hide tana at tana_near
+    hide tana_side_minum at left
+    hide tana_minum at tana_near
     show tana_angry at tana_near
     with dissolve
     mcname "Kalo kata gua sih kurang kenceng"
@@ -1650,12 +1653,18 @@ label chapter1tanamakan:
     show tana_side_confused at left
     with dissolve
     tana "Eh!?"
-    # Insert tana kecebur sawah
-    tana "EHHHHHHHH?"
-    mcname "Tannn!!"
     hide tana_side_confused at left
     hide tana_confused at tana_near 
     with dissolve
+    # Insert tana kecebur sawah
+    show tana_kecebur at tana_near 
+    show tana_side_kecebur at left
+    with dissolve
+    tana "EHHHHHHHH?"
+    hide tana_side_kecebur
+    hide tana_kecebur
+    with dissolve
+    mcname "Tannn!!"
     # Hide tana kecebur sawah
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -1921,11 +1930,11 @@ label chapter1tanamakan:
     scene kelas with Dissolve(1.0)
     # #$ renpy.block_rollback()
     show dosen_talk at dosen_center
-    show dosen_side at left
+    show dosen_side_talk at left
     with dissolve
     $ quick_menu = True
     dosen "Ya teman-teman, saatnya memulai pembelajaran."
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center 
     with dissolve
     stop music fadeout 1.0
@@ -1938,15 +1947,17 @@ label chapter1tanamakan:
     $ quick_menu = False
     scene kelas sore with Dissolve(2.0)
     show dosen_talk at dosen_center
-    show dosen_side at left
+    show dosen_side_talk at left
     with dissolve
     $ quick_menu = True
     dosen "Pelajaran hari ini sampai sini saja."
     dosen "Kalian dipersilahkan untuk pulang."
-    hide dosen_side at left
+    hide dosen_side_talk at left
     hide dosen_talk at dosen_center
+    show dosen at dosen_center
     with dissolve
     "Mahasiswa/i" "Baik, Buu."
+    hide dosen with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene kelas sore with Dissolve(1.0)
@@ -2305,13 +2316,13 @@ label chapter1tanamakan:
     hide tana_side_laugh at left
     hide tana_laugh at tana_near
     # tana batuk
-    show tana at tana_near
-    show tana_side at left
+    show tana_batuk at tana_near
+    show tana_side_batuk at left
     with dissolve
     tana "UHUK UHUK UHUK"
-    hide tana_side at left with dissolve
+    hide tana_side_batuk at left with dissolve
     mcname "Nah, kan. Hadehh"
-    hide tana at tana_near with dissolve
+    hide tana_batuk at tana_near with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene cafe sore with Dissolve(1.0)

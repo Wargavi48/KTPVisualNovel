@@ -1,34 +1,69 @@
-﻿#Define Character Pia
-default pia_name = "????"
-define pia = Character("[pia_name]", image="Pia",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_sad = Character("[pia_name]", image="Pia_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_shock = Character("[pia_name]", image="Pia_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_silent = Character("[pia_name]", image="Pia_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_smile = Character("[pia_name]", image="pia_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_talk = Character("[pia_name]", image="Pia_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_date = Character("[pia_name]", image="Pia_date",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_date_sad = Character("[pia_name]", image="Pia_date_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_date_shock = Character("[pia_name]", image="Pia_date_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_date_silent = Character("[pia_name]", image="Pia_date_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_date_smile = Character("[pia_name]", image="pia_date_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_date_talk = Character("[pia_name]", image="Pia_date_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_home = Character("[pia_name]", image="Pia_home",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_home_sad = Character("[pia_name]", image="Pia_home_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_home_shock = Character("[pia_name]", image="Pia_home_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_home_silent = Character("[pia_name]", image="Pia_home_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_home_smile = Character("[pia_name]", image="pia_home_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_home_talk = Character("[pia_name]", image="Pia_home_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_idol = Character("[pia_name]", image="Pia_idol",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_idol_sad = Character("[pia_name]", image="Pia_idol_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_idol_shock = Character("[pia_name]", image="Pia_idol_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_idol_silent = Character("[pia_name]", image="Pia_idol_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_idol_smile = Character("[pia_name]", image="pia_idol_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define pia_idol_talk = Character("[pia_name]", image="Pia_idol_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_nyembur = Character("[pia_name]", image="pia_nyembur",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default pia_sh = Character("[pia_name]", image="pia_sh", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+﻿# Main Characters Sprites
 
-# define piasprites = Character("Pia Sprites", image="Pia",color="#000000")
-
+# Define Character Kana
+default kana_name = "????"
+define kana = Character("[kana_name]", image="Kana", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_angry = Character("[kana_name]", image="Kana_angry", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_confused_blush_sideeye = Character("[kana_name]", image="Kana_confused_blush_sideeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_confused_blush = Character("[kana_name]", image="Kana_confused_blush", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_confused = Character("[kana_name]", image="Kana_confused", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_deadeye_smile = Character("[kana_name]", image="Kana_deadeye_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_deadeye = Character("[kana_name]", image="Kana_deadeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_drylaugh = Character("[kana_name]", image="Kana_drylaugh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_shy_closeeye_talk = Character("[kana_name]", image="Kana_shy_closeeye_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_shy_closeeye = Character("[kana_name]", image="Kana_shy_closeeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_shy_smile = Character("[kana_name]", image="Kana_shy_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_shy_talk = Character("[kana_name]", image="Kana_shy_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_shy = Character("[kana_name]", image="Kana_shy", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_smile = Character("[kana_name]", image="Kana_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_talk = Character("[kana_name]", image="Kana_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define kana_date = Character("[kana_name]", image="Kana_date", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_angry = Character("[kana_name]", image="Kana_date_angry", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_confused_blush_sideeye = Character("[kana_name]", image="Kana_date_confused_blush_sideeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_confused_blush = Character("[kana_name]", image="Kana_date_confused_blush", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_confused = Character("[kana_name]", image="Kana_date_confused", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_deadeye_smile = Character("[kana_name]", image="Kana_date_deadeye_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_deadeye = Character("[kana_name]", image="Kana_date_deadeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_drylaugh = Character("[kana_name]", image="Kana_date_drylaugh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_shy_closeeye_talk = Character("[kana_name]", image="Kana_date_shy_closeeye_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_shy_closeeye = Character("[kana_name]", image="Kana_date_shy_closeeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_shy_smile = Character("[kana_name]", image="Kana_date_shy_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_shy_talk = Character("[kana_name]", image="Kana_date_shy_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_shy = Character("[kana_name]", image="Kana_date_shy", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_smile = Character("[kana_name]", image="Kana_date_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_date_talk = Character("[kana_name]", image="Kana_date_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define kana_home = Character("[kana_name]", image="Kana_home", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_angry = Character("[kana_name]", image="Kana_home_angry", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_confused_blush_sideeye = Character("[kana_name]", image="Kana_home_confused_blush_sideeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_confused_blush = Character("[kana_name]", image="Kana_home_confused_blush", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_confused = Character("[kana_name]", image="Kana_home_confused", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_cry = Character("[kana_name]", image="Kana_home_cry", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_deadeye_smile = Character("[kana_name]", image="Kana_home_deadeye_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_deadeye = Character("[kana_name]", image="Kana_home_deadeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_drylaugh = Character("[kana_name]", image="Kana_home_drylaugh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_shy_closeeye_talk = Character("[kana_name]", image="Kana_home_shy_closeeye_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_shy_closeeye = Character("[kana_name]", image="Kana_home_shy_closeeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_shy_smile = Character("[kana_name]", image="Kana_home_shy_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_shy_talk = Character("[kana_name]", image="Kana_home_shy_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_shy = Character("[kana_name]", image="Kana_home_shy", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_smile = Character("[kana_name]", image="Kana_home_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_home_talk = Character("[kana_name]", image="Kana_home_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define kana_idol = Character("[kana_name]", image="Kana_idol", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_iol_angry = Character("[kana_name]", image="Kana_idol_angry", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_confused_blush_sideeye = Character("[kana_name]", image="Kana_idol_confused_blush_sideeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_confused_blush = Character("[kana_name]", image="Kana_idol_confused_blush", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_confused = Character("[kana_name]", image="Kana_idol_confused", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_deadeye_smile = Character("[kana_name]", image="Kana_idol_deadeye_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_deadeye = Character("[kana_name]", image="Kana_idol_deadeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_drylaugh = Character("[kana_name]", image="Kana_idol_drylaugh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_shy_closeeye_talk = Character("[kana_name]", image="Kana_idol_shy_closeeye_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_shy_closeeye = Character("[kana_name]", image="Kana_idol_shy_closeeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_shy_smile = Character("[kana_name]", image="Kana_idol_shy_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_shy_talk = Character("[kana_name]", image="Kana_idol_shy_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_shy = Character("[kana_name]", image="Kana_idol_shy", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_smile = Character("[kana_name]", image="Kana_idol_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_idol_talk = Character("[kana_name]", image="Kana_idol_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default kana_sh = Character("[kana_name]", image="kana_sh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 
 # Define Character Tono
 default tono_name = "????"
@@ -78,70 +113,38 @@ define tana_rumah_silent = Character("[tono_name]", image="Tana_rumah_silent", w
 define tana_rumah_talk = Character("[tono_name]", image="Tana_rumah_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default tono_sh = Character("[tono_name]", image="tono_sh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 
-# Define Character Kana
-default kana_name = "????"
-define kana = Character("[kana_name]", image="Kana", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_angry = Character("[kana_name]", image="Kana_angry", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_confused_blush_sideeye = Character("[kana_name]", image="Kana_confused_blush_sideeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_confused_blush = Character("[kana_name]", image="Kana_confused_blush", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_confused = Character("[kana_name]", image="Kana_confused", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_deadeye_smile = Character("[kana_name]", image="Kana_deadeye_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_deadeye = Character("[kana_name]", image="Kana_deadeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_drylaugh = Character("[kana_name]", image="Kana_drylaugh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_shy_closeeye_talk = Character("[kana_name]", image="Kana_shy_closeeye_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_shy_closeeye = Character("[kana_name]", image="Kana_shy_closeeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_shy_smile = Character("[kana_name]", image="Kana_shy_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_shy_talk = Character("[kana_name]", image="Kana_shy_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_shy = Character("[kana_name]", image="Kana_shy", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_smile = Character("[kana_name]", image="Kana_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_talk = Character("[kana_name]", image="Kana_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define kana_date = Character("[kana_name]", image="Kana_date", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_angry = Character("[kana_name]", image="Kana_date_angry", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_confused_blush_sideeye = Character("[kana_name]", image="Kana_date_confused_blush_sideeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_confused_blush = Character("[kana_name]", image="Kana_date_confused_blush", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_confused = Character("[kana_name]", image="Kana_date_confused", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_deadeye_smile = Character("[kana_name]", image="Kana_date_deadeye_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_deadeye = Character("[kana_name]", image="Kana_date_deadeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_drylaugh = Character("[kana_name]", image="Kana_date_drylaugh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_shy_closeeye_talk = Character("[kana_name]", image="Kana_date_shy_closeeye_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_shy_closeeye = Character("[kana_name]", image="Kana_date_shy_closeeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_shy_smile = Character("[kana_name]", image="Kana_date_shy_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_shy_talk = Character("[kana_name]", image="Kana_date_shy_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_shy = Character("[kana_name]", image="Kana_date_shy", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_smile = Character("[kana_name]", image="Kana_date_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_date_talk = Character("[kana_name]", image="Kana_date_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define kana_home = Character("[kana_name]", image="Kana_home", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_angry = Character("[kana_name]", image="Kana_home_angry", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_confused_blush_sideeye = Character("[kana_name]", image="Kana_home_confused_blush_sideeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_confused_blush = Character("[kana_name]", image="Kana_home_confused_blush", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_confused = Character("[kana_name]", image="Kana_home_confused", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_deadeye_smile = Character("[kana_name]", image="Kana_home_deadeye_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_deadeye = Character("[kana_name]", image="Kana_home_deadeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_drylaugh = Character("[kana_name]", image="Kana_home_drylaugh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_shy_closeeye_talk = Character("[kana_name]", image="Kana_home_shy_closeeye_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_shy_closeeye = Character("[kana_name]", image="Kana_home_shy_closeeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_shy_smile = Character("[kana_name]", image="Kana_home_shy_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_shy_talk = Character("[kana_name]", image="Kana_home_shy_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_shy = Character("[kana_name]", image="Kana_home_shy", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_smile = Character("[kana_name]", image="Kana_home_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_home_talk = Character("[kana_name]", image="Kana_home_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define kana_idol = Character("[kana_name]", image="Kana_idol", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_iol_angry = Character("[kana_name]", image="Kana_idol_angry", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_confused_blush_sideeye = Character("[kana_name]", image="Kana_idol_confused_blush_sideeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_confused_blush = Character("[kana_name]", image="Kana_idol_confused_blush", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_confused = Character("[kana_name]", image="Kana_idol_confused", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_deadeye_smile = Character("[kana_name]", image="Kana_idol_deadeye_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_deadeye = Character("[kana_name]", image="Kana_idol_deadeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_drylaugh = Character("[kana_name]", image="Kana_idol_drylaugh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_shy_closeeye_talk = Character("[kana_name]", image="Kana_idol_shy_closeeye_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_shy_closeeye = Character("[kana_name]", image="Kana_idol_shy_closeeye", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_shy_smile = Character("[kana_name]", image="Kana_idol_shy_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_shy_talk = Character("[kana_name]", image="Kana_idol_shy_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_shy = Character("[kana_name]", image="Kana_idol_shy", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_smile = Character("[kana_name]", image="Kana_idol_smile", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_idol_talk = Character("[kana_name]", image="Kana_idol_talk", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-default kana_sh = Character("[kana_name]", image="kana_sh", window_background="gui/dialog/custom_dialog_kana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+#Define Character Pia
+default pia_name = "????"
+define pia = Character("[pia_name]", image="Pia",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_sad = Character("[pia_name]", image="Pia_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_shock = Character("[pia_name]", image="Pia_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_silent = Character("[pia_name]", image="Pia_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_smile = Character("[pia_name]", image="pia_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_talk = Character("[pia_name]", image="Pia_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_date = Character("[pia_name]", image="Pia_date",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_sad = Character("[pia_name]", image="Pia_date_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_shock = Character("[pia_name]", image="Pia_date_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_silent = Character("[pia_name]", image="Pia_date_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_date_smile = Character("[pia_name]", image="pia_date_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_date_talk = Character("[pia_name]", image="Pia_date_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_home = Character("[pia_name]", image="Pia_home",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_sad = Character("[pia_name]", image="Pia_home_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_shock = Character("[pia_name]", image="Pia_home_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_silent = Character("[pia_name]", image="Pia_home_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_home_smile = Character("[pia_name]", image="pia_home_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_home_talk = Character("[pia_name]", image="Pia_home_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_idol = Character("[pia_name]", image="Pia_idol",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_sad = Character("[pia_name]", image="Pia_idol_sad", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_shock = Character("[pia_name]", image="Pia_idol_shock", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_silent = Character("[pia_name]", image="Pia_idol_silent", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_idol_smile = Character("[pia_name]", image="pia_idol_smile",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define pia_idol_talk = Character("[pia_name]", image="Pia_idol_talk",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_nyembur = Character("[pia_name]", image="pia_nyembur",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+default pia_sh = Character("[pia_name]", image="pia_sh", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+# define piasprites = Character("Pia Sprites", image="Pia",color="#000000")
 
+
+# JKT48 member
 
 # Define Character Freya
 default freya_name = "???"
@@ -180,6 +183,9 @@ default flora_smile_talk = Character("[flora_name]",image="Flora")
 default flora_smile = Character("[flora_name]",image="Flora")
 default flora_talk = Character("[flora_name]",image="Flora")
 
+
+# Donors
+
 # Define dosen chara
 default dosen_name = "Dosen"
 default dosen = Character("[dosen_name]", image="Dosen")
@@ -206,13 +212,9 @@ default galaxy = Character("[mahasiswa_c_name]", image="galaxy")
 default galaxy_talk = Character("[mahasiswa_c_name]", image="mahasiswa_c")
 
 
-# Define side pia character 
-image side pia_side = "Characters/Pia_side.png"
-image side pia_side_sad = "Characters/Pia_side_sad.png"
-image side pia_side_shock = "Characters/Pia_side_shock.png"
-image side pia_side_silent = "Characters/Pia_side_silent.png"
-image side pia_side_smile = "Characters/Pia_side_smile.png"
-image side pia_side_talk = "Characters/Pia_side_talk.png"
+# Side Characters Sprites
+
+# Kana
 
 # Define side kana character
 image side kana_side_confused = "Characters/Kana_side_confused.png"
@@ -221,8 +223,23 @@ image side kana_side_drylaugh = "Characters/Kana_side_drylaugh.png"
 image side kana_side_shy = "Characters/Kana_side_shy.png"
 image side kana_side_shy_smile = "Characters/Kana_side_shy_smile.png"
 image side kana_side_smile = "Characters/Kana_side_smile.png"
-image side kana_side_talk = "Characters/kana_side_talk.png"
-image side kana_side = "Characters/kana_side.png"
+image side kana_side_talk = "Characters/Kana_side_talk.png"
+image side kana_side = "Characters/Kana_side.png"
+
+# Define side kana date character
+image side kana_date_side = "Characters/kana_date_side.png"
+image side kana_date_side_confused = "Characters/kana_date_side_confused.png"
+# image side kana_date_side_cry = "Characters/kana_date_side_cry.png"
+image side kana_date_side_drylaugh = "Characters/kana_date_side_drylaugh.png"
+image side kana_date_side_talk = "Characters/kana_date_side_talk.png"
+# image side kana_date_side_deadeye = "Characters/kana_date_side_deadeye.png"
+# image side kana_date_side_deadeye_smile = "Characters/kana_date_side_deadeye_smile.png"
+# image side kana_date_side_confused_blush = "Characters/kana_date_side_confused_blush.png"
+# image side kana_date_side_blush_sideeye = "Characters/kana_date_side_blush_sideeye.png"
+image side kana_date_side_shy_confused = "Characters/kana_date_side_shy_confused.png"
+image side kana_date_side_shy_smile = "Characters/kana_date_side_shy_smile.png"
+image side kana_date_side_shy = "Characters/kana_date_side_shy.png"
+image side kana_date_side_closeeye = "Characters/kana_date_side_closeeye.png"
 
 # Define side kana home character
 image side kana_home_side = "Characters/Kana_home_side.png"
@@ -239,6 +256,27 @@ image side kana_home_side_shy_eh = "Characters/Kana_home_side_shy_eh.png"
 image side kana_home_side_shy_hmph = "Characters/Kana_home_side_shy_hmph.png"
 image side kana_home_side_smile_cry = "Characters/Kana_home_side_smile_cry.png"
 
+# Define side kana idol character
+image side kana_idol_side = "Characters/kana_idol_side.png"
+image side kana_idol_side_smile = "Characters/kana_idol_side_smile.png"
+image side kana_idol_side_angry = "Characters/kana_idol_side_angry.png"
+image side kana_idol_side_confused = "Characters/kana_idol_side_confused.png"
+image side kana_idol_side_cry = "Characters/kana_idol_side_cry.png"
+image side kana_idol_side_drylaugh = "Characters/kana_idol_side_drylaugh.png"
+image side kana_idol_side_talk = "Characters/kana_idol_side_talk.png"
+image side kana_idol_side_deadeye = "Characters/kana_idol_side_deadeye.png"
+image side kana_idol_side_deadeye_smile = "Characters/kana_idol_side_deadeye_smile.png"
+image side kana_idol_side_confused_blush = "Characters/kana_idol_side_confused_blush.png"
+image side kana_idol_side_confused_blush_sideeye = "Characters/kana_idol_side_confused_blush_sideeye.png"
+image side kana_idol_side_shy = "Characters/kana_idol_side_shy.png"
+image side kana_idol_side_shy_talk = "Characters/kana_idol_side_shy_talk.png"
+image side kana_idol_side_shy_smile = "Characters/kana_idol_side_shy_smile.png"
+image side kana_idol_side_shy_closeeye = "Characters/kana_idol_side_shy_closeeye.png"
+image side kana_idol_side_shy_closeeye_talk = "Characters/kana_idol_side_shy_closeeye_talk.png"
+image side kana_idol_side_cry_closeeye = "Characters/kana_idol_side_cry_closeeye.png"
+
+# Tana
+
 # Define side tana character
 image side tana_side_angry = "Characters/Tana_side_angry.png"
 image side tana_side_angry_2 = "Characters/Tana_side_angry_2.png"
@@ -251,6 +289,81 @@ image side tana_side_idle = "Characters/Tana_side_idle.png"
 image side tana_side_laugh = "Characters/Tana_side_laugh.png"
 image side tana_side_confused = "Characters/Tana_side_confused.png"
 image side tana_side = "Characters/Tana_side.png"
+
+# Define side tana date character
+image side tana_date_side_angry = "Characters/tana_date_side_angry.png"
+image side tana_date_side_angry_2 = "Characters/tana_date_side_angry_2.png"
+image side tana_date_side_shy = "Characters/tana_date_side_shy.png"
+image side tana_date_side_shock = "Characters/tana_date_side_shock.png"
+image side tana_date_side_sad = "Characters/tana_date_side_sad.png"
+image side tana_date_side_smug = "Characters/tana_date_side_smug.png"
+image side tana_date_side_talk = "Characters/tana_date_side_talk.png"
+image side tana_date_side_idle = "Characters/tana_date_side_idle.png"
+image side tana_date_side_laugh = "Characters/tana_date_side_laugh.png"
+image side tana_date_side_confused = "Characters/tana_date_side_confused.png"
+image side tana_date_side = "Characters/tana_date_side.png"
+
+# Define side tana home character
+image side tana_home_side_angry = "Characters/tana_home_side_angry.png"
+image side tana_home_side_angry_2 = "Characters/tana_home_side_angry_2.png"
+image side tana_home_side_shy = "Characters/tana_home_side_shy.png"
+image side tana_home_side_shock = "Characters/tana_home_side_shock.png"
+image side tana_home_side_sad = "Characters/tana_home_side_sad.png"
+image side tana_home_side_smug = "Characters/tana_home_side_smug.png"
+image side tana_home_side_talk = "Characters/tana_home_side_talk.png"
+image side tana_home_side_idle = "Characters/tana_home_side_idle.png"
+image side tana_home_side_laugh = "Characters/tana_home_side_laugh.png"
+image side tana_home_side_confused = "Characters/tana_home_side_confused.png"
+image side tana_home_side = "Characters/tana_home_side.png"
+
+# Define side tana idol character
+image side tana_idol_side_angry = "Characters/tana_idol_side_angry.png"
+image side tana_idol_side_angry_2 = "Characters/tana_idol_side_angry_2.png"
+image side tana_idol_side_shy = "Characters/tana_idol_side_shy.png"
+image side tana_idol_side_shock = "Characters/tana_idol_side_shock.png"
+image side tana_idol_side_sad = "Characters/tana_idol_side_sad.png"
+image side tana_idol_side_smug = "Characters/tana_idol_side_smug.png"
+image side tana_idol_side_talk = "Characters/tana_idol_side_talk.png"
+image side tana_idol_side_idle = "Characters/tana_idol_side_idle.png"
+image side tana_idol_side_laugh = "Characters/tana_idol_side_laugh.png"
+image side tana_idol_side_confused = "Characters/tana_idol_side_confused.png"
+image side tana_idol_side = "Characters/tana_idol_side.png"
+
+# Pia
+
+# Define side pia character 
+image side pia_side = "Characters/Pia_side.png"
+image side pia_side_sad = "Characters/Pia_side_sad.png"
+image side pia_side_shock = "Characters/Pia_side_shock.png"
+image side pia_side_silent = "Characters/Pia_side_silent.png"
+image side pia_side_smile = "Characters/Pia_side_smile.png"
+image side pia_side_talk = "Characters/Pia_side_talk.png"
+
+# Define side pia date character 
+image side pia_date_side = "Characters/pia_date_side.png"
+image side pia_date_side_sad = "Characters/pia_date_side_sad.png"
+image side pia_date_side_shock = "Characters/pia_date_side_shock.png"
+image side pia_date_side_silent = "Characters/pia_date_side_silent.png"
+image side pia_date_side_smile = "Characters/pia_date_side_smile.png"
+image side pia_date_side_talk = "Characters/pia_date_side_talk.png"
+
+# Define side pia home character 
+image side pia_home_side = "Characters/pia_home_side.png"
+image side pia_home_side_sad = "Characters/pia_home_side_sad.png"
+image side pia_home_side_shock = "Characters/pia_home_side_shock.png"
+image side pia_home_side_silent = "Characters/pia_home_side_silent.png"
+image side pia_home_side_smile = "Characters/pia_home_side_smile.png"
+image side pia_home_side_talk = "Characters/pia_home_side_talk.png"
+
+# Define side pia idol character 
+image side pia_idol_side = "Characters/pia_idol_side.png"
+image side pia_idol_side_sad = "Characters/pia_idol_side_sad.png"
+image side pia_idol_side_shock = "Characters/pia_idol_side_shock.png"
+image side pia_idol_side_silent = "Characters/pia_idol_side_silent.png"
+image side pia_idol_side_smile = "Characters/pia_idol_side_smile.png"
+image side pia_idol_side_talk = "Characters/pia_idol_side_talk.png"
+
+# JKT48 Member
 
 # Define side freya character
 image side freya_side = "Characters/Freya_side.png"
@@ -284,6 +397,8 @@ image side flora_side_shock = "Characters/Flora_side_shock.png"
 image side flora_side_smile_talk = "Characters/Flora_side_smile_talk.png"
 image side flora_side_smile = "Characters/Flora_side_smile.png"
 image side flora_side_talk = "Characters/Flora_side_talk.png"
+
+# Donors
 
 # define side dosen character
 image side dosen_side = "Characters/Dosen_side.png"
@@ -319,8 +434,6 @@ define papah_nvl = Character("Papa", kind=nvl, callback=Phone_ReceiveSound)
 define pia_nvl = Character("Pia", kind=nvl, callback=Phone_ReceiveSound)
 define fio_nvl = Character("[fio_name]", kind=nvl, callback=Phone_ReceiveSound)
 define feni_nvl = Character("[feni_name]", kind=nvl, callback=Phone_ReceiveSound)
-
-
 
 # Define other
 
