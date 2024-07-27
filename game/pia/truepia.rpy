@@ -2,72 +2,126 @@ label truepia:
     "Pia yang mendapat semangat dari [mcname] pun makin membulatkan tekad untuk tetap melanjutkan melukis dan membuat gambar."
     #$ renpy.block_rollback()
     $ quick_menu = True
-    show pia_side at left with dissolve
+    show pia at pia_near with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Huahaha! Saatnya kamu kubawa ke dunia ilustrator yang biasa aku jalani selama ini."
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve 
     mcname "Gimana?"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve 
     pia "Kamu udah denger nama \"Yang Mulia Piaraan\" kan?"
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
     mcname "Gatau kenapa, selalu mau ketawa tiap denger nama itu deh."
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "HEH! DIEM! AHAHAHA!!"
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
     mcname "Yup, sampe sini aku udah tau."
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Nah, jadi sebelum aku masuk ke dunia perkuliahan ini, aku aktif banget bikin gambar."
     pia "Nerima commision dari orang-orang buat gambar, sampe jualan hasil karyaku di event-event jejepangan gitu."
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
     mcname "Hoooooo, keren juga kamu. Terus kalo sekarang?"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Sekarang lagi vakum dulu. Sibuk kuliah gini, gimana waktu sendirinya weh!"
-    hide pia_side with dissolve
+    hide pia_talk
+    hide pia_side_talk
+    with dissolve
     mcname "Hahaha, bener juga."
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Padahal di komunitas itu aku cukup dikenal dan menurutku gak sedikit yang tau pen-nameku itu."
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
     mcname "Hmmmm???\n*melirik ragu*"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near 
+    show pia_side_talk at left
+    with dissolve
     pia "Beneran weh!!! Bukannya narsis yaa! Tapi ya gitu, nih liat.\n*Ngasih liat akun twitternya*"
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
     mcname "Woooow gila, artis banget nih! Followernya sampe puluhan ribu gitu. Kamu…."
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side at left
+    with dissolve
     pia "GAK YA! KAMU MAU BILANG BELI FOLLOWER KAN?! ENGGA!"
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
     mcname "Cih ketauan, ahahaha."
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Heeeeh… kebaca pikiranmu! Haha."
     pia "…………"
     pia "Ya gitu lah… ilang motivasiku buat lanjut gambar gini…."
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    hide pia_side
+    with dissolve
     mcname "Weh kenapa?"
     mcname "Bukannya itu salah satu yang udah ngembangin namamu dan ngebuat kamu jadi yang kayak sekarang ini?"
     mcname "Mau dibuang gitu aja?"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near 
+    show pia_side_talk at left
+    with dissolve
     pia "Huhuhu engga sih, kayak art block aja."
     pia "Hilang aja semangatnya."
-    hide pia_side with dissolve
-    mcname "Hmm... Oke, gimana cara aku bisa semangatin biar kamu bisa kayak dulu lagi?"
-    show pia_side at left with dissolve
-    pia "Temenin aku"
-    hide pia_side with dissolve
-    mcname "Ke mana?"
-    show pia_side at left with dissolve
-    pia "Temenin aku terus sampe sukses. *Blush*"
-    hide pia_side with dissolve
-    mcname "Ummm… Gak nyangka kamu bakal ngomong gitu, bingung aku balesnya.\n*Blush*"
-    show pia_side at left with dissolve
-    pia "GIMANA…IH MALU KAN AKU JADINYA!!"
-    hide pia_side with dissolve
-    mcname "Oke, deal!"
-    show pia_side at left with dissolve
-    pia "Hehehe, okeh deal!!!"
-    hide pia_side
-    hide pia_side_talk at left
-    hide pia_smile
-    hide pia_shock
-    hide pia
     hide pia_talk
+    hide pia_side_talk
+    with dissolve
+    mcname "Hmm... Oke, gimana cara aku bisa semangatin biar kamu bisa kayak dulu lagi?"
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
+    pia "Temenin aku"
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
+    mcname "Ke mana?"
+    show pia_shock at pia_near
+    show pia_side_shock at left
+    with dissolve
+    pia "Temenin aku terus sampe sukses. *Blush*"
+    hide pia_shock
+    hide pia_side_shock
+    with dissolve
+    mcname "Ummm… Gak nyangka kamu bakal ngomong gitu, bingung aku balesnya.\n*Blush*"
+    show pia_silent at pia_near 
+    show pia_side_silent at left
+    with dissolve
+    pia "GIMANA…IH MALU KAN AKU JADINYA!!"
+    hide pia_silent 
+    hide pia_side_silent
+    with dissolve
+    mcname "Oke, deal!"
+    show pia_smile at pia_near 
+    show pia_side_smile at left
+    with dissolve
+    pia "Hehehe, okeh deal!!!"
+    with dissolve
+    hide pia
+    hide pia_smile
+    hide pia_side_smile
     with dissolve
     "Akhirnya [mcname] duduk di sebelah Pia sambil melihat pemandangan dari rooftop melihat jauh ke depan."
     stop music fadeout 1.0
@@ -219,11 +273,24 @@ label trueendrooftoppia:
     play music "BGM_Sore.ogg" fadein 1.0
     scene lorong sore with Dissolve(1.0)
     $ quick_menu = True
+    show pia at pia_near with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Ah! [mcname]!"
+    hide pia_talk
+    hide pia_side_talk
+    with dissolve
     mcname "Pii, udah beres kelasnya?"
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Udah, hehe."
     pia "Ke rooftop yuk!"
+    hide pia_talk 
+    hide pia_side_talk
     mcname "Gasss~"
+    hide pia with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -234,46 +301,81 @@ label trueendrooftoppia:
     #$ renpy.block_rollback()
     mcname "Pia, ini kemarin aku lupa ngasih ini. Ada flyer acara jejepangan."
     #ASSET FLYER JEJEPANGAN
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Hmm... Menarik."
     pia "Eh."
     pia "EH!! [mcname]!!!"
-    hide pia_side with dissolve
+    hide pia_talk
+    hide pia_side_talk
+    with dissolve
     mcname "Apa?"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Ini ada bagian kreator."
     pia "Yuk ikutan jualan!!!"
-    hide pia_side with dissolve
+    hide pia_talk
+    hide pia_side_talk
+    with dissolve
     mcname "Heeeeee"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Katanya mau support aku…"
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
     mcname "Iya… Tapi aku ga pernah jualan gambar, terus ga tau mau bikin apa."
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Tenang, kamu bersama sepuh di sini. 1 booth bareng yuk."
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
     mcname "Ya… Oke aja sih."
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Hmm acara jejepangannya masih 3 bulan lagi"
     pia "Bisa lah ini 2 bulan buat banyak merch."
-    hide pia_side with dissolve
+    hide pia_talk
+    hide pia_side_talk
+    with dissolve
     mcname "Oke"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Kamu daftarin gih cepet."
-    hide pia_side with dissolve
+    hide pia_talk
+    hide pia_side_talk
+    with dissolve
     mcname "Nama boothnya?"
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left 
+    with dissolve
     pia "Hmmm… Bener juga, apa ya."
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
     mcname "Gimana kalo \"Yang Mulia dan Piaraan\"."
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Ahahaha kamu jadi piaraan?"
-    hide pia_side with dissolve
+    hide pia_talk 
+    hide pia_side_talk
+    with dissolve
     mcname "Biar lucu aja sih."
-    show pia_side at left with dissolve
+    show pia_talk at pia_near
+    show pia_side_talk at left
+    with dissolve
     pia "Selama aku jadi lebih superior dari kamu, aku setuju. Gas!!!"
-    hide pia_side
     hide pia
+    hide pia_talk
+    hide pia_side_talk
     with dissolve
     "Akhirnya [mcname] mendaftarkan diri ke event jejepangan tersebut dengan nama circle: \n~Yang Mulia dan Piaraan~\n"
     stop music fadeout 1.0
