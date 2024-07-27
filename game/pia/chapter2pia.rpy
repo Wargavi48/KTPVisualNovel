@@ -641,18 +641,30 @@ label chapter2piaaftergame:
             mcname "Apapun pilihanmu, Pia, aku akan tetap support kamu. Mau apapun itu."
             show pia_side_shock at left with dissolve
             pia "Aww [mcname]..."
-            show pia at pia_near with dissolve
-            hide pia_side_shock with dissolve
-            show pia_side_talk at left with dissolve
+            hide pia_shock
+            hide pia
+            hide pia_side_shock
+            show pia_side_smile at left
+            with dissolve
             pia "Okeh!! Support aku, ya."
             pia "Menjadi..."
             pia "Illustrator handal!"
             pia "Siapa tau kan? Jadi komikus handal terus ke Jepang."
             pia "Atau jadi ilustrator terkenal di duniaaa huahahahaha."
-            hide pia_side_talk with dissolve
+            hide pia_smile
+            hide pia_side_smile
+            with dissolve
+            show pia at pia_near
+            hide pia_talk at pia_near
+            with dissolve
             mcname "Okeee. Siap, Pia!"
-            show pia_side_talk at left with dissolve
+            show pia_smile at pia_near
+            show pia_side_smile at left
+            with dissolve
             pia "Ahahahahaha~"
-            hide pia_side_talk with dissolve
+            hide pia
+            hide pia_side_smile
+            with dissolve
             $ pia_route = "True End"
+            hide pia_smile with dissolve 
             jump truepia
