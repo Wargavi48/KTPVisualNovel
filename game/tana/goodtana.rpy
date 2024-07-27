@@ -2989,18 +2989,22 @@ label goodtanaafterquiz:
     hide pia_silent at left
     with dissolve
     "Suasananya sangat bahagia, namun [mcname] dan Tana sepertinya melupakan sesuatu yang penting..."
-    $ quick_menu=False
-    stop music fadeout 1.0
-    scene black with Dissolve(1.0)
-    show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
+
     jump goodtanafinale
 
 label goodtanafinale:
-    #[GOOD ENDING FINALE]
-    #144-169 (Good Ending) Tana: Ke UKM aja yuk ( ngobrol idol, tanya feni dan flora, latihan tana pia salah salahan, kana bingung, mc sama 2f nengahin, datang ke klub pada marahan, ketemuan lagi krana udah di latih sama 2f, malu malu buat minta maaf, minta maaf, latihan, tampil (AERGIA)
-#NeutralRoute4
-    play music "audio/BGM_Lorong.ogg" fadein 1.0   
-    scene lorong with Dissolve(1.0)
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene chapter 3 tana with Dissolve (1.0)
+    pause(3.0)
+    scene black with Dissolve (1.0)
+    play music "audio/BGM_Lorong.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa hari kemudian..."
+    $ quick_menu = False
+    scene lorong with Dissolve(2.0)
     $ quick_menu = True
     "Tana dan [mcname] keluar dari ruang kelas."
     mcname "Haaaah akhirnya~"

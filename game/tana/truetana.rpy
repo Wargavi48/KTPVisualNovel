@@ -2927,17 +2927,23 @@ label truetanaafterquiz:
     hide tana_side_talk at left 
     hide tana_talk at tana_near 
     with dissolve
-    $ quick_menu = False
-    stop music fadeout 1.0
-    scene black with dissolve
-    show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
     jump trueendtana
 
 
 label trueendtana:
 #NeutralRoute4
-    play music "audio/BGM_Lorong.ogg" fadein 1.0   
-    scene lorong with dissolve
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene chapter 3 tana with Dissolve (1.0)
+    pause(3.0)
+    scene black with Dissolve (1.0)
+    play music "audio/BGM_Lorong.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa hari kemudian..."
+    $ quick_menu = False
+    scene lorong with Dissolve(1.0)
     $ quick_menu = True
     "Tana dan [mcname!c] keluar dari ruang kelas."
     mcname "Haaaah akhirnya~"

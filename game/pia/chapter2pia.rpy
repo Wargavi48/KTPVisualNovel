@@ -1,9 +1,16 @@
 label chapter2piabegin:
-    scene black with dissolve
-    show text "{color=#FFF}Chapter II{/color}" with Pause(2.0)
-    play music "BGM_Pagi Siang.ogg" fadein 1.0
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene chapter 2 pia with Dissolve (1.0)
+    pause(3.0)
+    scene black with Dissolve (1.0)
+    play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ quick_menu = True
+    "Berhari hari kemudian..."
+    $ quick_menu = False 
+    scene kelas with Dissolve(2.0)
     $ quick_menu = True
     "Peralatan menggambar sudah siap, Mahasiswa/i baru DKV pun memulai kelas ujian menggambar pertamanya."
     stop music fadeout 1.0

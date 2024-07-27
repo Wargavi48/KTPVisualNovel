@@ -82,7 +82,7 @@ label truepia:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Di kost..."
@@ -171,7 +171,7 @@ label truepia:
             pia_nvl "Hahaha maaci dah nemenin. Met bobo."
             mc_nvl "Iya Pia, met bobo juga."
             stop music fadeout 1.0
-            play music "BGM_Kosan 1.ogg" fadein 1.0
+            play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
             scene kamar mc kota with dissolve
             $ quick_menu = True
             "Malam itu terasa panjang sekali, sambil melanjutkan sketsa yang dibuat [mcname] dengan wajah yang memerah."
@@ -179,7 +179,6 @@ label truepia:
             $ quick_menu = False
             stop music fadeout 1.0
             scene black with Dissolve(1.0)
-            show text "KEEESOKAN HARINYA" with Pause(2.0)
             jump trueendrooftoppia
         "Udah kemaleman tapi weh, aku mau tidur juga bentar lagi ini":
             $ quick_menu = False
@@ -204,7 +203,11 @@ label truepia:
             jump credits
 label trueendrooftoppia:
     play music "BGM_Pagi Siang.ogg" fadein 1.0
-    scene depan kampus with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
     mcname "{i}Hmm? Apa ini di tas?{/i}"
     #SHOW ASSET NUE
@@ -276,7 +279,7 @@ label trueendrooftoppia:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Malam itu di kosan..."
@@ -508,7 +511,7 @@ label gambardikosanpia:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     #$ renpy.block_rollback()
     $ quick_menu = True
@@ -818,20 +821,21 @@ label trueendpiajalanmonas:
     pia "HAHAHAHAHAHA!!"
     hide pia_side with dissolve
     mcname "HUAHAHAHAHAHAHA!!!"
-    $ quick_menu = False
-    stop music fadeout 1.0
-    scene black with Dissolve(1.0)
-    show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
     jump truendpia
 
 label truendpia:
+    stop music fadeout 1.0
+    $ quick_menu = False
     scene black with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    scene chapter 3 pia with Dissolve (1.0)
+    pause(3.0)
+    scene black with Dissolve (1.0)
+    play music "audio/BGM_Kantin.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Hari demi hari berlalu, minggu demi minggu pun dilewati."
     "[mcname] dan Pia perlahan menunjukan kekompakan dan perkembangan project jualan mereka untuk event jejepangan ini semakin cepat."
-    play music "audio/BGM_Kantin.ogg" fadein 1.0
-    scene kantin with Dissolve(1.0)
+    scene kantin with Dissolve(2.0)
     show pia at pia_near with dissolve
     show pia_side at left with dissolve
     pia "[mcname]! Yuk anterin aku nyetak produknya."

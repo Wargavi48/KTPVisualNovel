@@ -2,16 +2,21 @@ define char_test = Transform(zoom=0.5,xalign=-2.0,yalign=-2.0)
 define pia_route = ""
 
 label chapter1pia:
-    play music "BGM_Pagi Siang.ogg" fadein 1.0
-    scene awan with Dissolve(1.0)
-    #$ renpy.block_rollback()
-    $ quick_menu = True
-    "Pagi ini [mcname] membuka lembaran baru untuk melanjutkan pendidikan ke jenjang selanjutnya."
+    stop music fadeout 1.0
     $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene chapter 1 pia with Dissolve (1.0)
+    pause(3.0)
     scene black with Dissolve (1.0)
-    scene depan kampus with Dissolve(1.0)
+    play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
     $ quick_menu = True
-    "Aku mengambil jurusan DKV, hari ini merupakan hari di mana aku datang ke kampus."
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene depan kampus with Dissolve(2.0)
+    $ quick_menu = True
+    "Pagi itu [mcname] membuka lembaran baru untuk melanjutkan pendidikan ke jenjang selanjutnya."
+    "[mcname] mengambil jurusan DKV, hari ini merupakan hari di mana aku datang ke kampus."
     mcname "{i}Wah besar juga ya kampusnya.{/i}"
     mcname "{i}Aku bakal kuliah di sini nih.{/i}"
     mcname "{i}Bakal ketemu orang-orang kayak gimana ya...{/i}"
@@ -1157,10 +1162,6 @@ label chapter1piamakanmall:
     hide pia_side_talk
     with dissolve
     "Pia pun menegakkan kepalanya kembali dari pundak [mcname]. Mereka kembali ke fakultasnya untuk memasuki kelas yang dimulai sore itu."
-    $ quick_menu = False
-    stop music fadeout 1.0
-    scene black with Dissolve(1.0)
-    show text "{color=#FFF}1 MINGGU KEMUDIAN{/color}" with Pause(2.0)
     jump chapter2piabegin
 
 
