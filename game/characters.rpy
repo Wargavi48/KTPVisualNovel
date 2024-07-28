@@ -182,7 +182,8 @@ default flora_shock = Character("[flora_name]",image="Flora")
 default flora_smile_talk = Character("[flora_name]",image="Flora")
 default flora_smile = Character("[flora_name]",image="Flora")
 default flora_talk = Character("[flora_name]",image="Flora")
-
+default flora_angry = Character("[flora_name]", image="flora_angry.png")
+default flora_angry_talk = Character("[flora_name]", image="flora_angry_talk.png")
 
 # Donors
 
@@ -397,6 +398,11 @@ image side flora_side_shock = "Characters/Flora_side_shock.png"
 image side flora_side_smile_talk = "Characters/Flora_side_smile_talk.png"
 image side flora_side_smile = "Characters/Flora_side_smile.png"
 image side flora_side_talk = "Characters/Flora_side_talk.png"
+image side flora_side_angry = "Characters/flora_side_angry.png"
+image side flora_side_angry_talk = "Characters/flora_side_angry_talk.png"
+
+# UI Telpon Tono
+image side telpon_mamah = "telpon mamah.png"
 
 # Donors
 

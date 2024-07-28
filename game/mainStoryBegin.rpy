@@ -19,7 +19,7 @@
     "[mcname!c]" "Makasih Pah, Makasih Mah."
     "[mcname!c] tentu saja merasa senang karena ia bisa mengejar apa yang dia inginkan."
     show side papah at left with dissolve
-    papah "Lagian, mungkin aja adek bawa pulang menantu pas balik dari jakarta nanti, hahaha."
+    papah "Lagian, mungkin aja adek bawa pulang menantu pas balik dari Jakarta nanti, hahaha."
     hide side papah with dissolve
     show side mama at left with dissolve
     mama "Fufufu iya sih, jadinya Mamah bakal cepat punya cucu."
@@ -40,7 +40,7 @@
     hide side papah with dissolve
     "Jam terlihat menunjukkan bahwa waktu sudah larut malam."
     show side papah at left with dissolve     
-    papah "Kalo begitu istirahat ya Adek, jangan begadang soalnya besok kamu berangkat."
+    papah "Kalo begitu istirahat ya adek, jangan begadang soalnya besok kamu berangkat."
     hide side papah with dissolve
     "[mcname!c]" "Siap, Pah."
     hide papah
@@ -73,7 +73,7 @@
     $ quick_menu = False
     scene black with Dissolve(1.0)
     show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "BGM_Ngobrol Biasa.ogg" fadein 1.0
+    play music "BGM_Kampus.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     ##$ renpy.block_rollback()
@@ -105,7 +105,7 @@
     play music "audio/BGM_Pagi Siang.ogg" loop fadein 1.0
     scene monas temporary with Dissolve(1.0)
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
-    play audio "audio/station_chime.mp3" fadeout 1.0 volume (2.0)
+    play audio "audio/station_chime.mp3" fadeout 1.0 volume (3.0)
     $ quick_menu = True
     "[mcname!c]" "Wahhh, jadi ini namanya kota Jakarta."
     "[mcname!c]" "Buuu, anakmu akhirnya kuliah di sini."
@@ -117,6 +117,7 @@
     "[mcname!c]" "Barang-barang dari rumah harusnya mau datang di kosan!"
     "[mcname!c]" "Tapi masih penasaran sama kota Jakarta deh..."
     stop sound fadeout 1.0
+    stop audio fadeout 1.0
     menu:
         "Yang [mcname!c] lakukan..."
         "Langsung ke kosan abis itu rapikan barang.":
@@ -180,7 +181,7 @@
             "[mcname!c]" "Sama telor balado 1 ya mas."
             "[mcname!c]" "Sama minta tambah sambal ijo."
             "Pedagang" "Okee."
-            "Pedangang" "Totalnya jadi 25.000 ya."
+            "Pedagang" "Totalnya jadi 25.000 ya."
             "[mcname!c]" "Ini ya mas, makasih."
             "Setelah [mcname!c] mengisi perutnya di rumah makan padang."
             "[mcname!c] pun pergi ke kosannya untuk merapikan barang bawaan dan beristirahat."

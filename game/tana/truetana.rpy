@@ -3717,30 +3717,30 @@ label trueendtana:
     tana "IH! *SFX PUKUL"
     hide tana_date_side_angry_2 at left 
     hide tana_date_angry_2 at tana_near
-    show tana_date_anggry at tana_near
+    show tana_date_angry at tana_near
     with dissolve
     mcname "Aduh, astaga. Kasar banget."
-    hide tana_date_anggry at tana_near
+    hide tana_date_angry at tana_near
     show tana_date_angry_2 at tana_near
     show tana_date_side_angry_2 at left 
     with dissolve
     tana "Biarin!"
     hide tana_date_side_angry_2 at left 
     hide tana_date_angry_2 at tana_near
-    show tana_date_anggry at tana_near
+    show tana_date_angry at tana_near
     with dissolve
     mcname "Hahahaha maaf maaf. Lucu aja ngeliatin kamu celingak celinguk."
-    hide tana_date_anggry at tana_near
+    hide tana_date_angry at tana_near
     show tana_date_angry_2 at tana_near
     show tana_date_side_angry_2 at left 
     with dissolve
     tana "Malass.."
     hide tana_date_side_angry_2 at left 
     hide tana_date_angry_2 at tana_near
-    show tana_date_anggry at tana_near
+    show tana_date_angry at tana_near
     with dissolve
     mcname "Iya iya, jangan ngambek."
-    hide tana_date_anggry at tana_near
+    hide tana_date_angry at tana_near
     show tana_date_angry_2 at tana_near
     show tana_date_side_angry_2 at left 
     with dissolve
