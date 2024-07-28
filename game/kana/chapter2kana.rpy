@@ -3009,7 +3009,7 @@ label AjakKanaMainGame:
     with dissolve
     kana "Game yang tadi seru banget ya."
     hide kana_date_side_talk
-    hode kana_date_talk
+    hide kana_date_talk
     show kana_date at char_center
     with dissolve
     mcname "Hahaha iya, apalagi moment pas kamu akhirnya bisa ngalahin aku."

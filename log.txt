@@ -1,36 +1,62 @@
-2024-07-27 17:11:07 UTC
+2024-07-28 09:40:39 UTC
 Windows-10-10.0.19045
 Ren'Py 8.2.0.24012702
 
-Early init took 0.43s
-Loading error handling took 0.19s
-Loading script took 5.72s
-Loading save slot metadata took 1.13s
-Loading persistent took 0.00s
-Running init code took 0.31s
-Loading analysis data took 0.08s
-Analyze and compile ATL took 0.03s
-Reloading save slot metadata took 0.82s
-Index archives took 0.00s
-Dump and make backups took 0.18s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.27s
+Early init took 0.76s
+Loading error handling took 0.41s
+Loading script took 18.53s
+Loading save slot metadata took 1.56s
+Loading persistent took 0.01s
+
+File "game/kana/chapter2kana.rpy", line 3012: expected statement.
+    hode kana_date_talk
+                       ^
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
+Interface start took 0.85s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 79.64s
+Loading error handling took 0.07s
+Loading script took 8.00s
+Loading save slot metadata took 0.19s
+Loading persistent took 0.01s
+Running init code took 0.34s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 1.14s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.69s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.16s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.23s
+Init translation took 0.13s
 Build styles took 0.01s
-Load screen analysis took 0.25s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.39s
+Load screen analysis took 0.01s
+Analyze screens took 0.06s
+Save screen analysis took 0.06s
+Prepare screens took 0.27s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.22s
-Running _start took 0.00s
-Interface start took 0.35s
+Save bytecode. took 0.07s
+Running _start took 0.01s
+Interface start took 0.16s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -44,13 +70,60 @@ Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 390.93s
+Loading error handling took 0.17s
+Loading script took 2.66s
+Loading save slot metadata took 0.28s
+Loading persistent took 0.01s
+Running init code took 0.32s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.04s
+Reloading save slot metadata took 0.24s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.32s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.35s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.00s
+Init translation took 0.21s
 Build styles took 0.01s
-Load screen analysis took 0.14s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.11s
+Save screen analysis took 0.10s
+Prepare screens took 0.50s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
 Running _start took 0.01s
+Interface start took 0.36s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
@@ -64,34 +137,134 @@ Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 447.49s
-Loading error handling took 0.39s
-Loading script took 1.80s
-Loading save slot metadata took 0.28s
+Early init took 658.76s
+Loading error handling took 0.05s
+Loading script took 1.95s
+Loading save slot metadata took 0.26s
 Loading persistent took 0.01s
-Running init code took 0.15s
-Loading analysis data took 0.05s
+Running init code took 0.28s
+Loading analysis data took 0.07s
 Analyze and compile ATL took 0.02s
-Reloading save slot metadata took 0.12s
+Reloading save slot metadata took 0.20s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.43s
+Dump and make backups took 0.19s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.28s
+Initial gc took 0.34s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.17s
+Init translation took 0.23s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.10s
-Save screen analysis took 0.12s
-Prepare screens took 0.44s
+Analyze screens took 0.22s
+Save screen analysis took 0.16s
+Prepare screens took 0.52s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.09s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.20s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1229.09s
+Loading error handling took 0.09s
+Loading script took 3.19s
+Loading save slot metadata took 0.18s
+Loading persistent took 0.00s
+Running init code took 0.32s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.04s
+Reloading save slot metadata took 0.24s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.24s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.56s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.19s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.11s
+Prepare screens took 0.34s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.01s
+Interface start took 0.47s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1348.99s
+Loading error handling took 0.06s
+Loading script took 2.19s
+Loading save slot metadata took 0.25s
+Loading persistent took 0.00s
+Running init code took 0.19s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.16s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.30s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.46s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.20s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.10s
+Prepare screens took 0.32s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
 Running _start took 0.00s
 Interface start took 0.18s
 
@@ -108,65 +281,21 @@ Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 494.94s
-Loading error handling took 0.09s
-Loading script took 2.04s
-Loading save slot metadata took 0.20s
+Early init took 1368.47s
+Loading error handling took 0.10s
+Loading script took 3.01s
+Loading save slot metadata took 0.18s
 Loading persistent took 0.01s
-Running init code took 0.11s
-Loading analysis data took 0.13s
+Running init code took 0.20s
+Loading analysis data took 0.04s
 Analyze and compile ATL took 0.02s
-Reloading save slot metadata took 0.18s
+Reloading save slot metadata took 0.11s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.23s
+Dump and make backups took 0.14s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.50s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.23s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.10s
-Save screen analysis took 0.09s
-Prepare screens took 0.37s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
-Running _start took 0.00s
-Interface start took 0.20s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) HD Graphics 5500'
-Version: b'4.4.0 - Build 20.19.15.4642'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 504.54s
-Loading error handling took 0.09s
-Loading script took 2.00s
-Loading save slot metadata took 0.22s
-Loading persistent took 0.01s
-Running init code took 0.12s
-Loading analysis data took 0.16s
-Analyze and compile ATL took 0.03s
-Reloading save slot metadata took 0.18s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.22s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.27s
+Initial gc took 0.37s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -177,7 +306,95 @@ Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.07s
 Save screen analysis took 0.08s
-Prepare screens took 0.33s
+Prepare screens took 0.32s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.18s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1403.73s
+Loading error handling took 0.07s
+Loading script took 1.86s
+Loading save slot metadata took 0.19s
+Loading persistent took 0.01s
+Running init code took 0.21s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.14s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.24s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.28s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.15s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.07s
+Prepare screens took 0.32s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Interface start took 0.38s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1509.36s
+Loading error handling took 0.10s
+Loading script took 2.33s
+Loading save slot metadata took 0.21s
+Loading persistent took 0.01s
+Running init code took 0.35s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.18s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.21s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.25s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.15s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.07s
+Prepare screens took 0.29s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.06s
 Running _start took 0.00s
@@ -195,41 +412,124 @@ Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 580.97s
-Loading error handling took 0.11s
-Loading script took 2.09s
-Loading save slot metadata took 0.22s
+Early init took 1736.29s
+Loading error handling took 0.07s
+Loading script took 2.14s
+Loading save slot metadata took 0.17s
 Loading persistent took 0.01s
-Running init code took 0.13s
-Loading analysis data took 0.15s
+Running init code took 0.19s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.02s
 Reloading save slot metadata took 0.16s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.24s
+Dump and make backups took 0.23s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.24s
+Initial gc took 0.46s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.15s
+Init translation took 0.21s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.06s
+Analyze screens took 0.08s
 Save screen analysis took 0.07s
-Prepare screens took 0.38s
+Prepare screens took 0.36s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
+Save bytecode. took 0.05s
 Running _start took 0.00s
-Interface start took 0.23s
+Interface start took 0.19s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1951.84s
+Loading error handling took 0.05s
+Loading script took 1.20s
+Loading save slot metadata took 0.31s
+Loading persistent took 0.01s
+Running init code took 0.18s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.36s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.22s
+Build styles took 0.01s
+Load screen analysis took 0.18s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.34s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.34s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2063.94s
+Loading error handling took 0.12s
+Loading script took 3.33s
+Loading save slot metadata took 0.29s
+Loading persistent took 0.01s
+Running init code took 0.28s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.20s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.23s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.30s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.20s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.08s
+Prepare screens took 0.37s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Interface start took 0.72s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -245,22 +545,24 @@ Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 608.67s
-Loading error handling took 0.07s
-Loading script took 2.31s
-Loading save slot metadata took 0.23s
+Early init took 2097.75s
+Loading error handling took 0.08s
+Loading script took 1.84s
+Loading save slot metadata took 0.22s
 Loading persistent took 0.01s
-Running init code took 0.12s
-Loading analysis data took 0.15s
+Running init code took 0.19s
+Loading analysis data took 0.06s
 Analyze and compile ATL took 0.03s
-Reloading save slot metadata took 0.15s
+Reloading save slot metadata took 0.14s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.22s
+Dump and make backups took 0.18s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.25s
+Initial gc took 0.31s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -271,95 +573,9 @@ Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.09s
 Save screen analysis took 0.09s
-Prepare screens took 0.37s
+Prepare screens took 0.32s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.06s
-Running _start took 0.00s
-Interface start took 0.18s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) HD Graphics 5500'
-Version: b'4.4.0 - Build 20.19.15.4642'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 716.15s
-Loading error handling took 0.20s
-Loading script took 4.29s
-Loading save slot metadata took 0.48s
-Loading persistent took 0.01s
-Running init code took 0.23s
-Loading analysis data took 0.33s
-Analyze and compile ATL took 0.07s
-Reloading save slot metadata took 0.34s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.39s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.52s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.26s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.12s
-Save screen analysis took 0.12s
-Prepare screens took 0.55s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.08s
-Running _start took 0.00s
-Interface start took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) HD Graphics 5500'
-Version: b'4.4.0 - Build 20.19.15.4642'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1479.54s
-Loading error handling took 0.07s
-Loading script took 2.12s
-Loading save slot metadata took 0.23s
-Loading persistent took 0.01s
-Running init code took 0.16s
-Loading analysis data took 0.19s
-Analyze and compile ATL took 0.03s
-Reloading save slot metadata took 0.20s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.28s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.30s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.23s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.09s
-Save screen analysis took 0.10s
-Prepare screens took 0.43s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.09s
 Running _start took 0.00s
 Interface start took 0.19s
 
@@ -377,21 +593,135 @@ Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Resetting cache.
+Early init took 2167.14s
+Loading error handling took 0.08s
+Loading script took 1.90s
+Loading save slot metadata took 0.20s
+Loading persistent took 0.00s
+Running init code took 0.21s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.13s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.20s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.26s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.15s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.07s
+Prepare screens took 0.33s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Interface start took 0.23s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2199.02s
+Loading error handling took 0.10s
+Loading script took 2.29s
+Loading save slot metadata took 0.21s
+Loading persistent took 0.01s
+Running init code took 0.36s
+Loading analysis data took 0.11s
+Analyze and compile ATL took 0.08s
+Reloading save slot metadata took 0.48s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.31s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.52s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.33s
+Build styles took 0.03s
+Load screen analysis took 0.00s
+Analyze screens took 0.12s
+Save screen analysis took 0.08s
+Prepare screens took 0.41s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.13s
+Running _start took 0.00s
+Interface start took 0.34s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Resetting cache.
+Early init took 2560.34s
+Loading error handling took 0.06s
+Loading script took 1.42s
+Loading save slot metadata took 0.17s
+Loading persistent took 0.00s
+Running init code took 0.17s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.36s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.30s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.08s
+Prepare screens took 0.29s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.18s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
@@ -402,21 +732,337 @@ Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1892.02s
-Loading error handling took 0.11s
-Loading script took 2.18s
-Loading save slot metadata took 0.20s
+Early init took 2628.57s
+Loading error handling took 0.06s
+Loading script took 2.50s
+Loading save slot metadata took 0.26s
 Loading persistent took 0.01s
-Running init code took 0.13s
-Loading analysis data took 0.18s
-Analyze and compile ATL took 0.02s
-Reloading save slot metadata took 0.15s
+Running init code took 0.21s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.20s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.23s
+Dump and make backups took 0.37s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.28s
+Initial gc took 0.34s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.20s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.21s
+Save screen analysis took 0.12s
+Prepare screens took 0.43s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.01s
+Interface start took 0.26s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2651.92s
+Loading error handling took 0.06s
+Loading script took 1.61s
+Loading save slot metadata took 0.16s
+Loading persistent took 0.01s
+Running init code took 0.17s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.31s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.14s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.06s
+Prepare screens took 0.31s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.20s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2702.85s
+Loading error handling took 0.07s
+Loading script took 3.21s
+Loading save slot metadata took 0.31s
+Loading persistent took 0.01s
+Running init code took 0.40s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.29s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.48s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.37s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.40s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.10s
+Save screen analysis took 0.12s
+Prepare screens took 0.70s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Interface start took 0.20s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2736.56s
+Loading error handling took 0.07s
+Loading script took 2.04s
+Loading save slot metadata took 0.24s
+Loading persistent took 0.01s
+Running init code took 0.27s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.19s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.21s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.27s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.17s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.07s
+Prepare screens took 0.29s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.19s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2832.04s
+Loading error handling took 0.07s
+Loading script took 2.04s
+Loading save slot metadata took 0.20s
+Loading persistent took 0.00s
+Running init code took 0.20s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.14s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.19s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.26s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.16s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.06s
+Prepare screens took 0.29s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.18s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2891.31s
+Loading error handling took 0.06s
+Loading script took 2.22s
+Loading save slot metadata took 0.17s
+Loading persistent took 0.01s
+Running init code took 0.19s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.19s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.38s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.20s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.07s
+Prepare screens took 0.46s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Interface start took 0.27s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2986.42s
+Loading error handling took 0.06s
+Loading script took 1.84s
+Loading save slot metadata took 0.22s
+Loading persistent took 0.01s
+Running init code took 0.21s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.13s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.40s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.26s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.16s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.08s
+Prepare screens took 0.47s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Interface start took 0.24s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3016.95s
+Loading error handling took 0.05s
+Loading script took 1.36s
+Loading save slot metadata took 0.17s
+Loading persistent took 0.01s
+Running init code took 0.19s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.31s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -425,9 +1071,55 @@ Cleaning stores took 0.00s
 Init translation took 0.18s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.12s
-Save screen analysis took 0.18s
-Prepare screens took 0.49s
+Analyze screens took 0.10s
+Save screen analysis took 0.09s
+Prepare screens took 0.39s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Interface start took 0.18s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3068.82s
+Loading error handling took 0.07s
+Loading script took 2.19s
+Loading save slot metadata took 0.22s
+Loading persistent took 0.01s
+Running init code took 0.25s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.12s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.27s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.29s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.16s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.07s
+Prepare screens took 0.37s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.06s
 Running _start took 0.00s
@@ -444,18 +1136,18 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1995.08s
-Loading error handling took 0.07s
-Loading script took 2.49s
-Loading save slot metadata took 0.31s
+Early init took 3106.60s
+Loading error handling took 0.08s
+Loading script took 2.15s
+Loading save slot metadata took 0.24s
 Loading persistent took 0.01s
-Running init code took 0.21s
-Loading analysis data took 0.15s
-Analyze and compile ATL took 0.02s
-Reloading save slot metadata took 0.18s
+Running init code took 0.22s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.14s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.24s
+Dump and make backups took 0.21s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.27s
@@ -464,16 +1156,142 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.15s
-Build styles took 0.00s
+Init translation took 0.17s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.08s
-Save screen analysis took 0.08s
+Analyze screens took 0.06s
+Save screen analysis took 0.07s
+Prepare screens took 0.35s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.01s
+Interface start took 0.24s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3140.38s
+Loading error handling took 0.06s
+Loading script took 2.31s
+Loading save slot metadata took 0.37s
+Loading persistent took 0.01s
+Running init code took 0.41s
+Loading analysis data took 0.23s
+Analyze and compile ATL took 0.24s
+Reloading save slot metadata took 0.42s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.42s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.43s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.40s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.28s
+Save screen analysis took 0.11s
 Prepare screens took 0.48s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.07s
+Running _start took 0.01s
+Interface start took 0.25s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3430.67s
+Loading error handling took 0.06s
+Loading script took 2.02s
+Loading save slot metadata took 0.30s
+Loading persistent took 0.01s
+Running init code took 0.29s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.20s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.20s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.32s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.23s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.16s
+Save screen analysis took 0.08s
+Prepare screens took 0.45s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
 Running _start took 0.00s
-Interface start took 0.30s
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 3558.25s
+Loading error handling took 0.06s
+Loading script took 1.78s
+Loading save slot metadata took 0.22s
+Loading persistent took 0.01s
+Running init code took 0.21s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.13s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.28s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.19s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.10s
+Save screen analysis took 0.10s
+Prepare screens took 0.40s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.01s
+Interface start took 0.26s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -491,16 +1309,233 @@ Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 2490.48s
-Loading error handling took 0.08s
+Early init took 3992.98s
+Loading error handling took 0.05s
+Loading script took 1.86s
+Loading save slot metadata took 0.21s
+Loading persistent took 0.00s
+Running init code took 0.23s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.14s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.33s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.18s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.07s
+Prepare screens took 0.28s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.22s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4087.24s
+Loading error handling took 0.04s
 Loading script took 1.80s
 Loading save slot metadata took 0.19s
 Loading persistent took 0.01s
-Running init code took 0.12s
-Loading analysis data took 0.14s
+Running init code took 0.18s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.02s
-Reloading save slot metadata took 0.14s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.40s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.20s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.09s
+Prepare screens took 0.34s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.17s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4130.26s
+Loading error handling took 0.06s
+Loading script took 1.23s
+Loading save slot metadata took 0.17s
+Loading persistent took 0.00s
+Running init code took 0.19s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.11s
+Index archives took 0.00s
+Dump and make backups took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.32s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.17s
+Build styles took 0.01s
+Load screen analysis took 0.12s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.30s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.20s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4242.25s
+Loading error handling took 0.15s
+Loading script took 2.36s
+Loading save slot metadata took 0.25s
+Loading persistent took 0.01s
+Running init code took 0.25s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.16s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.29s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.29s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.19s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.10s
+Save screen analysis took 0.09s
+Prepare screens took 0.35s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.20s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4722.26s
+Loading error handling took 0.13s
+Loading script took 2.01s
+Loading save slot metadata took 0.26s
+Loading persistent took 0.00s
+Running init code took 0.20s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.15s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
 Dump and make backups took 0.17s
@@ -512,62 +1547,16 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.16s
-Build styles took 0.01s
+Init translation took 0.15s
+Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.08s
-Prepare screens took 0.77s
+Analyze screens took 0.07s
+Save screen analysis took 0.07s
+Prepare screens took 0.31s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.06s
 Running _start took 0.00s
-Interface start took 0.28s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) HD Graphics 5500'
-Version: b'4.4.0 - Build 20.19.15.4642'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2674.06s
-Loading error handling took 0.05s
-Loading script took 1.76s
-Loading save slot metadata took 0.19s
-Loading persistent took 0.00s
-Running init code took 0.11s
-Loading analysis data took 0.12s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.13s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.15s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.25s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.13s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.06s
-Prepare screens took 0.26s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
-Running _start took 0.00s
-Interface start took 0.15s
+Interface start took 0.18s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -579,19 +1568,73 @@ Version: b'4.4.0 - Build 20.19.15.4642'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 2713.01s
-Loading error handling took 0.07s
-Loading script took 1.54s
-Loading save slot metadata took 0.21s
+Early init took 4837.33s
+Loading error handling took 0.11s
+Loading script took 2.12s
+Loading save slot metadata took 0.25s
 Loading persistent took 0.01s
-Running init code took 0.09s
-Loading analysis data took 0.12s
-Analyze and compile ATL took 0.02s
-Reloading save slot metadata took 0.12s
+Running init code took 0.21s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.15s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.16s
+Dump and make backups took 0.25s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.33s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.21s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.08s
+Prepare screens took 0.35s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.06s
+Running _start took 0.00s
+Interface start took 0.20s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4866.86s
+Loading error handling took 0.08s
+Loading script took 2.21s
+Loading save slot metadata took 0.27s
+Loading persistent took 0.01s
+Running init code took 0.21s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.03s
+Reloading save slot metadata took 0.19s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.25s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.26s
@@ -600,15 +1643,61 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.14s
+Init translation took 0.17s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.06s
+Analyze screens took 0.07s
 Save screen analysis took 0.07s
-Prepare screens took 0.30s
+Prepare screens took 0.34s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.07s
+Save bytecode. took 0.06s
 Running _start took 0.01s
+Interface start took 0.19s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 4881.67s
+Loading error handling took 0.07s
+Loading script took 2.04s
+Loading save slot metadata took 0.17s
+Loading persistent took 0.00s
+Running init code took 0.17s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.10s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.31s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.16s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.14s
+Prepare screens took 0.33s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
 Interface start took 0.20s
 
 Initializing gl2 renderer:
@@ -622,36 +1711,36 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 2723.08s
-Loading error handling took 0.07s
-Loading script took 1.82s
-Loading save slot metadata took 0.21s
+Early init took 4913.71s
+Loading error handling took 0.05s
+Loading script took 1.85s
+Loading save slot metadata took 0.27s
 Loading persistent took 0.01s
-Running init code took 0.08s
-Loading analysis data took 0.11s
-Analyze and compile ATL took 0.02s
-Reloading save slot metadata took 0.10s
+Running init code took 0.31s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.06s
+Reloading save slot metadata took 0.30s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.13s
+Dump and make backups took 0.24s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.31s
+Initial gc took 0.32s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.17s
+Init translation took 0.18s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.08s
-Save screen analysis took 0.08s
-Prepare screens took 0.40s
+Analyze screens took 0.07s
+Save screen analysis took 0.07s
+Prepare screens took 0.34s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
+Save bytecode. took 0.06s
 Running _start took 0.00s
-Interface start took 0.18s
+Interface start took 0.25s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -664,36 +1753,36 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 2727.36s
-Loading error handling took 0.06s
-Loading script took 1.65s
-Loading save slot metadata took 0.18s
+Early init took 5164.32s
+Loading error handling took 0.07s
+Loading script took 2.58s
+Loading save slot metadata took 0.27s
 Loading persistent took 0.01s
-Running init code took 0.12s
-Loading analysis data took 0.13s
+Running init code took 0.28s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.02s
-Reloading save slot metadata took 0.12s
+Reloading save slot metadata took 0.21s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
-Dump and make backups took 0.18s
+Dump and make backups took 0.28s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.27s
+Initial gc took 0.36s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.15s
+Init translation took 0.18s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.10s
+Analyze screens took 0.08s
 Save screen analysis took 0.09s
-Prepare screens took 0.28s
+Prepare screens took 0.36s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
-Running _start took 0.01s
-Interface start took 0.18s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Interface start took 0.22s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -704,4 +1793,50 @@ Renderer: b'Intel(R) HD Graphics 5500'
 Version: b'4.4.0 - Build 20.19.15.4642'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 5196.11s
+Loading error handling took 0.06s
+Loading script took 2.65s
+Loading save slot metadata took 0.21s
+Loading persistent took 0.01s
+Running init code took 0.26s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.15s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\LENOVO\\AppData\\Roaming/RenPy/backups\\KTPVisualNovel':
+Dump and make backups took 0.17s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.26s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.16s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.07s
+Prepare screens took 0.29s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Interface start took 0.19s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 5500'
+Version: b'4.4.0 - Build 20.19.15.4642'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
