@@ -150,7 +150,6 @@
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     play music "audio/BGM_Dosen.ogg" fadein 1.0
     scene kelas with Dissolve(1.0)
-    #  Harusnya BG Ujian
     show dosen_talk at dosen_center with dissolve
     show dosen_side at left with dissolve
     $ quick_menu = True

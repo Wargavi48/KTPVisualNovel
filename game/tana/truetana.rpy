@@ -1325,7 +1325,7 @@ label chapter2tanaTRUE:
     scene awan with Dissolve(1.0)
     # $ renpy.block_rollback()
     $ quick_menu = True
-    "Tak terasa minggu UTS tiba."
+    "Tak terasa UTS pun tiba."
     $ quick_menu = False
     scene kampus with Dissolve(2.0)
     # $ renpy.block_rollback()
