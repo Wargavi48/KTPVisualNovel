@@ -3592,9 +3592,9 @@ label kanaafterquiz:
     "Penjaga ujian dan staff pun memberitahukan murid untuk menghubungi pihak kesehatan kampus akan tetapi [mcname!c] memberitahukan tentang riwayat kesehatan Kana."
     "Para staf pun panik dan segera menghubungi rumah sakit terdekat."
     $ quick_menu = False
-    scene black with dissolve(1.0)
-    play music "SFX - Ambulance.wav" fadein 1.0
-    scene kelas with dissolve(1.0)
+    scene black with Dissolve(1.0)
+    play sound "SFX - Ambulance.wav" loop fadein 1.0
+    scene kelas with Dissolve(1.0)
 #HARUSNYA STOCK IMAGE AMBULANCE
     $ quick_menu = True
     "Tak lama kemudian, Kana dibawa dengan ambulans sambil ditemani [mcname!c]."
@@ -3627,12 +3627,11 @@ label kanaafterquiz:
     show kana_closeeye_talk at kana_near
     with dissolve
     "Kana pun kembali memejamkan matanya."
-    stop music fadeout 1.0
+    stop sound fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
     #HARUSNYA BGM SEDIH RUMAH SAKIT
-    scene lorong with dissolve
+    scene rumah sakit with Dissolve(1.0)
     #HARUSNYA STOCK IMAGE RUMAH SAKIT
     $ quick_menu = True
     "Setelah sesampainya di rumah sakit, Kana pun diperiksa oleh dokter dan perawat."
