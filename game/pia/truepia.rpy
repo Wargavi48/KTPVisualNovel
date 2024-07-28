@@ -803,6 +803,9 @@ label truepiaafterquiz:
     with dissolve
     pia "Ya lah! Harus bagus, jangan setengah-setengah."
     pia "Tapi waktunya kurang hueeee~"
+    hide pia_side_talk
+    hide pia_talk
+    with dissolve
     menu:
         "Respon kamu..."
         "Ke kantin kuy":
@@ -825,9 +828,6 @@ label truepiaafterquiz:
 label trueendpiajalanmonas:
     #$ renpy.block_rollback()
     show pia at pia_near with dissolve
-    show pia_talk at pia_near
-    show pia_side_talk at left 
-    with dissolve
     mcname "Jalan-jalan yuk, keliling Jakarta gitu atau ke mana."
     mcname "Gimana, mau?"
     show pia_talk at pia_near
@@ -840,15 +840,15 @@ label trueendpiajalanmonas:
     hide pia_side_talk
     with dissolve
     mcname "Umm… kalo kita berdua aja gimana?"
-    show pia_talk at pia_near
-    show pia_side_talk at left
+    show pia_shock at pia_near
+    show pia_side_shock at left
     with dissolve
     pia "Eeeeh??\n*Blush*"
     pia "A-ayo!"
-    hide pia_side_talk
-    hide pia_talk
+    hide pia_side_shock
+    hide pia_shock
+    hide pia
     with dissolve
-    hide pia with dissolve
     "[mcname] dan Pia pun menaiki kendaraan umum menuju ke Monas."
     $ quick_menu = False
     stop music fadeout 1.0
@@ -975,6 +975,7 @@ label trueendpiajalanmonas:
     hide pia_side_talk
     with dissolve
     mcname "Pagii!!"
+    hide pia with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play sound "audio/open_door.mp3" fadein 1.0 volume(15.0)
