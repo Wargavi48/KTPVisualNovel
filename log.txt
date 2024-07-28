@@ -2822,3 +2822,6 @@ Screen sizes: virtual=(1920, 1080) physical=(1253, 705) drawable=(1253, 705)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 12986.95s
+Loading error handling took 0.07s
