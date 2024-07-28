@@ -2,7 +2,7 @@
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Selesai dari kampus, [mcname] pulang ke kostnya."
@@ -150,7 +150,6 @@
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     play music "audio/BGM_Dosen.ogg" fadein 1.0
     scene kelas with Dissolve(1.0)
-    #  Harusnya BG Ujian
     show dosen_talk at dosen_center with dissolve
     show dosen_side at left with dissolve
     $ quick_menu = True
@@ -404,12 +403,19 @@ label goodpiaafterquiz:
     hide pia_talk
     hide pia with dissolve
     "[mcname] dan Pia pun banyak bercerita sambil menikmati cemilan di rooftop."
-    $ quick_menu = False
+
     stop music fadeout 1.0
+    $ quick_menu = False
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}CHAPTER III{/color}" with Pause(2.0)
+    scene chapter 3 pia with Dissolve (1.0)
+    pause(3.0)
+    scene black with Dissolve (1.0)
     play music "audio/BGM_UKM.ogg" fadein 1.0
-    scene ruang ukm with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Di tempat lain..."
+    $ quick_menu = False
+    scene ruang ukm with Dissolve(2.0)
     show kana_talk at kana_near_left_2
     show tana at tana_right
     show kana_side_talk at left
@@ -2238,7 +2244,7 @@ label goodendpiakosan:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Di kost..."
@@ -2263,7 +2269,7 @@ label goodendpiakosan:
     fio_nvl "Cieee"
     mc_nvl "Lohh????"
     stop music fadeout 1.0
-    play music "BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene kamar mc kota with dissolve
     $ quick_menu = True
     mcname "Dah lah, tidur aja."

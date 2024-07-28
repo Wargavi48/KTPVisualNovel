@@ -1,10 +1,18 @@
 label chapter1kana1:
-    $ renpy.block_rollback()
-    play music "audio/BGM_Kampus.mp3" loop fadein 1.0
-    scene awan with Dissolve(2.0)
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene chapter 1 kana with Dissolve (1.0)
+    pause(3.0)
+    scene black with Dissolve (1.0)
+    play music "audio/BGM_Kampus.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    #$ renpy.block_rollback()
     "Walaupun ini sudah pertengahan tahun."
     "Matahari secara terik menerangi kota Jakarta."
-    "Saat melihat ke atas langit, hanya langit biru lah yang terlihat."
+    "Saat melihat ke atas langit, hanya langit birulah yang terlihat."
+    $ quick_menu = False
     scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
     mcname "Untung saja masih sempat untuk ikut orientasi."
@@ -12,123 +20,127 @@ label chapter1kana1:
     mcname "Yah walaupun begitu ini memang pengalaman baru yang aku rasakan."
     mcname "Berbeda jauh dari tempatku dulu."
     mcname "Huuuu, ini hari pertamaku orientasi di Jeketi University."
-    mcname "Di sini tempat dimana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh. heheh"
+    mcname "Di sini tempat dimana aku bakalan kenal sama orang baru, temen baru, atau bahkan jodoh. Heheh."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    play sound "audio/open_door.mp3" fadeout 1.0
-    show text "{color=#FFF}MEMASUKI AULA{/color}" with Pause(2.0)
-    scene kelas with Dissolve(2.0)
-    play sound "audio/crowd_noise.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "BGM_Kelas.ogg" fadein 1.0
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
+    scene kelas with Dissolve(1.0)
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     $ quick_menu = True
-    "Saat memasuki ruangan [mcname] mendengar suara di aula yang sangat ramai."
     mcname "Seperti yang diharapkan dari kampus Ibu Kota."
     mcname "Orangnya rame banget."
-    "Terlihat di dalam aula sudah diisi dengan mahasiswa baru."
+    "Terlihat di dalam ruangan sudah diisi dengan mahasiswa baru."
     mcname "{i}Hmmm... kayaknya aku harus mencari tempat duduk yang kosong sebelum penuh.{/i}"
-    "[mcname] melihat tempat duduk yang berada di pojok atas ruangan."
+    "[mcname!c] melihat tempat duduk yang berada di pojok atas ruangan."
     mcname "{i}Ah sepertinya itu tidak ada orang.{/i}"
     "Saat sampai di sana, tidak terlihat orang di barisan tersebut."
-    mcname "{i}Hmmm... tumben di bagian belakang kosong.{/i}"
-    mcname "{i}Padahal biasanya orang pada seneng di belakang.{/i}"
-    "[mcname] kemudian duduk di kursi tersebut."
-    mcname "{i}Tapi lumayan juga dapet duduk di sini{/i}"
-    mcname "{i}Jadinya aku bisa ngeliat yang lain dengan jelas.{/i}"
-    "Saat memperhatikan di sekitar..."
-    "[mcname] mendengar suatu topik yang menarik perhatiannya."
+    mcname "{i}Hmmm... tumben di bagian belakang kosong, padahal biasanya orang pada seneng di belakang.{/i}"
+    "[mcname!c] kemudian duduk di kursi tersebut."
+    mcname "{i}Tapi lumayan juga dapet duduk di sini, jadinya bisa ngeliat yang lain dengan jelas.{/i}"
+    "Saat memperhatikan sekitar, [mcname!c] mendengar suatu topik yang menarik perhatiannya."
     stop sound fadeout 1.0
     "{size=-5}Mahasiswa A{/size}" "Eh eh liat deh itu kan mahasiswi itu..."
     "{size=-5}Mahasiswa B{/size}" "Yang mana sih?"
     mcname "{i}Hmmm? Apa yang sedang mereka bicarakan?{/i}"
     "{size=-5}Mahasiswa A{/size}" "ituuu, yang ituu tuhh"
     "Mahasiswa tersebut memberikan kode kepada temannya ke arah seorang cewek."
-    "Pembicaraan mereka yang cukup keras membuat [mcname] pun melirik ke arah orang yang menjadi bahan pembicaraan."
+    "Pembicaraan mereka yang cukup keras membuat [mcname!c] pun melirik ke arah orang yang menjadi bahan pembicaraan."
+    stop music fadeout 1.0
     $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "BGM_Romance Kana.ogg" fadein 1.0
     scene kana awal with Dissolve(2.0)
-    # Ganti Backsound
     $ quick_menu = True
     "{size=-5}Mahasiswa B{/size}" "Ohhh dia!!"
-    "{size=-5}Mahasiswa B{/size}" "Eh bukannya dia mahasiswa yang….bla bla bla"
-    "Terpesona terhadap cewek tersebut,"
-    "[mcname] tidak mendengarkan pembicaraan Mahasiswa tadi."
-    "Di sana terlihat seorang cewek cantik yang terlihat seumuran dengan [mcname]."
+    "{size=-5}Mahasiswa B{/size}" "Eh bukannya dia mahasiswa yang…. bla bla bla"
+    "Terpesona terhadap cewek tersebut, [mcname!c] tidak mendengarkan pembicaraan para Mahasiswa tadi."
+    "Di sana terlihat seorang cewek cantik yang terlihat seumuran dengan [mcname!c]."
     "Rambutnya biru yang mana mengingatkannya dengan lautan yang berada di kampung halamannya."
     "Matanya pun tidak kalah indah dengan batu sapphire."
     "……"
     mcname "{i}Aku tidak bisa melepaskan mataku dari dia...{/i}"
     mcname "{i}Oh...{/i}"
     mcname "{i}Dia siapa?{/i}"
-    "[mcname] bertanya kepada dirinya sendiri"
+    "[mcname!c] bertanya kepada dirinya sendiri"
     mcname "{i}Tapi memang benar jika dilihat, dia memberikan aura seorang gadis cantik yang anggun dan kalem.{/i}"
     mcname "{i}Ko ada ya orang secantik dia?{/i}"
     mcname "{i}Atau… memang semua orang dari kota itu kaya gitu?{/i}"
-    "[mcname] pun melihat ke sekelilingnya, berusaha membandingkan dengan cewek yang ada di ruangan."
+    "[mcname!c] pun melihat ke sekelilingnya, berusaha membandingkan dengan cewek yang ada di ruangan."
     mcname "{i}Hmmm emang sih, hampir semua kelihatan cantik…{/i}"
     mcname "{i}Tapi kok cuma dia ya, yang jadi perhatian orang-orang.{/i}"
     mcname "{i}Ya termasuk aku juga sih...{/i}"
     "……"
-    "1….2….3…"
-    "8…9…10…"
-    "Menit telah berlalu dan [mcname] masih menatap cewek tersebut."
-    "Mungkin itu adalah rekor terlama [mcname] dalam memperhatikan seseorang."
+    "1… 2… 3… 8… 9… 10… Menit telah berlalu dan [mcname!c] masih menatap cewek tersebut."
+    "Mungkin itu adalah rekor terlama [mcname!c] dalam memperhatikan seseorang."
     $ quick_menu = False
+    play sound "audio/handbell.mp3" fadein 1.0 volume (4.0)
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play sound "audio/handbell.mp3" fadein 1.0
-    # SCREENSHAKE
-    show text "{color=#FFF}*DING DING DING DING*\n(screenshake){/color}" with Pause(2.0)
-    play music "audio/BGM_Kampus.mp3" loop fadein 1.0
-    scene kelas with dissolve
+    play music "audio/BGM_Kelas.ogg" loop fadein 1.0
+    scene kelas with Dissolve(1.0)
     stop sound fadeout 1.0
     $ quick_menu = True
     mcname "Ehhh… udah bel, serius??? Lama banget berarti aku liatin dia."
     mcname "Moga aja dia gak sadar deh kalo aku ngeliatin dia terus."
     mcname "Kalo misalnya ketahuan maaf banget dah."
-    "Terdengar suara pintu terbuka dan seluruh perhatian tertuju kepada sumber suara tersebut."
-    play sound "audio/open_door.mp3" fadeout 1.0
+    "Terdengar suara pintu terbuka dan seluruh perhatian tertuju ke sumber suara tersebut."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    scene kelas with dissolve
-    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Dosen.ogg" fadein 1.0
+    scene kelas with Dissolve(1.0)
     $ quick_menu = True
-    "Rektor" "Selamat datang Mahasiswa baru yang memasuki Jekiti University…"
-    "Perkataan sambutan dari Rektor dan jajaran Dosen membuat [mcname] dan beberapa Mahasiswa/i lain merasa bosan."
-    "Seakan mendukung perkataan [mcname], beberapa mahasiswa/i pun ada yang bermain HP, mengobrol, atau bahkan bercanda."
+    "Rektor" "Selamat datang Mahasiswa baru yang memasuki *NAMA UNIVERSTASNYA* University…"
+    $ quick_menu = False 
+    scene black with Dissolve(1.0)
+    scene kelas with Dissolve(1.0)
+    $ quick_menu = True
+    "Perkataan sambutan dari Rektor dan jajaran Dosen membuat [mcname!c] dan beberapa Mahasiswa/i lain merasa bosan."
+    "Seakan mendukung perkataan [mcname!c], beberapa mahasiswa/i pun ada yang bermain HP, mengobrol, atau bahkan bercanda."
     "{size=-5}Mahasiswa A{/size}" "Eh bosenin bet dah, template banget ini ucapan selamat datangnya tuh, bikin ngatuk ya ga?"
     "{size=-5}Mahasiswa B{/size}" "Iyaa, bener banget dah mending kita login yuk P MABAR MABAR..."
     "{size=-5}Mahasiswa C{/size}" "Gas kali ya login."
     show kana_smile at char_center with dissolve
-    "[mcname] pun tidak sengaja mengalihkan pandangannya kepada perempuan tadi yang juga tertawa kecil karena mendengar obrolan mahasiswa tersebut."
+    "[mcname!c] pun tidak sengaja mengalihkan pandangannya kepada perempuan tadi yang juga tertawa kecil karena mendengar obrolan mahasiswa tersebut."
     mcname "{i}Astaga, aku tidak menyangka ternyata ada perempuan semanis dia.{i}"
     "……"
     hide kana_smile
-    show kana at char_center
     with dissolve
-    "Mata [mcname] dan perempuan itu tidak sengaja bertemu."
-    "[mcname] pun langsung mengalihkan pandangannya karena tersipu malu."
-    hide kana with dissolve
+    $ quick_menu = False
+    scene kana awal senyum with Dissolve(2.0)
+    $ quick_menu = True
+    "Mata [mcname!c] dan perempuan itu tidak sengaja bertemu."
+    "[mcname!c] pun langsung mengalihkan pandangannya karena tersipu malu."
+    $ quick_menu = False
+    scene black with Dissolve (1.0)
+    scene kelas with Dissolve(1.0)
+    $ quick_menu = True
     mcname "{i}Waduh mata kita gak sengaja bertemu pula.{/i}"
     mcname "{i}Semoga aja aku gak dikira orang aneh sama dia.{/i}"
     "……"
-    $ quick_menu = False 
-    scene black with Dissolve(2.0)
-    scene kelas with dissolve
-    $ quick_menu = True 
-    "[mcname] meregangkan badannya yang terasa kaku akibat duduk terlalu lama."
-    mcname "{i}Akhirnya selesai juga sambutan dan kegiatan hari ini.{/i}"
-    mcname "{i}Hari ini lumayan cape juga ya.{/i}"
-    mcname "{i}Tapi masih ada energi sih…{/i}"
+    stop music fadeout 1.0
     $ quick_menu = False
-    # insert cg kana
-    scene kana awal senyum with Dissolve(2.0)
+    scene black with Dissolve(1.0)
+    play music "BGM_Kelas.ogg" fadein 1.0
+    scene kelas with Dissolve(1.0)
+    $ quick_menu = True 
+    "[mcname!c] meregangkan badannya yang terasa kaku akibat duduk terlalu lama."
+    mcname "{i}Akhirnya selesai juga sambutan dan kegiatan hari ini.{/i}"
+    mcname "{i}Hari ini lumayan cape juga ya, tapi masih ada energi sih…{/i}"
+    $ quick_menu = False
+    scene kana awal senyum with Dissolve(1.0)
     $ quick_menu = True 
     mcname "{i}Aduh! Kok aku ga bisa hilangkan senyuman itu dari kepalaku ya?{/i}"
     $ quick_menu = False
-    scene black with dissolve
-    scene kelas with Dissolve(2.0)
+    scene kelas with Dissolve(1.0)
     $ quick_menu = True
+    mcname "{i}Ah udah lah.{/i}"
+    mcname "{i}Hmmm...{/i}"
     mcname "{i}Eh masih jam segini nih...{/i}"
     mcname "{i}Enaknya buat habisin waktu, mending aku ke…{/i}"
-    $ quick_menu = False
     define mc_from = ""
     menu:
         #"Mau Kemana?"
@@ -140,27 +152,38 @@ label chapter1kana1:
             # jump chapter1kana2Campus
             jump chapter1kana2kos
         "B. Ke Warteg":
+            stop music fadeout 1.0
+            $ quick_menu = False
+            play music "BGM_Bad End.ogg" fadein 1.0
             "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit..."
             scene black with dissolve
             show text "{color=#FFF}MAKANYA JANGAN MAKAN SEMBARANG BROO KAN MASUK RUMAH SAKIT{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "C. Ke Cafe":
             $ mc_from = "cafe"
             stop music fadeout 1.0
-            scene black with dissolve
+            $ quick_menu = False
+            scene black with Dissolve(1.0)
             jump chapter1kana2Cafe
             
 label chapter1kana2kos:
-    #$ renpy.block_rollback()
-    scene black with dissolve
-    #scene mc bedroom with dissolve
-    scene kamar mc kota with dissolve
-    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+    ##$ renpy.block_rollback()
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    "[mcname] menghabiskan waktu di kosan dan memilih untuk beristirahat dibanding pergi kesana-kemari."
-    "Pulang dari kampus, [mcname] masih memikirkan kejadian yang dialaminya hari ini."
+    "Tak terasa langit menjadi gelap."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    $ quick_menu = True
+    "[mcname!c] menghabiskan waktu di kosan dan memilih untuk beristirahat dibanding pergi kesana-kemari."
+    "[mcname!c] masih memikirkan kejadian yang dialaminya hari ini."
     mcname "{i}Lumayan capek ya orientasinya...{/i}"
     mcname "{i}Ternyata panas banget di Jakarta.{/i}"
     show white:
@@ -187,39 +210,48 @@ label chapter1kana2kos:
     mcname "{i}Tapi dilihat-lihat, kayanya dia ramah ya...{/i}"
     mcname "{i}Aku kira, dia bakalan kaya cool dan cuek gitu..{/i}"
     mcname "{i}Udah ah mending aku tidur.{/i}"
-    "[mcname] pun tertidur dengan lelap."
     $ quick_menu = False
-    stop music fadeout 1.0
+    scene awan malam with Dissolve(2.0)
+    $ quick_menu = True
+    "[mcname!c] pun tertidur dengan lelap."
     jump chapter1kana2Campus
 
 label chapter1kana2Cafe:
-    #$ renpy.block_rollback()
-    scene cafe with dissolve
-    play music "audio/BGM_Cafe Cerah.mp3" fadein 1.0
+    ##$ renpy.block_rollback()
+    play sound "audio/cafe-entrance.mp3" fadein 1.0
+    play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0 volume (2.0)
+    scene cafe with Dissolve(1.0)
     $ quick_menu = True
-    "[mcname] memilih untuk menghabiskan waktu di sebuah cafe. Awalnya cafe itu terasa sepi, tetapi lama-lama cafe tersebut mulai penuh."
+    "[mcname!c] memilih untuk menghabiskan waktu di sebuah cafe."
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
+    "Awalnya cafe itu terasa sepi, tetapi lama-lama cafe tersebut mulai penuh."
     mcname "Wah makin lama, makin rame ya cafe ini. Memang salah satu cafe terkenal sih, kalau kata internet..."
-    "Banyak sekali orang yang berlalu lalang. Akan tetapi, ada satu orang yang menarik perhatian [mcname]."
+    "Banyak sekali orang yang berlalu lalang. Akan tetapi, ada satu orang yang menarik perhatian [mcname!c]."
     show kana at small_center with dissolve
-    "Saat orang itu mendekati pintu cafe, [mcname] pun menyadari bahwa orang itu adalah cewek yang ada di kampus tadi."
+    "Saat orang itu mendekati pintu cafe, [mcname!c] pun menyadari bahwa orang itu adalah cewek yang ada di kampus tadi."
     mcname "{i}Loh, itu kan perempuan yang tadi di kampus?{/i}"
     mcname "{i}Kita datang di cafe yang sama...{/i}"
     mcname "{i}Kebetulan macam apa ini?{/i}"
-    "Secara tidak sadar [mcname] pun melihat ke arah perempuan tersebut. Mungkin karena dia berdiam diri cukup lama, yang membuat beberapa pelanggan pun melihat ke arahnya..."
+    "Secara tidak sadar, [mcname!c] pun melihat ke arah perempuan tersebut. Mungkin karena dia berdiam diri cukup lama, yang membuat beberapa pelanggan pun melihat ke arahnya..."
     hide kana 
     show kana_confused at char_center
     with dissolve
-    "Tetapi, perempuan itu terlihat sedang kebingungan."
-    "Pandangannya yang melihat ke sana kemari dan gerak tubuhnya yang menunjukan dirinya gelisah, membuat [mcname] pun berpikir."
+    "Perempuan itu terlihat sedang kebingungan."
+    "Pandangannya yang melihat ke sana kemari dan gerak tubuhnya yang menunjukan dirinya gelisah, membuat [mcname!c] pun berpikir."
     mcname "{i}Hmmm kenapa ya, kok dari tadi dia kaya gelisah gitu??{/i}"
     "Mereka pun secara tidak sengaja bertukar pandangan."
-    "Reflek, [mcname] pun memalingkan pandangannya."
+    "Reflek, [mcname!c] pun memalingkan pandangannya."
     mcname "{i}Duh mata kita gak sengaja ketemu pula.{/i}"
-    "Perempuan itu pun mendekati meja tempat [mcname] berada..."
+    "Perempuan itu pun mendekati meja tempat [mcname!c] berada..."
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    stop sound fadeout 1.0
+    scene cafe with Dissolve(1.0)
     hide kana_confused
     show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
+    $ quicK_menu = True
     kana "H-halooo, maaf tapi apa kursinya kosong?"
     hide kana_side_talk
     with dissolve
@@ -241,7 +273,7 @@ label chapter1kana2Cafe:
     show kana_smile at kana_near
     with dissolve
     "Cewek itu pun tersenyum manis."
-    "Tanpa menunggu jawaban dari [mcname], perempuan itu pun duduk di sebelah [mcname]."
+    "Tanpa menunggu jawaban dari [mcname!c], perempuan itu pun duduk di sebelah [mcname!c]."
     "Mengangkat tangan untuk memanggil pelayan. Perempuan itu kemudian memesan pesanannya."
     hide kana_smile
     show kana_talk at kana_near
@@ -252,7 +284,7 @@ label chapter1kana2Cafe:
     show kana at kana_near
     with dissolve
     mcname "..."
-    "Pikiran [mcname] dibuat bingung dengan siapa dia kenapa dia langsung duduk di sebelahnya lalu kenapa dia mau duduk di situ, kenapa harus dia, banyak sekali pertanyaan yang muncul di pikiran [mcname]."
+    "Pikiran [mcname!c] dibuat bingung dengan siapa dia kenapa dia langsung duduk di sebelahnya lalu kenapa dia mau duduk di situ, kenapa harus dia, banyak sekali pertanyaan yang muncul di pikiran [mcname!c]."
     hide kana
     show kana_talk at kana_near
     show kana_side_talk at left
@@ -260,10 +292,8 @@ label chapter1kana2Cafe:
     kana "Mas aku pesan strawberry shortcake nya 1 ya, sama lemon tea nya satu, es nya jangan terlalu banyak ya, makasih banyak mas…"
     hide kana_side_talk 
     hide kana_talk
-    show kana at kana_near
     with dissolve
-    "Pelayan cafe itu pun pergi untuk memproses pesanan Kana."
-    hide kana
+    "Pelayan cafe itu pun pergi untuk memproses pesanan cewek itu."
     show kana_confused at kana_near
     show kana_side_confused at left
     with dissolve
@@ -293,25 +323,24 @@ label chapter1kana2Cafe:
     kana "Makasih ya udah diizinin duduk di sini"
     hide kana_side_talk
     hide kana_talk
-    show kana
+    show kana at kana_near
     with dissolve
     hide kana
     show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
-    #$ kana_name = "Kanaia Asa"
-    kana "Oh iya kenalan dulu, namaku \"Kanaia Asa\", biasanya dipanggil Kana."
     $ kana_name = "Kana"
+    kana "Oh iya kenalan dulu, namaku \"Kanaia Asa\", biasanya dipanggil Kana."
     hide kana_side_talk
     hide kana_talk
     show kana at kana_near
     with dissolve
-    mcname "Aku [mcname] salam kenal ya."
+    mcname "Aku [mcname!c] salam kenal ya."
     hide kana
     show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
-    kana "Ohhh [mcname], salam kenal juga ya."
+    kana "Ohhh [mcname!c], salam kenal juga ya."
     kana "Udah lama duduk di cafe ini?"
     hide kana_side_talk
     hide kana_talk
@@ -344,10 +373,11 @@ label chapter1kana2Cafe:
     hide kana_talk
     show kana_smile at kana_near
     with dissolve
+    mcname "I-iya."
     mcname "..."
     mcname "{i}Aduh gimana nih, bisa-bisa nya pas aku lagi pengen santai gini malah duduk barengan sama cewek.{/i}"
-    "Tidak ingin dikira aneh akhirnya [mcname] pun melanjutkan menikmati pesanannya."
-    "[mcname] dan Kana fokus terhadap apa yang ada di depannya, sesekali [mcname] melirik ke arah Kana."
+    "Tidak ingin dikira aneh, akhirnya [mcname!c] pun melanjutkan menikmati pesanannya."
+    "[mcname!c] dan Kana fokus terhadap apa yang ada di depannya, sesekali [mcname!c] melirik ke arah Kana."
     hide kana_smile
     show kana_talk at kana_near
     show kana_side_talk at left
@@ -357,19 +387,19 @@ label chapter1kana2Cafe:
     hide kana_talk
     show kana at kana_near
     with dissolve
-    "Mungkin sadar kalau [mcname] memperhatikannya, Kana menawarkan cake yang sedang ia makan."
+    "Mungkin sadar kalau [mcname!c] memperhatikannya, Kana menawarkan cake yang sedang ia makan."
     mcname "Eh engga kok haha..."
     hide kana_talk
     show kana_smile at kana_near
     with dissolve
     "Mendengar hal tesebut Kana lanjut memakan cake-nya."
-    "Karena moment nya canggung, [mcname] melihat sekeliling untuk mencari topik yang dibahas namun hasilnya nihil, tidak ada sesuatu yang menarik untuk dibahas di dalam cafe."
+    "Karena moment nya canggung, [mcname!c] melihat sekeliling untuk mencari topik yang dibahas namun hasilnya nihil, tidak ada sesuatu yang menarik untuk dibahas di dalam cafe."
     mcname "..."
     mcname "Ternyata kamu suka banget strawberry shortcakenya, ya?"
     hide kana_smile
     show kana at kana_near
     with dissolve
-    "Melihat Kana fokus memakan cake [mcname] mencoba membawa topik strawberry shortcake."
+    "Melihat Kana fokus memakan cake [mcname!c] mencoba membawa topik strawberry shortcake."
     hide kana
     show kana_talk at kana_near
     show kana_side_talk at left
@@ -382,32 +412,35 @@ label chapter1kana2Cafe:
     mcname "...."
     mcname "{i}Kehabisan topik lagi...{/i}"
     mcname "Pelayann! Pesan strawberry shortcake 1"
-    "Mencoba untuk menghilangkan canggung, akhirnya [mcname] memesan makanan lagi."
+    "Mencoba untuk menghilangkan canggung, akhirnya [mcname!c] memesan makanan lagi."
     hide kana_smile
     show kana_confused at kana_near
     with dissolve
-    "Bingung karena [mcname] memesan lagi, Kana melihat bolak-balik antara [mcname] dan pelayan."
-    "Menyadari kana yang kebingungan, [mcname] pun memberikan alasannya."
+    "Bingung karena [mcname!c] memesan lagi, Kana melihat bolak-balik antara [mcname!c] dan pelayan."
+    "Menyadari kana yang kebingungan, [mcname!c] pun memberikan alasannya."
     mcname "Ngeliat kamu makan enak banget. Jadinya penasaran mau coba, hehe."
     hide kana_confused
     show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
-    kana "Eh…. padahal udah ditawarin, tadi."
+    kana "Eh…. padahal udah ditawarin tadi."
     hide kana_side_talk
     hide Kana_talk
-    show kana_confused at kana_near
     with dissolve
     mcname "Hahaha."
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene cafe with Dissolve(1.0)
+    $ quick_menu = True
     "Pelayan" "Maaf menunggu."
     "Pelayan" "Ini ya kak pesanannya strawberry shortcake."
     "Melihat cake yang diletakkan di atas meja tampak menggiurkan."
-    "[mcname] pun memasukkan potongan strawberry shortcake ke mulutnya."
+    "[mcname!c] pun memasukkan potongan strawberry shortcake ke mulutnya."
     hide kana_confused
     show kana_smile at kana_near
     with dissolve
-    "Tiba tiba [mcname] pun merasakan sensasi yang belum pernah dia rasakan sebelumnya, Rasa manis dan asam stroberi seakan menari di lidahnya, memberikan kenikmatan yang tak tertandingi."
-    "Setiap gigitan membawa [mcname] ke dalam dunia yang penuh dengan kebahagiaan sederhana. [mcname] pun menutup matanya, membiarkan rasa itu menyelimutinya sepenuhnya."
+    "Tiba tiba [mcname!c] pun merasakan sensasi yang belum pernah dia rasakan sebelumnya, Rasa manis dan asam stroberi seakan menari di lidahnya, memberikan kenikmatan yang tak tertandingi."
+    "Setiap gigitan membawa [mcname!c] ke dalam dunia yang penuh dengan kebahagiaan sederhana. [mcname!c] pun menutup matanya, membiarkan rasa itu menyelimutinya sepenuhnya."
     mcname "Hmmmmm enak juga ya."
     hide kana_smile
     show kana_talk at kana_near
@@ -441,26 +474,29 @@ label chapter1kana2Cafe:
     hide kana_talk
     show kana_smile at kana_near
     with dissolve
-    "[mcname] dan Kana pun saling melemparkan senyuman sambil menikmati strawberry shortcake di cafe tersebut."
+    "[mcname!c] dan Kana pun saling melemparkan senyuman sambil menikmati strawberry shortcake di cafe tersebut."
     mcname "..."
     kana "..."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene cafe with dissolve
-    play music "audio/BGM_Cafe Sore.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Cafe Sore.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Tak terasa langit menjadi gelap..."
+    $ quick_menu = False
+    scene cafe malam with Dissolve(2.0)
     show kana_talk at kana_near with dissolve
     $ quick_menu = True
-    "Waktu Pun tidak terasa sudah malam, dan obrolan [mcname] & Kana pun saling nyambung satu sama lain."
-    "Akhirnya, tibalah waktu mereka pulang ke rumah masing-masing."
+    "Waktu berlalu dengan cepat karena [mcname!c] dan Kana asik mengobrol."
+    "Tapi, tibalah waktu untuk mereka pulang ke rumah masing-masing."
     show kana_side_talk at left with dissolve
     kana "Ummm. Makasih ya udah dibolehin duduk di sini, untung saja aku bisa makan strawberry shortcakenya, kalau enggak kayaknya aku bakalan marah deh hahaha."
     hide kana_side_talk
     hide kana_talk
-    show kana
+    show kana at kana_near
     with dissolve
-    mcname "Haha, gak papa ko santai aja."
-    mcname "Kebetulan kursinya kosong di situ."
+    mcname "Haha, gapapa kok santai aja. Kebetulan kursinya kosong di situ."
     hide kana
     show kana_talk at kana_near
     show kana_side_talk at left
@@ -468,7 +504,7 @@ label chapter1kana2Cafe:
     kana "Eh udah jam segini aku harus pulang aku duluan ya, kamu hati-hati di jalan."
     hide kana_side_talk
     hide kana_talk
-    show kana_smile
+    show kana_smile at kana_near
     with dissolve
     mcname "Okee. Kamu juga hati-hati di jalan ya."
     hide kana_smile
@@ -478,12 +514,15 @@ label chapter1kana2Cafe:
     kana "See you~"
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    #scene mc bedroom with dissolve
-    scene kamar mc kota with dissolve
-    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    "Pulang dari cafe, [mcname] masih memikirkan kejadian yang dialaminya hari ini."
+    "Pulang dari cafe..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    $ quick_menu = True
+    "Di kost, [mcname!c] masih memikirkan kejadian yang dialaminya hari ini."
     mcname "{i}Banyak juga ya, hal yang terjadi pada hari pertamaku di Jakarta.{/i}"
     show white:
         default
@@ -510,78 +549,80 @@ label chapter1kana2Cafe:
     mcname "{i}Aku kira, dia bakalan kaya cool dan cuek gitu.{/i}"
     mcname "{i}Ternyata nyambung juga kalau diajak ngobrol.{/i}"
     mcname "{i}Udah ah mending aku tidur.{/i}"
-    "[mcname] pun tertidur dengan lelap..."
-    stop music fadeout 1.0
-    $ quick_menu = False
+    "[mcname!c] pun tertidur dengan lelap..."
     jump chapter1kana2Campus
 
 label chapter1kana2Campus:
-    #$ renpy.block_rollback()
-    scene black with dissolve
-    # Entah kenapa textnya gak muncul
-    show text "KEESOKAN HARINYA..." with Pause(2.0)
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
+    ##$ renpy.block_rollback()
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kampus.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya.."
+    $ quick_menu = False
     scene depan kampus with Dissolve(2.0)
-    play sound "audio/run.mp3"
+    play sound "audio/run.mp3" fadein 1.0 volume (10.0)
     $ quick_menu = True
     "Terdengar suara langkah kaki yang terburu-buru..."
     mcname "{i}Sial ternyata aku benar-benar meremehkan Jakarta.{/i}"
     mcname "{i}Siapa sangka macet di sini parah banget...{/i}"
-    "Takut terlambat di hari pertama, [mcname] terburu-buru memasuki kelas kuliahnya."
+    "Takut terlambat di hari pertama, [mcname!c] terburu-buru memasuki kelas kuliahnya."
     $ quick_menu = False
     # background lift
-    scene black with dissolve
-    scene lorong with Dissolve(2.0)
+    scene black with Dissolve(1.0)
+    scene lorong with Dissolve(1.0)
     $ quick_menu = True
     mcname "Ehhhh tungguuuu!!"
-    "[mcname] berlari menuju Lift yang akan tertutup."
+    "[mcname!c] berlari menuju Lift yang akan tertutup."
     "Di dalam lift terlihat seorang cewek yang sepertinya juga mau menuju ke kelas..."
     $ quick_menu = False
     play sound "audio/ding.mp3"
-    scene black with dissolve
-    scene depan kampus with Dissolve(2.0)
+    scene black with Dissolve(1.0)
+    scene lorong with Dissolve(1.0)
     $ quick_menu = True
     mcname "Huft… huft… huft."
     mcname "Untung keburu buat masuk lift..."
     mcname "Makasih ya udah mau nahan liftnya."
     # Kalo bisa ada freya "black", karena belum mc melirik
-    show freya_talk at char_center
     show freya_side_talk at left
     with dissolve
-    freya "Haha iya, sama-sama."
+    "???" "Haha iya, sama-sama."
     hide freya_side_talk
-    hide freya_talk
     with dissolve
-    "Sibuk menarik nafas dari olahraga pagi yang tidak direncanakan tadi, [mcname] tidak terlalu memperhatikan perempuan yang ada di lift."
+    "Sibuk menarik nafas dari olahraga pagi yang tidak direncanakan tadi, [mcname!c] tidak terlalu memperhatikan perempuan yang ada di lift."
     mcname "Huft... huft...."
     mcname "{i}Kayaknya aku harus ningkatin staminaku lagi nih.{/i}"
-    "Setelah mendapatkan cukup oksigen, [mcname] mencoba melirik perempuan yang ada di dalam lift."
+    "Setelah mendapatkan cukup oksigen, [mcname!c] mencoba melirik perempuan yang ada di dalam lift."
     # Kalo ada freya black, tampilin freya_smile disini
-    show freya_smile at char_center with dissolve
+    show freya at char_center with dissolve
     mcname "{i}Memang ya, cewek di Jakarta ini cantik-cantik semua...{/i}"
+    hide freya with dissolve
     play sound "audio/ding.mp3"
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}Pintu lift terbuka{/color}" with Pause(2.0)
-    scene depan kampus with dissolve
-    show freya_smile at char_center with dissolve
+    scene black with Dissolve(1.0)
+    scene lorong with Dissolve(1.0)
+    show freya at char_center with dissolve
     $ quick_menu = True
-    mcname "Ah! Terima kasih lagi yak, sudah menahan lift tadi."
-    "[mcname] kemudian lanjut berlari menuju kelas."
+    mcname "Ah! Terima kasih lagi yak, sudah nahan lift tadi."
+    "[mcname!c] kemudian lanjut berlari menuju kelas."
+    hide freya with dissolve
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    scene kelas with dissolve
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
-    #$ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume(1.5)
+    scene kelas with Dissolve(1.0)
+    ##$ renpy.block_rollback()
     $ quick_menu = True
-    "[mcname] pun memasuki ruangan kelas."
+    "[mcname!c] pun memasuki ruangan kelas."
     "Ini pertama kalinya ia memasuki ruangan yang luas dan besar seperti itu, selain di aula."
     mcname "{i}Fiuhh. Untung aja kelasnya belum dimulai.{/i}"
-    "[mcname] pun melihat ke sekeliling kelas."
-    "akan tetapi...."
-    mcname "{i}Loh kok masih sepi kelasnya yah?{/i}"
-    "Dikarenakan masih banyak kursi yang kosong, [mcname] memilih untuk duduk di bagian belakang terlebih dahulu agar dekat dengan pintu keluar-masuk dan tidak ingin mencolok untuk hari-hari pertama ini."
-    "Saat [mcname] akan duduk, terdengar suara perempuan yang membuatnya langsung melihat ke belakang..."
+    "[mcname!c] pun melihat ke sekeliling kelas."
+    mcname "......."
+    mcname "{i}Kok masih sepi kelasnya yah?{/i}"
+    "Dikarenakan masih banyak kursi yang kosong, [mcname!c] memilih untuk duduk di bagian belakang terlebih dahulu agar dekat dengan pintu keluar-masuk dan tidak ingin mencolok untuk hari-hari pertama ini."
+    "Saat [mcname!c] akan duduk, terdengar suara perempuan yang membuatnya langsung melihat ke belakang..."
     show freya_talk at char_center
     show freya_side_talk at left
     with dissolve
@@ -602,16 +643,14 @@ label chapter1kana2Campus:
     hide freya_talk
     show freya_smug at char_center
     with dissolve
-    "[mcname] pun sadar bahwa perempuan itu adalah perempuan yang sama yang telah menahan pintu lift untuknya."
-    mcname "Hahh, astagaa."
-    mcname "Aku kira udah mulai loh kelasnya."
-    mcname "Aku sampe lari-lari kan tadi?"
-    mcname "Eh kamu kan yang tadi di lift ya?"
+    "[mcname!c] pun sadar bahwa perempuan itu adalah perempuan yang sama yang telah menahan pintu lift untuknya."
+    mcname "Hahh, astagaa. Aku kira udah mulai loh kelasnya. Aku sampe lari-lari kan tadi?"
     mcname "Aduhh, ya udah deh yang penting datang aja dulu."
+    mcname "Eh kamu kan yang tadi di lift ya?"
     hide freya_smug
     show freya_smile at char_center
     with dissolve
-    "Perempuan itu tersenyum kecil dan manis"
+    "Perempuan itu tersenyum kecil dan manis."
     hide freya_smile
     show freya_talk at char_center
     show freya_side_talk at left
@@ -622,7 +661,7 @@ label chapter1kana2Campus:
     hide freya_talk
     show freya at char_center
     with dissolve
-    "[mcname] melihat ke arah jam tangannya dan ia pun sadar." 
+    "[mcname!c] melihat ke arah jam tangannya dan ia pun sadar." 
     hide freya
     show freya_smile at char_center
     with dissolve
@@ -638,7 +677,7 @@ label chapter1kana2Campus:
     with dissolve
     mcname "Eh dari tadi kita ngobrol belum kenalan ternyata."
     mcname "Boleh kali ya, kita kenalan dulu haha."
-    mcname "Kenalin namaku [mcname]."
+    mcname "Kenalin namaku [mcname!c]."
     mcname "Aku dari Ngawi."
     mcname "Salam kenal, ya~"
     $ freya_name = "Freya"
@@ -652,6 +691,11 @@ label chapter1kana2Campus:
     mcname "{i}Apa sih, kalau kata orang-orang di internet sekarang.{/i}"
     mcname "{i}Owh iya!{/i}"
     mcname "{i}Senyumannya manis kaya karamel.{/i}"
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene kelas with Dissolve(1.0)
+    $ quick_menu = True
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     #if kana_name == "Perempuan itu":
     if mc_from == "kos":
         "Saat mengobrol, para Mahasiswa/i pun terdengar mulai memasuki ruangan kelas."
@@ -659,22 +703,23 @@ label chapter1kana2Campus:
         show freya at char_right
         show kana at char_left
         with dissolve
-        "Seorang perempuan pun duduk di sebelah Freya dan dilihat oleh [mcname]."
+        "Seorang perempuan pun duduk di sebelah Freya dan dilihat oleh [mcname!c]."
         "Ternyata perempuan itu adalah perempuan yang menjadi bahan pembicaraan saat pembukaan Mahasiswa/i baru."
         hide freya
         hide kana
         show freya_shock at char_right
         show kana_drylaugh at char_left
         with dissolve
-        "Saat itu pun, Freya terlihat akrab dengan perempuan tersebut dan [mcname] memilih untuk tidak mencampuri urusan mereka."
-        "Akan tetapi, dari kejauhan terdengar beberapa kalimat samar yang terdengar oleh telinga [mcname]."
+        "Saat itu pun, Freya terlihat akrab dengan perempuan tersebut dan [mcname!c] memilih untuk tidak mencampuri urusan mereka."
+        "Akan tetapi, dari kejauhan terdengar beberapa kalimat samar yang terdengar oleh telinga [mcname!c]."
+        stop sound fadeout 1.0
     elif mc_from == "cafe":
         "Saat mengobrol, para Mahasiswa/i pun terdengar mulai memasuki ruangan kelas"
         hide freya_smile
         show freya at char_right
         show kana at char_left
         with dissolve
-        "Seorang perempuan pun duduk di sebelah Freya dan dilihat oleh [mcname]"
+        "Seorang perempuan pun duduk di sebelah Freya dan dilihat oleh [mcname!c]"
         #"Ternyata perempuan itu adalah [kana_name] perempuan yang menjadi bahan pembicaraan saat pembukaan Mahasiswa/i baru"
         "Ternyata perempuan itu adalah Kana."
         hide freya
@@ -682,8 +727,9 @@ label chapter1kana2Campus:
         show freya_shock at char_right
         show kana_drylaugh at char_left
         with dissolve
-        "Saat itu pun, Freya terlihat akrab dengan Kana. Sehingga [mcname] memilih untuk tidak mencampuri urusan mereka."
-        "Akan tetapi, dari kejauhan terdengar beberapa kalimat samar yang terdengar oleh telinga [mcname]."
+        "Saat itu pun, Freya terlihat akrab dengan Kana. Sehingga [mcname!c] memilih untuk tidak mencampuri urusan mereka."
+        "Akan tetapi, dari kejauhan terdengar beberapa kalimat samar yang terdengar oleh telinga [mcname!c]."
+        stop sound fadeout 1.0
     "{size=-5}Mahasiswa A{/size}" "Ehh liat dia modis banget pakaiannya..."
     "{size=-5}Mahasiswa B{/size}" "Iyaaa cantik banget yaa."
     "{size=-5}Mahasiswa B{/size}" "Eh bukanya dia anak orang kaya yang katanya sepupunya rektor itu ya?"
@@ -697,7 +743,7 @@ label chapter1kana2Campus:
         hide kana_drylaugh
         show kana_smile at kana_near
         with dissolve
-        "Perempuan itu pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
+        "Perempuan itu pun menyadari bahwa di sebelahnya Freya itu adalah [mcname!c] dan akhirnya senyum tipis muncul dari wajahnya."
         "Tiba-tiba, suara pintu pun berbunyi..."
     elif mc_from == "cafe":
         mcname "{i}Mereka ngobrolin Kana, ya?{/i}"
@@ -707,19 +753,19 @@ label chapter1kana2Campus:
         hide kana_drylaugh
         show kana_smile at kana_near
         with dissolve
-        "Kana pun menyadari bahwa di sebelahnya Freya itu adalah [mcname] dan akhirnya senyum tipis muncul dari wajahnya."
-        "Saat dia akan menyapa [mcname], suara pintu pun berbunyi..."
+        "Kana pun menyadari bahwa di sebelahnya Freya itu adalah [mcname!c] dan akhirnya senyum tipis muncul dari wajahnya."
+        "Saat dia akan menyapa [mcname!c], suara pintu pun berbunyi..."
     $ quick_menu = False
-    play sound "audio/open_door.mp3"
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     stop music fadeout 1.0
-    scene black with dissolve
-    scene kelas with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Dosen.ogg" fadein 1.0
+    scene kelas with Dissolve(1.0)
+    ##$ renpy.block_rollback()
+    show dosen_talk at dosen_center with dissolve
     $ quick_menu = True
     "Dosen pun memasuki ruangan kelas..."
     "Kelas pun menjadi tenang dan lebih tertib dari sebelumnya..."
-    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
-    show dosen_talk at dosen_center
     show dosen_side at left
     with dissolve
     dosen "Selamat siang mahasiswa dan mahasiswi sekalian..."
@@ -734,9 +780,15 @@ label chapter1kana2Campus:
     show dosen at dosen_center
     with dissolve
     "Suasana kelas pun terasa hening, fokus untuk memperhatikan apa yang dijelaskan oleh Bu Fatimah."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    scene kelas with dissolve
+    scene black with Dissolve(1.0)
+    play music "BGM_Sore.ogg" fadein 1.0
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True 
+    "Beberapa jam kemudian..."
+    $ quick_menu = False
+    scene kelas sore with Dissolve(2.0)
     show dosen_talk at dosen_center
     show dosen_side at left with dissolve
     $ quick_menu = True
@@ -797,7 +849,7 @@ label chapter1kana2Campus:
     show freya_talk at char_left
     show freya_side_talk at left
     with dissolve
-    freya "Eeh, iyaa. Kita satu kelompok, nih. Kebetulan banget, ya. Haha"
+    freya "Eeh, iyaa. Kita satu kelompok, nih. Kebetulan banget ya, haha."
     hide freya_side_talk
     hide freya_talk
     show freya at char_left
@@ -826,25 +878,28 @@ label chapter1kana2Campus:
     hide galaxy_talk
     show galaxy at galaxy_center
     with dissolve
-    "Freya, Kana, [mcname], dan Galaxy pun saling bertukar sapa dan mengobrol lebih lanjut. Akhirnya, mereka pun membuat grup chat untuk membahas pekerjaan kelompok mereka."
+    "Freya, Kana, [mcname!c], dan Galaxy pun saling bertukar sapa dan mengobrol lebih lanjut."
+    "Akhirnya, mereka pun membuat grup chat untuk membahas pekerjaan kelompok mereka."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    scene bkamar mc kota with dissolve
-    play music "audio/BGM_Kosan 2.mp3"
-    #$ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Di kost..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    ##$ renpy.block_rollback()
     $ quick_menu = True 
-    "Setelah [mcname] sampai kosnya, [mcname] pun membuang tasnya ke lantai lalu melepaskan sepatu dan menghempaskan tubuhnya ke kasur."
-    "Setelah capek dengan kegiatan hari ini, datang ke kos membuat [mcname] merasakan ketenangan di balik hiruk pikuk Kota Jakarta."
+    "Sesampainya di kost, [mcname!c] pun membuang tasnya ke lantai lalu melepaskan sepatu dan menghempaskan tubuhnya ke kasur."
+    "Setelah capek dengan kegiatan hari ini, datang ke kos membuat [mcname!c] merasakan ketenangan di balik hiruk pikuk Kota Jakarta."
     "Memejamkan mata, menghela nafas, dan merenungkan kembali kegiatan yang telah terjadi hari ini."
-    play sound "audio/ReceiveText.ogg"
-    "*Notif Whatsapp*"
+    play sound "ReceiveText.ogg" loop volume (2.0)
     mcname "..."
-    play sound "audio/ReceiveText.ogg"
-    "*Notif Whatsapp*"
+    stop sound
     mcname "Duh. Notif WA nih."
     mcname "Apa nih? Dari Mamah, kah?"
-    "[mcname] mencoba mengecek HPnya."
+    "[mcname!c] mencoba mengecek HPnya."
     mcname "{i}Oh, ternyata bukan...{/i}"
     mcname "{i}Ternyata notif dari grup chat.{/i}"
     $ quick_menu = False
@@ -852,29 +907,32 @@ label chapter1kana2Campus:
     jump phoneChat
 
 label chapter1kana3:
-    #$ renpy.block_rollback()
-    scene black with Dissolve(2.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "audio/bgm_kantin.mp3" loop fadein 1.0
+    ##$ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kantin.ogg" loop fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesoka harinya..."
     scene kantin with Dissolve(2.0)
     $ quick_menu = True
-    "Kantin Jeketi University, dimana tempat para mahasiswa melepaskan lapar dan haus sehabis belajar seharian."
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
+    "Kantin Jeketi University, tempat para mahasiswa untuk melepaskan lapar dan haus sehabis belajar seharian."
     "Karena sudah jam makan siang, suasana kantin terasa sangat ramai dan tempat duduk pun terlihat hampir penuh diisi oleh para mahasiswa."
     mcname "{i}Wahhhh, rame juga ya...{/i}"
     mcname "{i}Mungkin karena sudah jam makan siang??{/i}"
     mcname "{i}Bentar. Kalau gini caranya, gimana dapet tempat duduk?{/i}"
     mcname "{i}Masa aku harus bungkus makanannya, sih?{/i}"
     mcname "{i}Perdana makan di kantin, ga enak rasanya kalo dibungkus.{/i}"
-    "Merasa kecewa, [mcname] pun berniat untuk pergi mencari makanan di tempat lain..."
-    "Saat [mcname] ingin melangkah pergi, ia melihat seseorang yang melambaikan tangannya dari kejauhan seakan memanggilnya."
+    "Merasa kecewa, [mcname!c] pun berniat untuk pergi mencari makanan di tempat lain..."
+    "Saat [mcname!c] ingin melangkah pergi, ia melihat seseorang yang melambaikan tangannya dari kejauhan seakan memanggilnya."
     show freya_shock at small_center
     show freya_side_shock at left
     with dissolve
-    "Freya" "[mcname]!! SINI!!!"
+    "Freya" "[mcname!c]!! SINI!!!"
     "Freya" "Duduk bareng kita!!"
     hide freya_side_shock with dissolve
     "Setelah diperhatikan lagi, ternyata itu adalah Freya."
-    "Mendengar hal tersebut akhirnya MC menghampiri ke meja Freya Di sana ternyata ada [kana_name] yang juga duduk di sampingnya."
+    "Mendengar hal tersebut akhirnya [mcname!c] menghampiri ke meja Freya Di sana ternyata ada [kana_name] yang juga duduk di sampingnya."
     hide freya_shock
     show kana at char_right
     show freya_talk at char_left
@@ -897,8 +955,13 @@ label chapter1kana3:
     hide kana_talk
     show kana at char_right
     with dissolve
-    "Mendengar persetujuan mereka, dengan lega [mcname] duduk berhadapan dengan mereka."
-    mcname "Akhirnya dapat juga..."
+    "Mendengar persetujuan mereka, dengan lega [mcname!c] duduk berhadapan dengan mereka."
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    stop sound fadeout 1.0
+    scene kantin with Dissolve(1.0)
+    $ quick_menu = True
+    mcname "Akhirnya dapat duduk juga..."
     mcname "Makasih banget loh. Aku kira aku gak bakalan dapet tempat."
     hide freya
     show freya_talk at char_left
@@ -957,22 +1020,22 @@ label chapter1kana3:
     with dissolve
     mcname "Jadi dong."
     mcname "Nanti jangan lupa kabarin si [mahasiswa_c_name]."
-    # SUaranya hungry kurang kenceng (bahkan tanpa musik).
-    play sound "audio/hungry.mp3"
+    play sound "audio/hungry.mp3" fadein 1.0 volume (10.0)
     "Saat asik mengobrol tentang kerja kelompok, terdengar suara perut keroncongan."
+    stop sound fadeout 1.0
     mcname "Suara apaan tuh?"
     hide kana
     show kana_shy_closeeye at char_right
     with dissolve
-    "[mcname] mencoba mencari sumber suara tersebut dan menyadari Kana sedang tertunduk malu sambil menutup mukanya."
-    "[mcname] dan Freya melihat ke arah Kana sambil tertawa kecil."
+    "[mcname!c] mencoba mencari sumber suara tersebut dan menyadari Kana sedang tertunduk malu sambil menutup mukanya."
+    "[mcname!c] dan Freya melihat ke arah Kana sambil tertawa kecil."
     hide freya
     show freya_smile at char_left
     show freya_side_smile at left
     with dissolve
-    freya "Pffttt"
+    freya "Pffttt!"
     hide freya_side_smile with dissolve
-    mcname "Aku juga pesen deh..."
+    mcname "Hahaha, yaudah aku juga pesen deh..."
     mcname "Perutku juga sudah mulai lapar nih."
     hide freya_smile
     show freya_talk at char_left
@@ -986,44 +1049,56 @@ label chapter1kana3:
     hide freya_talk
     show freya at char_left
     with dissolve
-    "[mcname] mengangkat tangan sambil berteriak memanggil Mbak kantin."
+    "[mcname!c] mengangkat tangan sambil berteriak memanggil Mbak kantin."
     hide kana_shy_closeeye
     show kana_shy at char_right
     with dissolve
-    "Dengan muka sedikit tersipu malu, Kana mencuri pandang melihat ke arah [mcname]."
+    "Dengan muka sedikit tersipu malu, Kana mencuri pandang melihat ke arah [mcname!c]."
     mcname "Mbaaak. Mau pesen..."
-    "[mcname] ngeliat menu yang tersedia di kantin..."
+    "[mcname!c] ngeliat menu yang tersedia di kantin..."
     menu:
-        "Menu Kantin"
+        "[mcname!c] ngeliat menu yang tersedia di kantin..."
         "Pesen Ayam Smack Down":
+            stop music fadeout 1.0
+            $ quick_menu = False
+            play music "BGM_Bad End.ogg" fadein 1.0
             scene black with Dissolve(2.0)
             show text "{color=#FFF}LO KEPEDESAN DAN AKHIRNYA MALAH KE WC TERUS TERUSAN DARIPADA NGOBROL SAMA MEREKA{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "Pesen Mie Ayam":
             $ quick_menu = False
             jump chapter1kana3mie
         "Pesen Lotek":
+            stop music fadeout 1.0
+            $ quick_menu = False
+            play music "BGM_Bad End.ogg" fadein 1.0
             scene black with Dissolve(2.0)
             show text "{color=#FFF}SAYURAN YANG LO MAKAN TERNYATA BASI{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}AKHIRNYA LO KERACUNAN MAKANAN.{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}AKHIRNYA LO KERACUNAN MAKANAN.{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}MBAK YANG JUALAN PUN AKHIRNYA DIMARAHIN KARENA UDAH BIKIN MAHASISWANYA KERACUNAN MAKANAN{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
 
-
 label chapter1kana3mie:
-    #$ renpy.block_rollback()
-    scene black with dissolve
-    scene kantin with dissolve
+    ##$ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    scene kantin with Dissolve(1.0)
     show freya at char_left
     show kana_shy at char_right
     with dissolve
     $ quick_menu = True
-    "[mcname] pun memilih mie ayam sebagai makanan yang ia pesan. Kana yang masih menahan malu, memesan makanan yang sama dengan [mcname]."
+    "[mcname!c] pun memilih mie ayam sebagai makanan yang ia pesan. Kana yang masih menahan malu, memesan makanan yang sama dengan [mcname!c]."
     hide freya
     show freya_shock at char_left
     show freya_side_shock at left
@@ -1065,7 +1140,9 @@ label chapter1kana3mie:
     freya "Hehe. Kamu gatau kan?"
     freya "Kalau Kana dulu tuh-"
     hide freya_side_talk with dissolve
+    stop music fadeout 1.0
     "Sebelum Freya menyelesaikan omongannya, Kana mencoba menutup mulut freya."
+    play music "BGM_Kana Pon.ogg" fadein 1.0
     hide kana_shy
     show kana_talk at char_right
     show kana_side_talk at left
@@ -1077,7 +1154,7 @@ label chapter1kana3mie:
     show freya_smug at char_left
     with dissolve
     "Kana mencoba mengalihkan pembicaraan Kana memberikan fun fact random."
-    "{size=-5}[freya_name] & [mcname]{/size}" "..."
+    "{size=-5}[freya_name] & [mcname!c]{/size}" "..."
     "Melihat fun fact yang dikatakannya tidak berhasil, akhirnya Kana mencoba untuk memberikan funfact yang lainnya..."
     "Merasa kelakuan temannya yang mulai aneh, Freya kemudian meletakkan telapak tangannya ke dahi Kana sambil tertawa jahil."
     hide freya_smug
@@ -1094,7 +1171,9 @@ label chapter1kana3mie:
     kana "Hmpph"
     kana "{size=-10}Kan gara-gara kamu juga...{/size}"
     hide kana_side_cry with dissolve
+    stop music fadeout 1.0
     "Seakan menjadi penyelamat, Mbak kantin pun datang membawakan pesanan mereka..."
+    play music "BGM_Kantin.ogg" fadein 1.0
     "Mbak Kantin" "Ini ya pesanannya."
     hide freya_shock
     hide kana_angry
@@ -1143,76 +1222,74 @@ label chapter1kana3mie:
     show freya at char_left
     with dissolve
     "Tertawa, Freya akhirnya berhenti membahas topik tersebut."
-    "Karena sudah lapar, [mcname] mulai memakan makanan yang sudah dihidangkan."
+    "Karena sudah lapar, [mcname!c] mulai memakan makanan yang sudah dihidangkan."
     hide kana_confused
     hide freya
     show kana_talk at char_right
     show freya_shock at char_left
     with dissolve
-    "Sesekali, [mcname] melihat Kana dan Freya yang saling berbincang kecil."
-    "Lalu [mcname] kembali berfokus ke sepasang sumpit yang digunakan untuk menarik helaian mie ke mulutnya."
+    "Sesekali, [mcname!c] melihat Kana dan Freya yang saling berbincang kecil."
+    "Lalu [mcname!c] kembali berfokus ke sepasang sumpit yang digunakan untuk menarik helaian mie ke mulutnya."
     hide freya_shock
     hide kana_talk
     show kana_smile at char_right
     show freya_smile at char_left
     with dissolve
-    "Ada kalanya Freya dan Kana menyertakan [mcname] dalam pembicaraan mereka."
+    "Ada kalanya Freya dan Kana menyertakan [mcname!c] dalam pembicaraan mereka."
     "Satu percakapan berlanjut ke percakapan lainnya, membuat mereka merasa menjadi lebih dekat."
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    scene kantin with dissolve
-    #$ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    pause(1.0)
+    scene kantin with Dissolve(1.0)
+    ##$ renpy.block_rollback()
     $ quick_menu = True
     "Setelah selesai makan, mereka pergi dan berpisah ke urusannya masing-masing."
-    "[mcname] pun memikirkan apa yang akan dilakukan selanjutnya."
+    "[mcname!c] pun memikirkan apa yang akan dilakukan selanjutnya."
     $ quick_menu = False
     # Menunya agak aneh, tiba2 langsung besok
     menu:
         "Yang kamu lakukan...."
         "Keliling Kampus dan melihat lihat isi kampus":
-            #$ renpy.block_rollback()
-            play music "audio/BGM_Kampus Sore.mp3" fadein 1.0
-            scene black with dissolve
-            scene depan kampus with Dissolve(2.0)
+            ##$ renpy.block_rollback()
+            scene black with Dissolve(1.0)
+            play music "audio/BGM_Sore.ogg" fadein 1.0
+            scene kampus sore with Dissolve(1.0)
             $ quick_menu = True
             mcname "{i}Aku memilih menghabiskan waktu untuk berkeliling di sekitar kampus.{/i}"
-            "Di perjalanan pertama, [mcname] melihat ada parkiran yang biasa dipakai anak-anak jurusan HI untuk memarkirkan kendaraan mereka..."
+            "Di perjalanan pertama, [mcname!c] melihat ada parkiran yang biasa dipakai anak-anak jurusan HI untuk memarkirkan kendaraan mereka..."
             "Terlihat disana banyak kendaraan yang bisa dibilang lumayan mahal."
             mcname "{i}Hmmmm luas juga parkiran buat kampus ini{/i}"
             mcname "{i}Seperti yang diharapkan dengan kampus ibu kota.{/i}"
             mcname "{i}Terasa sangat berbeda dibandingkan dengan bangunan yang ada di desa.{/i}"
-            "Entah kenapa [mcname] tiba-tiba terbayang sosok Kana di aula waktu itu."
+            "Entah kenapa [mcname!c] tiba-tiba terbayang sosok Kana di aula waktu itu."
             $ quick_menu = False
-            scene black with dissolve
             scene kana awal with Dissolve(2.0)
             $ quick_menu = True
             mcname "{i}Aduhhh sadar woi sadar.{/i}"
             $ quick_menu = False
-            scene black with dissolve
-            scene depan kampus with Dissolve(2.0)
+            scene black with Dissolve(1.0)
+            scene kampus sore with Dissolve(1.0)
             $ quick_menu = True
-            "MC pun menggeleng gelengkan kepala untuk kembali fokus pada perjalanannya mengelilingi kampus."
+            "[mcname!c] pun menggeleng gelengkan kepala untuk kembali fokus pada perjalanannya mengelilingi kampus."
             $ quick_menu = False
-            scene black with dissolve
+            scene black with Dissolve(1.0)
             # Harusnya BG Sawah
-            scene sawah with Dissolve(2.0)
+            scene sawah sore with Dissolve(1.0)
             $ quick_menu = True
             mcname "{i}Setelah itu aku melihat sawah yang digunakan oleh mahasiswa/i jurusan lain Jeketi University.{/i}"
             mcname "{i}Sawah ya…{/i}"
             mcname "{i}Gak nyangka bakal ngeliat sesuatu yang familiar di kampus ini...{/i}"
-            mcname "{i}Tapi mungkin buat jurusan yang ku ambil gak bakal banyak kesini.{/i}"
+            mcname "{i}Tapi mungkin buat jurusan yang ku ambil gak bakal banyak ke sini.{/i}"
             mcname "{i}...{/i}"
             $ quick_menu = False
-            scene black with dissolve
-            # Harusnya BG Rooftop
-            scene rooftop with Dissolve(2.0)
+            scene black with Dissolve(1.0)
+            scene rooftop sore with Dissolve(1.0)
             $ quick_menu = True
-            mcname "{i}Lalu yang terakhir aku pun mencoba menaiki rooftop untuk melihat keseluruhan kampus dari atas.{/i}"
+            mcname "{i}Hooooo, jadi ini rooftopnya.{/i}"
             mcname "{i}Wah dilihat dari atas ternyata memang keren sih ini kampus.{/i}"
-            "Dari sana bisa terlihat seluruh pemandangan di kampus."
-            "Terlihat beberapa orang melaksanakan beberapa aktifitas kampus, bahkan ada juga yang sepertinya sudah siap-siap untuk pulang"
-            # SFX Peregangan
-            mcname "mgghhhh"
+            "Dari rooftop terlihat seluruh pemandangan di kampus."
+            "Terlihat beberapa orang melaksanakan beberapa aktifitas kampus, bahkan ada juga yang sepertinya sudah siap-siap untuk pulang."
+            mcname "Mgghhhh\n*Peregangan*"
             mcname "{i}Mungkin udah dulu kali ya buat hari ini...{/i}"
             mcname "{i}Abis ini pulang ke kos aja deh.{/i}"
             $ quick_menu = False
@@ -1220,58 +1297,70 @@ label chapter1kana3mie:
             jump chapter1kana3kos
         # Opsi ini beda sama di skrip + toba2 langsung besok
         "Menyelidiki tempat-tempat yang membuatmu penasaran":
-            #$ renpy.block_rollback()
+            ##$ renpy.block_rollback()
             mcname "{i}Duhh masih lama lah.{/i}"
             mcname "{i}Tidur lagi enak kali ya.{/i}"
             mcname "{i}Lagian mereka juga pasti datangnya telat kan.{/i}"
             mcname "{i}Di Indonesia gitu si ga ada yang tepat waktu~{/i}"
-            "[mcname] pun memilih untuk tidur lebih lama dikarenakan waktu perjanjian masih ada beberapa jam lagi akan tetapi dia lupa melihat batre hp nya."
-            "Akhirnya tertidur lelap hingga melebihi waktu yang dijanjikan dan saat ia menyalakan hp nya ia pun dimarahi oleh Kana dan Freya..."
+            "[mcname!c] pun memilih untuk tidur lebih lama dikarenakan waktu perjanjian masih ada beberapa jam lagi akan tetapi dia lupa melihat batre hp nya."
+            "Akhirnya tertidur lelap hingga melewatkan kerja kelompok."
+            "Saat ia menyalakan HPnya, ia pun dimarahi oleh Kana dan Freya..."
             scene black with dissolve
             show text "{color=#FFF}EH KALAU UDAH JANJIAN TUH DITEPATI{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
-            scene mc bedroom with Dissolve(2.0)
             jump credits
         # Opsi ini beda sama di skrip, seharusnya ke kos
         "Langsung berangkat lebih awal supaya ga ketinggalan":
-            #$ renpy.block_rollback()
-            "[mcname] memilih untuk berangkat lebih awal dan beberapa jam dari yang telah dijanjikan tapi dia lupa kalau dirinya belum mandi dan makan."
-            "setelah sampai di tempat dijanjikan dia jatuh pingsan karena hawa panas yang terpancarkan."
+            ##$ renpy.block_rollback()
+            stop music fadeout 1.0
+            $ quick_menu = False
+            play music "BGM_Bad End.ogg" fadein 1.0
+            "[mcname!c] memilih untuk berangkat lebih awal dari waktu kerja kelompok yang telah ditetapkan, tapi dia lupa kalau dirinya belum mandi dan makan."
+            "[mcname!c] juga lupa bahwa kerja kelompoknya besok, bukan hari ini."
             scene black with dissolve
             show text "{color=#FFF}EH KALAU MAU KEGIATAN TUH MINIMAL MANDI DAN MAKAN{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}JANGAN LANGSUNG BERANGKAT{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}SEKARANG LO MALAH DI MARAHIN SAMA ANGGOTA KELOMPOK LO KAN{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}AKHIRNYA MALAH PINGSAN KAN{/color}" with Pause(2.0)
+            scene black with dissolve
+            show text "{color=#FFF}BERANGKAT LEBIH AWAL JUGA BAGUS, TAPI GAK SAMPE SEHARI SEBELUM JUGA KALI{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}HADEEEUHHH DASAR{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             stop music fadeout 1.0
-            #play music "audio/Dreamcatcher_v2.mp3" #fadein 1.0
-            #scene mc bedroom with Dissolve(2.0)
-            #jump credits
+            scene black with dissolve
+            play music "audio/Dreamcatcher_v2.mp3" #fadein 1.0
+            jump credits
                 
 label chapter1kana3kos:
-    #$ renpy.block_rollback()
-    scene black with dissolve
-    show text "KEESOKAN HARINYA..." with Pause(2.0)
-    #scene mc bedroom with dissolve
-    scene kamar mc kota with dissolve
-    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
+    ##$ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(1.0)
     $ quick_menu = True
     mcname "Hmmm, keknya mending aku bangun terus siap-siap deh biar ga telat."
     mcname "Ga enak juga kalau pertama kali malah telat terus bikin mereka ga enak kan."
-    "[mcname] pun bersiap siap untuk berangkat kerja kelompok."
+    "[mcname!c] pun bersiap siap untuk berangkat kerja kelompok."
     "Ia menghabiskan kebanyakan waktunya saat mandi agar merasa lebih segar dan tidak mengantuk."
     "Setelah itu dia pun berangkat menuju tempat yang pada awalnya sudah ditentukan."
-    "Setelah [mcname] sampai di tempat perjanjian..."
-    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
     scene depan kampus with Dissolve(2.0)
-    play music "audio/BGM_Kampus.mp3" fadein 1.0
     $ quick_menu = True
+    "Setelah [mcname!c] sampai di tempat janjian..."
     mcname "{i}Tenang-tenang...{/i}"
     mcname "{i}Gak usah gugup.{/i}"
     mcname "{i}Santai aja.{/i}"
@@ -1310,12 +1399,12 @@ label chapter1kana3kos:
     show kana_smile at kana_near
     with dissolve
     mcname "{i}Setelah diperhatikan lebih detail memang Kana saat ini terlihat lebih natural dan lebih cantik dari biasanya...{/i}"
-    "Makeup Kana yang terlihat sedikit berbeda dari saat ia ke kampus membuat [mcname] terdiam sebentar."
+    "Makeup Kana yang terlihat sedikit berbeda dari saat ia ke kampus membuat [mcname!c] terdiam sebentar."
     hide kana_smile
     show freya_smug at char_left
     show kana_confused_blush_sideeye at char_right
     with dissolve
-    "Menyadari [mcname] memperhatikannya, Kana jadi terdiam seakan panik mendatang, dan tidak dapat menjawab pertanyaan Freya."
+    "Menyadari [mcname!c] memperhatikannya, Kana jadi terdiam seakan panik mendatang, dan tidak dapat menjawab pertanyaan Freya."
     "Kana hanya bisa melihat ke arah Freya."
     hide kana_confused_blush_sideeye
     show kana_angry at char_right
@@ -1329,15 +1418,15 @@ label chapter1kana3kos:
     hide kana_angry
     show kana_shy at char_right
     with dissolve
-    "Tak lama Kana pun melihat [mcname] seakan meminta bantuan darinya."
-    "[mcname] hanya bisa tertawa canggung..."
+    "Tak lama Kana pun melihat [mcname!c] seakan meminta bantuan darinya."
+    "[mcname!c] hanya bisa tertawa canggung..."
     mcname "Eh..uuuu, hmmm"
     mcname "Hehe"
     mcname "I-iya mungkin iya tapi kamu yang sekarang kayaknya lebih cantik deh dari biasanya natural aja gitu heh."
     hide kana_shy
     show kana_shy_closeeye at char_right
     with dissolve
-    "Wajah kana pun memerah dengan cepat menandakan bahwa ia malu mendengar kata itu dari [mcname]."
+    "Wajah kana pun memerah dengan cepat menandakan bahwa ia malu mendengar kata itu dari [mcname!c]."
     "Saat itu juga Freya pun tertawa dan membuat suasana lebih hidup."
     hide freya_smug
     show freya_shock at char_left
@@ -1404,7 +1493,7 @@ label chapter1kana3kos:
     freya "Nanti kita suruh aja buat ngerjain bagian yang lain."
     hide freya_side_shock with dissolve
     mcname "Eh bentar ada chat nih dari [mahasiswa_c_name]."
-    "[mcname] kemudian membuka HP nya"
+    "[mcname!c] kemudian membuka HP nya"
     mcname "Yahh ternyata dia tiba-tiba ada panggilan kerjaan tuh."
     mcname "Dia minta maaf ga bisa datang dan ngerjain bagian lain aja tuh katanya gimana?"
     hide kana_confused
@@ -1416,9 +1505,9 @@ label chapter1kana3kos:
     kana "Panas banget soalnya."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene monas temporary with Dissolve(2.0)
-    play music "audio/BGM_Monas.mp3" loop fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Monas.ogg" loop fadein 1.0
+    scene monas temporary with Dissolve(1.0)
     $ quick_menu = True
     "Mereka pun memutuskan untuk meninggalkan [mahasiswa_c_name] dan mulai mengerjakan tugas kelompok yang diberikan."
     "Mereka pun mulai berjalan-jalan dan mewawancarai sekitar."
@@ -1427,16 +1516,16 @@ label chapter1kana3kos:
     jump puzzle_start
 
 label chapter1kana3monas:
-    scene black with dissolve
-    scene monas temporary with Dissolve(2.0)
-    play music "audio/BGM_Monas.mp3" loop fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Monas.ogg" loop fadein 1.0
+    scene monas temporary with Dissolve(1.0)
     $ quick_menu = True
     show freya_shock at char_left
     show kana_confused at char_right
     with dissolve
     "Setelah itu, mereka memutuskan untuk berhenti sejenak di sekitar monas dikarenakan panas yang tidak tertahankan."
     show freya_side_shock at left with dissolve
-    freya "Aduhh panas banget ya Nay, [mcname]."
+    freya "Aduhh panas banget ya Nay, [mcname!c]."
     freya "Jujur ini mungkin hari terpanas dalam minggu ini."
     hide freya_side_shock with dissolve
     show kana_side_confused at left with dissolve
@@ -1453,48 +1542,63 @@ label chapter1kana3monas:
     menu:
         "Kamu beliin mereka..."
         "Minuman berenergi":
-            "[mcname] membelikan Minuman berenergi untuk Kana dan Freya."
+            stop music fadeout 1.0
+            $ quick_menu = False
+            play music "BGM_Bad End.ogg" fadein 1.0
+            "[mcname!c] membelikan Minuman berenergi untuk Kana dan Freya."
             "Karena minuman ini lah yang ia minum saat di desa saat merasa kecapean agar berenergi lagi."
             hide freya
             hide kana
             show freya_shock at char_left
             show kana_confused at char_right
             with dissolve
-            "Akan tetapi Kana dan Freya melihat [mcname] dengan tatapan aneh saat tau itu ternyata minuman berenergi."
-            stop music fadeout 1.0
+            "Akan tetapi Kana dan Freya melihat [mcname!c] dengan tatapan aneh saat tau itu ternyata minuman berenergi."
             scene black with dissolve
             show text "{color=#FFF}BRO YANG BENER AJA{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}DI KIRA MEREKA ABIS OLAHRAGA ATAU NUKANG KALI YA DI KASIH GINIAN{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}AKHIRNYA MEREKA GA MAU NGOBROL KAN SAMA LO LAGI{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             scene dream with dissolve
             jump credits
         "Es Teh":
             jump chapter1kana3monasesteh
         "Jamu":
-            "[mcname] membelikan jamu untuk Kana dan Freya, karena teringat dengan mama di desa dimana saat mama merasa capek selalu minta untuk di belikan jamu agar lebih segar."
+            stop music fadeout 1.0
+            $ quick_menu = False
+            play music "BGM_Bad End.ogg" fadein 1.0
+            "[mcname!c] membelikan jamu untuk Kana dan Freya, karena teringat dengan mama di desa dimana saat mama merasa capek selalu minta untuk di belikan jamu agar lebih segar."
             hide freya
             hide kana
             show freya_shock at char_left
             show kana_confused at char_right
             with dissolve
             "Tetapi Kana dan Freya sangat lah asing dengan jamu dan saat itu juga mereka malah pucat dan muntah."
+            scene black with dissolve
             show text "{color=#FFF}EH DIKIRA UDAH TUA KALI YA DI KASIH JAMU{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}LAGIAN GA SEMUA BISA MINUM JAMU BROO{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}MIKIR{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
-            scene dream with dissolve
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
 
 label chapter1kana3monasesteh:
-    #$ renpy.block_rollback()
+    ##$ renpy.block_rollback()
     $ quick_menu = False
-    scene black with dissolve
-    scene monas temporary with Dissolve(2.0)
+    scene black with Dissolve(1.0)
+    scene monas temporary with Dissolve(1.0)
     $ quick_menu = True
-    "[mcname] melihat ada sebuah stand minuman es teh yang cukup ramai."
+    "[mcname!c] melihat ada sebuah stand minuman es teh yang cukup ramai."
     "Ia pun memilih untuk membelikan mereka minuman itu."
     hide freya
     hide kana
@@ -1507,7 +1611,7 @@ label chapter1kana3monasesteh:
     show kana_side_talk at left
     with dissolve
     kana "Wahhhh cocok banget nih."
-    kana "Makasih banyak ya [mcname]!"
+    kana "Makasih banyak ya [mcname!c]!"
     kana "Ini berapa? nanti aku ganti ya."
     hide kana_side_talk with dissolve
     hide freya_smile
@@ -1558,11 +1662,15 @@ label chapter1kana3monasesteh:
     show kana_talk at char_right
     show freya_shock at char_left
     with dissolve
-    "Mereka tertawa bersama dan kembali mengobrol satu sama lain hingga waktu pun menunjukkan sudah sore."
+    "Mereka tertawa bersama dan kembali mengobrol satu sama lain hingga waktu."
     $ quick_menu = False
-    scene black with dissolve
-    # BG Monas
-    scene monas temporary with dissolve
+    scene black with Dissolve(1.0)
+    pause(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa jam kemudian..."
+    $ quick_menu = False
+    scene monas temporary with Dissolve(2.0)
     show freya at char_left with dissolve
     show kana at char_right with dissolve
     $ quick_menu = True
@@ -1585,7 +1693,7 @@ label chapter1kana3monasesteh:
     show kana_side_talk at left
     with dissolve
     kana "Aku sih udah oke aja."
-    kana "Maklumin Freya ya, [mcname]."
+    kana "Maklumin Freya ya, [mcname!c]."
     hide kana_side_talk
     hide kana_talk
     show kana at char_right
@@ -1634,8 +1742,14 @@ label chapter1kana3monasesteh:
     hide kana
     hide freya_talk
     with dissolve
-    "Setelah itu [mcname], Kana dan Freya pun pulang ke rumahnya masing-masing."
-    "Di perjalanan [mcname] mengenang kembali harinya yang telah ia habiskan bersama Kana dan Freya."
+    "Setelah itu [mcname!c], Kana, dan Freya pun pulang ke rumahnya masing-masing."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "BGM_Sore.ogg" fadein 1.0
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Di perjalanan [mcname!c] mengenang kembali harinya yang telah ia habiskan bersama Kana dan Freya."
     mcname "..."
     mcname "{i}Wahh, hari ini cape juga ya...{/i}"
     mcname "{i}Tapi beruntung aku ga telat dan ikut kerja kelompok.{/i}"
@@ -1643,33 +1757,39 @@ label chapter1kana3monasesteh:
     mcname "{i}Awalnya aku kira bakalan kaya judes gitu hahaha.{/i}"
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    #scene mc bedroom with Dissolve(2.0)
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Di kost..."
+    $ quick_menu = False
     scene kamar mc kota with Dissolve(2.0)
-    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
     $ quick_menu = True
     "Meskipun merasa kecapean..."
-    "[mcname] tetap bisa mengingat kembali apa yang terjadi pada hari ini."
-    "Sesaat sampai di kosannya, [mcname] hanya bisa rebahan di kasur dan melihat foto yang Freya kirimkan saat kerja kelompoknya."
-    "Ada satu foto yang membuatnya tersenyum kembali, yaitu foto Kana yang tidak sengaja diambil oleh [mcname] saat kerja kelompok."
-    mcname "Apakah ini yang dinamakan..."
-    "[mcname] pun tertidur dan ia memimpikan foto Kana yang tersenyum itu..."
+    "[mcname!c] tetap bisa mengingat kembali apa yang terjadi pada hari ini."
+    "Sesaat sampai di kosannya, [mcname!c] hanya bisa rebahan di kasur dan melihat foto yang Freya kirimkan saat kerja kelompoknya."
+    "Ada satu foto yang membuatnya tersenyum kembali, yaitu foto Kana yang tidak sengaja diambil oleh [mcname!c] saat kerja kelompok."
+    mcname "{i}Apakah ini yang dinamakan...{/i}"
+    mcname "Ah, apaan sih. Tidur aja dah."
+    "[mcname!c] pun tertidur dan ia memimpikan foto Kana yang tersenyum itu..."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    # Entah kenapa gak muncul teksnya
-    show text "KEESOKAN HARINYA..." with Pause(2.0)
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume(1.5)
+    scene awan with Dissovle(1.0)
+    $ quick_menu = True  
+    "Keesokan harinya..."
+    $ quick_menu = False
     scene kelas with Dissolve(2.0)
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
     $ quick_menu = True
-    "Setelah sampai di kelas, [mcname] menghampiri [mahasiswa_c_name] untuk menjelaskan bagian mana yang harus ia kerjakan."
+    "Setelah sampai di kelas, [mcname!c] menghampiri [mahasiswa_c_name] untuk menjelaskan bagian mana yang harus ia kerjakan."
     show galaxy at galaxy_center with dissolve
     mcname "Eh, [mahasiswa_c_name] kemarin ga datang ya?"
     hide galaxy
     show galaxy_talk at galaxy_center
     show galaxy_side at left
     with dissolve
-    galaxy "Eh iya [mcname], maaf ya soalnya tiba-tiba kakakku sakit terus ke RS, aku disuruh nemenin."
+    galaxy "Eh iya [mcname!c], maaf ya soalnya tiba-tiba kakakku sakit terus ke RS, aku disuruh nemenin."
     hide galaxy_side with dissolve
     "Saat mereka berdua mengobrol satu sama lain, datang Freya dan Kana dari arah pintu dan menyapa mereka."
     show freya at char_left
@@ -1683,7 +1803,7 @@ label chapter1kana3monasesteh:
     show kana_talk at char_right
     show kana_side_talk at left
     with dissolve
-    kana "Halo [mcname], halo [mahasiswa_c_name]."
+    kana "Halo [mcname!c], halo [mahasiswa_c_name]."
     hide kana_side_talk
     hide kana_talk
     show kana at char_right
@@ -1701,7 +1821,7 @@ label chapter1kana3monasesteh:
     show galaxy_talk at galaxy_center
     show galaxy_side at left
     with dissolve
-    galaxy "Yooo Kalian, ini cuma lagi ada yang mau dibahas sama [mcname]..."
+    galaxy "Yooo Kalian, ini cuma lagi ada yang mau dibahas sama [mcname!c]..."
     hide galaxy_side
     hide galax_talk
     show galaxy at galaxy_center
@@ -1755,8 +1875,8 @@ label chapter1kana3monasesteh:
     hide galaxy_side
     hide galaxy_talk
     show galaxy at galaxy_center
-    "[mcname] pun menjelaskan apa yang harus dilakukan [mahasiswa_c_name] kedepannya untuk mengerjakan tugas kelompoknya."
-    "[mahasiswa_c_name] pun setuju dan mengerti apa yang harus ia lakukan."
+    "[mcname!c] pun menjelaskan apa yang harus dilakukan [mahasiswa_c_name] ke depannya untuk mengerjakan tugas kelompoknya."
+    "Setelah dijelaskan, [mahasiswa_c_name] pun setuju dan memahami tentang apa yang harus dilakukan."
     hide galaxy
     show galaxy_talk at galaxy_center
     show galaxy_side at left
@@ -1818,7 +1938,7 @@ label chapter1kana3monasesteh:
     with dissolve
     hide kana_smile
     show kana_talk at char_right
-    kana "Oh iya [mcname], bagaimana liburanmu kemarin?"
+    kana "Oh iya [mcname!c], bagaimana liburanmu kemarin?"
     hide kana_side_talk
     hide kana_talk
     show kana at char_right
@@ -1882,13 +2002,13 @@ label chapter1kana3monasesteh:
     show kana_side_talk at left
     with dissolve
     kana "Haha, oke deh Frey aku percaya kok sama kamu."
-    kana "By the way [mcname] kemarin nyasar ga nih pas pulang sendirian? Soalnya dulu aku pas pulang sendirian pernah nyasar."
+    kana "By the way [mcname!c] kemarin nyasar ga nih pas pulang sendirian? Soalnya dulu aku pas pulang sendirian pernah nyasar."
     kana "Itulah kenapa sekarang pake supir."
     hide kana_side_talk
     hide kana_talk
     show kana at char_right
     with dissolve
-    "[mcname] menjawab dengan semangat..."
+    "[mcname!c] menjawab dengan semangat."
     mcname "IYA!"
     mcname "Aku kemarin hampir aja dibuat nyasar sama maps..."
     hide freya_annoy
@@ -1911,18 +2031,32 @@ label chapter1kana3monasesteh:
     with dissolve
     mcname "Iya kah?"
     mcname "Jadi pengen liat kamu mau nangis itu hahah."
-    "Dosen pun memasuki ruangan dan kelas pun dimulai."
-    "Hari dipenuhi dengan kelas dan [mcname] pun memilih untuk pergi ke kos untuk istirahat. (???? maksudnya? banyak kelas tapi malah istirahat di kos?)"
+    "Tak lama kemudian, Dosen memasuki ruangan dan kelas pun dimulai."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    # Berganti hari, ditambah teks
-    scene kelas with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    scene black with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
     $ quick_menu = True
-    "Waktu yang diberikan untuk mengerjakan tugas pun telah berakhir, dan hari dimana presentasi dilakukan pun tiba."
-    "[mcname], Kana, Freya dan [mahasiswa_c_name] pun melakukan presentasinya di depan."
-    "Presentasi dilakukan secara lancar dan saat kelas akan selesai, dosen pun memberitahukan beberapa kelompok yang memiliki nilai tinggi."
-    "Diantara kelompok itu, kelompok [mcname], Kana, Freya dan [mahasiswa_c_name] mendapatkan salah satu dengan nilai tertinggi."
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene kelas with Dissolve(2.0)
+    ##$ renpy.block_rollback()
+    $ quick_menu = True
+    "Waktu yang diberikan untuk mengerjakan tugas pun telah berakhir, dan hari di mana presentasi dilakukan pun tiba."
+    "[mcname!c], Kana, Freya, dan [mahasiswa_c_name] pun melakukan presentasinya di depan."
+    "Presentasi dilakukan secara lancar."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "BGM_Sore.ogg" fadein 1.0
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Saat kelas akan selesai..."
+    $ quick_menu = False
+    scene kelas sore with Dissolve(2.0)
+    $ quick_menu = True
+    "Dosen pun memberitahukan beberapa kelompok yang memiliki nilai tinggi."
+    "Diantara kelompok itu, kelompok [mcname!c], Kana, Freya, dan [mahasiswa_c_name] merupakan salah satu kelompok dengan nilai tertinggi."
     show kana at char_right
     show freya at char_left
     show galaxy at galaxy_center
@@ -1986,12 +2120,12 @@ label chapter1kana3monasesteh:
     hide freya_angrysmile
     show freya_shock at char_left
     with dissolve
-    "[mcname], Kana, Freya dan [mahasiswa_c_name] pun senang saling tertawa satu sama lain dan mengucapkan terima kasih kepada satu sama lain."
+    "[mcname!c], Kana, Freya, dan [mahasiswa_c_name] pun tertawa bersama dan mengucapkan terima kasih kepada satu sama lain."
     hide galaxy
     hide freya_shock
     hide kana_smile
     show kana_smile at kana_near
     with dissolve
-    "Di situ [mcname] melihat senyum Kana yang lebar terlihat begitu bahagia dan membuat hatinya pun berdetak kencang."
+    "Di situ [mcname!c] melihat senyum Kana yang lebar terlihat begitu bahagia dan membuat hatinya pun berdetak kencang."
     $ quick_menu = False
     jump chapter2kanastart

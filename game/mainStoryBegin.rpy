@@ -225,13 +225,6 @@ label awalkosan:
         $ quick_menu = True
         "Malam pun semakin larut."
         "[mcname!c] pun memejamkan matanya dengan pikiran penuh harapan akan esok hari."
-        stop music fadeout 1.0
-        $ quick_menu = False
-        scene black with Dissolve(1.0)
-        play music "BGM_Kampus.ogg" fadein 1.0 volume (1.5)
-        scene awan with Dissolve(1.0)
-        $ quick_menu = True
-        "Keesokan harinya.."
         if route == "kana":
             jump chapter1kana1
         elif route == "tana":

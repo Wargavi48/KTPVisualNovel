@@ -340,6 +340,8 @@ Rin
 \n
 FREEPIK
 \n
+MrSiraphol on Freepik
+\n
 {size=+10}Sound Effect{/size}
 \n
 PIXABAY

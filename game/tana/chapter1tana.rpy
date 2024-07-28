@@ -2,11 +2,21 @@ define tana_route = ""
 
 
 label chapter1tana:
-    "Walaupun ini sudah pertengahan tahun, namun Matahari secara terik menerangi Jakarta.Dan saat melihat ke atas langit, hanya langit biru lah yang terlihat. [mcname] mendatangi gedung kampus untuk melakukan daftar ulang."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene chapter 1 tana with Dissolve (1.0)
+    pause(3.0)
+    scene black with Dissolve (1.0)
+    play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Walaupun ini sudah pertengahan tahun, namun Matahari secara terik menerangi Jakarta. Saat melihat ke atas langit, hanya langit biru lah yang terlihat."
     $ quick_menu = False
     scene depan kampus with Dissolve(2.0)
     # #$ renpy.block_rollback()
     $ quick_menu = True
+    "[mcname] mendatangi gedung kampus untuk melakukan daftar ulang."
     mcname "Akhirnya sampe juga di kampus, gede banget ya, gedungnya juga tinggi-tinggi"
     "Pada saat ke kampus, [mcname] melihat seorang gadis sedang dikerumunin 2 cowok. Terlihat agak gelisah."
     stop music fadeout 1.0
@@ -2417,8 +2427,4 @@ label chapter1tanamakan:
     hide tana at tana_near with dissolve
     "Ah, kok malah jadi mikirin Tana."
     "Mending turu."
-    $ quick_menu = False
-    stop music fadeout 1.0
-    scene black with Dissolve(1.0)
-    show text "{color=#FFF}CHAPTER II{/color}" with Pause(2.0)
     jump chapter2tana

@@ -1,8 +1,13 @@
 label chapter2tana:
-    # #$ renpy.block_rollback()
-    play music "BGM_Pagi Siang.ogg" fadein 1.0
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene chapter 2 tana with Dissolve (1.0)
+    pause(3.0)
+    scene black with Dissolve (1.0)
+    play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
-    $ quick_menu=True
+    $ quick_menu = True
     "Keesokan paginya, Tana berangkat menuju kampus seperti biasanya."
     $ quick_menu=False
     scene black with Dissolve(1.0)
