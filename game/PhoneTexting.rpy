@@ -105,6 +105,16 @@ screen nvl_phonetext(dialogue):
                         $ message_icon = "mama_pp.png"
                     elif d.who == "Papa":
                         $ message_icon = "papa_pp_sketch.png"
+                    elif d.who == "Pia":
+                        $ message_icon = "PP Pia.png"
+                    elif d.who == "Kana":
+                        $ message_icon = "PP Kana.png"
+                    elif d.who == "Freya":
+                        $ message_icon = "PP Freya.png"
+                    elif d.who == "Fiony":
+                        $ message_icon = "PP Fiony.png"
+                    elif d.who == "Galaxy":
+                        $ message_icon = "PP Galaxy.png"
                     else:
                         $ message_icon = "phone_received_icon.png"
 
