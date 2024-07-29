@@ -123,6 +123,7 @@ label truekanachat:
     "Tanpa sengaja Kana menekan tombol voice call dan [mcname!c] pun tanpa pikir panjang menekan tombol jawab."
     #*SKIP TO SCENE*
     #*BG HP VOICE CALL*
+    show telpon_mamah at ui_handphone with dissolve
     show kana_side_cry at left with dissolve
     kana "Ehh maaf kepencet!!! Aduh malu banget, aku matiin aja ya."
     hide kana_side_cry with dissolve
@@ -146,6 +147,7 @@ label truekanachat:
     "[mcname!c]" "{i}Heeee... Kana ketiduran ya?{/i}"
     "Suara nafas Kana sempat beberapa kali terdengar."
     "Setelah beberapa saat, [mcname!c] pun memilih untuk mengakhiri voice call itu dan tidur agar tidak telat besok."
+    hide telpon_mamah with dissolve
     #Tutup telpon
     play sound "audio/SFX - End Call.mp3"
     $ quick_menu = False
@@ -932,6 +934,7 @@ label truekanajapanfest:
     "Tiba-tiba terdengar bunyi dari HP yang menunjukkan bahwa HP perlu dicharge, akan tetapi ternyata ada notifikasi lain dari Kana dan Freya yang mencoba menghubungi [mcname!c] berkali-kali."
     #*BG HP LAGI TELEPON*
     play sound "audio/SFX - Calling.mp3"
+    show telpon_mamah at ui_handphone with dissolve
     show freya_side_shock at left with dissolve
     freya "Nahhh kan kalau gini enak, ga usah ngehubungin satu-satu."
     hide freya_side_shock with dissolve
@@ -986,6 +989,7 @@ label truekanajapanfest:
     hide kana_side_talk with dissolve
     "[mcname!c]" "Oke, good night."
     #*BG HP LAGI TELEPON SELESAI*
+    hide telpon_mamah with dissolve
     play sound "audio/SFX - End Call.mp3"
     "[mcname!c]" "Hmmmmmm."
     "[mcname!c]" "{i}Oke nanti aku harus liat-liat sekalian milih hadiah apa yang kayaknya cocok buat Naya di mall.{/i}"
