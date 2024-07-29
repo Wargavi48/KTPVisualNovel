@@ -182,7 +182,7 @@ label kanachapter2titippanitia:
     with dissolve
     "[mcname!c]" "Ah enggak, jadi kemarin ada event jejepangan di mall pas aku lagi jalan-jalan."
     "[mcname!c]" "Di sana gak sengaja tuh aku ketabrak sama orang."
-    hide kana with dissolve
+    hide kana
     show freya at char_left
     show kana at char_right
     with dissolve
@@ -191,23 +191,27 @@ label kanachapter2titippanitia:
     show freya_side_shock at left
     with dissolve
     freya "Ehhh kamunya gapapa tuh?"
+    #gak_nutup
     hide freya_side_shock with dissolve
     hide kana
     show kana_confused at char_right
     show kana_side_confused at left
     with dissolve
     kana "Ah iya, kamunya gapapa?"
+    #gak_nutup
     hide kana_side_confused at left with dissolve
     "[mcname!c]" "Gapapa kok."
     "[mcname!c]" "Nah, orang itu gak sengaja jatuhin barang yang dia bawa. Merch limited dari Utaite yang terkenal itu, loh."
     hide kana_confused
     show kana_shy at char_right
     with dissolve
+    pause(1.0)
     hide freya_shock
     show freya_awe at char_left
     show freya_side_awe at left
     with dissolve
     freya "Ehhh, merchnya Utaite yang terkenal itu..."
+    #gak_nutup
     hide freya_side_awe with dissolve
     "Freya berkata sambil melirik Kana."
     "[mcname!c]" "Aku ga paham sama orang-orang yang suka begituan."
@@ -218,6 +222,7 @@ label kanachapter2titippanitia:
     with dissolve
     kana "Ahahah\n*Tertawa karir*"
     kana "Emang aneh ya, haha."
+    #gak_nutup
     hide kana_side_drylaugh with dissolve
     "Tidak lama kemudian..."
     stop music fadeout 1.0
@@ -228,12 +233,14 @@ label kanachapter2titippanitia:
     $ quick_menu=True
     "Dosen pun masuk ke dalam kelas dan waktu mata kuliah pun dimulai."
     show dosen at dosen_center with dissolve
+    pause(1.0)
     hide dosen
     show dosen_talk at dosen_center
-    show dosen_side at left
+    show dosen_side_talk at left
     with dissolve
     dosen "Teman-teman, mari kita mulai perkuliahan hari ini."
-    hide dosen_side with dissolve
+    #gak_nutup
+    hide dosen_side_talk with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -248,6 +255,7 @@ label kanachapter2titippanitia:
     show kana at char_right
     show freya at char_left
     with dissolve
+    pause(1.0)
     hide kana
     show kana_talk at char_right
     show kana_side_talk at left
@@ -263,6 +271,7 @@ label kanachapter2titippanitia:
     show freya_side_talk at left
     with dissolve
     freya "Hmmm. Gimana kalo bawa makanan dari kantin ke rooftop? Denger-denger tempatnya enak."
+    #gak_nutup
     hide freya_side_talk with dissolve
     hide kana
     show kana_talk at char_right
@@ -279,13 +288,14 @@ label kanachapter2titippanitia:
     show kana_smile at char_right
     show freya_smile at char_left
     with dissolve
+    pause(1.0)
     hide kana_smile
     show kana_talk at char_right
     show kana_side_talk at left
     with dissolve
     kana "Okee. Aku sama Freya nunggu di rooftop, ya."
-    hide kana_side_talk at left
-    with dissolve
+    #gak_nutup
+    hide kana_side_talk at left with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
     pause(1.0)
@@ -331,6 +341,7 @@ label kanachapter2titippanitia:
     hide kana
     show kana_smile at kana_near
     with dissolve
+    pause(1.0)
     hide kana_smile
     show kana_talk at kana_near
     show kana_side_talk at left
@@ -369,43 +380,45 @@ label kanachapter2titippanitia:
     show kana_side_confused at left
     with dissolve
     kana "Kamu kabarnya gimana?"
+    #gak_nutup
     hide kana_side_confused at left with dissolve
     "Sebelum [mcname!c] sempat berbicara, Kana tiba-tiba memberikan pertanyaan."
     "[mcname!c]" "E-eeh?"
     hide kana_confused
     show kana_confused_blush_sideeye at kana_near
-    show kana_side_confused at left
+    show kana_side_cry at left
     with dissolve
     kana "Kamu udah makan, belum?"
-    hide kana_side_confused
+    hide kana_side_cry
     hide kana_confused_blush_sideeye
+    #gak_nutup
     show kana_confused_blush at kana_near
     with dissolve
     "[mcname!c]" "?????"
     "[mcname!c]" "Kan kita lagi makan, Kana..."
     hide kana_confused_blush
     show kana_shy_talk at kana_near
-    show kana_side_shy_smile at left
+    show kana_side_cry at left
     with dissolve
     kana "Ah i-iya yah. Hahaha ngomong apa sih aku."
-    hide kana_side_shy_smile
+    hide kana_side_cry
     hide kana_shy_talk
     show kana_shy_closeeye at kana_near
     with dissolve
     "Setelah Kana mengatakan hal tersebut, suasananya kembali menjadi hening."
     hide kana_shy_closeeye
     show kana_shy_talk at kana_near
-    show kana_side_shy_smile at left
+    show kana_side_cry at left
     with dissolve
     kana "Biasanya ada Freya ya, yang ngomong mulu."
-    hide kana_side_shy_smile
-    with dissolve
+    #gak_nutup
+    hide kana_side_cry with dissolve
     "[mcname!c]" "Haha, iya yah."
     hide kana_shy_talk
     show kana_drylaugh at kana_near
     show kana_side_drylaugh at left
     with dissolve
-    kana "Haha."
+    #gak_nutup
     hide kana_side_drylaugh at left with dissolve
     "[mcname!c]" "Haha."
     hide kana_drylaugh
@@ -432,16 +445,18 @@ label kanachapter2titippanitia:
     scene black with Dissolve(1.0)
     scene awan sore with Dissolve(1.0)
     show kana at kana_near with dissolve
+    pause(1.0)
     hide kana
     show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
     $ quick_menu = True
     kana "Dulu…"
+    #gak_nutup
     hide kana_side_talk at left with dissolve
     "Kana menatap ke atas langit seakan mengingat masa lalu."
     hide kana_talk with dissolve
-#CG Chibi Kana Freya
+    #CG Chibi Kana Freya
     show kana_side_talk at left with dissolve
     kana "Dulu badanku lemah dan sering sakit, jadinya jarang keluar rumah."
     kana "Waktu yang lain pada main di luar, aku cuma bisa liat mereka dari jendela kamarku."
@@ -449,7 +464,7 @@ label kanachapter2titippanitia:
     kana "Padahal bisa aja dia main sama anak-anak yang lain, tapi dia malah nemenin aku."
     kana "Jadinya sampe sekarang bareng terus deh aku sama Freya, haha."
     hide kana_side_talk with dissolve
-#Hide CG
+    #Hide CG
     show kana_smile at kana_near with dissolve
     "Saat mengatakan hal tersebut, Kanaia tersenyum mengingat teman berharganya."
     "[mcname!c]" "Heee gitu ya ternyata…"
@@ -460,6 +475,7 @@ label kanachapter2titippanitia:
     show freya at char_left
     show kana at char_right
     with dissolve
+    pause(1.0)
     hide freya
     show freya_talk at char_left
     show freya_side_talk at left
@@ -494,6 +510,7 @@ label kanachapter2titippanitia:
     show freya_side_talk at left
     with dissolve
     freya "Okeee~"
+    #gak_nutup
     hide freya_side_talk with dissolve
     "Mereka pun menghabiskan waktu dengan berbincang dan makan bersama..."
     $ quick_menu = False
@@ -508,6 +525,7 @@ label kanachapter2titippanitia:
     show kana at char_right
     show freya at char_left
     with dissolve
+    pause(1.0)
     hide kana
     show kana_talk at char_right
     show kana_side_talk at left
@@ -533,12 +551,14 @@ label kanachapter2titippanitia:
     show freya_side_talk at left
     with dissolve
     freya "Ayoook. Aku juga free, sih."
+    #gak_nutup_freya
     hide freya_side_talk with dissolve
     hide kana_smile
     show kana_talk at char_right
     show kana_side_talk at left
     with dissolve
     kana "[mcname!c] nanti ikut yak, soalnya kamu kan yang tau tempatnya."
+    #gak_nutup_kana
     hide kana_side_talk with dissolve
     "[mcname!c]" "Bolehh~"
     "Beberapa saat kemudian, dosen pun datang memasuki ruangan kelas."
@@ -549,8 +569,10 @@ label kanachapter2titippanitia:
     stop music fadeout 1.0
     play music "audio/BGM_Dosen.ogg" fadein 1.0
     show dosen at dosen_center with dissolve
+    pause(1.0)
     show dosen_talk at dosen_center
-    show dosen_side at left
+    #gak_nutup_dosen
+    show dosen_side_talk at left
     with dissolve
     dosen "Selamat pagi. Pelajaran akan dimulai, ya."
     stop music fadeout 1.0
@@ -563,13 +585,14 @@ label kanachapter2titippanitia:
     $ quick_menu = False
     scene kelas sore with Dissolve(2.0)
     show dosen_talk at dosen_center
-    show dosen_side at left
+    show dosen_side_talk at left
     with dissolve
     $ quick_menu = True
     dosen "Yak. Mata kuliah ini sudah sampai sini dulu. Selanjutnya kalian review masing-masing, ya."
     dosen "Ah iya Freya. Untuk pembahasan kemarin, Ibu tunggu di ruangan Ibu sekarang, ya."
-    hide dosen_side
+    hide dosen_side_talk
     hide dosen_talk
+    show dosen at dosen_center
     with dissolve
     show freya_shock at char_center
     show freya_side_shock at left
@@ -587,6 +610,7 @@ label kanachapter2titippanitia:
     show freya at char_left
     show kana at char_right
     with dissolve
+    pause(1.0)
     hide kana
     show kana_talk at char_right
     show kana_side_talk at left
@@ -603,20 +627,23 @@ label kanachapter2titippanitia:
     show kana_side_talk at left
     with dissolve
     kana "Iya dong."
+    #gak_nutup_kana
     hide kana_side_talk with dissolve
     hide freya
-    show freya_pouting at char_left
-    show freya_side_pouting at left
+    show freya_shock at char_left
+    show freya_side_shock at left
     with dissolve
     freya "Yahhh, sorry guys. Kayaknya aku gak bisa ikut nemenin kalian."
-    hide freya_side_pouting with dissolve
+    #gak_nutup_freya
+    hide freya_side_shock with dissolve
     hide kana_talk
     show kana_confused at char_right
     show kana_side_confused at left
     with dissolve
     kana "Yahhhh..."
+    #gak_nutup kana
     hide kana_side_confused
-    hide freya_pouting
+    hide freya_shock
     show freya_talk at char_left
     show freya_side_talk at left
     with dissolve
@@ -642,6 +669,7 @@ label kanachapter2titippanitia:
     show kana_side_shy_smile at left
     with dissolve
     kana "I-iya."
+    #gak_nutup_kana
     hide kana_side_shy_smile at left with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
@@ -657,6 +685,7 @@ label kanachapter2titippanitia:
     show kana_side_talk at left
     with dissolve
     kana "Kamu sering ke mall ini, ya?"
+    #gak_nutup_kana
     hide kana_side_talk with dissolve
     "[mcname!c]" "Nggak juga, kok. Kemarin kebetulan aja inget."
     "[mcname!c]" "Kalo kamu?"
@@ -673,6 +702,7 @@ label kanachapter2titippanitia:
     with dissolve
     kana "Ehhh, tapi kamu gapapa kah?"
     hide kana_side_confused with dissolve
+    #gak_nutup_kana
     "[mcname!c]" "Gapapa, kok. Lagi free juga, hehe."
     hide kana_confused
     show kana_smile at kana_near
@@ -685,7 +715,7 @@ label kanachapter2titippanitia:
     "Tiba-tiba saat membahas topik pembicaraan, Kana tidak merespon sehingga [mcname!c] mencoba untuk menengok ke arah Kana."
     "[mcname!c]" "{i}Loh, Kana ke mana?{/i}"
     "[mcname!c] pun melihat ke belakang. Di sana terlihat Kana sedang menatap salah satu baju yang dipajang di mall."
-#Asset Baju Kana yg dipajang
+    #Asset Baju Kana yg dipajang
     show kana at small_center with dissolve
     "[mcname!c]" "Eh, Kana? Ada apa?"
     show kana_side at left with dissolve
@@ -701,7 +731,7 @@ label kanachapter2titippanitia:
     hide kana_talk
     show kana_smile at kana_near
     with dissolve
-#HIDE ASSET BAJU KANA YG DIPAJANG
+    #HIDE ASSET BAJU KANA YG DIPAJANG
     "Kana kemudian menghampiri [mcname!c]."
     hide kana_smile
     show kana_talk at kana_near
@@ -733,6 +763,7 @@ label kanachapter2titippanitia:
     with dissolve
     kana "Yahhhh, gimana nih? Kalo PO kayaknya lama banget."
     hide kana_side_confused with dissolve
+    #gak_nutup_kana
     "[mcname!c]" "Gimana kalo kita jalan, liat-liat yang lain dulu. Siapa tau ada barang lucu lainnya."
     hide kana_confused
     show kana_talk at kana_near
@@ -741,6 +772,7 @@ label kanachapter2titippanitia:
     kana "Oke deh."
     hide kana_side_talk
     hide kana_talk
+    #gak_nutup_kana
     show kana_drylaugh at kana_near
     with dissolve
     "Namun muka Kana terlihat sedikit kecewa..."
@@ -762,12 +794,14 @@ label kanachapter2titippanitia:
     with dissolve
     kana "Hmmmm? Eh maaf kurang fokus tadi, hahaha."
     hide kana_side_drylaugh at left with dissolve
+    #gak_nutup_kana
     "[mcname!c]" "Ya udaah. Ayok ikut aku sini."
     hide kana_drylaugh
     show kana_shy_smile at kana_near
     show kana_side_shy_smile at left
     with dissolve
     kana "Eeeh? Emangnya mau ke mana?"
+    #gak_nutup_kana
     hide kana_side_shy_smile with dissolve
     "[mcname!c]" "Udaaah, ikut aja."
     stop music fadeout 1.0
@@ -776,6 +810,7 @@ label kanachapter2titippanitia:
     play music "audio/BGM_Game Center.ogg" fadein 1.0
     scene game center with Dissolve(1.0)
     show kana at kana_near with dissolve
+    pause(1.0)
     hide kana
     show kana_talk at kana_near
     show kana_side_talk at left
@@ -797,6 +832,7 @@ label kanachapter2titippanitia:
     scene game center with Dissolve(1.0)
     play sound "audio/SFX_Racing Game.ogg" loop fadein 1.0 volume 0.2
     show kana at char_center with dissolve
+    pause(1.0)
     hide kana
     show kana_talk at char_center
     show kana_side_talk at left
@@ -809,7 +845,7 @@ label kanachapter2titippanitia:
     with dissolve
     "[mcname!c]" "Wih jago juga kamu. Udah rank 1 aja."
     hide kana
-    show kana_smile at char_center
+    show kana_talk at char_center
     show kana_side_talk at left
     with dissolve
     kana "Hehe. Kan namaku Kanaia \"Resing\" Asa."
@@ -819,18 +855,17 @@ label kanachapter2titippanitia:
     window auto hide
     with Pause(4.0)
     window auto show
-    hide kana_smile
+    #gak_nutup_kana
+    hide kana_talk
     show kana_confused at char_center
     show kana_side_confused at left
     with dissolve
     $ quick_menu = True
     kana "Eh? Eh? Kok aku ditabrak mulu. Waaaaaa~"
+    #gak_nutup_kana
     hide kana_side_confused with dissolve
     "[mcname!c]" "Eh, gimana ini Kana? Sekarang malah aku yang di depan. Hehe~"
-    hide kana_confused
-    show kana_angry at char_center
-    show kana_side_confused at left
-    with dissolve
+    show kana_side_confused at left with dissolve
     kana "Arrgh! Liat aja nanti."
     hide kana_side_confused with dissolve
     "[mcname!c]" "Weh aku udah di lap terakhir, nih!"
@@ -839,16 +874,12 @@ label kanachapter2titippanitia:
     window auto hide
     with Pause(4.0)
     window auto show
-    hide kana_angry
-    show kana_confused at char_center
     show kana_side_confused at left
     with dissolve
     $ quick_menu = True
     kana "Noooo~ Aku nabrak mulu."
     hide kana_side_confused with dissolve
     "[mcname!c]" "Inget rem, Kana. Hahahaha!"
-    hide kana_confused
-    show kana_angry at char_center
     show kana_side_confused at left
     with dissolve
     kana "Ahhhhh! Jangan tabrak akuuu~"
@@ -865,6 +896,7 @@ label kanachapter2titippanitia:
     show kana_side_confused at left
     with dissolve
     kana "Sekali lagi laahh, aku masih gak terima."
+    #gak_nutup_kana
     hide kana_side_confused with dissolve
     "Akhirnya mereka memainkan game tersebut berkali kali..."
     play sound "audio/SFX_Racing Game.ogg" loop fadein 1.0 volume 0.2
@@ -885,17 +917,23 @@ label kanachapter2titippanitia:
     "[mcname!c]" "Tapi kan kamu tadi kalah mulu~"
     hide kana_smile
     show kana_angry at char_center
+    with dissolve
+    pause(1.0)
+    hide kana_angry
+    show kana_confused at char_center
     show kana_side_confused at left
     with dissolve
     kana "Hmph. Yang penting game terakhir aku menang."
+    #gak_nutup_kana
     hide kana_side_confused with dissolve
     "[mcname!c]" "Hahaha. Iya deh kamu jago banget."
     "[mcname!c]" "Gimana? Mau racing lagi?"
-    hide kana_angry
+    hide kana_confused
     show kana_talk
     show kana_side_talk at left
     with dissolve
     kana "Nggak, ah. Kita ganti game. The last winner wins. Hehe."
+    #gak_nutup_kana
     hide kana_side_talk at left with dissolve
     "Selanjutnya Kana mengajak [mcname!c] main game Whack-a-mole."
     stop sound fadeout 1.0
@@ -924,6 +962,7 @@ label kanachapter2titippanitia:
     with dissolve
     $ quick_menu = True
     kana "Aduhh banyak yang miss."
+    #gak_nutup_kana
     hide kana_side_confused with dissolve
     "[mcname!c]" "Ayokk semangat Kanaa."
     hide kana_confused
@@ -931,13 +970,19 @@ label kanachapter2titippanitia:
     show kana_side_talk at left
     with dissolve
     kana "Waaaa~"
+    #gak_nutup_kana
     hide kana_side_talk with dissolve
     "[mcname!c]" "Itu yang itu, Kana."
     hide kana_talk
     show kana_angry at char_center
+    with dissolve
+    pause (0.1)
+    hide kana_angry
+    show kana_confused at char_center
     show kana_side_confused at left
     with dissolve
     kana "Ah, kamu backseat muluu!"
+    #gak_nutup_kana
     hide kana_side_confused with dissolve
     "[mcname!c]" "Geregetan soalnyaa."
     stop sound fadeout 1.0
@@ -949,9 +994,14 @@ label kanachapter2titippanitia:
     with dissolve
     $ quick_menu = True
     kana "Fiuhh... akhirnya."
-    hide kana_side_talk with dissolve
+    hide kana_side_talk
+    hide kana_talk
+    show kana at char_center
+    with dissolve
     play sound "audio/SFX - Finish Game.mp3" fadein 1.0 volume 0.5
     "Setelah waktunya habis, Kana melihat papan high score."
+    hide kana
+    show kana_talk at char_center
     show kana_side_talk at left with dissolve
     kana "Waaah! [mcname!c] liat! [mcname!c]! Highest score! Yeayy!"
     hide kana_side_talk
@@ -974,6 +1024,7 @@ label kanachapter2titippanitia:
     show kana_side_talk at left
     with dissolve
     kana "Haha kayaknya udah cukup ya, soalnya udah lumayan lama kita di sini."
+    #gak_nutup_kana
     hide kana_side_talk at left with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -2578,7 +2629,7 @@ label chapter2kanaB:
     kana "Ummmm.."
     hide kana_home_side_smile_cry at left with dissolve
     "[mcname!c] kemudian memegang pundak Kana dan menatap langsung ke matanya."
-#SPRITE KANA HARUSNYA LEBIH DEKET LAGI
+    #SPRITE KANA HARUSNYA LEBIH DEKET LAGI
     hide kana_home_smile
     show kana_home_shy at char_center
     with dissolve
