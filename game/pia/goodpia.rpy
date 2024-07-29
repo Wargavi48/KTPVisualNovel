@@ -86,38 +86,39 @@
     pia "Karena kamu baik, aku kasih kamu 1 golden tiket ini. Muahahaha!"
     # Insert aset tiket
     hide pia_home_talk with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_home_side_talk with dissolve
     mcname "Apaan ini?"
     show pia_home_talk at pia_near with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_home_side_talk at left with dissolve
     pia "Pake ini buat mengabulkan 1 permintaan."
     pia "Apapun, akan kulakukan!"
     hide pia_home_talk with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_home_side_talk with dissolve
     mcname "Oke, aku pake sekarang. Sekarang kamu ke depan cafe ini, tereak \"Aku belom mandi seminggu dan aku bangga\". now!"
     show pia_home_talk at pia_near with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_home_side_talk at left with dissolve
     pia "Ehh… jangan gitu dong."
     show pia_home_silent at pia_near with dissolve
     hide pia_home_talk
-    show pia_side_silent at left with dissolve
-    hide pia_side_talk
+    show pia_home_side_silent at left with dissolve
+    hide pia_home_side_talk
     pia "Aaah [mcname] maaaah. Yang serius, ih."
     hide pia_home_silent with dissolve
-    hide pia_side_silent with dissolve
+    hide pia_home_side_silent with dissolve
     mcname "Lah? Ini serius."
     show pia_home_smile at pia_near with dissolve
-    show pia_side_smile at left with dissolve
+    show pia_home_side_smile at left with dissolve
     pia "Gamau! Weeek~"
     hide pia_home_smile with dissolve
-    hide pia_side_smile with dissolve
+    hide pia_home_side_smile with dissolve
     mcname "Dih, yaudah. Kusimpen ya. Buat kapan-kapan."
     show pia_home_talk at pia_near with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_home_side_talk at left with dissolve
     pia "Yaudah. Okeh! Sekarang saatnya belajar! Ayo!!"
-    hide pia_home
-    hide pia_home_talk with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_home_talk
+    hide pia_home_side_talk
+    with dissolve
+    hide pia_home with dissolve
     "[mcname] dan Pia pun belajar bersama di cafe tersebut hingga larut malam [mcname] pun memutuskan meminjamkan buku tersebut ke Pia."
     $ quick_menu = False
     stop music fadeout 1.0
@@ -1262,13 +1263,13 @@ label goodpiaafterquiz:
     hide pia with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Alooo, salam kenal."
     "Takamina" "Jadi gimana? Kamu lanjut pindah ke divisi bagian idol kah?"
     hide takamina
     hide takamina_talk
-    # hide takamina_side_talk
+    hide takamina_side_talk
     with dissolve
     show pia at pia_near with dissolve
     show pia_talk at pia_near
@@ -1522,7 +1523,7 @@ label goodendpiarooftop:
     mcname "Ah, Takamina?"
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     takamina "Halo, [mcname]."
     hide takamina_talk
@@ -1530,7 +1531,7 @@ label goodendpiarooftop:
     with dissolve
     mcname "Mau ke ruang klub juga kah?"
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     takamina "Iya nih, baru beres rapat BEM."
     hide takamina_talk
@@ -1579,7 +1580,7 @@ label goodendpiarooftop:
     with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Terus? Terus?"
     hide takamina_talk
@@ -1595,7 +1596,7 @@ label goodendpiarooftop:
     with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Ooooh gitu. Bentar ya."
     hide takamina_talk
@@ -1606,7 +1607,7 @@ label goodendpiarooftop:
     play sound "SFX - Key.mp3"
     "ASSET NUE KUNCI"
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Taraaaaaaa~"
     hide takamina_talk
@@ -1624,7 +1625,7 @@ label goodendpiarooftop:
     hide pia with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Kunci pintu rooftop sama kunci pintu utama gedung DKV."
     hide takamina_talk
@@ -1644,7 +1645,7 @@ label goodendpiarooftop:
     hide pia with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Sembarangan, aku kan anggota BEM juga."
     "Takamina" "Biasanya kalo rapat atau drop barang ke dalem gedung, bisa sampe malem. Jadi, beberapa anggota BEM dikasih pegang duplikatnya hehe."
@@ -1663,7 +1664,7 @@ label goodendpiarooftop:
     hide pia with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Tapi aku ga bisa kasih ya, enak aja. Nanti takut disalahgunain."
     "Takamina" "Paling kalo mau sampe malem, kabarin aja. Nanti aku ikut juga, biar enak izinnya sama sekuriti."
@@ -1682,7 +1683,7 @@ label goodendpiarooftop:
     hide kana with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Hehehehe~"
     hide takamina_talk
@@ -1704,7 +1705,7 @@ label goodendpiarooftop:
     "[mcname], Takamina, dan KTp sedang berkumpul di rooftop."
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk at takamina_center
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Ayooo~ Ayoo~ Kurang luwes Kana, ahaha."
     hide takamina_talk 
@@ -1712,7 +1713,7 @@ label goodendpiarooftop:
     with dissolve
     mcname "Tapi udah mulai sinkron ya, gerakannya mereka."
     show takamina_talk at takamina_center
-    # show takamina_side_talk at takamina_center
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Betuuul. Udah mulai kerasa kompaknya."
     "Takamina" "Cuma feelnya kayak ada yg kurang gitu ga sih."
@@ -1721,7 +1722,7 @@ label goodendpiarooftop:
     with dissolve
     mcname "Apalah feel, gimana tuh maksudnya."
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Kayak kurang terbuka aja gitu."
     "Takamina" "Kayak mereka masih ngedance sendiri-sendiri, bukan sebagai grup gitu deh."
@@ -1730,7 +1731,7 @@ label goodendpiarooftop:
     with dissolve
     mcname "Pakar banget nih, berasa kayak ngobrol sama GM idol grup terkenal gitu."
     show takamina_talk at takamina_center
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Apalah [mcname] ini, ahahaha."
     hide takamina_talk 
@@ -1842,7 +1843,7 @@ label goodendpiarooftop:
     hide pia with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk
+    show takamina_side_talk
     with dissolve
     "Takamina" "Akh ini dia~"
     hide takamina_talk
@@ -1987,9 +1988,17 @@ label goodendpiarooftop:
     hide feni with dissolve
     "Kemudian...."
     # Insert Chibi pia jatoh
-    show pia_kepleset with Dissolve(1.0)
+    show pia_kepleset
+    show pia_kepleset:
+        pos (0.5, 0.88) zoom 0.32
+    with Dissolve(1.0)
     pause(2.0)
-    show pia_kepleset_2 with Dissolve(1.0)
+    hide pia_kepleset
+    show pia_kepleset_2
+    show pia_kepleset_2:
+        pos (0.5, 0.88) zoom 0.32
+    with Dissolve(1.0)
+    hide pia_kepleset_2 with Dissolve(2.0)
     stop music fadeout 1.0
     play sound "audio/tabrakan.mp3" volume (4.0)
     "Pia jatuh"
@@ -2057,7 +2066,7 @@ label goodendpiarooftop:
     hide pia with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center 
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Tadi lari ke bawah, ga tau ngapain."
     hide takamina_talk 
@@ -2112,7 +2121,7 @@ label goodendpiarooftop:
     hide pia with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center 
-    # show takamina_side_talk at left
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Kalo ada apa-apa, kasih tau loh."
     hide takamina_talk
@@ -2152,12 +2161,14 @@ label goodendpiarooftop:
     hide pia_side_talk
     with dissolve
     mcname "Cepio, tadi aku hubungi Cepio ngabarin kondisi kamu."
+    hide pia with dissolve
     "Fiony yang sudah di depan gerbang dengan mobilnya sejak tadi, membuka jendela dan berteriak dari dalam mobil."
-    show fio_side at left with dissolve
+    show fio_side at left with dissolve 
     fio "CIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE~"
     hide fio_side with dissolve
-    show pia_silent at pia_near 
-    show pia_side_silent at left
+    show pia_dirangkul
+    show pia_dirangkul:
+        ypos 0.99 zoom 0.29 
     with dissolve
     pia "CEPIOOOOOO~"
     hide pia_side_silent with dissolve
@@ -2168,14 +2179,22 @@ label goodendpiarooftop:
     menu:
         "Yang [mcname] lakukan..."
         "Ikut nemenin Pia ke kosan":
+            hide pia_dirangkul with dissolve
             jump goodendpiakosan
         "[mcname] pun menyerahkan semuanya ke Cepio":
-            hide pia_silent with dissolve
+            hide pia_dirangkul with dissolve
+            show pia at pia_near with dissolve
+            show pia_silent at pia_near
+            show pia_side_silent at left
+            with dissolve
             # $ renpy.block_rollback()
             $ quick_menu = True
             mcname "Cepio, aku tinggal Pia ke Cepio ya. aku ga bisa ikut"
-            hide pia with dissolve
+            hide pia
+            hide pia_silent
+            hide pia_side_silent
             show pia at pia_near_right
+            show pia_silent at pia_near_right
             show fio at char_near_left
             with dissolve
             show fio_talk at char_near_left
@@ -2193,13 +2212,11 @@ label goodendpiarooftop:
             hide fio_talk
             hide fio_side
             with dissolve
-            show pia_talk at pia_near_right
-            show pia_side_talk at left with dissolve
+            show pia_side_silent at left with dissolve
             pia "Oh gitu, ada yang lebih penting dari aku ya hump…."
-            pia "Yaudah Cepio gas jalan, [mcname] gak mau ikut, sibuk"
-            hide pia_side_talk with dissolve
-            hide pia_talk
-            hide pia_side_talk
+            pia "Yaudah Cepio gas jalan, [mcname!c] gak mau ikut, sibuk"
+            hide pia_side_silent with dissolve
+            hide pia_silent
             with dissolve
             hide pia
             hide fio
@@ -2495,7 +2512,7 @@ label goodendpiamatsuri:
     hide kana with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
-    # show takamina_side_talk at takamina_center
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Aku kayaknya mau ke yakisoba(sponsor) sama Teh Mpen, deh."
     hide takamina_talk
@@ -2636,6 +2653,17 @@ label goodendpiamatsuri:
     "KTp masuk ke stage"
     stop sound fadeout 1.5
     "Membawakan lagu pertama"
+    show pia_sakit_stage
+    show pia_sakit_stage:
+        xpos 0.53 zoom 0.39 ypos 0.89 
+    with Dissolve(1.0)
+    pause(2.0)
+    hide pia_sakit_stage
+    show pia_sakit_stage_2
+    show pia_sakit_stage_2:
+        xpos 0.53 zoom 0.39 ypos 0.89 
+    with Dissolve(1.0)
+    hide pia_sakit_stage_2 with dissolve
     mcname "*Melihat raut wajah Pia*"
     mcname "{i}Masih sakit yaaa..{/i}"
     show fio at fio_near with dissolve
@@ -2666,35 +2694,35 @@ label goodendpiamatsuri:
     scene konser end with Dissolve(1.0)
     play sound "SFX - Cheering.ogg" fadein 0.5
     ###$ renpy.block_rollback()
-    show tana_side_talk at left with dissolve
+    show tana_idol_side_talk at left with dissolve
     $ quick_menu = True
     tana "Gimana semua, seru gak?"
-    hide tana_side_talk with dissolve
+    hide tana_idol_side_talk with dissolve
     "Penonton" "SERUUUUUUUUUUUUU!!!!"
-    show kana_side_talk at left with dissolve
+    show kana_idol_side_talk at left with dissolve
     stop sound fadeout 1.5
     kana "Tadi kami membawakan lagu xxxx!"
     kana "Sebelum lanjut ke lagu yang selanjutnya, udah pada kenal kita belom nih?"
-    hide kana_side_talk with dissolve
+    hide kana_idol_side_talk with dissolve
     "Penonton" "Beluuuuuuuum~"
-    show pia_side_talk at left with dissolve
+    show pia_idol_side_talk at left with dissolve
     pia "Wah, kayaknya belom pada kenal nih. Kita kenalan dulu aja ga sih?"
     pia "Bisa dimulai dari yang sebelah kiri~"
-    hide pia_side_talk with dissolve
-    show tana_side_talk at left with dissolve
+    hide pia_idol_side_talk with dissolve
+    show tana_idol_side_talk at left with dissolve
     tana "Wassup ma bross!! I'm fresh like a breeze JKT48 Virtual Tana Nona Cool enough to make you freeEeEzZEeE Halo semuanya aku Tana Nona dari JKT48 Virtual!"
-    hide tana_side_talk with dissolve
-    show kana_side_talk at left with dissolve
+    hide tana_idol_side_talk with dissolve
+    show kana_idol_side_talk at left with dissolve
     kana "Mari bernyanyi, sambil bermain air. Aku dari laut tapi tidak salty!"
     kana "Halo! Aku Kanaia yang akan membuat harimu indah bagai pelangi~"
-    hide kana_side_talk with dissolve
-    show pia_side_talk at left with dissolve
+    hide kana_idol_side_talk with dissolve
+    show pia_idol_side_talk at left with dissolve
     pia "WE ARE ON FIRE!"
     pia "SEMANGATKU MEMBARA, SIAP MENGHANGATKAN HARI-HARI MU!!"
     pia "HALO AKU PIA MERALEO DARI JKT48V~"
     play sound "SFX - Large Cheering.mp3" loop fadein 1.0
     pia "SALAM KENAL SEMUAAAAAAAAAA!!!"
-    hide pia_side_talk with dissolve
+    hide pia_idol_side_talk with dissolve
     mcname "Whoaaa..."
     $ renpy.sound.set_volume(0.5,delay=1.5)
     menu:
@@ -2755,11 +2783,11 @@ label goodendpia:
     "Tidak disangka, teriakan [mcname] menyulut semangat penonton lain untuk ikut menyoraki dan menunjukan dukungannya lebih keras lagi."
     "Teriakan tersebutlah yang membuat pengunjung lain yang sedang berkeliling di acara tersebut jadi penasaran dan ikut menonton pertunjukan di stage tersebut."
     $ renpy.sound.set_volume(0.5,delay=1.5)
-    show pia_side_talk at left with dissolve 
+    show pia_idol_side_talk at left with dissolve 
     pia "*Blushing*"
     pia "A-ah iyaaa makasih~"
     pia "Dengarkanlah lagu terakhir dari kami, xxxx."
-    hide pia_side_talk with dissolve
+    hide pia_idol_side_talk with dissolve
     mcname "PIAAAAAAAAAAAAA!!!! SEMANGAAAAAAAAAAT!"
     stop sound fadeout 1.5
     scene konser end with Dissolve(1.0)
