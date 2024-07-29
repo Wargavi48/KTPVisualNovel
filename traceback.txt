@@ -1,30 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/pia/goodpia.rpy", line 2105, in script
-    scene depan kampus sore with Dissolve(1.0)
-Exception: Image 'depan kampus' does not accept attributes 'sore'.
+  File "game/pia/truepia.rpy", line 1820, in script
+    show pia_date_talk at pia
+Exception: Character expects its what argument to be a string, got <renpy.display.image.ImageReference object ('pia_date_talk',) at 0x000000000717c910>.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/pia/goodpia.rpy", line 2105, in script
-    scene depan kampus sore with Dissolve(1.0)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1247, in execute
+  File "game/pia/truepia.rpy", line 1820, in script
+    show pia_date_talk at pia
+  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1113, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
   File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1076, in show_imspec
     renpy.config.show(name,
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 739, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\displayable.py", line 246, in _duplicate
-    args.extraneous()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\displayable.py", line 109, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'depan kampus' does not accept attributes 'sore'.
+  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 751, in show
+    img = i(img) # type: ignore
+  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1305, in __call__
+    raise Exception("Character expects its what argument to be a string, got %r." % (what,))
+Exception: Character expects its what argument to be a string, got <renpy.display.image.ImageReference object ('pia_date_talk',) at 0x000000000717c910>.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Fri Jul 26 21:14:01 2024
+Mon Jul 29 14:36:19 2024

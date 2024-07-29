@@ -852,13 +852,13 @@ label truekanajapanfest:
   show freya_side_talk at left
   with dissolve
   freya "Ga ada yang mintain izin ke dosen, orang ga ada kabar..."
-  hide freya_side_talk with dissolve;
-  show freya_side_talk at left with dissolve;
+  hide freya_side_talk with dissolve
+  show freya_side_talk at left with dissolve
   freya "Ya udah, dadah."
   hide freya_side_talk
   hide freya_talk
   show freya at char_center
-  with dissolve;
+  with dissolve
   play sound "audio/ding.mp3"
   #HARUSNYA SUARA TUTUP TELEPON
   stop music fadeout 1.0
