@@ -100,17 +100,17 @@ define tana_date_shock = Character("[tono_name]", image="Tana_date_shock", windo
 define tana_date_shy = Character("[tono_name]", image="Tana_date_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 define tana_date_silent = Character("[tono_name]", image="Tana_date_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 define tana_date_talk = Character("[tono_name]", image="Tana_date_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah = Character("[tono_name]", image="Tana_rumah", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_angry = Character("[tono_name]", image="Tana_rumah_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_angry_2 = Character("[tono_name]", image="Tana_rumah_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_confused = Character("[tono_name]", image="Tana_rumah_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_laugh = Character("[tono_name]", image="Tana_rumah_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_nantang = Character("[tono_name]", image="Tana_rumah_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_sad = Character("[tono_name]", image="Tana_rumah_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_shock = Character("[tono_name]", image="Tana_rumah_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_shy = Character("[tono_name]", image="Tana_rumah_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_silent = Character("[tono_name]", image="Tana_rumah_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
-define tana_rumah_talk = Character("[tono_name]", image="Tana_rumah_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home = Character("[tono_name]", image="Tana_rumah", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home_angry = Character("[tono_name]", image="Tana_rumah_angry", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home_angry_2 = Character("[tono_name]", image="Tana_rumah_angry_2", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home_confused = Character("[tono_name]", image="Tana_rumah_confused", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home_laugh = Character("[tono_name]", image="Tana_rumah_laugh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home_nantang = Character("[tono_name]", image="Tana_rumah_nantang", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home_sad = Character("[tono_name]", image="Tana_rumah_sad", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home_shock = Character("[tono_name]", image="Tana_rumah_shock", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home_shy = Character("[tono_name]", image="Tana_rumah_shy", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home_silent = Character("[tono_name]", image="Tana_rumah_silent", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
+define tana_home_talk = Character("[tono_name]", image="Tana_rumah_talk", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default tono_sh = Character("[tono_name]", image="tono_sh", window_background="gui/dialog/custom_dialog_tana.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 
 #Define Character Pia
@@ -142,7 +142,6 @@ define pia_idol_talk = Character("[pia_name]", image="Pia_idol_talk",window_back
 default pia_nyembur = Character("[pia_name]", image="pia_nyembur",window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 default pia_sh = Character("[pia_name]", image="pia_sh", window_background="gui/dialog/custom_dialog_pia.png",window_yalign=0.862,window_xpos=1340,who_yalign=1.0,who_xpos=-300,what_ypos=80,what_xpos=70)
 # define piasprites = Character("Pia Sprites", image="Pia",color="#000000")
-
 
 # JKT48 member
 
@@ -219,7 +218,7 @@ default galaxy_talk = Character("[mahasiswa_c_name]", image="mahasiswa_c")
 
 # Define side kana character
 image side kana_side_confused = "Characters/Kana_side_confused.png"
-image side kana_side_cry = "Characters/Kana_side_cry.png"
+image side kana_side_shy_talk = "Characters/Kana_side_cry.png"
 image side kana_side_drylaugh = "Characters/Kana_side_drylaugh.png"
 image side kana_side_shy = "Characters/Kana_side_shy.png"
 image side kana_side_shy_smile = "Characters/Kana_side_shy_smile.png"
