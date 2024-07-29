@@ -57,28 +57,32 @@
     $ quick_menu = False
     scene cafe malam with Dissolve(2.0)
     # $ renpy.block_rollback()
-    show pia_side_talk at left
-    show pia_home at pia_near
+    show pia_home at pia_near with dissolve
+    show pia_home_talk at pia_near
+    show pia_home_side_talk at left
     with dissolve
     $ quick_menu = True
     pia "[mcname]!! Sini!!"
-    hide pia_side_talk with dissolve
+    hide pia_home_talk
+    hide pia_home_side_talk
+    with dissolve
     mcname "Hadeeeeeh, nih bukunya."
-    show pia_side_talk at left with dissolve
-    show pia_home_talk at pia_near with dissolve
+    show pia_home_side_talk at left 
+    show pia_home_talk at pia_near
+    with dissolve
     pia "MAKASIH BANGET!!! HUHUHU~"
     pia "KALO GAK ADA KAMU, AKU GATAU HARUS GIMANA. AKU GAMAU NGULANG MATKUL INI!"
     hide pia_home_talk with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_home_side_talk with dissolve
     mcname "Iya Pia, Iya."
     show pia_home_talk at pia_near with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_home_side_talk at left with dissolve
     pia "Aku berhutang budi sama kamu!!!"
     hide pia_home_talk with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_home_side_talk with dissolve
     mcname "Halah lebay."
     show pia_home_talk at pia_near with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_home_side_talk at left with dissolve
     pia "Karena kamu baik, aku kasih kamu 1 golden tiket ini. Muahahaha!"
     # Insert aset tiket
     hide pia_home_talk with dissolve
