@@ -589,15 +589,15 @@ label chapter1piajalantanpapio:
     $ quick_menu = True
     "Pia pun keluar dari kosan, siap untuk pergi dengan [mcname]."
     show pia_date_talk at pia_near with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "GAK TELAT, KAN? PAS KAN YA AKU SIAP SIAPNYA? JAM 10 UDAH READY."
     show pia_date at pia_near with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     mcname "Tetangga kosan kamu gak ada yang komplain ya, tiap hari ada yang teriak kayak kemalingan gini?"
     hide pia_date with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "HEH, SEMBARANGAN! HAHAHA."
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     hide pia_date_talk with dissolve
     "[mcname] dan Pia pun berangkat bersama menuju lokasi tempat membeli peralatan DKV tersebut."
     stop music fadeout 1.0
@@ -606,24 +606,24 @@ label chapter1piajalantanpapio:
     play music "audio/BGM_Mall.ogg" fadein 1.0
     scene mall temp with Dissolve(1.0)
     show pia_date_talk at pia_near with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     $ quick_menu = True
     pia "Wah gede juga ya mallnya."
     show pia_date at pia_near with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     mcname "Sebelah situ Pia tempatnya."
     hide pia_date with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "Let's gooo!!!"
     show pia_date at pia_near with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     mcname "Gak usah lari, nanti ilang."
     show pia_date_silent at pia_near with dissolve
     hide pia_date
-    show pia_side_silent at left with dissolve
+    show pia_date_side_silent at left with dissolve
     pia "Lu kata gue anak kecil, heh?!"
-    hide pia_silent
-    hide pia_side_angry with dissolve
+    hide pia_date_silent
+    hide pia_date_side_silent with dissolve
     mcname "Ahahahahaha"
     $ quick_menu = False
     scene black with Dissolve(0.3)
@@ -632,7 +632,7 @@ label chapter1piajalantanpapio:
     scene mall temp with Dissolve(1.0)
     show pia_date_sad at pia_near with dissolve
     hide pia_angry
-    show pia_side_sad at left with dissolve
+    show pia_date_side_sad at left with dissolve
     $ quick_menu = True
     pia "Aaaah! Maaf, Pak."
     hide pia_side_sad with dissolve
@@ -641,8 +641,8 @@ label chapter1piajalantanpapio:
     mcname "Sini..."
     "[mcname] pun menggenggam tangan Pia."
     show pia_date_shock at pia_near with dissolve
-    hide pia_sad
-    show pia_side_shock at left with dissolve
+    hide pia_date_sad
+    show pia_date_side_shock at left with dissolve
     pia "Ii-iya, maaci."
     hide pia_side_shy with dissolve
     "Kemudian Pia dan [mcname] menuju toko yang menjual peralatan menggambar tersebut sambil bergandengan tangan."
@@ -651,12 +651,12 @@ label chapter1piajalantanpapio:
     show text "{color=#FFF}1 JAM KEMUDIAN{/color}" with Pause(2.0)
     scene mall temp with Dissolve(1.0)
     show pia_date_talk at pia_near with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     # #$ renpy.block_rollback()
     $ quick_menu = True
     pia "Weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan. Pensil 2, cat air 1, kuas, dan sebagainya.... Tapi pas dijumlah gak kerasa, tau-tau mahal juga."
     show pia_date at pia_near with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     mcname "Hahaha betuuuul."
     "*Tiba-tiba dari belakang ada yang berbisik*"
     "???" "{size=-5}Hayooo lagi ngapain berduaan?{/size}"
@@ -677,21 +677,21 @@ label chapter1piajalantanpapio:
     show fio at char_near_left with dissolve
     hide fio_side with dissolve
     show pia_date_shock at pia_near_right with dissolve
-    show pia_side_shock at left with dissolve
+    show pia_date_side_shock at left with dissolve
     pia "CEPIOOOOOOOOOOO!!!!"
     hide pia_side_shock with dissolve
     show fio_smile at char_near_left with dissolve
-    show fio_side at left with dissolve
+    show fio_side_smile at left with dissolve
     fio "Hahahahahaha.\n*sambil peluk Pia*"
-    hide fio_side with dissolve
+    hide fio_side_smile with dissolve
     hide fio_smile with dissolve
     mcname "Sejak kapan kalian jadi akrab banget?"
     hide pia_date_shock with dissolve
     show pia_date_talk at pia_near_right with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "Tau gak sih [mcname], ternyata rumah Cepio deket sama kosan aku!! Jadi kita banyak ngobrol gituuuu, ehehehe."
     hide pia_date_talk with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     hide fio with dissolve
     show fio_side at left with dissolve
     fio "Sama, lagi beli peralatan juga, udah banyak yang abis. Di sini juga tempat langganan aku."
@@ -701,7 +701,7 @@ label chapter1piajalantanpapio:
     show fio at char_near_left with dissolve
     mcname "Oke Cepioooo~"
     show pia_date_talk at pia_near_right with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "Nah mumpung ada Cepio, Si Sepuh penunggu mall ini, mending rekomendasiin tempat makan enak di sini."
     hide pia_date_talk with dissolve
     hide pia_side_talk with dissolve
@@ -718,20 +718,20 @@ label chapter1piajalansamapiapio:
     mcname "{i}Udah setengah jam nunggu huhuhu.{/i}"
     show fio at char_near_left with dissolve
     show pia_date_talk at pia_near_right with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "[mcname!u]!!!!!!! HOIIII!!! MAAAP TELAAAAAT!!"
     show pia_date at pia_near_right with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     show fio_talk at char_near_left with dissolve
     show fio_side at left with dissolve
     fio "Maap ya [mcname], tadi nungguin Pia. Dandan dulu lama banget, mana macet pula di jalan."
     hide fio_talk
     hide fio_side
     show pia_date_silent at pia_near_right
-    show pia_side_silent at left
+    show pia_date_side_silent at left
     with dissolve
     pia "Dih! Kok Cepio nyalahin aku??"
-    hide pia_side_silent
+    hide pia_date_side_silent
     show fio_talk at char_near_left
     show fio_side at left
     with dissolve
@@ -740,15 +740,15 @@ label chapter1piajalansamapiapio:
     hide fio_talk with dissolve
     hide fio_side with dissolve
     show pia_date_shock at pia_near_right with dissolve
-    hide pia_silent
-    show pia_side_shock at left with dissolve
+    hide pia_date_silent
+    show pia_date_side_shock at left with dissolve
     pia "Ssssss aaaaah. Dah dah, jadi kemana mana ini. Lesgow! Lead the waaaay, Cepio!!!!"
     hide pia_date_silent
     hide pia_date
     hide pia_side_shock with dissolve
     mcname "Sejak kapan kalian jadi akrab banget?"
     hide pia_date_shock with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "Tau gak sih [mcname], ternyata rumah Cepio deket sama kosan aku!!"
     pia "Jadi kita banyak ngobrol gituuuu, ehehehe."
     hide pia_side_talk
@@ -768,7 +768,7 @@ label chapter1piajalansamapiapio:
     show fio at char_near_left with dissolve
     hide fio_side with dissolve
     show pia_date_talk at pia_near_right with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "WOAAAAA LENGKAP BANGET!!!"
     hide pia_date_talk with dissolve
     hide pia_side_talk with dissolve
@@ -781,7 +781,7 @@ label chapter1piajalansamapiapio:
     hide fio_side with dissolve
     show pia_date_silent at pia_near_right with dissolve
     mcname "Ah oke, Cepio hehe."
-    show pia_side_silent at left with dissolve
+    show pia_date_side_silent at left with dissolve
     pia "Hmmmmmm!!!\n*Bombastic side eyes*"
     hide pia_side_silent with dissolve
     hide fio with dissolve
@@ -789,9 +789,9 @@ label chapter1piajalansamapiapio:
     fio "{size=-5}Cieee cemburu, hehehe.{/size}"
     show fio at char_near_left with dissolve
     hide fio_side with dissolve
-    show pia_side_silent at left with dissolve
+    show pia_date_side_silent at left with dissolve
     pia "CEPIOOOOOOOO!!!!!!"
-    hide pia_side_silent with dissolve
+    hide pia_date_side_silent with dissolve
     mcname "????"
     hide pia_date
     hide pia_date_talk
@@ -805,14 +805,14 @@ label chapter1piajalansamapiapio:
     scene mall temp with Dissolve(1.0)
     show pia_date_talk at pia_near_right
     show fio at char_near_left
-    show pia_side_talk at left
+    show pia_date_side_talk at left
     with dissolve
     $ quick_menu = True
     pia "Weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan."
     pia "Pensil 2, cat air 1, kuas, dan sebagainya."
     pia "Tapi pas dijumlah gak kerasa, tau-tau mahal juga."
     show pia_date at pia_near_right with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     show fio_talk at char_near_left with dissolve
     show fio_side at left with dissolve
     fio "Welcome to DKV."
@@ -823,7 +823,7 @@ label chapter1piajalansamapiapio:
     show pia_side_talk at left with dissolve
     pia "BTW… MAU MAKAAAAAN!! Lapeerrr."
     show pia_date at pia_near_right with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     mcname "Setuju, laper."
     jump chapter1piamakanmall
 
@@ -850,23 +850,23 @@ label chapter1piamakanmall:
     scene cafe with Dissolve(1.0)
     show pia_date_talk at pia_near_right
     show fio at char_near_left
-    show pia_side_talk at left
+    show pia_date_side_talk at left
     with dissolve
     # #$ renpy.block_rollback()
     $ quick_menu = True
     pia "Ummmmmmmm!!!!! Enaaaaak!!! Mantap lah, Cepio!\n*Sambil makan*"
     show pia_date at pia_near_right with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     show fio_talk at char_near_left with dissolve
     show fio_side at left with dissolve
     fio "Hehehe enak, kan? Tempat langganan aku sama temen-temen aku nih. Enak, terus tempatnya cozy gitu buat foto-foto."
     hide fio_talk with dissolve
     hide fio_side with dissolve
     hide pia_date with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "Betuuuuul!!!"
     hide pia_date_talk with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     hide fio with dissolve
     "Dari meja yang cukup jauh dari tempat [mcname], Pia, dan Fiony duduk…"
     $ freya_name = "???"
@@ -907,19 +907,19 @@ label chapter1piamakanmall:
     hide fio_side with dissolve
     hide pia_date with dissolve
     show pia_date_shock at pia_near with dissolve
-    show pia_side_shock at left with dissolve
+    show pia_date_side_shock at left with dissolve
     pia "CEPIOOOOOOOOOOOOO~"
     hide pia_side_shock with dissolve
     mcname "Ahahahahha."
-    show pia_side_shock at left with dissolve
+    show pia_date_side_shock at left with dissolve
     pia "J-jadi… Abis berapa tadi belanja alat gambar?"
     hide pia_side_shock with dissolve
     mcname "400an lah, ahahaha. Kamu abis berapa?"
     show pia_date_sad at pia_near with dissolve
-    show pia_side_sad at left with dissolve
+    show pia_date_side_sad at left with dissolve
     pia "Kurang lebih sama lah, huhuhu"
     hide pia_date_sad with dissolve
-    hide pia_side_sad with dissolve
+    hide pia_date_side_sad with dissolve
     "*Hening*"
     mcname "Kalo berdua gini kayak ngedate gak sih kita?"
     hide pia_date_shock with dissolve
@@ -933,18 +933,18 @@ label chapter1piamakanmall:
     hide pia_nyembur with dissolve
     show pia_date_shock at pia_near with dissolve
     mcname "Ahahaha, engga. Bercanda kok."
-    show pia_side_sad at left with dissolve
+    show pia_date_side_sad at left with dissolve
     show pia_date_sad at pia_near with dissolve
     pia "{size=-10}Ngedate beneran juga gapapa sih..{/size}"
     hide pia_date_sad with dissolve
-    hide pia_side_sad with dissolve
+    hide pia_date_side_sad with dissolve
     mcname "Apa, Pia? Sorry, gak kedengeran?"
     show pia_side_shock at left with dissolve
     pia "GAK KOK, minumannya enak. Aku haus, mau nambah kayaknya."
     hide pia_side_shock with dissolve
     mcname "Oh okeh, mau aku panggil pelayannya?"
     show pia_date_silent at pia_near with dissolve
-    show pia_side_silent at left with dissolve
+    show pia_date_side_silent at left with dissolve
     pia "Gausah."
     hide pia_side_silent with dissolve
     mcname "Lah???"
@@ -952,13 +952,13 @@ label chapter1piamakanmall:
     show pia_date_talk at pia_near with dissolve
     hide pia_date_silent
     hide pia_date_shock
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "Eh, btw tempatnya bagus gak sih buat foto-foto?"
     show pia_date at pia_near with dissolve
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     mcname "Tadi Cepio sih ngomong gitu juga."
     hide pia_date with dissolve
-    show pia_side_talk at left with dissolve
+    show pia_date_side_talk at left with dissolve
     pia "Selfie ah!!"
     # window auto hide
     play sound "audio/camera.mp3" loop
@@ -966,23 +966,23 @@ label chapter1piamakanmall:
     stop sound 
     with Pause(1.0)
     show pia_date_shock at pia_near with dissolve
-    show pia_side_shock at left with dissolve
+    show pia_date_side_shock at left with dissolve
     # window auto show
     pia "F-foto bareng sih kita. Udah jauh-jauh makan ke sini, masa ga difoto!"
-    hide pia_side_shock with dissolve
+    hide pia_date_side_shock with dissolve
     mcname "Hmm. Boleh deh.\n*bergaya*"
-    show pia_side_shock at left with dissolve
+    show pia_date_side_shock at left with dissolve
     pia "Oke, satuu..dua....tigaaaa~"
     show pia_date_smile at pia_near with dissolve
     play sound "audio/camera.mp3"
     hide pia_side_shock with dissolve
     "Fiony ngeliatin dari jauh sambil senyum-senyum ngeledek nyindir Pia."
     hide pia_date_smile with dissolve
-    show pia_side_shock at left with dissolve
+    show pia_date_side_shock at left with dissolve
     pia "CEPIOOOOOOOO!!"
     hide pia_date_talk
     hide pia_date_silent
-    hide pia_side_shock with dissolve
+    hide pia_date_side_shock with dissolve
     hide pia_date_shock with dissolve
     show pia_date_shock at pia_near_right with dissolve
     show fio_talk at char_near_left with dissolve
@@ -990,9 +990,9 @@ label chapter1piamakanmall:
     fio "Ahahaha udah makannya? Seru tuh foto fotonya. \n*sikut-sikut Pia*"
     show fio at char_near_left with dissolve
     hide fio_side with dissolve
-    show pia_side_shock at left with dissolve
+    show pia_date_side_shock at left with dissolve
     pia "Ehehehehe~"
-    hide pia_shock with dissolve
+    hide pia_date_shock with dissolve
     hide pia_side_shock with dissolve
     show fio_side at left with dissolve
     hide fio with dissolve
@@ -1006,12 +1006,12 @@ label chapter1piamakanmall:
     show fio at char_near_left with dissolve
     hide fio_side with dissolve
     show pia_date_silent at pia_near_right with dissolve
-    show pia_side_silent at left with dissolve
+    show pia_date_side_silent at left with dissolve
     pia "Ih Cepio maaaaaaaah. Ngeledekin muluuuuu~"
     #fio "Hehe~"
     hide pia_date_shock
     hide pia_date_silent
-    hide pia_side_silent
+    hide pia_date_side_silent
     hide fio_talk
     hide fio
     with dissolve
