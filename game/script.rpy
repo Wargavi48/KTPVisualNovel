@@ -51,7 +51,7 @@ define KTP_Tana = Transform(zoom=1.3,xalign=-1.8,yalign=0.0)
 define takamina_center = Transform(zoom=0.7,xalign=0.5,yalign=-0.1)
 define takamina_left = Transform(zoom=0.7,xalign=0.0,yalign=-0.1)
 define ui_handphone = Transform(xalign=0.5,yalign=0.5)
-
+define chibi_tono = Transform(zoom=0.3,xalign=0.0,yalign=0.0,xpos=0.15)
 
 
 # Game dimulai disini.

@@ -4526,7 +4526,7 @@ label goodtanafinale:
 
 label goodtanagotofestival:
     "[mcname!c]" "Lagian waktunya juga masih lama."
-    "[mcname!c]" "Masih 2 jam lagi kan kalian tampil?"
+    "[mcname!c]" "Masih beberapa jam lagi kan kalian tampil?"
     hide tana_idol_shy
     show tana_idol_shock at tana_near
     show tana_idol_side_shock at left 
@@ -4854,7 +4854,7 @@ label goodtanagotofestival:
 #Kalau Aimnya jelek? gimana?
 label goodtanaaftergame:
     scene depan kampus with Dissolve(1.0)
-#HARUSNYA BG MATSURI SIANG
+#HARUSNYA BG MATSURI SORE
     play music "BGM_Monas.ogg" fadein 1.0
     show tana_idol_talk at tana_near
     show tana_idol_side_talk at left 
@@ -4907,7 +4907,7 @@ label goodtanaaftergame:
     play music "BGM_Happy + HP.ogg" fadein 1.0 volume(2.0)
     "ASSET TELEPON MUNCUL"
     show feni_side_talk at left with dissolve
-    feni "[mcname!c], Tana, kalian di mana? Habis ini udah waktunya tampil."
+    feni "[mcname!c], Tana, kalian di mana? Harus siap-siap, udah hampir waktunya tampil."
     hide feni_side_talk with dissolve
     "[mcname!c]" "Siap, Kak Feni. Tana langsung otw ke sana."
     stop music fadeout 1.0

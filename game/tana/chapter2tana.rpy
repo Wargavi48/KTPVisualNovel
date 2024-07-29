@@ -745,7 +745,7 @@ label chapter2tana:
     "[mcname!c] pun membersihkan kamarnya hingga rapi."
     $ quick_menu=False
     scene black with Dissolve(1.0)
-    scene kamac mc kota with Dissolve(1.0)
+    scene kamar mc kota with Dissolve(1.0)
     $ quick_menu=True
     "[mcname!c]" "Kelar juga nih bersih-bersih kamar, tapi gua belum nyuci baju. Gua rendem dulu aja deh. Jemurnya ntar habis balik dari kampus."
     "[mcname!c]" "Sekarang waktunya mandi, terus gas ke kampus!"
@@ -1258,13 +1258,11 @@ label chapter2tanasawah:
     hide tana_side_confused at left
     hide tana_confused at tana_near
 #Chibi Nue Tono Kepeleset
-    show tana_kepeleset at tana_near
+    show tana kepeleset at chibi_tono
     show tana_side_shock at left with dissolve
     tana "AAAAAAA!!"
     hide tana_side_shock
-    hide tana_kepeleset
-    show tana_silent at tana_near
-    show tana_side_idle at left
+    hide tana kepeleset
     with dissolve
 #HIDE CHIBI NUE TONO KEPELESET
     play sound "SFX - Fall Water.WAV" volume (4.0)
@@ -1286,8 +1284,9 @@ label chapter2tanasawah:
     "[mcname!c] mengulurkan tangannya untuk membantu Tana berdiri."
     "Tapi tiba-tiba..."
 #Chibi Nue Tono narik MC
-    show tana_narik_mc at tana_near with dissolve
+    show tana narik at chibi_tono with dissolve
     "[mcname!c]" "Eh?"
+    hide tana narik with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
     $ quick_menu = True
@@ -1295,7 +1294,6 @@ label chapter2tanasawah:
     "[mcname!c]" "AAAAAAAAA!!!"
     $ quick_menu = False
     scene sawah sore with Dissolve(1.0)
-    hide tana_narik_mc
     with dissolve
     $ quick_menu = True
     "[mcname!c]" "......."

@@ -1344,11 +1344,18 @@ label chapter1tanamakan:
     "Beberapa saat kemudian..."
     play music "BGM_Funny 3.ogg" fadein 1.0
 # tana batuk
+    show tana keselek at chibi_tono
+    show tana_side_shock at left
     with dissolve
     tana "UHUK UHUK!"
+    hide tana_side_shock with dissolve
     "[mcname!c]" "Makanya makan pelan-pelan, kocak. Lu gak makan dari tahun kemarin ato gimana?"
+    show tana_side_shock at left with dissolve
     tana "UHUK UHUK!"
+    hide tana_side_shock with dissolve
     "[mcname!c]" "Ini minum dulu."
+    hide tana keselek
+    with dissolve
 # tana batuk hide
 # tana minum
     tana "*Glug Glug*"
@@ -1425,6 +1432,7 @@ label chapter1tanamakan:
     with dissolve
     "Tana pun merogoh tasnya untuk mengambil dompet."
 #MUNCUL CHIBI TONO DOMPET
+    show tana dompet at chibi_tono
     show tana_side_confused at left 
     with dissolve
     tana "Hmmmm?"
@@ -1441,6 +1449,7 @@ label chapter1tanamakan:
     hide tana_side_confused at left with dissolve
     "[mcname!c]" "?????"
 #HIDE CHIBI TONO DOMPET
+    hide tana dompet at chibi_tono
     hide tana_confused at tana_near
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -1717,12 +1726,14 @@ label chapter1tanamakan:
     hide tana_confused at tana_near 
     with dissolve
 # Insert TONO kepeleset 1.png
+    show tana kepeleset at chibi_tono
     show tana_side_shock at left 
     with dissolve
     tana "EHHHHHHHH?"
     hide tana_side_shock at left 
     with dissolve
     "[mcname!c]" "Tannn!!"
+    hide tana kepeleset with dissolve
     $ quick_menu = False
 # Hide TONO Kepeleset 1.png
     play sound "SFX - Fall Water.WAV" volume (4.0)
@@ -1734,12 +1745,14 @@ label chapter1tanamakan:
     "[mcname!c] berniat menolong Tana, tapi malah ikut tercebur."
     "[mcname!c]" "Adududuh."
     # Insert Tono jatoh.png
+    show tana jatoh at chibi_tono
     "Sambil mencoba berdiri, [mcname!c] melihat Tana yang tercebur dalam lumpur."
     "[mcname!c]" "Udah gede ga usah nangis kocak."
     show tana_side_shock at left
     with dissolve
     tana "S-siapa yang mau nangis?"
     hide tana_side_shock at left
+    hide tana jatoh
     with dissolve
     # Hide Tono jatoh.png
     "[mcname!c] pun membantu Tana berdiri."
@@ -2141,8 +2154,9 @@ label chapter1tanamakan:
     scene mall temp with Dissolve(1.0)
     #Insert UI Handphone Nelpon"
     play music "BGM_Happy + HP.ogg" fadein 1.0 volume (2.0)
-    show telpon_mamah at ui_handphone with dissolve
-    show side mama at left with dissolve
+    show mama telpon_mamah at ui_handphone 
+    show side mama at left 
+    with dissolve
     $ quick_menu = True
     mama "Enak ya, anakku udah tinggal sendiri. Sekarang ga pernah ngabarin Mamah lagi. Huhu."
     hide side mama at left with dissolve
@@ -2397,10 +2411,13 @@ label chapter1tanamakan:
     "Tiba-tiba..."
 # SHOW tono keselek 2.png (Soalnya di ceritanya habis dari kampus, jdi harus pake keselek yg baju kampus)
     play music "BGM_Funny 3.ogg" fadein 1.0
-    show tana_side_shock at left with dissolve
+    show tana keselek at chibi_tono
+    show tana_side_shock at left 
+    with dissolve
     tana "UHUK UHUK UHUK!"
     hide tana_side_shock with dissolve
     "[mcname!c]" "Nah, kan. Hadehh..."
+    hide tana keselek
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -2420,12 +2437,14 @@ label chapter1tanamakan:
     "Staff" "Iya, kak."
     "[mcname!c]" "Lu seriusan bawa duit, kan?"
     hide tana at tana_near
-    show tana_angry_2 at tana_near
+    # show tana_angry_2 at tana_near
     show tana_side_angry_2 at left
+    show tana traktir at chibi_tono
     with dissolve
     tana "Liat nih gue bayar."
     hide tana_side_angry_2 at left
-    hide tana_angry_2 at tana_near 
+    # hide tana_angry_2 at tana_near 
+    hide tana traktir
     with dissolve
     "Tana memberikan uang kepada kasir."
     show tana at tana_near with dissolve

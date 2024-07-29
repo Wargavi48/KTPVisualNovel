@@ -3780,22 +3780,32 @@ label trueendtana:
     hide tana_date_side_confused at left
     hide tana_date_confused at tana_near 
     with dissolve
-    "Tana pun mencoba menelpon [mcname!c]."
     play sound "SFX - Telephone.mp3"
+    show tana ring at ui_handphone with dissolve
+    "Tana pun mencoba menelpon [mcname!c]."
 #UI TELEPON"
     "Kring kring"
     show tana_date_side_idle at left with dissolve
     tana "....."
     hide tana_date_side_idle at left with dissolve
     "[mcname!c] tidak mengangkat panggilan telepon dari Tana."
-    show tana_date_side_angry_2 at left with dissolve
+    hide tana ring
+    show tana_date_angry_2 at tana_near
+    show tana_date_side_angry_2 at left 
+    with dissolve
     tana "LAH?! NIH ORANG DI MANA?!"
-    hide tana_date_side_angry_2 at left with dissolve
-    "Tana pun mencoba menelpon [mcname!c] kembali."
+    hide tana_date_side_angry_2 at left 
+    hide tana_date_angry_2 at tana_near
+    with dissolve
     play sound "SFX - Telephone.mp3"
+    show tana ring at ui_handphone with dissolve
+    "Tana pun mencoba menelpon [mcname!c] kembali."
     "Kring kring"
     "[mcname!c]" "Halo?"
-    show tana_date_side_angry_2 at left with dissolve
+    hide tana ring
+    show tana telpon at ui_handphone
+    show tana_date_side_angry_2 at left 
+    with dissolve
     tana "KAMU DI MANA?! KOK BELUM SAMPE?!"
     hide tana_date_side_angry_2 at left with dissolve
     "[mcname!c]" "Buset. Kenceng amat. Aku baru bangun ini, Ton."
@@ -3806,6 +3816,8 @@ label trueendtana:
     show tana_date_side_angry_2 at left with dissolve
     tana "MAAF MAAF! MALES AH!"
     hide tana_date_side_angry_2 at left
+    hide tana telpon
+    with dissolve
     #UI TELEPON SELESAI"
     $ quick_menu = False
     scene black with Dissolve(1.0)

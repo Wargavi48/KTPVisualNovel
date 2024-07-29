@@ -401,7 +401,9 @@ image side flora_side_angry = "Characters/flora_side_angry.png"
 image side flora_side_angry_talk = "Characters/flora_side_angry_talk.png"
 
 # UI Telpon Tono
-image side telpon_mamah = "telpon mamah.png"
+image mama telpon_mamah = "telpon mamah.png"
+image tana telpon = "tonocall.png"
+image tana ring = "tonoring.png"
 
 # Donors
 
@@ -450,3 +452,14 @@ default papah = Character("Papah", image="Papah", color="#FFF")
 image side papah = "Characters/Papah_side.png"
 
 default mc = Character("[mcname]", color="#000000")
+
+# chibi
+image tana malu = "assets/tono malu.png"
+image tana narik = "assets/tana narik.png"
+image tana keselek = "assets/Tana_keselek.png"
+image tana traktir = "assets/tanatraktir.png"
+image tana jatoh = "assets/tono jatoh.png"
+image tana jatoh2 = "assets/tono jatoh2.png"
+image tana kepeleset = "assets/TONO kepeleset 1.png"
+image tana kepeleset2 = "assets/tono kepeleset 2.png"
+image tana dompet = "assets/tonodompet.png"
