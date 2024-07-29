@@ -4,13 +4,11 @@ label phoneChat:
     $ kana_name = "Kana"
     nvl clear
     play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
-    scene bedroom with dissolve
     freya_nvl "{size=-5}Eh, guys {color=#0000FF}@All{/color}{/size}"
     freya_nvl "{size=-5}Buat tema, udah fix kan jadinya?{/size}"
     freya_nvl "{size=-5}Mau yang udah kita tentuin sebelumnya?{/size}"
     kana_nvl "{size=-5}Kalau dari aku sih, setuju{/size}"
     kana_nvl "{image=setuju.jpg}"
-    mcname "{i}Hm…? Lucu juga meme yang dipake Kana ini...{/i}"
     freya_nvl "{size=-5}Kita mau kerja kelompok kapan, nih?{/size}"
     freya_nvl "{size=-5}Ini kan buat minggu depan.{/size}"
     freya_nvl "{size=-5}Jadi, kita punya waktu kurang lebih 5 harian.{/size}"
@@ -31,7 +29,7 @@ label phoneChat:
             donatur_nvl "{size=-5}Santai aja Mba? Galak banget sih, pasti bisa kok gw haha{/size}"
             mc_nvl "{size=-5}Iya. Aku kemungkinan bisa, kok{/size}"
             kana_nvl "{size=-5}Iya nih, santai aja dong Freya.{/size}"
-            kana_nvl "{size=-5}Aku takuttt (｡•́︿•̀｡){/size}"
+            kana_nvl "{size=-5}Aku takuttt (•́•̀){/size}"
             donatur_nvl "{size=-5}Nah liat, si [kana_name] aja jadi takut{/size}"
             freya_nvl "{size=-5}Apa sih, Kana. Biasa aja kali. Jangan playing victim gitu. #KanaAkunJahat{/size}"
             freya_nvl "{image=serius.jpg}"
@@ -40,29 +38,46 @@ label phoneChat:
             freya_nvl "{size=-5}Iya aku bisa…{/size}"
             kana_nvl "{size=-5}Aku juga{/size}"
             donatur_nvl "{size=-5}Boleh, gw sih ngikut aja.{/size}"
-            scene bedroom with Dissolve(2.0)
+            stop music fadeout 1.0
+            play music "BGM_Kosan 1.ogg" fadein 1.0
+            scene kamar mc kota with Dissolve(2.0)
+            $ quick_menu = True
             "Obrolan mereka tidak terasa sudah lama."
             "Malam pun menjadi semakin larut."
-            "[mcname] pun terlelap..."
+            "[mcname!c] pun terlelap..."
             stop music fadeout 1.0
             jump chapter1kana3
         "Ga bisa kerja kelompok":
+            stop music fadeout 1.0
+            play music "BGM_Bad End.ogg" fadein 1.0
             mc_nvl "{size=-5}Eh sorry. Aku ga bisa ikut kerja kelompok, kayaknya{/size}"
             mc_nvl "{size=-5}Soalnya jadwal penuh sama part-timeku yang bakal dimulai besok{/size}"
             mc_nvl "{size=-5}Nanti aku kerjain yang lain, gmn?{/size}"
-            scene black with Dissolve(2.0)
+            scene black with dissolve
             show text "{color=#FFF}BROOO YNG BENER AJA, BARU PERTAMA KALI KERJA KELOMPOK UDAH GINI !??{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}AKHIRNYA LO PUN DI JAUHIN SAMA TEMEN-TEMEN KELOMPOK{/color}" with Pause (2.0)
+            scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause (2.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Ghosting":
+            stop music fadeout 1.0
+            play music "BGM_Bad End.ogg" fadein 1.0
             scene black with Dissolve(2.0)
             show text "{color=#FFF}EH LO MASIH MABA, BUKANYA SOSIALISASI, MALAH MENYENDIRI{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FFF}SADAR DIRI, NGACA SANA{/color}" with Pause (2.0)
+            scene black with dissolve
             show text "{color=#FFF}ATAU LO MAU JADI MAHASISWA KUPU-KUPU{/color}" with Pause (2.0)
+            scene black with dissolve
             show text "{color=#FFF} ATAU HIKIKOMORI !??{/color}" with Pause (2.0)
+            scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause (2.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
 
