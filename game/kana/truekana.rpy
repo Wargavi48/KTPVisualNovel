@@ -118,16 +118,25 @@ label truekanachat:
     mc_nvl "{size=-5}Btw nanti kita di sana mau ngapain aja ya? Jujur ini event pertamaku.{/size}"
     mc_nvl "{size=-5}Jadi tadi gimana tips and tricknya buat di event, Yang Mulia Kanaia Asa?{/size}"
     kana_nvl "{size=-5}IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-{/size}"
+    #Telpon dering
+    play sound "audio/SFX - Call.mp3"
     "Tanpa sengaja Kana menekan tombol voice call dan [mcname!c] pun tanpa pikir panjang menekan tombol jawab."
     #*SKIP TO SCENE*
     #*BG HP VOICE CALL*
+    show telpon_mamah at ui_handphone with dissolve
+    show kana_side_cry at left with dissolve
     kana "Ehh maaf kepencet!!! Aduh malu banget, aku matiin aja ya."
+    hide kana_side_cry with dissolve
     "[mcname!c]" "JANGAN!!!"
     "Kana terdiam kaget karena mendengar suara [mcname!c] yang tiba-tiba teriak."
     "[mcname!c]" "Maksudnya ga usah dimatiin kalau boleh, biar lebih seru ngobrolnya."
+    show kana_side_drylaugh at left with dissolve
     kana "Uuummm.. o-oke deh."
+    hide kana_side_drylaugh with dissolve
     "[mcname!c]" "Jadi gimana tadi pengalaman kamu? Aku nungguin loh, kasih tau dong biasanya gimana aja di event jejepangan tuh."
+    show kana_side_talk at left with dissolve
     kana "Oh iya lupa, jadi kalau aku dulu ikut event jejepangan tuh biasanya-"
+    hide kana_side_talk with dissolve
     "Tanpa sadar Kana dan [mcname!c] pun mengobrol lama, bahkan sampai melewati tengah malam."
     "Beberapa kali [mcname!c] mendengar Kana menguap dan menyarankan untuk mengakhiri voice call, tetapi ia tetap melanjutkan ceritanya seakan meluapkan semua cerita yang telah ia simpan sendirian selama ini"
     "Beberapa saat kemudian pun Kana tertidur dengan voice call masih menyala."
@@ -138,6 +147,9 @@ label truekanachat:
     "[mcname!c]" "{i}Heeee... Kana ketiduran ya?{/i}"
     "Suara nafas Kana sempat beberapa kali terdengar."
     "Setelah beberapa saat, [mcname!c] pun memilih untuk mengakhiri voice call itu dan tidur agar tidak telat besok."
+    hide telpon_mamah with dissolve
+    #Tutup telpon
+    play sound "audio/SFX - End Call.mp3"
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
@@ -721,6 +733,7 @@ label truekanajapanfest:
     "Setelah beberapa menit, [mcname!c] datang ke kostnya."
     play sound "audio/cafe-entrance.mp3"
     #*DING* (NOTIF HP)
+    #play sound "audio/"
     "HP [mcname!c] pun berbunyi dan ia melihat adanya notif chat dari Kana." 
     #*BG HP (CHATTING APP)
     #nvl clear
@@ -920,17 +933,34 @@ label truekanajapanfest:
     "[mcname!c] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok."
     "Tiba-tiba terdengar bunyi dari HP yang menunjukkan bahwa HP perlu dicharge, akan tetapi ternyata ada notifikasi lain dari Kana dan Freya yang mencoba menghubungi [mcname!c] berkali-kali."
     #*BG HP LAGI TELEPON*
+    play sound "audio/SFX - Calling.mp3"
+    show telpon_mamah at ui_handphone with dissolve
+    show freya_side_shock at left with dissolve
     freya "Nahhh kan kalau gini enak, ga usah ngehubungin satu-satu."
+    hide freya_side_shock with dissolve
     "[mcname!c]" "Ah Naya, Freya, maaf ya tadi aku ketiduran."
+    show kana_side_smile at left with dissolve
     kana "Iya gapapa. Tadi juga aku terlalu spam, maaf ya."
+    hide kana_side_smile with dissolve
     "[mcname!c]" "Enggak apa-apa, aku ga sempet liat semua chatnyaa. Sorry."
+    show freya_side_talk at left with dissolve
     freya "Jadi tadi kenapa Nay?"
+    hide freya_side_talk with dissolve
+    show kana_side_confused at left with dissolve
     kana "Harus aku yang ngejelasin?"
+    hide kana_side_confused with dissolve
     "[mcname!c]" "Ya udah, sini deh aku yang jelasin."
+    show freya_side_annoy at left with dissolve
     freya "Lah, emang tau ada apa?"
+    hide freya_side_annoy with dissolve
     "[mcname!c]" "Ya nggak lah, makanya cepet jelasin."
+    show kana_side_talk at left with dissolve
     kana "Hahahaha."
+    hide kana_side_talk with dissolve
+    show freya_side_annoy at left with dissolve
     freya "Hadeeeh"
+    hide freya_side_annoy with dissolve
+    show kana_side_talk at left with dissolve
     kana "Oke, jadi TLDR aja nih ya. Lusa tuh bakalan ada event di cafe mall yang udah aku tungguin banget dari beberapa bulan yang lalu."
     kana "Nah di eventnya tuh, bakalan ada cake yang dijual. Sumpah itu enak banget cakenya."
     kana "Terus, yang bikin aku pengen banget tuh cakenya limited edition gitu, jadi aku bisa jamin kalau cakenya itu bakalan ENAKKKKK BANGETTT."
@@ -938,16 +968,29 @@ label truekanajapanfest:
     kana "Nahhhh tapi yang jadi masalahnya tuh, di event itu satu orang cuma bisa beli satu buah cake aja."
     kana "Jadi nanti aku pengen ajak Freya sama kamu buat antri dan beli juga."
     kana "Nanti uangnya dari aku kok, santai aja. Tapi nanti ikut antri biar bisa beli juga."
+    hide kana_side_talk with dissolve
+    show freya_side_shock at left with dissolve
     freya "Kayaknya itu kepanjangan deh buat TLDR, Nay."
+    hide freya_side_shock with dissolve
     "[mcname!c]" "Keknya TLDR-mu itu \"Too Long Di Read\", Nay."
+    show kana_side_drylaugh at left with dissolve
     kana "Hehehe, maaf terlalu semangat."
+    hide kana_side_drylaugh with dissolve
     "[mcname!c]" "Tapi oke, intinya lusa kan?"
+    show kana_side_talk at left with dissolve
     kana "Iya lusa."
+    hide kana_side_talk with dissolve
     "[mcname!c]" "Oke aku bisa kok."
+    show freya_side_talk at left with dissolve
     freya "Yaudah nanti kabarin lagi yaa. Aku mau tidur dulu."
+    hide freya_side_talk with dissolve
+    show kana_side_talk at left with dissolve
     kana "Okeee, good night minna~"
+    hide kana_side_talk with dissolve
     "[mcname!c]" "Oke, good night."
-#*BG HP LAGI TELEPON SELESAI*
+    #*BG HP LAGI TELEPON SELESAI*
+    hide telpon_mamah with dissolve
+    play sound "audio/SFX - End Call.mp3"
     "[mcname!c]" "Hmmmmmm."
     "[mcname!c]" "{i}Oke nanti aku harus liat-liat sekalian milih hadiah apa yang kayaknya cocok buat Naya di mall.{/i}"
     stop music fadeout 1.0
@@ -1007,8 +1050,9 @@ label truekanajapanfest:
     hide kana_talk
     show kana at char_center
     with dissolve
-#SFX KRINGGG Telepon*
-#BG Telepon ON
+    #SFX KRINGGG Telepon*
+    play sound "audio/SFX - Call.mp3"
+    #BG Telepon ON
     show kana_side_confused at left with dissolve
     kana "Eh?"
     hide kana_side_confused
@@ -1020,7 +1064,8 @@ label truekanajapanfest:
     with dissolve
     kana "HA!?? Aduhhh… ya udah deh."
     hide kana_side_confused with dissolve
-#BG Telepon OFF
+    #BG Telepon OFF
+    play sound "audio/SFX - End Call.mp3"
     show kana_shy_smile at char_center
     show kana_side_shy_smile at left
     with dissolve
