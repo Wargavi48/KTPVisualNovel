@@ -115,12 +115,12 @@ default finished_pieces = 0 # Keeps track of the amount of pieces that have been
 
 label puzzle_start:
     play sound "audio/Alarm.mp3" fadein 2.0
-    scene black with dissolve
+    scene black with Dissolve(1.0)
     show text "{color=#FFF}MINI GAME TIME{/color}" with Pause(2.0)
-    scene mini game with dissolve
+    play music "audio/BGM_Minigame Kana.ogg" fadein 2.0
+    scene mini game with Dissolve(1.0)
     stop sound fadeout 1.0
-    "[mcname], Freya, dan Kana mulai mewawancarai pedagang di sekitar. Selesaikan Puzzle untuk menyelesaikan wawancara."
-    play music "audio/minigame_kana.mp3" fadein 2.0
+    "[mcname!c], Freya, dan Kana mulai mewawancarai pedagang di sekitar. Selesaikan Puzzle untuk menyelesaikan wawancara."
     $ setup_puzzle()
     call screen reassemble_puzzle with dissolve
     return

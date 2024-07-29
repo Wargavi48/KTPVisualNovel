@@ -52,7 +52,7 @@ define takamina_center = Transform(zoom=0.7,xalign=0.5,yalign=-0.1)
 define takamina_left = Transform(zoom=0.7,xalign=0.0,yalign=-0.1)
 define ui_handphone = Transform(xalign=0.5,yalign=0.5)
 define chibi_tono = Transform(zoom=0.3,xalign=0.0,yalign=0.0,xpos=0.15)
-
+define lift_center = Transform(zoom=0.3,xalign=0.0,yalign=0.0,xpos=0.21)
 
 # Game dimulai disini.
 label start:
@@ -84,7 +84,7 @@ label intro:
     "Sudah lama berlalu semenjak hari kelulusan, sekarang ini [mcname!c] sedang mempersiapkan diri untuk memasuki jenjang perkuliahan."
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    scene kamar mc kota with Dissolve(1.0)
+    scene kamar mc desa with Dissolve(1.0)
     $ quick_menu = True
     "[mcname!c]" "Huft."
     "[mcname!c]" "{i}Sepertinya persiapan untuk di sana nanti sudah lengkap semua.{/i}"

@@ -657,21 +657,23 @@ label chapter2tana:
             jump credits
         "Telepon Tana":
             "[mcname!c]" "Yaudah lah. Daripada absen gua ngurang, terus ga bisa ikut ulangan."
-            "#Show UI Telepon"
+            show tana mc_ring at ui_handphone with dissolve
             play sound "SFX - Calling.mp3" loop fadein 0.5
             "[mcname!c] pun mencoba menelpon Tana."
-            "Memanggil di UI Telepon HP"
             "[mcname!c]" "Angkat lah."
             stop sound fadeout 1.0
             "Tana tidak mengangkat panggilan telepon dari [mcname!c]."
+            hide tana mc_ring at ui_handphone with dissolve
             "[mcname!c]" "Hadeh. Pasti Tana masih marah gara-gara video kemarin. Kan gua ga maksud apa-apa."
+            show tana mc_ring at ui_handphone with dissolve
             play sound "SFX - Calling.mp3" loop fadein 0.5
             "[mcname!c]" "Coba telepon lagi deh."
-            #Memanggil di UI Telepon HP
             "[mcname!c]" "Angkat lah woy."
             stop sound fadeout 1.0
             play sound "SFX - Angkat Telepon.wav" volume (5.0)
-            #"Lagi telepon di UI Telepon HP"
+            hide tana mc_ring at ui_handphone 
+            show tana mc_telpon at ui_handphone
+            with dissolve
             show tana_side_angry_2 at left with dissolve
             tana "Ha?"
             hide tana_side_angry_2 at left with dissolve
@@ -688,16 +690,14 @@ label chapter2tana:
             tana ".................................."
             hide tana_side_idle at left with dissolve
             play sound "SFX - End Call.wav" loop volume (2.0)
-            "UI Telepon diputus"
+            hide tana mc_telpon at ui_handphone with dissolve
             "[mcname!c]" "Waduh kelupaan ngomong."
             stop sound
             "[mcname!c] pun menelepon Tana lagi untuk yang ketiga kalinya."
             play sound "SFX - Calling.mp3" loop fadein 1.0
-            "Memanggil di UI Telepon HP"
+            show tana mc_telpon at ui_handphone with dissolve
             stop sound fadeout 1.0
             play sound "SFX - Angkat Telepon.wav" volume (5.0)
-            "Lagi telepon di UI Telepon HP"
-            # tana marah
             show tana_side_angry_2 at left with dissolve
             tana "LU NGAPAIN SIH?! LU NGEPRANK GUA YA?! GUA MATIIN DAH!"
             hide tana_side_angry_2 at left with dissolve
@@ -719,8 +719,7 @@ label chapter2tana:
             hide tana_side_angry_2 at left with dissolve
             "[mcname!c]" "Makasih banyak Tan, lu udah mau ngeban-"
             play sound "SFX - End Call.wav" loop volume (2.0)
-            "UI Telepon diputus"
-            "#Tit... tit... \nUI Telepon diputus"
+            hide tana mc_telpon with dissolve
             stop sound
             "[mcname!c]" "Belom juga kelar ngomong, udah dimatiin aja."
             "[mcname!c]" "Aduh sumpah sakit banget nih perut, sampe pusing kepala gua."

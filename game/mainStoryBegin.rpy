@@ -52,7 +52,7 @@
     $ quick_menu = False
     scene black with Dissolve(1.0)
     pause (1.0)
-    scene kamar mc kota with Dissolve(1.0)
+    scene kamar mc desa with Dissolve(1.0)
     $ quick_menu = True
     "[mcname!c]" "{i}Oke, barang-barang sudah lengkap semua.{/i}"
     "[mcname!c]" "Akhirnya udah bisa tidur nih."

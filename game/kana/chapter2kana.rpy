@@ -30,8 +30,7 @@ label chapter2kanastart:
     $ quick_menu = False
     scene white with Dissolve(1.0)
     play music "audio/BGM_Rumah Awal MC.ogg" loop fadein 1.0
-    scene mc bedroom with Dissolve(2.0)
-# HARUSNYA KOST AWAL MC
+    scene kamar mc desa with Dissolve(2.0)
     show white:
         default
         subpixel True 

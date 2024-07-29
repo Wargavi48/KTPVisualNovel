@@ -4899,17 +4899,16 @@ label goodtanaaftergame:
     hide tana_idol_side_talk 
     hide tana_idol_talk
     with dissolve
-    #Asset
-    #Telefon masuk
-    #Feni Call
     stop music fadeout 1.0
     stop sound fadeout 1.0
     play music "BGM_Happy + HP.ogg" fadein 1.0 volume(2.0)
-    "ASSET TELEPON MUNCUL"
-    show feni_side_talk at left with dissolve
+    show feni telpon at ui_handphone
+    show feni_side_talk at left 
+    with dissolve
     feni "[mcname!c], Tana, kalian di mana? Harus siap-siap, udah hampir waktunya tampil."
     hide feni_side_talk with dissolve
     "[mcname!c]" "Siap, Kak Feni. Tana langsung otw ke sana."
+    hide feni telpon at ui_handphone with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
     play music "BGM_Monas.ogg" fadein 1.0

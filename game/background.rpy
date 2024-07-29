@@ -1,7 +1,7 @@
 # Deklarasikan gambar di bawah line ini, menggunakan pernyataan image.
 image background = "images/screens/main_menu_noktp.png"
 image dream = "images/BG/dream.png"
-image mc bedroom = "images/BG/bedroom.png"
+image kamar mc desa = "images/BG/kamar MC desa.png"
 image kampus = "images/BG/kampus.png"
 image depan kampus = "images/BG/depan_kampus.png"
 image kelas = "images/BG/kelas.jpg"

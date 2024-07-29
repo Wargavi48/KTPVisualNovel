@@ -40,7 +40,7 @@ label phoneChat:
             donatur_nvl "{size=-5}Boleh, gw sih ngikut aja.{/size}"
             stop music fadeout 1.0
             play music "BGM_Kosan 1.ogg" fadein 1.0
-            scene kamar mc kota with Dissolve(2.0)
+            scene kamar mc kota with dissolve
             $ quick_menu = True
             "Obrolan mereka tidak terasa sudah lama."
             "Malam pun menjadi semakin larut."
