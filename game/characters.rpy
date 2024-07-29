@@ -404,6 +404,9 @@ image side flora_side_angry_talk = "Characters/flora_side_angry_talk.png"
 image mama telpon_mamah = "telpon mamah.png"
 image tana telpon = "tonocall.png"
 image tana ring = "tonoring.png"
+image feni telpon = "fenicall.png" 
+image tana mc_telpon = "Tanacall.png"
+image tana mc_ring = "Tanaconn.png"
 
 # Donors
 
