@@ -679,7 +679,7 @@ label chapter1piajalantanpapio:
     show pia_date_shock at pia_near_right with dissolve
     show pia_date_side_shock at left with dissolve
     pia "CEPIOOOOOOOOOOO!!!!"
-    hide pia_side_shock with dissolve
+    hide pia_date_side_shock with dissolve
     show fio_smile at char_near_left with dissolve
     show fio_side_smile at left with dissolve
     fio "Hahahahahaha.\n*sambil peluk Pia*"
@@ -703,7 +703,7 @@ label chapter1piajalantanpapio:
     show pia_date_talk at pia_near_right with dissolve
     show pia_date_side_talk at left with dissolve
     pia "Nah mumpung ada Cepio, Si Sepuh penunggu mall ini, mending rekomendasiin tempat makan enak di sini."
-    hide pia_date_talk with dissolve
+    hide pia_date_side_talk with dissolve
     hide pia_side_talk with dissolve
     jump chapter1piamakanmall
 
@@ -909,11 +909,11 @@ label chapter1piamakanmall:
     show pia_date_shock at pia_near with dissolve
     show pia_date_side_shock at left with dissolve
     pia "CEPIOOOOOOOOOOOOO~"
-    hide pia_side_shock with dissolve
+    hide pia_date_side_shock with dissolve
     mcname "Ahahahahha."
     show pia_date_side_shock at left with dissolve
     pia "J-jadi… Abis berapa tadi belanja alat gambar?"
-    hide pia_side_shock with dissolve
+    hide pia_date_side_shock with dissolve
     mcname "400an lah, ahahaha. Kamu abis berapa?"
     show pia_date_sad at pia_near with dissolve
     show pia_date_side_sad at left with dissolve
@@ -926,10 +926,10 @@ label chapter1piamakanmall:
     show pia_nyembur with dissolve:
         zoom 0.3
         xalign 0.8
-    show pia_side_shock at left with dissolve
+    show pia_date_side_shock at left with dissolve
     pia "UHUK-UHUK!!"
     pia "GIMANA??!!!"
-    hide pia_side_shock with dissolve
+    hide pia_date_side_shock with dissolve
     hide pia_nyembur with dissolve
     show pia_date_shock at pia_near with dissolve
     mcname "Ahahaha, engga. Bercanda kok."
@@ -939,14 +939,14 @@ label chapter1piamakanmall:
     hide pia_date_sad with dissolve
     hide pia_date_side_sad with dissolve
     mcname "Apa, Pia? Sorry, gak kedengeran?"
-    show pia_side_shock at left with dissolve
+    show pia_date_side_shock at left with dissolve
     pia "GAK KOK, minumannya enak. Aku haus, mau nambah kayaknya."
-    hide pia_side_shock with dissolve
+    hide pia_date_side_shock with dissolve
     mcname "Oh okeh, mau aku panggil pelayannya?"
     show pia_date_silent at pia_near with dissolve
     show pia_date_side_silent at left with dissolve
     pia "Gausah."
-    hide pia_side_silent with dissolve
+    hide pia_date_side_silent with dissolve
     mcname "Lah???"
     "*Suasana hening*"
     show pia_date_talk at pia_near with dissolve
@@ -962,7 +962,7 @@ label chapter1piamakanmall:
     pia "Selfie ah!!"
     # window auto hide
     play sound "audio/camera.mp3" loop
-    hide pia_side_talk with dissolve
+    hide pia_date_side_talk with dissolve
     stop sound 
     with Pause(1.0)
     show pia_date_shock at pia_near with dissolve
@@ -975,7 +975,7 @@ label chapter1piamakanmall:
     pia "Oke, satuu..dua....tigaaaa~"
     show pia_date_smile at pia_near with dissolve
     play sound "audio/camera.mp3"
-    hide pia_side_shock with dissolve
+    hide pia_date_side_shock with dissolve
     "Fiony ngeliatin dari jauh sambil senyum-senyum ngeledek nyindir Pia."
     hide pia_date_smile with dissolve
     show pia_date_side_shock at left with dissolve
@@ -992,8 +992,9 @@ label chapter1piamakanmall:
     hide fio_side with dissolve
     show pia_date_side_shock at left with dissolve
     pia "Ehehehehe~"
+    show pia_date at pia_near_right with dissolve
     hide pia_date_shock with dissolve
-    hide pia_side_shock with dissolve
+    hide pia_date_side_shock with dissolve
     show fio_side at left with dissolve
     hide fio with dissolve
     fio "Kuy lah balik, takut kemaleman. Udah aku bayarin juga tadi makanannya ya."
@@ -1014,6 +1015,7 @@ label chapter1piamakanmall:
     hide pia_date_side_silent
     hide fio_talk
     hide fio
+    hide pia_date
     with dissolve
     "Fiony berpisah dengan Pia dan [mcname]. Kemudian mereka pun pulang ke tempat tinggal masing-masing."
     stop music fadeout 1.0

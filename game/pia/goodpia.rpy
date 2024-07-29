@@ -1983,6 +1983,9 @@ label goodendpiarooftop:
     hide feni with dissolve
     "Kemudian...."
     # Insert Chibi pia jatoh
+    show pia_kepleset with Dissolve(1.0)
+    pause(2.0)
+    show pia_kepleset_2 with Dissolve(1.0)
     stop music fadeout 1.0
     play sound "audio/tabrakan.mp3" volume (4.0)
     "Pia jatuh"
