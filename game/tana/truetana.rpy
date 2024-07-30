@@ -866,7 +866,9 @@ label chapter2tanaTRUE:
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-#chapter2tanaTRUE2
+    jump multiendlearnUTS
+
+label chapter2tanaTRUE2:
     "[mcname!c]" "Gimana kalo di cafe aja? Gua lagi pengen yang manis-manis."
     hide tana at tana_near
     show tana_talk at tana_near
@@ -1606,7 +1608,9 @@ label truetanaafterquiz:
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-#chapter2tanaTRUE3:
+    jump multiendafterUTS
+
+label chapter2tanaTRUE3:
     "[mcname!c]" "Di rooftop aja gimana? Aku belum pernah ke rooftop. Kamu udah pernah, Ton?"
     hide tana at tana_near
     show tana_talk at tana_near

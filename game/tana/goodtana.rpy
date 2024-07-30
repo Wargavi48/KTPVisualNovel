@@ -855,7 +855,9 @@ label chapter2tanaGOOD:
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-#chapter2tanaGOOD2
+    jump multiendlearnUTS
+
+label chapter2tanaGOOD2:
     "[mcname!c]" "Kalo ke ruang club gimana? Ga begitu rame, jadi bisa fokus belajar buat UTS."
     hide tana at tana_near
     show tana_talk at tana_near
@@ -1050,12 +1052,13 @@ label chapter2tanaGOOD:
     hide tana_sad
     hide tana_angry at tana_near
     with dissolve
-#"ASSET FLYER LOMBA IDOL MUNCUL"
-    show tana_side_confused at left with dissolve
+    show idolcomp at poster
+    show tana_side_confused at left 
+    with dissolve
     tana "Apaan nih?"
     hide tana_side_confused at left with dissolve
     "[mcname!c]" "Flyer lomba dance dari Kak Feni sama Kak Flora yang gua bilangin di sawah kemarin. Lu ikutan lah!"
-#HIDE ASSET FLYER LOMBA IDOL
+    hide idolcomp
     show tana_shock at tana_near
     show tana_side_shock at left
     with dissolve
@@ -1322,21 +1325,19 @@ label chapter2tanaGOOD:
     show tana at tana_near with dissolve
     $ quick_menu = True
     "[mcname!c]" "Nih Tan."
+    hide tana at tana_near with dissolve
 #"ASSET FLYER REKRUT ANGGOTA IDOL GROUP"
+    show idolrecruit at poster with dissolve
     "[mcname!c]" "Flyernya udah jadi. Bagus kan?"
-    hide tana at tana_near
-    show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
     tana "Wuooh! Bagus banget, asli! Thank you, [mcname!c]."
-    hide tana_talk at tana_near
     hide tana_side_talk at left
-    show tana at tana_near
     with dissolve
     "[mcname!c]" "Jelas bagus, kan gua yang bikin."
+    hide idolrecruit at poster with dissolve
 #HIDE FLYER REKRUT ANGGOTA IDOL GROUP"
     "[mcname!c]" "Btw, ini rencananya nanti flyernya mau dibagiin ke mana aja?"
-    hide tana at tana_near
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
@@ -1418,6 +1419,7 @@ label chapter2tanaGOOD:
     with dissolve
     stop music fadeout 1.0
 #"ASSET FLYER REKRUT ANGGOTA IDOL"
+    show idolrecruit at poster with dissolve
     play music "BGM_Bad End.ogg" fadein 1.0
     "Mahasiswi 1" "Wait... Apaan nih?"
     "Mahasiswi 2" "Perekrutan anggota idol group baru?"
@@ -1430,6 +1432,7 @@ label chapter2tanaGOOD:
     with dissolve
     "Setelah mendengar omongan itu, emosi Tana pun mulai naik sampai ke ubun-ubun. Namun, ia memilih untuk menahan diri."
     "Mahasiswi 2" "Udahlah gurls, kita pergi yuk. Suasananya udah ga asik lagi nih karena kedatangan grup indie yang SOK TENAR!!!!"
+    hide idolrecruit with dissolve
 #HIDE FLYER REKRUT ANGGOTA IDOL"
     "Melihat flyer yang dibuang dengan gampangnya, amarah Tana pun memuncak dan terjadilah…."
     show tana_angry_2 at tana_near
@@ -2018,7 +2021,9 @@ label goodtanaafterquiz:
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-#chapter2tanaGOOD3
+    jump multiendafterUTS
+
+label chapter2tanaGOOD3:
     "[mcname!c]" "Di ruang club aja."
     hide tana at tana_near
     show tana_talk at tana_near

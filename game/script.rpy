@@ -13,7 +13,7 @@ define char_placement = Transform(zoom=0.5,xalign=0.5,yalign=-2.0)
 define char_placement_left = Transform(zoom=0.5,xalign=0.2,yalign=-2.0)
 define char_placement_right = Transform(zoom=0.5,xalign=1.0,yalign=-0.6)
 define char_center = Transform(zoom=0.9,xalign=0.5,yalign=-0.1)
-define galaxy_center = Transform(zoom=0.66,xalign=0.5,yalign=-0.1)
+define galaxy_center = Transform(zoom=1.03,xalign=0.5,yalign=-0.1,ypos=-0.39)
 define char_left = Transform(zoom=0.9,xalign=0.0,yalign=-0.1,xanchor=0.08)
 define char_right = Transform(zoom=0.9,xalign=1.0,yalign=-0.1, xanchor=0.94)
 define kana_near = Transform(zoom=1.3,xalign=0.5,yalign=0.02)
@@ -37,7 +37,7 @@ define fio_near = Transform(zoom=1.3,xalign=0.5,yalign=0.08)
 define fio_near_left = Transform(zoom=1.3,xalign=1.3,yalign=0.08)
 define fio_near_right = Transform(zoom=1.3,xalign=-0.5,yalign=0.08)
 define freya_near = Transform(zoom=1.3,xalign=-0.5,yalign=0.08)
-define freya_near_right = Transform(zoom=1.3,xalign=-1.0,yalign=0.08)
+define freya_near_right = Transform(zoom=1.3,xalign=-1.0,yalign=0.08,xpos=-0.95)
 define dosen_center = Transform(zoom=0.9,xalign=0.5,yalign=0.1)
 define dosen_left = Transform(zoom=0.9,xalign=-0.5,yalign=0.1)
 define rg_hasan_left = Transform(zoom=0.7,xalign=0.0,yalign=-0.1,xpos=-0.07)
@@ -63,9 +63,13 @@ define pintu_kamar_kana = Transform(zoom=0.3,xalign=0.0,yalign=-0.25,xpos=0.19)
 define club = Transform(zoom=0.4,xalign=0.0,yalign=0.2,xpos=0.11)
 define club2 = Transform(zoom=0.34,xalign=0.0,yalign=-0.4,xpos=0.03)
 define matsuri = Transform(zoom=0.18,xalign=0.0,yalign=0.13,xpos=0.55)
+define poster = Transform(zoom=0.18,xalign=0.0,yalign=0.2,xpos=0.11)
 
 # Game dimulai disini.
 label start:
+    init python:
+        import random
+    $ random_number = ''.join([str(random.randint(0, 9)) for _ in range(4)])
     if config.main_menu_music is not None:
         stop music fadeout 1.0
 
