@@ -60,10 +60,10 @@ define gui.interface_text_color = '#fff'
 ## Font dan ukuran Font ########################################################
 
 ## Font yang digunakan untuk text in-game.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "Poppins-Medium.ttf"
 
 ## Font yang di gunakan untuk nama karakter.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "Poppins-Medium.ttf"
 
 ## Font yang digunakan untuk text di luar permainan.
 # define gui.interface_text_font = "DejaVuSans.ttf"
