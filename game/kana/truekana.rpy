@@ -154,7 +154,8 @@ label truekanachat:
 #MUNCUL ASSET TELEPON KANA (CONNECTED)
     #*BG HP VOICE CALL*
     stop sound
-    show telpon_mamah at ui_handphone with dissolve
+    # show kana_telpon at ui_handphone with dissolve
+    "UI kana telpon MC"
     show kana_side_cry at left with dissolve
     kana "Ehh maaf kepencet!!! Aduh malu banget, aku matiin aja ya."
     hide kana_side_cry with dissolve
@@ -284,46 +285,46 @@ label truekanachat:
     play music "BGM_Matsuri Malam.ogg" fadein 1.0
     scene matsuri malam with Dissolve(1.0)
     #Harusnya BG Jejepangan malam
-    show kana_date_smile at char_center with dissolve
+    show kana_date_smile at kana_near with dissolve
     $ quick_menu = True
     "Di sana banyak kegiatan, mulai dari event utama sampai event sampingan."
     "Di antaranya ada cosplay event, song cover competition, dan mini game yang terinspirasi dari permainan tradisional Jepang lainnya."
     "[mcname!c]" "Ehhh Kana bentar...\n*Huft huft*"
     "[mcname!c]" "Sabar... Kana... Kamu semangat banget sih... B-bentar aku tarik nafas dulu."
     hide kana_date_smile
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Ahhh ayooo~ Kamu masa kalah sih sama aku?"
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c]" "Soalnya kamu cepet banget ke sana ke sininya."
     "[mcname!c]" "Belum ada 10 menit, kita udah pindah tempat mulu. Kamu ga mau liat-liat dulu booth merch yang ada di situ?"
     hide kana_date
-    show kana_date_confused at char_center
+    show kana_date_confused at kana_near
     show kana_date_side_confused at left
     with dissolve
     kana "Ihhh kamu semalem ga research dulu tentang booth yang bakalan ada? Aku udah liat-liat listnya."
     kana "Ada beberapa tempat yang pengen aku samperin, jadi aku cuma bentar doang di tempat lainnya gitu..."
     hide kana_date_side_confused
     hide kana_date_confused
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c]" "Oooo gitu ya ternyata. Maaf deh ini kan event pertama ku, jadi aku ga tau harus research list kaya gitu."
     hide kana_date
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Ya udah ayo ikutin aku aja."
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date_smile at char_center
+    show kana_date_smile at kana_near
     with dissolve
     "Kana pun langsung menarik tangan [mcname!c] yang hanya bisa mengikuti kemana pun Kana pergi, hingga Kana berhenti di suatu tempat."
     hide kana_date_smile
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c]" "Ummm Kana? Ada apa?"
     "Kana terdiam, di situ ada sebuah event yang sedang berlangsung."
@@ -369,50 +370,50 @@ label truekanachat:
     play sound "audio/crowd_noise.mp3" fadein 1.0
     #HARUSNYA SFX Applause
     "[mcname!c]" "Gilaaaa, kereen bangeett sumpah! Iya ga, Kana?"
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Iyaaa aku sampe terdiem loh, kamu juga dengerin tadi?"
     hide kana_date_side_talk 
     hide kana_date_talk
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c]" "Iya lah, kamu tiba-tiba diem aja. Gimana aku ga ikutan dengerin? Keren banget, kapan ya aku bisa nyanyi kaya gitu..."
     "[mcname!c]" "Btw, kamu suka nyanyi juga?"
     hide kana_date
-    show kana_date_shy_talk at char_center
+    show kana_date_shy_talk at kana_near
     show kana_date_side_shy_confused at left
     with dissolve
     kana "Eee-enggak kok, a-aku..."
     kana "E-ehhh liat deh, di situ ada cosplay yang bagus mending kita ke sana."
     hide kana_date_side_shy_confused
     hide kana_date_shy_talk
-    show kana_date_shy at char_center
+    show kana_date_shy at kana_near
     with dissolve
     "Kana tiba-tiba menghindari dari jawaban [mcname!c] dan berlari ke arah seorang cosplayer."
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene matsuri malam with Dissolve(1.0)
     $ quick_menu = True
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Eh Kaa, permisi~"
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date_smile at char_center
+    show kana_date_smile at kana_near
     with dissolve
     "Cosplayer" "Iya Ka kenapa?"
     "[mcname!c]" "Kenapa Kana tiba-tiba... Ehh kamu cosplay jadi Kamen Driver Den-A ya?"
     "Cosplayer" "Wahhh iya ka, kebetulan aku suka Kamen Driver."
     hide kana_date_smile
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "[mcname!c], kamu juga suka?"
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c]" "SUKA!!??? Wahhhh aku ngikutin banget semua series Kamen Driver loh Kana."
     "Cosplayer" "Wahh, kukira ga terlalu banyak yang kenal cosplayku. Ternyata ada juga ya yang kenal, makasih ya Kak."
@@ -423,7 +424,7 @@ label truekanachat:
         "Menghabiskan waktu sama cosplayer.":
             #*CHOSE A*
             hide kana_date
-            show kana_date_angry at char_center
+            show kana_date_angry at kana_near
             with dissolve
             "[mcname!c] tetap mengobrol dengan cosplayer tersebut dan mengabaikan keberadaan Kana untuk beberapa saat."
             "Tak lama saat [mcname!c] tersadar, Kana sudah menghilang dan HPnya tidak dapat dihubungi lagi."
@@ -440,51 +441,51 @@ label truekanachat:
     
 label truekanajapanfest:
     hide kana_date
-    show kana_date_smile at char_center
+    show kana_date_smile at kana_near
     with dissolve
     "[mcname!c]" "Eh maaf ya nanti lagi, aku lagi sama temen soalnya. Kalo boleh minta social medianya aja kak, biar bisa ngobrol."
     hide kana_date_smile
-    show kana_date_angry at char_center
+    show kana_date_angry at kana_near
     with dissolve
-    "Orang" "Ooh iya kak, ini bisa di add \"@namadonatur_angka random\". Makasih banyak yaa~"
+    "Orang" "Ooh iya kak, ini bisa di add \"@namadonatur_[random_number]\". Makasih banyak yaa~"
     "[mcname!c]" "Sama-sama kak"
     "[mcname!c]" "Eh Kana maaf lama ya. Tadi hampir aja keasikan, untung aku inget ada kamu yang lagi nungguin aku haha."
     hide kana_date_angry
-    show kana_date_confused at char_center
+    show kana_date_confused at kana_near
     show kana_date_side_confused at left
     with dissolve
     kana "Enggak kok, ga lama. Seru ya."
     hide kana_date_side_confused
     hide kana_date_confused
-    show kana_date_angry at char_center
+    show kana_date_angry at kana_near
     with dissolve
     "[mcname!c]" "Eh kamu kenapa Kana, marah ya? Tadi kelamaan ya? Sorry..."
     hide kana_date_angry
-    show kana_date_confused at char_center
+    show kana_date_confused at kana_near
     show kana_date_side_confused at left
     with dissolve
     kana "G."
     hide kana_date_side_confused
     hide kana_date_confused
-    show kana_date_angry at char_center
+    show kana_date_angry at kana_near
     with dissolve
     "[mcname!c]" "Waduh. Ya udah sebagai permintaan maaf aku ajak main di stand sana deh gimana?"
     hide kana_date_angry
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "BEENER!?? Eh maksudnya... beneran nih?"
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c]" "Iya, bener kok. Ya udah, ayo."
     hide kana_date
-    show kana_date_smile at char_center
+    show kana_date_smile at kana_near
     with dissolve
     pause (1.0)
     hide kana_date_smile
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Yayyy~"
@@ -494,7 +495,7 @@ label truekanajapanfest:
     play music "audio/BGM_Minigame Tana.mp3" fadein 1.0
     scene matsuri malam with Dissolve(1.0)
 #Harusnya BG MINIGAME TANA (Tanpa mainin)
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     $ quick_menu = True
@@ -505,7 +506,7 @@ label truekanajapanfest:
     kana "Soalnya kamu keliatan ga yakin."
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c]" "Ini aku lagi fokus, Kana."
     "Tak lama kemudian..."
@@ -520,20 +521,20 @@ label truekanajapanfest:
     stop sound fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    play music "audio/BGM_Matsuri Malam.mp3" fadein 1.0
+    play music "audio/BGM_Matsuri Malam.ogg" fadein 1.0
 #Harusnya BGM Jejepangan Malam
     scene matsuri malam with dissolve
 #Harusnya BG Jejepangan Malam
     $ quick_menu = True
-    show kana_date at char_center with dissolve
+    show kana_date at kana_near with dissolve
     "[mcname!c]" "Liat, kan? Aku bisaaa, siapa dulu?"
     hide kana_date
-    show kana_date_angry at char_center
+    show kana_date_angry at kana_near
     with dissolve
     "[mcname!c] mendekatkan tangannya ke telinganya dan seolah olah menunggu Kana menjawab."
     "[mcname!c]" "Siapa dulu, hmmmm?"
     hide kana_date_angry
-    show kana_date_confused at char_center
+    show kana_date_confused at kana_near
     show kana_date_side_confused at left
     with dissolve
     kana "Iya iya, kamu jago deh."
@@ -541,24 +542,24 @@ label truekanajapanfest:
     "[mcname!c]" "Nahh gitu dong, hahah."
     "Setelah mendapatkan hadiah dari mini game di dalam booth, [mcname!c] memberikan hadiahnya kepada Kana."
     hide kana_date_confused
-    show kana_date_shy_smile at char_center
+    show kana_date_shy_smile at kana_near
     show kana_date_side_shy at left
     with dissolve
     kana "Eeeh?"
     hide kana_date_side_shy
     hide kana_date_shy_smile
-    show kana_date_shy at char_center
+    show kana_date_shy at kana_near
     with dissolve
     "[mcname!c]" "Ini, buat kamu."
     hide kana_date_shy
-    show kana_date_shy_smile at char_center
+    show kana_date_shy_smile at kana_near
     show kana_date_side_shy at left
     with dissolve
     kana "Gapapa nih?"
     hide kana_date_side_shy with dissolve
     "[mcname!c]" "Iyaa, sekarang kamu gak marah lagi kan?"
     hide kana_date_shy_smile
-    show kana_date_angry at char_center
+    show kana_date_angry at kana_near
     show kana_date_side_confused at left
     with dissolve
     kana "M-masih, hmph!"
@@ -570,23 +571,23 @@ label truekanajapanfest:
     "[mcname!c]" "Okee dehh, Nay."
     "[mcname!c]" "Kalo gitu, kamu mau makan apa? Aku traktir deh, soalnya kamu udah guide sana-sini."
     hide kana_date_angry
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Hmmmm, apa ya? Kayaknya takoyaki enak deh."
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c]" "Bolehhh, tunggu bentar yaa."
     hide kana_date
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Okeeee hati-hati, ya."
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date_smile at char_center
+    show kana_date_smile at kana_near
     with dissolve
     "[mcname!c] pun pergi meninggalkan Kana sejenak untuk membeli takoyaki."
     $ quick_menu = False
@@ -595,10 +596,10 @@ label truekanajapanfest:
     #Harusnya BG MINIGAME TANA (Tanpa mainin)
     $ quick_menu = True
     "Setelah beberapa saat, [mcname!c] kembali sambil membawa takoyaki."
-    show kana_date at char_center with dissolve
+    show kana_date at kana_near with dissolve
     "[mcname!c]" "Yahhh Nay, maaf ini cuma sisa satu porsi lagi. Ini buat kamu aja deh, aku gapapa."
     hide kana_date
-    show kana_date_confused at char_center
+    show kana_date_confused at kana_near
     show kana_date_side_confused at left
     with dissolve
     kana "Lah kok gitu sih, kamu juga pasti laper kan?"
@@ -606,23 +607,23 @@ label truekanajapanfest:
     "[mcname!c]" "Enggak koook."
     play sound "audio/hungry.mp3"
     hide kana_date_confused
-    show kana_date_smile at char_center
+    show kana_date_smile at kana_near
     with dissolve
     "Tiba-tiba, terdengar suara perut [mcname!c] yang berbunyi cukup keras sehingga Kana dapat mendengarnya."
     stop sound
     hide kana_date_smile
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Hahaha ga bisa bohong tuh perut kalau masalah makanan mah."
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date_smile at char_center
+    show kana_date_smile at kana_near
     with dissolve
     "Muka [mcname!c] pun memerah, merasa malu dengan perutnya." 
     "[mcname!c]" "Aduuhhhhh…\n*Blush*"
     hide kana_date_smile
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Sini kita makan bareng aja. Ini kan ada 6, kita bagi aja. Masing-masing 3 gimana?"
@@ -632,15 +633,15 @@ label truekanajapanfest:
     kana "Gak apa-apa kok, lagian aku juga makannya sedikit."
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c]" "O-oke deh kalau gitu. Eh tapi ini cuma ada satu doang garpu nya, bentar ya aku coba minta lagi ke penjualnya."
     hide kana_date
-    show kana_date_shy at char_center
+    show kana_date_shy at kana_near
     with dissolve
     "Sesaat [mcname!c] akan pergi, Kana tiba-tiba menangkap tangan [mcname!c]."
     hide kana_date_shy
-    show kana_date_shy_smile at char_center
+    show kana_date_shy_smile at kana_near
     show kana_date_side_shy at left
     with dissolve
     kana "[mcname!c], udah ga usah."
@@ -648,62 +649,62 @@ label truekanajapanfest:
     kana "Sini, kita gantian aja."
     hide kana_date_side_shy
     hide kana_date_shy_smile
-    show kana_date_shy at char_center
+    show kana_date_shy at kana_near
     with dissolve
     "[mcname!c]" "Nay? Bukannya itu malah…"
     hide kana_date_shy
-    show kana_date_shy_talk at char_center
+    show kana_date_shy_talk at kana_near
     show kana_date_side_shy_confused at left
     with dissolve
     kana "Udah cepetan."
     hide kana_date_side_shy_confused
     hide kana_date_shy_talk
-    show kana_date_shy at char_center
+    show kana_date_shy at kana_near
     with dissolve
     "[mcname!c]" "I-iya iya. Oke deh."
     "Kana pun memakan takoyakinya, lalu Kana pun menjulurkan tangannya yang memegang garpu serta takoyaki ke arah [mcname!c]."
     hide kana_date_shy
-    show kana_date_shy_closeeye_talk at char_center
+    show kana_date_shy_closeeye_talk at kana_near
     show kana_date_side_shy_confused at left
     with dissolve
     kana "Nih."
     hide kana_date_side_shy_confused
     hide kana_date_shy_closeeye_talk
-    show kana_date_shy_closeeye at char_center
+    show kana_date_shy_closeeye at kana_near
     with dissolve
     "Seakan tidak ingin sadar akan peristiwa yang sedang terjadi, [mcname!c] tetap memakan takoyaki yang diberikan Kana. Takoyakinya terasa sedikit manis, padahal takoyaki yang dipesan harusnya pedas asin."
     $ quick_menu = False
     scene black with dissolve
     scene lorong sore with dissolve
     #Harusnya BG JEJEPANGAN MALAM
-    show kana_date_shy_closeeye at char_center
+    show kana_date_shy_closeeye at kana_near
     $ quick_menu = True
     "[mcname!c]" "Ah udah abis lagi aja, ga kerasa ya."
     "[mcname!c]" "Eh Nay, kamu kenapa?"
     "Terlihat muka Kana memerah, mungkin karena baru sadar akan apa yang baru saja terjadi."
     hide kana_date_shy_closeeye
-    show kana_date_shy_smile at char_center
+    show kana_date_shy_smile at kana_near
     show kana_date_side_shy at left
     with dissolve
     kana "E-eh iya udah abis aja.\n*Blush*"
     hide kana_date_side_shy
     hide kana_date_shy_smile
-    show kana_date_shy at char_center
+    show kana_date_shy at kana_near
     with dissolve
     "[mcname!c]" "Okeeee selesai, jadi kita ke mana, Nay?"
     hide kana_date_shy
-    show kana_date_shy_closeeye at char_center
+    show kana_date_shy_closeeye at kana_near
     with dissolve
     "Sesaat [mcname!c] akan pergi, Kana tiba-tiba mengambil tisu, mengulurkan tangannya, dan mengelap saus yang ada di pipi [mcname!c]."
     "Terkejut dengan tindakan Kana, [mcname!c] hanya bisa diam sambil tersenyum."
     hide kana_date_shy_closeeye
-    show kana_date_shy_talk at char_center
+    show kana_date_shy_talk at kana_near
     show kana_date_side_shy_confused at left
     with dissolve
     kana "Eh i-ini, a-aku kebiasaan ngurus sepupuku yang masih kecil. Eh ah, ini kita udah kan makannya? Yuk kita ke sana aja."
     hide kana_date_side_shy_confused
     hide kana_date_shy_talk
-    show kana_date_shy at char_center
+    show kana_date_shy at kana_near
     with dissolve
     hide kana_date_shy with dissolve
     "Kana yang malu pun berlari kabur, meninggalkan [mcname!c] yang masih berdiri di situ."
@@ -712,12 +713,12 @@ label truekanajapanfest:
     scene black with dissolve
     scene lorong sore with dissolve
     #Harusnya BG JEJEPANGAN MALAM
-    show kana_date at char_center with dissolve
+    show kana_date at kana_near with dissolve
     $ quick_menu = True
     "Kana dan [mcname!c] pun pergi kembali untuk melihat-lihat booth yang ada di event tersebut, sampai pada akhirnya event utama pada hari itu pun dimulai."
     "[mcname!c]" "Eh Nay, ayoo ini event utamanya udah mau dimulai."
     hide kana_date
-    show kana_date_confused at char_center
+    show kana_date_confused at kana_near
     show kana_date_side_confused at left
     with dissolve
     kana "Eeeeh, okaay."
@@ -727,12 +728,12 @@ label truekanajapanfest:
     #Harusnya BG JEJEPANGAN MALAM
     play sound "audio/crowd_noise.mp3" fadein 1.0
     $ quick_menu = True
-    show kana_date at char_center with dissolve
+    show kana_date at kana_near with dissolve
     "Kana dan [mcname!c] pun pergi ke tempat di mana event utama diadakan. Event tersebut adalah pertunjukan kembang api kecil kecilan yang akan diadakan oleh panitia acara."
     "Terlihat banyak pengunjung yang menantikan pertunjukan kembang api di event tersebut."
     "[mcname!c]" "Bentar lagi nihhh."
     hide kana_date
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Aaaaa, udah gak sabaar!"
@@ -749,7 +750,7 @@ label truekanajapanfest:
     kana "TAMAAYAAAAAA~!"
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date_smile at char_center
+    show kana_date_smile at kana_near
     with dissolve
     "[mcname!c]" "TAMAYAAAAAA~!"
     "Kana dan [mcname!c] pun menikmati pemandangan kembang api di event tersebut. Meski hanya beberapa menit saja, tapi kenangannya akan tersimpan selamanya."
@@ -761,29 +762,29 @@ label truekanajapanfest:
     scene lorong sore with dissolve
     #Harusnya BG MALAM
     $ quick_menu = True
-    show kana_date_smile at char_center with dissolve
+    show kana_date_smile at kana_near with dissolve
     "Kana dan [mcname!c] merasa hangat, senang, dan bahagia. Tanpa sadar event untuk hari ini sudah selesai."
     "[mcname!c]" "Seru banget hari ini Nay! Makasih banyak yaa."
     hide kana_date_smile
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Hahah, seru banget emang. Makasih juga udah mau nemenin aku, akhirnya aku ada temen yang suka hal-hal gini."
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c] tersenyum mendengar perkataan Kana."
     "[mcname!c]" "Aku juga seneng banget, soalnya bareng kamu."
     hide kana_date
-    show kana_date_shy at char_center
+    show kana_date_shy at kana_near
     show kana_date_side_shy_smile at left
     with dissolve
     kana "*Blush*"
     hide kana_date_side_shy_smile with dissolve
     "[mcname!c]" "Eh ah, kamu pulang naik apa Nay?"
     hide kana_date_shy
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Aku biasanya dijemput sih, soalnya udah malem. Emangnya kenapa?"
@@ -793,17 +794,17 @@ label truekanajapanfest:
     kana "Hmmm, nanti deh next time gimana? Soalnya mamah ga ijinin aku naik motor kalau udah malem."
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date at char_center
+    show kana_date at kana_near
     with dissolve
     "[mcname!c]" "Iya aku ngerti kok Nay. Ya udah ya, kamu hati-hati Nay."
     hide kana_date
-    show kana_date_talk at char_center
+    show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Iya makasih ya buat hari ini, kamu juga hati-hati."
     hide kana_date_side_talk
     hide kana_date_talk
-    show kana_date_smile at char_center
+    show kana_date_smile at kana_near
     with dissolve
     "[mcname!c] dan Kana pun pergi. [mcname!c] masih merasa senang dan bahagia karena telah menghabiskan waktu bersama Kana."
     #*SKIP TO SCENE*
@@ -821,18 +822,20 @@ label truekanajapanfest:
     #play sound "audio/"
     "HP [mcname!c] pun berbunyi dan ia melihat adanya notif chat dari Kana." 
     #*BG HP (CHATTING APP)
-    #nvl clear
+    $ quick_menu = False
+    nvl clear
     kana_nvl "{size=-5}H-halooo…(｡･∀･)ﾉﾞ{/size}"
-    "[mcname!c]"_nvl "{size=-5}Halo juga Nayyy… Kenapa nih?{/size}"
+    mc_nvl "{size=-5}Halo juga Nayyy… Kenapa nih?{/size}"
     kana_nvl "{size=-5}Ee-engga kok, cuma mastiin kamu udah pulang aja… Takut nyasar ○( ＾皿＾)っ Hehehe…{/size}"
-    "[mcname!c]"_nvl "{size=-5}Hahaha, ini baru aja selesai beres-beres. Kamu nungguin ya?{/size}"
+    mc_nvl "{size=-5}Hahaha, ini baru aja selesai beres-beres. Kamu nungguin ya?{/size}"
     kana_nvl "{size=-5}K-kata siapa? Aku ga nungguin kamu kok (￣ε(#￣){/size}"
-    "[mcname!c]"_nvl "{size=-5}Hahaha, Nay… Kamu emang suka pake emot kayak gitu ya? Sorry kalo tiba-tiba nanya, soalnya aku penasaran. Dari dulu kalo chat kadang pake, kadang engga.{/size}"
+    mc_nvl "{size=-5}Hahaha, Nay… Kamu emang suka pake emot kayak gitu ya? Sorry kalo tiba-tiba nanya, soalnya aku penasaran. Dari dulu kalo chat kadang pake, kadang engga.{/size}"
     kana_nvl "{size=-5}Ehhh… Sorry ya kebiasaan... Hehe{/size}"
     kana_nvl "{size=-5}A-aneh ya?{/size}"
-    "[mcname!c]"_nvl "{size=-5}Engga lah, ga aneh kok. Malah keliatannya lucu aja. Kalau emang kamu lebih suka pake emot kaya gitu, pake aja lucu juga liatnya.{/size}"
+    mc_nvl "{size=-5}Engga lah, ga aneh kok. Malah keliatannya lucu aja. Kalau emang kamu lebih suka pake emot kaya gitu, pake aja lucu juga liatnya.{/size}"
     kana_nvl "{size=-5}Yeeee (≧∇≦)ﾉ{/size}"
-    "[mcname!c]"_nvl "{size=-5}Hahaha, lucu emang{/size}"
+    mc_nvl "{size=-5}Hahaha, lucu emang{/size}"
+    $ quick_menu = True
     "[mcname!c] dan Kana pun menghabiskan waktu mereka berdua dengan membahas kembali apa yang terjadi hari ini, mulai dari bertemu cosplayer, bermain di booth minigame, bahkan membeli merch-merch yang di jual di booth lainnya."
     "Sampai pada akhirnya mereka tertidur dengan tetap memegang HP masing-masing."
     stop music fadeout 1.0
@@ -843,13 +846,13 @@ label truekanajapanfest:
     scene kelas with dissolve
     $ quick_menu = True
     "Hari dimulai seperti biasanya, [mcname!c] memasuki kelas dengan keadaan hampir terlambat. Saat mencari tempat kosong, [mcname!c] mendengar seseorang memanggilnya."
-    show freya_talk at char_center
+    show freya_talk at freya_near
     show freya_side_talk at left
     with dissolve
     freya "[mcname!c]! [mcname!c]! Sini!"
     hide freya_side_talk
     hide freya_talk
-    show freya at char_center
+    show freya at freya_near
     with dissolve
     "Karena waktu menunjukan bahwa kelas akan segera dimulai, tanpa pikir panjang [mcname!c] pun duduk di sebelah Freya."
     hide freya
@@ -918,13 +921,13 @@ label truekanajapanfest:
     #HARUSNYA KRIIIIINNNGGGG
     $ quick_menu=True
     "Tiba-tiba HP Freya berbunyi cukup keras sehingga membuat hampir seluruh kelas melihat ke arahnya."
-    show freya_shock at char_center
+    show freya_shock at freya_near
     show freya_side_shock at left
     with dissolve
     freya "Aduhh maaf ya semuanya. Lupa ga disilent tadi, hehe."
     hide freya_side_shock
     hide freya_shock
-    show freya_talk at char_center
+    show freya_talk at freya_near
     with dissolve
     stop music fadeout 1.0
     play sound "audio/ding.mp3"
@@ -933,20 +936,20 @@ label truekanajapanfest:
     scene black with dissolve
     play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
     scene kelas with dissolve
-    show freya_talk at char_center
+    show freya_talk at freya_near
     show freya_side_talk at left
     with dissolve
     $ quick_menu=True
     freya "Apaan?"
     hide freya_side_talk
     hide freya_talk
-    show freya_awe at char_center
+    show freya_awe at freya_near
     show freya_side_awe at left
     with dissolve
     freya "Oo ini udah selesai. Kamu telat sih, ya udah gimana lagi."
     hide freya_side_awe
     hide freya_awe
-    show freya_talk at char_center
+    show freya_talk at freya_near
     show freya_side_talk at left
     with dissolve
     freya "Ga ada yang mintain izin ke dosen, orang ga ada kabar..."
@@ -956,7 +959,7 @@ label truekanajapanfest:
     freya "Ya udah, dadah."
     hide freya_side_talk
     hide freya_talk
-    show freya at char_center
+    show freya at freya_near
     with dissolve
     play sound "audio/ding.mp3"
     #HARUSNYA SUARA TUTUP TELEPON
@@ -965,38 +968,38 @@ label truekanajapanfest:
     scene black with dissolve
     play music "audio/BGM_Kelas.mp3" fadein 1.0
     scene kelas with dissolve
-    show freya at char_center with dissolve
+    show freya at freya_near with dissolve
     $ quick_menu=True
     "[mcname!c]" "Itu tadi Naya?"
     hide freya
-    show freya_talk at char_center
+    show freya_talk at freya_near
     show freya_side_talk at left
     with dissolve
     freya "Iya katanya dia ketiduran, hadeuhh. Ya udah lah gimana lagi."
     hide freya_side_talk
     hide freya_talk
-    show freya at char_center
+    show freya at freya_near
     with dissolve
     "[mcname!c]" "Hadeeeh..."
     hide freya
-    show freya_talk at char_center
+    show freya_talk at freya_near
     show freya_side_talk at left
     with dissolve
     freya "Btw kamu udah siapin kado belum buat Naya? Kan dia 4 hari lagi ultah."
     hide freya_side_talk with dissolve
     "[mcname!c]" "EEHHHH!???"
     hide freya
-    show freya_annoy at char_center
+    show freya_annoy at freya_near
     with dissolve
     "[mcname!c] menjawab dengan suara yang cukup keras, hingga terdengar hingga ke ujung kelas dan membuat Mahasiswa/i yang masih ada di dalam kelas terkejut."
     hide freya_annoy
-    show freya_angrysmile at char_center
+    show freya_angrysmile at freya_near
     show freya_side_angrysmile at left
     with dissolve
     freya "Biasa aja napa sih? Ya udah deh kamu siapin hadiahnya yang bener ya. Awas aja kalau ga ngasih hadiah!"
     hide freya_side_angrysmile
     hide freya_angrysmile
-    show freya_talk at char_center
+    show freya_talk at freya_near
     show freya_side_talk at left
     with dissolve
     freya "Oke, aku duluan ya. Ada janji sama yang lain, dahhh."
@@ -1019,7 +1022,8 @@ label truekanajapanfest:
     "Tiba-tiba terdengar bunyi dari HP yang menunjukkan bahwa HP perlu dicharge, akan tetapi ternyata ada notifikasi lain dari Kana dan Freya yang mencoba menghubungi [mcname!c] berkali-kali."
     #*BG HP LAGI TELEPON*
     play sound "audio/SFX - Calling.mp3"
-    show telpon_mamah at ui_handphone with dissolve
+    "UI telpon Grup Freya, Kana, MC"
+    # show telpon_mamah at ui_handphone with dissolve
     show freya_side_shock at left with dissolve
     freya "Nahhh kan kalau gini enak, ga usah ngehubungin satu-satu."
     hide freya_side_shock with dissolve
@@ -1087,29 +1091,27 @@ label truekanajapanfest:
     $ quick_menu = True
     "Hari itu [mcname!c] pergi ke mall untuk menemani Kana membeli limited cake."
     "Di sana [mcname!c] berencana untuk melihat gerak-gerik Kana sebagai petunjuk tentang hadiah apa yang cocok untuknya."
-    show kana at small_center with dissolve
-    hide kana
-    show kana_talk at char_center
+    show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
     kana "Ah, halo [mcname!c]. Sorry, lama nunggu ya?"
     hide kana_side_talk
     hide kana_talk
-    show kana at char_center
+    show kana at kana_near
     with dissolve
     "[mcname!c]" "Enggak, kok. Haha."
     hide kana
-    show kana_talk at char_center
+    show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
     kana "Freya belum dateng ya? Hmmmm..."
     hide kana_side_talk
     hide kana_talk
-    show kana at char_center
+    show kana at kana_near
     with dissolve
     "[mcname!c]" "Tunggu bentar lagi deh haha."
     hide kana
-    show kana_talk at char_center
+    show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
     kana "Yaudaah."
@@ -1117,23 +1119,23 @@ label truekanajapanfest:
     scene black with dissolve
     scene mall temp with dissolve
     $ quick_menu = True
-    show kana_confused at char_center
+    show kana_confused at kana_near
     show kana_side_confused at left
     with dissolve
     kana "Aduhh ini Freya ke mana sih? Jangan bilang dia lupa?"
     hide kana_side_confused
     hide kana_confused
-    show kana_angry at char_center
+    show kana_angry at kana_near
     with dissolve
     "[mcname!c]" "Waduh aku juga ga tau tuh Nay, coba kamu telepon."
     hide kana_angry
-    show kana_talk at char_center
+    show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
     kana "Oke bentar yaa-"
     hide kana_side_talk
     hide kana_talk
-    show kana at char_center
+    show kana at kana_near
     with dissolve
     #SFX KRINGGG Telepon*
     play sound "audio/SFX - Call.mp3"
@@ -1151,41 +1153,41 @@ label truekanajapanfest:
     hide kana_side_confused with dissolve
     #BG Telepon OFF
     play sound "audio/SFX - End Call.mp3"
-    show kana_shy_smile at char_center
+    show kana_shy_smile at kana_near
     show kana_side_shy_smile at left
     with dissolve
     kana "Umm [mcname!c], ini Freya katanya ada urusan di kampus. Jadinya kita berdua aja nih hehe, kaya waktu itu."
     hide kana_side_shy_smile
     hide kana_shy_smile
-    show kana_shy at char_center
+    show kana_shy at kana_near
     with dissolve
     "[mcname!c]" "Ahahaha, iya nih. Masih inget aja kamu. Ya udah yuk jalan."
     hide kana_shy
-    show kana_drylaugh at char_center
+    show kana_drylaugh at kana_near
     show kana_side_drylaugh at left
     with dissolve
     kana "Hahaha, okee deh."
     hide kana_side_drylaugh
     hide kana_drylaugh
-    show kana_smile at char_center
+    show kana_smile at kana_near
     with dissolve
     $ quick_menu = False
     scene black with dissolve
     scene mall temp with dissolve
-    show kana at char_center with dissolve
+    show kana at kana_near with dissolve
     $ quick_menu = True
     "Saat masuk ke dalam mall dan berjalan ke arah cafe, Kana sempat beberapa kali curi-curi pandang ke arah toko perhiasan yang ada di dalam mall."
     "Lalu [mcname!c] pun sempat menanyakan beberapa hal."
     "[mcname!c]" "Eh Nay, tumben kamu ganti sepatu."
     hide kana
-    show kana_drylaugh at char_center
+    show kana_drylaugh at kana_near
     show kana_side_drylaugh at left
     with dissolve
     kana "Iya nih. Kemarin pas aku coba udah agak sempit gitu sih, jadi ini pake sepatu yang lain haha."
     hide kana_side_drylaugh with dissolve
     "[mcname!c]" "Ohhh gitu ya, kamu lagi suka apa belakangan ini?"
     hide kana_drylaugh
-    show kana_talk at char_center
+    show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
     kana "Heee? Kamu kenapa [mcname!c], kok tiba-tiba tanya kayak ginian?"
@@ -1195,12 +1197,12 @@ label truekanajapanfest:
     kana "Hahaha, iya juga sih. Aku akhir-akhir ini sama sepupuku biasanya main masak-masak gitu sih."
     hide kana_side_talk
     hide kana_talk
-    show kana at char_center
+    show kana at kana_near
     with dissolve
     "[mcname!c]" "Ohhh gitu ya, eh itu cafenya kan?"
     "[mcname!c]" "{i}Mantep aku dapet beberapa ide kado buat Kana, hehehe.{/i}"
     hide kana
-    show kana_talk at char_center
+    show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
     kana "Iya, udah ya kita pura-pura ga kenal dulu biar ga dicurigai haha."
@@ -1208,24 +1210,24 @@ label truekanajapanfest:
     "[mcname!c]" "Oke dehh."
     hide kana_talk with dissolve
     "Setelah membeli cake tersebut, [mcname!c] dan Kana pun bertemu."
-    show kana at char_center with dissolve
+    show kana at kana_near with dissolve
     "[mcname!c]" "Ini cakenya Nayy."
     hide kana
-    show kana_confused at char_center
+    show kana_confused at kana_near
     show kana_side_confused at left
     with dissolve
     kana "Ehhh? Gapapa nih?"
     hide kana_side_confused with dissolve
     "[mcname!c]" "Gapapa, soalnya keliatannya kamu suka banget cake ini."
     hide kana_confused
-    show kana_talk at char_center
+    show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
     kana "Wihhh thank you [mcname!c]!"
     kana "Kalo gitu aku pulang dulu ya, mau menikmati cakenya ehehehe."
     hide kana_side_talk
     hide kana_talk
-    show kana_smile at char_center
+    show kana_smile at kana_near
     with dissolve
     "[mcname!c]" "Okeee, hati-hati di jalan."
     hide kana_smile with dissolve
@@ -1262,21 +1264,23 @@ label truekanabuypresent:
     scene kamar mc kota with dissolve
     $ quick_menu = True
     "Setelah [mcname!c] sampai di kosan, dia menghubungi Freya untuk membahas rencana ulang tahun Kana."
+    $ quick_menu = False
     #*CHANGE/ADD BG HP*
     #*CHATTING APP*
-    #nvl clear
-    "[mcname!c]"_nvl "{size=-5}Freya.{/size}"
+    nvl clear
+    mc_nvl "{size=-5}Freya.{/size}"
     freya_nvl "{size=-5}Kenapa?{/size}"
-    "[mcname!c]"_nvl "{size=-5}Ini, mau nanya buat ultah Kana nanti. Kita bakalan gimana nih ngasih suprisenya? Terus mau di mana?{/size}"
+    mc_nvl "{size=-5}Ini, mau nanya buat ultah Kana nanti. Kita bakalan gimana nih ngasih suprisenya? Terus mau di mana?{/size}"
     freya_nvl "{size=-5}Kalau tempat mah udah aman aja. Biasanya aku di rumah Kana sih, nanti kamu dateng aja.{/size}"
-    "[mcname!c]"_nvl "{size=-5}Emangnya boleh ya?{/size}"
+    mc_nvl "{size=-5}Emangnya boleh ya?{/size}"
     freya_nvl "{size=-5}Ga ada yang ngelarang kok. Nanti ga perlu dekorasi apa-apa, soalnya Si Naya ga suka kalo dirayain gede-gede pake aksesoris gitu.{/size}"
     freya_nvl "{size=-5}Dulu pernah gitu, dia malah bete seharian. Lagian dia juga ga pernah inget hari ultahnya.{/size}"
-    "[mcname!c]"_nvl "{size=-5}Oke deh kalau emang gitu, nanti aku tinggal dateng aja ke rumah Kana?{/size}"
+    mc_nvl "{size=-5}Oke deh kalau emang gitu, nanti aku tinggal dateng aja ke rumah Kana?{/size}"
     freya_nvl "{size=-5}Iya nanti dateng aja, biar aku yang urus hehe.{/size}"
-    "[mcname!c]"_nvl "{size=-5}Okee. Thanks, Freya.{/size}"
+    mc_nvl "{size=-5}Okee. Thanks, Freya.{/size}"
     freya_nvl "{size=-5}Iya sama-sama.{/size}"
     #CHATTING APP OFF
+    $ quick_menu = True
     "Setelah semua itu, akhirnya [mcname!c] dan Freya setuju untuk melakukan perayaan ulang tahun sederhana di rumah Kana. Setelah itu [mcname!c] memutuskan untuk tidur."
     stop music fadeout 1.0
     $ quick_menu = False
@@ -1309,26 +1313,26 @@ label truekanabuypresent:
         "TUNGGUIN FREYA.":
             #*CHOSE B*
             "[mcname!c] memilih untuk menunggu Freya. Tak lama kemudian, Freya pun datang."
-            show freya at char_center with dissolve
+            show freya at freya_near with dissolve
             "[mcname!c]" "Haloo."
             hide freya
-            show freya_talk at char_center
+            show freya_talk at freya_near
             show freya_side_talk at left
             with dissolve
             freya "Halo [mcname!c]."
             hide freya_side_talk
             hide freya_talk
-            show freya at char_center
+            show freya at freya_near
             with dissolve
             "[mcname!c]" "Yuk?"
             hide freya
-            show freya_shock at char_center
+            show freya_shock at freya_near
             show freya_side_shock at left
             with dissolve
             freya "Gasss!"
             hide freya_side_shock
             hide freya_shock
-            show freya at char_center
+            show freya at freya_near
             with dissolve
             play sound "audio/ding.mp3"
             "Freya memencet bel rumah Kana."
@@ -1359,34 +1363,34 @@ label truekanabeforeneutralroute:
     scene ruang tamu with dissolve
     #RUANG TAMU RUMAH KANA
     $ quick_menu = True
-    show kana_home_smile at char_center with dissolve
+    show kana_home_smile at kana_near with dissolve
     "[mcname!c]" "Siang Nay, maaf telat ya?"
     hide kana_home_smile
-    show kana_home_talk at char_center
+    show kana_home_talk at kana_near
     show kana_home_side_talk at left
     with dissolve
     kana "Engga kok sini masuk aja. Freya belum datang, nanti biasanya dia suka telat dikit."
     hide kana_home_side_talk
     hide kana_home_talk
-    show kana_home at char_center
+    show kana_home at kana_near
     with dissolve
     "[mcname!c]" "Eh, i-iya Nay."
     hide kana_home
-    show kana_home_talk at char_center
+    show kana_home_talk at kana_near
     show kana_home_side_talk at left
     with dissolve
     kana "Mau minum apa [mcname!c]? Sekalian nunggu Freya nih. Btw kok gugup sih, emang ada apa?"
     hide kana_home_side_talk with dissolve
     "[mcname!c]" "E-engga kok, cuma ini kan pertama kali kita berduaan… J-jadi agak gugup dikit."
     hide kana_home_talk
-    show kana_home_confused at char_center
+    show kana_home_confused at kana_near
     show kana_home_side_confused at left
     with dissolve
     kana "Lah? Bukannya kemarin pas aku sakit, kamu temenin aku ya? Terus kita kan pernah ke cafe bareng, game center bareng, event jejepangan bareng, ke mall kemarin juga kita berduaan. Kamu ga anggep itu kah? Sedih sih, huhuhu."
     hide kana_home_side_confused with dissolve
     "[mcname!c]" "E-eh maksudnya gak gitu. Cuma entah kenapa hari ini aku lebih gugup aja dari biasanya.."
     hide kana_home_confused
-    show kana_home_talk at char_center
+    show kana_home_talk at kana_near
     show kana_home_side_talk at left
     with dissolve
     kana "Gugup kenapa?"
@@ -1395,7 +1399,7 @@ label truekanabeforeneutralroute:
     "[mcname!c]" "{i}Aduhh kok aku gugup ya? Apa gara-gara mau ngasih hadiah ke Naya, terus takut dia gak suka ya?{/i}"
     "[mcname!c]" "Ya gitu deh, haha. Ini Si Freya ke mana ya, tumben lama."
     hide kana_home_talk
-    show kana_home_confused at char_center
+    show kana_home_confused at kana_near
     show kana_home_side_confused at left
     with dissolve
     kana "Hmmm... Sebenernya kalian mau ngapain deh? Soalnya Si Freya Freya itu gak ngasih tau mau kumpul buat apaan?"
@@ -1406,24 +1410,24 @@ label truekanabeforeneutralroute:
     play sound "audio/open_door.mp3"
 #HARUSNYA SUARA BRAK!
     hide kana_home_confused
-    show freya at char_left
-    show kana_home_smile at char_right
+    show freya at freya_near_right
+    show kana_home_smile at kana_near_left_2
     with dissolve
     "Sebelum [mcname!c] sempat menyelesaikan kata katanya, suara Freya terdengar dari arah pintu masuk."
     hide freya
-    show freya_shock at char_left
+    show freya_shock at freya_near_right
     show freya_side_shock at left
     with dissolve
     freya "HALOOOO SEMUANYAAA!!!"
     hide freya_side_shock with dissolve
     hide kana_home_smile
-    show kana_home_talk at char_center
+    show kana_home_talk at kana_near
     show kana_home_side_talk at left
     with dissolve
     kana "Ah Frey, kaget."
     hide kana_home_side_talk
     hide kana_home_talk
-    show kana_home at char_center
+    show kana_home at kana_near
     with dissolve
     "[mcname!c]" "Waduh, Freya bikin kaget aja."
     jump truekananeutralroute1
@@ -1432,23 +1436,23 @@ label truekanabeforeneutralroute:
 label trueKanaNungguFreya:
     "Mamah Kana" "Ah [mcname!c], Freya. Ada apa?"
     hide freya
-    show freya_talk at char_center
+    show freya_talk at freya_near
     show freya_side_talk at left
     with dissolve
     freya "Halo Tante, Kana ada di rumah?"
     hide freya_side_talk
     hide freya_talk
-    show freya at char_center
+    show freya at freya_near
     with dissolve
     "Mamah Kana" "Ada kok, kenapa?"
     hide freya
-    show freya_talk at char_center
+    show freya_talk at freya_near
     show freya_side_talk at left
     with dissolve
     freya "Jadi sebenarnya kita mau ngadain kejutan untuk ulang tahun Kana."
     hide freya_side_talk
     hide freya_talk
-    show freya at char_center
+    show freya at freya_near
     with dissolve
     "Mamah Kana" "Eeeeh, makasih banyak ya kalian. Kana pasti bakal seneng banget!"
     "[mcname!c]" "Btw tante masih inget waktu itu pernah bilang mau ngabulin satu permintaan?"
@@ -1456,13 +1460,13 @@ label trueKanaNungguFreya:
     "[mcname!c]" "Kalo bisa, mau minta tolong kejutannya dirahasiakan dari Kanaa."
     "Mamah Kana" "Eeehh, oke oke. Tante gak bakal ganggu, hehe."
     hide freya
-    show freya_talk at char_center
+    show freya_talk at freya_near
     show freya_side_talk at left
     with dissolve
     freya "Terima kasih banyak, tante."
     hide freya_side_talk
     hide freya_talk
-    show freya_smile at char_center
+    show freya_smile at freya_near
     with dissolve
     "Mamah Kana" "Ya sudah, ayok sini masuk dulu."
     "[mcname!c]" "Baik."
@@ -1475,52 +1479,52 @@ label trueKanaNungguFreya:
     $ quick_menu = True
 
 label truekananeutralroute1:
-    show freya at char_left
-    show kana_home at char_right
+    show freya at freya_near_right
+    show kana_home at kana_near_left_2
     with dissolve
-    show freya_talk at char_left
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Hehe halo Naya, udah siap kan?"
     hide freya_side_talk with dissolve
     hide kana_home
-    show kana_home_confused at char_right
+    show kana_home_confused at kana_near_left_2
     show kana_home_side_confused at left
     with dissolve
     kana "Hah, siap?"
     hide kana_home_side_confused with dissolve
     "[mcname!c]" "Waduh Freya."
     hide freya_talk
-    show freya_shock at char_left
+    show freya_shock at freya_near_right
     show freya_side_shock at left
     with dissolve
     freya "Lahh ini nih, padahal aku dah semangat gini. Dah bawa banyak game-game buat temenin kita sampe malem nih."
     hide freya_side_shock
     hide freya_shock
-    show freya_smile at char_left
+    show freya_smile at freya_near_right
     with dissolve
     show kana_home_side_confused at left with dissolve
     kana "Ha?? Main game?"
     hide kana_home_side_confused with dissolve
     hide freya_smile
-    show freya_annoy at char_left
+    show freya_annoy at freya_near_right
     with dissolve
     "Freya melihat ke arahku, seakan memberi kode secara tidak langsung. [mcname!c] mengangguk ke arah Freya."
     "[mcname!c]" "Lah iya Nayy, kamu ga tau? Kita kan bakalan main game lohhh."
     hide freya_annoy
-    show freya_smile at char_left
+    show freya_smile at freya_near_right
     with dissolve
     hide kana_home_confused
-    show kana_home_talk at char_right
+    show kana_home_talk at kana_near_left_2
     show kana_home_side_talk at left
     with dissolve
     kana "Hmmm... Ya udah deh, aku ngikut aja."
     hide kana_home_side_talk
     hide kana_home_talk
-    show kana_home at char_right
+    show kana_home at kana_near_left_2
     with dissolve
     hide freya_smile
-    show freya_shock at char_left
+    show freya_shock at freya_near_right
     show freya_side_shock at left
     with dissolve
     freya "Let's gooo!"
@@ -1533,27 +1537,27 @@ label truekananeutralroute1:
     scene ruang tamu malam with dissolve
 #HARUSNYA RUANG TAMU RUMAH KANA
     $ quick_menu = True
-    show freya at char_right
-    show kana_home at char_left
+    show freya at freya_near_right
+    show kana_home at kana_near_left_2
     with dissolve
     "Tak terasa malam pun tiba."
     hide freya
-    show freya_talk at char_right
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Eh kita pindah ke kamarmu aja yuk Nay. Udah malem, takut ganggu Mamahmu sama tetangga."
     hide freya_side_talk
     hide freya_talk
-    show freya at char_right
+    show freya at freya_near_right
     with dissolve
     hide kana_home
-    show kana_home_talk at char_left
+    show kana_home_talk at kana_near_left_2
     show kana_home_side_talk at left
     with dissolve
     kana "Iya sih, ya udah deh ayo."
     hide kana_home_side_talk
     hide kana_home_talk
-    show kana_home at char_left
+    show kana_home at kana_near_left_2
     with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
@@ -1562,75 +1566,75 @@ label truekananeutralroute1:
 #HARUSNYA BGM KAMAR KANA
     scene kamar kana malam with dissolve
     $ quick_menu = True
-    show freya at char_left
-    show kana_home at char_right
+    show freya at freya_near_right
+    show kana_home at kana_near_left_2
     with dissolve
     "[mcname!c]" "Eh Freya, emang ruangan Naya kedap suara kah? Kok kita pindah ke sini?"
     hide freya
-    show freya_talk at char_left
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Iya mamahnya Naya masangin peredam suara, biar kalau dia berisik main game gak ganggu tetangga."
     hide freya_side_talk
     hide freya_talk
-    show freya at char_left
+    show freya at freya_near_right
     with dissolve
     hide kana_home
-    show kana_home_confused at char_right
+    show kana_home_confused at kana_near_left_2
     show kana_home_side_confused at left
     with dissolve
     kana "Perasaan ini kamarku, tapi kok kamu yang lebih tahu daripada aku."
     hide kana_home_side_confused with dissolve
     "[mcname!c]" "Hahaha."
     hide kana_home_confused
-    show kana_home at char_right
+    show kana_home at kana_near_left_2
     with dissolve
     "Ini mungkin ketiga kalinya [mcname!c] ke kamar Kana, akan tetapi kali ini ia bisa melihat ruangan kamar Kana dengan lebih seksama."
     "[mcname!c] melihat ternyata di pojok ruangan kamarnya Kana tersembunyi satu tempat khusus yang dipenuhi kumpulan-kumpulan figur dan merch anime."
     "[mcname!c]" "Wahhhh… Kana ini kan dari anime itu, keren banget kamu punya? Bukannya ini limited-edition ya?"
     hide kana_home
-    show kana_home_talk at char_right
+    show kana_home_talk at kana_near_left_2
     show kana_home_side_talk at left
     with dissolve
     kana "Iya, hahaha. Ini aku nabung dari lama, untung dapet."
     hide kana_home_side_talk
     hide kana_home_talk
-    show kana_home at char_right
+    show kana_home at kana_near_left_2
     with dissolve
     "[mcname!c]" "Eh kalau ini dari anime itu kan? Boleh diliat dari deket ga?"
     hide kana_home
-    show kana_home_talk at char_right
+    show kana_home_talk at kana_near_left_2
     show kana_home_side_talk at left
     with dissolve
     kana "Boleh kok, liat aja. Asal jangan sampai rusak, hahaha."
     hide kana_home_side_talk
     hide kana_home_talk
-    show kana_home at char_right
+    show kana_home at kana_near_left_2
     with dissolve
     hide freya
-    show freya_talk at char_left
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Seneng banget tuh diliat-liat."
     hide freya_side_talk
     hide freya_talk
-    show freya at char_left
+    show freya at freya_near_right
     with dissolve
     "[mcname!c]" "Hehe sorry, soalnya ini kesukaanku juga."
     hide freya
-    show freya_talk at char_left
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Ya udah kalian have fun dulu ya, aku mau ke toilet dulu bentar."
     hide freya_side_talk
     hide freya_talk
-    show freya_awe at char_left
+    show freya_awe at freya_near_right
     with dissolve
     "Setelah mengatakan itu, Freya memberikan kode kepada [mcname!c] yang langsung mengerti apa yang dimaksud Freya."
     hide freya_awe with dissolve
     "[mcname!c]" "Eh, Nay. Kalau ini kamu beli dari luar negeri? Setauku di Indo belum ada."
     hide kana_home
-    show kana_home_talk at char_right
+    show kana_home_talk at kana_near_left_2
     show kana_home_side_talk at left
     with dissolve
     kana "Ehhh kalo itu sih beli di..."
@@ -1643,12 +1647,12 @@ label truekananeutralroute1:
     #HARUSNYA BGM KAMAR KANA
     scene kamar kana malam with dissolve
     #HARUSNYA BG KAMAR KANA MALAM
-    show kana_home at char_center with dissolve
+    show kana_home at kana_near with dissolve
     $ quick_menu = True
     "Tak terasa, jam menunjukan 12 malam yang menandakan bahwa hari telah berganti dan hari ulang tahun Kana pun tiba."
     "[mcname!c]" "Nay..."
     hide kana_home
-    show kana_home_talk at char_center
+    show kana_home_talk at kana_near
     show kana_home_side_talk at left
     with dissolve
     kana "Iya [mcname!c]?"
@@ -1658,7 +1662,7 @@ label truekananeutralroute1:
     kana "Lagi duduk di kasur doang…"
     hide kana_home_side_talk
     hide kana_home_talk
-    show kana_home_confused at char_center
+    show kana_home_confused at kana_near
     show kana_home_side_confused at left
     with dissolve
     kana "Kamu kenapa sih dari tadi kaya ada yang aneh gitu?"
@@ -1667,7 +1671,7 @@ label truekananeutralroute1:
     "[mcname!c]" "Gugup aja sih."
     hide kana_home_side_confused
     hide kana_home_confused
-    show kana_home_talk at char_center
+    show kana_home_talk at kana_near
     show kana_home_side_talk at left
     with dissolve
     kana "Gugup kenapa?"
@@ -1675,27 +1679,27 @@ label truekananeutralroute1:
     "[mcname!c]" "Jadi sebenernya... Aku ada hadiah buat kamu."
     "[mcname!c] mendekati Kana yang sedang duduk di kasurnya."
     hide kana_home_talk
-    show kana_home_cry at char_center
+    show kana_home_cry at kana_near
     show kana_home_side_shy_eh at left
     with dissolve
     kana "Hadiah?"
     hide kana_home_side_shy_eh with dissolve
     "[mcname!c]" "Iya, tapi kamu harus tutup mata dulu."
     hide kana_home_cry
-    show kana_home_confused_blush at char_center
+    show kana_home_confused_blush at kana_near
     show kana_home_side_confused_blush at left
     with dissolve
     kana "Hah? Tutup mata?"
     hide kana_home_side_confused_blush with dissolve
     "[mcname!c]" "Iyaa, udah tutup mata dulu sana."
     hide kana_home_confused_blush
-    show kana_home_shy_smile at char_center
+    show kana_home_shy_smile at kana_near
     show kana_home_side_shy_eh at left
     with dissolve
     kana "O-oke."
     hide kana_home_side_shy_eh
     hide kana_home_shy_smile
-    show kana_home_shy_closeeye at char_center
+    show kana_home_shy_closeeye at kana_near
     with dissolve
     "Kana pun menutup matanya."
     stop music fadeout 1.0
@@ -1754,7 +1758,7 @@ label truekananeutralroute1:
         "Kana masih terdiam..."
         "[mcname!c]" "Nay?"
         hide kana_home_confused_blush_sideeye
-        show kana_home_confused at char_center
+        show kana_home_confused at kana_near
         show kana_home_side_confused at left
         with dissolve
         kana "Eh i-iya makasih banyak ya. Tapi kok kamu tau ukuran sepatu aku, padahal aku ga pernah bilang ke kamu maupun Freya. Kamu tau dari mana?"
@@ -1811,7 +1815,7 @@ label truekananeutralroute1:
         show kana_home_talk at kana_near
         with dissolve
         hide kana_home_talk
-        show kana_home_confused at char_center
+        show kana_home_confused at kana_near
         with dissolve
         $ quick_menu = True
         "Raut wajah Kana bingung dan terheran-heran, kenapa [mcname!c] memberikan dia alat masak set lengkap."
@@ -1820,21 +1824,21 @@ label truekananeutralroute1:
         hide kana_home_side_confused with dissolve
         "[mcname!c]" "Ini alat masak, Nay. Soalnya kamu pernah bilang sepupumu sering datang masak-masakan. Nah aku kasih hadiah buat kamu, siapa tau aku juga bisa cobain masakan kamu hehe."
         hide kana_home_confused
-        show kana_home_confused_blush_sideeye at char_center
+        show kana_home_confused_blush_sideeye at kana_near
         show kana_home_side_blush_sideeye at left
         with dissolve
         kana "Ummm, tapi sepupuku masih TK, jadi dia pake mainan alat masak-masak..."
         hide kana_home_side_blush_sideeye with dissolve
         "[mcname!c]" "...."
         hide kana_home_confused_blush_sideeye
-        show kana_home_confused at char_center
+        show kana_home_confused at kana_near
         show kana_home_side_confused at left
         with dissolve
         kana "...."
         hide kana_home_side_confused with dissolve
         hide kana_home_confused
-        show kana_home_confused at char_right
-        show freya_shock at char_left
+        show kana_home_confused at kana_near_left_2
+        show freya_shock at freya_near_right
         with dissolve
         "Kana terdiam tanpa kata-kata, hingga Freya datang dan kaget dengan hadiah yang [mcname!c] berikan."
         "Pandangan Kana dan Freya terhadap [mcname!c] pun menjadi aneh."
@@ -1885,7 +1889,7 @@ label truekananeutralroute1:
         $ quick_menu = True
         "Kana membuka dan melihat bahwa ada CD Blu-ray yang berjudul “The Conjurang” dengan cover yang gelap, mengerikan, dan ada hantunya."
         hide kana_home_talk
-        show kana_home_confused at char_center
+        show kana_home_confused at kana_near
         with dissolve
         "[mcname!c]" "Ini film baru loh, katanya viral dan terinspirasi dari kisah nyata. Bisa kali ya kita nonton bareng-bareng nanti, jadi kita nobar gitu konsepnya hahah."
         show kana_home_side_confused at left with dissolve
@@ -1948,14 +1952,14 @@ label truekanarightpresent:
     "Saat Kana membuka matanya, dia terlihat kaget dan terkejut karena di lehernya terdapat sebuah kalung cantik bersinar yang berwarna biru."
     "Ternyata sensasi dingin yang sebelumnya terasa, adalah kalung."
     hide kana_home_shy_smile
-    show kana_home_shy_smile at char_center
+    show kana_home_shy_smile at kana_near
     show kana_home_side_shy_eh at left
     with dissolve
     kana "EH INI KANN!!??"
     hide kana_home_side_shy_eh with dissolve
     "[mcname!c]" "Selamat ulang tahun~!"
     hide kana_home_shy_smile
-    show kana_home_cry at char_center
+    show kana_home_cry at kana_near
     show kana_home_side_cry at left
     with dissolve
     kana "EHH!!!?? K-kamu tau hari ulang tahun ku?"
@@ -1963,18 +1967,18 @@ label truekanarightpresent:
     "[mcname!c]" "Tau doong. Sekali lagi, selamat ulang tahun Kanaia Asa~"
     "[mcname!c]" "Bagiku, kamu orang yang spesial. Jadi, aku pengen ngasih hadiah yang spesial juga."
     hide kana_home_cry
-    show kana_home_shy_closeeye_talk at char_center
+    show kana_home_shy_closeeye_talk at kana_near
     show kana_home_side_shy_ahn at left
     with dissolve
     kana "*BLUSH*"
     kana "M-makasih banyak ya."
     hide kana_home_side_shy_ahn
     hide kana_home_shy_closeeye_talk
-    show kana_home_smile
+    show kana_home_smile at kana_near
     with dissolve
     "[mcname!c]" "Hehe, gimana Nay kamu suka?"
     hide kana_home_smile
-    show kana_home_shy_smile at char_center
+    show kana_home_shy_smile at kana_near
     show kana_home_side_drylaugh at left
     with dissolve
     kana "BANGETTTT, aku suka pake banget. Kok kamu tau aku lagi pengen kalung sih?"
@@ -1985,36 +1989,36 @@ label truekanarightpresent:
     kana "Iiiiii makasih banyak yaa, [mcname!c]"
     hide kana_home_side_drylaugh
     hide kana_home_shy_smile
-    show kana_home_smile at char_center
+    show kana_home_smile at kana_near
     with dissolve
     "[mcname!c]" "Iya Kana..."
     hide kana_home_smile
-    show kana_home_shy_smile at char_center
+    show kana_home_shy_smile at kana_near
     show kana_home_side_drylaugh at left
     with dissolve
     kana "Aduhhh. A-aku ga bisa berhenti senyum, ini bagus bangett."
     hide kana_home_side_drylaugh
     hide kana_home_shy_smile
-    show kana_home_smile at char_center
+    show kana_home_smile at kana_near
     with dissolve
     "[mcname!c]" "Bagus deh kalo kamu suka. Aku malah takut kamu ga suka dan jadi benci sama aku."
     hide kana_home_smile
-    show kana_home_shy_smile at char_center
+    show kana_home_shy_smile at kana_near
     show kana_home_side_drylaugh at left
     with dissolve
     kana "Aku suka banget. Lagian ga usah ngasih pun gapapa kok. A-aku ga bakalan bisa benci kamu."
     hide kana_home_side_drylaugh
     hide kana_home_shy_smile
-    show kana_home_smile at char_center
+    show kana_home_smile at kana_near
     with dissolve
     "[mcname!c]" "Eeeehh."
     "[mcname!c]" "*Blush*"
     "[mcname!c]" "Ke-kenapa?"
     hide kana_home_smile
-    show kana_home_shy_closeeye at char_center
+    show kana_home_shy_closeeye at kana_near
     with dissolve
     hide kana_home_shy_closeeye
-    show kana_home_shy_closeeye_talk at char_center
+    show kana_home_shy_closeeye_talk at kana_near
     show kana_home_side_shy_ahn at left
     with dissolve
     kana "Soalnya..."
@@ -2027,8 +2031,8 @@ label truekanarightpresent:
     kana "*Blush*"
     hide kana_home_side_shy_hmph
     hide kana_home_shy_closeeye
-    show kana_home_shy_closeeye_talk
-    show kana_home_side_shy_ahn at kana_near
+    show kana_home_shy_closeeye_talk at kana_near
+    show kana_home_side_shy_ahn at left
     with dissolve
     kana "[mcname!c]... Sebenarnya aku suk-"
     hide kana_home_side_shy_ahn with dissolve
@@ -2043,26 +2047,26 @@ label truekanarightpresent:
     scene kamar kana malam with dissolve
     window auto show
     $ quick_menu = True
-    show kana_home_shy_closeeye_talk at char_right
-    show freya_shock at char_left
+    show kana_home_shy_closeeye_talk at kana_near_left_2
+    show freya_shock at freya_near_right
     show freya_side_shock at left
     with dissolve
     freya "HAPPY BIRTHDAYYY NAYAAAA~!!!!"
     hide freya_side_shock with dissolve
     "Tanpa angin tanpa hujan, tiba-tiba Freya datang membuka pintu kamar Kana."
     hide kana_home_shy_closeeye_talk
-    show kana_home_deadeye at char_right
+    show kana_home_deadeye at kana_near_left_2
     hide freya_shock
-    show freya_awe at char_left
+    show freya_awe at freya_near_right
     with dissolve
     "Melihat ke arah Kana dan [mcname!c] yang sedang berduaan dan suasana yang terasa berbeda dari biasanya, membuat Freya pun tersadar."
     hide freya_awe
-    show freya_shock at char_left
+    show freya_shock at freya_near_right
     show freya_side_shock at left
     with dissolve
     freya "Eh? Sorry kayaknya ganggu, hehe."
     hide kana_home_deadeye
-    show kana_home_confused_blush_sideeye at char_right
+    show kana_home_confused_blush_sideeye at kana_near_left_2
     with dissolve
     freya "Kalian lanjutin aja dulu berdua, hehe."
     freya "Hehe, aku pergi dulu baaay~"
@@ -2070,21 +2074,21 @@ label truekanarightpresent:
     hide freya_shock
     with dissolve
     hide kana_home_confused_blush_sideeye
-    show kana_home_shy_confused_blush at char_right
+    show kana_home_confused_blush at kana_near
     show kana_home_side_confused_blush at left
     with dissolve
     kana "F-FREEEEYYAAAAAAA~!"
     kana "*Blush*"
     hide kana_home_side_confused_blush with dissolve
     "[mcname!c]" "Hahahahaha!"
-    hide kana_home_shy_confused_blush
-    show kana_home_angry at char_right
+    hide kana_home_confused_blush
+    show kana_home_angry at kana_near
     show kana_home_side_confused at left
     with dissolve
     kana "K-kamu jangan ketawa [mcname!c]!!!"
     hide kana_home_side_confused
     hide kana_home_angry
-    show kana_home_shy_closeeye at char_right
+    show kana_home_shy_closeeye at kana_near
     show kana_home_side_shy_hmph at left
     with dissolve
     kana "*Blush*"

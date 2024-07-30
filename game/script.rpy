@@ -37,7 +37,7 @@ define fio_near = Transform(zoom=1.3,xalign=0.5,yalign=0.08)
 define fio_near_left = Transform(zoom=1.3,xalign=1.3,yalign=0.08)
 define fio_near_right = Transform(zoom=1.3,xalign=-0.5,yalign=0.08)
 define freya_near = Transform(zoom=1.3,xalign=-0.5,yalign=0.08)
-define freya_near_right = Transform(zoom=1.3,xalign=-1.0,yalign=0.08)
+define freya_near_right = Transform(zoom=1.3,xalign=-1.0,yalign=0.08,xpos=-0.95)
 define dosen_center = Transform(zoom=0.9,xalign=0.5,yalign=0.1)
 define dosen_left = Transform(zoom=0.9,xalign=-0.5,yalign=0.1)
 define rg_hasan_left = Transform(zoom=0.7,xalign=0.0,yalign=-0.1,xpos=-0.07)
@@ -67,6 +67,9 @@ define poster = Transform(zoom=0.18,xalign=0.0,yalign=0.2,xpos=0.11)
 
 # Game dimulai disini.
 label start:
+    init python:
+        import random
+    $ random_number = ''.join([str(random.randint(0, 9)) for _ in range(4)])
     if config.main_menu_music is not None:
         stop music fadeout 1.0
 

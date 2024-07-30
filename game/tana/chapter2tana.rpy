@@ -100,9 +100,6 @@ label chapter2tana:
     hide tana_confused at tana_near
     show tana_angry at tana_near
     with dissolve
-    init python:
-        import random
-    $ random_number = ''.join([str(random.randint(0, 9)) for _ in range(4)])
     "Mata Tana pun tertuju pada bagian pojok kiri atas layar handphone yang menunjukkan username ([mcname!l][random_number]). Di saat yang bersamaan, terdengar bunyi pintu kelas terbuka."
     hide bang_rama
     hide rg_hasan
