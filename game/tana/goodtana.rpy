@@ -855,7 +855,9 @@ label chapter2tanaGOOD:
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-#chapter2tanaGOOD2
+    jump multiendlearnUTS
+
+label chapter2tanaGOOD2:
     "[mcname!c]" "Kalo ke ruang club gimana? Ga begitu rame, jadi bisa fokus belajar buat UTS."
     hide tana at tana_near
     show tana_talk at tana_near
@@ -2019,7 +2021,9 @@ label goodtanaafterquiz:
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-#chapter2tanaGOOD3
+    jump multiendafterUTS
+
+label chapter2tanaGOOD3:
     "[mcname!c]" "Di ruang club aja."
     hide tana at tana_near
     show tana_talk at tana_near
