@@ -373,10 +373,13 @@ label truekanachat:
     show kana_date_side_talk at left
     with dissolve
     kana "Iyaaa aku sampe terdiem loh, kamu juga dengerin tadi?"
-    hide kana_date_side_talk with dissolve
+    hide kana_date_side_talk 
+    hide kana_date_talk
+    show kana_date at char_center
+    with dissolve
     "[mcname!c]" "Iya lah, kamu tiba-tiba diem aja. Gimana aku ga ikutan dengerin? Keren banget, kapan ya aku bisa nyanyi kaya gitu..."
     "[mcname!c]" "Btw, kamu suka nyanyi juga?"
-    hide kana_date_talk
+    hide kana_date
     show kana_date_shy_talk at char_center
     show kana_date_side_shy_confused at left
     with dissolve
@@ -384,11 +387,12 @@ label truekanachat:
     kana "E-ehhh liat deh, di situ ada cosplay yang bagus mending kita ke sana."
     hide kana_date_side_shy_confused
     hide kana_date_shy_talk
+    show kana_date_shy at char_center
     with dissolve
     "Kana tiba-tiba menghindari dari jawaban [mcname!c] dan berlari ke arah seorang cosplayer."
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    scene kamar mc kota with Dissolve(1.0)
+    scene matsuri malam with Dissolve(1.0)
     $ quick_menu = True
     show kana_date_talk at char_center
     show kana_date_side_talk at left
@@ -406,7 +410,10 @@ label truekanachat:
     show kana_date_side_talk at left
     with dissolve
     kana "[mcname!c], kamu juga suka?"
-    hide kana_date_side_talk with dissolve
+    hide kana_date_side_talk
+    hide kana_date_talk
+    show kana_date at char_center
+    with dissolve
     "[mcname!c]" "SUKA!!??? Wahhhh aku ngikutin banget semua series Kamen Driver loh Kana."
     "Cosplayer" "Wahh, kukira ga terlalu banyak yang kenal cosplayku. Ternyata ada juga ya yang kenal, makasih ya Kak."
     "Cosplayer" "Eh Kak, mau ngobrol lagi ga? Keknya seru kita ngobrol bareng."
@@ -415,7 +422,7 @@ label truekanachat:
         "Yang [mcname!c] lakukan..."
         "Menghabiskan waktu sama cosplayer.":
             #*CHOSE A*
-            hide kana_date_talk
+            hide kana_date
             show kana_date_angry at char_center
             with dissolve
             "[mcname!c] tetap mengobrol dengan cosplayer tersebut dan mengabaikan keberadaan Kana untuk beberapa saat."
@@ -432,33 +439,52 @@ label truekanachat:
             jump truekanajapanfest
     
 label truekanajapanfest:
-    hide kana_date_talk
+    hide kana_date
     show kana_date_smile at char_center
     with dissolve
-    "[mcname!c]" "Eh maaf ya nanti lagi, aku lagi sama temen soalnya. Kalp boleh minta social medianya aja kak, biar bisa ngobrol."
+    "[mcname!c]" "Eh maaf ya nanti lagi, aku lagi sama temen soalnya. Kalo boleh minta social medianya aja kak, biar bisa ngobrol."
     hide kana_date_smile
     show kana_date_angry at char_center
     with dissolve
     "Orang" "Ooh iya kak, ini bisa di add \"@namadonatur_angka random\". Makasih banyak yaa~"
     "[mcname!c]" "Sama-sama kak"
     "[mcname!c]" "Eh Kana maaf lama ya. Tadi hampir aja keasikan, untung aku inget ada kamu yang lagi nungguin aku haha."
-    show kana_date_side_confused at left with dissolve
+    hide kana_date_angry
+    show kana_date_confused at char_center
+    show kana_date_side_confused at left
+    with dissolve
     kana "Enggak kok, ga lama. Seru ya."
-    hide kana_date_side_confused with dissolve
+    hide kana_date_side_confused
+    hide kana_date_confused
+    show kana_date_angry at char_center
+    with dissolve
     "[mcname!c]" "Eh kamu kenapa Kana, marah ya? Tadi kelamaan ya? Sorry..."
-    show kana_date_side_confused at left with dissolve
+    hide kana_date_angry
+    show kana_date_confused at char_center
+    show kana_date_side_confused at left
+    with dissolve
     kana "G."
-    hide kana_date_side_confused with dissolve
+    hide kana_date_side_confused
+    hide kana_date_confused
+    show kana_date_angry at char_center
+    with dissolve
     "[mcname!c]" "Waduh. Ya udah sebagai permintaan maaf aku ajak main di stand sana deh gimana?"
     hide kana_date_angry
     show kana_date_talk at char_center
     show kana_date_side_talk at left
     with dissolve
     kana "BEENER!?? Eh maksudnya... beneran nih?"
-    hide kana_date_side_talk with dissolve
-    "[mcname!c]" "Iya, bener kok. Ya udah, ayo."
+    hide kana_date_side_talk
     hide kana_date_talk
+    show kana_date at char_center
+    with dissolve
+    "[mcname!c]" "Iya, bener kok. Ya udah, ayo."
+    hide kana_date
     show kana_date_smile at char_center
+    with dissolve
+    pause (1.0)
+    hide kana_date_smile
+    show kana_date_talk at char_center
     show kana_date_side_talk at left
     with dissolve
     kana "Yayyy~"
@@ -466,7 +492,7 @@ label truekanajapanfest:
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
     play music "audio/BGM_Minigame Tana.mp3" fadein 1.0
-    scene lorong sore with Dissolve(1.0)
+    scene matsuri malam with Dissolve(1.0)
 #Harusnya BG MINIGAME TANA (Tanpa mainin)
     show kana_date_talk at char_center
     show kana_date_side_talk at left
