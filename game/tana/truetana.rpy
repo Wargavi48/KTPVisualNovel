@@ -1532,7 +1532,6 @@ label truetanaafterquiz:
     "[mcname!c]" "Yaudah."
     hide tana at tana_near with dissolve
     "Tana dan [mcname!c] pun menghampiri penjual mie pedes."
-    $ renpy.sound.set_volume(0.5,delay=2.0)
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene kantin with Dissolve(1.0)

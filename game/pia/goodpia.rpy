@@ -2724,7 +2724,6 @@ label goodendpiamatsuri:
     pia "SALAM KENAL SEMUAAAAAAAAAA!!!"
     hide pia_idol_side_talk with dissolve
     mcname "Whoaaa..."
-    $ renpy.sound.set_volume(0.5,delay=1.5)
     menu:
         mcname "Whoaaa..."
         "Fokus Menyimak":
@@ -2782,7 +2781,6 @@ label goodendpia:
     "Penonton" "UWOOOOOOGGGHH!!!!!!!!! PIAAAAAAAAAAAA!!!"
     "Tidak disangka, teriakan [mcname] menyulut semangat penonton lain untuk ikut menyoraki dan menunjukan dukungannya lebih keras lagi."
     "Teriakan tersebutlah yang membuat pengunjung lain yang sedang berkeliling di acara tersebut jadi penasaran dan ikut menonton pertunjukan di stage tersebut."
-    $ renpy.sound.set_volume(0.5,delay=1.5)
     show pia_idol_side_talk at left with dissolve 
     pia "*Blushing*"
     pia "A-ah iyaaa makasih~"

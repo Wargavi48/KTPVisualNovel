@@ -53,6 +53,13 @@ define takamina_left = Transform(zoom=0.7,xalign=0.0,yalign=-0.1)
 define ui_handphone = Transform(xalign=0.5,yalign=0.5)
 define chibi_tono = Transform(zoom=0.3,xalign=0.0,yalign=0.0,xpos=0.15)
 define lift_center = Transform(zoom=0.3,xalign=0.0,yalign=0.0,xpos=0.21)
+define mafu = Transform(zoom=0.3,xalign=0.0,yalign=0.0,xpos=0.20)
+define mading = Transform(zoom=0.35,xalign=0.0,yalign=-0.06,xpos=0.17)
+define crane = Transform(zoom=0.2,xalign=0.0,yalign=0.14,xpos=0.28)
+define poster = Transform(zoom=0.4,xalign=0.0,yalign=0.2,xpos=0.11)
+define seifuku = Transform(zoom=0.3,xalign=0.0,yalign=-0.5,xpos=0.18)
+define pintu_rumah_kana = Transform(zoom=0.3,xalign=0.0,yalign=-0.20,xpos=0.18)
+define pintu_kamar_kana = Transform(zoom=0.3,xalign=0.0,yalign=-0.25,xpos=0.19)
 
 # Game dimulai disini.
 label start:
@@ -75,7 +82,9 @@ label intro:
     
     $ mama_name = Character("Mamah")
     $ papah_name = Character("Papah")
-
+    $ renpy.music.set_volume(1.0)
+    $ renpy.music.set_volume(1.0, channel="sound")
+    $ renpy.music.set_volume(1.0, channel="audio")
     play music "BGM_Rumah Awal.ogg" fadein 1.0
     scene awan malam with Dissolve(2.0)
     $ quick_menu = True

@@ -1293,9 +1293,10 @@ label chapter1kana3mie:
     hide kana_shy_closeeye_talk 
     with dissolve
     $ quick_menu = False
+    stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    pause(1.0)
-    scene kantin with Dissolve(1.0)
+    play music "BGM_Sore.ogg" fadein 1.0
+    scene awan sore with Dissolve(1.0)
     ##$ renpy.block_rollback()
     $ quick_menu = True
     "Setelah selesai makan, mereka pergi dan berpisah ke urusannya masing-masing."
@@ -1305,10 +1306,8 @@ label chapter1kana3mie:
         "Yang kamu lakukan...."
         "Keliling Kampus dan melihat lihat isi kampus":
             ##$ renpy.block_rollback()
-            stop music fadeout 1.0
             $ quick_menu = False
             scene black with Dissolve(1.0)
-            play music "audio/BGM_Sore.ogg" fadein 1.0
             scene kampus sore with Dissolve(1.0)
             $ quick_menu = True
             "[mcname!c]" "{i}Aku memilih menghabiskan waktu untuk berkeliling di sekitar kampus.{/i}"
@@ -1586,7 +1585,8 @@ label chapter1kana3kos:
     "[mcname!c] kemudian membuka HPnya."
     nvl clear
     $ quick_menu = False
-    donatur_nvl "{size=-5}Sorry guys, gue mendadak ada panggilan kerja.{/size}" with Pause(3.0)
+    donatur_nvl "{size=-5}Sorry guys, gue mendadak ada panggilan kerja.{/size}"
+    nvl clear
     scene depan kampus with dissolve
     $ quick_menu = True
     "[mcname!c]" "Yahh ternyata dia tiba-tiba ada panggilan kerjaan tuh."
@@ -1620,10 +1620,10 @@ label chapter1kana3monas:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Monas.ogg" loop fadein 1.0
     scene monas temporary with Dissolve(1.0)
-    $ quick_menu = True
     show freya at char_left
     show kana_date at char_right
     with dissolve
+    $ quick_menu = True
     "Setelah itu, mereka memutuskan untuk berhenti sejenak di sekitar monas dikarenakan panas yang tidak tertahankan."
     show freya_shock at char_left
     hide freya
@@ -1671,6 +1671,7 @@ label chapter1kana3monas:
             scene dream with dissolve
             jump credits
         "Es Teh":
+            hide freya_shock
             hide freya 
             hide kana_date 
             with dissolve
