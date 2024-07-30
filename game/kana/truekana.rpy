@@ -1,9 +1,9 @@
 label truekana:
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    play music "audio/BGM_Kantin.mp3" fadein 1.0
-    scene kantin with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kantin.ogg" fadein 1.0
+    scene kantin with Dissolve(1.0)
     show kana at kana_near
     $ quick_menu = True
     "[mcname!c]" "Huft Huft. Ehh maaf, aku telat dikit gapapa kan?"
@@ -48,16 +48,16 @@ label truekana:
     "Kana pun menjawab dengan penuh semangat, saking semangatnya ia sampai berdiri dari tempat duduknya dan membuatnya diliatin oleh orang-orang sekitar."
     "[mcname!c]" "Semangat banget kamu Kana, ahahah. Sampe diliatin orang-orang loh."
     hide kana_talk
-    show kana_shy_smile at kana_near
+    show kana_shy_talk at kana_near
     show kana_side_cry at left
     with dissolve
     kana "EH!??? I-iya maaf-maaf, terlalu excited soalnya. Denger-denger sih event jejepangan kampus ini tuh selalu rame gitu, makanya aku excited. Apalagi bareng temen, hehe."
     hide kana_side_cry
-    hide kana_shy_smile
-    show kana_drylaugh at kana_near
+    hide kana_shy_talk
+    show kana at kana_near
     with dissolve
     "[mcname!c]" "Eh iya Kana, kalau gitu kamu mau ke eventnya bareng aku, gak? Sekalian ajarin aku, soalnya ini kan event pertamaku hehe."
-    hide kana_drylaugh
+    hide kana
     show kana_talk at kana_near
     show kana_side_talk at left
     with dissolve
@@ -67,62 +67,93 @@ label truekana:
     show kana_smile at kana_near
     with dissolve
     "[mcname!c]" "Okeee~"
-    "Setelah itu mereka pun menghabiskan makanannya, lalu Kana dan [mcname!c] berpisah karena sudah ada kegiatan masing-masing yang harus dilakukan. Tak terasa waktu pun telah berlalu dan malam hari telah tiba."
+    "Setelah itu Kana dan [mcname!c] pun menghabiskan makanan mereka sambil mengobrol dan tertawa ringan."
+    $ quick_menu = False
+    stop music fadeout 1.0
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_sore.ogg" fadein 1.0
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Tak terasa waktu telah berlalu."
+    "Kana dan [mcname!c] berpisah karena sudah ada kegiatan masing-masing yang harus dilakukan."
     jump truekanakos
 
 label truekanakos:
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    "[mcname!c]" "{i}Aduuuh, mulai chatnya gimana ya? Bingung...{i}"
+    "Di kost..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    $ quick_menu = True
+    "[mcname!c]" "{i}Kana lagi ngapain ya...{/i}"
+    "[mcname!c]" "{i}Chat aja kali ya?{/i}"
+    "[mcname!c]" "{i}Hmmmm, tapi mulai chatnya gimana ya? Bingung...{/i}"
     menu:
         "Yang kamu lakukan..."
         "P":
-            "[mcname!c] memilih untuk menghubungi Kana dengan awalan “P”, dibandingkan hal lainnya. Kana pun tidak membalas chat tersebut dan meng-ghosting pesan dari [mcname!c] sampai event dimulai."
-            $ quick_menu = False
             stop music fadeout 1.0
+            $ quick_menu = False
+            "P"
+            play music "BGM_Bad End.ogg" fadein 1.0
+            "[mcname!c] memilih untuk menghubungi Kana dengan awalan “P”, dibandingkan hal lainnya."
+            "Kana pun tidak membalas chat tersebut dan meng-ghosting pesan dari [mcname!c] sampai event dimulai."
             scene black with dissolve
             show text "{color=#FFF}*HAHAHAHA DI GHOSTING TUH, MAKANYA JANGAN ASAL P, P, P GA SOPAN TAU*{/color}" with Pause(2.0)
-            show text "{color=#FF0000}BAD END{/color}"
+            scene black with dissolve
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Malam Kana, sibuk ga?":
             "[mcname!c] menghubungi Kana lewat HPnya, di situ [mcname!c] bertanya tentang kabarnya terlebih dahulu dan basa-basi seperti orang yang kehabisan topik."
-            # scene call hp
             jump truekanachat
         "Langsung telepon aja":
-            "[mcname!c] memilih untuk langsung menelepon Kana dan ternyata Kana sedang bersama keluarga. Tanpa sengaja, Kana memblokir nomor [mcname!c] karena [mcname!c] menelepon terus menerus."
-            $ quick_menu = False
             stop music fadeout 1.0
+            $ quick_menu = False
+            play music "BGM_Bad End.ogg" fadein 1.0
+            "[mcname!c] memilih untuk langsung menelepon Kana dan ternyata Kana sedang bersama keluarga."
+            "Tanpa sengaja, Kana memblokir nomor [mcname!c] karena [mcname!c] menelepon terus menerus."
             scene black with dissolve
             show text "{color=#FFF}*YAHAHAHA, DIBLOCK KAN? MAKANYA JANGAN LANGSUNG TELPON ORANG AJA, KAN DIBLOCK*{/color}" with Pause(2.0)
-            show text "{color=#FF0000}BAD END{/color}"
+            scene black with dissolve
+            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
 
 label truekanachat:
+    stop music fadeout 1.0
     $ quick_menu = False
+    nvl clear
+    play music "BGM_Happy + HP.ogg" fadein 1.0
     mc_nvl "{size=-5}Malam Kana, sibuk nggak ya? Hehe.{/size}"
-    kana_nvl "{size=-5}Umm engga kok knp ya?(｡･∀･)ﾉﾞ {/size}"
+    kana_nvl "{size=-5}Umm engga kok knp ya?(O∀O) {/size}"
     mc_nvl "{size=-5}Aku mau nanya soal event jejepangan itu, jadi kan?{/size}"
     kana_nvl "{size=-5}Maksudnya jadi?{/size}"
     mc_nvl "{size=-5}Yaa jadi kan? Ummm kita berangkat bareng.{/size}"
-    kana_nvl "{size=-5}Jadi kok. Mau ketemuan jam berapa?┏ (゜ω゜)=👉{/size}"
+    kana_nvl "{size=-5}Jadi kok. Mau ketemuan jam berapa?┏ (^ω^)=👉{/size}"
     mc_nvl "{size=-5}Jam 7 lewat 12 gimana?{/size}"
-    kana_nvl "{size=-5}Jam 7 lewat 12? Kaya pernah denger di mana deh (⊙_⊙)？{/size}"
+    kana_nvl "{size=-5}Jam 7 lewat 12? Kaya pernah denger di mana deh (⊙A⊙)?{/size}"
     mc_nvl "{size=-5}Ahh perasaan kamu aja kali. Gimana? Ga kemaleman kah?{/size}"
     kana_nvl "{size=-5}Hmmm, oke deh jam segitu aja.{/size}"
     mc_nvl "{size=-5}Btw nanti kita di sana mau ngapain aja ya? Jujur ini event pertamaku.{/size}"
     mc_nvl "{size=-5}Jadi tadi gimana tips and tricknya buat di event, Yang Mulia Kanaia Asa?{/size}"
     kana_nvl "{size=-5}IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-{/size}"
-    #Telpon dering
+    nvl clear
     play sound "audio/SFX - Call.mp3"
+    scene kamar mc kota with Dissolve(0.01)
+#MUNCUL ASET KANA NELEPON MC (Kana -> MC) (CALLING)
+    $ quick_menu = True
     "Tanpa sengaja Kana menekan tombol voice call dan [mcname!c] pun tanpa pikir panjang menekan tombol jawab."
-    #*SKIP TO SCENE*
+#MUNCUL ASSET TELEPON KANA (CONNECTED)
     #*BG HP VOICE CALL*
+    stop sound
     show telpon_mamah at ui_handphone with dissolve
     show kana_side_cry at left with dissolve
     kana "Ehh maaf kepencet!!! Aduh malu banget, aku matiin aja ya."
@@ -137,43 +168,48 @@ label truekanachat:
     show kana_side_talk at left with dissolve
     kana "Oh iya lupa, jadi kalau aku dulu ikut event jejepangan tuh biasanya-"
     hide kana_side_talk with dissolve
+    $ quick_menu = False
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
     "Tanpa sadar Kana dan [mcname!c] pun mengobrol lama, bahkan sampai melewati tengah malam."
-    "Beberapa kali [mcname!c] mendengar Kana menguap dan menyarankan untuk mengakhiri voice call, tetapi ia tetap melanjutkan ceritanya seakan meluapkan semua cerita yang telah ia simpan sendirian selama ini"
+    "Beberapa kali [mcname!c] mendengar Kana menguap dan menyarankan untuk mengakhiri voice call, tetapi ia tetap melanjutkan ceritanya seakan meluapkan semua cerita yang telah ia simpan sendirian selama ini."
     "Beberapa saat kemudian pun Kana tertidur dengan voice call masih menyala."
     "[mcname!c]" "Kana...? Kana...?"
     #*SFX Amimir*
-    #play sound "audio/"
     "Beberapa kali [mcname!c] menyebutkan nama Kana akan tetapi Kana tetap tidak menjawab."
     "[mcname!c]" "{i}Heeee... Kana ketiduran ya?{/i}"
     "Suara nafas Kana sempat beberapa kali terdengar."
     "Setelah beberapa saat, [mcname!c] pun memilih untuk mengakhiri voice call itu dan tidur agar tidak telat besok."
     hide telpon_mamah with dissolve
     #Tutup telpon
-    play sound "audio/SFX - End Call.mp3"
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    pause(1.0)
+    play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
+    scene awan with Dissolve(1.0)
     $ quick_menu = True
-    "[mcname!c] bangun beberapa lebih awal daripada waktu yang telah dijanjikan, ia tidak sabar untuk pergi ke event tersebut dan menghabiskan waktu dengan Kana."
+    "Tak terasa hari festival pun tiba."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    $ quick_menu = True
+    "[mcname!c] bangun beberapa jam lebih awal daripada waktu yang telah dijanjikan, ia tidak sabar untuk pergi ke event tersebut dan menghabiskan waktu dengan Kana."
     "[mcname!c] pun tidak lupa untuk makan, mandi, serta memakai parfum yang menurutnya lebih mahal daripada makannya selama 1 minggu."
     "[mcname!c]" "Oke, sudah siap! Let's go~"
-    $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    play music "audio/BGM_Matsuri Malam.mp3" fadein 1.0
-    scene depan kampus with dissolve
-    #Harusnya BG Jejepangan malam
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    show kana_date_confused at small_center with dissolve
-    hide kana_date_confused
-    show kana_date_confused at char_center
-    with dissolve
+    "Malam itu..."
+    $ quick_menu = False
+    scene kampus malam with Dissolve(2.0)
     hide kana_date_confused
     show kana_date_confused_blush at kana_near
     show kana_date_side_shy_confused at left
     with dissolve
+    $ quick_menu = True
     kana "[mcname!c]... ha.. ha.."
     kana "Haloo, maaf ya nunggu lama.."
     hide kana_date_side_shy_confused with dissolve
@@ -189,16 +225,19 @@ label truekanachat:
     show kana_date_shy at kana_near
     with dissolve
     "[mcname!c]" "Santai aja Kana. Ya udah, nih kamu minum dulu."
-#HARUSNYA SFX GLUG GLUG MINUM
     hide kana_date shy
     show kana_date_shy_closeeye_talk at kana_near
     with dissolve
+    kana "*Glug* *Glug*"
     hide kana_date_shy_closeeye_talk
     show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
     kana "Makasih ya [mcname!c]. Sekarang udah aman kok, jadi kamu siap gak?"
-    hide kana_date_side_talk with dissolve
+    hide kana_date_talk 
+    show kana_date at kana_near
+    hide kana_date_side_talk
+    with dissolve
     "[mcname!c]" "Siap dong, ya kali ga siap. Nggak kaya siapa gitu... Yang ketiduran di tengah-tengah call."
     hide kana_date_talk
     show kana_date_shy_talk at kana_near
@@ -223,7 +262,8 @@ label truekanachat:
     kana "Lupaiin gak? Kalau enggak, aku marah besar nih!"
     hide kana_date_side_confused with dissolve
     "[mcname!c]" "Marah karir, maksudnya?"
-    show kana_date_side_confused at left with dissolve
+    show kana_date_side_confused at left
+    with dissolve
     kana "LUPAINNN!!!"
     hide kana_date_side_confused with dissolve
     "[mcname!c]" "Iya iya. Mending sekarang kita masuk yuk, keburu malem banget nanti pada tutup."
@@ -232,11 +272,17 @@ label truekanachat:
     show kana_date_side_shy_confused at left
     with dissolve
     kana "Awas aja kalo nggak, aku bakal buat kamu lupa dengan paksa! Ya udah deh, ayo masuk. Aku dah ga sabar."
-    hide kana_date_side_shy_confused with dissolve
+    hide kana_date_side_shy_confused
+    hide kana_date_shy_closeeye_talk
+    hide kana_date_shy
+    hide kana_date
+    with dissolve
     "[mcname!c] dan Kana pun pergi ke event tersebut."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene depan kampus with dissolve
+    scene black with Dissolve(1.0)
+    play music "BGM_Matsuri Malam.ogg" fadein 1.0
+    scene matsuri malam with Dissolve(1.0)
     #Harusnya BG Jejepangan malam
     show kana_date_smile at char_center with dissolve
     $ quick_menu = True
@@ -281,30 +327,43 @@ label truekanachat:
     with dissolve
     "[mcname!c]" "Ummm Kana? Ada apa?"
     "Kana terdiam, di situ ada sebuah event yang sedang berlangsung."
-    "[mcname!c] pun melihat event tersebut, di sana ada seseorang yang sedang melakukan sing cover competition."
+    "[mcname!c] pun melihat event tersebut, di sana ada sing cover competition."
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
-    play music "audio/BGM_MC Pertama Kali ke JKT + BG Pagi.mp3" fadein 1.0
-#Harusnya BGM Mini Stage
-    scene depan kampus with dissolve
-#Harusnya BG Mini Stage
+    scene black with Dissolve(1.0)
+    play music "audio/Dreamcatcher_inst_v2.mp3" fadein 1.0 volume (1.0)
+    scene stage with Dissolve(1.0)
+    show tana_idol_laugh at tana_left 
+    show tana_idol_side_laugh at left
+    with dissolve
     $ quick_menu = True
-    #*SPRITE TONO/PIA NYANYI FOR A SEC, AFTER THAT BACK TO BG EVENT*
-    #show tana_sing at left with dissolve
-    tana "Ku sandarkann~ Kepadamu~"
-    #hide tana_sing with dissolve
-    #show kana_sing at left with dissolve
-    pia "Kepalaku pada pundak kananmu itu~"
-    #hide kana_sing with dissolve
+    tana "Ayooo semuanyaa~"
+    hide tana_idol_side_laugh
+    show pia_idol_smile at pia_near_right
+    show pia_idol_side_smile at left
+    with dissolve
+    pia "Let's go!"
+    hide pia_idol_side_smile with dissolve
     "[mcname!c] pun melihat panggung dan mengerti kenapa Kana terdiam. Di situ, terlihat dua orang yang sedang menyanyi dengan suara yang indah."
-    "Kurang lebih 3 menit [mcname!c] dan Kana terdiam mendengarkan mereka bernyanyi. Saat selesai, Kana dan [mcname!c] pun bertepuk tangan dengan keras."
+    hide pia_idol_smile 
+    hide tana_idol_laugh
+    show kana_date at kana_near
+    with dissolve
+    "Kurang lebih 3 menit [mcname!c] dan Kana terdiam mendengarkan mereka bernyanyi."
+    play sound "SFX - Large Cheering.mp3" loop fadein 0.5
+    hide kana_date
+    show kana_date_smile at kana_near
+    with dissolve
+    "Saat selesai, Kana, [mcname!c], dan seluruh penonton pun bertepuk tangan dengan keras."
+    hide kana_date_smile with dissolve
     $ quick_menu = False
+#BARU DIREVIEW KOKO JON SAMPE SINI
+    stop sound
     stop music fadeout 1.0
-    scene black with dissolve
-    play music "audio/BGM_Matsuri Malam.mp3" fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Matsuri Malam.ogg" fadein 1.0
     #Harusnya BGM Jejepangan Malam
-    scene kamar mc kota with dissolve
+    scene matsuri malam with Dissolve(1.0)
     #Harusnya BG Jejepangan Malam
     $ quick_menu = True
     play sound "audio/crowd_noise.mp3" fadein 1.0
@@ -328,8 +387,8 @@ label truekanachat:
     with dissolve
     "Kana tiba-tiba menghindari dari jawaban [mcname!c] dan berlari ke arah seorang cosplayer."
     $ quick_menu = False
-    scene black with dissolve
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    scene kamar mc kota with Dissolve(1.0)
     $ quick_menu = True
     show kana_date_talk at char_center
     show kana_date_side_talk at left
@@ -405,9 +464,9 @@ label truekanajapanfest:
     kana "Yayyy~"
     $ quick_menu = False
     stop music fadeout 1.0
-    scene black with dissolve
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Minigame Tana.mp3" fadein 1.0
-    scene lorong sore with dissolve
+    scene lorong sore with Dissolve(1.0)
 #Harusnya BG MINIGAME TANA (Tanpa mainin)
     show kana_date_talk at char_center
     show kana_date_side_talk at left
@@ -437,7 +496,7 @@ label truekanajapanfest:
     scene black with dissolve
     play music "audio/BGM_Matsuri Malam.mp3" fadein 1.0
 #Harusnya BGM Jejepangan Malam
-    scene kamar mc kota with dissolve
+    scene matsuri malam with dissolve
 #Harusnya BG Jejepangan Malam
     $ quick_menu = True
     show kana_date at char_center with dissolve

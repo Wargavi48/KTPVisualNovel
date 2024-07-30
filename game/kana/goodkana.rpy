@@ -2611,7 +2611,7 @@ label goodkanadancepractice:
     #*BG JEJEPANGAN*
     $ quick_menu = False
     scene black with Dissolve(2.0)
-    scene lorong with dissolve
+    scene matsuri sore with dissolve
     $ quick_menu = True
     "Kana dan [mcname!c] menikmati booth dan stand yang ada di event jejepangan tersebut, sesekali mereka juga melihat ke arah main stage di mana ada mini konser yang sedang berlangsung. Kana pun merasa senang dan mungkin sudah melupakan ke grogiannya meski hanya sedikit."
     show kana_idol_talk at kana_near

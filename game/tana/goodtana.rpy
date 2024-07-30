@@ -4840,7 +4840,7 @@ label goodtanagotofestival:
 #SKIP
 #Kalau Aimnya jelek? gimana?
 label goodtanaaftergame:
-    scene depan kampus with Dissolve(1.0)
+    scene matsuri sore with Dissolve(1.0)
 #HARUSNYA BG MATSURI SORE
     play music "BGM_Monas.ogg" fadein 1.0
     show tana_idol_talk at tana_near
@@ -4899,7 +4899,7 @@ label goodtanaaftergame:
     stop music fadeout 1.0
     $ quick_menu = False
     play music "BGM_Monas.ogg" fadein 1.0
-    scene depan kampus with Dissolve(1.0)
+    scene matsuri malam with Dissolve(1.0)
     #Tutup telefon
     show tana_idol at tana_near with dissolve
     $ quick_menu = True

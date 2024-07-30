@@ -3902,7 +3902,7 @@ label trueendtana:
 #HARUSNYA BGM HANABI FESTIVAL
     play music "audio/BGM_Matsuri Malam.ogg" fadein 1.0
 #HARUSNYA BACKGROUND HANABI
-    scene lorong malam with Dissolve(1.0)
+    scene matsuri sore with Dissolve(1.0)
     show tana_date_talk at tana_near
     show tana_date_side_talk at left 
     with dissolve
@@ -4062,7 +4062,7 @@ label truetanaaftergame:
     "[mcname!c]" "Nah, pas banget tuh ada promo. Gas lah."
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    scene lorong malam with Dissolve(1.0)
+    scene matsuri malam with Dissolve(1.0)
 #HARUSNA BG MATSURI MALAM
     $ quick_menu = True
     "[mcname!c]" "Mas, promo es krimnya berapaan?"
@@ -4077,7 +4077,7 @@ label truetanaaftergame:
     "[mcname!c]" "Terima kasih kembali."
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    scene lorong malam with Dissolve(1.0)
+    scene matsuri malam with Dissolve(1.0)
 #HARUSNA BG MATSURI MALAM
     $ quick_menu = True
     "[mcname!c]" "Hmmm dapet rasa apa, ya?"

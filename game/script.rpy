@@ -56,10 +56,13 @@ define lift_center = Transform(zoom=0.3,xalign=0.0,yalign=0.0,xpos=0.21)
 define mafu = Transform(zoom=0.3,xalign=0.0,yalign=0.0,xpos=0.20)
 define mading = Transform(zoom=0.35,xalign=0.0,yalign=-0.06,xpos=0.17)
 define crane = Transform(zoom=0.2,xalign=0.0,yalign=0.14,xpos=0.28)
-define poster = Transform(zoom=0.4,xalign=0.0,yalign=0.2,xpos=0.11)
 define seifuku = Transform(zoom=0.3,xalign=0.0,yalign=-0.5,xpos=0.18)
 define pintu_rumah_kana = Transform(zoom=0.3,xalign=0.0,yalign=-0.20,xpos=0.18)
 define pintu_kamar_kana = Transform(zoom=0.3,xalign=0.0,yalign=-0.25,xpos=0.19)
+
+define club = Transform(zoom=0.4,xalign=0.0,yalign=0.2,xpos=0.11)
+define club2 = Transform(zoom=0.34,xalign=0.0,yalign=-0.4,xpos=0.03)
+define matsuri = Transform(zoom=0.18,xalign=0.0,yalign=0.13,xpos=0.55)
 
 # Game dimulai disini.
 label start:

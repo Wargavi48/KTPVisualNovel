@@ -770,6 +770,7 @@ label kanachapter2titippanitia:
     "Tiba-tiba saat membahas topik pembicaraan, Kana tidak merespon sehingga [mcname!c] mencoba untuk menengok ke arah Kana."
     "[mcname!c]" "{i}Loh, Kana ke mana?{/i}"
 #Asset Baju Kana yg dipajang ON
+    show seifuku at seifuku
     "[mcname!c] pun melihat ke belakang. Di sana terlihat Kana sedang menatap salah satu baju yang dipajang di mall."
     "[mcname!c]" "Eh, Kana? Ada apa?"
     show kana_side at left with dissolve
@@ -782,7 +783,8 @@ label kanachapter2titippanitia:
     with dissolve
     kana "Ah! Iya."
 #HIDE ASSET BAJU KANA YG DIPAJANG
-    hide kana_side_talk with dissolve
+    hide kana seifuku
+    hide kana_side_talk 
     hide kana_talk
     show kana_smile at kana_near
     with dissolve
@@ -1937,13 +1939,13 @@ label chapter2kanaA:
     hide tana_side_shock at left
     with dissolve
     tana "Ya udah ini buat lu aja."
-    show poster1 at poster
+    show club at club
     hide tana_side_talk
     hide tana_talk
     with dissolve
     "Cewek tersebut memberikan flyer ke arah [mcname!c] dan pergi dari tempat tersebut."
     "[mcname!c]" "??????? Ada apa ini????!!!!"
-    hide poster1 with dissolve
+    hide club with dissolve
     "[mcname!c]" "Ah yaudah lah. Fokus kelas dulu."
     stop sound fadeout 1.0
     stop music fadeout 1.0
@@ -1974,7 +1976,7 @@ label chapter2kanaA:
     "[mcname!c]" "Iya tadi pagi barengan. Tapi Kana tiba-tiba kabur sesudah dikasih flyer ini."
     "[mcname!c] kemudian menunjukkan flyernya kepada Freya."
 #MUNCUL FLYER RECRUIT ANGGOTA KLUB JEPANG
-    show poster1 at poster
+    show club at club
     hide freya
     show freya_side_awe at left
     with dissolve
@@ -1983,7 +1985,7 @@ label chapter2kanaA:
     "Freya membaca flyer yang diberikan [mcname!c]."
     "[mcname!c]" "Denger-denger, emangnya Kana wibu?"
 #MUNCUL FLYER RECRUIT ANGGOTA KLUB JEPANG HIDE
-    hide poster1
+    hide club
     hide freya_awe
     show freya_shock at char_center
     show freya_side_shock at left
@@ -4514,6 +4516,8 @@ label TerimaTawaranKana:
     "[mcname!c]" "{i}Aduhh, telat nihh, pake mules segala.{/i}"
     "Saat tergesa-gesa, pandangan [mcname!c] tiba-tiba teralihkan dengan sebuah flyer yang menempel di papan pengumuman."
 #SHOW PAPAN PENGUMUMAN FLYER
+    show club at club2
+    show matsuri at matsuri
     "[mcname!c]" "{i}Eh apa ini?{/i}"
     "[mcname!c]" "{i}Hmmm ternyata bentar lagi bakal ada acara jejepangan di kampus ini.{/i}"
     "[mcname!c]" "{i}Ehh ini kan flyer yang waktu itu pernah dikasih sama cewek rambut merah ya?{/i}"
@@ -4522,8 +4526,9 @@ label TerimaTawaranKana:
     menu:
         "Yang [mcname!c] lakukan..."
         "Ambil flyer event jejepangan.":
+            "[mcname!c]" "{i}Kayaknya asik ke event jejepangan bareng Kana.{/i}"
             "[mcname!c]" "{i}Ehhh tapi udah kelamaan ini, ga enak sama Kana nunggu lama.{/i}"
-            "[mcname!c] pun memilih untuk mengabaikan flyer tersebut, lalu lari agar bisa datang tepat waktu."
+            "[mcname!c] pun berlari ke kantin agar bisa datang tepat waktu."
             jump truekana
         "Ambil flyer \"Dicari Anggota Klub Jepang\".":
             jump goodkana
