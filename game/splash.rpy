@@ -27,7 +27,7 @@ label splashscreen:
     $ persistent.firstlaunch = True
     
     show splash_animation
-    show text "Warga Virtual 48 Present":
+    show text "{color=#FFF}Warga Virtual 48 Present{/color}":
         xalign 0.5 yalign 0.8 alpha 0.0
         pause 5.0
         linear 1.0 alpha 1.0
@@ -50,24 +50,14 @@ label splashscreen:
     scene black
     with fade
 
-    show game_logo:
-        xalign 0.5 yalign 0.0
-
     $ renpy.pause(2.0)
-
-    show wargavi:
-        xalign 0.5 yalign 0.75 alpha 0.0
-        pause 1.5
-        linear 1.0 alpha 1.0 
-
-    $ renpy.pause(6.0)
 
     scene black
     with fade
 
-    $ renpy.movie_cutscene('videos/Splash_screen_hagavi_teaser.webm')
+    $ renpy.movie_cutscene('videos/splash_screen.webm')
 
     scene white
     with fade
-
+    pause(2.0)
     return
