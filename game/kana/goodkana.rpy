@@ -17,42 +17,42 @@ label goodkana:
     scene kantin with Dissolve(2.0)
     $ quick_menu = True
     "[mcname!c]" "Eh maaf lama ya, tadi abis dari toilet hehe."
-    show kana at char_right
-    show freya_talk at char_left
+    show kana at kana_near_left_2
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Cuci tangan ga?"
     hide freya_side_talk
     hide freya_talk
-    show freya at char_left
+    show freya at freya_near_right
     with dissolve
     "[mcname!c]" "Ya cuci lah, masa enggak? Jorok banget ih."
     hide kana
-    show kana_talk at char_right
+    show kana_talk at kana_near_left_2
     show kana_side_talk at left
     with dissolve
     kana "Hahaha, gapapa kita juga baru datang tadi kok."
     hide kana_side_talk
     hide kana_talk
-    show kana at char_right
+    show kana at kana_near_left_2
     with dissolve
     "[mcname!c]" "Eh kalian udah pesen makan? Aku mau pesen bentar ya."
     hide kana
-    show kana_talk at char_right
+    show kana_talk at kana_near_left_2
     show kana_side_talk at left
     with dissolve
     kana "Udah tadi, tapi lama nunggu soalnya ngantri."
     hide kana_side_talk
     hide kana_talk
     hide freya
-    show kana at char_right
-    show freya_talk at char_left
+    show kana at kana_near_left_2
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Iya, aku sama Naya udah pesen."
     hide freya_side_talk
     hide freya_talk
-    show freya at char_left
+    show freya at freya_near_right
     with dissolve
     "[mcname!c]" "Oke aku pesen dulu ya."
     hide kana
@@ -75,7 +75,7 @@ label goodkana:
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
 
-        "Ayam geprek pak (donatur)":
+        "Ayam geprek Pak (donatur)":
             #*CHOSE C*
             "[mcname!c]" "{i}Hmmm kayaknya makan ayam geprek enak deh, pengen yang pedes sesekali.{/i}"
             "Ternyata ayam yang kamu pesen terlalu pedes dan bikin kamu sakit perut sampe dilarikan ke rumah sakit."
@@ -92,64 +92,64 @@ label goodkanaafterorder:
     "[mcname!c]" "{i}Eh nyoba nasi cumi Pak (donatur) kali ya? Katanya terkenal sampe masuk di subtitle gitu di beberapa film, nyobain ah.{/i}"
     "[mcname!c] pun memesan makanan dan kembali ke meja di mana Kana dan Freya berada."
     "[mcname!c]" "Eh maaf lama, tadi aku jadinya pesan nasi cumi Pak (donatur) itu."
-    show freya at char_left
-    show kana_talk at char_right
+    show freya at freya_near_right
+    show kana_talk at kana_near_left_2
     show kana_side_talk at left
     with dissolve
     kana "Ooo yang katanya pernah masuk ke film-film itu ya?"
     hide kana_side_talk
     hide kana_talk
     hide freya
-    show kana at char_right
-    show freya_talk at char_left
+    show kana at kana_near_left_2
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Ooo aku tau itu, katanya sih enak."
     hide freya_side_talk
     hide freya_talk
-    show freya at char_left
+    show freya at freya_near_right
     with dissolve
     "[mcname!c]" "Iya yang itu. Aku nyobain sih, penasaran juga haha."
     hide freya
-    show freya_talk at char_left
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Eh itu di tasmu ada apaan [mcname!c]? Kok ada yang nongol sih? Dari tadi mau ambil tapi ga berani soalnya ga sopan gitu kalo ga ijin ke orangnya."
     hide freya_side_talk
     hide freya_talk
-    show freya at char_left
+    show freya at freya_near_right
     with dissolve
     "[mcname!c]" "OWH IYA, INI!!!"
     "Dengan nada semangat [mcname!c] mengambil selembaran yang berada di tasnya."
     "[mcname!c]" "Jadi ini tuh ada rekrutmen buat masuk ke klub jejepangan dan jadi panitia di event gitu."
     "[mcname!c]" "Tadi liat sekilas, tapi aku ambil soalnya kayaknya seru gitu sih."
     hide freya
-    show freya_talk at char_left
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Oalah, Nay ini mah kesukaanmu tuh."
     hide freya_side_talk
     hide freya_talk
-    show freya at char_left
-    show kana_confused at char_right
+    show freya at freya_near_right
+    show kana_confused at kana_near_left_2
     show kana_side_confused at left
     with dissolve
     kana "Ehh… Ummm keliatannya seru sih… tapi a-aku malu."
     hide kana_side_confused
     hide kana_confused
     hide freya
-    show kana at char_right
-    show freya_awe at char_left
+    show kana at kana_near_left_2
+    show freya_awe at freya_near_right
     show freya_side_awe at left
     with dissolve
     freya "Alahhh, pake malu segala. Ini kesempatan, Nayaaaa. Biar kamu banyak temen jejepangan gitu."
     hide freya_side_awe
     hide freya_awe
-    show freya at char_left
+    show freya at freya_near_right
     with dissolve
     "[mcname!c]" "Iya Nay ikut yuk, aku juga ikut."
     hide kana
-    show kana_confused_blush at char_right
+    show kana_confused_blush at kana_near_left_2
     show kana_side_confused at left
     with dissolve
     kana "T-tapiiiiii."
@@ -161,20 +161,20 @@ label goodkanaafterorder:
     hide kana_side_confused
     hide kana_confused_blush
     hide freya
-    show kana_confused_blush_sideeye at char_right
-    show freya_talk at char_left
+    show kana_confused_blush_sideeye at kana_near_left_2
+    show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
     freya "Udah Nay, ikutan aja duluu."
     hide freya_side_talk
     hide freya_talk
     hide kana_confused_blush_sideeye
-    show freya at char_left
-    show kana_confused_blush at char_right
+    show freya at freya_near_right
+    show kana_confused_blush at kana_near_left_2
     with dissolve
     "[mcname!c]" "Iya Nayy, ikutan yaaa."
     hide kana_confused_blush
-    show kana_confused at char_right
+    show kana_confused at kana_near_left_2
     show kana_side_confused at left
     with dissolve
     kana "Ummm i-iya deh aku ikut aja dulu ya. Tapi kalau aku ga suka, aku ga join ya?"
@@ -207,6 +207,7 @@ label goodkanaafterorder:
     "[mcname!c] melihat ke arah HPnya yang berbunyi."
     stop sound
     "Saat membuka HPnya ia mendapatkan notifikasi chat dari Kana."
+    $ quick_menu = False
     nvl clear
     kana_nvl "Eh. B-besok kita reschedule aja gimana >_<"
     mc_nvl "G"
@@ -217,6 +218,7 @@ label goodkanaafterorder:
     kana_nvl "Iiiiihh, tapi kan."
     mc_nvl "Kalo ga mau ikut gapapa kok, ga mau maksa. Kalo mau ikut, aku tunggu sampai jam 3 sore ya… Jangan telat, good night."
     kana_nvl "Ehhh..."
+    $ quick_menu = True
     play sound "audio/ReceiveText.ogg" loop
     "HP [mcname!c] terus-terusan bersuara, suara notif tidak berhenti terdengar."
     stop sound
@@ -290,8 +292,10 @@ label goodkanaafterorder:
     "[mcname!c]" "Udah lah namanya juga klub, yuk masuk. Permisiii~"
     hide kana_confused_blush with dissolve
     "[mcname!c] pun masuk ke arah ruangan klub. Kana panik dan mencoba untuk menghentikan [mcname!c], akan tetapi [mcname!c] telah memasuki ruangan terlebih dahulu."
+    $ quick_menu = False
     scene black with dissolve
     scene ruang ukm with Dissolve(2.0)
+    $ quick_menu = True
     "Suasa ruangan tiba-tiba hening, akan tetapi terlihat wajah yang agak familiar di sana."
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -312,14 +316,14 @@ label goodkanaafterorder:
     "???" "Elu kan yang waktu itu menghindar ya? Akhirnya dateng juga, udah gue tungguin loh."
     hide tana_side_talk
     hide tana_talk
-    show tana at char_right
-    show kana_confused at char_left
-    show kana_side_confused at left
+    show tana at tana_right
+    show kana_shy_talk at kana_near_left_2
+    show kana_side_cry at left
     with dissolve
     kana "Eeehh, I-iya hehe."
-    hide kana_side_confused with dissolve
+    hide kana_side_cry with dissolve
     "[mcname!c]" "Nay, santai aja napa."
-    hide kana_confused
+    hide kana_shy_talk
     hide tana
     show tana at tana_near
     show pia_talk at pia_near_right
@@ -404,18 +408,22 @@ label goodkanaafterorder:
     hide pia_side_talk
     hide pia_talk
     show pia at pia_near_right
-    show kana_confused at kana_near_left_2
-    show kana_side_confused at left
+    show kana_shy_talk at kana_near_left_2
+    show kana_side_cry at left
     with dissolve
     kana "Eeehh… Uumm aku Kana."
-    hide kana_side_confused
+    hide kana_shy_talk
+    hide kana_side_cry
+    show kana_shy at kana_near_left_2
     with dissolve
     "[mcname!c]" "Maaf ya dia gugup, Nay ayoo lah."
-    show kana_side_confused at left
+    hide kana_shy at kana_near_left_2
+    show kana_shy_talk at kana_near_left_2
+    show kana_side_cry at left
     with dissolve
     kana "T-tapii.."
-    hide kana_side_confused
-    hide kana_confused
+    hide kana_side_cry
+    hide kana_shy_talk at kana_near_left_2
     hide pia
     show kana_shy at kana_near_left_2
     show pia_talk at pia_near_right
@@ -427,10 +435,10 @@ label goodkanaafterorder:
     hide kana_shy
     show pia at pia_near_right
     show kana_shy_talk at kana_near_left_2
-    show kana_side_shy at left
+    show kana_side_cry at left
     with dissolve
     kana "A-aku masuk ke jurusan HI. "
-    hide kana_side_shy
+    hide kana_side_cry
     hide kana_shy_talk
     hide tana
     show kana_shy at kana_near_left_2
@@ -470,13 +478,13 @@ label goodkanaafterorder:
     "[mcname!c]" "Kalau aku iya haha, tapi kalau Kana.."
     "[mcname!c] melihat ke arah Kana diikuti oleh Tana dan Pia."
     show kana_shy_talk at kana_near_left_2
-    show kana_side_shy at left
+    show kana_side_cry at left
     with dissolve
     kana "A-aku mau liat-liat dulu kalo boleh."
-    hide kana_side_shy
+    hide kana_side_cry
     hide kana_shy_talk
     hide pia
-    show kana at kana_near_left_2
+    show kana_shy at kana_near_left_2
     show pia_talk at pia_near_right
     show pia_side_talk at left
     with dissolve
@@ -485,7 +493,7 @@ label goodkanaafterorder:
     pia "Soalnya kita juga lagi perlu satu orang lagi nih dan kayaknya kamu cocok deh."
     hide pia_side_talk
     hide pia_talk
-    hide kana
+    hide kana_shy at kana_near_left_2
     show pia at pia_near_right
     show kana_confused at kana_near_left_2
     show kana_side_confused at left
@@ -511,12 +519,12 @@ label goodkanaafterorder:
     hide tana_talk
     hide pia
     show tana at tana_near
-    show pia_talk at pia_near_right
-    show pia_side_talk at left
+    show pia_shock at pia_near_right
+    show pia_side_shock at left
     with dissolve
     pia "Eh? I-iya."
-    hide pia_side_talk
-    hide pia_talk
+    hide pia_side_shock
+    hide pia_shock
     hide kana_confused
     show kana at kana_near_left_2
     show pia at pia_near_right
@@ -559,9 +567,7 @@ label goodkanaafterorder:
     with dissolve
     pia "Kok jadi gue sihhh, Ton."
     hide pia_side_silent
-    hide pia_silent
     hide tana
-    show pia at pia_near_right
     show tana_laugh at tana_near
     show tana_side_laugh at left
     with dissolve
@@ -585,7 +591,7 @@ label goodkanaafterorder:
     tana "Nahhhh gitu dong ketawa santai aja dong. Kita kan ga gigit kecuali Si Pia Meraleo itu tuh ati-ati aja, ada LEOnya soalnya xixixi."
     hide tana_side_talk
     hide tana_talk
-    hide pia
+    hide pia_silent
     show tana at tana_near
     show pia_talk at pia_near_right
     show pia_side_talk at left
@@ -695,6 +701,7 @@ label goodkanaafterorder:
     "Saat melihat HPnya tersebut, ternyata itu adalah notif dari Kana. [mcname!c] pun akhirnya membalas chatnya, akan tetapi Kana langsung menelpon [mcname!c]."
     #*CUT TO SCENE*
     #*HP FACE KANA DI HP*
+    "UI Kana Telpon MC"
     "[mcname!c]" "Kenapa Nay?"
     show kana_side_talk at left with dissolve
     kana "Nahhh akhirnya diangkat juga, lagi sibuk kah?"
@@ -734,6 +741,7 @@ label goodkanaafterorder:
     show kana_side_shy_smile at left with dissolve
     kana "Gapapa kok, pokoknya aku ikut kepanitiaan juga ya. Gitu aja ya, dadah selamat malaamm."
     hide kana_side_shy_smile with dissolve
+    "END UI Kana Telpon MC"
     "Suara telepon pun ditutup, [mcname!c] terdiam."
     "[mcname!c]" "Ahhhhh… Kenapa aku malah deg degan kayak gitu sih, udah lah mendingan tidur."
     stop music fadeout 1.0
@@ -808,28 +816,28 @@ label goodkanaafterorder:
     tana "........."
     hide tana_side_idle
     hide tana_silent
-    show tana_talk at tana_near
-    show tana_side_talk at left
+    show tana_angry_2 at tana_near
+    show tana_side_angry_2 at left
     with dissolve
     tana "Kok kali ini doang sih, Pi? Biasanya nggak, gitu?"
-    hide tana_side_talk
-    hide tana_talk
+    hide tana_side_angry_2
+    hide tana_angry_2
     hide pia
-    show tana at tana_near
+    show tana_angry at tana_near
     show pia_talk at pia_near_right
     show pia_side_talk at left
     with dissolve
     pia "Hehehe"
     hide pia_side_talk
     hide pia_talk
-    hide tana
+    hide tana_angry
     show pia at pia_near_right
-    show tana_talk at tana_near
-    show tana_side_talk at left
+    show tana_angry_2 at tana_near
+    show tana_side_angry_2 at left
     with dissolve
     tana "Ahhhh elah kocak."
-    hide tana_side_talk
-    hide tana_talk
+    hide tana_side_angry_2
+    hide tana_angry_2
     show tana at tana_near
     with dissolve
     "[mcname!c]" "Hahaha. Eh mau tanya dong, ini kan di eventnya pasti ada lomba ya? Panitia panitia boleh ikut lombanya kah?"
@@ -938,10 +946,10 @@ label goodkanaafterorder:
     hide kana_confused
     show tana at tana_near
     show kana_shy_talk at kana_near_left_2
-    show kana_side_shy at left
+    show kana_side_cry at left
     with dissolve
     kana "T-tapiii"
-    hide kana_side_shy
+    hide kana_side_cry
     hide kana_shy_talk
     show kana_shy at kana_near_left_2
     with dissolve
@@ -950,10 +958,10 @@ label goodkanaafterorder:
     "Kana pun mau tidak mau mengiyakan hal itu, akan tetapi dengan beberapa syarat."
     hide kana_shy
     show kana_shy_talk at kana_near_left_2
-    show kana_side_shy at left
+    show kana_side_cry at left
     with dissolve
     kana "Aaaaaaa… Iya deh iya, tapi [mcname!c] harus ikut kapan pun pas latihan. Dan kalo aku ga mau lanjut, aku udahan yaa."
-    hide kana_side_shy
+    hide kana_side_cry
     hide kana_shy_talk
     hide pia
     hide tana
@@ -982,6 +990,7 @@ label goodkanaafterorder:
     stop sound
     "[mcname!c]" "Aduhhh ini siapa sih, dari tadi notif jebol gini."
     #*CHANGE SCENE*
+    $ quick_menu = False
     #*HP*
     nvl clear
     tana_nvl "Eh ini group buat kita yaa. Buat bahas latihan dan bahas yang lain-lain juga lah, biar ga usah ngechat satu-satu."
@@ -998,7 +1007,9 @@ label goodkanaafterorder:
     pia_nvl "Hahah"
     mc_nvl "Jadi mau ngapain nih?"
     tana_nvl "Jadiiii giniii…"
+    $ quick_menu = True
     "Tana pun menceritakan rencana dia untuk latihan persiapan lomba yang akan datang. Rencananya akan latihan seminggu 3-4x, meliputi latihan dance dan latihan bernyanyi. Tempat latihan akan diberi tahu nanti, untuk sementara akan menggunakan ruangan klub untuk latihan terlebih dahulu."
+    $ quick_menu = False
     tana_nvl "Jadii gituu sih, gimana? Setuju kan? KAN!!???"
     pia_nvl "Iya gue sih setuju, kamu gimana Kana?"
     kana_nvl "Ummm… Boleh sih, tapi [mcname!c] juga ikut nemenin kan? Inget perjanjian awal ya, kalau dia ga ikut aku juga enggak."
@@ -1050,20 +1061,20 @@ label goodkanaafterorder:
     "[mcname!c]" "Nayyyy!"
     hide kana
     show kana_shy_talk at kana_near_left_2
-    show kana_side_shy at left
+    show kana_side_cry at left
     with dissolve
     kana "Huh? K-kenapa ya?"
-    hide kana_side_shy
+    hide kana_side_cry
     hide kana_shy_talk
-    show kana at kana_near_left_2
+    show kana_shy at kana_near_left_2
     with dissolve
     "[mcname!c]" "Nay u ok? Tadi dipanggil sama Tono ga nyaut, kamu gapapa kan?"
-    hide kana
+    hide kana_shy
     show kana_shy_talk at kana_near_left_2
-    show kana_side_shy at left
+    show kana_side_cry at left
     with dissolve
     kana "Gapapa kok cuma gugup aja. Takut gimana kalo nanti aku salah, gimana kalo nanti aku ketinggalan, gimana kalo nanti aku…"
-    hide kana_side_shy
+    hide kana_side_cry
     hide kana_shy_talk
     show kana_shy at kana_near_left_2
     with dissolve
@@ -1072,10 +1083,10 @@ label goodkanaafterorder:
     "[mcname!c]" "KANAIA ASA, please don't be like that. It’s ok to make mistakes, mistakes happen. Santai aja Nay, mereka ga bakalan salahin kamu kok. Kalaupun mereka berani, bakal kugetok mereka kok. Jadi just be you, ok?"
     hide kana_shy
     show kana_shy_talk at kana_near_left_2
-    show kana_side_shy at left
+    show kana_side_cry at left
     with dissolve
     kana "T-tapi…"
-    hide kana_side_shy
+    hide kana_side_cry
     hide kana_shy_talk
     show kana_shy at kana_near_left_2
     with dissolve
@@ -1123,10 +1134,10 @@ label goodkanaafterorder:
     "[mcname!c]" "See Nay? Ga ada yang langsung bisa, santai aja. Kamu lakuin apa yang kamu bisa, aku dan kita semua pasti dukung, oke? Semangat yuk."
     hide kana_shy
     show kana_shy_talk at kana_near_left_2
-    show kana_side_shy at left
+    show kana_side_cry at left
     with dissolve
     kana "O-okeee aku coba ya."
-    hide kana_side_shy
+    hide kana_side_cry
     hide kana_shy_talk
     hide tana
     hide pia
@@ -1147,10 +1158,10 @@ label goodkanaafterorder:
     hide pia_side_talk
     hide pia_talk
     show pia at pia_near_right
-    show kana_shy at kana_near_left_2
+    show kana at kana_near_left_2
     with dissolve
     "[mcname!c]" "Nay, kamu gapapa? Nih minyum dulu yaa, jangan lupa. You did great, kamu bagus bangett!"
-    hide kana_shy
+    hide kana
     show kana_talk at kana_near_left_2
     show kana_side_talk at left
     with dissolve
@@ -1342,6 +1353,7 @@ label goodkanaafterorder:
     show tana at tana_near
     show pia_talk at pia_near_right
     show pia_side_talk at left
+    with dissolve
     pia "Iya Kana, santai aja. Ini pertama juga, you did good."
     hide pia_side_talk
     hide pia_talk
@@ -1448,10 +1460,14 @@ label goodkanaafterorder:
     scene kamar mc kota with dissolve
     $ quick_menu = True
     "[mcname!c]" "{i}Hmmm, enaknya gimana ya mulainya?{/i}"
+    $ quick_menu = False
     #*INSERT HP*
     nvl clear
     mc_nvl "Malam Nayy.."
+    nvl clear
+    $ quick_menu = True
     "Setelah kurang lebih 10 menit, akhirnya muncul notif pesan dari Kana."
+    $ quick_menu = False
     kana_nvl "I-iya kenapa?"
     mc_nvl "Gimana kabarnya, hari ini ngapain aja haha."
     kana_nvl "Template amat pertanyaannya."
@@ -1501,6 +1517,7 @@ label goodkanameetinhome:
     mc_nvl "Kalo di rumah gimana Nay? Aku sebenernya bebas sih mau di mana aja, yang penting kamu nyaman."
     kana_nvl "Boleh deh, nanti di rumah aku aja ya. Jam 12 siang gimana?"
     mc_nvl "Okee Nay.."
+    $ quick_menu = True
     "Hmmm ini pasti ada hubungannya sama latihan tadi, fix siiih…"
     nvl clear
     stop music fadeout 1.0
@@ -1527,17 +1544,17 @@ label goodkanameetinhome:
     show kana_home at kana_near with dissolve
     "[mcname!c]" "Nay… Jadi sebenernya ada apa."
     hide kana_home
-    show kana_home_talk at kana_near
-    show kana_home_side_talk at left
+    show kana_home_confused at kana_near
+    show kana_home_side_confused at left
     with dissolve
     kana "Sebenernya…."
     kana "Kamu inget ga, pas kita latihan kemarin itu?"
-    hide kana_home_side_talk
-    hide kana_home_talk
-    show kana_home at kana_near
+    hide kana_home_side_confused
+    hide kana_home_confused
+    show kana_home_sad at kana_near
     with dissolve
     "[mcname!c]" "Inget, latihan vokal kan?"
-    hide kana_home
+    hide kana_home_sad
     show kana_home_confused at kana_near
     show kana_home_side_confused at left
     with dissolve
@@ -1557,34 +1574,34 @@ label goodkanameetinhome:
     hide kana_home_confused
     with dissolve
     "[mcname!c] hanya diam saja, ia tidak ingin menyela cerita dari Kana."
-    show kana_home_talk at kana_near
-    show kana_home_side_talk at left
+    show kana_home_confused at kana_near
+    show kana_home_side_confused at left
     with dissolve
     kana "Kayaknya aku mending udahan aja deh, lagian aku kan ga berbakat nyanyi atau dance gitu. Tana punya dance, Pia punya vokal, kalau aku ga punya apa-apa."
-    hide kana_home_side_talk
-    hide kana_home_talk
-    show kana_home at kana_near
+    hide kana_home_side_confused
+    hide kana_home_confused
+    show kana_home_sad at kana_near
     with dissolve
     "[mcname!c]" "Udah Nay?"
-    hide kana_home
-    show kana_home_talk at kana_near
-    show kana_home_side_talk at left
+    hide kana_home_sad
+    show kana_home_confused at kana_near
+    show kana_home_side_confused at left
     with dissolve
     kana "Maksudnya udah?"
-    hide kana_home_side_talk
-    hide kana_home_talk
-    show kana_home at kana_near
+    hide kana_home_side_confused
+    hide kana_home_confused
+    show kana_home_sad at kana_near
     with dissolve
     "[mcname!c]" "Udah ngerendahin diri kamu sendiri? Okee ini sekarang pandanganku ya, ga boleh nyela."
     "[mcname!c]" "INGET, GA BOLEH NYELA."
     "[mcname!c]" "Ok?"
-    hide kana_home
-    show kana_home_talk at kana_near
-    show kana_home_side_talk at left
+    hide kana_home_sad
+    show kana_home_confused at kana_near
+    show kana_home_side_confused at left
     with dissolve
     kana "O-oke."
-    hide kana_home_side_talk
-    hide kana_home_talk
+    hide kana_home_side_confused
+    hide kana_home_confused
     show kana_home at kana_near
     with dissolve
     "[mcname!c]" "Dancemu off tempo… off ketukan… emang kenapa Nay? Emang mereka komen soal itu? Enggak, kan?"
@@ -1727,6 +1744,7 @@ label goodkanameetinhome:
     "[mcname!c]" "Ummm gimana kalau di… "
     #*CHOOSE*
     menu:
+        "Mana yang akan kamu pilih?"
         "ROOFTOP":
             jump goodkanadancepractice
         "TANAH KOSONG DI UJUNG KAMPUS":
@@ -2540,6 +2558,7 @@ label goodkanadancepractice:
     "[mcname!c]" "Kalo gugup liat ke aku aja… aaaa malu juga kalau diinget-inget."
     "[mcname!c]" "Tapi ya udah deh, yang penting Kana bisa semangat."
     #*SUARA NOTIF
+    $ quick_menu = False
     play sound "audio/ReceiveText.ogg"
     #*HP*
     nvl clear
@@ -2553,6 +2572,7 @@ label goodkanadancepractice:
     kana_nvl "Siappp!"
     pia_nvl "Okee"
     tana_nvl "Okee Brookkk."
+    nvl clear
     stop music fadeout 1.0
     $ quick_menu = False
     #*SKIP TO SCENE*
@@ -2641,15 +2661,17 @@ label goodkanadancepractice:
     kana "Siappp.."
     hide kana_idol_side_talk
     hide kana_idol_talk
-    show kana_idol at kana_near_left
     with dissolve
     "Di saat mereka sedang bercanda dan melihat performa yang lain, Pia dan Tana menghampiri dengan buru-buru."
+    show kana_idol at kana_near_left_2
+    show tana_idol at tana_near
     show pia_idol_talk at pia_near_right
     show pia_idol_side_talk at left
     with dissolve
     pia "NAHHH! ITU DIA TON!"
     hide pia_idol_side_talk
     hide pia_idol_talk
+    hide tana_idol
     show pia_idol at pia_near_right
     show tana_idol_talk at tana_near
     show tana_idol_side_talk at left
@@ -2657,6 +2679,7 @@ label goodkanadancepractice:
     tana "Alahhhhh, ke mana aja kalian sihh. Gue nyariin, ayoo cepet siap-siap 30 menit lagi kita tampilll."
     hide tana_idol_side_talk
     hide tana_idol_talk
+    hide kana_idol 
     show tana_idol at tana_near
     show kana_idol_talk at kana_near_left_2
     show kana_idol_side_talk at left
@@ -2689,26 +2712,41 @@ label goodkanadancepractice:
     "Pembawa Acara" "Kalo sebelumnya kita udah nonton band, cosplay, dan lainnya. Sekarang kita waktunya untuk melihat idol!!! Apakah kalian semua siap!!??? Ini dia saksikan KTp!!!"
     #*SFK SUARA TERIAKAN ORANG ORANG*
     play sound "audio/crowd_noise.mp3"
-    show tana_idol_side_talk at left with dissolve
+    show tana_idol_talk at tana_near
+    show tana_idol_side_talk at left 
+    with dissolve
     tana "Haloooo semuanya~ Sebelumnya kenalin yaa, kita dari Ktp, Kana, Tana, dan Piaaa~"
     tana "Di sini kita bakalan nyoba nyanyi sama dikit-dikit dance yaa, tapi sebelumnya mari kita kenalan dulu~"
-    hide tana_idol_side_talk with dissolve
-    show pia_idol_side_talk at left with dissolve
+    hide tana_idol_side_talk
+    hide tana_idol_talk at tana_near
+    show pia_idol_talk at pia_near
+    show pia_idol_side_talk at left 
+    with dissolve
     pia "Halo semuanya~"
     pia "We Are On Fire! Semangat ku membara, siap menghangatkan hari-hari mu!"
     pia "Halo, aku Pia Meraleo dari JKT48V. Senang bertemu kalian!"
-    hide pia_idol_side_talk with dissolve
+    hide pia_idol_side_talk 
+    hide pia_idol_talk at pia_near
+    with dissolve
     play sound "audio/crowd_noise.mp3"
     "Penonton" "WUOOOH!!!!"
-    show tana_idol_side_talk at left with dissolve
+    show tana_idol_talk at tana_near
+    show tana_idol_side_talk at left 
+    with dissolve
     tana "Okeee selanjutnya giliran gue."
     tana "Wassup ma bross!!! I'm fresh like a breeze! JKT48V Tana Nona! Cool enough to make you freeEeEzZEe"
-    hide tana_idol_side_talk with dissolve
+    hide tana_idol_side_talk 
+    hide tana_idol_talk at tana_near
+    with dissolve
     play sound "audio/crowd_noise.mp3"
     "Penonton" "WUOOOH!!!!"
-    show kana_idol_side_shy_talk at left with dissolve
+    show kana_idol_shy_talk at kana_near
+    show kana_idol_side_shy_talk at left 
+    with dissolve
     kana "Ehh… I-iyaaa… K-kenalin semuanya n-namaku Kanaaaa-"
-    hide kana_idol_side_shy_talk with dissolve
+    hide kana_idol_side_shy_talk 
+    hide kana_idol_shy_talk
+    with dissolve
     #*SFX BRAK*
     #play sound "audio/"
     "Seketika para penonton terdiam ada beberapa yang tertawa karena mic Kana tiba-tiba terjatuh dari tangannya."
@@ -2717,18 +2755,26 @@ label goodkanadancepractice:
     "[mcname!c]" "KANAIAAA!!!!! SEMANGAATTTTT!!!!"
     "Di antara keheningan para penonton, [mcname!c] berteriak hingga orang-orang melihat ke arahnya dengan tatapan aneh. Akan tetapi [mcname!c] tidak peduli dan hanya tersenyum ke arah Kana."
     "Kana terkejut lalu melihat ke arah [mcname!c] dan tersenyum. Kana menarik nafas, lalu mengambil micnya dan tersenyum."
-    show kana_idol_side_talk at left with dissolve
+    show kana_idol_talk at kana_near
+    show kana_idol_side_talk at left 
+    with dissolve
     kana "Maaf yaaa soal sebelumnya, gugup dikit hehe."
     kana "Oke semuanya. Mari bernyanyi, sambil bermain air. Aku dari laut tapi tidak salty! 🎶🐟"
     kana "Halo! Aku Kanaia yang akan membuat harimu indah bagai pelangi~"
-    hide kana_idol_side_talk with dissolve
+    hide kana_idol_side_talk 
+    hide kana_idol_talk at kana_near
+    with dissolve
     "[mcname!c]" "KANAAAAAAA!!!!"
     play sound "audio/crowd_noise.mp3"
     "Penonton" "WUOOOH!!!!"
-    show tana_idol_side_talk at left with dissolve
+    show tana_idol_talk at tana_near
+    show tana_idol_side_talk at left 
+    with dissolve
     tana "Udah sesi perkenalannya, sekarang kita akan tampil."
     tana "Jadi, jangan lepaskan pandangan kalian dan dengarkanlah lagu dari kami!"
-    hide tana_idol_side_talk with dissolve
+    hide tana_idol_side_talk 
+    hide tana_idol_talk at tana_near
+    with dissolve
     "[mcname!c]" "SEMANGAT KANAAA!!!"
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     $ quick_menu = False
