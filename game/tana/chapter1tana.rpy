@@ -2154,7 +2154,7 @@ label chapter1tanamakan:
     scene mall temp with Dissolve(1.0)
     #Insert UI Handphone Nelpon"
     play music "BGM_Happy + HP.ogg" fadein 1.0 volume (2.0)
-    show mama telpon_mamah at ui_handphone 
+    show telpon_mamah at ui_handphone 
     show side mama at left 
     with dissolve
     $ quick_menu = True
@@ -2180,7 +2180,9 @@ label chapter1tanamakan:
     "[mcname!c]" "Siap Mah. Aku duluan ya, bye-bye~"
     show side mama at left with dissolve
     mama "Byee~"
-    hide side mama at left with dissolve
+    hide side mama at left 
+    hide telpoon_mamah at ui_handphone
+    with dissolve
     "Hide UI Telepon"
     stop music fadeout 1.0
     $ quick_menu = False

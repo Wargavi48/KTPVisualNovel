@@ -151,6 +151,7 @@ label multiendlearnUTS:
 
 label multiendafterUTS:
     menu:
+        "Tempat mana yang akan kamu pilih?"
         "Rooftop":
             #IF CHOOSE A TRUE ENDING
             jump chapter2tanaTRUE3

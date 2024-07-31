@@ -4295,10 +4295,10 @@ label kanaafterquiz:
     play music "BGM_Bad End.ogg" fadein 1.0
     "Pandangan semua orang pun teralihkan dan saat itu juga, [mcname!c] melihat Kana yang tergeletak di lantai. Tanpa ragu-ragu, [mcname!c] berlari menghampiri Kana yang tergeletak lemas dan tidak sadarkan diri."
     # Gak ada kana_sick tutup mata
-    #show kana_sick at kana_near with dissolve
-    show kana_shy_closeeye at kana_near with dissolve
+    show kana_sick at kana_near with dissolve
+    # show kana_shy_closeeye at kana_near with dissolve
     "[mcname!c]" "Nay!! Kamu kenapa Nay?! Nayyy!"
-    #hide kana_sick at kana_near with dissolve
+    hide kana_sick at kana_near with dissolve
     "Penjaga ujian dan staff pun memberitahukan murid untuk menghubungi pihak kesehatan kampus akan tetapi [mcname!c] memberitahukan tentang riwayat kesehatan Kana."
     "Para staf pun panik dan segera menghubungi rumah sakit terdekat."
     $ quick_menu = False
