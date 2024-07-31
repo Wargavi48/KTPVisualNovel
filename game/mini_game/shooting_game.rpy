@@ -348,8 +348,12 @@ screen final_score():
             padding(0, 0)
             add "images/shooting_game/final-score-background.png" align(0.5, 0.5) at half_size
             text "Your score: [score]" outlines [(absolute(1), "#00000050", absolute(1), absolute(1))] color "#FFBF5F" size 80 align(0.5, 0.5)
-            imagebutton auto "images/shooting_game/play-again-button-%s.png" pos(0, 0.7) anchor(0.0, 0.0) action [Hide("final_score"), Hide("shooting_gallery"), Function(prepareShootingGallery), Show("shooting_gallery")] at half_size
-            imagebutton auto "images/shooting_game/quit-button-%s.png" pos(0.55, 0.7) anchor(0.0, 0.0) action [Hide("final_score"), Hide("shooting_gallery"), Jump("credits"), SetVariable("default_mouse", None), SetVariable("shooting_gallery", False)] at half_size
+            if tana_route == "Good End" && score >= 150:
+                imagebutton auto "images/shooting_game/quit-button-%s.png" pos(0.55, 0.7) anchor(0.0, 0.0) action [Hide("final_score"), Hide("shooting_gallery"), Jump("goodtanaaftergame"), SetVariable("default_mouse", None), SetVariable("shooting_gallery", False)] at half_size
+            elif tana_route == "True End" && score >= 150:
+                imagebutton auto "images/shooting_game/quit-button-%s.png" pos(0.55, 0.7) anchor(0.0, 0.0) action [Hide("final_score"), Hide("shooting_gallery"), Jump("truetanaaftergame"), SetVariable("default_mouse", None), SetVariable("shooting_gallery", False)] at half_size
+            else:
+                imagebutton auto "images/shooting_game/play-again-button-%s.png" pos(0, 0.7) anchor(0.0, 0.0) action [Hide("final_score"), Hide("shooting_gallery"), Function(prepareShootingGallery), Show("shooting_gallery")] at half_size
 
 define config.mouse = {}
 define config.mouse["targetgame"] = [("images/shooting_game/target-pointer.png", 17, 10)]

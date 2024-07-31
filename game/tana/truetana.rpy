@@ -1439,9 +1439,9 @@ label chapter2tanaTRUE2:
     hide tana_side_talk at left
     hide tana_talk at tana_near
     with dissolve
-    $ tana_route = "Good End"
+    $ tana_route = "True End"
     $ quick_menu=False
-    jump truetanaafterquiz
+    jump quiz
 
 label truetanaafterquiz:
     $ quick_menu=True
@@ -4013,7 +4013,7 @@ label trueendtana:
     hide tana_date_side_talk at left
     hide tana_date_talk at tana_near 
     with dissolve
-    jump truetanaaftergame
+    jump shooting_game_start
     #MINIGAME TEMBAK TEMBAKAN"
 label truetanaaftergame:
     show tana_date_talk at tana_near

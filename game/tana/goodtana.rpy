@@ -4850,7 +4850,7 @@ label goodtanagotofestival:
     hide tana_idol_side_angry_2 
     hide tana_idol_angry_2
     with dissolve
-    jump goodtanaaftergame
+    jump shooting_game_start
 
 #[PLAY GAME TEMBAK]
 #SKIP
