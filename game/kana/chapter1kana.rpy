@@ -897,7 +897,7 @@ label chapter1kana2Campus:
     show galaxy_side_talk at left
     with dissolve
     galaxy "Owh iya. Siang semuanya."
-    $ mahasiswa_name = "Galaxy"
+    $ mahasiswa_c_name = "Galaxy"
     galaxy "Sebelumnya, kenalin nama gue Galaxy."
     galaxy "Gue dari Pekalongan. Salam kenal~"
     hide galaxy_side_talk
