@@ -146,16 +146,15 @@ label truekanachat:
     mc_nvl "{size=-5}Jadi tadi gimana tips and tricknya buat di event, Yang Mulia Kanaia Asa?{/size}"
     kana_nvl "{size=-5}IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-{/size}"
     nvl clear
-    play sound "audio/SFX - Call.mp3"
     scene kamar mc kota with Dissolve(0.01)
-#MUNCUL ASET KANA NELEPON MC (Kana -> MC) (CALLING)
+    show kana_calling at ui_handphone with dissolve
+    play sound "audio/SFX - Telephone.mp3"
     $ quick_menu = True
     "Tanpa sengaja Kana menekan tombol voice call dan [mcname!c] pun tanpa pikir panjang menekan tombol jawab."
-#MUNCUL ASSET TELEPON KANA (CONNECTED)
-    #*BG HP VOICE CALL*
+    hide kana_calling
+    show kana_connect at ui_handphone
+    with dissolve
     stop sound
-    # show kana_telpon at ui_handphone with dissolve
-    "UI kana telpon MC"
     show kana_side_cry at left with dissolve
     kana "Ehh maaf kepencet!!! Aduh malu banget, aku matiin aja ya."
     hide kana_side_cry with dissolve
@@ -175,14 +174,16 @@ label truekanachat:
     "Tanpa sadar Kana dan [mcname!c] pun mengobrol lama, bahkan sampai melewati tengah malam."
     "Beberapa kali [mcname!c] mendengar Kana menguap dan menyarankan untuk mengakhiri voice call, tetapi ia tetap melanjutkan ceritanya seakan meluapkan semua cerita yang telah ia simpan sendirian selama ini."
     "Beberapa saat kemudian pun Kana tertidur dengan voice call masih menyala."
+    hide kana_conect
+    show kana_conected at ui_handphone
+    with dissolve
     "[mcname!c]" "Kana...? Kana...?"
     #*SFX Amimir*
     "Beberapa kali [mcname!c] menyebutkan nama Kana akan tetapi Kana tetap tidak menjawab."
     "[mcname!c]" "{i}Heeee... Kana ketiduran ya?{/i}"
     "Suara nafas Kana sempat beberapa kali terdengar."
     "Setelah beberapa saat, [mcname!c] pun memilih untuk mengakhiri voice call itu dan tidur agar tidak telat besok."
-    hide telpon_mamah with dissolve
-    #Tutup telpon
+    hide kana_conected with dissolve
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)

@@ -1053,6 +1053,8 @@ label chapter2tanaGOOD2:
     hide tana_angry at tana_near
     with dissolve
     show idolcomp at poster
+    show idolcomp:
+            xpos 0.38 
     show tana_side_confused at left 
     with dissolve
     tana "Apaan nih?"
@@ -1327,7 +1329,10 @@ label chapter2tanaGOOD2:
     "[mcname!c]" "Nih Tan."
     hide tana at tana_near with dissolve
 #"ASSET FLYER REKRUT ANGGOTA IDOL GROUP"
-    show idolrecruit at poster with dissolve
+    show idolrecruit at poster 
+    show idolrecruit:
+            xpos 0.38 
+    with dissolve
     "[mcname!c]" "Flyernya udah jadi. Bagus kan?"
     show tana_side_talk at left
     with dissolve
@@ -1335,9 +1340,12 @@ label chapter2tanaGOOD2:
     hide tana_side_talk at left
     with dissolve
     "[mcname!c]" "Jelas bagus, kan gua yang bikin."
-    hide idolrecruit at poster with dissolve
+    hide idolrecruit at poster 
+    show tana at tana_near
+    with dissolve
 #HIDE FLYER REKRUT ANGGOTA IDOL GROUP"
     "[mcname!c]" "Btw, ini rencananya nanti flyernya mau dibagiin ke mana aja?"
+    hide tana
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
@@ -1419,7 +1427,10 @@ label chapter2tanaGOOD2:
     with dissolve
     stop music fadeout 1.0
 #"ASSET FLYER REKRUT ANGGOTA IDOL"
-    show idolrecruit at poster with dissolve
+    show idolrecruit at poster 
+    show idolrecruit:
+            xpos 0.38 
+    with dissolve
     play music "BGM_Bad End.ogg" fadein 1.0
     "Mahasiswi 1" "Wait... Apaan nih?"
     "Mahasiswi 2" "Perekrutan anggota idol group baru?"
@@ -4894,13 +4905,13 @@ label goodtanaaftergame:
     stop music fadeout 1.0
     stop sound fadeout 1.0
     play music "BGM_Happy + HP.ogg" fadein 1.0 volume(2.0)
-    show feni telpon at ui_handphone
+    show feni_telpon at ui_handphone
     show feni_side_talk at left 
     with dissolve
     feni "[mcname!c], Tana, kalian di mana? Harus siap-siap, udah hampir waktunya tampil."
     hide feni_side_talk with dissolve
     "[mcname!c]" "Siap, Kak Feni. Tana langsung otw ke sana."
-    hide feni telpon at ui_handphone with dissolve
+    hide feni_telpon at ui_handphone with dissolve
     stop music fadeout 1.0
     $ quick_menu = False
     play music "BGM_Monas.ogg" fadein 1.0

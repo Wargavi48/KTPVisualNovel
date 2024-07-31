@@ -3784,7 +3784,7 @@ label trueendtana:
     hide tana_date_confused at tana_near 
     with dissolve
     play sound "SFX - Telephone.mp3"
-    show tana ring at ui_handphone with dissolve
+    show tana_ring at ui_handphone with dissolve
     "Tana pun mencoba menelpon [mcname!c]."
 #UI TELEPON"
     "Kring kring"
@@ -3792,7 +3792,7 @@ label trueendtana:
     tana "....."
     hide tana_date_side_idle at left with dissolve
     "[mcname!c] tidak mengangkat panggilan telepon dari Tana."
-    hide tana ring
+    hide tana_ring
     show tana_date_angry_2 at tana_near
     show tana_date_side_angry_2 at left 
     with dissolve
@@ -3801,12 +3801,12 @@ label trueendtana:
     hide tana_date_angry_2 at tana_near
     with dissolve
     play sound "SFX - Telephone.mp3"
-    show tana ring at ui_handphone with dissolve
+    show tana_ring at ui_handphone with dissolve
     "Tana pun mencoba menelpon [mcname!c] kembali."
     "Kring kring"
     "[mcname!c]" "Halo?"
-    hide tana ring
-    show tana telpon at ui_handphone
+    hide tana_ring
+    show tana_telpon at ui_handphone
     show tana_date_side_angry_2 at left 
     with dissolve
     tana "KAMU DI MANA?! KOK BELUM SAMPE?!"
@@ -3819,7 +3819,7 @@ label trueendtana:
     show tana_date_side_angry_2 at left with dissolve
     tana "MAAF MAAF! MALES AH!"
     hide tana_date_side_angry_2 at left
-    hide tana telpon
+    hide tana_telpon
     with dissolve
     #UI TELEPON SELESAI"
     $ quick_menu = False
