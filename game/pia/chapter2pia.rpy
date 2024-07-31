@@ -567,7 +567,7 @@ label chapter2piaaftergame:
     with dissolve
     "[mcname!c]" "{i}Simpen dulu deh. Siapa tau temen ada yg butuh.{/i}"
     "[mcname!c]" "{i}Saatnya ngerjain tugas gambar. Minggu ini dikumpulin buat UTS. Ayo semangat akuuuuu!!!{/i}"
-    "[mcname!c]" "{i}Hmmm... Ke dulu rooftop, ah. Nyari inspirasi gambar.{/i}"
+    "[mcname!c]" "{i}Hmmm... Ke rooftop dulu, ah. Nyari inspirasi gambar.{/i}"
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -580,8 +580,9 @@ label chapter2piaaftergame:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Rooftop Romance Pia.ogg" fadein 1.0
     scene rooftop with Dissolve(1.0)
-    #$ renpy.block_rollback()
     $ quick_menu = True
+    "[mcname!c] melihat Pia sedang menari-nari di rooftop dengan indahnya."
+    #$ renpy.block_rollback()
     "[mcname!c]" "Woaaa...."
     "[mcname!c]" "P-Pia............."
     show pia_shock at pia_near 
@@ -926,9 +927,9 @@ label chapter2piaaftergame:
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
             scene black with dissolve
-            show text "{color=#FFF}*Beberapa bulan kemudian, ada gosip beredar bahwa acara jejepangan tersebut gagal dilaksanakan karena promotor acara kabur membawa uang donatur dan sponsor*{/color}" with Pause(2.0)
+            "Beberapa bulan kemudian, ada gosip beredar bahwa acara jejepangan tersebut gagal dilaksanakan karena promotor acara kabur membawa uang donatur dan sponsor."
             scene black with dissolve
-            show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            show text "{color=#FF0000}BAD END{/color}" with Pause(4.0)
             stop music fadeout 1.0
             scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0

@@ -31,7 +31,7 @@
     hide side papah
     show side mama at left
     with dissolve
-    mama "Ya udh kalo gitu kamu istirahat dulu ya, soalnya besok nanti bakal berangkat."
+    mama "Ya udah kalo gitu kamu istirahat dulu ya, soalnya besok nanti bakal berangkat."
     mama "Takutnya nanti malah telat."
     hide side mama
     show side papah at left
@@ -110,7 +110,7 @@
     "[mcname!c]" "Wahhh, jadi ini namanya kota Jakarta."
     "[mcname!c]" "Buuu, anakmu akhirnya kuliah di sini."
     "[mcname!c]" "DI KOTA JAKARTA!!!"
-    "[mcname!c]" "Alhamdulillah Mah Pah."
+    "[mcname!c]" "Syukurlah, Mah Pah."
     "[mcname!c]" "Doain anakmu bisa kuliah lancar ya Mah, Pah."
     "[mcname!c]" "OWH IYA!!!!!"
     "[mcname!c]" "Kalau gak salah..."

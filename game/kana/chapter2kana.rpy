@@ -4554,19 +4554,20 @@ label kanaafterquiz:
     show kana_sick_talk at kana_near
     show kana_side_shy_smile at left
     with dissolve
-    kana "Kamu kok kaya kecapean gitu sih [mcname!c]? Kamu kenapa?"
+    kana "Kamu kok kayak kecapean gitu sih [mcname!c]? Kamu kenapa?"
     hide kana_side_shy_smile at left
     hide kana_side_sick_talk
     hide kana_sick_talk
     show kana_sick at kana_near
     with dissolve
     "[mcname!c]" "AHHH ini gara-gara si dokter bercandain kondisi kamu tadi."
-    "[mcname!c]" "Btw kok bisa demam tinggi? Kemarin bukannya istirahat tapi lanjut maksain begadang ya?"
+    "[mcname!c]" "Btw kok kamu bisa demam tinggi? Kemarin bukannya istirahat tapi malah lanjut maksain begadang ya?"
     hide kana_sick
-    show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
+    show kana_confused_blush at kana_near
+    show kana_side_cry at left
     with dissolve
-    kana "Eh... i-iya, soalnya aku ngerasa masih kurang belajarnya. Jadi aku maksain buat belajar lebih sampai subuh. Eh ternyata waktu paginya udah agak pusing."
+    kana "Eh... I-iya, soalnya aku ngerasa masih kurang belajarnya. Jadi aku maksain buat belajar lebih sampai subuh."
+    kana "Eh ternyata waktu paginya udah agak pusing."
     hide kana_side_sick_talk
     hide kana_sick_talk
     show kana_sick at kana_near
@@ -4574,7 +4575,7 @@ label kanaafterquiz:
     "[mcname!c]" "Kana, jujur aku pengen marahin kamu tapi aku ga bisa soalnya kamu lagi sakit."
     hide kana_sick
     show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
+    show kana_side_shy_smile at left
     with dissolve
     kana "Huhu maaf... Eh bentar ujian kamu gimana?"
     hide kana_side_sick_talk
@@ -4584,7 +4585,7 @@ label kanaafterquiz:
     "[mcname!c]" "Kamu ga usah khawatir kok, ujianku dah selesai. Kalo ujianmu, kata pengawas nanti bakal diadain susulan setelah UTS selesai. Sekarang kamu harus fokus sama kesehatanmu dulu aja."
     hide kana_sick
     show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
+    show kana_side_shy_smile at left
     with dissolve
     kana "[mcname!c].."
     kana "Makasih banyak ya udah mau bantuin aku, maaf ngerepotin yaa."
@@ -4595,7 +4596,7 @@ label kanaafterquiz:
     "[mcname!c]" "Kana... Kamu ga ngerepotin kok, santai aja. Sekarang kamu gimana rasanya? Udah mendingan?"
     hide kana_sick
     show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
+    show kana_side_shy_smile at left
     with dissolve
     kana "Jujur aku juga ga tau, mungkin terasa lebih baik karena kamu ada yang nemenin."
     kana "Tapi... aku takut."
@@ -4609,7 +4610,7 @@ label kanaafterquiz:
     "[mcname!c]" "Kana... jangan mikir kaya gitu. Aku bakalan selalu temenin kamu apapun yang terjadi oke? Yang penting kamu sehat dulu aja deh, ga usah mikirin yang lain dulu."
     hide kana_sick
     show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
+    show kana_side_shy_smile at left
     with dissolve
     kana "Iya..."
     kana "Ini udah mendingan kok."
@@ -4621,7 +4622,7 @@ label kanaafterquiz:
     "[mcname!c] juga tersenyum kepada Kana."
     hide kana_sick
     show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
+    show kana_side_shy_smile at left
     with dissolve
     kana "Umm... aku udah boleh pulang gak ya? Soalnya ini lumayan gak enak keringetan, aku pengen ganti baju."
     hide kana_side_sick_talk
@@ -4631,15 +4632,15 @@ label kanaafterquiz:
     "[mcname!c]" "Eh bentar aku coba tanyakan dulu ke perawatnya."
     stop sound fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene kamar hospital with dissolve
+    scene black with Dissolve(1.0)
+    scene kamar hospital with Dissolve(1.0)
     #HARUSNYA STOCK IMAGE RUMAH SAKIT
     show kana_shy at kana_near with dissolve
     $ quick_menu = True
     "[mcname!c]" "Ehh ini bisa katanya, tapi harus ada yang anterin kamu pulang. Mamahmu ke mana?"
     hide kana_sick
     show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
+    show kana_side_shy_smile at left
     with dissolve
     kana "Ummm... Kalo kamu bisa ga [mcname!c]? Nganterin aku pulang…"
     kana "Soalnya Mamahku lagi sibuk jam-jam segini."
