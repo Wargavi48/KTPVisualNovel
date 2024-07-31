@@ -1384,8 +1384,11 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Ya") action yes_action xpos -20 ypos 5
-                textbutton _("Tidak") action no_action xpos 15 ypos 5
+
+                #textbutton _("Ya") action yes_action xpos -20 ypos 5
+                #textbutton _("Tidak") action no_action xpos 15 ypos 5
+                imagebutton auto "gui/c_ya_%s.png" xpos -10 ypos 5 focus_mask True action yes_action 
+                imagebutton auto "gui/c_tidak_%s.png" xpos -10 ypos 5 focus_mask True action no_action 
 
     ## Klik kanan dan jawaban escape "Tidak".
     key "game_menu" action no_action
