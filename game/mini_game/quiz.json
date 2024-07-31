@@ -88,7 +88,7 @@
         "answer" : "168 cm"
     },
     {
-        "question" : "Siapa nama member JKT48 diluar JKT48V yang pernah collab dengan Tana?",
+        "question" : "Siapa nama member JKT48 di luar JKT48V yang pernah collab dengan Tana?",
         "a" : "Shani",
         "b" : "Michie",
         "c" : "Amanda",
@@ -120,7 +120,7 @@
         "answer" : "168 cm"
     },
     {
-        "question" : "Siapa nama member JKT48 di luar JKT48V yg pernah collab berdua dengan Kana?",
+        "question" : "Siapa nama member JKT48 di luar JKT48V yang pernah collab berdua dengan Kana?",
         "a" : "Indira",
         "b" : "Amanda",
         "c" : "Fiony",
@@ -128,7 +128,7 @@
         "answer" : "Indira"
     },
     {
-        "question" : "Berikut ini manakah game yang pernah dimainkan Kana saat stream?",
+        "question" : "Berikut ini, manakah game yang pernah dimainkan Kana saat stream?",
         "a" : "Harvest Moon",
         "b" : "Stumble Guys",
         "c" : "Minesweeper",
@@ -136,7 +136,7 @@
         "answer" : "Stumble Guys"
     },
     {
-        "question" : "Apa nama event off air pertama yang dihadiri JKT48V?",
+        "question" : "Apa nama event off-air pertama yang dihadiri JKT48V?",
         "a" : "Chibicon",
         "b" : "JKT48 12th Anniversary Flowe12ful",
         "c" : "Jak Japan Matsuri 2023",
@@ -152,7 +152,7 @@
         "answer" : "Pia"
     },
     {
-        "question" : "Berikut ini manakah game pertama yang dimainkan bersama oleh Kana, Tana, Pia saat stream?",
+        "question" : "Berikut ini, manakah game pertama yang dimainkan bersama oleh Kana, Tana, Pia saat stream?",
         "a" : "Valorant",
         "b" : "Devour",
         "c" : "Minecraft",
@@ -184,7 +184,7 @@
         "answer" : "d"
     },
     {
-        "question" : "Siapakah Vtuber di luar JKT48V yg pertama kali diundang Pia di stream Senin Sekolah?",
+        "question" : "Siapakah Vtuber di luar JKT48V yg pertama kali diundang Pia ke stream Senin Sekolah?",
         "a" : "Caerula Aki",
         "b" : "Alia Adelia",
         "c" : "Rena Anggraeni",
@@ -192,7 +192,7 @@
         "answer" : "Caerula Aki"
     },
     {
-        "question" : "Apakah judul lagu yang ditulis Pia dan pernah dibawakan saat stream Rabu MeRadio?",
+        "question" : "Apa judul lagu yang ditulis Pia dan pernah dibawakan saat stream Rabu MeRadio?",
         "a" : "It's December Again",
         "b" : "Perfect Wind",
         "c" : "Dreamcatcher",

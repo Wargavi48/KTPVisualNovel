@@ -92,7 +92,7 @@ label quiz:
                 scene kelas with Dissolve(1.0)
                 $ quick_menu = True
                 jump truepiaafterquiz
-    elif:
+    else:
         jump pasrah
 
 # label remedial:
