@@ -740,7 +740,7 @@ label truekanajapanfest:
     kana "Aaaaa, udah gak sabaar!"
     hide kana_date_side_talk with dissolve
     stop sound fadeout 1.0
-    play sound "audio/SFX - Whack.mp3" loop
+    play sound "audio/SFX - Hanabi.WAV" loop
     #Harusnya SFX Kembang Api
     $ quick_menu = False
     window auto hide
@@ -1715,8 +1715,8 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
-    #HARUSNYA *SFX Suara Kresek*
+        #play sound "audio/run.mp3"
+        #HARUSNYA *SFX Suara Kresek*
         window auto show
         $ quick_menu = True
         show kana_home_side_shy_ahn at left with dissolve
@@ -1726,7 +1726,7 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
+        #play sound "audio/run.mp3"
         #HARUSNYA *SFX Suara Kresek*
         window auto show
         $ quick_menu = True
@@ -1783,8 +1783,8 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
-    #HARUSNYA *SFX Suara Kresek*
+        #play sound "audio/run.mp3"
+        #HARUSNYA *SFX Suara Kresek*
         window auto show
         show kana_home_side_shy_ahn at left with dissolve
         $ quick_menu = True
@@ -1794,8 +1794,8 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
-    #HARUSNYA *SFX Suara Kresek*
+        #play sound "audio/run.mp3"
+        #HARUSNYA *SFX Suara Kresek*
         window auto show
         show kana_home_side_shy_ahn at left with dissolve
         $ quick_menu = True
@@ -1855,8 +1855,8 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
-    #HARUSNYA *SFX Suara Kresek*
+        #play sound "audio/run.mp3"
+        #HARUSNYA *SFX Suara Kresek*
         window auto show
         show kana_home_side_shy_ahn at left with dissolve
         $ quick_menu = True
@@ -1866,8 +1866,8 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
-    #HARUSNYA *SFX Suara Kresek*
+        #play sound "audio/run.mp3"
+        #HARUSNYA *SFX Suara Kresek*
         window auto show
         show kana_home_side_shy_ahn at left with dissolve
         $ quick_menu = True
@@ -1909,8 +1909,8 @@ label truekananeutralroute1:
 label truekanarightpresent:
     $ quick_menu = False
     window auto hide
-    play sound "audio/run.mp3"
-#HARUSNYA *SFX Suara Kresek*
+    #play sound "audio/run.mp3"
+    #HARUSNYA *SFX Suara Kresek*
     with Pause(2.0)
     window auto show
     $ quick_menu = True
@@ -1926,8 +1926,8 @@ label truekanarightpresent:
     "[mcname!c]" "Bentar lagi."
     $ quick_menu = False
     window auto hide
-    play sound "audio/run.mp3"
-#HARUSNYA *SFX Suara Kresek*
+    #play sound "audio/run.mp3"
+    #HARUSNYA *SFX Suara Kresek*
     with Pause(2.0)
     window auto show
     show kana_home_side_shy_ahn at left with dissolve
@@ -2040,8 +2040,8 @@ label truekanarightpresent:
     stop music
     $ quick_menu = False
     window auto hide
-    play sound "audio/open_door.mp3"
-#HARUSNYA *SFX Pintu Didobrak*
+    play sound "audio/SFX - Door Slam.mp3"
+    #HARUSNYA *SFX Pintu Didobrak*
     scene black
     with Pause(2.0)
     play music "audio/BGM_Lawak Tana.mp3" fadein 1.0
