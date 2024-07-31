@@ -96,6 +96,17 @@ label chapter2kanastart:
     hide mama
     with dissolve
     "[mcname!c]" "{i}Saat itu aku gak begitu paham dengan apa yang mereka bicarakan...{/i}"
+    window auto hide
+    show white:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show white as white2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
+    window auto show
     stop music fadeout 1.0
     stop music fadeout 1.0
     $ quick_menu = False

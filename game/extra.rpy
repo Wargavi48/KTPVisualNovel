@@ -268,6 +268,8 @@ CG: Lenkuass
 \n
 Backgrounds: Awil, BlueSky, Hann, Neru, Pipigoroo, Tebtebo
 \n
+Assets: Nue, Tebtebo, Peachguri
+\n
 UI Design: Heyysatsu
 \n
 Logo: Ahsae
@@ -427,6 +429,8 @@ White Clover by Yuuki Wataru
 Wind Feelings by Shimtone
 \n
 Wish 2 by Peritune
+\n
+MIGIKATA (Pundak Kanan) - JKT48 Flute & Guitar Cover by Rangga Pranendra
 \n
 {size=+10}Special Thanks{/size}
 \n
