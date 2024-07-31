@@ -49,7 +49,7 @@ label quiz:
 
     if user_score == 100:
         $ all_correct.grant()
-    if user >= 80:    
+    if user_score >= 80:    
         if route == "kana":
             stop music fadeout 1.0
             $ quick_menu = False
