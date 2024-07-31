@@ -113,6 +113,8 @@ screen nvl_phonetext(dialogue):
                         $ message_icon = "Characters/PP Freya.png"
                     elif d.who == "Fiony":
                         $ message_icon = "Characters/PP Fiony.png"
+                    elif d.who == "Cepio":
+                        $ message_icon = "Characters/PP Fiony.png"
                     elif d.who == "Tana":
                         $ message_icon = "Characters/PP Tana.png"
                     elif d.who == "Galaxy":
