@@ -1519,7 +1519,7 @@ label truendpia:
     $ quick_menu = True
     "Pia dan [mcname!c] sedang merias booth dan merapikan dagangan merch mereka."
     show fio at fio_near_left
-    show pia_date pia_near_right
+    show pia_date at pia_near_right
     with dissolve
     show fio_talk at fio_near_left
     show fio_side_talk at left
@@ -1534,7 +1534,7 @@ label truendpia:
     show pia_date_side_silent at left
     with dissolve
     pia "Cepioooooooooooo~"
-    hide pia_side_silent with dissolve
+    hide pia_date_side_silent with dissolve
     show fio_talk at fio_near_left
     show fio_side_talk at left
     with dissolve
@@ -1543,8 +1543,8 @@ label truendpia:
     hide fio_side_talk
     hide fio_talk
     hide fio 
-    hide pia_silent
-    hide pia
+    hide pia_date_silent
+    hide pia_date
     with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
@@ -1563,21 +1563,20 @@ label truendpia:
     hide takamina_talk
     hide takamina_side_talk
     hide takamina
-    with dissolve
-    show pia_date pia_near with dissolve
+    show pia_date at pia_near
     show pia_date_talk at pia_near
     show pia_date_side_talk at left
     with dissolve
     pia "I-iya Kak."
-    hide pia_talk 
-    hide pia_side_talk 
+    hide pia_date_talk 
+    hide pia_date_side_talk 
     show pia_date_smile at pia_near
     show pia_date_side_smile at left
     with dissolve
     pia "Uuummm… Kakak cantik banget!"
-    hide pia_smile
-    hide pia_side_smile
-    hide pia with dissolve
+    hide pia_date_smile
+    hide pia_date_side_smile
+    hide pia_date with dissolve
     show takamina at takamina_center with dissolve
     show takamina_talk at takamina_center
     show takamina_side_talk at left
@@ -1599,7 +1598,7 @@ label truendpia:
     show fio at fio_near_left
     show fio:
         subpixel True xpos 1.15
-    show pia_date_date pia_near
+    show pia_date at pia_near
     with dissolve
     $ quick_menu = True
     "[mcname!c]" "Huaaaa udah rapih nih, tinggal nunggu acaranya buka."
@@ -1608,8 +1607,8 @@ label truendpia:
     with dissolve
     pia "MELINGKAR ALL!!!"
     pia "KITA YEL-YEL DULU!"
-    hide pia_talk
-    hide pia_side_talk
+    hide pia_date_talk
+    hide pia_date_side_talk
     with dissolve
     "[mcname!c]" "…………"
     show takamina_talk at tana_right
@@ -1633,8 +1632,8 @@ label truendpia:
     show pia_date_talk at pia_near
     show pia_date_side_talk at left
     with dissolve
-    pia "Aaaaaaaa~"
-    hide pia_date_talk
+    pia "Aaa_dateaaaaa~"
+    hide pia_date_date_talk
     hide pia_date_side_talk
     with dissolve
     show takamina_talk at tana_right
@@ -1961,6 +1960,9 @@ label truendpia:
     show fio_side_talk at left
     with dissolve
     $ quick_menu = True
+    show key
+    show key:
+        pos (0.34, 0.66) zoom 0.1
     play sound "SFX - Key.mp3"
     fio "Nih\n*Kasih kunci ke Pia*"
     hide fio_talk
@@ -1970,6 +1972,7 @@ label truendpia:
     show pia_date_side_talk at left
     with dissolve
     pia "Hah? Ini kunci apa?"
+    hide key
     hide pia_date_talk
     hide pia_date_side_talk
     with dissolve
