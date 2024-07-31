@@ -1658,8 +1658,10 @@ label goodendpiarooftop:
     with dissolve
     "Takamina" "......."
     "Takamina terlihat sedang merogoh tasnya."
+    show key
+    show key:
+        pos (0.69, 0.7) zoom 0.1 
     play sound "SFX - Key.mp3"
-    "ASSET NUE KUNCI"
     show takamina_talk at takamina_center
     show takamina_side_talk at left
     with dissolve
@@ -1667,6 +1669,7 @@ label goodendpiarooftop:
     hide takamina_talk
     hide takamina_side_talk
     hide takamina 
+    hide key
     show pia at pia_near 
     show pia_talk at pia_near
     show pia_side_talk at left
@@ -1884,7 +1887,7 @@ label goodendpiarooftop:
     hide pia 
     show takamina at takamina_center 
     show takamina_talk at takamina_center
-    show takamina_side_talk
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Akh ini dia~"
     hide takamina_talk
