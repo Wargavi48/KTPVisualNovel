@@ -772,7 +772,11 @@ label chapter2piaaftergame:
     show pia_side_shock at left 
     with dissolve
     pia "Wooeee stoooop weh. Udah, cuma mimpi. Aku sekarang udah nyaman begini."
-    hide pia_side_shock with dissolve
+    hide pia_talk
+    hide pia_smile
+    hide pia_shock
+    hide pia_side_shock
+    with dissolve
     menu:
         "[mcname!c]" "Pia... Sebenarnya..."
         "Ah! Tadi aku dapet flyer ini. *Kasih semua flyer* mau ikut gak? ada acara jejepangan beberapa bulan lagi nih. terus itu ada 3 flyer, ada yang recruitment jadi idol juga. Mau coba gak?":
@@ -784,13 +788,15 @@ label chapter2piaaftergame:
             hide pia_talk 
             hide pia_smile
             with dissolve
-            show matsuri at matsuri 
-            show idolrecruit at poster
-            show club at club
+            show matsuri at matsuri
             show matsuri:
-                subpixel True pos (0.64, 0.19) zrotate 18.0 
+                subpixel True pos (0.64, 0.19) zrotate 18.0
+            with dissolve
+            show idolrecruit at poster
             show idolrecruit:
                 subpixel True pos (0.21, 0.17) xrotate 0.0 yrotate 0.0 zrotate 0.0 orientation (0.0, 0.0, 18.0) 
+            with dissolve
+            show club at club
             show club:
                 subpixel True pos (0.13, 0.15)
             with dissolve
@@ -803,7 +809,6 @@ label chapter2piaaftergame:
             with dissolve
             hide pia_smile
             hide pia_shock 
-            hide pia
             show pia_talk at pia_near 
             show pia_side_talk at left 
             with dissolve
@@ -811,8 +816,22 @@ label chapter2piaaftergame:
             $ quick_menu = True
             pia "Wih, apaan nih?"
             pia "Wah matsuri, ya."
+            show pia at pia_near
+            hide pia_talk
+            show pia_side at left
+            with dissolve
             pia "Terus…"
+            hide pia at pia_near
+            show pia_silent at pia_near 
+            show pia_side_silent at left
+            hide pia_side at left
+            with dissolve
             pia "Ini rekruitmen club, skip."
+            show pia_talk at pia_near
+            hide pia_silent at pia_near 
+            hide pia_side_silent at left
+            show pia_side_talk at left
+            with dissolve
             pia "Yang ini…."
             show pia_shock at pia_near
             hide pia_side_talk 
@@ -826,13 +845,13 @@ label chapter2piaaftergame:
             with dissolve
             "[mcname!c]" "Gimana, mau coba?"
             hide pia 
-            show pia_talk at pia_near
-            show pia_side_talk at left 
+            show pia_smile at pia_near
+            show pia_side_smile at left 
             with dissolve
             pia "Umm… G-gak deh. Biarlah mimpi tetap jadi mimpi, hehe."
             hide pia_shock 
-            hide pia_side_talk at left 
-            hide pia_talk 
+            hide pia_side_smile at left 
+            hide pia_smile 
             with dissolve
             "Akhirnya [mcname!c] duduk di sebelah Pia sambil melihat pemandangan dari rooftop melihat jauh ke depan."
             "Lalu menuangkan pemandangan indah itu dalam sebuah lukisan."

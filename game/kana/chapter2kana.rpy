@@ -2352,7 +2352,9 @@ label chapter2kanaA:
     "????" "Ahhh [mcname!c]? Kana sering banget nyeritain tentang kamu, hahaha."
     "????" "Ayo sini masuk dulu."
     "[mcname!c]" "Makasih banyak Kak."
+    stop music fadeout 1.0
     "????" "Loh kok \"Kak\"?"
+    play music "BGM_Funny 3.ogg" fadein 1.0
     "[mcname!c]" "Eh??"
     "[mcname!c]" "Kakaknya Kana kan?"
     "[mcname!c] bingung takut membuat wanita itu tersinggung."
