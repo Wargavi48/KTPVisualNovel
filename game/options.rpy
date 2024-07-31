@@ -36,7 +36,10 @@ define gui.about = _p("""
 ## bangunan distribusi. Ini harus hanya berisi karakter ASCII-saja, dan tidak
 ## boleh mengandung  spasi, koma, atau kutip.
 
-define build.name = "WGV:Dreamcatcher"
+define build.name = "WGVDreamcatcher"
+
+define build.change_icon_i686 = True
+define build.include_update = True
 
 
 ## Suara dan musik #############################################################
@@ -122,8 +125,8 @@ define config.window_hide_transition = Dissolve(.2)
 ## Sementara angka yang lain adalah berapa karakter per detik yang akan di
 ## tampilkan.
 
-default preferences.text_cps = 0
-#default preferences.text_cps = 35
+# default preferences.text_cps = 0
+default preferences.text_cps = 35
 
 
 ## Delay default otomatis-maju. Nomor yang lebih besar berujung kepada waktu
