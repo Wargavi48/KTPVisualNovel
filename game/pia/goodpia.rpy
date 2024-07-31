@@ -90,7 +90,9 @@
     show pia_home_side_talk at left 
     with dissolve
     pia "Karena kamu baik, aku kasih kamu 1 golden tiket ini. Muahahaha!"
-    # Insert aset tiket
+    show ticket
+    show ticket:
+        pos (0.31, 0.89) zoom 0.25 
     hide pia_home_talk 
     hide pia_home_side_talk 
     with dissolve
@@ -1163,12 +1165,16 @@ label goodpiaafterquiz:
     pia "Err…i-iya..kenapa nih?"
     hide pia_talk
     hide pia_side_talk
+    show ticket
+    show ticket:
+        pos (0.29, 0.89) zoom 0.25 
     with dissolve
     "[mcname!c]" "Aku masih punya 1 tiket permintaan kan? Aku mau pake tiket itu"
     show pia_talk at pia_near
     show pia_side_talk at left
     with dissolve
     pia "Wow, oke. Apa nih?"
+    hide ticket
     hide pia_talk
     hide pia_side_talk
     with dissolve
