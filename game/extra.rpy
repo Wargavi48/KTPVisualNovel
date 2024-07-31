@@ -268,7 +268,7 @@ CG: Lenkuass
 \n
 Backgrounds: Awil, BlueSky, Hann, Neru, Pipigoroo, Tebtebo
 \n
-Assets: Nue, Tebtebo, Peachguri
+Assets: Nue, Tebtebo, Denden.zip
 \n
 UI Design: Heyysatsu
 \n
