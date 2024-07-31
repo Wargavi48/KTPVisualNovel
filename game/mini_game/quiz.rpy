@@ -55,7 +55,7 @@ label quiz:
         play music "BGM_Kelas.ogg" fadein 1.0  volume (1.5)
         scene kelas with Dissolve(1.0)
         $ quick_menu = True
-        jump chapter1kana1
+        jump kanaafterquiz
     elif route == "tana":
         if tana_route == "Good End":
             stop music fadeout 1.0

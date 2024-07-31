@@ -12,7 +12,7 @@
     "Di kost, [mcname!c] duduk di meja belajarnya sambil mulai mengeluarkan buku-buku dan catatan materi ujian esok hari."
     "[mcname!c] bersiap begadang untuk fokus belajar karena besok adalah salah satu ujian mata kuliah tertulis yang paling sulit."
     play sound "audio/ReceiveText.ogg" loop volume(2.0)
-    "Tiba tiba terdengar notifikasi dari handphone [mcname!c]."
+    "Tiba-tiba terdengar notifikasi dari handphone [mcname!c]."
     "[mcname!c]" "...."
     "[mcname!c]" "................."
     stop sound

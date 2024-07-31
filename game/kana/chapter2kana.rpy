@@ -29,24 +29,24 @@ label chapter2kanastart:
     stop music fadeout 1.0
     #Flashback (ATas bawah putih)
     $ quick_menu = False
-    scene white with Dissolve(1.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Rumah Awal.ogg" loop fadein 1.0
     scene kamar mc desa with Dissolve(2.0)
-    show white:
+    show black:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 0 alpha 1.0 
             linear 1.30 ypos 252 alpha 0.7 
-    show white as white2:
+    show black as black2:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 2080 alpha 1.0 
             linear 1.30 ypos 1908 alpha 0.7 
@@ -97,11 +97,11 @@ label chapter2kanastart:
     with dissolve
     "[mcname!c]" "{i}Saat itu aku gak begitu paham dengan apa yang mereka bicarakan...{/i}"
     window auto hide
-    show white:
+    show black:
         subpixel True 
         ypos 252 
         linear 1.30 ypos -9 
-    show white as white2:
+    show black as black2:
         subpixel True 
         ypos 1908 
         linear 1.30 ypos 2169 
@@ -110,7 +110,7 @@ label chapter2kanastart:
     stop music fadeout 1.0
     stop music fadeout 1.0
     $ quick_menu = False
-    scene white with Dissolve(2.0)
+    scene black with Dissolve(2.0)
 
     play music "audio/BGM_Mall.ogg" loop fadein 1.0
     scene mall temp with Dissolve(1.0)
@@ -2425,7 +2425,7 @@ label chapter2kanaB:
     hide kana_home_side_shy_ahn with dissolve
     $ quick_menu = False
     play sound "SFX - Tirai.mp3" fadein 0.5 volume 2.0
-    scene white with Dissolve(1.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Sad Piano.ogg" fadein 1.0
     scene kamar kana sore with Dissolve(2.0)
     stop sound
@@ -2684,25 +2684,25 @@ label chapter2kanaB:
     kana "Aku ga tau mau mulai dari mana..."
     hide kana_home_side_normal_talk with dissolve
     $ quick_menu = False
-    scene white with Dissolve(1.0)
+    scene black with Dissolve(1.0)
     scene awan malam with Dissolve(2.0)
     $ quick_menu = True
     kana "Seperti yang kamu tau..."
-    show white:
+    show black:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 0 alpha 1.0 
             linear 1.30 ypos 252 alpha 0.7 
-    show white as white2:
+    show black as black2:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 2080 alpha 1.0 
             linear 1.30 ypos 1908 alpha 0.7 
@@ -2711,13 +2711,31 @@ label chapter2kanaB:
     with dissolve
     $ quick_menu = True
     kana "Pas kecil aku punya tubuh yang lemah."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Aku tidak bisa melakukan banyak hal yang sering dilakukan anak-anak pada umumnya, jadinya aku cuma bisa di rumah aja."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Walaupun begitu papah mamahku tetep sayang sama aku."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Tapi, mereka juga perlu ngurus pekerjaan mereka. Jadinya aku lebih banyak menghabiskan waktu sendirian di kamar."
-    show freya_smile at freya_near with dissolve
+    hide kana_home_side_normal
+    show kana_home_side_talk at left
+    show freya_smile at freya_near
+    with dissolve
     kana "Sesekali Freya datang untuk bermain denganku."
+    hide kana_home_side_talk
+    show kana_home_side at left
+    with dissolve
     kana "Waktu itu, aku seneeeeeng banget."
-    #deadeye
+    hide kana_home_side
+    show kana_home_side_normal_talk at left
+    show freya_smile at freya_near
+    with dissolve
     kana "Tapi..."
     hide freya_smile
     hide kana_home_side_normal_talk at left
@@ -2733,7 +2751,6 @@ label chapter2kanaB:
     #sprite kana ilang
     hide kana_home_side_sad
     hide kana_home_confused at kana_near
-    with dissolve
     show kana_home_side_normal_talk at left
     with dissolve
     kana "Akhirnya aku sendirian lagi..."
@@ -2741,25 +2758,35 @@ label chapter2kanaB:
     with Dissolve(1.0)
     pause(1.5)
     hide kana_home_side_sad
-    show kana_home_side_normal_talk at left
+    show kana_home_side at left
     with Dissolve(1.0)
     kana "Di tengah kesepian itu, aku menemukan yang namanya anime."
+    hide kana_home_side
+    show kana_home_side_talk at left
     show kana_home_talk at kana_near
     with dissolve
-    kana "Anime itu membuat aku melihat dunia dengan cara yang berbeda"
+    kana "Anime itu membuat aku melihat dunia dengan cara yang berbeda."
+    hide kana_home_side_talk
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Mulai dari anime, aku pun mulai mencari-cari juga hal yang berbau jejepangan."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Hal-hal itulah yang menjadi pelarianku di kamar yang penuh kesendirian."
+    hide kana_home_side_normal
     hide kana_home_talk
     hide kana_home_side_normal_talk at left
     hide kana_home_confused_blush
+    hide kana_home_side_talk
     with dissolve
     $ quick_menu=False
     window auto hide
-    show white:
+    show black:
         subpixel True 
         ypos 252 
         linear 1.30 ypos -9 
-    show white as white2:
+    show black as black2:
         subpixel True 
         ypos 1908 
         linear 1.30 ypos 2169 
@@ -2768,21 +2795,21 @@ label chapter2kanaB:
     $ quick_menu = False
     scene awan berkabut with Dissolve(2.0)
     $ quick_menu = False
-    show white:
+    show black:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 0 alpha 1.0 
             linear 1.30 ypos 252 alpha 0.7 
-    show white as white2:
+    show black as black2:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 2080 alpha 1.0 
             linear 1.30 ypos 1908 alpha 0.7 
@@ -2791,18 +2818,31 @@ label chapter2kanaB:
     with dissolve
     $ quick_menu = True
     kana "Tak terasa waktu berlalu, aku pun harus masuk yang namanya sekolah."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Setelah sekian lama, di sana lah aku mulai mencoba berinteraksi lagi dengan orang lain."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Karena aku lama tidak berinteraksi dengan orang lain, aku tidak bisa berbicara dengan lancar."
-    kana "Teman sekelasku bisa hidup dengan normal, dalam hati ku aku merasa iri dengan mereka."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
+    kana "Teman sekelasku bisa hidup dengan normal. Dalam hatiku aku merasa iri dengan mereka."
     hide kana_home_side_normal_talk at left
+    hide kana_home_side_normal
     with dissolve
     $ quick_menu=False
     window auto hide
-    show white:
+    show black:
         subpixel True 
         ypos 252 
         linear 1.30 ypos -9 
-    show white as white2:
+    show black as black2:
         subpixel True 
         ypos 1908 
         linear 1.30 ypos 2169 
@@ -2812,21 +2852,21 @@ label chapter2kanaB:
     scene black with Dissolve(1.0)
     scene awan sore with Dissolve(1.0)
     $ quick_menu = False
-    show white:
+    show black:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 0 alpha 1.0 
             linear 1.30 ypos 252 alpha 0.7 
-    show white as white2:
+    show black as black2:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 2080 alpha 1.0 
             linear 1.30 ypos 1908 alpha 0.7 
@@ -2835,17 +2875,24 @@ label chapter2kanaB:
     with dissolve
     $ quick_menu = True
     kana "Aku juga sering tidak masuk kelas karena sakit."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Aku tidak bisa belajar atau bahkan membuat teman."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Kalau terlalu banyak gerak, aku sakit lagi."
-    hide kana_home_side_normal_talk at left
+    hide kana_home_side_normal_talk
+    hide kana_home_side_normal
     with dissolve
     $ quick_menu=False
     window auto hide
-    show white:
+    show black:
         subpixel True 
         ypos 252 
         linear 1.30 ypos -9 
-    show white as white2:
+    show black as black2:
         subpixel True 
         ypos 1908 
         linear 1.30 ypos 2169 
@@ -2855,21 +2902,21 @@ label chapter2kanaB:
     scene black with Dissolve(1.0)
     scene awan with Dissolve(1.0)
     $ quick_menu = False
-    show white:
+    show black:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 0 alpha 1.0 
             linear 1.30 ypos 252 alpha 0.7 
-    show white as white2:
+    show black as black2:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 2080 alpha 1.0 
             linear 1.30 ypos 1908 alpha 0.7 
@@ -2878,23 +2925,48 @@ label chapter2kanaB:
     with dissolve
     $ quick_menu = True
     kana "Pada awalnya, banyak teman sekelas yang berusaha mengajakku ngobrol."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Tapi aku tidak tahu apa yang harus ku katakan pada mereka."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Kebanyakan aku cuma bisa membalas \"iya\" dan \"emm\".."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Lama kelamaan, orang yang mengajak ku berkurang, hingga akhirnya kelas berlangsung seperti aku tidak ada di ruangan."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Aku merasa seperti..."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Orang yang aneh."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Dan aku hanya bisa melihat teman sekelasku ngobrol dan bercanda dari jauh."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Kadang-kadang aku harus menahan rasa ingin menangis karena hal tersebut."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Mereka dekat, tapi aku merasa ada dinding yang memisahkan."
+    hide kana_home_side_normal
     hide kana_home_side_normal_talk at left
     with dissolve
     $ quick_menu=False
     window auto hide
-    show white:
+    show black:
         subpixel True 
         ypos 252 
         linear 1.30 ypos -9 
-    show white as white2:
+    show black as black2:
         subpixel True 
         ypos 1908 
         linear 1.30 ypos 2169 
@@ -2904,21 +2976,21 @@ label chapter2kanaB:
     scene black with Dissolve(1.0)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = False
-    show white:
+    show black:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 0 alpha 1.0 
             linear 1.30 ypos 252 alpha 0.7 
-    show white as white2:
+    show black as black2:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 2080 alpha 1.0 
             linear 1.30 ypos 1908 alpha 0.7 
@@ -2941,11 +3013,11 @@ label chapter2kanaB:
     with dissolve
     $ quick_menu=False
     window auto hide
-    show white:
+    show black:
         subpixel True 
         ypos 252 
         linear 1.30 ypos -9 
-    show white as white2:
+    show black as black2:
         subpixel True 
         ypos 1908 
         linear 1.30 ypos 2169 
@@ -2955,21 +3027,21 @@ label chapter2kanaB:
     scene black with Dissolve(1.0)
     scene awan with Dissolve(1.0)
     $ quick_menu = False
-    show white:
+    show black:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 0 alpha 1.0 
             linear 1.30 ypos 252 alpha 0.7 
-    show white as white2:
+    show black as black2:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 2080 alpha 1.0 
             linear 1.30 ypos 1908 alpha 0.7 
@@ -2978,10 +3050,25 @@ label chapter2kanaB:
     with dissolve
     $ quick_menu = True
     kana "Waktu itu, ternyata Freya kembali setelah mengikuti orang tuanya kerja di luar kota."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Tentu saja mendengar hal tersebut membuatku senang, namun karena bertahun tahun tidak berinteraksi dengan orang lain, aku tidak tahu harus gimana pas ketemu dia lagi."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Mungkin karena mendengar bagaimana keadaan ku, Freya kaget dan mencoba untuk mengajakku kembali masuk sekolah."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Awalnya aku enggan, namun karena desakan terus menerus dari Freya, akhirnya aku kembali mencoba untuk kembali bersekolah."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Pada saat kembali ke sekolah, entah kenapa tatapan orang-orang terasa berbeda dari biasanya, mungkin karena waktu itu aku bersama Freya."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Kali ini pun orang di kelas mulai mencoba mengajakku berbicara lagi. Aku gugup dan takut, tapi Freya membantuku menjawab mereka."
     hide kana_home_side_normal_talk
     show kana_home_side_sad at left
@@ -2993,14 +3080,41 @@ label chapter2kanaB:
     show kana_home_side_normal_talk at left
     with dissolve
     kana "Sejak saat itu, entah kenapa mereka mulai menganggapku seperti tuan putri yang lemah lembut dengan bodyguardnya."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Mungkin karena itu, akhirnya pandangan mereka kepadaku berbeda dari sebelumnya."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Takut menghancurkan pandangan mereka, mulai saat itu aku mencoba memerankan role tersebut."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Berpura-pura seperti itu pun gapapa, setidaknya aku bisa berinteraksi dengan yang lain dan kembali mempunyai makna."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Tidak ada yang memuji ku sebelumnya karena mereka tidak menyukai diriku yang dulu."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Lagipula diriku yang wibu ini pun gak ada bagus-bagusnya, jadinya aku gapapa berpura-pura."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Yang kulakukan hanya mengikuti image mereka tentangku, dan menjadi orang yang membuat mereka senang."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Aku tetap menjalankan role ku tersebut, aku rasa itu sudah cukup dan ternyata memang benar."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Hari-hari pun berjalan dengan mulus..."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Setidaknya kebanyakan..."
     hide kana_home_side_normal_talk
     show kana_home_side_sad at left
@@ -3012,15 +3126,16 @@ label chapter2kanaB:
     show kana_home_side_normal_talk at left
     with dissolve
     kana "Tapi..."
+    hide kana_home_side_normal
     hide kana_home_side_normal_talk at left
     with dissolve
     $ quick_menu=False
     window auto hide
-    show white:
+    show black:
         subpixel True 
         ypos 252 
         linear 1.30 ypos -9 
-    show white as white2:
+    show black as black2:
         subpixel True 
         ypos 1908 
         linear 1.30 ypos 2169 
@@ -3030,21 +3145,21 @@ label chapter2kanaB:
     scene black with Dissolve(1.0)
     scene awan sore with Dissolve(1.0)
     $ quick_menu = False
-    show white:
+    show black:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 0 alpha 1.0 
             linear 1.30 ypos 252 alpha 0.7 
-    show white as white2:
+    show black as black2:
         default
         subpixel True 
         parallel:
             Null(0.0, 0.0)
-            'white' with dissolve
+            'black' with dissolve
         parallel:
             ypos 2080 alpha 1.0 
             linear 1.30 ypos 1908 alpha 0.7 
@@ -3053,7 +3168,13 @@ label chapter2kanaB:
     with dissolve
     $ quick_menu = True
     kana "Terkadang aku merasa kalau ini semua hanyalah kebohongan."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Aku merasa bersalah karena membohongi banyak orang."
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Saat yang lain merasa bahagia, aku tidak merasa begitu, hingga sampai di titik aku merasa tidak yakin dengan pilihanku."
     hide kana_home_side_normal_talk
     show kana_home_side_sad at left
@@ -3065,19 +3186,29 @@ label chapter2kanaB:
     show kana_home_side_normal_talk at left
     with dissolve
     kana "Aku tidak ingin kehilangan semua ini, tapi aku juga tidak ingin terlalu bergantung sama Freya."
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Semakin sering aku berpura-pura, semakin aku merasa \"Apakah pembohong sepertiku pantas untuk seperti ini.\""
+    hide kana_home_side_normal
+    show kana_home_side_normal_talk at left
+    with dissolve
     kana "Apakah aku layak menerima kebahagiaan ini?"
+    hide kana_home_side_normal_talk
+    show kana_home_side_normal at left
+    with dissolve
     kana "Apakah aku layak bersama kalian?"
+    hide kana_home_side_normal
     hide kana_home_side_confused
     hide kana_home_side_normal_talk 
     with dissolve
     $ quick_menu=False
     window auto hide
-    show white:
+    show black:
         subpixel True 
         ypos 252 
         linear 1.30 ypos -9 
-    show white as white2:
+    show black as black2:
         subpixel True 
         ypos 1908 
         linear 1.30 ypos 2169 
@@ -3264,11 +3395,11 @@ label chapter2kanaB:
     "Karena merasa tugasnya sudah selesai, akhirnya [mcname!c] pun beranjak untuk keluar kamar."
     hide kana_home_smile
     show kana_home_shy_smile at kana_near
-    show kana_side_drylaugh at left
+    show kana_home_side_drylaugh at left
     with dissolve
     kana "Ah... oke."
     kana "Sampai jumpa besok, [mcname!c]."
-    hide kana_side_drylaugh
+    hide kana_home_side_drylaugh
     hide kana_home_shy_smile
     show kana_home_smile at kana_near
     with dissolve
@@ -3285,13 +3416,16 @@ label chapter2kanaB:
     scene ruang tamu malam with Dissolve(2.0)
     $ quick_menu = True
     "Melihat kejadian ini, [mcname!c] menjadi lebih mengenal Kanaia Asa dengan lebih dalam."
-    "[mcname!c]" "Ya... ku rasa aku juga harus pulang."
+    "[mcname!c]" "Ya... Ku rasa aku juga harus pulang."
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
     "Setelah mengucapkan terima kasih ke Mamahnya Kana, akhirnya [mcname!c] pulang ke kostnya."
-#BARU DIREVIEW SAMPE SINI SAMA KOKOJON
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Lorong.ogg" fadein 1.0
+    play music "audio/BGM_Kampus.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Keesokan harinya..."
@@ -3344,9 +3478,10 @@ label chapter2kanaB:
     show freya_side_awe at left
     with dissolve
     freya "Hoooooo......"
-    hide freya_side_awe with dissolve
+    hide freya_side_awe
     hide freya_awe
-    show freya_awe at freya_near_right
+    with dissolve
+    show freya at freya_near_right
     show kana_smile at kana_near_left_2
     with dissolve
     "Kana terlihat berjalan menuju kelas saat Freya dan [mcname!c] sedang berbincang."
@@ -3365,7 +3500,7 @@ label chapter2kanaB:
     show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve
-    freya "Pagi juga Nay"
+    freya "Pagi juga Nay."
     freya "Gimana keadaanmu Nay? Udah mendingan?"
     hide freya_side_talk with dissolve
     hide kana_smile
@@ -3439,10 +3574,10 @@ label chapter2kanaB:
     $ quick_menu = True
     "Sudah seminggu sejak kejadian itu, semuanya kembali menjadi normal."
     "Suasana kelas ricuh seperti biasa karena dosen belum datang."
-    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
-    "Tanpa sadar waktu pelajaran pun tiba, lalu terdengar suara pintu terbuka."
     stop sound fadeout 1.0
+    "Tanpa sadar waktu pelajaran pun tiba, lalu terdengar suara pintu terbuka."
     stop music fadeout 1.0
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     play music "audio/BGM_Dosen.ogg" fadein 1.0
     show dosen at dosen_center with dissolve
     hide dosen
@@ -3485,11 +3620,11 @@ label chapter2kanaB:
     play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
     $ quick_menu=True
-    "Langit telah menjadi sore..."
+    "Tak terasa langit telah menjadi sore..."
     $ quick_menu=False
     scene kelas sore with Dissolve(2.0)
     $ quick_menu=True
-    "Tak terasa waktu telah berlalu dan dosen pun mengumumkan sesuatu yang terkait dengan UTS." 
+    "Kelas telah usai dan dosen pun mengumumkan sesuatu yang terkait dengan UTS." 
     show dosen_talk at dosen_center
     show dosen_side_talk at left
     with dissolve
@@ -3510,11 +3645,22 @@ label chapter2kanaB:
     with dissolve
     kana "Aduh gimana nih."
     kana "Aku gak terlalu ngedengerin dosen tadi, tau-tau udah bilang mau UTS."
+    hide kana_confused at kana_near
+    hide kana_side_confused at left
+    show kana_drylaugh at kana_near 
+    show kana_side_drylaugh at left
+    with dissolve
     kana "Tapi harusnya bisa sih kalo belajar sambil review textbook, kayaknya??"
-    hide kana_side_confused at left with dissolve
+    show kana at kana_near 
+    hide kana_drylaugh
+    hide kana_side_drylaugh at left
+    with dissolve
     "[mcname!c]" "Hahaha sama."
     "[mcname!c] memberikan persetujuan."
-    show kana_side_confused at left with dissolve
+    hide kana
+    show kana_confused at kana_near
+    show kana_side_confused at left
+    with dissolve
     kana "Duh tolongin dong, [mcname!c]."
     kana "Bantuin aku belajar, soalnya kalo aku belajar sendiri bisa-bisa gak fokus."
     hide kana_side_confused
@@ -3655,10 +3801,10 @@ label chapter2kanaB:
     kana "E-eh, Beneran keliatan ya? Ahahah."
     hide kana_date_side_shy
     hide kana_date_shy_smile
-    show kana_date_shy_closeeye at kana_near
+    show kana_date_shy at kana_near
     with dissolve
     "[mcname!c]" "Iya, kamu keliatan effort banget."
-    hide kana_date_shy_closeeye
+    hide kana_date_shy
     show kana_date_shy_smile at kana_near
     show kana_date_side_shy at left
     with dissolve
@@ -3668,7 +3814,7 @@ label chapter2kanaB:
     hide kana_date_shy_smile
     with dissolve
     "[mcname!c]" "Soalnya kamu pake baju yang berbeda dari yang sering kamu pake di kampus, apalagi rambut kamu keliatan lebih rapih, mungkin abis dari salon?"
-    show kana_date_shy_closeeye at kana_near
+    show kana_date_smile at kana_near
     with dissolve
     "Mungkin rambutnya terlihat sama seperti biasanya, namun entah kenapa [mcname!c] merasa kalau ada yang berbeda, mungkin itu hanya insting nya saja."
     hide kana_date_shy_closeeye
@@ -3682,8 +3828,8 @@ label chapter2kanaB:
     show kana_date_shy at kana_near
     with dissolve
     "Dengan wajah yang sedikit memerah Kana pun langsung duduk di dekat [mcname!c]."
-    "Mereka berdua pun memulai untuk belajar."
     hide kana_date_shy with dissolve
+    "Mereka berdua pun memulai untuk belajar."
     stop music fadeout 1.0
     $ quick_menu=False
     scene black with Dissolve(1.0)
@@ -3727,8 +3873,11 @@ label chapter2kanaB:
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
 label AjakKanaMainGame:
-    "Untuk refreshing, kamu milih main game yang ada di dalam cafe dan mengajak Kana untuk memainkan game tersebut."
     hide kana_date_confused
+    show kana_date_talk at kana_near
+    with dissolve
+    "Untuk refreshing, kamu milih main game yang ada di dalam cafe dan mengajak Kana untuk memainkan game tersebut."
+    hide kana_date_talk
     show kana_date at kana_near
     with dissolve
     "Kana yang awalnya ragu pun mulai tertarik saat kamu mulai menjelaskan tentang game yang akan dimainkan tersebut."
@@ -3858,7 +4007,7 @@ label AjakKanaMainGame:
     play music "audio/BGM_Kosan 1.ogg" fadein 1.0
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    "Tidak terasa langit menjadi gelap..."
+    "Tidak terasa langit telah menjadi gelap..."
     $ quick_menu = False
     scene cafe malam with Dissolve(2.0)
     show kana_date_confused at kana_near
@@ -3868,9 +4017,11 @@ label AjakKanaMainGame:
     kana "E-ehhh, udah gelaap!?? Maaf ya kayaknya aku kebablasan deh."
     hide kana_date_side_confused at left with dissolve
     "Kana melihat ke arah [mcname!c] dengan panik, takut [mcname!c] merasa aneh atau pun gelisah karena semua hal wibu yang telah diceritakan olehnya."
+    show kana_date_smile at kana_near
+    with dissolve
     "[mcname!c]" "Ga perlu mikir yang aneh-aneh deh Kana. Santai aja, aku kan udah janji."
     "[mcname!c]" "Lagian dengerin kamu cerita kaya gitu seru kok, ternyata banyak ya yang masih belum aku tau dari kamu."
-    hide kana_date_confused
+    hide kana_date_smile
     show kana_date at kana_near
     with dissolve
     "[mcname!c]" "Seneng aja bisa tau sisi kamu yang seperti ini."
@@ -3882,7 +4033,7 @@ label AjakKanaMainGame:
     show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
-    kana "Eh... ya udah nanti ku kasih playlist yang sering kudengar ke kamu deh."
+    kana "Eh... Ya udah nanti ku kasih playlist yang sering kudengar ke kamu deh."
     hide kana_date_side_talk
     hide kana_date_talk
     show kana_date at kana_near
@@ -3920,15 +4071,18 @@ label AjakKanaMainGame:
     show kana_date_side_shy at left
     with dissolve
     kana "[mcname!c]..."
-    kana "Aku rasa kita masih belum cukup belajarnya"
-    kana "Jadi... nanti mau belajar bareng lagi?"
+    kana "Aku rasa kita masih belum cukup belajarnya."
+    kana "Jadi... Nanti mau belajar bareng lagi?"
     hide kana_date_side_shy
     hide kana_date_shy_smile
     show kana_date_shy_closeeye at kana_near
     with dissolve
     "Kana mengatakan tersebut dengan sedikit gugup, mungkin takut jika [mcname!c] akan menolaknya."
-    "[mcname!c]" "Boleh kok. Lagipula aku juga free nanti."
-    hide kana_date_shy_closeeye
+    show kana_date_smile
+    hide kana_date_shy_closeeye at kana_near
+    with dissolve
+    "[mcname!c]" "Boleh kok. Lagi pula aku juga free nanti."
+    hide kana_date_smile
     show kana_date_shy_smile at kana_near
     show kana_date_side_shy at left
     with dissolve
@@ -3940,7 +4094,7 @@ label AjakKanaMainGame:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Cafe Cerah.mp3" fadein 1.0 volume (2.0)
+    play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0 volume (2.0)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Berhari-hari kemudian, [mcname!c] dan Kana selalu belajar bersama di cafe."
@@ -3956,13 +4110,13 @@ label AjakKanaMainGame:
     kana "Kayaknya aku mulai bosen deh belajar di sini terus."
     kana "Pengennya mungkin ganti suasana lain."
     hide kana_date_side_confused with dissolve
-    "[mcname!c]" "Hmmmm... bisa sih."
+    "[mcname!c]" "Hmmmm... Bisa sih."
     "[mcname!c]" "Tapi mau di mana kira-kira?"
     hide kana_date_confused
     show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
-    kana "Gimana kalo kita ke Jepang, sekalian nonton konser si M*ku?"
+    kana "Gimana kalo kita ke Jepang, sekalian nonton konser M*ku?"
     show kana_date_shy_closeeye at kana_near
     hide kana_date_side_talk at left
     with dissolve
@@ -3987,7 +4141,7 @@ label AjakKanaMainGame:
     show kana_date_talk at kana_near
     show kana_date_side_talk at left
     with dissolve
-    kana "Hmmmmmm jadi di mana ya."
+    kana "Hmmmmmm jadi di mana ya~"
     hide kana_date_side_talk
     hide kana_date_talk
     show kana_date at kana_near
@@ -4096,7 +4250,7 @@ label AjakKanaMainGame:
     "Mamah Kana" "Tetap saja karena kamu, jadinya Kana beberapa hari ini perasaaannya keliatan lebih baik."
     "Mamah Kana" "Oleh karena itu, makasih ya."
     "Mamah Kana" "Sebagai imbalannya, tante bakal ngabulin satu permintaan apa aja deh buat kamu."
-    "[mcname!c]" "E-Eh."
+    "[mcname!c]" "E-Ehhhh....?"
     "[mcname!c] bingung dengan perkataan Mamahnya Kana."
     show kana_home_side_talk at left
     with dissolve
@@ -4127,21 +4281,21 @@ label AjakKanaMainGame:
     "[mcname!c]" "Kamu gapapa Kana?"
     hide kana_home_shy_closeeye_talk
     show kana_home_shy_smile at kana_near
-    show kana_home_side_shy_eh at left
+    show kana_home_side_drylaugh at left
     with dissolve
     kana "Gapapa kok. Aku masih kuat."
-    hide kana_home_side_shy_eh
+    hide kana_home_side_drylaugh
     hide kana_home_shy_smile
     show kana_home_shy at kana_near
     with dissolve
     "[mcname!c]" "Kalo sampe di sini aja gimana? Kamu kayaknya butuh istirahat."
     hide kana_home_shy
-    show kana_home_shy_smile at kana_near
+    show kana_home_cry at kana_near
     show kana_home_side_shy_eh at left
     with dissolve
     kana "B-baiklah…"
     hide kana_home_side_shy_eh
-    hide kana_home_shy_smile
+    hide kana_home_cry
     show kana_home_shy at kana_near
     with dissolve
     "[mcname!c]" "Kalo gitu aku pamit dulu ya... Jangan lupa besok UTS."
@@ -4149,14 +4303,13 @@ label AjakKanaMainGame:
     show kana_home_talk at kana_near
     show kana_home_side_talk at left
     with dissolve
-    #"BARU DIREVIEW SAMPE SINI SAMA KOKO JON"
-    "BARU DIREVIEW SAMPE SINI SAMA KOKO JON"
     kana "Kalo gitu aku antar ke depan pintu, deh."
     hide kana_home_side_talk
     hide kana_home_talk
     show kana_home at kana_near
     with dissolve
-    "Sudah lumayan lama [mcname!c] dan Kana belajar bareng, sehingga sudah waktunya [mcname!c] untuk pulang. [mcname!c] membereskan barang-barangnya lalu beranjak pergi ke depan pintu sambil diantar oleh Kana."
+    "Sudah lumayan lama [mcname!c] dan Kana belajar bareng, sehingga sudah waktunya [mcname!c] untuk pulang."
+    "[mcname!c] membereskan barang-barangnya lalu beranjak pergi ke depan pintu sambil diantar oleh Kana."
     "[mcname!c]" "Makasih ya, makanannya."
     hide kana_home
     show kana_home_smile at kana_near
@@ -4170,59 +4323,54 @@ label AjakKanaMainGame:
     hide kana_home_talk
     show kana_home at kana_near
     with dissolve
+    $ quick_menu = False
+    window auto hide
     pause(1.0)
     hide kana_home
     show kana_home_shy_closeeye_talk at kana_near
     show kana_home_side_shy_ahn at left
+    window auto show
+    $ quick_menu = True
     kana "Achoo!!"
     hide kana_home_side_shy_ahn
     hide kana_home_shy_closeeye_talk
     show kana_home_shy_closeeye at kana_near
     with dissolve
     hide kana_home_shy_closeeye with dissolve
-#ASSET PINTU RUMAH KANA
+    $ quick_menu=False
+    scene black with Dissolve(1.0)
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu=True
     show pintu_rumah_kana at pintu_rumah_kana
-    show kana_home_shy_smile at kana_near 
     with dissolve
     "Kana memberikan ucapan selamat tinggal kepada [mcname!c] di depan pintu."
     "Mamahnya Kana ada urusan pekerjaan jadi tidak ikut mengantar [mcname!c]."
     "[mcname!c]" "Iya Kana, makasih juga udah menjamu."
     "[mcname!c]" "Salam juga untuk mama."
-    hide kana_home_shy_smile
-    show kana_home_shy_closeeye_talk at kana_near
     show kana_home_side_shy_ahn at left
     kana "Achoo!!"
     hide kana_home_side_shy_ahn
-    hide kana_home_shy_closeeye_talk
-    show kana_home_shy_closeeye at kana_near
     with dissolve
     "[mcname!c]" "Nah, kan. Jaga kesehatan ya."
-    hide kana_home_shy_closeeye
-    show kana_home_shy_closeeye_talk at kana_near
     show kana_home_side_shy_ahn at left
     kana "Achoo!!"
     hide kana_home_side_shy_ahn
-    hide kana_home_shy_closeeye_talk
-    show kana_home_shy_smile at kana_near
     show kana_home_side_drylaugh at left
     with dissolve
     kana "A-aman kok, aku kuat."
     hide kana_home_side_drylaugh
-    hide kana_home_shy_smile
-    show kana_home_shy at kana_near
+    hide pintu_rumah_kana
     with dissolve
     "[mcname!c]" ".........."
-    stop music fadeout 1.0
     $ quick_menu=False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
     scene awan malam with Dissolve(1.0)
     $ quick_menu=True
     "Di kost..."
     $ quick_menu=False
     scene kamar mc kota with Dissolve(2.0)
     $ quick_menu=True
-    "[mcname!c]" "kira -kira apa yang dimaksud sama Mamahnya Kana tadi ya…"
+    "[mcname!c]" "Kira-kira apa yang dimaksud sama Mamahnya Kana tadi ya…"
     "[mcname!c] mengingat kejadian yang telah terjadi saat [mcname!c] berkunjung ke tempat Kana."
     "[mcname!c]" "Dan juga Kana tadi terlihat sakit..."
     "[mcname!c]" "Moga saja dia gak kenapa-napa."
@@ -4239,17 +4387,15 @@ label AjakKanaMainGame:
     $ quick_menu = True
     "Hari UTS telah tiba, [mcname!c] merasa yakin akan dirinya karena sudah belajar bersama Kana cukup lama dan merasa cukup memahami mata kuliah yang telah diberikan."
     "[mcname!c] melihat ke arah Kana dan menyapa, akan tetapi perhatiannya teralihkan saat melihat muka Kana."
-    #*Sprite KANA MUKA MERAH PUCAT*
-    # GAK ADA SIDE KANA SICK
     show kana_sick at kana_near
     with dissolve
-    "[mcname!c]" "Pagi Kana"
+    "[mcname!c]" "Pagi Kana."
     hide kana_sick
     show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
+    show kana_side_shy_smile at left
     with dissolve
-    kana "Ah, P- Pagi, [mcname!c]."
-    hide kana_side_sick_talk
+    kana "Ah, P- Pagi [mcname!c]."
+    hide kana_side_shy_smile
     hide kana_sick_talk
     show kana_sick at kana_near
     with dissolve
@@ -4264,22 +4410,24 @@ label AjakKanaMainGame:
     "[mcname!c]" "Kamu gapapa?"
     hide kana_sick
     show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
+    show kana_side_shy_smile at left
     with dissolve
     kana "Ga-gapapa kok. Aku masih kuat."
-    hide kana_side_sick_talk
+    hide kana_side_shy_smile
     hide kana_sick_talk
     show kana_sick at kana_near
     with dissolve
     "[mcname!c]" "Kamu yakin???"
     "[mcname!c]" "Soalnya mukamu kayaknya..."
+    hide kana_sick with dissolve
     stop music fadeout 1.0
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     play music "BGM_Dosen.ogg" fadein 1.0
-    "Pengawas ujian datang dan UTS pun akan dimulai, membuat [mcname!c] tidak dapat beranjak dari kursinya."
-    "Pengawas" "Baiklah semuanya, UTS akan dimulai jadi saya harap semuanya menonaktifkan gadgetnya serta mengerjakannya secara mandiri. Waktu kalian selama 45 menit, dimulai dari sekarang."
+    "Tiba-tiba pengawas ujian datang dan UTS pun akan dimulai, membuat [mcname!c] tidak dapat beranjak dari kursinya."
+    "Pengawas" "Baiklah semuanya, UTS akan dimulai jadi saya harap semuanya menonaktifkan gadgetnya serta mengerjakannya secara mandiri."
+    "Pengawas" "Waktu kalian selama 45 menit, dimulai dari sekarang."
     $ quick_menu = False
-    jump kanaafterquiz
+    jump quiz
 #UTS
 label kanaafterquiz:
     $ quick_menu = True
@@ -4293,101 +4441,119 @@ label kanaafterquiz:
     play sound "SFX - Fall.WAV" fadein 1.0 volume(15.0)
     "Pada saat akan mengumpulkan lembar jawaban, tiba-tiba [mcname!c] mendengar suara."
     play music "BGM_Bad End.ogg" fadein 1.0
-    "Pandangan semua orang pun teralihkan dan saat itu juga, [mcname!c] melihat Kana yang tergeletak di lantai. Tanpa ragu-ragu, [mcname!c] berlari menghampiri Kana yang tergeletak lemas dan tidak sadarkan diri."
-    # Gak ada kana_sick tutup mata
-    #show kana_sick at kana_near with dissolve
-    show kana_shy_closeeye at kana_near with dissolve
-    "[mcname!c]" "Nay!! Kamu kenapa Nay?! Nayyy!"
-    #hide kana_sick at kana_near with dissolve
-    "Penjaga ujian dan staff pun memberitahukan murid untuk menghubungi pihak kesehatan kampus akan tetapi [mcname!c] memberitahukan tentang riwayat kesehatan Kana."
-    "Para staf pun panik dan segera menghubungi rumah sakit terdekat."
+    "Pandangan semua orang pun teralihkan dan saat itu juga, [mcname!c] melihat Kana yang tergeletak di lantai."
+    "Tanpa ragu-ragu, [mcname!c] berlari menghampiri Kana yang tergeletak lemas dan tidak sadarkan diri."
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play sound "SFX - Ambulance.wav" loop fadein 1.0
-    scene kelas with Dissolve(1.0)
+    $ quick_menu = True
+    "[mcname!c]" "Nay!! Kamu kenapa Nay?! Nayyy!"
+    "Penjaga ujian dan staff pun memberitahukan murid untuk menghubungi pihak kesehatan kampus."
+    "Setelah [mcname!c] memberitahukan tentang riwayat kesehatan Kana, para staff pun panik dan segera menghubungi rumah sakit terdekat."
+    $ quick_menu = False
+    play sound "SFX - Ambulance.wav" loop fadein 1.0 volume (80.0)
+    scene black with Dissolve(1.0)
+    scene awan sore with Dissolve(1.0)
     #HARUSNYA STOCK IMAGE AMBULANCE
     $ quick_menu = True
     "Tak lama kemudian, Kana dibawa dengan ambulans sambil ditemani [mcname!c]."
-    show kana_sick at kana_near with dissolve
     "Saat di ambulans, Kana sempat sadar."
-    #show kana_sick at kana_near
-    #show kana_side_sick at left
-    #with dissolve
+    $ quick_menu=False
+    window auto hide
+    show kana_sick
     hide kana_sick
-    show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
     with dissolve
+    window auto show
+    $ quick_menu=True
     kana "[mcname!c]..."
-    hide kana_side_sick_talk
-    hide kana_sick_talk
-    show kana_sick at kana_near
+    $ quick_menu=False
+    window auto hide
+    show kana_sick
+    hide kana_sick
     with dissolve
+    window auto show
+    $ quick_menu=True
     "[mcname!c]" "Kana! Kana!"
+    $ quick_menu=False
+    window auto hide
+    show kana_sick
     hide kana_sick
-    show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
     with dissolve
-    kana "Aku takut..."
-    hide kana_side_sick_talk
-    hide kana_sick_talk
-    show kana_sick at kana_near
+    window auto show
+    $ quick_menu=True
+    kana "[mcname!c]... Aku takut..."
+    $ quick_menu=False
+    window auto hide
+    show kana_sick
+    hide kana_sick
     with dissolve
+    window auto show
+    $ quick_menu=True
     "[mcname!c]" "Aku ada di sini. Kamu ga perlu khawatir! Istirahatlah."
+    $ quick_menu=False
+    window auto hide
+    show kana_sick
     hide kana_sick
-    show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
     with dissolve
+    window auto show
+    $ quick_menu=True
     kana "[mcname!c]..."
-    hide kana_side_sick_talk
-    hide kana_sick_talk
-    show kana_sick at kana_near
-    with dissolve
-    # Gak ada kana_sick tutup mata
-    #show kana_sick at kana_near with dissolve
+    $ quick_menu=False
+    window auto hide
+    show kana_sick
     hide kana_sick
-    show kana_shy_closeeye at kana_near with dissolve
+    with dissolve
+    window auto show
+    $ quick_menu=True
     "Kana pun kembali memejamkan matanya."
     stop sound fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
     #HARUSNYA BGM SEDIH RUMAH SAKIT
-    scene rumah sakit with Dissolve(1.0)
+    scene hospital with Dissolve(1.0)
     #HARUSNYA STOCK IMAGE RUMAH SAKIT
     $ quick_menu = True
     "Setelah sesampainya di rumah sakit, Kana pun diperiksa oleh dokter dan perawat."
-    "Di situ [mcname!c] hanya bisa menunggu jawaban dari pihak dokter, setelah beberapa saat pihak dokter pun keluar dari ruangan."
+    "Di situ [mcname!c] hanya bisa menunggu jawaban dari pihak dokter."
+    "Setelah beberapa saat pihak dokter pun keluar dari ruangan."
     "[mcname!c]" " DOK!! GIMANA KANA, DOK!??"
-    "Dokter" "Maaf anak muda, tapi kami sudah berusaha semaksimal mungkin. Jadi mohon terima kabar ini dengan berlapang dada, tapi Kana…"
+    "Dokter" "Maaf anak muda, tapi kami sudah berusaha semaksimal mungkin..."
+    "Dokter" "Jadi mohon terima kabar ini dengan berlapang dada, tapi Kana…"
     "[mcname!c]" "HA!? MAKSUDNYA APAAN DOK!? KANA KENAPA DOK!!?"
     "Dokter" "Kana... dia... "
     stop music
-    play music "audio/BGM_Lawak Tana.mp3"
+    $ quick_menu=False
+    window auto hide
+    show kana_sick
+    hide kana_sick
+    with dissolve
+    window auto show
+    $ quick_menu=True
+    play music "audio/BGM_Funny 1.ogg"
     #HARUSNYA LAWAK YANG SATUNYA
     "Dokter" "DIA GAPAPA KOKK~ Cuma demam kecapekan doang, ga usah khawatir."
     "Dokter" "Soal riwayat kesehatannya, buat sekarang Kana udah diinfus jadinya aman. Harusnya sekarang kamu udah bisa jenguk dia."
-    "[mcname!c]" "AH ELAH DOK, GA LUCU TAUUUU."
+    "[mcname!c]" "AH ELAH DOK, GA LUCU TAUUUU!!!"
     "Marah akan candaan dokter, [mcname!c] segera pergi ke dalam ruangan perawatan tempat Kana berada."
     stop sound fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
-    #HARUSNYA BGM SEDIH RUMAH SAKIT
-    scene rumah sakit with dissolve
-    #HARUSNYA STOCK IMAGE RUMAH SAKIT
-    # Gak ada kana_sick tutup mata
-    show kana_shy_closeeye at kana_near with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0
+    scene kamar hospital with Dissolve(1.0)
+    show kana_sick at kana_near with dissolve
     $ quick_menu = True
     "[mcname!c]" "Kana! Kamu gapapa kan!?"
     hide kana_shy_closeeye
     show kana_sick_talk at kana_near
-    show kana_side_sick_talk at left
+    show kana_side_shy_smile at left
     with dissolve
     kana "Kamu kok kaya kecapean gitu sih [mcname!c]? Kamu kenapa?"
+    hide kana_side_shy_smile at left
     hide kana_side_sick_talk
     hide kana_sick_talk
     show kana_sick at kana_near
     with dissolve
-    "[mcname!c]" "AHHH ini gara-gara si dokter bercandain kondisi kamu tadi. Btw kok bisa demam tinggi? Kemarin bukannya istirahat tapi lanjut maksain begadang ya?"
+    "[mcname!c]" "AHHH ini gara-gara si dokter bercandain kondisi kamu tadi."
+    "[mcname!c]" "Btw kok bisa demam tinggi? Kemarin bukannya istirahat tapi lanjut maksain begadang ya?"
     hide kana_sick
     show kana_sick_talk at kana_near
     show kana_side_sick_talk at left
@@ -4458,7 +4624,7 @@ label kanaafterquiz:
     stop sound fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    scene lorong with dissolve
+    scene kamar hospital with dissolve
     #HARUSNYA STOCK IMAGE RUMAH SAKIT
     show kana_shy at kana_near with dissolve
     $ quick_menu = True
