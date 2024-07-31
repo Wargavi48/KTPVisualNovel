@@ -15,10 +15,11 @@
     "Tiba tiba terdengar notifikasi dari handphone [mcname!c]."
     "[mcname!c]" "...."
     "[mcname!c]" "................."
+    stop sound
     "[mcname!c]" "{i}Apaan sihh!{/i}"
     $ quick_menu = False
     nvl clear
-    pia_nvl "[mcname!c]!!!!"
+    pia_nvl "[mcname!u]!!!!"
     pia_nvl "BUKU MATA KULIAH AKU KETINGGALAN DI KAMPUS. BESOK UJIAN INI PULA. GIMANA INI WEH!"
     pia_nvl "P"
     pia_nvl "P"
@@ -51,11 +52,11 @@
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play music "audio/BGM_Cafe Sore.ogg" fadein 1.0
-    play sound "audio/cafe-entrance.mp3" fadein 1.0
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    "Di Cafe..."
+    "Di cafe..."
     $ quick_menu = False
+    play sound "audio/cafe-entrance.mp3" fadein 1.0
     scene cafe malam with Dissolve(2.0)
     # $ renpy.block_rollback()
     show pia_home at pia_near with dissolve
