@@ -4447,6 +4447,14 @@ label kanaafterquiz:
     scene black with Dissolve(1.0)
     $ quick_menu = True
     "[mcname!c]" "Nay!! Kamu kenapa Nay?! Nayyy!"
+    "Penjaga ujian dan staff pun memberitahukan murid untuk menghubungi pihak kesehatan kampus akan tetapi [mcname!c] memberitahukan tentang riwayat kesehatan Kana."
+    "Para staf pun panik dan segera menghubungi rumah sakit terdekat."
+    $ quick_menu = False
+    play sound "SFX - Ambulance.wav" loop fadein 1.0 volume (80.0)
+    scene black with Dissolve(1.0)
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "[mcname!c]" "Nay!! Kamu kenapa Nay?! Nayyy!"
     "Penjaga ujian dan staff pun memberitahukan murid untuk menghubungi pihak kesehatan kampus."
     "Setelah [mcname!c] memberitahukan tentang riwayat kesehatan Kana, para staff pun panik dan segera menghubungi rumah sakit terdekat."
     $ quick_menu = False

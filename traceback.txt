@@ -1,26 +1,64 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/pia/truepia.rpy", line 1820, in script
-    show pia_date_talk at pia
-Exception: Character expects its what argument to be a string, got <renpy.display.image.ImageReference object ('pia_date_talk',) at 0x000000000717c910>.
+After initialization, but before game start.
+  File "game/mini_game/shooting_game.rpy", line 334, in analyze_screen
+    screen final_score():
+  File "game/mini_game/shooting_game.rpy", line 334, in analyze
+    screen final_score():
+  File "game/mini_game/shooting_game.rpy", line 334, in analyze
+    screen final_score():
+  File "game/mini_game/shooting_game.rpy", line 338, in analyze
+    frame:
+  File "game/mini_game/shooting_game.rpy", line 338, in analyze
+    frame:
+  File "game/mini_game/shooting_game.rpy", line 344, in analyze
+    frame:
+  File "game/mini_game/shooting_game.rpy", line 344, in analyze
+    frame:
+  File "game/mini_game/shooting_game.rpy", line 351, in analyze
+    if tana_route == "Good End" && $score >= 150:
+SyntaxError: invalid syntax (game/mini_game/shooting_game.rpy, line 351)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/pia/truepia.rpy", line 1820, in script
-    show pia_date_talk at pia
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1113, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1076, in show_imspec
-    renpy.config.show(name,
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 751, in show
-    img = i(img) # type: ignore
-  File "D:\fanbase_project\KTPVisualNovel\renpy\character.py", line 1305, in __call__
-    raise Exception("Character expects its what argument to be a string, got %r." % (what,))
-Exception: Character expects its what argument to be a string, got <renpy.display.image.ImageReference object ('pia_date_talk',) at 0x000000000717c910>.
+  File "D:\fanbase_project\KTPVisualNovel\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\main.py", line 635, in main
+    run(restart)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\main.py", line 86, in run
+    renpy.display.screen.analyze_screens()
+  File "D:\fanbase_project\KTPVisualNovel\renpy\display\screen.py", line 996, in analyze_screens
+    s.ast.analyze_screen()
+  File "game/mini_game/shooting_game.rpy", line 334, in analyze_screen
+    screen final_score():
+  File "game/mini_game/shooting_game.rpy", line 334, in analyze
+    screen final_score():
+  File "game/mini_game/shooting_game.rpy", line 334, in analyze
+    screen final_score():
+  File "game/mini_game/shooting_game.rpy", line 338, in analyze
+    frame:
+  File "game/mini_game/shooting_game.rpy", line 338, in analyze
+    frame:
+  File "game/mini_game/shooting_game.rpy", line 344, in analyze
+    frame:
+  File "game/mini_game/shooting_game.rpy", line 344, in analyze
+    frame:
+  File "game/mini_game/shooting_game.rpy", line 351, in analyze
+    if tana_route == "Good End" && $score >= 150:
+  File "D:\fanbase_project\KTPVisualNovel\renpy\py3analysis.py", line 559, in is_constant_expr
+    node, literal = ccache.ast_eval_literal(expr)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\py3analysis.py", line 785, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "D:\fanbase_project\KTPVisualNovel\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/mini_game/shooting_game.rpy, line 351)
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 WGV:Dreamcatcher 
-Mon Jul 29 14:36:19 2024
+Wed Jul 31 22:32:22 2024
