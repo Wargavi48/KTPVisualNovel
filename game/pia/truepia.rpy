@@ -217,7 +217,7 @@ label truepia:
             pia_nvl "Aku Imut"
             mc_nvl "Hmm…"
             pia_nvl "???"
-            pia_nvl "*send foto*"
+            pia_nvl "{image=turu.png}"
             mc_nvl "Waduh."
             pia_nvl "Jadi?"
             mc_nvl "Benar..."

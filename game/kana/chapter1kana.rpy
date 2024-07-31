@@ -2275,5 +2275,6 @@ label chapter1kana3monasesteh:
     with dissolve
     "Saat itu, [mcname!c] melihat senyum Kana yang lebar terlihat begitu bahagia dan membuat hatinya berdegup kencang."
     hide kana_smile with dissolve
+    $ plus_1_teman.grant()
     $ quick_menu = False
     jump chapter2kanastart

@@ -208,6 +208,13 @@ define malas_kuliah = Achievement(
     unlocked_image=Transform("Achievement/malas.jpeg"),
 )
 
+define plus_1_teman = Achievement(
+    name=_("Plus 1 Teman"),
+    id="Certified MMM Enjoyer",
+    description=_("Carilah teman kamu yang lainnya"),
+    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+)
+
 define all_correct = Achievement(
     name=_("Touch some grass lad, enough internet today"),
     id="Pengikut KTP",
