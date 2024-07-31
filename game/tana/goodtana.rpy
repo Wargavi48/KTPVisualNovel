@@ -5118,7 +5118,7 @@ label goodtanaaftergame:
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     $ quick_menu = False
     scene black with dissolve
-    scene konser end with dissolve
+    scene konser stage end with dissolve
     show text "{color=#FFF}THE END{/color}" with Pause(2.0)
     with Pause(20.0)
     jump credits
