@@ -55,7 +55,7 @@ label splashscreen:
     scene black
     with fade
 
-    $ renpy.movie_cutscene('videos/splash_screen.webm')
+    $ renpy.movie_cutscene('videos/splash-screen-v2.webm')
 
     scene white
     with fade
