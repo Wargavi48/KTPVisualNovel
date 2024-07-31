@@ -778,29 +778,59 @@ label chapter2piaaftergame:
         "Ah! Tadi aku dapet flyer ini. *Kasih semua flyer* mau ikut gak? ada acara jejepangan beberapa bulan lagi nih. terus itu ada 3 flyer, ada yang recruitment jadi idol juga. Mau coba gak?":
             #$ renpy.block_rollback()
             $ quick_menu = True
-            "[mcname!c]" "Ah! Tadi aku dapet flyer ini. \n*Kasih semua flyer*"
+            "[mcname!c]" "Ah! Tadi aku dapet flyer ini."
+            hide pia_shock
+            hide pia 
+            hide pia_talk 
+            hide pia_smile
+            with dissolve
+            show matsuri at matsuri 
+            show idolrecruit at poster
+            show club at club
+            show matsuri:
+                subpixel True pos (0.64, 0.19) zrotate 18.0 
+            show idolrecruit:
+                subpixel True pos (0.21, 0.17) xrotate 0.0 yrotate 0.0 zrotate 0.0 orientation (0.0, 0.0, 18.0) 
+            show club:
+                subpixel True pos (0.13, 0.15)
+            with dissolve
             "[mcname!c]" "Mau ikut gak? Ada acara jejepangan beberapa bulan lagi nih. Terus itu ada 3 flyer, ada yang recruitment jadi idol juga. Mau coba gak?"
+            $ quick_menu = False
+            window auto hide
+            hide matsuri
+            hide idolrecruit 
+            hide club 
+            with dissolve
             hide pia_smile
             hide pia_shock 
             hide pia
             show pia_talk at pia_near 
             show pia_side_talk at left 
             with dissolve
+            window auto show
+            $ quick_menu = True
             pia "Wih, apaan nih?"
             pia "Wah matsuri, ya."
             pia "Terus…"
             pia "Ini rekruitmen club, skip."
             pia "Yang ini…."
+            show pia_shock at pia_near
+            hide pia_side_talk 
+            show pia_side_shock at left
+            hide pia_talk 
+            with dissolve
             pia "J-jadi idol??"
             pia "Wow recruitment jadi idol?"
             show pia at pia_near 
-            hide pia_side_talk 
+            hide pia_side_shock
             with dissolve
             "[mcname!c]" "Gimana, mau coba?"
             hide pia 
+            show pia_talk at pia_near
             show pia_side_talk at left 
             with dissolve
             pia "Umm… G-gak deh. Biarlah mimpi tetap jadi mimpi, hehe."
+            hide pia_shock 
             hide pia_side_talk at left 
             hide pia_talk 
             with dissolve
@@ -812,33 +842,66 @@ label chapter2piaaftergame:
         "Ah! Tadi aku dapet flyer ini. *Kasih flyer event jejepangan*. Nonton yuk nanti!":
             #$ renpy.block_rollback()
             $ quick_menu = True
-            "[mcname!c]" "Ah! Tadi aku dapet flyer ini. *Kasih flyer event jejepangan*. Nonton yuk nanti!"
-            show pia at pia_near 
+            "[mcname!c]" "Ah! Tadi aku dapet flyer ini."
+            hide pia_shock
+            hide pia 
+            hide pia_talk 
+            hide pia_smile
+            with dissolve
+            show matsuri at poster
+            show matsuri:
+                    xpos 0.4 
+            with dissolve
+            "[mcname!c]" "Nonton yuk nanti!"
+            $ quick_menu = False
+            window auto hide
+            hide matsuri with dissolve
+            show pia_talk at pia_near 
             show pia_side_talk at left 
             with dissolve
-            pia "Menarik, tapi pasti…"
-            pia "Banyak wibu bau bawang, ahahahaha."
-            hide pia_side_talk with dissolve
+            window auto show
+            $ quick_menu = True
+            pia "Menarik, tapi pasti…..... Banyak wibu bau bawang, ahahahaha."
+            show pia at pia_near
+            hide pia_side_talk
+            with dissolve
             "[mcname!c]" "Nerbener yee lu."
             "[mcname!c]" "Mau gak? Kalo mau, lesgo beli tiketnya. Nih udah open."
-            show pia_side_talk at left with dissolve
+            hide pia
+            show pia_side_talk at left
+            with dissolve
             pia "Berapaan harganya?"
-            hide pia_side_talk with dissolve
+            show pia at pia_near
+            hide pia_side_talk
+            with dissolve
             "[mcname!c]" "100 ribu pre-salenya. Berarti nanti setelah pre-sale bakal lebih mahal."
-            show pia_side_talk at left with dissolve
+            hide pia
+            show pia_side_talk at left
+            with dissolve
             pia "Walah! Lesgo buruan beli. Keburu abis presalenya. Aku transfer ke kamu sekarang. Buruan beli."
-            hide pia_side_talk with dissolve
+            show pia at pia_near
+            hide pia_side_talk
+            with dissolve
             "[mcname!c]" "Otw!!! Sabar."
             "*Pembayaran berhasil*"
             "[mcname!c]" "Dah nih, ya."
-            show pia_side_talk at left with dissolve
+            show pia_smile at pia_near
+            show pia_side_smile at left
+            with dissolve
             pia "Lesgoooooo, huahahaha!"
-            $ quick_menu = False
+            hide pia_smile 
+            hide pia_side_smile 
+            hide pia 
+            hide pia_talk
+            with dissolve
             stop music fadeout 1.0
+            $ quick_menu = False
+            play music "BGM_Bad End.ogg" fadein 1.0
             scene black with dissolve
             show text "{color=#FFF}*Beberapa bulan kemudian, ada gosip beredar bahwa acara jejepangan tersebut gagal dilaksanakan karena promotor acara kabur membawa uang donatur dan sponsor*{/color}" with Pause(2.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
+            stop music fadeout 1.0
             scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
@@ -857,7 +920,7 @@ label chapter2piaaftergame:
             pia "Menjadi..."
             pia "Illustrator handal!"
             pia "Siapa tau kan? Jadi komikus handal terus ke Jepang."
-            pia "Atau jadi ilustrator terkenal di duniaaa huahahahaha."
+            pia "Atau jadi ilustrator terkenal di duniaaa, huahahahaha."
             hide pia_smile
             hide pia_side_smile
             show pia at pia_near
@@ -870,7 +933,7 @@ label chapter2piaaftergame:
             pia "Ahahahahaha~"
             hide pia
             hide pia_side_smile
+            hide pia_smile
             with dissolve
             $ pia_route = "True End"
-            hide pia_smile with dissolve 
             jump truepia
