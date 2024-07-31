@@ -96,6 +96,17 @@ label chapter2kanastart:
     hide mama
     with dissolve
     "[mcname!c]" "{i}Saat itu aku gak begitu paham dengan apa yang mereka bicarakan...{/i}"
+    window auto hide
+    show white:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show white as white2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
+    window auto show
     stop music fadeout 1.0
     stop music fadeout 1.0
     $ quick_menu = False
@@ -2738,11 +2749,22 @@ label chapter2kanaB:
     kana "Hal-hal itulah yang menjadi pelarianku di kamar yang penuh kesendirian."
     hide kana_home_talk
     hide kana_home_side_normal_talk at left
+    hide kana_home_confused_blush
     with dissolve
+    $ quick_menu=False
+    window auto hide
+    show white:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show white as white2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
     #awan berkabut
     $ quick_menu = False
-    scene black with Dissolve(1.0)
-    scene awan berkabut with Dissolve(1.0)
+    scene awan berkabut with Dissolve(2.0)
     $ quick_menu = False
     show white:
         default
@@ -2772,6 +2794,17 @@ label chapter2kanaB:
     kana "Teman sekelasku bisa hidup dengan normal, dalam hati ku aku merasa iri dengan mereka."
     hide kana_home_side_normal_talk at left
     with dissolve
+    $ quick_menu=False
+    window auto hide
+    show white:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show white as white2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
     #awab sore
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -2804,6 +2837,17 @@ label chapter2kanaB:
     kana "Kalau terlalu banyak gerak, aku sakit lagi."
     hide kana_home_side_normal_talk at left
     with dissolve
+    $ quick_menu=False
+    window auto hide
+    show white:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show white as white2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
     #awan pagi
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -2842,6 +2886,17 @@ label chapter2kanaB:
     kana "Mereka dekat, tapi aku merasa ada dinding yang memisahkan."
     hide kana_home_side_normal_talk at left
     with dissolve
+    $ quick_menu=False
+    window auto hide
+    show white:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show white as white2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
     #awan malam
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -2882,6 +2937,17 @@ label chapter2kanaB:
     kana "Setahun pun berlalu, kemudian dua, tak terasa aku sudah di kelas 3."
     hide kana_home_side_normal_talk at left
     with dissolve
+    $ quick_menu=False
+    window auto hide
+    show white:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show white as white2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
     #awan pagi
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -2946,6 +3012,17 @@ label chapter2kanaB:
     kana "Tapi..."
     hide kana_home_side_normal_talk at left
     with dissolve
+    $ quick_menu=False
+    window auto hide
+    show white:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show white as white2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
     #awan sore
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -2992,7 +3069,17 @@ label chapter2kanaB:
     hide kana_home_side_confused
     hide kana_home_side_normal_talk 
     with dissolve
-    $ quick_menu = False
+    $ quick_menu=False
+    window auto hide
+    show white:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show white as white2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
     scene black with Dissolve(1.0)
     scene awan malam with Dissolve(1.0)
     show kana_home_side_sad at left with dissolve
@@ -3118,12 +3205,20 @@ label chapter2kanaB:
     "[mcname!c]" "Kamu itu dirimu yang sekarang Kana, jangan biarkan masa lalu menahanmu."
     "[mcname!c]" "Apa yang sudah terjadi tidak bisa diubah."
     "[mcname!c]" "Saat ini kamu adalah kamu."
-    hide kana_home_confused_blush with dissolve
     $ quick_menu=False
-    scene black with Dissolve(1.0)
-    scene kamar kana malam with Dissolve(1.0)
-    show kana_home_confused_blush_sideeye at kana_near
-    with dissolve
+    window auto hide
+    hide kana_home_confused_blush with dissolve
+    show black:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show black as black2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
+    show kana_home_confused_blush_sideeye at kana_near with dissolve
+    window auto show
     $ quick_menu=True
     "Setelah itu [mcname!c] melepaskan tangannya, Kana terlihat malu dan memalingkan kepala."
     $ quick_menu=False
@@ -3131,7 +3226,7 @@ label chapter2kanaB:
     hide kana_home_confused_blush_sideeye
     show kana_home_sad at kana_near
     with dissolve
-    pause(4.0)
+    pause(3.0)
     show kana_home_shy at kana_near
     with dissolve
     window auto show
@@ -3190,6 +3285,7 @@ label chapter2kanaB:
     "Melihat kejadian ini, [mcname!c] menjadi lebih mengenal Kanaia Asa dengan lebih dalam."
     "[mcname!c]" "Ya... ku rasa aku juga harus pulang."
     "Setelah mengucapkan terima kasih ke Mamahnya Kana, akhirnya [mcname!c] pulang ke kostnya."
+#BARU DIREVIEW SAMPE SINI SAMA KOKOJON
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
