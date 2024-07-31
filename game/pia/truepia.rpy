@@ -163,7 +163,7 @@ label truepia:
     pia_nvl "Lagi apa?"
     mc_nvl "Gak ngapa-ngapain, cuma lagi sketch-sketch kecil aja"
     pia_nvl "Iiih mau liaaaat"
-    mc_nvl "*Ngirim foto sketch Pia*"
+    mc_nvl "{image=pia skets.png}"
     pia_nvl "!!!!!"
     pia_nvl "Itu aku?"
     pia_nvl "AKU???"
