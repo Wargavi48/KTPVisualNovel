@@ -96,7 +96,6 @@ label quiz:
         jump remedial
 
 
-
 label remedial:
     "Ulanganmu hasilnya jelek bro remed dulu kali ya"
     jump quiz
