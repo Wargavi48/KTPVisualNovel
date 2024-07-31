@@ -837,6 +837,15 @@ label chapter2piaaftergame:
             "Akhirnya [mcname!c] duduk di sebelah Pia sambil melihat pemandangan dari rooftop melihat jauh ke depan."
             "Lalu menuangkan pemandangan indah itu dalam sebuah lukisan."
             "Tugas gambar [mcname!c] untuk UTS akhirnya selesai."
+            stop music fadeout 1.0
+            $ quick_menu = False
+            scene black with Dissolve(1.0)
+            play music "BGM_Sore.ogg" fadein 1.0
+            scene awan sore with Dissolve(1.0)
+            # #$ renpy.block_rollback()
+            $ quick_menu = True
+            "Tak terasa hari sudah menjadi sore."
+            "[mcname!c] dan Pia pun pulang ke kost masing-masing."
             $ pia_route = "Good End"
             jump goodpia
         "Ah! Tadi aku dapet flyer ini. *Kasih flyer event jejepangan*. Nonton yuk nanti!":
