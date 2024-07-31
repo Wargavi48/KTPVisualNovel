@@ -195,11 +195,36 @@ label intro:
     hide side mamah
     hide papah
     hide mama
-    show mama at char_center
-    show side mama at left
     with dissolve
+    $ quick_menu=False
+    window auto hide
+    show black:
+        default
+        subpixel True 
+        parallel:
+            Null(0.0, 0.0)
+            'black' with dissolve
+        parallel:
+            ypos 0 alpha 1.0 
+            linear 1.30 ypos 252 alpha 0.7 
+    show black as black2:
+        default
+        subpixel True 
+        parallel:
+            Null(0.0, 0.0)
+            'black' with dissolve
+        parallel:
+            ypos 2080 alpha 1.0 
+            linear 1.30 ypos 1908 alpha 0.7 
+    with Pause(1.40)
+    show mama at char_center with dissolve
+    with dissolve
+    window auto show
+    $ quick_menu=True
+    show side mama at left with dissolve
     mama "Kalo gitu Mamah peluk dulu deh, sebelum adek bakal pergi nanti."
     hide side mama at left with dissolve
+
     "[mcname!c]" "E-Eh Mah, tapi kan aku masih di sini. Belum mau pergi ke Jakarta."
     show side mama at left with dissolve
     mama "Kalo itu nanti bakal peluk lagi, ini cuman buat ngobatin rasa kangen yang sekarang."
@@ -210,11 +235,24 @@ label intro:
     "Terasa kehangatan dari tubuh mamah mengalir kepada [mcname!c]."
     "Hal itu membuat [mcname!c] ingat kalau dia nanti akan pergi jauh dari keluarganya."
     "Ada sedikit rasa sedih di hati [mcname!c] ketika memikirkan hal tersebut, namun dia sudah kuat dengan pendiriannya."
-    hide mama
+    hide mama with dissolve
+    $ quick_menu=False
+    window auto hide
+    show black:
+        subpixel True 
+        ypos 252 
+        linear 1.30 ypos -9 
+    show black as black2:
+        subpixel True 
+        ypos 1908 
+        linear 1.30 ypos 2169 
+    with Pause(1.40)
     show mama at char_left
     show mama:
         pos (0.11, -0.07) yzoom 1.0 zoom 0.55
     with dissolve
+    window auto show
+    $ quick_menu=True
     "Akhirnya setelah beberapa menit, Mamah pun melepaskan pelukannya sambil tersenyum."
     show papah at char_placement_right
     show papah:
