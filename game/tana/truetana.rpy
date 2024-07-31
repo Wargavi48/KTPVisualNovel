@@ -1264,7 +1264,7 @@ label chapter2tanaTRUE2:
     tana "E-eh?\n*Blush*"
     hide tana_side_shock at left 
     hide tana_shock at tana_near
-    show tana_shy
+    show tana_shy at tana_near
     with dissolve
     "[mcname!c]" "Kost lu di mana sih?"
     hide tana_shy at tana_near
@@ -1273,7 +1273,7 @@ label chapter2tanaTRUE2:
     tana "D-di belakang kampus."
     hide tana_side_shock at left 
     hide tana_shock at tana_near
-    show tana_shy
+    show tana_shy at tana_near
     with dissolve
     "[mcname!c]" "Gas deh. Kost gua lewat situ juga soalnya."
     hide tana_shy at tana_near
@@ -1439,9 +1439,9 @@ label chapter2tanaTRUE2:
     hide tana_side_talk at left
     hide tana_talk at tana_near
     with dissolve
-    $ tana_route = "Good End"
+    $ tana_route = "True End"
     $ quick_menu=False
-    jump truetanaafterquiz
+    jump quiz
 
 label truetanaafterquiz:
     $ quick_menu=True
@@ -1708,7 +1708,9 @@ label chapter2tanaTRUE3:
     show tana at tana_near
     with dissolve
     "{size=-5}Cleaning Service{/size}" "Ooooh, silahkan." 
-    #ASSET KUNCI"
+    show key
+    show key:
+        pos (0.69, 0.7) zoom 0.1 
     play sound "SFX - Key.mp3" volume (5.0)
     "{size=-5}Cleaning Service{/size}" "Itu ya, kuncinya. Nanti kalo udah selesai, jangan lupa dibalikin ke saya."
     hide tana at tana_near
@@ -1716,6 +1718,7 @@ label chapter2tanaTRUE3:
     show tana_side_talk at left 
     with dissolve
     tana "Baik, pak. Terima kasih banyak."
+    hide key
     hide tana_side_talk at left 
     hide tana_talk at tana_near
     show tana at tana_near
@@ -3318,11 +3321,15 @@ label trueendtana:
     "[mcname!c]" "Kak Flora.. Kak Flora."
     "[mcname!c]" "Hmmm? Apaan tuh?"
     "[mcname!c] melihat sesuatu di lantai."
+    show key
+    show key:
+        pos (0.46, 0.72) zoom 0.15 
     play sound "SFX - Key.mp3" volume (5.0)
     "[mcname!c]" "Ohhh kunci, tapi kunci apa?"
     stop sound
     "[mcname!c]" "Eh? Ada tulisan sawah. Jangan-jangan ini kunci punya Kak Flora."
     "[mcname!c]" "Simpen di dompet aja deh, biar ga ilang."
+    hide key
     "Setelah itu, [mcname!c] pun menghampiri penjual penyetan yang ia lihat sebelumnya."
     $ quick_menu=False
     scene black with Dissolve(1.0)
@@ -3784,7 +3791,7 @@ label trueendtana:
     hide tana_date_confused at tana_near 
     with dissolve
     play sound "SFX - Telephone.mp3"
-    show tana ring at ui_handphone with dissolve
+    show tana_ring at ui_handphone with dissolve
     "Tana pun mencoba menelpon [mcname!c]."
 #UI TELEPON"
     "Kring kring"
@@ -3792,7 +3799,7 @@ label trueendtana:
     tana "....."
     hide tana_date_side_idle at left with dissolve
     "[mcname!c] tidak mengangkat panggilan telepon dari Tana."
-    hide tana ring
+    hide tana_ring
     show tana_date_angry_2 at tana_near
     show tana_date_side_angry_2 at left 
     with dissolve
@@ -3801,12 +3808,12 @@ label trueendtana:
     hide tana_date_angry_2 at tana_near
     with dissolve
     play sound "SFX - Telephone.mp3"
-    show tana ring at ui_handphone with dissolve
+    show tana_ring at ui_handphone with dissolve
     "Tana pun mencoba menelpon [mcname!c] kembali."
     "Kring kring"
     "[mcname!c]" "Halo?"
-    hide tana ring
-    show tana telpon at ui_handphone
+    hide tana_ring
+    show tana_telpon at ui_handphone
     show tana_date_side_angry_2 at left 
     with dissolve
     tana "KAMU DI MANA?! KOK BELUM SAMPE?!"
@@ -3819,7 +3826,7 @@ label trueendtana:
     show tana_date_side_angry_2 at left with dissolve
     tana "MAAF MAAF! MALES AH!"
     hide tana_date_side_angry_2 at left
-    hide tana telpon
+    hide tana_telpon
     with dissolve
     #UI TELEPON SELESAI"
     $ quick_menu = False
@@ -4013,7 +4020,7 @@ label trueendtana:
     hide tana_date_side_talk at left
     hide tana_date_talk at tana_near 
     with dissolve
-    jump truetanaaftergame
+    jump shooting_game_start
     #MINIGAME TEMBAK TEMBAKAN"
 label truetanaaftergame:
     show tana_date_talk at tana_near
@@ -4214,6 +4221,9 @@ label truetanaaftergame:
     show tana_date_side_confused at left with dissolve
     tana "Apaan tuh?"
     hide tana_date_side_confused at left with dissolve
+    show key
+    show key:
+        pos (0.69, 0.7) zoom 0.1 
     play sound "SFX - Key.mp3" volume (5.0)  
     show tana_date_side_confused at left with dissolve
     tana "Loh? Itukan kunci sawah. Kok kamu punya kunci sawah?"
@@ -4221,6 +4231,7 @@ label truetanaaftergame:
     "[mcname!c]" "Punya dong. Keren, kan?"
     show tana_date_side_confused at left with dissolve
     tana "Kamu nyuri, ya?"
+    hide key
     hide tana_date_side_confused at left 
     hide tana_date_confused at tana_near
     show tana_date at tana_near

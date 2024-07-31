@@ -43,53 +43,62 @@ label quiz:
                 $ user_choice = option_d
         
         if user_choice == random_question["answer"]:
-            $ user_score += 10      
+            $ user_score += 10
+            "Jawaban Benar"      
         $ index += 1
 
     if user_score == 100:
         $ all_correct.grant()
-    if route == "kana":
-        stop music fadeout 1.0
-        $ quick_menu = False
-        scene black with Dissolve(1.0)
-        play music "BGM_Kelas.ogg" fadein 1.0  volume (1.5)
-        scene kelas with Dissolve(1.0)
-        $ quick_menu = True
-        jump kanaafterquiz
-    elif route == "tana":
-        if tana_route == "Good End":
+    if user_score >= 80:    
+        if route == "kana":
             stop music fadeout 1.0
             $ quick_menu = False
             scene black with Dissolve(1.0)
             play music "BGM_Kelas.ogg" fadein 1.0  volume (1.5)
             scene kelas with Dissolve(1.0)
             $ quick_menu = True
-            jump goodtanaafterquiz
-        elif tana_route == "True End":
-            stop music fadeout 1.0
-            $ quick_menu = False
-            scene black with Dissolve(1.0)
-            play music "BGM_Kelas.ogg" fadein 1.0  volume (1.5)
-            scene kelas with Dissolve(1.0)
-            $ quick_menu = True
-            jump truetanaafterquiz
-    elif route == "pia":
-        if pia_route == "Good End":
-            stop music fadeout 1.0
-            $ quick_menu = False
-            scene black with Dissolve(1.0)
-            play music "BGM_Kelas.ogg" fadein 1.0  volume (1.5)
-            scene kelas with Dissolve(1.0)
-            $ quick_menu = True
-            jump goodpiaafterquiz
-        elif pia_route == "True End":
-            stop music fadeout 1.0
-            $ quick_menu = False
-            scene black with Dissolve(1.0)
-            play music "BGM_Kelas.ogg" fadein 1.0  volume (1.5)
-            scene kelas with Dissolve(1.0)
-            $ quick_menu = True
-            jump truepiaafterquiz
-                
+            jump kanaafterquiz
+        elif route == "tana":
+            if tana_route == "Good End":
+                stop music fadeout 1.0
+                $ quick_menu = False
+                scene black with Dissolve(1.0)
+                play music "BGM_Kelas.ogg" fadein 1.0  volume (1.5)
+                scene kelas with Dissolve(1.0)
+                $ quick_menu = True
+                jump goodtanaafterquiz
+            elif tana_route == "True End":
+                stop music fadeout 1.0
+                $ quick_menu = False
+                scene black with Dissolve(1.0)
+                play music "BGM_Kelas.ogg" fadein 1.0  volume (1.5)
+                scene kelas with Dissolve(1.0)
+                $ quick_menu = True
+                jump truetanaafterquiz
+        elif route == "pia":
+            if pia_route == "Good End":
+                stop music fadeout 1.0
+                $ quick_menu = False
+                scene black with Dissolve(1.0)
+                play music "BGM_Kelas.ogg" fadein 1.0  volume (1.5)
+                scene kelas with Dissolve(1.0)
+                $ quick_menu = True
+                jump goodpiaafterquiz
+            elif pia_route == "True End":
+                stop music fadeout 1.0
+                $ quick_menu = False
+                scene black with Dissolve(1.0)
+                play music "BGM_Kelas.ogg" fadein 1.0  volume (1.5)
+                scene kelas with Dissolve(1.0)
+                $ quick_menu = True
+                jump truepiaafterquiz
+    else:
+        jump remedial
+
+
+label remedial:
+    "Ulanganmu hasilnya jelek bro remed dulu kali ya"
+    jump quiz
+                    
 
         

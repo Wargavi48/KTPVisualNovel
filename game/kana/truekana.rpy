@@ -146,16 +146,15 @@ label truekanachat:
     mc_nvl "{size=-5}Jadi tadi gimana tips and tricknya buat di event, Yang Mulia Kanaia Asa?{/size}"
     kana_nvl "{size=-5}IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-{/size}"
     nvl clear
-    play sound "audio/SFX - Call.mp3"
     scene kamar mc kota with Dissolve(0.01)
-#MUNCUL ASET KANA NELEPON MC (Kana -> MC) (CALLING)
+    show kana_calling at ui_handphone with dissolve
+    play sound "audio/SFX - Telephone.mp3"
     $ quick_menu = True
     "Tanpa sengaja Kana menekan tombol voice call dan [mcname!c] pun tanpa pikir panjang menekan tombol jawab."
-#MUNCUL ASSET TELEPON KANA (CONNECTED)
-    #*BG HP VOICE CALL*
+    hide kana_calling
+    show kana_connect at ui_handphone
+    with dissolve
     stop sound
-    # show kana_telpon at ui_handphone with dissolve
-    "UI kana telpon MC"
     show kana_side_cry at left with dissolve
     kana "Ehh maaf kepencet!!! Aduh malu banget, aku matiin aja ya."
     hide kana_side_cry with dissolve
@@ -175,14 +174,16 @@ label truekanachat:
     "Tanpa sadar Kana dan [mcname!c] pun mengobrol lama, bahkan sampai melewati tengah malam."
     "Beberapa kali [mcname!c] mendengar Kana menguap dan menyarankan untuk mengakhiri voice call, tetapi ia tetap melanjutkan ceritanya seakan meluapkan semua cerita yang telah ia simpan sendirian selama ini."
     "Beberapa saat kemudian pun Kana tertidur dengan voice call masih menyala."
+    hide kana_conect
+    show kana_conected at ui_handphone
+    with dissolve
     "[mcname!c]" "Kana...? Kana...?"
     #*SFX Amimir*
     "Beberapa kali [mcname!c] menyebutkan nama Kana akan tetapi Kana tetap tidak menjawab."
     "[mcname!c]" "{i}Heeee... Kana ketiduran ya?{/i}"
     "Suara nafas Kana sempat beberapa kali terdengar."
     "Setelah beberapa saat, [mcname!c] pun memilih untuk mengakhiri voice call itu dan tidur agar tidak telat besok."
-    hide telpon_mamah with dissolve
-    #Tutup telpon
+    hide kana_conected with dissolve
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
@@ -500,9 +501,15 @@ label truekanajapanfest:
     with dissolve
     $ quick_menu = True
     kana "Kamu beneran bisa ga?"
-    hide kana_date_side_talk with dissolve
+    hide kana_date_side_talk
+    hide kana_date_talk
+    show kana_date at kana_near
+    with dissolve
     "[mcname!c]" "Bener Kana, tenang aja. Kok kamu ga percaya ke aku gitu sih."
-    show kana_date_side_talk at left with dissolve
+    hide kana_date
+    show kana_date_talk at kana_near
+    show kana_date_side_talk at left
+    with dissolve
     kana "Soalnya kamu keliatan ga yakin."
     hide kana_date_side_talk
     hide kana_date_talk
@@ -513,9 +520,10 @@ label truekanajapanfest:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with dissolve
-    scene lorong sore with dissolve
+    scene matsuri malam with dissolve
 #Harusnya BG MINIGAME TANA (Tanpa mainin)
     play sound "audio/SFX - Finish Game.mp3"
+    show kana_date_smile at kana_near with dissolve
     $ quick_menu = True
     "[mcname!c] pun mendapatkan skor tinggi."
     stop sound fadeout 1.0
@@ -538,10 +546,13 @@ label truekanajapanfest:
     show kana_date_side_confused at left
     with dissolve
     kana "Iya iya, kamu jago deh."
-    hide kana_date_side_confused with dissolve
+    hide kana_date_side_confused
+    hide kana_date_confused
+    show kana_date_angry at kana_near
+    with dissolve
     "[mcname!c]" "Nahh gitu dong, hahah."
     "Setelah mendapatkan hadiah dari mini game di dalam booth, [mcname!c] memberikan hadiahnya kepada Kana."
-    hide kana_date_confused
+    hide kana_date_angry
     show kana_date_shy_smile at kana_near
     show kana_date_side_shy at left
     with dissolve
@@ -556,18 +567,30 @@ label truekanajapanfest:
     show kana_date_side_shy at left
     with dissolve
     kana "Gapapa nih?"
-    hide kana_date_side_shy with dissolve
-    "[mcname!c]" "Iyaa, sekarang kamu gak marah lagi kan?"
+    hide kana_date_side_shy
     hide kana_date_shy_smile
-    show kana_date_angry at kana_near
+    show kana_date_shy at kana_near
+    with dissolve
+    "[mcname!c]" "Iyaa, sekarang kamu gak marah lagi kan?"
+    hide kana_date_shy
+    show kana_date_confused at kana_near
     show kana_date_side_confused at left
     with dissolve
     kana "M-masih, hmph!"
-    hide kana_date_side_confused with dissolve
+    hide kana_date_side_confused
+    hide kana_date_confused
+    show kana_date_angry at kana_near
+    with dissolve
     "[mcname!c]" "Jadi Yang Muliaaa, kita mau ke mana lagi? Hambamu siap untuk menemanimu ke mana pun dan sampai kapan pun, ahaha."
-    show kana_date_side_confused at left with dissolve
+    hide kana_date_angry
+    show kana_date_confused at kana_near
+    show kana_date_side_confused at left
+    with dissolve
     kana "Apaan sihh Yang Mulia Yang Mulia, mending mulai sekarang kamu panggil aku “Nay” deh."
-    hide kana_date_side_confused with dissolve
+    hide kana_date_side_confused
+    hide kana_date_confused
+    show kana_date_angry at kana_near
+    with dissolve
     "[mcname!c]" "Okee dehh, Nay."
     "[mcname!c]" "Kalo gitu, kamu mau makan apa? Aku traktir deh, soalnya kamu udah guide sana-sini."
     hide kana_date_angry
@@ -592,7 +615,7 @@ label truekanajapanfest:
     "[mcname!c] pun pergi meninggalkan Kana sejenak untuk membeli takoyaki."
     $ quick_menu = False
     scene black with dissolve
-    scene lorong sore with dissolve
+    scene matsuri malam with dissolve
     #Harusnya BG MINIGAME TANA (Tanpa mainin)
     $ quick_menu = True
     "Setelah beberapa saat, [mcname!c] kembali sambil membawa takoyaki."
@@ -603,10 +626,13 @@ label truekanajapanfest:
     show kana_date_side_confused at left
     with dissolve
     kana "Lah kok gitu sih, kamu juga pasti laper kan?"
-    hide kana_date_side_confused with dissolve
+    hide kana_date_side_confused
+    hide kana_date_confused
+    show kana_date at kana_near
+    with dissolve
     "[mcname!c]" "Enggak koook."
     play sound "audio/hungry.mp3"
-    hide kana_date_confused
+    hide kana_date
     show kana_date_smile at kana_near
     with dissolve
     "Tiba-tiba, terdengar suara perut [mcname!c] yang berbunyi cukup keras sehingga Kana dapat mendengarnya."
@@ -627,9 +653,15 @@ label truekanajapanfest:
     show kana_date_side_talk at left
     with dissolve
     kana "Sini kita makan bareng aja. Ini kan ada 6, kita bagi aja. Masing-masing 3 gimana?"
-    hide kana_date_side_talk with dissolve
+    hide kana_date_side_talk
+    hide kana_date_talk
+    show kana_date at kana_near
+    with dissolve
     "[mcname!c]" "Tapi kan kamu pengen takoyaki."
-    show kana_date_side_talk at left with dissolve
+    hide kana_date
+    show kana_date_talk at kana_near
+    show kana_date_side_talk at left
+    with dissolve
     kana "Gak apa-apa kok, lagian aku juga makannya sedikit."
     hide kana_date_side_talk
     hide kana_date_talk
@@ -739,7 +771,7 @@ label truekanajapanfest:
     kana "Aaaaa, udah gak sabaar!"
     hide kana_date_side_talk with dissolve
     stop sound fadeout 1.0
-    play sound "audio/SFX - Whack.mp3" loop
+    play sound "audio/SFX - Hanabi.WAV" loop
     #Harusnya SFX Kembang Api
     $ quick_menu = False
     window auto hide
@@ -1714,8 +1746,8 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
-    #HARUSNYA *SFX Suara Kresek*
+        #play sound "audio/run.mp3"
+        #HARUSNYA *SFX Suara Kresek*
         window auto show
         $ quick_menu = True
         show kana_home_side_shy_ahn at left with dissolve
@@ -1725,7 +1757,7 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
+        #play sound "audio/run.mp3"
         #HARUSNYA *SFX Suara Kresek*
         window auto show
         $ quick_menu = True
@@ -1782,8 +1814,8 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
-    #HARUSNYA *SFX Suara Kresek*
+        #play sound "audio/run.mp3"
+        #HARUSNYA *SFX Suara Kresek*
         window auto show
         show kana_home_side_shy_ahn at left with dissolve
         $ quick_menu = True
@@ -1793,8 +1825,8 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
-    #HARUSNYA *SFX Suara Kresek*
+        #play sound "audio/run.mp3"
+        #HARUSNYA *SFX Suara Kresek*
         window auto show
         show kana_home_side_shy_ahn at left with dissolve
         $ quick_menu = True
@@ -1854,8 +1886,8 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
-    #HARUSNYA *SFX Suara Kresek*
+        #play sound "audio/run.mp3"
+        #HARUSNYA *SFX Suara Kresek*
         window auto show
         show kana_home_side_shy_ahn at left with dissolve
         $ quick_menu = True
@@ -1865,8 +1897,8 @@ label truekananeutralroute1:
         $ quick_menu = False
         window auto hide
         with Pause(2.0)
-        play sound "audio/run.mp3"
-    #HARUSNYA *SFX Suara Kresek*
+        #play sound "audio/run.mp3"
+        #HARUSNYA *SFX Suara Kresek*
         window auto show
         show kana_home_side_shy_ahn at left with dissolve
         $ quick_menu = True
@@ -1908,8 +1940,8 @@ label truekananeutralroute1:
 label truekanarightpresent:
     $ quick_menu = False
     window auto hide
-    play sound "audio/run.mp3"
-#HARUSNYA *SFX Suara Kresek*
+    #play sound "audio/run.mp3"
+    #HARUSNYA *SFX Suara Kresek*
     with Pause(2.0)
     window auto show
     $ quick_menu = True
@@ -1925,8 +1957,8 @@ label truekanarightpresent:
     "[mcname!c]" "Bentar lagi."
     $ quick_menu = False
     window auto hide
-    play sound "audio/run.mp3"
-#HARUSNYA *SFX Suara Kresek*
+    #play sound "audio/run.mp3"
+    #HARUSNYA *SFX Suara Kresek*
     with Pause(2.0)
     window auto show
     show kana_home_side_shy_ahn at left with dissolve
@@ -2039,8 +2071,8 @@ label truekanarightpresent:
     stop music
     $ quick_menu = False
     window auto hide
-    play sound "audio/open_door.mp3"
-#HARUSNYA *SFX Pintu Didobrak*
+    play sound "audio/SFX - Door Slam.mp3"
+    #HARUSNYA *SFX Pintu Didobrak*
     scene black
     with Pause(2.0)
     play music "audio/BGM_Lawak Tana.mp3" fadein 1.0

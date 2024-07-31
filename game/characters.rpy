@@ -403,12 +403,15 @@ image side flora_side_angry = "Characters/flora_side_angry.png"
 image side flora_side_angry_talk = "Characters/flora_side_angry_talk.png"
 
 # UI Telpon Tono
-image mama telpon_mamah = "telpon mamah.png"
-image tana telpon = "tonocall.png"
-image tana ring = "tonoring.png"
-image feni telpon = "fenicall.png" 
-image tana mc_telpon = "Tanacall.png"
-image tana mc_ring = "Tanaconn.png"
+image telpon_mamah = "telpon mamah.png"
+image tana_telpon = "tonocall.png"
+image tana_ring = "tonoring.png"
+image feni_telpon = "fenicall.png" 
+image tana_mc_telpon = "Tanacall.png"
+image tana_mc_ring = "Tanaconn.png"
+image kana_calling = "Kanaconn.png"
+image kana_connect = "Kanaconnect.png"
+image kana_connected = "Kanaconnected.png"
 
 # Donors
 
@@ -486,3 +489,5 @@ image pintu_kamar_kana = "assets/pintu kana.png"
 image matsuri = "assets/matsuri wgv.png"
 image idolcomp = "assets/idol comp wgv.png"
 image idolrecruit = "assets/idol club wgv.png"
+image key = "assets/key.png"
+image ticket = "assets/ticket.png"

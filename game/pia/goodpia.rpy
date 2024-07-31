@@ -90,7 +90,9 @@
     show pia_home_side_talk at left 
     with dissolve
     pia "Karena kamu baik, aku kasih kamu 1 golden tiket ini. Muahahaha!"
-    # Insert aset tiket
+    show ticket
+    show ticket:
+        pos (0.31, 0.89) zoom 0.25 
     hide pia_home_talk 
     hide pia_home_side_talk 
     with dissolve
@@ -1163,12 +1165,16 @@ label goodpiaafterquiz:
     pia "Err…i-iya..kenapa nih?"
     hide pia_talk
     hide pia_side_talk
+    show ticket
+    show ticket:
+        pos (0.29, 0.89) zoom 0.25 
     with dissolve
     "[mcname!c]" "Aku masih punya 1 tiket permintaan kan? Aku mau pake tiket itu"
     show pia_talk at pia_near
     show pia_side_talk at left
     with dissolve
     pia "Wow, oke. Apa nih?"
+    hide ticket
     hide pia_talk
     hide pia_side_talk
     with dissolve
@@ -1658,8 +1664,10 @@ label goodendpiarooftop:
     with dissolve
     "Takamina" "......."
     "Takamina terlihat sedang merogoh tasnya."
+    show key
+    show key:
+        pos (0.69, 0.7) zoom 0.1 
     play sound "SFX - Key.mp3"
-    "ASSET NUE KUNCI"
     show takamina_talk at takamina_center
     show takamina_side_talk at left
     with dissolve
@@ -1667,6 +1675,7 @@ label goodendpiarooftop:
     hide takamina_talk
     hide takamina_side_talk
     hide takamina 
+    hide key
     show pia at pia_near 
     show pia_talk at pia_near
     show pia_side_talk at left
@@ -1884,7 +1893,7 @@ label goodendpiarooftop:
     hide pia 
     show takamina at takamina_center 
     show takamina_talk at takamina_center
-    show takamina_side_talk
+    show takamina_side_talk at left
     with dissolve
     "Takamina" "Akh ini dia~"
     hide takamina_talk
@@ -2821,7 +2830,7 @@ label goodendpia:
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     $ quick_menu = False
     scene black with dissolve
-    scene konser end with dissolve
+    scene konser stage end with dissolve
     show text "{color=#FFF}THE END{/color}" with Pause(2.0)
     with Pause(20.0)
     jump credits

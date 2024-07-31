@@ -695,13 +695,15 @@ label goodkanaafterorder:
     scene kamar mc kota with dissolve
     $ quick_menu = True
     "Malam itu..."
-    play sound "audio/ReceiveText.ogg" loop
+    show kana_calling at ui_handphone with dissolve
+    play sound "audio/SFX - Telephone.mp3" loop
     "HP [mcname!c] pun berdering dengan terus menerus membuatnya terganggu karena sedang bermain game online."
-    stop sound
     "Saat melihat HPnya tersebut, ternyata itu adalah notif dari Kana. [mcname!c] pun akhirnya membalas chatnya, akan tetapi Kana langsung menelpon [mcname!c]."
     #*CUT TO SCENE*
-    #*HP FACE KANA DI HP*
-    "UI Kana Telpon MC"
+    stop sound
+    hide kana_calling
+    show kana_connect at ui_handphone
+    with dissolve
     "[mcname!c]" "Kenapa Nay?"
     show kana_side_talk at left with dissolve
     kana "Nahhh akhirnya diangkat juga, lagi sibuk kah?"
@@ -741,7 +743,7 @@ label goodkanaafterorder:
     show kana_side_shy_smile at left with dissolve
     kana "Gapapa kok, pokoknya aku ikut kepanitiaan juga ya. Gitu aja ya, dadah selamat malaamm."
     hide kana_side_shy_smile with dissolve
-    "END UI Kana Telpon MC"
+    show kana_connect at ui_handphone with dissolve
     "Suara telepon pun ditutup, [mcname!c] terdiam."
     "[mcname!c]" "Ahhhhh… Kenapa aku malah deg degan kayak gitu sih, udah lah mendingan tidur."
     stop music fadeout 1.0
@@ -2779,7 +2781,7 @@ label goodkanadancepractice:
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     $ quick_menu = False
     scene black with dissolve
-    scene konser end with dissolve
+    scene konser stage end with dissolve
     show text "{color=#FFF}THE END{/color}" with Pause(2.0)
     with Pause(20.0)
     jump credits
