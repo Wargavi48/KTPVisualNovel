@@ -249,7 +249,7 @@ label chapter1piajalancepat:
     play music "audio/BGM_Dosen.ogg" fadein 1.0
     scene kelas with Dissolve(1.0)
     $ quick_menu = True
-    "Dekan DKV" "Selamat datang Mahasiswa baru yang memasuki Nama_Kampus University…"
+    "Dekan DKV" "Selamat datang Mahasiswa baru yang memasuki Jeketi University…"
     $ quick_menu=False
     scene black with Dissolve(1.0)
     scene awan with Dissolve(1.0)
@@ -258,7 +258,7 @@ label chapter1piajalancepat:
     $ quick_menu=False
     scene kelas with Dissolve(2.0)
     $ quick_menu=True
-    "Dekan DKV" "Baik, sekian pengenalan singkat kita. Selamat datang di Nama_Kampus University para Mahasiswa dan Mahasiswi baru! Raihlah mimpi kalian di sini!! Selamat berjuang! Setelah ini, kalian dipersilahkan untuk pulang."
+    "Dekan DKV" "Baik, sekian pengenalan singkat kita. Selamat datang di Jeketi University para Mahasiswa dan Mahasiswi baru! Raihlah mimpi kalian di sini!! Selamat berjuang! Setelah ini, kalian dipersilahkan untuk pulang."
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
