@@ -119,7 +119,11 @@ label intro:
     show side mama at left
     with dissolve
     mama "Sudah siap semua kan barangnya? Gak ada yang kelupaan?"
-    hide side mama with dissolve
+    hide side mama
+    show mama at small_center
+    show mama:
+        ypos 25 zoom 0.76
+    with dissolve
     "[mcname!c]" "Udah semua kok, Mah. Ga perlu khawatir."
     show side mama at left with dissolve
     mama "Gimana Mamah gak khawatir? Kamu kan bakal merantau ke Jakarta sana."
@@ -217,14 +221,15 @@ label intro:
             ypos 2080 alpha 1.0 
             linear 1.30 ypos 1908 alpha 0.7 
     with Pause(1.40)
-    show mama at char_center with dissolve
+    show mama at char_center
+    show mama:
+        pos (0.51, -0.5) zoom 1.51 
     with dissolve
     window auto show
     $ quick_menu=True
     show side mama at left with dissolve
     mama "Kalo gitu Mamah peluk dulu deh, sebelum adek bakal pergi nanti."
     hide side mama at left with dissolve
-
     "[mcname!c]" "E-Eh Mah, tapi kan aku masih di sini. Belum mau pergi ke Jakarta."
     show side mama at left with dissolve
     mama "Kalo itu nanti bakal peluk lagi, ini cuman buat ngobatin rasa kangen yang sekarang."

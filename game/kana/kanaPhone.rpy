@@ -16,10 +16,12 @@ label phoneChat:
     kana_nvl "{size=-5}Kayaknya, lusa kita kosong nih.{/size}"
     kana_nvl "{size=-5}Gimana yang lain?{/size}"
     kana_nvl "{image=ingfo.png}"
-
-
+    scene kamar mc kota with Dissolve(0.2)
+    $ quick_menu = True
     menu:
-        "Hari Lusa":
+        "Jawabanmu..."
+        "Bisa kerja kelompok lusa":
+            $ quick_menu = False
             mc_nvl "{size=-5}Kalau lusa, aku sih kosong juga{/size}"
             mc_nvl "{size=-5}Siapa tau bisa sekalian jalan-jalan keliling Kota Jakarta, hehe.{/size}"
             mc_nvl "{size=-5}Maklum wong ndeso{/size}"
@@ -29,7 +31,7 @@ label phoneChat:
             donatur_nvl "{size=-5}Santai aja Mba? Galak banget sih, pasti bisa kok gw haha{/size}"
             mc_nvl "{size=-5}Iya. Aku kemungkinan bisa, kok{/size}"
             kana_nvl "{size=-5}Iya nih, santai aja dong Freya.{/size}"
-            kana_nvl "{size=-5}Aku takuttt (•́•̀){/size}"
+            kana_nvl "{size=-5}Aku takuttt (QAQ){/size}"
             donatur_nvl "{size=-5}Nah liat, si [kana_name] aja jadi takut{/size}"
             freya_nvl "{size=-5}Apa sih, Kana. Biasa aja kali. Jangan playing victim gitu. #KanaAkunJahat{/size}"
             freya_nvl "{image=serius.jpg}"
@@ -48,6 +50,7 @@ label phoneChat:
             stop music fadeout 1.0
             jump chapter1kana3
         "Ga bisa kerja kelompok":
+            $ quick_menu = False
             stop music fadeout 1.0
             play music "BGM_Bad End.ogg" fadein 1.0
             mc_nvl "{size=-5}Eh sorry. Aku ga bisa ikut kerja kelompok, kayaknya{/size}"
@@ -64,6 +67,7 @@ label phoneChat:
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Ghosting":
+            $ quick_menu = False
             stop music fadeout 1.0
             play music "BGM_Bad End.ogg" fadein 1.0
             scene black with Dissolve(2.0)

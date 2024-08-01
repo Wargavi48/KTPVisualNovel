@@ -85,7 +85,7 @@ label goodkana:
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
 
-        "Ayam geprek Pak Addo":
+        "Ayam Geprek Pak Hmmmm":
             stop music fadeout 1.0
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
@@ -1599,8 +1599,10 @@ label goodkanaafterorder:
     kana_nvl "Uummmm nanti besok kita ketemuan aja, gimana"
     kana_nvl "Aku ga mau jelasin hal ini di chat."
     mc_nvl "Ookee, nanti kita besok ketemuan di..."
-    #*CHOSE*
+    scene kamar mc kota with Dissolve(0.2)
+    $ quick_menu = True
     menu:
+        "Ketemuan di..."
         "Cafe":
             #*IF CHOSE*
             #A
@@ -2107,7 +2109,7 @@ label goodkanadancepractice:
     hide tana_side_angry_2
     show tana_silent at tana_near
     with dissolve
-    play sound "audio/SFX - Door Slam.WAV" fadein 1.0 volume (10.0)
+    play sound "audio/SFX - Door Slam.WAV" volume (5.0)
     "Saat keadaan memuncak, [mcname!c] datang dan menjatuhkan kantong kresek yang penuh dengan minuman dan cemilan."
     "[mcname!c]" "UDAH NAPA?! "
     "Mereka semua terdiam, melihat [mcname!c] yang telah datang."

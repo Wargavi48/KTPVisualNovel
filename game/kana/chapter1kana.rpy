@@ -2111,7 +2111,7 @@ label chapter1kana3monasesteh:
     freya "Bener, kalau mau bahas project mah nanti aja deh bahas yang lain aja napa."
     hide freya_side_angrysmile
     hide freya_angrysmile
-    show freya_annoy at freya_near_right
+    show freya at freya_near_right
     with dissolve
     hide kana
     show kana_talk at kana_near_left_2
@@ -2127,7 +2127,7 @@ label chapter1kana3monasesteh:
     "[mcname!c] menjawab dengan semangat."
     "[mcname!c]" "IYA!"
     "[mcname!c]" "Aku kemarin hampir aja dibuat nyasar sama maps..."
-    hide freya_annoy
+    hide freya
     show freya_talk at freya_near_right
     show freya_side_talk at left
     with dissolve

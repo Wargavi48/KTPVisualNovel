@@ -631,7 +631,7 @@ label goodpiaafterquiz:
     hide kana 
     hide tana 
     with dissolve
-    "[mcname!c] pun membawa Kana Tana ke Pia yang sedang berfoto dengan lukisannya."
+    "[mcname!c] pun membawa Kana dan Tana ke Pia yang sedang berfoto dengan lukisannya."
     stop sound fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
@@ -744,6 +744,7 @@ label goodpiaafterquiz:
     scene awan with Dissolve(1.0)
     show kana_side_talk at left with dissolve
     $ quick_menu = True
+    "Keesokan harinya..."
     kana "Ayoook join klub Jepaang~"
     hide kana_side_talk
     show pia_side_silent at left
@@ -757,6 +758,7 @@ label goodpiaafterquiz:
     scene awan sore with Dissolve(1.0)
     show tana_side_talk at left with dissolve
     $ quick_menu = True
+    "Tiga hari kemudian..."
     tana "Mau join klub Jepaang gak bro?"
     hide tana_side_talk
     show pia_side_silent at left
@@ -770,6 +772,7 @@ label goodpiaafterquiz:
     scene awan with Dissolve(1.0)
     show kana_side_talk at left with dissolve
     $ quick_menu = True
+    "Beberapa hari kemudian..."
     kana "Haloo, kamu cantik bangeet~"
     hide kana_side_talk
     show pia_side_silent at left

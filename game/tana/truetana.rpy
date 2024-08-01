@@ -2133,6 +2133,7 @@ label chapter2tanaTRUE3:
     show tana_shy at tana_near
     show tana_side_shy at left
     with dissolve
+#SPRITE NUE TANA NGELUARIN BENDERA PUTIH
     tana "Tadi dikasih sama bocil depan kost."
     hide tana_side_shy at left 
     hide tana_talk at tana_near

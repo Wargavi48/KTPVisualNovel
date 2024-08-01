@@ -70,7 +70,7 @@ label chapter2kanastart:
     hide side mama
     show papah_side at left
     with dissolve
-    papah "Kalo Papah sama Mamah biasanya buat malam-malam, hehe."
+    papah "Biasanya juga suka dipake sama..."
     hide papah_side
     show side mama at left
     with dissolve
@@ -78,7 +78,7 @@ label chapter2kanastart:
     hide side mama
     show papah_side at left
     with dissolve
-    papah "Ahahaha. Gapapa, biar pinter kayak Papah. Hehehe"
+    papah "Ahahaha. Gapapa, biar pinter kayak Papah. Hehehe."
     hide papah_side
     show side mama at left
     with dissolve
@@ -86,7 +86,7 @@ label chapter2kanastart:
     hide side mama
     show papah_side at left
     with dissolve
-    papah "Jadi pengen nanti malam, hehe."
+    papah "Jadi pengen main catur sama Mamah nanti malam, hehe."
     hide papah_side
     show side mama at left
     with dissolve
@@ -96,9 +96,10 @@ label chapter2kanastart:
     hide mama
     with dissolve
     "[mcname!c]" "{i}Saat itu aku gak begitu paham dengan apa yang mereka bicarakan...{/i}"
+    $ quick_menu = False
     window auto hide
     show black:
-        subpixel True 
+        subpixel True
         ypos 252 
         linear 1.30 ypos -9 
     show black as black2:
@@ -106,14 +107,12 @@ label chapter2kanastart:
         ypos 1908 
         linear 1.30 ypos 2169 
     with Pause(1.40)
-    window auto show
     stop music fadeout 1.0
     stop music fadeout 1.0
-    $ quick_menu = False
     scene black with Dissolve(2.0)
-
     play music "audio/BGM_Mall.ogg" loop fadein 1.0
     scene mall temp with Dissolve(1.0)
+    window auto show
     $ quick_menu = True
     "[mcname!c]" "{i}Hmmmm... Kalo ada orang yang cosplay, berarti ada event yang sedang berlangsung di mall ini.{/i}"
     "[mcname!c]" "{i}Gak ada salahnya nanti aku mampir sebentar ke sana.{/i}"
@@ -176,9 +175,9 @@ label chapter2kanastart:
             "[mcname!c]" "Aku harus kejar orang yang tadi! Oke saatnya aku keluarkan jurus lari ninja ku, cyaattt!"
             stop music fadeout 1.0
             scene black with dissolve
-            show text "{color=#FFF}*BUKANNYA KETEMU SAMA ORANG YANG JATUHIN MERCH KAMU MALAH DISANGKA LAGI COSPLAY DAN DI SURUH TAMPIL DI PANGGUNG DAN MENANG, DAN AKHIRNYA LU LUPA SAMA ORANG YANG TADI*{/color}" with Pause(5.0)
+            show text "{color=#FFF}BUKANNYA KETEMU SAMA ORANG YANG JATUHIN MERCH KAMU MALAH DISANGKA LAGI COSPLAY DAN DI SURUH TAMPIL DI PANGGUNG DAN MENANG, DAN AKHIRNYA LU LUPA SAMA ORANG YANG TADI{/color}" with Pause(5.0)
             scene black with dissolve
-            show text "{color=#FFF}*YAHAHA, NIAT NGEJAR MALAH JUARA! BAGUS SIH, TAPI KAN SEKARANG LU MALAH LUPA BUAT NGEMBALIIN BARANG TADI.*{/color}" with Pause(5.0)
+            show text "{color=#FFF}YAHAHA, NIAT NGEJAR MALAH JUARA! BAGUS SIH, TAPI KAN SEKARANG LU MALAH LUPA BUAT NGEMBALIIN BARANG TADI.{/color}" with Pause(5.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -1686,7 +1685,7 @@ label chapter2kanaA:
     #$ renpy.block_rollback()
     $ quick_menu = True
     "Selangkah demi selangkah, [mcname!c] menanjaki anak tangga menuju rooftop."
-    "Di tangannya ada 2 roti untuk menemani[mcname!c] dan Kana saat mengerjakan tugas nanti." 
+    "Di tangannya ada 2 roti untuk menemani [mcname!c] dan Kana saat mengerjakan tugas nanti." 
     "Saat sampai di sana, terlihat Kana sudah menunggu [mcname!c]."
     "Menyadari keberadaan [mcname!c], Kana memanggil sambil tersenyum."
     show kana_talk at kana_near with dissolve
@@ -3436,7 +3435,7 @@ label chapter2kanaB:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_lorong.ogg" fadein 1.0
+    play music "audio/BGM_Lorong.ogg" fadein 1.0
     scene lorong with Dissolve(1.0)
     #$ renpy.block_rollback()
     show freya_talk at freya_near
@@ -4920,7 +4919,7 @@ label TerimaTawaranKana:
     hide kana_shy_closeeye_talk
     with dissolve
     stop music fadeout 1.0
-    play sound "audio/SFX - Door Slam.WAV" fadein 1.0 volume (10.0)
+    play sound "audio/SFX - Door Slam.WAV" volume (5.0)
     $ quick_menu = False
     window auto hide
     with Pause(3.0)
@@ -5317,8 +5316,16 @@ label TerimaTawaranKana:
     menu:
         "Yang [mcname!c] lakukan..."
         "Ambil flyer event jejepangan.":
+            hide matsuri
+            hide club
+            with dissolve
+            show matsuri at poster
+            show matsuri:
+                    xpos 0.38
+            with dissolve
             "[mcname!c]" "{i}Kayaknya asik ke event jejepangan bareng Kana.{/i}"
             "[mcname!c]" "{i}Ehhh tapi udah kelamaan ini, ga enak sama Kana nunggu lama.{/i}"
+            hide matsuri with dissolve
             "[mcname!c] pun berlari ke kantin agar bisa datang tepat waktu."
             jump truekana
         "Ambil flyer \"Dicari Anggota Klub Jepang\".":

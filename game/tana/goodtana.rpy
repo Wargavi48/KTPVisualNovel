@@ -2944,7 +2944,7 @@ label chapter2tanaGOOD3:
     "[mcname!c]" "Keren, lahk!"
     "[mcname!c]" "Btw, mau infoin aja nih. Karena udah ada 2 orang, kalian udah bisa daftar lomba."
     stop music
-    play sound "audio/SFX - Door Slam.WAV" fadein 1.0 volume (10.0)
+    play sound "audio/SFX - Door Slam.WAV" volume (5.0)
     "[mcname!c]" "Mau kapan lati-"
     hide tana at tana_right
     hide kana at kana_near_left_2
@@ -3386,7 +3386,7 @@ label goodtanafinale:
     show feni_shock at feni_center
     show feni_side_shock at left 
     with dissolve
-    play sound "audio/SFX - Door Slam.WAV" fadein 1.0 volume (10.0)
+    play sound "audio/SFX - Door Slam.WAV" volume (5.0)
     feni "WOI!!"
     hide feni_side_shock
     hide feni_shock

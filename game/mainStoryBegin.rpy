@@ -46,11 +46,12 @@
     hide papah
     hide mama
     with dissolve
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     "Setelah mengucapkan selamat tidur, Papah dan Mamah pun pergi keluar dari kamar [mcname!c], meninggalkan [mcname!c] sendiran."
     "[mcname!c]" "Huffttt, akhirnya mereka pergi."
     "[mcname!c]" "{i}Mungkin aku bakal ngecek barang yang dibawa sekali lagi sebelum tidur, takutnya ada yang kelupaan.{/i}"
     $ quick_menu = False
-    scene black with Dissolve(1.0)
+    scene white with Dissolve(1.0)
     pause (1.0)
     scene kamar mc desa with Dissolve(1.0)
     $ quick_menu = True
@@ -72,7 +73,7 @@
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    show text "{size=45}{color=#FFF}KEESOKAN HARINYA{/color}{/size}" with Pause(2.0)
     play music "BGM_Kampus.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
