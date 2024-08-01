@@ -2816,7 +2816,7 @@ label goodkanadancepractice:
     tana_nvl "Eh besok kita datang lebih awal yaa, dari pagi aja biar ada waktu latihan dikit-dikit dan supaya ga gugup juga, gimana?"
     pia_nvl "Gue ikut deh Ton, tapi awas aja lu jangan sampe telat ya."
     kana_nvl "Dih yang bener aja."
-    kana_nvl "Aku mah ga pernah telat, coba tanya MC."
+    kana_nvl "Aku mah ga pernah telat, coba tanya [mcname!c]."
     mc_nvl "Iya ga telat, cuma mepet aja."
     kana_nvl "Heheh~"
     mc_nvl "Ya udah kalian istirahat. Besok hari besar buat kalian semua, semangat yaa jangan sampe begadang loh."

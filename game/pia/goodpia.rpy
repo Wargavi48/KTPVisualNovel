@@ -2694,14 +2694,14 @@ label goodendpiamatsuri:
     with dissolve
     "[mcname!c]" "Oh jelaaaas~"
     hide fio with dissolve
-    "MC" "Ooooy, minna-saaaan! Gimana, seruuuuu?????"
+    "Announcer" "Ooooy, minna-saaaan! Gimana, seruuuuu?????"
     play sound "SFX - Cheering.ogg" fadein 0.5
     "Penonton" "SERUUUUUUUUUUU!!!!!!"
     stop sound fadeout 1.5
-    "MC" "Selanjutnya, ada siapa yaaaa?"
-    "MC" "Ada yang bisa tebaaak??"
-    "MC" "Kita sambut, idol yang mengawali debutnya hari ini."
-    "MC" "KTp!!!!!!"
+    "Announcer" "Selanjutnya, ada siapa yaaaa?"
+    "Announcer" "Ada yang bisa tebaaak??"
+    "Announcer" "Kita sambut, idol yang mengawali debutnya hari ini."
+    "Announcer" "KTp!!!!!!"
     play sound "SFX - Cheering.ogg" fadein 0.5
     "Penonton" "UWOOOOOOOOOGGGGH!"
     "KTp masuk ke stage"
