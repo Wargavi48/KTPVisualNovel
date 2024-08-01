@@ -901,12 +901,12 @@ label chapter2tana:
     with dissolve
     "[mcname!c]" "Ooooh, Kak Feni sama Kak Flora? Ada apa, kak?"
     hide feni at feni_right
-    show feni_talk at feni_right
-    show feni_side_talk at left 
+    show feni_awe at feni_right
+    show feni_side_awe at left 
     with dissolve
     feni "Si Tana mana?"
-    hide feni_side_talk at left
-    hide feni_talk at feni_right
+    hide feni_side_awe at left
+    hide feni_awe at feni_right
     show feni at feni_right
     with dissolve
     "[mcname!c]" "Tana?"
@@ -966,27 +966,29 @@ label chapter2tana:
     flora "Betul banget. Kamu juga setuju kan, [mcname!c]?"
     hide flora_side_talk at left
     hide flora_talk at flora_left
-    show flora at flora_left
+    show flora_smile at flora_left
     with dissolve
     "[mcname!c]" "{i}Walawe. Ternyata videonya udah kesebar sampe angkatan atas.{/i}"
     "[mcname!c]" "Setuju aja sih, tapi Si Tana kayaknya ga mau ikut deh."
+    hide flora_smile
+    show flora at flora_left
     hide feni at feni_right
-    show feni_talk at feni_right
-    show feni_side_talk at left 
+    show feni_shock at feni_right
+    show feni_side_shock at left 
     with dissolve
     feni "Lah? Emangnya kenapa?"
-    hide feni_side_talk at left
-    hide feni_talk at feni_right
+    hide feni_side_shock at left
+    hide feni_shock at feni_right
     show feni at feni_right
     with dissolve
     "[mcname!c]" "Dia aja marah-marah pas videonya kesebar..."
     hide flora at flora_left
-    show flora_talk at flora_left
-    show flora_side_talk at left 
+    show flora_shock at flora_left
+    show flora_side_shock at left 
     with dissolve
     flora "Yah. Gimana dong, Kak mpen? Sayang banget kalo Tana ga ikut."
-    hide flora_side_talk at left
-    hide flora_talk at flora_left
+    hide flora_side_shock at left
+    hide flora_shock at flora_left
     hide feni at feni_right
     show flora at flora_left
     show feni_talk at feni_right
@@ -1253,14 +1255,13 @@ label chapter2tanasawah:
     tana "Eh?"
     hide tana_side_confused at left
     hide tana_confused at tana_near
-#Chibi Nue Tono Kepeleset
     show tana kepeleset at chibi_tono
-    show tana_side_shock at left with dissolve
+    show tana_side_shock at left 
+    with dissolve
     tana "AAAAAAA!!"
     hide tana_side_shock
     hide tana kepeleset
     with dissolve
-#HIDE CHIBI NUE TONO KEPELESET
     play sound "SFX - Fall Water.WAV" volume (4.0)
     show tana_shy at tana_near
     show tana_side_shy at left 
@@ -1279,7 +1280,6 @@ label chapter2tanasawah:
     hide tana_shy at tana_near with dissolve
     "[mcname!c] mengulurkan tangannya untuk membantu Tana berdiri."
     "Tapi tiba-tiba..."
-#Chibi Nue Tono narik MC
     show tana narik at chibi_tono with dissolve
     "[mcname!c]" "Eh?"
     hide tana narik with dissolve
@@ -1344,16 +1344,16 @@ label chapter2tanasawah:
     with dissolve
     "[mcname!c]" "Serius?"
     hide tana at tana_near
-    show tana_talk at tana_near
-    show tana_side_talk at left 
+    show tana_angry_2 at tana_near
+    show tana_side_angry_2 at left 
     with dissolve
     tana "Serius. Masa lu ga percaya sama gua?"
-    hide tana_side_talk at left
-    hide tana_talk at tana_near
-    show tana at tana_near
+    hide tana_side_angry_2 at left
+    hide tana_angry_2 at tana_near
+    show tana_angry at tana_near
     with dissolve
     "[mcname!c]" "Terakhir lu bilang gitu, kita nyasar sampe sore."
-    hide tana at tana_near
+    hide tana_angry at tana_near
     show tana_angry_2 at tana_near
     show tana_side_angry_2 at left 
     with dissolve
@@ -1398,7 +1398,7 @@ label chapter2tanasawah:
     show tana_confused at tana_near
     show tana_side_confused at left 
     with dissolve
-    tana "Kaga. Gua kagak nyampain apa-apa."
+    tana "Kaga. Gua kagak nyampein apa-apa."
     hide tana_side_confused at left
     hide tana_confused at tana_near
     show tana at tana_near

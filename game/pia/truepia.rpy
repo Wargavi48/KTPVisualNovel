@@ -896,6 +896,7 @@ label truepiaafterquiz:
             with dissolve
             pia "Lohhhh apaan ini, kok banyak yang rusuh sih?"
             hide pia_side_shock
+            hide pia_shock
             with dissolve
             "[mcname!c]" "Eh ini ada apaan deh?" 
             "Mahasiswa 2" "Ini yang jualan ternyata pake daging tiren kita lagi demo karena banyak yang ke RS mending lo ikutan dah ayooo."

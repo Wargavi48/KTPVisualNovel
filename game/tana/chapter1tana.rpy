@@ -599,19 +599,19 @@ label tanamcdaftarulang:
     scene black with Dissolve(1.0)
     scene ruang ukm sore with Dissolve(1.0)
     show tana at tana_near
-    show feni_talk at feni_right
+    show feni_shock at feni_right
     show flora at flora_left 
-    show feni_side_talk at left
+    show feni_side_shock at left
     with dissolve
     # # #$ renpy.block_rollback()
     $ quick_menu = True
     feni "Flo-chaaaaan dari mana aja kamu?"
     feni "Aku dari tadi beberes sendirian tauuu."
-    hide feni_side_talk at left
-    hide feni_talk at feni_right
+    hide feni_side_shock at left
+    hide feni_shock at feni_right
     hide flora at flora_left
-    show feni at feni_right
-    show flora_talk at flora_left
+    show feni_serious at feni_right
+    show flora_shock at flora_left
     show flora_side_talk at left
     with dissolve
     $ feni_name = "Feni"
@@ -619,9 +619,7 @@ label tanamcdaftarulang:
     flora "Jadinya aku nyari mereka dulu."
     hide flora_side_talk at left
     hide tana at tana_near
-    hide flora_talk at flora_left
-    hide feni at feni_right
-    show feni at feni_right
+    hide flora_shock at flora_left
     show flora at flora_left
     show tana_confused at tana_near
     show tana_side_confused at left
@@ -629,16 +627,16 @@ label tanamcdaftarulang:
     "{size=-5}[mcname!c] & Tana{/size}" "Maaf, kak..."
     hide tana_side_confused at left
     hide tana_confused at tana_near
-    hide feni at feni_right
+    hide feni_serious at feni_right
     show tana at tana_near
-    show feni_talk at feni_right
-    show feni_side_talk at left
+    show feni_awe at feni_right
+    show feni_side_awe at left
     with dissolve
     feni "Terus kenapa kalian ikut Flora ke sini?"
-    hide feni_side_talk at left
-    hide feni_talk at feni_right
+    hide feni_side_awe at left
+    hide feni_awe at feni_right
     hide flora at flora_left
-    show feni at feni_right
+    show feni_serious at feni_right
     show flora_talk at flora_left
     show flora_side_talk at left
     with dissolve
@@ -647,9 +645,7 @@ label tanamcdaftarulang:
     hide flora_side_talk at left
     hide tana at tana_near
     hide flora_talk at flora_left
-    hide feni at feni_right
     show flora at flora_left
-    show feni at feni_right
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
@@ -657,7 +653,7 @@ label tanamcdaftarulang:
     hide tana_side_talk at left
     hide tana_talk at tana_near
     hide flora at flora_left
-    hide feni at feni_right
+    hide feni_serious at feni_right
     show flora at flora_left
     show tana at tana_near
     show feni_talk at feni_right
@@ -736,13 +732,13 @@ label tanamcdaftarulang:
     show tana at tana_near
     with dissolve
     "[mcname!c]" "Iya iya..."
-    show feni_talk at feni_right
-    show feni_side_talk at left
+    show feni_awe at feni_right
+    show feni_side_awe at left
     with dissolve
     feni "[mcname!c], kamu jangan iya iya aja. Kamu beneran mau ikut atau nggak?"
     feni "Emang kamu tau soal jejepangan?"
-    hide feni_side_talk at left
-    hide feni_talk at feni_right
+    hide feni_side_awe at left
+    hide feni_awe at feni_right
     show feni at feni_right
     show flora_talk at flora_left
     show flora_side_talk at left
@@ -1343,8 +1339,7 @@ label chapter1tanamakan:
     stop music fadeout 1.0
     "Beberapa saat kemudian..."
     play music "BGM_Funny 3.ogg" fadein 1.0
-# tana batuk
-    show tana keselek at chibi_tono
+    show tono keselek 2 at chibi_tono
     show tana_side_shock at left
     with dissolve
     tana "UHUK UHUK!"
@@ -1354,10 +1349,8 @@ label chapter1tanamakan:
     tana "UHUK UHUK!"
     hide tana_side_shock with dissolve
     "[mcname!c]" "Ini minum dulu."
-    hide tana keselek
+    hide tono keselek 2
     with dissolve
-# tana batuk hide
-# tana minum
     tana "*Glug Glug*"
     tana "AHHHHH~!"
     show tana_angry at tana_near
@@ -2137,7 +2130,6 @@ label chapter1tanamakan:
     "Ada yang nelepon HP [mcname!c]."
     stop sound
     "[mcname!c] membuka HP nya dan melihat bahwa mamahnya menelpon."
-    #Insert UI Handphone Nelpon"
     "[mcname!c]" "Eh Tana, bentar ya. Mamah gue nelepon."
     "[mcname!c]" "Gue ke sana dulu, ya."
     hide tana at tana_near
@@ -2152,7 +2144,6 @@ label chapter1tanamakan:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene mall temp with Dissolve(1.0)
-    #Insert UI Handphone Nelpon"
     play music "BGM_Happy + HP.ogg" fadein 1.0 volume (2.0)
     show telpon_mamah at ui_handphone 
     show side mama at left 
@@ -2183,7 +2174,6 @@ label chapter1tanamakan:
     hide side mama at left 
     hide telpoon_mamah at ui_handphone
     with dissolve
-    "Hide UI Telepon"
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -2302,7 +2292,7 @@ label chapter1tanamakan:
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-    "Staff" "Ada kok, kak. Paket promonya 2 spicy noodle, 2 fried wonton, 2 ice tea, dan dimsum."
+    "Staff" "Ada kok kak Paket promonya, 1 paket promo isinya 2 spicy noodle, 2 fried wonton, 2 ice tea, dan dimsum."
     hide tana at tana_near
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -2421,19 +2411,17 @@ label chapter1tanamakan:
     with dissolve
     stop music fadeout 1.0
     "Tiba-tiba..."
-# SHOW tono keselek 2.png (Soalnya di ceritanya habis dari kampus, jdi harus pake keselek yg baju kampus)
     play music "BGM_Funny 3.ogg" fadein 1.0
-    show tana keselek at chibi_tono
+    show tono keselek 2 at chibi_tono
     show tana_side_shock at left 
     with dissolve
     tana "UHUK UHUK UHUK!"
     hide tana_side_shock with dissolve
     "[mcname!c]" "Nah, kan. Hadehh..."
-    hide tana keselek
+    hide tono keselek 2
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-# HIDE tono keselek 2.png
     play music "BGM_Cafe Sore.ogg" fadein 1.0
     scene cafe sore with Dissolve(1.0)
     $ quick_menu = True

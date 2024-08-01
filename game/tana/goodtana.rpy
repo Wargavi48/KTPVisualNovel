@@ -111,10 +111,13 @@ label chapter2tanaGOOD:
     tana "Enak aja."
     hide tana_side_angry_2 at left
     hide tana_angry_2 at tana_near
-    show tana_laugh at tana_near
+    show tana_angry at tana_near
     with dissolve
     "[mcname!c]" "Hahahaha."
-    show tana_side_laugh at left with dissolve
+    hide tana_angry at tana_near
+    show tana_laugh at tana_near
+    show tana_side_laugh at left 
+    with dissolve
     tana "Hahahaha."
     hide tana_side_laugh at left
     hide tana_laugh at tana_near
@@ -2534,7 +2537,7 @@ label chapter2tanaGOOD3:
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
-    tana "♪♪♪"
+    tana "🎵🎶 \n*Bernyanyi*"
     hide tana_talk at tana_near
     hide tana_side_talk at left
     show tana at tana_near

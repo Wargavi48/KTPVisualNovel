@@ -189,6 +189,7 @@ label multiendafterUTS:
             hide tana_side_shock
             hide tana_shock
             with dissolve
+            stop sound
             scene black with dissolve
             show text "{color=#FFF}*MAKANYA BROO KALAU MAU NYARI TEMPAT MAKAN TUH LIAT SITUASI DAN KONDISI*{/color}" with Pause(3.0)
             scene black with dissolve
@@ -253,6 +254,7 @@ label multiendafterUTS:
             show tana_angry at tana_near
             with dissolve
             "[mcname!c]" "Ya maaf, gue juga ga tau bakalan kaya gini..."
+            stop sound
             scene black with dissolve
             show text "{color=#FFF}*YAHAHAH KASIAN LAGI MAKAN MALAH ADA ULET, MAKAN AJA KALI KAN PROTEIN TAMBAHAN HAHAH*{/color}" with Pause(4.0)
             scene black with dissolve
