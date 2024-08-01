@@ -1386,4 +1386,5 @@ label chapter1piamakanmall:
     hide pia_side_talk
     with dissolve
     "Pia pun menegakkan kepalanya kembali dari pundak [mcname!c]. Mereka kembali ke fakultasnya untuk memasuki kelas yang dimulai sore itu."
+    $ got_selfie.grant()
     jump chapter2piabegin

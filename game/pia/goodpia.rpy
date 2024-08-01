@@ -486,6 +486,7 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
+    $ roadto_rock_idol.grant()
     scene chapter 3 pia with Dissolve (1.0)
     pause(3.0)
     scene black with Dissolve (1.0)
@@ -2858,6 +2859,7 @@ label goodendpia:
     $ quick_menu = False
     scene black with dissolve
     scene konser stage end with dissolve
+    $ rock_idol.grant()
     show text "{color=#FFF}THE END{/color}" with Pause(2.0)
     with Pause(20.0)
     jump credits
