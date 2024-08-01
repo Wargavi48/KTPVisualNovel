@@ -28,7 +28,7 @@ label multiendlearnUTS:
             play sound "audio/cafe-entrance.mp3" fadein 1.0
             play music "audio/BGM_Cafe Sore.ogg" fadein 1.0
             scene cafe sore with Dissolve(1.0)
-            # #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             show tana at tana_near with dissolve
             pause(1.0)
             hide tana

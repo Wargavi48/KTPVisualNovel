@@ -243,7 +243,7 @@ screen music():
 
 # Content of your credits screen
 define credits_string = _p("""
-{size=+15}WGV: DreamCatcher Credits{/size}
+{size=+15}WGV:DreamCatcher Credits{/size}
 \n
 
 {size=+10}Production{/size}
@@ -252,39 +252,145 @@ Wargavi48
 \n
 {size=+10}Development Team:{/size}
 \n
-Director: Nue
+{size=+10}Project Director{/size}
 \n
-Programmer: Exilade, Koko Jon, Lima, Shota, Sunny, Tomato
+Nue
 \n
-Writer: Aergia, Addo, Lenkuass, Nue, Rizka MD
+{size=+10}Project Manager{/size}
 \n
-Co-Writer: Kodok, Koko Jon, Tomato, Tebtebo
+Koko Jon
 \n
-Quiz Maker: Kodok
+{size=+10}Programmer{/size}
 \n
-Characters: Lenkuass, Nue, Yukisaki
+Exilade
 \n
-CG: Lenkuass
+Koko Jon
 \n
-Backgrounds: Awil, BlueSky, Hann, Neru, Pipigoroo, Tebtebo
+Lima
 \n
-Assets: Denden.zip, Nue, Tebtebo
+Shota
 \n
-UI Design: Heyysatsu
+Sunny
 \n
-Logo: Ahsae
+Tomato
 \n
-Pia Minigame: Tebtebo
+{size=+10}Writer{/size}
 \n
-Kana Minigame: Pipigoroo
+Aergia
 \n
-Tana Minigame: Addo
+Addo
 \n
-OST: HasbiLH, Rizuka Miku, Shiiyato
+Lenkuass
 \n
-MV: Galaxy
+Nue
 \n
-Music & Sound: BlackJckt, Copolatos, Kodok, Koko Jon, Lenkuas, Pipigoroo, Tomato
+Rizka MD
+\n
+{size=+10}Co-Writer{/size}
+\n
+Kodoknya Cepio
+\n
+Koko Jon
+\n
+Tomato
+\n
+Tebtebo
+\n
+{size=+10}Quiz Maker{/size}
+\n
+Kodoknya Cepio
+\n
+{size=+10}Characters{/size}
+\n
+Lenkuass
+\n
+Nue
+\n
+Yukisaki
+\n
+{size=+10}CG{/size}
+\n
+Lenkuass
+\n
+{size=+10}Backgrounds{/size}
+\n
+Awil
+\n
+BlueSky
+\n
+Hann
+\n
+Neru
+\n
+Pipigoroo
+\n
+Tebtebo
+\n
+{size=+10}Assets{/size}
+\n
+Denden.zip
+\n
+Nue
+\n
+Tebtebo
+\n
+{size=+10}UI Design{/size}
+\n
+Heyysatsu
+\n
+Exilade
+\n
+{size=+10}Logo{/size}
+\n
+Ahsae
+\n
+{size=+10}Pia Minigame{/size}
+\n
+Tebtebo
+\n
+{size=+10}Kana Minigame{/size}
+\n
+Pipigoroo
+\n
+{size=+10}Tana Minigame{/size}
+\n
+Addo
+\n
+{size=+10}Opening Sound Track{/size}
+\n
+HasbiLH
+\n
+Rizuka Miku
+\n
+Shiiyato
+\n
+{size=+10}Music Video{/size}
+\n
+ElaDesuu
+\n
+Galaxy
+\n
+Kaizengraphic
+\n
+Oxy Studio
+\n
+{size=+10}Music & Sound{/size}
+\n
+BlackJckt
+\n
+Copolatos
+\n
+Kodoknya Cepio
+\n
+Koko Jon
+\n
+Lenkuass
+\n
+Pipigoroo
+\n
+Tebtebo
+\n
+Tomato
 \n
 {size=+10}Sponsors{/size}
 \n
@@ -347,10 +453,6 @@ Lifeforstock on Freepik
 MrSiraphol on Freepik
 \n
 Neeka
-\n
-{size=+10}Sound Effect{/size}
-\n
-PIXABAY
 \n
 {size=+10}Background Music{/size}
 \n
@@ -474,13 +576,19 @@ U_z31mph1yzr from Pixabay
 \n
 {size=+10}Special Thanks{/size}
 \n
-All The Dreamcatcher Player & Para Warga Virtual 48
+All The Dreamcatcher Player & Warga Virtual 48
+\n
+Aka Virtual
 \n
 Ess_renpy_tutorials
 \n
-Feniks
+Feniksdev.com
+\n
+JKT48 Operational Team
 \n
 MarshaOshi
+\n
+Tetsuoga
 \n
 {size=+10}Very Special Thanks{/size}
 \n
@@ -492,7 +600,7 @@ Pia Meraleo - JKT48 Virtual
 \n\n\n
 {size=+10}
 \n
-"Thanksful messages"
+Happy 1st Anniversary JKT48V
 \n\n\n
 Warga Vitural 48
 \n\n

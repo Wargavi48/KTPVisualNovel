@@ -621,7 +621,7 @@ label chapter2tana:
     "Keesokan harinya..."
     $ quick_menu=False
     scene kamar mc kota with Dissolve(2.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu=True
     "[mcname!c]" "Aduh. Mules banget nih perut. Kesalahan nih kebanyakan makan pedes-pedes kemarin."
     "[mcname!c]" "Haduuh. Udah pasti telat nih buat mata kuliah pertama. Gua telpon titip izin dosen ke anak-anak dah."
@@ -734,7 +734,7 @@ label chapter2tana:
     "Keesokan harinya..."
     $ quick_menu=False
     scene kamar mc kota with Dissolve(2.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu=True
     "[mcname!c]" "Akhh, akhirnya perut adem gini kan enak."
     "[mcname!c]" "Btw, ini kenapa kamar gua kotor banget dah?"
@@ -760,7 +760,7 @@ label chapter2tana:
     "Tak terasa langit berubah menjadi sore."
     $ quick_menu=False
     scene kelas sore with Dissolve(2.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu=True
     "[mcname!c]" "Akh, akhirnya kelar juga nih kelas. Asli ngantuk banget dengerinnya."
     show bang_rama at bang_rama_right
@@ -1033,7 +1033,7 @@ label chapter2tana:
     "Tak terasa hari sudah sore."
     $ quick_menu = False
     scene lorong sore with Dissolve(2.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c]" "Kelar juga kelas hari ini. Padet banget jadwalnya dari pagi sampe sore."
     "[mcname!c]" "Mana gua belum ngambil sampel tanah lagi. Harusnya jam segini masih dibuka lah ya."
@@ -1041,7 +1041,7 @@ label chapter2tana:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene sawah sore with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c]" "Hmm?"
     "[mcname!c]" "Wah, itu kan Si Tana. Dia belum ngambil sample juga kah?"
@@ -1081,7 +1081,7 @@ label chapter2tana:
             show dosen_talk at dosen_center
             show dosen_side_talk at left
             with dissolve
-            # #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             dosen "Semuanya baris, ya. Tunjukin sampel tanah kalian, baru kalian boleh masuk ruang praktikum."
             hide dosen_side_talk at left 
             hide dosen_talk

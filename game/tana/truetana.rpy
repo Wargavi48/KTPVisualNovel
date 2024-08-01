@@ -361,7 +361,7 @@ label chapter2tanaTRUE:
     "Keesokan harinya..."
     $ quick_menu = False
     scene kelas with Dissolve(2.0)
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     show dosen_talk at dosen_center
     show dosen_side_talk at left
     with dissolve 
@@ -720,7 +720,7 @@ label chapter2tanaTRUE:
     "Keesokan harinya..."
     $ quick_menu = False
     scene kelas with Dissolve(2.0)
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di tengah-tengah berjalannya mata kuliah..."
     show tana_sad at tana_near
@@ -1368,12 +1368,12 @@ label chapter2tanaTRUE2:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kampus.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Tak terasa UTS pun tiba."
     $ quick_menu = False
     scene depan kampus with Dissolve(2.0)
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c]" "{i}Hmmmm.. Sekarang udah mulai UTS nih.{/i}"
     show tana_laugh at tana_near
@@ -1499,7 +1499,7 @@ label truetanaafterquiz:
     play music "audio/BGM_Kantin.ogg" fadein 1.0
     scene kantin with Dissolve(1.0)
     show tana at tana_near with dissolve
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     $ quick_menu = True
     "[mcname!c]" "Weh, kantinnya rame banget. Mejanya penuh semua."
@@ -1830,7 +1830,7 @@ label chapter2tanaTRUE3:
     "Beberapa hari kemudian..."
     $ quick_menu = False
     scene depan kampus with Dissolve(2.0)
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Saat menuju kampus, [mcname!c] bertemu dengan Tana di depan kampus."
     show tana at tana_near with dissolve
@@ -1868,7 +1868,7 @@ label chapter2tanaTRUE3:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Lorong.ogg" fadein 1.0
     scene lorong with Dissolve(1.0)
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve

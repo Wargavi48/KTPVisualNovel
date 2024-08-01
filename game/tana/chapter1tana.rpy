@@ -14,7 +14,7 @@ label chapter1tana:
     "Walaupun ini sudah pertengahan tahun, namun matahari secara terik menerangi Jakarta. Saat melihat ke atas langit, hanya langit biru lah yang terlihat."
     $ quick_menu = False
     scene depan kampus with Dissolve(2.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c] mendatangi gedung kampus untuk melakukan daftar ulang."
     "[mcname!c]" "Akhirnya sampe juga di kampus. Gede banget ya, gedungnya juga tinggi-tinggi."
@@ -81,7 +81,7 @@ label chapter1tana:
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Cuek lah gak bakal ketemu lagi sama orang-orang tadi, lanjut daftar ulang":
-            # #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = False
             stop music fadeout 1.0
             scene black with Dissolve(1.0)
@@ -117,7 +117,7 @@ label tanamcdaftarulang:
     $ quick_menu = False
     scene kamar mc kota with Dissolve(2.0)
     $ quick_menu = True
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     "[mcname!c]" "Hadeeeh. Baru juga dateng… Malu banget."
     "[mcname!c] pun mengingat kembali kejadian di depan kampus pada siang hari itu."
     show white:
@@ -157,7 +157,7 @@ label tanamcdaftarulang:
     "Keesokan harinya..."
     $ quick_menu = False
     show depan kampus with Dissolve(2.0)
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c] datang ke kampus untuk memulai orientasinya."
     "[mcname!c] pun berjalan ke kelas."
@@ -170,7 +170,7 @@ label tanamcdaftarulang:
     scene black with Dissolve(1.0)
     play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene kelas with Dissolve(1.0)
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Ternyata pas duduk di kelas, cewek yang [mcname!c] temui kemarin pun duduk juga di sebelah [mcname!c]."
     show tana_talk at tana_near
@@ -234,7 +234,7 @@ label tanamcdaftarulang:
     show dosen_talk at dosen_center
     show dosen_side_talk at left
     with dissolve
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     dosen "Selamat datang Mahasiswa baru Jurusan pertanian."
     dosen "Oke, kegiatan hari ini adalah perkenalan lingkungan kampus. Silahkan berkumpul dengan kelompoknya masing-masing."
@@ -251,7 +251,7 @@ label tanamcdaftarulang:
     show flora_talk at flora_center
     show flora_side_talk at left
     with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     $ flora_name = "Flora"
     flora "Halo semuanya! Kenalin aku Flora, pembimbing kelompok ini."
@@ -267,7 +267,7 @@ label tanamcdaftarulang:
     scene black with Dissolve(1.0)
     play music "BGM_Lorong.ogg" fadein 1.0
     scene lorong with Dissolve(1.0)
-    # $ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c] dan kelompoknya pun berkeliling kampus untuk melihat fasilitas jurusan pertanian dibimbing oleh Kakak kelasnya yang bernama Flora. Tapi tiba tiba…"
     "[mcname!c]" "{i}Duh kebelet!{/i}"
@@ -277,7 +277,7 @@ label tanamcdaftarulang:
     scene black with Dissolve(1.0)
     pause(1.0)
     scene lorong with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Setelah selesai, [mcname!c] pun keluar toilet dan melihat sekeliling."
     "[mcname!c]" "{i}Aduh pada ke mana ya? Kok udah sepi aja, mana gak tau jalan lagi.{/i}"
@@ -365,7 +365,7 @@ label tanamcdaftarulang:
     $ quick_menu = False
     scene kantin with Dissolve(2.0)
     show tana_confused at tana_near with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c]" "Tan, ini bukannya kantin ya?"
     show tana_side_confused at left with dissolve
@@ -470,7 +470,7 @@ label tanamcdaftarulang:
     show flora_angry_talk at flora_center
     show flora_side_angry_talk at left
     with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     flora "Duh. Ini dari tadi 2 orang ilang pada ke mana ya?"
     flora "Kelompoknya udah beres keliling kampus, mereka masih gak ketemu."
@@ -603,7 +603,7 @@ label tanamcdaftarulang:
     show flora at flora_left 
     show feni_side_shock at left
     with dissolve
-    # # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     feni "Flo-chaaaaan dari mana aja kamu?"
     feni "Aku dari tadi beberes sendirian tauuu."
@@ -757,7 +757,7 @@ label tanamcdaftarulang:
             show flora at flora_left
             show feni at feni_right
             with dissolve
-            # $ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = True
             "[mcname!c]" "{size=-5}-Samurai Y\n-Pemburu x Pemburu\n-Mengubah sampah menjadi pohon\n-Pelaut bulan\n-Inisial F{/size}"
             show feni_side_talk at left with dissolve
@@ -769,7 +769,7 @@ label tanamcdaftarulang:
             show flora at flora_left
             show feni at feni_right
             with dissolve
-            # $ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = True
             "[mcname!c]" "{size=-5}-Cinta Palsu\n-Ekor Peri\n-Yo-Gi-Ah 3Ds\n-Adu Gasing\n-April Skem{/size}"
             hide flora at flora_left
@@ -788,7 +788,7 @@ label tanamcdaftarulang:
             show flora at flora_left
             show feni at feni_right
             with dissolve
-            # $ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = True
             "[mcname!c]" "{size=-5}-Bola Naga X\n-Seni Pedang Offline\n-Siapa namamu?\n-Akademi Pahlawan\n-Keluarga Mata-Mata{/size}"
             show flora_side_talk at left with dissolve
@@ -990,7 +990,7 @@ label tanamcdaftarulang:
             show flora at flora_left
             show feni at feni_right
             with dissolve
-            # $ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = True
             "[mcname!c]" "Boleh. Gua juga laper nih."
             jump chapter1tanamakan
@@ -1111,7 +1111,7 @@ label chapter1tanamakan:
     show tana_angry_2 at tana_near
     show tana_side_angry_2 at left
     with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     tana "Mana nih, [mcname!c]. Lu yang bener, kocak."
     tana "Tau jalan, gak?"
@@ -1183,7 +1183,7 @@ label chapter1tanamakan:
     play sound "audio/cafe-entrance.mp3" fadein 1.0
     play music "audio/BGM_Cafe Sore.ogg" fadein 1.0
     scene cafe sore with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Setelah mengantri beberapa saat, akhirnya giliran Tana dan [mcname!c] pun tiba."
     show tana at tana_near with dissolve
@@ -1248,7 +1248,7 @@ label chapter1tanamakan:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene cafe sore with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show tana_confused at tana_near
     show tana_side_confused at left
     with dissolve
@@ -1377,7 +1377,7 @@ label chapter1tanamakan:
     "Tak terasa cafe semakin sepi dan para staff terlihat mulai\nberes-beres."
     $ quick_menu = False
     scene cafe malam with Dissolve(2.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show tana at tana_near with dissolve
     $ quick_menu = True
     "[mcname!c]" "Eh. Kayaknya udah mau tutup nih."
@@ -1521,7 +1521,7 @@ label chapter1tanamakan:
     "Keesokan harinya..."
     $ quick_menu = False
     scene depan kampus with Dissolve(2.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Pagi itu [mcname!c] terbangun dan bersiap siap untuk pergi ke kampus."
     stop music fadeout 1.0
@@ -1530,7 +1530,7 @@ label chapter1tanamakan:
     scene black with Dissolve(1.0)
     play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene kelas with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Sesampainya di kelas, tiba tiba ada yang menepuk pundak [mcname!c]."
     show tana_talk at tana_near
@@ -1578,7 +1578,7 @@ label chapter1tanamakan:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene kelas with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show tana at tana_right
     show flora_talk at flora_left
     show flora_side_talk at left
@@ -1631,7 +1631,7 @@ label chapter1tanamakan:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Sawah Siang.ogg" fadein 1.0
     scene sawah with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Flora, Tana, [mcname!c], dan mahasiswa lainnya sampai di gerbang sawah."
     show tana at tana_right
@@ -1698,7 +1698,7 @@ label chapter1tanamakan:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene sawah with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Tana dan [mcname!c] menyusuri sawah bersama."
     show tana at tana_near with dissolve
@@ -1948,7 +1948,7 @@ label chapter1tanamakan:
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     tana "Ohayou, [mcname!c]."
     hide tana_side_talk at left
@@ -1997,7 +1997,7 @@ label chapter1tanamakan:
     scene black with Dissolve(1.0)
     play music "BGM_Dosen.ogg" fadein 1.0
     scene kelas with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show dosen_talk at dosen_center
     show dosen_side_talk at left
     with dissolve
@@ -2189,7 +2189,7 @@ label chapter1tanamakan:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Game Center.ogg" fadein 1.0
     scene game center with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c]" "Tana ngapain ke sini ya?"
     "[mcname!c] menghampiri Tana yang pergi ke game center."
@@ -2203,7 +2203,7 @@ label chapter1tanamakan:
     show dance arcade:
         pos (0.5, 0.90) zoom 0.7 
     with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Terlihat seorang gadis cantik menari gemulai di depan mesin dance arcade."
     "Setiap gerakannya dari lompatan hingga ayunan lembut lengannya mengikuti irama lagu ceria yang dimainkan, membuat [mcname!c] terpukau."
@@ -2225,7 +2225,7 @@ label chapter1tanamakan:
     show dance arcade:
         pos (0.5, 0.90) zoom 0.7 
     with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Ketika tarian itu mencapai puncaknya kemudian diakhiri dengan gerakan yang elegan, memutar tubuhnya sekali lagi sebelum berhenti dengan satu gerakan terakhir yang sempurna."
     show tana_side_talk at left
@@ -2278,7 +2278,7 @@ label chapter1tanamakan:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Cafe sore.ogg" fadein 1.0
     scene cafe sore with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Sesampainya di cafe, Tana dan [mcname!c] langsung mendatangi kasir."
     show tana at tana_near with dissolve
@@ -2507,7 +2507,7 @@ label chapter1tanamakan:
     "Sesampainya di kost..."
     $ quick_menu = False
     scene kamar mc kota with Dissolve(2.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c] berbaring di kasur sambil menatap langit-langit."
     "[mcname!c]" "......"

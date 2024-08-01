@@ -11,7 +11,7 @@ label chapter2kanastart:
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Keesokan harinya..."
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     "Karena hari ini hari libur, jadi [mcname!c] memutuskan untuk menghabiskan waktunya berkeliling di mall yang dekat dengan kostnya."
     stop music fadeout 1.0
     $ quick_menu = False
@@ -200,7 +200,7 @@ label kanachapter2titippanitia:
     "Keesokan harinya..."
     $ quick_menu = False
     scene kelas with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di kelas Jeketi University, terlihat banyak mahasiswa melakukan aktivitasnya."
     "[mcname!c]" "Haduuhh, barangnya gimana ya..."
@@ -354,7 +354,7 @@ label kanachapter2titippanitia:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     scene rooftop sore with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Sesampainya di rooftop, [mcname!c] hanya melihat Kana yang memandang langit sendirian."
     show kana at kana_near with dissolve
@@ -567,7 +567,7 @@ label kanachapter2titippanitia:
     "Keesokan harinya..."
     $ quick_menu = False
     scene kelas with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show kana at kana_near_left_2
     show freya at freya_near_right
     with dissolve
@@ -736,7 +736,7 @@ label kanachapter2titippanitia:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Mall.ogg" fadein 1.0
     scene mall temp with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show kana_smile at kana_near with dissolve
     $ quick_menu = True
     "Sesampainya di mall..."
@@ -1039,7 +1039,7 @@ label kanachapter2titippanitia:
     show kana at kana_near
     with dissolve
     "[mcname!c]" "Iya iyaa."
-    play sound "audio/SFX - Countdown.mp3" fadein 1.0 volume (2.0)
+    play sound "audio/SFX - Countdown.mp3" volume (4.0)
     $ quick_menu = False
     window auto hide
     with Pause(4.5)
@@ -1161,7 +1161,7 @@ label kanachapter2titippanitia:
     show crane at crane
     with dissolve
 #CG Chibi Kana Claw Machine TANPA MC
-    play sound "audio/SFX - Countdown.mp3" fadein 1.0 volume (2.0)
+    play sound "audio/SFX - Countdown.mp3" volume (4.0)
     $ quick_menu = False
     window auto hide
     with Pause(4.5)
@@ -1189,7 +1189,7 @@ label kanachapter2titippanitia:
     hide kana_talk
     with dissolve
 #CG Chibi Kana Claw Machine TANPA MC*   
-    play sound "audio/SFX - Countdown.mp3" fadein 1.0 volume(2.0)
+    play sound "audio/SFX - Countdown.mp3" volume (4.0)
     $ quick_menu = False
     window auto hide
     with Pause(4.0)
@@ -1217,7 +1217,7 @@ label kanachapter2titippanitia:
     hide kana_shy_talk
     show crane1 at crane
     with dissolve
-    play sound "audio/SFX - Countdown.mp3" fadein 1.0 volume(2.0)
+    play sound "audio/SFX - Countdown.mp3" volume (4.0)
     $ quick_menu = False
     window auto hide
     with Pause(4.0)
@@ -1299,7 +1299,7 @@ label kanachapter2titippanitia:
     "Keesokan harinya..."
     $ quick_menu = False
     scene kelas with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show kana at kana_near with dissolve
     hide kana
     show kana_talk at kana_near
@@ -1558,7 +1558,7 @@ label kanachapter2titippanitia:
             scene black with Dissolve(1.0)
             play music "audio/BGM_Kantin.ogg" fadein 1.0
             scene kantin with Dissolve(1.0)
-            #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
             $ quick_menu = True
             "Di kantin terlihat sudah dipenuhi orang sehingga tidak ada tempat kosong untuk duduk..."
@@ -1661,7 +1661,7 @@ label kanachapter2titippanitia:
             scene black with Dissolve(1.0)
             play music "audio/BGM_Kantin.ogg" fadein 1.0
             scene kantin with Dissolve(1.0)
-            #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
             $ quick_menu = True
             "[mcname!c]" "Hmmm, sebaiknya aku pesen dulu yang dipesen Kana."
@@ -1682,7 +1682,7 @@ label chapter2kanaA:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0 volume 2.0
     scene rooftop with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Selangkah demi selangkah, [mcname!c] menanjaki anak tangga menuju rooftop."
     "Di tangannya ada 2 roti untuk menemani [mcname!c] dan Kana saat mengerjakan tugas nanti." 
@@ -1805,7 +1805,7 @@ label chapter2kanaA:
     $ quick_menu = False
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (6.0)
     scene depan kampus with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Suasana jalan di kampus lebih terasa lebih ramai daripada biasanya."
     "Banyak orang-orang yang sedang lalu lalang dan menyerahkan beberapa flyer yang entah isinya apa."
@@ -2022,7 +2022,7 @@ label chapter2kanaA:
     "Malam itu di kost..."
     $ quick_menu = False
     scene kamar mc kota with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Malamnya setelah pulang dari kampus, [mcname!c] langsung merebahkan diri di kasurnya tanpa berganti pakaian."
     "[mcname!c]" "Haaaahhhhh..."
@@ -2035,6 +2035,7 @@ label chapter2kanaA:
     nvl clear
     #Mobile Phone
     mc_nvl "Kana, kamu gapapa?"
+    $ renpy.block_rollback()
     nvl clear
     $ quick_menu = False
     scene kamar mc kota with dissolve
@@ -2061,7 +2062,7 @@ label chapter2kanaA:
     $ quick_menu = False
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     scene kelas with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Pagi itu kelas terlihat ramai oleh mahasiswa/i, namun Kanaia Asa tidak terlihat di mana pun."
     "[mcname!c]" "{i}Kayaknya hari ini Kana gak masuk juga ya.{/i}"
@@ -3437,7 +3438,7 @@ label chapter2kanaB:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Lorong.ogg" fadein 1.0
     scene lorong with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show freya_talk at freya_near
     show freya_side_talk at left
     with dissolve
@@ -3568,7 +3569,7 @@ label chapter2kanaB:
     "Beberapa hari kemudian..."
     $ quick_menu = False
     scene kelas with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     $ quick_menu = True
     "Sudah seminggu sejak kejadian itu, semuanya kembali menjadi normal."
@@ -4099,7 +4100,7 @@ label AjakKanaMainGame:
     "Berhari-hari kemudian, [mcname!c] dan Kana selalu belajar bersama di cafe."
     $ quick_menu = False
     scene cafe with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Bahkan pelayan di sana pun terasa seperti teman karena saking seringnya bertemu."
     show kana_date_confused at kana_near
@@ -4382,7 +4383,7 @@ label AjakKanaMainGame:
     "Tak terasa UTS pun tiba."
     $ quick_menu = False
     scene kelas with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Hari UTS telah tiba, [mcname!c] merasa yakin akan dirinya karena sudah belajar bersama Kana cukup lama dan merasa cukup memahami mata kuliah yang telah diberikan."
     "[mcname!c] melihat ke arah Kana dan menyapa, akan tetapi perhatiannya teralihkan saat melihat muka Kana."
@@ -4749,7 +4750,7 @@ label TerimaTawaranKana:
     "Sore itu..."
     $ quick_menu = False
     scene ruang tamu sore with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Sesaat setelah datang ke rumah Kana, [mcname!c] membawa Kana ke kamarnya."
     $ quick_menu = False
@@ -5116,7 +5117,7 @@ label TerimaTawaranKana:
     "Hari UTS susulan pun tiba."
     $ quick_menu = False
     scene depan kampus with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show kana at kana_near_left_2 with dissolve
     show freya at freya_near with dissolve
     $ quick_menu = True
@@ -5189,7 +5190,7 @@ label TerimaTawaranKana:
     "Setelah Kana mengerjakan UTS susulan..."
     $ quick_menu = False
     scene cafe with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show kana at kana_near_left_2 with dissolve
     show freya at freya_near_right with dissolve
     $ quick_menu = True

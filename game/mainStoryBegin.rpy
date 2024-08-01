@@ -77,7 +77,7 @@
     play music "BGM_Kampus.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Pagi ini [mcname!c] sudah bersiap di stasiun untuk pergi ke Jakarta."
     "[mcname!c]" "Oke Mah, Pah, aku pergi dulu yak."
@@ -91,7 +91,7 @@
     "[mcname!c]" "Siaaap."
     stop music fadeout 1.0
     stop sound fadeout 1.0
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene black with Dissolve(1.0)
@@ -121,7 +121,7 @@
     menu:
         "Yang [mcname!c] lakukan..."
         "Langsung ke kosan abis itu rapikan barang.":
-            ##$ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = False
             scene black with Dissolve(1.0)
             scene kamar mc kota with Dissolve(1.0)
@@ -134,7 +134,7 @@
             "Butuh waktu beberapa jam untuk menyelesaikan semuanya dan mengatur tata letak yang ia rasa nyaman."
             jump awalkosan
         "Muter-muter Jakarta dan habisin waktu sampai malam.":
-            ##$ renpy.block_rollback()
+            $ renpy.block_rollback()
             stop music fadeout 1.0
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
@@ -150,7 +150,7 @@
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Nyari cafe biar skena.":
-            ##$ renpy.block_rollback()
+            $ renpy.block_rollback()
             stop music fadeout 1.0
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
@@ -164,7 +164,7 @@
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "Ke warteg buat makan.":
-            #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = True
             "[mcname!c]" "Aduhhh perutku keroncongan. Makan dulu kali yah, habis itu baru ke kos. Dari berangkat belum makan soalnya."
             "[mcname!c] pun memilih untuk pergi mencari makan ke rumah makan padang yang berada di dekat kosnya."
@@ -191,7 +191,7 @@
 
 
 label awalkosan:
-        #$ renpy.block_rollback()
+        $ renpy.block_rollback()
         stop music fadeout 1.0
         $ quick_menu = False
         scene black with Dissolve(1.0)

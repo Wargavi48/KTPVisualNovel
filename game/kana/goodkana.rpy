@@ -24,6 +24,7 @@ label goodkana:
     play music "audio/BGM_Kantin.ogg" loop fadein 1.0
     scene kantin with Dissolve(1.0)
     $ quick_menu = True
+    $ renpy.block_rollback()
     "[mcname!c]" "Eh maaf lama ya, tadi abis dari toilet hehe."
     show kana at kana_near_left_2
     show freya_talk at freya_near_right
@@ -70,8 +71,10 @@ label goodkana:
     menu:
         "Kamu memesan..."
         "Nasi Cumi Pak Sunny":
+            $ renpy.block_rollback()
             jump goodkanaafterorder
         "Karedok Pak Vin":
+            $ renpy.block_rollback()
             stop music fadeout 1.0
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
@@ -86,6 +89,7 @@ label goodkana:
             jump credits
 
         "Ayam Geprek Pak Hmmmm":
+            $ renpy.block_rollback()
             stop music fadeout 1.0
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
@@ -108,6 +112,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     pause(1.0)
     scene kantin with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c]" "Eh maaf lama, tadi aku jadinya pesan nasi cumi Pak Sunny itu."
     show freya at freya_near_right
@@ -207,6 +212,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di perjalanan pulang, [mcname!c] dan Kana..."
     $ quick_menu = False
@@ -238,6 +244,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di kost..."
     $ quick_menu = False
@@ -262,9 +269,11 @@ label goodkanaafterorder:
     mc_nvl "Klo mw ikut, w tunggu jam 3 sore ya…"
     mc_nvl "Jangan telat, good night."
     kana_nvl "Ehhh..."
+    $ renpy.block_rollback()
     nvl clear
     play sound "audio/ReceiveText.ogg" loop fadein 1.0
     scene kamar mc kota with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     "HP [mcname!c] terus-terusan bersuara, suara notif tidak berhenti terdengar."
     stop sound
@@ -277,11 +286,13 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kampus Sore.ogg" loop fadein 1.0
     scene awan sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Keesokan sorenya..."
     $ quick_menu = False
     scene lorong sore with Dissolve(1.0)
     $ quick_menu = True
+    $ renpy.block_rollback()
     "[mcname!c]" "Hmmmm bentar lagi jam 3, aku tinggal aja kali ya?"
     "Saat [mcname!c] akan pergi, dari kejauhan terdengar suara Kana berteriak."
     show kana_confused at kana_near
@@ -348,6 +359,7 @@ label goodkanaafterorder:
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     play music "BGM_UKM.ogg" fadein 1.0
     scene ruang ukm sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Suasa ruangan tiba-tiba hening, akan tetapi terlihat wajah yang agak familiar di sana."
     show tana_talk at tana_near
@@ -760,6 +772,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Malam itu..."
     $ quick_menu = False
@@ -821,6 +834,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "audio/BGM_UKM.ogg" loop fadein 1.0
     scene awan with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Keesokan harinya..."
     $ quick_menu = False
@@ -841,11 +855,13 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Beberapa jam kemudian..."
     $ quick_menu = False
     scene ruang ukm sore with Dissolve(2.0)
     $ quick_menu = True
+    $ renpy.block_rollback()
     "Di akhir rapat, Pia dan Tana memanggil Kana dan [mcname!c]."
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -1066,6 +1082,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di kost..."
     $ quick_menu = False
@@ -1095,6 +1112,7 @@ label goodkanaafterorder:
     pia_nvl "Hahah"
     mc_nvl "Jadi mau ngapain nih?"
     tana_nvl "Jadiiii giniii…"
+    $ renpy.block_rollback()
     scene kamar mc kota with Dissolve(0.3)
     $ quick_menu = True
     "Tana pun menceritakan rencana dia untuk latihan persiapan lomba yang akan datang. Rencananya akan latihan seminggu 3-4x, meliputi latihan dance dan latihan bernyanyi."
@@ -1111,6 +1129,7 @@ label goodkanaafterorder:
     pia_nvl "Nahhh gitu dong. Ya udah ya, nanti ketemuan di ruangan klub ya."
     nvl clear
     stop music fadeout 1.0
+    $ renpy.block_rollback()
     $ quick_menu = False
     scene kamar mc kota with dissolve
     #*SKIP TO SCENE*
@@ -1118,6 +1137,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "audio/BGM_UKM.ogg" loop fadein 1.0
     scene awan with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Keesokan harinya..."
     $ quick_menu = False
@@ -1241,6 +1261,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Sore.ogg" loop fadein 1.0
     scene awan sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Tak terasa langit telah menjadi sore..."
     $ quick_menu = False
@@ -1310,6 +1331,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di kost..."
     $ quick_menu = False
@@ -1498,6 +1520,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Tak terasa langit telah menjadi sore..."
     $ quick_menu = False
@@ -1573,6 +1596,7 @@ label goodkanaafterorder:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di kost..."
     $ quick_menu = False
@@ -1599,6 +1623,7 @@ label goodkanaafterorder:
     kana_nvl "Uummmm nanti besok kita ketemuan aja, gimana"
     kana_nvl "Aku ga mau jelasin hal ini di chat."
     mc_nvl "Ookee, nanti kita besok ketemuan di..."
+    $ renpy.block_rollback()
     scene kamar mc kota with Dissolve(0.2)
     $ quick_menu = True
     menu:
@@ -1606,6 +1631,7 @@ label goodkanaafterorder:
         "Cafe":
             #*IF CHOSE*
             #A
+            $ renpy.block_rollback()
             mc_nvl "Gimana kalau di cafe Nay? Cafe yang sering kita kunjungi itu loh."
             kana_nvl "Uummm aku takut ada orang lain yang denger, aku malu..."
             $ quick_menu = False
@@ -1621,6 +1647,7 @@ label goodkanaafterorder:
         "Warteg":
             #*IF CHOSE*
             #B
+            $ renpy.block_rollback()
             mc_nvl "Warteg gimana Nay??? Sekalian makan siang gitu, hehe."
             kana_nvl "Yang bener aja…. Aku kan ngajaknya ngobrol, bukan makan. Bodo ah."
             $ quick_menu = False
@@ -1634,6 +1661,7 @@ label goodkanaafterorder:
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "Rumah Kana":
+            $ renpy.block_rollback()
             jump goodkanameetinhome
 
 label goodkanameetinhome:
@@ -1642,6 +1670,7 @@ label goodkanameetinhome:
     mc_nvl "Kalo di rumah gimana Nay? Aku sebenernya bebas sih mau di mana aja, yang penting kamu nyaman."
     kana_nvl "Boleh deh, nanti di rumah aku aja ya. Jam 12 siang gimana?"
     mc_nvl "Okee Nay.."
+    $ renpy.block_rollback()
     nvl clear
     scene kamar mc kota with Dissolve(0.3)
     $ quick_menu = True
@@ -1655,6 +1684,7 @@ label goodkanameetinhome:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Ruang Tamu.ogg" loop fadein 1.0
     scene awan with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Keesokan harinya..."
     $ quick_menu = False
@@ -1810,6 +1840,7 @@ label goodkanameetinhome:
     scene black with Dissolve(1.0)
     play music "BGM_Kosan 1.ogg" fadein 1.0
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     " Tak terasa langit sudah menjadi gelap."
     $ quick_menu = False
@@ -1846,6 +1877,7 @@ label goodkanameetinhome:
     scene black with Dissolve(1.0)
     play music "audio/BGM_UKM.ogg" loop fadein 1.0
     scene awan with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Keesokan harinya..."
     $ quick_menu = False
@@ -2247,6 +2279,7 @@ label goodkanadancepractice:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Sore.ogg" loop fadein 1.0
     scene awan sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Beberapa jam kemudian..."
     $ quick_menu = False
@@ -2334,6 +2367,7 @@ label goodkanadancepractice:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Sore.ogg" loop fadein 1.0
     scene awan sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Suatu hari..."
     $ quick_menu = False
@@ -2449,6 +2483,7 @@ label goodkanadancepractice:
     scene black with Dissolve(1.0)
     play music "audio/BGM_UKM.ogg" loop fadein 1.0
     scene awan with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Beberapa hari kemudian..."
     "Tak terasa, waktu telah sampai ke H-1 acara."
@@ -2585,6 +2620,7 @@ label goodkanadancepractice:
     $ quick_menu = False
     play music "audio/BGM_Rooftop Sore.ogg" loop fadein 1.0
     scene awan sore with Dissolve(2.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Tak terasa langit telah menjadi sore..."
     $ quick_menu = False
@@ -2796,6 +2832,7 @@ label goodkanadancepractice:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di kost..."
     $ quick_menu = False
@@ -2823,6 +2860,7 @@ label goodkanadancepractice:
     kana_nvl "Siappp!"
     pia_nvl "Okee"
     tana_nvl "Okee Brookkk."
+    $ renpy.block_rollback()
     nvl clear
     stop music fadeout 1.0
     scene kamar mc kota with dissolve
@@ -2831,6 +2869,7 @@ label goodkanadancepractice:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Monas.ogg" loop fadein 1.0
     scene awan with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Tak terasa hari festival pun tiba."
     $ quick_menu = False
@@ -2907,6 +2946,7 @@ label goodkanadancepractice:
     scene black with Dissolve(1.0)
     play music "BGM_sore.ogg"
     scene awan sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Tak terasa langit telah menjadi sore..."
     $ quick_menu = False
