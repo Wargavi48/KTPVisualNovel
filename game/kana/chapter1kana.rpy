@@ -24,7 +24,7 @@ label chapter1kana1:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Kelas.ogg" fadein 1.0
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     scene kelas with Dissolve(1.0)
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
@@ -120,7 +120,7 @@ label chapter1kana1:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Kelas.ogg" fadein 1.0
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene kelas with Dissolve(1.0)
     $ quick_menu = True 
     "[mcname!c] meregangkan badannya yang terasa kaku akibat duduk terlalu lama."
@@ -174,7 +174,7 @@ label chapter1kana1:
             play music "BGM_Bad End.ogg" fadein 1.0
             "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit..."
             scene black with dissolve
-            show text "{color=#FFF}MAKANYA JANGAN MAKAN SEMBARANG BROO KAN MASUK RUMAH SAKIT{/color}" with Pause(2.0)
+            show text "{color=#FFF}MAKANYA JANGAN MAKAN SEMBARANG BROO KAN MASUK RUMAH SAKIT{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             stop music fadeout 1.0
@@ -608,7 +608,7 @@ label chapter1kana2Campus:
     "[mcname!c] berlari menuju lift yang akan tertutup."
     "Di dalam lift terlihat seorang cewek yang sepertinya juga mau menuju ke kelas..."
     $ quick_menu = False
-    play sound "audio/ding.mp3"
+    play sound "audio/ding.mp3" volume(3.0)
     show lift at lift_center with dissolve
     $ quick_menu = True
     "[mcname!c]" "Huft… huft… huft."
@@ -623,7 +623,7 @@ label chapter1kana2Campus:
     "Sibuk menarik nafas dari olahraga pagi yang tidak direncanakan tadi, [mcname!c] tidak terlalu memperhatikan perempuan yang ada di lift."
     "[mcname!c]" "Huft... huft...."
     "[mcname!c]" "{i}Kayaknya aku harus ningkatin staminaku lagi nih.{/i}"
-    play sound "audio/ding.mp3"
+    play sound "audio/ding.mp3" volume(3.0)
     $ quick_menu = False
     hide lift
     show freya at freya_near 
@@ -1111,7 +1111,7 @@ label chapter1kana3:
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
             scene black with Dissolve(2.0)
-            show text "{color=#FFF}LO KEPEDESAN DAN AKHIRNYA MALAH KE WC TERUS TERUSAN DARIPADA NGOBROL SAMA MEREKA{/color}" with Pause(2.0)
+            show text "{color=#FFF}LO KEPEDESAN DAN AKHIRNYA MALAH KE WC TERUS TERUSAN DARIPADA NGOBROL SAMA MEREKA{/color}" with Pause(5.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene black with dissolve
@@ -1128,7 +1128,7 @@ label chapter1kana3:
             scene black with dissolve
             show text "{color=#FFF}AKHIRNYA LO KERACUNAN MAKANAN.{/color}" with Pause(2.0)
             scene black with dissolve
-            show text "{color=#FFF}MBAK YANG JUALAN PUN AKHIRNYA DIMARAHIN KARENA UDAH BIKIN MAHASISWANYA KERACUNAN MAKANAN{/color}" with Pause(2.0)
+            show text "{color=#FFF}MBAK YANG JUALAN PUN AKHIRNYA DIMARAHIN KARENA UDAH BIKIN MAHASISWANYA KERACUNAN MAKANAN{/color}" with Pause(5.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene black with dissolve
@@ -1389,7 +1389,7 @@ label chapter1kana3mie:
             scene black with dissolve
             show text "{color=#FFF}AKHIRNYA MALAH PINGSAN KAN{/color}" with Pause(2.0)
             scene black with dissolve
-            show text "{color=#FFF}BERANGKAT LEBIH AWAL JUGA BAGUS, TAPI GAK SAMPE SEHARI SEBELUM JUGA KALI{/color}" with Pause(2.0)
+            show text "{color=#FFF}BERANGKAT LEBIH AWAL JUGA BAGUS, TAPI GAK SAMPE SEHARI SEBELUM JUGA KALI{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FFF}HADEEEUHHH DASAR{/color}" with Pause(2.0)
             scene black with dissolve
@@ -1404,7 +1404,7 @@ label chapter1kana3kos:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Di kost..."
@@ -1660,9 +1660,9 @@ label chapter1kana3monas:
             scene black with dissolve
             show text "{color=#FFF}BRO YANG BENER AJA{/color}" with Pause(2.0)
             scene black with dissolve
-            show text "{color=#FFF}DI KIRA MEREKA ABIS OLAHRAGA ATAU NUKANG KALI YA DI KASIH GINIAN{/color}" with Pause(2.0)
+            show text "{color=#FFF}DI KIRA MEREKA ABIS OLAHRAGA ATAU NUKANG KALI YA DI KASIH GINIAN{/color}" with Pause(4.0)
             scene black with dissolve
-            show text "{color=#FFF}AKHIRNYA MEREKA GA MAU NGOBROL KAN SAMA LO LAGI{/color}" with Pause(2.0)
+            show text "{color=#FFF}AKHIRNYA MEREKA GA MAU NGOBROL KAN SAMA LO LAGI{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             stop music fadeout 1.0
@@ -1872,7 +1872,7 @@ label chapter1kana3monasesteh:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Di kost..."

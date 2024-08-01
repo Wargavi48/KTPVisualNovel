@@ -130,8 +130,8 @@ label chapter2kanastart:
     stop sound fadeout 1.0
     stop music fadeout 1.0
     "Tiba-tiba..."
-    play music "BGM_Funny 3.ogg" fadein 0.5
-    play sound "audio/tabrakan.mp3" volume (7.0)
+    play music "BGM_Funny 3.ogg" fadein 1.0
+    play sound "audio/tabrakan.mp3" volume (4.0)
     show kana wibu at chibi_tono with dissolve
     "Sepertinya [mcname!c] tidak sengaja menabrak seseorang saat berjalan."
     hide kana wibu
@@ -176,9 +176,9 @@ label chapter2kanastart:
             "[mcname!c]" "Aku harus kejar orang yang tadi! Oke saatnya aku keluarkan jurus lari ninja ku, cyaattt!"
             stop music fadeout 1.0
             scene black with dissolve
-            show text "{color=#FFF}*BUKANNYA KETEMU SAMA ORANG YANG JATUHIN MERCH KAMU MALAH DISANGKA LAGI COSPLAY DAN DI SURUH TAMPIL DI PANGGUNG DAN MENANG, DAN AKHIRNYA LU LUPA SAMA ORANG YANG TADI*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*BUKANNYA KETEMU SAMA ORANG YANG JATUHIN MERCH KAMU MALAH DISANGKA LAGI COSPLAY DAN DI SURUH TAMPIL DI PANGGUNG DAN MENANG, DAN AKHIRNYA LU LUPA SAMA ORANG YANG TADI*{/color}" with Pause(5.0)
             scene black with dissolve
-            show text "{color=#FFF}*YAHAHA, NIAT NGEJAR MALAH JUARA! BAGUS SIH, TAPI KAN SEKARANG LU MALAH LUPA BUAT NGEMBALIIN BARANG TADI.*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*YAHAHA, NIAT NGEJAR MALAH JUARA! BAGUS SIH, TAPI KAN SEKARANG LU MALAH LUPA BUAT NGEMBALIIN BARANG TADI.*{/color}" with Pause(5.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -195,7 +195,7 @@ label kanachapter2titippanitia:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Keesokan harinya..."
@@ -353,7 +353,7 @@ label kanachapter2titippanitia:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     scene rooftop sore with Dissolve(1.0)
     #$ renpy.block_rollback()
     $ quick_menu = True
@@ -1479,7 +1479,7 @@ label kanachapter2titippanitia:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene kelas with Dissolve(1.0)
     $ quick_menu = True
     "[mcname!c]" "Tumben juga kali ini cepet kelasnya, jadi ada waktu free gini."
@@ -1766,7 +1766,7 @@ label chapter2kanaA:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0 volume 2.0
     scene awan sore with Dissolve(1.0)
     $ quick_menu = True
     "Tak terasa waktu telah menjadi sore."
@@ -2017,7 +2017,7 @@ label chapter2kanaA:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Malam itu di kost..."
@@ -2177,7 +2177,7 @@ label chapter2kanaA:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Kelas.ogg" fadein 1.0
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Keesokan harinya..."
@@ -2337,7 +2337,7 @@ label chapter2kanaA:
     "Terlihat rumah yang cukup mewah, bahkan lebih besar dari rumah [mcname!c] di kampung."
     "[mcname!c]" "Kalau gak salah, pernah denger kalo Kana itu orang kaya."
     "[mcname!c]" "Tapi gak nyangka bakal sebesar ini."
-    play sound "audio/ding.mp3" volume(3.0)
+    play sound "audio/ding.mp3" volume(3.0) volume(3.0)
     "[mcname!c] pun kemudian mencoba membunyikan bel yang ada di dekat pintu."
     "Tidak lama setelah bel berbunyi, terdengar suara langkah kaki menuju pintu depan."
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
@@ -2391,7 +2391,7 @@ label chapter2kanaA:
             "[mcname!c]" "{i}Sepertinya Kana tidak bisa ku ganggu.{/i}"
             "[mcname!c]" "{i}Mungkin kubiarkan aja dulu.{/i}"
             scene black with dissolve
-            show text "{color=#FFF}*AKHIRNYA KAMU MUNDUR DARI KAMARNYA KANA DAN MEMILIH UNTUK MENDEKATI MAMAHNYA*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*AKHIRNYA KAMU MUNDUR DARI KAMARNYA KANA DAN MEMILIH UNTUK MENDEKATI MAMAHNYA*{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END(?)\nWIN FOR SOME{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -3563,7 +3563,7 @@ label chapter2kanaB:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Beberapa hari kemudian..."
@@ -3592,7 +3592,7 @@ label chapter2kanaB:
     stop music fadeout 1.0
     $ quick_menu=False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene kelas with Dissolve(1.0)
     $ quick_menu=True
     "Mata kuliah telah dimulai dan kondisi kelas pun tiba-tiba menjadi hening. Di dalam keheningan tersebut ada yang tertidur pulas, ada yang bermain HP, dan ada yang mencatat."
@@ -3761,7 +3761,7 @@ label chapter2kanaB:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0
+    play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0 volume (2.0)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Keesokan harinya..."
@@ -3850,7 +3850,7 @@ label chapter2kanaB:
             play music "BGM_Bad End.ogg" fadein 1.0
             "[mcname!c] memilih untuk main game sendiri dan mengabaikan Kana seakan dia tidak ada. Dunia milik berdua antara [mcname!c] dan HP, hal ini membuat Kana ngambek dan meninggalkan [mcname!c] yang sedang asik bermain HP."
             scene black with dissolve
-            show text "{color=#FFF}*BROOO KALAU LAGI MAIN SAMA TEMEN, JANGAN KESERINGAN MAIN HP NAPA?! KAN JADINYA GINI, YA ELAH YANG BENER AJA.*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*BROOO KALAU LAGI MAIN SAMA TEMEN, JANGAN KESERINGAN MAIN HP NAPA?! KAN JADINYA GINI, YA ELAH YANG BENER AJA.*{/color}" with Pause(5.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -3865,7 +3865,7 @@ label chapter2kanaB:
             play music "BGM_Bad End.ogg" fadein 1.0
             "[mcname!c] memilih untuk rebahan dan tiduran untuk sejenak di pangkuan Kana dan minta tolong ke Kana buat bangunin dia. Tapi ternyata saat Kana mencoba membangunkan kamu, kamu malah keenakan tidur di pangkuan Kana. Karena kamu merasa nyaman, akhirnya kamu tidak pernah bangun lagi."
             scene black with dissolve
-            show text "{color=#FFF}*EH CUY LO INI LAGI DI CAFE BUKAN DI KOST. LAGIAN KAN INI LAGI KERJA KELOMPOK DAH, KENAPA MALAH TIDUR? MIKIR BRO MIKIR!*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*EH CUY LO INI LAGI DI CAFE BUKAN DI KOST. LAGIAN KAN INI LAGI KERJA KELOMPOK DAH, KENAPA MALAH TIDUR? MIKIR BRO MIKIR!*{/color}" with Pause(5.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -4004,7 +4004,7 @@ label AjakKanaMainGame:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Tidak terasa langit telah menjadi gelap..."
@@ -4189,7 +4189,7 @@ label AjakKanaMainGame:
     "Kana kemudian membunyikan bel yang ada di dekat pintu rumahnya."
     show kana_date_side_talk at left 
     with dissolve
-    play sound "audio/ding.mp3"
+    play sound "audio/ding.mp3" volume(3.0)
     kana "Mamaahh, aku pulaaang~"
     kana "Ada [mcname!c] juga nih."
     hide kana_date_side_talk 
@@ -4266,7 +4266,7 @@ label AjakKanaMainGame:
     stop music fadeout 1.0
     $ quick_menu=False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu=True
     "Tak terasa waktu telah menjadi malam."
@@ -4377,7 +4377,7 @@ label AjakKanaMainGame:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
     $ quick_menu = True   
     "Tak terasa UTS pun tiba."
@@ -4536,7 +4536,7 @@ label kanaafterquiz:
     with dissolve
     window auto show
     $ quick_menu=True
-    play music "audio/BGM_Funny 1.ogg"
+    play music "audio/BGM_Funny 1.ogg" fadein 0.5
     #HARUSNYA LAWAK YANG SATUNYA
     "Dokter" "DIA GAPAPA KOKK~ Cuma demam kecapekan doang, ga usah khawatir."
     "Dokter" "Soal riwayat kesehatannya, buat sekarang Kana udah diinfus jadinya aman. Harusnya sekarang kamu udah bisa jenguk dia."
@@ -4545,7 +4545,7 @@ label kanaafterquiz:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     scene kamar hospital with Dissolve(1.0)
     show kana_sick at kana_near with dissolve
     $ quick_menu = True
@@ -4703,7 +4703,7 @@ label kanaafterquiz:
             with dissolve
             "[mcname!c] menolak tawaran Kana. [mcname!c] terlalu malu untuk menerima ajakan itu, dan akhirnya Kana disuruh pulang sendiri."
             scene black with dissolve
-            "BROOO ANAK ORANG LAGI SAKIT MALAH LO SURUH BALIK SENDIRI GA TAKUT DIA KENAPA KENAPA KAH?"
+            show text "{color=#FFF}BROOO ANAK ORANG LAGI SAKIT MALAH LO SURUH BALIK SENDIRI GA TAKUT DIA KENAPA KENAPA KAH?{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -4721,7 +4721,7 @@ label kanaafterquiz:
             "[mcname!c] memilih kabur dari tempat itu saking malunya karena membayangkan berduaan dengan Kana. Setelah itu pun kamu tidak tau Kana pulang atau tidak, tetapi kamu hanya mendapatkan kabar dari Kana melalui HP dengan kata-kata \"kamu jahat\"."
             stop music fadeout 1.0
             scene black with dissolve
-            "BROOO KO KABUR SIH? APA SIH YANG BIKIN LU MALU TUH, GA JELAS BANGET DAH!"
+            show text "{color=#FFF}BROOO KO KABUR SIH? APA SIH YANG BIKIN LU MALU TUH, GA JELAS BANGET DAH!{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             scene black with dissolve
@@ -5012,7 +5012,7 @@ label TerimaTawaranKana:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Tak terasa langit telah menjadi gelap."
@@ -5099,7 +5099,7 @@ label TerimaTawaranKana:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Selagi dalam masa pemulihan, [mcname!c] dan Freya saling bergantian untuk menjenguk Kana."
@@ -5184,7 +5184,7 @@ label TerimaTawaranKana:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0
+    play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0 volume (2.0)
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Setelah Kana mengerjakan UTS susulan..."

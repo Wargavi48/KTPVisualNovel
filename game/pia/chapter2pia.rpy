@@ -927,7 +927,8 @@ label chapter2piaaftergame:
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
             scene black with dissolve
-            "Beberapa bulan kemudian, ada gosip beredar bahwa acara jejepangan tersebut gagal dilaksanakan karena promotor acara kabur membawa uang donatur dan sponsor."
+            $ narasi = "Beberapa bulan kemudian, ada gosip beredar bahwa acara jejepangan tersebut gagal dilaksanakan karena promotor acara kabur membawa uang donatur dan sponsor."
+            show text "{color=#FFF}[narasi!u]{/color}" with Pause(5.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(4.0)
             stop music fadeout 1.0

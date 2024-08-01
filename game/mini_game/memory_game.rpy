@@ -127,6 +127,6 @@ label startPiaGame:
     show text "{color=#FFF}MINI GAME TIME{/color}" with Pause(2.0)
     $randomize_cards() # Create cards.
     "Selesaikan mini game untuk menyelesaikan gambar Pia"
-    play music "audio/BGM_Mini Game Pia.mp3" fadein 1.0
+    play music "audio/BGM_Mini Game Pia.ogg" fadein 1.0
     call screen memory_mini_game
     

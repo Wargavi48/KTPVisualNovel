@@ -970,7 +970,7 @@ label chapter2tanaTRUE2:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play sound "audio/cafe-entrance.mp3" fadein 1.0
-    play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0
+    play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0 volume (2.0)
     scene cafe sore with Dissolve(1.0)
     $ quick_menu = True
     "Staff" "Selamat datang, mau pesan apa?"
@@ -1286,7 +1286,7 @@ label chapter2tanaTRUE2:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Sesampainya di kost Tana..."
@@ -1737,7 +1737,7 @@ label chapter2tanaTRUE3:
     scene black with Dissolve(1.0)
     play sound "SFX - Open Locked Door.WAV" volume (5.0)
     pause (3.0)
-    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     scene rooftop sore with Dissolve(1.0)
     show tana_talk at tana_near
     show tana_side_talk at left 
@@ -2307,7 +2307,7 @@ label chapter2tanaTRUE3:
     scene depan kosan with Dissolve(2.0)
     $ quick_menu = True
     "[mcname!c]" "Sampe juga."
-    play sound "audio/ding.mp3" loop volume (3.0)
+    play sound "audio/ding.mp3" volume(3.0) loop volume (3.0)
     "[mcname!c] pun menekan tombol bel di sebelah pintu kost Tana."
     stop sound
     "[mcname!c]" "Permisii~"
@@ -2985,7 +2985,7 @@ label chapter2tanaTRUE3:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Tak terasa langit menjadi gelap..."
@@ -3104,7 +3104,7 @@ label trueendtana:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with dissolve
-    play music "audio/bgm_kantin.mp3" fadein 1.0
+    play music "audio/BGM_Kantin.ogg" fadein 1.0
     scene kantin with dissolve
     $ quick_menu = True
     "[mcname!c]" "Mau makan apa?"
@@ -3461,7 +3461,7 @@ label trueendtana:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kelas.ogg" fadein 1.0
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
     $ quick_menu=True
     "Keesokan harinya..."
@@ -3584,7 +3584,7 @@ label trueendtana:
     hide tana_laugh at tana_near 
     with dissolve
     stop music fadeout 1.0
-    play music "audio/BGM_Dosen + Rektor.mp3" fadein 1.0
+    play music "audio/BGM_Dosen.ogg" fadein 1.0
     show dosen_talk at dosen_center 
     show  dosen_side_talk at left 
     with dissolve 
@@ -3754,7 +3754,7 @@ label trueendtana:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Sesampainya di kost…"
@@ -3775,7 +3775,7 @@ label trueendtana:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Malam itu..."
@@ -4303,7 +4303,7 @@ label truetanaaftergame:
     with dissolve
     "[mcname!c]" "Iya iya, sabar kocak."
     hide tana_date at tana_near with dissolve
-    play sound "SFX - Open Locked Door.WAV"
+    play sound "SFX - Open Locked Door.WAV" volume (5.0)
     "[mcname!c] pun membuka gerbang sawah menggunakan kunci milik Flora."
     stop sound
     "[mcname!c]" "Udah, Ton. Ayo masuk."

@@ -11,7 +11,7 @@
     $ quick_menu = True
     "Di kost, [mcname!c] duduk di meja belajarnya sambil mulai mengeluarkan buku-buku dan catatan materi ujian esok hari."
     "[mcname!c] bersiap begadang untuk fokus belajar karena besok adalah salah satu ujian mata kuliah tertulis yang paling sulit."
-    play sound "audio/ReceiveText.ogg" loop volume(2.0)
+    play sound "ReceiveText.ogg" loop volume (2.0) volume(2.0)
     "Tiba-tiba terdengar notifikasi dari handphone [mcname!c]."
     "[mcname!c]" "...."
     "[mcname!c]" "................."
@@ -337,7 +337,7 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0 volume 2.0
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Di rooftop..."
@@ -421,7 +421,7 @@ label goodpiaafterquiz:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     stop music fadeout 1.0
-    play music "BGM_Rooftop Siang.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0 volume 2.0
     scene rooftop with Dissolve(1.0)
     $ quick_menu = True
     "[mcname!c]" "Btw tadi mereka juga sempet nanyain, mau join club jepang, gak?"
@@ -589,7 +589,7 @@ label goodpiaafterquiz:
     "Tiba-tiba, [mcname!c] melihat ada 2 orang berlari menuju ke arahnya."
     "[mcname!c]" "Waduh, lari ke gue gak sih? Apa belakang gue? Belakang gue ga ada orang sih."
     "*[mcname!c] berjalan meminggir agar tidak menghalangi 2 orang tersebut*"
-    play sound "audio/run.mp3"
+    play sound "audio/run.mp3" fadein 1.0 volume (10.0)
     "[mcname!c]" "Kayaknya fix lari ke gue"
     stop sound fadeout 1.0
     show kana_talk at kana_near
@@ -781,7 +781,7 @@ label goodpiaafterquiz:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Rooftop Siang.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0 volume 2.0
     scene rooftop with Dissolve(1.0)
     # $ renpy.block_rollback()
     $ quick_menu = True
@@ -1427,7 +1427,8 @@ label goodpiaafterquiz:
             scene ruang ukm with dissolve
             # $ renpy.block_rollback()
             $ quick_menu = True
-            "Pia memutuskan untuk tidak ikut club jepang dan tidak beraktivitas menjadi idol lagi."
+            $ narasi = "Pia memutuskan untuk tidak ikut club jepang dan tidak beraktivitas menjadi idol lagi."
+            show text "{color=#FFF}[narasi!u]{/color}" with Pause(2.0)
             $ quick_menu = False
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
@@ -1455,7 +1456,7 @@ label goodendpiarooftop:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     scene rooftop sore with Dissolve(1.0)
     show kana at kana_near_left_2
     show pia at pia_near_right
@@ -1667,7 +1668,7 @@ label goodendpiarooftop:
     show key
     show key:
         pos (0.69, 0.7) zoom 0.1 
-    play sound "SFX - Key.mp3"
+    play sound "SFX - Key.mp3" volume (5.0)
     show takamina_talk at takamina_center
     show takamina_side_talk at left
     with dissolve
@@ -1749,7 +1750,7 @@ label goodendpiarooftop:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0 volume 2.0
     scene awan with Dissolve(1.0)
     $ quick_menu = True
     "Keesokan harinya..."
@@ -1796,7 +1797,7 @@ label goodendpiarooftop:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     scene awan sore with Dissolve(1.0)
     $ quick_menu = True
     "Tak terasa waktu telah menjadi sore."
@@ -1998,7 +1999,7 @@ label goodendpiarooftop:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "BGM_Rooftop Sore.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     scene awan sore with Dissolve(1.0)
     $ quick_menu = True
     "Sore itu..."
@@ -2084,7 +2085,7 @@ label goodendpiarooftop:
     hide pia_shock 
     hide pia_side_shock
     with dissolve
-    play music "BGM_Rooftop Sore.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     show feni at feni_center 
     show feni_talk at feni_center
     show feni_side_talk at left

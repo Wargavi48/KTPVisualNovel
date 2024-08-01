@@ -72,7 +72,7 @@ label chapter1pia:
             #$ renpy.block_rollback()
             $ quick_menu = False
             scene black with dissolve
-            show text "{color=#FFF}KALIAN BERDUA MALAH BERANTEM TERUS DILIATIN \nDAN BAHKAN DIREKAM ORANG-ORANG.{/color}" with Pause(2.0)
+            show text "{color=#FFF}KALIAN BERDUA MALAH BERANTEM TERUS DILIATIN \nDAN BAHKAN DIREKAM ORANG-ORANG.{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -100,7 +100,7 @@ label chapter1pia:
             "[mcname!c]" "Dengerin dulu."
             "[mcname!c]" "Jadi-"
             scene black with dissolve
-            show text "{color=#FFF}LU MALAH NASEHATIN DAN MALAH BIKIN PEREMPUAN ITU TERLAMBAT \nDAN LU PUN DILIAT ANEH SAMA ORANG-ORANG.{/color}" with Pause(2.0)
+            show text "{color=#FFF}LU MALAH NASEHATIN DAN MALAH BIKIN PEREMPUAN ITU TERLAMBAT \nDAN LU PUN DILIAT ANEH SAMA ORANG-ORANG.{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -133,7 +133,7 @@ label chapter1piacarajalan:
             "[mcname!c]" "{i}EH, udah jam segini!!?? Oke gue lariii.{/i}"
             "[mcname!c] pun memilih untuk lari karena terburu-buru… akan tetapi dia tidak melihat adanya lampu lalu lintas dan akhirnya ketabrak truk"
             scene black with dissolve
-            show text "{color=#FFF}ADUHHHH BROOO BURU-BURU SIH... BURU-BURU TAPI GA USAH LARI BANGET JUGA KALI{/color}" with Pause(2.0)
+            show text "{color=#FFF}ADUHHHH BROOO BURU-BURU SIH... BURU-BURU TAPI GA USAH LARI BANGET JUGA KALI{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FFF}AKHIRNYA GA LIAT LAMPU MERAH TERUS KETABRAK KAN?!!{/color}" with Pause(2.0)
             scene black with dissolve
@@ -542,9 +542,9 @@ label chapter1piajalancepat:
             with dissolve
             pia "Oh oke, makasih"
             scene black with dissolve
-            show text "{color=#FFF}Ternyata [mcname!c] lupa ngabarin Pia tempatnya.{/color}" with Pause(2.0)
+            show text "{color=#FFF}TERNYATA [mcname!u] LUPA NGABARIN PIA TEMPATNYA.{/color}" with Pause(2.0)
             scene black with dissolve
-            show text "{color=#FFF}[mcname!c] jadi lebih seneng nongkrong sama anak-anak cowok dan mulai menjauh dari Pia.{/color}" with Pause(2.0)
+            show text "{color=#FFF}[mcname!u] JADI LEBIH SENENG NONGKRONG SAMA ANAK-ANAK COWOK DAN MULAI MENJAUH DARI PIA.{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -1051,7 +1051,7 @@ label chapter1piamakanmall:
     with dissolve
     pia "Selfie ah!!"
     # window auto hide
-    play sound "audio/camera.mp3" loop
+    play sound "audio/camera.mp3" volume (2.0)
     hide pia_date_side_talk with dissolve
     stop sound 
     with Pause(1.0)
@@ -1067,7 +1067,7 @@ label chapter1piamakanmall:
     hide pia_date_side_shock
     show pia_date_smile at pia_near
     with dissolve
-    play sound "audio/camera.mp3"
+    play sound "audio/camera.mp3" volume (2.0)
     "Fiony ngeliatin dari jauh sambil senyum-senyum ngeledek nyindir Pia."
     hide pia_date_smile 
     show pia_date_side_shock at left 

@@ -102,7 +102,7 @@ label truekanakos:
             "[mcname!c] memilih untuk menghubungi Kana dengan awalan “P”, dibandingkan hal lainnya."
             "Kana pun tidak membalas chat tersebut dan meng-ghosting pesan dari [mcname!c] sampai event dimulai."
             scene black with dissolve
-            show text "{color=#FFF}*HAHAHAHA DI GHOSTING TUH, MAKANYA JANGAN ASAL P, P, P GA SOPAN TAU*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*HAHAHAHA DI GHOSTING TUH, MAKANYA JANGAN ASAL P, P, P GA SOPAN TAU*{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -119,7 +119,7 @@ label truekanakos:
             "[mcname!c] memilih untuk langsung menelepon Kana dan ternyata Kana sedang bersama keluarga."
             "Tanpa sengaja, Kana memblokir nomor [mcname!c] karena [mcname!c] menelepon terus menerus."
             scene black with dissolve
-            show text "{color=#FFF}*YAHAHAHA, DIBLOCK KAN? MAKANYA JANGAN LANGSUNG TELPON ORANG AJA, KAN DIBLOCK*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*YAHAHAHA, DIBLOCK KAN? MAKANYA JANGAN LANGSUNG TELPON ORANG AJA, KAN DIBLOCK*{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -432,7 +432,7 @@ label truekanachat:
             $ quick_menu = False
             stop music fadeout 1.0
             scene black with Dissolve(2.0)
-            show text "{color=#FFF}BRO BRO LAGI JALAN BARENG BERDUAAN KO MALAH DITINGGAL NGOBROL SAMA ORANG LAIN SI ADUHHH{/color}" with Pause(2.0)
+            show text "{color=#FFF}BRO BRO LAGI JALAN BARENG BERDUAAN KO MALAH DITINGGAL NGOBROL SAMA ORANG LAIN SI ADUHHH{/color}" with Pause(4.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
@@ -843,10 +843,13 @@ label truekanajapanfest:
     #*BG KOS MALAM*
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}Apakah ini date? Mungkin iya, atau mungkin hanya [mcname!c] yang merasa demikian. Meskipun begitu, rasa bahagia dan senang tidak dapat dihilangkan dari hati [mcname!c].{/color}" with Pause (4.0)
-    play music "audio/BGM_Kosan 1.mp3" fadein 1.0
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Apakah ini date? Mungkin iya, atau mungkin hanya [mcname!c] yang merasa demikian. Meskipun begitu, rasa bahagia dan senang tidak dapat dihilangkan dari hati [mcname!c]."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
     $ quick_menu = True
     "Setelah beberapa menit, [mcname!c] datang ke kostnya."
     play sound "audio/cafe-entrance.mp3"
@@ -872,11 +875,12 @@ label truekanajapanfest:
     "Sampai pada akhirnya mereka tertidur dengan tetap memegang HP masing-masing."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause (2.0)
-    play music "audio/BGM_Kelas.mp3" fadein 1.0
-    scene kelas with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
+    scene awan malam with Dissolve(1.0)
+    "Keesokan harinya..."
     $ quick_menu = True
+    scene kelas with Dissolve(2.0)
     "Hari dimulai seperti biasanya, [mcname!c] memasuki kelas dengan keadaan hampir terlambat. Saat mencari tempat kosong, [mcname!c] mendengar seseorang memanggilnya."
     show freya_talk at freya_near
     show freya_side_talk at left
@@ -966,7 +970,7 @@ label truekanajapanfest:
     #HARUSNYA SUARA ANGKAT TELEPON
     $ quick_menu=False
     scene black with dissolve
-    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+    play music "BGM_Happy + HP.ogg" fadein 1.0 volume (2.0)
     scene kelas with dissolve
     show freya_talk at freya_near
     show freya_side_talk at left
@@ -1049,13 +1053,21 @@ label truekanajapanfest:
     "[mcname!c]" "{i}Aduuhhh aku ngasih apa ya buat Kana? Kalau diinget-inget lagi, Kana tuh suka sama jejepangan.{/i}"
     "[mcname!c]" "{i}Tapi masa aku ngasih Naya merch anime? Aku ga pernah liat dia pake pakaian anime-anime gitu sihh.{/i}"
     "[mcname!c]" "{i}Kalau official CD anime atau band? Tapi aku ga tau dia suka band apaan, aaaa bingung banget mau ngasih apa.{/i}"
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
     "Seakan sedang terjadi perang di dalam pikiran [mcname!c], tanpa terasa waktu berubah menjadi malam."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    $ quick_menu = True
     "[mcname!c] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok."
     "Tiba-tiba terdengar bunyi dari HP yang menunjukkan bahwa HP perlu dicharge, akan tetapi ternyata ada notifikasi lain dari Kana dan Freya yang mencoba menghubungi [mcname!c] berkali-kali."
     #*BG HP LAGI TELEPON*
     play sound "audio/SFX - Calling.mp3"
     "UI telpon Grup Freya, Kana, MC"
-    # show telpon_mamah at ui_handphone with dissolve
+    # show group_call at ui_handphone with dissolve
     show freya_side_shock at left with dissolve
     freya "Nahhh kan kalau gini enak, ga usah ngehubungin satu-satu."
     hide freya_side_shock with dissolve
@@ -1110,16 +1122,17 @@ label truekanajapanfest:
     hide kana_side_talk with dissolve
     "[mcname!c]" "Oke, good night."
     #*BG HP LAGI TELEPON SELESAI*
-    hide telpon_mamah with dissolve
+    hide group_call with dissolve
     play sound "audio/SFX - End Call.mp3"
     "[mcname!c]" "Hmmmmmm."
     "[mcname!c]" "{i}Oke nanti aku harus liat-liat sekalian milih hadiah apa yang kayaknya cocok buat Naya di mall.{/i}"
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause (2.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Mall Slow.mp3" fadein 1.0
-    scene mall temp with dissolve
+    scene awan with Dissolve(1.0)
+    "BEBERAPA HARI KEMUDIAN"
+    scene mall temp with Dissolve(2.0)
     $ quick_menu = True
     "Hari itu [mcname!c] pergi ke mall untuk menemani Kana membeli limited cake."
     "Di sana [mcname!c] berencana untuk melihat gerak-gerik Kana sebagai petunjuk tentang hadiah apa yang cocok untuknya."
@@ -1170,7 +1183,7 @@ label truekanajapanfest:
     show kana at kana_near
     with dissolve
     #SFX KRINGGG Telepon*
-    play sound "audio/SFX - Call.mp3"
+    play sound "audio/SFX - Call.mp3" fadein 1.0
     #BG Telepon ON
     show kana_side_confused at left with dissolve
     kana "Eh?"
@@ -1316,10 +1329,13 @@ label truekanabuypresent:
     "Setelah semua itu, akhirnya [mcname!c] dan Freya setuju untuk melakukan perayaan ulang tahun sederhana di rumah Kana. Setelah itu [mcname!c] memutuskan untuk tidur."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}HARI ULANG TAHUN KANA{/color}" with Pause (2.0)
-    play music "audio/BGM_Kosan 2.mp3" fadein 1.0
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 2.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Hari ulang tahun Kana"
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
     $ quick_menu = True
     "[mcname!c]" "{i}Oke. Hari ini hari yang penting, pokoknya semua harus siap!{/i}"
     "[mcname!c]" "{i}Bentar cek dulu semuanya, pakaian? Oke.{/i}"
@@ -1805,7 +1821,7 @@ label truekananeutralroute1:
         $ quick_menu = False
         stop music fadeout 1.0
         scene black with Dissolve(2.0)
-        show text "{color=#FFF}ADUHHH BROOO, KOK LU TAU UKURAN SEPATU KANA SIH?? NGERI KALI BROO, LU STALKER YA?{/color}" with Pause(2.0)
+        show text "{color=#FFF}ADUHHH BROOO, KOK LU TAU UKURAN SEPATU KANA SIH?? NGERI KALI BROO, LU STALKER YA?{/color}" with Pause(3.0)
         show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
         play music "audio/Dreamcatcher_v2.mp3"
         jump credits
@@ -1877,7 +1893,7 @@ label truekananeutralroute1:
         $ quick_menu = False
         stop music fadeout 1.0
         scene black with Dissolve(2.0)
-        show text "{color=#FFF}IH BROO, YA KALI AJA NGASIH HADIAH ALAT MASAK KE CEWE YANG TINGGAL SAMA ORTUNYA TERUS MASIH KULIAH, DIKIRA HADIAH ORANG NIKAHAN KALI YA.{/color}" with Pause(2.0)
+        show text "{color=#FFF}IH BROO, YA KALI AJA NGASIH HADIAH ALAT MASAK KE CEWE YANG TINGGAL SAMA ORTUNYA TERUS MASIH KULIAH, DIKIRA HADIAH ORANG NIKAHAN KALI YA.{/color}" with Pause(7.0)
         show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
         play music "audio/Dreamcatcher_v2.mp3"
         jump credits
@@ -1932,7 +1948,7 @@ label truekananeutralroute1:
         $ quick_menu = False
         stop music fadeout 1.0
         scene black with Dissolve(2.0)
-        show text "{color=#FFF}ADUH BROOO LAIN KALI KALO MAU NGASIH HADIAH TUH HARUS MIKIRIN JUGA APA YANG DIA SUKA, JANGAN LU DOANG YANG SUKA.{/color}" with Pause(2.0)
+        show text "{color=#FFF}ADUH BROOO LAIN KALI KALO MAU NGASIH HADIAH TUH HARUS MIKIRIN JUGA APA YANG DIA SUKA, JANGAN LU DOANG YANG SUKA.{/color}" with Pause(5.0)
         show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
         play music "audio/Dreamcatcher_v2.mp3"
         jump credits

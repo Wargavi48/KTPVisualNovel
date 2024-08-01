@@ -3,7 +3,7 @@ label phoneChat:
     $ mahasiswa_name = "Galaxy"
     $ kana_name = "Kana"
     nvl clear
-    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+    play music "BGM_Happy + HP.ogg" fadein 1.0 volume (2.0)
     freya_nvl "{size=-5}Eh, guys {color=#0000FF}@All{/color}{/size}"
     freya_nvl "{size=-5}Buat tema, udah fix kan jadinya?{/size}"
     freya_nvl "{size=-5}Mau yang udah kita tentuin sebelumnya?{/size}"
@@ -39,7 +39,7 @@ label phoneChat:
             kana_nvl "{size=-5}Aku juga{/size}"
             donatur_nvl "{size=-5}Boleh, gw sih ngikut aja.{/size}"
             stop music fadeout 1.0
-            play music "BGM_Kosan 1.ogg" fadein 1.0
+            play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
             scene kamar mc kota with dissolve
             $ quick_menu = True
             "Obrolan mereka tidak terasa sudah lama."
