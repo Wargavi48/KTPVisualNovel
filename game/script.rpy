@@ -292,8 +292,8 @@ label intro:
             jump mainStoryBegin
         "D. Mualass banget kuliah tahun ini, jurusannya ga gue banget cuy":
             jump ED1
-        "E. Tes Mini Game":
-            # jump startPiaGame
-            jump shooting_game_start
+        # "E. Tes Mini Game":
+        #     # jump startPiaGame
+        #     jump shooting_game_start
 
     return
