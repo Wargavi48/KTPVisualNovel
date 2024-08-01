@@ -4998,7 +4998,7 @@ label goodtanaaftergame:
     with dissolve
     pia "WE ARE ON FIRE!"
     pia "SEMANGATKU MEMBARA, SIAP MENGHANGATKAN HARI-HARI MU!!"
-    pia "HALO AKU PIA MERALEO DARI JKT48V~"
+    pia "HALO AKU PIA MERALEO DARI KTp~"
     hide pia_idol_side_talk
     hide pia_idol_talk
     show pia_idol_smile at pia_near

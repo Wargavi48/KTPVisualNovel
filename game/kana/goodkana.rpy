@@ -3001,7 +3001,7 @@ label goodkanadancepractice:
     with dissolve
     pia "Halo semuanya~"
     pia "We Are On Fire! Semangat ku membara, siap menghangatkan hari-hari mu!"
-    pia "Halo, aku Pia Meraleo dari JKT48V. Senang bertemu kalian!"
+    pia "Halo, aku Pia Meraleo dari KTp. Senang bertemu kalian!"
     play sound "SFX - Large Cheering.mp3" loop fadein 0.5
     hide pia_idol_side_talk 
     hide pia_idol_talk at pia_near
@@ -3012,7 +3012,7 @@ label goodkanadancepractice:
     with dissolve
     tana "Okeee selanjutnya giliran gue."
     tana "Wassup ma bross!!! I'm fresh like a breeze!"
-    tana "JKT48V Tana Nona! Cool enough to make you freeEeEzZEe~"
+    tana "KTp Tana Nona! Cool enough to make you freeEeEzZEe~"
     play sound "SFX - Large Cheering.mp3" loop fadein 0.5
     hide tana_idol_side_talk 
     hide tana_idol_talk at tana_near

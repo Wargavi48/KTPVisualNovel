@@ -1818,12 +1818,16 @@ label truendpia:
     "[mcname!c]" "Eee… a-ayooo."
     hide pia_date with dissolve
     "[mcname!c] dan Pia pun berkeliling sembari membeli banyak jajanan seperti takoyaki, okonomiyaki, dan lain-lain."
+    show takoyaki
+    show takoyaki:
+        pos (0.30, 0.8) zoom 0.22 
     show pia_date at pia_near with dissolve
     "[mcname!c]" "Itu mau kamu makan semua?"
     show pia_date_smile at pia_near
     show pia_date_side_smile at left
     with dissolve 
     pia "Amaaan. Perut aku ada ruangan tersendiri buat cemilan, huahahaha."
+    hide takoyaki
     hide pia_date_smile
     hide pia_date_side_smile
     hide pia_date
