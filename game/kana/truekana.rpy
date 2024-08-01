@@ -843,10 +843,13 @@ label truekanajapanfest:
     #*BG KOS MALAM*
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}Apakah ini date? Mungkin iya, atau mungkin hanya [mcname!c] yang merasa demikian. Meskipun begitu, rasa bahagia dan senang tidak dapat dihilangkan dari hati [mcname!c].{/color}" with Pause (4.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
-    scene kamar mc kota with dissolve
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Apakah ini date? Mungkin iya, atau mungkin hanya [mcname!c] yang merasa demikian. Meskipun begitu, rasa bahagia dan senang tidak dapat dihilangkan dari hati [mcname!c]."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
     $ quick_menu = True
     "Setelah beberapa menit, [mcname!c] datang ke kostnya."
     play sound "audio/cafe-entrance.mp3"
@@ -872,11 +875,12 @@ label truekanajapanfest:
     "Sampai pada akhirnya mereka tertidur dengan tetap memegang HP masing-masing."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause (2.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
-    scene kelas with dissolve
+    scene awan malam with Dissolve(1.0)
+    "Keesokan harinya..."
     $ quick_menu = True
+    scene kelas with Dissolve(2.0)
     "Hari dimulai seperti biasanya, [mcname!c] memasuki kelas dengan keadaan hampir terlambat. Saat mencari tempat kosong, [mcname!c] mendengar seseorang memanggilnya."
     show freya_talk at freya_near
     show freya_side_talk at left
@@ -1116,10 +1120,11 @@ label truekanajapanfest:
     "[mcname!c]" "{i}Oke nanti aku harus liat-liat sekalian milih hadiah apa yang kayaknya cocok buat Naya di mall.{/i}"
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause (2.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Mall Slow.mp3" fadein 1.0
-    scene mall temp with dissolve
+    scene awan with Dissolve(1.0)
+    "BEBERAPA HARI KEMUDIAN"
+    scene mall temp with Dissolve(2.0)
     $ quick_menu = True
     "Hari itu [mcname!c] pergi ke mall untuk menemani Kana membeli limited cake."
     "Di sana [mcname!c] berencana untuk melihat gerak-gerik Kana sebagai petunjuk tentang hadiah apa yang cocok untuknya."
@@ -1316,10 +1321,13 @@ label truekanabuypresent:
     "Setelah semua itu, akhirnya [mcname!c] dan Freya setuju untuk melakukan perayaan ulang tahun sederhana di rumah Kana. Setelah itu [mcname!c] memutuskan untuk tidur."
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    show text "{color=#FFF}HARI ULANG TAHUN KANA{/color}" with Pause (2.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 2.ogg" fadein 1.0
-    scene kamar mc kota with dissolve
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Hari ulang tahun Kana"
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
     $ quick_menu = True
     "[mcname!c]" "{i}Oke. Hari ini hari yang penting, pokoknya semua harus siap!{/i}"
     "[mcname!c]" "{i}Bentar cek dulu semuanya, pakaian? Oke.{/i}"
