@@ -1,47 +1,88 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 241, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/splash.rpy", line 61, in script
-    with fade
-OSError: Couldn't find file 'videos/splash-screen.webm'.
+  File "game/screens.rpy", line 801, in execute
+    screen load():
+  File "game/screens.rpy", line 801, in execute
+    screen load():
+  File "game/screens.rpy", line 805, in execute
+    use file_slots(_("Muat"))
+  File "game/screens.rpy", line 808, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 808, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 812, in execute
+    vbox:
+  File "game/screens.rpy", line 844, in execute
+    hbox:
+  File "game/screens.rpy", line 848, in execute
+    if config.has_autosave:
+  File "game/screens.rpy", line 850, in execute
+    imagebutton auto "gui/button/auto_ico_s%" xpos 1123 ypos 1007 action FilePage("auto")
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+ValueError: incomplete format
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 241, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/splash.rpy", line 61, in script
-    with fade
-  File "D:\fanbase_project\KTPVisualNovel\renpy\ast.py", line 1363, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\exports.py", line 1781, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 1548, in do_with
-    return self.interact(trans_pause=True,
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2165, in interact
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "D:\Download\renpy-8.2.3-sdk\renpy\ast.py", line 823, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Download\renpy-8.2.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "D:\Download\renpy-8.2.3-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Download\renpy-8.2.3-sdk\renpy\display\core.py", line 2166, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\fanbase_project\KTPVisualNovel\renpy\display\core.py", line 2730, in interact_core
-    renpy.audio.audio.interact()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1251, in interact
-    periodic()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1205, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1183, in periodic_thread_main
-    periodic_pass()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 1125, in periodic_pass
-    c.periodic()
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 534, in periodic
-    topf = load(filename)
-  File "D:\fanbase_project\KTPVisualNovel\renpy\audio\audio.py", line 72, in load
-    rv = renpy.loader.load(fn, directory="audio")
-  File "D:\fanbase_project\KTPVisualNovel\renpy\loader.py", line 672, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'videos/splash-screen.webm'.
+  File "D:\Download\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Download\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Download\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Download\renpy-8.2.3-sdk\renpy\display\displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\Download\renpy-8.2.3-sdk\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "D:\Download\renpy-8.2.3-sdk\renpy\display\core.py", line 2688, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "D:\Download\renpy-8.2.3-sdk\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "D:\Download\renpy-8.2.3-sdk\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 801, in execute
+    screen load():
+  File "game/screens.rpy", line 801, in execute
+    screen load():
+  File "game/screens.rpy", line 805, in execute
+    use file_slots(_("Muat"))
+  File "game/screens.rpy", line 808, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 808, in execute
+    screen file_slots(title):
+  File "game/screens.rpy", line 812, in execute
+    vbox:
+  File "game/screens.rpy", line 844, in execute
+    hbox:
+  File "game/screens.rpy", line 848, in execute
+    if config.has_autosave:
+  File "game/screens.rpy", line 850, in execute
+    imagebutton auto "gui/button/auto_ico_s%" xpos 1123 ypos 1007 action FilePage("auto")
+  File "D:\Download\renpy-8.2.3-sdk\renpy\ui.py", line 950, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "D:\Download\renpy-8.2.3-sdk\renpy\ui.py", line 938, in choice
+    rv = renpy.config.imagemap_auto_function(auto, name)
+  File "renpy/common/00defaults.rpy", line 168, in _imagemap_auto_function
+    rv = auto_param % variant
+ValueError: incomplete format
 
-Windows-10-10.0.19045 AMD64
-Ren'Py 8.2.0.24012702
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.3.24061702
 WGV:Dreamcatcher 
-Fri Aug  2 00:08:10 2024
+Fri Aug  2 03:09:52 2024
