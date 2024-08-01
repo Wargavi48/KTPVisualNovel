@@ -8,7 +8,7 @@ label chapter1kana1:
     play music "audio/BGM_Kampus.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
     $ quick_menu = True
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     "Walaupun ini sudah pertengahan tahun."
     "Matahari secara terik menerangi kota Jakarta."
     "Saat melihat ke atas langit, hanya langit birulah yang terlihat."
@@ -189,7 +189,7 @@ label chapter1kana1:
             jump chapter1kana2Cafe
             
 label chapter1kana2kos:
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
@@ -235,7 +235,7 @@ label chapter1kana2kos:
     jump chapter1kana2Campus
 
 label chapter1kana2Cafe:
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     play sound "audio/cafe-entrance.mp3" fadein 1.0
     play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0 volume (2.0)
     scene cafe with Dissolve(1.0)
@@ -584,7 +584,7 @@ label chapter1kana2Cafe:
     jump chapter1kana2Campus
 
 label chapter1kana2Campus:
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -639,7 +639,7 @@ label chapter1kana2Campus:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kelas.ogg" fadein 1.0 volume(1.5)
     scene kelas with Dissolve(1.0)
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c] pun memasuki ruangan kelas."
     "Ini pertama kalinya ia memasuki ruangan yang luas dan besar seperti itu, selain di aula."
@@ -791,7 +791,7 @@ label chapter1kana2Campus:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Dosen.ogg" fadein 1.0
     scene kelas with Dissolve(1.0)
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show dosen at dosen_center with dissolve
     $ quick_menu = True
     "Dosen pun memasuki ruangan kelas..."
@@ -919,7 +919,7 @@ label chapter1kana2Campus:
     "Di kost..."
     $ quick_menu = False
     scene kamar mc kota with Dissolve(2.0)
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True 
     "Sesampainya di kost, [mcname!c] pun membuang tasnya ke lantai lalu melepaskan sepatu dan menghempaskan tubuhnya ke kasur."
     "Setelah capek dengan kegiatan hari ini, datang ke kos membuat [mcname!c] merasakan ketenangan di balik hiruk pikuk Kota Jakarta."
@@ -936,7 +936,7 @@ label chapter1kana2Campus:
     jump phoneChat
 
 label chapter1kana3:
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kantin.ogg" loop fadein 1.0
@@ -1136,7 +1136,7 @@ label chapter1kana3:
             jump credits
 
 label chapter1kana3mie:
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     "[mcname!c] pun memilih mie sebagai makanan yang ia pesan. Kana yang masih menahan malu, memesan makanan yang sama dengan [mcname!c]."
     hide freya
     show freya_shock at freya_near_right
@@ -1297,7 +1297,7 @@ label chapter1kana3mie:
     scene black with Dissolve(1.0)
     play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Setelah selesai makan, mereka pergi dan berpisah ke urusannya masing-masing."
     "[mcname!c] pun memikirkan apa yang akan dilakukan selanjutnya."
@@ -1305,7 +1305,7 @@ label chapter1kana3mie:
     menu:
         "Yang kamu lakukan...."
         "Keliling Kampus dan melihat lihat isi kampus":
-            ##$ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = False
             scene black with Dissolve(1.0)
             scene kampus sore with Dissolve(1.0)
@@ -1370,11 +1370,11 @@ label chapter1kana3mie:
             jump chapter1kana3kos
         # Opsi ini beda sama di skrip + toba2 langsung besok
         "Ke kost lalu tidur.":
-            ##$ renpy.block_rollback()
+            $ renpy.block_rollback()
             jump chapter1kana3kos
         # Opsi ini beda sama di skrip, seharusnya ke kos
         "Langsung berangkat lebih awal supaya ga ketinggalan":
-            ##$ renpy.block_rollback()
+            $ renpy.block_rollback()
             stop music fadeout 1.0
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
@@ -1400,7 +1400,7 @@ label chapter1kana3mie:
             jump credits
                 
 label chapter1kana3kos:
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -1616,7 +1616,7 @@ label chapter1kana3kos:
     jump puzzle_start
 
 label chapter1kana3monas:
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     scene black with Dissolve(1.0)
     play music "audio/BGM_Monas.ogg" loop fadein 1.0
     scene monas temporary with Dissolve(1.0)
@@ -1701,7 +1701,7 @@ label chapter1kana3monas:
             jump credits
 
 label chapter1kana3monasesteh:
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene monas temporary with Dissolve(1.0)
@@ -2160,7 +2160,7 @@ label chapter1kana3monasesteh:
     "Keesokan harinya..."
     $ quick_menu = False
     scene kelas with Dissolve(2.0)
-    ##$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Waktu yang diberikan untuk mengerjakan tugas pun telah berakhir, dan hari di mana presentasi dilakukan pun tiba."
     "[mcname!c], Kana, Freya, dan [mahasiswa_name] pun melakukan presentasinya di depan kelas."

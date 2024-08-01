@@ -1,6 +1,6 @@
 label truepia:
     "Pia yang mendapat semangat dari [mcname!c] pun makin membulatkan tekad untuk tetap melanjutkan melukis dan membuat gambar."
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     show pia at pia_near with dissolve
     show pia_talk at pia_near
@@ -132,7 +132,7 @@ label truepia:
     scene black with Dissolve(1.0)
     play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Tak terasa hari sudah menjadi sore."
     "[mcname!c] dan Pia pun pulang ke kost masing-masing."
@@ -145,7 +145,7 @@ label truepia:
     "Di kost..."
     $ quick_menu = False
     scene kamar mc kota with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c]" "*Sedang menggambar*"
     play sound "ReceiveText.ogg" loop volume (2.0)
@@ -181,12 +181,14 @@ label truepia:
     mc_nvl "Ada yang mau diomongin kah?"
     pia_nvl "Bosen, mau chatting aja"
     pia_nvl "Ga mau chatting sama aku? UwU"
+    $ renpy.block_rollback()
     scene kamar mc kota with Dissolve(0.2)
     $ quick_menu = True
     menu:
         "Respon kamu?"
         "Iye iye mau. Nih gue buka obrolan ya. Lagi ngapain Kak Pia?":
             $ quick_menu = False
+            $ renpy.block_rollback()
             mc_nvl "Iye iye mau."
             mc_nvl "Nih gue buka obrolan ya."
             mc_nvl "Lagi ngapain Kak Pia?"
@@ -235,6 +237,7 @@ label truepia:
             "Hari itu berakhir dengan kekalahan [mcname!c]."
             jump trueendrooftoppia
         "Udah kemaleman tapi weh, aku mau tidur juga bentar lagi ini.":
+            $ renpy.block_rollback()
             $ quick_menu = False
             stop music fadeout 1.0
             play music "BGM_Bad End.ogg" fadein 1.0
@@ -257,6 +260,7 @@ label truepia:
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
 label trueendrooftoppia:
+    $ renpy.block_rollback()
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
@@ -319,7 +323,7 @@ label trueendrooftoppia:
     scene rooftop sore with Dissolve(1.0)
     show pia at pia_near with dissolve
     $ quick_menu = True 
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     "[mcname!c]" "Pia, ini kemarin aku lupa ngasih ini."
     $ quick_menu = False
     window auto hide
@@ -456,6 +460,7 @@ label trueendrooftoppia:
     mc_nvl "BTW"
     mc_nvl "KENAPA JADI CAPSLOCK SEMUA"
     pia_nvl "HAHAHAHAHAHAHA"
+    $ renpy.block_rollback()
     nvl clear
     stop music fadeout 1.0
     scene kamar mc kota with Dissolve(1.0)
@@ -475,6 +480,7 @@ label trueendrooftoppia:
     pia_nvl "Iyaaaaa, mumpung lagi semangat gambar."
     pia_nvl "Bawa laptop, sambil brainstorming kita."
     mc_nvl "O-oke"
+    $ renpy.block_rollback()
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene depan kosan with Dissolve(1.0)
@@ -483,6 +489,7 @@ label trueendrooftoppia:
     mc_nvl "Oiii, depan."
     pia_nvl "Okeh wait, aku keluar."
     nvl clear
+    $ renpy.block_rollback()
     stop music fadeout 1.0
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     scene black with Dissolve(1.0)
@@ -538,7 +545,7 @@ label trueendrooftoppia:
             hide pia_home_side_silent
             hide pia_home
             with dissolve
-            #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             scene black with dissolve
             show text "{color=#FFF}I MEMANG BANTUIIN SI..TAPI LIAT SITUASI KONDISI LAGI YA BROK{/color}" with Pause(2.0)
             scene black with dissolve
@@ -605,7 +612,7 @@ label gambardikosanpia:
     scene awan malam with Dissolve(1.0)
     show pia_home_side_talk at left
     with dissolve
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     pia "WEEEEH UDAH GELAP AJA INI DI LUAR! GAK SADAR!"
     hide pia_home_talk 
@@ -758,7 +765,7 @@ label gambardikosanpia:
     scene black with Dissolve(1.0)
     scene kamar pia with Dissolve(1.0)
     show pia_home at pia_near with dissolve
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c]" "Uaaaah, kenyang banget~"
     "[mcname!c]" "Ah, udah malem nih. Aku pulang dulu ya."
@@ -783,12 +790,12 @@ label gambardikosanpia:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Setelah itu, [mcname!c] pun kembali ke kosannya."
     $ quick_menu = False
     scene kamar mc kota with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c] pulang, duduk di meja belajarnya sambil mulai mengeluarkan buku-buku dan catatan materi ujian esok hari."
     "[mcname!c] bersiap begadang untuk fokus belajar karena besok adalah salah satu ujian mata kuliah tertulis yang paling sulit."
@@ -811,6 +818,7 @@ label gambardikosanpia:
     mc_nvl "Okeeee, sampe ketiduran ya"
     pia_nvl "Pasang alarm dulu!"
     mc_nvl "Siaaap"
+    $ renpy.block_rollback()
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
@@ -824,7 +832,7 @@ label gambardikosanpia:
     show dosen_talk at dosen_center 
     show dosen_side_talk at left
     with dissolve
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     dosen "Pagi!!"
     dosen "Semua buku dan HP simpan di depan ya."
@@ -839,7 +847,7 @@ label gambardikosanpia:
     jump quiz
 
 label truepiaafterquiz:
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Selesai ujian, semua mahasiswa/i mengumpulkan lembar jawaban ke pengawas."
     "Ujian hari itu berakhir."
@@ -879,7 +887,7 @@ label truepiaafterquiz:
     menu:
         "Respon kamu..."
         "Ke kantin kuy.":
-            #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = False
             "[mcname!c]" "Ke kantin yuk aku laper nih."
             show pia_talk at pia_near
@@ -918,7 +926,7 @@ label truepiaafterquiz:
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Ke rooftop yuk.":
-            #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = False
             "[mcname!c]" "Eh gimana kalo ke rooftop?"
             show pia_side_talk at left
@@ -963,7 +971,7 @@ label truepiaafterquiz:
         "Jalan-jalan yuk, keliling Jakarta gitu atau ke mana.":
             jump trueendpiajalanmonas
 label trueendpiajalanmonas:
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show pia at pia_near with dissolve
     "[mcname!c]" "Jalan-jalan yuk, keliling Jakarta gitu atau ke mana."
     "[mcname!c]" "Gimana, mau?"
@@ -996,7 +1004,7 @@ label trueendpiajalanmonas:
     "Di monas..."
     $ quick_menu = False
     scene monas temporary with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show pia at pia_near with dissolve
     show pia_talk at pia_near
     show pia_side_talk at left
@@ -1110,7 +1118,7 @@ label trueendpiajalanmonas:
     show pia_talk at pia_near
     show pia_side_talk at left
     with dissolve
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     pia "Pagi [mcname!c]."
     hide pia_talk
@@ -1124,7 +1132,7 @@ label trueendpiajalanmonas:
     show dosen_talk at dosen_center 
     show dosen_side_talk at left
     with dissolve 
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     dosen "Selamat pagi semuanya."
     dosen "Pelajaran hari ini akan dimulai, ya. Hari ini saya berikan tugas untuk menggambar bebas dengan canvas dan cat."
@@ -1161,7 +1169,7 @@ label trueendpiajalanmonas:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0 volume 2.0
     scene rooftop with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di tengah saat mereka melukis."
     "[mcname!c]" "Huaaaaaa selesai~"
@@ -1213,7 +1221,7 @@ label trueendpiajalanmonas:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Dosen.ogg" fadein 1.0
     scene kelas sore with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Akhirnya [mcname!c] dan Pia kembali ke ruang kelas untuk mengumpulkan tugas dengan muka yang penuh coret."
     show dosen at dosen_center 
@@ -1276,7 +1284,7 @@ label trueendpiajalanmonas:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Sore.ogg" fadein 1.0
     scene lorong sore with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c] dan Pia saling senggol."
     show pia at pia_near with dissolve
@@ -1353,7 +1361,7 @@ label truendpia:
     scene black with Dissolve(1.0)
     pause(1.0)
     scene mall with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Beberapa jam kemudian, [mcname!c] dan Pia pun selesai mencetak merch yang dibutuhkan."
     stop music fadeout 1.0
@@ -1372,12 +1380,13 @@ label truendpia:
     fio_nvl "Pasti lagi berduaan sama [mcname!c]"
     fio_nvl "Maaf ganggu"
     fio_nvl "Thx bye"
+    $ renpy.block_rollback()
     stop music fadeout 1.0
     play music "audio/BGM_Mall.ogg" fadein 1.0
     scene mall with dissolve
     show pia at pia_near with dissolve
     show pia_silent at pia_near
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show pia_side_silent at left
     with dissolve
     $ quick_menu = True
@@ -1432,7 +1441,7 @@ label truendpia:
     play music "BGM_Cafe Sore.ogg" fadein 1.0
     scene cafe malam with Dissolve(1.0)
     show pia at pia_near with dissolve
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Staff" "Ini pesanannya ya, Kak."
     show pia_talk at pia_near 
@@ -1534,7 +1543,7 @@ label truendpia:
     $ quick_menu = True
     "Hari Matsuri pun tiba."
     $ quick_menu = False
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     scene depan kampus with Dissolve(2.0)
     $ quick_menu = True
     "Pia dan [mcname!c] sedang merias booth dan merapikan dagangan merch mereka."
@@ -1724,7 +1733,7 @@ label truendpia:
     play music "audio/BGM_Matsuri Malam.ogg" fadein 1.0
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     scene awan sore with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Pukul 3 sore, semua jualan booth Pia, [mcname!c], Fiony dan Takamina pun ludes habis semua."
     $ quick_menu = False
@@ -1805,7 +1814,7 @@ label truendpia:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene matsuri sore with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show pia_date at pia_near with dissolve
     $ quick_menu = True
     pia "*Menarik tangan [mcname!c]*"
@@ -1841,7 +1850,7 @@ label truendpia:
     $ quick_menu = False
     scene matsuri sore with Dissolve(2.0)
 #Harusnya MATSURI SORE
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show pia_date at pia_near
     show pia_date_side at left
     with dissolve 
@@ -1903,7 +1912,7 @@ label truendpia:
     $ quick_menu = False
     scene matsuri malam with Dissolve(2.0)
 #HARUSNYA MATSURI MALAM
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show takamina at tana_right
     show takamina:
         subpixel True pos (0.17, 0.08) zoom 0.75
@@ -2116,7 +2125,7 @@ label truendpia:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene kampus malam with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Pia dan [mcname!c] pun berjalan masuk ke gedung DKV."
     show pia_date at pia_near with dissolve
@@ -2148,7 +2157,7 @@ label truendpia:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene lorong malam with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show pia_date_sad at pia_near with dissolve
     show pia_date_shock at pia_near 
     show pia_date_side_shock at left
@@ -2193,7 +2202,7 @@ label truendpia:
     play music "audio/BGM_Rooftop Pia Malam.ogg" fadein 1.0 volume (2.0)
     scene rooftop malam with Dissolve(1.0)
     show pia_date at pia_near with dissolve
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     show pia_date_talk at pia_near
     show pia_date_side_talk at left
     with dissolve
@@ -2279,7 +2288,7 @@ label truendpia:
     play sound "SFX - Hanabi.wav" loop
     $ quick_menu = False
     scene pia end talk with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Suara kembang api pun mulai terdengar dan langit pun dipenuhi dengan cahaya indah."
     "Suara mereka pun kalah dengan bisingnya suara kembang api malam itu."

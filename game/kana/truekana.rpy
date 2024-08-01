@@ -84,6 +84,7 @@ label truekanakos:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di kost..."
     $ quick_menu = False
@@ -145,6 +146,7 @@ label truekanachat:
     mc_nvl "{size=-5}Btw nanti kita di sana mau ngapain aja ya? Jujur ini event pertamaku.{/size}"
     mc_nvl "{size=-5}Jadi tadi gimana tips and tricknya buat di event, Yang Mulia Kanaia Asa?{/size}"
     kana_nvl "{size=-5}IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-{/size}"
+    $ renpy.block_rollback()
     nvl clear
     scene kamar mc kota with Dissolve(0.01)
     play sound "audio/SFX - Telephone.mp3"
@@ -196,6 +198,7 @@ label truekanachat:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Tak terasa hari festival pun tiba."
     $ quick_menu = False
@@ -209,6 +212,7 @@ label truekanachat:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Malam itu..."
     $ quick_menu = False
@@ -433,6 +437,7 @@ label truekanachat:
     menu:
         "Yang [mcname!c] lakukan..."
         "Menghabiskan waktu sama cosplayer.":
+            $ renpy.block_rollback()
             stop music fadeout 1.0
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
@@ -452,6 +457,7 @@ label truekanachat:
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "Menolak ajakan cosplayer tersebut.":
+            $ renpy.block_rollback()
             #*CHOSE B*
             jump truekanajapanfest
     
@@ -890,6 +896,7 @@ label truekanajapanfest:
     kana_nvl "{size=-5}Yeeee (>A<)/{/size}"
     mc_nvl "{size=-5}Hahaha, lucu emang{/size}"
     nvl clear
+    $ renpy.block_rollback()
     scene kamar mc kota with dissolve
     $ quick_menu = True
     "[mcname!c] dan Kana pun menghabiskan waktu mereka berdua dengan membahas kembali apa yang terjadi hari ini."
@@ -900,6 +907,7 @@ label truekanajapanfest:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene awan with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Keesokan harinya..."
     $ quick_menu = False
@@ -968,6 +976,7 @@ label truekanajapanfest:
     scene black with Dissolve(1.0)
     play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu=True
     "Beberapa jam kemudian..."
     $ quick_menu=False
@@ -1081,6 +1090,7 @@ label truekanajapanfest:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kampus Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di kost..."
     $ quick_menu = False
@@ -1094,6 +1104,7 @@ label truekanajapanfest:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Seakan sedang terjadi perang di dalam pikiran [mcname!c], tanpa terasa waktu berubah menjadi malam."
     $ quick_menu = False
@@ -1166,6 +1177,7 @@ label truekanajapanfest:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Mall.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Beberapa hari kemudian..."
     $ quick_menu = False
@@ -1341,15 +1353,19 @@ label truekanajapanfest:
     menu:
         "Yang kamu beli..."
         "Kalung":
+            $ renpy.block_rollback()
             $ kana_present = "Kalung"
             jump truekanabuypresent
         "Sepatu":
+            $ renpy.block_rollback()
             $ kana_present = "Sepatu"
             jump truekanabuypresent
         "Alat Masak":
+            $ renpy.block_rollback()
             $ kana_present = "Alat Masak"
             jump truekanabuypresent
         "CD Film Horror":
+            $ renpy.block_rollback()
             $ kana_present = "CD Film Horror"
             jump truekanabuypresent
 
@@ -1360,6 +1376,7 @@ label truekanabuypresent:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Di kost..."
     $ quick_menu = False
@@ -1379,6 +1396,7 @@ label truekanabuypresent:
     freya_nvl "{size=-5}Iya nanti dateng aja, biar aku yang urus hehe.{/size}"
     mc_nvl "{size=-5}Okee. Thanks, Freya.{/size}"
     freya_nvl "{size=-5}Iya sama-sama.{/size}"
+    $ renpy.block_rollback()
     nvl clear
     scene kamar mc kota with dissolve
     #CHATTING APP OFF
@@ -1390,6 +1408,7 @@ label truekanabuypresent:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Pagi Siang.ogg" fadein 1.0
     scene awan with Dissolve(1.0)
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Hari ulang tahun Kana..."
     $ quick_menu = False
@@ -1416,8 +1435,10 @@ label truekanabuypresent:
     menu:
         "Yang [mcname!c] lakukan..."
         "{b}MASUK KE DALAM RUMAH.{/b}":
+            $ renpy.block_rollback()
             jump truekanabeforeneutralroute
         "{b}TUNGGUIN FREYA.{/b}":
+            $ renpy.block_rollback()
             #*CHOSE B*
             "[mcname!c] memilih untuk menunggu Freya..."
             hide pintu_rumah_kana with dissolve
@@ -1678,6 +1699,7 @@ label truekananeutralroute1:
     play music "audio/BGM_Kosan 1.ogg" fadein 1.0
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
+    $ renpy.block_rollback()
     "Tak terasa malam pun tiba."
     $ quick_menu = False
     scene ruang tamu malam with Dissolve(2.0)

@@ -22,7 +22,7 @@ label chapter2piabegin:
     show dosen_side_talk at left 
     with dissolve
     $ dosen_name = "Dosen Seni"
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     dosen "Ya, ujiannya adalah menggambar teman kalian."
     show dosen at dosen_center 
@@ -90,7 +90,7 @@ label chapter2piabegin:
     show pia_talk at pia_near 
     show pia_side_talk at left 
     with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     pia "HAI [mcname!u]! HUEHEHEHEH!"
     show pia at pia_near 
@@ -162,7 +162,7 @@ label chapter2piaaftergame:
     show dosen_talk at dosen_center
     show dosen_side_talk at left
     with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     dosen "Yak! Bisa dikumpulkan ya, tugasnya."
     dosen "Besok akan Ibu pajang semua gambar kalian di lorong gedung ini. Nanti Ibu minta BEM (Badan Eksekutif Mahasiswa) untuk bantuin display dan announce pameran ini untuk umum dan dapat dilihat oleh semua fakultas."
@@ -192,7 +192,7 @@ label chapter2piaaftergame:
     scene black with Dissolve(1.0)
     play music "audio/BGM_Lorong.ogg" fadein 1.0
     scene lorong with Dissolve(1.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Keesokan harinya, semua karya sudah terpajang di sepanjang lorong dan lobby gedung DKV."
     "Banyak sekali Mahasiswa/i dari fakultas lain yang datang untuk sekedar berswafoto atau menikmati hasil karya Maba DKV layaknya mengunjungi pameran seni."
@@ -332,7 +332,7 @@ label chapter2piaaftergame:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene lorong with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "Akhirnya mereka bertiga pun pergi setelah berkeliling melihat hasil karya anak-anak DKV."
     stop music fadeout 1.0
@@ -344,7 +344,7 @@ label chapter2piaaftergame:
     "Di tempat lain..."
     $ quick_menu = False
     scene kantin with Dissolve(2.0)
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     play sound "ReceiveText.ogg" loop volume (2.0)
     # "Terdengar suara notifikasi handphone."
@@ -367,10 +367,11 @@ label chapter2piaaftergame:
     fio_nvl "P"
     fio_nvl "{image=cepio selfie.png}"
     fio_nvl "Gemeesshh~"
+    $ renpy.block_rollback()
     nvl clear
     stop music fadeout 1.0
     play music "BGM_Kantin.ogg" fadein 1.0  
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c]" "Wah, iya. Aku juga baru liat di grup nih, ahaha."
     "[mcname!c]" "Mau nyusulin ke sana, gak?"
@@ -398,7 +399,7 @@ label chapter2piaaftergame:
     show fio at char_near_left
     show pia_side_talk at left
     with dissolve
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     pia "CEPIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO~"
     show pia at pia_near_right 
@@ -473,7 +474,7 @@ label chapter2piaaftergame:
     scene black with Dissolve(1.0)
     play music "BGM_Sore.ogg" fadein 1.0
     scene awan sore with Dissolve(1.0)
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c], Pia, dan Fiony pun berbincang panjang lebar sampai sore hari dan memutuskan untuk mengakhiri hari itu dan pulang."
     $ quick_menu = False
@@ -485,7 +486,7 @@ label chapter2piaaftergame:
     show dosen_talk at dosen_center 
     show dosen_side_talk at left 
     with dissolve
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     dosen "--jadi, persiapkan diri kalian. Mulai besok masuk minggu UTS, belajar dan asah skill kalian. Istirahat yang cukup. Semoga hasilnya memuaskan, ya."
     hide dosen_talk at dosen_center 
@@ -502,7 +503,7 @@ label chapter2piaaftergame:
     show pia_talk at pia_near 
     show pia_side_talk at left
     with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     pia "Weeeeh besok udah mulai UTS. Tugas menggambar bebas kamu udah selese, [mcname!c]?"
     show pia at pia_near 
@@ -538,7 +539,7 @@ label chapter2piaaftergame:
     show feni_talk at feni_center 
     show feni_side_talk at left 
     with dissolve
-    # #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     $ quick_menu = True
     feni "Flyernya kakak~"
     show feni at feni_center
@@ -586,7 +587,7 @@ label chapter2piaaftergame:
         ypos 0.78 zoom 0.32 
     with dissolve
     "[mcname!c] melihat Pia sedang menari-nari di rooftop dengan indahnya."
-    #$ renpy.block_rollback()
+    $ renpy.block_rollback()
     "[mcname!c]" "Woaaa...."
     "[mcname!c]" "P-Pia............."
     show pia_side_shock at left 
@@ -792,7 +793,7 @@ label chapter2piaaftergame:
     menu:
         "[mcname!c]" "Pia... Sebenarnya..."
         "Ah! Tadi aku dapet flyer ini. *Kasih semua flyer* mau ikut gak? ada acara jejepangan beberapa bulan lagi nih. terus itu ada 3 flyer, ada yang recruitment jadi idol juga. Mau coba gak?":
-            #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = True
             "[mcname!c]" "Ah! Tadi aku dapet flyer ini."
             hide pia_shock
@@ -873,14 +874,14 @@ label chapter2piaaftergame:
             scene black with Dissolve(1.0)
             play music "BGM_Sore.ogg" fadein 1.0
             scene awan sore with Dissolve(1.0)
-            # #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = True
             "Tak terasa hari sudah menjadi sore."
             "[mcname!c] dan Pia pun pulang ke kost masing-masing."
             $ pia_route = "Good End"
             jump goodpia
         "Ah! Tadi aku dapet flyer ini. *Kasih flyer event jejepangan*. Nonton yuk nanti!":
-            #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = True
             "[mcname!c]" "Ah! Tadi aku dapet flyer ini."
             hide pia_shock
@@ -947,7 +948,7 @@ label chapter2piaaftergame:
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             jump credits
         "Apapun pilihan kamu Pia, aku akan tetap support kamu mau apapun itu.":
-            #$ renpy.block_rollback()
+            $ renpy.block_rollback()
             $ quick_menu = True
             "[mcname!c]" "Apapun pilihanmu, Pia, aku akan tetap support kamu. Mau apapun itu."
             show pia_shock at pia_near
