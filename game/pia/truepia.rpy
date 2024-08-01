@@ -949,7 +949,7 @@ label truepiaafterquiz:
             with dissolve
             "[mcname!c]" "EHHHHHH!??? PIAAAAA~~~!"
             scene black with dissolve
-            show text "{color=#FF0000}ADUHHH KALAU KE ROOFTOP JANGAN NYEDER GITU DEH BRO, KALAU DI GAME SI BISA LOAD LAH INI...{/color}" with Pause(2.0)
+            show text "{color=#FF0000}ADUHHH KALAU KE ROOFTOP JANGAN NYEDER GITU DEH BRO, KALAU DI GAME SI BISA LOAD LAH INI...{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FF0000}LAH INI KAN GAME YA?{/color}" with Pause(2.0)
             scene black with dissolve

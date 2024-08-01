@@ -1427,7 +1427,8 @@ label goodpiaafterquiz:
             scene ruang ukm with dissolve
             # $ renpy.block_rollback()
             $ quick_menu = True
-            "Pia memutuskan untuk tidak ikut club jepang dan tidak beraktivitas menjadi idol lagi."
+            $ narasi = "Pia memutuskan untuk tidak ikut club jepang dan tidak beraktivitas menjadi idol lagi."
+            show text "{color=#FFF}[narasi!u]{/color}" with Pause(2.0)
             $ quick_menu = False
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)

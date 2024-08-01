@@ -174,7 +174,7 @@ label chapter1kana1:
             play music "BGM_Bad End.ogg" fadein 1.0
             "Kamu milih makan ke warteg dan di situ ternyata wartegnya pake boraks dan akhirnya kamu masuk rumah sakit..."
             scene black with dissolve
-            show text "{color=#FFF}MAKANYA JANGAN MAKAN SEMBARANG BROO KAN MASUK RUMAH SAKIT{/color}" with Pause(2.0)
+            show text "{color=#FFF}MAKANYA JANGAN MAKAN SEMBARANG BROO KAN MASUK RUMAH SAKIT{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             stop music fadeout 1.0
@@ -1111,7 +1111,7 @@ label chapter1kana3:
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
             scene black with Dissolve(2.0)
-            show text "{color=#FFF}LO KEPEDESAN DAN AKHIRNYA MALAH KE WC TERUS TERUSAN DARIPADA NGOBROL SAMA MEREKA{/color}" with Pause(2.0)
+            show text "{color=#FFF}LO KEPEDESAN DAN AKHIRNYA MALAH KE WC TERUS TERUSAN DARIPADA NGOBROL SAMA MEREKA{/color}" with Pause(5.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene black with dissolve
@@ -1128,7 +1128,7 @@ label chapter1kana3:
             scene black with dissolve
             show text "{color=#FFF}AKHIRNYA LO KERACUNAN MAKANAN.{/color}" with Pause(2.0)
             scene black with dissolve
-            show text "{color=#FFF}MBAK YANG JUALAN PUN AKHIRNYA DIMARAHIN KARENA UDAH BIKIN MAHASISWANYA KERACUNAN MAKANAN{/color}" with Pause(2.0)
+            show text "{color=#FFF}MBAK YANG JUALAN PUN AKHIRNYA DIMARAHIN KARENA UDAH BIKIN MAHASISWANYA KERACUNAN MAKANAN{/color}" with Pause(5.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             scene black with dissolve
@@ -1389,7 +1389,7 @@ label chapter1kana3mie:
             scene black with dissolve
             show text "{color=#FFF}AKHIRNYA MALAH PINGSAN KAN{/color}" with Pause(2.0)
             scene black with dissolve
-            show text "{color=#FFF}BERANGKAT LEBIH AWAL JUGA BAGUS, TAPI GAK SAMPE SEHARI SEBELUM JUGA KALI{/color}" with Pause(2.0)
+            show text "{color=#FFF}BERANGKAT LEBIH AWAL JUGA BAGUS, TAPI GAK SAMPE SEHARI SEBELUM JUGA KALI{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FFF}HADEEEUHHH DASAR{/color}" with Pause(2.0)
             scene black with dissolve
@@ -1660,9 +1660,9 @@ label chapter1kana3monas:
             scene black with dissolve
             show text "{color=#FFF}BRO YANG BENER AJA{/color}" with Pause(2.0)
             scene black with dissolve
-            show text "{color=#FFF}DI KIRA MEREKA ABIS OLAHRAGA ATAU NUKANG KALI YA DI KASIH GINIAN{/color}" with Pause(2.0)
+            show text "{color=#FFF}DI KIRA MEREKA ABIS OLAHRAGA ATAU NUKANG KALI YA DI KASIH GINIAN{/color}" with Pause(4.0)
             scene black with dissolve
-            show text "{color=#FFF}AKHIRNYA MEREKA GA MAU NGOBROL KAN SAMA LO LAGI{/color}" with Pause(2.0)
+            show text "{color=#FFF}AKHIRNYA MEREKA GA MAU NGOBROL KAN SAMA LO LAGI{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             stop music fadeout 1.0

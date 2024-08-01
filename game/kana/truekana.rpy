@@ -102,7 +102,7 @@ label truekanakos:
             "[mcname!c] memilih untuk menghubungi Kana dengan awalan “P”, dibandingkan hal lainnya."
             "Kana pun tidak membalas chat tersebut dan meng-ghosting pesan dari [mcname!c] sampai event dimulai."
             scene black with dissolve
-            show text "{color=#FFF}*HAHAHAHA DI GHOSTING TUH, MAKANYA JANGAN ASAL P, P, P GA SOPAN TAU*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*HAHAHAHA DI GHOSTING TUH, MAKANYA JANGAN ASAL P, P, P GA SOPAN TAU*{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -119,7 +119,7 @@ label truekanakos:
             "[mcname!c] memilih untuk langsung menelepon Kana dan ternyata Kana sedang bersama keluarga."
             "Tanpa sengaja, Kana memblokir nomor [mcname!c] karena [mcname!c] menelepon terus menerus."
             scene black with dissolve
-            show text "{color=#FFF}*YAHAHAHA, DIBLOCK KAN? MAKANYA JANGAN LANGSUNG TELPON ORANG AJA, KAN DIBLOCK*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*YAHAHAHA, DIBLOCK KAN? MAKANYA JANGAN LANGSUNG TELPON ORANG AJA, KAN DIBLOCK*{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -432,7 +432,7 @@ label truekanachat:
             $ quick_menu = False
             stop music fadeout 1.0
             scene black with Dissolve(2.0)
-            show text "{color=#FFF}BRO BRO LAGI JALAN BARENG BERDUAAN KO MALAH DITINGGAL NGOBROL SAMA ORANG LAIN SI ADUHHH{/color}" with Pause(2.0)
+            show text "{color=#FFF}BRO BRO LAGI JALAN BARENG BERDUAAN KO MALAH DITINGGAL NGOBROL SAMA ORANG LAIN SI ADUHHH{/color}" with Pause(4.0)
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
@@ -1805,7 +1805,7 @@ label truekananeutralroute1:
         $ quick_menu = False
         stop music fadeout 1.0
         scene black with Dissolve(2.0)
-        show text "{color=#FFF}ADUHHH BROOO, KOK LU TAU UKURAN SEPATU KANA SIH?? NGERI KALI BROO, LU STALKER YA?{/color}" with Pause(2.0)
+        show text "{color=#FFF}ADUHHH BROOO, KOK LU TAU UKURAN SEPATU KANA SIH?? NGERI KALI BROO, LU STALKER YA?{/color}" with Pause(3.0)
         show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
         play music "audio/Dreamcatcher_v2.mp3"
         jump credits
@@ -1877,7 +1877,7 @@ label truekananeutralroute1:
         $ quick_menu = False
         stop music fadeout 1.0
         scene black with Dissolve(2.0)
-        show text "{color=#FFF}IH BROO, YA KALI AJA NGASIH HADIAH ALAT MASAK KE CEWE YANG TINGGAL SAMA ORTUNYA TERUS MASIH KULIAH, DIKIRA HADIAH ORANG NIKAHAN KALI YA.{/color}" with Pause(2.0)
+        show text "{color=#FFF}IH BROO, YA KALI AJA NGASIH HADIAH ALAT MASAK KE CEWE YANG TINGGAL SAMA ORTUNYA TERUS MASIH KULIAH, DIKIRA HADIAH ORANG NIKAHAN KALI YA.{/color}" with Pause(7.0)
         show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
         play music "audio/Dreamcatcher_v2.mp3"
         jump credits
@@ -1932,7 +1932,7 @@ label truekananeutralroute1:
         $ quick_menu = False
         stop music fadeout 1.0
         scene black with Dissolve(2.0)
-        show text "{color=#FFF}ADUH BROOO LAIN KALI KALO MAU NGASIH HADIAH TUH HARUS MIKIRIN JUGA APA YANG DIA SUKA, JANGAN LU DOANG YANG SUKA.{/color}" with Pause(2.0)
+        show text "{color=#FFF}ADUH BROOO LAIN KALI KALO MAU NGASIH HADIAH TUH HARUS MIKIRIN JUGA APA YANG DIA SUKA, JANGAN LU DOANG YANG SUKA.{/color}" with Pause(5.0)
         show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
         play music "audio/Dreamcatcher_v2.mp3"
         jump credits

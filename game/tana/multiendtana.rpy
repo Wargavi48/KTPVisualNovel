@@ -141,7 +141,7 @@ label multiendlearnUTS:
             with dissolve
             "Tana pun pergi dari kampus, karena laptop [mcname!c] lama dan ga nyala-nyala"
             scene black with dissolve
-            show text "{color=#FFF}*YAHAHHA, MAKANYA BROK, JANGAN DOWNLOAD/NONTON FILM DARI SITUS BAJAKAN KAN SEKARANG MALAH GINI*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*YAHAHHA, MAKANYA BROK, JANGAN DOWNLOAD/NONTON FILM DARI SITUS BAJAKAN KAN SEKARANG MALAH GINI*{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -190,7 +190,7 @@ label multiendafterUTS:
             hide tana_shock
             with dissolve
             scene black with dissolve
-            show text "{color=#FFF}*MAKANYA BROO KALAU MAU NYARI TEMPAT MAKAN TUH LIAT SITUASI DAN KONDISI*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*MAKANYA BROO KALAU MAU NYARI TEMPAT MAKAN TUH LIAT SITUASI DAN KONDISI*{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -254,7 +254,7 @@ label multiendafterUTS:
             with dissolve
             "[mcname!c]" "Ya maaf, gue juga ga tau bakalan kaya gini..."
             scene black with dissolve
-            show text "{color=#FFF}*YAHAHAH KASIAN LAGI MAKAN MALAH ADA ULET, MAKAN AJA KALI KAN PROTEIN TAMBAHAN HAHAH*{/color}" with Pause(2.0)
+            show text "{color=#FFF}*YAHAHAH KASIAN LAGI MAKAN MALAH ADA ULET, MAKAN AJA KALI KAN PROTEIN TAMBAHAN HAHAH*{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0

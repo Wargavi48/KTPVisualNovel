@@ -645,7 +645,7 @@ label chapter2tana:
             play sound "SFX - Fall.WAV" fadein 1.0 volume(15.0)
             "[mcname!c]" "AAAAAA!!!!"
             scene black with dissolve
-            show text "{color=#FFF}[mcname!u] MENINGGAL TERPELESET GARA-GARA MENGINJAK KRESEK PLASTIK BEKAS MAKANAN SEMALAM YANG TIDAK IA BERESKAN.{/color}" with Pause(2.0)
+            show text "{color=#FFF}[mcname!u] MENINGGAL TERPELESET GARA-GARA MENGINJAK KRESEK PLASTIK BEKAS MAKANAN SEMALAM YANG TIDAK IA BERESKAN.{/color}" with Pause(5.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}"  with Pause(2.0)
             stop music fadeout 1.0

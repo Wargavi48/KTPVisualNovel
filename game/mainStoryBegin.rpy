@@ -142,7 +142,7 @@
             "Jadinya malah lupa waktu dan akhirnya lupa kalau harus beresin barang."
             "Akhirnya [mcname!c] malah ikut ke pergi ke pergaulan bebas."
             scene black  with dissolve
-            show text "{color=#FFF}LU NGAPAIN IKUTAN PERGAULAN BEBAS INGET TUH ORANG TUA DI DESA!!{/color}" with Pause(2.0)
+            show text "{color=#FFF}LU NGAPAIN IKUTAN PERGAULAN BEBAS INGET TUH ORANG TUA DI DESA!!{/color}" with Pause(4.0)
             scene black  with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -156,7 +156,7 @@
             play music "BGM_Bad End.ogg" fadein 1.0
             "[mcname!c] ikut ke dalam circle orang orang kaya yang haus akan atensi di dunia maya, dan akhirnya malah ngutang sana sini karena kurang atensi."
             scene black  with dissolve
-            show text "{color=#FFF}ORTU LU DAPET KABAR KALAU LU MASUK PENJARA KARENA PENIPUAN UANG.{/color}" with Pause(2.0)
+            show text "{color=#FFF}ORTU LU DAPET KABAR KALAU LU MASUK PENJARA KARENA PENIPUAN UANG.{/color}" with Pause(4.0)
             scene black  with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(2.0)
             stop music fadeout 1.0
