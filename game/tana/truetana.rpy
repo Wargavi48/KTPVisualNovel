@@ -2109,11 +2109,15 @@ label chapter2tanaTRUE3:
     hide tana_side_idle at left
     hide tana_silent at tana_near
     with dissolve
-#SPRITE NUE TANA NGELUARIN BENDERA PUTIH
+    show tono nyerah
+    show tono nyerah:
+        ypos 0.84 zoom 0.33 
+    with dissolve
     "Tana tiba-tiba membuka tasnya dan mengeluarkan bendera putih kecil."
     show tana_side_shy at left
     with dissolve
     tana "Huhuhuhuhu~"
+    hide tono nyerah
     show tana_shy at tana_near
     hide tana_side_shy
     with dissolve
@@ -3784,8 +3788,6 @@ label trueendtana:
     play sound "SFX - Telephone.mp3"
     show tana_ring at ui_handphone with dissolve
     "Tana pun mencoba menelpon [mcname!c]."
-#UI TELEPON"
-    "Kring kring"
     show tana_date_side_idle at left with dissolve
     tana "....."
     hide tana_date_side_idle at left with dissolve
@@ -3801,7 +3803,6 @@ label trueendtana:
     play sound "SFX - Telephone.mp3"
     show tana_ring at ui_handphone with dissolve
     "Tana pun mencoba menelpon [mcname!c] kembali."
-    "Kring kring"
     "[mcname!c]" "Halo?"
     hide tana_ring
     show tana_telpon at ui_handphone
@@ -3819,7 +3820,6 @@ label trueendtana:
     hide tana_date_side_angry_2 at left
     hide tana_telpon
     with dissolve
-    #UI TELEPON SELESAI"
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene kampus malam with Dissolve(1.0)
