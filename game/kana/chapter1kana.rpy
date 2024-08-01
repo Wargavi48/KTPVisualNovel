@@ -1645,7 +1645,7 @@ label chapter1kana3monas:
     "[mcname!c]" "Eh bentar ya, mau beli minum dulu."
     menu:
         "Kamu beliin mereka..."
-        "Minuman berenergi":
+        "Minuman Energi RidDhh":
             stop music fadeout 1.0
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
@@ -1670,13 +1670,13 @@ label chapter1kana3monas:
             play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
             scene dream with dissolve
             jump credits
-        "Es Teh":
+        "Es Teh Farrel":
             hide freya_shock
             hide freya 
             hide kana_date 
             with dissolve
             jump chapter1kana3monasesteh
-        "Jamu":
+        "Jamu Ta Ma":
             stop music fadeout 1.0
             $ quick_menu = False
             play music "BGM_Bad End.ogg" fadein 1.0
