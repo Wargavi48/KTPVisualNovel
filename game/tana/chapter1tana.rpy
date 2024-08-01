@@ -752,19 +752,19 @@ label tanamcdaftarulang:
     with dissolve
     menu:
         "Anime pilihan kamu:"
-        "-Samurai Y\n-Pemburu x Pemburu\n-Mengubah sampah menjadi pohon\n-Pelaut bulan\n-Inisial F":
+        "{size=-5}-Samurai Y\n-Pemburu x Pemburu\n-Mengubah sampah menjadi pohon\n-Pelaut bulan\n-Inisial F{/size}":
             show tana at tana_near
             show flora at flora_left
             show feni at feni_right
             with dissolve
             # $ renpy.block_rollback()
             $ quick_menu = True
-            "[mcname!c]" "-Samurai Y\n-Pemburu x Pemburu\n-Mengubah sampah menjadi pohon\n-Pelaut bulan\n-Inisial F"
+            "[mcname!c]" "{size=-5}-Samurai Y\n-Pemburu x Pemburu\n-Mengubah sampah menjadi pohon\n-Pelaut bulan\n-Inisial F{/size}"
             show feni_side_talk at left with dissolve
             feni "Kamu gak naik kelas berapa kali kok tau anime-anime itu, tapi sekarang masih maba."
             hide feni_side_talk at left with dissolve
             "[mcname!c]" "Hehehe..."
-        "-Cinta Palsu\n-Ekor Peri\n-Yo-Gi-Ah 3Ds\n-Adu Gasing\n-April Skem":
+        "{size=-5}-Cinta Palsu\n-Ekor Peri\n-Yo-Gi-Ah 3Ds\n-Adu Gasing\n-April Skem{/size}":
             show tana at tana_near
             show flora at flora_left
             show feni at feni_right
@@ -783,14 +783,14 @@ label tanamcdaftarulang:
             with dissolve
             "[mcname!c]" "Iya dong. Bagus, kan?"
             hide flora at flora_left
-        "-Bola Naga X\n-Seni Pedang Offline\n-Siapa namamu?\n-Akademi Pahlawan\n-Keluarga Mata-Mata":
+        "{size=-5}-Bola Naga X\n-Seni Pedang Offline\n-Siapa namamu?\n-Akademi Pahlawan\n-Keluarga Mata-Mata{/size}":
             show tana at tana_near
             show flora at flora_left
             show feni at feni_right
             with dissolve
             # $ renpy.block_rollback()
             $ quick_menu = True
-            "[mcname!c]" "-Bola Naga X\n-Seni Pedang Offline\n-Siapa namamu?\n-Akademi Pahlawan\n-Keluarga Mata-Mata"
+            "[mcname!c]" "{size=-5}-Bola Naga X\n-Seni Pedang Offline\n-Siapa namamu?\n-Akademi Pahlawan\n-Keluarga Mata-Mata{/size}"
             show flora_side_talk at left with dissolve
             flora "Kamu pasti wibu fomo, ya."
             hide flora_side_talk at left with dissolve
