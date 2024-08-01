@@ -72,7 +72,7 @@ label chapter1kana1:
     "[mcname!c]" "{i}Tapi kok cuma dia ya, yang jadi perhatian orang-orang.{/i}"
     "[mcname!c]" "{i}Ya termasuk aku juga sih...{/i}"
     "……"
-    "1… 2… 3… 8… 9… 10… menit telah berlalu dan [mcname!c] masih menatap cewek tersebut."
+    "Beberapa menit telah berlalu dan [mcname!c] masih menatap cewek tersebut."
     "Mungkin itu adalah rekor terlama [mcname!c] dalam memperhatikan seseorang."
     $ quick_menu = False
     stop music fadeout 1.0
@@ -103,7 +103,7 @@ label chapter1kana1:
     play music "BGM_Romance Kana.ogg" fadein 1.0
     scene kana awal with Dissolve(2.0)
     $ quick_menu = True
-    "[mcname!c]" "{i}Whoa.... Cantik banget ya...{/i}"
+    "[mcname!c]" "{i}Ketawanya dia manis juga ya.{/i}"
     "[mcname!c]" "{i}Aku tidak menyangka ternyata ada perempuan semanis dia.{i}"
     show kana awal senyum with Dissolve(2.0)
     "Mata [mcname!c] dan perempuan itu tidak sengaja bertemu."

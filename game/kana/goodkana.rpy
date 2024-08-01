@@ -7,14 +7,22 @@ label goodkana:
     #
     #—---------------------------------------------------IF CHOSE A—----------------------------------------------
     #—-------------------------------------------------GOOD ENDING—-------------------------------------------
+    hide matsuri
+    hide club
+    with dissolve
+    show club at poster
+    show club:
+        pos (0.14, 0.17) zoom 0.36 
+    with dissolve
     "[mcname!c]" "Hmmm, kayaknya kalau ajak Kana dia mau deh. Ya udah deh, aku ambil aja dulu."
     #*SKIP TO SCENE*
     #*BG KANTIN*
+    hide club with dissolve
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "audio/bgm_kantin.mp3" loop fadein 1.0
-    scene kantin with Dissolve(2.0)
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kantin.ogg" loop fadein 1.0
+    scene kantin with Dissolve(1.0)
     $ quick_menu = True
     "[mcname!c]" "Eh maaf lama ya, tadi abis dari toilet hehe."
     show kana at kana_near_left_2
@@ -61,37 +69,47 @@ label goodkana:
     #*CHOSE*
     menu:
         "Kamu memesan..."
-        "Nasi Cumi Pak (donatur)":
+        "Nasi Cumi Pak Sunny":
             jump goodkanaafterorder
-        "Karedok Pak (donatur)":
-            #*CHOSE B*
-            "[mcname!c]" "Karedok kali ya, udah lama ga makan sayuran aku."
-            "Ternyata sayuran yang dipake sama tukang dagangnya kebanyakan busuk semua dan hampir setengah mahasiswa/i keracunan dan dilarikan ke rumah sakit."
-            $ quick_menu = False
+        "Karedok Pak Vin":
             stop music fadeout 1.0
-            scene black with Dissolve(2.0)
-            show text "{color=#FFF}ADUH KALO MAU BELI SAYURAN, TANYA TANYA DULU DEH! TAKUTNYA BUSUK, MALAH KAYA GINI SEKARANG{/color}" with Pause(2.0)
-            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            $ quick_menu = False
+            play music "BGM_Bad End.ogg" fadein 1.0
+            "[mcname!c]" "Karedok Pak Vin kali ya,? Udah lama ga makan sayuran aku."
+            "Ternyata sayuran yang dipake sama tukang dagangnya kebanyakan busuk semua dan hampir setengah mahasiswa/i keracunan dan dilarikan ke rumah sakit."
+            scene black with dissolve
+            "ADUH KALO MAU BELI SAYURAN, TANYA TANYA DULU DEH! TAKUTNYA BUSUK, MALAH KAYA GINI SEKARANG."
+            scene black with dissolve
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(2.0)
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
 
-        "Ayam geprek Pak (donatur)":
-            #*CHOSE C*
-            "[mcname!c]" "{i}Hmmm kayaknya makan ayam geprek enak deh, pengen yang pedes sesekali.{/i}"
-            "Ternyata ayam yang kamu pesen terlalu pedes dan bikin kamu sakit perut sampe dilarikan ke rumah sakit."
-            $ quick_menu = False
+        "Ayam geprek Pak Addo":
             stop music fadeout 1.0
-            scene black with Dissolve(2.0)
-            show text "{color=#FFF}ADUHHH KASIAN BANGET MASIH MUDA UDAH KE RS GARA GARA SENENG MAKAN PEDES, LAIN KALI JANGAN TERLALU PEDES YA!{/color}" with Pause(2.0)
-            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            $ quick_menu = False
+            play music "BGM_Bad End.ogg" fadein 1.0
+            "[mcname!c]" "{i}Hmmm kayaknya makan ayam geprek Pak Addo enak deh, pengen yang pedes sesekali.{/i}"
+            "Ternyata ayam yang kamu pesen terlalu pedes dan bikin kamu sakit perut sampe dilarikan ke rumah sakit."
+            scene black with dissolve
+            "ADUHHH KASIAN BANGET MASIH MUDA UDAH KE RS GARA GARA SENENG MAKAN PEDES, LAIN KALI JANGAN TERLALU PEDES YA!"
+            scene black with dissolve
+            show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(2.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
 
 label goodkanaafterorder:
     #*CHOSE A*
-    "[mcname!c]" "{i}Eh nyoba nasi cumi Pak (donatur) kali ya? Katanya terkenal sampe masuk di subtitle gitu di beberapa film, nyobain ah.{/i}"
+    "[mcname!c]" "{i}Eh nyoba nasi cumi Pak Sunny kali ya? Katanya terkenal sampe masuk di subtitle gitu di beberapa film, nyobain ah.{/i}"
     "[mcname!c] pun memesan makanan dan kembali ke meja di mana Kana dan Freya berada."
-    "[mcname!c]" "Eh maaf lama, tadi aku jadinya pesan nasi cumi Pak (donatur) itu."
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    pause(1.0)
+    scene kantin with Dissolve(1.0)
+    $ quick_menu = True
+    "[mcname!c]" "Eh maaf lama, tadi aku jadinya pesan nasi cumi Pak Sunny itu."
     show freya at freya_near_right
     show kana_talk at kana_near_left_2
     show kana_side_talk at left
@@ -121,7 +139,7 @@ label goodkanaafterorder:
     with dissolve
     "[mcname!c]" "OWH IYA, INI!!!"
     "Dengan nada semangat [mcname!c] mengambil selembaran yang berada di tasnya."
-    "[mcname!c]" "Jadi ini tuh ada rekrutmen buat masuk ke klub jejepangan dan jadi panitia di event gitu."
+    "[mcname!c]" "Jadi ini tuh ada rekrutmen buat masuk ke klub jejepangan gitu."
     "[mcname!c]" "Tadi liat sekilas, tapi aku ambil soalnya kayaknya seru gitu sih."
     hide freya
     show freya_talk at freya_near_right
@@ -150,15 +168,15 @@ label goodkanaafterorder:
     "[mcname!c]" "Iya Nay ikut yuk, aku juga ikut."
     hide kana
     show kana_confused_blush at kana_near_left_2
-    show kana_side_confused at left
+    show kana_side_cry at left
     with dissolve
     kana "T-tapiiiiii."
-    hide kana_side_confused with dissolve
+    hide kana_side_cry with dissolve
     "[mcname!c]" "Gini deh, kamu ikut aja dulu. Kalo emang ga suka, nanti keluar aja. Nanti aku yang ngomong deh ke ketuanya, trial and error gitu."
-    show kana_side_confused at left
+    show kana_side_cry at left
     with dissolve
     kana "Emang bisa ya kaya gitu?"
-    hide kana_side_confused
+    hide kana_side_cry
     hide kana_confused_blush
     hide freya
     show kana_confused_blush_sideeye at kana_near_left_2
@@ -178,48 +196,76 @@ label goodkanaafterorder:
     show kana_side_confused at left
     with dissolve
     kana "Ummm i-iya deh aku ikut aja dulu ya. Tapi kalau aku ga suka, aku ga join ya?"
-    hide kana_side_confused with dissolve
+    hide kana_side_confused
+    show kana at kana_near_left_2
+    hide kana_confused
+    with dissolve
     "[mcname!c]" "NAHHHH GITU DONG."
     "Tak lama kemudian, makanan pun datang. Mereka bertiga menghabiskan makanan mereka dan membayarnya."
-    "Di perjalanan pulang, [mcname!c] dan Kana membuat janji untuk mengunjungi klub jejepangan tersebut. "
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "BGM_Sore.ogg" fadein 1.0
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Di perjalanan pulang, [mcname!c] dan Kana..."
+    $ quick_menu = False
+    scene lorong sore with Dissolve(2.0)
+    show kana at kana_near 
+    with dissolve
+    $ quick_menu = True
     "[mcname!c]" "Eh Nay, nanti besok ya kita ke klubnya."
-    show kana_side_confused at left with dissolve
+    show kana_confused at kana_near
+    show kana_side_confused at left
+    with dissolve
     kana "Ehhh aku masih belum siap, minggu depan aja deh."
-    hide kana_side_confused with dissolve
+    hide kana_side_confused
+    with dissolve
     "[mcname!c]" "Kelamaan Nay, lagian batas pendaftaran cuma sampai lusa aja. Besok yaa, nanti aku tunggu di depan kampus. Dadahhhh."
-    show kana_side_confused at left with dissolve
+    show kana_side_confused at left
+    with dissolve
     kana "Ehhh…"
-    hide freya
+    show kana_confused_blush_sideeye at kana_near
+    hide kana
     hide kana_confused
     hide kana_side_confused
     with dissolve
     "[mcname!c] pun pergi pulang ke kosan meninggalkan Kana yang sedikit kebingungan.."
+    hide kana_confused_blush_sideeye
+    with dissolve
     stop music fadeout 1.0
-
-    #*SKIP TO SCENE*
-    #*KOS (MALAM)*
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Di kost..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
     $ quick_menu = True
     play sound "audio/ReceiveText.ogg" loop
     "[mcname!c] melihat ke arah HPnya yang berbunyi."
     stop sound
-    "Saat membuka HPnya ia mendapatkan notifikasi chat dari Kana."
+    "Saat membuka HPnya, ternyata ia mendapatkan notifikasi chat dari Kana."
+    stop music fadeout 1.0
     $ quick_menu = False
     nvl clear
+    play music "BGM_Happy + HP.ogg" fadein 1.0
     kana_nvl "Eh. B-besok kita reschedule aja gimana >_<"
     mc_nvl "G"
-    kana_nvl "Iiiii kok gitu siih ayolah pleaseeeeeee..(✿◕‿◕✿)"
+    kana_nvl "Iiiii kok gitu siih ayolah pleaseeeeeee..(QAQ)"
     mc_nvl "Ya udah, boleh"
     kana_nvl "Yeeee akhirnya, jadinya kapan?"
     mc_nvl "Minggu depan tapi kamu sendirian ya Nay, soalnya aku mau besok."
     kana_nvl "Iiiiihh, tapi kan."
-    mc_nvl "Kalo ga mau ikut gapapa kok, ga mau maksa. Kalo mau ikut, aku tunggu sampai jam 3 sore ya… Jangan telat, good night."
+    mc_nvl "Klo gmw ikut, gpp. Ga maksa."
+    mc_nvl "Klo mw ikut, w tunggu jam 3 sore ya…"
+    mc_nvl "Jangan telat, good night."
     kana_nvl "Ehhh..."
+    nvl clear
+    play sound "audio/ReceiveText.ogg" loop fadein 1.0
+    scene kamar mc kota with dissolve
     $ quick_menu = True
-    play sound "audio/ReceiveText.ogg" loop
     "HP [mcname!c] terus-terusan bersuara, suara notif tidak berhenti terdengar."
     stop sound
     "Hingga akhirnya [mcname!c] pun memilih untuk memasuki mode getar."
@@ -227,14 +273,14 @@ label goodkanaafterorder:
     "[mcname!c] pun memilih untuk mengabaikan HPnya dan pergi tidur."
     nvl clear
     stop music fadeout 1.0
-
-    #*SKIP TO SCENE*
-    #*BG KAMPUS SIANG MENUJU SORE*
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "audio/BGM_Kampus Sore.mp3" loop fadein 1.0
-    scene lorong sore with Dissolve(2.0)
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kampus Sore.ogg" loop fadein 1.0
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan sorenya..."
+    $ quick_menu = False
+    scene lorong sore with Dissolve(1.0)
     $ quick_menu = True
     "[mcname!c]" "Hmmmm bentar lagi jam 3, aku tinggal aja kali ya?"
     "Saat [mcname!c] akan pergi, dari kejauhan terdengar suara Kana berteriak."
@@ -248,12 +294,15 @@ label goodkanaafterorder:
     show kana_side_confused at left with dissolve
     kana "Ihh kamu kenapa sih ga bales chat aku? Sengaja ya bikin aku marah?"
     hide kana_side_confused
+    show kana_angry at kana_near
     with dissolve
     "[mcname!c]" "Hahah, soalnya kata Freya kamu harus digituin sih biar mau, makanya aku diemin kamu dulu."
-    show kana_side_confused at left with dissolve
+    show kana_side_confused at left
+    hide kana_angry
+    with dissolve
     kana "Iiii, kamu mah…"
-    hide kana_side_confused    with dissolve
-    "[mcname!c] dan Kana pun pergi ke arah dimana klub jejepangan berada.."
+    hide kana_side_confused with dissolve
+    "[mcname!c] dan Kana pun pergi ke arah di mana klub jejepangan berada.."
     "[mcname!c]" "Kamu siap kan, Nay?"
     hide kana_confused
     show kana_shy_closeeye at kana_near
@@ -273,9 +322,10 @@ label goodkanaafterorder:
     show tana_side_talk at left
     with dissolve
     #???( TONO )
-    "???" "Woyyy lu mau kemana kocakkkk!"
+    "???" "Woyyy lu mau ke mana kocakkkk!"
     hide tana_side_talk
     hide tana_talk
+    with dissolve
     show pia_talk at pia_near
     show pia_side_talk at left
     with dissolve
@@ -284,17 +334,20 @@ label goodkanaafterorder:
     hide pia_side_talk
     hide pia_talk
     show kana_confused_blush at kana_near
-    show kana_side_confused at left
+    show kana_side_cry at left
     with dissolve
     kana "K-kelihatannya rame banget ya [mcname!c], kita pulang aja yuk? Lain kali aja."
-    hide kana_side_confused
+    hide kana_side_cry
     with dissolve
     "[mcname!c]" "Udah lah namanya juga klub, yuk masuk. Permisiii~"
     hide kana_confused_blush with dissolve
     "[mcname!c] pun masuk ke arah ruangan klub. Kana panik dan mencoba untuk menghentikan [mcname!c], akan tetapi [mcname!c] telah memasuki ruangan terlebih dahulu."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene ruang ukm with Dissolve(2.0)
+    scene black with Dissolve(1.0)
+    play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
+    play music "BGM_UKM.ogg" fadein 1.0
+    scene ruang ukm sore with Dissolve(1.0)
     $ quick_menu = True
     "Suasa ruangan tiba-tiba hening, akan tetapi terlihat wajah yang agak familiar di sana."
     show tana_talk at tana_near
@@ -316,15 +369,15 @@ label goodkanaafterorder:
     "???" "Elu kan yang waktu itu menghindar ya? Akhirnya dateng juga, udah gue tungguin loh."
     hide tana_side_talk
     hide tana_talk
-    show tana at tana_right
+    with dissolve
+    show tana at tana_near
     show kana_shy_talk at kana_near_left_2
     show kana_side_cry at left
     with dissolve
     kana "Eeehh, I-iya hehe."
     hide kana_side_cry with dissolve
     "[mcname!c]" "Nay, santai aja napa."
-    hide kana_shy_talk
-    hide tana
+    show kana_shy at kana_near_left_2
     show tana at tana_near
     show pia_talk at pia_near_right
     show pia_side_talk at left
@@ -343,8 +396,8 @@ label goodkanaafterorder:
     hide tana_side_talk
     hide tana_talk
     hide pia
-    show pia_talk at pia_near_right
     show tana at tana_near
+    show pia_talk at pia_near_right
     show pia_side_talk at left
     with dissolve
     #???(PIA)
@@ -370,8 +423,8 @@ label goodkanaafterorder:
     show pia_talk at pia_near_right
     show pia_side_talk at left
     with dissolve
-    pia "Btw kenalin namaku Pia Meraleo. Panggil Pia aja."
     $ pia_name = "Pia"
+    pia "Btw kenalin namaku Pia Meraleo. Panggil Pia aja."
     hide pia_side_talk
     hide pia_talk
     hide tana
@@ -379,8 +432,8 @@ label goodkanaafterorder:
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
-    tana "Owh iya sampe lupa haha, kenalin juga gue Tana Nona. Salam kenal ya guys."
     $ tono_name = "Tana"
+    tana "Owh iya sampe lupa haha, kenalin juga gue Tana Nona. Salam kenal ya guys."
     hide tana_side_talk
     hide tana_talk
     hide pia
@@ -400,6 +453,7 @@ label goodkanaafterorder:
     hide tana_side_angry
     hide tana_angry
     hide pia
+    hide kana_shy_talk
     show tana at tana_near
     show pia_talk at pia_near_right
     show pia_side_talk at left
@@ -408,6 +462,7 @@ label goodkanaafterorder:
     hide pia_side_talk
     hide pia_talk
     show pia at pia_near_right
+    hide kana_shy
     show kana_shy_talk at kana_near_left_2
     show kana_side_cry at left
     with dissolve
@@ -476,7 +531,10 @@ label goodkanaafterorder:
     show pia at pia_near_right
     with dissolve
     "[mcname!c]" "Kalau aku iya haha, tapi kalau Kana.."
+    show kana_shy at kana_near_left_2 
+    with dissolve
     "[mcname!c] melihat ke arah Kana diikuti oleh Tana dan Pia."
+    hide kana_shy
     show kana_shy_talk at kana_near_left_2
     show kana_side_cry at left
     with dissolve
@@ -490,6 +548,11 @@ label goodkanaafterorder:
     with dissolve
     pia "Boleh kok, boleh pake bangettt."
     pia "Kamu liat-liat aja juga gapapa kok, apalagi nanti kalau di akhir-akhir ikutan join."
+    hide pia_side_talk 
+    hide pia_talk 
+    show pia_smile at pia_near_right 
+    show pia_side_smile at left 
+    with dissolve
     pia "Soalnya kita juga lagi perlu satu orang lagi nih dan kayaknya kamu cocok deh."
     hide pia_side_talk
     hide pia_talk
@@ -525,6 +588,7 @@ label goodkanaafterorder:
     pia "Eh? I-iya."
     hide pia_side_shock
     hide pia_shock
+    hide tana
     hide kana_confused
     show kana at kana_near_left_2
     show pia at pia_near_right
@@ -593,12 +657,12 @@ label goodkanaafterorder:
     hide tana_talk
     hide pia_silent
     show tana at tana_near
-    show pia_talk at pia_near_right
-    show pia_side_talk at left
+    show pia_silent at pia_near_right
+    show pia_side_silent at left
     with dissolve
     pia "Ton… Lawakan lu kayak bapak-bapak dah, ga lucu."
-    hide pia_side_talk
-    hide pia_talk
+    hide pia_side_silent
+    hide pia_silent
     hide tana
     show pia at pia_near_right
     show tana_angry at tana_near
@@ -633,7 +697,6 @@ label goodkanaafterorder:
     hide tana_side_talk
     hide tana_talk
     hide pia
-    show tana at tana_near
     show pia_talk at pia_near_right
     show pia_side_talk at left
     with dissolve
@@ -669,19 +732,24 @@ label goodkanaafterorder:
     show kana_talk at kana_near_left_2
     show kana_side_talk at left
     with dissolve
-    kana "hahahaha, iya iya enggak. Santai aja, kalian kan nyuruh aku santai."
+    kana "Hahahaha, iya iya enggak. Santai aja, kalian kan nyuruh aku santai."
     hide kana_side_talk
     hide kana_talk
+    hide pia_smile
     hide pia_sad
     show kana at kana_near_left_2
     show pia_talk at pia_near_right
     show pia_side_talk at left
     with dissolve
     pia "I-iya sih…"
+    hide pia_side_smile
     hide pia_side_talk
     hide pia_talk
     hide kana
     hide tana
+    show tana_laugh at tana_near
+    show kana_smile at kana_near_left_2
+    show pia_smile at pia_near_right
     with dissolve
     "Mereka menghabiskan waktu di sore hari itu dengan berbincang bersama dan mulai mengenal satu sama lain lebih dalam."
     "Ada juga beberapa pembicaraan mengenai event yang akan datang dan apa saja tugas yang akan dilakukan oleh [mcname!c] dan Kana."
@@ -689,17 +757,18 @@ label goodkanaafterorder:
     #*SKIP SCENE*
     #*BG KAMAR KOS MALAM*
     $ quick_menu = False
-    scene awan malam with Dissolve(2.0)
-    scene black with dissolve
-    play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Malam itu..."
-    show kana_calling at ui_handphone with dissolve
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    $ quick_menu = True
     play sound "audio/SFX - Telephone.mp3" loop
-    "HP [mcname!c] pun berdering dengan terus menerus membuatnya terganggu karena sedang bermain game online."
-    "Saat melihat HPnya tersebut, ternyata itu adalah notif dari Kana. [mcname!c] pun akhirnya membalas chatnya, akan tetapi Kana langsung menelpon [mcname!c]."
-    #*CUT TO SCENE*
+    "Saat sedang tiduran, HP [mcname!c] berdering dengan terus menerus."
+    show kana_calling at ui_handphone with dissolve
+    "Saat melihat HPnya tersebut, ternyata yang menelepon [mcname!c] adalah Kana."
     stop sound
     hide kana_calling
     show kana_connect at ui_handphone
@@ -712,7 +781,7 @@ label goodkanaafterorder:
     show kana_side_confused at left with dissolve
     kana "A-aku mau jujur sama kamu boleh? Ini penting banget buat ke depannya."
     hide kana_side_confused with dissolve
-    "[mcname!c]" "{i}Waduhhh, kenapa ini kok Si Kana tiba-tiba kaya gini? Aduhhh kok gue gugup gini?{/i}"
+    "[mcname!c]" "{i}Waduhhh, kenapa ini kok Si Kana tiba-tiba kaya gini? Aduhhh kok gue jadi gugup gini?{/i}"
     "[mcname!c]" "I-iya Nay, kenapa tumben kok jadi serius gini."
     show kana_side_shy at left with dissolve
     kana "Se-sebenernya…"
@@ -723,10 +792,10 @@ label goodkanaafterorder:
     show kana_side_shy at left with dissolve
     kana "Jadi…aku tuh pengen ikut juga di kepanitiaan…"
     hide kana_side_shy
-    show kana_side_talk at left
+    show kana_side_smile at left
     with dissolve
     kana "Fiuuuuhhh, akhirnya bisa juga. Dari tadi aku gugup tau mau ngomong itu, hahaha. Jadi kamu juga ikut kan [mcname!c]?"
-    hide kana_side_talk with dissolve
+    hide kana_side_smile with dissolve
     "[mcname!c]" "{i}Oalahh ternyata Kana mau ngomongin itu… Kukira mau ngomong apaan. Aduhhhh aku ke-PDan, aaaaaaa~{/i}"
     show kana_side_confused at left with dissolve
     kana "[mcname!c]? Kok diem?"
@@ -743,16 +812,18 @@ label goodkanaafterorder:
     show kana_side_shy_smile at left with dissolve
     kana "Gapapa kok, pokoknya aku ikut kepanitiaan juga ya. Gitu aja ya, dadah selamat malaamm."
     hide kana_side_shy_smile with dissolve
-    show kana_connect at ui_handphone with dissolve
-    "Suara telepon pun ditutup, [mcname!c] terdiam."
+    hide kana_connect at ui_handphone
+    with dissolve
+    "[mcname!c] terdiam."
     "[mcname!c]" "Ahhhhh… Kenapa aku malah deg degan kayak gitu sih, udah lah mendingan tidur."
     stop music fadeout 1.0
     $ quick_menu = False
-    #*SKIP TO SCENE*
-    #*BG RUANG KLUB*
-    scene black with Dissolve(2.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_UKM.ogg" loop fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
     scene ruang ukm with Dissolve(2.0)
     $ quick_menu = True
     "Beberapa hari kemudian Kana dan [mcname!c] pun lolos dalam seleksi kepanitian dan mereka datang ke ruangan klub untuk rapat."
@@ -765,7 +836,17 @@ label goodkanaafterorder:
     hide tana_talk
     with dissolve
     "Rapat pun dimulai, rapat kali ini berlangsung cukup lama karena ada beberapa panitia tambahan."
-    "Di akhir rapat tersebut pun Pia dan Tana memanggil Kana dan [mcname!c]."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "BGM_Sore.ogg" fadein 1.0
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa jam kemudian..."
+    $ quick_menu = False
+    scene ruang ukm sore with Dissolve(2.0)
+    $ quick_menu = True
+    "Di akhir rapat, Pia dan Tana memanggil Kana dan [mcname!c]."
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
@@ -829,7 +910,7 @@ label goodkanaafterorder:
     show pia_talk at pia_near_right
     show pia_side_talk at left
     with dissolve
-    pia "Hehehe"
+    pia "Hehehe~"
     hide pia_side_talk
     hide pia_talk
     hide tana_angry
@@ -901,7 +982,7 @@ label goodkanaafterorder:
     hide tana_talk
     show tana at tana_near
     with dissolve
-    "[mcname!c]" "Wahhhhh… seru tuh Nay, kamu harus ikutan. Ayooo!"
+    "[mcname!c]" "Wahhhhh… Seru tuh Nay, kamu harus ikutan. Ayooo!"
     show kana_side_confused at left
     with dissolve
     kana "HA!?? IDOL!??? Hahaha ga ga ga, pokoknya ga mau… Malu tau di depan banyak orang tuh."
@@ -955,7 +1036,7 @@ label goodkanaafterorder:
     hide kana_shy_talk
     show kana_shy at kana_near_left_2
     with dissolve
-    "[mcname!c]" "Ayolah Nayyy, pleaseeeee."
+    "[mcname!c]" "Ayolah Nayyy, pleaseeeee~"
     "Baik [mcname!c], Pia, serta Tana, memohon dengan sangat… Membuat Kana semakin terdesak."
     "Kana pun mau tidak mau mengiyakan hal itu, akan tetapi dengan beberapa syarat."
     hide kana_shy
@@ -968,12 +1049,12 @@ label goodkanaafterorder:
     hide pia
     hide tana
     show kana_shy at kana_near_left_2
-    show pia_talk at pia_near_right
-    show tana_talk at tana_near
+    show pia_smile at pia_near_right
+    show tana_laugh at tana_near
     with dissolve
     "{size=-5}Pia & Tono{/size}" "“Yessss!!"
-    hide pia_talk
-    hide tana_talk
+    hide pia_smile
+    hide tana_laugh
     hide kana_shy
     with dissolve
     "Tana dan Pia merayakan hari itu karena akhirnya mereka bisa mendaftarkan diri mereka ke dalam lomba yang mereka inginkan."
@@ -982,19 +1063,24 @@ label goodkanaafterorder:
     $ quick_menu = False
     #*SKIP TO SCENE*
     #*BG KOS MALAM*
-    scene black with Dissolve(2.0)
-    play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Di kost..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
     $ quick_menu = True
     play sound "audio/ReceiveText.ogg" loop
     "[mcname!c] melihat ke arah HPnya yang berbunyi."
     "Di saat [mcname!c] sedang beristirahat, terdengar suara HPnya yang tidak pernah berhenti bergetar sejak ia selesai mandi."
-    stop sound
+    stop sound fadeout 1.0
     "[mcname!c]" "Aduhhh ini siapa sih, dari tadi notif jebol gini."
     #*CHANGE SCENE*
     $ quick_menu = False
-    #*HP*
+    stop music fadeout 1.0
     nvl clear
+    play music "BGM_Happy + HP.ogg" fadein 1.0
     tana_nvl "Eh ini group buat kita yaa. Buat bahas latihan dan bahas yang lain-lain juga lah, biar ga usah ngechat satu-satu."
     pia_nvl "Hadeehhh. Lu belum ijin dulu kan ke yang lain, Ton?"
     tana_nvl "Alah ga usah lah, kan temen ini. Ngapain sampe segitunya sih Pii."
@@ -1009,8 +1095,10 @@ label goodkanaafterorder:
     pia_nvl "Hahah"
     mc_nvl "Jadi mau ngapain nih?"
     tana_nvl "Jadiiii giniii…"
+    scene kamar mc kota with Dissolve(0.3)
     $ quick_menu = True
-    "Tana pun menceritakan rencana dia untuk latihan persiapan lomba yang akan datang. Rencananya akan latihan seminggu 3-4x, meliputi latihan dance dan latihan bernyanyi. Tempat latihan akan diberi tahu nanti, untuk sementara akan menggunakan ruangan klub untuk latihan terlebih dahulu."
+    "Tana pun menceritakan rencana dia untuk latihan persiapan lomba yang akan datang. Rencananya akan latihan seminggu 3-4x, meliputi latihan dance dan latihan bernyanyi."
+    "Tempat latihan akan diberi tahu nanti, untuk sementara akan menggunakan ruangan klub untuk latihan terlebih dahulu."
     $ quick_menu = False
     tana_nvl "Jadii gituu sih, gimana? Setuju kan? KAN!!???"
     pia_nvl "Iya gue sih setuju, kamu gimana Kana?"
@@ -1024,14 +1112,18 @@ label goodkanaafterorder:
     nvl clear
     stop music fadeout 1.0
     $ quick_menu = False
+    scene kamar mc kota with dissolve
     #*SKIP TO SCENE*
     #*BG RUANG KLUB*
-    scene black with Dissolve(2.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_UKM.ogg" loop fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
     scene ruang ukm with Dissolve(2.0)
     $ quick_menu = True
-    "Sore hari di ruangan klub, semua anggota sudah pulang dan sibuk dengan urusannya masing-masing. Kana, Tana, serta Pia mulai melakukan latihannya ditemani oleh [mcname!c]."
+    "Kana, Tana, serta Pia mulai melakukan latihannya ditemani oleh [mcname!c]."
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
@@ -1080,7 +1172,7 @@ label goodkanaafterorder:
     hide kana_shy_talk
     show kana_shy at kana_near_left_2
     with dissolve
-    "[mcname!c]" "NAYA!!..."
+    "[mcname!c]" "NAYA!!"
     "[mcname!c] berteriak cukup kencang hingga Pia dan Tana pun terkejut dengan suara [mcname!c]."
     "[mcname!c]" "KANAIA ASA, please don't be like that. It’s ok to make mistakes, mistakes happen. Santai aja Nay, mereka ga bakalan salahin kamu kok. Kalaupun mereka berani, bakal kugetok mereka kok. Jadi just be you, ok?"
     hide kana_shy
@@ -1145,9 +1237,18 @@ label goodkanaafterorder:
     hide pia
     with dissolve
     "Kana akhirnya mau mencoba latihan bersama Tana dan Pia."
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Sore.ogg" loop fadein 1.0
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Tak terasa langit telah menjadi sore..."
+    $ quick_menu = False
+    scene ruang ukm sore with Dissolve(2.0)
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
+    $ quick_menu = True
     tana "Gileeeee, lu keren banget Nayyy bisa ikutin tempo kita."
     tana "Sumpah stamina lu kuat banget, emang ga sia-sia ya kamu sering ke event."
     hide tana_side_talk
@@ -1206,25 +1307,29 @@ label goodkanaafterorder:
     "Mereka pun pulang ke rumah masing-masing."
     stop music fadeout 1.0
     $ quick_menu = False
-    #*SKIP TO SCENE*
-    #*BG KOS MALAM*
-    scene black with Dissolve(2.0)
-    play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    #Narator
+    "Di kost..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    $ quick_menu = True
     "[mcname!c] mengingat kembali perjuangan Kana saat latihan."
-    "[mcname!c]" "{i}Nay… Kamu berjuang banget yaa, mulai terbuka sama orang lain lalu sekarang kamu mau ngedance dan nyanyi… Entah kenapa aku bangga sama kamu.{/i}"
+    "[mcname!c]" "{i}Nay… Kamu berjuang banget yaa, mulai terbuka sama orang lain lalu sekarang kamu mau ngedance dan nyanyi… Aku bangga banget sama kamu...{/i}"
     stop music fadeout 1.0
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_UKM.ogg" loop fadein 1.0
-    scene ruang ukm with Dissolve(2.0)
+    scene awan with Dissolve(1.0)
     $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene ruang ukm with Dissolve(2.0)
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
+    $ quick_menu = True
     tana "Okeee buat hari ini, kita coba latihan vocal yaa. Piii kasih paham."
     hide tana_side_talk
     hide tana_talk
@@ -1267,39 +1372,47 @@ label goodkanaafterorder:
     show pia_side_talk at left
     with dissolve
     pia "Aman aja."
+    stop music fadeout 1.0
     hide pia_side_talk
     hide pia_talk
     show pia at pia_near_right
+    show kana_shy_closeeye_talk at kana_near_left_2
     with dissolve
     "Kana pun menyanyikan lagu yang ia sukai. Lagunya cukup lama sekitar 4 menit, tetapi bisa dilihat bahwa Kana bernyanyi dengan penuh penghayatan."
+    hide kana_shy_closeeye_talk
+    show kana_talk at kana_near_left_2
+    show kana_side_talk at left
+    with dissolve
+    kana "Huuuuu, gimana? Huuuuu… Bentar ya aku narik nafas dulu."
+    play music "BGM_Bad End.ogg" fadein 1.0
+    hide kana_talk
+    hide kana_side_talk
+    hide pia
+    show tana
+    show kana at kana_near_left_2
+    show pia_silent at pia_near_right
+    show pia_side_silent at left
+    with dissolve
+    pia "Hmmm… Kana, aku boleh blak-blakan ga?"
     hide kana
+    hide pia_side_silent
     show kana_confused at kana_near_left_2
     show kana_side_confused at left
     with dissolve
-    kana "Huuuuu, gimana? Huuuuu… Bentar ya aku narik nafas dulu."
-    hide kana_side_confused
-    hide pia
-    show pia_talk at pia_near_right
-    show pia_side_talk at left
-    with dissolve
-    pia "Hmmm… Kana, aku boleh blak-blakan ga?"
-    hide pia_side_talk
-    hide pia_talk
-    show pia at pia_near_right
-    show kana_side_confused at left
-    with dissolve
     kana "Eh k-kenapa ini kok jadi kaya gini?"
+    show kana_confused_blus_sideeye at kana_near_left_2
     hide kana_side_confused
     with dissolve
     "Kana pun kebingungan. Ia melihat ke arah Tana dan [mcname!c], akan tetapi Tana hanya bisa diam."
     "[mcname!c]" "Piia?"
+    hide kana_confused_blus_sideeye
     hide pia
-    show pia_talk at pia_near_right
-    show pia_side_talk at left
+    show pia_side_silent at left
     with dissolve
     pia "Bentar ya [mcname!c], ini aku sama Kana dulu. Oke Kana, jadi…"
-    hide pia_side_talk with dissolve
-    "Pia pun mengomentari nyanyian dari Kana. Pia tidak mengatakan bahwa Kana tidak bisa bernyanyi ataupun suaranya jelek, akan tetapi Pia mengomentari tentang teknik vokal yang digunakan Kana dan memberikan petunjuk mengenai teknik vokal yang lebih cocok untuk suara Kana."
+    hide pia_side_silent with dissolve
+    "Pia pun mengomentari nyanyian dari Kana. Pia tidak mengatakan bahwa Kana tidak bisa bernyanyi ataupun suaranya jelek."
+    "Akan tetapi, Pia mengomentari tentang teknik vokal yang digunakan Kana dan memberikan petunjuk mengenai teknik vokal yang lebih cocok untuk suara Kana."
     hide pia_talk
     hide kana_confused
     show pia at pia_near_right
@@ -1326,26 +1439,24 @@ label goodkanaafterorder:
     show kana at kana_near_left_2
     with dissolve
     "[mcname!c]" "Nay, you okay?"
-    hide kana
-    hide pia
-    hide tana
-    with dissolve
     "[mcname!c] melihat ke arah Kana yang mukanya terlihat agak pucat, membuat [mcname!c] sedikit khawatir."
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
     tana "Oke deh, ayoo!"
+    hide kana
+    hide pia
+    hide tana
+    hide pia_silent
     hide tana_side_talk
     hide tana_talk
     with dissolve
     "Saat bernyanyi bersama, sempat beberapa kali Kana terdiam sehingga mereka bertiga menyanyikan lagunya dari awal lagi…"
-    show kana_talk at kana_near_left_2
-    show kana_side_talk at left
+    show kana_confused_blush at kana_near_left_2
+    show kana_side_cry at left
     with dissolve
     kana "E-eh maaf ya, aku salah terus."
-    hide kana_side_talk
-    hide kana_talk
-    show kana at kana_near_left_2
+    hide kana_side_cry
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
@@ -1362,35 +1473,38 @@ label goodkanaafterorder:
     show pia at pia_near_right
     with dissolve
     "[mcname!c]" "Iya kok Nay. Meski aku ga terlalu tau soal vocal, tapi suara kamu enak didenger kok."
-    hide kana
-    show kana_talk at kana_near_left_2
-    show kana_side_talk at left
+    hide kana_confused_blush
+    show kana_shy_smile at kana_near_left_2
+    show kana_side_shy_smile at left
     with dissolve
     kana "Makasih ya, haha."
-    hide kana_side_talk
-    hide kana_talk
-    show kana at kana_near_left_2
-    show kana_side at left
+    hide kana_side_shy_smile
+    hide kana_shy_smile
+    show kana_deadeye at kana_near_left_2
     with dissolve
     kana "...."
-    hide kana_side
-    hide kana
-    show kana_talk at kana_near_left_2
-    show kana_side_talk at left
+    hide kana_deadeye
+    show kana_deadeye_smile at kana_near_left_2
     with dissolve
     kana "Eh maaf ini aku ditelpon sama orang rumah, aku izin angkat dulu ya."
     hide kana_side_talk
-    hide kana_talk
+    hide kana_deadeye_smile
     hide pia
     hide tana
     with dissolve
     #*Black Screen
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    scene ruang ukm with dissolve
+    scene black with Dissolve(1.0)
+    play music "BGM_Sore.ogg" fadein 1.0
+    scene awan sore with Dissolve(1.0)
     $ quick_menu = True
+    "Tak terasa langit telah menjadi sore..."
+    $ quick_menu = False
+    scene ruang ukm sore with Dissolve(2.0)
     show pia at pia_near
-    "[mcname!c]" "Eh… Piii"
+    $ quick_menu = True
+    "[mcname!c]" "Eh… Piii."
     hide pia
     show pia_talk at pia_near
     show pia_side_talk at left
@@ -1427,12 +1541,12 @@ label goodkanaafterorder:
     hide tana_side_talk
     hide tana_talk
     show tana at tana_near
-    show kana_talk at kana_near_left_2
-    show kana_side_talk at left
+    show kana_smile at kana_near_left_2
+    show kana_side_smile at left
     with dissolve
     kana "Eh temen-temen, maaf ya. Tadi ada telepon, kayaknya aku harus pulang duluan deh. Maaf banget yaa."
-    hide kana_side_talk
-    hide kana_talk
+    hide kana_side_smile
+    hide kana_smile
     show kana at kana_near_left_2
     show pia_talk at pia_near_right
     show pia_side_talk at left
@@ -1451,22 +1565,25 @@ label goodkanaafterorder:
     hide pia
     hide kana
     with dissolve
-    "Di perjalanan pulang, [mcname!c] memikirkan Kana. Ia tampak agak berbeda dari biasanya, seakan ada yang membuat dia gelisah. Tetapi yang ada di pikiran [mcname!c] hanya mimik muka Kana sesaat setelah diberi komentar oleh Pia…"
+    "Di perjalanan pulang, [mcname!c] memikirkan Kana. Ia tampak agak berbeda dari biasanya, seakan ada yang membuat dia gelisah."
+    "Tetapi yang ada di pikiran [mcname!c] hanya mimik muka Kana sesaat setelah diberi komentar oleh Pia…"
     "[mcname!c]" "Oke dehh, nanti aku tanya Si Kana aja."
     stop music fadeout 1.0
     $ quick_menu = False
-    #*SKIP TO SCENE*
-    #*BG KOS MALAM*
-    scene black with Dissolve(2.0)
-    play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Di kost..."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
     $ quick_menu = True
     "[mcname!c]" "{i}Hmmm, enaknya gimana ya mulainya?{/i}"
     $ quick_menu = False
     #*INSERT HP*
     nvl clear
     mc_nvl "Malam Nayy.."
-    nvl clear
+    scene kamar mc kota with Dissolve(0.3)
     $ quick_menu = True
     "Setelah kurang lebih 10 menit, akhirnya muncul notif pesan dari Kana."
     $ quick_menu = False
@@ -1492,9 +1609,11 @@ label goodkanaafterorder:
             $ quick_menu = False
             nvl clear
             stop music fadeout 1.0
-            scene black with Dissolve(2.0)
+            scene black with dissolve
             show text "{color=#FFF}“COBA LAGI YA BROK, KURANG BERUNTUNG LUH”{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "Warteg":
@@ -1505,9 +1624,11 @@ label goodkanaafterorder:
             $ quick_menu = False
             nvl clear
             stop music fadeout 1.0
-            scene black with Dissolve(2.0)
-            show text "{color=#FFF}“ADUHHH BROOOO BROOO, COBA LAGI DEH TINGGAL SATU PILIHAN TUH”{/color}" with Pause(2.0)
+            scene black with dissolve
+            show text "{color=#FFF}“ADUHHH BROOOO BROOO, COBA LAGI DEH TINGGAL SATU PILIHAN TUH”{/color}" with Pause(3.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
         "Rumah Kana":
@@ -1519,17 +1640,23 @@ label goodkanameetinhome:
     mc_nvl "Kalo di rumah gimana Nay? Aku sebenernya bebas sih mau di mana aja, yang penting kamu nyaman."
     kana_nvl "Boleh deh, nanti di rumah aku aja ya. Jam 12 siang gimana?"
     mc_nvl "Okee Nay.."
+    nvl clear
+    scene kamar mc kota with Dissolve(0.3)
     $ quick_menu = True
     "Hmmm ini pasti ada hubungannya sama latihan tadi, fix siiih…"
-    nvl clear
     stop music fadeout 1.0
     $ quick_menu = False
     #*SKIP TO SCENE*
     #*BG RUMAH KANA*
-    scene black with Dissolve(2.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    play music "audio/backsound_kamar.mp3" loop fadein 1.0
-    scene kamar kana with Dissolve(2.0)
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Ruang Tamu.ogg" loop fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
+    scene ruang tamu with Dissolve(2.0)
     $ quick_menu = True
     "[mcname!c] pun mendatangi rumah Kana tepat jam 12. Merasa hal ini adalah sesuatu yang penting, [mcname!c] tidak ingin membuat Kana kecewa karena telat."
     show kana_home_talk at kana_near
@@ -1574,10 +1701,12 @@ label goodkanameetinhome:
     kana "Apa Tono sama Pia muji aku cuma supaya aku tetep mau sama mereka ya, padahal aslinya aku tuh kaya beban..."
     hide kana_home_side_confused
     hide kana_home_confused
+    show kana_home_normal at kana_near
     with dissolve
     "[mcname!c] hanya diam saja, ia tidak ingin menyela cerita dari Kana."
     show kana_home_confused at kana_near
     show kana_home_side_confused at left
+    hide kana_home_normal at kana_near
     with dissolve
     kana "Kayaknya aku mending udahan aja deh, lagian aku kan ga berbakat nyanyi atau dance gitu. Tana punya dance, Pia punya vokal, kalau aku ga punya apa-apa."
     hide kana_home_side_confused
@@ -1592,32 +1721,32 @@ label goodkanameetinhome:
     kana "Maksudnya udah?"
     hide kana_home_side_confused
     hide kana_home_confused
-    show kana_home_sad at kana_near
+    show kana_home_normal at kana_near
     with dissolve
     "[mcname!c]" "Udah ngerendahin diri kamu sendiri? Okee ini sekarang pandanganku ya, ga boleh nyela."
     "[mcname!c]" "INGET, GA BOLEH NYELA."
     "[mcname!c]" "Ok?"
-    hide kana_home_sad
+    hide kana_home_normal
     show kana_home_confused at kana_near
     show kana_home_side_confused at left
     with dissolve
     kana "O-oke."
     hide kana_home_side_confused
     hide kana_home_confused
-    show kana_home at kana_near
+    show kana_home_normal at kana_near
     with dissolve
     "[mcname!c]" "Dancemu off tempo… off ketukan… emang kenapa Nay? Emang mereka komen soal itu? Enggak, kan?"
     "[mcname!c]" "Ini pertama kalinya dance buat kamu kan? Dan mereka aja muji kamu, Naya, ga usah berkecil hati."
     "[mcname!c]" "Soal vokal, kalo kamu mau tau, Si Tana sampe minta tolong buat sampein permintaan maaf ke kamu."
     "[mcname!c]" "Dia bilang kalo Si Pia emang ngajarinnya kaya gitu, tapi niat dia kan baik. Buktinya kamu sekarang tau teknik vokal lainnya."
-    "Kana yang hanya bisa terdiam menundukan kepalanya."
+    "Kana yang hanya bisa terdiam sambil menatap [mcname!c]."
     "[mcname!c]" "Yang lebih penting dari semua itu ada kamu, Kanaia Asa. Apa kamu seneng belajar bareng dan temenan sama mereka?"
     "Kana tetap terdiam beberapa menit."
     "[mcname!c]" "Sekali lagi Kanaia asa, kamu seneng ga sama mereka?"
-    show kana_home_side at left with dissolve
+    show kana_home_side_normal at left with dissolve
     kana "....."
-    hide kana_home_side
-    hide kana_home
+    hide kana_home_side_normal
+    hide kana_home_normal
     show kana_home_confused at kana_near
     show kana_home_side_confused at left
     with dissolve
@@ -1625,20 +1754,20 @@ label goodkanameetinhome:
     kana "Tapi… aku takut jadi beban.."
     hide kana_home_side_confused
     hide kana_home_confused
-    show kana_home at kana_near
+    show kana_home_normal at kana_near
     with dissolve
     "[mcname!c]" "Yang bilang kamu beban siapa? Kan ga ada, apa mau aku tanya langsung ke mereka?"
-    hide kana_home
+    hide kana_home_normal
     show kana_home_confused at kana_near
     show kana_home_side_confused at left
     with dissolve
     kana "J-jangan! Jangan tanya ke mereka, nanti aku makin maluuu."
     hide kana_home_side_confused
     hide kana_home_confused
-    show kana_home at kana_near
+    show kana_home_normal at kana_near
     with dissolve
     "[mcname!c]" "Ya udah, ga usah mikir kaya gitu lagi ya. Kamu udah berjuang kok, jadi kamu harus bangga. Oke?"
-    hide kana_home
+    hide kana_home_normal
     show kana_home_confused at kana_near
     show kana_home_side_confused at left
     with dissolve
@@ -1668,8 +1797,23 @@ label goodkanameetinhome:
     show kana_home at kana_near
     with dissolve
     "[mcname!c]" "Engga kok, aku janji. "
-    "Setelah itu Kana pun melatih dirinya untuk bisa lebih baik lagi sambil ditemani [mcname!c] yang selalu ada untuk mendukungnya. Kana cukup semangat untuk latihan pribadi kali ini. Tak terasa hari sudah mulai gelap."
-    "[mcname!c]" "Nay, keknya aku pulang dulu ya. Udah malem ini, ga kerasa emang kalau lagi asik-asik tuh."
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Setelah itu Kana pun melatih dirinya untuk bisa lebih baik lagi sambil ditemani [mcname!c] yang selalu ada untuk mendukungnya."
+    "Kana cukup semangat untuk latihan pribadi kali ini."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "BGM_Kosan 1.ogg" fadein 1.0
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    " Tak terasa langit sudah menjadi gelap."
+    $ quick_menu = False
+    scene ruang tamu malam with Dissolve(2.0)
+    $ quick_menu = True
+    "[mcname!c]" "Nay, kayaknya aku pulang dulu ya. Udah malem ini, ga kerasa emang kalau lagi asik-asik tuh."
     hide kana_home
     show kana_home_talk at kana_near
     show kana_home_side_talk at left
@@ -1688,15 +1832,21 @@ label goodkanameetinhome:
     hide kana_home_side_talk
     hide kana_home_talk
     with dissolve
-    "[mcname!c] pun pergi dari rumah Kana. Di perjalanan ia memikirkan Kana yang terkadang masih memiliki negatif thinking, dan saat itu juga ia berjanji."
+    "[mcname!c] pun pergi dari rumah Kana."
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene awan malam with Dissolve(1.0)
+    $ quick_menu = True
+    "Di perjalanan ia memikirkan Kana yang terkadang masih memiliki negatif thinking, dan saat itu juga ia berjanji."
     "[mcname!c]" "{i}Okeee, pokoknya aku harus bisa dukung Kana sampe perlombaan! Jangan sampe kana punya pikiran negatif lagi!{/i}"
     stop music fadeout 1.0
     $ quick_menu = False
-    #*SKIP TO SCENE*
-    #*BG RUANG KLUB*
-    scene black with Dissolve(2.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_UKM.ogg" loop fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Keesokan harinya..."
+    $ quick_menu = False
     scene ruang ukm with Dissolve(2.0)
     $ quick_menu = True
     "Hari baru dimulai, para anggota dan panitia pun cukup sibuk dengan persiapan yang dibutuhkan."
@@ -1750,78 +1900,87 @@ label goodkanameetinhome:
         "ROOFTOP":
             jump goodkanadancepractice
         "TANAH KOSONG DI UJUNG KAMPUS":
-            #*IF CHOOSE B*
-            #5: bg tanah kosong? atau disesuaikan dialognya?
-            show tana_talk at tana_near
-            show tana_side_talk at left
+            stop music fadeout 1.0
+            $ quick_menu = False
+            scene black with Dissolve(1.0)
+            play music "BGM_Bad End.ogg" fadein 1.0
+            scene black with Dissolve(1.0)
+            $ quick_menu = True        
+            show tana_angry_2 at tana_near
+            show tana_side_angry_2 at left
             with dissolve
             tana "Lu serius brok, di sini?"
-            hide tana_side_talk
-            hide tana_talk
-            show tana at tana_near
+            hide tana_angry_2
+            hide tana_side_angry_2
+            show tana_angry at tana_near
             with dissolve
             "[mcname!c]" "Emang kenapa, Ton?"
-            show pia_talk at pia_near_right
-            show pia_side_talk at left
+            show pia_silent at pia_near_right
+            show pia_side_silent at left
             with dissolve
             pia "Eh kok aku ngerasa gimana ya sama hawanya."
-            hide pia_side_talk
-            hide pia_talk
-            show pia at pia_near_right
-            show kana_talk at kana_near_left_2
-            show kana_side_talk at left
+            hide pia_side_silent
+            hide pia_silent
+            show pia_silent at pia_near_right
+            show kana_confused_blush at kana_near_left_2
+            show kana_side_cry at left
             with dissolve
             kana "[mcname!c], serius kan di sini?"
-            hide kana_side_talk
-            hide kana_talk
-            show kana at kana_near_left_2
+            hide kana_side_cry
             with dissolve
             "[mcname!c]" "Iya soalnya kan Kana masih belum terbiasa tampil gitu, terus kalian pengen di tempat kosong kan? Aku denger tempat ini dari temen-temen gitu sih, gimana?"
             hide tana
-            show tana_talk at tana_near
-            show tana_side_talk at left
+            show tana_shock at tana_near
+            show tana_side_shock at left
             with dissolve
             tana "Broo sebenarnya ini tempat apaan dah, jujur hawanya ga enak. Kita pindah aja yuk, sumpah dah mending ga latihan sekalian gw mah daripada di sini."
-            hide tana_side_talk
-            hide tana_talk
+            hide tana_side_shock
+            hide tana_shock
             hide pia
-            show tana at tana_near
-            show pia_talk at pia_near_right
-            show pia_side_talk at left
+            show tana_sad at tana_near
+            show pia_silent at pia_near_right
+            show pia_side_silent at left
             with dissolve
             pia "Gue setuju sama Tono sih buat kali ini."
-            hide pia_side_talk
-            hide pia_talk
+            hide pia_side_silent
             hide kana
-            show pia at pia_near_right
-            show kana_drylaugh at kana_near_left_2
-            show kana_side_drylaugh at left
+            show kana_deadeye at kana_near_left_2
             with dissolve
-            kana "He..he…hehehehe…ahahahahhaha"
-            hide kana_side_drylaugh with dissolve
+            kana "!!!!!!!!!"
             "[mcname!c]" "Nay? Kamu kenapa Nay?"
-            show kana_side_drylaugh at left with dissolve
-            kana "Ahahahahhaha"
-            kana "AHAHAHAHAHAHAHAH!"
-            hide kana_side_drylaugh
-            show tana_talk at tana_near
-            show tana_side_talk at left
+            kana "!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+            show kana_deadeye_smile at kana_near_left_2 with dissolve
+            kana "AHAHAHAHAHAHAHAH!!!!!!!!!!!!!!!!!!!!!!!!"
+            show tana_shock at tana_near
+            show tana_side_shock at left
             with dissolve
             tana "TUH KAN! GW BILANG APA!"
-            hide tana_side_talk
-            hide tana_talk
-            hide kana_drylaugh
+            hide pia_silent 
+            hide tana_sad
+            hide kana_confused_blush 
+            hide tana_angry
+            hide kana_deadeye_smile
+            hide tana_side_shock
+            hide tana_shock
+            hide kana_deadeye
             hide pia
             with dissolve
             $ quick_menu = False
-            stop music fadeout 1.0
-            scene black with Dissolve(2.0)
-            show text "{color=#FFF}“TERNYATA TEMPAT ITU SALAH SATU TEMPAT YANG KATANYA ANGKER DI KAMPUS LU, KANA MALAH KESURUPAN TUH BROK.”{/color}" with Pause(2.0)
+            scene black with dissolve
+            show text "{color=#FFF}“TERNYATA TEMPAT ITU SALAH SATU TEMPAT YANG KATANYA ANGKER DI KAMPUS LU, KANA MALAH KESURUPAN TUH BROK.”{/color}" with Pause(5.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
-        "DIBAWAH POHON":
-            #*IF CHOOSE C*
+        "DI BAWAH POHON":
+            stop music fadeout 1.0
+            $ quick_menu = False
+            scene black with Dissolve(1.0)
+            play music "BGM_Sawah Siang.ogg" fadein 1.0
+            scene sawah with Dissolve(1.0)
+            $ quick_menu = True
             "[mcname!c]" "Nahhh ini luas nih, adem juga kan?"
             show tana_talk at tana_near
             show tana_side_talk at left
@@ -1841,17 +2000,23 @@ label goodkanameetinhome:
             show pia_side_talk at left
             with dissolve
             pia "Ya udah, yuk latihan."
+            stop music fadeout 1.0
             hide pia_side_talk
             hide pia_talk
             hide tana
             hide kana
             with dissolve
-            "Tak lama saat latihan tiba-tiba terdengar suara yang keras, membuat mereka panik. Ternyata salah satu dahan pohon di tempat itu patah dan jatuh menimpa Kana. Kana pun terluka dan akhirnya harus dilarikan ke rumah sakit."
+            play music "BGM_Bad End.ogg" fadein 1.0
+            "Tak lama saat latihan tiba-tiba terdengar suara yang keras, membuat mereka panik."
+            "Ternyata salah satu dahan pohon di tempat itu patah dan jatuh menimpa Kana."
+            "Kana pun terluka dan akhirnya harus dilarikan ke rumah sakit."
             $ quick_menu = False
-            stop music fadeout 1.0
-            scene black with Dissolve(2.0)
-            show text "{color=#FFF}“ADUH BROOOO ATI ATI DAH JANGAN SERING SERING DI BAWAH POHON TUA YANG GEDE YAA TAKUT JATOH DAHANNYA TRS MALAH LUKA KAN”{/color}" with Pause(2.0)
+            scene black with dissolve
+            show text "{color=#FFF}“ADUH BROOOO ATI-ATI DAH! JANGAN SERING SERING DI BAWAH POHON TUA YANG GEDE!! TAKUT JATOH DAHANNYA TERUS MALAH LUKA!”{/color}" with Pause(2.0)
+            scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(1.0)
+            stop music fadeout 1.0
+            scene black with dissolve
             play music "audio/Dreamcatcher_v2.mp3"
             jump credits
 
@@ -1860,11 +2025,9 @@ label goodkanadancepractice:
     "[mcname!c]" "Eh aku tau tempat yang bagus… Ikut yuk."
     stop music fadeout 1.0
     $ quick_menu = False
-    #*SKIP TO SCENE*
-    #*BG ROOFTOP*
-    scene black with Dissolve(2.0)
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Rooftop Siang.ogg" loop fadein 1.0
-    scene rooftop with dissolve
+    scene rooftop with Dissolve(1.0)
     $ quick_menu = True
     "[mcname!c]" "Gimana, bagus kan?"
     show tana_talk at tana_near
@@ -1892,8 +2055,20 @@ label goodkanadancepractice:
     show kana at kana_near_left_2
     with dissolve
     "[mcname!c]" "Semangat yaaa, aku mau beli minum dulu buat kalian semua."
-    "Kana, Tana, dan Pia pun melakukan latihannya di rooftop. Entah mengapa mereka terlihat lebih leluasa, mungkin karena tempatnya yang cukup luas dan udaranya yang sejuk membuat mereka cukup nyaman."
-    "Akan tetapi saat [mcname!c] membuka pintu, dia melihat sesuatu yang sedang terjadi."
+    hide tana 
+    hide pia 
+    hide kana 
+    with dissolve
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    $ quick_menu = True
+    "Kana, Tana, dan Pia pun melakukan latihannya di rooftop."
+    "Entah mengapa mereka merasa lebih leluasa, mungkin karena tempatnya yang cukup luas dan udaranya yang sejuk membuat mereka cukup nyaman."
+    "Akan tetapi saat [mcname!c] kembali ke rooftop dan membuka pintu, dia melihat sesuatu yang sedang terjadi."
+    $ quick_menu = False
+    play music "BGM_Bad End.ogg" fadein 1.0
+    scene rooftop with Dissolve(1.0)
+    $ quick_menu = True
     hide pia
     show pia_silent at pia_near_right
     show pia_side_silent at left
@@ -1904,7 +2079,7 @@ label goodkanadancepractice:
     show kana_confused at kana_near_left_2
     show kana_side_confused at left
     with dissolve
-    kana "Maaf maaf"
+    kana "Maaf maaf..."
     hide kana_side_confused
     show pia_side_silent at left
     with dissolve
@@ -1928,16 +2103,15 @@ label goodkanadancepractice:
     show tana_side_angry_2 at left
     with dissolve
     tana "Eh biasa aja dong, dikira gue ga mau bisa apa ya? Gue juga pengen bisa dong san-"
+    stop music fadeout 1.0
     hide tana_side_angry_2
-    hide tana_angry_2
-    hide pia_silent
-    hide kana_confused
+    show tana_silent at tana_near
     with dissolve
+    play sound "audio/SFX - Door Slam.WAV" fadein 1.0 volume (10.0)
     "Saat keadaan memuncak, [mcname!c] datang dan menjatuhkan kantong kresek yang penuh dengan minuman dan cemilan."
-    #*BRAK*
-    #play sound "audio/tabrakan.mp3"
     "[mcname!c]" "UDAH NAPA?! "
     "Mereka semua terdiam, melihat [mcname!c] yang telah datang."
+    play music "BGM_Sawah Sore.ogg" fadein 1.0
     "[mcname!c]" "Bentar-bentar, coba pelan-pelan deh ini masalahnya apa dah."
     show pia_silent at pia_near_right
     show pia_side_silent at left
@@ -1964,13 +2138,14 @@ label goodkanadancepractice:
     hide pia_talk
     show pia_silent at pia_near_right
     with dissolve
-    "[mcname!c]" "Udah udah"
+    "[mcname!c]" "Udah udah..."
     "[mcname!c]" "Mending kalian semua minum sama nyemil dulu dah, ini lagi panas-panasnya emang. Meskipun ada angin sepoi-sepoi, tapi cahayanya tetap panas. Minum dulu sana."
-    "Mereka pun mengambil beberapa minuman dan makanan dari kantong kresek yang telah dibawa [mcname!c] sebelumnya. Setelah menenangkan diri masing-masing, [mcname!c] pun berbicara."
+    "Mereka pun mengambil beberapa minuman dan makanan dari kantong kresek yang telah dibawa [mcname!c] sebelumnya."
+    "Setelah menenangkan diri masing-masing, [mcname!c] pun berbicara."
     "[mcname!c]" "Okeee, ini pandangan gue ya. Jadi kalo kata Pia, Si Tono harusnya bisa nge-guide kan? Tapi Tono ga bisa nge-guide terus-terusan karena harus lihat rekaman, ya? Dan Kana, kamu jangan mulai salahin diri sendiri lagi oke?"
     show kana_side_confused at left
     with dissolve
-    kana "Ehh… Uummm"
+    kana "Ehh… Uummm...."
     hide kana_side_confused
     hide tana_angry
     show tana_talk at tana_near
@@ -1987,7 +2162,7 @@ label goodkanadancepractice:
     show pia_talk at pia_near_right
     show pia_side_talk at left
     with dissolve
-    pia "I-iya juga sih"
+    pia "I-iya juga sih..."
     hide pia_side_talk
     hide pia_talk
     show pia at pia_near_right
@@ -2054,12 +2229,32 @@ label goodkanadancepractice:
     show tana at tana_near
     with dissolve
     "[mcname!c]" "Nahhh kan mantepppp."
-    "Kana, Tana, dan Pia pun melanjutkan latihannya kembali. Meski beberapa kali Kana terjatuh dan tertinggal, tapi ia tidak pernah dimarahi oleh Tono ataupun Pia. Malah Kana ditunjukan cara yang tepat dan dibimbing agar gerakannya menjadi lebih bagus lagi.."
+    hide tana_silent
+    hide pia
+    hide tana
+    hide kana
+    with dissolve
+    "Kana, Tana, dan Pia pun melanjutkan latihannya kembali."
+    $ quick_menu = False
+    scene awan berkabut with Dissolve(2.0)
+    $ quick_menu = True
+    "Meski beberapa kali Kana terjatuh dan tertinggal, tapi ia tidak pernah dimarahi oleh Tono ataupun Pia."
+    "Malah Kana ditunjukan cara yang tepat dan dibimbing agar gerakannya menjadi lebih bagus lagi.."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Sore.ogg" loop fadein 1.0
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa jam kemudian..."
+    $ quick_menu = False
+    scene rooftop sore with Dissolve(2.0)
     hide kana
     show kana_talk at kana_near_left_2
     show kana_side_talk at left
     with dissolve
-    kana "Aaaaa, capeeek banget."
+    $ quick_menu = True
+    kana "Aaaaa, capeeek banget~"
     hide kana_side_talk
     hide kana_talk
     hide pia
@@ -2124,18 +2319,32 @@ label goodkanadancepractice:
     hide pia
     hide kana
     with dissolve
-    "Setelah pulang dari rooftop, mereka pun pulang ke rumah masing-masing. Hari demi hari berlalu diiringi latihan, hingga tak terasa waktu event dan perlombaan tinggal 1 minggu lagi."
+    "Setelah pulang dari rooftop, mereka pun pulang ke rumah masing-masing."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    $ quick_menu = True
+    "Hari demi hari berlalu diiringi latihan"
+    "Hingga tak terasa waktu event dan perlombaan tinggal 1 minggu lagi."
     "Latihan yang dilakukan menjadi semakin rumit dan semakin lama, ada kalanya mereka saling bertengkar satu sama lain akan tetapi langsung reda dan mencoba saling memahami."
     stop music fadeout 1.0
     $ quick_menu = False
-    #*SKIP TO SCENE*
-    #*BG ROOFTOP*
-    scene black with Dissolve(2.0)
-    play music "audio/BGM_Sad Piano.ogg" loop fadein 1.0
-    scene rooftop with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Sore.ogg" loop fadein 1.0
+    scene awan sore with Dissolve(1.0)
     $ quick_menu = True
-    "Di suatu hari, [mcname!c] melihat Kana pergi ke arah rooftop sendirian. Awalnya [mcname!c] mengira akan ada latihan tambahan, akan tetapi di group chat tidak ada obrolan mengenai hal tersebut."
+    "Suatu hari..."
+    $ quick_menu = False
+    scene lorong sore with Dissolve(2.0)
+    $ quick_menu = True
+    "[mcname!c] melihat Kana pergi ke arah rooftop sendirian. Awalnya [mcname!c] mengira akan ada latihan tambahan, akan tetapi di group chat tidak ada obrolan mengenai hal tersebut."
     "[mcname!c]" "{i}Hmmm itu kan Kana, kenapa dia sendirian ya ke rooftop? Perasaan hari ini ga ada latihan deh… Aku nyusul dah.{/i}"
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Rooftop Sore.ogg" loop fadein 1.0
+    scene rooftop sore with Dissolve(2.0)
+    $ quick_menu = True
     "Saat membuka pintu, terlihat Kana yang sedang melihat ke arah langit dengan pandangan kosong, bahkan sampai tidak menyadari kehadiran [mcname!c] di situ."
     "[mcname!c]" "NAY!"
     show kana_confused at kana_near
@@ -2233,11 +2442,16 @@ label goodkanadancepractice:
     $ quick_menu = False
     #*SKIP TO SCENE*
     #*BG ROOFTOP*
-    scene black with Dissolve(2.0)
-    show text "{color=#FFF}BEBERAPA HARI KEMUDIAN{/color}" with Pause(2.0)
-    show text "{color=#FFF}H-1 acara{/color}" with Pause(2.0)
-    play music "audio/BGM_Rooftop Siang.ogg" loop fadein 1.0
-    scene rooftop with dissolve
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_UKM.ogg" loop fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Beberapa hari kemudian..."
+    "Tak terasa, waktu telah sampai ke H-1 acara."
+    $ quick_menu = False
+    scene rooftop with Dissolve(2.0)
     $ quick_menu = True
     show tana_talk at tana_near
     show tana_side_talk at left
@@ -2262,18 +2476,24 @@ label goodkanadancepractice:
     hide pia
     hide tana
     with dissolve
+    $ quick_menu = False
+    scene awan with Dissolve(2.0)
+    $ quick_menu = True
     "Mereka bertiga pun memulai latihannya kembali."
     "Di saat latihan, ada beberapa momen Kana yang membuat dia putus asa karena tidak dapat mengikuti beberapa gerakan yang menjadi titik lemahnya saat latihan selama ini."
     "Tono dan Pia memberikan beberapa saran untuk membantu Kana melakukan gerakan tersebut. Saat mencoba, Kana tiba-tiba melihat ke arah [mcname!c]."
     "[mcname!c]" "SEMANGAT NAYYYY!!!!"
     "Saat mendengar suara tersebut, Kana menjadi bersemangat dan akhirnya setelah beberapa kali mencoba, dia dapat melakukan gerakan tersebut."
     "Terkejut senang, Tono dan Pia pun memeluk Kana karena bangga dengan apa yang Kana berhasil lakukan."
-    show tana_talk at tana_near
-    show tana_side_talk at left
+    $ quick_menu = False
+    scene rooftop with Dissolve(2.0)
+    $ quick_menu = True
+    show tana_laugh at tana_near
+    show tana_side_laugh at left
     with dissolve
     tana "Akhirnya lu bisa juga Nayyyy!!"
-    hide tana_side_talk
-    hide tana_talk
+    hide tana_side_laugh
+    hide tana_laugh
     show tana at tana_near
     show pia_talk at pia_near_right
     show pia_side_talk at left
@@ -2334,12 +2554,12 @@ label goodkanadancepractice:
     hide pia_talk
     show pia at pia_near_right
     with dissolve
-    "[mcname!c]" "Eh umm, i-iya kali ya? Hahaha"
+    "[mcname!c]" "Eh umm, i-iya kali ya? Hahaha."
     hide kana
     show kana_confused at kana_near_left_2
     show kana_side_confused at left
     with dissolve
-    kana "Eeh..uuuu"
+    kana "Eeh..uuuu..."
     hide kana_side_confused
     with dissolve
     "Kana dan [mcname!c] saling bertatapan dan suasana canggung itu dipecahkan oleh Tana."
@@ -2355,7 +2575,20 @@ label goodkanadancepractice:
     hide pia
     hide kana
     with dissolve
-    "Mereka melanjutkan latihan mereka. Kali ini mereka melakukan semuanya dari awal, ditambah dengan bernyanyi juga. Saat selesai, Tana dan Pia terkejut."
+    $ quick_menu = False
+    scene awan with Dissolve(2.0)
+    $ quick_menu = True
+    "Mereka melanjutkan latihan mereka. Kali ini mereka melakukan semuanya dari awal, ditambah dengan bernyanyi juga."
+    stop music fadeout 1.0
+    $ quick_menu = False
+    play music "audio/BGM_Rooftop Sore.ogg" loop fadein 1.0
+    scene awan sore with Dissolve(2.0)
+    $ quick_menu = True
+    "Tak terasa langit telah menjadi sore..."
+    $ quick_menu = False
+    scene rooftop sore with Dissolve(2.0)
+    $ quick_menu = True
+    "Saat selesai latihan, Tana dan Pia terkejut."
     show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
@@ -2363,8 +2596,8 @@ label goodkanadancepractice:
     hide tana_side_talk
     hide tana_talk
     with dissolve
-    "Pia pun menampar pipi Tana"
-    #pia "*plak*"
+    play sound "SFX - Slap.wav" volume (5.0)
+    "Pia pun menampar pipi Tana."
     show tana_angry at tana_near
     show tana_side_angry at left
     with dissolve
@@ -2397,28 +2630,28 @@ label goodkanadancepractice:
     with dissolve
     "[mcname!c]" "KEREN BANGET! PAKE BANGET, NAY!!"
     hide tana
-    show tana_talk at tana_near
-    show tana_side_talk at left
+    show tana_laugh at tana_near
+    show tana_side_laugh at left
     with dissolve
     tana "Iyaaa akhirnya lu bisa juga! Aduhhh jadi ini apa yang dirasakan ibu-ibu pas liat anaknya berhasil."
-    hide tana_side_talk
-    hide tana_talk
+    hide tana_side_laugh
+    hide tana_laugh
     hide pia
     show tana at tana_near
     show pia_talk at pia_near_right
     show pia_side_talk at left
     with dissolve
-    pia "emang lu punya anak, Ton?"
+    pia "Emang lu punya anak, Ton?"
     hide pia_side_talk
     hide pia_talk
     hide tana
     show pia at pia_near_right
-    show tana_talk at tana_near
-    show tana_side_talk at left
+    show tana_angry_2 at tana_near
+    show tana_side_angry_2 at left
     with dissolve
     tana "Ya ga gitu konsepnya, ah elah. Maksudnya gue bangga gitu, kan ga harus jadi ibu supaya bangga."
-    hide tana_side_talk
-    hide tana_talk
+    hide tana_side_angry_2
+    hide tana_angry_2
     hide kana
     show tana at tana_near
     show kana_talk at kana_near_left_2
@@ -2442,6 +2675,10 @@ label goodkanadancepractice:
     with dissolve
     "Selagi tertawa dan membahas bagaimana perform nanti, waktu tak terasa sudah sore. Satpam kembali memperingatkan [mcname!c], Tana, Pia, dan Kana untuk segera pulang."
     "[mcname!c]" "Eh udah beres-beres belum? Ini udah diingetin lagi sama satpamnya."
+    show pia at pia_near_right
+    with dissolve
+    show tana at tana_near
+    with dissolve
     show kana_talk at kana_near_left_2
     show kana_side_talk at left
     with dissolve
@@ -2456,7 +2693,6 @@ label goodkanadancepractice:
     tana "Ga tau ini aku sama Pia dipanggil sama ketua klub, kayaknya ada sesuatu yang urgent deh."
     hide tana_side_talk
     hide tana_talk
-    show tana at tana_near
     with dissolve
     "[mcname!c]" "Hmmm kok aku sama Kana ga dipanggil ya? Padahal sama-sama panitia juga."
     show pia_talk at pia_near_right
@@ -2481,9 +2717,9 @@ label goodkanadancepractice:
     $ quick_menu = False
     #*SKIP TO SCENE*
     #*BG DEPAN KAMPUS SORE*
-    scene black with Dissolve(2.0)
-    play music "audio/BGM_Kampus Sore.mp3" loop fadein 1.0
-    scene depan kampus with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kampus Sore.ogg" loop fadein 1.0
+    scene kampus sore with Dissolve(1.0)
     $ quick_menu = True
     "Di perjalanan pulang…"
     show kana at kana_near
@@ -2548,21 +2784,32 @@ label goodkanadancepractice:
     hide kana_side_shy
     hide kana_shy_talk
     with dissolve
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
     "Sambil tersipu malu, Kana dan [mcname!c] pulang ke rumahnya masing-masing."
     stop music fadeout 1.0
     $ quick_menu = False
-    #*SKIP TO SCENE*
-    #*BG KOS MALAM*
-    scene black with Dissolve(2.0)
-    play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
-    scene kamar mc kota with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" loop fadein 1.0
+    scene awan malam with Dissolve(1.0)
     $ quick_menu = True
-    "[mcname!c]" "Kalo gugup liat ke aku aja… aaaa malu juga kalau diinget-inget."
-    "[mcname!c]" "Tapi ya udah deh, yang penting Kana bisa semangat."
-    #*SUARA NOTIF
+    "Di kost..."
     $ quick_menu = False
-    play sound "audio/ReceiveText.ogg"
-    #*HP*
+    scene kamar mc kota with Dissolve(2.0)
+    $ quick_menu = True
+    "[mcname!c]" "Kalo gugup liat ke aku aja…"
+    "[mcname!c]" "Aaaa malu juga kalau diinget-inget."
+    "[mcname!c]" "Tapi ya udah deh, yang penting Kana bisa semangat."
+    play sound "audio/ReceiveText.ogg" loop
+    ".........."
+    "[mcname!c]" "Siapa nih?"
+    stop music fadeout 1.0
+    stop sound fadeout 1.0
+    "[mcname!c] pun mengambil HPnya."
+    play music "BGM_Happy + HP.ogg" fadein 1.0
+    $ quick_menu = False
     nvl clear
     tana_nvl "Eh besok kita datang lebih awal yaa, dari pagi aja biar ada waktu latihan dikit-dikit dan supaya ga gugup juga, gimana?"
     pia_nvl "Gue ikut deh Ton, tapi awas aja lu jangan sampe telat ya."
@@ -2576,17 +2823,29 @@ label goodkanadancepractice:
     tana_nvl "Okee Brookkk."
     nvl clear
     stop music fadeout 1.0
+    scene kamar mc kota with dissolve
+    stop music fadeout 1.0
     $ quick_menu = False
-    #*SKIP TO SCENE*
-    #*BG RUANG KLUB*
-    scene black with Dissolve(2.0)
-    show text "{color=#FFF}KEESOKAN HARINYA{/color}" with Pause(2.0)
-    show text "{color=#FFF}ACARA JEJEPANGAN{/color}" with Pause(2.0)
-    play music "audio/BGM_UKM.ogg" loop fadein 1.0
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Monas.ogg" loop fadein 1.0
+    scene awan with Dissolve(1.0)
+    $ quick_menu = True
+    "Tak terasa hari festival pun tiba."
+    $ quick_menu = False
+    scene depan kampus with Dissolve(2.0)
+#HARUSNYA BG Event Jejepangan
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (7.0)
+    $ quick_menu = True
+    "Hari yang dinanti-nantikan telah tiba, acara event jejepangan pun di buka."
+    "Banyak Mahasiswa/i pun bersorak sampai terdengar ke luar kampus."
+    "Akan tetapi di tempat lain..."
+    stop sound fadeout 1.0
+    stop music fadeout 1.0
+    $ quick_menu = False
+    play music "BGM_UKM.ogg" fadein 1.0
     scene ruang ukm with Dissolve(2.0)
     $ quick_menu = True
-    "Hari yang dinanti-nantikan telah tiba, acara event jejepangan pun di buka. Banyak Mahasiswa/i pun bersorak sampai terdengar ke ruangan klub jejepangan."
-    "Akan tetapi Kana, Tono, dan Pia seakan tidak mendengar suara tersebut, mereka terus-terusan mencoba beberapa gerakan dan terkadang duduk diam menghafalkan lirik."
+    "Kana, Tono, dan Pia seakan tidak mendengar suara tersebut, mereka terus-terusan mencoba beberapa gerakan dan terkadang duduk diam menghafalkan lirik."
     "Kana pun sama, ia duduk diam tangannya yang gemetaran bisa terlihat oleh [mcname!c]."
     "[mcname!c]" "Nay, ikut aku keluar dulu yuk."
     show kana_idol_confused at kana_near
@@ -2598,13 +2857,16 @@ label goodkanadancepractice:
     with dissolve
     "[mcname!c] menarik tangan Kana, membuat Kana kaget dan berdiri meninggalkan kursinya."
     "[mcname!c] membawa Kana ke area event jejepangan."
+    stop music fadeout 1.0
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    scene lorong with dissolve
-    $ quick_menu = True
+    scene black with Dissolve(1.0)
+    play music "BGM_Matsuri Malam.ogg"
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (7.0)
+    scene matsuri siang with Dissolve(1.0)
     show kana_idol_confused at kana_near
     show kana_idol_side_confused at left
     with dissolve
+    $ quick_menu = True
     kana "Eeeh… [mcname!c] kenapa ya?"
     hide kana_idol_side_confused
     hide kana_idol_confused
@@ -2632,10 +2894,23 @@ label goodkanadancepractice:
     #*SKIP TO SCENE*
     #*BG JEJEPANGAN*
     $ quick_menu = False
-    scene black with Dissolve(2.0)
-    scene matsuri sore with dissolve
+    scene black with Dissolve(1.0)
+    scene awan with Dissolve(1.0)
     $ quick_menu = True
-    "Kana dan [mcname!c] menikmati booth dan stand yang ada di event jejepangan tersebut, sesekali mereka juga melihat ke arah main stage di mana ada mini konser yang sedang berlangsung. Kana pun merasa senang dan mungkin sudah melupakan ke grogiannya meski hanya sedikit."
+    "Kana dan [mcname!c] menikmati booth dan stand yang ada di event jejepangan tersebut."
+    "Sesekali Kana dan [mcname!c] juga melihat ke arah main stage di mana ada mini konser yang sedang berlangsung."
+    stop sound fadeout 1.0
+    stop music fadeout 1.0
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "BGM_sore.ogg"
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
+    "Tak terasa langit telah menjadi sore..."
+    $ quick_menu = False
+    scene matsuri sore with Dissolve(2.0)
+    $ quick_menu = True
+    "Terlihat wajah Kana mulai kembali berseri dan mungkin sudah melupakan ke grogiannya meski hanya sedikit."
     show kana_idol_talk at kana_near
     show kana_idol_side_talk at left
     with dissolve
@@ -2706,82 +2981,130 @@ label goodkanadancepractice:
     $ quick_menu = False
     #*SKIP TO SCENE*
     #*BG STAGE*
-    scene black with Dissolve(2.0)
-    play music "audio/BGM_Kosan 1.mp3" loop fadein 1.0
-    scene stage with dissolve
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Matsuri Malam.ogg" loop fadein 1.0
+    scene stage with Dissolve(1.0)
     $ quick_menu = True
-    "Pembawa Acara" "Baiklah, untuk selanjutnya kita akan ada pertunjukan dari salah satu perwakilan klub Jepang!!"
-    "Pembawa Acara" "Kalo sebelumnya kita udah nonton band, cosplay, dan lainnya. Sekarang kita waktunya untuk melihat idol!!! Apakah kalian semua siap!!??? Ini dia saksikan KTp!!!"
-    #*SFK SUARA TERIAKAN ORANG ORANG*
-    play sound "audio/crowd_noise.mp3"
-    show tana_idol_talk at tana_near
+    "Announcer" "Baiklah, untuk selanjutnya kita akan ada pertunjukan dari salah satu perwakilan klub Jepang!!"
+    "Announcer" "Kalo sebelumnya kita udah nonton band, cosplay, dan lainnya. Sekarang kita waktunya untuk melihat idol!!!"
+    play sound "SFX - Cheering.ogg" fadein 0.5
+    "Announcer" "Apakah kalian semua siap!!??? Ini dia saksikan KTp!!!"
     show tana_idol_side_talk at left 
     with dissolve
     tana "Haloooo semuanya~ Sebelumnya kenalin yaa, kita dari Ktp, Kana, Tana, dan Piaaa~"
     tana "Di sini kita bakalan nyoba nyanyi sama dikit-dikit dance yaa, tapi sebelumnya mari kita kenalan dulu~"
+    stop sound fadeout 0.5
     hide tana_idol_side_talk
-    hide tana_idol_talk at tana_near
-    show pia_idol_talk at pia_near
     show pia_idol_side_talk at left 
     with dissolve
     pia "Halo semuanya~"
     pia "We Are On Fire! Semangat ku membara, siap menghangatkan hari-hari mu!"
     pia "Halo, aku Pia Meraleo dari JKT48V. Senang bertemu kalian!"
+    play sound "SFX - Large Cheering.mp3" loop fadein 0.5
     hide pia_idol_side_talk 
     hide pia_idol_talk at pia_near
     with dissolve
-    play sound "audio/crowd_noise.mp3"
     "Penonton" "WUOOOH!!!!"
-    show tana_idol_talk at tana_near
+    stop sound fadeout 0.5
     show tana_idol_side_talk at left 
     with dissolve
     tana "Okeee selanjutnya giliran gue."
-    tana "Wassup ma bross!!! I'm fresh like a breeze! JKT48V Tana Nona! Cool enough to make you freeEeEzZEe"
+    tana "Wassup ma bross!!! I'm fresh like a breeze!"
+    tana "JKT48V Tana Nona! Cool enough to make you freeEeEzZEe~"
+    play sound "SFX - Large Cheering.mp3" loop fadein 0.5
     hide tana_idol_side_talk 
     hide tana_idol_talk at tana_near
     with dissolve
-    play sound "audio/crowd_noise.mp3"
     "Penonton" "WUOOOH!!!!"
-    show kana_idol_shy_talk at kana_near
+    stop sound fadeout 0.5
     show kana_idol_side_shy_talk at left 
     with dissolve
     kana "Ehh… I-iyaaa… K-kenalin semuanya n-namaku Kanaaaa-"
+    $ quick_menu = False
+    window auto hide
+    stop music fadeout 1.0
+    play sound "SFX - Fall.WAV" fadein 1.0 volume(15.0)
     hide kana_idol_side_shy_talk 
     hide kana_idol_shy_talk
     with dissolve
-    #*SFX BRAK*
-    #play sound "audio/"
-    "Seketika para penonton terdiam ada beberapa yang tertawa karena mic Kana tiba-tiba terjatuh dari tangannya."
-    "Wajah Kana terlihat pucat dan tangannya gemetaran. Air mata mulai muncul di ujung matanya. Kana sangat gugup dan hampir menangis."
+    show kana jatuh at char_center
+    show kana jatuh:
+        pos (0.53, -0.01) zoom 0.27 
+    with dissolve
+    pause(4.0)
+    window auto show
+    $ quick_menu = True
+    "Tiba-tiba Kana tersandung di panggung."
+    hide kana jatuh with dissolve
+    stop sound fadeout 1.0
+    "Para penonton pun terdiam, bahkan ada beberapa yang tertawa."
+    show kana_idol_side_confused_blush at left
+    with dissolve
+    "Wajah Kana terlihat pucat dan tangannya gemetaran."
+    hide kana_idol_side_confused_blush
+    show kana_idol_side_cry at left
+    with dissolve
+    "Air mata mulai muncul di ujung matanya. Kana sangat gugup dan hampir menangis."
+    hide kana_idol_side_cry
+    with dissolve
+    play music "BGM_Rooftop Pia Malam.ogg" fadein 1.0
     "Tiba-tiba…"
     "[mcname!c]" "KANAIAAA!!!!! SEMANGAATTTTT!!!!"
-    "Di antara keheningan para penonton, [mcname!c] berteriak hingga orang-orang melihat ke arahnya dengan tatapan aneh. Akan tetapi [mcname!c] tidak peduli dan hanya tersenyum ke arah Kana."
-    "Kana terkejut lalu melihat ke arah [mcname!c] dan tersenyum. Kana menarik nafas, lalu mengambil micnya dan tersenyum."
-    show kana_idol_talk at kana_near
-    show kana_idol_side_talk at left 
+    "Di antara keheningan para penonton, [mcname!c] berteriak hingga\norang-orang melihat ke arahnya dengan tatapan aneh."
+    "Akan tetapi [mcname!c] tidak peduli dan hanya tersenyum ke arah Kana."
+    show kana_idol_side_shy_talk at left
+    with dissolve
+    kana "{i}[mcname!c]??{/i}"
+    hide kana_idol_side_shy_talk
+    with dissolve
+    "Kana terkejut lalu melihat ke arah [mcname!c] dan tersenyum."
+    show kana_idol_side_shy at left
+    with dissolve
+    kana "......."
+    hide kana_idol_side_shy
+    show kana_idol_side_smile at left
+    with dissolve
+    kana "{i}[mcname!c].... Terima kasih ya...{/i}"
+    hide kana_idol_side_smile
+    with dissolve
+    "Kana menarik nafas, lalu mengambil micnya dan tersenyum."
+    show kana_idol_side_shy_closeeye_talk at left 
+    with dissolve
+    kana "Uhuk."
+    hide kana_idol_side_shy_closeeye_talk
+    show kana_idol_side_shy_smile at left
     with dissolve
     kana "Maaf yaaa soal sebelumnya, gugup dikit hehe."
+    hide kana_idol_side_shy_smile
+    show kana_idol_side_talk at left
+    with dissolve
     kana "Oke semuanya. Mari bernyanyi, sambil bermain air. Aku dari laut tapi tidak salty! 🎶🐟"
+    hide kana_idol_side_talk
+    show kana_idol_side_smile at left 
+    with dissolve
     kana "Halo! Aku Kanaia yang akan membuat harimu indah bagai pelangi~"
-    hide kana_idol_side_talk 
+    play sound "SFX - Large Cheering.mp3" loop fadein 0.5
+    hide kana_idol_side_smile
     hide kana_idol_talk at kana_near
     with dissolve
     "[mcname!c]" "KANAAAAAAA!!!!"
-    play sound "audio/crowd_noise.mp3"
     "Penonton" "WUOOOH!!!!"
-    show tana_idol_talk at tana_near
-    show tana_idol_side_talk at left 
+    show kana_idol_side_talk at left 
     with dissolve
-    tana "Udah sesi perkenalannya, sekarang kita akan tampil."
-    tana "Jadi, jangan lepaskan pandangan kalian dan dengarkanlah lagu dari kami!"
-    hide tana_idol_side_talk 
-    hide tana_idol_talk at tana_near
+    stop sound fadeout 1.0
+    kana "Kalau begitu, dengarkanlah lagu dari kami."
+    hide kana_idol_side_talk
+    show kana_idol_side_smile at left
+    with dissolve
+    kana "Dreamcatcher!"
+    stop music fadeout 1.0
+    hide kana_idol_side_smile
     with dissolve
     "[mcname!c]" "SEMANGAT KANAAA!!!"
+    $ quick_menu = False
+    scene konser end with Dissolve(2.0)
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     $ quick_menu = False
-    scene black with dissolve
-    scene konser stage end with dissolve
     show text "{color=#FFF}THE END{/color}" with Pause(2.0)
     with Pause(20.0)
     jump credits
