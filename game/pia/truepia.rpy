@@ -1652,7 +1652,7 @@ label truendpia:
     show pia_date_talk at pia_near
     show pia_date_side_talk at left
     with dissolve
-    pia "Aaa_dateaaaaa~"
+    pia "Aaaaaaaa~"
     hide pia_date_date_talk
     hide pia_date_side_talk
     with dissolve
@@ -1663,7 +1663,7 @@ label truendpia:
     show fio_smile:
         subpixel True xpos 1.15
     with dissolve
-    "{size=-10}[mcname!c],Fiony,Takamina{/size}" "Hahahaha~"
+    "Semua Orang" "Hahahaha~"
     hide fio
     hide pia
     hide takamina
