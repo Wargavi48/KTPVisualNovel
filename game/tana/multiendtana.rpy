@@ -39,7 +39,7 @@ label multiendlearnUTS:
             tana "[mcname!c], lu yakin kita mau belajar disini?"
             hide tana_side_shock
             hide tana_shock
-            show tana
+            show tana at tana_near
             "[mcname!c]" "Iya gue juga kadang belajar di sini."
             hide tana
             show tana_talk at tana_near
@@ -59,10 +59,11 @@ label multiendlearnUTS:
             hide tana_side_angry_2
             hide tana_angry_2
             with dissolve
-            "Tana pun meninggalkan [mcname!c] sendirian di warteg dan tidak dapat dihubungi lagi."
+            $ quick_menu = False
+            stop music fadeout 1.0
             scene black with dissolve
-            # DI SKRIP GAK ADA OMELAN KAYAK BIASANYA WKWK
-            show text "{color=#FFF}**{/color}" with Pause(2.0)
+            play music "BGM_Bad End.ogg"
+            show text "{color=#FFF}*Tana pun meninggalkan [mcname!c] sendirian di warteg dan tidak dapat dihubungi lagi.*{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -87,9 +88,6 @@ label multiendlearnUTS:
             scene black with Dissolve(1.0)
             play music "audio/BGM_Sore.ogg" fadein 1.0
             scene kampus sore with Dissolve(2.0)
-            show tana at tana_near with dissolve
-            pause(1.0)
-            hide tana
             show tana_talk at tana_near
             show tana_side_talk at left
             with dissolve
@@ -135,12 +133,15 @@ label multiendlearnUTS:
             show tana_angry_2 at tana_near
             show tana_side_angry_2 at left
             with dissolve
-            tana "Lu sih kebanyakan download film dari situs bajakan, makanya jadi kena virus kan. Rasaiin! Fah ah gue mau belajar sama yang lain aja."
+            tana "Lu sih kebanyakan download film dari situs bajakan, makanya jadi kena virus kan. Rasaiin! Dah ah gue mau belajar sama yang lain aja."
             hide tana_side_talk
             hide tana_talk
             with dissolve
             "Tana pun pergi dari kampus, karena laptop [mcname!c] lama dan ga nyala-nyala"
+            $ quick_menu = False
+            stop music fadeout 1.0
             scene black with dissolve
+            play music "BGM_Bad End.ogg"
             show text "{color=#FFF}*YAHAHHA, MAKANYA BROK, JANGAN DOWNLOAD/NONTON FILM DARI SITUS BAJAKAN KAN SEKARANG MALAH GINI*{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
@@ -189,8 +190,11 @@ label multiendafterUTS:
             hide tana_side_shock
             hide tana_shock
             with dissolve
-            stop sound
+            stop sound fadeout 1.0
+            stop music fadeout 1.0
+            $ quick_menu = False
             scene black with dissolve
+            play music "BGM_Bad End.ogg"
             show text "{color=#FFF}*MAKANYA BROO KALAU MAU NYARI TEMPAT MAKAN TUH LIAT SITUASI DAN KONDISI*{/color}" with Pause(3.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
@@ -254,8 +258,11 @@ label multiendafterUTS:
             show tana_angry at tana_near
             with dissolve
             "[mcname!c]" "Ya maaf, gue juga ga tau bakalan kaya gini..."
-            stop sound
+            stop sound fadeout 1.0
+            stop music fadeout 1.0
+            $ quick_menu = False
             scene black with dissolve
+            play music "BGM_Bad End.ogg"
             show text "{color=#FFF}*YAHAHAH KASIAN LAGI MAKAN MALAH ADA ULET, MAKAN AJA KALI KAN PROTEIN TAMBAHAN HAHAH*{/color}" with Pause(4.0)
             scene black with dissolve
             show text "{color=#FF0000}BAD END{/color}" with Pause(2.0)
