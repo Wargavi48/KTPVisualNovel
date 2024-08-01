@@ -970,7 +970,7 @@ label truekanajapanfest:
     #HARUSNYA SUARA ANGKAT TELEPON
     $ quick_menu=False
     scene black with dissolve
-    play music "audio/BGM_Happy dan Handphone.mp3" fadein 1.0
+    play music "BGM_Happy + HP.ogg" fadein 1.0 volume (2.0)
     scene kelas with dissolve
     show freya_talk at freya_near
     show freya_side_talk at left
@@ -1053,13 +1053,21 @@ label truekanajapanfest:
     "[mcname!c]" "{i}Aduuhhh aku ngasih apa ya buat Kana? Kalau diinget-inget lagi, Kana tuh suka sama jejepangan.{/i}"
     "[mcname!c]" "{i}Tapi masa aku ngasih Naya merch anime? Aku ga pernah liat dia pake pakaian anime-anime gitu sihh.{/i}"
     "[mcname!c]" "{i}Kalau official CD anime atau band? Tapi aku ga tau dia suka band apaan, aaaa bingung banget mau ngasih apa.{/i}"
+    $ quick_menu = False
+    scene black with Dissolve(1.0)
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
+    scene awan sore with Dissolve(1.0)
+    $ quick_menu = True
     "Seakan sedang terjadi perang di dalam pikiran [mcname!c], tanpa terasa waktu berubah menjadi malam."
+    $ quick_menu = False
+    scene kamar mc kota with Dissolve(2.0)
+    $ quick_menu = True
     "[mcname!c] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok."
     "Tiba-tiba terdengar bunyi dari HP yang menunjukkan bahwa HP perlu dicharge, akan tetapi ternyata ada notifikasi lain dari Kana dan Freya yang mencoba menghubungi [mcname!c] berkali-kali."
     #*BG HP LAGI TELEPON*
     play sound "SFX - Calling.mp3" loop fadein 1.0
     "UI telpon Grup Freya, Kana, MC"
-    # show telpon_mamah at ui_handphone with dissolve
+    # show group_call at ui_handphone with dissolve
     show freya_side_shock at left with dissolve
     freya "Nahhh kan kalau gini enak, ga usah ngehubungin satu-satu."
     hide freya_side_shock with dissolve
@@ -1114,7 +1122,7 @@ label truekanajapanfest:
     hide kana_side_talk with dissolve
     "[mcname!c]" "Oke, good night."
     #*BG HP LAGI TELEPON SELESAI*
-    hide telpon_mamah with dissolve
+    hide group_call with dissolve
     play sound "audio/SFX - End Call.mp3"
     "[mcname!c]" "Hmmmmmm."
     "[mcname!c]" "{i}Oke nanti aku harus liat-liat sekalian milih hadiah apa yang kayaknya cocok buat Naya di mall.{/i}"
@@ -1175,7 +1183,7 @@ label truekanajapanfest:
     show kana at kana_near
     with dissolve
     #SFX KRINGGG Telepon*
-    play sound "audio/SFX - Call.mp3" fedein 1.0
+    play sound "audio/SFX - Call.mp3" fadein 1.0
     #BG Telepon ON
     show kana_side_confused at left with dissolve
     kana "Eh?"
