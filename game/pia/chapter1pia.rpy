@@ -672,14 +672,20 @@ label chapter1piajalantanpapio:
     "Beberapa jam kemudian..."
     $ quick_menu=False
     scene mall with Dissolve(2.0)
-    show pia_date_talk at pia_near
+    show pia_date_talk at pia_near_right
     show pia_date_side_talk at left 
+    show book
+    show book:
+        xpos 0.58 ypos 0.72 zoom 0.25 
     with dissolve
     # #$ renpy.block_rollback()
     $ quick_menu = True
     pia "Weeeeeeh mahal juga ya jadinya, tadi sih murah pas liat satuan. Pensil 2, cat air 1, kuas, dan sebagainya.... Tapi pas dijumlah gak kerasa, tau-tau mahal juga."
-    show pia_date at pia_near
+    hide book
     hide pia_date_side_talk 
+    hide pia_date_talk 
+    show pia_date_talk at pia_near
+    show pia_date at pia_near
     with dissolve
     "[mcname!c]" "Hahaha betuuuul."
     "*Tiba-tiba dari belakang ada yang berbisik*"
@@ -727,7 +733,6 @@ label chapter1piajalantanpapio:
     show fio_side_talk at left 
     with dissolve
     fio "Sama, lagi beli peralatan juga, udah banyak yang abis. Di sini juga tempat langganan aku."
-    $ fio_name = "Cepio"
     fio "Btw, panggil Cepio aja."
     hide fio_side_talk 
     show fio at char_near_left 
@@ -815,7 +820,6 @@ label chapter1piajalansamapiapio:
     hide pia_date_side_talk
     with dissolve
     "[mcname!c]" "Wah mantap, makasih Kak Fiony!"
-    $ fio_name = "Cepio"
     hide fio
     show fio_side_talk at left 
     with dissolve
@@ -1050,7 +1054,8 @@ label chapter1piamakanmall:
     show pia_date_side_talk at left 
     with dissolve
     pia "Selfie ah!!"
-    # window auto hide
+    window auto hide
+    $ quick_menu=False
     play sound "audio/camera.mp3" volume (2.0)
     hide pia_date_side_talk with dissolve
     stop sound 
@@ -1058,7 +1063,8 @@ label chapter1piamakanmall:
     show pia_date_shock at pia_near 
     show pia_date_side_shock at left 
     with dissolve
-    # window auto show
+    $ quick_menu=True
+    window auto show
     pia "F-foto bareng sih kita. Udah jauh-jauh makan ke sini, masa ga difoto!"
     hide pia_date_side_shock with dissolve
     "[mcname!c]" "Hmm. Boleh deh.\n*Bergaya*"

@@ -119,6 +119,8 @@ screen nvl_phonetext(dialogue):
                         $ message_icon = "Characters/PP Tana.png"
                     elif d.who == "Galaxy":
                         $ message_icon = "Characters/PP Galaxy.png"
+                    elif d.who == "Feni":
+                        $ message_icon = "Characters/PP Feni.png"
                     else:
                         $ message_icon = "phone_received_icon.png"
 
