@@ -1100,12 +1100,11 @@ label truekanajapanfest:
     scene kamar mc kota with Dissolve(2.0)
     $ quick_menu = True
     "[mcname!c] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok."
-    "Tiba-tiba terdengar bunyi dari HP yang menunjukkan bahwa HP perlu dicharge, akan tetapi ternyata ada notifikasi lain dari Kana dan Freya yang mencoba menghubungi [mcname!c] berkali-kali."
-    #*BG HP LAGI TELEPON*
+    "Tiba-tiba terdengar bunyi dari HP yang menunjukkan bahwa ada notifikasi dari Kana dan Freya yang mencoba menghubungi [mcname!c] berkali-kali."
     play sound "SFX - Calling.mp3" loop fadein 1.0
-    "UI telpon Grup Freya, Kana, MC"
-    # show group_call at ui_handphone with dissolve
-    show freya_side_shock at left with dissolve
+    show groupcall at ui_handphone
+    show freya_side_shock at left 
+    with dissolve
     freya "Nahhh kan kalau gini enak, ga usah ngehubungin satu-satu."
     hide freya_side_shock with dissolve
     "[mcname!c]" "Ah Naya, Freya, maaf ya tadi aku ketiduran."
@@ -1158,8 +1157,7 @@ label truekanajapanfest:
     kana "Okeee, good night minna~"
     hide kana_side_talk with dissolve
     "[mcname!c]" "Oke, good night."
-    #*BG HP LAGI TELEPON SELESAI*
-    hide group_call with dissolve
+    hide groupcall with dissolve
     play sound "audio/SFX - End Call.mp3"
     "[mcname!c]" "Hmmmmmm."
     "[mcname!c]" "{i}Oke nanti aku harus liat-liat sekalian milih hadiah apa yang kayaknya cocok buat Naya di mall.{/i}"
