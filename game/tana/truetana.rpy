@@ -3026,6 +3026,7 @@ label trueendtana:
 #NeutralRoute4
     stop music fadeout 1.0
     $ quick_menu = False
+    $ remedial_memories.grant()
     scene black with Dissolve(1.0)
     scene chapter 3 tana with Dissolve (1.0)
     pause(3.0)
@@ -4498,6 +4499,7 @@ label truetanaaftergame:
     stop sound fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
+    $ hanabi_with_you.grant()
     show text "{color=#FFF}THE END{/color}" with Pause(2.0)
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits

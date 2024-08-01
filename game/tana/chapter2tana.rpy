@@ -2,6 +2,7 @@ label chapter2tana:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
+    $ hidden_gift.grant()
     scene chapter 2 tana with Dissolve (1.0)
     pause(3.0)
     scene black with Dissolve (1.0)
