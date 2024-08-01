@@ -77,7 +77,7 @@ init python:
     ## "top_left", "top_right", "bottom_left", "bottom_right"
     ## You may want to use this to ensure any Steam notifications don't conflict
     ## with the position of the built-in notification, if you're using both.
-    achievement.steam_position = None
+    achievement.steam_position = "bottom_right"
 
 ################################################################################
 ## DEFINING ACHIEVEMENTS
@@ -218,7 +218,7 @@ define not_gimmick = Achievement(
     id="Not a Gimmick",
     description=_("Sedihnya sedih beneran bukan sedih karir"),
     hide_description=_("Complete Chapter 2 Kana"),
-    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    unlocked_image=Transform("Achievement/gimmick.png"),
     hidden=True
 )
 
@@ -227,7 +227,7 @@ define here_shecome = Achievement(
     id="here she come",
     description=_("Atmint Datang 😱"),
     hide_description=_("Complete Chapter 3 Kana Good Ending"),
-    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    unlocked_image=Transform("Achievement/ADMIN.png"),
     hidden=True
 )
 
@@ -236,7 +236,7 @@ define necklaces = Achievement(
     id="a necklases",
     description=_("LOVE ME MORE!!!!!!"),
     hide_description=_("Complete Chapter 3 Kana True Ending"),
-    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    unlocked_image=Transform("Achievement/kalung.png"),
     hidden=True
 )
 
@@ -246,7 +246,7 @@ define hidden_gift = Achievement(
     id="hidden gift",
     description=_("Menemukan bakat terpendam Tana"),
     hide_description=_("Complete Chapter 1 Tana"),
-    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    unlocked_image=Transform("Achievement/kado.png"),
     hidden=True
 )
 
@@ -255,7 +255,7 @@ define make_idol_group = Achievement(
     id="make a idol group",
     description=_("Rekrut anggota untuk gapai imipan bersama."),
     hide_description=_("Complete Chapter 2 Tana Good Ending"),
-    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    unlocked_image=Transform("Achievement/flyer.png"),
     hidden=True
 )
 
@@ -264,7 +264,7 @@ define remedial_memories = Achievement(
     id="Remedial memories",
     description=_("Momen remedi bersama Tana"),
     hide_description=_("Complete Chapter 2 Tana True Ending"),
-    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    unlocked_image=Transform("Achievement/remedial.png"),
     hidden=True
 )
 
@@ -273,7 +273,7 @@ define your_dream = Achievement(
     id="It's your dream ",
     description=_("Tana berhasil menggapai impian sebagai idol"),
     hide_description=_("Complete Chapter 3 Tana Good Ending"),
-    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    unlocked_image=Transform("Achievement/tana_idol.png"),
     hidden=True
 )
 
@@ -282,7 +282,7 @@ define hanabi_with_you = Achievement(
     id="Hanabi with you",
     description=_("Will you watch this with me forever (?)"),
     hide_description=_("Complete Chapter 3 Tana True Ending"),
-    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    unlocked_image=Transform("Achievement/kembang_api.png"),
     hidden=True
 )
 
