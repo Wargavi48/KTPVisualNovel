@@ -771,7 +771,7 @@ label tanamcdaftarulang:
             with dissolve
             # $ renpy.block_rollback()
             $ quick_menu = True
-            "[mcname!c]" "-Cinta Palsu\n-Ekor Peri\n-Yo-Gi-Ah 3Ds\n-Adu Gasing\n-April Skem"
+            "[mcname!c]" "{size=-5}-Cinta Palsu\n-Ekor Peri\n-Yo-Gi-Ah 3Ds\n-Adu Gasing\n-April Skem{/size}"
             hide flora at flora_left
             show flora_talk at flora_left
             show flora_side_talk at left
