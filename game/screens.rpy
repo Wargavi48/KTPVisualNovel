@@ -468,8 +468,9 @@ screen navigation():
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Bantuan tidak perlu atau relevan dengan perangkat mobile.
+            
             # Harusnya dibawah ini help sementara ganti jadi extras dulu
-            textbutton _("Extras") action ShowMenu("extras"):
+            textbutton _("Achievement") action ShowMenu("achievement_gallery"):
             # textbutton _("Extras") action ShowMenu("help"):
                 if renpy.get_screen("main_menu"):
                     at help_menu
@@ -478,7 +479,7 @@ screen navigation():
                     ypos 50
                     # ypos 150
                     background "gui/main_menu_button.png"
-                    text_xpos 100
+                    text_xpos 80
 
         if renpy.variant("pc"):
 
