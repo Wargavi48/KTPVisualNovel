@@ -30,7 +30,6 @@ label chapter2tanaTRUE:
     hide tana_side_shy at left
     with dissolve
     "[mcname!c]" "{i}Aduh, lucu banget nih anak.{/i}"
-    "[mcname!c]" "{i}Aduh, lucu banget nih anak.{/i}"
     hide tana_shy at tana_near
     hide tana
     show tana_talk at tana_near
@@ -1270,6 +1269,7 @@ label chapter2tanaTRUE2:
     hide tana_shy at tana_near
     show tana_shock at tana_near
     show tana_side_shock at left 
+    with dissolve
     tana "D-di belakang kampus."
     hide tana_side_shock at left 
     hide tana_shock at tana_near
@@ -1279,6 +1279,7 @@ label chapter2tanaTRUE2:
     hide tana_shy at tana_near
     show tana_shock at tana_near
     show tana_side_shock at left 
+    with dissolve
     tana "O-oke deh.\n*Blush*"
     hide tana_side_shock at left 
     hide tana_shock at tana_near
@@ -1410,7 +1411,7 @@ label chapter2tanaTRUE2:
     hide tana_talk at tana_near
     show tana at tana_near
     with dissolve
-    "[mcname!c]" "Siap, lah. Emmangnya lu."
+    "[mcname!c]" "Siap, lah. Emangnya lu."
     hide tana at tana_near
     show tana_angry_2 at tana_near
     show tana_side_angry_2 at left
@@ -1879,51 +1880,39 @@ label chapter2tanaTRUE3:
     with dissolve
     "[mcname!c]" "Iyah."
     hide tana at tana_near
-    show tana_shock at tana_near
+    show mading at mading
     show tana_side_shock at left
     with dissolve
     stop music fadeout 1.0
     tana "Hmmmm..."
     play music "BGM_Funny 3.ogg" fadein 1.0
     hide tana_side_shock at left
-    hide tana_shock at tana_near
-    show tana_shy at tana_near
     with dissolve
     "[mcname!c]" "AHAHAHAHAHAH! Ada nama lu di kolom remedial!"
     "[mcname!c]" "HAHAHAHAAHA! Makanya belajar, jangan main game mulu."
-    hide tana_shy at tana_near
-    show tana_shock at tana_near
     show tana_side_shock at left
     with dissolve
     tana "Gua udah belajar tauuu. Harusnya gak gini... Hmmm?"
     hide tana_side_shock at left
     with dissolve
     "Tana pun melihat kembali daftar nama di kolom remedial dengan lebih seksama."
-    hide tana_shock at tana_near
-    show tana_laugh at tana_near
     show tana_side_laugh at left
     with dissolve
     tana "HAHAHAHAHA! NAMA LU DI BAWAH GUA, KOCAK!"
     hide tana_side_laugh at left
     with dissolve
     "[mcname!c]" "LAH?! KOK BISA SIH?!"
-    hide tana_laugh at tana_near
-    show tana_talk at tana_near
     show tana_side_talk at left
     with dissolve
     tana "Terbukti kalau gua itu emang lebih jago daripada elu. Sungkem dulu sini!"
     hide tana_side_talk at left
-    hide tana_talk at tana_near
-    show tana at tana_near
     with dissolve
     "[mcname!c]" "Enak aja, lebih jago mah ga ngaruh kalo endingnya tetep remedial."
-    hide tana at tana_near
-    show tana_angry_2 at tana_near
     show tana_side_angry_2 at left
     with dissolve
     tana "Halah halah."
     hide tana_side_angry_2 at left
-    hide tana_angry_2 at tana_near
+    hide mading
     show tana_shock at tana_near
     with dissolve
     "???" "Sama-sama remedial kok berantem."
