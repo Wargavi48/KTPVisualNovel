@@ -207,7 +207,7 @@ label truepia:
             mc_nvl "Ada gilanya."
             mc_nvl "Bohong"
             pia_nvl "O"
-            pia_nvl "Strawberry cake cafe xxxx enak banget."
+            pia_nvl "Strawberry cake cafe AhSae enak banget."
             mc_nvl "Benar!"
             pia_nvl "O"
             pia_nvl "Pas aku makan strawberry cake pas itu, kamu ngeliatin aku terus."

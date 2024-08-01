@@ -1823,6 +1823,11 @@ label goodendpiarooftop:
     with dissolve
     pia "Weits~\n*Menangkap air yang dilempar oleh [mcname!c]*."
     pia "Glek! Glek! Glek!"
+    hide pia_talk
+    show pia nyender rooftop
+    show pia nyender rooftop:
+        pos (0.55, -0.07) zoom 0.37 
+    with dissolve
     pia "Huaaaaa! Capek juga ya..."
     hide pia_talk 
     hide pia_side_talk
@@ -2750,7 +2755,7 @@ label goodendpiamatsuri:
     "Penonton" "SERUUUUUUUUUUUUU!!!!"
     show kana_idol_side_talk at left with dissolve
     stop sound fadeout 1.5
-    kana "Tadi kami membawakan lagu xxxx!"
+    kana "Tadi kami membawakan lagu Punkish!"
     kana "Sebelum lanjut ke lagu yang selanjutnya, udah pada kenal kita belom nih?"
     hide kana_idol_side_talk with dissolve
     "Penonton" "Beluuuuuuuum~"
@@ -2841,7 +2846,7 @@ label goodendpia:
     show pia_idol_side_talk at left with dissolve 
     pia "*Blushing*"
     pia "A-ah iyaaa makasih~"
-    pia "Dengarkanlah lagu terakhir dari kami, xxxx."
+    pia "Dengarkanlah lagu terakhir dari kami, Dreamcatcher."
     hide pia_idol_side_talk with dissolve
     "[mcname!c]" "PIAAAAAAAAAAAAA!!!! SEMANGAAAAAAAAAAT!"
     stop sound fadeout 1.5
