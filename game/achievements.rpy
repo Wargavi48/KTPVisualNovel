@@ -65,7 +65,7 @@ define myconfig.ACHIEVEMENT_CALLBACK = [
     ## This first example is an achievement which unlocks after two other
     ## achievements have been granted ("hidden_achievement" and
     ## "hidden_description").
-    LinkedAchievement(hidden3=['hidden_achievement', 'hidden_description']),
+    # LinkedAchievement(hidden3=['hidden_achievement', 'hidden_description']),
     ## The second example is an achievement which unlocks after all achievements
     ## have been granted. This is a special case.
     LinkedAchievement(platinum_achievement='all'),
@@ -92,53 +92,53 @@ image locked_achievement = Text("?", color="#FF7700")
 ## description to be tied to a specific save file, for example).
 ## The order you declare achievements in is the order they will appear in the
 ## achievement gallery, by default.
-define sample_achievement = Achievement(
-    ## The human-readable name, as it'll appear in the popup and in the gallery.
-    name=_("Sample Achievement"),
-    ## The id is used for Steam integration, and should match whatever ID
-    ## you have set up in the Steam backend (if using).
-    id="sample_achievement",
-    ## Description.
-    description=_("This is a sample achievement."),
-    ## The image used in the popup and in the gallery once this achievement
-    ## is unlocked.
-    unlocked_image="gui/window_icon.png",
-    ## By default all achievements use the "locked_achievement" image (declared
-    ## above), but if you wanted to provide a different image, this is how
-    ## you would specify it. It's used in the achievement gallery when the
-    ## achievement is locked.
-    locked_image="locked_achievement",
-    ## All achievements are hidden=False by default, but you can change it to
-    ## hidden=True if you'd like the title/description to show as ??? in the
-    ## achievement gallery. See Examples 3 and 4 for examples of this.
-    hidden=False,
-)
+# define sample_achievement = Achievement(
+#     ## The human-readable name, as it'll appear in the popup and in the gallery.
+#     name=_("Sample Achievement"),
+#     ## The id is used for Steam integration, and should match whatever ID
+#     ## you have set up in the Steam backend (if using).
+#     id="sample_achievement",
+#     ## Description.
+#     description=_("This is a sample achievement."),
+#     ## The image used in the popup and in the gallery once this achievement
+#     ## is unlocked.
+#     unlocked_image="gui/window_icon.png",
+#     ## By default all achievements use the "locked_achievement" image (declared
+#     ## above), but if you wanted to provide a different image, this is how
+#     ## you would specify it. It's used in the achievement gallery when the
+#     ## achievement is locked.
+#     locked_image="locked_achievement",
+#     ## All achievements are hidden=False by default, but you can change it to
+#     ## hidden=True if you'd like the title/description to show as ??? in the
+#     ## achievement gallery. See Examples 3 and 4 for examples of this.
+#     hidden=False,
+# )
 ## You can grant an achievement in-game with `$ sample_achievement.grant()`
 
 ## Example 2 ###################################################################
-define progress_achievement = Achievement(
-    name=_("Progress Achievement"),
-    id="progress_achievement",
-    description=_("This is an achievement with a progress bar."),
-    unlocked_image=Transform("gui/window_icon.png", matrixcolor=InvertMatrix()),
-    ## To record progress, you need to specify a stat_max. This means you can
-    ## show a progress bar with % completion towards the achievement. It is
-    ## useful if, for example, you have an achievement counting how many
-    ## chapters the player has completed which unlocks when they have seen all
-    ## the chapters.
-    stat_max=12,
-    ## You can also provide a stat_modulo, which means the achievement is only
-    ## updated in the Steam backend every time the stat reaches a multiple of
-    ## the modulo.
-    ## Alternatively, this system also lets you set stat_update_percent instead,
-    ## so if you want it to update every 10% it progresses, you can set
-    # stat_update_percent=10
-    ## This is most useful for achievements with a large number of steps,
-    ## like a general % completion achievement. Maybe there are 600 things to
-    ## complete for the achievement, but obviously 0.1% increments are pretty
-    ## meaningless so you can either set stat_modulo=6 or stat_update_percent=1
-    ## and it will update Steam every 6 steps or every 1%.
-)
+# define progress_achievement = Achievement(
+#     name=_("Progress Achievement"),
+#     id="progress_achievement",
+#     description=_("This is an achievement with a progress bar."),
+#     unlocked_image=Transform("gui/window_icon.png", matrixcolor=InvertMatrix()),
+#     ## To record progress, you need to specify a stat_max. This means you can
+#     ## show a progress bar with % completion towards the achievement. It is
+#     ## useful if, for example, you have an achievement counting how many
+#     ## chapters the player has completed which unlocks when they have seen all
+#     ## the chapters.
+#     stat_max=12,
+#     ## You can also provide a stat_modulo, which means the achievement is only
+#     ## updated in the Steam backend every time the stat reaches a multiple of
+#     ## the modulo.
+#     ## Alternatively, this system also lets you set stat_update_percent instead,
+#     ## so if you want it to update every 10% it progresses, you can set
+#     # stat_update_percent=10
+#     ## This is most useful for achievements with a large number of steps,
+#     ## like a general % completion achievement. Maybe there are 600 things to
+#     ## complete for the achievement, but obviously 0.1% increments are pretty
+#     ## meaningless so you can either set stat_modulo=6 or stat_update_percent=1
+#     ## and it will update Steam every 6 steps or every 1%.
+# )
 ## To update progress towards completion of this achievement, you can use
 # $ progress_achievement.add_progress(1)
 ## where 1 is how much progress is added to the stat (so, the first time it
@@ -157,71 +157,198 @@ define progress_achievement = Achievement(
 ## Example 3 ###################################################################
 ## This achievement is "hidden", that is, its name and description appear as
 ## ??? in the achievement gallery until it is unlocked.
-define hidden_achievement = Achievement(
-    name=_("Hidden Achievement"),
-    id="hidden_achievement",
-    description=_("This hidden achievement hides both the name and description."),
-    unlocked_image=Transform("gui/window_icon.png", matrixcolor=BrightnessMatrix(-1.0)),
-    hidden=True, ## The important bit that hides the name and description
-)
+# define hidden_achievement = Achievement(
+#     name=_("Hidden Achievement"),
+#     id="hidden_achievement",
+#     description=_("This hidden achievement hides both the name and description."),
+#     unlocked_image=Transform("gui/window_icon.png", matrixcolor=BrightnessMatrix(-1.0)),
+#     hidden=True, ## The important bit that hides the name and description
+# )
 
 ## Example 4 ###################################################################
-define hidden_description = Achievement(
-    name=_("Hidden Description"),
-    id="hidden_description",
-    description=_("This hidden achievement hides only the description."),
-    unlocked_image=Transform("gui/window_icon.png", matrixcolor=SepiaMatrix()),
-    hide_description=True, ## The important bit that hides only the description
-)
+# define hidden_description = Achievement(
+#     name=_("Hidden Description"),
+#     id="hidden_description",
+#     description=_("This hidden achievement hides only the description."),
+#     unlocked_image=Transform("gui/window_icon.png", matrixcolor=SepiaMatrix()),
+#     hide_description=True, ## The important bit that hides only the description
+# )
 
 ## Example 5 ###################################################################
 ## This achievement unlocks automatically when the other two hidden achievements
 ## are unlocked. This is set up via myconfig.ACHIEVEMENT_CALLBACK earlier in
 ## the file.
-define hidden_double_unlock = Achievement(
-    name=_("You found it"),
-    id="hidden3",
-    description=_("This achievement unlocks automatically when the other two hidden achievements are unlocked."),
-    unlocked_image=Transform("gui/window_icon.png", matrixcolor=ContrastMatrix(0.0)),
-    hidden=True,
-    ## Besides just setting hide_description=True to set it to "???", you can
-    ## optionally provide your own custom description here, which is only
-    ## shown until the achievement is unlocked.
-    hide_description=_("Try unlocking the other two hidden achievements before this one."),
-)
+# define hidden_double_unlock = Achievement(
+#     name=_("You found it"),
+#     id="hidden3",
+#     description=_("This achievement unlocks automatically when the other two hidden achievements are unlocked."),
+#     unlocked_image=Transform("gui/window_icon.png", matrixcolor=ContrastMatrix(0.0)),
+#     hidden=True,
+#     ## Besides just setting hide_description=True to set it to "???", you can
+#     ## optionally provide your own custom description here, which is only
+#     ## shown until the achievement is unlocked.
+#     hide_description=_("Try unlocking the other two hidden achievements before this one."),
+# )
 ## Example 6 ###################################################################
 ## This -2 makes sure it's declared before the other achievements. This is
 ## so it shows up first in the list even though it's defined all the way down
 ## here.
-define -2 all_achievements = Achievement(
-    name=_("Platinum Achievement"),
-    id="platinum_achievement",
-    description=_("Congrats! You unlocked every achievement!"),
-    unlocked_image=Transform("gui/window_icon.png", matrixcolor=BrightnessMatrix(1.0)),
-    hide_description=_("Get all other achievements."),
-)
+
 
 define malas_kuliah = Achievement(
     name=_("Pemalas Sejati"),
     id="Certified MMM Enjoyer",
     description=_("Kamu pemalas banget!!!! Ayo mandi!!!!!!!!!"),
-    unlocked_image=Transform("Achievement/malas.jpeg"),
+    hide_description=_("MUALAAAAAAAAAAAS 🧢"),
+    unlocked_image=Transform("Achievement/piapunk.png"),
+    hidden=True
 )
 
 define plus_1_teman = Achievement(
-    name=_("Plus 1 Teman"),
-    id="Certified MMM Enjoyer",
+    name=_("+1 Friends"),
+    id="Plus 1 Teman",
     description=_("Carilah teman kamu yang lainnya"),
+    hide_description=_("Complete Chapter 1 Kana"),
     unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    hidden=True
 )
+
+define not_gimmick = Achievement(
+    name=_("Not a Gimmick (?)"),
+    id="Not a Gimmick",
+    description=_("Sedihnya sedih beneran bukan sedih karir"),
+    hide_description=_("Complete Chapter 2 Kana"),
+    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    hidden=True
+)
+
+define here_shecome = Achievement(
+    name=_("Here's She Come"),
+    id="here she come",
+    description=_("Atmint Datang 😱"),
+    hide_description=_("Complete Chapter 3 Kana Good Ending"),
+    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    hidden=True
+)
+
+define not_gimmick = Achievement(
+    name=_("A Neck laces"),
+    id="a necklases",
+    description=_("LOVE ME MORE!!!!!!"),
+    hide_description=_("Complete Chapter 3 Kana True Ending"),
+    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    hidden=True
+)
+
+
+define hidden_gift = Achievement(
+    name=_("Hidden Gift"),
+    id="hidden gift",
+    description=_("Menemukan bakat terpendam Tana"),
+    hide_description=_("Complete Chapter 1 Tana"),
+    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    hidden=True
+)
+
+define make_idol_group = Achievement(
+    name=_("Let's Make an Idol Group"),
+    id="make a idol group",
+    description=_("Rekrut anggota untuk gapai imipan bersama."),
+    hide_description=_("Complete Chapter 2 Tana Good Ending"),
+    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    hidden=True
+)
+
+define remedial_memories = Achievement(
+    name=_("Remedial memories"),
+    id="Remedial memories",
+    description=_("Momen remedi bersama Tana"),
+    hide_description=_("Complete Chapter 2 Tana True Ending"),
+    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    hidden=True
+)
+
+define your_dream = Achievement(
+    name=_("It's your dream "),
+    id="It's your dream ",
+    description=_("Tana berhasil menggapai impian sebagai idol"),
+    hide_description=_("Complete Chapter 3 Tana Good Ending"),
+    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    hidden=True
+)
+
+define hanabi_with_you = Achievement(
+    name=_("Hanabi with you"),
+    id="Hanabi with you",
+    description=_("Will you watch this with me forever (?)"),
+    hide_description=_("Complete Chapter 3 Tana True Ending"),
+    unlocked_image=Transform("Achievement/plus 1 teman.png"),
+    hidden=True
+)
+
+define got_selfie = Achievement(
+    name=_("Gotchu Selfie"),
+    id="Gotchu Selfie",
+    description=_("Ikut berfoto dengan Pia"),
+    hide_description=_("Complete Chapter 1 Pia"),
+    unlocked_image=Transform("Achievement/selfie.png"),
+    hidden=True
+)
+
+define roadto_rock_idol = Achievement(
+    name=_("Road to Rock Idol"),
+    id="Road to Rock Idol",
+    description=_("Selangkah menjadi Rock Idol"),
+    hide_description=_("Complete Chapter 2 Pia Good Ending"),
+    unlocked_image=Transform("Achievement/ROAD TO IDOL.png"),
+    hidden=True
+)
+
+define yangmulia_piaraan = Achievement(
+    name=_("Yang Mulia & Piaraan"),
+    id="Yang Mulia Piaraan",
+    description=_("Jadi peliharaan Pia"),
+    hide_description=_("Complete Chapter 2 Pia True Ending"),
+    unlocked_image=Transform("Achievement/yang mulia dan piaraan.png"),
+    hidden=True
+)
+
+define rock_idol = Achievement(
+    name=_("Pia Kamulah Oshiku Satu Satunya!!!"),
+    id="Rock Idol",
+    description=_("Akhirnya jadi idol juga"),
+    hide_description=_("Complete Chapter 3 Pia Good Ending"),
+    unlocked_image=Transform("Achievement/oshi satu satunya.png"),
+    hidden=True
+)
+
+define sukiyo = Achievement(
+    name=_("Ada Pia Beli Koyo"),
+    id="sukiyo",
+    description=_("Sukiyooo"),
+    hide_description=_("Complete Chapter 3 Pia True Ending"),
+    unlocked_image=Transform("Achievement/sukiyo.png"),
+    hidden=True
+)
+
 
 define all_correct = Achievement(
     name=_("Touch some grass lad, enough internet today"),
     id="Pengikut KTP",
-    description=_("Ayo keluar dunia menantimu kawan"),
-    unlocked_image=Transform("gui/window_icon.png", matrixcolor=BrightnessMatrix(1.0)),
+    description=_("NERDDDDDDD🤓👆"),
+    hide_description=_("Berhasil Menjawab Semua Jawaban pada Quiz"),
+    unlocked_image=Transform("Achievement/kanawibu1.png"),
+    hidden=True
 )
 
+define all_achievements = Achievement(
+    name=_("Warga Virtual True Form"),
+    id="platinum_achievement",
+    description=_("Congrats! You unlocked every achievement!"),
+    unlocked_image=Transform("Achievement/all_achievement.png"),
+    # hide_description=_("Get all other achievements."),
+    hidden=True
+)
 ################################################################################
 ## SCREENS
 ################################################################################

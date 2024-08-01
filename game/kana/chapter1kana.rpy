@@ -85,7 +85,7 @@ label chapter1kana1:
     play music "audio/BGM_Dosen.ogg" fadein 1.0
     scene kelas with Dissolve(1.0)
     $ quick_menu = True
-    "Rektor" "Selamat datang Mahasiswa baru yang memasuki *NAMA UNIVERSTASNYA* University…"
+    "Rektor" "Selamat datang Mahasiswa baru yang memasuki Jeketi University…"
     $ quick_menu = False 
     scene black with Dissolve(1.0)
     scene kelas with Dissolve(1.0)
