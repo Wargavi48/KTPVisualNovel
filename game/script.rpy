@@ -84,7 +84,7 @@ label intro:
         $renpy.call_screen("name_input", "{size=-5}Silahkan masukkan nama kamu{/size}", ok_action=Jump("processmcname"), output_var="mcname")
 
     label processmcname:
-        if not mcname or mcname == "" : 
+        if not mcname or mcname.replace(" ", "") == "": 
             $renpy.call_screen("popup_message","Wajib memasukkan nama!", ok_action=Jump("namemc"))
     
     $ mama_name = Character("Mamah")
