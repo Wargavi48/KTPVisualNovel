@@ -947,7 +947,7 @@ label chapter1kana3:
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     scene kantin with Dissolve(2.0)
     $ quick_menu = True
-    "Kantin Nama_Kampus, tempat para mahasiswa untuk melepaskan lapar dan haus sehabis belajar seharian."
+    "Kantin Jeketi University, tempat para mahasiswa untuk melepaskan lapar dan haus sehabis belajar seharian."
     "Karena sudah jam makan siang, suasana kantin terasa sangat ramai dan tempat duduk pun terlihat hampir penuh diisi oleh para mahasiswa."
     "[mcname!c]" "{i}Wahhhh, rame juga ya...{/i}"
     "[mcname!c]" "{i}Mungkin karena sudah jam makan siang??{/i}"

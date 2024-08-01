@@ -104,7 +104,7 @@ label intro:
     $ quick_menu = True
     "[mcname!c]" "Huft."
     "[mcname!c]" "{i}Sepertinya persiapan untuk di sana nanti sudah lengkap semua.{/i}"
-    "[mcname!c] memilih untuk memasuki kampus *Nama_Kampus* salah satu kampus unggulan yang ada di Indonesia."
+    "[mcname!c] memilih untuk memasuki Jeketi University, salah satu kampus unggulan yang ada di Indonesia."
     "Walaupun tempatnya berada jauh dari tempat asalnya, namun [mcname!c] tetap berkeinginan untuk memasuki kampus tersebut."
     show side mama at left with dissolve
     mama "Adeeek. Gimana persiapannya? Sudah semua?"
@@ -127,7 +127,7 @@ label intro:
     "[mcname!c]" "Udah semua kok, Mah. Ga perlu khawatir."
     show side mama at left with dissolve
     mama "Gimana Mamah gak khawatir? Kamu kan bakal merantau ke Jakarta sana."
-    mama "Kaget loh Mamah waktu denger kamu ngomong pengen kuliah di *Nama_Kampus*."
+    mama "Kaget loh Mamah waktu denger kamu ngomong pengen kuliah di Jeketi University."
     mama "Padahal kamu gak pernah pergi jauh dari rumah, jadinya Mamah khawatir."
     hide side mama with dissolve
     "[mcname!c]" "Kan sekalian nyoba liat-liat dunia luar, Mah."
@@ -179,7 +179,7 @@ label intro:
     show side papah at left
     with dissolve
     papah "Ehem-"
-    papah "Seperti yang sudah kita setujui, adek jadinya bakal kuliah di *Nama_Kampus*."
+    papah "Seperti yang sudah kita setujui, adek jadinya bakal kuliah di Jeketi University."
     papah "Lagian, adek juga sudah mempersiapkan barang-barangnya buat di sana."
     hide side papah
     show mama at char_left
