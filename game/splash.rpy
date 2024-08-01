@@ -52,6 +52,9 @@ label splashscreen:
 
     $ renpy.pause(2.0)
 
+    scene disclaimer with fade
+    pause(5.0)
+
     scene black
     with fade
 
