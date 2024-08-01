@@ -65,7 +65,7 @@
     $ quick_menu = True
     "[mcname!c]" "{i}Besok bakal jadi hari terakhirku di sini ya... {/i}"
     "[mcname!c]" "{i}Nanti bakal jauh dari keluarga dan juga teman-temanku di sini...{/i}"
-    "[mcname!c]" "{i}Apalagi sama PC dan beberapa koleksi figureku...{/i}"
+    "[mcname!c]" "{i}Apalagi sama kamar dan beberapa koleksi figureku...{/i}"
     "[mcname!c] mulai memikirkan pilihannya kembali."
     "[mcname!c]" "{i}Ah! Overthinking juga gak baik, mending langsung tidur aja dah.{/i}"
     "[mcname!c] pun memejamkan matanya dan langsung tertidur pulas."
