@@ -82,7 +82,7 @@ label truekanakos:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Di kost..."
@@ -131,7 +131,7 @@ label truekanachat:
     stop music fadeout 1.0
     $ quick_menu = False
     nvl clear
-    play music "BGM_Happy + HP.ogg" fadein 1.0
+    play music "BGM_Happy + HP.ogg" fadein 1.0 volume (2.0)
     mc_nvl "{size=-5}Malam Kana, sibuk nggak ya? Hehe.{/size}"
     kana_nvl "{size=-5}Umm engga kok knp ya?(OVO) {/size}"
     mc_nvl "{size=-5}Aku mau nanya soal event jejepangan itu, jadi kan?{/size}"
@@ -147,8 +147,8 @@ label truekanachat:
     kana_nvl "{size=-5}IHHHH apaan sih. Ya udah jadi kalau dulu tuh biasanya aku-{/size}"
     nvl clear
     scene kamar mc kota with Dissolve(0.01)
+    play sound "audio/SFX - Telephone.mp3"
     show kana_calling at ui_handphone with dissolve
-    play sound "audio/SFX - Telephone.mp3" loop
     $ quick_menu = True
     "Tanpa sengaja Kana menekan tombol voice call dan [mcname!c] pun tanpa pikir panjang menekan tombol jawab."
     stop sound fadeout 1.0
@@ -180,7 +180,9 @@ label truekanachat:
     scene kamar mc kota with Dissolve(2.0)
     $ quick_menu = True
     "Beberapa kali [mcname!c] mendengar Kana menguap dan menyarankan untuk mengakhiri voice call, tetapi ia tetap melanjutkan ceritanya seakan meluapkan semua cerita yang telah ia simpan sendirian selama ini."
-    show kana_connect at ui_handphone
+    "Beberapa saat kemudian pun Kana tertidur dengan voice call masih menyala."
+    hide kana_connect
+    show kana_connected at ui_handphone
     with dissolve
     "Beberapa saat kemudian pun Kana tertidur dengan voice call masih menyala."
     "[mcname!c]" "Kana...? Kana...?"
@@ -188,7 +190,7 @@ label truekanachat:
     "[mcname!c]" "{i}Heeee... Kana ketiduran ya?{/i}"
     "Suara nafas Kana sempat beberapa kali terdengar."
     "Setelah beberapa saat, [mcname!c] pun memilih untuk mengakhiri voice call itu dan tidur agar tidak telat besok."
-    hide kana_connect with dissolve
+    hide kana_connected with dissolve
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
@@ -205,7 +207,7 @@ label truekanachat:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Malam itu..."
@@ -367,7 +369,7 @@ label truekanachat:
     scene matsuri malam with Dissolve(1.0)
     #Harusnya BG Jejepangan Malam
     $ quick_menu = True
-    play sound "audio/crowd_noise.mp3" fadein 1.0
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     #HARUSNYA SFX Applause
     "[mcname!c]" "Gilaaaa, kereen bangeett sumpah! Iya ga, Kana?"
     show kana_date_talk at kana_near
@@ -777,7 +779,7 @@ label truekanajapanfest:
     scene black with Dissolve(1.0)
     scene matsuri malam with Dissolve(1.0)
     #Harusnya BG JEJEPANGAN MALAM
-    play sound "audio/crowd_noise.mp3" fadein 1.0
+    play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     show kana_date at kana_near with dissolve
     $ quick_menu = True
     "Kana dan [mcname!c] pun pergi ke tempat di mana event utama diadakan. Event tersebut adalah pertunjukan kembang api kecil kecilan yang akan diadakan oleh panitia acara."
@@ -983,7 +985,7 @@ label truekanajapanfest:
     $ quick_menu=False
     scene black with Dissolve(1.0)
     scene kelas sore with Dissolve(1.0)
-    play sound "audio/SFX - Call.mp3"
+    play sound "audio/SFX - Call.mp3" volume(3.0)
     #HARUSNYA KRIIIIINNNGGGG
     $ quick_menu=True
     "Tiba-tiba HP Freya berbunyi cukup keras sehingga membuat hampir seluruh kelas melihat ke arahnya."
@@ -997,7 +999,7 @@ label truekanajapanfest:
     show freya_talk at freya_near
     with dissolve
     stop music fadeout 1.0
-    play sound "audio/ding.mp3"
+    play sound "audio/SFX - Angkat Telepon.wav" volume(3.0)
     #HARUSNYA SUARA ANGKAT TELEPON
     $ quick_menu=False
     scene black with Dissolve(1.0)
@@ -1028,10 +1030,12 @@ label truekanajapanfest:
     hide freya_talk
     show freya at freya_near
     with dissolve
+    play sound "audio/SFX - End Call.mp3" volume(3.0)
+    #HARUSNYA SUARA TUTUP TELEPON
     stop music fadeout 1.0
     $ quick_menu=False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Sore.ogg" fadein 1.0
+    play music "audio/BGM_Sore.ogg" fadein 1.0 volume (1.5)
     scene kelas sore with Dissolve(1.0)
     show freya at freya_near with dissolve
     $ quick_menu=True
@@ -1098,7 +1102,7 @@ label truekanajapanfest:
     "[mcname!c] hanya bisa kebingungan memilih kado ulang tahun apa yang cocok."
     "Tiba-tiba terdengar bunyi dari HP yang menunjukkan bahwa HP perlu dicharge, akan tetapi ternyata ada notifikasi lain dari Kana dan Freya yang mencoba menghubungi [mcname!c] berkali-kali."
     #*BG HP LAGI TELEPON*
-    play sound "audio/SFX - Calling.mp3"
+    play sound "SFX - Calling.mp3" loop fadein 1.0
     "UI telpon Grup Freya, Kana, MC"
     # show group_call at ui_handphone with dissolve
     show freya_side_shock at left with dissolve
@@ -1356,7 +1360,7 @@ label truekanabuypresent:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Di kost..."
@@ -1439,7 +1443,7 @@ label truekanabuypresent:
             freya "Gasss!"
             hide freya_side_shock
             with dissolve
-            play sound "audio/ding.mp3"
+            play sound "audio/ding.mp3" volume(3.0)
             "Freya memencet bel rumah Kana."
             play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
             jump trueKanaNungguFreya

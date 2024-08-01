@@ -2209,6 +2209,10 @@ label chapter1tanamakan:
     play music "audio/BGM_Rooftop Pia Malam.ogg" fadein 1.0 volume (2.0)
     scene game center with Dissolve(1.0)
 #MUNCUL ASSET DANCE ARCADE GAME
+    show dance arcade
+    show dance arcade:
+        pos (0.5, 0.90) zoom 0.7 
+    with dissolve
     # #$ renpy.block_rollback()
     $ quick_menu = True
     "Terlihat seorang gadis cantik menari gemulai di depan mesin dance arcade."
@@ -2223,9 +2227,14 @@ label chapter1tanamakan:
     with dissolve
     "Tana yang fokus mengayunkan tangan dan kakinya, tampak tidak menyadari keberadaan [mcname!c]."
     "[mcname!c]" "Hmmm dia ga jawab, keknya lagi fokus. Harusnya dibolehin lah ya."
+    hide dance arcade with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene game center with Dissolve(1.0)
+    show dance arcade
+    show dance arcade:
+        pos (0.5, 0.90) zoom 0.7 
+    with dissolve
     # #$ renpy.block_rollback()
     $ quick_menu = True
     "Ketika tarian itu mencapai puncaknya kemudian diakhiri dengan gerakan yang elegan, memutar tubuhnya sekali lagi sebelum berhenti dengan satu gerakan terakhir yang sempurna."
@@ -2233,6 +2242,7 @@ label chapter1tanamakan:
     with dissolve
     play sound "SFX - Large Cheering.mp3" fadein 1.0
     tana "Yeyyy perfect score!"
+    hide dance arcade
 #HIDE SPRITE ASSET DANCE ARCADE
     hide tana_side_talk at left
     show tana at tana_near

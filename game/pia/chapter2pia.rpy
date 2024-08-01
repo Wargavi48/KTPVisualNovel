@@ -347,7 +347,7 @@ label chapter2piaaftergame:
     #$ renpy.block_rollback()
     $ quick_menu = True
     play sound "ReceiveText.ogg" loop volume (2.0)
-    "Terdengar suara notifikasi handphone."
+    # "Terdengar suara notifikasi handphone."
     stop sound
     show pia_talk at pia_near 
     show pia_side_talk at left
@@ -581,30 +581,41 @@ label chapter2piaaftergame:
     play music "audio/BGM_Rooftop Romance Pia.ogg" fadein 1.0
     scene rooftop with Dissolve(1.0)
     $ quick_menu = True
+    show pia dance
+    show pia dance:
+        ypos 0.78 zoom 0.32 
+    with dissolve
     "[mcname!c] melihat Pia sedang menari-nari di rooftop dengan indahnya."
     #$ renpy.block_rollback()
     "[mcname!c]" "Woaaa...."
     "[mcname!c]" "P-Pia............."
-    show pia_shock at pia_near 
     show pia_side_shock at left 
     with dissolve
     pia "KYAAAAA... EHHH!!!! [mcname!u]!!!!!! NGAPAIN KAMU!?"
-    hide pia_side_shock with dissolve
+    hide pia_side_shock 
+    hide pia
+    show pia_shock at pia_near
+    with dissolve
     "[mcname!c]" "Err.... Maaf ganggu. Aku lagi nyari inspirasi gambar aja sih, hehe."
-    show pia_side_shock at left with dissolve
+    show pia_side_shock at left
+    with dissolve
+    pia "Eh bntar yak mau iket rambut dulu"
     pia "Udah lama kamu di situ????? Kamu gak liat kan, aku lagi ngapain di sini??"
     hide pia_side_shock with dissolve
     "[mcname!c]" "Ummm...."
+    show pia_side_shock at left with dissolve
     pia "...."
+    hide pia_side_shock at left with dissolve
     "[mcname!c]" "G-gak liat, kok~"
-    show pia_sad at pia_near 
+    hide pia_shock
+    show pia_sad at pia_near
     show pia_side_sad at left 
     with dissolve
     pia "Fuih... Good!"
-    show pia_talk at pia_near 
     hide pia_sad
-    show pia_side_talk at left 
     hide pia_side_sad
+    show pia_side_talk at left
+    show pia_talk at pia_near
     with dissolve
     pia "Yaudah sini atuh gambar. Punya aku udah selese."
     show pia_smile at pia_near 
@@ -939,11 +950,14 @@ label chapter2piaaftergame:
             #$ renpy.block_rollback()
             $ quick_menu = True
             "[mcname!c]" "Apapun pilihanmu, Pia, aku akan tetap support kamu. Mau apapun itu."
-            show pia_side_shock at left with dissolve
+            show pia_shock at pia_near
+            show pia_side_shock at left 
+            with dissolve
             pia "Aww [mcname!c]..."
             hide pia_shock
             hide pia
             hide pia_side_shock
+            show pia_smile at pia_near
             show pia_side_smile at left
             with dissolve
             pia "Okeh!! Support aku, ya."
