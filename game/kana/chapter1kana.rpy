@@ -24,7 +24,7 @@ label chapter1kana1:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Kelas.ogg" fadein 1.0
+    play music "audio/BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     play sound "audio/open_door.mp3" fadein 1.0 volume (15.0)
     scene kelas with Dissolve(1.0)
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
@@ -120,7 +120,7 @@ label chapter1kana1:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Kelas.ogg" fadein 1.0
+    play music "BGM_Kelas.ogg" fadein 1.0 volume (1.5)
     scene kelas with Dissolve(1.0)
     $ quick_menu = True 
     "[mcname!c] meregangkan badannya yang terasa kaku akibat duduk terlalu lama."
@@ -608,7 +608,7 @@ label chapter1kana2Campus:
     "[mcname!c] berlari menuju lift yang akan tertutup."
     "Di dalam lift terlihat seorang cewek yang sepertinya juga mau menuju ke kelas..."
     $ quick_menu = False
-    play sound "audio/ding.mp3"
+    play sound "audio/ding.mp3" volume(3.0)
     show lift at lift_center with dissolve
     $ quick_menu = True
     "[mcname!c]" "Huft… huft… huft."
@@ -623,7 +623,7 @@ label chapter1kana2Campus:
     "Sibuk menarik nafas dari olahraga pagi yang tidak direncanakan tadi, [mcname!c] tidak terlalu memperhatikan perempuan yang ada di lift."
     "[mcname!c]" "Huft... huft...."
     "[mcname!c]" "{i}Kayaknya aku harus ningkatin staminaku lagi nih.{/i}"
-    play sound "audio/ding.mp3"
+    play sound "audio/ding.mp3" volume(3.0)
     $ quick_menu = False
     hide lift
     show freya at freya_near 
@@ -1404,7 +1404,7 @@ label chapter1kana3kos:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Di kost..."
@@ -1872,7 +1872,7 @@ label chapter1kana3monasesteh:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Di kost..."

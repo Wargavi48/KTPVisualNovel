@@ -114,7 +114,7 @@ label intro:
     show side mama at left with dissolve
     mama "Mamah masuk ya."
     hide side mama with dissolve
-    play sound "audio/open_door.mp3" volume 3.0
+    play sound "audio/open_door.mp3" volume 3.0 volume (15.0)
     show mama at small_center
     show side mama at left
     with dissolve

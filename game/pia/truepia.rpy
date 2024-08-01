@@ -315,7 +315,7 @@ label trueendrooftoppia:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Rooftop Sore.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     scene rooftop sore with Dissolve(1.0)
     show pia at pia_near with dissolve
     $ quick_menu = True 
@@ -792,7 +792,7 @@ label gambardikosanpia:
     "[mcname!c] pulang, duduk di meja belajarnya sambil mulai mengeluarkan buku-buku dan catatan materi ujian esok hari."
     "[mcname!c] bersiap begadang untuk fokus belajar karena besok adalah salah satu ujian mata kuliah tertulis yang paling sulit."
     stop music fadeout 1.0
-    play sound "audio/ReceiveText.ogg" loop volume (2.0)
+    play sound "ReceiveText.ogg" loop volume (2.0) volume (2.0)
     $ quick_menu=False
     window auto hide
     pause (1.0)
@@ -1150,7 +1150,7 @@ label trueendpiajalanmonas:
     $ quick_menu = False
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Siang.ogg" fadein 1.0 volume 2.0
     scene rooftop with Dissolve(1.0)
     #$ renpy.block_rollback()
     $ quick_menu = True
@@ -1963,7 +1963,7 @@ label truendpia:
     show key
     show key:
         pos (0.34, 0.66) zoom 0.1
-    play sound "SFX - Key.mp3"
+    play sound "SFX - Key.mp3" volume (5.0)
     fio "Nih\n*Kasih kunci ke Pia*"
     hide fio_talk
     hide fio_side_talk

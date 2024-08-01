@@ -1051,7 +1051,7 @@ label chapter1piamakanmall:
     with dissolve
     pia "Selfie ah!!"
     # window auto hide
-    play sound "audio/camera.mp3" loop
+    play sound "audio/camera.mp3" volume (2.0)
     hide pia_date_side_talk with dissolve
     stop sound 
     with Pause(1.0)
@@ -1067,7 +1067,7 @@ label chapter1piamakanmall:
     hide pia_date_side_shock
     show pia_date_smile at pia_near
     with dissolve
-    play sound "audio/camera.mp3"
+    play sound "audio/camera.mp3" volume (2.0)
     "Fiony ngeliatin dari jauh sambil senyum-senyum ngeledek nyindir Pia."
     hide pia_date_smile 
     show pia_date_side_shock at left 

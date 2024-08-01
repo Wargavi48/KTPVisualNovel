@@ -110,7 +110,7 @@ label chapter1tana:
 label tanamcdaftarulang:
     stop music fadeout 1.0
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Malamnya di kost..."
@@ -1378,7 +1378,7 @@ label chapter1tanamakan:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Tak terasa cafe semakin sepi dan para staff terlihat mulai\nberes-beres."
@@ -2206,7 +2206,7 @@ label chapter1tanamakan:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Rooftop Pia Malam.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Pia Malam.ogg" fadein 1.0 volume (2.0)
     scene game center with Dissolve(1.0)
 #MUNCUL ASSET DANCE ARCADE GAME
     # #$ renpy.block_rollback()
@@ -2503,7 +2503,7 @@ label chapter1tanamakan:
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "Sesampainya di kost..."

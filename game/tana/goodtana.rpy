@@ -3875,7 +3875,7 @@ label goodtanafinale:
     stop music fadeout 1.0
     $ quick_menu=False
     scene black with Dissolve(1.0)
-    play music "BGM_Rooftop Sore.ogg" fadein 1.0
+    play music "audio/BGM_Rooftop Sore.ogg" fadein 1.0 volume 2.0
     scene awan sore with Dissolve(1.0)
     $ quick_menu = True
     "Setelah latihan..."

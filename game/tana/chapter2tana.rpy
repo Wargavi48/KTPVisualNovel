@@ -233,7 +233,7 @@ label chapter2tana:
     stop music fadeout 1.0
     $ quick_menu=False
     scene black with Dissolve(1.0)
-    play music "BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu=True
     "Malamnya..."
@@ -655,7 +655,7 @@ label chapter2tana:
         "Telepon Tana":
             "[mcname!c]" "Yaudah lah. Daripada absen gua ngurang, terus ga bisa ikut ulangan."
             show tana_mc_ring at ui_handphone with dissolve
-            play sound "SFX - Calling.mp3" loop fadein 0.5
+            play sound "SFX - Calling.mp3" loop fadein 1.0
             "[mcname!c] pun mencoba menelpon Tana."
             "[mcname!c]" "Angkat lah."
             stop sound fadeout 1.0
@@ -663,7 +663,7 @@ label chapter2tana:
             hide tana_mc_ring at ui_handphone with dissolve
             "[mcname!c]" "Hadeh. Pasti Tana masih marah gara-gara video kemarin. Kan gua ga maksud apa-apa."
             show tana_mc_ring at ui_handphone with dissolve
-            play sound "SFX - Calling.mp3" loop fadein 0.5
+            play sound "SFX - Calling.mp3" loop fadein 1.0
             "[mcname!c]" "Coba telepon lagi deh."
             "[mcname!c]" "Angkat lah woy."
             stop sound fadeout 1.0

@@ -60,7 +60,7 @@
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+    play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
     scene awan malam with Dissolve(1.0)
     $ quick_menu = True
     "[mcname!c]" "{i}Besok bakal jadi hari terakhirku di sini ya... {/i}"
@@ -137,7 +137,7 @@
             ##$ renpy.block_rollback()
             stop music fadeout 1.0
             $ quick_menu = False
-            play music "BGM_Bad End.ogg"
+            play music "BGM_Bad End.ogg" fadein 1.0
             "[mcname!c] memilih untuk mengelilingi Jakarta dan menghabiskan waktu sampai malam."
             "Jadinya malah lupa waktu dan akhirnya lupa kalau harus beresin barang."
             "Akhirnya [mcname!c] malah ikut ke pergi ke pergaulan bebas."
@@ -153,7 +153,7 @@
             ##$ renpy.block_rollback()
             stop music fadeout 1.0
             $ quick_menu = False
-            play music "BGM_Bad End.ogg"
+            play music "BGM_Bad End.ogg" fadein 1.0
             "[mcname!c] ikut ke dalam circle orang orang kaya yang haus akan atensi di dunia maya, dan akhirnya malah ngutang sana sini karena kurang atensi."
             scene black  with dissolve
             show text "{color=#FFF}ORTU LU DAPET KABAR KALAU LU MASUK PENJARA KARENA PENIPUAN UANG.{/color}" with Pause(2.0)
@@ -195,7 +195,7 @@ label awalkosan:
         stop music fadeout 1.0
         $ quick_menu = False
         scene black with Dissolve(1.0)
-        play music "audio/BGM_Kosan 1.ogg" fadein 1.0
+        play music "audio/BGM_Kosan 1.ogg" fadein 1.0 volume (0.8)
         scene awan malam with Dissolve(1.0)
         $ quick_menu = True
         "Tak terasa hari pun sudah gelap."

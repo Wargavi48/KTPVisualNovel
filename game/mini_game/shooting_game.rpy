@@ -384,7 +384,7 @@ default countdown_time = inital_countdown_time
 
 label shooting_game_start:
     stop music fadeout 1.0
-    play music "audio/BGM_Minigame Tana.mp3" fadein 1.0
+    play music "audio/BGM_Minigame Tana.ogg" fadein 1.0
     $ setupTargets()
     call screen shooting_gallery
     return
