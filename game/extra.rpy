@@ -268,7 +268,7 @@ CG: Lenkuass
 \n
 Backgrounds: Awil, BlueSky, Hann, Neru, Pipigoroo, Tebtebo
 \n
-Assets: Nue, Tebtebo, Denden.zip
+Assets: Denden.zip, Nue, Tebtebo
 \n
 UI Design: Heyysatsu
 \n
@@ -346,6 +346,8 @@ Lifeforstock on Freepik
 \n
 MrSiraphol on Freepik
 \n
+Neeka
+\n
 {size=+10}Sound Effect{/size}
 \n
 PIXABAY
@@ -358,11 +360,15 @@ A Day Spent at a Cafe by NekoKimagure
 \n
 Answer by ZUKISUZUKI
 \n
+Chocolate Mint by Edamame88
+\n
 Conjurer by Peritune
 \n
 Cut The Wind by Shuki Yomrua
 \n
 Daybreak by Peritune
+\n
+Gentle Theme 1 by PeriTune
 \n
 Gentle Theme 2 by PeriTune
 \n
@@ -378,9 +384,13 @@ Laid Back 3 by Peritune
 \n
 Let's Party 3 by Peritune
 \n
+MIGIKATA JKT48 Flute & Guitar Cover by Rangga Pranendra
+\n
 Nostalgic by Peritune
 \n
 No Way by Peritune
+\n
+Old Home by Noru
 \n
 On The Gentle Wind by Shimtone
 \n
@@ -418,6 +428,8 @@ Soft Day 2 by Peritune
 \n
 Sugomori no Ritchi by MAKOOTO
 \n
+Suspense 3 by Peritune
+\n
 Toys Factory by Peritune
 \n
 Train by Matsu
@@ -430,12 +442,46 @@ Wind Feelings by Shimtone
 \n
 Wish 2 by Peritune
 \n
-MIGIKATA (Pundak Kanan) - JKT48 Flute & Guitar Cover by Rangga Pranendra
+{size=+10}Sound Effect{/size}
+\n
+Clock Alarm by Microsammy
+\n
+CRASH 1 by Olenchic
+\n
+David Gallie from Pixabay
+\n
+Ftus Sound Effects
+\n
+Jingle Retro Jazz 2 by Peritune
+\n
+Jurij from Pixabay
+\n
+PIXABAY
+\n
+Qat from FreeSound
+\n
+Rotich Wilson from Pixabay
+\n
+SoundBiter
+\n
+Soundsnap
+\n
+Sound Laboratory
+\n
+Universfield from Pixabay
+\n
+U_z31mph1yzr from Pixabay
 \n
 {size=+10}Special Thanks{/size}
 \n
 All The Dreamcatcher Player & Para Warga Virtual 48
-\n\n
+\n
+Ess_renpy_tutorials
+\n
+Feniks
+\n
+MarshaOshi
+\n
 {size=+10}Very Special Thanks{/size}
 \n
 Kanaia Asa - JKT48 Virtual
