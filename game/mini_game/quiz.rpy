@@ -101,7 +101,7 @@ label quiz:
 
 label pasrah:
     menu:
-        "Apakah mau di ulang ?"
+        "Apakah mau diulang?"
         "Ya":
             jump quiz
         "Tidak":
