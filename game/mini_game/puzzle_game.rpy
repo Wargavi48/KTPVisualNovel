@@ -116,7 +116,7 @@ default finished_pieces = 0 # Keeps track of the amount of pieces that have been
 label puzzle_start:
     play sound "audio/Alarm.mp3" fadein 2.0
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}MINI GAME TIME{/color}" with Pause(2.0)
+    show text "{size=45}{color=#FFF}MINI GAME TIME{/color}{/size}" with Pause(2.0)
     play music "audio/BGM_Minigame Kana.ogg" fadein 2.0
     scene mini game with Dissolve(1.0)
     stop sound fadeout 1.0

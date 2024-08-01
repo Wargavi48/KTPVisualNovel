@@ -94,7 +94,6 @@
     ##$ renpy.block_rollback()
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    show text "{color=#FFF}CHAPTER I{/color}" with Pause(1.5)
     scene black with Dissolve(1.0)
     $ quick_menu = True
     "Hari baru sudah dimulai."
@@ -102,7 +101,7 @@
     "Di sini aku memilih jurusan [jurusan]."
     "Dan hari ini adalah hari di mana aku datang ke Jakarta!"
     $ quick_menu = False
-    scene black with dissolve
+    scene black with Dissolve(1.0)
     play music "audio/BGM_Pagi Siang.ogg" loop fadein 1.0
     scene monas temporary with Dissolve(1.0)
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)

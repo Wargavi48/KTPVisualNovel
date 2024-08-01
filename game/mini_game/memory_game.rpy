@@ -124,9 +124,8 @@ default match_found = False # If a match has been found.
 label startPiaGame:
     scene black with dissolve
     play sound "audio/Alarm.mp3" fadein 1.0
-    show text "{color=#FFF}MINI GAME TIME{/color}" with Pause(2.0)
+    show text "{size=45}{color=#FFF}MINI GAME TIME{/color}{size}" with Pause(2.0)
     $randomize_cards() # Create cards.
     "Selesaikan mini game untuk menyelesaikan gambar Pia"
     play music "audio/BGM_Mini Game Pia.ogg" fadein 1.0
     call screen memory_mini_game
-    
