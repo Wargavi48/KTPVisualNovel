@@ -231,7 +231,7 @@ define here_shecome = Achievement(
     hidden=True
 )
 
-define not_gimmick = Achievement(
+define necklaces = Achievement(
     name=_("A Neck laces"),
     id="a necklases",
     description=_("LOVE ME MORE!!!!!!"),

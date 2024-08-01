@@ -5288,6 +5288,7 @@ label TerimaTawaranKana:
     "Meski hanya dihadiri 3 orang akan tetapi suasana yang ada tetap terasa hidup, ramai, dan penuh keceriaan."
     stop music fadeout 1.0
     $ quick_menu = False
+    $ not_gimmick.grant()
     scene black with Dissolve(1.0)
     scene chapter 3 kana with Dissolve (1.0)
     pause(3.0)

@@ -2286,6 +2286,7 @@ label truekanarightpresent:
     $ quick_menu = False
     scene kana_gift_smile with Dissolve(1.0)
     stop music fadeout 1.0
+    $ necklaces.grant()
     show text "{color=#000}THE END{/color}" with Pause(2.0)
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     jump credits
