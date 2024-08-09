@@ -197,7 +197,7 @@ image locked_achievement = Text("?", color="#FF7700")
 
 define malas_kuliah = Achievement(
     name=_("Pemalas Sejati"),
-    id="Certified MMM Enjoyer",
+    id="Certified_MMM_Enjoyer",
     description=_("Kamu pemalas banget!!!! Ayo mandi!!!!!!!!!"),
     hide_description=_("MUALAAAAAAAAAAAS 🧢"),
     unlocked_image=Transform("Achievement/piapunk.png"),
@@ -206,7 +206,7 @@ define malas_kuliah = Achievement(
 
 define plus_1_teman = Achievement(
     name=_("+1 Friends"),
-    id="Plus 1 Teman",
+    id="Plus_1_Teman",
     description=_("Carilah teman kamu yang lainnya"),
     hide_description=_("Complete Chapter 1 Kana"),
     unlocked_image=Transform("Achievement/plus 1 teman.png"),
@@ -215,7 +215,7 @@ define plus_1_teman = Achievement(
 
 define not_gimmick = Achievement(
     name=_("Not a Gimmick (?)"),
-    id="Not a Gimmick",
+    id="Not_a_Gimmick",
     description=_("Sedihnya sedih beneran bukan sedih karir"),
     hide_description=_("Complete Chapter 2 Kana"),
     unlocked_image=Transform("Achievement/gimmick.png"),
@@ -224,7 +224,7 @@ define not_gimmick = Achievement(
 
 define here_shecome = Achievement(
     name=_("Here's She Come"),
-    id="here she come",
+    id="here_she_come",
     description=_("Atmint Datang 😱"),
     hide_description=_("Complete Chapter 3 Kana Good Ending"),
     unlocked_image=Transform("Achievement/ADMIN.png"),
@@ -233,7 +233,7 @@ define here_shecome = Achievement(
 
 define necklaces = Achievement(
     name=_("A Neck laces"),
-    id="a necklases",
+    id="a_necklases",
     description=_("LOVE ME MORE!!!!!!"),
     hide_description=_("Complete Chapter 3 Kana True Ending"),
     unlocked_image=Transform("Achievement/kalung.png"),
@@ -243,7 +243,7 @@ define necklaces = Achievement(
 
 define hidden_gift = Achievement(
     name=_("Hidden Gift"),
-    id="hidden gift",
+    id="hidden_gift",
     description=_("Menemukan bakat terpendam Tana"),
     hide_description=_("Complete Chapter 1 Tana"),
     unlocked_image=Transform("Achievement/kado.png"),
@@ -252,7 +252,7 @@ define hidden_gift = Achievement(
 
 define make_idol_group = Achievement(
     name=_("Let's Make an Idol Group"),
-    id="make a idol group",
+    id="make_a_idol_group",
     description=_("Rekrut anggota untuk gapai imipan bersama."),
     hide_description=_("Complete Chapter 2 Tana Good Ending"),
     unlocked_image=Transform("Achievement/flyer.png"),
@@ -261,7 +261,7 @@ define make_idol_group = Achievement(
 
 define remedial_memories = Achievement(
     name=_("Remedial memories"),
-    id="Remedial memories",
+    id="Remedial_memories",
     description=_("Momen remedi bersama Tana"),
     hide_description=_("Complete Chapter 2 Tana True Ending"),
     unlocked_image=Transform("Achievement/remedial.png"),
@@ -270,7 +270,7 @@ define remedial_memories = Achievement(
 
 define your_dream = Achievement(
     name=_("It's your dream "),
-    id="It's your dream ",
+    id="Its_your_dream",
     description=_("Tana berhasil menggapai impian sebagai idol"),
     hide_description=_("Complete Chapter 3 Tana Good Ending"),
     unlocked_image=Transform("Achievement/tana_idol.png"),
@@ -279,7 +279,7 @@ define your_dream = Achievement(
 
 define hanabi_with_you = Achievement(
     name=_("Hanabi with you"),
-    id="Hanabi with you",
+    id="Hanabi_with_you",
     description=_("Will you watch this with me forever (?)"),
     hide_description=_("Complete Chapter 3 Tana True Ending"),
     unlocked_image=Transform("Achievement/kembang_api.png"),
@@ -288,7 +288,7 @@ define hanabi_with_you = Achievement(
 
 define got_selfie = Achievement(
     name=_("Gotchu Selfie"),
-    id="Gotchu Selfie",
+    id="Gotchu_Selfie",
     description=_("Ikut berfoto dengan Pia"),
     hide_description=_("Complete Chapter 1 Pia"),
     unlocked_image=Transform("Achievement/selfie.png"),
@@ -297,7 +297,7 @@ define got_selfie = Achievement(
 
 define roadto_rock_idol = Achievement(
     name=_("Road to Rock Idol"),
-    id="Road to Rock Idol",
+    id="Road_to_Rock_Idol",
     description=_("Selangkah menjadi Rock Idol"),
     hide_description=_("Complete Chapter 2 Pia Good Ending"),
     unlocked_image=Transform("Achievement/ROAD TO IDOL.png"),
@@ -306,7 +306,7 @@ define roadto_rock_idol = Achievement(
 
 define yangmulia_piaraan = Achievement(
     name=_("Yang Mulia & Piaraan"),
-    id="Yang Mulia Piaraan",
+    id="Yang_Mulia_Piaraan",
     description=_("Jadi peliharaan Pia"),
     hide_description=_("Complete Chapter 2 Pia True Ending"),
     unlocked_image=Transform("Achievement/yang mulia dan piaraan.png"),
@@ -315,7 +315,7 @@ define yangmulia_piaraan = Achievement(
 
 define rock_idol = Achievement(
     name=_("Pia Kamulah Oshiku Satu Satunya!!!"),
-    id="Rock Idol",
+    id="Rock_Idol",
     description=_("Akhirnya jadi idol juga"),
     hide_description=_("Complete Chapter 3 Pia Good Ending"),
     unlocked_image=Transform("Achievement/oshi satu satunya.png"),
@@ -334,7 +334,7 @@ define sukiyo = Achievement(
 
 define all_correct = Achievement(
     name=_("Touch some grass lad, enough internet today"),
-    id="Pengikut KTP",
+    id="Pengikut_KTP",
     description=_("NERDDDDDDD🤓👆"),
     hide_description=_("Berhasil Menjawab Semua Jawaban pada Quiz"),
     unlocked_image=Transform("Achievement/kanawibu1.png"),
