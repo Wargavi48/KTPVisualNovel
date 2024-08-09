@@ -62,8 +62,8 @@ style vscrollbar:
 
 style slider:
     ysize gui.slider_size
-    base_bar Frame("gui/slider/custom_scroll_bar.png", gui.slider_borders, tile=gui.slider_tile)
-    thumb "gui/slider/custom_scroll_thumb.png"
+    base_bar Frame("gui/slider/custom_scroll_bar_1.png", gui.slider_borders, tile=gui.slider_tile) xsize 486
+    thumb "gui/slider/custom_scroll_thumb_1.png" thumb_offset 18
 
 style vslider:
     xsize gui.slider_size
@@ -117,7 +117,7 @@ transform start_menu:
 
 
 transform load_menu:
-    xoffset 100 alpha 0.0
+    xoffset -100 alpha 0.0
     pause 4.6
     ease 0.3 xoffset 0 alpha 1.0
 
@@ -133,7 +133,7 @@ transform setting_menu:
 #     ease 0.3 yoffset 0 alpha 1.0
 
 transform help_menu:
-    xoffset 100 alpha 0.0
+    xoffset -100 alpha 0.0
     pause 5.2
     ease 0.3 xoffset 0 alpha 1.0
 
@@ -146,6 +146,10 @@ transform quit_menu:
     xoffset -100 alpha 0.0
     pause 5.5
     ease 0.3 xoffset 0 alpha 1.0
+
+transform fade_in:
+    alpha 0.0
+    linear 0.3 alpha 1.0
 
 transform logo_game:
     zoom 2.0 alpha 0.0
@@ -389,111 +393,7 @@ style quick_button_text:
 ## Layar ini di ikutsertakan di menu utama dan permainan, dan menyediakan
 ## navigasi ke menu lainnya, dan untuk memulai permainan.
 
-screen navigation():
-
-    vbox:
-        style_prefix "navigation"
-
-        xpos gui.navigation_xpos
-        # xalign 0.5
-        yalign 0.5
-
-        spacing gui.navigation_spacing
-
-        if main_menu:
-
-            textbutton _("Start") action Start():
-                if renpy.get_screen("main_menu"):
-                    at start_menu
-                    text_color "#000000"
-                    text_hover_color "#FF7700"
-                    ypos -100
-                    # ypos 0
-                    background "gui/main_menu_button.png"
-                    text_xpos 120
-
-            # textbutton _("Achievements") action ShowMenu("achievement_gallery"):
-            #     if renpy.get_screen("main_menu"):
-            #         at achievement_menu
-            #         text_color "#000000" 
-            #         text_hover_color "#FF7700"
-            #         ypos -100
-            #         background "gui/main_menu_button.png"
-            #         text_xpos 50
-
-        else:
-
-            textbutton _("History") action ShowMenu("history")
-
-            textbutton _("Save") action ShowMenu("save")
-
-        textbutton _("Load") action ShowMenu("load"):
-            if renpy.get_screen("main_menu"):
-                at load_menu
-                text_color "#000000"
-                text_hover_color "#FF7700"
-                ypos -50
-                # ypos 50
-                background "gui/main_menu_button.png"
-                text_xpos 130
-
-        textbutton _("Setting") action ShowMenu("preferences"):
-            if renpy.get_screen("main_menu"):
-                at setting_menu
-                text_color "#000000"
-                text_hover_color "#FF7700"
-                ypos 0
-                # ypos 100
-                background "gui/main_menu_button.png"
-                text_xpos 110
-
-
-        if _in_replay:
-
-            textbutton _("Akhiri Replay") action EndReplay(confirm=True)
-
-        elif not main_menu:
-
-            textbutton _("Main Menu") action MainMenu()
-
-        # textbutton _("About") action ShowMenu("about"):
-        #     if renpy.get_screen("main_menu"):
-        #         at about_menu
-        #         text_color "#000000"
-        #         text_hover_color "#FF7700" 
-        #         ypos 50
-        #         background "gui/main_menu_button.png"
-        #         text_xpos 120
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Bantuan tidak perlu atau relevan dengan perangkat mobile.
-            
-            # Harusnya dibawah ini help sementara ganti jadi extras dulu
-            textbutton _("Achievement") action ShowMenu("achievement_gallery"):
-            # textbutton _("Extras") action ShowMenu("help"):
-                if renpy.get_screen("main_menu"):
-                    at help_menu
-                    text_color "#000000"
-                    text_hover_color "#FF7700" 
-                    ypos 50
-                    # ypos 150
-                    background "gui/main_menu_button.png"
-                    text_xpos 80
-
-        if renpy.variant("pc"):
-
-            ## Tombol keluar dilarang di iOS dan tidak diperlukan di Android dan
-            ## Web.
-            textbutton _("Quit Game") action Quit(confirm=not main_menu):
-                if renpy.get_screen("main_menu"):
-                    at quit_menu
-                    text_color "#000000"
-                    text_hover_color "#FF7700"
-                    ypos 100
-                    # ypos 200
-                    background "gui/main_menu_button.png"
-                    text_xpos 80
+#screen navigation():
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
@@ -522,12 +422,12 @@ screen main_menu():
     add "screens/Pia.png" at ktp_appear
     add "screens/Kana.png" at ktp_appear
     add "screens/kabut_kiri.png" at overlay_left
-    add "screens/kabut_kanan.png" at overlay_right
-    add "gui/Logo_VN_KTP.png":
+    #add "screens/kabut_kanan.png" at overlay_right
+    add "gui/Logo_VN_KTP_re.png":
         at logo_game
-        zoom 1.5
-        ypos 764
-        xpos 1120
+        #zoom 1.5
+        ypos 78
+        xpos 16
 
     # add "gui/overlay/side_bar_menu.png" at overlay_appear
     ## Frame kosong ini menggelap di menu utama.
@@ -536,7 +436,124 @@ screen main_menu():
 
     ## Pernyataan 'use' mengikutsertakan layar lain ke layar ini. Isi sebenarnya
     ## dari menu utama adalah layar navigasi.
-    use navigation
+    #use navigation
+
+    fixed:
+        style_prefix "navigation"
+
+        # xpos gui.navigation_xpos
+        # xalign 0.5
+        # yalign 0.5
+
+        spacing gui.navigation_spacing
+
+        if main_menu:
+
+            #textbutton _("Start") action Start():
+    
+            imagebutton auto "gui/menu/mm_start_%s.png" xpos 0 ypos 260 focus_mask True action Start() hovered [ Play("sound","audio/click.wav") ] at start_menu
+
+            # if renpy.get_screen("main_menu"):
+            # at start_menu
+            # text_color "#000000"
+            # text_hover_color "#FF7700"
+            # ypos -100
+            # ypos 0
+            # background "gui/main_menu_button.png"
+            # text_xpos 120
+
+            # textbutton _("Achievements") action ShowMenu("achievement_gallery"):
+            #     if renpy.get_screen("main_menu"):
+            #         at achievement_menu
+            #         text_color "#000000" 
+            #         text_hover_color "#FF7700"
+            #         ypos -100
+            #         background "gui/main_menu_button.png"
+            #         text_xpos 50
+
+        else:
+
+            textbutton _("History") action ShowMenu("history") background None
+
+            textbutton _("Save") action ShowMenu("save") background None
+
+
+        #textbutton _("Load") action ShowMenu("load"):
+
+        imagebutton auto "gui/menu/mm_load_%s.png" xpos 0 ypos 375 focus_mask True action ShowMenu("load") hovered [ Play("sound","audio/click.wav") ] at load_menu
+
+            #if renpy.get_screen("main_menu"):
+                #at load_menu
+                #text_color "#000000"
+                #text_hover_color "#FF7700"
+                #ypos -50
+                # ypos 50
+                #background "gui/main_menu_button.png"
+                #text_xpos 130
+
+        #textbutton _("Setting") action ShowMenu("preferences"):
+
+        imagebutton auto "gui/menu/mm_config_%s.png" xpos 0 ypos 490 focus_mask True action ShowMenu("preferences") hovered [ Play("sound","audio/click.wav") ] at setting_menu
+
+            #if renpy.get_screen("main_menu"):
+                #at setting_menu
+                #text_color "#000000"
+                #text_hover_color "#FF7700"
+                #ypos 0
+                # ypos 100
+                #background "gui/main_menu_button.png"
+                #text_xpos 110
+
+
+        #if _in_replay:
+
+            #textbutton _("Akhiri Replay") action EndReplay(confirm=True)
+
+        #elif not main_menu:
+
+            #textbutton _("Main Menu") action MainMenu()
+
+        # textbutton _("About") action ShowMenu("about"):
+        #     if renpy.get_screen("main_menu"):
+        #         at about_menu
+        #         text_color "#000000"
+        #         text_hover_color "#FF7700" 
+        #         ypos 50
+        #         background "gui/main_menu_button.png"
+        #         text_xpos 120
+
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Bantuan tidak perlu atau relevan dengan perangkat mobile.
+            # Harusnya dibawah ini help sementara ganti jadi extras dulu
+            # textbutton _("Extras") action ShowMenu("extras"):
+            # textbutton _("Extras") action ShowMenu("help"):
+                imagebutton auto "gui/menu/mm_extra_%s.png" xpos 0 ypos 605 focus_mask True action ShowMenu("gallery_a") hovered [ Play("sound","audio/click.wav") ] at help_menu
+                #if renpy.get_screen("main_menu"):
+                    #at help_menu
+                    #text_color "#000000"
+                    #text_hover_color "#FF7700" 
+                    #ypos 50
+                    # ypos 150
+                    #background "gui/main_menu_button.png"
+                    #text_xpos 100
+
+        if renpy.variant("pc"):
+
+            ## Tombol keluar dilarang di iOS dan tidak diperlukan di Android dan
+            ## Web.
+            #textbutton _("Quit Game") action Quit(confirm=not main_menu):
+
+            imagebutton auto "gui/menu/mm_exit_%s.png" xpos 0 ypos 720 focus_mask True action Show("confirm_quit") hovered [ Play("sound","audio/click.wav") ] at quit_menu
+
+                #if renpy.get_screen("main_menu"):
+                    #at quit_menu
+                    #text_color "#000000"
+                    #text_hover_color "#FF7700"
+                    #ypos 100
+                    # ypos 200
+                    #background "gui/main_menu_button.png"
+                    #text_xpos 80
 
     if gui.show_name:
 
@@ -578,6 +595,24 @@ style main_menu_title:
 style main_menu_version:
     properties gui.text_properties("version")
 
+## layar Confirm Exit ########################################################
+##
+
+screen confirm_quit():
+        modal True
+        zorder 100
+
+        # Background for the confirmation screen (optional)
+        add "gui/menu/end_c.png" at fade_in
+        # Centered buttons for confirm and cancel
+        
+        fixed:
+
+            # Confirm button
+            imagebutton auto "gui/menu/x_yes_%s.png" xpos 648 ypos 503 action Quit(confirm=False) focus_mask True hovered [ Play("sound","audio/click.wav") ] at fade_in
+
+            # Cancel button
+            imagebutton auto "gui/menu/x_no_%s.png" xpos 982 ypos 503 action Hide("confirm_quit") focus_mask True hovered [ Play("sound","audio/click.wav") ] at fade_in
 
 ## layar Menu Permainan ########################################################
 ##
@@ -647,7 +682,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
                     transclude
 
-    use navigation
+    #use navigation
 
     textbutton _("Kembali"):
         style "return_button"
@@ -771,92 +806,140 @@ screen load():
 
 
 screen file_slots(title):
+    add "images/save/bg_save.png"
+    imagebutton auto "gui/button/back_ico_%s.png" xpos 40 ypos 1010 focus_mask True action Return()
+    
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        grid 4 3:
+            xspacing 49
+            yspacing 16
+            for i in range(12):
+                $slot = i+1
+                frame:
+                    xsize 373
+                    ysize 265  
+                    background Frame("images/save/save_frame.png")
+
+                    fixed:
+                            xpos 43
+                            ypos 55
+                            add FileScreenshot(slot) at Transform(xsize=280, ysize=150)
+                    button:
+                        xalign 0.5
+                        yalign 0.5
+                        action FileAction(slot)
+                        has vbox
+
+                        text FileTime(slot, format=_("{#file_time}%a, %b %d %Y, %H:%M"), empty=_("empty slot")):
+                            style "slot_time_text"
+                            yoffset 110
+                        text FileSaveName(slot):
+                            style "slot_name_text"
+    
+    frame:
+        xalign 1.0
+        yalign 1.0
+        hbox:
+            style_prefix "page"
+            spacing gui.page_spacing
+
+            if config.has_autosave:
+                textbutton _("{#auto_page}Auto Save") action FilePage("auto")
+            
+            if config.has_quicksave:
+                textbutton _("{#quick_page}Quick Save") action FilePage("quick")
+
+            for page in range(1,3):
+                textbutton "[page]" action FilePage(page)
+
 
     default page_name_value = FilePageNameInputValue(pattern=_("Halaman {}"), auto=_("Otomatis save"), quick=_("Save cepat"))
 
-    use game_menu(title):
+    #use game_menu(title):
 
-        fixed:
+        #fixed:
 
             ## Ini memastikan input akan mendapat event masuk sebelum tombol
             ## lainnya.
-            order_reverse True
+            #order_reverse True
 
             ## Nama halaman, yang dapat di edit dengan mengklik tombol.
-            button:
-                style "page_label"
+            #button:
+                #style "page_label"
 
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
+                #key_events True
+                #xalign 0.5
+                #action page_name_value.Toggle()
 
-                input:
-                    style "page_label_text"
-                    value page_name_value
+                #input:
+                    #style "page_label_text"
+                    #value page_name_value
 
             ## Kolom slot file.
-            grid gui.file_slot_cols gui.file_slot_rows:
-                style_prefix "slot"
+            #grid gui.file_slot_cols gui.file_slot_rows:
+                #style_prefix "slot"
 
-                xalign 0.5
-                yalign 0.5
+                #xalign 0.5
+                #yalign 0.5
 
-                spacing gui.slot_spacing
+                #spacing gui.slot_spacing
 
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                #for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
-                    $ slot = i + 1
+                    #$ slot = i + 1
 
-                    button:
-                        action FileAction(slot)
+                    #button:
+                        #action FileAction(slot)
 
-                        has vbox
+                        #has vbox
 
-                        add FileScreenshot(slot) xalign 0.5
+                        #add FileScreenshot(slot) xalign 0.5
 
-                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("Slot Kosong")):
-                            style "slot_time_text"
+                        #text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("Slot Kosong")):
+                            #style "slot_time_text"
 
-                        text FileSaveName(slot):
-                            style "slot_name_text"
+                        #text FileSaveName(slot):
+                            #style "slot_name_text"
 
-                        key "save_delete" action FileDelete(slot)
+                        #key "save_delete" action FileDelete(slot)
 
             ## Tombol untuk mengakses halaman lain.
-            vbox:
-                style_prefix "page"
+            #vbox:
+                #style_prefix "page"
 
-                xalign 0.5
-                yalign 1.0
+                #xalign 0.5
+                #yalign 1.0
 
-                hbox:
-                    xalign 0.5
+                #hbox:
+                    #xalign 0.5
 
-                    spacing gui.page_spacing
+                    #spacing gui.page_spacing
 
-                    textbutton _("<") action FilePagePrevious()
+                    #textbutton _("<") action FilePagePrevious()
 
-                    if config.has_autosave:
-                        textbutton _("{#auto_page}O") action FilePage("auto")
+                    #if config.has_autosave:
+                        #textbutton _("{#auto_page}O") action FilePage("auto")
 
-                    if config.has_quicksave:
-                        textbutton _("{#quick_page}C") action FilePage("quick")
+                    #if config.has_quicksave:
+                        #textbutton _("{#quick_page}C") action FilePage("quick")
 
                     ## antara(1,10) beri nomor antara 1 sampai 9.
-                    for page in range(1, 10):
-                        textbutton "[page]" action FilePage(page)
+                    #for page in range(1, 10):
+                        #textbutton "[page]" action FilePage(page)
 
-                    textbutton _(">") action FilePageNext()
+                    #textbutton _(">") action FilePageNext()
 
-                if config.has_sync:
-                    if CurrentScreenName() == "save":
-                        textbutton _("Sinkronisasi Unggah"):
-                            action UploadSync()
-                            xalign 0.5
-                    else:
-                        textbutton _("Unduh Sinkronisasi"):
-                            action DownloadSync()
-                            xalign 0.5
+                #if config.has_sync:
+                    #if CurrentScreenName() == "save":
+                        #textbutton _("Sinkronisasi Unggah"):
+                            #action UploadSync()
+                            #xalign 0.5
+                    #else:
+                        #textbutton _("Unduh Sinkronisasi"):
+                            #action DownloadSync()
+                            #xalign 0.5
 
 
 style page_label is gui_label
@@ -901,26 +984,26 @@ style slot_button_text:
 
 screen extras():
     tag menu
-    if main_menu:
-        add gui.main_menu_background 
-    else:
-        add gui.game_menu_background
+    #if main_menu:
+        #add gui.main_menu_background 
+    #else:
+        #add gui.game_menu_background
         
-    frame:
-        style "game_menu_outer_frame"
-        vbox:
-            style_prefix "navigation"
+    #frame:
+        #style "game_menu_outer_frame"
+        #vbox:
+            #style_prefix "navigation"
 
-            xpos gui.navigation_xpos
+            #xpos gui.navigation_xpos
             # xalign 0.5
-            ypos 140
+            #ypos 140
 
-            spacing gui.navigation_spacing
-            label "{size=+20}Extras{/size}":
-                ypos -200
-            textbutton _("Achievement") action ShowMenu("achievement_gallery")
-            textbutton _("Gallery") action Start()
-            textbutton _("Kembali") action Return()
+            #spacing gui.navigation_spacing
+            #label "{size=+20}Extras{/size}":
+                #ypos -200
+            #textbutton _("Achievement") action ShowMenu("achievement_gallery")
+            #textbutton _("Gallery") action ShowMenu("gallery_a")
+            #textbutton _("Kembali") action Return()
 
                 
 
@@ -928,7 +1011,11 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Setting"), scroll="viewport"):
+    #use game_menu(_("Setting"), scroll="viewport"):
+
+    viewport:
+        draggable False
+        mousewheel False
 
         vbox:
 
@@ -936,89 +1023,142 @@ screen preferences():
                 box_wrap True
 
                 if renpy.variant("pc") or renpy.variant("web"):
-                    hbox:
+
+                    fixed:
                         # background Frame("gui/custom_setting_frame.png",0,0,0,0)
                         # xysize (750,150)
                         # has hbox
-                        style_prefix "radio"
-                        vbox:
-                            label _("Display")
-                                # text_color "#000"
-                                # ypos -10
-                                # xpos 45
-                            vbox:
-                                textbutton _("Window"):
-                                    action Preference("display", "window")
-                                    # text_color "#000"
-                                    # ypos -20
-                                textbutton _("Full Screen"):
-                                    action Preference("display", "fullscreen")
-                                    xsize 400
-                                    # text_color "#000"
-                                    # xpos 30
-                                    # ypos -20
+                        #style_prefix "radio"
 
-                vbox:
-                    style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choice") action Preference("after choices", "toggle")
+                        add "gui/config/con_bg.png"
+                        add "gui/config/con_display.png" xpos 550 ypos 219
+                        imagebutton auto "gui/config/con_win_%s.png" xpos 303 ypos 301 focus_mask True action Preference("display", "window")
+                        imagebutton auto "gui/config/con_full_%s.png"xpos 663 ypos 301 focus_mask True action Preference("display", "fullscreen")
+
+                        add "gui/config/con_skip.png" xpos 592 ypos 397
+                        imagebutton auto "gui/config/con_uns_%s.png" xpos 303 ypos 478 focus_mask True action Preference("skip", "toggle")
+                        imagebutton auto "gui/config/con_aft_%s.png" xpos 663 ypos 478 focus_mask True action Preference("after choices", "toggle")
+
+                        imagebutton auto "gui/button/back_ico_%s.png" xpos 40 ypos 1010 focus_mask True action Return()
+                        imagebutton auto "gui/button/save_ico_%s.png" xpos 810 ypos 1010 focus_mask True action ShowMenu('save')
+                        imagebutton auto "gui/button/load_ico_%s.png" xpos 980 ypos 1010 focus_mask True action ShowMenu('load')
+                        imagebutton auto "gui/button/title_ico_%s.png" xpos 1169 ypos 1021 focus_mask True action MainMenu()
+                        imagebutton auto "gui/button/exit_ico_%s.png" xpos 1386 ypos 1010 focus_mask True action Show("confirm_quit")
+
+                        imagebutton auto "gui/button/ach_ico_%s.png" xpos 633 ypos 1005 action ShowMenu("achievement_gallery")
+                
+                        hbox:
+                            style_prefix "slider"
+                            box_wrap True
+
+                            vbox:
+
+                                add "gui/config/kecepatan_text.png" xpos 417 ypos 627
+
+                                bar value Preference("text speed") xpos 417 ypos 647
+
+                                add "gui/config/waktu_otomatis_maju.png" xpos 417 ypos 667
+
+                                bar value Preference("auto-forward time") xpos 417 ypos 687
+
+                                if config.has_music:
+                                    add "gui/config/volume_musik.png" xpos 1150 ypos 200
+                                    
+
+                                    hbox:
+                                        bar value Preference("music volume") xpos 1134 ypos 230
+
+                                if config.has_sound:
+
+                                    add "gui/config/volume_suara.png" xpos 1150 ypos 260
+
+                                    hbox:
+                                        bar value Preference("sound volume") xpos 1134 ypos 290
+
+
+                                if config.has_voice:
+                                    add "gui/config/volume_vokal.png" xpos 1150 ypos 320
+
+                                    hbox:
+                                        bar value Preference("voice volume") xpos 1134 ypos 350
+
+                                    add "gui/config/senyapkan.png" xpos 1150 ypos 380
+                                    imagebutton auto "gui/config/con_mute_%s.png" xpos 1550 ypos 320 focus_mask True action Preference("all mute", "toggle") style "mute_all_button"
+                    
+        #vbox:
+           
+            #bar value Preference("text speed")
+                        #add "gui/config/waktu_otomatis_maju.png" xpos 550 ypos 219
+                        #bar value Preference("auto-forward time")
+                        #null height (4 * gui.pref_spacing)
+
+                    #if config.has_music:
+                        #add "gui/config/con_display.png" xpos 1163 ypos 352
+                        #bar value Preference("sound volume")
+
+
+
+                #vbox:
+                    #style_prefix "check"
+                    #label _("Skip")
+                    #textbutton _("Unseen Text") action Preference("skip", "toggle")
+                    #textbutton _("After Choice") action Preference("after choices", "toggle")
                     # textbutton _("Transisi") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Tipe tambahan vboxes "radio_pref" atau "check_pref" dapat di
                 ## tambahkan disini, untuk menambahkan tambahan preferensi yang
                 ## dibuat creator.
 
-            null height (4 * gui.pref_spacing)
+            #null height (4 * gui.pref_spacing)
 
-            hbox:
-                style_prefix "slider"
-                box_wrap True
+            #hbox:
+                #style_prefix "slider"
+                #box_wrap True
 
-                vbox:
+                #vbox:
 
-                    label _("Kecepatan Text")
+                    #label _("Kecepatan Text")
 
-                    bar value Preference("text speed")
+                    #bar value Preference("text speed")
 
-                    label _("Waktu Otomatis-Maju")
+                    #label _("Waktu Otomatis-Maju")
 
-                    bar value Preference("auto-forward time")
+                    #bar value Preference("auto-forward time")
 
-                vbox:
+                #vbox:
 
-                    if config.has_music:
-                        label _("Volume Musik")
+                    #if config.has_music:
+                        #label _("Volume Musik")
 
-                        hbox:
-                            bar value Preference("music volume")
+                        #hbox:
+                            #bar value Preference("music volume")
 
-                    if config.has_sound:
+                    #if config.has_sound:
 
-                        label _("Volume Suara")
+                        #label _("Volume Suara")
 
-                        hbox:
-                            bar value Preference("sound volume")
+                        #hbox:
+                            #bar value Preference("sound volume")
 
-                            if config.sample_sound:
-                                textbutton _("Tes") action Play("sound", config.sample_sound)
+                            #if config.sample_sound:
+                                #textbutton _("Tes") action Play("sound", config.sample_sound)
 
 
-                    if config.has_voice:
-                        label _("Volume Vokal")
+                    #if config.has_voice:
+                        #label _("Volume Vokal")
 
-                        hbox:
-                            bar value Preference("voice volume")
+                        #hbox:
+                            #bar value Preference("voice volume")
 
-                            if config.sample_voice:
-                                textbutton _("Tes") action Play("voice", config.sample_voice)
+                            #if config.sample_voice:
+                                #textbutton _("Tes") action Play("voice", config.sample_voice)
 
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
+                    #if config.has_music or config.has_sound or config.has_voice:
+                        #null height gui.pref_spacing
 
-                        textbutton _("Senyapkan Semua"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+                        #textbutton _("Senyapkan Semua"):
+                            #action Preference("all mute", "toggle")
+                            #style "mute_all_button"
 
 
 style pref_label is gui_label
@@ -1385,9 +1525,6 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-
-                #textbutton _("Ya") action yes_action xpos -20 ypos 5
-                #textbutton _("Tidak") action no_action xpos 15 ypos 5
                 imagebutton auto "gui/c_ya_%s.png" xpos -10 ypos 5 focus_mask True action yes_action 
                 imagebutton auto "gui/c_tidak_%s.png" xpos -10 ypos 5 focus_mask True action no_action 
 

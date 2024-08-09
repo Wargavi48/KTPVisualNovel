@@ -19,6 +19,10 @@ image game_logo:
     zoom 0.1
     ease_quad 4.0 alpha 1.0 zoom 0.2
 
+image disclaimer:
+    "gui/disclaimer1.png"
+    xalign 1 yalign 1 alpha 0.0
+    ease_quad 7.0 alpha 1.0
 
 label splashscreen:
 
@@ -52,8 +56,11 @@ label splashscreen:
 
     $ renpy.pause(2.0)
 
-    scene disclaimer with fade
-    pause(5.0)
+    show disclaimer:
+        xalign 1 yalign 1 alpha 0.0
+        linear 1.0 alpha 1.0 
+
+    $ renpy.pause(7.0)
 
     scene black
     with fade
