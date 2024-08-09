@@ -4055,7 +4055,7 @@ label goodtanafinale:
     $ quick_menu = True
     "Tak terasa hari festival pun tiba."
     $ quick_menu = False
-    scene kampus with Dissolve(2.0)
+    scene matsuri siang with Dissolve(2.0)
 #HARUSNYA BG Event Jejepangan
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     show tana_date_talk at tana_near
