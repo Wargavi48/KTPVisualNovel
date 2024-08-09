@@ -30,7 +30,7 @@ label credits:
 
     # Find "End Credits Scroll" in extras.rpy to change text.
     
-    call screen credits(90.0)
+    call screen credits(143.0)
 
     $ persistent.credits_seen = True
 
