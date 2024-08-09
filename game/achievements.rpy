@@ -427,8 +427,11 @@ transform achievement_popout():
 ## way to display the various information.
 screen achievement_gallery():
     tag menu
+    add "images/extras/CG.png"
 
-    add VBox(Transform("#292835", ysize=110), "#21212db2") # Background
+    fixed:
+        use gallery_navigation
+
 
     ############################################################################
     ## Version 1 ###############################################################
@@ -439,7 +442,6 @@ screen achievement_gallery():
     ## Version 2 ###############################################################
     ## Otherwise, if you'd like this to be independent of the game menu,
     ## use the following:
-    textbutton _("Return") action Return() align (1.0, 1.0)
     viewport:
         mousewheel True draggable True pagekeys True
         scrollbars "vertical"
@@ -480,7 +482,7 @@ screen achievement_gallery():
                     null width -10
                 vbox:
                     label a.name
-                    text a.description color "#FFF"
+                    text a.description color "#000"
                     if a.has():
                         ## There are two ways to display the timestamp. The
                         ## first is automatically formatted like

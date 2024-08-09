@@ -12,6 +12,8 @@
         imagebutton auto "images/extras/b_kanaia_%s.png" xpos 35 ypos 455 focus_mask True action ShowMenu("gallery_c") hovered [ Play("sound","audio/click.wav") ]
         #textbutton "Love Interest D" action ShowMenu("gallery_d")
         imagebutton auto "images/extras/b_true_%s.png" xpos 35 ypos 620 focus_mask True action ShowMenu("gallery_d") hovered [ Play("sound","audio/click.wav") ]
+
+        imagebutton auto "images/extras/achievement_%s.png" xpos 35 ypos 785 focus_mask True action ShowMenu("achievement_gallery") hovered [ Play("sound","audio/click.wav") ]
         
         imagebutton auto "gui/button/back_ico_%s.png" xpos 40 ypos 1010 focus_mask True action Return()
 
