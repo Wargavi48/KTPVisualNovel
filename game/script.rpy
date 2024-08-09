@@ -67,6 +67,7 @@ define poster = Transform(zoom=0.18,xalign=0.0,yalign=0.2,xpos=0.11)
 
 # Game dimulai disini.
 label start:
+    $ _game_menu_screen = "preferences"
     init python:
         import random
     $ random_number = ''.join([str(random.randint(0, 9)) for _ in range(4)])
