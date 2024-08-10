@@ -4666,7 +4666,7 @@ label goodtanagotofestival:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play music "audio/BGM_Monas.ogg" loop fadein 1.0
-    scene depan kampus with Dissolve(1.0)
+    scene matsuri siang with Dissolve(1.0)
 #HARUSNYA BG JEJEPANGAN
     play sound "audio/crowd_noise.mp3" loop fadein 1.0 volume (4.0)
     $ quick_menu = True
@@ -4755,7 +4755,7 @@ label goodtanagotofestival:
     "[mcname!c] dan Tana pun menghampiri booth Sakusoba."
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    scene depan kampus with Dissolve(1.0)
+    scene matsuri siang with Dissolve(1.0)
 #HARUSNYA BG HANABI
     $ quick_menu = True
     "[mcname!c]" "Kak, pesen 2 porsi. Makan di sini, ya."
@@ -4821,7 +4821,7 @@ label goodtanagotofestival:
     "[mcname!c] dan Tana pun menyantap makanan yang mereka pesan."
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    scene depan kampus with Dissolve(1.0)
+    scene matsuri siang with Dissolve(1.0)
 #HARUSNYA BG JEJEPANGAN
     show tana_idol at tana_near with dissolve
     $ quick_menu = True
@@ -4866,6 +4866,7 @@ label goodtanaaftergame:
     show tana_idol_talk at tana_near
     show tana_idol_side_talk at left 
     with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     tana "Gimana? Kurang jago apa gua."
     hide tana_idol_side_talk 
@@ -4919,9 +4920,10 @@ label goodtanaaftergame:
     stop music fadeout 1.0
     $ quick_menu = False
     play music "BGM_Monas.ogg" fadein 1.0
-    scene matsuri malam with Dissolve(1.0)
+    scene matsuri sore with Dissolve(1.0)
     #Tutup telefon
     show tana_idol at tana_near with dissolve
+    $ renpy.block_rollback()
     $ quick_menu = True
     "[mcname!c]" "Tan, lu dicariin Kak Feni tuh. Habis ini waktunya tampil."
     hide tana_idol

@@ -4011,12 +4011,17 @@ label trueendtana:
     hide tana_date_side_talk at left
     hide tana_date_talk at tana_near 
     with dissolve
+    $ quick_menu = False
     jump shooting_game_start
     #MINIGAME TEMBAK TEMBAKAN"
 label truetanaaftergame:
+    scene matsuri malam with Dissolve(1.0)
+    play music "BGM_Matsuri Malam.ogg" fadein 1.0
     show tana_date_talk at tana_near
-    show tana_date_side_talk at left 
+    show tana_date_side_talk at left
     with dissolve
+    $ renpy.block_rollback()
+    $ quick_menu = True
     tana "Gimana? Aku jago kan?"
     hide tana_date_side_talk at left 
     hide tana_date_talk at tana_near

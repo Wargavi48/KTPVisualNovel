@@ -273,7 +273,7 @@ define your_dream = Achievement(
     id="Its_your_dream",
     description=_("Tana berhasil menggapai impian sebagai idol"),
     hide_description=_("Complete Chapter 3 Tana Good Ending"),
-    unlocked_image=Transform("Achievement/tana_idol.png"),
+    unlocked_image=Transform("Achievement/tana_idol_achievement.png"),
     hidden=True
 )
 

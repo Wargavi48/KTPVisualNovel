@@ -307,7 +307,7 @@ transform half_size:
 
 
 screen shooting_gallery():
-    on "show" action [Function(prepareShootingGallery), SetVariable("default_mouse", "targetgame"), SetVariable("shooting_gallery", True)]
+    on "show" action [Function(prepareShootingGallery)]
     add "images/shooting_game/targets-background.png" at half_size
     add target_SM
     add "images/shooting_game/shooting-gallery-background.png" at half_size
@@ -350,13 +350,13 @@ screen final_score():
             text "Your score: [score]" outlines [(absolute(1), "#00000050", absolute(1), absolute(1))] color "#FFBF5F" size 80 align(0.5, 0.5)
             imagebutton auto "images/shooting_game/play-again-button-%s.png" pos(0, 0.7) anchor(0.0, 0.0) action [Hide("final_score"), Hide("shooting_gallery"), Function(prepareShootingGallery), Show("shooting_gallery")] at half_size
             if tana_route == "Good End":
-                imagebutton auto "images/shooting_game/quit-button-%s.png" pos(0.55, 0.7) anchor(0.0, 0.0) action [Hide("final_score"), Hide("shooting_gallery"), Jump("goodtanaaftergame"), SetVariable("default_mouse", None), SetVariable("shooting_gallery", False)] at half_size
+                imagebutton auto "images/shooting_game/quit-button-%s.png" pos(0.55, 0.7) anchor(0.0, 0.0) action [Hide("final_score"), Hide("shooting_gallery"), Jump("goodtanaaftergame"), SetVariable("shooting_gallery", False)] at half_size
             elif tana_route == "True End":
-                imagebutton auto "images/shooting_game/quit-button-%s.png" pos(0.55, 0.7) anchor(0.0, 0.0) action [Hide("final_score"), Hide("shooting_gallery"), Jump("truetanaaftergame"), SetVariable("default_mouse", None), SetVariable("shooting_gallery", False)] at half_size
+                imagebutton auto "images/shooting_game/quit-button-%s.png" pos(0.55, 0.7) anchor(0.0, 0.0) action [Hide("final_score"), Hide("shooting_gallery"), Jump("truetanaaftergame"), SetVariable("shooting_gallery", False)] at half_size
 
-define config.mouse = {}
-define config.mouse["targetgame"] = [("images/shooting_game/target-pointer.png", 17, 10)]
-define shooting_gallery = False
+# define config.mouse = {}
+# define config.mouse["targetgame"] = [("images/shooting_game/target-pointer.png", 17, 10)]
+# define shooting_gallery = False
 
 # Corkgun variables
 default cork_gun_image = Image("images/shooting_game/cork-gun.png")
