@@ -1608,7 +1608,10 @@ label chapter2tanaGOOD2:
     hide tana_side_talk at left
     hide tana_talk at tana_near
     with dissolve
-    "ASSET RECRUIT IDOL GROUP."
+    show idolrecruit at poster
+    show idolrecruit:
+            xpos 0.38 
+    with dissolve
     show tana_side_talk at left
     with dissolve
     tana "Lu mau ikutan join idol group, ga?"
@@ -1619,7 +1622,7 @@ label chapter2tanaGOOD2:
     hide kana_side_cry at left
     with dissolve
     play sound "SFX - Paper.mp3" volume (2.0)
-    "OFF ASSET RECRUIT IDOL GROUP."
+    hide idolrecruit with dissolve
     "Seketika cewe itu mengambil flyer dan berlari dengan muka merah malunya."
     show tana at tana_near with dissolve
     "[mcname!c]" "Lah? Tuh anak kenapa?"
@@ -4993,7 +4996,7 @@ label goodtanaaftergame:
     "Host" "Kalau gitu, ada yang ga kalah seru nih."
     "Host" "Selanjutnya kita kedatangan perwakilan grup idol dari klub jepang kampus kita."
     "Host" "Mari kita sambut..."
-    "Host" "KTP!!!!!!!!"
+    "Host" "JKT48V!!!!!!!!"
     play sound "SFX - Large Cheering.mp3" loop fadein 0.5
     "Penonton" "WUOOOH!!!!"
     show pia_idol_talk at pia_near
@@ -5001,7 +5004,7 @@ label goodtanaaftergame:
     with dissolve
     pia "WE ARE ON FIRE!"
     pia "SEMANGATKU MEMBARA, SIAP MENGHANGATKAN HARI-HARI MU!!"
-    pia "HALO AKU PIA MERALEO DARI KTp~"
+    pia "HALO AKU PIA MERALEO DARI JKT48 Virtual"
     hide pia_idol_side_talk
     hide pia_idol_talk
     show pia_idol_smile at pia_near
