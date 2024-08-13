@@ -4996,7 +4996,7 @@ label goodtanaaftergame:
     "Host" "Kalau gitu, ada yang ga kalah seru nih."
     "Host" "Selanjutnya kita kedatangan perwakilan grup idol dari klub jepang kampus kita."
     "Host" "Mari kita sambut..."
-    "Host" "JKT48V!!!!!!!!"
+    "Host" "KTP!!!!!!!!"
     play sound "SFX - Large Cheering.mp3" loop fadein 0.5
     "Penonton" "WUOOOH!!!!"
     show pia_idol_talk at pia_near
@@ -5004,7 +5004,7 @@ label goodtanaaftergame:
     with dissolve
     pia "WE ARE ON FIRE!"
     pia "SEMANGATKU MEMBARA, SIAP MENGHANGATKAN HARI-HARI MU!!"
-    pia "HALO AKU PIA MERALEO DARI JKT48 Virtual"
+    pia "HALO AKU PIA MERALEO DARI KTP~"
     hide pia_idol_side_talk
     hide pia_idol_talk
     show pia_idol_smile at pia_near
@@ -5093,13 +5093,13 @@ label goodtanaaftergame:
     show tana_idol_side_talk at left 
     with dissolve
     tana "What's up my bros!"
-    tana "I'm fresh like a breeze, JKT48 Virtual's Tana Nona, cool enough to make you freeze~"
+    tana "I'm fresh like a breeze, Tana Nona, cool enough to make you freeze~"
     hide tana_idol_talk at tana_near
     hide tana_idol_side_talk at left
     show tana_idol_laugh at tana_near
     show tana_idol_side_laugh at left
     with dissolve
-    tana "Halo semuanya aku Tana Nona dari JKT48 Virtual. Salam kenal!!!"
+    tana "Halo semuanya aku Tana Nona dari KTP. Salam kenal!!!"
     hide tana_idol_side_laugh
     hide tana_idol_laugh
     show tana_idol at tana_near
@@ -5122,6 +5122,8 @@ label goodtanaaftergame:
     hide tana_idol
     with dissolve
     "[mcname!c]" "TANAAAAA SEMANGATTTT!!!"
+    stop sound fadeout 1.5
+    scene konser end with Dissolve(1.0)
     play music "audio/Dreamcatcher_v2.mp3" fadein 1.0
     $ quick_menu = False
     scene black with dissolve

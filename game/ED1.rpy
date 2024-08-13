@@ -4,7 +4,7 @@
     scene black with dissolve
     play music "audio/Dreamcatcher_v2.mp3"
     $ malas_kuliah.grant()
-    "Kamu memutuskan untuk menunda kuliah ditahun ini."
+    "Kamu memutuskan untuk menunda kuliah di tahun ini."
 
     call credits from _call_credits
     return
@@ -30,11 +30,9 @@ label credits:
 
     # Find "End Credits Scroll" in extras.rpy to change text.
     
-    call screen credits(143.0)
+    call screen credits(123.0)
 
     $ persistent.credits_seen = True
-
-    scene black with fade
 
     # Player can skip the credits
 

@@ -243,384 +243,268 @@ screen music():
 
 # Content of your credits screen
 define credits_string = _p("""
-{size=+15}WGV:DreamCatcher Credits{/size}
-\n
+{size=+50}{b}WGV: DreamCatcher{/b}{/size}
 
-{size=+10}Production{/size}
-\n
+{size=+28}Production{/size}
+
 Wargavi48
 \n
-{size=+10}Development Team:{/size}
-\n
 {size=+10}Project Director{/size}
-\n
-Nue
+
+Nueks
 \n
 {size=+10}Project Manager{/size}
-\n
+
 Koko Jon
+\n
+{size=+10}Lead Programmer{/size}
+
+Tomato🔨🗿🔮🐿️🎨🅿️
 \n
 {size=+10}Programmer{/size}
-\n
+
 Exilade
-\n
+
 Koko Jon
-\n
+
 Lima
-\n
+
 Shota
+
+Sunny🔆
 \n
-Sunny
-\n
-Tomato
-\n
-{size=+10}Writer{/size}
-\n
+{size=+10}Lead Writer{/size}
+
 Aergia
-\n
+
 Addo
-\n
+
+Fatimah
+
 Lenkuass
-\n
-Nue
-\n
+
+Nueks
+
 Rizka MD
 \n
 {size=+10}Co-Writer{/size}
-\n
+
 Kodoknya Cepio
-\n
+
 Koko Jon
-\n
-Tomato
-\n
+
+Tomato🔨🗿🔮🐿️🎨🅿️
+
 Tebtebo
 \n
 {size=+10}Quiz Maker{/size}
-\n
+
 Kodoknya Cepio
 \n
 {size=+10}Characters{/size}
-\n
+
 Lenkuass
-\n
-Nue
-\n
+
+Nueks
+
 Yukisaki
 \n
 {size=+10}CG{/size}
-\n
+
 Lenkuass
 \n
-{size=+10}Backgrounds{/size}
-\n
-Awil
-\n
+{size=+10}Lead Backgrounds{/size}
+
 BlueSky
+
+Vhyrie
 \n
+{size=+10}Backgrounds{/size}
+
+Awil
+
 Hann
-\n
-Neru
-\n
-Pipigoroo
-\n
+
+Pipigooro
+
 Tebtebo
 \n
 {size=+10}Assets{/size}
-\n
+
 Denden.zip
-\n
-Nue
-\n
+
+Nueks
+
 Tebtebo
 \n
 {size=+10}UI Design{/size}
-\n
+
 Heyysatsu
-\n
+
 Exilade
 \n
 {size=+10}Logo{/size}
-\n
+
 Ahsae
 \n
 {size=+10}Pia Minigame{/size}
-\n
+
 Tebtebo
 \n
 {size=+10}Kana Minigame{/size}
-\n
-Pipigoroo
+
+Pipigooro
 \n
 {size=+10}Tana Minigame{/size}
-\n
+
 Addo
 \n
 {size=+10}Opening Sound Track{/size}
-\n
+
 HasbiLH
-\n
-Rizuka Miku
-\n
+
+💖Rizuka Miku✨
+
 Shiiyato
 \n
 {size=+10}Music Video{/size}
-\n
+
 ElaDesuu
-\n
+
 Galaxy
-\n
+
 Kaizengraphic
-\n
+
 Oxy Studio
 \n
 {size=+10}Music & Sound{/size}
-\n
+
 BlackJckt
-\n
+
 Copolatos
-\n
+
 Kodoknya Cepio
-\n
+
 Koko Jon
-\n
+
 Lenkuass
-\n
-Pipigoroo
-\n
+
+Pipigooro
+
 Tebtebo
-\n
-Tomato
+
+Tomato🔨🗿🔮🐿️🎨🅿️
 \n
 {size=+10}Sponsors{/size}
-\n
+
 Bangun Rama
-\n
+
 Galaxy
-\n
+
 Koko Jon
-\n
+
 RG Hasan
-\n
+
 Takamina
-\n
+
 SAKU
-\n
+
 Risqi Vodoo
-\n
+
 Sadao Maou
-\n
+
 RedAnt
-\n
+
 Kodoknya Cepio
-\n
+
 Kautsar AS
-\n
+
 Addo
-\n
-Sunny
-\n
+
+Sunny🔆
+
 Vin
-\n
-Rizuka Miku
-\n
+
+💖Rizuka Miku✨
+
 Hanzfamz
-\n
+
 Ta Ma
-\n
+
 Farrel
-\n
+
 Nakohayou
-\n
+
 RidDhh
-\n
+
 Panapajadah
-\n
+
 AhSae
-\n
+
 FZetaaa
-\n
+
 Hmmmm
-\n
+
 Rin
 \n
 {size=+10}Asset Background{/size}
-\n
-FREEPIK
-\n
-Lifeforstock on Freepik
-\n
-MrSiraphol on Freepik
-\n
-Neeka
+
+{size=28}FREEPIK, Lifeforstock on Freepik, MrSiraphol on Freepik, Neeka.{/size}
 \n
 {size=+10}Background Music{/size}
-\n
-Ad-lib by ZUKISUZUKI
-\n
-A Day Spent at a Cafe by NekoKimagure
-\n
-Answer by ZUKISUZUKI
-\n
-Chocolate Mint by Edamame88
-\n
-Conjurer by Peritune
-\n
-Cut The Wind by Shuki Yomrua
-\n
-Daybreak by Peritune
-\n
-Gentle Theme 1 by PeriTune
-\n
-Gentle Theme 2 by PeriTune
-\n
-Happy End by Kyatto
-\n
-Holiday 2 by peritune
-\n
-I Loved You by Yuuri
-\n
-Koiwazurai by Sari
-\n
-Laid Back 3 by Peritune
-\n
-Let's Party 3 by Peritune
-\n
-MIGIKATA JKT48 Flute & Guitar Cover by Rangga Pranendra
-\n
-Nostalgic by Peritune
-\n
-No Way by Peritune
-\n
-Old Home by Noru
-\n
-On The Gentle Wind by Shimtone
-\n
-Parade by Sharo
-\n
-Positive 2 by Peritune
-\n
-Positive 4 by Peritune
-\n
-Radiant Sunshine by Peritune
-\n
-Recall by Sharo
-\n
-Resort 4 by Peritune
-\n
-Resort 5 by Peritune
-\n
-RetroRoman Koharu by Peritune
-\n
-Robot by Peritune
-\n
-Scéal Réalta by Peritune
-\n
-School Life by Maniira
-\n
-Sky Blue Canvas by Yoshinori Tanaka
-\n
-Shopping Mall by Imataku
-\n
-Silver Bells at Dawn by Imataku
-\n
-Smoked Quail Egg by Tanaka Tamago
-\n
-Soft Day 2 by Peritune
-\n
-Sugomori no Ritchi by MAKOOTO
-\n
-Suspense 3 by Peritune
-\n
-Toys Factory by Peritune
-\n
-Train by Matsu
-\n
-Violet by Sari
-\n
-White Clover by Yuuki Wataru
-\n
-Wind Feelings by Shimtone
-\n
-Wish 2 by Peritune
+
+{size=28}Ad-lib by ZUKISUZUKI, A Day Spent at a Cafe by NekoKimagure, Answer by ZUKISUZUKI, Chocolate Mint by Edamame88, Conjurer by Peritune, Cut The Wind by Shuki Yomrua, Daybreak by Peritune, Gentle Theme 1 by PeriTune, Gentle Theme 2 by PeriTune, Happy End by Kyatto, Holiday 2 by peritune, I Loved You by Yuuri, Koiwazurai by Sari, Laid Back 3 by Peritune, Let's Party 3 by Peritune, Nostalgic by Peritune, No Way by Peritune, Old Home by Noru, On The Gentle Wind by Shimtone, Parade by Sharo, Positive 2 by Peritune, Positive 4 by Peritune, Radiant Sunshine by Peritune, Recall by Sharo, Resort 4 by Peritune, Resort 5 by Peritune, RetroRoman Koharu by Peritune, Robot by Peritune, Scéal Réalta by Peritune, School Life by Maniira, Sky Blue Canvas by Yoshinori Tanaka, Shopping Mall by Imataku, Silver Bells at Dawn by Imataku, Smoked Quail Egg by Tanaka Tamago, Soft Day 2 by Peritune, Sugomori no Ritchi by MAKOOTO, Suspense 3 by Peritune, Toys Factory by Peritune, Train by Matsu, Violet by Sari, White Clover by Yuuki Wataru, Wind Feelings by Shimtone, Wish 2 by Peritune.{/size}
 \n
 {size=+10}Sound Effect{/size}
-\n
-Clock Alarm by Microsammy
-\n
-CRASH 1 by Olenchic
-\n
-David Gallie from Pixabay
-\n
-Ftus Sound Effects
-\n
-Jingle Retro Jazz 2 by Peritune
-\n
-Jurij from Pixabay
-\n
-PIXABAY
-\n
-Qat from FreeSound
-\n
-Rotich Wilson from Pixabay
-\n
-SoundBiter
-\n
-Soundsnap
-\n
-Sound Laboratory
-\n
-Universfield from Pixabay
-\n
-U_z31mph1yzr from Pixabay
+
+{size=28}Clock Alarm by Microsammy, CRASH 1 by Olenchic, David Gallie from Pixabay, Ftus Sound Effects, Jingle Retro Jazz 2 by Peritune, Jurij from Pixabay, PIXABAY, Qat from FreeSound, Rotich Wilson from Pixabay, SoundBiter, Soundsnap, Sound Laboratory, Universfield from Pixabay, U_z31mph1yzr from Pixabay.{/size}
 \n
 {size=+10}Special Thanks{/size}
-\n
+
 All The Dreamcatcher Player & Warga Virtual 48
-\n
-Aka Virtual
-\n
+
 Ess_renpy_tutorials
-\n
+
 Feniksdev.com
-\n
-JKT48 Operational Team
-\n
+
 MarshaOshi
-\n
+
 Tetsuoga
 \n
-{size=+10}Very Special Thanks{/size}
+{size=+30}Happy 1st Anniversary JKT48V{/size} 
 \n
-Kanaia Asa - JKT48 Virtual
-\n
-Tana Nona - JKT48 Virtual
-\n
-Pia Meraleo - JKT48 Virtual
-\n\n\n
-{size=+10}
-\n
-Happy 1st Anniversary JKT48V
-\n\n\n
-Warga Vitural 48
-\n\n
-{size=+10}Made with Ren'Py{/size} 
-\n
+{size=+10}Made with Ren'Py{/size}
+
 {size=+10}Thanks for Playing!{/size}\n\n\n\n
+\n
+{size=+10}Warga Virtual 48{/size} 
+\n
 {size=+10}Twitter{/size}
-{size=+10}@wargavirtual48{/size}
-\n
+
+{size=+10}x.com/wargavirtual48{/size}
+
 {size=+10}Discord{/size}
-{size=+10}wargavi48{/size}
-{size=+10}{/size}
-\n
+
+{size=+10}WARGAVI48{/size}
+
+{size=+10}wargavi48.github.io/discord{/size}
+
 {size=+10}Tiktok{/size}
-{size=+10}wargavi48{/size}
+
+{size=+10}tiktok.com/@wargavi48{/size}
 {size=+10}{/size}
-\n
+
 {size=+10}Youtube{/size}
-{size=+10}wargavi48{/size}
+
+{size=+10}youtube.com/@wargavi48{/size}
 {size=+10}{/size}
+
+
+{size=50}Disclaimer: This project is not affiliated in any way with JKT48 Operational Team or AKA Virtual. Any references to these entities are for contextual purposes only, and this project is independent and unaffiliated with them. The Migikata song in this game is a JKT48 song covered by Ranggapranendra. The copyright holder of the Migikata song in this game is JKT48.{/size}
+
+{size=50}Penafian: Proyek ini tidak berafiliasi dengan Tim Operasional JKT48 maupun AKA Virtual. Segala referensi terhadap entitas-entitas tersebut hanya untuk keperluan kontekstual, dan proyek ini bersifat independen serta tidak memiliki hubungan dengan mereka. Lagu Migikata dalam game ini merupakan lagu JKT48 yang dicover oleh ranggapranendra. Pemegang hak cipta dari lagu Migikata dalam game ini adalah JKT48.{/size}
+
+
 """)
 
 # This controls the position and speed of your end credits
