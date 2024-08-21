@@ -838,21 +838,22 @@ screen file_slots(title):
                         text FileSaveName(slot):
                             style "slot_name_text"
     
-    frame:
+    fixed:
         xalign 1.0
         yalign 1.0
-        hbox:
-            style_prefix "page"
-            spacing gui.page_spacing
 
-            if config.has_autosave:
-                textbutton _("{#auto_page}Auto Save") action FilePage("auto")
-            
-            if config.has_quicksave:
-                textbutton _("{#quick_page}Quick Save") action FilePage("quick")
+        if config.has_autosave:
+            imagebutton auto "images/save/auto_%s.png" xpos 792 ypos 990 action FilePage("auto")
+        
+        if config.has_quicksave:
+            imagebutton auto "images/save/quick_%s.png" xpos 1042 ypos 990 action FilePage("quick")
 
-            for page in range(1,3):
-                textbutton "[page]" action FilePage(page)
+        # Loop untuk 2 halaman dengan imagebutton
+        for page in range(1, 3):
+            imagebutton auto "images/save/page_1_%s.png" xpos 1302 ypos 990 action FilePage(1)
+            imagebutton auto "images/save/page_2_%s.png" xpos 1391 ypos 990 action FilePage(2)
+            imagebutton auto "images/save/page_3_%s.png" xpos 1480 ypos 990 action FilePage(3) 
+
 
 
     default page_name_value = FilePageNameInputValue(pattern=_("Halaman {}"), auto=_("Otomatis save"), quick=_("Save cepat"))
@@ -1040,12 +1041,12 @@ screen preferences():
                         imagebutton auto "gui/config/con_aft_%s.png" xpos 663 ypos 478 focus_mask True action Preference("after choices", "toggle")
 
                         imagebutton auto "gui/button/back_ico_%s.png" xpos 40 ypos 1010 focus_mask True action Return()
-                        imagebutton auto "gui/button/save_ico_%s.png" xpos 810 ypos 1010 focus_mask True action ShowMenu('save')
-                        imagebutton auto "gui/button/load_ico_%s.png" xpos 980 ypos 1010 focus_mask True action ShowMenu('load')
-                        imagebutton auto "gui/button/title_ico_%s.png" xpos 1169 ypos 1021 focus_mask True action MainMenu()
-                        imagebutton auto "gui/button/exit_ico_%s.png" xpos 1386 ypos 1010 focus_mask True action Show("confirm_quit")
+                        imagebutton auto "gui/button/save_ico_%s.png" xpos 635 ypos 990 focus_mask True action ShowMenu('save')
+                        imagebutton auto "gui/button/load_ico_%s.png" xpos 865 ypos 990 focus_mask True action ShowMenu('load')
+                        imagebutton auto "gui/button/title_ico_%s.png" xpos 1095 ypos 990 focus_mask True action MainMenu()
+                        imagebutton auto "gui/button/exit_ico_%s.png" xpos 1315 ypos 990 focus_mask True action Show("confirm_quit")
 
-                        imagebutton auto "gui/button/ach_ico_%s.png" xpos 633 ypos 1005 action ShowMenu("achievement_gallery")
+                        imagebutton auto "gui/button/ach_ico_%s.png" xpos 383 ypos 990 action ShowMenu("achievement_gallery")
                 
                         hbox:
                             style_prefix "slider"
