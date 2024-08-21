@@ -11,6 +11,7 @@ label quiz:
     $ random_questions = select_random_question()
     $ user_score = 0
     $ index = 0
+    $ user_correct_answer = 0
 
     stop music fadeout 1.0
     $ quick_menu = False
@@ -44,6 +45,7 @@ label quiz:
         
         if user_choice == random_question["answer"]:
             $ user_score += 10
+            $ user_correct_answer += 1
             "Jawaban Benar"      
         $ index += 1
 
@@ -100,6 +102,7 @@ label quiz:
 #     jump quiz
 
 label pasrah:
+    "Kamu berhasil menjawab [user_correct_answer] jawaban"
     menu:
         "Apakah mau diulang?"
         "Ya":
