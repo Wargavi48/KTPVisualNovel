@@ -4074,7 +4074,7 @@ label truetanaaftergame:
     $ quick_menu = True
     "[mcname!c]" "Mas, promo es krimnya berapaan?"
     "Penjual" "30 ribu dapet 2, Kak. Tapi rasanya random."
-    "[mcname!c]" "Emang ada saran apa aja, mas?"
+    "[mcname!c]" "Emang ada sara apa aja, mas?"
     "Penjual" "Ada chocolate, strawberry, vanilla, sama matcha."
     "[mcname!c]" "Kalo gitu beli paket promonya satu."
     "Penjual" "Baik, totalnya 30 ribu."
