@@ -547,7 +547,7 @@ label trueendrooftoppia:
             with dissolve
             $ renpy.block_rollback()
             scene black with dissolve
-            show text "{color=#FFF}AI MEMANG BANTUIN SIH.. TAPI LIAT SITUASI KONDISI LAGI YA BROK{/color}" with Pause(2.0)
+            show text "{color=#FFF}I MEMANG BANTUIIN SI..TAPI LIAT SITUASI KONDISI LAGI YA BROK{/color}" with Pause(2.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(2.0)
             stop music fadeout 1.0
@@ -1418,7 +1418,7 @@ label truendpia:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play sound "audio/cafe-entrance.mp3" fadein 1.0
-    play music "audio/BGM_Cafe Sore.ogg" fadein 1.0 volume (2.0)
+    play music "audio/BGM_Cafe Cerah.ogg" fadein 1.0 volume (2.0)
     scene cafe malam with Dissolve(1.0)
     show pia at pia_near with dissolve
     $ quick_menu = True
@@ -1435,8 +1435,10 @@ label truendpia:
     "Staff" "Baik, berarti 1 mango cake dan 1 melon cake."
     "Staff" "Mohon ditunggu, ya."
     hide pia with dissolve
+    stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
+    play music "BGM_Cafe Sore.ogg" fadein 1.0
     scene cafe malam with Dissolve(1.0)
     show pia at pia_near with dissolve
     $ renpy.block_rollback()
