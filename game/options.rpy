@@ -12,6 +12,8 @@
 ##
 ## Tanda _() yang mengelilingi string menandai itu dapat di terjemahkan.
 
+define config.steam_appid = 3037900
+
 define config.name = _("WGV:Dreamcatcher")
 
 
