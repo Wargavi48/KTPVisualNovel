@@ -2125,11 +2125,11 @@ label truekanarightpresent:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     play music "audio/BGM_Kado Kana.ogg" fadein 2.0
-    scene kana_gift_smile with Dissolve(2.0)
+    scene kana gift smile with Dissolve(2.0)
     $ quick_menu = True
     "Saat Kana membuka matanya, dia terlihat kaget dan terkejut karena di lehernya terdapat sebuah kalung cantik bersinar yang berwarna biru."
     "Ternyata sensasi dingin yang sebelumnya terasa, adalah kalung."
-    show kana_gift_talk
+    show kana gift talk
     show kana_home_side_shy_eh at left
     with dissolve
     kana "EH INI KANN!!??"
