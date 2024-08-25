@@ -585,7 +585,7 @@ label goodpiaafterquiz:
     scene depan kampus with Dissolve(1.0)
     $ quick_menu = True
     "[mcname!c]" "{i}Akhirnya sampe juga di kampus.{/i}"
-    "[mcname!c]" "{i}Ga sabar mau liat pameran bulan ini!{/i}"
+    "[mcname!c]" "{i}Ga sabar mau liat pamerah bulan ini!{/i}"
     stop music fadeout 1.0
     $ quick_menu = False
     scene black with Dissolve(1.0)
