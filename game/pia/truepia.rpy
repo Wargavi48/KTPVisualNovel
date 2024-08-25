@@ -1437,7 +1437,7 @@ label truendpia:
     hide pia with dissolve
     $ quick_menu = False
     scene black with Dissolve(1.0)
-    play music "BGM_Cafe Sore.ogg" fadein 1.0
+    scene cafe malam with Dissolve(1.0)
     show pia at pia_near with dissolve
     $ renpy.block_rollback()
     $ quick_menu = True
