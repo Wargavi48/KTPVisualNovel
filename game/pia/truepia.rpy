@@ -547,7 +547,7 @@ label trueendrooftoppia:
             with dissolve
             $ renpy.block_rollback()
             scene black with dissolve
-            show text "{color=#FFF}I MEMANG BANTUIIN SIH..TAPI LIAT SITUASI KONDISI LAGI YA BROK{/color}" with Pause(2.0)
+            show text "{color=#FFF}AI MEMANG BANTUIIN SIH..TAPI LIAT SITUASI KONDISI LAGI YA BROK{/color}" with Pause(2.0)
             scene black with dissolve
             show text "{color=#FF0000}{size=+10}BAD END{/size}{/color}" with Pause(2.0)
             stop music fadeout 1.0
