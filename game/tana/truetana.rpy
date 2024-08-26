@@ -4460,13 +4460,13 @@ label truetanaaftergame:
     $ quick_menu = False
     scene black with Dissolve(1.0)
     scene tana end smile with Dissolve(1.0)
-    show tana end talk
+    show tana end firework talk
     hide tana_date_shy
     show tana_date_side_talk at left
     with Dissolve(1.0)
     $ quick_menu = True
     tana "[mcname!c]..."
-    show tana end smile
+    show tana end firework smile
     hide tana_date_side_talk at left
     with dissolve
     "[mcname!c]" "Hmm?"
